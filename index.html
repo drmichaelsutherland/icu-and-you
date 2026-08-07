@@ -8,7 +8,7 @@
 <style>
   :root{
     --paper:#FBF9F5; --ink:#1B2A33; --muted:#6E6B63; --rule:#DED8CC;
-    --teal:#2E6473; --plum:#6B4570; --rust:#A8442A; --olive:#5F6B33;
+    --teal:#2E6473; --plum:#6B4570; --rust:#A8442A; --olive:#5F6B33; --bleu:#2F4A7C;
   }
   *{box-sizing:border-box}
   body{margin:0;background:#F3EFE8;color:var(--ink);
@@ -39,6 +39,7 @@
   .chip.plum.on{background:var(--plum);border-color:var(--plum)}
   .chip.rust.on{background:var(--rust);border-color:var(--rust)}
   .chip.olive.on{background:var(--olive);border-color:var(--olive)}
+  .chip.bleu.on{background:var(--bleu);border-color:var(--bleu)}
 
   /* ── This week ─────────────────────────────────────────── */
   .week{padding:30px 36px 34px;background:#F6F2E8;border-bottom:1px solid var(--rule)}
@@ -51,6 +52,7 @@
     border-left-width:5px;border-radius:9px;background:#fff}
   .item.teal{border-left-color:var(--teal)} .item.plum{border-left-color:var(--plum)}
   .item.rust{border-left-color:var(--rust)} .item.olive{border-left-color:var(--olive)}
+  .item.bleu{border-left-color:var(--bleu)}
   .badge{flex:0 0 76px;text-align:center;
     font:600 10.5px 'Helvetica Neue',Arial,sans-serif;letter-spacing:.12em;
     text-transform:uppercase;color:var(--muted);padding-top:3px}
@@ -78,8 +80,9 @@
     border-bottom:1px solid #EDE7DC;border-left:3px solid transparent}
   li.row.teal{border-left-color:var(--teal)} li.row.plum{border-left-color:var(--plum)}
   li.row.rust{border-left-color:var(--rust)} li.row.olive{border-left-color:var(--olive)}
+  li.row.bleu{border-left-color:var(--bleu)}
   li.row:hover{background:#F7F4ED}
-  .rs{flex:0 0 88px;font:600 10.5px 'Helvetica Neue',Arial,sans-serif;letter-spacing:.1em;
+  .rs{flex:0 0 112px;font:600 10.5px 'Helvetica Neue',Arial,sans-serif;letter-spacing:.1em;
     text-transform:uppercase;color:var(--muted)}
   .rn{flex:0 0 28px;text-align:right;font-size:16px;color:var(--muted)}
   a.rt{color:var(--ink);text-decoration:none;font-size:16.5px;line-height:1.4}
@@ -119,6 +122,7 @@
       <button class="chip plum" data-f="aphorism" type="button">Aphorisms</button>
       <button class="chip rust" data-f="superpuzzle" type="button">Superpuzzles</button>
       <button class="chip olive" data-f="mnemonic" type="button">Mnemonics</button>
+      <button class="chip bleu" data-f="coin" type="button">Le coin français</button>
   </div>
 
   <!-- ================= THIS WEEK ================= -->
@@ -159,6 +163,14 @@
             <div class="links"><a class="go" href="mnemonic-53-collapsed-neonate.html">Open</a></div>
           </div>
         </li>
+        <li class="item bleu" data-series="coin">
+          <div class="badge">Le coin français<b>1</b></div>
+          <div class="body">
+            <h3>La couveuse</h3>
+            <p>The French of this week&#x27;s subject — the zoo where neonatal care began, the false friend that will catch you out, and two words worth the detour.</p>
+            <div class="links"><a class="go" href="coin-francais-01-la-couveuse.html">Open</a></div>
+          </div>
+        </li>
     </ul>
   </section>
 
@@ -173,6 +185,7 @@
           <li class="row plum" data-series="aphorism"><span class="rs">Aphorism</span><span class="rn">35</span><a class="rt" href="aphorism-35-respiratory-arrest.html">The newborn generally does not have a cardiac arrest</a></li>
           <li class="row rust" data-series="superpuzzle"><span class="rs">Superpuzzle</span><span class="rn">48</span><a class="rt" href="superpuzzle-48-neonatology-fillable.html">Neonatology</a></li>
           <li class="row olive" data-series="mnemonic"><span class="rs">Mnemonic</span><span class="rn">53</span><a class="rt" href="mnemonic-53-collapsed-neonate.html">COLLAPSED</a></li>
+          <li class="row bleu" data-series="coin"><span class="rs">Le coin français</span><span class="rn">1</span><a class="rt" href="coin-francais-01-la-couveuse.html">La couveuse</a></li>
         </ul>
       </section>
       <section class="group" data-topic="Transplantation">
