@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en-AU">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ICU AND YOU · Le coin français No. 2 — Le registre des refus</title>
+<meta name="description" content="Le coin français No. 2: the French of organ donation — presumed consent, a register that records only refusals, le prélèvement, la greffe, and les proches.">
+<style>
+  :root{
+    --paper:#FBF8F4; --ink:#22242E; --muted:#6B6A74; --rule:#DCD7CE;
+    --bleu:#2F4A7C; --bleutint:#E8EDF6;
+    --rouge:#9E2B2B; --rougetint:#F7EAEA;
+    --gold:#A8721E;
+  }
+  *{box-sizing:border-box}
+  body{margin:0;background:#EFEBE4;color:var(--ink);
+    font:400 17px/1.66 'Iowan Old Style','Palatino Linotype',Palatino,Georgia,serif;
+    -webkit-text-size-adjust:100%;}
+  .sheet{max-width:760px;margin:0 auto;background:var(--paper);
+    box-shadow:0 1px 40px rgba(34,36,46,.10);}
+
+  .flag{display:flex;height:5px}
+  .flag i{flex:1;display:block}
+  .flag i:nth-child(1){background:var(--bleu)}
+  .flag i:nth-child(2){background:#FBF8F4}
+  .flag i:nth-child(3){background:var(--rouge)}
+
+  header.top{padding:42px 42px 28px;border-bottom:1px solid var(--rule)}
+  .eyebrow{font:500 11.5px/1 'Helvetica Neue',Arial,sans-serif;letter-spacing:.24em;
+    text-transform:uppercase;color:var(--muted);margin:0 0 14px}
+  h1{font-size:34px;line-height:1.16;margin:0 0 8px;font-weight:400;letter-spacing:-.012em;
+    font-style:italic}
+  .kicker{color:var(--muted);margin:0;font-size:16.5px}
+
+  .pad{padding:34px 42px}
+  p{margin:0 0 17px}
+  .lede{font-size:20px;line-height:1.5;color:#1A1C24;margin:0 0 22px}
+
+  .fr{font-style:italic}
+  b.term{font-style:normal;font-weight:600;color:var(--bleu)}
+
+  h2.sub{font:600 12px 'Helvetica Neue',Arial,sans-serif;letter-spacing:.2em;
+    text-transform:uppercase;color:var(--muted);margin:30px 0 14px;
+    padding-bottom:8px;border-bottom:1px solid var(--rule)}
+
+  .faux{margin:0 0 17px;padding:20px 24px;background:var(--rougetint);
+    border-left:4px solid var(--rouge);border-radius:0 8px 8px 0}
+  .faux .lab{display:block;font:600 11px 'Helvetica Neue',Arial,sans-serif;
+    letter-spacing:.18em;text-transform:uppercase;color:var(--rouge);margin:0 0 9px}
+  .faux p:last-child{margin:0}
+
+  .gloss{margin:0;padding:20px 24px;background:var(--bleutint);
+    border-left:4px solid var(--bleu);border-radius:0 8px 8px 0;font-size:16px}
+  .gloss p:last-child{margin:0}
+
+  .reply{margin:0;padding:28px 32px;background:#F4EFE4;border-left:5px solid var(--gold)}
+  .reply h2{font:600 12px 'Helvetica Neue',Arial,sans-serif;letter-spacing:.2em;
+    text-transform:uppercase;color:var(--gold);margin:0 0 13px}
+  .ask{font-size:19px;line-height:1.5;font-style:italic;margin:0 0 15px}
+  .btn{display:inline-block;margin:6px 0 12px;padding:15px 30px;background:var(--bleu);
+    color:#F7F9FC;text-decoration:none;border-radius:30px;font-style:normal;
+    font:600 15px 'Helvetica Neue',Arial,sans-serif;letter-spacing:.03em}
+  .btn:hover{background:#233A63}
+  .btn:focus-visible{outline:3px solid var(--rouge);outline-offset:3px}
+  .fallback{font:400 13.5px 'Helvetica Neue',Arial,sans-serif;color:var(--muted);margin:0}
+  .fallback a{color:var(--bleu)}
+
+  footer{padding:24px 42px 42px;border-top:1px solid var(--rule);
+    font:400 13px 'Helvetica Neue',Arial,sans-serif;color:var(--muted);text-align:center;line-height:1.7}
+  .home{display:inline-block;margin:0 0 14px;padding:8px 18px;border-radius:20px;
+    border:1px solid var(--rule);background:#F2F0E9;color:var(--bleu);text-decoration:none;
+    font:600 12.5px 'Helvetica Neue',Arial,sans-serif;letter-spacing:.05em}
+  .home:hover{background:var(--bleu);border-color:var(--bleu);color:#F7F9FC}
+
+  @media (max-width:620px){
+    header.top,.pad,footer{padding-left:20px;padding-right:20px}
+    .reply{padding:22px 20px}
+    h1{font-size:26px} body{font-size:16.5px} .lede{font-size:18px} .ask{font-size:17.5px}
+  }
+  @media print{ body{background:#fff} .sheet{box-shadow:none;max-width:none} }
+</style>
+</head>
+<body>
+<div class="sheet">
+
+  <div class="flag"><i></i><i></i><i></i></div>
+
+  <header class="top">
+    <p class="eyebrow">ICU and You &nbsp;·&nbsp; Le coin français &nbsp;·&nbsp; Number 2</p>
+    <h1>Le registre des refus</h1>
+    <p class="kicker">The French of this week's subject &mdash; and a register built the other way round</p>
+  </header>
+
+  <div class="pad">
+    <p class="lede">France keeps a national organ donation register. Nobody on it is a donor.</p>
+
+    <p>On 22 December 1976 the <span class="fr">loi Caillavet</span> made France one of the first countries in the world to adopt <b class="term">le consentement présumé</b> &mdash; presumed consent. Everyone is a donor unless they said otherwise while living. The principle was reaffirmed by the health modernisation law of January 2016, which took effect at the beginning of 2017.</p>
+
+    <p>Which produces a register shaped like a photographic negative of ours. The <b class="term">registre national des refus</b>, held by the Agence de la biomédecine, records only objections. Before any retrieval the team must consult it; if the name is not there, they then speak to the family. So in France the administrative act is refusing, and silence is a yes. In Australia the administrative act is agreeing, and silence is a conversation nobody wants to have at two in the morning.</p>
+
+    <div class="gloss">
+      <p>The French system has its own gap, and it is the exact inverse of ours. Because the register records only refusals, a French citizen who <em>wants</em> to donate has no way to record it. France ADOT has argued for years that this is a real omission: the enthusiastic have nowhere to put their enthusiasm. And since 2017 the <span class="fr">carte de donneur</span> &mdash; the donor card &mdash; has had no legal standing at all.</p>
+    </div>
+
+    <p>Both countries, then, arrive at the same room by opposite routes, and in both the family is asked. The law changes what the question is. It does not remove the question.</p>
+
+    <h2 class="sub">The one that will catch you out</h2>
+
+    <div class="faux">
+      <span class="lab">Faux ami</span>
+      <p><b class="term">Le prélèvement</b> is the retrieval &mdash; <span class="fr">le prélèvement d'organes</span>. But in ordinary French it means a sample, or a deduction: <span class="fr">un prélèvement sanguin</span> is a blood sample, and <span class="fr">le prélèvement automatique</span> is a direct debit from your bank account.</p>
+      <p>The same root, doing both jobs: something taken from a larger whole. Which is either a slightly chilling etymology or a very precise one, depending on your mood.</p>
+    </div>
+
+    <h2 class="sub">Three words worth the detour</h2>
+
+    <p><b class="term">La greffe.</b> The everyday French word for a transplant is not <span class="fr">transplantation</span> but <span class="fr">greffe</span> &mdash; a graft, from horticulture, exactly as English once meant. The same word also names the registry office of a French court, <span class="fr">le greffe du tribunal</span>, because both descend from the Greek <span class="fr">grapheion</span>, a writing stylus, by way of the shape of a grafting shoot. A surgeon and a court clerk are doing etymologically the same thing.</p>
+
+    <p><b class="term">Les proches.</b> Where our law says next of kin, French law says <span class="fr">les proches</span> &mdash; literally the close ones. No hierarchy, no degrees of relation, no schedule of who outranks whom. Just whoever was near. It is a vaguer term and a kinder one, and it describes the people actually standing in the corridor rather better than a legal ranking does.</p>
+
+    <p><b class="term">La mort encéphalique.</b> Brain death, but naming the whole brain rather than the organ &mdash; and French keeps <span class="fr">le donneur</span> and <span class="fr">le receveur</span>, the giver and the receiver, where English reaches for donor and recipient and loses the transaction sitting inside both words.</p>
+  </div>
+
+  <div class="pad" style="padding-top:6px">
+    <div class="reply">
+      <h2>Over to you</h2>
+      <p class="ask">Opt in, or opt out &mdash; which would you rather work under?</p>
+      <p>Not which produces more organs, though that argument is worth having too. Which would you rather be the one holding, at three in the morning, in a room with a family who have just been told? Send me a sentence either way, along with any French or Italian medical word that has caught you out.</p>
+      <p><a class="btn" href="mailto:icuandyou@icloud.com?subject=Le%20coin%20fran%C3%A7ais%20No.%202%20-%20opt%20in%20or%20opt%20out&body=Opt%20in%20or%20opt%20out%20%E2%80%94%20which%20I%20would%20rather%20work%20under%3A%0D%0A%0D%0A%0D%0AWhy%3A%0D%0A%0D%0A%0D%0A---%0D%0A%0D%0AA%20word%20that%20has%20caught%20me%20out%3A%0D%0A%0D%0A%0D%0AName%20(optional)%3A%0D%0A">Send your answer</a></p>
+      <p class="fallback">The button opens a reply straight to me. If your device blocks it, write to <a href="mailto:icuandyou@icloud.com">icuandyou@icloud.com</a> instead.</p>
+    </div>
+  </div>
+
+  <footer>
+    <a class="home" href="./">&larr; &nbsp;All of ICU AND YOU</a><br>
+    Le coin français No. 2 &nbsp;·&nbsp; companion to Mind Map #29, Organ Donation<br>
+    Legal detail from the loi Caillavet (n° 76-1181, 22 December 1976), the health modernisation law of 26 January 2016,
+    and the Agence de la biomédecine. Educational use only &mdash; not legal advice, and Australian law and DonateLife guidance govern practice here.
+  </footer>
+
+</div>
+</body>
+</html>
