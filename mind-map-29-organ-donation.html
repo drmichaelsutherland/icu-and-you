@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ICU AND YOU · Mindmap 29 · Organ Donation</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Spectral:wght@400;500&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --paper:#F7F8F6;
+    --card:#FFFFFF;
+    --ink:#14312E;
+    --ink-soft:#3D5450;
+    --hair:#D8DFDB;
+    --teal:#0F6E56;
+    --amber:#9A6410;
+    --amber-soft:#FAEEDA;
+    --plum:#4A3F86;
+  }
+  *{box-sizing:border-box;}
+  body{
+    margin:0;
+    background:var(--paper);
+    color:var(--ink);
+    font-family:"Spectral",Georgia,serif;
+    font-size:17px;
+    line-height:1.72;
+    -webkit-font-smoothing:antialiased;
+  }
+  .wrap{max-width:720px;margin:0 auto;padding:0 24px 72px;}
+  .sheet{background:var(--card);border:1px solid var(--hair);margin-top:28px;}
+  .inner{padding:44px 52px;}
+
+  /* Masthead */
+  .masthead{padding:34px 52px 26px;border-bottom:1px solid var(--hair);}
+  .eyebrow{
+    font-family:"IBM Plex Mono",monospace;
+    font-size:11.5px;letter-spacing:.18em;text-transform:uppercase;
+    color:var(--teal);margin:0 0 14px;font-weight:500;
+  }
+  .title{
+    font-family:"Fraunces",Georgia,serif;
+    font-weight:600;font-size:44px;line-height:1.0;letter-spacing:-.01em;
+    margin:0;color:var(--ink);
+  }
+  .title small{display:block;font-size:15px;font-weight:400;letter-spacing:.02em;color:var(--ink-soft);margin-top:12px;font-family:"Spectral",serif;font-style:italic;}
+  .trace{display:block;width:100%;height:22px;margin:20px 0 0;}
+  .meta{
+    display:flex;flex-wrap:wrap;gap:20px 34px;margin-top:20px;
+    font-family:"IBM Plex Mono",monospace;font-size:11.5px;letter-spacing:.06em;
+    color:var(--ink-soft);text-transform:uppercase;
+  }
+  .meta b{color:var(--ink);font-weight:500;}
+
+  /* Prose */
+  h2{
+    font-family:"Fraunces",Georgia,serif;font-weight:500;
+    font-size:25px;line-height:1.2;letter-spacing:-.01em;
+    margin:44px 0 4px;color:var(--ink);
+  }
+  h2 .num{
+    font-family:"IBM Plex Mono",monospace;font-size:13px;
+    color:var(--amber);font-weight:500;letter-spacing:.05em;
+    display:block;margin-bottom:8px;
+  }
+  h3{
+    font-family:"Fraunces",serif;font-weight:500;font-size:18px;
+    margin:28px 0 2px;color:var(--ink);
+  }
+  p{margin:14px 0;}
+  .lead{font-size:19px;line-height:1.7;color:var(--ink);}
+  .lead:first-letter{
+    font-family:"Fraunces",serif;font-weight:600;
+    float:left;font-size:64px;line-height:.82;padding:6px 10px 0 0;color:var(--teal);
+  }
+  strong{font-weight:500;color:var(--ink);}
+  em{color:var(--ink-soft);}
+  a{color:var(--teal);text-decoration:underline;text-underline-offset:2px;}
+
+  ul{margin:14px 0;padding-left:0;list-style:none;}
+  ul li{position:relative;padding-left:26px;margin:9px 0;}
+  ul li::before{
+    content:"";position:absolute;left:4px;top:12px;
+    width:7px;height:7px;border:1.5px solid var(--teal);border-radius:50%;
+  }
+
+  /* Stat strip */
+  .stats{
+    display:grid;grid-template-columns:repeat(2,1fr);gap:1px;
+    background:var(--hair);border:1px solid var(--hair);margin:26px 0;
+  }
+  .stat{background:var(--card);padding:20px 22px;}
+  .stat .big{
+    font-family:"Fraunces",serif;font-weight:600;font-size:34px;line-height:1;
+    color:var(--teal);
+  }
+  .stat .lab{
+    font-family:"Spectral",serif;font-size:14.5px;line-height:1.4;
+    color:var(--ink-soft);margin-top:8px;
+  }
+
+  /* Callout */
+  .callout{
+    border-left:3px solid var(--amber);background:var(--amber-soft);
+    padding:20px 26px;margin:26px 0;border-radius:0;
+  }
+  .callout .k{
+    font-family:"IBM Plex Mono",monospace;font-size:11px;letter-spacing:.16em;
+    text-transform:uppercase;color:var(--amber);font-weight:500;margin:0 0 8px;
+  }
+  .callout p{margin:6px 0;color:var(--ink);}
+
+  /* Challenge */
+  .challenge{
+    background:var(--ink);color:#EAF1EE;padding:40px 48px;margin:48px 0 0;
+  }
+  .challenge .k{
+    font-family:"IBM Plex Mono",monospace;font-size:11.5px;letter-spacing:.18em;
+    text-transform:uppercase;color:#8FD0BC;margin:0 0 14px;font-weight:500;
+  }
+  .challenge h2{color:#FFFFFF;margin:0 0 12px;font-size:27px;}
+  .challenge p{color:#CFE0DA;margin:12px 0;font-size:17px;}
+  .challenge a{color:#8FD0BC;}
+
+  /* Figure */
+  figure{margin:32px 0;}
+  figure svg{display:block;width:100%;height:auto;}
+  figcaption{
+    font-family:"IBM Plex Mono",monospace;font-size:11px;letter-spacing:.06em;
+    text-transform:uppercase;color:var(--ink-soft);text-align:center;margin-top:14px;
+  }
+
+  .rule{border:0;border-top:1px solid var(--hair);margin:40px 0;}
+
+  .btn{display:inline-block;margin:6px 0 4px;padding:14px 28px;background:var(--teal);
+    color:#F4FBF8;text-decoration:none;border-radius:28px;
+    font-family:"Spectral",Georgia,serif;font-size:15px;font-weight:500;letter-spacing:.02em;}
+  .btn:hover{background:#0B5442;}
+  .home{display:inline-block;margin:0 0 14px;padding:8px 18px;border-radius:20px;
+    border:1px solid var(--hair);background:#EFF5F2;color:var(--teal);text-decoration:none;
+    font-family:"IBM Plex Mono",monospace;font-size:11px;font-weight:500;
+    letter-spacing:.08em;text-transform:uppercase;}
+  .home:hover{background:var(--teal);border-color:var(--teal);color:#F4FBF8;}
+  footer{
+    padding:34px 52px;border-top:1px solid var(--hair);
+    font-family:"IBM Plex Mono",monospace;font-size:11.5px;line-height:1.8;
+    letter-spacing:.03em;color:var(--ink-soft);
+  }
+  footer .sign{font-family:"Fraunces",serif;font-style:italic;font-size:16px;letter-spacing:0;color:var(--ink);text-transform:none;margin-bottom:16px;}
+
+  @media (max-width:620px){
+    .masthead,.inner,.challenge,footer{padding-left:26px;padding-right:26px;}
+    .title{font-size:34px;}
+    .stats{grid-template-columns:1fr;}
+    .lead:first-letter{font-size:52px;}
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="sheet">
+
+    <!-- Masthead -->
+    <header class="masthead">
+      <p class="eyebrow">ICU and You · the weekly mindmap</p>
+      <h1 class="title">Organ Donation
+        <small>Core business for every intensive care unit — recognition, diagnosis, referral, donor management, follow-up.</small>
+      </h1>
+      <svg class="trace" viewBox="0 0 720 22" preserveAspectRatio="none" aria-hidden="true">
+        <path d="M0 11 L280 11 L292 11 L300 3 L308 20 L316 6 L322 11 L360 11 L720 11"
+              fill="none" stroke="#0F6E56" stroke-width="1.4" stroke-linejoin="round" stroke-linecap="round"/>
+      </svg>
+      <div class="meta">
+        <span>Mindmap <b>No. 29</b></span>
+        <span>Series <b>Mindmap</b></span>
+        <span>DonateLife Week <b>26 Jul – 2 Aug 2026</b></span>
+        <span>Focus <b>Australia</b></span>
+      </div>
+    </header>
+
+    <div class="inner">
+
+      <p class="lead">Donation nearly always needs major input from the ICU team. Every deceased-donor transplant in this country begins in a unit like ours — with a grieving family, and a clinician who recognised the possibility in time. This week's map lays out the work that follows: recognition, diagnosis, referral, donor management, and follow-up and review.</p>
+
+      <p>The framing worth holding onto: donation is not an afterthought bolted onto death. It is a discipline — identification, diagnosis, and physiological stewardship — that sits squarely inside our skill set. The map below is the whole territory on one page; the notes beneath walk each branch.</p>
+
+      <!-- Mindmap -->
+      <figure>
+        <svg viewBox="0 0 780 720" role="img" aria-labelledby="mm-t mm-d">
+          <title id="mm-t">Organ donation in the ICU — mindmap 29</title>
+          <desc id="mm-d">A central topic of organ donation with four branches: registration and consent, donor identification, brain death diagnosis, and donor management.</desc>
+          <defs>
+            <marker id="ar" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+              <path d="M2 1L8 5L2 9" fill="none" stroke="context-stroke" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </marker>
+            <style>
+              .t{font-family:"Fraunces",Georgia,serif;font-weight:500;font-size:14px;}
+              .ts{font-family:"IBM Plex Mono",monospace;font-size:11px;}
+              .arr{stroke:#9CB0AB;stroke-width:1;fill:none;}
+            </style>
+          </defs>
+
+          <!-- centre -->
+          <rect x="290" y="40" width="200" height="58" rx="12" fill="#E1F5EE" stroke="#0F6E56" stroke-width="0.75"/>
+          <text class="t" x="390" y="66" text-anchor="middle" fill="#04342C">Organ donation</text>
+          <text class="ts" x="390" y="84" text-anchor="middle" fill="#0F6E56">the ICU role</text>
+
+          <line x1="340" y1="98" x2="130" y2="150" class="arr" marker-end="url(#ar)"/>
+          <line x1="365" y1="98" x2="300" y2="150" class="arr" marker-end="url(#ar)"/>
+          <line x1="415" y1="98" x2="460" y2="150" class="arr" marker-end="url(#ar)"/>
+          <line x1="445" y1="98" x2="640" y2="150" class="arr" marker-end="url(#ar)"/>
+
+          <!-- branch heads -->
+          <rect x="30" y="150" width="160" height="56" rx="8" fill="#EEEDFE" stroke="#534AB7" stroke-width="0.75"/>
+          <text class="t" x="110" y="174" text-anchor="middle" fill="#26215C">Registration</text>
+          <text class="ts" x="110" y="192" text-anchor="middle" fill="#534AB7">and consent</text>
+
+          <rect x="215" y="150" width="160" height="56" rx="8" fill="#E6F1FB" stroke="#185FA5" stroke-width="0.75"/>
+          <text class="t" x="295" y="174" text-anchor="middle" fill="#042C53">Donor ID</text>
+          <text class="ts" x="295" y="192" text-anchor="middle" fill="#185FA5">who and when</text>
+
+          <rect x="397" y="150" width="160" height="56" rx="8" fill="#FAECE7" stroke="#993C1D" stroke-width="0.75"/>
+          <text class="t" x="477" y="174" text-anchor="middle" fill="#4A1B0C">Diagnosing death</text>
+          <text class="ts" x="477" y="192" text-anchor="middle" fill="#993C1D">BD / DCD</text>
+
+          <rect x="585" y="150" width="160" height="56" rx="8" fill="#FAEEDA" stroke="#854F0B" stroke-width="0.75"/>
+          <text class="t" x="665" y="174" text-anchor="middle" fill="#412402">Management</text>
+          <text class="ts" x="665" y="192" text-anchor="middle" fill="#854F0B">donor optimisation</text>
+
+          <!-- registration detail -->
+          <rect x="25" y="250" width="170" height="42" rx="8" fill="#F5F4FE" stroke="#8A83D6" stroke-width="0.75"/>
+          <text class="ts" x="110" y="276" text-anchor="middle" fill="#4A3F86">36% registered on AODR</text>
+          <line x1="110" y1="206" x2="110" y2="250" class="arr" marker-end="url(#ar)"/>
+          <rect x="25" y="304" width="170" height="42" rx="8" fill="#F5F4FE" stroke="#8A83D6" stroke-width="0.75"/>
+          <text class="ts" x="110" y="330" text-anchor="middle" fill="#4A3F86">Consent rate ~53%</text>
+          <line x1="110" y1="292" x2="110" y2="304" class="arr" marker-end="url(#ar)"/>
+          <rect x="25" y="358" width="170" height="42" rx="8" fill="#F5F4FE" stroke="#8A83D6" stroke-width="0.75"/>
+          <text class="ts" x="110" y="384" text-anchor="middle" fill="#4A3F86">Registered → 8 in 10 yes</text>
+          <line x1="110" y1="346" x2="110" y2="358" class="arr" marker-end="url(#ar)"/>
+
+          <!-- donor id detail -->
+          <rect x="210" y="250" width="170" height="42" rx="8" fill="#F1F7FD" stroke="#6FA6DE" stroke-width="0.75"/>
+          <text class="ts" x="295" y="276" text-anchor="middle" fill="#185FA5">Devastating brain injury</text>
+          <line x1="295" y1="206" x2="295" y2="250" class="arr" marker-end="url(#ar)"/>
+          <rect x="210" y="304" width="170" height="42" rx="8" fill="#F1F7FD" stroke="#6FA6DE" stroke-width="0.75"/>
+          <text class="ts" x="295" y="330" text-anchor="middle" fill="#185FA5">Refer before you speak</text>
+          <line x1="295" y1="292" x2="295" y2="304" class="arr" marker-end="url(#ar)"/>
+          <rect x="210" y="358" width="170" height="42" rx="8" fill="#F1F7FD" stroke="#6FA6DE" stroke-width="0.75"/>
+          <text class="ts" x="295" y="384" text-anchor="middle" fill="#185FA5">~2% of hospital deaths</text>
+          <line x1="295" y1="346" x2="295" y2="358" class="arr" marker-end="url(#ar)"/>
+
+          <!-- brain death detail -->
+          <rect x="395" y="250" width="165" height="42" rx="8" fill="#FCF3EF" stroke="#C97A56" stroke-width="0.75"/>
+          <text class="ts" x="477" y="276" text-anchor="middle" fill="#993C1D">Preconditions</text>
+          <line x1="477" y1="206" x2="477" y2="250" class="arr" marker-end="url(#ar)"/>
+          <rect x="395" y="304" width="165" height="42" rx="8" fill="#FCF3EF" stroke="#C97A56" stroke-width="0.75"/>
+          <text class="ts" x="477" y="330" text-anchor="middle" fill="#993C1D">Two-doctor exam</text>
+          <line x1="477" y1="292" x2="477" y2="304" class="arr" marker-end="url(#ar)"/>
+          <rect x="395" y="358" width="165" height="42" rx="8" fill="#FCF3EF" stroke="#C97A56" stroke-width="0.75"/>
+          <text class="ts" x="477" y="384" text-anchor="middle" fill="#993C1D">Apnoea test</text>
+          <line x1="477" y1="346" x2="477" y2="358" class="arr" marker-end="url(#ar)"/>
+          <rect x="395" y="412" width="165" height="42" rx="8" fill="#FCF3EF" stroke="#C97A56" stroke-width="0.75"/>
+          <text class="ts" x="477" y="438" text-anchor="middle" fill="#993C1D">Ancillary if needed</text>
+          <line x1="477" y1="400" x2="477" y2="412" class="arr" marker-end="url(#ar)"/>
+
+          <!-- management detail -->
+          <rect x="580" y="250" width="170" height="42" rx="8" fill="#FCF6E9" stroke="#D19A3E" stroke-width="0.75"/>
+          <text class="ts" x="665" y="276" text-anchor="middle" fill="#854F0B">The rule of 100s</text>
+          <line x1="665" y1="206" x2="665" y2="250" class="arr" marker-end="url(#ar)"/>
+          <rect x="580" y="304" width="170" height="42" rx="8" fill="#FCF6E9" stroke="#D19A3E" stroke-width="0.75"/>
+          <text class="ts" x="665" y="330" text-anchor="middle" fill="#854F0B">DI · hormones · warming</text>
+          <line x1="665" y1="292" x2="665" y2="304" class="arr" marker-end="url(#ar)"/>
+
+          <!-- synthesis -->
+          <rect x="180" y="520" width="420" height="58" rx="12" fill="#F1EFE8" stroke="#5F5E5A" stroke-width="0.75"/>
+          <text class="t" x="390" y="546" text-anchor="middle" fill="#2C2C2A">The gift depends on us</text>
+          <text class="ts" x="390" y="564" text-anchor="middle" fill="#5F5E5A">identify · refer · diagnose · support · optimise</text>
+          <line x1="110" y1="400" x2="240" y2="520" class="arr" marker-end="url(#ar)" opacity="0.5"/>
+          <line x1="295" y1="400" x2="340" y2="520" class="arr" marker-end="url(#ar)" opacity="0.5"/>
+          <line x1="477" y1="454" x2="450" y2="520" class="arr" marker-end="url(#ar)" opacity="0.5"/>
+          <line x1="665" y1="346" x2="540" y2="520" class="arr" marker-end="url(#ar)" opacity="0.5"/>
+
+          <!-- challenge node -->
+          <rect x="200" y="620" width="380" height="70" rx="12" fill="#E1F5EE" stroke="#0F6E56" stroke-width="0.75"/>
+          <text class="t" x="390" y="650" text-anchor="middle" fill="#04342C">Challenge of the week</text>
+          <text class="ts" x="390" y="670" text-anchor="middle" fill="#0F6E56">What is the rule of 100s?</text>
+          <line x1="390" y1="578" x2="390" y2="620" class="arr" marker-end="url(#ar)"/>
+        </svg>
+        <figcaption>Fig. 29 — Organ donation in the ICU, one page</figcaption>
+      </figure>
+
+      <!-- 1. Registration -->
+      <h2><span class="num">Branch 01</span>The registration gap</h2>
+      <p>The Australian numbers are quietly damning. Four in five of us support donation in principle; only about one in three are registered. The gap is not attitude — it is a one-minute administrative act that nobody quite gets around to. And that gap surfaces at exactly the wrong moment: the family conversation in the hospital.</p>
+
+      <div class="stats">
+        <div class="stat"><div class="big">36%</div><div class="lab">of Australians are registered on the AODR, though four in five support donation</div></div>
+        <div class="stat"><div class="big">53%</div><div class="lab">national consent rate — the sector's stubborn ceiling</div></div>
+        <div class="stat"><div class="big">8 in 10</div><div class="lab">families say yes when their person was registered; four in ten when the wish is unknown</div></div>
+        <div class="stat"><div class="big">1,438</div><div class="lab">lives saved in 2025 through 557 deceased donors — a record year, and still not enough</div></div>
+      </div>
+
+      <p>Roughly 2,000 Australians wait on the transplant list, with another 14,000 on dialysis — many of whom a single kidney would release. The lever that moves consent is not persuasion at the bedside; it is a decision made calmly, in advance, and spoken aloud to family. Friction, not conviction, is the enemy.</p>
+
+      <!-- 2. Donor ID -->
+      <h2><span class="num">Branch 02</span>Identifying the donor</h2>
+      <p>This is where the intensivist holds the lever. The single most important idea for trainees: identification is a <strong>systems task, not a judgement call</strong>. Missed donors are rarely lost to bad medicine; they are lost to a well-meaning clinician who decided in advance that the patient was too old, too complicated, or that the family would surely refuse. None of those are our call to make.</p>
+
+      <h3>The trigger to refer</h3>
+      <p>Any patient with a devastating, non-survivable brain injury where either brain death is anticipated, or withdrawal of life-sustaining treatment is being considered — for any reason. Refer <strong>all</strong> patients on an end-of-life pathway: the Organ and Tissue Donation Service wants to know about every one of these, and suitability is theirs to determine, not ours. The two pathways:</p>
+      <ul>
+        <li><strong>DBD</strong> — donation after brain death: the ventilated, heart-beating donor. Refer on <em>suspicion</em> of brain death, not after confirmation.</li>
+        <li><strong>DCD</strong> — donation after circulatory death: any planned withdrawal is a trigger. This is the one trainees miss, because the patient isn't brain-dead and the mental model of "the donor" never fires.</li>
+      </ul>
+
+      <h3>Refer before you speak</h3>
+      <p>The rule that matters most in practice: contact the donation service <em>before</em> donation is ever raised with the family, and before withdrawal. This preserves the option, and it allows <strong>decoupling</strong> — separating the conversation about death from the conversation about donation, with the latter led by a trained requester alongside you. Decoupling and trained requesters are among the most robust findings in the field: consent rates rise when the ask is made well, by someone prepared for it, rather than bolted onto a futility discussion by a tired registrar at 3am.</p>
+
+      <div class="callout">
+        <p class="k">Not your call to exclude</p>
+        <p>Age. Past medical history. A drinker, a smoker, a diabetic. Presumed family refusal. Presumed patient wishes. Suitability is determined downstream, with far more information than the bedside has. The absolute contraindications are narrow and specified — and even they belong to the donation service, not the night registrar.</p>
+      </div>
+
+      <!-- 3. Brain death -->
+      <h2><span class="num">Branch 03</span>Diagnosing death</h2>
+      <p>The governing authority in this country is the <strong>ANZICS Statement on Death and Organ Donation</strong> — cite it, and know it. Brain death determination follows a fixed architecture, and skipping a step invalidates everything above it.</p>
+      <ul>
+        <li><strong>Preconditions</strong> — a known, catastrophic, irreversible cause; a minimum observation period; normothermia and normotension; no sedatives or neuromuscular blockade; no confounding metabolic or endocrine disturbance; no severe hypoxaemia. Miss one and the exam is void.</li>
+        <li><strong>Clinical exam</strong> — two doctors, each with the specified experience, neither on the transplant team, examining independently for absent brainstem reflexes: pupillary, corneal, oculovestibular, oculocephalic, gag and cough, and no motor response in the cranial nerve distribution.</li>
+        <li><strong>Apnoea test</strong> — no respiratory drive at an adequately elevated PaCO₂ from a sound baseline.</li>
+        <li><strong>Ancillary testing</strong> — cerebral angiography or radionuclide perfusion, required only when clinical testing cannot be completed.</li>
+      </ul>
+
+      <!-- 4. Management -->
+      <h2><span class="num">Branch 04</span>Protecting the donor</h2>
+      <p>Brain death is a physiological storm followed by a collapse: vasomotor tone is lost, diabetes insipidus pours out, the myocardium falters, temperature falls, coagulation frays. Management is no longer about the person — it is about protecting the organs for the people waiting. The paradox is this: the ceiling of care hasn't lowered here. It has <em>risen</em>. You are resuscitating for two.</p>
+      <p>The bedside shorthand for the perfusion targets is <strong>the rule of 100s</strong> — four numbers that keep the organs viable, sitting on top of the real work: desmopressin for the DI, hormonal resuscitation in the unstable donor, lung-protective ventilation and recruitment, active rewarming, glycaemic control. As for the four numbers themselves — see this week's challenge.</p>
+
+    </div>
+
+    <!-- Challenge -->
+    <section class="challenge">
+      <p class="k">Challenge of the week</p>
+      <h2>What is the rule of 100s?</h2>
+      <p>An easy one this week. One question: what is the "rule of 100s" in the management of the organ donor? I'll share the sharpest replies in a coming edition.</p>
+      <p><a class="btn" href="mailto:icuandyou@icloud.com?subject=Mind%20Map%20%2329%20-%20the%20rule%20of%20100s&body=The%20rule%20of%20100s%2C%20as%20I%20understand%20it%3A%0D%0A%0D%0A%0D%0A---%0D%0A%0D%0AName%20(optional)%3A%0D%0A">Send your answer</a></p>
+      <p>And if you take one thing from this issue into your own life rather than the unit — spend the minute. Register your decision on the Australian Organ Donor Register, and tell your family what you chose. Eight in ten, versus four in ten. That is the whole argument.</p>
+    </section>
+
+    <footer>
+      <a class="home" href="./">&larr; &nbsp;All of ICU AND YOU</a><br>
+      <div class="sign">— Until next week, Michael</div>
+      ICU AND YOU · Mindmap No. 29 · Organ Donation<br>
+      Sources: DonateLife / Organ and Tissue Authority 2025 activity data · ANZICS Statement on Death and Organ Donation<br>
+      DonateLife Week: 26 July – 2 August 2026 · Register at donatelife.gov.au
+    </footer>
+
+  </div>
+</div>
+</body>
+</html>
