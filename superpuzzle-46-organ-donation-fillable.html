@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ICU AND YOU · Superpuzzle 46 · Organ Donation</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Spectral:wght@400;500&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  :root{--paper:#F7F8F6;--card:#FFFFFF;--ink:#14312E;--ink-soft:#3D5450;--hair:#D8DFDB;--teal:#0F6E56;--amber:#9A6410;}
+  *{box-sizing:border-box;}
+  body{margin:0;background:var(--paper);color:var(--ink);font-family:"Spectral",Georgia,serif;font-size:16px;line-height:1.65;-webkit-font-smoothing:antialiased;}
+  .wrap{max-width:760px;margin:0 auto;padding:32px 22px 72px;}
+  .card{background:var(--card);border:1px solid var(--hair);padding:34px 30px 30px;}
+  .eyebrow{font-family:"IBM Plex Mono",monospace;font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:var(--teal);font-weight:500;margin:0 0 12px;}
+  h1{font-family:"Fraunces",serif;font-weight:600;font-size:30px;margin:0 0 4px;letter-spacing:-.01em;}
+  .sub{color:var(--ink-soft);margin:0 0 22px;font-size:15px;}
+  .scroll{overflow-x:auto;padding-bottom:8px;-webkit-overflow-scrolling:touch;}
+  .grid{display:grid;grid-template-columns:repeat(23,32px);grid-template-rows:repeat(16,32px);gap:0;width:736px;margin:2px auto 4px;}
+  .cell{position:relative;border:0.5px solid var(--hair);background:var(--card);}
+  .cell input{width:100%;height:100%;border:0;background:transparent;text-align:center;text-transform:uppercase;font-family:"IBM Plex Mono",monospace;font-size:15px;color:var(--ink);padding:0;}
+  .cell input:focus{outline:2px solid var(--teal);outline-offset:-2px;background:#E1F5EE;}
+  .cn{position:absolute;top:1px;left:2px;font-family:"IBM Plex Mono",monospace;font-size:8px;line-height:1;color:var(--ink-soft);}
+  .hint{font-family:"IBM Plex Mono",monospace;font-size:11px;color:var(--ink-soft);text-align:center;margin:0 0 22px;}
+  .clues{display:grid;grid-template-columns:1fr 1fr;gap:26px;margin-top:26px;}
+  .clues h2{font-family:"Fraunces",serif;font-weight:500;font-size:17px;margin:0 0 10px;color:var(--ink);border-bottom:1px solid var(--hair);padding-bottom:6px;}
+  .clues ul{list-style:none;margin:0;padding:0;}
+  .clues li{display:flex;gap:10px;margin:0 0 12px;font-size:14.5px;line-height:1.5;}
+  .cnum{font-family:"IBM Plex Mono",monospace;font-size:12px;color:var(--teal);font-weight:500;min-width:20px;text-align:right;}
+  .len{color:var(--ink-soft);font-family:"IBM Plex Mono",monospace;font-size:12px;}
+  .send{margin-top:30px;padding-top:24px;border-top:1px solid var(--hair);}
+  .send label{display:block;font-family:"IBM Plex Mono",monospace;font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:var(--teal);margin:0 0 7px;}
+  .send input[type=text]{width:100%;max-width:320px;font-family:"Spectral",serif;font-size:16px;border:1px solid var(--hair);border-radius:8px;padding:10px 12px;color:var(--ink);}
+  .send input[type=text]:focus{outline:none;border-color:var(--teal);}
+  .btn{margin-top:16px;font-family:"IBM Plex Mono",monospace;font-size:13px;letter-spacing:.03em;background:var(--teal);color:#fff;border:none;border-radius:9px;padding:13px 22px;cursor:pointer;}
+  .btn:hover{filter:brightness(.95);}
+  .send p{font-size:14px;color:var(--ink-soft);margin:14px 0 0;}
+  .home{display:inline-block;margin:0 0 12px;padding:8px 18px;border-radius:20px;
+    border:1px solid var(--hair);background:#EFF5F2;color:var(--teal);text-decoration:none;
+    font-family:"IBM Plex Mono",monospace;font-size:11px;font-weight:500;
+    letter-spacing:.08em;text-transform:uppercase;}
+  .home:hover{background:var(--teal);border-color:var(--teal);color:#F4FBF8;}
+  footer{font-family:"IBM Plex Mono",monospace;font-size:11px;color:var(--ink-soft);text-align:center;margin-top:20px;line-height:1.7;}
+  @media (max-width:620px){ .clues{grid-template-columns:1fr;} .card{padding:26px 18px;} }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="card">
+    <p class="eyebrow">ICU and You · Superpuzzle No. 46</p>
+    <h1>Organ donation</h1>
+    <p class="sub">Fifteen clues across four flavours — must-knows, history, and the odd quirk. Fill it in, then send it straight to me with the button below.</p>
+
+    <div class="scroll">
+      <div class="grid">
+<div class="cell" style="grid-row:1;grid-column:8;"><span class="cn">1</span><input id="i0_7" maxlength="1" autocomplete="off" aria-label="cell 1,8"></div>
+<div class="cell" style="grid-row:1;grid-column:9;"><input id="i0_8" maxlength="1" autocomplete="off" aria-label="cell 1,9"></div>
+<div class="cell" style="grid-row:1;grid-column:10;"><span class="cn">2</span><input id="i0_9" maxlength="1" autocomplete="off" aria-label="cell 1,10"></div>
+<div class="cell" style="grid-row:1;grid-column:11;"><input id="i0_10" maxlength="1" autocomplete="off" aria-label="cell 1,11"></div>
+<div class="cell" style="grid-row:1;grid-column:17;"><span class="cn">3</span><input id="i0_16" maxlength="1" autocomplete="off" aria-label="cell 1,17"></div>
+<div class="cell" style="grid-row:1;grid-column:21;"><span class="cn">4</span><input id="i0_20" maxlength="1" autocomplete="off" aria-label="cell 1,21"></div>
+<div class="cell" style="grid-row:2;grid-column:10;"><input id="i1_9" maxlength="1" autocomplete="off" aria-label="cell 2,10"></div>
+<div class="cell" style="grid-row:2;grid-column:17;"><input id="i1_16" maxlength="1" autocomplete="off" aria-label="cell 2,17"></div>
+<div class="cell" style="grid-row:2;grid-column:20;"><span class="cn">5</span><input id="i1_19" maxlength="1" autocomplete="off" aria-label="cell 2,20"></div>
+<div class="cell" style="grid-row:2;grid-column:21;"><input id="i1_20" maxlength="1" autocomplete="off" aria-label="cell 2,21"></div>
+<div class="cell" style="grid-row:2;grid-column:22;"><input id="i1_21" maxlength="1" autocomplete="off" aria-label="cell 2,22"></div>
+<div class="cell" style="grid-row:2;grid-column:23;"><span class="cn">6</span><input id="i1_22" maxlength="1" autocomplete="off" aria-label="cell 2,23"></div>
+<div class="cell" style="grid-row:3;grid-column:8;"><span class="cn">7</span><input id="i2_7" maxlength="1" autocomplete="off" aria-label="cell 3,8"></div>
+<div class="cell" style="grid-row:3;grid-column:9;"><input id="i2_8" maxlength="1" autocomplete="off" aria-label="cell 3,9"></div>
+<div class="cell" style="grid-row:3;grid-column:10;"><input id="i2_9" maxlength="1" autocomplete="off" aria-label="cell 3,10"></div>
+<div class="cell" style="grid-row:3;grid-column:14;"><span class="cn">8</span><input id="i2_13" maxlength="1" autocomplete="off" aria-label="cell 3,14"></div>
+<div class="cell" style="grid-row:3;grid-column:17;"><input id="i2_16" maxlength="1" autocomplete="off" aria-label="cell 3,17"></div>
+<div class="cell" style="grid-row:3;grid-column:21;"><input id="i2_20" maxlength="1" autocomplete="off" aria-label="cell 3,21"></div>
+<div class="cell" style="grid-row:3;grid-column:23;"><input id="i2_22" maxlength="1" autocomplete="off" aria-label="cell 3,23"></div>
+<div class="cell" style="grid-row:4;grid-column:10;"><span class="cn">9</span><input id="i3_9" maxlength="1" autocomplete="off" aria-label="cell 4,10"></div>
+<div class="cell" style="grid-row:4;grid-column:11;"><input id="i3_10" maxlength="1" autocomplete="off" aria-label="cell 4,11"></div>
+<div class="cell" style="grid-row:4;grid-column:12;"><span class="cn">10</span><input id="i3_11" maxlength="1" autocomplete="off" aria-label="cell 4,12"></div>
+<div class="cell" style="grid-row:4;grid-column:13;"><input id="i3_12" maxlength="1" autocomplete="off" aria-label="cell 4,13"></div>
+<div class="cell" style="grid-row:4;grid-column:14;"><input id="i3_13" maxlength="1" autocomplete="off" aria-label="cell 4,14"></div>
+<div class="cell" style="grid-row:4;grid-column:15;"><input id="i3_14" maxlength="1" autocomplete="off" aria-label="cell 4,15"></div>
+<div class="cell" style="grid-row:4;grid-column:16;"><input id="i3_15" maxlength="1" autocomplete="off" aria-label="cell 4,16"></div>
+<div class="cell" style="grid-row:4;grid-column:17;"><input id="i3_16" maxlength="1" autocomplete="off" aria-label="cell 4,17"></div>
+<div class="cell" style="grid-row:4;grid-column:18;"><input id="i3_17" maxlength="1" autocomplete="off" aria-label="cell 4,18"></div>
+<div class="cell" style="grid-row:4;grid-column:19;"><input id="i3_18" maxlength="1" autocomplete="off" aria-label="cell 4,19"></div>
+<div class="cell" style="grid-row:4;grid-column:20;"><input id="i3_19" maxlength="1" autocomplete="off" aria-label="cell 4,20"></div>
+<div class="cell" style="grid-row:4;grid-column:21;"><input id="i3_20" maxlength="1" autocomplete="off" aria-label="cell 4,21"></div>
+<div class="cell" style="grid-row:4;grid-column:23;"><input id="i3_22" maxlength="1" autocomplete="off" aria-label="cell 4,23"></div>
+<div class="cell" style="grid-row:5;grid-column:12;"><input id="i4_11" maxlength="1" autocomplete="off" aria-label="cell 5,12"></div>
+<div class="cell" style="grid-row:5;grid-column:14;"><input id="i4_13" maxlength="1" autocomplete="off" aria-label="cell 5,14"></div>
+<div class="cell" style="grid-row:5;grid-column:17;"><input id="i4_16" maxlength="1" autocomplete="off" aria-label="cell 5,17"></div>
+<div class="cell" style="grid-row:5;grid-column:21;"><input id="i4_20" maxlength="1" autocomplete="off" aria-label="cell 5,21"></div>
+<div class="cell" style="grid-row:5;grid-column:23;"><input id="i4_22" maxlength="1" autocomplete="off" aria-label="cell 5,23"></div>
+<div class="cell" style="grid-row:6;grid-column:8;"><span class="cn">11</span><input id="i5_7" maxlength="1" autocomplete="off" aria-label="cell 6,8"></div>
+<div class="cell" style="grid-row:6;grid-column:9;"><input id="i5_8" maxlength="1" autocomplete="off" aria-label="cell 6,9"></div>
+<div class="cell" style="grid-row:6;grid-column:10;"><input id="i5_9" maxlength="1" autocomplete="off" aria-label="cell 6,10"></div>
+<div class="cell" style="grid-row:6;grid-column:11;"><input id="i5_10" maxlength="1" autocomplete="off" aria-label="cell 6,11"></div>
+<div class="cell" style="grid-row:6;grid-column:12;"><input id="i5_11" maxlength="1" autocomplete="off" aria-label="cell 6,12"></div>
+<div class="cell" style="grid-row:6;grid-column:13;"><input id="i5_12" maxlength="1" autocomplete="off" aria-label="cell 6,13"></div>
+<div class="cell" style="grid-row:6;grid-column:21;"><input id="i5_20" maxlength="1" autocomplete="off" aria-label="cell 6,21"></div>
+<div class="cell" style="grid-row:6;grid-column:23;"><input id="i5_22" maxlength="1" autocomplete="off" aria-label="cell 6,23"></div>
+<div class="cell" style="grid-row:7;grid-column:12;"><input id="i6_11" maxlength="1" autocomplete="off" aria-label="cell 7,12"></div>
+<div class="cell" style="grid-row:7;grid-column:21;"><input id="i6_20" maxlength="1" autocomplete="off" aria-label="cell 7,21"></div>
+<div class="cell" style="grid-row:7;grid-column:23;"><input id="i6_22" maxlength="1" autocomplete="off" aria-label="cell 7,23"></div>
+<div class="cell" style="grid-row:8;grid-column:7;"><span class="cn">12</span><input id="i7_6" maxlength="1" autocomplete="off" aria-label="cell 8,7"></div>
+<div class="cell" style="grid-row:8;grid-column:8;"><input id="i7_7" maxlength="1" autocomplete="off" aria-label="cell 8,8"></div>
+<div class="cell" style="grid-row:8;grid-column:9;"><span class="cn">13</span><input id="i7_8" maxlength="1" autocomplete="off" aria-label="cell 8,9"></div>
+<div class="cell" style="grid-row:8;grid-column:10;"><input id="i7_9" maxlength="1" autocomplete="off" aria-label="cell 8,10"></div>
+<div class="cell" style="grid-row:8;grid-column:11;"><input id="i7_10" maxlength="1" autocomplete="off" aria-label="cell 8,11"></div>
+<div class="cell" style="grid-row:8;grid-column:12;"><input id="i7_11" maxlength="1" autocomplete="off" aria-label="cell 8,12"></div>
+<div class="cell" style="grid-row:8;grid-column:13;"><input id="i7_12" maxlength="1" autocomplete="off" aria-label="cell 8,13"></div>
+<div class="cell" style="grid-row:8;grid-column:23;"><input id="i7_22" maxlength="1" autocomplete="off" aria-label="cell 8,23"></div>
+<div class="cell" style="grid-row:9;grid-column:9;"><input id="i8_8" maxlength="1" autocomplete="off" aria-label="cell 9,9"></div>
+<div class="cell" style="grid-row:10;grid-column:9;"><input id="i9_8" maxlength="1" autocomplete="off" aria-label="cell 10,9"></div>
+<div class="cell" style="grid-row:11;grid-column:9;"><input id="i10_8" maxlength="1" autocomplete="off" aria-label="cell 11,9"></div>
+<div class="cell" style="grid-row:12;grid-column:9;"><input id="i11_8" maxlength="1" autocomplete="off" aria-label="cell 12,9"></div>
+<div class="cell" style="grid-row:13;grid-column:1;"><span class="cn">14</span><input id="i12_0" maxlength="1" autocomplete="off" aria-label="cell 13,1"></div>
+<div class="cell" style="grid-row:13;grid-column:2;"><input id="i12_1" maxlength="1" autocomplete="off" aria-label="cell 13,2"></div>
+<div class="cell" style="grid-row:13;grid-column:3;"><input id="i12_2" maxlength="1" autocomplete="off" aria-label="cell 13,3"></div>
+<div class="cell" style="grid-row:13;grid-column:4;"><input id="i12_3" maxlength="1" autocomplete="off" aria-label="cell 13,4"></div>
+<div class="cell" style="grid-row:13;grid-column:5;"><input id="i12_4" maxlength="1" autocomplete="off" aria-label="cell 13,5"></div>
+<div class="cell" style="grid-row:13;grid-column:6;"><input id="i12_5" maxlength="1" autocomplete="off" aria-label="cell 13,6"></div>
+<div class="cell" style="grid-row:13;grid-column:7;"><input id="i12_6" maxlength="1" autocomplete="off" aria-label="cell 13,7"></div>
+<div class="cell" style="grid-row:13;grid-column:8;"><input id="i12_7" maxlength="1" autocomplete="off" aria-label="cell 13,8"></div>
+<div class="cell" style="grid-row:13;grid-column:9;"><input id="i12_8" maxlength="1" autocomplete="off" aria-label="cell 13,9"></div>
+<div class="cell" style="grid-row:13;grid-column:10;"><input id="i12_9" maxlength="1" autocomplete="off" aria-label="cell 13,10"></div>
+<div class="cell" style="grid-row:13;grid-column:11;"><input id="i12_10" maxlength="1" autocomplete="off" aria-label="cell 13,11"></div>
+<div class="cell" style="grid-row:13;grid-column:12;"><input id="i12_11" maxlength="1" autocomplete="off" aria-label="cell 13,12"></div>
+<div class="cell" style="grid-row:14;grid-column:9;"><input id="i13_8" maxlength="1" autocomplete="off" aria-label="cell 14,9"></div>
+<div class="cell" style="grid-row:15;grid-column:7;"><span class="cn">15</span><input id="i14_6" maxlength="1" autocomplete="off" aria-label="cell 15,7"></div>
+<div class="cell" style="grid-row:15;grid-column:8;"><input id="i14_7" maxlength="1" autocomplete="off" aria-label="cell 15,8"></div>
+<div class="cell" style="grid-row:15;grid-column:9;"><input id="i14_8" maxlength="1" autocomplete="off" aria-label="cell 15,9"></div>
+<div class="cell" style="grid-row:15;grid-column:10;"><input id="i14_9" maxlength="1" autocomplete="off" aria-label="cell 15,10"></div>
+<div class="cell" style="grid-row:15;grid-column:11;"><input id="i14_10" maxlength="1" autocomplete="off" aria-label="cell 15,11"></div>
+<div class="cell" style="grid-row:15;grid-column:12;"><input id="i14_11" maxlength="1" autocomplete="off" aria-label="cell 15,12"></div>
+<div class="cell" style="grid-row:15;grid-column:13;"><input id="i14_12" maxlength="1" autocomplete="off" aria-label="cell 15,13"></div>
+<div class="cell" style="grid-row:15;grid-column:14;"><input id="i14_13" maxlength="1" autocomplete="off" aria-label="cell 15,14"></div>
+<div class="cell" style="grid-row:15;grid-column:15;"><input id="i14_14" maxlength="1" autocomplete="off" aria-label="cell 15,15"></div>
+<div class="cell" style="grid-row:16;grid-column:9;"><input id="i15_8" maxlength="1" autocomplete="off" aria-label="cell 16,9"></div>
+      </div>
+    </div>
+    <p class="hint">Tip: on a phone, the grid scrolls sideways. Tap a square and type.</p>
+
+    <div class="clues">
+      <div><h2>Across</h2><ul>
+<li><span class="cnum">1</span><span class="ctxt">National register where every Australian can record a donation decision (initials) <span class="len">(4)</span></span></li>
+<li><span class="cnum">5</span><span class="ctxt">The kind of ischaemia measured in minutes, at body temperature, critical in DCD <span class="len">(4)</span></span></li>
+<li><span class="cnum">7</span><span class="ctxt">Antigen system matched between donor and recipient (initials) <span class="len">(3)</span></span></li>
+<li><span class="cnum">9</span><span class="ctxt">Drug given to the donor to control diabetes insipidus <span class="len">(12)</span></span></li>
+<li><span class="cnum">11</span><span class="ctxt">Performed the first successful kidney transplant in 1954, between identical twins; later a Nobel laureate <span class="len">(6)</span></span></li>
+<li><span class="cnum">12</span><span class="ctxt">___ perfusion: pumping oxygenated fluid through an organ rather than icing it <span class="len">(7)</span></span></li>
+<li><span class="cnum">14</span><span class="ctxt">Immunosuppressant discovered in a soil fungus that transformed transplantation in the 1980s <span class="len">(12)</span></span></li>
+<li><span class="cnum">15</span><span class="ctxt">Fluid named for the university of this US state is used for flushing and preserving donor abdominal organs — liver, kidney, pancreas. Home of the Packers <span class="len">(9)</span></span></li>
+      </ul></div>
+      <div><h2>Down</h2><ul>
+<li><span class="cnum">2</span><span class="ctxt">The “___ donor rule” — the ethical line that donation must not cause death <span class="len">(4)</span></span></li>
+<li><span class="cnum">3</span><span class="ctxt">For the pupillary criteria of brain death diagnosis, the pupils need not be dilated, but they must be this <span class="len">(5)</span></span></li>
+<li><span class="cnum">4</span><span class="ctxt">Surgeon who performed the first human heart transplant, Cape Town, 1967 <span class="len">(7)</span></span></li>
+<li><span class="cnum">6</span><span class="ctxt">Colour of the DonateLife logo; also the colour of the Sydney Sixers cricket team <span class="len">(7)</span></span></li>
+<li><span class="cnum">8</span><span class="ctxt">Technique keeping a retrieved organ perfused in transit — “heart in a ___” <span class="len">(3)</span></span></li>
+<li><span class="cnum">10</span><span class="ctxt">Country leading the world in donation rates, with an opt-out system and a national transplant organisation; also won the Football World Cup <span class="len">(5)</span></span></li>
+<li><span class="cnum">13</span><span class="ctxt">Mixed ___: coexisting donor and host marrow that can free a recipient from anti-rejection drugs <span class="len">(9)</span></span></li>
+      </ul></div>
+    </div>
+
+    <div class="send">
+      <label for="who">Your name (so I know whose answers these are)</label>
+      <input id="who" type="text" placeholder="e.g. Dr Jane Smith">
+      <div><button class="btn" onclick="sendAnswers()">Send my completed puzzle to Michael</button></div>
+      <p>This opens an email to me with your answers filled in — just press send. No screenshot needed.</p>
+    </div>
+  </div>
+  <footer><a class="home" href="./">&larr; &nbsp;All of ICU AND YOU</a><br>ICU AND YOU · Superpuzzle No. 46 · Organ donation</footer>
+</div>
+
+<script>
+const CLUES = {"1A": ["0_7", "0_8", "0_9", "0_10"], "5A": ["1_19", "1_20", "1_21", "1_22"], "7A": ["2_7", "2_8", "2_9"], "9A": ["3_9", "3_10", "3_11", "3_12", "3_13", "3_14", "3_15", "3_16", "3_17", "3_18", "3_19", "3_20"], "11A": ["5_7", "5_8", "5_9", "5_10", "5_11", "5_12"], "12A": ["7_6", "7_7", "7_8", "7_9", "7_10", "7_11", "7_12"], "14A": ["12_0", "12_1", "12_2", "12_3", "12_4", "12_5", "12_6", "12_7", "12_8", "12_9", "12_10", "12_11"], "15A": ["14_6", "14_7", "14_8", "14_9", "14_10", "14_11", "14_12", "14_13", "14_14"], "2D": ["0_9", "1_9", "2_9", "3_9"], "3D": ["0_16", "1_16", "2_16", "3_16", "4_16"], "4D": ["0_20", "1_20", "2_20", "3_20", "4_20", "5_20", "6_20"], "6D": ["1_22", "2_22", "3_22", "4_22", "5_22", "6_22", "7_22"], "8D": ["2_13", "3_13", "4_13"], "10D": ["3_11", "4_11", "5_11", "6_11", "7_11"], "13D": ["7_8", "8_8", "9_8", "10_8", "11_8", "12_8", "13_8", "14_8", "15_8"]};
+const ORDER_A = ["1A","5A","7A","9A","11A","12A","14A","15A"];
+const ORDER_D = ["2D","3D","4D","6D","8D","10D","13D"];
+function readClue(key){
+  return CLUES[key].map(id=>{
+    const el=document.getElementById("i"+id);
+    const v=(el&&el.value?el.value:"_").toUpperCase();
+    return v.trim()===""?"_":v;
+  }).join("");
+}
+function sendAnswers(){
+  const who=(document.getElementById("who").value||"").trim();
+  let body="ICU Superpuzzle 46 — organ donation\n";
+  if(who) body+="From: "+who+"\n";
+  body+="\nACROSS\n";
+  ORDER_A.forEach(k=>{ body+=k.replace("A"," across")+": "+readClue(k)+"\n"; });
+  body+="\nDOWN\n";
+  ORDER_D.forEach(k=>{ body+=k.replace("D"," down")+": "+readClue(k)+"\n"; });
+  const subj="ICU Superpuzzle 46 — completed"+(who?(" ("+who+")"):"");
+  const href="mailto:icuandyou@icloud.com?subject="+encodeURIComponent(subj)+"&body="+encodeURIComponent(body);
+  window.location.href=href;
+}
+// auto-advance within a row on typing
+document.querySelectorAll('.cell input').forEach(inp=>{
+  inp.addEventListener('input',e=>{
+    e.target.value=e.target.value.toUpperCase();
+  });
+});
+</script>
+</body>
+</html>
