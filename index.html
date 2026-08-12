@@ -8,7 +8,7 @@
 <style>
   :root{
     --paper:#FBF9F5; --ink:#1B2A33; --muted:#6E6B63; --rule:#DED8CC;
-    --teal:#2E6473; --plum:#6B4570; --rust:#A8442A; --olive:#5F6B33; --bleu:#2F4A7C; --slate:#3E4A52; --verde:#2A6B47;
+    --teal:#2E6473; --plum:#6B4570; --rust:#A8442A; --olive:#5F6B33; --bleu:#2F4A7C; --slate:#3E4A52; --verde:#2A6B47; --sepia:#6B4A2F;
   }
   *{box-sizing:border-box}
   body{margin:0;background:#F3EFE8;color:var(--ink);
@@ -43,6 +43,7 @@
   .chip.bleu.on{background:var(--bleu);border-color:var(--bleu)}
   .chip.slate.on{background:var(--slate);border-color:var(--slate)}
   .chip.verde.on{background:var(--verde);border-color:var(--verde)}
+  .chip.sepia.on{background:var(--sepia);border-color:var(--sepia)}
 
   /* ── This week ─────────────────────────────────────────── */
   .week{padding:30px 36px 34px;background:#F6F2E8;border-bottom:1px solid var(--rule)}
@@ -55,7 +56,7 @@
     border-left-width:5px;border-radius:9px;background:#fff}
   .item.teal{border-left-color:var(--teal)} .item.plum{border-left-color:var(--plum)}
   .item.rust{border-left-color:var(--rust)} .item.olive{border-left-color:var(--olive)}
-  .item.bleu{border-left-color:var(--bleu)} .item.slate{border-left-color:var(--slate)} .item.verde{border-left-color:var(--verde)}
+  .item.bleu{border-left-color:var(--bleu)} .item.slate{border-left-color:var(--slate)} .item.verde{border-left-color:var(--verde)} .item.sepia{border-left-color:var(--sepia)}
   .badge{flex:0 0 76px;text-align:center;
     font:600 10.5px 'Helvetica Neue',Arial,sans-serif;letter-spacing:.12em;
     text-transform:uppercase;color:var(--muted);padding-top:3px}
@@ -83,7 +84,7 @@
     border-bottom:1px solid #EDE7DC;border-left:3px solid transparent}
   li.row.teal{border-left-color:var(--teal)} li.row.plum{border-left-color:var(--plum)}
   li.row.rust{border-left-color:var(--rust)} li.row.olive{border-left-color:var(--olive)}
-  li.row.bleu{border-left-color:var(--bleu)} li.row.slate{border-left-color:var(--slate)} li.row.verde{border-left-color:var(--verde)}
+  li.row.bleu{border-left-color:var(--bleu)} li.row.slate{border-left-color:var(--slate)} li.row.verde{border-left-color:var(--verde)} li.row.sepia{border-left-color:var(--sepia)}
   li.row:hover{background:#F7F4ED}
   .rs{flex:0 0 112px;font:600 10.5px 'Helvetica Neue',Arial,sans-serif;letter-spacing:.1em;
     text-transform:uppercase;color:var(--muted)}
@@ -142,6 +143,7 @@
       <button class="chip bleu" data-f="coin" type="button">Le coin français</button>
       <button class="chip slate" data-f="podcast" type="button">Podcast sessions</button>
       <button class="chip verde" data-f="italiano" type="button">L'angolo italiano</button>
+      <button class="chip sepia" data-f="journal" type="button">Journal club</button>
     </div>
   </div>
 
@@ -207,6 +209,14 @@
             <div class="links"><a class="go" href="angolo-italiano-01-la-ruota.html">Open</a></div>
           </div>
         </li>
+        <li class="item sepia" data-series="journal">
+          <div class="badge">Journal club<b>96</b></div>
+          <div class="body">
+            <h3>The NICU Survival Guide</h3>
+            <p>Sixty-seven pages written by residents, for residents — what transfers, what does not, and why the local artefact is the interesting part.</p>
+            <div class="links"><a class="go" href="journal-club-96-nicu-survival-guide.html">Open</a></div>
+          </div>
+        </li>
     </ul>
   </section>
 
@@ -224,6 +234,7 @@
           <li class="row bleu" data-series="coin"><span class="rs">Le coin français</span><span class="rn">1</span><a class="rt" href="coin-francais-01-la-couveuse.html">La couveuse</a></li>
           <li class="row slate" data-series="podcast"><span class="rs">Podcast</span><span class="rn">55</span><a class="rt" href="podcast-55-neonatal-vasoactive-drugs.html">Cardiac Drugs: Vasopressors and Inotropic Agents</a></li>
           <li class="row verde" data-series="italiano"><span class="rs">L&#x27;angolo italiano</span><span class="rn">1</span><a class="rt" href="angolo-italiano-01-la-ruota.html">La ruota</a></li>
+          <li class="row sepia" data-series="journal"><span class="rs">Journal club</span><span class="rn">96</span><a class="rt" href="journal-club-96-nicu-survival-guide.html">The NICU Survival Guide</a></li>
         </ul>
       </section>
       <section class="group" data-topic="Transplantation">
