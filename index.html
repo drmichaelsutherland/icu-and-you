@@ -24,6 +24,13 @@
   h1{font-size:38px;line-height:1.12;margin:0 0 10px;font-weight:400;letter-spacing:-.015em}
   .kicker{font-style:italic;color:var(--muted);margin:0;font-size:17px}
 
+  .jump{margin:0;padding:14px 36px;background:#F1EDE4;border-bottom:1px solid var(--rule);
+    text-align:center;font:400 15.5px 'Iowan Old Style',Palatino,Georgia,serif;color:var(--muted)}
+  .jump a{color:var(--teal);text-decoration:none;border-bottom:1px solid #B8CBD1;
+    padding-bottom:1px;font-weight:500}
+  .jump a:hover{color:var(--ink);border-bottom-color:var(--ink)}
+  html{scroll-behavior:smooth}
+  section[id]{scroll-margin-top:104px}
   .controls{padding:16px 36px 14px;border-bottom:1px solid var(--rule);background:#F7F4ED;
     position:sticky;top:0;z-index:5}
   .crow{display:flex;gap:9px;flex-wrap:wrap;align-items:center;margin:0 0 9px}
@@ -136,6 +143,18 @@
     padding-bottom:1px;font-weight:500}
   .say a:hover{color:var(--ink);border-bottom-color:var(--ink)}
 
+  .about{padding:32px 36px 34px;border-top:1px solid var(--rule);background:#FAF7F1}
+  .about h2{font:600 12px 'Helvetica Neue',Arial,sans-serif;letter-spacing:.22em;
+    text-transform:uppercase;color:var(--muted);margin:0 0 16px;
+    padding-bottom:9px;border-bottom:1px solid var(--rule)}
+  .about p{margin:0 0 15px;font-size:16.5px;line-height:1.6;max-width:64ch}
+  .about p:last-child{margin-bottom:0}
+  .about a{color:var(--teal)}
+  .note{margin:20px 0 0;padding:20px 24px;background:#F6EDE7;border-left:4px solid var(--rust);
+    border-radius:0 8px 8px 0}
+  .note p{font-size:16px;margin:0 0 12px}
+  .note p:last-child{margin:0}
+  .note b{color:var(--rust)}
   footer{padding:26px 36px 46px;font:400 13px 'Helvetica Neue',Arial,sans-serif;
     color:var(--muted);text-align:center;line-height:1.7}
   .priv{font-size:12px;opacity:.8}
@@ -160,8 +179,13 @@
   <header class="top">
     <p class="eyebrow">Intensive Care Education</p>
     <h1>ICU and You</h1>
-    <p class="kicker">Mind maps, aphorisms, superpuzzles and mnemonics &mdash; Coffs Harbour Health Campus</p>
+    <p class="kicker">Mind maps, aphorisms, superpuzzles, superquizzes and mnemonics &mdash; Coffs Harbour Health Campus</p>
   </header>
+
+  <p class="jump">
+    New here? <a href="#about">What is this?</a>
+    &nbsp;·&nbsp; <a href="#subscribe">Subscribe to the weekly email</a>
+  </p>
 
   <div class="controls">
     <div class="crow">
@@ -177,6 +201,8 @@
         <button class="chip bleu" data-f="coin" type="button">Le coin français</button>
         <button class="chip verde" data-f="italiano" type="button">L&#x27;angolo italiano</button>
         <button class="chip oro" data-f="espanol" type="button">El rincón español</button>
+    </div>
+    <div class="crow">
         <button class="chip slate" data-f="podcast" type="button">Podcasts</button>
         <button class="chip sepia" data-f="journal" type="button">Journal club</button>
     </div>
@@ -296,7 +322,7 @@
     <p class="empty" id="empty">Nothing matches that.</p>
   </div>
 
-  <section class="sub">
+  <section class="sub" id="subscribe">
     <h2>Come and join us</h2>
     <p>One email a week, telling you what is new and why it mattered. I ask a question most weeks,
        and the best answers get published. It is free, and you can leave whenever you like.</p>
@@ -305,6 +331,30 @@
     <p class="say">A topic you would like covered, something that did not display properly, or an idea &mdash;
       <a href="mailto:icuandyou@icloud.com?subject=ICU%20AND%20YOU%20%E2%80%94%20a%20note%20from%20a%20reader&body=Something%20you%20would%20like%20covered%3A%0D%0A%0D%0A%0D%0ASomething%20that%20did%20not%20work%20properly%20(and%20on%20what%20device)%3A%0D%0A%0D%0A%0D%0AAnything%20else%20%E2%80%94%20including%20if%20you%20would%20like%20to%20use%20this%20material%20with%20your%20own%20team%3A%0D%0A%0D%0A%0D%0A---%0D%0A%0D%0AName%20(optional)%3A%0D%0A">tell me</a>. If you would like to use any of this with your own team, that is welcome too;
       just say so and I will help.</p>
+  </section>
+
+  <section class="about" id="about">
+    <h2>About</h2>
+    <p>ICU AND YOU is a weekly teaching programme written in a regional intensive care unit at Coffs Harbour
+      Health Campus, on the mid north coast of New South Wales. It has run since 2023. Each week takes one
+      subject and comes at it several different ways &mdash; a mind map of the territory, an aphorism worth
+      arguing with, a crossword, a mnemonic for three in the morning, and whatever else the subject seems to
+      want.</p>
+    <p>It is written for the people who actually do the work: nurses, registrars, students, and anyone else
+      who finds it useful. Everything is free, and you are welcome to use it with your own team &mdash;
+      <a href="about.html">more about the programme and about me</a>.</p>
+
+    <div class="note">
+      <p><b>A note on what this is.</b> This is teaching material &mdash; discussion, argument and memory aids.
+        It is not a clinical guideline and not a protocol.</p>
+      <p>Nothing here overrides your local policy, current national guidance, or the specialist service you
+        would ordinarily call. Doses, thresholds and recommendations change, and errors are possible: check
+        everything against your own formulary and protocols before you act on it. Where something is contested
+        or the evidence is weak, we try to say so &mdash; that is usually the interesting part.</p>
+      <p>Material from other sources is summarised in our own words and linked to the original rather than
+        reproduced. If you think something here is wrongly attributed or ought not to be, please
+        <a href="mailto:icuandyou@icloud.com">tell me</a> and I will fix it.</p>
+    </div>
   </section>
 
   <footer>
