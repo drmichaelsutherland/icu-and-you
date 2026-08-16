@@ -24,6 +24,13 @@
   h1{font-size:34px;line-height:1.16;margin:0 0 8px;font-weight:400;letter-spacing:-.015em}
   .kicker{font-style:italic;color:var(--muted);margin:0;font-size:16.5px}
 
+  .jump{margin:0;padding:14px 42px;background:#F1EDE4;border-bottom:1px solid var(--rule);
+    text-align:center;font:400 15.5px 'Iowan Old Style',Palatino,Georgia,serif;color:var(--muted)}
+  .jump a{color:var(--teal);text-decoration:none;border-bottom:1px solid #B8CBD1;
+    padding-bottom:1px;font-weight:500}
+  .jump a:hover{color:var(--ink);border-bottom-color:var(--ink)}
+  html{scroll-behavior:smooth}
+  h2.sec[id]{scroll-margin-top:24px}
   .pad{padding:34px 42px}
   p{margin:0 0 16px}
   .lede{font-size:19.5px;line-height:1.55;margin:0 0 22px}
@@ -83,6 +90,11 @@
     <p class="kicker">What this is, who writes it, and what it is not</p>
   </header>
 
+  <p class="jump">
+    Looking for who writes this? <a href="#aboutme">About me</a>
+    &nbsp;·&nbsp; <a href="#privacy">Privacy</a>
+  </p>
+
   <div class="pad">
     <h2 class="sec">The programme</h2>
 
@@ -129,9 +141,9 @@
         the same day.</p>
     </div>
 
-    <h2 class="sec">About me</h2>
+    <h2 class="sec" id="aboutme">About me</h2>
 
-    <p>I am Michael Sutherland, an intensivist at Coffs Harbour Health Campus, Australia, where I have worked since
+    <p>I am Michael Sutherland, a fully qualified and experienced specialist intensivist at Coffs Harbour Health Campus, Australia, where I have worked since
       2001. I am the ICU Supervisor of Education and Training, and an Organ Donation Medical Specialist. Before
       intensive care I worked in rural general practice, anaesthetics, emergency medicine and retrieval medicine,
       and spent time as a ship's doctor, a flying doctor, and on a posting in Antarctica &mdash; which is where a
@@ -149,15 +161,38 @@
       is the entire explanation for the language columns, and for the fact that they keep multiplying. My partner is
       French, and we spend a good deal of our time in France and the francophone world.</p>
 
+    <h2 class="sec" id="privacy">Privacy</h2>
+
+    <p>This site is deliberately built to collect as little as possible.</p>
+
+    <p><strong>Visits.</strong> Page visits are counted using GoatCounter, which uses no cookies, sets nothing on
+      your device, and does not collect or store personal information. It tells me which pages are being read and
+      roughly where in the world from &mdash; nothing that identifies anyone.</p>
+
+    <p><strong>The mailing list.</strong> If you subscribe, your email address is held by Direct Mail for the sole
+      purpose of sending you ICU AND YOU. It is never sold, shared or used for anything else. Every email carries an
+      unsubscribe link, and using it removes you immediately and permanently. You are welcome to write and ask me to
+      remove you instead.</p>
+
+    <p><strong>What you send me.</strong> The challenges and quizzes open an ordinary email to me &mdash; nothing is
+      transmitted from the page itself, and nothing is stored anywhere on this site. I read everything that arrives.
+      I sometimes quote the most interesting replies in the newsletter, and when I do I quote them
+      <strong>anonymously</strong> unless you have told me you are happy to be named. If you would rather something
+      you have sent was not used at all, say so and it will not be.</p>
+
+    <p><strong>Please do not send patient information.</strong> Replies come by ordinary email, which is not a secure
+      channel, and nothing here is a clinical record. Keep it general: that is what makes the answers useful anyway.</p>
+
     <h2 class="sec">A note on what this is not</h2>
 
     <div class="note">
       <p><b>This is teaching material &mdash; discussion, argument and memory aids. It is not a clinical guideline
         and it is not a protocol.</b></p>
-      <p>Nothing here overrides your local policy, current national guidance, or the specialist service you would
-        ordinarily call. Doses, thresholds and recommendations change; errors are possible; and a mind map is a
-        summary, which means by definition that something has been left out. Check everything against your own
-        formulary and your own protocols before you act on it.</p>
+      <p>While I make every effort to verify each fact and claim, to cite the source it came from, and to correct
+        anything found to be wrong, medicine moves and errors are possible. Doses, thresholds and recommendations
+        change, and a mind map is a summary &mdash; which means by definition that something has been left out.
+        Nothing here overrides your local policy, current national guidance, or the specialist service you would
+        ordinarily call. Check everything against your own formulary and your own protocols before you act on it.</p>
       <p>Where a question is genuinely contested, or the evidence behind a recommendation is weak, I try to say so
         rather than smooth it over. That is usually the most interesting part of the subject and it is certainly the
         most useful thing to know.</p>
@@ -178,6 +213,7 @@
   <footer>
     <a class="home" href="./">&larr; &nbsp;All of ICU AND YOU</a><br>
     ICU AND YOU &nbsp;·&nbsp; an intensive care education programme &nbsp;·&nbsp; Coffs Harbour Health Campus<br>
+    <a href="#privacy">Privacy</a><br>
     <span class="priv">Visitor numbers are counted without cookies and without collecting personal data.</span>
   </footer>
 
