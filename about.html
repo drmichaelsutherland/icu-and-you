@@ -31,6 +31,12 @@
   .jump a:hover{color:var(--ink);border-bottom-color:var(--ink)}
   html{scroll-behavior:smooth}
   h2.sec[id]{scroll-margin-top:24px}
+  figure.me{float:right;width:320px;margin:4px 0 20px 26px;padding:0}
+  figure.me img{display:block;width:100%;height:auto;border-radius:10px;
+    border:1px solid var(--rule);box-shadow:0 1px 14px rgba(27,42,51,.10)}
+  figure.me figcaption{margin:9px 2px 0;font:400 13px 'Helvetica Neue',Arial,sans-serif;
+    color:var(--muted);line-height:1.5}
+  .clearfix::after{content:"";display:block;clear:both}
   .pad{padding:34px 42px}
   p{margin:0 0 16px}
   .lede{font-size:19.5px;line-height:1.55;margin:0 0 22px}
@@ -77,8 +83,10 @@
     h1{font-size:27px} body{font-size:16.5px} .lede{font-size:18px}
     ul.series li{flex-direction:column;gap:2px}
     ul.series b{flex:none}
+    figure.me{float:none;width:100%;margin:0 0 22px}
   }
-  @media print{ body{background:#fff} .sheet{box-shadow:none;max-width:none} }
+  @media print{ body{background:#fff} .sheet{box-shadow:none;max-width:none}
+    figure.me{float:none;width:60%;margin:0 auto 20px} }
 </style>
 </head>
 <body>
@@ -143,6 +151,11 @@
 
     <h2 class="sec" id="aboutme">About me</h2>
 
+    <figure class="me">
+      <img src="michael-sutherland.jpg"
+           alt="Michael Sutherland, seated in the stone tiers of an ancient amphitheatre, looking towards the camera">
+    </figure>
+
     <p>I am Michael Sutherland, a fully qualified and experienced specialist intensivist at Coffs Harbour Health Campus, Australia, where I have worked since
       2001. I am the ICU Supervisor of Education and Training, and an Organ Donation Medical Specialist. Before
       intensive care I worked in rural general practice, anaesthetics, emergency medicine and retrieval medicine,
@@ -160,6 +173,8 @@
     <p>I speak French fluently and Italian at B1, and I am interested in languages and cultures generally &mdash; which
       is the entire explanation for the language columns, and for the fact that they keep multiplying. My partner is
       French, and we spend a good deal of our time in France and the francophone world.</p>
+
+    <div class="clearfix"></div>
 
     <h2 class="sec" id="privacy">Privacy</h2>
 
