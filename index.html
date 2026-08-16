@@ -136,6 +136,9 @@
     background:var(--rust);color:#FDF8F5;
     font:600 15px 'Helvetica Neue',Arial,sans-serif;letter-spacing:.03em}
   a.subbtn:hover{background:#8A3620}
+  .btnrow{display:flex;gap:12px;justify-content:center;flex-wrap:wrap}
+  a.subbtn.ghost{background:#fff;color:var(--rust);border:1px solid var(--rust)}
+  a.subbtn.ghost:hover{background:#F6EDE7;color:#8A3620}
   .subnote{font:400 13px 'Helvetica Neue',Arial,sans-serif;color:var(--muted);margin:14px 0 0}
   .say{margin:22px auto 0;padding-top:18px;border-top:1px solid var(--rule);max-width:56ch;
     font:400 15.5px/1.55 'Iowan Old Style','Palatino Linotype',Palatino,Georgia,serif;color:var(--muted)}
@@ -157,6 +160,8 @@
   .note b{color:var(--rust)}
   footer{padding:26px 36px 46px;font:400 13px 'Helvetica Neue',Arial,sans-serif;
     color:var(--muted);text-align:center;line-height:1.7}
+  footer a{color:var(--teal);text-decoration:none}
+  footer a:hover{text-decoration:underline}
   .priv{font-size:12px;opacity:.8}
 
   @media (max-width:620px){
@@ -186,6 +191,7 @@
   <p class="jump">
     New here? <a href="#about">What is this?</a>
     &nbsp;·&nbsp; <a href="#subscribe">Subscribe to the weekly email</a>
+    &nbsp;·&nbsp; <a href="mailto:icuandyou@icloud.com?subject=ICU%20AND%20YOU%20%E2%80%94%20hello&body=%0D%0A%0D%0A---%0D%0A%0D%0AName%3A%0D%0AWhere%20you%20work%20(optional)%3A%0D%0A">Contact me</a>
   </p>
 
   <div class="controls">
@@ -327,7 +333,10 @@
     <h2>Come and join us</h2>
     <p>One email a week, telling you what is new and why it mattered. I ask a question most weeks,
        and the best answers get published. It is free, and you can leave whenever you like.</p>
-    <a class="subbtn" href="https://joinlist.com/f/5adad2d6">Subscribe to the weekly email</a>
+    <div class="btnrow">
+      <a class="subbtn" href="https://joinlist.com/f/5adad2d6">Subscribe to the weekly email</a>
+      <a class="subbtn ghost" href="mailto:icuandyou@icloud.com?subject=ICU%20AND%20YOU%20%E2%80%94%20hello&body=%0D%0A%0D%0A---%0D%0A%0D%0AName%3A%0D%0AWhere%20you%20work%20(optional)%3A%0D%0A">Contact me</a>
+    </div>
     <p class="subnote">Already subscribed? Every email has an unsubscribe link at the foot.</p>
     <p class="say">A topic you would like covered, something that did not display properly, or an idea &mdash;
       <a href="mailto:icuandyou@icloud.com?subject=ICU%20AND%20YOU%20%E2%80%94%20a%20note%20from%20a%20reader&body=Something%20you%20would%20like%20covered%3A%0D%0A%0D%0A%0D%0ASomething%20that%20did%20not%20work%20properly%20(and%20on%20what%20device)%3A%0D%0A%0D%0A%0D%0AAnything%20else%20%E2%80%94%20including%20if%20you%20would%20like%20to%20use%20this%20material%20with%20your%20own%20team%3A%0D%0A%0D%0A%0D%0A---%0D%0A%0D%0AName%20(optional)%3A%0D%0A">tell me</a>. If you would like to use any of this with your own team, that is welcome too;
@@ -363,6 +372,7 @@
   <footer>
     ICU AND YOU &nbsp;·&nbsp; an intensive care education programme<br>
     Educational use only. Not clinical protocol &mdash; local guidance always takes precedence.<br>
+    <a href="mailto:icuandyou@icloud.com?subject=ICU%20AND%20YOU%20%E2%80%94%20hello&body=%0D%0A%0D%0A---%0D%0A%0D%0AName%3A%0D%0AWhere%20you%20work%20(optional)%3A%0D%0A">icuandyou@icloud.com</a> &nbsp;·&nbsp; <a href="about.html">About</a><br>
     <span class="priv">Visitor numbers are counted without cookies and without collecting personal data.</span>
   </footer>
 
