@@ -1,0 +1,86 @@
+<svg viewBox="0 0 900 400" xmlns="http://www.w3.org/2000/svg" role="img"
+     aria-label="On the left, the foundling wheel bricked up in its wall with a silent bell, marked 1868. On the right, a woven nest with a swaddled sleeping child, marked 1850. An arrow runs from the nest to the wheel.">
+  <rect width="900" height="400" fill="#FBF9F4"/>
+
+  
+  <g transform="translate(196,176)">
+    <!-- wall -->
+    <rect x="-130" y="-130" width="260" height="270" rx="6" fill="#E2DCCF"/>
+    <g stroke="#C9C2B4" stroke-width="2.4" opacity=".9">
+      <path d="M-130 -84 H130"/><path d="M-130 -38 H130"/><path d="M-130 8 H130"/>
+      <path d="M-130 54 H130"/><path d="M-130 100 H130"/>
+      <path d="M-66 -130 V-84"/><path d="M22 -130 V-84"/>
+      <path d="M-22 -84 V-38"/><path d="M66 -84 V-38"/>
+      <path d="M-66 54 V100"/><path d="M22 54 V100"/>
+      <path d="M-22 100 V140"/><path d="M66 100 V140"/>
+    </g>
+
+    <!-- the niche, now bricked up -->
+    <circle cx="0" cy="-8" r="74" fill="#C9C2B4" opacity=".55"/>
+    <circle cx="0" cy="-8" r="74" fill="none" stroke="#2A6B47" stroke-width="3.4"/>
+    <!-- the drum, faintly still there -->
+    <circle cx="0" cy="-8" r="52" fill="none" stroke="#2A6B47" stroke-width="2.2" opacity=".55"/>
+    <path d="M0 -60 V44 M-52 -8 H52" stroke="#2A6B47" stroke-width="2.2" opacity=".45"/>
+    <!-- the bricks that closed it -->
+    <g stroke="#2A6B47" stroke-width="2.6" opacity=".8">
+      <path d="M-64 -40 H64"/><path d="M-72 -8 H72"/><path d="M-64 24 H64"/>
+      <path d="M-24 -74 V-40"/><path d="M28 -40 V-8"/>
+      <path d="M-30 -8 V24"/><path d="M26 24 V56"/>
+    </g>
+    <!-- the bell, silent -->
+    <path d="M96 -96 q-18 0 -18 20 q0 16 -6 22 h48 q-6 -6 -6 -22 q0 -20 -18 -20 Z"
+          fill="none" stroke="#9E2B2B" stroke-width="2.8" stroke-linejoin="round" opacity=".7"/>
+    <path d="M96 -54 v6" stroke="#9E2B2B" stroke-width="2.8" stroke-linecap="round" opacity=".7"/>
+  </g>
+  
+  <g transform="translate(690,156)">
+    <!-- outer rim -->
+    <ellipse cx="0" cy="30" rx="140" ry="72" fill="#C79A4E" opacity=".42"/>
+    <ellipse cx="0" cy="30" rx="140" ry="72" fill="none" stroke="#C79A4E" stroke-width="3.2"/>
+    <!-- hollow -->
+    <ellipse cx="0" cy="24" rx="86" ry="42" fill="#FBF9F4"/>
+    <ellipse cx="0" cy="24" rx="86" ry="42" fill="none" stroke="#C79A4E" stroke-width="2.6" opacity=".8"/>
+    <!-- straw, woven around the rim only -->
+    <g stroke="#C79A4E" stroke-width="3" stroke-linecap="round" opacity=".95">
+      <path d="M-138 16 L-96 -8"/><path d="M-120 40 L-84 8"/>
+      <path d="M-104 66 L-62 46"/><path d="M-64 88 L-24 66"/>
+      <path d="M-18 96 L22 70"/><path d="M28 94 L70 66"/>
+      <path d="M74 82 L110 52"/><path d="M104 58 L136 24"/>
+      <path d="M116 26 L92 -4"/><path d="M78 -12 L36 -30"/>
+      <path d="M20 -34 L-24 -32"/><path d="M-38 -30 L-80 -12"/>
+    </g>
+    <!-- swaddled child, asleep in the hollow -->
+    <ellipse cx="12" cy="26" rx="46" ry="21" fill="#FFFFFF" stroke="#2A6B47" stroke-width="2.4"/>
+    <g stroke="#5E9678" stroke-width="2.2" stroke-linecap="round" opacity=".8">
+      <path d="M0 18 q12 8 24 0"/><path d="M22 32 q12 -8 24 0"/>
+    </g>
+    <circle cx="-38" cy="20" r="19" fill="#FFFFFF" stroke="#2A6B47" stroke-width="2.4"/>
+    <path d="M-46 17 q8 6 16 0" fill="none" stroke="#26251F" stroke-width="2.6" stroke-linecap="round"/>
+    <circle cx="-30" cy="27" r="2.6" fill="#9E2B2B" opacity=".55"/>
+  </g>
+
+  <!-- the arrow runs right to left: the nest came first -->
+  <g opacity=".85">
+    <path d="M508 176 C468 152 428 152 388 172" fill="none" stroke="#9E2B2B"
+          stroke-width="2.6" stroke-linecap="round" stroke-dasharray="7 7"/>
+    <path d="M400 160 L385 173 L401 180" fill="none" stroke="#9E2B2B"
+          stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+  <text x="448" y="140" text-anchor="middle"
+        font-family="Iowan Old Style,Palatino,Georgia,serif" font-size="16"
+        font-style="italic" fill="#9E2B2B">Milano</text>
+
+  <text x="196" y="342" text-anchor="middle"
+        font-family="Iowan Old Style,Palatino,Georgia,serif" font-size="27"
+        font-style="italic" fill="#2A6B47">la ruota</text>
+  <text x="196" y="366" text-anchor="middle"
+        font-family="Helvetica Neue,Arial,sans-serif" font-size="13.5"
+        letter-spacing="1.2" fill="#6E6A5E">bricked up, 1868</text>
+
+  <text x="690" y="342" text-anchor="middle"
+        font-family="Iowan Old Style,Palatino,Georgia,serif" font-size="27"
+        font-style="italic" fill="#2A6B47">il nido</text>
+  <text x="690" y="366" text-anchor="middle"
+        font-family="Helvetica Neue,Arial,sans-serif" font-size="13.5"
+        letter-spacing="1.2" fill="#6E6A5E">opened, 1850</text>
+</svg>
