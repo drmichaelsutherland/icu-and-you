@@ -29,7 +29,10 @@
   .sheet{max-width:900px;margin:0 auto;background:var(--paper);min-height:100vh;
     box-shadow:0 1px 40px rgba(27,42,51,.10);}
 
-  header.top{padding:52px 36px 30px;border-bottom:1px solid var(--rule)}
+  header.top{padding:44px 36px 30px;border-bottom:1px solid var(--rule)}
+  .lockup{display:flex;align-items:center;gap:26px}
+  .lockup .logo{flex:none;width:auto;height:96px;display:block}
+  .lockup .words{flex:1;min-width:0}
   .eyebrow{font:500 11.5px/1 'Helvetica Neue',Arial,sans-serif;letter-spacing:.26em;
     text-transform:uppercase;color:var(--muted);margin:0 0 14px}
   h1{font-size:38px;line-height:1.12;margin:0 0 10px;font-weight:400;letter-spacing:-.015em}
@@ -183,6 +186,8 @@
   @media (max-width:620px){
     header.top,.controls,.week,.coll,.sub,footer{padding-left:18px;padding-right:18px}
     h1{font-size:29px} .wk-t{font-size:22px}
+    .lockup{flex-direction:column;align-items:flex-start;gap:14px}
+    .lockup .logo{height:74px}
     .item{flex-direction:column;gap:10px}
     .badge{flex:none;text-align:left;padding-top:0}
     .badge b{display:inline;font-size:20px;margin-left:8px}
@@ -199,9 +204,14 @@
 <div class="sheet">
 
   <header class="top">
-    <p class="eyebrow">Intensive Care Education</p>
-    <h1>ICU and You</h1>
-    <p class="kicker">Mind maps, aphorisms, superpuzzles, superquizzes and mnemonics &mdash; Coffs Harbour Health Campus</p>
+    <div class="lockup">
+      <img class="logo" src="logo.png" alt="ICU and You" width="300" height="229">
+      <div class="words">
+        <p class="eyebrow">Intensive Care Education</p>
+        <h1>ICU and You</h1>
+        <p class="kicker">Mind maps, aphorisms, superpuzzles, superquizzes and mnemonics &mdash; Coffs Harbour Health Campus</p>
+      </div>
+    </div>
   </header>
 
   <p class="jump">
