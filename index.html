@@ -20,7 +20,7 @@
   :root{
     --paper:#FBF9F5; --ink:#1B2A33; --muted:#6E6B63; --rule:#DED8CC;
     --teal:#2E6473; --plum:#6B4570; --rust:#A8442A; --olive:#5F6B33;
-    --bleu:#2F4A7C; --slate:#3E4A52; --verde:#2A6B47; --sepia:#6B4A2F; --oro:#B5852A; --wine:#7C2D42;
+    --bleu:#2F4A7C; --slate:#3E4A52; --verde:#2A6B47; --sepia:#6B4A2F; --oro:#B5852A; --wine:#7C2D42; --saffron:#B5651E; --violet:#4C4A8F;
   }
   *{box-sizing:border-box}
   body{margin:0;background:#F3EFE8;color:var(--ink);
@@ -65,6 +65,8 @@
   .chip.sepia.on{background:var(--sepia);border-color:var(--sepia)}
   .chip.oro.on{background:var(--oro);border-color:var(--oro)}
   .chip.wine.on{background:var(--wine);border-color:var(--wine)}
+  .chip.saffron.on{background:var(--saffron);border-color:var(--saffron)}
+  .chip.violet.on{background:var(--violet);border-color:var(--violet)}
 
   /* ── This week ───────────────────────────────────────── */
   .week{padding:30px 36px 34px;background:#F6F2E8;border-bottom:1px solid var(--rule)}
@@ -80,6 +82,7 @@
   .item.bleu{border-left-color:var(--bleu)} .item.slate{border-left-color:var(--slate)}
   .item.verde{border-left-color:var(--verde)} .item.sepia{border-left-color:var(--sepia)}
   .item.oro{border-left-color:var(--oro)} .item.wine{border-left-color:var(--wine)}
+  .item.saffron{border-left-color:var(--saffron)} .item.violet{border-left-color:var(--violet)}
   .badge{flex:0 0 84px;text-align:center;
     font:600 10.5px 'Helvetica Neue',Arial,sans-serif;letter-spacing:.1em;
     text-transform:uppercase;color:var(--muted);padding-top:3px;line-height:1.3}
@@ -118,6 +121,7 @@
   .dot.bleu{background:var(--bleu)} .dot.slate{background:var(--slate)}
   .dot.verde{background:var(--verde)} .dot.sepia{background:var(--sepia)}
   .dot.oro{background:var(--oro)} .dot.wine{background:var(--wine)}
+  .dot.saffron{background:var(--saffron)} .dot.violet{background:var(--violet)}
   .tcount{font:400 13.5px 'Helvetica Neue',Arial,sans-serif;color:var(--muted);
     margin-right:22px;white-space:nowrap}
 
@@ -129,6 +133,7 @@
   li.row.bleu{border-left-color:var(--bleu)} li.row.slate{border-left-color:var(--slate)}
   li.row.verde{border-left-color:var(--verde)} li.row.sepia{border-left-color:var(--sepia)}
   li.row.oro{border-left-color:var(--oro)} li.row.wine{border-left-color:var(--wine)}
+  li.row.saffron{border-left-color:var(--saffron)} li.row.violet{border-left-color:var(--violet)}
   li.row:hover{background:#F7F4ED}
   .rs{flex:0 0 112px;font:600 10.5px 'Helvetica Neue',Arial,sans-serif;letter-spacing:.1em;
     text-transform:uppercase;color:var(--muted)}
@@ -214,6 +219,7 @@
         <button class="chip rust" data-f="superpuzzle" type="button">Superpuzzles</button>
         <button class="chip wine" data-f="superquiz" type="button">Superquizzes</button>
         <button class="chip olive" data-f="mnemonic" type="button">Mnemonics</button>
+        <button class="chip violet" data-f="students" type="button">Medical students</button>
     </div>
     <div class="crow">
         <button class="chip slate" data-f="podcast" type="button">Podcasts</button>
@@ -223,84 +229,61 @@
         <button class="chip bleu" data-f="coin" type="button">Le coin français</button>
         <button class="chip verde" data-f="italiano" type="button">L&#x27;angolo italiano</button>
         <button class="chip oro" data-f="espanol" type="button">El rincón español</button>
+        <button class="chip saffron" data-f="india" type="button">The India Room</button>
     </div>
   </div>
 
   <section class="week" id="week">
     <p class="wk-k">This week</p>
-    <h2 class="wk-t">Neonatology</h2>
-    <p class="wk-b">The newborn we actually meet in a regional department — the precipitate delivery in the resuscitation bay, the baby brought back at eleven days old, and the hour that belongs to us before the retrieval team arrives.</p>
+    <h2 class="wk-t">The postneonatal infant</h2>
+    <p class="wk-b">Twenty-nine days to one year. Last week&#x27;s baby was made unwell by how they were born; this week&#x27;s is made unwell by what happens afterwards — and remains extraordinarily good at looking well right up until the moment they are not.</p>
     <ul class="list">
         <li class="item teal" data-series="mind-map">
-          <div class="badge">Mind map<b>31</b></div>
+          <div class="badge">Mind map<b>32</b></div>
           <div class="body">
-            <h3>Essentials of neonatal intensive care</h3>
-            <p>Written for regional practice — the physiology, resuscitation at birth, the golden hour, the collapsed neonate, and stabilisation before retrieval.</p>
-            <div class="links"><a class="go" href="mind-map-31-neonatal.html">Open</a></div>
+            <h3>The postneonatal infant — 29 days to one year</h3>
+            <p>Why they look well until they do not, what usually walks in, the febrile infant, the presentations that mislead, sudden unexpected death, non-accidental injury, and the hour before retrieval.</p>
+            <div class="links"><a class="go" href="mind-map-32-postneonatal-infant.html">Open</a></div>
           </div>
         </li>
         <li class="item plum" data-series="aphorism">
-          <div class="badge">Aphorism<b>35</b></div>
+          <div class="badge">Aphorism<b>36</b></div>
           <div class="body">
-            <h3>The newborn generally does not have a cardiac arrest</h3>
-            <p>It has a respiratory arrest with a cardiac ending. Preamble, Yes / No / Maybe, and a reflection.</p>
-            <div class="links"><a class="go" href="aphorism-35-respiratory-arrest.html">Open</a></div>
+            <h3>In an infant, the parent is the monitor</h3>
+            <p>They hold the baseline no instrument in the department has access to. Yes, No or Maybe — and why.</p>
+            <div class="links"><a class="go" href="aphorism-36-parent-is-the-monitor.html">Open</a></div>
           </div>
         </li>
         <li class="item rust" data-series="superpuzzle">
-          <div class="badge">Superpuzzle<b>48</b></div>
+          <div class="badge">Superpuzzle<b>49</b></div>
           <div class="body">
-            <h3>Neonatology</h3>
-            <p>Eighteen clues. Type straight into the grid, or print the page and use a pen.</p>
-            <div class="links"><a class="go" href="superpuzzle-48-neonatology-fillable.html">Open the puzzle</a></div>
+            <h3>The postneonatal infant</h3>
+            <p>Twenty clues. Type straight into the grid, or print the page and use a pen.</p>
+            <div class="links"><a class="go" href="superpuzzle-49-postneonatal-fillable.html">Open the puzzle</a></div>
           </div>
         </li>
-        <li class="item wine" data-series="superquiz">
-          <div class="badge">Superquiz<b>60</b></div>
+        <li class="item violet" data-series="students">
+          <div class="badge">Medical Students<b>1</b></div>
           <div class="body">
-            <h3>Neonatology</h3>
-            <p>Five questions. Open book, no time limit, as many attempts as you like — and a certificate for three or more.</p>
-            <div class="links"><a class="go" href="superquiz-60-neonatology.html">Take the quiz</a></div>
-          </div>
-        </li>
-        <li class="item olive" data-series="mnemonic">
-          <div class="badge">Mnemonic<b>53</b></div>
-          <div class="body">
-            <h3>COLLAPSED</h3>
-            <p>The baby who went home well and came back grey — nine causes, and a challenge you answer in one tap.</p>
-            <div class="links"><a class="go" href="mnemonic-53-collapsed-neonate.html">Open</a></div>
-          </div>
-        </li>
-        <li class="item bleu" data-series="coin">
-          <div class="badge">Le coin français<b>1</b></div>
-          <div class="body">
-            <h3>La couveuse</h3>
-            <p>The zoo where neonatal care began, the false friend that will catch you out, and two words worth the detour.</p>
-            <div class="links"><a class="go" href="coin-francais-01-la-couveuse.html">Open</a></div>
+            <h3>The postneonatal infant, in three tiers</h3>
+            <p>The same subject at three depths — the science, the clinical reasoning, and what you will be expected to do. Read only the tier you need.</p>
+            <div class="links"><a class="go" href="med-students-01-postneonatal-infant.html">Open</a></div>
           </div>
         </li>
         <li class="item verde" data-series="italiano">
-          <div class="badge">L&#x27;angolo italiano<b>1</b></div>
+          <div class="badge">L&#x27;angolo italiano<b>2</b></div>
           <div class="body">
-            <h3>La ruota</h3>
-            <p>Brunelleschi&#x27;s foundling hospital, the wheel in the wall, the nest and the brooder — and a loop that takes 545 years to close.</p>
-            <div class="links"><a class="go" href="angolo-italiano-01-la-ruota.html">Open</a></div>
+            <h3>Il nido</h3>
+            <p>The manger, the nativity and the nest — and the foundling wheel that could only close once the nest had opened.</p>
+            <div class="links"><a class="go" href="angolo-italiano-02-il-nido.html">Open</a></div>
           </div>
         </li>
-        <li class="item slate" data-series="podcast">
-          <div class="badge">Podcast<b>55</b></div>
+        <li class="item saffron" data-series="india">
+          <div class="badge">The India Room<b>1</b></div>
           <div class="body">
-            <h3>Cardiac Drugs: Vasopressors and Inotropic Agents</h3>
-            <p>Twenty-two minutes on the neonatal myocardium, the agents themselves, and the awkward question of what hypotension actually means.</p>
-            <div class="links"><a class="go" href="podcast-55-neonatal-vasoactive-drugs.html">Open</a></div>
-          </div>
-        </li>
-        <li class="item sepia" data-series="journal">
-          <div class="badge">Journal club<b>96</b></div>
-          <div class="body">
-            <h3>The NICU Survival Guide</h3>
-            <p>Sixty-seven pages written by residents, for residents — what transfers, what does not, and why the local artefact is the interesting part.</p>
-            <div class="links"><a class="go" href="journal-club-96-nicu-survival-guide.html">Open</a></div>
+            <h3>What some of our colleagues have already seen</h3>
+            <p>The same age group, a different differential — and one of the largest improvements in human survival achieved anywhere. Plus: help name this column.</p>
+            <div class="links"><a class="go" href="india-room-01-what-some-of-our-colleagues-have-seen.html">Open</a></div>
           </div>
         </li>
     </ul>
@@ -309,6 +292,24 @@
   <div class="coll">
     <h2 class="sec">Previous weeks</h2>
     <p class="sechint">Each week is one subject taken several different ways. Click a subject to open it.</p>
+      <details class="group" data-topic="Neonatology">
+        <summary>
+          <span class="tname">Neonatology</span>
+          <span class="tdots"><i class="dot teal" title="Mind map"></i><i class="dot plum" title="Aphorism"></i><i class="dot rust" title="Superpuzzle"></i><i class="dot wine" title="Superquiz"></i><i class="dot olive" title="Mnemonic"></i><i class="dot bleu" title="Le coin français"></i><i class="dot verde" title="L&#x27;angolo italiano"></i><i class="dot slate" title="Podcast"></i><i class="dot sepia" title="Journal club"></i></span>
+          <span class="tcount">9 pieces</span>
+        </summary>
+        <ul class="rows">
+            <li class="row teal" data-series="mind-map"><span class="rs">Mind map</span><span class="rn">31</span><a class="rt" href="mind-map-31-neonatal.html">Essentials of neonatal intensive care</a></li>
+            <li class="row plum" data-series="aphorism"><span class="rs">Aphorism</span><span class="rn">35</span><a class="rt" href="aphorism-35-respiratory-arrest.html">The newborn generally does not have a cardiac arrest</a></li>
+            <li class="row rust" data-series="superpuzzle"><span class="rs">Superpuzzle</span><span class="rn">48</span><a class="rt" href="superpuzzle-48-neonatology-fillable.html">Neonatology</a></li>
+            <li class="row wine" data-series="superquiz"><span class="rs">Superquiz</span><span class="rn">60</span><a class="rt" href="superquiz-60-neonatology.html">Neonatology</a></li>
+            <li class="row olive" data-series="mnemonic"><span class="rs">Mnemonic</span><span class="rn">53</span><a class="rt" href="mnemonic-53-collapsed-neonate.html">COLLAPSED</a></li>
+            <li class="row bleu" data-series="coin"><span class="rs">Le coin français</span><span class="rn">1</span><a class="rt" href="coin-francais-01-la-couveuse.html">La couveuse</a></li>
+            <li class="row verde" data-series="italiano"><span class="rs">L&#x27;angolo italiano</span><span class="rn">1</span><a class="rt" href="angolo-italiano-01-la-ruota.html">La ruota</a></li>
+            <li class="row slate" data-series="podcast"><span class="rs">Podcast</span><span class="rn">55</span><a class="rt" href="podcast-55-neonatal-vasoactive-drugs.html">Cardiac Drugs: Vasopressors and Inotropic Agents</a></li>
+            <li class="row sepia" data-series="journal"><span class="rs">Journal club</span><span class="rn">96</span><a class="rt" href="journal-club-96-nicu-survival-guide.html">The NICU Survival Guide</a></li>
+        </ul>
+      </details>
       <details class="group" data-topic="Transplantation">
         <summary>
           <span class="tname">Transplantation</span>
@@ -401,7 +402,7 @@
     if(filter !== "all" && el.dataset.series !== filter) return false;
     if(!term) return true;
     var g = el.closest("details.group");
-    var topic = g ? g.dataset.topic : "Neonatology";
+    var topic = g ? g.dataset.topic : "The postneonatal infant";
     return (el.textContent + " " + topic).toLowerCase().indexOf(term) > -1;
   }
 
