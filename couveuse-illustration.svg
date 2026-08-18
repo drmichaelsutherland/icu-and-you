@@ -1,0 +1,110 @@
+<svg viewBox="0 0 900 400" xmlns="http://www.w3.org/2000/svg" role="img"
+     aria-label="A brooding hen on her nest beside Tarnier's couveuse — a warm wooden box with a glass lid, a water reservoir and a chimney — joined by an arrow, with the words couver and couveuse beneath each.">
+  <rect width="900" height="400" fill="#FBF8F4"/>
+
+  
+  <g transform="translate(212,214)">
+    <!-- straw nest -->
+    <ellipse cx="0" cy="66" rx="112" ry="20" fill="#E8C77A" opacity=".45"/>
+    <g stroke="#E8C77A" stroke-width="3" stroke-linecap="round" opacity=".95">
+      <path d="M-104 62 L-64 72"/><path d="M-78 74 L-30 64"/><path d="M-40 72 L6 62"/>
+      <path d="M2 64 L48 74"/><path d="M40 72 L92 62"/><path d="M74 66 L108 74"/>
+    </g>
+
+    <!-- body: low, settled, wide -->
+    <path d="M-92 58 C-104 8 -70 -44 -12 -50 C48 -56 96 -22 98 22 C99 44 88 58 72 60 Z"
+          fill="#5D7BAA"/>
+    <!-- wing -->
+    <path d="M-46 20 C-32 -14 10 -30 44 -16 C36 16 8 38 -30 36 C-42 34 -48 28 -46 20 Z"
+          fill="#2F4A7C" opacity=".55"/>
+    <path d="M-36 22 C-22 0 6 -12 30 -8" fill="none" stroke="#FBF8F4" stroke-width="2.4"
+          stroke-linecap="round" opacity=".65"/>
+    <path d="M-28 32 C-12 12 14 2 36 6" fill="none" stroke="#FBF8F4" stroke-width="2.4"
+          stroke-linecap="round" opacity=".5"/>
+
+    <!-- tail -->
+    <path d="M92 8 C118 -14 132 -6 138 6 C124 6 112 18 100 32 Z" fill="#2F4A7C"/>
+
+    <!-- neck and head -->
+    <path d="M-12 -50 C-30 -66 -34 -96 -14 -110 C6 -124 34 -114 38 -92
+             C42 -70 20 -52 -2 -48 Z" fill="#5D7BAA"/>
+    <!-- comb -->
+    <path d="M-16 -112 q7 -13 14 -3 q7 -13 14 -3 q7 -12 13 -1 l-4 12 q-18 -6 -37 -5 Z"
+          fill="#9E2B2B"/>
+    <!-- wattle -->
+    <path d="M-2 -84 q-9 4 -8 14 q1 9 9 8 q7 -1 7 -11 Z" fill="#9E2B2B"/>
+    <!-- beak -->
+    <path d="M-24 -96 L-46 -89 L-24 -82 Z" fill="#E8C77A"/>
+    <!-- eye: closed, content -->
+    <path d="M-18 -97 q7 5 14 0" fill="none" stroke="#22242E" stroke-width="2.6"
+          stroke-linecap="round"/>
+
+    <!-- one egg peeping out from under her -->
+    <ellipse cx="-70" cy="46" rx="15" ry="19" fill="#FBF8F4" stroke="#2F4A7C" stroke-width="1.6"/>
+  </g>
+  
+  <g transform="translate(672,196)">
+    <!-- legs -->
+    <rect x="-74" y="52" width="11" height="34" rx="3" fill="#2F4A7C"/>
+    <rect x="63" y="52" width="11" height="34" rx="3" fill="#2F4A7C"/>
+    <ellipse cx="0" cy="90" rx="106" ry="9" fill="#22242E" opacity=".08"/>
+
+    <!-- lower chamber: the water reservoir, gently warmed -->
+    <rect x="-84" y="4" width="168" height="52" rx="7" fill="#2F4A7C"/>
+    <path d="M-72 34 q12 -9 24 0 t24 0 t24 0 t24 0 t24 0" fill="none"
+          stroke="#C9D3E4" stroke-width="3" stroke-linecap="round" opacity=".8"/>
+    <path d="M-72 44 q12 -9 24 0 t24 0 t24 0 t24 0 t24 0" fill="none"
+          stroke="#C9D3E4" stroke-width="2.4" stroke-linecap="round" opacity=".5"/>
+
+    <!-- upper chamber: glass, and the infant inside -->
+    <rect x="-84" y="-58" width="168" height="64" rx="7" fill="#C9D3E4" opacity=".45"/>
+    <rect x="-84" y="-58" width="168" height="64" rx="7" fill="none"
+          stroke="#2F4A7C" stroke-width="3"/>
+    <line x1="0" y1="-58" x2="0" y2="6" stroke="#2F4A7C" stroke-width="2" opacity=".45"/>
+    <!-- swaddled infant -->
+    <ellipse cx="-14" cy="-18" rx="44" ry="20" fill="#FBF8F4" stroke="#2F4A7C" stroke-width="1.8"/>
+    <circle cx="-48" cy="-24" r="13" fill="#FBF8F4" stroke="#2F4A7C" stroke-width="1.8"/>
+    <path d="M-53 -26 q5 4 10 0" fill="none" stroke="#22242E" stroke-width="2.2" stroke-linecap="round"/>
+    <path d="M-30 -22 q10 -6 20 0" fill="none" stroke="#5D7BAA" stroke-width="2" stroke-linecap="round"/>
+
+    <!-- lid -->
+    <path d="M-92 -58 L0 -86 L92 -58 Z" fill="#2F4A7C"/>
+    <!-- chimney, and the warmth going up -->
+    <rect x="-9" y="-108" width="18" height="26" rx="3" fill="#2F4A7C"/>
+    <g stroke="#9E2B2B" stroke-width="2.6" stroke-linecap="round" fill="none" opacity=".75">
+      <path d="M0 -118 q-7 -10 0 -20 q7 -10 0 -20"/>
+      <path d="M-22 -114 q-6 -8 0 -16" opacity=".6"/>
+      <path d="M22 -114 q6 -8 0 -16" opacity=".6"/>
+    </g>
+
+    <!-- thermometer on the side -->
+    <rect x="88" y="-46" width="7" height="44" rx="3.5" fill="#FBF8F4" stroke="#2F4A7C" stroke-width="1.4"/>
+    <rect x="89.6" y="-22" width="3.8" height="20" rx="1.9" fill="#9E2B2B"/>
+    <circle cx="91.5" cy="0" r="6" fill="#9E2B2B"/>
+  </g>
+
+  <!-- the borrowing -->
+  <g opacity=".85">
+    <path d="M392 200 C432 178 470 178 508 196" fill="none" stroke="#9E2B2B"
+          stroke-width="2.6" stroke-linecap="round" stroke-dasharray="7 7"/>
+    <path d="M498 186 L512 197 L497 204" fill="none" stroke="#9E2B2B"
+          stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+  <text x="450" y="164" text-anchor="middle"
+        font-family="Iowan Old Style,Palatino,Georgia,serif" font-size="17"
+        font-style="italic" fill="#9E2B2B">Paris, 1880</text>
+
+  <text x="212" y="336" text-anchor="middle"
+        font-family="Iowan Old Style,Palatino,Georgia,serif" font-size="27"
+        font-style="italic" fill="#2F4A7C">couver</text>
+  <text x="212" y="360" text-anchor="middle"
+        font-family="Helvetica Neue,Arial,sans-serif" font-size="13.5"
+        letter-spacing="1.2" fill="#6B6A74">to brood, to sit on eggs</text>
+
+  <text x="672" y="336" text-anchor="middle"
+        font-family="Iowan Old Style,Palatino,Georgia,serif" font-size="27"
+        font-style="italic" fill="#2F4A7C">la couveuse</text>
+  <text x="672" y="360" text-anchor="middle"
+        font-family="Helvetica Neue,Arial,sans-serif" font-size="13.5"
+        letter-spacing="1.2" fill="#6B6A74">the incubator, to this day</text>
+</svg>
