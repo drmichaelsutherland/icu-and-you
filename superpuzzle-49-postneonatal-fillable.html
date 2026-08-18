@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en-AU">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ICU AND YOU · Superpuzzle #49 — The Postneonatal Infant</title>
+<meta name="description" content="ICU AND YOU Superpuzzle #49: the infant from 29 days to one year. Twenty clues. Fill it in on screen and send your answers.">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="alternate icon" href="/favicon.ico" sizes="any">
+<link rel="apple-touch-icon" href="/icon-180.png">
+<meta name="theme-color" content="#1B2A33">
+<meta property="og:site_name" content="ICU AND YOU">
+<meta property="og:type" content="website">
+<meta property="og:title" content="ICU AND YOU · Superpuzzle #49 — The Postneonatal Infant">
+<meta property="og:description" content="Twenty clues on the infant from 29 days to one year.">
+<meta property="og:image" content="https://icuandyou.com/share-card.png">
+<meta name="twitter:card" content="summary_large_image">
+<style>
+  :root{
+    --paper:#FBFAF7; --ink:#1B2A33; --muted:#6E7570; --rule:#DDE2DE;
+    --rust:#A8442A; --rustdk:#8A3620; --rusttint:#F9EDE7;
+    --sky:#2E6E8E; --skytint:#E7F1F6;
+    --cs:32px;
+  }
+  *{box-sizing:border-box}
+  body{margin:0;background:#EFF1EE;color:var(--ink);
+    font:400 17px/1.62 'Iowan Old Style','Palatino Linotype',Palatino,Georgia,serif;
+    -webkit-text-size-adjust:100%;}
+  .sheet{max-width:1000px;margin:0 auto;background:var(--paper);
+    box-shadow:0 1px 40px rgba(27,42,51,.10);}
+  header.top{padding:40px 36px 26px;border-bottom:2px solid var(--rust)}
+  .eyebrow{font:500 11.5px/1 'Helvetica Neue',Arial,sans-serif;letter-spacing:.24em;
+    text-transform:uppercase;color:var(--muted);margin:0 0 13px}
+  h1{font-size:31px;line-height:1.18;margin:0 0 8px;font-weight:400;letter-spacing:-.01em}
+  .kicker{font-style:italic;color:var(--muted);margin:0;font-size:16.5px}
+  .pad{padding:28px 36px}
+  .instruct{margin:0 0 4px;font-size:16px;color:#38424A}
+
+  .gridwrap{overflow-x:auto;-webkit-overflow-scrolling:touch;padding:10px 0 4px}
+  .gridframe{position:relative;width:max-content;padding:22px;
+    border:1px solid var(--rule);border-radius:10px;background:#fff;
+    box-shadow:inset 0 0 0 4px #F4F6F4}
+  .gridframe::before{content:"";position:absolute;left:22px;right:22px;top:9px;height:3px;
+    background:linear-gradient(90deg,var(--sky),var(--rust));border-radius:2px;opacity:.75}
+  svg.wm{position:absolute;left:22px;top:22px;
+    width:calc(100% - 44px);height:calc(100% - 44px);pointer-events:none}
+  .grid{position:relative;display:grid;grid-template-columns:repeat(18,var(--cs));
+    grid-template-rows:repeat(25,var(--cs));width:max-content}
+  .c{background:transparent}
+  .c{position:relative;border:1px solid #6B7370;background:rgba(255,255,255,.72)}
+  .c .n{position:absolute;top:1px;left:2px;z-index:2;pointer-events:none;
+    font:600 8.5px 'Helvetica Neue',Arial,sans-serif;color:var(--rust)}
+  .c input{width:100%;height:100%;border:0;background:transparent;padding:0;
+    text-align:center;text-transform:uppercase;color:var(--ink);
+    font:500 16px 'Helvetica Neue',Arial,sans-serif;caret-color:var(--rust);border-radius:0}
+  .c input:focus{outline:0;background:#FBE7DC}
+  .c input.lit{background:var(--skytint)}
+  .c input.lit:focus{background:#FBE7DC}
+
+  .toolbar{display:flex;gap:10px;flex-wrap:wrap;align-items:center;margin:16px 0 0}
+  .tool{padding:9px 18px;border:1px solid var(--sky);background:var(--skytint);
+    color:var(--sky);border-radius:22px;cursor:pointer;
+    font:600 13px 'Helvetica Neue',Arial,sans-serif}
+  .tool:hover{background:#D8E8F0}
+  .count{font:400 13px 'Helvetica Neue',Arial,sans-serif;color:var(--muted)}
+  .gridnote{font:400 12.5px 'Helvetica Neue',Arial,sans-serif;color:var(--muted);margin:10px 0 0}
+
+  .cols{display:flex;gap:40px;flex-wrap:wrap}
+  .col{flex:1 1 330px;min-width:280px}
+  h2.sec{font:600 12px 'Helvetica Neue',Arial,sans-serif;letter-spacing:.22em;
+    text-transform:uppercase;color:var(--rust);margin:0 0 16px;
+    padding-bottom:9px;border-bottom:1px solid var(--rule)}
+  ul.clues{list-style:none;margin:0;padding:0}
+  ul.clues li{display:flex;gap:12px;margin:0 0 6px;padding:6px 8px;border-radius:6px;
+    font-size:16.5px;line-height:1.5;cursor:pointer}
+  ul.clues li:hover{background:#F1EEE7}
+  ul.clues li.on{background:var(--skytint)}
+  ul.clues .cn{flex:0 0 26px;text-align:right;
+    font:600 14px 'Helvetica Neue',Arial,sans-serif;color:var(--rust);padding-top:3px}
+
+  .challenge{margin:0;padding:28px 32px;background:var(--rusttint);border-left:5px solid var(--rust)}
+  .challenge h2{font:600 12px 'Helvetica Neue',Arial,sans-serif;letter-spacing:.2em;
+    text-transform:uppercase;color:var(--rust);margin:0 0 13px}
+  .btn{display:inline-block;margin:8px 0 12px;padding:15px 30px;background:var(--rust);
+    color:#FDF8F5;text-decoration:none;border:0;border-radius:30px;cursor:pointer;
+    font:600 15px 'Helvetica Neue',Arial,sans-serif;letter-spacing:.03em}
+  .btn:hover{background:var(--rustdk)}
+  .fallback{font:400 13.5px 'Helvetica Neue',Arial,sans-serif;color:var(--muted);margin:0}
+  .fallback a{color:var(--rust)}
+
+  footer{padding:22px 36px 38px;border-top:1px solid var(--rule);
+    font:400 13px 'Helvetica Neue',Arial,sans-serif;color:var(--muted);text-align:center}
+  .home{display:inline-block;margin:0 0 14px;padding:8px 18px;border-radius:20px;
+    border:1px solid var(--rule);background:#F1F3F1;color:var(--sky);text-decoration:none;
+    font:600 12.5px 'Helvetica Neue',Arial,sans-serif;letter-spacing:.05em}
+  .home:hover{background:var(--sky);border-color:var(--sky);color:#F6FAFB}
+
+  @media (max-width:640px){
+    header.top,.pad,footer{padding-left:18px;padding-right:18px}
+    .challenge{padding:22px 18px}
+    h1{font-size:25px} body{font-size:16.5px}
+    :root{--cs:29px}
+    .cols{gap:0}
+  }
+  @media print{
+    body{background:#fff} .sheet{box-shadow:none;max-width:none}
+    .toolbar,.challenge,.gridnote{display:none}
+    svg.wm,.gridframe::before{display:none}
+    .gridframe{border:0;padding:0;box-shadow:none}
+    .c{background:#fff}
+    .c input{color:#000}
+  }
+</style>
+</head>
+<body>
+<div class="sheet">
+
+  <header class="top">
+    <p class="eyebrow">ICU and You &nbsp;·&nbsp; Superpuzzle Series &nbsp;·&nbsp; Number 49</p>
+    <h1>The postneonatal infant</h1>
+    <p class="kicker">Twenty clues &nbsp;·&nbsp; companion to Mind Map #32 and Aphorism #36</p>
+  </header>
+
+  <div class="pad">
+    <p class="instruct">Type straight into the grid &mdash; click a square or a clue to start, and the letters will advance for you. Nothing is saved, so finish in one sitting and press <strong>Send my answers</strong> when you are done. Most of it comes from this week's mind map. Three are history, one is a Victorian verdict, and one is a wheeled seat that Canada made illegal.</p>
+
+    <div class="gridwrap">
+      <div class="gridframe">
+        <svg class="wm" viewBox="0 0 576 800" preserveAspectRatio="none" aria-hidden="true"><g transform="translate(17,532) scale(0.495)"><g fill="none" stroke="#2E6E8E" stroke-width="11"
+             stroke-linecap="round" stroke-linejoin="round" opacity="0.13">
+        <!-- tray, seen slightly from above -->
+        <ellipse cx="230" cy="118" rx="176" ry="56"/>
+        <!-- seat opening -->
+        <ellipse cx="230" cy="112" rx="82" ry="30"/>
+        <!-- splayed frame down to the wheel base -->
+        <path d="M56 128 L104 292"/>
+        <path d="M404 128 L356 292"/>
+        <path d="M150 168 L150 292"/>
+        <path d="M310 168 L310 292"/>
+        <!-- base ring -->
+        <ellipse cx="230" cy="300" rx="140" ry="44"/>
+        <!-- castors -->
+        <circle cx="104" cy="332" r="26"/>
+        <circle cx="356" cy="332" r="26"/>
+        <circle cx="230" cy="352" r="26"/>
+      </g></g></svg>
+        <div class="grid" id="grid">
+          <div class="c" style="grid-column:3;grid-row:1"><span class="n">1</span><input id="i2_0" data-x="2" data-y="0" maxlength="1" autocapitalize="characters" autocomplete="off" autocorrect="off" spellcheck="false"></div><div class="c" style="grid-column:10;grid-row:1"><span class="n">2</span><input id="i9_0" data-x="9" data-y="0" maxlength="1" autocapitalize="characters" autocomplete="off" autocorrect="off" spellcheck="false"></div><div class="c" style="grid-column:3;grid-row:2"><input id="i2_1" data-x="2" data-y="1" maxlength="1" autocapitalize="characters" autocomplete="off" autocorrect="off" spellcheck="false"></div><div class="c" style="grid-column:10;grid-row:2"><input id="i9_1" data-x="9" data-y="1" maxlength="1" autocapitalize="characters" autocomplete="off" autocorrect="off" spellcheck="false"></div><div class="c" style="grid-column:14;grid-row:2"><span class="n">3</span><input id="i13_1" data-x="13" data-y="1" maxlength="1" autocapitalize="characters" autocomplete="off" autocorrect="off" spellcheck="false"></div><div class="c" style="grid-column:2;grid-row:3"><span class="n">4</span><input id="i1_2" data-x="1" data-y="2" maxlength="1" autocapitalize="characters" autocomplete="off" autocorrect="off" spellcheck="false"></div><div class="c" style="grid-column:3;grid-row:3"><input id="i2_2" data-x="2" data-y="2" maxlength="1" autocapitalize="characters" autocomplete="off" autocorrect="off" spellcheck="false"></div><div class="c" style="grid-column:4;grid-row:3"><input id="i3_2" data-x="3" data-y="2" maxlength="1" autocapitalize="characters" autocomplete="off" autocorrect="off" spellcheck="false"></div><div class="c" style="grid-column:5;grid-row:3"><span class="n">5</span><input id="i4_2" data-x="4" data-y="2" maxlength="1" autocapitalize="characters" autocomplete="off" autocorrect="off" spellcheck="false"></div><div class="c" style="grid-column:6;grid-row:3"><input id="i5_2" data-x="5" data-y="2" maxlength="1" autocapitalize="characters" autocomplete="off" autocorrect="off" spellcheck="false"></div><div class="c" style="grid-column:7;grid-row:3"><input id="i6_2" data-x="6" data-y="2" maxlength="1" autocapitalize="characters" autocomplete="off" autocorrect="off" spellcheck="false"></div><div class="c" style="grid-column:8;grid-row:3"><span class="n">6</span><input id="i7_2" data-x="7" data-y="2" maxlength="1" autocapitalize="characters" autocomplete="off" autocorrect="off" spellcheck="false"></div><div class="c" style="grid-column:9;grid-row:3"><input id="i8_2" data-x="8" data-y="2" maxlength="1" autocapitalize="characters" autocomplete="off" autocorrect="off" spellcheck="false"></div><div class="c" style="grid-column:10;grid-row:3"><input id="i9_2" data-x="9" data-y="2" maxlength="1" autocapitalize="characters" autocomplete="off" autocorrect="off" spellcheck="false"></div><div class="c" style="grid-column:11;grid-row:3"><span class="n">7</span><input id="i10_2" data-x="10" data-y="2" maxlength="1" autocapitalize="characters" autocomplete="off" autocorrect="off" spellcheck="false"></div><div class="c" style="grid-column:12;grid-row:3"><input id="i11_2" data-x="11" data-y="2" maxlength="1" autocapitalize="characters" autocomplete="off" autocorrect="off" spellcheck="false"></div><div class="c" style="grid-column:13;grid-row:3"><input id="i12_2" data-x="12" data-y="2" maxlength="1" autocapitalize="characters" autocomplete="off" autocorrect="off" spellcheck="false"></div><div class="c" style="grid-column:14;grid-row:3"><input id="i13_2" data-x="13" data-y="2" maxlength="1" autocapitalize="characters" autocomplete="off" autocorrect="off" spellcheck="false"></div><div class="c" style="grid-column:15;grid-row:3"><input id="i14_2" data-x="14" data-y="2" maxlength="1" autocapitalize="characters" autocomplete="off" autocorrect="off" spellcheck="false"></div><div class="c" style="grid-column:16;grid-row:3"><input id="i15_2" data-x="15" data-y="2" maxlength="1" autocapitalize="characters" autocomplete="off" autocorrect="off" spellcheck="false"></div><div class="c" style="grid-column:17;grid-row:3"><span class="n">8</span><input id="i16_2" data-x="16" data-y="2" maxlength="1" autocapitalize="characters" autocomplete="off" autocorrect="off" spellcheck="false"></div><div class="c" style="grid-column:3;grid-row:4"><input id="i2_3" data-x="2" data-y="3" maxlength="1" autocapitalize="characters" autocomplete="off" autocorrect="off" spellcheck="false"></div><div class="c" style="grid-column:5;grid-row:4"><input id="i4_3" data-x="4" data-y="3" maxlength="1" autocapitalize="characters" autocomplete="off" autocorrect="off" spellcheck="false"></div><div class="c" style="grid-column:8;grid-row:4"><input id="i7_3" data-x="7" data-y="3" maxlength="1" autocapitalize="characters" autocomplete="off" autocorrect="off" spellcheck="false"></div><div class="c" style="grid-column:11;grid-row:4"><input id="i10_3" data-x="10" data-y="3" maxlength="1" autocapitalize="characters" autocomplete="off" autocorrect="off" spellcheck="false"></div><div class="c" style="grid-column:14;grid-row:4"><input id="i13_3" data-x="13" data-y="3" maxlength="1" autocapitalize="characters" autocomplete="off" autocorrect="off" spellcheck="false"></div><div class="c" style="grid-column:17;grid-row:4"><input id="i16_3" data-x="16" data-y="3" maxlength="1" autocapitalize="characters" autocomplete="off" autocorrect="off" spellcheck="false"></div><div class="c" style="grid-column:3;grid-row:5"><input id="i2_4" data-x="2" data-y="4" maxlength="1" autocapitalize="characters" autocomplete="off" autocorrect="off" spellcheck="false"></div><div class="c" style="grid-column:5;grid-row:5"><input id="i4_4" data-x="4" data-y="4" maxlength="1" autocapitalize="characters" autocomplete="off" autocorrect="off" spellcheck="false"></div><div class="c" style="grid-column:8;grid-row:5"><input id="i7_4" data-x="7" data-y="4" maxlength="1" autocapitalize="characters" autocomplete="off" autocorrect="off" spellcheck="false"></div><div class="c" style="grid-column:11;grid-row:5"><input id="i10_4" data-x="10" data-y="4" maxlength="1" autocapitalize="characters" autocomplete="off" autocorrect="off" spellcheck="false"></div><div class="c" style="grid-column:14;grid-row:5"><input id="i13_4" data-x="13" data-y="4" maxlength="1" autocapitalize="characters" autocomplete="off" autocorrect="off" spellcheck="false"></div><div class="c" style="grid-column:17;grid-row:5"><input id="i16_4" data-x="16" data-y="4" maxlength="1" autocapitalize="characters" autocomplete="off" autocorrect="off" spellcheck="false"></div><div class="c" style="grid-column:3;grid-row:6"><input id="i2_5" data-x="2" data-y="5" maxlength="1" autocapitalize="characters" autocomplete="off" autocorrect="off" spellcheck="false"></div><div class="c" style="grid-column:5;grid-row:6"><input id="i4_5" data-x="4" data-y="5" maxlength="1" autocapitalize="characters" autocomplete="off" autocorrect="off" spellcheck="false"></div><div class="c" style="grid-column:8;grid-row:6"><input id="i7_5" data-x="7" data-y="5" maxlength="1" autocapitalize="characters" autocomplete="off" autocorrect="off" spellcheck="false"></div><div class="c" style="grid-column:11;grid-row:6"><input id="i10_5" data-x="10" data-y="5" maxlength="1" autocapitalize="characters" autocomplete="off" autocorrect="off" spellcheck="false"></div><div class="c" style="grid-column:14;grid-row:6"><input id="i13_5" data-x="13" data-y="5" maxlength="1" autocapitalize="characters" autocomplete="off" autocorrect="off" spellcheck="false"></div><div class="c" style="grid-column:17;grid-row:6"><input id="i16_5" data-x="16" data-y="5" maxlength="1" autocapitalize="characters" autocomplete="off" autocorrect="off" spellcheck="false"></div><div class="c" style="grid-column:1;grid-row:7"><span class="n">9</span><input id="i0_6" data-x="0" data-y="6" maxlength="1" autocapitalize="characters" autocomplete="off" autocorrect="off" spellcheck="false"></div><div class="c" style="grid-column:2;grid-row:7"><input id="i1_6" data-x="1" data-y="6" maxlength="1" autocapitalize="characters" autocomplete="off" autocorrect="off" spellcheck="false"></div><div class="c" style="grid-column:3;grid-row:7"><input id="i2_6" data-x="2" data-y="6" maxlength="1" autocapitalize="characters" autocomplete="off" autocorrect="off" spellcheck="false"></div><div class="c" style="grid-column:4;grid-row:7"><input id="i3_6" data-x="3" data-y="6" maxlength="1" autocapitalize="characters" autocomplete="off" autocorrect="off" spellcheck="false"></div><div class="c" style="grid-column:5;grid-row:7"><input id="i4_6" data-x="4" data-y="6" maxlength="1" autocapitalize="characters" autocomplete="off" autocorrect="off" spellcheck="false"></div><div class="c" style="grid-column:6;grid-row:7"><input id="i5_6" data-x="5" data-y="6" maxlength="1" autocapitalize="characters" autocomplete="off" autocorrect="off" spellcheck="false"></div><div class="c" style="grid-column:8;grid-row:7"><input id="i7_6" data-x="7" data-y="6" maxlength="1" autocapitalize="characters" autocomplete="off" autocorrect="off" spellcheck="false"></div><div class="c" style="grid-column:11;grid-row:7"><input id="i10_6" data-x="10" data-y="6" maxlength="1" autocapitalize="characters" autocomplete="off" autocorrect="off" spellcheck="false"></div><div class="c" style="grid-column:13;grid-row:7"><span class="n">10</span><input id="i12_6" data-x="12" data-y="6" maxlength="1" autocapitalize="characters" autocomplete="off" autocorrect="off" spellcheck="false"></div><div class="c" style="grid-column:14;grid-row:7"><input id="i13_6" data-x="13" data-y="6" maxlength="1" autocapitalize="characters" autocomplete="off" autocorrect="off" spellcheck="false"></div><div class="c" style="grid-column:15;grid-row:7"><input id="i14_6" data-x="14" data-y="6" maxlength="1" autocapitalize="characters" autocomplete="off" autocorrect="off" spellcheck="false"></div><div class="c" style="grid-column:16;grid-row:7"><input id="i15_6" data-x="15" data-y="6" maxlength="1" autocapitalize="characters" autocomplete="off" autocorrect="off" spellcheck="false"></div><div class="c" style="grid-column:17;grid-row:7"><input id="i16_6" data-x="16" data-y="6" maxlength="1" autocapitalize="characters" autocomplete="off" autocorrect="off" spellcheck="false"></div><div class="c" style="grid-column:18;grid-row:7"><input id="i17_6" data-x="17" data-y="6" maxlength="1" autocapitalize="characters" autocomplete="off" autocorrect="off" spellcheck="false"></div><div class="c" style="grid-column:3;grid-row:8"><input id="i2_7" data-x="2" data-y="7" maxlength="1" autocapitalize="characters" autocomplete="off" autocorrect="off" spellcheck="false"></div><div class="c" style="grid-column:5;grid-row:8"><input id="i4_7" data-x="4" data-y="7" maxlength="1" autocapitalize="characters" autocomplete="off" autocorrect="off" spellcheck="false"></div><div class="c" style="grid-column:8;grid-row:8"><input id="i7_7" data-x="7" data-y="7" maxlength="1" autocapitalize="characters" autocomplete="off" autocorrect="off" spellcheck="false"></div><div class="c" style="grid-column:11;grid-row:8"><input id="i10_7" data-x="10" data-y="7" maxlength="1" autocapitalize="characters" autocomplete="off" autocorrect="off" spellcheck="false"></div><div class="c" style="grid-column:14;grid-row:8"><input id="i13_7" data-x="13" data-y="7" maxlength="1" autocapitalize="characters" autocomplete="off" autocorrect="off" spellcheck="false"></div><div class="c" style="grid-column:17;grid-row:8"><input id="i16_7" data-x="16" data-y="7" maxlength="1" autocapitalize="characters" autocomplete="off" autocorrect="off" spellcheck="false"></div><div class="c" style="grid-column:4;grid-row:9"><span class="n">11</span><input id="i3_8" data-x="3" data-y="8" maxlength="1" autocapitalize="characters" autocomplete="off" autocorrect="off" spellcheck="false"></div><div class="c" style="grid-column:5;grid-row:9"><input id="i4_8" data-x="4" data-y="8" maxlength="1" autocapitalize="characters" autocomplete="off" autocorrect="off" spellcheck="false"></div><div class="c" style="grid-column:6;grid-row:9"><input id="i5_8" data-x="5" data-y="8" maxlength="1" autocapitalize="characters" autocomplete="off" autocorrect="off" spellcheck="false"></div><div class="c" style="grid-column:7;grid-row:9"><input id="i6_8" data-x="6" data-y="8" maxlength="1" autocapitalize="characters" autocomplete="off" autocorrect="off" spellcheck="false"></div><div class="c" style="grid-column:8;grid-row:9"><input id="i7_8" data-x="7" data-y="8" maxlength="1" autocapitalize="characters" autocomplete="off" autocorrect="off" spellcheck="false"></div><div class="c" style="grid-column:10;grid-row:9"><span class="n">12</span><input id="i9_8" data-x="9" data-y="8" maxlength="1" autocapitalize="characters" autocomplete="off" autocorrect="off" spellcheck="false"></div><div class="c" style="grid-column:11;grid-row:9"><input id="i10_8" data-x="10" data-y="8" maxlength="1" autocapitalize="characters" autocomplete="off" autocorrect="off" spellcheck="false"></div><div class="c" style="grid-column:12;grid-row:9"><input id="i11_8" data-x="11" data-y="8" maxlength="1" autocapitalize="characters" autocomplete="off" autocorrect="off" spellcheck="false"></div><div class="c" style="grid-column:13;grid-row:9"><input id="i12_8" data-x="12" data-y="8" maxlength="1" autocapitalize="characters" autocomplete="off" autocorrect="off" spellcheck="false"></div><div class="c" style="grid-column:5;grid-row:10"><input id="i4_9" data-x="4" data-y="9" maxlength="1" autocapitalize="characters" autocomplete="off" autocorrect="off" spellcheck="false"></div><div class="c" style="grid-column:8;grid-row:10"><input id="i7_9" data-x="7" data-y="9" maxlength="1" autocapitalize="characters" autocomplete="off" autocorrect="off" spellcheck="false"></div><div class="c" style="grid-column:11;grid-row:10"><input id="i10_9" data-x="10" data-y="9" maxlength="1" autocapitalize="characters" autocomplete="off" autocorrect="off" spellcheck="false"></div><div class="c" style="grid-column:3;grid-row:11"><span class="n">13</span><input id="i2_10" data-x="2" data-y="10" maxlength="1" autocapitalize="characters" autocomplete="off" autocorrect="off" spellcheck="false"></div><div class="c" style="grid-column:5;grid-row:11"><input id="i4_10" data-x="4" data-y="10" maxlength="1" autocapitalize="characters" autocomplete="off" autocorrect="off" spellcheck="false"></div><div class="c" style="grid-column:8;grid-row:11"><input id="i7_10" data-x="7" data-y="10" maxlength="1" autocapitalize="characters" autocomplete="off" autocorrect="off" spellcheck="false"></div><div class="c" style="grid-column:11;grid-row:11"><input id="i10_10" data-x="10" data-y="10" maxlength="1" autocapitalize="characters" autocomplete="off" autocorrect="off" spellcheck="false"></div><div class="c" style="grid-column:2;grid-row:12"><span class="n">14</span><input id="i1_11" data-x="1" data-y="11" maxlength="1" autocapitalize="characters" autocomplete="off" autocorrect="off" spellcheck="false"></div><div class="c" style="grid-column:3;grid-row:12"><input id="i2_11" data-x="2" data-y="11" maxlength="1" autocapitalize="characters" autocomplete="off" autocorrect="off" spellcheck="false"></div><div class="c" style="grid-column:4;grid-row:12"><input id="i3_11" data-x="3" data-y="11" maxlength="1" autocapitalize="characters" autocomplete="off" autocorrect="off" spellcheck="false"></div><div class="c" style="grid-column:5;grid-row:12"><input id="i4_11" data-x="4" data-y="11" maxlength="1" autocapitalize="characters" autocomplete="off" autocorrect="off" spellcheck="false"></div><div class="c" style="grid-column:6;grid-row:12"><input id="i5_11" data-x="5" data-y="11" maxlength="1" autocapitalize="characters" autocomplete="off" autocorrect="off" spellcheck="false"></div><div class="c" style="grid-column:8;grid-row:12"><input id="i7_11" data-x="7" data-y="11" maxlength="1" autocapitalize="characters" autocomplete="off" autocorrect="off" spellcheck="false"></div><div class="c" style="grid-column:11;grid-row:12"><input id="i10_11" data-x="10" data-y="11" maxlength="1" autocapitalize="characters" autocomplete="off" autocorrect="off" spellcheck="false"></div><div class="c" style="grid-column:15;grid-row:12"><span class="n">15</span><input id="i14_11" data-x="14" data-y="11" maxlength="1" autocapitalize="characters" autocomplete="off" autocorrect="off" spellcheck="false"></div><div class="c" style="grid-column:3;grid-row:13"><input id="i2_12" data-x="2" data-y="12" maxlength="1" autocapitalize="characters" autocomplete="off" autocorrect="off" spellcheck="false"></div><div class="c" style="grid-column:5;grid-row:13"><input id="i4_12" data-x="4" data-y="12" maxlength="1" autocapitalize="characters" autocomplete="off" autocorrect="off" spellcheck="false"></div><div class="c" style="grid-column:15;grid-row:13"><input id="i14_12" data-x="14" data-y="12" maxlength="1" autocapitalize="characters" autocomplete="off" autocorrect="off" spellcheck="false"></div><div class="c" style="grid-column:2;grid-row:14"><span class="n">16</span><input id="i1_13" data-x="1" data-y="13" maxlength="1" autocapitalize="characters" autocomplete="off" autocorrect="off" spellcheck="false"></div><div class="c" style="grid-column:3;grid-row:14"><input id="i2_13" data-x="2" data-y="13" maxlength="1" autocapitalize="characters" autocomplete="off" autocorrect="off" spellcheck="false"></div><div class="c" style="grid-column:4;grid-row:14"><input id="i3_13" data-x="3" data-y="13" maxlength="1" autocapitalize="characters" autocomplete="off" autocorrect="off" spellcheck="false"></div><div class="c" style="grid-column:5;grid-row:14"><input id="i4_13" data-x="4" data-y="13" maxlength="1" autocapitalize="characters" autocomplete="off" autocorrect="off" spellcheck="false"></div><div class="c" style="grid-column:6;grid-row:14"><input id="i5_13" data-x="5" data-y="13" maxlength="1" autocapitalize="characters" autocomplete="off" autocorrect="off" spellcheck="false"></div><div class="c" style="grid-column:7;grid-row:14"><input id="i6_13" data-x="6" data-y="13" maxlength="1" autocapitalize="characters" autocomplete="off" autocorrect="off" spellcheck="false"></div><div class="c" style="grid-column:8;grid-row:14"><input id="i7_13" data-x="7" data-y="13" maxlength="1" autocapitalize="characters" autocomplete="off" autocorrect="off" spellcheck="false"></div><div class="c" style="grid-column:9;grid-row:14"><input id="i8_13" data-x="8" data-y="13" maxlength="1" autocapitalize="characters" autocomplete="off" autocorrect="off" spellcheck="false"></div><div class="c" style="grid-column:10;grid-row:14"><input id="i9_13" data-x="9" data-y="13" maxlength="1" autocapitalize="characters" autocomplete="off" autocorrect="off" spellcheck="false"></div><div class="c" style="grid-column:11;grid-row:14"><input id="i10_13" data-x="10" data-y="13" maxlength="1" autocapitalize="characters" autocomplete="off" autocorrect="off" spellcheck="false"></div><div class="c" style="grid-column:13;grid-row:14"><span class="n">17</span><input id="i12_13" data-x="12" data-y="13" maxlength="1" autocapitalize="characters" autocomplete="off" autocorrect="off" spellcheck="false"></div><div class="c" style="grid-column:15;grid-row:14"><input id="i14_13" data-x="14" data-y="13" maxlength="1" autocapitalize="characters" autocomplete="off" autocorrect="off" spellcheck="false"></div><div class="c" style="grid-column:5;grid-row:15"><input id="i4_14" data-x="4" data-y="14" maxlength="1" autocapitalize="characters" autocomplete="off" autocorrect="off" spellcheck="false"></div><div class="c" style="grid-column:13;grid-row:15"><input id="i12_14" data-x="12" data-y="14" maxlength="1" autocapitalize="characters" autocomplete="off" autocorrect="off" spellcheck="false"></div><div class="c" style="grid-column:15;grid-row:15"><input id="i14_14" data-x="14" data-y="14" maxlength="1" autocapitalize="characters" autocomplete="off" autocorrect="off" spellcheck="false"></div><div class="c" style="grid-column:3;grid-row:16"><span class="n">18</span><input id="i2_15" data-x="2" data-y="15" maxlength="1" autocapitalize="characters" autocomplete="off" autocorrect="off" spellcheck="false"></div><div class="c" style="grid-column:4;grid-row:16"><input id="i3_15" data-x="3" data-y="15" maxlength="1" autocapitalize="characters" autocomplete="off" autocorrect="off" spellcheck="false"></div><div class="c" style="grid-column:5;grid-row:16"><input id="i4_15" data-x="4" data-y="15" maxlength="1" autocapitalize="characters" autocomplete="off" autocorrect="off" spellcheck="false"></div><div class="c" style="grid-column:6;grid-row:16"><input id="i5_15" data-x="5" data-y="15" maxlength="1" autocapitalize="characters" autocomplete="off" autocorrect="off" spellcheck="false"></div><div class="c" style="grid-column:7;grid-row:16"><input id="i6_15" data-x="6" data-y="15" maxlength="1" autocapitalize="characters" autocomplete="off" autocorrect="off" spellcheck="false"></div><div class="c" style="grid-column:8;grid-row:16"><input id="i7_15" data-x="7" data-y="15" maxlength="1" autocapitalize="characters" autocomplete="off" autocorrect="off" spellcheck="false"></div><div class="c" style="grid-column:9;grid-row:16"><input id="i8_15" data-x="8" data-y="15" maxlength="1" autocapitalize="characters" autocomplete="off" autocorrect="off" spellcheck="false"></div><div class="c" style="grid-column:10;grid-row:16"><input id="i9_15" data-x="9" data-y="15" maxlength="1" autocapitalize="characters" autocomplete="off" autocorrect="off" spellcheck="false"></div><div class="c" style="grid-column:11;grid-row:16"><input id="i10_15" data-x="10" data-y="15" maxlength="1" autocapitalize="characters" autocomplete="off" autocorrect="off" spellcheck="false"></div><div class="c" style="grid-column:12;grid-row:16"><input id="i11_15" data-x="11" data-y="15" maxlength="1" autocapitalize="characters" autocomplete="off" autocorrect="off" spellcheck="false"></div><div class="c" style="grid-column:13;grid-row:16"><input id="i12_15" data-x="12" data-y="15" maxlength="1" autocapitalize="characters" autocomplete="off" autocorrect="off" spellcheck="false"></div><div class="c" style="grid-column:14;grid-row:16"><input id="i13_15" data-x="13" data-y="15" maxlength="1" autocapitalize="characters" autocomplete="off" autocorrect="off" spellcheck="false"></div><div class="c" style="grid-column:15;grid-row:16"><input id="i14_15" data-x="14" data-y="15" maxlength="1" autocapitalize="characters" autocomplete="off" autocorrect="off" spellcheck="false"></div><div class="c" style="grid-column:5;grid-row:17"><input id="i4_16" data-x="4" data-y="16" maxlength="1" autocapitalize="characters" autocomplete="off" autocorrect="off" spellcheck="false"></div><div class="c" style="grid-column:13;grid-row:17"><input id="i12_16" data-x="12" data-y="16" maxlength="1" autocapitalize="characters" autocomplete="off" autocorrect="off" spellcheck="false"></div><div class="c" style="grid-column:15;grid-row:17"><input id="i14_16" data-x="14" data-y="16" maxlength="1" autocapitalize="characters" autocomplete="off" autocorrect="off" spellcheck="false"></div><div class="c" style="grid-column:13;grid-row:18"><input id="i12_17" data-x="12" data-y="17" maxlength="1" autocapitalize="characters" autocomplete="off" autocorrect="off" spellcheck="false"></div><div class="c" style="grid-column:15;grid-row:18"><input id="i14_17" data-x="14" data-y="17" maxlength="1" autocapitalize="characters" autocomplete="off" autocorrect="off" spellcheck="false"></div><div class="c" style="grid-column:10;grid-row:19"><span class="n">19</span><input id="i9_18" data-x="9" data-y="18" maxlength="1" autocapitalize="characters" autocomplete="off" autocorrect="off" spellcheck="false"></div><div class="c" style="grid-column:11;grid-row:19"><input id="i10_18" data-x="10" data-y="18" maxlength="1" autocapitalize="characters" autocomplete="off" autocorrect="off" spellcheck="false"></div><div class="c" style="grid-column:12;grid-row:19"><input id="i11_18" data-x="11" data-y="18" maxlength="1" autocapitalize="characters" autocomplete="off" autocorrect="off" spellcheck="false"></div><div class="c" style="grid-column:13;grid-row:19"><input id="i12_18" data-x="12" data-y="18" maxlength="1" autocapitalize="characters" autocomplete="off" autocorrect="off" spellcheck="false"></div><div class="c" style="grid-column:14;grid-row:19"><input id="i13_18" data-x="13" data-y="18" maxlength="1" autocapitalize="characters" autocomplete="off" autocorrect="off" spellcheck="false"></div><div class="c" style="grid-column:15;grid-row:19"><input id="i14_18" data-x="14" data-y="18" maxlength="1" autocapitalize="characters" autocomplete="off" autocorrect="off" spellcheck="false"></div><div class="c" style="grid-column:16;grid-row:19"><input id="i15_18" data-x="15" data-y="18" maxlength="1" autocapitalize="characters" autocomplete="off" autocorrect="off" spellcheck="false"></div><div class="c" style="grid-column:13;grid-row:20"><input id="i12_19" data-x="12" data-y="19" maxlength="1" autocapitalize="characters" autocomplete="off" autocorrect="off" spellcheck="false"></div><div class="c" style="grid-column:12;grid-row:21"><span class="n">20</span><input id="i11_20" data-x="11" data-y="20" maxlength="1" autocapitalize="characters" autocomplete="off" autocorrect="off" spellcheck="false"></div><div class="c" style="grid-column:13;grid-row:21"><input id="i12_20" data-x="12" data-y="20" maxlength="1" autocapitalize="characters" autocomplete="off" autocorrect="off" spellcheck="false"></div><div class="c" style="grid-column:14;grid-row:21"><input id="i13_20" data-x="13" data-y="20" maxlength="1" autocapitalize="characters" autocomplete="off" autocorrect="off" spellcheck="false"></div><div class="c" style="grid-column:13;grid-row:22"><input id="i12_21" data-x="12" data-y="21" maxlength="1" autocapitalize="characters" autocomplete="off" autocorrect="off" spellcheck="false"></div><div class="c" style="grid-column:13;grid-row:23"><input id="i12_22" data-x="12" data-y="22" maxlength="1" autocapitalize="characters" autocomplete="off" autocorrect="off" spellcheck="false"></div><div class="c" style="grid-column:13;grid-row:24"><input id="i12_23" data-x="12" data-y="23" maxlength="1" autocapitalize="characters" autocomplete="off" autocorrect="off" spellcheck="false"></div><div class="c" style="grid-column:13;grid-row:25"><input id="i12_24" data-x="12" data-y="24" maxlength="1" autocapitalize="characters" autocomplete="off" autocorrect="off" spellcheck="false"></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="toolbar">
+      <button class="tool" id="clear" type="button">Clear the grid</button>
+      <span class="count" id="count">0 of 134 squares filled</span>
+    </div>
+    <p class="gridnote">On a phone, scroll the grid sideways. Arrow keys move; typing a letter moves you on; backspace steps back.</p>
+  </div>
+
+  <div class="pad" style="padding-top:0">
+    <div class="cols">
+      <div class="col">
+        <h2 class="sec">Across</h2>
+        <ul class="clues" id="cA">
+          <li data-n="4" data-d="A"><span class="cn">4</span><span class="ct">A rash that does not blanch is this bloodstream infection until proven otherwise (Australian spelling)</span></li>
+          <li data-n="9" data-d="A"><span class="cn">9</span><span class="ct">A bruise in a baby not yet able to do this is a red flag</span></li>
+          <li data-n="10" data-d="A"><span class="cn">10</span><span class="ct">Wheeled seat that Canada, alone in the world at the time, banned outright in April 2004 after nearly two thousand injuries in a twelve-year period, but not banned everywhere — baby ___</span></li>
+          <li data-n="11" data-d="A"><span class="cn">11</span><span class="ct">Sleep comforter — Australian and British term — associated with a <em>reduced</em> risk of sudden infant death</span></li>
+          <li data-n="12" data-d="A"><span class="cn">12</span><span class="ct">Position for every sleep, every time — and no, the side is not an acceptable alternative</span></li>
+          <li data-n="14" data-d="A"><span class="cn">14</span><span class="ct">Sweet food that must not be given before twelve months, including on a dummy, because of <em>Clostridium botulinum</em> spores</span></li>
+          <li data-n="16" data-d="A"><span class="cn">16</span><span class="ct">Soft spot that closes between nine and eighteen months, and sometimes bulges when it should not</span></li>
+          <li data-n="18" data-d="A"><span class="cn">18</span><span class="ct">Leading cause of hospital admission in the first year of life</span></li>
+          <li data-n="19" data-d="A"><span class="cn">19</span><span class="ct">In a sick infant, a slow heart rate means this until proven otherwise</span></li>
+          <li data-n="20" data-d="A"><span class="cn">20</span><span class="ct">Virus behind most bronchiolitis, by its initials</span></li>
+        </ul>
+      </div>
+      <div class="col">
+        <h2 class="sec">Down</h2>
+        <ul class="clues" id="cD">
+          <li data-n="1" data-d="D"><span class="cn">1</span><span class="ct">Membrane under the upper lip; a torn one is a classic marker of inflicted injury</span></li>
+          <li data-n="2" data-d="D"><span class="cn">2</span><span class="ct">Estimated weight in kg for an infant under one = (age in months + 9) divided by this</span></li>
+          <li data-n="3" data-d="D"><span class="cn">3</span><span class="ct">Haemorrhages sought on fundoscopy in abusive head trauma</span></li>
+          <li data-n="5" data-d="D"><span class="cn">5</span><span class="ct">Bowel telescoping into bowel; ultrasound is the first-line investigation</span></li>
+          <li data-n="6" data-d="D"><span class="cn">6</span><span class="ct">Nineteenth-century verdict for cot death, still found on old certificates</span></li>
+          <li data-n="7" data-d="D"><span class="cn">7</span><span class="ct">Chest wall property that leaves an infant so dependent on the diaphragm</span></li>
+          <li data-n="8" data-d="D"><span class="cn">8</span><span class="ct">What the young or ex-preterm infant with bronchiolitis may do — and the reason to admit</span></li>
+          <li data-n="13" data-d="D"><span class="cn">13</span><span class="ct">Normal startle reflex of infancy, described in 1918, present at birth and gone by six months — its persistence is the abnormality</span></li>
+          <li data-n="15" data-d="D"><span class="cn">15</span><span class="ct">Fever of five days or more with four of: red eyes, cracked lips, rash, swollen hands, enlarged cervical nodes — and coronary aneurysms if it is missed. ___ disease</span></li>
+          <li data-n="17" data-d="D"><span class="cn">17</span><span class="ct">Route to use when the veins have failed — drilled, not cannulated</span></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div class="pad" style="padding-top:6px">
+    <div class="challenge">
+      <h2>Sending your answers</h2>
+      <p>Finish it, or get as far as you get &mdash; partial sets are welcome and are how I find out which clue was unfair. The button collects whatever you have typed and puts it into an email to me.</p>
+      <p><button class="btn" id="send" type="button">Send my answers</button></p>
+      <p class="fallback">If the button does nothing on your device, screenshot the grid and send it to <a href="mailto:icuandyou@icloud.com">icuandyou@icloud.com</a> instead.</p>
+    </div>
+  </div>
+
+  <footer>
+    <a class="home" href="./">&larr; &nbsp;All of ICU AND YOU</a><br>
+    ICU AND YOU &nbsp;·&nbsp; Superpuzzle #49 &nbsp;·&nbsp; The Postneonatal Infant<br>
+    Educational use within the ICU education programme.
+  </footer>
+
+</div>
+
+<script>
+(function(){
+  var GEOM = [{"n": 1, "d": "D", "c": [[2, 0], [2, 1], [2, 2], [2, 3], [2, 4], [2, 5], [2, 6], [2, 7]]}, {"n": 2, "d": "D", "c": [[9, 0], [9, 1], [9, 2]]}, {"n": 3, "d": "D", "c": [[13, 1], [13, 2], [13, 3], [13, 4], [13, 5], [13, 6], [13, 7]]}, {"n": 4, "d": "A", "c": [[1, 2], [2, 2], [3, 2], [4, 2], [5, 2], [6, 2], [7, 2], [8, 2], [9, 2], [10, 2], [11, 2], [12, 2], [13, 2], [14, 2], [15, 2], [16, 2]]}, {"n": 5, "d": "D", "c": [[4, 2], [4, 3], [4, 4], [4, 5], [4, 6], [4, 7], [4, 8], [4, 9], [4, 10], [4, 11], [4, 12], [4, 13], [4, 14], [4, 15], [4, 16]]}, {"n": 6, "d": "D", "c": [[7, 2], [7, 3], [7, 4], [7, 5], [7, 6], [7, 7], [7, 8], [7, 9], [7, 10], [7, 11]]}, {"n": 7, "d": "D", "c": [[10, 2], [10, 3], [10, 4], [10, 5], [10, 6], [10, 7], [10, 8], [10, 9], [10, 10], [10, 11]]}, {"n": 8, "d": "D", "c": [[16, 2], [16, 3], [16, 4], [16, 5], [16, 6], [16, 7]]}, {"n": 9, "d": "A", "c": [[0, 6], [1, 6], [2, 6], [3, 6], [4, 6], [5, 6]]}, {"n": 10, "d": "A", "c": [[12, 6], [13, 6], [14, 6], [15, 6], [16, 6], [17, 6]]}, {"n": 11, "d": "A", "c": [[3, 8], [4, 8], [5, 8], [6, 8], [7, 8]]}, {"n": 12, "d": "A", "c": [[9, 8], [10, 8], [11, 8], [12, 8]]}, {"n": 13, "d": "D", "c": [[2, 10], [2, 11], [2, 12], [2, 13]]}, {"n": 14, "d": "A", "c": [[1, 11], [2, 11], [3, 11], [4, 11], [5, 11]]}, {"n": 15, "d": "D", "c": [[14, 11], [14, 12], [14, 13], [14, 14], [14, 15], [14, 16], [14, 17], [14, 18]]}, {"n": 16, "d": "A", "c": [[1, 13], [2, 13], [3, 13], [4, 13], [5, 13], [6, 13], [7, 13], [8, 13], [9, 13], [10, 13]]}, {"n": 17, "d": "D", "c": [[12, 13], [12, 14], [12, 15], [12, 16], [12, 17], [12, 18], [12, 19], [12, 20], [12, 21], [12, 22], [12, 23], [12, 24]]}, {"n": 18, "d": "A", "c": [[2, 15], [3, 15], [4, 15], [5, 15], [6, 15], [7, 15], [8, 15], [9, 15], [10, 15], [11, 15], [12, 15], [13, 15], [14, 15]]}, {"n": 19, "d": "A", "c": [[9, 18], [10, 18], [11, 18], [12, 18], [13, 18], [14, 18], [15, 18]]}, {"n": 20, "d": "A", "c": [[11, 20], [12, 20], [13, 20]]}];
+  var TOTAL = 134;
+  var dir = "A", cur = null;
+  function inp(x,y){ return document.getElementById("i"+x+"_"+y); }
+  function entriesAt(x,y){
+    return GEOM.filter(function(g){ return g.c.some(function(p){ return p[0]===x && p[1]===y; }); });
+  }
+  function activeEntry(){
+    if(!cur) return null;
+    var es = entriesAt(+cur.dataset.x, +cur.dataset.y);
+    var m = es.filter(function(g){ return g.d===dir; });
+    return m.length ? m[0] : (es[0]||null);
+  }
+  function light(){
+    Array.prototype.forEach.call(document.querySelectorAll(".c input"),
+      function(i){ i.classList.remove("lit"); });
+    Array.prototype.forEach.call(document.querySelectorAll("ul.clues li"),
+      function(l){ l.classList.remove("on"); });
+    var e = activeEntry(); if(!e) return;
+    e.c.forEach(function(p){ var el=inp(p[0],p[1]); if(el) el.classList.add("lit"); });
+    var li = document.querySelector('li[data-n="'+e.n+'"][data-d="'+e.d+'"]');
+    if(li) li.classList.add("on");
+  }
+  function step(d){
+    var e = activeEntry(); if(!e || !cur) return;
+    var x=+cur.dataset.x, y=+cur.dataset.y;
+    for(var i=0;i<e.c.length;i++){
+      if(e.c[i][0]===x && e.c[i][1]===y){
+        var t=e.c[i+d]; if(t){ var el=inp(t[0],t[1]); if(el) el.focus(); }
+        return;
+      }
+    }
+  }
+  function tally(){
+    var n=0;
+    Array.prototype.forEach.call(document.querySelectorAll(".c input"),
+      function(i){ if(i.value.trim()) n++; });
+    document.getElementById("count").textContent = n+" of "+TOTAL+" squares filled";
+  }
+  document.getElementById("grid").addEventListener("focusin", function(ev){
+    if(ev.target.tagName!=="INPUT") return;
+    if(cur === ev.target){
+      var es = entriesAt(+ev.target.dataset.x, +ev.target.dataset.y);
+      if(es.length>1) dir = (dir==="A") ? "D" : "A";
+    }
+    cur = ev.target; light();
+  });
+  document.getElementById("grid").addEventListener("input", function(ev){
+    var v = ev.target.value.replace(/[^A-Za-z]/g,"").toUpperCase();
+    ev.target.value = v.slice(-1);
+    if(ev.target.value) step(1);
+    tally();
+  });
+  document.getElementById("grid").addEventListener("keydown", function(ev){
+    var k = ev.key;
+    if(k==="Backspace" && !ev.target.value){ ev.preventDefault(); step(-1); return; }
+    if(k==="ArrowRight"||k==="ArrowLeft"||k==="ArrowUp"||k==="ArrowDown"){
+      ev.preventDefault();
+      var x=+ev.target.dataset.x, y=+ev.target.dataset.y, dx=0, dy=0;
+      if(k==="ArrowRight") dx=1; if(k==="ArrowLeft") dx=-1;
+      if(k==="ArrowDown") dy=1; if(k==="ArrowUp") dy=-1;
+      dir = dx ? "A" : "D";
+      for(var s=1;s<60;s++){ var el = inp(x+dx*s, y+dy*s); if(el){ el.focus(); return; } }
+      light();
+    }
+    if(k==="Enter"){ ev.preventDefault(); dir = (dir==="A")?"D":"A"; light(); }
+  });
+  Array.prototype.forEach.call(document.querySelectorAll("ul.clues li"), function(li){
+    li.addEventListener("click", function(){
+      var n=+li.dataset.n, d=li.dataset.d;
+      var e = GEOM.filter(function(g){ return g.n===n && g.d===d; })[0];
+      if(!e) return;
+      dir = d;
+      var el = inp(e.c[0][0], e.c[0][1]);
+      if(el){ cur = el; el.focus(); light(); }
+    });
+  });
+  document.getElementById("clear").addEventListener("click", function(){
+    Array.prototype.forEach.call(document.querySelectorAll(".c input"),
+      function(i){ i.value=""; });
+    tally();
+  });
+  document.getElementById("send").addEventListener("click", function(){
+    function read(d){
+      return GEOM.filter(function(g){ return g.d===d; })
+        .sort(function(a,b){ return a.n-b.n; })
+        .map(function(g){
+          var s = g.c.map(function(p){
+            var el=inp(p[0],p[1]);
+            return (el && el.value) ? el.value.toUpperCase() : "_";
+          }).join("");
+          return g.n+". "+s;
+        }).join("\n");
+    }
+    var body = "ICU Superpuzzle #49 - my answers\n\nACROSS\n" + read("A") +
+               "\n\nDOWN\n" + read("D") +
+               "\n\n---\n\nAny clue that felt unfair:\n\n\nName:\n";
+    window.location.href = "mailto:icuandyou@icloud.com?subject="
+      + encodeURIComponent("Superpuzzle #49 - my answers")
+      + "&body=" + encodeURIComponent(body);
+  });
+  tally();
+})();
+</script>
+<script data-goatcounter="https://icuandyou.goatcounter.com/count"
+        async src="//gc.zgo.at/count.js"></script>
+</body>
+</html>
