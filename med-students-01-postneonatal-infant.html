@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en-AU">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ICU AND YOU · Medical Students' Place No. 1 — The Postneonatal Infant</title>
+<meta name="description" content="Medical Students' Place No. 1: the infant from one month to one year, in three tiers — the science, the clinical reasoning, and what you will be expected to do.">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="alternate icon" href="/favicon.ico" sizes="any">
+<link rel="apple-touch-icon" href="/icon-180.png">
+<meta name="theme-color" content="#1B2A33">
+<meta property="og:site_name" content="ICU AND YOU">
+<meta property="og:type" content="website">
+<meta property="og:title" content="ICU AND YOU · Medical Students' Place No. 1">
+<meta property="og:description" content="The postneonatal infant, in three tiers — for early, middle and senior medical students.">
+<meta property="og:image" content="https://icuandyou.com/share-card.png">
+<meta name="twitter:card" content="summary_large_image">
+<style>
+  :root{
+    --paper:#FBFAF8; --ink:#1F2130; --muted:#6A6A78; --rule:#DEDCE4;
+    --violet:#4C4A8F; --violettint:#EDECF6;
+    --sky:#2E6E8E; --skytint:#E7F1F6;
+    --moss:#4C6B4A; --mosstint:#EAF1E9;
+    --rust:#A8442A; --rusttint:#F9EDE7;
+  }
+  *{box-sizing:border-box}
+  body{margin:0;background:#EFEEF3;color:var(--ink);
+    font:400 17px/1.64 'Iowan Old Style','Palatino Linotype',Palatino,Georgia,serif;
+    -webkit-text-size-adjust:100%;}
+  .sheet{max-width:840px;margin:0 auto;background:var(--paper);
+    box-shadow:0 1px 40px rgba(31,33,48,.10);}
+
+  header.top{padding:44px 40px 28px;border-bottom:2px solid var(--violet)}
+  .eyebrow{font:500 11.5px/1 'Helvetica Neue',Arial,sans-serif;letter-spacing:.24em;
+    text-transform:uppercase;color:var(--muted);margin:0 0 14px}
+  h1{font-size:33px;line-height:1.18;margin:0 0 8px;font-weight:400;letter-spacing:-.012em}
+  .kicker{color:var(--muted);margin:0;font-size:16.5px;font-style:italic}
+
+  .pad{padding:32px 40px}
+  p{margin:0 0 16px}
+  .lede{font-size:19px;line-height:1.55;margin:0 0 20px}
+
+  /* tier navigation */
+  .jump{margin:0;padding:14px 40px;background:var(--violettint);
+    border-bottom:1px solid var(--rule);text-align:center;
+    font:400 15.5px 'Iowan Old Style',Palatino,Georgia,serif;color:var(--muted)}
+  .jump a{color:var(--violet);text-decoration:none;border-bottom:1px solid #BFBDDC;
+    padding-bottom:1px;font-weight:500}
+  .jump a:hover{color:var(--ink);border-bottom-color:var(--ink)}
+  html{scroll-behavior:smooth}
+  section[id]{scroll-margin-top:20px}
+
+  /* tiers */
+  section.tier{padding:32px 40px;border-top:1px solid var(--rule)}
+  .tier-k{font:600 11px 'Helvetica Neue',Arial,sans-serif;letter-spacing:.22em;
+    text-transform:uppercase;margin:0 0 8px}
+  .tier h2{font-size:26px;font-weight:400;margin:0 0 6px;line-height:1.24}
+  .tier .who{font-style:italic;color:var(--muted);margin:0 0 22px;font-size:16px}
+  .t1 .tier-k{color:var(--sky)} .t1{background:#FCFDFE}
+  .t2 .tier-k{color:var(--moss)} .t2{background:#FBFCFB}
+  .t3 .tier-k{color:var(--rust)} .t3{background:#FDFBFA}
+
+  ul.pts{list-style:none;margin:0 0 18px;padding:0}
+  ul.pts li{display:flex;gap:13px;padding:10px 0;border-bottom:1px solid #EDEBF2;
+    font-size:16.5px;line-height:1.5}
+  ul.pts li:last-child{border-bottom:0}
+  ul.pts b{flex:0 0 176px;font:600 14.5px 'Helvetica Neue',Arial,sans-serif;
+    line-height:1.4}
+  .t1 ul.pts b{color:var(--sky)} .t2 ul.pts b{color:var(--moss)} .t3 ul.pts b{color:var(--rust)}
+
+  .take{margin:0;padding:18px 22px;border-radius:0 8px 8px 0;font-size:16.5px}
+  .take b{font-weight:600}
+  .t1 .take{background:var(--skytint);border-left:4px solid var(--sky)}
+  .t2 .take{background:var(--mosstint);border-left:4px solid var(--moss)}
+  .t3 .take{background:var(--rusttint);border-left:4px solid var(--rust)}
+
+  .exam{margin:18px 0 0;font:400 14.5px 'Helvetica Neue',Arial,sans-serif;
+    color:var(--muted);line-height:1.6}
+  .exam b{color:var(--ink);font-weight:600}
+
+  .reply{margin:0;padding:30px 34px;background:var(--violettint);border-left:5px solid var(--violet)}
+  .reply h2{font:600 12px 'Helvetica Neue',Arial,sans-serif;letter-spacing:.2em;
+    text-transform:uppercase;color:var(--violet);margin:0 0 14px}
+  .ask{font-size:19.5px;line-height:1.5;font-style:italic;margin:0 0 15px}
+  .btn{display:inline-block;margin:6px 0 12px;padding:15px 30px;background:var(--violet);
+    color:#F8F8FC;text-decoration:none;border-radius:30px;font-style:normal;
+    font:600 15px 'Helvetica Neue',Arial,sans-serif;letter-spacing:.03em}
+  .btn:hover{background:#3A3873}
+  .fallback{font:400 13.5px 'Helvetica Neue',Arial,sans-serif;color:var(--muted);margin:0}
+  .fallback a{color:var(--violet)}
+
+  footer{padding:24px 40px 42px;border-top:1px solid var(--rule);
+    font:400 13px 'Helvetica Neue',Arial,sans-serif;color:var(--muted);text-align:center;line-height:1.7}
+  .home{display:inline-block;margin:0 0 14px;padding:8px 18px;border-radius:20px;
+    border:1px solid var(--rule);background:#F2F1F6;color:var(--violet);text-decoration:none;
+    font:600 12.5px 'Helvetica Neue',Arial,sans-serif;letter-spacing:.05em}
+  .home:hover{background:var(--violet);border-color:var(--violet);color:#F8F8FC}
+
+  @media (max-width:640px){
+    header.top,.pad,.jump,section.tier,footer{padding-left:20px;padding-right:20px}
+    .reply{padding:24px 20px}
+    h1{font-size:26px} .tier h2{font-size:22px} body{font-size:16.5px}
+    ul.pts li{flex-direction:column;gap:3px}
+    ul.pts b{flex:none}
+  }
+  @media print{ body{background:#fff} .sheet{box-shadow:none;max-width:none} }
+</style>
+</head>
+<body>
+<div class="sheet">
+
+  <header class="top">
+    <p class="eyebrow">ICU and You &nbsp;·&nbsp; Medical Students' Place &nbsp;·&nbsp; Number 1</p>
+    <h1>The postneonatal infant</h1>
+    <p class="kicker">One month to one year &mdash; in three tiers, so you can read only the one you need</p>
+  </header>
+
+  <p class="jump">
+    Find your level: <a href="#early">Early years</a>
+    &nbsp;·&nbsp; <a href="#middle">Clinical years</a>
+    &nbsp;·&nbsp; <a href="#senior">Final years</a>
+  </p>
+
+  <div class="pad">
+    <p class="lede">This week the unit is thinking about infants between twenty-nine days and one year. Here is the same subject at three depths.</p>
+    <p>The tiers map roughly onto the three phases of a six-year medical program &mdash; the science, then the clinical reasoning, then what you will actually be expected to do with your own hands. Read the one that fits, and glance at the one above it. If you are on a rural clinical school placement with us, all three are fair game on a ward round.</p>
+  </div>
+
+  <!-- ── EARLY ───────────────────────────────────────────────── -->
+  <section class="tier t1" id="early">
+    <p class="tier-k">Tier one</p>
+    <h2>The science of why infants are different</h2>
+    <p class="who">Phase 1 &mdash; the foundational years, and anything called <em>Beginnings, Growth and Development</em></p>
+
+    <ul class="pts">
+      <li><b>Rate-dependent output</b><span>The infant myocardium has fewer contractile elements and less compliant ventricles, so stroke volume is close to fixed. Cardiac output = heart rate &times; stroke volume, and only one of those can change. This is why bradycardia in an infant is an emergency.</span></li>
+      <li><b>The compliant chest</b><span>Horizontal ribs, cartilaginous chest wall, poorly developed intercostals. Ventilation depends almost entirely on the diaphragm, and anything that splints it &mdash; gastric distension, a big liver &mdash; matters.</span></li>
+      <li><b>Small airways, big consequences</b><span>Poiseuille's law: resistance is inversely proportional to the fourth power of the radius. One millimetre of oedema in a 4&nbsp;mm airway is not a small insult; it is a catastrophic one.</span></li>
+      <li><b>No reserve</b><span>Higher metabolic rate, higher oxygen consumption per kilogram, smaller functional residual capacity, and a glycogen store measured in hours. They desaturate fast and they go hypoglycaemic fast.</span></li>
+      <li><b>Surface area to mass</b><span>Still losing heat far faster than an adult, and still spending energy to replace it.</span></li>
+      <li><b>Immunity in transition</b><span>Maternal IgG wanes across the first six months while the infant's own response matures. The trough is real, and it is one reason this age group gets so much infection.</span></li>
+      <li><b>Development, roughly</b><span>Social smile by 6&ndash;8 weeks; head control by 3&ndash;4 months; sits unsupported around 6; crawls and pulls to stand around 9; cruises around 10&ndash;12. You need this to answer the question &ldquo;could this child have done this to themselves?&rdquo;</span></li>
+    </ul>
+
+    <p class="take"><b>If you take one thing:</b> almost every difference between an infant and an adult comes back to reserve. They compensate beautifully, and then they stop.</p>
+
+    <p class="exam"><b>Likely to be examined as:</b> a short-answer or MCQ on why cardiac output is rate-dependent, or on the physiological basis of respiratory distress in infancy. Also a favourite viva opener &mdash; <em>tell me why a baby is not a small adult</em>.</p>
+  </section>
+
+  <!-- ── MIDDLE ──────────────────────────────────────────────── -->
+  <section class="tier t2" id="middle">
+    <p class="tier-k">Tier two</p>
+    <h2>Taking the history and reading the child</h2>
+    <p class="who">Phase 2 &mdash; the clinical years, integrated clinical studies, and the ICE</p>
+
+    <ul class="pts">
+      <li><b>The parent is the history</b><span>The infant tells you nothing. Ask about feeding, wet nappies, alertness, and what is different from yesterday. &ldquo;She is not herself&rdquo; is a clinical finding &mdash; chart it in the parent's own words.</span></li>
+      <li><b>Look before you touch</b><span>From the end of the cot: appearance, work of breathing, circulation to skin. You can grade a sick infant from two metres away, and you should, because handling changes everything you are about to measure.</span></li>
+      <li><b>Work of breathing</b><span>Rate, recession (subcostal, intercostal, sternal), nasal flaring, head bobbing, grunting. Grunting is auto-PEEP and it is a late sign. A silent chest is worse than a wheezy one.</span></li>
+      <li><b>Bronchiolitis</b><span>Two to six months, RSV in most, coryza then increasing work of breathing and poor feeding. Diagnosis is clinical. The chest film usually misleads. Apnoea in the very young or ex-preterm is the reason to admit.</span></li>
+      <li><b>The febrile infant</b><span>Under three months with a temperature of 38&nbsp;°C or more: full septic screen, and do not be reassured by a well appearance. Urinary tract infection is the commonest bacterial source. A non-blanching rash is meningococcaemia until disproved.</span></li>
+      <li><b>Fluids</b><span>Maintenance by 4-2-1 (4 mL/kg/h for the first 10 kg). Resuscitation bolus is <b>10</b> mL/kg in children, not 20. Estimate weight for an infant under one as (age in months + 9) &divide; 2.</span></li>
+      <li><b>The misleading ones</b><span>Intussusception &mdash; intermittent pallor and drawing up of the legs, lethargy in between, which mimics sepsis. Bilious vomiting is malrotation until proven otherwise. Always examine the groin of a vomiting infant.</span></li>
+      <li><b>Safeguarding</b><span>A bruise in a baby who is not yet cruising is a red flag. So is an injury that does not match the history, a torn frenulum, or a delayed presentation. You are not investigating the family; you are escalating a concern.</span></li>
+    </ul>
+
+    <p class="take"><b>If you take one thing:</b> in paediatrics the examination begins before you reach the bed, and the most valuable history in the room belongs to whoever brought the child in.</p>
+
+    <p class="exam"><b>Likely to be examined as:</b> a paediatric long or short case, an OSCE station on taking a history from a parent, or an integrated clinical examination scenario built around a wheezy or febrile infant. Expect to be asked to justify why you would or would not do a lumbar puncture.</p>
+  </section>
+
+  <!-- ── SENIOR ──────────────────────────────────────────────── -->
+  <section class="tier t3" id="senior">
+    <p class="tier-k">Tier three</p>
+    <h2>What you will be expected to do</h2>
+    <p class="who">Phase 3 &mdash; the final clinical years, the pre-internship term, and your first nights on call</p>
+
+    <ul class="pts">
+      <li><b>Recognise, then escalate</b><span>Your job as an intern is not to fix the sick infant. It is to notice, start oxygen and access, and get help early. Nobody has ever been criticised for calling too soon about a baby.</span></li>
+      <li><b>Weight drives everything</b><span>Get a real weight if you can. Adrenaline 10 &micro;g/kg, fluid bolus 10 mL/kg, dextrose 2 mL/kg of 10%, defibrillation 4 J/kg, compressions 15:2 with two rescuers. Write the weight at the top of the page.</span></li>
+      <li><b>Access</b><span>If you cannot get intravenous access quickly in a shocked infant, go intraosseous. The threshold is lower than you think and the delay costs more than the procedure.</span></li>
+      <li><b>Say it clearly</b><span>ISBAR, and lead with the weight and the concern: <em>&ldquo;Four-month-old, six kilos, work of breathing increasing over two hours, saturations 89 on air, I need you now.&rdquo;</em> The senior on the phone is building a picture from your first sentence.</span></li>
+      <li><b>Know what your hospital does not have</b><span>In a regional unit you are stabilising for retrieval. Know the number, know what they will ask for, and call before you are certain. In New South Wales that is NETS on 1300 36 2500.</span></li>
+      <li><b>Safeguarding is a legal duty</b><span>You are a mandatory reporter. If you have a reasonable suspicion, you report &mdash; you do not need proof, and you do not need permission. Discomfort is not a reason to look away.</span></li>
+      <li><b>The room after a death</b><span>Sudden unexpected death in infancy is the leading cause of death in this age group. If you are in that room: full resuscitation unless there are signs incompatible with life, meticulous documentation, no speculation about cause, and the coroner in every case. Use the baby's name.</span></li>
+    </ul>
+
+    <p class="take"><b>If you take one thing:</b> the skill being assessed at this stage is not diagnosis. It is recognising an unwell child early, communicating it precisely, and knowing exactly who to call.</p>
+
+    <p class="exam"><b>Likely to be examined as:</b> a resuscitation or deteriorating-patient scenario, a viva on weight-based prescribing, or a professionalism station on escalating a safeguarding concern. In practice it will be examined at three in the morning by a nurse who is worried.</p>
+  </section>
+
+  <div class="pad" style="padding-top:24px">
+    <div class="reply">
+      <h2>Over to you</h2>
+      <p class="ask">Which tier did you read &mdash; and what did I leave out that you needed?</p>
+      <p>This column is new, and it will only be useful if it is aimed correctly. Tell me your year, which tier fitted, and what was missing, too basic or too advanced. If there is a topic you are struggling with, say that too and I will build the next one around it.</p>
+      <p><a class="btn" href="mailto:icuandyou@icloud.com?subject=Medical%20Students%27%20Place%20No.%201%20-%20feedback&body=My%20year%2Fstage%3A%0D%0A%0D%0AThe%20tier%20that%20fitted%20me%3A%0D%0A%0D%0AWhat%20was%20missing%2C%20or%20pitched%20wrongly%3A%0D%0A%0D%0A%0D%0AA%20topic%20I%20would%20like%20covered%20next%3A%0D%0A%0D%0A%0D%0A---%0D%0A%0D%0AName%20(optional)%3A%0D%0A">Send me your feedback</a></p>
+      <p class="fallback">The button opens a reply straight to me. If your device blocks it, write to <a href="mailto:icuandyou@icloud.com">icuandyou@icloud.com</a> instead.</p>
+    </div>
+  </div>
+
+  <footer>
+    <a class="home" href="./">&larr; &nbsp;All of ICU AND YOU</a><br>
+    Medical Students' Place No. 1 &nbsp;·&nbsp; companion to Mind Map #32, The Postneonatal Infant<br>
+    Written to sit alongside a three-phase medical curriculum, and not affiliated with or endorsed by any university.
+    Educational use only &mdash; not a clinical protocol. Verify every dose and threshold against your own reference
+    and your local guidelines before acting on it.
+  </footer>
+
+</div>
+<script data-goatcounter="https://icuandyou.goatcounter.com/count"
+        async src="//gc.zgo.at/count.js"></script>
+</body>
+</html>
