@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en-AU">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ICU AND YOU · The India Room No. 1 — What some of our colleagues have already seen</title>
+<meta name="description" content="The India Room No. 1: the infant from one month to one year in India — the pattern recognition your Indian-trained colleagues carry, and one of the great public health achievements of our lifetimes.">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="alternate icon" href="/favicon.ico" sizes="any">
+<link rel="apple-touch-icon" href="/icon-180.png">
+<meta name="theme-color" content="#1B2A33">
+<meta property="og:site_name" content="ICU AND YOU">
+<meta property="og:type" content="website">
+<meta property="og:title" content="ICU AND YOU · The India Room No. 1">
+<meta property="og:description" content="What some of our colleagues have already seen — and one of the great public health achievements of our lifetimes.">
+<meta property="og:image" content="https://icuandyou.com/share-card.png">
+<meta name="twitter:card" content="summary_large_image">
+<style>
+  :root{
+    --paper:#FCF9F3; --ink:#2A2118; --muted:#6F6455; --rule:#E0D6C4;
+    --saffron:#B5651E; --saffrontint:#FBF0E2;
+    --indigo:#2C4A6E; --indigotint:#E8EEF5;
+    --verde:#2A6B47; --verdetint:#E7F0EA;
+  }
+  *{box-sizing:border-box}
+  body{margin:0;background:#F0EADF;color:var(--ink);
+    font:400 17px/1.66 'Iowan Old Style','Palatino Linotype',Palatino,Georgia,serif;
+    -webkit-text-size-adjust:100%;}
+  .sheet{max-width:760px;margin:0 auto;background:var(--paper);
+    box-shadow:0 1px 40px rgba(42,33,24,.10);}
+
+  .flag{display:flex;height:5px}
+  .flag i{flex:1;display:block}
+  .flag i:nth-child(1){background:var(--saffron)}
+  .flag i:nth-child(2){background:#FCF9F3}
+  .flag i:nth-child(3){background:var(--verde)}
+
+  header.top{padding:42px 42px 28px;border-bottom:1px solid var(--rule)}
+  .eyebrow a.mast{color:inherit;text-decoration:none;border-bottom:1px solid transparent}
+  .eyebrow a.mast:hover{border-bottom-color:currentColor}
+  .eyebrow{font:500 11.5px/1 'Helvetica Neue',Arial,sans-serif;letter-spacing:.24em;
+    text-transform:uppercase;color:var(--muted);margin:0 0 14px}
+  h1{font-size:33px;line-height:1.18;margin:0 0 8px;font-weight:400;letter-spacing:-.012em}
+  .kicker{color:var(--muted);margin:0;font-size:16.5px;font-style:italic}
+
+  .pad{padding:34px 42px}
+  p{margin:0 0 17px}
+  .lede{font-size:20px;line-height:1.5;color:#221A12;margin:0 0 22px}
+  b.term{font-weight:600;color:var(--saffron)}
+
+  h2.sub{font:600 12px 'Helvetica Neue',Arial,sans-serif;letter-spacing:.2em;
+    text-transform:uppercase;color:var(--muted);margin:30px 0 14px;
+    padding-bottom:8px;border-bottom:1px solid var(--rule)}
+
+  .figs{display:flex;gap:14px;flex-wrap:wrap;margin:0 0 20px}
+  .fig{flex:1 1 155px;background:var(--verdetint);border:1px solid #BFD6C7;
+    border-radius:9px;padding:16px 18px}
+  .fig .big{font-size:26px;line-height:1.1;color:var(--verde);margin:0 0 5px}
+  .fig .lab{font:400 13.5px 'Helvetica Neue',Arial,sans-serif;color:var(--muted);line-height:1.45}
+
+  ul.list{list-style:none;margin:0 0 17px;padding:0}
+  ul.list li{display:flex;gap:12px;padding:9px 0;border-bottom:1px solid #EFE7D8;
+    font-size:16.5px;line-height:1.5}
+  ul.list li:last-child{border-bottom:0}
+  ul.list b{flex:0 0 168px;font-weight:600;font-size:15px;color:var(--indigo);
+    font-family:'Helvetica Neue',Arial,sans-serif}
+
+  .gloss{margin:0;padding:20px 24px;background:var(--indigotint);
+    border-left:4px solid var(--indigo);border-radius:0 8px 8px 0;font-size:16px}
+  .gloss p:last-child{margin:0}
+
+  .caution{margin:0 0 17px;padding:20px 24px;background:var(--saffrontint);
+    border-left:4px solid var(--saffron);border-radius:0 8px 8px 0}
+  .caution .lab{display:block;font:600 11px 'Helvetica Neue',Arial,sans-serif;
+    letter-spacing:.18em;text-transform:uppercase;color:var(--saffron);margin:0 0 9px}
+  .caution p:last-child{margin:0}
+
+  .reply{margin:0;padding:28px 32px;background:#F5EFE3;border-left:5px solid var(--saffron)}
+  .reply h2{font:600 12px 'Helvetica Neue',Arial,sans-serif;letter-spacing:.2em;
+    text-transform:uppercase;color:var(--saffron);margin:0 0 13px}
+  .ask{font-size:19px;line-height:1.5;font-style:italic;margin:0 0 15px}
+  .who{font:600 11px 'Helvetica Neue',Arial,sans-serif;letter-spacing:.18em;
+    text-transform:uppercase;color:var(--indigo);margin:0 0 8px}
+  .btn{display:inline-block;margin:6px 8px 12px 0;padding:15px 30px;background:var(--saffron);
+    color:#FDF7F1;text-decoration:none;border-radius:30px;font-style:normal;
+    font:600 15px 'Helvetica Neue',Arial,sans-serif;letter-spacing:.03em}
+  .btn:hover{background:#8E4E16}
+  .btn.alt{background:#fff;color:var(--indigo);border:1px solid var(--indigo)}
+  .btn.alt:hover{background:var(--indigotint)}
+  .fallback{font:400 13.5px 'Helvetica Neue',Arial,sans-serif;color:var(--muted);margin:0}
+  .fallback a{color:var(--saffron)}
+
+  footer{padding:24px 42px 42px;border-top:1px solid var(--rule);
+    font:400 13px 'Helvetica Neue',Arial,sans-serif;color:var(--muted);text-align:center;line-height:1.7}
+  .home{display:inline-block;margin:0 0 14px;padding:8px 18px;border-radius:20px;
+    border:1px solid var(--rule);background:#F3EFE6;color:var(--saffron);text-decoration:none;
+    font:600 12.5px 'Helvetica Neue',Arial,sans-serif;letter-spacing:.05em}
+  .home:hover{background:var(--saffron);border-color:var(--saffron);color:#FDF7F1}
+
+  @media (max-width:620px){
+    header.top,.pad,footer{padding-left:20px;padding-right:20px}
+    .reply{padding:22px 20px}
+    h1{font-size:26px} body{font-size:16.5px} .lede{font-size:18px} .ask{font-size:17.5px}
+    ul.list li{flex-direction:column;gap:3px}
+    ul.list b{flex:none}
+  }
+  @media print{ body{background:#fff} .sheet{box-shadow:none;max-width:none} }
+</style>
+</head>
+<body>
+<div class="sheet">
+
+  <div class="flag"><i></i><i></i><i></i></div>
+
+  <header class="top">
+    <p class="eyebrow"><a class="mast" href="./">ICU and You</a> &nbsp;·&nbsp; The India Room &nbsp;·&nbsp; Number 1</p>
+    <h1>What some of our colleagues have already seen</h1>
+    <p class="kicker">The infant from one month to one year, and a room we have not been in</p>
+  </header>
+
+  <div class="pad">
+    <p class="lede">A good number of the people you work with trained somewhere with a different differential diagnosis.</p>
+
+    <p>That is the reason for this column. There are many doctors in our units who did their formative training in India, and they arrived here in Australia carrying pattern recognition that none of the rest of us has. Someone in your department has seen a hundred children with severe acute malnutrition. Someone has managed diphtheria. Someone has watched an infant with rotavirus go from playing to shocked in six hours, and knows exactly what that looks like an hour before it happens.</p>
+
+    <p>We tend to treat that as background rather than as expertise. It is expertise, and this column is an attempt to say so.</p>
+
+    <div class="caution">
+      <span class="lab">Before anything else</span>
+      <p>I am not from India and I have never worked there. What follows is assembled from published sources by
+        someone standing outside the room, and I hold those who have been inside it in considerable respect.</p>
+      <p>If you are one of them and there is anything here you can correct, sharpen or add to &mdash; a figure I have
+        misread, an emphasis that is wrong, something obvious I have missed &mdash; please tell me. I would far rather
+        be corrected than be politely left alone.</p>
+    </div>
+
+    <h2 class="sub">The same age group, a different list</h2>
+
+    <p>This week's mind map covers the infant from twenty-nine days to one year. Beyond the neonatal month, the leading causes of death worldwide become <b class="term">pneumonia, diarrhoea and malaria</b> &mdash; things that happen at home rather than things present at birth. That much is the same everywhere. What differs is the scale, and the company those diagnoses keep.</p>
+
+    <ul class="list">
+      <li><b>Pneumonia</b><span>Roughly 15% of Indian under-five deaths, on the order of 140,000 a year. Pulse oximetry at first contact matters more than any imaging.</span></li>
+      <li><b>Diarrhoeal disease</b><span>Rotavirus alone accounted for around 37% of paediatric gastroenteritis hospitalisations in Indian sentinel surveillance before vaccination.</span></li>
+      <li><b>Severe acute malnutrition</b><span>Counted for the first time in 2024 as a direct cause: over 100,000 deaths globally in the one-to-fifty-nine-month group &mdash; and more than half the world's severely malnourished children are in South Asia, with India's prevalence (very low weight relative to height) of around 19% the highest of any country. The true toll is far larger still, because malnutrition is usually recorded as the background rather than the cause: the child dies of the pneumonia that a well-nourished child would have survived.</span></li>
+      <li><b>Tuberculosis</b><span>In an unwell infant, a differential that exists in India and is routinely forgotten here.</span></li>
+      <li><b>Vaccine-preventable disease</b><span>Diphtheria, pertussis, measles &mdash; diagnoses most Australian trainees have read about and never met.</span></li>
+    </ul>
+
+    <div class="caution">
+      <span class="lab">The clinical point, not the geography</span>
+      <p>Malnutrition changes the physiology, not merely the context. A severely malnourished infant in shock tolerates fluid differently, has a different cardiac reserve, and carries a mortality from fluid-refractory shock that would be unrecognisable in a well-nourished child. Colleagues who trained where this is common have judgement about it that cannot be got from a guideline.</p>
+      <p>And the same is true in reverse: they arrive here and have to learn a system with retrieval services, unlimited pathology and a consultant on the phone at three in the morning. Expertise moves in both directions. It is worth asking which way it is moving in your unit this week.</p>
+    </div>
+
+    <h2 class="sub">And the part nobody tells you</h2>
+
+    <p>The story most often told about Indian child health is a story of burden. The more interesting story is what has happened to it.</p>
+
+    <div class="figs">
+      <div class="fig"><p class="big">79%</p><p class="lab">fall in under-five mortality, 1990 to 2024 &mdash; from 127 per thousand to 27</p></div>
+      <div class="fig"><p class="big">2014</p><p class="lab">certified polio-free, having had the largest burden on earth</p></div>
+      <div class="fig"><p class="big">2015</p><p class="lab">maternal and neonatal tetanus eliminated</p></div>
+    </div>
+
+    <p>Behind those numbers is an immunisation programme that now covers twelve diseases, an indigenous rotavirus vaccine developed and manufactured in India, and a delivery network built on ASHA and Anganwadi workers &mdash; community health workers, overwhelmingly women, reaching villages no clinic reaches. Full immunisation coverage rose from 62% to 76% between the fourth and fifth national family health surveys. The campaign that drove it is called <b class="term">Mission Indradhanush</b>: <em>indradhanush</em> means rainbow, for the range of vaccines and the range of children.</p>
+
+    <div class="gloss">
+      <p>A child born in India today is roughly five times more likely to reach their fifth birthday than one born in 1990. That is one of the largest improvements in human survival achieved anywhere, in any period, and most of us in Australian intensive care could not name a single element of how it was done.</p>
+    </div>
+  </div>
+
+  <div class="pad" style="padding-top:6px">
+    <div class="reply">
+      <h2>Two things</h2>
+
+      <p class="who">For those who have lived or worked in India</p>
+      <p class="ask">What did you see there that you have not seen here &mdash; and what would you want the rest of us to know about it?</p>
+      <p>This column only works if the people who have been in that room are the ones writing it. Tell me what we are missing. I would rather publish your account than my summary of it.</p>
+      <p><a class="btn" href="mailto:icuandyou@icloud.com?subject=The%20India%20Room%20-%20what%20I%20saw%20in%20training&body=Where%20I%20trained%3A%0D%0A%0D%0A%0D%0AWhat%20I%20saw%20there%20that%20I%20have%20not%20seen%20here%3A%0D%0A%0D%0A%0D%0AWhat%20I%20would%20want%20colleagues%20here%20to%20know%20about%20it%3A%0D%0A%0D%0A%0D%0A---%0D%0A%0D%0AName%20(optional%2C%20and%20I%20will%20not%20publish%20it%20without%20asking)%3A%0D%0A">Tell me what you saw</a></p>
+
+      <p class="who" style="margin-top:26px">For anyone at all</p>
+      <p class="ask">What should this column be called?</p>
+      <p><strong>The India Room</strong> is a placeholder, and I chose it precisely because I did not want to pick a language. The other columns are <em>le coin fran&ccedil;ais</em>, <em>l'angolo italiano</em>, <em>el rinc&oacute;n espa&ntilde;ol</em> &mdash; each a corner, each in one national language. India has twenty-two, and choosing one of them is not a neutral act. So the name should come from the people it belongs to rather than from me. Send suggestions, in any language, with what they mean.</p>
+      <p><a class="btn alt" href="mailto:icuandyou@icloud.com?subject=The%20India%20Room%20-%20a%20name%20for%20the%20column&body=My%20suggestion%20for%20the%20column%20name%3A%0D%0A%0D%0A%0D%0ALanguage%2C%20and%20what%20it%20means%3A%0D%0A%0D%0A%0D%0AWhy%20I%20think%20it%20fits%3A%0D%0A%0D%0A%0D%0A---%0D%0A%0D%0AName%20(optional)%3A%0D%0A">Suggest a name</a></p>
+      <p class="fallback">Each button opens a reply straight to me. If your device blocks it, write to <a href="mailto:icuandyou@icloud.com">icuandyou@icloud.com</a> instead.</p>
+    </div>
+  </div>
+
+  <footer>
+    <a class="home" href="./">&larr; &nbsp;All of ICU AND YOU</a><br>
+    The India Room No. 1 &nbsp;·&nbsp; companion to Mind Map #32, The Postneonatal Infant<br>
+    Figures from the UN Inter-agency Group for Child Mortality Estimation (2025), UNICEF India, WHO, India's
+    Universal Immunization Programme and the National Family Health Surveys. Written by an outsider to Indian
+    practice, and offered in the hope of being corrected by people who are not.
+  </footer>
+
+</div>
+<script data-goatcounter="https://icuandyou.goatcounter.com/count"
+        async src="//gc.zgo.at/count.js"></script>
+</body>
+</html>
