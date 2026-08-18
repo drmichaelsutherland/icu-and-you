@@ -1,0 +1,98 @@
+<svg viewBox="0 0 900 400" xmlns="http://www.w3.org/2000/svg" role="img"
+     aria-label="On the left, the foundling wheel set into the wall of the Spedale degli Innocenti, turned open with a swaddled baby inside and the bell ringing above it. On the right, Andrea della Robbia's roundel of a swaddled child in his blue tondo.">
+  <rect width="900" height="400" fill="#FBF9F4"/>
+
+  
+  <g transform="translate(200,168)">
+    <!-- wall -->
+    <rect x="-136" y="-134" width="272" height="278" rx="6" fill="#E4DED1"/>
+    <g stroke="#C9C2B4" stroke-width="2.4" opacity=".9">
+      <path d="M-136 -88 H136"/><path d="M-136 -42 H136"/><path d="M-136 4 H136"/>
+      <path d="M-136 50 H136"/><path d="M-136 96 H136"/>
+      <path d="M-70 -134 V-88"/><path d="M24 -134 V-88"/>
+      <path d="M-26 -88 V-42"/><path d="M70 -88 V-42"/>
+      <path d="M-70 50 V96"/><path d="M24 50 V96"/>
+      <path d="M-26 96 V144"/><path d="M70 96 V144"/>
+    </g>
+
+    <!-- the niche -->
+    <circle cx="-6" cy="-10" r="80" fill="#FBF9F4"/>
+    <circle cx="-6" cy="-10" r="80" fill="none" stroke="#2A6B47" stroke-width="3.6"/>
+
+    <!-- the drum: a cylinder with one open face, turned towards the street -->
+    <circle cx="-6" cy="-10" r="62" fill="none" stroke="#2A6B47" stroke-width="3"/>
+    <!-- the shelf the child is laid on -->
+    <path d="M-64 6 H52" stroke="#2A6B47" stroke-width="3" stroke-linecap="round"/>
+    <!-- the back partition of the drum -->
+    <path d="M-6 -72 V6" stroke="#2A6B47" stroke-width="2.2" opacity=".45"/>
+    <!-- the swaddled child, laid on the shelf -->
+    <g transform="translate(-4,-20)">
+      <ellipse cx="6" cy="0" rx="40" ry="17" fill="#FFFFFF" stroke="#2A6B47" stroke-width="2.4"/>
+      <g stroke="#2A6B47" stroke-width="2" stroke-linecap="round" opacity=".55">
+        <path d="M-8 -6 q10 7 20 0"/><path d="M16 4 q10 -7 20 0"/>
+      </g>
+      <circle cx="-32" cy="-4" r="15" fill="#FFFFFF" stroke="#2A6B47" stroke-width="2.4"/>
+      <path d="M-39 -6 q7 5 14 0" fill="none" stroke="#26251F" stroke-width="2.4" stroke-linecap="round"/>
+    </g>
+    <!-- it turns: the arc and the handle -->
+    <g stroke="#2A6B47" stroke-width="2.4" fill="none" stroke-linecap="round" opacity=".65">
+      <path d="M-58 30 A62 62 0 0 0 42 44"/>
+      <path d="M34 36 L44 45 L33 51"/>
+    </g>
+    <circle cx="-6" cy="34" r="7" fill="none" stroke="#2A6B47" stroke-width="2.6"/>
+
+    <!-- the cord and the bell that told someone inside -->
+    <path d="M104 -104 v34" stroke="#9E2B2B" stroke-width="2.4" stroke-linecap="round" opacity=".85"/>
+    <path d="M104 -70 q-20 0 -20 22 q0 18 -7 25 h54 q-7 -7 -7 -25 q0 -22 -20 -22 Z"
+          fill="none" stroke="#9E2B2B" stroke-width="3" stroke-linejoin="round"/>
+    <path d="M104 -23 v7" stroke="#9E2B2B" stroke-width="3" stroke-linecap="round"/>
+    <!-- it is ringing -->
+    <g stroke="#9E2B2B" stroke-width="2.4" stroke-linecap="round" fill="none" opacity=".7">
+      <path d="M142 -60 q9 8 0 20"/>
+      <path d="M66 -60 q-9 8 0 20"/>
+    </g>
+  </g>
+  
+  <g transform="translate(688,158)">
+    <!-- the tondo -->
+    <circle cx="0" cy="0" r="126" fill="#4E7FA8" opacity=".16"/>
+    <circle cx="0" cy="0" r="126" fill="none" stroke="#4E7FA8" stroke-width="4"/>
+    <circle cx="0" cy="0" r="108" fill="none" stroke="#4E7FA8" stroke-width="2" opacity=".6"/>
+
+    <!-- the child, upright, arms free, wound in swaddling bands -->
+    <g>
+      <!-- head -->
+      <circle cx="0" cy="-52" r="30" fill="#FFFFFF" stroke="#4E7FA8" stroke-width="2.8"/>
+      <path d="M-11 -56 q5 5 10 0" fill="none" stroke="#26251F" stroke-width="2.6" stroke-linecap="round"/>
+      <path d="M3 -56 q5 5 10 0" fill="none" stroke="#26251F" stroke-width="2.6" stroke-linecap="round"/>
+      <path d="M-8 -40 q8 6 16 0" fill="none" stroke="#9E2B2B" stroke-width="2.4" stroke-linecap="round" opacity=".7"/>
+      <!-- swaddled body -->
+      <path d="M-34 -20 C-34 -30 34 -30 34 -20 L28 74 C28 88 -28 88 -28 74 Z"
+            fill="#FFFFFF" stroke="#4E7FA8" stroke-width="2.8"/>
+      <!-- the bands -->
+      <g stroke="#4E7FA8" stroke-width="2.6" stroke-linecap="round" opacity=".85">
+        <path d="M-32 -4 q32 10 64 0"/>
+        <path d="M-31 16 q31 10 62 0"/>
+        <path d="M-30 36 q30 10 60 0"/>
+        <path d="M-29 56 q29 10 58 0"/>
+      </g>
+      <!-- arms, free above the bands -->
+      <path d="M-34 -18 q-22 4 -26 20" fill="none" stroke="#4E7FA8" stroke-width="2.8" stroke-linecap="round"/>
+      <path d="M34 -18 q22 4 26 20" fill="none" stroke="#4E7FA8" stroke-width="2.8" stroke-linecap="round"/>
+    </g>
+  </g>
+
+  <text x="200" y="342" text-anchor="middle"
+        font-family="Iowan Old Style,Palatino,Georgia,serif" font-size="27"
+        font-style="italic" fill="#2A6B47">la ruota</text>
+  <text x="200" y="366" text-anchor="middle"
+        font-family="Helvetica Neue,Arial,sans-serif" font-size="13.5"
+        letter-spacing="1.2" fill="#6E6A5E">turned from the street, 1445&#8211;1875</text>
+
+  <text x="688" y="342" text-anchor="middle"
+        font-family="Iowan Old Style,Palatino,Georgia,serif" font-size="27"
+        font-style="italic" fill="#2A6B47">un bambino in fasce</text>
+  <text x="688" y="366" text-anchor="middle"
+        font-family="Helvetica Neue,Arial,sans-serif" font-size="13.5"
+        letter-spacing="1.2" fill="#6E6A5E">a baby in swaddling bands, on the fa&#231;ade</text>
+</svg>
