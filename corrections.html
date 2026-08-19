@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en-AU">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ICU AND YOU · Corrections</title>
+<meta name="description" content="ICU AND YOU corrections — what has been changed on this site, when, and why.">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="alternate icon" href="/favicon.ico" sizes="any">
+<link rel="apple-touch-icon" href="/icon-180.png">
+<meta name="theme-color" content="#1B2A33">
+<meta property="og:site_name" content="ICU AND YOU">
+<meta property="og:type" content="website">
+<meta property="og:title" content="ICU AND YOU · Corrections">
+<meta property="og:description" content="What has been changed on this site, when, and why.">
+<meta property="og:image" content="https://icuandyou.com/share-card.png">
+<meta name="twitter:card" content="summary_large_image">
+<style>
+  :root{
+    --paper:#FBF9F5; --ink:#1B2A33; --muted:#6E6B63; --rule:#DED8CC;
+    --teal:#2E6473; --tealtint:#E9F1F3;
+    --rust:#A8442A; --rusttint:#F6EDE7;
+  }
+  *{box-sizing:border-box}
+  body{margin:0;background:#F3EFE8;color:var(--ink);
+    font:400 17px/1.64 'Iowan Old Style','Palatino Linotype',Palatino,Georgia,serif;
+    -webkit-text-size-adjust:100%;}
+  .sheet{max-width:800px;margin:0 auto;background:var(--paper);
+    box-shadow:0 1px 40px rgba(27,42,51,.10)}
+  header.top{padding:46px 40px 28px;border-bottom:1px solid var(--rule)}
+  .eyebrow{font:500 11.5px 'Helvetica Neue',Arial,sans-serif;letter-spacing:.26em;
+    text-transform:uppercase;color:var(--muted);margin:0 0 13px}
+  .eyebrow a.mast{color:inherit;text-decoration:none;border-bottom:1px solid transparent}
+  .eyebrow a.mast:hover{border-bottom-color:currentColor}
+  h1{font-size:34px;font-weight:400;margin:0 0 8px;letter-spacing:-.015em}
+  .kicker{font-style:italic;color:var(--muted);margin:0;font-size:16.5px}
+
+  .pad{padding:32px 40px}
+  p{margin:0 0 16px}
+  .lede{font-size:18.5px;line-height:1.55}
+
+  h2.sec{font:600 12px 'Helvetica Neue',Arial,sans-serif;letter-spacing:.22em;
+    text-transform:uppercase;color:var(--muted);margin:32px 0 18px;
+    padding-bottom:9px;border-bottom:1px solid var(--rule)}
+
+  .policy{margin:0;padding:22px 26px;background:var(--tealtint);
+    border-left:4px solid var(--teal);border-radius:0 8px 8px 0}
+  .policy ul{list-style:none;margin:0;padding:0}
+  .policy li{padding:9px 0 9px 18px;position:relative;font-size:16.5px;line-height:1.55;
+    border-bottom:1px solid #D5E4EA}
+  .policy li:last-child{border-bottom:0}
+  .policy li::before{content:"";position:absolute;left:0;top:18px;width:7px;height:7px;
+    border-radius:50%;background:var(--teal)}
+  .policy b{font-weight:600;color:var(--teal)}
+
+  .entry{padding:22px 0;border-bottom:1px solid #EDE7DC}
+  .entry:last-of-type{border-bottom:0}
+  .when{font:600 12px 'Helvetica Neue',Arial,sans-serif;letter-spacing:.14em;
+    text-transform:uppercase;color:var(--rust);margin:0 0 6px}
+  .what{font-size:19px;font-weight:400;margin:0 0 8px;line-height:1.35}
+  .where{font:400 14.5px 'Helvetica Neue',Arial,sans-serif;color:var(--muted);margin:0 0 10px}
+  .where a{color:var(--teal)}
+  .detail{margin:0;font-size:16.5px}
+  .detail .was{color:var(--muted)}
+
+  .none{margin:0;padding:26px;background:#F7F4ED;border:1px dashed var(--rule);
+    border-radius:9px;text-align:center;color:var(--muted);font-style:italic;font-size:16.5px}
+
+  .report{margin:0;padding:28px 32px;background:var(--rusttint);border-left:5px solid var(--rust)}
+  .report h2{font:600 12px 'Helvetica Neue',Arial,sans-serif;letter-spacing:.2em;
+    text-transform:uppercase;color:var(--rust);margin:0 0 13px}
+  .ask{font-size:19.5px;line-height:1.5;margin:0 0 12px}
+  .btn{display:inline-block;margin:6px 0 12px;padding:15px 30px;background:var(--rust);
+    color:#FDF8F5;text-decoration:none;border-radius:30px;
+    font:600 15px 'Helvetica Neue',Arial,sans-serif;letter-spacing:.03em}
+  .btn:hover{background:#8A3620}
+  .fallback{font:400 13.5px 'Helvetica Neue',Arial,sans-serif;color:var(--muted);margin:0}
+  .fallback a{color:var(--rust)}
+
+  footer{padding:24px 40px 44px;border-top:1px solid var(--rule);
+    font:400 13px 'Helvetica Neue',Arial,sans-serif;color:var(--muted);text-align:center;line-height:1.7}
+  .home{display:inline-block;margin:0 0 14px;padding:8px 18px;border-radius:20px;
+    border:1px solid var(--rule);background:#F1EEE7;color:var(--teal);text-decoration:none;
+    font:600 12.5px 'Helvetica Neue',Arial,sans-serif;letter-spacing:.05em}
+  .home:hover{background:var(--teal);border-color:var(--teal);color:#F6FAFB}
+
+  @media (max-width:620px){
+    header.top,.pad,footer{padding-left:20px;padding-right:20px}
+    .report{padding:22px 20px}
+    h1{font-size:27px} body{font-size:16.5px} .ask{font-size:18px}
+  }
+  @media print{ body{background:#fff} .sheet{box-shadow:none;max-width:none} }
+</style>
+</head>
+<body>
+<div class="sheet">
+
+  <header class="top">
+    <p class="eyebrow"><a class="mast" href="./">ICU and You</a></p>
+    <h1>Corrections</h1>
+    <p class="kicker">What has been changed on this site, when, and why</p>
+  </header>
+
+  <div class="pad">
+    <p class="lede">Everything here is written by a fallible person, checked as carefully as I can manage, and
+      published anyway. Some of it will turn out to be wrong.</p>
+
+    <p>This page exists so that when something is wrong, the fixing of it is visible rather than quiet. A site that
+      never records a correction is not a site that has never made a mistake &mdash; it is a site that edits its
+      errors away and hopes nobody noticed. I would rather you could see the repairs.</p>
+
+    <div class="policy">
+      <ul>
+        <li><b>Anything that could affect care is fixed the same day</b> &mdash; a dose, a threshold, an algorithm
+          the wrong way round. If a proper correction will take longer than that, the page comes down until it is
+          ready.</li>
+        <li><b>Corrections are dated and described here</b>, with what the page used to say, so that anyone who read
+          the earlier version can see what has changed.</li>
+        <li><b>If it went out in the newsletter, the correction goes in the next one.</b> The people who saw the
+          error are the people who need to see the fix.</li>
+        <li><b>Whoever found it gets the credit</b>, by name if they are happy to be named. Finding an error in
+          someone else's teaching material and saying so is a generous act, and it should not be anonymous unless
+          the finder wants it to be.</li>
+        <li><b>Where something is genuinely contested rather than wrong</b>, the page says so instead of picking a
+          side quietly.</li>
+      </ul>
+    </div>
+
+    <h2 class="sec">The record</h2>
+
+    <p class="none">No corrections recorded yet. This page went up with the site;
+      the first entry will appear here when it is needed, and it will be.</p>
+  </div>
+
+  <div class="pad" style="padding-top:6px">
+    <div class="report">
+      <h2>Found something wrong?</h2>
+      <p class="ask">Tell me. I would far rather be corrected than be politely left alone.</p>
+      <p>It does not need to be a formal thing &mdash; a line saying &ldquo;I think that dose is out of date&rdquo;
+        is plenty. If you would like to be named here when it is fixed, say so; if you would rather not be, say
+        that instead and you will not be.</p>
+      <p><a class="btn" href="mailto:icuandyou@icloud.com?subject=ICU%20AND%20YOU%20-%20a%20correction&body=The%20page%3A%0D%0A%0D%0AWhat%20it%20says%3A%0D%0A%0D%0A%0D%0AWhat%20I%20think%20it%20should%20say%2C%20and%20why%3A%0D%0A%0D%0A%0D%0AA%20source%2C%20if%20you%20have%20one%20to%20hand%3A%0D%0A%0D%0A%0D%0A---%0D%0A%0D%0AName%3A%0D%0AHappy%20to%20be%20credited%20on%20the%20corrections%20page%3F%20(yes%20%2F%20no)%3A%0D%0A">Report a correction</a></p>
+      <p class="fallback">The button opens a reply straight to me. If your device blocks it, write to
+        <a href="mailto:icuandyou@icloud.com">icuandyou@icloud.com</a> instead.</p>
+    </div>
+  </div>
+
+  <footer>
+    <a class="home" href="./">&larr; &nbsp;All of ICU AND YOU</a><br>
+    ICU AND YOU &nbsp;·&nbsp; Corrections &nbsp;·&nbsp; <a href="about.html">About</a><br>
+    Educational use only. Not clinical protocol &mdash; local guidance always takes precedence.
+  </footer>
+
+</div>
+<script data-goatcounter="https://icuandyou.goatcounter.com/count"
+        async src="//gc.zgo.at/count.js"></script>
+</body>
+</html>

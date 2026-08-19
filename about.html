@@ -56,6 +56,13 @@
     font-family:'Helvetica Neue',Arial,sans-serif}
   ul.series span{color:var(--muted);font-size:16px}
 
+  ul.lic{list-style:none;margin:0 0 16px;padding:0}
+  ul.lic li{padding:11px 0 11px 18px;border-bottom:1px solid #EFE9DE;font-size:16.5px;
+    line-height:1.55;position:relative}
+  ul.lic li:last-child{border-bottom:0}
+  ul.lic li::before{content:"";position:absolute;left:0;top:20px;width:7px;height:7px;
+    border-radius:50%;background:var(--teal)}
+  ul.lic b{font-weight:600;color:var(--teal)}
   .note{margin:0;padding:22px 26px;background:var(--rusttint);border-left:4px solid var(--rust);
     border-radius:0 8px 8px 0}
   .note p{font-size:16.5px}
@@ -112,6 +119,7 @@
 
   <p class="jump">
     Looking for who writes this? <a href="#aboutme">About me</a>
+    &nbsp;·&nbsp; <a href="#licence">Using this material</a>
     &nbsp;·&nbsp; <a href="#privacy">Privacy</a>
   </p>
 
@@ -191,6 +199,30 @@
 
     <div class="clearfix"></div>
 
+    <h2 class="sec" id="licence">Using this material</h2>
+
+    <p>Everything original on this site is shared under a
+      <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/">Creative Commons
+      Attribution&ndash;NonCommercial&ndash;ShareAlike 4.0 licence</a>. In plain terms, and without needing to ask me:</p>
+
+    <ul class="lic">
+      <li><b>Use it.</b> Copy it, print it, put it on a noticeboard, project it in a tutorial, adapt it for your own
+        unit, translate it. Take the crossword to a teaching session and hand it round.</li>
+      <li><b>Credit it.</b> A line is enough &mdash; <em>ICU AND YOU, icuandyou.com</em> &mdash; and a link if the
+        format allows one. If you have adapted something, say so, so that any errors you introduce are not laid at
+        my door and any I have made are not laid at yours.</li>
+      <li><b>Keep it free.</b> Not for commercial use, and anything you build on it carries the same licence. If you
+        want to use it in something that charges a fee, write to me &mdash; the answer is very often yes.</li>
+    </ul>
+
+    <p>Two things are outside that licence. The <strong>logo</strong> belongs to its designer and is not covered.
+      And material from <strong>other sources</strong> &mdash; papers, guidelines, podcasts, other institutions'
+      documents &mdash; is summarised here in my own words and linked to the original; the underlying work remains
+      the property of whoever made it, and their terms apply, not mine.</p>
+
+    <p>If you do use any of this somewhere, I would be delighted to hear about it. That is not a condition, just a
+      request &mdash; knowing where the material has travelled is one of the pleasures of doing it.</p>
+
     <h2 class="sec" id="privacy">Privacy</h2>
 
     <p>This site is deliberately built to collect as little as possible.</p>
@@ -226,6 +258,9 @@
       <p>Where a question is genuinely contested, or the evidence behind a recommendation is weak, I try to say so
         rather than smooth it over. That is usually the most interesting part of the subject and it is certainly the
         most useful thing to know.</p>
+      <p>When something here does turn out to be wrong, it is fixed and the fix is recorded openly on the
+        <a href="corrections.html">corrections page</a>, with what the page used to say. If you find an error,
+        please tell me.</p>
       <p>Nothing on this site describes any identifiable patient. Clinical scenarios are constructed for teaching.</p>
     </div>
 
@@ -243,7 +278,8 @@
   <footer>
     <a class="home" href="./">&larr; &nbsp;All of ICU AND YOU</a><br>
     ICU AND YOU &nbsp;·&nbsp; an intensive care education programme &nbsp;·&nbsp; Coffs Harbour Health Campus<br>
-    <a href="#privacy">Privacy</a><br>
+    <a href="#licence">Using this material</a> &nbsp;·&nbsp; <a href="#privacy">Privacy</a>
+    &nbsp;·&nbsp; <a href="corrections.html">Corrections</a><br>
     <span class="priv">Visitor numbers are counted without cookies and without collecting personal data.</span>
   </footer>
 
