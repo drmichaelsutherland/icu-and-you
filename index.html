@@ -20,7 +20,7 @@
   :root{
     --paper:#FBF9F5; --ink:#1B2A33; --muted:#6E6B63; --rule:#DED8CC;
     --teal:#2E6473; --plum:#6B4570; --rust:#A8442A; --olive:#5F6B33;
-    --bleu:#2F4A7C; --slate:#3E4A52; --verde:#2A6B47; --sepia:#6B4A2F; --oro:#B5852A; --wine:#7C2D42; --saffron:#B5651E; --violet:#4C4A8F;
+    --bleu:#2F4A7C; --slate:#3E4A52; --verde:#2A6B47; --sepia:#6B4A2F; --oro:#B5852A; --wine:#7C2D42; --saffron:#B5651E; --violet:#4C4A8F; --nero:#23272E;
   }
   *{box-sizing:border-box}
   body{margin:0;background:#F3EFE8;color:var(--ink);
@@ -70,6 +70,7 @@
   .chip.wine.on{background:var(--wine);border-color:var(--wine)}
   .chip.saffron.on{background:var(--saffron);border-color:var(--saffron)}
   .chip.violet.on{background:var(--violet);border-color:var(--violet)}
+  .chip.nero.on{background:var(--nero);border-color:var(--nero)}
 
   /* ── This week ───────────────────────────────────────── */
   .week{padding:30px 36px 34px;background:#F6F2E8;border-bottom:1px solid var(--rule)}
@@ -86,6 +87,7 @@
   .item.verde{border-left-color:var(--verde)} .item.sepia{border-left-color:var(--sepia)}
   .item.oro{border-left-color:var(--oro)} .item.wine{border-left-color:var(--wine)}
   .item.saffron{border-left-color:var(--saffron)} .item.violet{border-left-color:var(--violet)}
+  .item.nero{border-left-color:var(--nero)}
   .badge{flex:0 0 84px;text-align:center;
     font:600 10.5px 'Helvetica Neue',Arial,sans-serif;letter-spacing:.1em;
     text-transform:uppercase;color:var(--muted);padding-top:3px;line-height:1.3}
@@ -125,6 +127,7 @@
   .dot.verde{background:var(--verde)} .dot.sepia{background:var(--sepia)}
   .dot.oro{background:var(--oro)} .dot.wine{background:var(--wine)}
   .dot.saffron{background:var(--saffron)} .dot.violet{background:var(--violet)}
+  .dot.nero{background:var(--nero)}
   .tcount{font:400 13.5px 'Helvetica Neue',Arial,sans-serif;color:var(--muted);
     margin-right:22px;white-space:nowrap}
 
@@ -137,6 +140,7 @@
   li.row.verde{border-left-color:var(--verde)} li.row.sepia{border-left-color:var(--sepia)}
   li.row.oro{border-left-color:var(--oro)} li.row.wine{border-left-color:var(--wine)}
   li.row.saffron{border-left-color:var(--saffron)} li.row.violet{border-left-color:var(--violet)}
+  li.row.nero{border-left-color:var(--nero)}
   li.row:hover{background:#F7F4ED}
   .rs{flex:0 0 112px;font:600 10.5px 'Helvetica Neue',Arial,sans-serif;letter-spacing:.1em;
     text-transform:uppercase;color:var(--muted)}
@@ -237,6 +241,7 @@
     <div class="crow">
         <button class="chip slate" data-f="podcast" type="button">Podcasts</button>
         <button class="chip sepia" data-f="journal" type="button">Journal club</button>
+        <button class="chip nero" data-f="literary" type="button">The Literary (L)edge</button>
     </div>
     <div class="crow">
         <button class="chip bleu" data-f="coin" type="button">Le coin français</button>
@@ -321,6 +326,14 @@
             <h3>A unit for the first year of life</h3>
             <p>Mohakud and Mishra propose a distinct infant intensive care unit — a sound observation, an open question about boundaries, and a proposal that precedes its evidence.</p>
             <div class="links"><a class="go" href="journal-club-97-infant-intensive-care.html">Open</a></div>
+          </div>
+        </li>
+        <li class="item nero" data-series="literary">
+          <div class="badge">The Literary (L)edge<b>1</b></div>
+          <div class="body">
+            <h3>Because she overlaid it</h3>
+            <p>The Judgement of Solomon contains what may be the oldest written account of sudden unexpected infant death — and turns entirely on a mother who knew her own child.</p>
+            <div class="links"><a class="go" href="literary-ledge-01-overlaying.html">Open</a></div>
           </div>
         </li>
     </ul>
