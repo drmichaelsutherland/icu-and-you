@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ICU AND YOU · Mnemonic 54 · Spotting the sick infant</title>
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="alternate icon" href="/favicon.ico" sizes="any">
+<link rel="apple-touch-icon" href="/icon-180.png">
+<meta name="theme-color" content="#1B2A33">
+<meta property="og:site_name" content="ICU AND YOU">
+<meta property="og:type" content="website">
+<meta property="og:title" content="ICU AND YOU · Mnemonic 54 · Spotting the sick infant">
+<meta property="og:description" content="FEEDING — seven things, and the numbers come last.">
+<meta property="og:image" content="https://icuandyou.com/share-card.png">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Spectral:wght@400;500&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  :root{--paper:#F8FAFB;--card:#FFFFFF;--ink:#1B2A33;--ink-soft:#4A5860;--hair:#D9E2E6;--sky:#2E6E8E;--amber:#9A6410;}
+  *{box-sizing:border-box;}
+  body{margin:0;background:var(--paper);color:var(--ink);font-family:"Spectral",Georgia,serif;font-size:16px;line-height:1.62;-webkit-font-smoothing:antialiased;}
+  .wrap{max-width:640px;margin:0 auto;padding:34px 22px 68px;}
+  .card{background:var(--card);border:1px solid var(--hair);padding:38px 42px 34px;}
+  .eyebrow{font-family:"IBM Plex Mono",monospace;font-size:11.5px;letter-spacing:.18em;text-transform:uppercase;color:var(--sky);font-weight:500;margin:0 0 12px;}
+  .eyebrow a.mast{color:inherit;text-decoration:none;border-bottom:1px solid transparent;}
+  .eyebrow a.mast:hover{border-bottom-color:currentColor;}
+  h1{font-family:"Fraunces",serif;font-weight:600;font-size:30px;margin:0 0 4px;letter-spacing:-.01em;}
+  .sub{color:var(--ink-soft);margin:0 0 26px;font-size:15px;}
+  .sub b{color:var(--ink);font-weight:500;letter-spacing:.14em;}
+
+  .acrostic{margin:0 0 6px;}
+  .row{display:flex;align-items:center;gap:16px;padding:9px 0;border-bottom:1px solid var(--hair);}
+  .row:last-child{border-bottom:0;}
+  .ltr{font-family:"Fraunces",serif;font-weight:600;font-size:30px;color:var(--sky);width:30px;text-align:center;flex:none;}
+  .txt{display:flex;flex-direction:column;}
+  .stitle{font-family:"Fraunces",serif;font-weight:500;font-size:16px;color:var(--ink);}
+  .sdetail{font-size:14.5px;color:var(--ink-soft);line-height:1.45;}
+
+  .trace{display:block;width:100%;height:22px;margin:26px 0 4px;}
+
+  .challenge{margin-top:22px;}
+  .ch-k{font-family:"IBM Plex Mono",monospace;font-size:11px;letter-spacing:.16em;text-transform:uppercase;color:var(--amber);font-weight:500;margin:0 0 6px;}
+  .ch-q{font-family:"Fraunces",serif;font-weight:500;font-size:19px;color:var(--ink);margin:0 0 6px;}
+  .ch-lead{font-size:14.5px;color:var(--ink-soft);margin:0 0 16px;}
+
+  .picks{display:flex;flex-direction:column;gap:7px;}
+  .pick{display:flex;align-items:center;gap:11px;padding:11px 14px;border-radius:9px;
+        background:#F2F7FA;border:1px solid #CFE0E9;color:#1C4A60;cursor:pointer;
+        font-family:"Spectral",serif;font-size:15px;transition:background .12s ease,border-color .12s ease;}
+  .pick:hover{border-color:#A9CBDC;}
+  .pick input{accent-color:var(--sky);width:17px;height:17px;flex:none;margin:0;}
+  .pick.on{background:#E1EFF6;border-color:var(--sky);}
+  .pt{flex:1;}
+  .cl{font-family:"Fraunces",serif;font-weight:600;font-size:15px;color:var(--sky);width:15px;flex:none;}
+
+  .sendrow{display:flex;align-items:center;gap:14px;flex-wrap:wrap;margin:18px 0 0;}
+  .send{padding:14px 28px;border:0;border-radius:28px;background:var(--sky);color:#F6FBFD;cursor:pointer;
+        font-family:"IBM Plex Mono",monospace;font-size:12.5px;font-weight:500;letter-spacing:.09em;
+        text-transform:uppercase;}
+  .send:hover{background:#245876;}
+  .tally{font-family:"IBM Plex Mono",monospace;font-size:11.5px;color:var(--ink-soft);}
+
+  .invite{margin:26px 0 0;padding-top:20px;border-top:1px solid var(--hair);font-size:15px;color:var(--ink-soft);}
+  .home{display:inline-block;margin:0 0 12px;padding:8px 18px;border-radius:20px;
+    border:1px solid var(--hair);background:#EAF2F6;color:var(--sky);text-decoration:none;
+    font-family:"IBM Plex Mono",monospace;font-size:11px;font-weight:500;
+    letter-spacing:.08em;text-transform:uppercase;}
+  .home:hover{background:var(--sky);border-color:var(--sky);color:#F6FBFD;}
+  footer{font-family:"IBM Plex Mono",monospace;font-size:11px;color:var(--ink-soft);text-align:center;margin-top:20px;line-height:1.7;}
+  @media (max-width:520px){.card{padding:30px 22px;} h1{font-size:26px;}}
+  @media print{.picks,.sendrow{display:none;}}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="card">
+    <p class="eyebrow"><a class="mast" href="./">ICU and You</a> · Mnemonic No. 54</p>
+    <h1>Spotting the sick infant</h1>
+    <p class="sub">Seven things, in the order that finds them: <b>FEEDING</b>.</p>
+
+    <div class="acrostic">
+      <div class="row">
+        <div class="ltr">F</div>
+        <div class="txt"><span class="stitle">Feeding</span><span class="sdetail">Feeding is the first thing to go and the last thing anyone asks about. How much, how long, how hard?</span></div>
+      </div>
+      <div class="row">
+        <div class="ltr">E</div>
+        <div class="txt"><span class="stitle">Effort of breathing</span><span class="sdetail">Every sign is visible from the end of the cot: rate, recession, flaring, head bobbing, grunting</span></div>
+      </div>
+      <div class="row">
+        <div class="ltr">E</div>
+        <div class="txt"><span class="stitle">Engagement</span><span class="sdetail">Eyes that will not fix, a cry you cannot console, or a baby who has simply gone quiet</span></div>
+      </div>
+      <div class="row">
+        <div class="ltr">D</div>
+        <div class="txt"><span class="stitle">Dry nappies</span><span class="sdetail">Drying up — fewer than four wet nappies in a day is dehydration until proven otherwise</span></div>
+      </div>
+      <div class="row">
+        <div class="ltr">I</div>
+        <div class="txt"><span class="stitle">Is the parent worried?</span><span class="sdetail">If the person who has watched this child for months says something is different, that is an observation</span></div>
+      </div>
+      <div class="row">
+        <div class="ltr">N</div>
+        <div class="txt"><span class="stitle">Numbers last</span><span class="sdetail">Numbers confirm; they rarely reveal. A normal blood pressure in a shocked infant is a countdown, not a comfort</span></div>
+      </div>
+      <div class="row">
+        <div class="ltr">G</div>
+        <div class="txt"><span class="stitle">Get help early</span><span class="sdetail">Go early rather than late — nobody has ever been criticised for ringing too soon about a baby</span></div>
+      </div>
+    </div>
+
+    <svg class="trace" viewBox="0 0 536 22" preserveAspectRatio="none" aria-hidden="true">
+      <path d="M0 10 L0 10 L5 3 L10 17 L15 9 L20 10 L30 10 L35 3 L40 17 L45 9 L50 10 L60 10 L65 3 L70 17 L75 9 L80 10 L90 10 L95 3 L100 17 L105 9 L110 10 L120 10 L125 3 L130 17 L135 9 L140 10 L150 10 L155 3 L160 17 L165 9 L170 10 L180 10 L185 3 L190 17 L195 9 L200 10 L210 10 L215 3 L220 17 L225 9 L230 10 L240 10 L245 3 L250 17 L255 9 L260 10 L270 10 L275 3 L280 17 L285 9 L290 10 L300 10 L305 3 L310 17 L315 9 L320 10 L330 10 L335 3 L340 17 L345 9 L350 10 L360 10 L365 3 L370 17 L375 9 L380 10 L390 10 L398 10 L412 18 L536 18"
+            fill="none" stroke="#2E6E8E" stroke-width="1.3" stroke-linejoin="round" stroke-linecap="round"/>
+    </svg>
+
+    <div class="challenge">
+      <p class="ch-k">Challenge of the week</p>
+      <p class="ch-q">Which of these seven does your observation chart actually capture?</p>
+      <p class="ch-lead">Tick as many as apply. Then tell me what happens to the others &mdash; where feeding,
+        engagement, wet nappies and a parent's concern get written down in your unit, if they get written down
+        at all. I suspect the answer is going to be uncomfortable, and I would like to publish it.</p>
+
+      <div class="picks">
+          <label class="pick" for="p0">
+            <input type="checkbox" id="p0">
+            <span class="cl">F</span><span class="pt">Feeding</span>
+          </label>
+          <label class="pick" for="p1">
+            <input type="checkbox" id="p1">
+            <span class="cl">E</span><span class="pt">Effort of breathing</span>
+          </label>
+          <label class="pick" for="p2">
+            <input type="checkbox" id="p2">
+            <span class="cl">E</span><span class="pt">Engagement</span>
+          </label>
+          <label class="pick" for="p3">
+            <input type="checkbox" id="p3">
+            <span class="cl">D</span><span class="pt">Dry nappies</span>
+          </label>
+          <label class="pick" for="p4">
+            <input type="checkbox" id="p4">
+            <span class="cl">I</span><span class="pt">Is the parent worried?</span>
+          </label>
+          <label class="pick" for="p5">
+            <input type="checkbox" id="p5">
+            <span class="cl">N</span><span class="pt">Numbers last</span>
+          </label>
+          <label class="pick" for="p6">
+            <input type="checkbox" id="p6">
+            <span class="cl">G</span><span class="pt">Get help early</span>
+          </label>
+      </div>
+
+      <div class="sendrow">
+        <button class="send" id="send" type="button">Send my answer</button>
+        <span class="tally" id="tally">none selected</span>
+      </div>
+    </div>
+
+    <p class="invite">The button lists both what your chart records and what it does not, so replying is a
+      two-line job.</p>
+  </div>
+  <footer>
+    <a class="home" href="./">&larr; &nbsp;All of ICU AND YOU</a><br>
+    ICU AND YOU · Mnemonic No. 54 · companion to Mind Map #32, The Postneonatal Infant
+  </footer>
+</div>
+
+<script>
+(function(){
+  var ITEMS = [{"l": "F", "t": "Feeding"}, {"l": "E", "t": "Effort of breathing"}, {"l": "E", "t": "Engagement"}, {"l": "D", "t": "Dry nappies"}, {"l": "I", "t": "Is the parent worried?"}, {"l": "N", "t": "Numbers last"}, {"l": "G", "t": "Get help early"}];
+  var boxes = Array.prototype.slice.call(document.querySelectorAll(".pick input"));
+  var tally = document.getElementById("tally");
+
+  function refresh(){
+    var n = 0;
+    boxes.forEach(function(b){
+      b.parentNode.classList.toggle("on", b.checked);
+      if(b.checked) n++;
+    });
+    tally.textContent = n === 0 ? "none selected" : n + " of " + boxes.length + " selected";
+  }
+  boxes.forEach(function(b){ b.addEventListener("change", refresh); });
+
+  document.getElementById("send").addEventListener("click", function(){
+    var yes = [], no = [];
+    boxes.forEach(function(b, i){
+      (b.checked ? yes : no).push("  " + ITEMS[i].l + " \u2014 " + ITEMS[i].t);
+    });
+    var body = "ICU Mnemonic #54 \u2014 FEEDING\n\n"
+      + "What our observation chart DOES capture:\n"
+      + (yes.length ? yes.join("\n") : "  (none)") + "\n\n"
+      + "What it does NOT capture:\n"
+      + (no.length ? no.join("\n") : "  (none)") + "\n\n"
+      + "---\n\nWhere do the missing ones get written down, if anywhere?\n\n\n"
+      + "Name (optional):\n";
+    window.location.href = "mailto:icuandyou@icloud.com?subject="
+      + encodeURIComponent("ICU Mnemonic 54 - what our chart captures")
+      + "&body=" + encodeURIComponent(body);
+  });
+  refresh();
+})();
+</script>
+<script data-goatcounter="https://icuandyou.goatcounter.com/count"
+        async src="//gc.zgo.at/count.js"></script>
+</body>
+</html>
