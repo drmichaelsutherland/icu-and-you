@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en-AU">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ICU AND YOU · Journal Club No. 97 — A unit for the first year of life</title>
+<meta name="description" content="Journal Club No. 97: Mohakud and Mishra propose a distinct Infant Intensive Care Unit for the first year of life — what the argument is, what it is worth, and what it is not.">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="alternate icon" href="/favicon.ico" sizes="any">
+<link rel="apple-touch-icon" href="/icon-180.png">
+<meta name="theme-color" content="#1B2A33">
+<meta property="og:site_name" content="ICU AND YOU">
+<meta property="og:type" content="website">
+<meta property="og:title" content="ICU AND YOU · Journal Club No. 97">
+<meta property="og:description" content="Should the first year of life have an intensive care unit of its own?">
+<meta property="og:image" content="https://icuandyou.com/share-card.png">
+<meta name="twitter:card" content="summary_large_image">
+<style>
+  :root{
+    --paper:#FAF8F3; --ink:#241F19; --muted:#6E6558; --rule:#DED5C6;
+    --sepia:#6B4A2F; --sepiatint:#F2EBE1;
+    --rust:#A8442A; --rusttint:#F9EDE7;
+    --sky:#2E6E8E; --skytint:#E7F1F6;
+  }
+  *{box-sizing:border-box}
+  body{margin:0;background:#EDE8DE;color:var(--ink);
+    font:400 17px/1.65 'Iowan Old Style','Palatino Linotype',Palatino,Georgia,serif;
+    -webkit-text-size-adjust:100%;}
+  .sheet{max-width:780px;margin:0 auto;background:var(--paper);
+    box-shadow:0 1px 40px rgba(36,31,25,.10);}
+
+  header.top{padding:42px 40px 28px;border-bottom:1px solid var(--rule)}
+  .eyebrow{font:500 11.5px/1 'Helvetica Neue',Arial,sans-serif;letter-spacing:.24em;
+    text-transform:uppercase;color:var(--sepia);margin:0 0 14px}
+  .eyebrow a.mast{color:inherit;text-decoration:none;border-bottom:1px solid transparent}
+  .eyebrow a.mast:hover{border-bottom-color:currentColor}
+  h1{font-size:31px;line-height:1.2;margin:0 0 10px;font-weight:400;letter-spacing:-.012em}
+  .kicker{color:var(--muted);margin:0;font-size:16.5px;font-style:italic}
+
+  .source{margin:0;padding:26px 40px;background:var(--sepiatint);border-bottom:1px solid var(--rule)}
+  .cite{margin:0 0 16px;font-size:16px;line-height:1.6}
+  .cite b{font-weight:600}
+  .meta{display:flex;flex-wrap:wrap;gap:5px 22px;margin:0 0 16px;
+    font:400 13.5px 'Helvetica Neue',Arial,sans-serif;color:var(--muted)}
+  .meta b{color:var(--ink);font-weight:600}
+  a.read{display:inline-block;padding:14px 28px;border-radius:30px;text-decoration:none;
+    background:var(--sepia);color:#FAF6F0;
+    font:600 15px 'Helvetica Neue',Arial,sans-serif;letter-spacing:.03em}
+  a.read:hover{background:#523821}
+  .srcnote{font:400 13.5px 'Helvetica Neue',Arial,sans-serif;color:var(--muted);margin:14px 0 0}
+
+  .pad{padding:32px 40px}
+  p{margin:0 0 17px}
+  h2.sub{font:600 12px 'Helvetica Neue',Arial,sans-serif;letter-spacing:.2em;
+    text-transform:uppercase;color:var(--muted);margin:0 0 16px;
+    padding-bottom:8px;border-bottom:1px solid var(--rule)}
+  b.term{font-weight:600;color:var(--sepia)}
+
+  .three{display:flex;gap:13px;flex-wrap:wrap;margin:0 0 20px}
+  .col{flex:1 1 200px;background:#fff;border:1px solid var(--rule);border-radius:9px;padding:16px 18px}
+  .col.mid{border-top:4px solid var(--sky);background:var(--skytint)}
+  .col .age{font:600 12px 'Helvetica Neue',Arial,sans-serif;letter-spacing:.1em;
+    text-transform:uppercase;color:var(--muted);margin:0 0 7px}
+  .col.mid .age{color:var(--sky)}
+  .col p{margin:0;font-size:15px;line-height:1.5;color:#3A342A}
+
+  .caution{margin:0;padding:20px 24px;background:var(--rusttint);
+    border-left:4px solid var(--rust);border-radius:0 8px 8px 0}
+  .caution .lab{display:block;font:600 11px 'Helvetica Neue',Arial,sans-serif;
+    letter-spacing:.18em;text-transform:uppercase;color:var(--rust);margin:0 0 9px}
+  .caution p:last-child{margin:0}
+
+  .challenge{margin:0;padding:28px 32px;background:var(--rusttint);border-left:5px solid var(--rust)}
+  .challenge h2{font:600 12px 'Helvetica Neue',Arial,sans-serif;letter-spacing:.2em;
+    text-transform:uppercase;color:var(--rust);margin:0 0 13px}
+  .ask{font-size:19.5px;line-height:1.5;margin:0 0 8px}
+  .lead{font-size:15px;color:var(--muted);margin:0 0 17px;line-height:1.55}
+  .chips{display:flex;flex-wrap:wrap;gap:10px;margin:0 0 16px}
+  a.chip{text-decoration:none;padding:12px 18px;border-radius:9px;
+    background:#fff;border:1px solid #E0C4B8;color:#7C3520;
+    font:400 15px 'Iowan Old Style',Palatino,Georgia,serif;transition:transform .08s ease}
+  a.chip:hover{transform:translateY(-1px);background:#FDF4EF}
+  .fallback{font:400 13.5px 'Helvetica Neue',Arial,sans-serif;color:var(--muted);margin:0}
+  .fallback a{color:var(--rust)}
+
+  footer{padding:24px 40px 42px;border-top:1px solid var(--rule);
+    font:400 13px 'Helvetica Neue',Arial,sans-serif;color:var(--muted);text-align:center;line-height:1.7}
+  .home{display:inline-block;margin:0 0 14px;padding:8px 18px;border-radius:20px;
+    border:1px solid var(--rule);background:#F2EEE6;color:var(--sepia);text-decoration:none;
+    font:600 12.5px 'Helvetica Neue',Arial,sans-serif;letter-spacing:.05em}
+  .home:hover{background:var(--sepia);border-color:var(--sepia);color:#FAF6F0}
+
+  @media (max-width:620px){
+    header.top,.source,.pad,footer{padding-left:20px;padding-right:20px}
+    .challenge{padding:22px 20px}
+    h1{font-size:25px} body{font-size:16.5px} .ask{font-size:18px}
+  }
+  @media print{ body{background:#fff} .sheet{box-shadow:none;max-width:none} }
+</style>
+</head>
+<body>
+<div class="sheet">
+
+  <header class="top">
+    <p class="eyebrow"><a class="mast" href="./">ICU and You</a> &nbsp;·&nbsp; Journal Club &nbsp;·&nbsp; Number 97</p>
+    <h1>A unit for the first year of life</h1>
+    <p class="kicker">A three-page letter proposing a new kind of intensive care unit &mdash; and asking a question worth arguing about</p>
+  </header>
+
+  <div class="source">
+    <p class="cite">Mohakud NK, Mishra R. <b>Infant intensive care unit: a new critical care identity for the
+      first year of life.</b> <em>Journal of Pediatric Critical Care</em> 2026;13(4):246&ndash;8.</p>
+    <div class="meta">
+      <span><b>From</b> &nbsp;Kalinga Institute of Medical Sciences, Bhubaneswar, Odisha, India</span>
+      <span><b>Type</b> &nbsp;Letter to the Editor</span>
+      <span><b>Published</b> &nbsp;13 August 2026</span>
+    </div>
+    <a class="read" href="https://doi.org/10.4103/jpcc.jpcc_70_26">Read it (open access)</a>
+    <p class="srcnote">Free to read and share under CC BY-NC-ND 4.0, provided it is properly cited. Three pages,
+      one figure, ten minutes.</p>
+  </div>
+
+  <div class="pad">
+    <h2 class="sub">The argument</h2>
+
+    <p>Newborns have a unit. Children have a unit. The infant between one month and one year has neither &mdash; they
+      are admitted to a paediatric intensive care unit built around the physiology of older children, and looked
+      after by people whose training and equipment were designed for someone else. Mohakud and Mishra argue that
+      this interval is not a transition to be passed through but a distinct population, and that it deserves a
+      distinct unit: an <b class="term">infant intensive care unit</b>, staffed by an <b class="term">infant
+      intensivist</b>.</p>
+
+    <p>Their case rests on the observation that on nearly every axis, the infant sits closer to the neonate than to
+      the child.</p>
+
+    <div class="three">
+      <div class="col">
+        <p class="age">0&ndash;28 days</p>
+        <p>Neonatal physiology, unique airway characteristics, milk-based nutrition, early neurodevelopment.
+          Cared for in a NICU by a neonatologist.</p>
+      </div>
+      <div class="col mid">
+        <p class="age">1 month &ndash; 1 year</p>
+        <p>Transitional physiology, closer to neonatal. A distinct infant airway and lung. Rapid growth with
+          feeding support crucial. <strong>Peak brain growth.</strong> Family needs very high.</p>
+      </div>
+      <div class="col">
+        <p class="age">Over 1 year</p>
+        <p>Mature paediatric physiology, more developed airway anatomy, diverse diet, relatively advanced
+          development. Cared for in a PICU.</p>
+      </div>
+    </div>
+
+    <p>From that they propose something more than a rebadged bed: scaled micro-equipment, pharmacological modelling
+      for the transient pharmacokinetics of infancy, and &mdash; the most interesting element &mdash; continuous
+      <b class="term">neurodevelopmental surveillance timed to the window of peak brain growth</b>, extending
+      through nutritional rehabilitation and post-discharge follow-up. A PICU, they say, is reactive and informed
+      by data from older children; this would be proactive and built on infant physiology.</p>
+
+    <p>They are realistic about cost. Standalone units need infrastructure, equipment and a fellowship pathway that
+      does not yet exist, and they acknowledge this bites hardest in resource-limited settings. So they propose a
+      phased route: designated <b class="term">infant zones</b> inside existing PICUs, cross-training between
+      neonatologists and paediatric intensivists, and evolution into independent units only where the evidence and
+      the money allow.</p>
+
+    <h2 class="sub">What it is worth</h2>
+
+    <p>The observation at its centre is sound and it matches this week's mind map exactly. The infant is not a small
+      child. Rate-dependent cardiac output, a compliant chest wall, tiny airways where a millimetre of oedema halves
+      the lumen, no reserve of glycogen or oxygen &mdash; none of that is described by paediatric physiology, and a
+      unit calibrated to a four-year-old will be calibrated wrongly.</p>
+
+    <p>The neurodevelopmental argument is the strongest and the least often made. Critical illness during the period
+      of most rapid brain growth is not merely survived; it is carried. If an infant intensive care unit did nothing
+      but institute structured developmental follow-up for its survivors, it would probably justify itself.</p>
+
+    <p>And the historical analogy has force. Neonatology exists because somebody insisted that newborns were not
+      small children and were being managed by people trained for someone else. That argument was once considered
+      eccentric too.</p>
+
+    <h2 class="sub">What to read sceptically</h2>
+
+    <div class="caution">
+      <span class="lab">Before you cite this</span>
+      <p><b>This is a letter, not a study.</b> Three pages of advocacy with no new data, no cohort, no comparison.
+        The authors say themselves that multicentre studies <em>should</em> quantify the burden of critical illness,
+        mortality and long-term outcomes in this age group &mdash; which is a candid admission that the evidence
+        justifying the proposal has not yet been gathered. The proposal precedes its evidence, and that is worth
+        saying out loud in a journal club.</p>
+      <p><b>And subspecialisation has a cost the letter does not weigh.</b> Every new unit boundary is a new
+        handover, a new transfer, a new place for a child to fall between two services. A third unit between NICU
+        and PICU creates two boundaries where there was one. The paper cites work on neonatal-to-paediatric
+        transfers without confronting the possibility that its own proposal would multiply them.</p>
+    </div>
+
+    <p>Then there is the question of who this is for. Bhubaneswar has tertiary paediatric services; so does Sydney.
+      We do not. In a regional Australian unit the argument lands somewhere quite different &mdash; we are not
+      choosing between a PICU and an infant ICU, we are the interval before either. Which makes the useful question
+      not <em>should this unit exist</em> but <em>what would an infant intensivist know that we could learn without
+      building anything?</em></p>
+  </div>
+
+  <div class="pad" style="padding-top:6px">
+    <div class="challenge">
+      <h2>Challenge of the week</h2>
+      <p class="ask">Would a separate infant intensive care unit help &mdash; or add another boundary for a child to fall across?</p>
+      <p class="lead">Tap where you land and add a sentence. I am genuinely unsure about this one, which is usually
+        the sign of a good journal club paper.</p>
+      <div class="chips">
+        <a class="chip" href="mailto:icuandyou@icloud.com?subject=Journal%20Club%2097%20-%20yes%2C%20a%20distinct%20unit&body=I%20think%20a%20distinct%20infant%20intensive%20care%20unit%20WOULD%20help.%0D%0A%0D%0AWhy%3A%0D%0A%0D%0A%0D%0AName%20(optional)%3A%0D%0A">It would help</a>
+        <a class="chip" href="mailto:icuandyou@icloud.com?subject=Journal%20Club%2097%20-%20no%2C%20another%20boundary&body=I%20think%20a%20distinct%20infant%20intensive%20care%20unit%20would%20mostly%20add%20another%20boundary.%0D%0A%0D%0AWhy%3A%0D%0A%0D%0A%0D%0AName%20(optional)%3A%0D%0A">It would add a boundary</a>
+        <a class="chip" href="mailto:icuandyou@icloud.com?subject=Journal%20Club%2097%20-%20training%2C%20not%20a%20new%20unit%20model&body=I%20think%20what%20is%20needed%20is%20training%20%E2%80%94%20and%20follow-up%20%E2%80%94%20rather%20than%20a%20new%20unit%20model.%0D%0A%0D%0AWhy%3A%0D%0A%0D%0A%0D%0AName%20(optional)%3A%0D%0A">What is needed is training, not a new unit model</a>
+        <a class="chip" href="mailto:icuandyou@icloud.com?subject=Journal%20Club%2097%20-%20other%20comment&body=My%20view%3A%0D%0A%0D%0A%0D%0A---%0D%0A%0D%0AName%20(optional)%3A%0D%0A">Other comment</a>
+      </div>
+      <p class="fallback">Each tap opens a reply straight to me with your position filled in. If your device blocks it,
+        write to <a href="mailto:icuandyou@icloud.com">icuandyou@icloud.com</a> instead.</p>
+    </div>
+  </div>
+
+  <footer>
+    <a class="home" href="./">&larr; &nbsp;All of ICU AND YOU</a><br>
+    ICU AND YOU &nbsp;·&nbsp; Journal Club No. 97 &nbsp;·&nbsp; companion to Mind Map #32, The Postneonatal Infant<br>
+    Summarised independently and in our own words; the article itself is open access under CC BY-NC-ND 4.0 and is
+    linked above rather than reproduced. Educational use only &mdash; local guidance always takes precedence.
+  </footer>
+
+</div>
+<script data-goatcounter="https://icuandyou.goatcounter.com/count"
+        async src="//gc.zgo.at/count.js"></script>
+</body>
+</html>
