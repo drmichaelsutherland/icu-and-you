@@ -72,6 +72,27 @@
   .chip.violet.on{background:var(--violet);border-color:var(--violet)}
   .chip.nero.on{background:var(--nero);border-color:var(--nero)}
 
+  details.drop{position:relative;display:inline-block}
+  summary.chip{list-style:none;display:inline-flex;align-items:center;gap:8px}
+  summary.chip::-webkit-details-marker{display:none}
+  summary.chip::after{content:"";width:6px;height:6px;border-right:1.6px solid currentColor;
+    border-bottom:1.6px solid currentColor;transform:translateY(-2px) rotate(45deg);
+    transition:transform .15s ease}
+  details.drop[open] summary.chip::after{transform:translateY(1px) rotate(-135deg)}
+  .chip.cult.on{background:var(--ink);border-color:var(--ink);color:#FBF9F5}
+  .menu{position:absolute;top:calc(100% + 7px);left:0;z-index:30;min-width:236px;
+    background:#fff;border:1px solid var(--rule);border-radius:11px;padding:6px;
+    box-shadow:0 8px 28px rgba(27,42,51,.16)}
+  .mi{display:flex;align-items:center;gap:10px;width:100%;text-align:left;border:0;
+    background:none;padding:10px 12px;border-radius:8px;cursor:pointer;color:var(--ink);
+    font:400 15px 'Iowan Old Style',Palatino,Georgia,serif}
+  .mi:hover{background:#F4F1EA}
+  .mi.on{background:#EDF1F1;font-weight:500}
+  .md{width:8px;height:8px;border-radius:50%;flex:none;display:block}
+  .md.all{background:linear-gradient(135deg,var(--bleu),var(--verde),var(--oro),var(--saffron))}
+  .md.bleu{background:var(--bleu)} .md.verde{background:var(--verde)}
+  .md.oro{background:var(--oro)} .md.saffron{background:var(--saffron)}
+
   /* ── This week ───────────────────────────────────────── */
   .week{padding:30px 36px 34px;background:#F6F2E8;border-bottom:1px solid var(--rule)}
   .wk-k{font:600 11.5px 'Helvetica Neue',Arial,sans-serif;letter-spacing:.24em;
@@ -244,10 +265,16 @@
         <button class="chip nero" data-f="literary" type="button">The Literary (L)edge</button>
     </div>
     <div class="crow">
-        <button class="chip bleu" data-f="coin" type="button">Le coin français</button>
-        <button class="chip verde" data-f="italiano" type="button">L&#x27;angolo italiano</button>
-        <button class="chip oro" data-f="espanol" type="button">El rincón español</button>
-        <button class="chip saffron" data-f="india" type="button">The India Room</button>
+        <details class="drop" id="cult">
+        <summary class="chip cult" id="cultlabel">Cultural narratives</summary>
+        <div class="menu">
+          <button class="mi" data-f="cultural"><i class="md all"></i>All cultural narratives</button>
+          <button class="mi" data-f="coin"><i class="md bleu"></i>Le coin français</button>
+          <button class="mi" data-f="italiano"><i class="md verde"></i>L&#x27;angolo italiano</button>
+          <button class="mi" data-f="espanol"><i class="md oro"></i>El rincón español</button>
+          <button class="mi" data-f="india"><i class="md saffron"></i>The India Room</button>
+        </div>
+      </details>
     </div>
   </div>
 
@@ -454,8 +481,16 @@
   var empty = document.getElementById("empty");
   var filter = "all";
 
+  var CULT = ["coin", "italiano", "espanol", "india"];
+
+  function inFilter(sk){
+    if(filter === "all") return true;
+    if(filter === "cultural") return CULT.indexOf(sk) > -1;
+    return sk === filter;
+  }
+
   function matches(el, term){
-    if(filter !== "all" && el.dataset.series !== filter) return false;
+    if(!inFilter(el.dataset.series)) return false;
     if(!term) return true;
     var g = el.closest("details.group");
     var topic = g ? g.dataset.topic : "The postneonatal infant";
@@ -492,14 +527,43 @@
     empty.style.display = shown ? "none" : "block";
   }
 
+  var drop  = document.getElementById("cult");
+  var label = document.getElementById("cultlabel");
+  var items = document.querySelectorAll(".mi");
+
+  function clearAll(){
+    Array.prototype.forEach.call(chips, function(x){ x.classList.remove("on"); });
+    Array.prototype.forEach.call(items, function(x){ x.classList.remove("on"); });
+    label.classList.remove("on");
+  }
+
   q.addEventListener("input", apply);
+
   Array.prototype.forEach.call(chips, function(c){
     c.addEventListener("click", function(){
-      Array.prototype.forEach.call(chips, function(x){ x.classList.remove("on"); });
+      clearAll();
       c.classList.add("on");
+      label.firstChild.nodeValue = "Cultural narratives";
       filter = c.dataset.f;
       apply();
     });
+  });
+
+  Array.prototype.forEach.call(items, function(m){
+    m.addEventListener("click", function(){
+      clearAll();
+      m.classList.add("on");
+      label.classList.add("on");
+      label.firstChild.nodeValue =
+        (m.dataset.f === "cultural") ? "Cultural narratives" : m.textContent.trim();
+      filter = m.dataset.f;
+      drop.open = false;
+      apply();
+    });
+  });
+
+  document.addEventListener("click", function(ev){
+    if(drop.open && !drop.contains(ev.target)) drop.open = false;
   });
 })();
 </script>
