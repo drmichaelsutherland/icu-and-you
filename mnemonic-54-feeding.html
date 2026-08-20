@@ -23,6 +23,11 @@
   body{margin:0;background:var(--paper);color:var(--ink);font-family:"Spectral",Georgia,serif;font-size:16px;line-height:1.62;-webkit-font-smoothing:antialiased;}
   .wrap{max-width:640px;margin:0 auto;padding:34px 22px 68px;}
   .card{background:var(--card);border:1px solid var(--hair);padding:38px 42px 34px;}
+  .tophome{display:inline-block;margin:0 0 16px;padding:7px 16px;border-radius:20px;
+    border:1px solid currentColor;opacity:.62;text-decoration:none;color:inherit;
+    font:600 11.5px 'Helvetica Neue',Arial,sans-serif;letter-spacing:.09em;
+    text-transform:uppercase;transition:opacity .12s ease}
+  .tophome:hover{opacity:1}
   .eyebrow{font-family:"IBM Plex Mono",monospace;font-size:11.5px;letter-spacing:.18em;text-transform:uppercase;color:var(--sky);font-weight:500;margin:0 0 12px;}
   .eyebrow a.mast{color:inherit;text-decoration:none;border-bottom:1px solid transparent;}
   .eyebrow a.mast:hover{border-bottom-color:currentColor;}
@@ -76,6 +81,7 @@
 <body>
 <div class="wrap">
   <div class="card">
+    <a class="tophome" href="./">&larr;&nbsp; Home</a>
     <p class="eyebrow"><a class="mast" href="./">ICU and You</a> · Mnemonic No. 54</p>
     <h1>Spotting the sick infant</h1>
     <p class="sub">Seven things, in the order that finds them: <b>FEEDING</b>.</p>
