@@ -79,7 +79,7 @@
     border-bottom:1.6px solid currentColor;transform:translateY(-2px) rotate(45deg);
     transition:transform .15s ease}
   details.drop[open] summary.chip::after{transform:translateY(1px) rotate(-135deg)}
-  .chip.cult.on{background:var(--ink);border-color:var(--ink);color:#FBF9F5}
+  .chip.grp.on{background:var(--ink);border-color:var(--ink);color:#FBF9F5}
   .menu{position:absolute;top:calc(100% + 7px);left:0;z-index:30;min-width:236px;
     background:#fff;border:1px solid var(--rule);border-radius:11px;padding:6px;
     box-shadow:0 8px 28px rgba(27,42,51,.16)}
@@ -90,8 +90,13 @@
   .mi.on{background:#EDF1F1;font-weight:500}
   .md{width:8px;height:8px;border-radius:50%;flex:none;display:block}
   .md.all{background:linear-gradient(135deg,var(--bleu),var(--verde),var(--oro),var(--saffron))}
-  .md.bleu{background:var(--bleu)} .md.verde{background:var(--verde)}
-  .md.oro{background:var(--oro)} .md.saffron{background:var(--saffron)}
+  .md.teal{background:var(--teal)} .md.plum{background:var(--plum)}
+  .md.rust{background:var(--rust)} .md.wine{background:var(--wine)}
+  .md.olive{background:var(--olive)} .md.violet{background:var(--violet)}
+  .md.slate{background:var(--slate)} .md.sepia{background:var(--sepia)}
+  .md.nero{background:var(--nero)} .md.bleu{background:var(--bleu)}
+  .md.verde{background:var(--verde)} .md.oro{background:var(--oro)}
+  .md.saffron{background:var(--saffron)}
 
   /* ── This week ───────────────────────────────────────── */
   .week{padding:30px 36px 34px;background:#F6F2E8;border-bottom:1px solid var(--rule)}
@@ -251,28 +256,50 @@
   <div class="controls">
     <div class="crow">
       <input id="q" type="search" placeholder="Search topics and titles" aria-label="Search">
-        <button class="chip on" data-f="all" type="button">Everything</button>
-        <button class="chip teal" data-f="mind-map" type="button">Mind maps</button>
-        <button class="chip plum" data-f="aphorism" type="button">Aphorisms</button>
-        <button class="chip rust" data-f="superpuzzle" type="button">Superpuzzles</button>
-        <button class="chip wine" data-f="superquiz" type="button">Superquizzes</button>
-        <button class="chip olive" data-f="mnemonic" type="button">Mnemonics</button>
-        <button class="chip violet" data-f="students" type="button">Medical students</button>
+      <button class="chip on" data-f="all" type="button">Everything</button>
     </div>
     <div class="crow">
-        <button class="chip slate" data-f="podcast" type="button">Podcasts</button>
-        <button class="chip sepia" data-f="journal" type="button">Journal club</button>
-        <button class="chip nero" data-f="literary" type="button">The Literary (L)edge</button>
-    </div>
-    <div class="crow">
-        <details class="drop" id="cult">
-        <summary class="chip cult" id="cultlabel">Cultural narratives</summary>
+      <details class="drop" data-g="memory">
+        <summary class="chip grp">Memory aids and activities</summary>
         <div class="menu">
-          <button class="mi" data-f="cultural"><i class="md all"></i>All cultural narratives</button>
+          <button class="mi" data-f="g:memory"><i class="md all"></i>All memory aids and activities</button>
+          <button class="mi" data-f="mind-map"><i class="md teal"></i>Mind map</button>
+          <button class="mi" data-f="aphorism"><i class="md plum"></i>Aphorism</button>
+          <button class="mi" data-f="mnemonic"><i class="md olive"></i>Mnemonic</button>
+          <button class="mi" data-f="superpuzzle"><i class="md rust"></i>Superpuzzle</button>
+          <button class="mi" data-f="superquiz"><i class="md wine"></i>Superquiz</button>
+        </div>
+      </details>
+      <details class="drop" data-g="multimedia">
+        <summary class="chip grp">Multimedia</summary>
+        <div class="menu">
+          <button class="mi" data-f="g:multimedia"><i class="md all"></i>All multimedia</button>
+          <button class="mi" data-f="podcast"><i class="md slate"></i>Podcast</button>
+          <button class="mi" data-f="journal"><i class="md sepia"></i>Journal club</button>
+        </div>
+      </details>
+      <details class="drop" data-g="special">
+        <summary class="chip grp">Special groups</summary>
+        <div class="menu">
+          <button class="mi" data-f="g:special"><i class="md all"></i>All special groups</button>
+          <button class="mi" data-f="students"><i class="md violet"></i>Medical Students</button>
+        </div>
+      </details>
+      <details class="drop" data-g="cultural">
+        <summary class="chip grp">Cultural narratives</summary>
+        <div class="menu">
+          <button class="mi" data-f="g:cultural"><i class="md all"></i>All cultural narratives</button>
           <button class="mi" data-f="coin"><i class="md bleu"></i>Le coin français</button>
           <button class="mi" data-f="italiano"><i class="md verde"></i>L&#x27;angolo italiano</button>
           <button class="mi" data-f="espanol"><i class="md oro"></i>El rincón español</button>
           <button class="mi" data-f="india"><i class="md saffron"></i>The India Room</button>
+        </div>
+      </details>
+      <details class="drop" data-g="other">
+        <summary class="chip grp">Other Realms</summary>
+        <div class="menu">
+          <button class="mi" data-f="g:other"><i class="md all"></i>All of Other Realms</button>
+          <button class="mi" data-f="literary"><i class="md nero"></i>The Literary (L)edge</button>
         </div>
       </details>
     </div>
@@ -299,6 +326,14 @@
             <div class="links"><a class="go" href="aphorism-36-parent-is-the-monitor.html">Open</a></div>
           </div>
         </li>
+        <li class="item olive" data-series="mnemonic">
+          <div class="badge">Mnemonic<b>54</b></div>
+          <div class="body">
+            <h3>FEEDING</h3>
+            <p>Seven things, in the order that finds them — and the numbers come last. With a challenge about what your observation chart actually records.</p>
+            <div class="links"><a class="go" href="mnemonic-54-feeding.html">Open</a></div>
+          </div>
+        </li>
         <li class="item rust" data-series="superpuzzle">
           <div class="badge">Superpuzzle<b>49</b></div>
           <div class="body">
@@ -307,12 +342,20 @@
             <div class="links"><a class="go" href="superpuzzle-49-postneonatal-fillable.html">Open the puzzle</a></div>
           </div>
         </li>
-        <li class="item olive" data-series="mnemonic">
-          <div class="badge">Mnemonic<b>54</b></div>
+        <li class="item slate" data-series="podcast">
+          <div class="badge">Podcast<b>56</b></div>
           <div class="body">
-            <h3>FEEDING</h3>
-            <p>Seven things, in the order that finds them — and the numbers come last. With a challenge about what your observation chart actually records.</p>
-            <div class="links"><a class="go" href="mnemonic-54-feeding.html">Open</a></div>
+            <h3>The Febrile Infant</h3>
+            <p>Tim Horeczko on the 2021 AAP guideline — three age bands, three algorithms, and the one phrase the whole thing rests on.</p>
+            <div class="links"><a class="go" href="podcast-56-febrile-infant.html">Open</a></div>
+          </div>
+        </li>
+        <li class="item sepia" data-series="journal">
+          <div class="badge">Journal club<b>97</b></div>
+          <div class="body">
+            <h3>A unit for the first year of life</h3>
+            <p>Mohakud and Mishra propose a distinct infant intensive care unit — a sound observation, an open question about boundaries, and a proposal that precedes its evidence.</p>
+            <div class="links"><a class="go" href="journal-club-97-infant-intensive-care.html">Open</a></div>
           </div>
         </li>
         <li class="item violet" data-series="students">
@@ -339,22 +382,6 @@
             <div class="links"><a class="go" href="india-room-01-what-some-of-our-colleagues-have-seen.html">Open</a></div>
           </div>
         </li>
-        <li class="item slate" data-series="podcast">
-          <div class="badge">Podcast<b>56</b></div>
-          <div class="body">
-            <h3>The Febrile Infant</h3>
-            <p>Tim Horeczko on the 2021 AAP guideline — three age bands, three algorithms, and the one phrase the whole thing rests on.</p>
-            <div class="links"><a class="go" href="podcast-56-febrile-infant.html">Open</a></div>
-          </div>
-        </li>
-        <li class="item sepia" data-series="journal">
-          <div class="badge">Journal club<b>97</b></div>
-          <div class="body">
-            <h3>A unit for the first year of life</h3>
-            <p>Mohakud and Mishra propose a distinct infant intensive care unit — a sound observation, an open question about boundaries, and a proposal that precedes its evidence.</p>
-            <div class="links"><a class="go" href="journal-club-97-infant-intensive-care.html">Open</a></div>
-          </div>
-        </li>
         <li class="item nero" data-series="literary">
           <div class="badge">The Literary (L)edge<b>1</b></div>
           <div class="body">
@@ -372,45 +399,45 @@
       <details class="group" data-topic="Neonatology">
         <summary>
           <span class="tname">Neonatology</span>
-          <span class="tdots"><i class="dot teal" title="Mind map"></i><i class="dot plum" title="Aphorism"></i><i class="dot rust" title="Superpuzzle"></i><i class="dot wine" title="Superquiz"></i><i class="dot olive" title="Mnemonic"></i><i class="dot bleu" title="Le coin français"></i><i class="dot verde" title="L&#x27;angolo italiano"></i><i class="dot slate" title="Podcast"></i><i class="dot sepia" title="Journal club"></i></span>
+          <span class="tdots"><i class="dot teal" title="Mind map"></i><i class="dot plum" title="Aphorism"></i><i class="dot olive" title="Mnemonic"></i><i class="dot rust" title="Superpuzzle"></i><i class="dot wine" title="Superquiz"></i><i class="dot slate" title="Podcast"></i><i class="dot sepia" title="Journal club"></i><i class="dot bleu" title="Le coin français"></i><i class="dot verde" title="L&#x27;angolo italiano"></i></span>
           <span class="tcount">9 pieces</span>
         </summary>
         <ul class="rows">
             <li class="row teal" data-series="mind-map"><span class="rs">Mind map</span><span class="rn">31</span><a class="rt" href="mind-map-31-neonatal.html">Essentials of neonatal intensive care</a></li>
             <li class="row plum" data-series="aphorism"><span class="rs">Aphorism</span><span class="rn">35</span><a class="rt" href="aphorism-35-respiratory-arrest.html">The newborn generally does not have a cardiac arrest</a></li>
+            <li class="row olive" data-series="mnemonic"><span class="rs">Mnemonic</span><span class="rn">53</span><a class="rt" href="mnemonic-53-collapsed-neonate.html">COLLAPSED</a></li>
             <li class="row rust" data-series="superpuzzle"><span class="rs">Superpuzzle</span><span class="rn">48</span><a class="rt" href="superpuzzle-48-neonatology-fillable.html">Neonatology</a></li>
             <li class="row wine" data-series="superquiz"><span class="rs">Superquiz</span><span class="rn">60</span><a class="rt" href="superquiz-60-neonatology.html">Neonatology</a></li>
-            <li class="row olive" data-series="mnemonic"><span class="rs">Mnemonic</span><span class="rn">53</span><a class="rt" href="mnemonic-53-collapsed-neonate.html">COLLAPSED</a></li>
-            <li class="row bleu" data-series="coin"><span class="rs">Le coin français</span><span class="rn">1</span><a class="rt" href="coin-francais-01-la-couveuse.html">La couveuse</a></li>
-            <li class="row verde" data-series="italiano"><span class="rs">L&#x27;angolo italiano</span><span class="rn">1</span><a class="rt" href="angolo-italiano-01-la-ruota.html">La ruota</a></li>
             <li class="row slate" data-series="podcast"><span class="rs">Podcast</span><span class="rn">55</span><a class="rt" href="podcast-55-neonatal-vasoactive-drugs.html">Cardiac Drugs: Vasopressors and Inotropic Agents</a></li>
             <li class="row sepia" data-series="journal"><span class="rs">Journal club</span><span class="rn">96</span><a class="rt" href="journal-club-96-nicu-survival-guide.html">The NICU Survival Guide</a></li>
+            <li class="row bleu" data-series="coin"><span class="rs">Le coin français</span><span class="rn">1</span><a class="rt" href="coin-francais-01-la-couveuse.html">La couveuse</a></li>
+            <li class="row verde" data-series="italiano"><span class="rs">L&#x27;angolo italiano</span><span class="rn">1</span><a class="rt" href="angolo-italiano-01-la-ruota.html">La ruota</a></li>
         </ul>
       </details>
       <details class="group" data-topic="Transplantation">
         <summary>
           <span class="tname">Transplantation</span>
-          <span class="tdots"><i class="dot teal" title="Mind map"></i><i class="dot plum" title="Aphorism"></i><i class="dot rust" title="Superpuzzle"></i><i class="dot olive" title="Mnemonic"></i></span>
+          <span class="tdots"><i class="dot teal" title="Mind map"></i><i class="dot plum" title="Aphorism"></i><i class="dot olive" title="Mnemonic"></i><i class="dot rust" title="Superpuzzle"></i></span>
           <span class="tcount">4 pieces</span>
         </summary>
         <ul class="rows">
             <li class="row teal" data-series="mind-map"><span class="rs">Mind map</span><span class="rn">30</span><a class="rt" href="mind-map-30-transplantation.html">Transplantation medicine in the ICU</a></li>
             <li class="row plum" data-series="aphorism"><span class="rs">Aphorism</span><span class="rn">34</span><a class="rt" href="aphorism-34-absence-of-signs.html">In the immunosuppressed, the absence of signs is the sign</a></li>
-            <li class="row rust" data-series="superpuzzle"><span class="rs">Superpuzzle</span><span class="rn">47</span><a class="rt" href="superpuzzle-47-transplantation-fillable.html">Transplantation medicine</a></li>
             <li class="row olive" data-series="mnemonic"><span class="rs">Mnemonic</span><span class="rn">52</span><a class="rt" href="mnemonic-52-transplantation.html">TRANSPLANT</a></li>
+            <li class="row rust" data-series="superpuzzle"><span class="rs">Superpuzzle</span><span class="rn">47</span><a class="rt" href="superpuzzle-47-transplantation-fillable.html">Transplantation medicine</a></li>
         </ul>
       </details>
       <details class="group" data-topic="Organ donation">
         <summary>
           <span class="tname">Organ donation</span>
-          <span class="tdots"><i class="dot teal" title="Mind map"></i><i class="dot plum" title="Aphorism"></i><i class="dot rust" title="Superpuzzle"></i><i class="dot olive" title="Mnemonic"></i><i class="dot bleu" title="Le coin français"></i><i class="dot oro" title="El rincón español"></i></span>
+          <span class="tdots"><i class="dot teal" title="Mind map"></i><i class="dot plum" title="Aphorism"></i><i class="dot olive" title="Mnemonic"></i><i class="dot rust" title="Superpuzzle"></i><i class="dot bleu" title="Le coin français"></i><i class="dot oro" title="El rincón español"></i></span>
           <span class="tcount">6 pieces</span>
         </summary>
         <ul class="rows">
             <li class="row teal" data-series="mind-map"><span class="rs">Mind map</span><span class="rn">29</span><a class="rt" href="mind-map-29-organ-donation.html">Organ donation in the ICU</a></li>
             <li class="row plum" data-series="aphorism"><span class="rs">Aphorism</span><span class="rn">33</span><a class="rt" href="aphorism-33-donation.html">Everyone means to be a donor</a></li>
-            <li class="row rust" data-series="superpuzzle"><span class="rs">Superpuzzle</span><span class="rn">46</span><a class="rt" href="superpuzzle-46-organ-donation-fillable.html">Organ donation</a></li>
             <li class="row olive" data-series="mnemonic"><span class="rs">Mnemonic</span><span class="rn">51</span><a class="rt" href="mnemonic-51-donation.html">DONATION</a></li>
+            <li class="row rust" data-series="superpuzzle"><span class="rs">Superpuzzle</span><span class="rn">46</span><a class="rt" href="superpuzzle-46-organ-donation-fillable.html">Organ donation</a></li>
             <li class="row bleu" data-series="coin"><span class="rs">Le coin français</span><span class="rn">2</span><a class="rt" href="coin-francais-02-registre-des-refus.html">Le registre des refus</a></li>
             <li class="row oro" data-series="espanol"><span class="rs">El rincón español</span><span class="rn">1</span><a class="rt" href="rincon-espanol-01-modelo-espanol.html">El modelo español</a></li>
         </ul>
@@ -481,11 +508,15 @@
   var empty = document.getElementById("empty");
   var filter = "all";
 
-  var CULT = ["coin", "italiano", "espanol", "india"];
+  var GROUPS = {"memory": ["mind-map", "aphorism", "mnemonic", "superpuzzle", "superquiz"], "multimedia": ["podcast", "journal"], "special": ["students"], "cultural": ["coin", "italiano", "espanol", "india"], "other": ["literary"]};
+  var LABELS = {"memory": "Memory aids and activities", "multimedia": "Multimedia", "special": "Special groups", "cultural": "Cultural narratives", "other": "Other Realms"};
 
   function inFilter(sk){
     if(filter === "all") return true;
-    if(filter === "cultural") return CULT.indexOf(sk) > -1;
+    if(filter.indexOf("g:") === 0){
+      var m = GROUPS[filter.slice(2)];
+      return !!m && m.indexOf(sk) > -1;
+    }
     return sk === filter;
   }
 
@@ -527,14 +558,20 @@
     empty.style.display = shown ? "none" : "block";
   }
 
-  var drop  = document.getElementById("cult");
-  var label = document.getElementById("cultlabel");
-  var items = document.querySelectorAll(".mi");
+  var drops = Array.prototype.slice.call(document.querySelectorAll("details.drop"));
+  var items = Array.prototype.slice.call(document.querySelectorAll(".mi"));
 
+  function resetLabels(){
+    drops.forEach(function(d){
+      var sum = d.querySelector("summary");
+      sum.classList.remove("on");
+      sum.firstChild.nodeValue = LABELS[d.dataset.g];
+    });
+  }
   function clearAll(){
     Array.prototype.forEach.call(chips, function(x){ x.classList.remove("on"); });
-    Array.prototype.forEach.call(items, function(x){ x.classList.remove("on"); });
-    label.classList.remove("on");
+    items.forEach(function(x){ x.classList.remove("on"); });
+    resetLabels();
   }
 
   q.addEventListener("input", apply);
@@ -543,27 +580,29 @@
     c.addEventListener("click", function(){
       clearAll();
       c.classList.add("on");
-      label.firstChild.nodeValue = "Cultural narratives";
       filter = c.dataset.f;
       apply();
     });
   });
 
-  Array.prototype.forEach.call(items, function(m){
+  items.forEach(function(m){
     m.addEventListener("click", function(){
+      var d = m.closest("details.drop");
+      var sum = d.querySelector("summary");
       clearAll();
       m.classList.add("on");
-      label.classList.add("on");
-      label.firstChild.nodeValue =
-        (m.dataset.f === "cultural") ? "Cultural narratives" : m.textContent.trim();
+      sum.classList.add("on");
+      if(m.dataset.f.indexOf("g:") !== 0) sum.firstChild.nodeValue = m.textContent.trim();
       filter = m.dataset.f;
-      drop.open = false;
+      drops.forEach(function(x){ x.open = false; });
       apply();
     });
   });
 
   document.addEventListener("click", function(ev){
-    if(drop.open && !drop.contains(ev.target)) drop.open = false;
+    drops.forEach(function(d){
+      if(d.open && !d.contains(ev.target)) d.open = false;
+    });
   });
 })();
 </script>
