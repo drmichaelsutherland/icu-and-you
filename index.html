@@ -612,6 +612,27 @@
       if(d.open && !d.contains(ev.target)) d.open = false;
     });
   });
+
+  // arriving from a content page: ?s=mind-map or ?g=cultural
+  (function fromURL(){
+    var qs = new URLSearchParams(window.location.search);
+    var sk = qs.get("s"), gp = qs.get("g");
+    var want = sk ? sk : (gp ? "g:" + gp : null);
+    if(!want) return;
+    var target = null;
+    items.forEach(function(m){ if(m.dataset.f === want) target = m; });
+    if(!target) return;
+    var d = target.closest("details.drop");
+    var sum = d.querySelector("summary");
+    clearAll();
+    target.classList.add("on");
+    sum.classList.add("on");
+    if(want.indexOf("g:") !== 0) sum.firstChild.nodeValue = target.textContent.trim();
+    filter = want;
+    apply();
+    var coll = document.querySelector(".coll") || document.getElementById("week");
+    if(coll) coll.scrollIntoView({ behavior:"smooth", block:"start" });
+  })();
 })();
 </script>
 <script data-goatcounter="https://icuandyou.goatcounter.com/count"
