@@ -38,8 +38,16 @@
   h1{font-size:38px;line-height:1.12;margin:0 0 10px;font-weight:400;letter-spacing:-.015em}
   .kicker{font-style:italic;color:var(--muted);margin:0;font-size:17px}
 
-  .jump{margin:0;padding:14px 36px;background:#F1EDE4;border-bottom:1px solid var(--rule);
-    text-align:center;font:400 15.5px 'Iowan Old Style',Palatino,Georgia,serif;color:var(--muted)}
+  .strip{display:flex;align-items:center;justify-content:space-between;gap:22px;
+    flex-wrap:wrap;padding:12px 36px;background:#F1EDE4;border-bottom:1px solid var(--rule)}
+  .coming{margin:0;display:flex;align-items:baseline;gap:9px;flex-wrap:wrap;
+    font-family:'Iowan Old Style',Palatino,Georgia,serif}
+  .coming .cw{font:600 10.5px 'Helvetica Neue',Arial,sans-serif;letter-spacing:.22em;
+    text-transform:uppercase;color:var(--rust)}
+  .coming .cd{font-size:18px;font-style:italic;color:var(--ink);letter-spacing:-.01em}
+  .coming .ct{font-size:16px;font-style:italic;color:var(--muted)}
+  .jump{margin:0;text-align:right;
+    font:400 15.5px 'Iowan Old Style',Palatino,Georgia,serif;color:var(--muted)}
   .jump a{color:var(--teal);text-decoration:none;border-bottom:1px solid #B8CBD1;
     padding-bottom:1px;font-weight:500}
   .jump a:hover{color:var(--ink);border-bottom-color:var(--ink)}
@@ -231,6 +239,13 @@
   @media (max-width:620px){
     header.top,.controls,.week,.coll,.sub,footer{padding-left:18px;padding-right:18px}
     h1{font-size:29px} .wk-t{font-size:22px}
+    .strip{flex-direction:column;align-items:flex-start;gap:10px;padding:14px 18px}
+    .jump{text-align:left}
+    .coming .cd{font-size:16.5px} .coming .ct{font-size:15px}
+    .jumprow{flex-direction:column;align-items:flex-start;gap:12px}
+    .teaser{border-right:0;border-bottom:1px solid #DDD5C6;padding:0 0 11px;width:100%}
+    .jump{text-align:left;flex:1 1 auto}
+    .tt{font-size:17.5px}
     .lockup{flex-direction:column;align-items:flex-start;gap:14px}
     .lockup .logo{height:74px}
     .item{flex-direction:column;gap:10px}
@@ -259,11 +274,22 @@
     </div>
   </header>
 
-  <p class="jump">
-    New here? <a href="#about">About this site</a>
-    &nbsp;·&nbsp; <a href="#subscribe">Subscribe to the weekly email</a>
-    &nbsp;·&nbsp; <a href="mailto:icuandyou@icloud.com?subject=ICU%20AND%20YOU%20%E2%80%94%20hello&body=%0D%0A%0D%0A---%0D%0A%0D%0AName%3A%0D%0AWhere%20you%20work%20(optional)%3A%0D%0A">Contact me</a>
-  </p>
+  <div class="strip">
+    <p class="coming"><span class="cw">Coming next</span>
+      <span class="cd">Monday 1 September</span>
+      <span class="ct">&mdash; all about the toddler and the preschooler</span></p>
+    <div class="jumprow">
+      <p class="teaser">
+        <span class="tz">Coming next week &nbsp;·&nbsp; 1 September</span>
+        <span class="tt">The toddler and preschool child</span>
+      </p>
+      <p class="jump">
+        New here? <a href="#about">About this site</a>
+        &nbsp;·&nbsp; <a href="#subscribe">Subscribe to the weekly email</a>
+        &nbsp;·&nbsp; <a href="mailto:icuandyou@icloud.com?subject=ICU%20AND%20YOU%20%E2%80%94%20hello&body=%0D%0A%0D%0A---%0D%0A%0D%0AName%3A%0D%0AWhere%20you%20work%20(optional)%3A%0D%0A">Contact me</a>
+      </p>
+    </div>
+  </div>
 
   <div class="controls">
     <div class="crow">
