@@ -367,7 +367,7 @@
     </div>
   </div>
 
-  <section class="week" id="week">
+  <section class="week" id="week" data-topic="The postneonatal infant" data-slug="the-postneonatal-infant">
     <p class="wk-k">This week</p>
     <h2 class="wk-t">The postneonatal infant</h2>
     <p class="wk-b">Twenty-nine days to one year. Last week&#x27;s baby was made unwell by how they were born; this week&#x27;s is made unwell by what happens afterwards — and remains extraordinarily good at looking well right up until the moment they are not.</p>
@@ -482,7 +482,7 @@
   <div class="coll">
     <h2 class="sec">Previous weeks</h2>
     <p class="sechint">Each week is one subject taken several different ways. Click a subject to open it.</p>
-      <details class="group" data-topic="Neonatology">
+      <details class="group" data-topic="Neonatology" data-slug="neonatology">
         <summary>
           <span class="tname">Neonatology</span>
           <span class="tdots"><i class="dot teal" title="Mind map"></i><i class="dot plum" title="Aphorism"></i><i class="dot olive" title="Mnemonic"></i><i class="dot rust" title="Superpuzzle"></i><i class="dot wine" title="Superquiz"></i><i class="dot slate" title="Podcast"></i><i class="dot sepia" title="Journal club"></i><i class="dot bleu" title="Le coin français"></i><i class="dot verde" title="L&#x27;angolo italiano"></i></span>
@@ -500,7 +500,7 @@
             <li class="row verde" data-series="italiano"><span class="rs">L&#x27;angolo italiano</span><span class="rn">1</span><a class="rt" href="angolo-italiano-01-la-ruota.html">La ruota</a></li>
         </ul>
       </details>
-      <details class="group" data-topic="Transplantation">
+      <details class="group" data-topic="Transplantation" data-slug="transplantation">
         <summary>
           <span class="tname">Transplantation</span>
           <span class="tdots"><i class="dot teal" title="Mind map"></i><i class="dot plum" title="Aphorism"></i><i class="dot olive" title="Mnemonic"></i><i class="dot rust" title="Superpuzzle"></i></span>
@@ -513,7 +513,7 @@
             <li class="row rust" data-series="superpuzzle"><span class="rs">Superpuzzle</span><span class="rn">47</span><a class="rt" href="superpuzzle-47-transplantation-fillable.html">Transplantation medicine</a></li>
         </ul>
       </details>
-      <details class="group" data-topic="Organ donation">
+      <details class="group" data-topic="Organ donation" data-slug="organ-donation">
         <summary>
           <span class="tname">Organ donation</span>
           <span class="tdots"><i class="dot teal" title="Mind map"></i><i class="dot plum" title="Aphorism"></i><i class="dot olive" title="Mnemonic"></i><i class="dot rust" title="Superpuzzle"></i><i class="dot bleu" title="Le coin français"></i><i class="dot oro" title="El rincón español"></i></span>
@@ -718,6 +718,20 @@
   // arriving from a content page: ?s=mind-map or ?g=cultural
   (function fromURL(){
     var qs = new URLSearchParams(window.location.search);
+    var tp = qs.get("t");
+    if(tp){
+      var wk = document.getElementById("week");
+      if(wk && wk.dataset.slug === tp){
+        wk.scrollIntoView({ behavior:"smooth", block:"start" });
+        return;
+      }
+      var sec = document.querySelector('details.group[data-slug="' + tp + '"]');
+      if(sec){
+        sec.open = true;
+        sec.scrollIntoView({ behavior:"smooth", block:"start" });
+      }
+      return;
+    }
     var sk = qs.get("s"), gp = qs.get("g");
     var want = sk ? sk : (gp ? "g:" + gp : null);
     if(!want) return;
