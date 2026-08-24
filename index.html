@@ -62,6 +62,15 @@
     position:sticky;top:0;z-index:5}
   .crow{display:flex;gap:9px;flex-wrap:wrap;align-items:center;margin:0 0 9px}
   .crow:last-child{margin:0}
+  .crow.status{display:none;align-items:center;gap:12px;
+    margin:11px 0 0;padding:9px 0 0;border-top:1px solid #E4DED2}
+  .crow.status.on{display:flex}
+  .showing{font:400 14.5px 'Iowan Old Style',Palatino,Georgia,serif;color:var(--muted)}
+  .showing b{color:var(--ink);font-weight:500}
+  .clear{padding:7px 15px;border:1px solid var(--rust);background:#fff;color:var(--rust);
+    border-radius:20px;cursor:pointer;
+    font:600 12px 'Helvetica Neue',Arial,sans-serif;letter-spacing:.05em}
+  .clear:hover{background:var(--rust);color:#FDF8F5}
   .controls input{flex:1 1 190px;min-width:160px;padding:10px 14px;border:1px solid var(--rule);
     border-radius:22px;background:#fff;color:var(--ink);
     font:400 14.5px 'Helvetica Neue',Arial,sans-serif}
@@ -352,6 +361,10 @@
         </div>
       </details>
     </div>
+    <div class="crow status" id="status">
+      <span class="showing">Showing <b id="showlabel"></b></span>
+      <button class="clear" id="clear" type="button">Show everything &nbsp;&times;</button>
+    </div>
   </div>
 
   <section class="week" id="week">
@@ -629,6 +642,20 @@
     });
 
     empty.style.display = shown ? "none" : "block";
+
+    var bar = document.getElementById("status");
+    var active = filter !== "all";
+    bar.classList.toggle("on", active);
+    if(active){
+      var name = filter;
+      if(filter.indexOf("g:") === 0) name = LABELS[filter.slice(2)];
+      else {
+        items.forEach(function(m){
+          if(m.dataset.f === filter) name = m.textContent.trim();
+        });
+      }
+      document.getElementById("showlabel").textContent = name;
+    }
   }
 
   var drops = Array.prototype.slice.call(document.querySelectorAll("details.drop"));
@@ -648,6 +675,16 @@
   }
 
   q.addEventListener("input", apply);
+
+  document.getElementById("clear").addEventListener("click", function(){
+    clearAll();
+    var everything = document.querySelector('.chip[data-f="all"]');
+    if(everything) everything.classList.add("on");
+    filter = "all";
+    q.value = "";
+    apply();
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  });
 
   Array.prototype.forEach.call(chips, function(c){
     c.addEventListener("click", function(){
