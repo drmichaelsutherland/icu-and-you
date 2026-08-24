@@ -20,7 +20,7 @@
   :root{
     --paper:#FBF9F5; --ink:#1B2A33; --muted:#6E6B63; --rule:#DED8CC;
     --teal:#2E6473; --plum:#6B4570; --rust:#A8442A; --olive:#5F6B33;
-    --bleu:#2F4A7C; --slate:#3E4A52; --verde:#2A6B47; --sepia:#6B4A2F; --oro:#B5852A; --wine:#7C2D42; --saffron:#B5651E; --violet:#4C4A8F; --nero:#23272E;
+    --bleu:#2F4A7C; --slate:#3E4A52; --verde:#2A6B47; --sepia:#6B4A2F; --oro:#B5852A; --wine:#7C2D42; --saffron:#B5651E; --violet:#4C4A8F; --nero:#23272E; --rose:#A85A6B; --denim:#3F6FA8;
   }
   *{box-sizing:border-box}
   body{margin:0;background:#F3EFE8;color:var(--ink);
@@ -80,6 +80,14 @@
     transition:transform .15s ease}
   details.drop[open] summary.chip::after{transform:translateY(1px) rotate(-135deg)}
   .chip.grp.on{background:var(--ink);border-color:var(--ink);color:#FBF9F5}
+  .chip.newbtn{background:var(--rust);border-color:var(--rust);color:#FDF8F5;
+    font-weight:600;letter-spacing:.06em}
+  .chip.newbtn:hover{background:#8A3620;border-color:#8A3620}
+  a.mi.newitem{text-decoration:none}
+  .newtag{flex:none;font:600 9.5px 'Helvetica Neue',Arial,sans-serif;letter-spacing:.14em;
+    text-transform:uppercase;color:#fff;background:var(--rust);
+    padding:3px 7px;border-radius:10px}
+  details.latest .menu{min-width:264px}
   .menu{position:absolute;top:calc(100% + 7px);left:0;z-index:30;min-width:236px;
     background:#fff;border:1px solid var(--rule);border-radius:11px;padding:6px;
     box-shadow:0 8px 28px rgba(27,42,51,.16)}
@@ -97,6 +105,7 @@
   .md.nero{background:var(--nero)} .md.bleu{background:var(--bleu)}
   .md.verde{background:var(--verde)} .md.oro{background:var(--oro)}
   .md.saffron{background:var(--saffron)}
+  .md.rose{background:var(--rose)} .md.denim{background:var(--denim)}
 
   /* ── This week ───────────────────────────────────────── */
   .week{padding:30px 36px 34px;background:#F6F2E8;border-bottom:1px solid var(--rule)}
@@ -113,7 +122,8 @@
   .item.verde{border-left-color:var(--verde)} .item.sepia{border-left-color:var(--sepia)}
   .item.oro{border-left-color:var(--oro)} .item.wine{border-left-color:var(--wine)}
   .item.saffron{border-left-color:var(--saffron)} .item.violet{border-left-color:var(--violet)}
-  .item.nero{border-left-color:var(--nero)}
+  .item.nero{border-left-color:var(--nero)} .item.rose{border-left-color:var(--rose)}
+  .item.denim{border-left-color:var(--denim)}
   .badge{flex:0 0 84px;text-align:center;
     font:600 10.5px 'Helvetica Neue',Arial,sans-serif;letter-spacing:.1em;
     text-transform:uppercase;color:var(--muted);padding-top:3px;line-height:1.3}
@@ -153,7 +163,8 @@
   .dot.verde{background:var(--verde)} .dot.sepia{background:var(--sepia)}
   .dot.oro{background:var(--oro)} .dot.wine{background:var(--wine)}
   .dot.saffron{background:var(--saffron)} .dot.violet{background:var(--violet)}
-  .dot.nero{background:var(--nero)}
+  .dot.nero{background:var(--nero)} .dot.rose{background:var(--rose)}
+  .dot.denim{background:var(--denim)}
   .tcount{font:400 13.5px 'Helvetica Neue',Arial,sans-serif;color:var(--muted);
     margin-right:22px;white-space:nowrap}
 
@@ -166,7 +177,8 @@
   li.row.verde{border-left-color:var(--verde)} li.row.sepia{border-left-color:var(--sepia)}
   li.row.oro{border-left-color:var(--oro)} li.row.wine{border-left-color:var(--wine)}
   li.row.saffron{border-left-color:var(--saffron)} li.row.violet{border-left-color:var(--violet)}
-  li.row.nero{border-left-color:var(--nero)}
+  li.row.nero{border-left-color:var(--nero)} li.row.rose{border-left-color:var(--rose)}
+  li.row.denim{border-left-color:var(--denim)}
   li.row:hover{background:#F7F4ED}
   .rs{flex:0 0 112px;font:600 10.5px 'Helvetica Neue',Arial,sans-serif;letter-spacing:.1em;
     text-transform:uppercase;color:var(--muted)}
@@ -257,6 +269,13 @@
     <div class="crow">
       <input id="q" type="search" placeholder="Search topics and titles" aria-label="Search">
       <button class="chip on" data-f="all" type="button">Everything</button>
+      <details class="drop latest" id="latest">
+        <summary class="chip newbtn">Latest posts</summary>
+        <div class="menu">
+          <a class="mi newitem" href="nurses-nest-01-postneonatal-infant.html"><span class="newtag">New</span><i class="md rose"></i>for nurses</a>
+          <a class="mi newitem" href="gp-boulevard-01-postneonatal-infant.html"><span class="newtag">New</span><i class="md denim"></i>just for GPs and GP trainees</a>
+        </div>
+      </details>
     </div>
     <div class="crow">
       <details class="drop" data-g="memory">
@@ -283,6 +302,8 @@
         <div class="menu">
           <button class="mi" data-f="g:special"><i class="md all"></i>All special groups</button>
           <button class="mi" data-f="students"><i class="md violet"></i>Medical Students</button>
+          <button class="mi" data-f="nurses"><i class="md rose"></i>Nurses&#x27; Nest</button>
+          <button class="mi" data-f="gp"><i class="md denim"></i>GP Boulevard</button>
         </div>
       </details>
       <details class="drop" data-g="cultural">
@@ -372,6 +393,22 @@
             <h3>The postneonatal infant, in three tiers</h3>
             <p>The same subject at three depths — the science, the clinical reasoning, and what you will be expected to do. Read only the tier you need.</p>
             <div class="links"><a class="go" href="med-students-01-postneonatal-infant.html">Open</a></div>
+          </div>
+        </li>
+        <li class="item rose" data-series="nurses">
+          <div class="badge">Nurses&#x27; Nest<b>1</b></div>
+          <div class="body">
+            <h3>You will notice first</h3>
+            <p>What you see before the chart does — and how to make it count when you say so.</p>
+            <div class="links"><a class="go" href="nurses-nest-01-postneonatal-infant.html">Open</a></div>
+          </div>
+        </li>
+        <li class="item denim" data-series="gp">
+          <div class="badge">GP Boulevard<b>1</b></div>
+          <div class="body">
+            <h3>Fifteen minutes and a well-looking baby</h3>
+            <p>The unselected infant in general practice: who to send, the common thing done well, and safety-netting that actually works.</p>
+            <div class="links"><a class="go" href="gp-boulevard-01-postneonatal-infant.html">Open</a></div>
           </div>
         </li>
         <li class="item verde" data-series="italiano">
@@ -516,7 +553,7 @@
   var empty = document.getElementById("empty");
   var filter = "all";
 
-  var GROUPS = {"memory": ["mind-map", "aphorism", "mnemonic", "superpuzzle", "superquiz"], "multimedia": ["podcast", "journal"], "special": ["students"], "cultural": ["coin", "italiano", "espanol", "india"], "other": ["literary"]};
+  var GROUPS = {"memory": ["mind-map", "aphorism", "mnemonic", "superpuzzle", "superquiz"], "multimedia": ["podcast", "journal"], "special": ["students", "nurses", "gp"], "cultural": ["coin", "italiano", "espanol", "india"], "other": ["literary"]};
   var LABELS = {"memory": "Memory aids and activities", "multimedia": "Multimedia", "special": "Special groups", "cultural": "Cultural narratives", "other": "Other Realms"};
 
   function inFilter(sk){
