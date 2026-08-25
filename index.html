@@ -57,7 +57,9 @@
     padding-bottom:1px;font-weight:500}
   .jump a:hover{color:var(--ink);border-bottom-color:var(--ink)}
 
-  details.sugg{margin:12px 36px 0;padding:0 0 13px}
+  details.sugg{margin:22px 0 0;padding:0;scroll-margin-top:150px}
+  .sub details.sugg summary{margin:0 auto}
+  .sub .suggbox{margin-left:auto;margin-right:auto;text-align:left}
   details.sugg summary{display:inline-flex;align-items:center;gap:8px;cursor:pointer;
     list-style:none;padding:7px 17px;border-radius:20px;
     border:1px solid var(--teal);background:#EDF3F5;color:var(--teal);
@@ -83,6 +85,8 @@
     position:sticky;top:0;z-index:5}
   .crow{display:flex;gap:9px;flex-wrap:wrap;align-items:center;margin:0 0 9px}
   .crow:last-child{margin:0}
+  .menulabel{margin:2px 0 8px;font:600 10.5px 'Helvetica Neue',Arial,sans-serif;
+    letter-spacing:.2em;text-transform:uppercase;color:var(--muted)}
   .crow.status{display:none;align-items:center;gap:12px;
     margin:11px 0 0;padding:9px 0 0;border-top:1px solid #E4DED2}
   .crow.status.on{display:flex}
@@ -338,20 +342,10 @@
       <p class="jump">
         New here? <a href="#about">About this site</a>
         &nbsp;·&nbsp; <a href="#subscribe">Subscribe to the weekly email</a>
+        &nbsp;·&nbsp; <a href="#suggestions">Your suggestions</a>
         &nbsp;·&nbsp; <a href="mailto:icuandyou@icloud.com?subject=ICU%20AND%20YOU%20%E2%80%94%20hello&body=%0D%0A%0D%0A---%0D%0A%0D%0AName%3A%0D%0AWhere%20you%20work%20(optional)%3A%0D%0A">Contact me</a>
       </p>
     </div>
-
-    <details class="sugg">
-      <summary>Your suggestions</summary>
-      <div class="suggbox">
-        <p>Is there a subject you think deserves a full week? A paper or a guideline worth a journal club?
-          A podcast episode the rest of us should hear? A question you would like put to everybody?</p>
-        <p class="sm">I read all of them, and I would rather have a suggestion I cannot use than not have it.
-          Several of the series on this site began as somebody else's idea.</p>
-        <a class="suggbtn" href="mailto:icuandyou@icloud.com?subject=ICU%20AND%20YOU%20%E2%80%94%20a%20suggestion&body=A%20topic%20I%20think%20would%20be%20worth%20a%20full%20week%3A%0A%0A%0AA%20paper%2C%20guideline%20or%20document%20worth%20a%20journal%20club%3A%0A%0A%0AA%20podcast%20episode%20worth%20listening%20to%3A%0A%0A%0AAnything%20else%20%E2%80%94%20a%20series%20you%20would%20like%20to%20see%2C%20a%20question%20you%20would%20like%20asked%3A%0A%0A%0A---%0A%0AName%20%28optional%29%3A%0AWhere%20you%20work%20%28optional%29%3A%0A">Send me a suggestion</a>
-      </div>
-    </details>
   </div>
 
   <div class="controls">
@@ -368,6 +362,7 @@
         </div>
       </details>
     </div>
+    <p class="menulabel">The menu &mdash; browse by category</p>
     <div class="crow">
       <details class="drop" data-g="memory">
         <summary class="chip grp">Memory aids and activities</summary>
@@ -604,6 +599,16 @@
       <a class="subbtn ghost" href="mailto:icuandyou@icloud.com?subject=ICU%20AND%20YOU%20%E2%80%94%20hello&body=%0D%0A%0D%0A---%0D%0A%0D%0AName%3A%0D%0AWhere%20you%20work%20(optional)%3A%0D%0A">Contact me</a>
     </div>
     <p class="subnote">Already subscribed? Every email has an unsubscribe link at the foot.</p>
+      <details class="sugg" id="suggestions">
+      <summary>Your suggestions</summary>
+      <div class="suggbox">
+        <p>Is there a subject you think deserves a full week? A paper or a guideline worth a journal club?
+          A podcast episode the rest of us should hear? A question you would like put to everybody?</p>
+        <p class="sm">I read all of them, and I would rather have a suggestion I cannot use than not have it.
+          Several of the series on this site began as somebody else's idea.</p>
+        <a class="suggbtn" href="mailto:icuandyou@icloud.com?subject=ICU%20AND%20YOU%20%E2%80%94%20a%20suggestion&body=A%20topic%20I%20think%20would%20be%20worth%20a%20full%20week%3A%0A%0A%0AA%20paper%2C%20guideline%20or%20document%20worth%20a%20journal%20club%3A%0A%0A%0AA%20podcast%20episode%20worth%20listening%20to%3A%0A%0A%0AAnything%20else%20%E2%80%94%20a%20series%20you%20would%20like%20to%20see%2C%20a%20question%20you%20would%20like%20asked%3A%0A%0A%0A---%0A%0AName%20%28optional%29%3A%0AWhere%20you%20work%20%28optional%29%3A%0A">Send me a suggestion</a>
+      </div>
+    </details>
     <p class="say">A topic you would like covered, something that did not display properly, or an idea &mdash;
       <a href="mailto:icuandyou@icloud.com?subject=ICU%20AND%20YOU%20%E2%80%94%20a%20note%20from%20a%20reader&body=Something%20you%20would%20like%20covered%3A%0D%0A%0D%0A%0D%0ASomething%20that%20did%20not%20work%20properly%20(and%20on%20what%20device)%3A%0D%0A%0D%0A%0D%0AAnything%20else%20%E2%80%94%20including%20if%20you%20would%20like%20to%20use%20this%20material%20with%20your%20own%20team%3A%0D%0A%0D%0A%0D%0A---%0D%0A%0D%0AName%20(optional)%3A%0D%0A">tell me</a>. If you would like to use any of this with your own team, that is welcome too;
       just say so and I will help.</p>
@@ -745,6 +750,24 @@
     items.forEach(function(x){ x.classList.remove("on"); });
     resetLabels();
   }
+
+  var suggBox = document.getElementById("suggestions");
+  function openSugg(){
+    if(window.location.hash === "#suggestions" && suggBox){
+      suggBox.open = true;
+      suggBox.scrollIntoView({ behavior:"smooth", block:"center" });
+    }
+  }
+  document.querySelectorAll('a[href="#suggestions"]').forEach(function(a){
+    a.addEventListener("click", function(ev){
+      ev.preventDefault();
+      if(suggBox){
+        suggBox.open = true;
+        suggBox.scrollIntoView({ behavior:"smooth", block:"center" });
+      }
+    });
+  });
+  openSugg();
 
   var totop = document.getElementById("totop");
   function toggleTop(){
