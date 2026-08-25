@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en-AU">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ICU AND YOU · Medical Students' Place No. 2 — Neonatology</title>
+<meta name="description" content="Medical Students' Place No. 2: neonatology in three tiers — the physiology of the first breath, reading the newborn, and what you will be expected to do.">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="alternate icon" href="/favicon.ico" sizes="any">
+<link rel="apple-touch-icon" href="/icon-180.png">
+<meta name="theme-color" content="#1B2A33">
+<meta property="og:site_name" content="ICU AND YOU">
+<meta property="og:type" content="website">
+<meta property="og:title" content="ICU AND YOU · Medical Students' Place No. 2 — Neonatology">
+<meta property="og:description" content="Neonatology in three tiers — read only the one you need.">
+<meta property="og:image" content="https://icuandyou.com/share-card.png">
+<meta name="twitter:card" content="summary_large_image">
+<style>
+  :root{
+    --paper:#FBFAF8; --ink:#1F2130; --muted:#6A6A78; --rule:#DEDCE4;
+    --violet:#4C4A8F; --violettint:#EDECF6;
+    --sky:#2E6E8E; --skytint:#E7F1F6;
+    --moss:#4C6B4A; --mosstint:#EAF1E9;
+    --rust:#A8442A; --rusttint:#F9EDE7;
+    --gold:#A8721E; --goldtint:#FBF1DC;
+  }
+  *{box-sizing:border-box}
+  body{margin:0;background:#EFEEF3;color:var(--ink);
+    font:400 17px/1.64 'Iowan Old Style','Palatino Linotype',Palatino,Georgia,serif;
+    -webkit-text-size-adjust:100%;}
+  .sheet{max-width:840px;margin:0 auto;background:var(--paper);
+    box-shadow:0 1px 40px rgba(31,33,48,.10);}
+
+  header.top{padding:42px 40px 28px;border-bottom:2px solid var(--violet)}
+  .tophome,.topseries,.toptopic{display:inline-block;margin:0 0 16px;padding:7px 16px;
+    border-radius:20px;border:1px solid currentColor;opacity:.62;text-decoration:none;
+    color:inherit;font:600 11.5px 'Helvetica Neue',Arial,sans-serif;letter-spacing:.09em;
+    text-transform:uppercase;transition:opacity .12s ease}
+  .topseries,.toptopic{margin-left:9px}
+  .tophome:hover,.topseries:hover,.toptopic:hover{opacity:1}
+  .eyebrow a.mast,.eyebrow a.serlink{color:inherit;text-decoration:none;
+    border-bottom:1px solid transparent}
+  .eyebrow a.mast:hover,.eyebrow a.serlink:hover{border-bottom-color:currentColor}
+  .eyebrow{font:500 11.5px/1 'Helvetica Neue',Arial,sans-serif;letter-spacing:.24em;
+    text-transform:uppercase;color:var(--muted);margin:0 0 13px}
+  h1{font-size:33px;line-height:1.18;margin:0 0 8px;font-weight:400;letter-spacing:-.012em}
+  .kicker{color:var(--muted);margin:0;font-size:16.5px;font-style:italic}
+
+  .jump{margin:0;padding:14px 40px;background:var(--violettint);
+    border-bottom:1px solid var(--rule);text-align:center;
+    font:400 15.5px 'Iowan Old Style',Palatino,Georgia,serif;color:var(--muted)}
+  .jump a{color:var(--violet);text-decoration:none;border-bottom:1px solid #BFBDDC;
+    padding-bottom:1px;font-weight:500}
+  .jump a:hover{color:var(--ink);border-bottom-color:var(--ink)}
+  html{scroll-behavior:smooth}
+  section[id]{scroll-margin-top:20px}
+
+  .pad{padding:32px 40px}
+  p{margin:0 0 16px}
+  .lede{font-size:19px;line-height:1.55;margin:0 0 20px}
+
+  section.tier{padding:32px 40px;border-top:1px solid var(--rule)}
+  .tier-k{font:600 11px 'Helvetica Neue',Arial,sans-serif;letter-spacing:.22em;
+    text-transform:uppercase;margin:0 0 8px}
+  .tier h2{font-size:26px;font-weight:400;margin:0 0 6px;line-height:1.24}
+  .tier .who{font-style:italic;color:var(--muted);margin:0 0 22px;font-size:16px}
+  .t1 .tier-k{color:var(--sky)} .t1{background:#FCFDFE}
+  .t2 .tier-k{color:var(--moss)} .t2{background:#FBFCFB}
+  .t3 .tier-k{color:var(--rust)} .t3{background:#FDFBFA}
+
+  ul.pts{list-style:none;margin:0 0 18px;padding:0}
+  ul.pts li{display:flex;gap:13px;padding:10px 0;border-bottom:1px solid #EDEBF2;
+    font-size:16.5px;line-height:1.5}
+  ul.pts li:last-child{border-bottom:0}
+  ul.pts b{flex:0 0 178px;font:600 14.5px 'Helvetica Neue',Arial,sans-serif;line-height:1.4}
+  .t1 ul.pts b{color:var(--sky)} .t2 ul.pts b{color:var(--moss)} .t3 ul.pts b{color:var(--rust)}
+
+  .take{margin:0;padding:18px 22px;border-radius:0 8px 8px 0;font-size:16.5px}
+  .t1 .take{background:var(--skytint);border-left:4px solid var(--sky)}
+  .t2 .take{background:var(--mosstint);border-left:4px solid var(--moss)}
+  .t3 .take{background:var(--rusttint);border-left:4px solid var(--rust)}
+
+  .exam{margin:18px 0 0;font:400 14.5px 'Helvetica Neue',Arial,sans-serif;
+    color:var(--muted);line-height:1.6}
+  .exam b{color:var(--ink);font-weight:600}
+
+  .aside{margin:0 0 18px;padding:18px 22px;background:var(--goldtint);
+    border-left:4px solid var(--gold);border-radius:0 8px 8px 0;font-size:16px}
+  .aside p:last-child{margin:0}
+
+  .reply{margin:0;padding:30px 34px;background:var(--violettint);border-left:5px solid var(--violet)}
+  .reply h2{font:600 12px 'Helvetica Neue',Arial,sans-serif;letter-spacing:.2em;
+    text-transform:uppercase;color:var(--violet);margin:0 0 14px}
+  .ask{font-size:19.5px;line-height:1.5;font-style:italic;margin:0 0 15px}
+  .btn{display:inline-block;margin:6px 0 12px;padding:15px 30px;background:var(--violet);
+    color:#F8F8FC;text-decoration:none;border-radius:30px;font-style:normal;
+    font:600 15px 'Helvetica Neue',Arial,sans-serif;letter-spacing:.03em}
+  .btn:hover{background:#3A3873}
+  .fallback{font:400 13.5px 'Helvetica Neue',Arial,sans-serif;color:var(--muted);margin:0}
+  .fallback a{color:var(--violet)}
+
+  footer{padding:24px 40px 42px;border-top:1px solid var(--rule);
+    font:400 13px 'Helvetica Neue',Arial,sans-serif;color:var(--muted);text-align:center;line-height:1.7}
+  .firstpub{display:block;margin:0 0 10px;padding-bottom:9px;
+    border-bottom:1px solid rgba(0,0,0,.09);
+    font:400 12px 'Helvetica Neue',Arial,sans-serif;letter-spacing:.06em;opacity:.72}
+  .home{display:inline-block;margin:0 0 14px;padding:8px 18px;border-radius:20px;
+    border:1px solid var(--rule);background:#F2F1F6;color:var(--violet);text-decoration:none;
+    font:600 12.5px 'Helvetica Neue',Arial,sans-serif;letter-spacing:.05em}
+  .home:hover{background:var(--violet);border-color:var(--violet);color:#F8F8FC}
+
+  @media (max-width:640px){
+    header.top,.pad,.jump,section.tier,footer{padding-left:20px;padding-right:20px}
+    .reply{padding:24px 20px}
+    h1{font-size:26px} .tier h2{font-size:22px} body{font-size:16.5px}
+    ul.pts li{flex-direction:column;gap:3px} ul.pts b{flex:none}
+  }
+  @media print{ body{background:#fff} .sheet{box-shadow:none;max-width:none} }
+</style>
+</head>
+<body>
+<div class="sheet">
+
+  <header class="top">
+    <a class="tophome" href="./">&larr;&nbsp; Home</a>
+    <a class="topseries" href="./?s=students">More from Medical Students' Place</a>
+    <a class="toptopic" href="./?t=neonatology" title="Everything on Neonatology">All on this topic</a>
+    <p class="eyebrow"><a class="mast" href="./">ICU and You</a> &nbsp;·&nbsp;
+      <a class="serlink" href="./?s=students">Medical Students' Place</a> &nbsp;·&nbsp; Number 2</p>
+    <h1>Neonatology</h1>
+    <p class="kicker">The first twenty-eight days &mdash; in three tiers, so you can read only the one you need</p>
+  </header>
+
+  <p class="jump">
+    Find your level: <a href="#early">Early years</a>
+    &nbsp;·&nbsp; <a href="#middle">Clinical years</a>
+    &nbsp;·&nbsp; <a href="#senior">Final years</a>
+  </p>
+
+  <div class="pad">
+    <p class="lede">Almost everything difficult about a newborn comes from one fact: a few minutes ago they were
+      living underwater, and the entire circulation was arranged for it.</p>
+    <p>Hold that and most of neonatology follows. The tiers below map onto the three phases of a medical program
+      &mdash; the science, then the clinical reasoning, then what you will be expected to do with your own hands.
+      Read the one that fits and glance at the one above it.</p>
+  </div>
+
+  <!-- ── EARLY ───────────────────────────────────────────────── -->
+  <section class="tier t1" id="early">
+    <p class="tier-k">Tier one</p>
+    <h2>The transition, and why it is the whole subject</h2>
+    <p class="who">Phase 1 &mdash; the foundational years, and anything called <em>Beginnings, Growth and Development</em></p>
+
+    <ul class="pts">
+      <li><b>The fetal circulation</b><span>Three shunts exist to bypass lungs that do not work yet: the ductus
+        venosus past the liver, the foramen ovale between the atria, and the ductus arteriosus from pulmonary artery
+        to aorta. Oxygenated blood arrives from the placenta, not the lungs. Learn this properly once and a great
+        deal else becomes obvious.</span></li>
+      <li><b>The first breath</b><span>Air replaces fluid, oxygen floods the pulmonary vasculature, and pulmonary
+        vascular resistance falls sharply. Pulmonary blood flow rises, left atrial pressure exceeds right, and the
+        foramen ovale closes functionally. The duct constricts over hours to days, driven largely by rising oxygen
+        tension and falling prostaglandins.</span></li>
+      <li><b>Why that matters clinically</b><span>Anything that keeps pulmonary resistance high &mdash; hypoxia,
+        acidosis, hypothermia, sepsis &mdash; can reverse the transition and push the circulation back towards the
+        fetal pattern. That is persistent pulmonary hypertension of the newborn, and it is transition failing.</span></li>
+      <li><b>Surfactant</b><span>Produced by type II pneumocytes, rising sharply after about 34 weeks. It lowers
+        surface tension and stops alveoli collapsing at end-expiration. Its absence is respiratory distress syndrome,
+        and antenatal steroids work by accelerating its production.</span></li>
+      <li><b>Heat</b><span>Enormous surface area to mass, thin skin, no shivering. Newborns generate heat from brown
+        adipose tissue by non-shivering thermogenesis &mdash; an expensive process that consumes oxygen and glucose
+        the baby may not have.</span></li>
+      <li><b>Glucose and bilirubin</b><span>Small glycogen stores and immature gluconeogenesis. And an immature
+        hepatic conjugating system, which is why physiological jaundice exists at all &mdash; and why jaundice in
+        the first 24 hours is never physiological.</span></li>
+    </ul>
+
+    <div class="aside">
+      <p><strong>The elegant bit.</strong> The ductus arteriosus is held open in fetal life by prostaglandin E2 from
+        the placenta and by low oxygen tension. Both disappear at birth, and it closes. Which is exactly why, in a
+        baby whose survival depends on that duct, we give prostaglandin back &mdash; and why giving high-flow oxygen
+        to such a baby is actively harmful. One piece of physiology, two bedside decisions.</p>
+    </div>
+
+    <p class="take"><strong>If you take one thing:</strong> a newborn is not a small child having a hard time. They
+      are an organism completing the most abrupt physiological transition of their life, and most neonatal illness
+      is that transition going wrong.</p>
+
+    <p class="exam"><b>Likely to be examined as:</b> a diagram of the fetal circulation with the three shunts
+      labelled, a short answer on what closes the ductus arteriosus, or a viva on why a preterm infant develops
+      respiratory distress syndrome. Draw the circulation from memory until you can do it without thinking.</p>
+  </section>
+
+  <!-- ── MIDDLE ──────────────────────────────────────────────── -->
+  <section class="tier t2" id="middle">
+    <p class="tier-k">Tier two</p>
+    <h2>Reading a newborn</h2>
+    <p class="who">Phase 2 &mdash; the clinical years, paediatric attachments, and the ICE</p>
+
+    <ul class="pts">
+      <li><b>The Apgar score</b><span>Appearance, Pulse, Grimace, Activity, Respiration, at one and five minutes.
+        It describes the baby's condition and the response to resuscitation. It does not guide resuscitation and it
+        does not predict outcome in an individual child &mdash; a point worth making if you are asked.</span></li>
+      <li><b>Delayed cord clamping</b><span>At least 60 seconds for a vigorous infant of 34 weeks or more; at least
+        30 seconds below 34 weeks. Both are weak recommendations, and, counter-intuitively, the preterm evidence is
+        the stronger of the two.</span></li>
+      <li><b>Saturations climb slowly</b><span>Preductal saturation &mdash; right hand &mdash; is expected around
+        60&ndash;70% at one minute and 70&ndash;90% at three, reaching the nineties by about ten minutes. A baby who
+        is pink at two minutes has usually been given too much oxygen.</span></li>
+      <li><b>Respiratory distress</b><span>Tachypnoea, recession, flaring, grunting. The differential is wider than
+        it looks: transient tachypnoea, respiratory distress syndrome, meconium aspiration, pneumonia, pneumothorax,
+        congenital diaphragmatic hernia, and cardiac disease masquerading as lung disease.</span></li>
+      <li><b>Jaundice</b><span>In the first 24 hours it is pathological until proven otherwise &mdash; think
+        haemolysis, and think sepsis. After that, plot the bilirubin on the age-specific chart rather than judging by
+        eye, and note that gestational age shifts the threshold.</span></li>
+      <li><b>Sepsis presents as nothing</b><span>Poor feeding, temperature instability in either direction,
+        lethargy, irritability, mottling. Group B streptococcus and <em>E. coli</em> dominate early-onset disease.
+        A well-looking newborn with any of these gets a septic screen and antibiotics.</span></li>
+      <li><b>The duct-dependent baby</b><span>Collapse at day two to fourteen as the duct closes: grey, poorly
+        perfused, weak femorals, differential saturations, lactic acidosis. Oxygen makes it worse. This is the
+        diagnosis not to miss in a baby who was discharged home well.</span></li>
+    </ul>
+
+    <p class="take"><strong>If you take one thing:</strong> in the newborn, the same handful of signs cover almost
+      every serious diagnosis. Which means the skill is not pattern recognition but discipline &mdash; screening for
+      the dangerous causes every time, because the presentation will not distinguish them for you.</p>
+
+    <p class="exam"><b>Likely to be examined as:</b> a newborn examination station, a data interpretation question
+      on a bilirubin chart or a blood gas, or a scenario asking you to justify a septic screen. You may be asked to
+      explain delayed cord clamping to a parent &mdash; practise saying it in plain words.</p>
+  </section>
+
+  <!-- ── SENIOR ──────────────────────────────────────────────── -->
+  <section class="tier t3" id="senior">
+    <p class="tier-k">Tier three</p>
+    <h2>What you will be expected to do</h2>
+    <p class="who">Phase 3 &mdash; the final years, the pre-internship term, and your first night covering a birth suite</p>
+
+    <ul class="pts">
+      <li><b>Warm, dry, stimulate</b><span>The first thirty seconds, every time. Below 32 weeks the baby goes
+        straight into polyethylene wrap <em>without</em> being dried, on a thermal mattress, with a hat. Target
+        axillary temperature 36.5&ndash;37.5&nbsp;°C, and hypothermia on arrival in the nursery is a preventable
+        harm you will be asked about.</span></li>
+      <li><b>Heart rate is the number</b><span>Not saturation, not colour. If the rate is below 100 with inadequate
+        breathing, ventilate. If it is below 60 after 30 seconds of <em>effective</em> ventilation, start
+        compressions at 3:1.</span></li>
+      <li><b>If the chest is not moving</b><span>Nothing downstream works until it is. Mask seal, Reposition the
+        airway, Suction, Open the mouth, Pressure up, Airway alternative. Compressions before effective ventilation
+        are simply an interruption.</span></li>
+      <li><b>Start in air</b><span>Term and near-term resuscitation begins in room air. Titrate to the saturation
+        targets rather than to how pink the baby looks.</span></li>
+      <li><b>The numbers to have written down</b><span>Adrenaline 10&ndash;30 &micro;g/kg intravenously; volume
+        10 mL/kg only if blood loss is suspected; dextrose 2 mL/kg of 10% for hypoglycaemia; endotracheal tube
+        2.5&ndash;3.5&nbsp;mm depending on gestation. Umbilical venous access is faster than you expect.</span></li>
+      <li><b>Cooling has a six-hour window</b><span>Moderate or severe encephalopathy at 35 weeks or more, started
+        within six hours, to 33&ndash;34&nbsp;°C. The decision is clinical and the window does not reopen, so
+        telephone the retrieval service before you are certain. Passive cooling begins with turning the warmer
+        off.</span></li>
+      <li><b>Speak to the parents</b><span>They are two metres away and they can hear everything. Say what you are
+        doing and why, use the baby's name if there is one, and afterwards sit down rather than standing. This is
+        assessed, and more importantly it is remembered.</span></li>
+    </ul>
+
+    <p class="take"><strong>If you take one thing:</strong> newborn resuscitation is overwhelmingly about
+      <em>ventilation</em> and about <em>temperature</em>. Almost every baby who needs help needs those two things
+      and nothing more, and the errors that matter are the ones that delay them.</p>
+
+    <p class="exam"><b>Likely to be examined as:</b> a newborn resuscitation scenario, a viva on the ANZCOR
+      algorithm, or a station on breaking difficult news to parents. In practice it will be examined at 2&nbsp;am by
+      a midwife who has called you because something is not right.</p>
+  </section>
+
+  <div class="pad" style="padding-top:24px">
+    <div class="reply">
+      <h2>Over to you</h2>
+      <p class="ask">What is the thing about newborns that nobody explained to you properly &mdash; and that you had
+        to work out for yourself?</p>
+      <p>Students ask better questions than anyone else in the hospital, largely because you have not yet learnt
+        which ones you are supposed to already know the answer to. Send me the thing that confused you. If several
+        of you name the same thing, it becomes the next piece I write.</p>
+      <p><a class="btn" href="mailto:icuandyou@icloud.com?subject=Medical%20Students%27%20Place%20No.%202%20-%20the%20thing%20nobody%20explained&body=My%20year%2Fstage%3A%0D%0A%0D%0AThe%20thing%20about%20newborns%20nobody%20explained%20properly%3A%0D%0A%0D%0A%0D%0AHow%20I%20eventually%20worked%20it%20out%2C%20if%20I%20did%3A%0D%0A%0D%0A%0D%0A---%0D%0A%0D%0AName%20(optional)%3A%0D%0A">Send me your question</a></p>
+      <p class="fallback">The button opens a reply straight to me. If your device blocks it, write to
+        <a href="mailto:icuandyou@icloud.com">icuandyou@icloud.com</a> instead.</p>
+    </div>
+  </div>
+
+  <footer>
+    <span class="firstpub">First published August 2026</span>
+    <a class="home" href="./">&larr; &nbsp;All of ICU AND YOU</a><br>
+    Medical Students' Place No. 2 &nbsp;·&nbsp; companion to Mind Map #31, Essentials of Neonatal Intensive Care<br>
+    Written to sit alongside a three-phase medical curriculum, and not affiliated with or endorsed by any university.
+    Educational use only &mdash; not a clinical protocol. Verify every dose and threshold against ANZCOR, your local
+    guidelines and your own reference before acting on it.
+  </footer>
+
+</div>
+<script data-goatcounter="https://icuandyou.goatcounter.com/count"
+        async src="//gc.zgo.at/count.js"></script>
+</body>
+</html>
