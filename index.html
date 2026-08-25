@@ -56,6 +56,26 @@
   .jump a{color:var(--teal);text-decoration:none;border-bottom:1px solid #B8CBD1;
     padding-bottom:1px;font-weight:500}
   .jump a:hover{color:var(--ink);border-bottom-color:var(--ink)}
+
+  details.sugg{margin:12px 36px 0;padding:0 0 13px}
+  details.sugg summary{display:inline-flex;align-items:center;gap:8px;cursor:pointer;
+    list-style:none;padding:7px 17px;border-radius:20px;
+    border:1px solid var(--teal);background:#EDF3F5;color:var(--teal);
+    font:600 12px 'Helvetica Neue',Arial,sans-serif;letter-spacing:.07em;text-transform:uppercase}
+  details.sugg summary::-webkit-details-marker{display:none}
+  details.sugg summary::after{content:"";width:6px;height:6px;
+    border-right:1.6px solid currentColor;border-bottom:1.6px solid currentColor;
+    transform:translateY(-2px) rotate(45deg);transition:transform .15s ease}
+  details.sugg[open] summary::after{transform:translateY(1px) rotate(-135deg)}
+  details.sugg summary:hover{background:var(--teal);color:#F6FAFB}
+  .suggbox{max-width:62ch;margin:13px 0 0;padding:20px 24px;background:#fff;
+    border:1px solid var(--rule);border-radius:10px}
+  .suggbox p{margin:0 0 13px;font-size:16.5px;line-height:1.55}
+  .suggbox p.sm{font-size:15px;color:var(--muted)}
+  a.suggbtn{display:inline-block;padding:13px 26px;border-radius:26px;text-decoration:none;
+    background:var(--teal);color:#F6FAFB;
+    font:600 14px 'Helvetica Neue',Arial,sans-serif;letter-spacing:.03em}
+  a.suggbtn:hover{background:#234E5B}
   html{scroll-behavior:smooth}
   section[id]{scroll-margin-top:176px}
   details.group,section.week{scroll-margin-top:134px}
@@ -260,6 +280,7 @@
     .jumprow{flex-direction:column;align-items:flex-start;gap:12px}
     .teaser{border-right:0;border-bottom:1px solid #DDD5C6;padding:0 0 11px;width:100%}
     .jump{text-align:left;flex:1 1 auto}
+    details.sugg{margin-left:18px;margin-right:18px}
     .tt{font-size:17.5px}
     .lockup{flex-direction:column;align-items:flex-start;gap:14px}
     .lockup .logo{height:74px}
@@ -303,6 +324,17 @@
         &nbsp;·&nbsp; <a href="mailto:icuandyou@icloud.com?subject=ICU%20AND%20YOU%20%E2%80%94%20hello&body=%0D%0A%0D%0A---%0D%0A%0D%0AName%3A%0D%0AWhere%20you%20work%20(optional)%3A%0D%0A">Contact me</a>
       </p>
     </div>
+
+    <details class="sugg">
+      <summary>Your suggestions</summary>
+      <div class="suggbox">
+        <p>Is there a subject you think deserves a full week? A paper or a guideline worth a journal club?
+          A podcast episode the rest of us should hear? A question you would like put to everybody?</p>
+        <p class="sm">I read all of them, and I would rather have a suggestion I cannot use than not have it.
+          Several of the series on this site began as somebody else's idea.</p>
+        <a class="suggbtn" href="mailto:icuandyou@icloud.com?subject=ICU%20AND%20YOU%20%E2%80%94%20a%20suggestion&body=A%20topic%20I%20think%20would%20be%20worth%20a%20full%20week%3A%0A%0A%0AA%20paper%2C%20guideline%20or%20document%20worth%20a%20journal%20club%3A%0A%0A%0AA%20podcast%20episode%20worth%20listening%20to%3A%0A%0A%0AAnything%20else%20%E2%80%94%20a%20series%20you%20would%20like%20to%20see%2C%20a%20question%20you%20would%20like%20asked%3A%0A%0A%0A---%0A%0AName%20%28optional%29%3A%0AWhere%20you%20work%20%28optional%29%3A%0A">Send me a suggestion</a>
+      </div>
+    </details>
   </div>
 
   <div class="controls">
