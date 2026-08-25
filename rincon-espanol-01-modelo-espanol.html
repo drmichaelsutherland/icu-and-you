@@ -29,6 +29,11 @@
   .eyebrow a.serlink:hover{border-bottom-color:currentColor}
   .eyebrow a.mast{color:inherit;text-decoration:none;border-bottom:1px solid transparent}
   .eyebrow a.mast:hover{border-bottom-color:currentColor}
+  .toptopic{display:inline-block;margin:0 0 16px 9px;padding:7px 16px;border-radius:20px;
+    border:1px solid currentColor;opacity:.62;text-decoration:none;color:inherit;
+    font:600 11.5px 'Helvetica Neue',Arial,sans-serif;letter-spacing:.09em;
+    text-transform:uppercase;transition:opacity .12s ease}
+  .toptopic:hover{opacity:1}
   .topseries{display:inline-block;margin:0 0 16px 9px;padding:7px 16px;border-radius:20px;
     border:1px solid currentColor;opacity:.62;text-decoration:none;color:inherit;
     font:600 11.5px 'Helvetica Neue',Arial,sans-serif;letter-spacing:.09em;
@@ -83,6 +88,9 @@
   .btn:focus-visible{outline:3px solid var(--oro);outline-offset:3px}
   .fallback{font:400 13.5px 'Helvetica Neue',Arial,sans-serif;color:var(--muted);margin:0}
   .fallback a{color:var(--rojo)}
+  .firstpub{display:block;margin:0 0 10px;padding-bottom:9px;
+    border-bottom:1px solid currentColor;border-color:rgba(0,0,0,.09);
+    font:400 12px 'Helvetica Neue',Arial,sans-serif;letter-spacing:.06em;opacity:.72}
 
   footer{padding:24px 42px 42px;border-top:1px solid var(--rule);
     font:400 13px 'Helvetica Neue',Arial,sans-serif;color:var(--muted);text-align:center;line-height:1.7}
@@ -117,6 +125,7 @@
   <header class="top">
     <a class="tophome" href="./">&larr;&nbsp; Home</a>
     <a class="topseries" href="./?s=espanol">More from El rincón español</a>
+    <a class="toptopic" href="./?t=organ-donation" title="Everything on Organ donation">All on this topic</a>
     <p class="eyebrow"><a class="mast" href="./">ICU and You</a> &nbsp;·&nbsp; <a class="serlink" href="./?s=espanol">El rincón español</a> &nbsp;·&nbsp; Number 1</p>
     <h1>El modelo español</h1>
     <p class="kicker">How Spain came to lead the world &mdash; and why the law had almost nothing to do with it</p>
@@ -171,6 +180,7 @@
   </div>
 
   <footer>
+    <span class="firstpub">First published July 2026</span>
     <a class="home" href="./">&larr; &nbsp;All of ICU AND YOU</a><br>
     El rincón español No. 1 &nbsp;·&nbsp; companion to Mind Map #29, Organ Donation<br>
     Figures and history from the Organización Nacional de Trasplantes, Matesanz et&nbsp;al. in the American Journal of
