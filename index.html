@@ -258,6 +258,11 @@
   .about p{margin:0 0 15px;font-size:16.5px;line-height:1.6;max-width:64ch}
   .about p:last-child{margin-bottom:0}
   .about a{color:var(--teal)}
+  .backtop{margin:24px 0 0}
+  .backtop a{display:inline-block;padding:9px 20px;border-radius:22px;text-decoration:none;
+    border:1px solid var(--rule);background:#F1EEE7;color:var(--teal);
+    font:600 12.5px 'Helvetica Neue',Arial,sans-serif;letter-spacing:.06em}
+  .backtop a:hover{background:var(--teal);border-color:var(--teal);color:#F6FAFB}
   .note{margin:20px 0 0;padding:20px 24px;background:#F6EDE7;border-left:4px solid var(--rust);
     border-radius:0 8px 8px 0}
   .note p{font-size:16px;margin:0 0 12px}
@@ -298,7 +303,7 @@
 </style>
 </head>
 <body>
-<div class="sheet">
+<div class="sheet" id="top">
 
   <header class="top">
     <div class="lockup">
@@ -617,6 +622,8 @@
         reproduced. If you think something here is wrongly attributed or ought not to be, please
         <a href="mailto:icuandyou@icloud.com">tell me</a> and I will fix it.</p>
     </div>
+
+    <p class="backtop"><a href="#top">&uarr;&nbsp; Back to the top</a></p>
   </section>
 
   <footer>
