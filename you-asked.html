@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en-AU">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ICU AND YOU · You asked</title>
+<meta name="description" content="You asked — questions sent in by readers of ICU AND YOU, and the answers to them.">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="alternate icon" href="/favicon.ico" sizes="any">
+<link rel="apple-touch-icon" href="/icon-180.png">
+<meta name="theme-color" content="#1B2A33">
+<meta property="og:site_name" content="ICU AND YOU">
+<meta property="og:type" content="website">
+<meta property="og:title" content="ICU AND YOU · You asked">
+<meta property="og:description" content="Questions sent in by readers, and the answers to them.">
+<meta property="og:image" content="https://icuandyou.com/share-card.png">
+<meta name="twitter:card" content="summary_large_image">
+<style>
+  :root{
+    --paper:#FBF9F5; --ink:#1B2A33; --muted:#6E6B63; --rule:#DED8CC;
+    --teal:#2E6473; --tealtint:#E9F1F3;
+    --rust:#A8442A; --rusttint:#F9EDE7;
+    --amethyst:#7A4FA3; --violet:#4C4A8F;
+  }
+  *{box-sizing:border-box}
+  body{margin:0;background:#F3EFE8;color:var(--ink);
+    font:400 17px/1.64 'Iowan Old Style','Palatino Linotype',Palatino,Georgia,serif;
+    -webkit-text-size-adjust:100%;}
+  .sheet{max-width:800px;margin:0 auto;background:var(--paper);
+    box-shadow:0 1px 40px rgba(27,42,51,.10)}
+
+  header.top{padding:46px 40px 28px;border-bottom:1px solid var(--rule)}
+  .tophome{display:inline-block;margin:0 0 16px;padding:7px 16px;border-radius:20px;
+    border:1px solid currentColor;opacity:.62;text-decoration:none;color:inherit;
+    font:600 11.5px 'Helvetica Neue',Arial,sans-serif;letter-spacing:.09em;
+    text-transform:uppercase;transition:opacity .12s ease}
+  .tophome:hover{opacity:1}
+  .eyebrow a.mast{color:inherit;text-decoration:none;border-bottom:1px solid transparent}
+  .eyebrow a.mast:hover{border-bottom-color:currentColor}
+  .eyebrow{font:500 11.5px 'Helvetica Neue',Arial,sans-serif;letter-spacing:.26em;
+    text-transform:uppercase;color:var(--muted);margin:0 0 13px}
+  h1{font-size:34px;font-weight:400;margin:0 0 8px;letter-spacing:-.015em}
+  .kicker{font-style:italic;color:var(--muted);margin:0;font-size:16.5px}
+
+  .pad{padding:32px 40px}
+  p{margin:0 0 16px}
+  .lede{font-size:18.5px;line-height:1.55}
+
+  h2.sec{font:600 12px 'Helvetica Neue',Arial,sans-serif;letter-spacing:.22em;
+    text-transform:uppercase;color:var(--muted);margin:34px 0 20px;
+    padding-bottom:9px;border-bottom:1px solid var(--rule)}
+
+  .qa{padding:26px 0;border-bottom:1px solid #EDE7DC}
+  .qa:last-of-type{border-bottom:0}
+  .meta{display:flex;gap:10px;flex-wrap:wrap;align-items:center;margin:0 0 12px}
+  .when{font:600 11px 'Helvetica Neue',Arial,sans-serif;letter-spacing:.14em;
+    text-transform:uppercase;color:var(--rust)}
+  .from{font:400 13.5px 'Helvetica Neue',Arial,sans-serif;color:var(--muted)}
+  .tag{font:600 10px 'Helvetica Neue',Arial,sans-serif;letter-spacing:.1em;
+    text-transform:uppercase;padding:3px 9px;border-radius:11px;color:#fff}
+  .tag.students{background:var(--violet)}
+  .tag.procedures{background:var(--amethyst)}
+
+  blockquote.q{margin:0 0 16px;padding:16px 22px;background:var(--tealtint);
+    border-left:4px solid var(--teal);border-radius:0 8px 8px 0;
+    font-size:18px;line-height:1.55;font-style:italic}
+  blockquote.q p{margin:0}
+
+  .a p{font-size:16.5px}
+  .a b{color:var(--teal)}
+  .more{display:inline-block;margin:6px 0 0;padding:11px 22px;border-radius:24px;
+    text-decoration:none;background:var(--teal);color:#F6FAFB;
+    font:600 13.5px 'Helvetica Neue',Arial,sans-serif;letter-spacing:.03em}
+  .more:hover{background:#234E5B}
+
+  ul.list{list-style:none;margin:0 0 16px;padding:0}
+  ul.list li{padding:8px 0 8px 17px;position:relative;font-size:16.5px;line-height:1.5;
+    border-bottom:1px solid #EFE9DE}
+  ul.list li:last-child{border-bottom:0}
+  ul.list li::before{content:"";position:absolute;left:0;top:17px;width:6px;height:6px;
+    border-radius:50%;background:var(--teal)}
+  ul.list b{color:var(--teal)}
+
+  .caution{margin:0 0 16px;padding:18px 22px;background:var(--rusttint);
+    border-left:4px solid var(--rust);border-radius:0 8px 8px 0;font-size:16.5px}
+  .caution p:last-child{margin:0}
+
+  .invite{margin:0;padding:28px 32px;background:var(--tealtint);border-left:5px solid var(--teal)}
+  .invite h2{font:600 12px 'Helvetica Neue',Arial,sans-serif;letter-spacing:.2em;
+    text-transform:uppercase;color:var(--teal);margin:0 0 13px}
+  .ask{font-size:19.5px;line-height:1.5;font-style:italic;margin:0 0 13px}
+  .btn{display:inline-block;margin:6px 0 12px;padding:15px 30px;background:var(--teal);
+    color:#F6FAFB;text-decoration:none;border-radius:30px;font-style:normal;
+    font:600 15px 'Helvetica Neue',Arial,sans-serif;letter-spacing:.03em}
+  .btn:hover{background:#234E5B}
+  .fallback{font:400 13.5px 'Helvetica Neue',Arial,sans-serif;color:var(--muted);margin:0}
+  .fallback a{color:var(--teal)}
+
+  footer{padding:24px 40px 44px;border-top:1px solid var(--rule);
+    font:400 13px 'Helvetica Neue',Arial,sans-serif;color:var(--muted);text-align:center;line-height:1.7}
+  .home{display:inline-block;margin:0 0 14px;padding:8px 18px;border-radius:20px;
+    border:1px solid var(--rule);background:#F1EEE7;color:var(--teal);text-decoration:none;
+    font:600 12.5px 'Helvetica Neue',Arial,sans-serif;letter-spacing:.05em}
+  .home:hover{background:var(--teal);border-color:var(--teal);color:#F6FAFB}
+
+  @media (max-width:620px){
+    header.top,.pad,footer{padding-left:20px;padding-right:20px}
+    .invite{padding:22px 20px}
+    h1{font-size:27px} body{font-size:16.5px} .ask{font-size:18px}
+  }
+  @media print{ body{background:#fff} .sheet{box-shadow:none;max-width:none} }
+</style>
+</head>
+<body>
+<div class="sheet">
+
+  <header class="top">
+    <a class="tophome" href="./">&larr;&nbsp; Home</a>
+    <p class="eyebrow"><a class="mast" href="./">ICU and You</a></p>
+    <h1>You asked</h1>
+    <p class="kicker">Questions sent in by readers, and the answers to them</p>
+  </header>
+
+  <div class="pad">
+    <p class="lede">Almost every piece on this site ends by asking you something. This is where what comes back
+      gets published.</p>
+    <p>Some questions are answered here in a paragraph. Some turn out to deserve a piece of their own, in which
+      case there is a link. Nobody is named unless they have said they would like to be, and a question that looks
+      obvious to the person asking it is very often the one that half the department was also wondering about.</p>
+
+    <h2 class="sec">The questions</h2>
+
+    <!-- ── 1 ─────────────────────────────────────────── -->
+    <div class="qa">
+      <div class="meta">
+        <span class="when">August 2026</span>
+        <span class="from">from a medical student</span>
+        <span class="tag students">Medical Students' Place</span>
+      </div>
+      <blockquote class="q">
+        <p>&ldquo;One topic I would like more information on would be IO access. I've never done one in an adult or
+          a child.&rdquo;</p>
+      </blockquote>
+      <div class="a">
+        <p>This turned out to deserve a page rather than a paragraph, and it prompted a whole new series.</p>
+        <p>The short version: intraosseous access is the fastest reliable route into the circulation of a shocked
+          patient, a trained person can be in the marrow in under a minute, and <b>anything you can give
+          intravenously can go through it at the same dose</b>. The commonest mistake is not technique. It is
+          waiting too long &mdash; two failed attempts at a vein, or ninety seconds without access, and you should
+          already be reaching for it.</p>
+        <p>That you have not seen one is not unusual, and it is rather the point. It is markedly under-used in
+          adults, largely because a generation trained before it was routine.</p>
+        <p><a class="more" href="procedures-01-intraosseous-access.html">Read the full piece &rarr;</a></p>
+      </div>
+    </div>
+
+    <!-- ── 2 ─────────────────────────────────────────── -->
+    <div class="qa">
+      <div class="meta">
+        <span class="when">August 2026</span>
+        <span class="from">from a medical student</span>
+        <span class="tag students">Medical Students' Place</span>
+      </div>
+      <blockquote class="q">
+        <p>&ldquo;Also, can any medication be given subcutaneously?&rdquo;</p>
+      </blockquote>
+      <div class="a">
+        <p>No &mdash; but a great deal more than most people assume, and the subcutaneous route is badly
+          underestimated outside palliative care, where it is used daily and skilfully.</p>
+
+        <p><b>What governs it</b> is absorption. Subcutaneous tissue has modest blood flow, so onset is slower and
+          less predictable than intravenous, volumes are limited, and irritant or vesicant drugs cause local damage
+          because they sit there. Everything else follows from that.</p>
+
+        <ul class="list">
+          <li><b>Routinely given subcutaneously</b> &mdash; insulin, heparin and low molecular weight heparins,
+            and, in palliative and community practice, morphine, hydromorphone, fentanyl, midazolam, haloperidol,
+            metoclopramide, hyoscine butylbromide, ondansetron and dexamethasone, often by continuous infusion
+            through a small indwelling cannula.</li>
+          <li><b>Fluids, too</b> &mdash; hypodermoclysis. Isotonic fluid subcutaneously, roughly a litre over
+            twenty-four hours per site, genuinely useful in the frail elderly or at the end of life where a
+            drip is disproportionate.</li>
+          <li><b>Not suitable</b> &mdash; anything needing a rapid, predictable effect; anything irritant or
+            strongly acidic or alkaline; large volumes quickly; and most vasoactive drugs.</li>
+        </ul>
+
+        <div class="caution">
+          <p><b>And the important exception.</b> In shock, subcutaneous absorption is unreliable precisely because
+            the body has shut down peripheral perfusion to preserve the core. A drug given subcutaneously to a
+            shocked patient may not arrive at all &mdash; and may then arrive all at once when they are
+            resuscitated.</p>
+          <p>So in an emergency the subcutaneous route is not a fallback for intravenous access. That is what
+            intraosseous is for, which is a rather neat answer to your first question.</p>
+        </div>
+
+        <p>Two footnotes worth having. Adrenaline in anaphylaxis is <b>intramuscular</b>, not subcutaneous &mdash;
+          the anterolateral thigh &mdash; because muscle absorbs faster and more reliably. And a handful of
+          antibiotics, ceftriaxone among them, are given subcutaneously in some community and palliative settings,
+          which surprises most hospital clinicians.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="pad" style="padding-top:6px">
+    <div class="invite">
+      <h2>Ask something</h2>
+      <p class="ask">What would you like explained &mdash; properly, rather than in passing?</p>
+      <p>Anything at all: a procedure you have never seen done, a drug you have always given without quite knowing
+        why, a decision you keep having to make without a rule for it. Nothing is too basic. The questions on this
+        page came from someone who was honest enough to say what they had not seen, and both of them were good
+        questions.</p>
+      <p>I will answer here, or write a piece if it deserves one. Your name appears only if you ask for it.</p>
+      <p><a class="btn" href="mailto:icuandyou@icloud.com?subject=You%20asked%20-%20a%20question&body=My%20question%3A%0D%0A%0D%0A%0D%0AWhat%20prompted%20it%2C%20if%20anything%3A%0D%0A%0D%0A%0D%0A---%0D%0A%0D%0AYour%20role%20(optional%20%E2%80%94%20it%20helps%20me%20pitch%20the%20answer)%3A%0D%0AName%20(optional%20%E2%80%94%20never%20published%20without%20asking)%3A%0D%0A">Send me a question</a></p>
+      <p class="fallback">The button opens a reply straight to me. If your device blocks it, write to
+        <a href="mailto:icuandyou@icloud.com">icuandyou@icloud.com</a> instead.</p>
+    </div>
+  </div>
+
+  <footer>
+    <a class="home" href="./">&larr; &nbsp;All of ICU AND YOU</a><br>
+    ICU AND YOU &nbsp;·&nbsp; You asked &nbsp;·&nbsp; <a href="about.html">About</a>
+    &nbsp;·&nbsp; <a href="corrections.html">Corrections</a> &nbsp;·&nbsp; <a href="glossary.html">Glossary</a><br>
+    Educational use only. Not clinical protocol &mdash; local guidance always takes precedence.
+  </footer>
+
+</div>
+<script data-goatcounter="https://icuandyou.goatcounter.com/count"
+        async src="//gc.zgo.at/count.js"></script>
+</body>
+</html>

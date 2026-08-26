@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en-AU">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ICU AND YOU · Procedures No. 1 — Intraosseous access</title>
+<meta name="description" content="Procedures No. 1: intraosseous access — when to reach for it, where to put it, how to know it is in, why it hurts, and what can go through it.">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="alternate icon" href="/favicon.ico" sizes="any">
+<link rel="apple-touch-icon" href="/icon-180.png">
+<meta name="theme-color" content="#1B2A33">
+<meta property="og:site_name" content="ICU AND YOU">
+<meta property="og:type" content="website">
+<meta property="og:title" content="ICU AND YOU · Procedures No. 1 — Intraosseous access">
+<meta property="og:description" content="When to reach for it, where to put it, how to know it is in, and why it hurts.">
+<meta property="og:image" content="https://icuandyou.com/share-card.png">
+<meta name="twitter:card" content="summary_large_image">
+<style>
+  :root{
+    --paper:#FBF9FC; --ink:#241F2B; --muted:#6B6377; --rule:#DFD6E6;
+    --amethyst:#7A4FA3; --amethysttint:#F1EBF7;
+    --rust:#A8442A; --rusttint:#F9EDE7;
+    --moss:#4C6B4A; --mosstint:#EAF1E9;
+    --gold:#A8721E; --goldtint:#FBF1DC;
+  }
+  *{box-sizing:border-box}
+  body{margin:0;background:#EDE8F1;color:var(--ink);
+    font:400 17px/1.64 'Iowan Old Style','Palatino Linotype',Palatino,Georgia,serif;
+    -webkit-text-size-adjust:100%;}
+  .sheet{max-width:820px;margin:0 auto;background:var(--paper);
+    box-shadow:0 1px 40px rgba(36,31,43,.10);}
+
+  header.top{padding:42px 40px 28px;border-bottom:2px solid var(--amethyst)}
+  .tophome,.topseries,.toptopic{display:inline-block;margin:0 0 16px;padding:7px 16px;
+    border-radius:20px;border:1px solid currentColor;opacity:.62;text-decoration:none;
+    color:inherit;font:600 11.5px 'Helvetica Neue',Arial,sans-serif;letter-spacing:.09em;
+    text-transform:uppercase;transition:opacity .12s ease}
+  .topseries,.toptopic{margin-left:9px}
+  .tophome:hover,.topseries:hover,.toptopic:hover{opacity:1}
+  .eyebrow a.mast,.eyebrow a.serlink{color:inherit;text-decoration:none;
+    border-bottom:1px solid transparent}
+  .eyebrow a.mast:hover,.eyebrow a.serlink:hover{border-bottom-color:currentColor}
+  .eyebrow{font:500 11.5px/1 'Helvetica Neue',Arial,sans-serif;letter-spacing:.24em;
+    text-transform:uppercase;color:var(--muted);margin:0 0 13px}
+  h1{font-size:32px;line-height:1.2;margin:0 0 9px;font-weight:400;letter-spacing:-.012em}
+  .kicker{color:var(--muted);margin:0;font-size:16.5px;font-style:italic}
+
+  .askedby{margin:0;padding:18px 40px;background:var(--amethysttint);
+    border-bottom:1px solid var(--rule);font-size:16px;color:#4A3D57}
+  .askedby a{color:var(--amethyst)}
+
+  .pad{padding:32px 40px}
+  p{margin:0 0 16px}
+  .lede{font-size:19.5px;line-height:1.55;margin:0 0 20px}
+
+  h2.sub{font:600 12px 'Helvetica Neue',Arial,sans-serif;letter-spacing:.2em;
+    text-transform:uppercase;color:var(--amethyst);margin:32px 0 15px;
+    padding-bottom:8px;border-bottom:1px solid var(--rule)}
+
+  ul.pts{list-style:none;margin:0 0 18px;padding:0}
+  ul.pts li{display:flex;gap:13px;padding:11px 0;border-bottom:1px solid #EFE9F4;
+    font-size:16.5px;line-height:1.5}
+  ul.pts li:last-child{border-bottom:0}
+  ul.pts b{flex:0 0 182px;font:600 14.5px 'Helvetica Neue',Arial,sans-serif;
+    color:var(--amethyst);line-height:1.4}
+
+  ol.steps{list-style:none;counter-reset:s;margin:0 0 18px;padding:0}
+  ol.steps li{counter-increment:s;position:relative;padding:12px 0 12px 44px;
+    border-bottom:1px solid #EFE9F4;font-size:16.5px;line-height:1.55}
+  ol.steps li:last-child{border-bottom:0}
+  ol.steps li::before{content:counter(s);position:absolute;left:0;top:12px;
+    width:28px;height:28px;border-radius:50%;background:var(--amethyst);color:#F8F5FB;
+    font:600 13px 'Helvetica Neue',Arial,sans-serif;display:flex;align-items:center;
+    justify-content:center}
+
+  .box{margin:0 0 18px;padding:20px 24px;border-radius:0 8px 8px 0}
+  .box .lab{display:block;font:600 11px 'Helvetica Neue',Arial,sans-serif;
+    letter-spacing:.18em;text-transform:uppercase;margin:0 0 9px}
+  .box p:last-child{margin:0}
+  .red{background:var(--rusttint);border-left:4px solid var(--rust)} .red .lab{color:var(--rust)}
+  .grn{background:var(--mosstint);border-left:4px solid var(--moss)} .grn .lab{color:var(--moss)}
+  .amb{background:var(--goldtint);border-left:4px solid var(--gold)} .amb .lab{color:var(--gold)}
+
+  .sites{display:flex;gap:13px;flex-wrap:wrap;margin:0 0 20px}
+  .site{flex:1 1 226px;background:#fff;border:1px solid var(--rule);border-radius:9px;
+    padding:16px 18px;border-top:4px solid var(--amethyst)}
+  .site h3{margin:0 0 7px;font:600 13px 'Helvetica Neue',Arial,sans-serif;
+    letter-spacing:.07em;text-transform:uppercase;color:var(--amethyst)}
+  .site p{margin:0;font-size:15.5px;line-height:1.5;color:#3B3345}
+
+  .challenge{margin:0;padding:28px 32px;background:var(--rusttint);border-left:5px solid var(--rust)}
+  .challenge h2{font:600 12px 'Helvetica Neue',Arial,sans-serif;letter-spacing:.2em;
+    text-transform:uppercase;color:var(--rust);margin:0 0 13px}
+  .ask{font-size:19.5px;line-height:1.5;margin:0 0 12px;font-style:italic}
+  .btn{display:inline-block;margin:6px 0 12px;padding:15px 30px;background:var(--rust);
+    color:#FDF8F5;text-decoration:none;border-radius:30px;font-style:normal;
+    font:600 15px 'Helvetica Neue',Arial,sans-serif;letter-spacing:.03em}
+  .btn:hover{background:#8A3620}
+  .fallback{font:400 13.5px 'Helvetica Neue',Arial,sans-serif;color:var(--muted);margin:0}
+  .fallback a{color:var(--rust)}
+
+  footer{padding:24px 40px 42px;border-top:1px solid var(--rule);
+    font:400 13px 'Helvetica Neue',Arial,sans-serif;color:var(--muted);text-align:center;line-height:1.7}
+  .firstpub{display:block;margin:0 0 10px;padding-bottom:9px;
+    border-bottom:1px solid rgba(0,0,0,.09);
+    font:400 12px 'Helvetica Neue',Arial,sans-serif;letter-spacing:.06em;opacity:.72}
+  .home{display:inline-block;margin:0 0 14px;padding:8px 18px;border-radius:20px;
+    border:1px solid var(--rule);background:#F3EFF7;color:var(--amethyst);text-decoration:none;
+    font:600 12.5px 'Helvetica Neue',Arial,sans-serif;letter-spacing:.05em}
+  .home:hover{background:var(--amethyst);border-color:var(--amethyst);color:#F8F5FB}
+
+  @media (max-width:640px){
+    header.top,.pad,.askedby,footer{padding-left:20px;padding-right:20px}
+    .challenge{padding:22px 20px}
+    h1{font-size:26px} body{font-size:16.5px} .ask{font-size:18px}
+    ul.pts li{flex-direction:column;gap:3px} ul.pts b{flex:none}
+  }
+  @media print{ body{background:#fff} .sheet{box-shadow:none;max-width:none} }
+</style>
+</head>
+<body>
+<div class="sheet">
+
+  <header class="top">
+    <a class="tophome" href="./">&larr;&nbsp; Home</a>
+    <a class="topseries" href="./?s=procedures">All procedures</a>
+    <a class="toptopic" href="you-asked.html">You asked</a>
+    <p class="eyebrow"><a class="mast" href="./">ICU and You</a> &nbsp;·&nbsp;
+      <a class="serlink" href="./?s=procedures">Procedures</a> &nbsp;·&nbsp; Number 1</p>
+    <h1>Intraosseous access</h1>
+    <p class="kicker">The fastest reliable route into the circulation, and the one we reach for last</p>
+  </header>
+
+  <p class="askedby">Written because a medical student wrote in to say they had never seen one done, in an adult or
+    a child. Which is common, and is rather the problem &mdash; see <a href="you-asked.html">You asked</a>.</p>
+
+  <div class="pad">
+    <p class="lede">A trained person can be in the marrow in under a minute, in almost anybody, almost anywhere.
+      The commonest error is not doing it badly. It is doing it late.</p>
+
+    <p>Marrow is a non-collapsible venous plexus draining into the central circulation. It does not shut down in
+      shock the way peripheral veins do, which is precisely why it works when nothing else will. Anything you can
+      give intravenously can go through it, at broadly the same doses and with a comparable time to effect.</p>
+
+    <h2 class="sub">When to reach for it</h2>
+
+    <ul class="pts">
+      <li><b>The rule of thumb</b><span>Two failed cannulation attempts, or ninety seconds without access, in a
+        patient who needs access now. Cardiac arrest, shock, status epilepticus, a collapsed infant. If you find
+        yourself on the third attempt at a vein, you have probably already left it too long.</span></li>
+      <li><b>In children</b><span>Reach for it early. Peripheral access in a shocked infant is genuinely difficult
+        even for people who do it often, and the interval spent trying is the interval not spent treating.</span></li>
+      <li><b>In adults</b><span>Markedly under-used, largely because a generation trained before it was routine.
+        The technique and the indications are the same; only the needle length and the sites differ.</span></li>
+      <li><b>Not a long-term line</b><span>It buys you time. Replace it with definitive access when the patient is
+        resuscitated, and remove it &mdash; the usual figure quoted is within 24 hours.</span></li>
+    </ul>
+
+    <h2 class="sub">Where it goes</h2>
+
+    <div class="sites">
+      <div class="site">
+        <h3>Proximal tibia</h3>
+        <p>The default in children and a good adult site. About 1&ndash;2&nbsp;cm below and 1&nbsp;cm medial to the
+          tibial tuberosity, on the flat antero-medial surface. In small infants aim slightly lower and stay clear
+          of the growth plate.</p>
+      </div>
+      <div class="site">
+        <h3>Proximal humerus</h3>
+        <p>Adults. Arm adducted, hand on the abdomen, insert into the greater tubercle about 1&nbsp;cm above the
+          surgical neck, angled 45&deg; caudally. Higher flow rates than tibial, but it dislodges easily if the arm
+          moves &mdash; secure it.</p>
+      </div>
+      <div class="site">
+        <h3>Distal tibia / distal femur</h3>
+        <p>Distal tibia: 2&nbsp;cm proximal to the medial malleolus. Distal femur is a paediatric alternative,
+          1&ndash;2&nbsp;cm above the patella and slightly medial, with the leg straight.</p>
+      </div>
+    </div>
+
+    <div class="box red">
+      <span class="lab">Where it must not go</span>
+      <p>A fractured bone, or one proximal to a fracture. A bone already attempted within about 48 hours &mdash; the
+        previous hole leaks. A prosthesis or previous orthopaedic hardware in that bone. Infection, burn or
+        cellulitis over the site. And any bone where you cannot confidently identify the landmarks: an IO in the
+        wrong place is worse than no IO.</p>
+    </div>
+
+    <h2 class="sub">Doing it</h2>
+
+    <ol class="steps">
+      <li><strong>Choose the needle by soft tissue depth, not by age.</strong> Most systems colour-code by length
+        &mdash; short for small children and thin limbs, standard for most adults, long for the humerus or an obese
+        limb. You need at least one black line visible above the skin when the tip touches bone; if none is
+        visible, the needle is too short.</li>
+      <li><strong>Identify the landmark and clean the skin.</strong> Ninety degrees to the bone surface, except the
+        humerus.</li>
+      <li><strong>Advance until you feel the loss of resistance.</strong> With a driver it is a distinct give as you
+        enter the marrow cavity. Stop there. Do not advance to the hub.</li>
+      <li><strong>Remove the stylet</strong> and connect a primed extension set.</li>
+      <li><strong>Confirm.</strong> The needle stands unsupported. Marrow can often be aspirated, though not always.
+        And crucially &mdash;</li>
+      <li><strong>Flush, firmly, with 5&ndash;10&nbsp;mL of saline.</strong> This is not optional. The marrow is a
+        matrix, and until you disrupt it nothing will flow. An IO that will not run has usually not been flushed
+        properly.</li>
+      <li><strong>Secure it, and write down where it is.</strong> Handover forgets IOs remarkably often.</li>
+    </ol>
+
+    <div class="box amb">
+      <span class="lab">The thing nobody warns you about</span>
+      <p><strong>It hurts.</strong> Insertion is tolerable; the flush is severe, and in a conscious patient it is
+        one of the more painful things we do. If the patient has any awareness, give preservative-free lignocaine
+        into the IO <em>before</em> the saline flush, let it dwell for a minute or so, then flush. Doses differ
+        between adults and children and between local protocols, so use your own guideline &mdash; but do not skip
+        it because the situation is busy. This is the step most often omitted and most remembered by patients.</p>
+    </div>
+
+    <h2 class="sub">What can go through it</h2>
+
+    <ul class="pts">
+      <li><b>Essentially everything</b><span>Crystalloid, blood and blood products, adrenaline, amiodarone,
+        antibiotics, anaesthetic induction agents, inotropes, contrast for CT. Same doses as intravenous.</span></li>
+      <li><b>But not by gravity</b><span>Marrow offers real resistance. You need a pressure bag, a syringe and
+        three-way tap, or a pump. If it is running slowly, the answer is usually pressure rather than a new
+        site.</span></li>
+      <li><b>Bloods, with caveats</b><span>A marrow sample will give you a usable gas, lactate, glucose,
+        haemoglobin and cross-match in most laboratories. Potassium reads high, platelets low, and some analysers
+        refuse marrow altogether &mdash; tell the lab what it is.</span></li>
+    </ul>
+
+    <div class="box grn">
+      <span class="lab">Complications, in the order you will meet them</span>
+      <p><strong>Extravasation</strong> is by far the commonest, and follows a needle that has gone through the far
+        cortex or been dislodged. Check the calf or the limb circumference during any pressurised infusion. Rarely,
+        that extravasation causes <strong>compartment syndrome</strong>, which is the complication that does real
+        harm. <strong>Fracture</strong> and <strong>growth plate injury</strong> are avoidable with landmarks and
+        the right needle. <strong>Osteomyelitis</strong> is genuinely rare &mdash; well under one per cent &mdash;
+        and rarer still when the device comes out within a day.</p>
+    </div>
+  </div>
+
+  <div class="pad" style="padding-top:6px">
+    <div class="challenge">
+      <h2>Challenge for you</h2>
+      <p class="ask">Have you ever put one in &mdash; and if not, do you know where the driver and needles are kept
+        in your department right now?</p>
+      <p>The second half is the one that matters. A device you cannot find in ninety seconds is a device you do not
+        have. Go and look, then tell me how long it took and whether the needles were the right sizes.</p>
+      <p><a class="btn" href="mailto:icuandyou@icloud.com?subject=Procedures%20No.%201%20-%20intraosseous&body=Have%20I%20ever%20put%20one%20in%3F%0D%0A%0D%0A%0D%0AHow%20long%20it%20took%20me%20to%20find%20the%20driver%20and%20needles%20in%20my%20department%3A%0D%0A%0D%0A%0D%0AWere%20the%20right%20sizes%20there%3F%0D%0A%0D%0A%0D%0A---%0D%0A%0D%0AName%20(optional)%3A%0D%0A">Send your answer</a></p>
+      <p class="fallback">The button opens a reply straight to me. If your device blocks it, write to
+        <a href="mailto:icuandyou@icloud.com">icuandyou@icloud.com</a> instead.</p>
+    </div>
+  </div>
+
+  <footer>
+    <span class="firstpub">First published August 2026</span>
+    <a class="home" href="./">&larr; &nbsp;All of ICU AND YOU</a><br>
+    ICU AND YOU &nbsp;·&nbsp; Procedures No. 1 &nbsp;·&nbsp; Intraosseous access<br>
+    Educational use only and not a substitute for supervised training. Needle sizes, lignocaine doses and dwell
+    times differ between devices and between hospitals &mdash; follow the instructions for the device in your
+    department and your own local protocol, which take precedence over anything here.
+  </footer>
+
+</div>
+<script data-goatcounter="https://icuandyou.goatcounter.com/count"
+        async src="//gc.zgo.at/count.js"></script>
+</body>
+</html>
