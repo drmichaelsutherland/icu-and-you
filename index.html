@@ -131,6 +131,8 @@
     transition:transform .15s ease}
   details.drop[open] summary.chip::after{transform:translateY(1px) rotate(-135deg)}
   .chip.grp.on{background:var(--ink);border-color:var(--ink);color:#FBF9F5}
+  .chip.grp.two{padding-top:5px;padding-bottom:5px;line-height:1.24;text-align:left}
+  .chip.grp.two span{display:block}
   .chip.newbtn{background:var(--rust);border-color:var(--rust);color:#FDF8F5;
     font-weight:600;letter-spacing:.06em}
   .chip.newbtn:hover{background:#8A3620;border-color:#8A3620}
@@ -371,7 +373,7 @@
     <p class="menulabel">The menu &mdash; browse by category</p>
     <div class="crow">
       <details class="drop" data-g="memory">
-        <summary class="chip grp">Memory aids and activities</summary>
+        <summary class="chip grp two"><span>Memory aids<br>and activities</span></summary>
         <div class="menu">
           <button class="mi" data-f="g:memory"><i class="md all"></i>All memory aids and activities</button>
           <button class="mi" data-f="mind-map"><i class="md teal"></i>Mind map</button>
@@ -768,7 +770,10 @@
       var sum = d.querySelector("summary");
       sum.classList.remove("on");
       var lab = LABELS[d.dataset.g];
-      if(lab) sum.firstChild.nodeValue = lab;
+      if(!lab) return;
+      var host = sum.querySelector("span") || sum;
+      if(host === sum) sum.firstChild.nodeValue = lab;
+      else host.innerHTML = lab.replace(" and ", "<br>and ");
     });
   }
   function clearAll(){
@@ -833,7 +838,11 @@
       clearAll();
       m.classList.add("on");
       sum.classList.add("on");
-      if(m.dataset.f.indexOf("g:") !== 0) sum.firstChild.nodeValue = m.textContent.trim();
+      if(m.dataset.f.indexOf("g:") !== 0){
+        var host = sum.querySelector("span");
+        if(host) host.textContent = m.textContent.trim();
+        else sum.firstChild.nodeValue = m.textContent.trim();
+      }
       filter = m.dataset.f;
       alldrops.forEach(function(x){ x.open = false; });
       apply();
