@@ -392,7 +392,7 @@
         </div>
       </details>
       <details class="drop" data-g="special">
-        <summary class="chip grp">Special groups</summary>
+        <summary class="chip grp two"><span>Special<br>groups</span></summary>
         <div class="menu">
           <button class="mi" data-f="g:special"><i class="md all"></i>All special groups</button>
           <button class="mi" data-f="students"><i class="md violet"></i>Medical Students</button>
@@ -773,7 +773,12 @@
       if(!lab) return;
       var host = sum.querySelector("span") || sum;
       if(host === sum) sum.firstChild.nodeValue = lab;
-      else host.innerHTML = lab.replace(" and ", "<br>and ");
+      else {
+        var parts = lab.split(" ");
+        host.innerHTML = (lab.indexOf(" and ") > -1)
+          ? lab.replace(" and ", "<br>and ")
+          : parts[0] + "<br>" + parts.slice(1).join(" ");
+      }
     });
   }
   function clearAll(){
