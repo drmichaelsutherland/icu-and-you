@@ -96,6 +96,10 @@
     border-radius:20px;cursor:pointer;
     font:600 12px 'Helvetica Neue',Arial,sans-serif;letter-spacing:.05em}
   .clear:hover{background:var(--rust);color:#FDF8F5}
+  .asked{padding:7px 15px;border:1px solid var(--teal);background:#fff;color:var(--teal);
+    border-radius:20px;text-decoration:none;
+    font:600 12px 'Helvetica Neue',Arial,sans-serif;letter-spacing:.05em}
+  .asked:hover{background:var(--teal);color:#F6FAFB}
   .controls input{flex:1 1 190px;min-width:160px;padding:10px 14px;border:1px solid var(--rule);
     border-radius:22px;background:#fff;color:var(--ink);
     font:400 14.5px 'Helvetica Neue',Arial,sans-serif}
@@ -423,6 +427,7 @@
     <div class="crow status" id="status">
       <span class="showing">Showing <b id="showlabel"></b></span>
       <button class="clear" id="clear" type="button">Show everything &nbsp;&times;</button>
+      <a class="asked" id="asked" href="you-asked.html">You asked</a>
     </div>
   </div>
 
@@ -747,6 +752,10 @@
         });
       }
       document.getElementById("showlabel").textContent = name;
+      var ask = document.getElementById("asked");
+      ask.href = (filter.indexOf("g:") === 0)
+        ? "you-asked.html?g=" + filter.slice(2)
+        : "you-asked.html?s=" + filter;
     }
   }
 
