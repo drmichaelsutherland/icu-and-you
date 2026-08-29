@@ -228,6 +228,7 @@ function sendAnswers(){
   ORDER_A.forEach(k=>{ body+=k.replace("A"," across")+": "+readClue(k)+"\n"; });
   body+="\nDOWN\n";
   ORDER_D.forEach(k=>{ body+=k.replace("D"," down")+": "+readClue(k)+"\n"; });
+  body+="\n---\n\nAny clue that felt unfair:\n\n\nWas this useful? A word is plenty:\n\n";
   const subj="ICU Superpuzzle 46 — completed"+(who?(" ("+who+")"):"");
   const href="mailto:icuandyou@icloud.com?subject="+encodeURIComponent(subj)+"&body="+encodeURIComponent(body);
   window.location.href=href;
