@@ -20,7 +20,7 @@
   :root{
     --paper:#FBF9F5; --ink:#1B2A33; --muted:#6E6B63; --rule:#DED8CC;
     --teal:#2E6473; --plum:#6B4570; --rust:#A8442A; --olive:#5F6B33;
-    --bleu:#2F4A7C; --slate:#3E4A52; --verde:#2A6B47; --sepia:#6B4A2F; --oro:#B5852A; --wine:#7C2D42; --saffron:#B5651E; --violet:#4C4A8F; --nero:#23272E; --rose:#A85A6B; --denim:#3F6FA8; --jade:#0F7A6B; --amethyst:#7A4FA3;
+    --bleu:#2F4A7C; --slate:#3E4A52; --verde:#2A6B47; --sepia:#6B4A2F; --oro:#B5852A; --wine:#7C2D42; --saffron:#B5651E; --violet:#4C4A8F; --nero:#23272E; --rose:#A85A6B; --denim:#3F6FA8; --jade:#0F7A6B; --amethyst:#7A4FA3; --brass:#A8721E;
   }
   *{box-sizing:border-box}
   body{margin:0;background:#F3EFE8;color:var(--ink);
@@ -133,6 +133,11 @@
   .chip.grp.on{background:var(--ink);border-color:var(--ink);color:#FBF9F5}
   .chip.grp.two{padding-top:5px;padding-bottom:5px;line-height:1.24;text-align:left}
   .chip.grp.two span{display:block}
+  .chip.topbtn{background:var(--brass);border-color:var(--brass);color:#FDF8F2;
+    font-weight:600;letter-spacing:.06em}
+  .chip.topbtn:hover{background:#8A5A14;border-color:#8A5A14}
+  .md.brass{background:var(--brass)}
+  details.topten .menu{min-width:190px}
   .chip.newbtn{background:var(--rust);border-color:var(--rust);color:#FDF8F5;
     font-weight:600;letter-spacing:.06em}
   .chip.newbtn:hover{background:#8A3620;border-color:#8A3620}
@@ -359,6 +364,12 @@
     <div class="crow">
       <input id="q" type="search" placeholder="Search topics and titles" aria-label="Search">
       <button class="chip on" data-f="all" type="button">Everything</button>
+      <details class="drop topten" id="topten">
+        <summary class="chip topbtn">The Top Ten</summary>
+        <div class="menu">
+          <a class="mi newitem" href="top-ten-2026-08-august.html"><i class="md brass"></i>August 2026</a>
+        </div>
+      </details>
       <details class="drop latest" id="latest">
         <summary class="chip newbtn">Latest posts</summary>
         <div class="menu">
