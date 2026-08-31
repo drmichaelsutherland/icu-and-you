@@ -836,8 +836,26 @@
     if(want.indexOf("g:") !== 0) sum.firstChild.nodeValue = target.textContent.trim();
     filter = want;
     apply();
-    var coll = document.querySelector(".coll") || document.getElementById("week");
-    if(coll) coll.scrollIntoView({ behavior:"smooth", block:"start" });
+    // Scroll so the first result sits just under the sticky control bar.
+    // scrollIntoView cannot be used here: it relies on a fixed scroll-margin,
+    // and the bar changes height when the status row appears with the filter
+    // active, which left the reader landing that much too low. Measure it.
+    requestAnimationFrame(function(){
+      var first = document.getElementById("week");
+      if(!first || first.style.display === "none"){
+        first = null;
+        Array.prototype.some.call(
+          document.querySelectorAll("details.group"), function(g){
+            if(g.style.display !== "none"){ first = g; return true; }
+            return false;
+          });
+      }
+      if(!first) return;
+      var bar = document.querySelector(".controls");
+      var h = bar ? bar.getBoundingClientRect().height : 0;
+      var y = first.getBoundingClientRect().top + window.pageYOffset - h - 14;
+      window.scrollTo({ top: y > 0 ? y : 0, behavior:"smooth" });
+    });
   })();
 })();
 </script>
