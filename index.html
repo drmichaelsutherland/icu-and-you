@@ -725,12 +725,17 @@
   var LABELS = {"memory": "Memory aids and activities", "multimedia": "Multimedia", "special": "Special groups", "procedures": "Procedures", "cultural": "Cultural narratives", "other": "Other Realms"};
 
   function inFilter(sk){
+    // data-series may hold more than one key, space separated. The first is the
+    // home series (it supplies the badge and the number); any others are guest
+    // listings, which make the piece findable under that filter without giving
+    // it a number in that series.
+    var keys = (sk || "").split(/\s+/).filter(Boolean);
     if(filter === "all") return true;
     if(filter.indexOf("g:") === 0){
       var m = GROUPS[filter.slice(2)];
-      return !!m && m.indexOf(sk) > -1;
+      return !!m && keys.some(function(k){ return m.indexOf(k) > -1; });
     }
-    return sk === filter;
+    return keys.indexOf(filter) > -1;
   }
 
   function matches(el, term){

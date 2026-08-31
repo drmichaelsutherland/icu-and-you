@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en-AU">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ICU AND YOU · Podcast Session 57 — PEM Myths</title>
+<meta name="description" content="ICU AND YOU Podcast Session 57: seven pieces of paediatric emergency dogma examined — prophylactic atropine, opioids in abdominal pain, dextrose in the vomiting child, the observation period after adrenaline, sickle cell trait, steroids for pharyngitis, and the dressing that cost a two-year-old two fingers.">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="alternate icon" href="/favicon.ico" sizes="any">
+<link rel="apple-touch-icon" href="/icon-180.png">
+<meta name="theme-color" content="#1B2A33">
+<meta property="og:site_name" content="ICU AND YOU">
+<meta property="og:type" content="website">
+<meta property="og:title" content="ICU AND YOU · Podcast Session 57 — PEM Myths">
+<meta property="og:description" content="ICU AND YOU Podcast Session 57: seven pieces of paediatric emergency dogma examined — prophylactic atropine, opioids in abdominal pain, dextrose in the vomiting child, the observation period after adrenaline, sickle cell trait, steroids for pharyngitis, and the dressing that cost a two-year-old two fingers.">
+<meta property="og:image" content="https://icuandyou.com/share-card.png">
+<meta name="twitter:card" content="summary_large_image">
+<style>
+  :root{
+    --paper:#FAF9F7; --ink:#1E252B; --muted:#68707A; --rule:#DCDDDA;
+    --slate:#3E4A52; --slatetint:#EDF0F2;
+    --rust:#A8442A; --rusttint:#F9EDE7;
+    --gold:#A8721E;
+  }
+  *{box-sizing:border-box}
+  body{margin:0;background:#EDEDEA;color:var(--ink);
+    font:400 17px/1.64 'Iowan Old Style','Palatino Linotype',Palatino,Georgia,serif;
+    -webkit-text-size-adjust:100%;}
+  .sheet{max-width:780px;margin:0 auto;background:var(--paper);
+    box-shadow:0 1px 40px rgba(30,37,43,.10);}
+
+  header.top{padding:42px 40px 28px;border-bottom:1px solid var(--rule)}
+  .eyebrow a.serlink{color:inherit;text-decoration:none;border-bottom:1px solid transparent}
+  .eyebrow a.serlink:hover{border-bottom-color:currentColor}
+  .eyebrow a.mast{color:inherit;text-decoration:none;border-bottom:1px solid transparent}
+  .eyebrow a.mast:hover{border-bottom-color:currentColor}
+  .toptopic{display:inline-block;margin:0 0 16px 9px;padding:7px 16px;border-radius:20px;
+    border:1px solid currentColor;opacity:.62;text-decoration:none;color:inherit;
+    font:600 11.5px 'Helvetica Neue',Arial,sans-serif;letter-spacing:.09em;
+    text-transform:uppercase;transition:opacity .12s ease}
+  .toptopic:hover{opacity:1}
+  .topseries{display:inline-block;margin:0 0 16px 9px;padding:7px 16px;border-radius:20px;
+    border:1px solid currentColor;opacity:.62;text-decoration:none;color:inherit;
+    font:600 11.5px 'Helvetica Neue',Arial,sans-serif;letter-spacing:.09em;
+    text-transform:uppercase;transition:opacity .12s ease}
+  .topseries:hover{opacity:1}
+  .tophome{display:inline-block;margin:0 0 16px;padding:7px 16px;border-radius:20px;
+    border:1px solid currentColor;opacity:.62;text-decoration:none;color:inherit;
+    font:600 11.5px 'Helvetica Neue',Arial,sans-serif;letter-spacing:.09em;
+    text-transform:uppercase;transition:opacity .12s ease}
+  .tophome:hover{opacity:1}
+  .eyebrow{font:500 11.5px/1 'Helvetica Neue',Arial,sans-serif;letter-spacing:.24em;
+    text-transform:uppercase;color:var(--slate);margin:0 0 14px}
+  h1{font-size:31px;line-height:1.2;margin:0 0 10px;font-weight:400;letter-spacing:-.012em}
+  .kicker{color:var(--muted);margin:0;font-size:16.5px;font-style:italic}
+
+  /* the listen block */
+  .listen{margin:0;padding:28px 40px;background:var(--slatetint);
+    border-bottom:1px solid var(--rule)}
+  .meta{display:flex;flex-wrap:wrap;gap:6px 22px;margin:0 0 18px;
+    font:400 14px 'Helvetica Neue',Arial,sans-serif;color:var(--muted)}
+  .meta b{color:var(--ink);font-weight:600}
+  a.play{display:inline-flex;align-items:center;gap:11px;padding:15px 30px;border-radius:30px;
+    text-decoration:none;background:var(--slate);color:#F7F9FA;
+    font:600 15px 'Helvetica Neue',Arial,sans-serif;letter-spacing:.03em}
+  a.play:hover{background:#2C363D}
+  a.play:focus-visible{outline:3px solid var(--rust);outline-offset:3px}
+  a.play svg{display:block}
+  .hostnote{font:400 13.5px 'Helvetica Neue',Arial,sans-serif;color:var(--muted);margin:14px 0 0}
+
+  .pad{padding:32px 40px}
+  p{margin:0 0 17px}
+  h2.sub{font:600 12px 'Helvetica Neue',Arial,sans-serif;letter-spacing:.2em;
+    text-transform:uppercase;color:var(--muted);margin:0 0 16px;
+    padding-bottom:8px;border-bottom:1px solid var(--rule)}
+  b.term{font-weight:600;color:var(--slate)}
+
+  .challenge{margin:0;padding:28px 32px;background:var(--rusttint);border-left:5px solid var(--rust)}
+  .challenge h2{font:600 12px 'Helvetica Neue',Arial,sans-serif;letter-spacing:.2em;
+    text-transform:uppercase;color:var(--rust);margin:0 0 13px}
+  .ask{font-size:19.5px;line-height:1.5;margin:0 0 8px}
+  .lead{font-size:15px;color:var(--muted);margin:0 0 17px;line-height:1.55}
+  .chips{display:flex;flex-wrap:wrap;gap:10px;margin:0 0 16px}
+  a.chip{text-decoration:none;padding:12px 18px;border-radius:9px;
+    background:#fff;border:1px solid #E0C4B8;color:#7C3520;
+    font:400 15px 'Iowan Old Style',Palatino,Georgia,serif;
+    transition:transform .08s ease}
+  a.chip:hover{transform:translateY(-1px);background:#FDF4EF}
+  .fallback{font:400 13.5px 'Helvetica Neue',Arial,sans-serif;color:var(--muted);margin:0}
+  .fallback a{color:var(--rust)}
+  .subline{margin:0 0 14px;padding:0 0 13px;border-bottom:1px solid rgba(0,0,0,.09);
+    font:400 14.5px/1.55 'Iowan Old Style','Palatino Linotype',Palatino,Georgia,serif;
+    max-width:56ch;margin-left:auto;margin-right:auto}
+  .subline a{font-weight:500;border-bottom:1px solid currentColor;
+    text-decoration:none;color:inherit}
+  .firstpub{display:block;margin:0 0 10px;padding-bottom:9px;
+    border-bottom:1px solid currentColor;border-color:rgba(0,0,0,.09);
+    font:400 12px 'Helvetica Neue',Arial,sans-serif;letter-spacing:.06em;opacity:.72}
+
+  footer{padding:24px 40px 42px;border-top:1px solid var(--rule);
+    font:400 13px 'Helvetica Neue',Arial,sans-serif;color:var(--muted);text-align:center;line-height:1.7}
+  .home{display:inline-block;margin:0 0 14px;padding:8px 18px;border-radius:20px;
+    border:1px solid var(--rule);background:#F1F3F4;color:var(--slate);text-decoration:none;
+    font:600 12.5px 'Helvetica Neue',Arial,sans-serif;letter-spacing:.05em}
+  .home:hover{background:var(--slate);border-color:var(--slate);color:#F7F9FA}
+
+  @media (max-width:620px){
+    header.top,.listen,.pad,footer{padding-left:20px;padding-right:20px}
+    .challenge{padding:22px 20px}
+    h1{font-size:25px} body{font-size:16.5px} .ask{font-size:18px}
+  }
+  @media print{ body{background:#fff} .sheet{box-shadow:none;max-width:none} }
+
+  .topguest{display:inline-block;margin:0 0 16px 9px;padding:7px 16px;border-radius:20px;
+    border:1px dashed currentColor;opacity:.62;text-decoration:none;color:inherit;
+    font:600 11.5px 'Helvetica Neue',Arial,sans-serif;letter-spacing:.09em;
+    text-transform:uppercase;transition:opacity .12s ease}
+  .topguest:hover{opacity:1}
+  .myth{margin:0 0 22px;padding:22px 26px;background:#fff;border:1px solid var(--rule);
+    border-radius:10px;border-left:4px solid var(--slate)}
+  .myth .lab{display:block;font:600 11px 'Helvetica Neue',Arial,sans-serif;
+    letter-spacing:.18em;text-transform:uppercase;color:var(--rust);margin:0 0 8px}
+  .myth h3{margin:0 0 10px;font:400 20px 'Iowan Old Style',Palatino,Georgia,serif;
+    font-style:italic;color:var(--muted)}
+  .myth p:last-child{margin:0}
+  .verdict{font-weight:600;color:var(--slate)}
+</style>
+</head>
+<body>
+<div class="sheet">
+
+  <header class="top">
+    <a class="tophome" href="./">&larr;&nbsp; Home</a>
+    <a class="topseries" href="./?s=podcast">All podcasts</a>
+    <a class="topguest" href="./?s=emergency" title="Also listed under Emergency Medicine Landing Bay">Also for emergency medicine</a>
+    <a class="toptopic" href="./?t=toddler-preschool" title="Everything on The toddler and preschool child">All on this topic</a>
+    <p class="eyebrow"><a class="mast" href="./">ICU and You</a> &nbsp;·&nbsp; <a class="serlink" href="./?s=podcast">Podcast Sessions</a> &nbsp;·&nbsp; Number 57</p>
+    <h1>PEM Myths</h1>
+    <p class="kicker">Seven things you were taught, and what the evidence did about them</p>
+  </header>
+
+  <div class="listen">
+    <div class="meta">
+      <span><b>Show</b> &nbsp;Pediatric Emergency Playbook</span>
+      <span><b>Host</b> &nbsp;Tim Horeczko</span>
+      <span><b>Published</b> &nbsp;1 November 2022</span>
+    </div>
+    <a class="play" href="https://pemplaybook.org/podcast/pediatric-myths/">
+      <svg width="15" height="17" viewBox="0 0 15 17" aria-hidden="true"><path d="M1 1.5 L14 8.5 L1 15.5 Z" fill="#F7F9FA"/></svg>
+      Listen to the episode
+    </a>
+    <p class="hostnote">Free, with a full transcript on the page. The episode is a medley &mdash; seven short arguments rather than one long one &mdash; which makes it unusually easy to listen to in pieces.</p>
+  </div>
+
+  <div class="pad">
+    <h2 class="sub">Why it is worth your time</h2>
+
+    <p>Horeczko opens with an observation worth more than the episode that follows it. New evidence, he says, does not spread evenly. Sometimes it catches; sometimes it is a spark that floats too high and never touches anything that will burn. The practical consequence is that you will meet colleagues who never got the memo, and that being right is not the same as being useful &mdash; you have to know where the teaching came from before you can talk anyone out of it. Every myth below is presented that way: not as an error, but as a reasonable idea that outlived its reasoning.</p>
+
+    <div class="myth">
+      <span class="lab">Myth 1</span>
+      <h3>&ldquo;Give atropine before you intubate a child.&rdquo;</h3>
+      <p>The logic was sound enough &mdash; laryngoscopy is vagally stimulating, children tolerate bradycardia badly, so pre-empt it. <span class="verdict">The evidence went the other way.</span> Intubation-associated bradycardia in children is short-lived and almost never progresses to a dangerous rhythm or to haemodynamic compromise. Atropine's tachycardia consumes oxygen in a hypermetabolic child you have just spent minutes pre-oxygenating. And the practice never rested on clear evidence in the first place &mdash; eminence rather than evidence. Horeczko's line is the one to remember: bradycardia with a pulse is answered with oxygenation and ventilation, and atropine is a medication, not a placemat.</p>
+    </div>
+
+    <div class="myth">
+      <span class="lab">Myth 2</span>
+      <h3>&ldquo;No opioids in abdominal pain &mdash; the surgeons won't be able to assess them.&rdquo;</h3>
+      <p>This one has a paper trail. Zachary Cope codified it in 1921, and his <em>Acute Abdomen</em> is still read. The 1996 edition softened it to waiting for a responsible surgeon; only in 2001 did an edition call the original an unfortunate dictum. Eighty years. <span class="verdict">Meanwhile the evidence had been in for a decade</span> &mdash; adults in 1992, children in 2005, a Cochrane analysis in 2011 &mdash; and all of it says analgesia before surgical review is safe and does not delay diagnosis. Horeczko adds the point that actually matters at the bedside: it may sharpen the examination rather than blunt it, because a child who is not braced against you can localise.</p>
+    </div>
+
+    <div class="myth">
+      <span class="lab">Myth 3</span>
+      <h3>&ldquo;You can't bolus D5NS.&rdquo;</h3>
+      <p>The concern behind the rule is real &mdash; concentrated dextrose is irritant and sclerosing, which is why infants under one get D10, toddlers and preschoolers get D25, and only the over-eights get D50. But D5NS is the most dilute preparation there is: roughly two ampoules of D50 in a bag of saline. <span class="verdict">It will not sclerose a vein.</span> The child in front of you is the miserable vomiter who has failed ondansetron and small sips, is dehydrated, and has been running on nothing for hours &mdash; a mild starvation ketosis. If you are putting fluid in anyway, breaking the ketosis at the same time costs nothing and makes them feel human faster.</p>
+    </div>
+
+    <div class="myth">
+      <span class="lab">Myth 4</span>
+      <h3>&ldquo;You gave adrenaline, so now you have to keep them.&rdquo;</h3>
+      <p>The four-to-six hour observation grew from a fear of biphasic rebound. Horeczko makes an argument here that goes beyond disposition: the prospect of committing a child to half a day in the department <em>changes who gets treated in the first place</em>. Those hives don't look that bad. He only vomited once. <span class="verdict">Under-treatment of anaphylaxis is the well-documented problem, not over-treatment.</span> The pharmacology gives you a defensible floor: intramuscular adrenaline has an onset around eight minutes and a half-life around forty-five, so two half-lives is ninety minutes, and two hours covers it for a straightforward reaction with a known trigger. Longer for tree nuts, for asthma or atopy, for anyone with a history of severe reactions.</p>
+      <p>The route is not negotiable. Intramuscular, lateral thigh, whatever lines are already in &mdash; 0.01 mg/kg to a maximum of 0.3 mg. Autoinjectors are fine when the dose is about right: 0.15 mg from 15 kg, 0.3 mg from 30 kg. Below 15 kg, draw it up, because an autoinjector into a small thigh can deliver into bone.</p>
+    </div>
+
+    <div class="myth">
+      <span class="lab">Myth 5</span>
+      <h3>&ldquo;Sickle cell trait is nothing.&rdquo;</h3>
+      <p>Mostly true, and that is exactly what makes it dangerous. Carriers have overwhelmingly normal haemoglobin A and do not get pain crises going about their day. But under extreme physiological stress &mdash; heat, exertion, altitude, critical illness &mdash; the small fraction of haemoglobin S can sickle. Horeczko's case is a fifteen-year-old who trained hard in summer heat, arrived looking like straightforward heat exhaustion with acidosis and rhabdomyolysis, was admitted and hydrated, and died within a day. <span class="verdict">Exertional collapse associated with sickle cell trait carries a 37-fold risk</span>, and NCAA screening dropped the associated death rate from about 1 in 28,000 to 1 in 250,000. Worth asking about, in a flat tone, in any undifferentiated collapse.</p>
+    </div>
+
+    <div class="myth">
+      <span class="lab">Myth 6</span>
+      <h3>&ldquo;No steroids for paediatric pharyngitis.&rdquo;</h3>
+      <p>The fear is specific and legitimate: leukaemic tonsillitis exists, steroids are part of leukaemia induction, and treating a cancer by accident delays its diagnosis. That consideration hardened into a prohibition. <span class="verdict">The evidence has moved</span> &mdash; a null result in 2003, a small effect in 2010, clearer benefit in strep-positive children by 2012, and a 2020 Cochrane meta-analysis putting resolution at 24 hours at about 2.4 times more likely. Horeczko's position is the sensible one: make the diagnosis first, do a proper head and neck examination, and if the story is long or recurrent or there is lymphadenopathy and fatigue, chase that instead. Then, for the child who cannot swallow their own secretions, give the dexamethasone.</p>
+    </div>
+
+    <div class="myth">
+      <span class="lab">Myth 7</span>
+      <h3>&ldquo;Self-adhesive dressings are fine on fingers.&rdquo;</h3>
+      <p>This is the one to tell people about. Grayson, aged two, caught his right hand under something heavy in his father's garage. The lacerations were repaired well. He kept pulling the dressings off, so a self-adherent elastic wrap went on with entirely good intentions, and the family were told to change it twice a day. They changed it once in ten days. <span class="verdict">He came back with mummified digits and lost the index and middle fingers of his right hand.</span> These wraps are excellent for temporary haemostasis and dreadful as a take-home dressing; the case reports of paediatric digital necrosis are numerous enough that Horeczko calls the position indefensible. And ischaemia is quiet &mdash; the pain stops.</p>
+      <p>What to do instead, for the child who will not keep a dressing on: petroleum gauze directly on the wound, dry gauze over it, a single layer between that finger and the next to stop maceration, then a fluffy gauze roll wrapped loosely into a mitten, anchored round the base of the thumb and the wrist. The child cannot pick it off, and the next dressing change does not tear away the healing tissue.</p>
+    </div>
+
+    <h2 class="sub">The thread running through all seven</h2>
+
+    <p>Six of these began as a real hazard someone was right to worry about &mdash; vagal bradycardia, masked peritonism, sclerosed veins, biphasic anaphylaxis, missed leukaemia. The rule outlived the reasoning, and by the time the evidence arrived the rule had stopped being a judgement and become an identity. Horeczko's closing request is modest and worth taking seriously: watch for the new understanding and update your own database, because knowing a little about a subject is precisely what makes us hold on to what we know.</p>
+
+    <p>The seventh is different in kind, and worth separating out. Nobody was ever taught that a self-adherent wrap was good for fingers. It happened because a two-year-old would not keep a dressing on and someone reached for the thing that stays put. That is not dogma; it is the ordinary logic of a busy department meeting a child who will not cooperate, which is the defining problem of this age group and the reason it has a fortnight to itself.</p>
+  </div>
+
+  <div class="pad" style="padding-top:6px">
+    <div class="challenge">
+      <h2>Challenge for you</h2>
+      <p class="ask">Which of these seven is still being taught where you work?</p>
+      <p class="lead">Not which you believe &mdash; which you have heard said out loud, on a shift, this year. Tap it and tell me who said it and what happened. I will publish the tally, without units or names.</p>
+      <div class="chips">
+        <a class="chip" href="mailto:icuandyou@icloud.com?subject=Podcast%2057%20-%20still%20taught%3A%20atropine&body=Still%20being%20taught%20where%20I%20work%3A%20prophylactic%20atropine%20before%20intubation.%0D%0A%0D%0AWhat%20I%20heard%2C%20and%20what%20happened%3A%0D%0A%0D%0A%0D%0AName%20%28optional%29%3A%0D%0A%0A---%0A%0AThinking%20about%20this%20ICU%20AND%20YOU%20post%20overall%20%E2%80%94%20was%20it%20useful%20to%20you%2C%20or%20would%20it%20be%20useful%20to%20others%3F%0A">Atropine before intubation</a>
+        <a class="chip" href="mailto:icuandyou@icloud.com?subject=Podcast%2057%20-%20still%20taught%3A%20opioids%20and%20the%20abdomen&body=Still%20being%20taught%20where%20I%20work%3A%20withholding%20opioids%20in%20abdominal%20pain.%0D%0A%0D%0AWhat%20I%20heard%2C%20and%20what%20happened%3A%0D%0A%0D%0A%0D%0AName%20%28optional%29%3A%0D%0A%0A---%0A%0AThinking%20about%20this%20ICU%20AND%20YOU%20post%20overall%20%E2%80%94%20was%20it%20useful%20to%20you%2C%20or%20would%20it%20be%20useful%20to%20others%3F%0A">Opioids and the abdomen</a>
+        <a class="chip" href="mailto:icuandyou@icloud.com?subject=Podcast%2057%20-%20still%20taught%3A%20dextrose&body=Still%20being%20taught%20where%20I%20work%3A%20you%20cannot%20bolus%20D5NS.%0D%0A%0D%0AWhat%20I%20heard%2C%20and%20what%20happened%3A%0D%0A%0D%0A%0D%0AName%20%28optional%29%3A%0D%0A%0A---%0A%0AThinking%20about%20this%20ICU%20AND%20YOU%20post%20overall%20%E2%80%94%20was%20it%20useful%20to%20you%2C%20or%20would%20it%20be%20useful%20to%20others%3F%0A">Bolusing dextrose</a>
+        <a class="chip" href="mailto:icuandyou@icloud.com?subject=Podcast%2057%20-%20still%20taught%3A%20the%20anaphylaxis%20wait&body=Still%20being%20taught%20where%20I%20work%3A%20four%20to%20six%20hours%20after%20adrenaline.%0D%0A%0D%0AWhat%20I%20heard%2C%20and%20what%20happened%3A%0D%0A%0D%0A%0D%0AName%20%28optional%29%3A%0D%0A%0A---%0A%0AThinking%20about%20this%20ICU%20AND%20YOU%20post%20overall%20%E2%80%94%20was%20it%20useful%20to%20you%2C%20or%20would%20it%20be%20useful%20to%20others%3F%0A">The anaphylaxis wait</a>
+        <a class="chip" href="mailto:icuandyou@icloud.com?subject=Podcast%2057%20-%20still%20taught%3A%20sickle%20cell%20trait&body=Still%20being%20taught%20where%20I%20work%3A%20sickle%20cell%20trait%20is%20nothing.%0D%0A%0D%0AWhat%20I%20heard%2C%20and%20what%20happened%3A%0D%0A%0D%0A%0D%0AName%20%28optional%29%3A%0D%0A%0A---%0A%0AThinking%20about%20this%20ICU%20AND%20YOU%20post%20overall%20%E2%80%94%20was%20it%20useful%20to%20you%2C%20or%20would%20it%20be%20useful%20to%20others%3F%0A">Sickle cell trait is nothing</a>
+        <a class="chip" href="mailto:icuandyou@icloud.com?subject=Podcast%2057%20-%20still%20taught%3A%20steroids%20for%20sore%20throat&body=Still%20being%20taught%20where%20I%20work%3A%20no%20steroids%20for%20paediatric%20pharyngitis.%0D%0A%0D%0AWhat%20I%20heard%2C%20and%20what%20happened%3A%0D%0A%0D%0A%0D%0AName%20%28optional%29%3A%0D%0A%0A---%0A%0AThinking%20about%20this%20ICU%20AND%20YOU%20post%20overall%20%E2%80%94%20was%20it%20useful%20to%20you%2C%20or%20would%20it%20be%20useful%20to%20others%3F%0A">Steroids for sore throat</a>
+        <a class="chip" href="mailto:icuandyou@icloud.com?subject=Podcast%2057%20-%20still%20taught%3A%20adhesive%20dressings%20on%20fingers&body=Still%20being%20taught%20where%20I%20work%3A%20self-adherent%20wraps%20on%20fingers.%0D%0A%0D%0AWhat%20I%20heard%2C%20and%20what%20happened%3A%0D%0A%0D%0A%0D%0AName%20%28optional%29%3A%0D%0A%0A---%0A%0AThinking%20about%20this%20ICU%20AND%20YOU%20post%20overall%20%E2%80%94%20was%20it%20useful%20to%20you%2C%20or%20would%20it%20be%20useful%20to%20others%3F%0A">Wraps on fingers</a>
+      </div>
+      <p class="fallback">Each tap opens a reply straight to me with your choice filled in. If your device blocks it, write to <a href="mailto:icuandyou@icloud.com">icuandyou@icloud.com</a> instead.</p>
+    </div>
+  </div>
+
+  <footer>
+    <span class="firstpub">First published September 2026</span>
+    <p class="subline">One email on Fridays &mdash; what went up and why it mattered, the best of your replies,
+      and original feature stories, news and views. <a href="https://joinlist.com/f/5adad2d6">Come and join us</a>.</p>
+    <a class="home" href="./">&larr; &nbsp;All of ICU AND YOU</a><br>
+    ICU AND YOU &nbsp;·&nbsp; Podcast Session 57 &nbsp;·&nbsp; companion to Mind Map #33, The Toddler and Preschool Child<br>
+    Also listed under the Emergency Medicine Landing Bay.<br>
+    Summary written independently of the episode, which is <em>PEM Myths</em> from the Pediatric Emergency Playbook,
+    hosted by Tim Horeczko, 1 November 2022. Educational use only &mdash; not a prescribing guide, and local guidance,
+    ANZCOR and current Australian paediatric guidance always take precedence.
+  </footer>
+
+</div>
+<script data-goatcounter="https://icuandyou.goatcounter.com/count"
+        async src="//gc.zgo.at/count.js"></script>
+</body>
+</html>

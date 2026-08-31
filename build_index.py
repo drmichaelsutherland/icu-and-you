@@ -76,10 +76,11 @@ def build_this_week(m):
     ]
     for p in pages:
         badge = p.get("badge") or m["series"][p["series"]][0]
+        series_attr = " ".join([p["series"]] + p.get("guests", []))
         num = f'<b>{e(p["number"])}</b>' if p.get("number") else ""
         link = p.get("link_label") or "Open"
         out += [
-            f'        <li class="item {p["colour"]}" data-series="{p["series"]}">',
+            f'        <li class="item {p["colour"]}" data-series="{series_attr}">',
             f'          <div class="badge">{e(badge)}{num}</div>',
             '          <div class="body">',
             f'            <h3>{e(p["title"])}</h3>',
@@ -121,8 +122,9 @@ def build_previous(m):
         ]
         for p in pages:
             label = m["series"][p["series"]][0]
+            series_attr = " ".join([p["series"]] + p.get("guests", []))
             out.append(
-                f'            <li class="row {p["colour"]}" data-series="{p["series"]}">'
+                f'            <li class="row {p["colour"]}" data-series="{series_attr}">'
                 f'<span class="rs">{e(label)}</span>'
                 f'<span class="rn">{e(p.get("number") or "")}</span>'
                 f'<a class="rt" href="{p["file"]}">{e(p["title"])}</a></li>'
