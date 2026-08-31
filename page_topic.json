@@ -1,8 +1,8 @@
 {
  "this_week": {
-  "topic": "The postneonatal infant",
-  "slug": "the-postneonatal-infant",
-  "blurb": "Twenty-nine days to one year. Last week's baby was made unwell by how they were born; this week's is made unwell by what happens afterwards — and remains extraordinarily good at looking well right up until the moment they are not."
+  "topic": "The toddler and preschool child",
+  "slug": "toddler-preschool",
+  "blurb": "One year to five. The age that will not keep a dressing on, cannot reliably tell you where it hurts, and puts things in places it would not occur to you to look — and the age at which a great deal of what we were taught turns out to have been someone's reasonable worry, hardened into a rule."
  },
  "series": {
   "mind-map": [
@@ -99,12 +99,8 @@
    "number": "1",
    "title": "Intraosseous access",
    "topic": "The postneonatal infant",
-   "slug": "the-postneonatal-infant",
-   "week": true,
-   "badge": "Procedures",
-   "blurb": "Written because a student wrote in to say they had never seen one done. When to reach for it, where it goes, how to know it is in, and why the flush hurts.",
-   "link_label": "Open",
-   "pos": 0
+   "slug": "postneonatal-infant",
+   "week": false
   },
   {
    "file": "mind-map-32-postneonatal-infant.html",
@@ -113,12 +109,8 @@
    "number": "32",
    "title": "The postneonatal infant — 29 days to one year",
    "topic": "The postneonatal infant",
-   "slug": "the-postneonatal-infant",
-   "week": true,
-   "badge": "Mind map",
-   "blurb": "Why they look well until they do not, what usually walks in, the febrile infant, the presentations that mislead, sudden unexpected death, non-accidental injury, and the hour before retrieval.",
-   "link_label": "Open",
-   "pos": 1
+   "slug": "postneonatal-infant",
+   "week": false
   },
   {
    "file": "aphorism-36-parent-is-the-monitor.html",
@@ -127,12 +119,8 @@
    "number": "36",
    "title": "In an infant, the parent is the monitor",
    "topic": "The postneonatal infant",
-   "slug": "the-postneonatal-infant",
-   "week": true,
-   "badge": "Aphorism",
-   "blurb": "They hold the baseline no instrument in the department has access to. Yes, No or Maybe — and why.",
-   "link_label": "Open",
-   "pos": 2
+   "slug": "postneonatal-infant",
+   "week": false
   },
   {
    "file": "mnemonic-54-feeding.html",
@@ -141,12 +129,8 @@
    "number": "54",
    "title": "FEEDING",
    "topic": "The postneonatal infant",
-   "slug": "the-postneonatal-infant",
-   "week": true,
-   "badge": "Mnemonic",
-   "blurb": "Seven things, in the order that finds them — and the numbers come last. With a challenge about what your observation chart actually records.",
-   "link_label": "Open",
-   "pos": 3
+   "slug": "postneonatal-infant",
+   "week": false
   },
   {
    "file": "superpuzzle-49-postneonatal-fillable.html",
@@ -155,12 +139,8 @@
    "number": "49",
    "title": "The postneonatal infant",
    "topic": "The postneonatal infant",
-   "slug": "the-postneonatal-infant",
-   "week": true,
-   "badge": "Superpuzzle",
-   "blurb": "Twenty clues. Type straight into the grid, or print the page and use a pen.",
-   "link_label": "Open the puzzle",
-   "pos": 4
+   "slug": "postneonatal-infant",
+   "week": false
   },
   {
    "file": "superquiz-61-postneonatal-infant.html",
@@ -169,12 +149,8 @@
    "number": "61",
    "title": "The postneonatal infant",
    "topic": "The postneonatal infant",
-   "slug": "the-postneonatal-infant",
-   "week": true,
-   "badge": "Superquiz",
-   "blurb": "Five questions. Open book, no time limit, as many attempts as you like — and a certificate for three or more.",
-   "link_label": "Take the quiz",
-   "pos": 5
+   "slug": "postneonatal-infant",
+   "week": false
   },
   {
    "file": "podcast-56-febrile-infant.html",
@@ -183,12 +159,8 @@
    "number": "56",
    "title": "The Febrile Infant",
    "topic": "The postneonatal infant",
-   "slug": "the-postneonatal-infant",
-   "week": true,
-   "badge": "Podcast",
-   "blurb": "Tim Horeczko on the 2021 AAP guideline — three age bands, three algorithms, and the one phrase the whole thing rests on.",
-   "link_label": "Open",
-   "pos": 6
+   "slug": "postneonatal-infant",
+   "week": false
   },
   {
    "file": "journal-club-97-infant-intensive-care.html",
@@ -197,12 +169,8 @@
    "number": "97",
    "title": "A unit for the first year of life",
    "topic": "The postneonatal infant",
-   "slug": "the-postneonatal-infant",
-   "week": true,
-   "badge": "Journal club",
-   "blurb": "Mohakud and Mishra propose a distinct infant intensive care unit — a sound observation, an open question about boundaries, and a proposal that precedes its evidence.",
-   "link_label": "Open",
-   "pos": 7
+   "slug": "postneonatal-infant",
+   "week": false
   },
   {
    "file": "med-students-01-postneonatal-infant.html",
@@ -211,12 +179,8 @@
    "number": "1",
    "title": "The postneonatal infant, in three tiers",
    "topic": "The postneonatal infant",
-   "slug": "the-postneonatal-infant",
-   "week": true,
-   "badge": "Medical Students",
-   "blurb": "The same subject at three depths — the science, the clinical reasoning, and what you will be expected to do. Read only the tier you need.",
-   "link_label": "Open",
-   "pos": 8
+   "slug": "postneonatal-infant",
+   "week": false
   },
   {
    "file": "nurses-nest-01-postneonatal-infant.html",
@@ -225,12 +189,8 @@
    "number": "1",
    "title": "You will notice first",
    "topic": "The postneonatal infant",
-   "slug": "the-postneonatal-infant",
-   "week": true,
-   "badge": "Nurses' Nest",
-   "blurb": "What you see before the chart does — and how to make it count when you say so.",
-   "link_label": "Open",
-   "pos": 9
+   "slug": "postneonatal-infant",
+   "week": false
   },
   {
    "file": "gp-boulevard-01-postneonatal-infant.html",
@@ -239,12 +199,8 @@
    "number": "1",
    "title": "Fifteen minutes and a well-looking baby",
    "topic": "The postneonatal infant",
-   "slug": "the-postneonatal-infant",
-   "week": true,
-   "badge": "GP Boulevard",
-   "blurb": "The unselected infant in general practice: who to send, the common thing done well, and safety-netting that actually works.",
-   "link_label": "Open",
-   "pos": 10
+   "slug": "postneonatal-infant",
+   "week": false
   },
   {
    "file": "emergency-bay-01-postneonatal-infant.html",
@@ -253,12 +209,8 @@
    "number": "1",
    "title": "Everything after triage is a disposition",
    "topic": "The postneonatal infant",
-   "slug": "the-postneonatal-infant",
-   "week": true,
-   "badge": "Emergency Medicine Landing Bay",
-   "blurb": "The infant in the emergency department: what should move them up a category, the first two minutes, the three that fill the department, and the decision about who goes home.",
-   "link_label": "Open",
-   "pos": 11
+   "slug": "postneonatal-infant",
+   "week": false
   },
   {
    "file": "angolo-italiano-02-il-nido.html",
@@ -267,12 +219,8 @@
    "number": "2",
    "title": "Il nido",
    "topic": "The postneonatal infant",
-   "slug": "the-postneonatal-infant",
-   "week": true,
-   "badge": "L'angolo italiano",
-   "blurb": "The manger, the nativity and the nest — and the foundling wheel that could only close once the nest had opened.",
-   "link_label": "Open",
-   "pos": 12
+   "slug": "postneonatal-infant",
+   "week": false
   },
   {
    "file": "india-room-01-what-some-of-our-colleagues-have-seen.html",
@@ -281,12 +229,8 @@
    "number": "1",
    "title": "What some of our colleagues have already seen",
    "topic": "The postneonatal infant",
-   "slug": "the-postneonatal-infant",
-   "week": true,
-   "badge": "The India Room",
-   "blurb": "The same age group, a different differential — and one of the largest improvements in human survival achieved anywhere. Plus: help name this column.",
-   "link_label": "Open",
-   "pos": 13
+   "slug": "postneonatal-infant",
+   "week": false
   },
   {
    "file": "literary-edge-01-overlaying.html",
@@ -295,12 +239,8 @@
    "number": "1",
    "title": "Because she overlaid it",
    "topic": "The postneonatal infant",
-   "slug": "the-postneonatal-infant",
-   "week": true,
-   "badge": "The Literary Edge",
-   "blurb": "The Judgement of Solomon contains what may be the oldest written account of sudden unexpected infant death — and turns entirely on a mother who knew her own child.",
-   "link_label": "Open",
-   "pos": 14
+   "slug": "postneonatal-infant",
+   "week": false
   },
   {
    "file": "mind-map-31-neonatal.html",
@@ -501,9 +441,31 @@
    "topic": "Organ donation",
    "slug": "organ-donation",
    "week": false
+  },
+  {
+   "file": "podcast-57-pem-myths.html",
+   "series": "podcast",
+   "colour": "slate",
+   "number": "57",
+   "title": "PEM Myths",
+   "topic": "The toddler and preschool child",
+   "slug": "toddler-preschool",
+   "week": true,
+   "pos": 0,
+   "badge": "Podcast",
+   "link_label": "Open",
+   "guests": [
+    "emergency"
+   ],
+   "blurb": "Seven pieces of paediatric dogma examined — prophylactic atropine, opioids in the acute abdomen, bolusing dextrose, how long to watch after adrenaline, sickle cell trait, steroids for sore throat, and the dressing that cost a two-year-old two fingers."
   }
  ],
  "latest": [
+  {
+   "file": "podcast-57-pem-myths.html",
+   "colour": "slate",
+   "label": "PEM Myths"
+  },
   {
    "file": "procedures-01-intraosseous-access.html",
    "colour": "amethyst",
@@ -523,11 +485,6 @@
    "file": "emergency-bay-01-postneonatal-infant.html",
    "colour": "jade",
    "label": "for emergency medicine"
-  },
-  {
-   "file": "med-students-02-neonatology.html",
-   "colour": "violet",
-   "label": "for medical students — neonatology"
   }
  ],
  "topten": [
