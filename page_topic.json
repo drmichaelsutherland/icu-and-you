@@ -458,9 +458,28 @@
     "emergency"
    ],
    "blurb": "Seven pieces of paediatric dogma examined — prophylactic atropine, opioids in the acute abdomen, bolusing dextrose, how long to watch after adrenaline, sickle cell trait, steroids for sore throat, and the dressing that cost a two-year-old two fingers."
+  },
+  {
+   "file": "journal-club-98-hemodynamic-monitoring.html",
+   "series": "journal",
+   "colour": "sepia",
+   "number": "98",
+   "title": "What we monitor, and what we actually know",
+   "topic": "The toddler and preschool child",
+   "slug": "toddler-preschool",
+   "week": true,
+   "pos": 1,
+   "badge": "Journal club",
+   "link_label": "Open",
+   "blurb": "The first expert consensus on haemodynamic monitoring in children — and an unusually honest account of how little sits underneath it. Including the gap that matters most here: no agreed blood pressure target under twelve."
   }
  ],
  "latest": [
+  {
+   "file": "journal-club-98-hemodynamic-monitoring.html",
+   "colour": "sepia",
+   "label": "Hemodynamic monitoring"
+  },
   {
    "file": "podcast-57-pem-myths.html",
    "colour": "slate",
@@ -480,11 +499,6 @@
    "file": "gp-boulevard-01-postneonatal-infant.html",
    "colour": "denim",
    "label": "just for GPs and GP trainees"
-  },
-  {
-   "file": "emergency-bay-01-postneonatal-infant.html",
-   "colour": "jade",
-   "label": "for emergency medicine"
   }
  ],
  "topten": [

@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en-AU">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ICU AND YOU · Journal Club No. 98 — Hemodynamic monitoring in critically ill children</title>
+<meta name="description" content="ICU AND YOU Journal Club No. 98: the ESPNIC expert consensus on haemodynamic monitoring in critically ill children — what 94 recommendations agreed, what they could not agree, and why the gaps matter more than the agreements.">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="alternate icon" href="/favicon.ico" sizes="any">
+<link rel="apple-touch-icon" href="/icon-180.png">
+<meta name="theme-color" content="#1B2A33">
+<meta property="og:site_name" content="ICU AND YOU">
+<meta property="og:type" content="website">
+<meta property="og:title" content="ICU AND YOU · Journal Club No. 98 — Hemodynamic monitoring in critically ill children">
+<meta property="og:description" content="ICU AND YOU Journal Club No. 98: the ESPNIC expert consensus on haemodynamic monitoring in critically ill children — what 94 recommendations agreed, what they could not agree, and why the gaps matter more than the agreements.">
+<meta property="og:image" content="https://icuandyou.com/share-card.png">
+<meta name="twitter:card" content="summary_large_image">
+<style>
+  :root{
+    --paper:#FAF8F3; --ink:#241F19; --muted:#6E6558; --rule:#DED5C6;
+    --sepia:#6B4A2F; --sepiatint:#F2EBE1;
+    --rust:#A8442A; --rusttint:#F9EDE7;
+    --sky:#2E6E8E; --skytint:#E7F1F6;
+  }
+  *{box-sizing:border-box}
+  body{margin:0;background:#EDE8DE;color:var(--ink);
+    font:400 17px/1.65 'Iowan Old Style','Palatino Linotype',Palatino,Georgia,serif;
+    -webkit-text-size-adjust:100%;}
+  .sheet{max-width:780px;margin:0 auto;background:var(--paper);
+    box-shadow:0 1px 40px rgba(36,31,25,.10);}
+
+  header.top{padding:42px 40px 28px;border-bottom:1px solid var(--rule)}
+  .toptopic{display:inline-block;margin:0 0 16px 9px;padding:7px 16px;border-radius:20px;
+    border:1px solid currentColor;opacity:.62;text-decoration:none;color:inherit;
+    font:600 11.5px 'Helvetica Neue',Arial,sans-serif;letter-spacing:.09em;
+    text-transform:uppercase;transition:opacity .12s ease}
+  .toptopic:hover{opacity:1}
+  .topseries{display:inline-block;margin:0 0 16px 9px;padding:7px 16px;border-radius:20px;
+    border:1px solid currentColor;opacity:.62;text-decoration:none;color:inherit;
+    font:600 11.5px 'Helvetica Neue',Arial,sans-serif;letter-spacing:.09em;
+    text-transform:uppercase;transition:opacity .12s ease}
+  .topseries:hover{opacity:1}
+  .tophome{display:inline-block;margin:0 0 16px;padding:7px 16px;border-radius:20px;
+    border:1px solid currentColor;opacity:.62;text-decoration:none;color:inherit;
+    font:600 11.5px 'Helvetica Neue',Arial,sans-serif;letter-spacing:.09em;
+    text-transform:uppercase;transition:opacity .12s ease}
+  .tophome:hover{opacity:1}
+  .eyebrow{font:500 11.5px/1 'Helvetica Neue',Arial,sans-serif;letter-spacing:.24em;
+    text-transform:uppercase;color:var(--sepia);margin:0 0 14px}
+  .eyebrow a.serlink{color:inherit;text-decoration:none;border-bottom:1px solid transparent}
+  .eyebrow a.serlink:hover{border-bottom-color:currentColor}
+  .eyebrow a.mast{color:inherit;text-decoration:none;border-bottom:1px solid transparent}
+  .eyebrow a.mast:hover{border-bottom-color:currentColor}
+  h1{font-size:31px;line-height:1.2;margin:0 0 10px;font-weight:400;letter-spacing:-.012em}
+  .kicker{color:var(--muted);margin:0;font-size:16.5px;font-style:italic}
+
+  .source{margin:0;padding:26px 40px;background:var(--sepiatint);border-bottom:1px solid var(--rule)}
+  .cite{margin:0 0 16px;font-size:16px;line-height:1.6}
+  .cite b{font-weight:600}
+  .meta{display:flex;flex-wrap:wrap;gap:5px 22px;margin:0 0 16px;
+    font:400 13.5px 'Helvetica Neue',Arial,sans-serif;color:var(--muted)}
+  .meta b{color:var(--ink);font-weight:600}
+  a.read{display:inline-block;padding:14px 28px;border-radius:30px;text-decoration:none;
+    background:var(--sepia);color:#FAF6F0;
+    font:600 15px 'Helvetica Neue',Arial,sans-serif;letter-spacing:.03em}
+  a.read:hover{background:#523821}
+  .srcnote{font:400 13.5px 'Helvetica Neue',Arial,sans-serif;color:var(--muted);margin:14px 0 0}
+
+  .pad{padding:32px 40px}
+  p{margin:0 0 17px}
+  h2.sub{font:600 12px 'Helvetica Neue',Arial,sans-serif;letter-spacing:.2em;
+    text-transform:uppercase;color:var(--muted);margin:0 0 16px;
+    padding-bottom:8px;border-bottom:1px solid var(--rule)}
+  b.term{font-weight:600;color:var(--sepia)}
+
+  .three{display:flex;gap:13px;flex-wrap:wrap;margin:0 0 20px}
+  .col{flex:1 1 200px;background:#fff;border:1px solid var(--rule);border-radius:9px;padding:16px 18px}
+  .col.mid{border-top:4px solid var(--sky);background:var(--skytint)}
+  .col .age{font:600 12px 'Helvetica Neue',Arial,sans-serif;letter-spacing:.1em;
+    text-transform:uppercase;color:var(--muted);margin:0 0 7px}
+  .col.mid .age{color:var(--sky)}
+  .col p{margin:0;font-size:15px;line-height:1.5;color:#3A342A}
+
+  .caution{margin:0;padding:20px 24px;background:var(--rusttint);
+    border-left:4px solid var(--rust);border-radius:0 8px 8px 0}
+  .caution .lab{display:block;font:600 11px 'Helvetica Neue',Arial,sans-serif;
+    letter-spacing:.18em;text-transform:uppercase;color:var(--rust);margin:0 0 9px}
+  .caution p:last-child{margin:0}
+
+  .challenge{margin:0;padding:28px 32px;background:var(--rusttint);border-left:5px solid var(--rust)}
+  .challenge h2{font:600 12px 'Helvetica Neue',Arial,sans-serif;letter-spacing:.2em;
+    text-transform:uppercase;color:var(--rust);margin:0 0 13px}
+  .ask{font-size:19.5px;line-height:1.5;margin:0 0 8px}
+  .lead{font-size:15px;color:var(--muted);margin:0 0 17px;line-height:1.55}
+  .chips{display:flex;flex-wrap:wrap;gap:10px;margin:0 0 16px}
+  a.chip{text-decoration:none;padding:12px 18px;border-radius:9px;
+    background:#fff;border:1px solid #E0C4B8;color:#7C3520;
+    font:400 15px 'Iowan Old Style',Palatino,Georgia,serif;transition:transform .08s ease}
+  a.chip:hover{transform:translateY(-1px);background:#FDF4EF}
+  .fallback{font:400 13.5px 'Helvetica Neue',Arial,sans-serif;color:var(--muted);margin:0}
+  .fallback a{color:var(--rust)}
+  .subline{margin:0 0 14px;padding:0 0 13px;border-bottom:1px solid rgba(0,0,0,.09);
+    font:400 14.5px/1.55 'Iowan Old Style','Palatino Linotype',Palatino,Georgia,serif;
+    max-width:56ch;margin-left:auto;margin-right:auto}
+  .subline a{font-weight:500;border-bottom:1px solid currentColor;
+    text-decoration:none;color:inherit}
+  .firstpub{display:block;margin:0 0 10px;padding-bottom:9px;
+    border-bottom:1px solid currentColor;border-color:rgba(0,0,0,.09);
+    font:400 12px 'Helvetica Neue',Arial,sans-serif;letter-spacing:.06em;opacity:.72}
+
+  footer{padding:24px 40px 42px;border-top:1px solid var(--rule);
+    font:400 13px 'Helvetica Neue',Arial,sans-serif;color:var(--muted);text-align:center;line-height:1.7}
+  .home{display:inline-block;margin:0 0 14px;padding:8px 18px;border-radius:20px;
+    border:1px solid var(--rule);background:#F2EEE6;color:var(--sepia);text-decoration:none;
+    font:600 12.5px 'Helvetica Neue',Arial,sans-serif;letter-spacing:.05em}
+  .home:hover{background:var(--sepia);border-color:var(--sepia);color:#FAF6F0}
+
+  @media (max-width:620px){
+    header.top,.source,.pad,footer{padding-left:20px;padding-right:20px}
+    .challenge{padding:22px 20px}
+    h1{font-size:25px} body{font-size:16.5px} .ask{font-size:18px}
+  }
+  @media print{ body{background:#fff} .sheet{box-shadow:none;max-width:none} }
+
+  .agree{display:flex;gap:13px;flex-wrap:wrap;margin:0 0 22px}
+  .ag{flex:1 1 150px;background:#fff;border:1px solid var(--rule);border-radius:9px;
+    padding:16px 18px;text-align:center}
+  .ag .big{font-size:30px;line-height:1.1;color:var(--sepia);margin:0 0 4px}
+  .ag .lab2{font:400 13.5px 'Helvetica Neue',Arial,sans-serif;color:var(--muted);
+    line-height:1.45;margin:0}
+  .gap{margin:0 0 20px;padding:20px 24px;background:#F3EEE3;
+    border-left:4px solid var(--sepia);border-radius:0 8px 8px 0}
+  .gap .lab{color:var(--sepia)}
+  .gap p:last-child{margin:0}
+</style>
+</head>
+<body>
+<div class="sheet">
+
+  <header class="top">
+    <a class="tophome" href="./">&larr;&nbsp; Home</a>
+    <a class="topseries" href="./?s=journal">All journal club</a>
+    <a class="toptopic" href="./?t=toddler-preschool" title="Everything on The toddler and preschool child">All on this topic</a>
+    <p class="eyebrow"><a class="mast" href="./">ICU and You</a> &nbsp;·&nbsp; <a class="serlink" href="./?s=journal">Journal Club</a> &nbsp;·&nbsp; Number 98</p>
+    <h1>What we monitor, and what we actually know</h1>
+    <p class="kicker">Twelve experts, a hundred recommendations, and an unusually honest account of how little evidence sits underneath any of it</p>
+  </header>
+
+  <div class="source">
+    <p class="cite">Singh Y, Urbano Villaescusa J, da Cruz EM, Tibby SM, Bottari G, Saxena R, Guill&eacute;n M,
+      Lopez Herce J, Di Nardo M, Cecchetti C, Brierley J, de Boode W, Lemson J.
+      <b>Recommendations for hemodynamic monitoring for critically ill children &mdash; expert consensus
+      statement issued by the cardiovascular dynamics section of the European Society of Paediatric and
+      Neonatal Intensive Care (ESPNIC).</b> <em>Critical Care</em> 2020;24:620.</p>
+    <div class="meta">
+      <span><b>Type</b> &nbsp;Expert consensus statement</span>
+      <span><b>Method</b> &nbsp;Modified RAND/UCLA blind voting</span>
+      <span><b>Scope</b> &nbsp;Term infants over 4 weeks to 18 years</span>
+    </div>
+    <a class="read" href="https://doi.org/10.1186/s13054-020-03326-2">Read the paper</a>
+    <p class="srcnote">Open access under CC BY 4.0, so the full text and the supplementary table of all 94
+      recommendations are free to anyone. Worth having the supplement open beside the paper &mdash; it is the
+      more useful document of the two.</p>
+  </div>
+
+  <div class="pad">
+    <h2 class="sub">What it is</h2>
+
+    <p>Twelve clinicians from the ESPNIC cardiovascular dynamics section set out in 2016 to write evidence-based
+      guidelines for haemodynamic monitoring in children, and could not, because the evidence does not exist.
+      What they produced instead is a consensus statement, and they say so on the first page. A hundred draft
+      recommendations across twelve subgroups went to blind electronic voting; those reaching a median of seven
+      to nine with no individual score below seven were labelled strong agreement, the rest were rewritten and
+      voted again.</p>
+
+    <div class="agree">
+      <div class="ag"><p class="big">72</p><p class="lab2">strong agreement, first round</p></div>
+      <div class="ag"><p class="big">20</p><p class="lab2">weak agreement, after rewriting and a second vote</p></div>
+      <div class="ag"><p class="big">2</p><p class="lab2">no agreement reached at all</p></div>
+    </div>
+
+    <p>They also drew the age boundaries deliberately and then admitted the boundaries were artificial: term
+      infants beyond four weeks of postnatal age at one end, eighteen years at the other, chosen to avoid
+      overlapping the neonatal and adult guidelines rather than because children change at those two moments.
+      Anyone who has looked after a thirty-day-old will recognise the compromise.</p>
+
+    <h2 class="sub">What transfers</h2>
+
+    <p>Most of it, and the recurring instruction is the same one whatever the parameter: <b class="term">no
+      number is a target on its own</b>. Blood pressure should not be the sole therapeutic goal. Central venous
+      pressure should never start a fluid bolus. Central venous oxygen saturation is not a surrogate for cardiac
+      index and should not be titrated to. Lactate is read alongside everything else or not at all. The panel
+      returns to this so often that it stops reading as caution and starts reading as the actual finding.</p>
+
+    <p>On <b class="term">clinical signs</b>, they are blunter than most guideline writers manage. No single
+      clinical parameter evaluates global haemodynamic status. Trends beat single determinations, combinations
+      beat individual signs, and therapy should not be titrated on clinical signs or urine output alone once you
+      are past initial resuscitation. Then the line that should stop you: there is no good correlation between
+      clinical assessment and invasive haemodynamic parameters, which tells us the two are not measuring the same
+      compartment. Both may be right about different things.</p>
+
+    <p>On <b class="term">fluid</b>, the practical recommendation is the useful one. There is no simple, proven
+      bedside method of predicting fluid responsiveness in children; respiratory variation in aortic peak velocity
+      is the best of them and works only in ventilated children meeting several criteria. So: give small boluses,
+      five to ten millilitres per kilogram, over a short interval, and watch what cardiac output, blood pressure
+      and central venous pressure do. If the venous pressure is climbing and neither of the other two has moved,
+      stop. That is a method anyone can follow at three in the morning without a device.</p>
+
+    <p>On <b class="term">echocardiography</b>, strongly recommended as an adjunct and for serial assessment,
+      explicitly not recommended as routine monitoring &mdash; it is intermittent and observer-dependent. Where it
+      does earn a specific preference: for fluid responsiveness in ventilated children, use the velocity time
+      integral across the aortic valve rather than inferior vena cava collapsibility. And on
+      <b class="term">devices</b>, the pulmonary artery catheter is not recommended in children at all;
+      bioimpedance, bioreactance and pulse contour are not accurate enough for absolute values and may be
+      worth something as trends.</p>
+
+    <h2 class="sub">Where they could not agree, which is the interesting part</h2>
+
+    <p>A consensus document tells you most about a field at the points where consensus fails, and this one has
+      three worth knowing.</p>
+
+    <div class="gap">
+      <span class="lab">The gap that matters here</span>
+      <p><strong>There is no agreed blood pressure target for a child under twelve.</strong> The panel strongly
+        recommends a mean arterial pressure of at least 65 mmHg over twelve years, borrowed from the adult sepsis
+        guidelines. Below twelve, they reached only weak agreement on values at all. That is the entire age range
+        this fortnight is about, and it means the number on the monitor that most of us treat has no consensus
+        threshold behind it.</p>
+    </div>
+
+    <p><b class="term">Near-infrared spectroscopy</b> fared worst. Six of seven recommendations had to be
+      rewritten, and the only one reaching strong agreement was the recommendation against routine use. There is
+      no agreement on whether a cerebral saturation below forty to fifty per cent, or a twenty per cent fall from
+      baseline, means anything you should act on. Readings from different manufacturers are not interchangeable.</p>
+
+    <p><b class="term">Lactate</b> half-collapsed too: five of ten recommendations needed revision, and the panel
+      could not agree on using it as a goal-directed target. What survived is modest and sensible &mdash; repeat a
+      capillary value above 3.0 mmol/L from a reliable site, follow it until it falls below that, and remember
+      that a stubbornly high lactate may be catecholamines and aerobic glycolysis rather than a hypoperfused
+      child.</p>
+
+    <h2 class="sub">What to read sceptically</h2>
+
+    <div class="caution">
+      <span class="lab">Read it carefully</span>
+      <p>This is expert opinion, and the authors are candid that it is. Panel members were selected for having
+        published on haemodynamic monitoring in the preceding decade, which is the right way to find expertise and
+        also a way to assemble a room with a shared prior about whether monitoring helps. The output is a set of
+        recommendations about monitoring, from people whose work is monitoring, in a field the same document says
+        has almost no outcome evidence. That is not a flaw in the method so much as the reason the paper exists,
+        but it should shape how much weight a single recommendation carries.</p>
+      <p>The second thing is resource. Transpulmonary dilution is named as the most reliable measurement of
+        cardiac output, and there are exactly two systems usable below forty kilograms, both intricate to set up,
+        one requiring a femoral arterial catheter large enough to worry about in a small child. The panel notes
+        that some recommendations may not suit low-resource settings. A regional Australian unit is not a
+        low-resource setting, but it is a unit where nobody is putting a PiCCO into a toddler at two in the
+        morning, and the honest reading is that the reliable methods are largely unavailable and the available
+        methods are largely unreliable.</p>
+    </div>
+
+    <p>None of which makes it a weak paper. It is the first consensus of its kind, it is free to read, and its
+      real contribution is the map of what we do not know &mdash; which is why the supplementary table, listing
+      every recommendation with its level of agreement, is the part to keep.</p>
+  </div>
+
+  <div class="pad" style="padding-top:6px">
+    <div class="challenge">
+      <h2>Challenge for you</h2>
+      <p class="ask">There is no agreed blood pressure target for a child under twelve. So what do you actually use?</p>
+      <p class="lead">Everyone has something &mdash; a formula, a chart on the wall, a number a consultant gave you
+        years ago, or a decision not to use a number at all. I would like to know what is really in use, and where
+        it came from. Tap the closest, and tell me the rest.</p>
+      <div class="chips">
+        <a class="chip" href="mailto:icuandyou@icloud.com?subject=Journal%20Club%2098%20-%20a%20formula&body=For%20a%20child%20under%2012%20I%20use%20a%20formula%20or%20age-based%20rule.%0D%0A%0D%0AWhich%20one%2C%20and%20where%20I%20got%20it%3A%0D%0A%0D%0A%0D%0AName%20%28optional%29%3A%0D%0A%0A---%0A%0AThinking%20about%20this%20ICU%20AND%20YOU%20post%20overall%20%E2%80%94%20was%20it%20useful%20to%20you%2C%20or%20would%20it%20be%20useful%20to%20others%3F%0A">A formula or age-based rule</a>
+        <a class="chip" href="mailto:icuandyou@icloud.com?subject=Journal%20Club%2098%20-%20a%20chart&body=For%20a%20child%20under%2012%20I%20use%20a%20centile%20chart%20or%20a%20local%20table.%0D%0A%0D%0AWhich%20one%2C%20and%20where%20I%20got%20it%3A%0D%0A%0D%0A%0D%0AName%20%28optional%29%3A%0D%0A%0A---%0A%0AThinking%20about%20this%20ICU%20AND%20YOU%20post%20overall%20%E2%80%94%20was%20it%20useful%20to%20you%2C%20or%20would%20it%20be%20useful%20to%20others%3F%0A">A centile chart or local table</a>
+        <a class="chip" href="mailto:icuandyou@icloud.com?subject=Journal%20Club%2098%20-%20perfusion%20not%20pressure&body=For%20a%20child%20under%2012%20I%20do%20not%20target%20a%20pressure%20at%20all%20%E2%80%94%20I%20target%20perfusion.%0D%0A%0D%0AWhat%20I%20watch%20instead%3A%0D%0A%0D%0A%0D%0AName%20%28optional%29%3A%0D%0A%0A---%0A%0AThinking%20about%20this%20ICU%20AND%20YOU%20post%20overall%20%E2%80%94%20was%20it%20useful%20to%20you%2C%20or%20would%20it%20be%20useful%20to%20others%3F%0A">Perfusion, not pressure</a>
+        <a class="chip" href="mailto:icuandyou@icloud.com?subject=Journal%20Club%2098%20-%20honestly%20nothing%20fixed&body=Honestly%2C%20I%20do%20not%20have%20a%20fixed%20threshold%20for%20a%20child%20under%2012.%0D%0A%0D%0AHow%20I%20decide%20instead%3A%0D%0A%0D%0A%0D%0AName%20%28optional%29%3A%0D%0A%0A---%0A%0AThinking%20about%20this%20ICU%20AND%20YOU%20post%20overall%20%E2%80%94%20was%20it%20useful%20to%20you%2C%20or%20would%20it%20be%20useful%20to%20others%3F%0A">Honestly, nothing fixed</a>
+      </div>
+      <p class="fallback">Each tap opens a reply straight to me with your answer filled in. If your device blocks it,
+        write to <a href="mailto:icuandyou@icloud.com">icuandyou@icloud.com</a> instead.</p>
+    </div>
+  </div>
+
+  <footer>
+    <span class="firstpub">First published September 2026</span>
+    <p class="subline">One email on Fridays &mdash; what went up and why it mattered, the best of your replies,
+      and original feature stories, news and views. <a href="https://joinlist.com/f/5adad2d6">Come and join us</a>.</p>
+    <a class="home" href="./">&larr; &nbsp;All of ICU AND YOU</a><br>
+    ICU AND YOU &nbsp;·&nbsp; Journal Club No. 98 &nbsp;·&nbsp; companion to Mind Map #33, The Toddler and Preschool Child<br>
+    Summarised independently and in our own words; the article is open access under CC BY 4.0 and is linked above
+    rather than reproduced. Educational use only &mdash; not a clinical protocol, and local guidance and the
+    retrieval service always take precedence.
+  </footer>
+
+</div>
+<script data-goatcounter="https://icuandyou.goatcounter.com/count"
+        async src="//gc.zgo.at/count.js"></script>
+</body>
+</html>
