@@ -633,6 +633,22 @@
   var empty = document.getElementById("empty");
   var filter = "all";
 
+  // Every in-page scroll goes through this. The control bar is sticky and its
+  // height is not constant — the status row appears when a filter is active,
+  // and the chips wrap differently at narrow widths — so a fixed
+  // scroll-margin-top drifts. Measure the bar instead, after layout settles.
+  function landUnder(el, gap){
+    if(!el) return;
+    requestAnimationFrame(function(){
+      var bar = document.querySelector(".controls");
+      var h = (bar && getComputedStyle(bar).position === "sticky")
+                ? bar.getBoundingClientRect().height : 0;
+      var y = el.getBoundingClientRect().top + window.pageYOffset
+              - h - (gap == null ? 14 : gap);
+      window.scrollTo({ top: y > 0 ? y : 0, behavior:"smooth" });
+    });
+  }
+
   var GROUPS = {"memory": ["mind-map", "aphorism", "mnemonic", "superpuzzle", "superquiz"], "multimedia": ["podcast", "journal"], "special": ["students", "nurses", "gp", "emergency"], "procedures": ["procedures"], "cultural": ["coin", "italiano", "espanol", "india"], "other": ["literary"]};
   var LABELS = {"memory": "Memory aids and activities", "multimedia": "Multimedia", "special": "Special groups", "procedures": "Procedures", "cultural": "Cultural narratives", "other": "Other Realms"};
 
@@ -736,7 +752,7 @@
   function openSugg(){
     if(window.location.hash === "#suggestions" && suggBox){
       suggBox.open = true;
-      suggBox.scrollIntoView({ behavior:"smooth", block:"center" });
+      landUnder(suggBox);
     }
   }
   document.querySelectorAll('a[href="#suggestions"]').forEach(function(a){
@@ -744,11 +760,34 @@
       ev.preventDefault();
       if(suggBox){
         suggBox.open = true;
-        suggBox.scrollIntoView({ behavior:"smooth", block:"center" });
+        landUnder(suggBox);
       }
     });
   });
   openSugg();
+
+  // Plain in-page anchors (#about, #subscribe) are scrolled by the browser
+  // using scroll-margin-top, which has the same drift problem. Route them
+  // through landUnder too. #top is left to the browser — nothing to clear.
+  document.querySelectorAll('a[href^="#"]').forEach(function(a){
+    var id = a.getAttribute("href").slice(1);
+    if(!id || id === "top" || id === "suggestions") return;
+    a.addEventListener("click", function(ev){
+      var el = document.getElementById(id);
+      if(!el) return;
+      ev.preventDefault();
+      if(history.replaceState) history.replaceState(null, "", "#" + id);
+      landUnder(el);
+    });
+  });
+
+  // and the same for arriving with a hash already in the URL
+  (function fromHash(){
+    var id = (window.location.hash || "").slice(1);
+    if(!id || id === "top" || id === "suggestions") return;
+    var el = document.getElementById(id);
+    if(el) landUnder(el);
+  })();
 
   var totop = document.getElementById("totop");
   function toggleTop(){
@@ -811,15 +850,9 @@
     var tp = qs.get("t");
     if(tp){
       var wk = document.getElementById("week");
-      if(wk && wk.dataset.slug === tp){
-        wk.scrollIntoView({ behavior:"smooth", block:"start" });
-        return;
-      }
+      if(wk && wk.dataset.slug === tp){ landUnder(wk); return; }
       var sec = document.querySelector('details.group[data-slug="' + tp + '"]');
-      if(sec){
-        sec.open = true;
-        sec.scrollIntoView({ behavior:"smooth", block:"start" });
-      }
+      if(sec){ sec.open = true; landUnder(sec); }
       return;
     }
     var sk = qs.get("s"), gp = qs.get("g");
@@ -836,26 +869,18 @@
     if(want.indexOf("g:") !== 0) sum.firstChild.nodeValue = target.textContent.trim();
     filter = want;
     apply();
-    // Scroll so the first result sits just under the sticky control bar.
-    // scrollIntoView cannot be used here: it relies on a fixed scroll-margin,
-    // and the bar changes height when the status row appears with the filter
-    // active, which left the reader landing that much too low. Measure it.
-    requestAnimationFrame(function(){
-      var first = document.getElementById("week");
-      if(!first || first.style.display === "none"){
-        first = null;
-        Array.prototype.some.call(
-          document.querySelectorAll("details.group"), function(g){
-            if(g.style.display !== "none"){ first = g; return true; }
-            return false;
-          });
-      }
-      if(!first) return;
-      var bar = document.querySelector(".controls");
-      var h = bar ? bar.getBoundingClientRect().height : 0;
-      var y = first.getBoundingClientRect().top + window.pageYOffset - h - 14;
-      window.scrollTo({ top: y > 0 ? y : 0, behavior:"smooth" });
-    });
+    // Land on the first visible result, under the bar. The week section may be
+    // empty under this filter, in which case fall through to the first group.
+    var first = document.getElementById("week");
+    if(!first || first.style.display === "none"){
+      first = null;
+      Array.prototype.some.call(
+        document.querySelectorAll("details.group"), function(g){
+          if(g.style.display !== "none"){ first = g; return true; }
+          return false;
+        });
+    }
+    landUnder(first);
   })();
 })();
 </script>
