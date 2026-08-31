@@ -30,6 +30,9 @@ NO_REPLY_LINE = {"about.html", "corrections.html", "you-asked.html"}
 NO_SUBSCRIBE_LINE = {"about.html", "corrections.html", "glossary.html",
                      "you-asked.html"}
 
+# The Top Ten spans topics by design, so it has no single topic to link to.
+NO_TOPIC_BUTTON_PREFIX = "top-ten-"
+
 SUBSCRIBE = "One email on Fridays"
 REPLY_LINE = "was%20it%20useful%20to%20you"
 REPLY_LINE_PLAIN = "was it useful to you"
@@ -73,6 +76,8 @@ def main():
     for f in content:
         s = (HERE / f).read_text(encoding="utf-8")
         for label, test in CHECKS:
+            if label == "topic button" and f.startswith(NO_TOPIC_BUTTON_PREFIX):
+                continue
             if not test(s):
                 problems.append(f"{f}: missing {label}")
         if f not in NO_SUBSCRIBE_LINE and SUBSCRIBE not in s:
