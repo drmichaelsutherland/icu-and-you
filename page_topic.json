@@ -1,0 +1,540 @@
+{
+ "this_week": {
+  "topic": "The postneonatal infant",
+  "slug": "the-postneonatal-infant",
+  "blurb": "Twenty-nine days to one year. Last week's baby was made unwell by how they were born; this week's is made unwell by what happens afterwards — and remains extraordinarily good at looking well right up until the moment they are not."
+ },
+ "series": {
+  "mind-map": [
+   "Mind map",
+   "teal",
+   "memory"
+  ],
+  "aphorism": [
+   "Aphorism",
+   "plum",
+   "memory"
+  ],
+  "mnemonic": [
+   "Mnemonic",
+   "olive",
+   "memory"
+  ],
+  "superpuzzle": [
+   "Superpuzzle",
+   "rust",
+   "memory"
+  ],
+  "superquiz": [
+   "Superquiz",
+   "wine",
+   "memory"
+  ],
+  "podcast": [
+   "Podcast",
+   "slate",
+   "multimedia"
+  ],
+  "journal": [
+   "Journal club",
+   "sepia",
+   "multimedia"
+  ],
+  "students": [
+   "Medical Students",
+   "violet",
+   "special"
+  ],
+  "nurses": [
+   "Nurses' Nest",
+   "rose",
+   "special"
+  ],
+  "gp": [
+   "GP Boulevard",
+   "denim",
+   "special"
+  ],
+  "emergency": [
+   "Emergency Medicine Landing Bay",
+   "jade",
+   "special"
+  ],
+  "procedures": [
+   "Procedures",
+   "amethyst",
+   "procedures"
+  ],
+  "coin": [
+   "Le coin français",
+   "bleu",
+   "cultural"
+  ],
+  "italiano": [
+   "L'angolo italiano",
+   "verde",
+   "cultural"
+  ],
+  "espanol": [
+   "El rincón español",
+   "oro",
+   "cultural"
+  ],
+  "india": [
+   "The India Room",
+   "saffron",
+   "cultural"
+  ],
+  "literary": [
+   "The Literary Edge",
+   "nero",
+   "other"
+  ]
+ },
+ "pages": [
+  {
+   "file": "procedures-01-intraosseous-access.html",
+   "series": "procedures",
+   "colour": "amethyst",
+   "number": "1",
+   "title": "Intraosseous access",
+   "topic": "The postneonatal infant",
+   "slug": "the-postneonatal-infant",
+   "week": true,
+   "badge": "Procedures",
+   "blurb": "Written because a student wrote in to say they had never seen one done. When to reach for it, where it goes, how to know it is in, and why the flush hurts.",
+   "link_label": "Open",
+   "pos": 0
+  },
+  {
+   "file": "mind-map-32-postneonatal-infant.html",
+   "series": "mind-map",
+   "colour": "teal",
+   "number": "32",
+   "title": "The postneonatal infant — 29 days to one year",
+   "topic": "The postneonatal infant",
+   "slug": "the-postneonatal-infant",
+   "week": true,
+   "badge": "Mind map",
+   "blurb": "Why they look well until they do not, what usually walks in, the febrile infant, the presentations that mislead, sudden unexpected death, non-accidental injury, and the hour before retrieval.",
+   "link_label": "Open",
+   "pos": 1
+  },
+  {
+   "file": "aphorism-36-parent-is-the-monitor.html",
+   "series": "aphorism",
+   "colour": "plum",
+   "number": "36",
+   "title": "In an infant, the parent is the monitor",
+   "topic": "The postneonatal infant",
+   "slug": "the-postneonatal-infant",
+   "week": true,
+   "badge": "Aphorism",
+   "blurb": "They hold the baseline no instrument in the department has access to. Yes, No or Maybe — and why.",
+   "link_label": "Open",
+   "pos": 2
+  },
+  {
+   "file": "mnemonic-54-feeding.html",
+   "series": "mnemonic",
+   "colour": "olive",
+   "number": "54",
+   "title": "FEEDING",
+   "topic": "The postneonatal infant",
+   "slug": "the-postneonatal-infant",
+   "week": true,
+   "badge": "Mnemonic",
+   "blurb": "Seven things, in the order that finds them — and the numbers come last. With a challenge about what your observation chart actually records.",
+   "link_label": "Open",
+   "pos": 3
+  },
+  {
+   "file": "superpuzzle-49-postneonatal-fillable.html",
+   "series": "superpuzzle",
+   "colour": "rust",
+   "number": "49",
+   "title": "The postneonatal infant",
+   "topic": "The postneonatal infant",
+   "slug": "the-postneonatal-infant",
+   "week": true,
+   "badge": "Superpuzzle",
+   "blurb": "Twenty clues. Type straight into the grid, or print the page and use a pen.",
+   "link_label": "Open the puzzle",
+   "pos": 4
+  },
+  {
+   "file": "superquiz-61-postneonatal-infant.html",
+   "series": "superquiz",
+   "colour": "wine",
+   "number": "61",
+   "title": "The postneonatal infant",
+   "topic": "The postneonatal infant",
+   "slug": "the-postneonatal-infant",
+   "week": true,
+   "badge": "Superquiz",
+   "blurb": "Five questions. Open book, no time limit, as many attempts as you like — and a certificate for three or more.",
+   "link_label": "Take the quiz",
+   "pos": 5
+  },
+  {
+   "file": "podcast-56-febrile-infant.html",
+   "series": "podcast",
+   "colour": "slate",
+   "number": "56",
+   "title": "The Febrile Infant",
+   "topic": "The postneonatal infant",
+   "slug": "the-postneonatal-infant",
+   "week": true,
+   "badge": "Podcast",
+   "blurb": "Tim Horeczko on the 2021 AAP guideline — three age bands, three algorithms, and the one phrase the whole thing rests on.",
+   "link_label": "Open",
+   "pos": 6
+  },
+  {
+   "file": "journal-club-97-infant-intensive-care.html",
+   "series": "journal",
+   "colour": "sepia",
+   "number": "97",
+   "title": "A unit for the first year of life",
+   "topic": "The postneonatal infant",
+   "slug": "the-postneonatal-infant",
+   "week": true,
+   "badge": "Journal club",
+   "blurb": "Mohakud and Mishra propose a distinct infant intensive care unit — a sound observation, an open question about boundaries, and a proposal that precedes its evidence.",
+   "link_label": "Open",
+   "pos": 7
+  },
+  {
+   "file": "med-students-01-postneonatal-infant.html",
+   "series": "students",
+   "colour": "violet",
+   "number": "1",
+   "title": "The postneonatal infant, in three tiers",
+   "topic": "The postneonatal infant",
+   "slug": "the-postneonatal-infant",
+   "week": true,
+   "badge": "Medical Students",
+   "blurb": "The same subject at three depths — the science, the clinical reasoning, and what you will be expected to do. Read only the tier you need.",
+   "link_label": "Open",
+   "pos": 8
+  },
+  {
+   "file": "nurses-nest-01-postneonatal-infant.html",
+   "series": "nurses",
+   "colour": "rose",
+   "number": "1",
+   "title": "You will notice first",
+   "topic": "The postneonatal infant",
+   "slug": "the-postneonatal-infant",
+   "week": true,
+   "badge": "Nurses' Nest",
+   "blurb": "What you see before the chart does — and how to make it count when you say so.",
+   "link_label": "Open",
+   "pos": 9
+  },
+  {
+   "file": "gp-boulevard-01-postneonatal-infant.html",
+   "series": "gp",
+   "colour": "denim",
+   "number": "1",
+   "title": "Fifteen minutes and a well-looking baby",
+   "topic": "The postneonatal infant",
+   "slug": "the-postneonatal-infant",
+   "week": true,
+   "badge": "GP Boulevard",
+   "blurb": "The unselected infant in general practice: who to send, the common thing done well, and safety-netting that actually works.",
+   "link_label": "Open",
+   "pos": 10
+  },
+  {
+   "file": "emergency-bay-01-postneonatal-infant.html",
+   "series": "emergency",
+   "colour": "jade",
+   "number": "1",
+   "title": "Everything after triage is a disposition",
+   "topic": "The postneonatal infant",
+   "slug": "the-postneonatal-infant",
+   "week": true,
+   "badge": "Emergency Medicine Landing Bay",
+   "blurb": "The infant in the emergency department: what should move them up a category, the first two minutes, the three that fill the department, and the decision about who goes home.",
+   "link_label": "Open",
+   "pos": 11
+  },
+  {
+   "file": "angolo-italiano-02-il-nido.html",
+   "series": "italiano",
+   "colour": "verde",
+   "number": "2",
+   "title": "Il nido",
+   "topic": "The postneonatal infant",
+   "slug": "the-postneonatal-infant",
+   "week": true,
+   "badge": "L'angolo italiano",
+   "blurb": "The manger, the nativity and the nest — and the foundling wheel that could only close once the nest had opened.",
+   "link_label": "Open",
+   "pos": 12
+  },
+  {
+   "file": "india-room-01-what-some-of-our-colleagues-have-seen.html",
+   "series": "india",
+   "colour": "saffron",
+   "number": "1",
+   "title": "What some of our colleagues have already seen",
+   "topic": "The postneonatal infant",
+   "slug": "the-postneonatal-infant",
+   "week": true,
+   "badge": "The India Room",
+   "blurb": "The same age group, a different differential — and one of the largest improvements in human survival achieved anywhere. Plus: help name this column.",
+   "link_label": "Open",
+   "pos": 13
+  },
+  {
+   "file": "literary-edge-01-overlaying.html",
+   "series": "literary",
+   "colour": "nero",
+   "number": "1",
+   "title": "Because she overlaid it",
+   "topic": "The postneonatal infant",
+   "slug": "the-postneonatal-infant",
+   "week": true,
+   "badge": "The Literary Edge",
+   "blurb": "The Judgement of Solomon contains what may be the oldest written account of sudden unexpected infant death — and turns entirely on a mother who knew her own child.",
+   "link_label": "Open",
+   "pos": 14
+  },
+  {
+   "file": "mind-map-31-neonatal.html",
+   "series": "mind-map",
+   "colour": "teal",
+   "number": "31",
+   "title": "Essentials of neonatal intensive care",
+   "topic": "Neonatology",
+   "slug": "neonatology",
+   "week": false
+  },
+  {
+   "file": "aphorism-35-respiratory-arrest.html",
+   "series": "aphorism",
+   "colour": "plum",
+   "number": "35",
+   "title": "The newborn generally does not have a cardiac arrest",
+   "topic": "Neonatology",
+   "slug": "neonatology",
+   "week": false
+  },
+  {
+   "file": "mnemonic-53-collapsed-neonate.html",
+   "series": "mnemonic",
+   "colour": "olive",
+   "number": "53",
+   "title": "COLLAPSED",
+   "topic": "Neonatology",
+   "slug": "neonatology",
+   "week": false
+  },
+  {
+   "file": "superpuzzle-48-neonatology-fillable.html",
+   "series": "superpuzzle",
+   "colour": "rust",
+   "number": "48",
+   "title": "Neonatology",
+   "topic": "Neonatology",
+   "slug": "neonatology",
+   "week": false
+  },
+  {
+   "file": "superquiz-60-neonatology.html",
+   "series": "superquiz",
+   "colour": "wine",
+   "number": "60",
+   "title": "Neonatology",
+   "topic": "Neonatology",
+   "slug": "neonatology",
+   "week": false
+  },
+  {
+   "file": "podcast-55-neonatal-vasoactive-drugs.html",
+   "series": "podcast",
+   "colour": "slate",
+   "number": "55",
+   "title": "Cardiac Drugs: Vasopressors and Inotropic Agents",
+   "topic": "Neonatology",
+   "slug": "neonatology",
+   "week": false
+  },
+  {
+   "file": "journal-club-96-nicu-survival-guide.html",
+   "series": "journal",
+   "colour": "sepia",
+   "number": "96",
+   "title": "The NICU Survival Guide",
+   "topic": "Neonatology",
+   "slug": "neonatology",
+   "week": false
+  },
+  {
+   "file": "med-students-02-neonatology.html",
+   "series": "students",
+   "colour": "violet",
+   "number": "2",
+   "title": "Neonatology, in three tiers",
+   "topic": "Neonatology",
+   "slug": "neonatology",
+   "week": false
+  },
+  {
+   "file": "coin-francais-01-la-couveuse.html",
+   "series": "coin",
+   "colour": "bleu",
+   "number": "1",
+   "title": "La couveuse",
+   "topic": "Neonatology",
+   "slug": "neonatology",
+   "week": false
+  },
+  {
+   "file": "angolo-italiano-01-la-ruota.html",
+   "series": "italiano",
+   "colour": "verde",
+   "number": "1",
+   "title": "La ruota",
+   "topic": "Neonatology",
+   "slug": "neonatology",
+   "week": false
+  },
+  {
+   "file": "mind-map-30-transplantation.html",
+   "series": "mind-map",
+   "colour": "teal",
+   "number": "30",
+   "title": "Transplantation medicine in the ICU",
+   "topic": "Transplantation",
+   "slug": "transplantation",
+   "week": false
+  },
+  {
+   "file": "aphorism-34-absence-of-signs.html",
+   "series": "aphorism",
+   "colour": "plum",
+   "number": "34",
+   "title": "In the immunosuppressed, the absence of signs is the sign",
+   "topic": "Transplantation",
+   "slug": "transplantation",
+   "week": false
+  },
+  {
+   "file": "mnemonic-52-transplantation.html",
+   "series": "mnemonic",
+   "colour": "olive",
+   "number": "52",
+   "title": "TRANSPLANT",
+   "topic": "Transplantation",
+   "slug": "transplantation",
+   "week": false
+  },
+  {
+   "file": "superpuzzle-47-transplantation-fillable.html",
+   "series": "superpuzzle",
+   "colour": "rust",
+   "number": "47",
+   "title": "Transplantation medicine",
+   "topic": "Transplantation",
+   "slug": "transplantation",
+   "week": false
+  },
+  {
+   "file": "mind-map-29-organ-donation.html",
+   "series": "mind-map",
+   "colour": "teal",
+   "number": "29",
+   "title": "Organ donation in the ICU",
+   "topic": "Organ donation",
+   "slug": "organ-donation",
+   "week": false
+  },
+  {
+   "file": "aphorism-33-donation.html",
+   "series": "aphorism",
+   "colour": "plum",
+   "number": "33",
+   "title": "Everyone means to be a donor",
+   "topic": "Organ donation",
+   "slug": "organ-donation",
+   "week": false
+  },
+  {
+   "file": "mnemonic-51-donation.html",
+   "series": "mnemonic",
+   "colour": "olive",
+   "number": "51",
+   "title": "DONATION",
+   "topic": "Organ donation",
+   "slug": "organ-donation",
+   "week": false
+  },
+  {
+   "file": "superpuzzle-46-organ-donation-fillable.html",
+   "series": "superpuzzle",
+   "colour": "rust",
+   "number": "46",
+   "title": "Organ donation",
+   "topic": "Organ donation",
+   "slug": "organ-donation",
+   "week": false
+  },
+  {
+   "file": "coin-francais-02-registre-des-refus.html",
+   "series": "coin",
+   "colour": "bleu",
+   "number": "2",
+   "title": "Le registre des refus",
+   "topic": "Organ donation",
+   "slug": "organ-donation",
+   "week": false
+  },
+  {
+   "file": "rincon-espanol-01-modelo-espanol.html",
+   "series": "espanol",
+   "colour": "oro",
+   "number": "1",
+   "title": "El modelo español",
+   "topic": "Organ donation",
+   "slug": "organ-donation",
+   "week": false
+  }
+ ],
+ "latest": [
+  {
+   "file": "procedures-01-intraosseous-access.html",
+   "colour": "amethyst",
+   "label": "Intraosseous access"
+  },
+  {
+   "file": "nurses-nest-01-postneonatal-infant.html",
+   "colour": "rose",
+   "label": "for nurses"
+  },
+  {
+   "file": "gp-boulevard-01-postneonatal-infant.html",
+   "colour": "denim",
+   "label": "just for GPs and GP trainees"
+  },
+  {
+   "file": "emergency-bay-01-postneonatal-infant.html",
+   "colour": "jade",
+   "label": "for emergency medicine"
+  },
+  {
+   "file": "med-students-02-neonatology.html",
+   "colour": "violet",
+   "label": "for medical students — neonatology"
+  }
+ ],
+ "topten": [
+  {
+   "file": "top-ten-2026-08-august.html",
+   "colour": "brass",
+   "label": "August 2026"
+  }
+ ]
+}
