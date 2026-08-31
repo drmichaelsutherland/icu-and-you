@@ -536,5 +536,19 @@
    "colour": "brass",
    "label": "August 2026"
   }
- ]
+ ],
+ "teaser": {
+  "label": "Coming next",
+  "lines": [
+   {
+    "date": "Friday 4th September",
+    "what": "Newsletter (subscribers only)"
+   },
+   {
+    "date": "Tuesday 15th September",
+    "what": "The school-age child",
+    "emphasis": true
+   }
+  ]
+ }
 }

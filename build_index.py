@@ -154,7 +154,27 @@ def build_topten(m):
     return "\n".join(out)
 
 
+def build_teaser(m):
+    """The 'Coming next' strip. Hand-edited until Aug 2026, and the thing most
+    likely to go stale; generated from the manifest now."""
+    t = m.get("teaser")
+    if not t:
+        return '      <p class="teaser"></p>'
+    out = ['      <p class="teaser">',
+           f'        <span class="tz">{e(t["label"])}</span>']
+    for ln in t["lines"]:
+        # "tt" is the large line — the topic. "tm" is the quieter one.
+        # Emphasis follows the kind of event, not the position in the list,
+        # so the lines stay in date order whatever is coming next.
+        cls = "tt" if ln.get("emphasis") else "tm"
+        out.append(f'        <span class="{cls}"><b>{e(ln["date"])}</b> '
+                   f'&nbsp;&mdash;&nbsp; {e(ln["what"])}</span>')
+    out.append('      </p>')
+    return "\n".join(out)
+
+
 REGIONS = {
+    "TEASER": build_teaser,
     "THIS-WEEK": build_this_week,
     "PREVIOUS-WEEKS": build_previous,
     "LATEST": build_latest,
@@ -183,6 +203,7 @@ def insert_markers(src):
         print(f"  {name}: wrapped ({len(body)} bytes)")
         return src
 
+    src = wrap(src, "TEASER", r'      <p class="teaser">.*?</p>')
     src = wrap(src, "THIS-WEEK", r'  <section class="week".*?</section>')
     src = wrap(src, "PREVIOUS-WEEKS",
                r'      <details class="group".*</details>(?=\s*\n\s*<p class="empty")')
