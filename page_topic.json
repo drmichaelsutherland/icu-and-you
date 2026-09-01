@@ -451,7 +451,7 @@
    "topic": "The toddler and preschool child",
    "slug": "toddler-preschool",
    "week": true,
-   "pos": 1,
+   "pos": 2,
    "badge": "Podcast",
    "link_label": "Open",
    "guests": [
@@ -468,7 +468,7 @@
    "topic": "The toddler and preschool child",
    "slug": "toddler-preschool",
    "week": true,
-   "pos": 2,
+   "pos": 3,
    "badge": "Journal club",
    "link_label": "Open",
    "blurb": "The first expert consensus on haemodynamic monitoring in children — and an unusually honest account of how little sits underneath it. Including the gap that matters most here: no agreed blood pressure target under twelve."
@@ -486,9 +486,28 @@
    "badge": "Mind map",
    "link_label": "Open the map",
    "blurb": "One to five years — when the physiology stops being the hard part and the child becomes it. The airway, the circulation that still lies, croup and wheeze, the foreign body and the button battery, drowning, and the numbers to have written down."
+  },
+  {
+   "file": "aphorism-37-happily-examined.html",
+   "series": "aphorism",
+   "colour": "plum",
+   "number": "37",
+   "title": "Be wary of the toddler who readily and happily lets you examine them",
+   "topic": "The toddler and preschool child",
+   "slug": "toddler-preschool",
+   "week": true,
+   "pos": 1,
+   "badge": "Aphorism",
+   "link_label": "Open",
+   "blurb": "Objecting to a stranger costs energy, breath and an intact conscious state. A toddler who has none to spare is easy to examine — and we write that down as cooperative."
   }
  ],
  "latest": [
+  {
+   "file": "aphorism-37-happily-examined.html",
+   "colour": "plum",
+   "label": "The child who lets you examine them"
+  },
   {
    "file": "mind-map-33-toddler-preschool.html",
    "colour": "teal",
@@ -508,11 +527,6 @@
    "file": "procedures-01-intraosseous-access.html",
    "colour": "amethyst",
    "label": "Intraosseous access"
-  },
-  {
-   "file": "nurses-nest-01-postneonatal-infant.html",
-   "colour": "rose",
-   "label": "for nurses"
   }
  ],
  "topten": [
