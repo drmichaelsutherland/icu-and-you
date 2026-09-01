@@ -161,6 +161,19 @@ def main():
                 f"{f}: grid declares {cols.group(1)}x{rows.group(1)} tracks but "
                 f"cells need {mx}x{my} \u2014 cells will stretch or phantom rows appear")
 
+    # ---- glossary links: must resolve, and the card script must be loaded ----
+    gl_src = (HERE / "glossary.js")
+    if gl_src.exists():
+        ids = set(re.findall(r'"([a-z0-9-]+)": \{"t"', gl_src.read_text(encoding="utf-8")))
+        for f in content:
+            src = (HERE / f).read_text(encoding="utf-8")
+            used = set(re.findall(r'glossary\.html#([a-z0-9-]+)', src))
+            dead = used - ids
+            if dead:
+                problems.append(f"{f}: glossary link(s) with no entry: {', '.join(sorted(dead))}")
+            if 'class="gl"' in src and 'glossary.js' not in src:
+                problems.append(f"{f}: uses glossary links but does not load glossary.js")
+
     # ---- report -----------------------------------------------------------
     print()
     if notes and not quiet:
