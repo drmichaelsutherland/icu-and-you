@@ -451,7 +451,7 @@
    "topic": "The toddler and preschool child",
    "slug": "toddler-preschool",
    "week": true,
-   "pos": 2,
+   "pos": 3,
    "badge": "Podcast",
    "link_label": "Open",
    "guests": [
@@ -468,7 +468,7 @@
    "topic": "The toddler and preschool child",
    "slug": "toddler-preschool",
    "week": true,
-   "pos": 3,
+   "pos": 4,
    "badge": "Journal club",
    "link_label": "Open",
    "blurb": "The first expert consensus on haemodynamic monitoring in children — and an unusually honest account of how little sits underneath it. Including the gap that matters most here: no agreed blood pressure target under twelve."
@@ -500,9 +500,28 @@
    "badge": "Aphorism",
    "link_label": "Open",
    "blurb": "Objecting to a stranger costs energy, breath and an intact conscious state. A toddler who has none to spare is easy to examine — and we write that down as cooperative."
+  },
+  {
+   "file": "superpuzzle-50-toddler-preschool-fillable.html",
+   "series": "superpuzzle",
+   "colour": "rust",
+   "number": "50",
+   "title": "The toddler and preschool child",
+   "topic": "The toddler and preschool child",
+   "slug": "toddler-preschool",
+   "week": true,
+   "pos": 2,
+   "badge": "Superpuzzle",
+   "link_label": "Open the puzzle",
+   "blurb": "Twenty clues from the fortnight — croup, the inhaled peanut, the button battery and what to give while you wait, the burn, and the child who will not let you look. Fill it in on screen, or print it."
   }
  ],
  "latest": [
+  {
+   "file": "superpuzzle-50-toddler-preschool-fillable.html",
+   "colour": "rust",
+   "label": "Superpuzzle 50"
+  },
   {
    "file": "aphorism-37-happily-examined.html",
    "colour": "plum",
@@ -522,11 +541,6 @@
    "file": "podcast-57-pem-myths.html",
    "colour": "slate",
    "label": "PEM Myths"
-  },
-  {
-   "file": "procedures-01-intraosseous-access.html",
-   "colour": "amethyst",
-   "label": "Intraosseous access"
   }
  ],
  "topten": [
