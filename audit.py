@@ -145,6 +145,22 @@ def main():
         for t, ps in topics.items():
             print(f"    {t}: {len(ps)}")
 
+    # ---- superpuzzle grids: declared tracks must match the cells --------
+    for f in [x for x in html_files if x.startswith("superpuzzle-")
+              and x.endswith("-fillable.html")]:
+        src = (HERE / f).read_text(encoding="utf-8")
+        cols = re.search(r"grid-template-columns:repeat\((\d+)", src)
+        rows = re.search(r"grid-template-rows:repeat\((\d+)", src)
+        placed = re.findall(r"grid-column:(\d+);grid-row:(\d+)", src)
+        if not (cols and rows and placed):
+            continue
+        mx = max(int(c) for c, _ in placed)
+        my = max(int(r) for _, r in placed)
+        if mx != int(cols.group(1)) or my != int(rows.group(1)):
+            problems.append(
+                f"{f}: grid declares {cols.group(1)}x{rows.group(1)} tracks but "
+                f"cells need {mx}x{my} \u2014 cells will stretch or phantom rows appear")
+
     # ---- report -----------------------------------------------------------
     print()
     if notes and not quiet:
