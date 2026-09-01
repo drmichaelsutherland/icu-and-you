@@ -89,6 +89,11 @@
    "The Literary Edge",
    "nero",
    "other"
+  ],
+  "anaesthetics": [
+   "Anaesthetists' Alley",
+   "fern",
+   "special"
   ]
  },
  "pages": [
@@ -451,7 +456,7 @@
    "topic": "The toddler and preschool child",
    "slug": "toddler-preschool",
    "week": true,
-   "pos": 3,
+   "pos": 4,
    "badge": "Podcast",
    "link_label": "Open",
    "guests": [
@@ -468,7 +473,7 @@
    "topic": "The toddler and preschool child",
    "slug": "toddler-preschool",
    "week": true,
-   "pos": 4,
+   "pos": 5,
    "badge": "Journal club",
    "link_label": "Open",
    "blurb": "The first expert consensus on haemodynamic monitoring in children — and an unusually honest account of how little sits underneath it. Including the gap that matters most here: no agreed blood pressure target under twelve."
@@ -514,9 +519,28 @@
    "badge": "Superpuzzle",
    "link_label": "Open the puzzle",
    "blurb": "Twenty clues from the fortnight — croup, the inhaled peanut, the button battery and what to give while you wait, the burn, and the child who will not let you look. Fill it in on screen, or print it."
+  },
+  {
+   "file": "anaesthetists-alley-01-toddler-preschool.html",
+   "series": "anaesthetics",
+   "colour": "fern",
+   "number": "1",
+   "title": "The child who will not go quietly",
+   "topic": "The toddler and preschool child",
+   "slug": "toddler-preschool",
+   "week": true,
+   "pos": 3,
+   "badge": "Anaesthetists' Alley",
+   "link_label": "Open",
+   "blurb": "A new series. Practical anaesthesia for the one to five year old — fasting and the runny nose, premedication versus the parent at the head of the bed, the induction, laryngospasm, and the emergence delirium that gets treated as pain."
   }
  ],
  "latest": [
+  {
+   "file": "anaesthetists-alley-01-toddler-preschool.html",
+   "colour": "fern",
+   "label": "Anaesthetists' Alley"
+  },
   {
    "file": "superpuzzle-50-toddler-preschool-fillable.html",
    "colour": "rust",
@@ -536,11 +560,6 @@
    "file": "journal-club-98-hemodynamic-monitoring.html",
    "colour": "sepia",
    "label": "Hemodynamic monitoring"
-  },
-  {
-   "file": "podcast-57-pem-myths.html",
-   "colour": "slate",
-   "label": "PEM Myths"
   }
  ],
  "topten": [

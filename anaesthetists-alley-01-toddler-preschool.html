@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en-AU">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ICU AND YOU · Anaesthetists' Alley No. 1 — The child who will not go quietly</title>
+<meta name="description" content="Anaesthetists' Alley No. 1: practical anaesthesia for the one to five year old — fasting and the runny nose, premedication, the induction, laryngospasm, emergence delirium, and getting them comfortable afterwards.">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="alternate icon" href="/favicon.ico" sizes="any">
+<link rel="apple-touch-icon" href="/icon-180.png">
+<meta name="theme-color" content="#1B2A33">
+<meta property="og:site_name" content="ICU AND YOU">
+<meta property="og:type" content="website">
+<meta property="og:title" content="ICU AND YOU · Anaesthetists' Alley No. 1 — The child who will not go quietly">
+<meta property="og:description" content="Practical anaesthesia for the one to five year old.">
+<meta property="og:image" content="https://icuandyou.com/share-card.png">
+<meta name="twitter:card" content="summary_large_image">
+<style>
+  :root{
+    --paper:#FAFCF9; --ink:#1F2A1C; --muted:#63705F; --rule:#D8E2D5;
+    --rose:#3E7730; --rosetint:#ECF4EB;
+    --sky:#2E6E8E; --skytint:#E7F1F6;
+    --rust:#A8442A; --rusttint:#F9EDE7;
+  }
+  *{box-sizing:border-box}
+  body{margin:0;background:#E9EFE8;color:var(--ink);
+    font:400 17px/1.64 'Iowan Old Style','Palatino Linotype',Palatino,Georgia,serif;
+    -webkit-text-size-adjust:100%;}
+  .sheet{max-width:800px;margin:0 auto;background:var(--paper);
+    box-shadow:0 1px 40px rgba(42,31,35,.10);}
+
+  header.top{padding:42px 40px 28px;border-bottom:2px solid var(--rose)}
+  .toptopic{display:inline-block;margin:0 0 16px 9px;padding:7px 16px;border-radius:20px;
+    border:1px solid currentColor;opacity:.62;text-decoration:none;color:inherit;
+    font:600 11.5px 'Helvetica Neue',Arial,sans-serif;letter-spacing:.09em;
+    text-transform:uppercase;transition:opacity .12s ease}
+  .toptopic:hover{opacity:1}
+  .topseries{display:inline-block;margin:0 0 16px 9px;padding:7px 16px;border-radius:20px;
+    border:1px solid currentColor;opacity:.62;text-decoration:none;color:inherit;
+    font:600 11.5px 'Helvetica Neue',Arial,sans-serif;letter-spacing:.09em;
+    text-transform:uppercase;transition:opacity .12s ease}
+  .topseries:hover{opacity:1}
+  .tophome{display:inline-block;margin:0 0 16px;padding:7px 16px;border-radius:20px;
+    border:1px solid currentColor;opacity:.62;text-decoration:none;color:inherit;
+    font:600 11.5px 'Helvetica Neue',Arial,sans-serif;letter-spacing:.09em;
+    text-transform:uppercase;transition:opacity .12s ease}
+  .tophome:hover{opacity:1}
+  .eyebrow a.mast,.eyebrow a.serlink{color:inherit;text-decoration:none;
+    border-bottom:1px solid transparent}
+  .eyebrow a.mast:hover,.eyebrow a.serlink:hover{border-bottom-color:currentColor}
+  .eyebrow{font:500 11.5px/1 'Helvetica Neue',Arial,sans-serif;letter-spacing:.24em;
+    text-transform:uppercase;color:var(--muted);margin:0 0 13px}
+  h1{font-size:32px;line-height:1.2;margin:0 0 9px;font-weight:400;letter-spacing:-.012em}
+  .kicker{color:var(--muted);margin:0;font-size:16.5px;font-style:italic}
+
+  .pad{padding:32px 40px}
+  p{margin:0 0 16px}
+  .lede{font-size:19.5px;line-height:1.55;margin:0 0 20px}
+
+  h2.sub{font:600 12px 'Helvetica Neue',Arial,sans-serif;letter-spacing:.2em;
+    text-transform:uppercase;color:var(--rose);margin:30px 0 15px;
+    padding-bottom:8px;border-bottom:1px solid var(--rule)}
+
+  ul.pts{list-style:none;margin:0 0 18px;padding:0}
+  ul.pts li{display:flex;gap:13px;padding:11px 0;border-bottom:1px solid #F0E6E9;
+    font-size:16.5px;line-height:1.5}
+  ul.pts li:last-child{border-bottom:0}
+  ul.pts b{flex:0 0 156px;font:600 14.5px 'Helvetica Neue',Arial,sans-serif;
+    color:var(--rose);line-height:1.4}
+
+  .say{margin:0 0 18px;padding:22px 26px;background:var(--skytint);
+    border-left:4px solid var(--sky);border-radius:0 8px 8px 0}
+  .say .lab{display:block;font:600 11px 'Helvetica Neue',Arial,sans-serif;
+    letter-spacing:.18em;text-transform:uppercase;color:var(--sky);margin:0 0 10px}
+  .say q{display:block;font-size:18px;line-height:1.55;font-style:italic;margin:0 0 10px}
+  .say p:last-child{margin:0;font-size:16px}
+
+  .note{margin:0;padding:20px 24px;background:var(--rosetint);
+    border-left:4px solid var(--rose);border-radius:0 8px 8px 0}
+  .note p:last-child{margin:0}
+
+  .challenge{margin:0;padding:28px 32px;background:var(--rusttint);border-left:5px solid var(--rust)}
+  .challenge h2{font:600 12px 'Helvetica Neue',Arial,sans-serif;letter-spacing:.2em;
+    text-transform:uppercase;color:var(--rust);margin:0 0 13px}
+  .ask{font-size:19.5px;line-height:1.5;margin:0 0 12px;font-style:italic}
+  .btn{display:inline-block;margin:6px 0 12px;padding:15px 30px;background:var(--rust);
+    color:#FDF8F5;text-decoration:none;border-radius:30px;font-style:normal;
+    font:600 15px 'Helvetica Neue',Arial,sans-serif;letter-spacing:.03em}
+  .btn:hover{background:#8A3620}
+  .fallback{font:400 13.5px 'Helvetica Neue',Arial,sans-serif;color:var(--muted);margin:0}
+  .fallback a{color:var(--rust)}
+  .subline{margin:0 0 14px;padding:0 0 13px;border-bottom:1px solid rgba(0,0,0,.09);
+    font:400 14.5px/1.55 'Iowan Old Style','Palatino Linotype',Palatino,Georgia,serif;
+    max-width:56ch;margin-left:auto;margin-right:auto}
+  .subline a{font-weight:500;border-bottom:1px solid currentColor;
+    text-decoration:none;color:inherit}
+  .firstpub{display:block;margin:0 0 10px;padding-bottom:9px;
+    border-bottom:1px solid currentColor;border-color:rgba(0,0,0,.09);
+    font:400 12px 'Helvetica Neue',Arial,sans-serif;letter-spacing:.06em;opacity:.72}
+
+  footer{padding:24px 40px 42px;border-top:1px solid var(--rule);
+    font:400 13px 'Helvetica Neue',Arial,sans-serif;color:var(--muted);text-align:center;line-height:1.7}
+  .home{display:inline-block;margin:0 0 14px;padding:8px 18px;border-radius:20px;
+    border:1px solid var(--rule);background:#F5EEF0;color:var(--rose);text-decoration:none;
+    font:600 12.5px 'Helvetica Neue',Arial,sans-serif;letter-spacing:.05em}
+  .home:hover{background:var(--rose);border-color:var(--rose);color:#FCF9FA}
+
+  @media (max-width:640px){
+    header.top,.pad,footer{padding-left:20px;padding-right:20px}
+    .challenge{padding:22px 20px}
+    h1{font-size:26px} body{font-size:16.5px} .ask{font-size:18px}
+    ul.pts li{flex-direction:column;gap:3px} ul.pts b{flex:none}
+  }
+  @media print{ body{background:#fff} .sheet{box-shadow:none;max-width:none} }
+</style>
+</head>
+<body>
+<div class="sheet">
+
+  <header class="top">
+    <a class="tophome" href="./">&larr;&nbsp; Home</a>
+    <a class="topseries" href="./?s=anaesthetics">More from Anaesthetists&rsquo; Alley</a>
+    <a class="toptopic" href="./?t=toddler-preschool" title="Everything on The toddler and preschool child">All on this topic</a>
+    <p class="eyebrow"><a class="mast" href="./">ICU and You</a> &nbsp;·&nbsp;
+      <a class="serlink" href="./?s=anaesthetics">Anaesthetists&rsquo; Alley</a> &nbsp;·&nbsp; Number 1</p>
+    <h1>The child who will not go quietly</h1>
+    <p class="kicker">One to five years &mdash; where the anaesthetic is straightforward and everything around it is not</p>
+  </header>
+
+  <div class="pad">
+    <p class="lede">A new series, and it starts where the difficulty actually is. The pharmacology of a
+      healthy three-year-old is forgiving. The twenty minutes before induction and the twenty after
+      emergence are not.</p>
+
+    <p>This is the age at which anaesthesia stops being a technical problem and becomes a behavioural
+      one. The child cannot be reasoned with, has no useful model of what is about to happen, and will
+      remember it. Almost everything below is about that.</p>
+
+    <h2 class="sub">Before the day</h2>
+
+    <ul class="pts">
+      <li><b>Fasting, and the drift</b><span>Six hours for solids, four for breast milk. Clear fluids have
+        moved to one hour in most Australian units &mdash; encourage drinking rather than forbid it, because
+        prolonged fasting makes a miserable, ketotic, hypotensive child and does not empty the stomach any
+        further. Check your own institution's current position; this one changed recently.</span></li>
+      <li><b>The runny nose</b><span>The commonest cancellation and the commonest unnecessary one. A child
+        with clear rhinorrhoea, no fever and a clear chest can generally proceed. Fever, purulent
+        secretions, a wet cough or any lower respiratory signs are a different matter, and the airway stays
+        twitchy for weeks afterwards rather than days.</span></li>
+      <li><b>Topical anaesthetic, timed properly</b><span>The cream only works if it has been on long
+        enough, which means it is a ward job an hour ahead, not a holding-bay afterthought. Two sites, not
+        one, because the first cannula does not always go in.</span></li>
+      <li><b>Premedication</b><span>Worth considering rather than reflexive. Oral midazolam works, tastes
+        unpleasant and can disinhibit; intranasal dexmedetomidine takes longer and is smoother. The evidence
+        favours premedication over parental presence for the genuinely frightened child, which is not the
+        answer most parents expect.</span></li>
+    </ul>
+
+    <div class="note">
+      <p><strong>The parent question.</strong> Parental presence at induction is popular, humane, and does
+        not reliably reduce the child's anxiety in trials. It reduces the parent's, which is a legitimate
+        aim in itself, but a distressed parent at the head of the bed makes everything harder. Decide
+        deliberately, prepare them properly if they come, and have someone whose only job is to take them
+        out.</p>
+    </div>
+
+    <h2 class="sub">The induction</h2>
+
+    <div class="say">
+      <span class="lab">What actually works in the room</span>
+      <q>&ldquo;We're going to blow up a balloon. You do the blowing, I'll hold it. Big breaths, as big as
+        you can &mdash; can you make it go all the way up?&rdquo;</q>
+      <p>Give the child a task rather than an instruction to endure something. The mask arrives as part of
+        the game rather than as an event. Cup it above the face first and bring it down; clamping it on is
+        what produces the memory everyone is trying to avoid.</p>
+    </div>
+
+    <ul class="pts">
+      <li><b>Gas or cannula</b><span>Inhalational induction remains the default at this age, and the child
+        who already has good topical anaesthetic and a visible vein may be better served intravenously.
+        Ask which they would prefer if they are old enough to have a view; four-year-olds often do.</span></li>
+      <li><b>The excitement phase</b><span>Expect movement, breath-holding and rigidity partway through and
+        do not respond to it as though it were awareness. Keep the mask still, keep talking, and let the
+        parent go before this begins rather than during it.</span></li>
+      <li><b>The airway</b><span>A supraglottic device covers most of this workload. When a tube is needed,
+        cuffed is standard now; check the pressure rather than trusting the leak. Look for loose teeth
+        before the blade, and document what you found.</span></li>
+    </ul>
+
+    <h2 class="sub">Laryngospasm</h2>
+
+    <div class="note">
+      <p><strong>The complication this age owns.</strong> It clusters around induction and emergence, in the
+        light plane at either end, and is commoner after a recent upper respiratory infection and around
+        secretions. Prevention is most of it: suction under adequate depth, do not instrument a light
+        patient, and choose the moment to remove the airway rather than letting it choose you.</p>
+      <p>When it happens: stop the stimulus, one hundred per cent oxygen, jaw thrust with firm pressure at
+        the laryngospasm notch behind the ear lobe, and gentle continuous positive pressure. If that fails,
+        deepen. If that fails, paralyse &mdash; and remember it works intramuscularly if there is no line,
+        which is exactly the situation in which you will need it.</p>
+    </div>
+
+    <h2 class="sub">Waking up</h2>
+
+    <ul class="pts">
+      <li><b>Emergence delirium</b><span>Peaks in precisely this age group, more so after the volatile
+        agents, and is not pain, though it looks like it and is routinely treated as it. Inconsolable,
+        non-purposeful, not recognising the parent, settling over twenty minutes or so. Recognising it saves
+        the child an opioid they do not need.</span></li>
+      <li><b>Reducing it</b><span>A small dose of propofol at the end, or dexmedetomidine, or an adequate
+        regional block so they are not surfacing into pain. A quiet, dim recovery bay with the parent
+        already there does more than any of them.</span></li>
+      <li><b>Analgesia planned, not rescued</b><span>Paracetamol and an anti-inflammatory given early and
+        regularly, plus a block where the operation allows, means most of these children need nothing
+        stronger. The child who wakes in pain is very hard to catch up.</span></li>
+      <li><b>Nausea</b><span>Cheap to prevent and grim to treat at this age, particularly for the operations
+        that carry the highest risk. Two agents from different classes for anyone with risk factors.</span></li>
+    </ul>
+
+    <div class="note">
+      <p><strong>And the thing that lasts.</strong> A bad induction at three shapes every subsequent
+        encounter with a hospital &mdash; the dental visit, the immunisation, the anaesthetic at seven.
+        A play specialist, ten unhurried minutes and one attempt by the right person are not softness.
+        They are the intervention with the longest follow-up in this entire piece.</p>
+    </div>
+  </div>
+
+  <div class="pad" style="padding-top:6px">
+    <div class="challenge">
+      <h2>Over to you</h2>
+      <p class="ask">What is your induction routine for a frightened three-year-old &mdash; the actual words,
+        the actual order?</p>
+      <p>This is the least written-down skill in the specialty and the most unevenly held. Some people have
+        a script they have used ten thousand times and have never told anyone. Send me yours and I will
+        collect them, with or without your name.</p>
+      <p><a class="btn" href="mailto:icuandyou@icloud.com?subject=Anaesthetists%27%20Alley%20No.%201%20-%20my%20induction%20routine&body=What%20I%20say%20and%20do%2C%20in%20order%2C%20for%20a%20frightened%20three-year-old%3A%0D%0A%0D%0A%0D%0AWhere%20I%20learnt%20it%3A%0D%0A%0D%0A%0D%0AWhat%20I%20do%20differently%20when%20it%20is%20not%20working%3A%0D%0A%0D%0A%0D%0A---%0D%0A%0D%0AName%20%28optional%29%3A%0D%0A%0A---%0A%0AThinking%20about%20this%20ICU%20AND%20YOU%20post%20overall%20%E2%80%94%20was%20it%20useful%20to%20you%2C%20or%20would%20it%20be%20useful%20to%20others%3F%0A">Send me your routine</a></p>
+      <p class="fallback">The button opens a reply straight to me. If your device blocks it, write to
+        <a href="mailto:icuandyou@icloud.com">icuandyou@icloud.com</a> instead.</p>
+    </div>
+  </div>
+
+  <footer>
+    <span class="firstpub">First published September 2026</span>
+    <p class="subline">One email on Fridays &mdash; what went up and why it mattered, the best of your replies,
+      and original feature stories, news and views. <a href="https://joinlist.com/f/5adad2d6">Come and join us</a>.</p>
+    <a class="home" href="./">&larr; &nbsp;All of ICU AND YOU</a><br>
+    ICU AND YOU &nbsp;&#183;&nbsp; Anaesthetists&rsquo; Alley No. 1 &nbsp;&#183;&nbsp; companion to Mind Map #33, The Toddler and Preschool Child<br>
+    Educational use within the ICU education programme. Not a clinical protocol &mdash; ANZCA guidance, your
+    department's fasting and premedication policies and current paediatric guidance always take precedence.
+    Verify every drug and dose against your own reference before use.
+  </footer>
+
+</div>
+<script data-goatcounter="https://icuandyou.goatcounter.com/count"
+        async src="//gc.zgo.at/count.js"></script>
+</body>
+</html>
