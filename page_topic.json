@@ -456,7 +456,7 @@
    "topic": "The toddler and preschool child",
    "slug": "toddler-preschool",
    "week": true,
-   "pos": 5,
+   "pos": 6,
    "badge": "Podcast",
    "link_label": "Open",
    "guests": [
@@ -473,7 +473,7 @@
    "topic": "The toddler and preschool child",
    "slug": "toddler-preschool",
    "week": true,
-   "pos": 6,
+   "pos": 7,
    "badge": "Journal club",
    "link_label": "Open",
    "blurb": "The first expert consensus on haemodynamic monitoring in children — and an unusually honest account of how little sits underneath it. Including the gap that matters most here: no agreed blood pressure target under twelve."
@@ -515,7 +515,7 @@
    "topic": "The toddler and preschool child",
    "slug": "toddler-preschool",
    "week": true,
-   "pos": 2,
+   "pos": 3,
    "badge": "Superpuzzle",
    "link_label": "Open the puzzle",
    "blurb": "Twenty clues from the fortnight — croup, the inhaled peanut, the button battery and what to give while you wait, the burn, and the child who will not let you look. Fill it in on screen, or print it."
@@ -529,7 +529,7 @@
    "topic": "The toddler and preschool child",
    "slug": "toddler-preschool",
    "week": true,
-   "pos": 3,
+   "pos": 4,
    "badge": "Anaesthetists' Alley",
    "link_label": "Open",
    "blurb": "A new series. Practical anaesthesia for the one to five year old — fasting and the runny nose, premedication versus the parent at the head of the bed, the induction, laryngospasm, and the emergence delirium that gets treated as pain."
@@ -543,13 +543,32 @@
    "topic": "The toddler and preschool child",
    "slug": "toddler-preschool",
    "week": true,
-   "pos": 4,
+   "pos": 5,
    "badge": "Medical Students",
    "link_label": "Open",
    "blurb": "One to five years in three tiers — the science of what has changed since infancy, the encounter and how to get anything out of it, and what you will be expected to do on your first nights on call."
+  },
+  {
+   "file": "mnemonic-55-toddler.html",
+   "series": "mnemonic",
+   "colour": "olive",
+   "number": "55",
+   "title": "The toddler and preschool child",
+   "topic": "The toddler and preschool child",
+   "slug": "toddler-preschool",
+   "week": true,
+   "pos": 2,
+   "badge": "Mnemonic",
+   "link_label": "Open",
+   "blurb": "TODDLER — seven things for the one to five year old, from trusting the baseline you are given to reporting what does not fit. The word is the age."
   }
  ],
  "latest": [
+  {
+   "file": "mnemonic-55-toddler.html",
+   "colour": "olive",
+   "label": "Mnemonic 55 · TODDLER"
+  },
   {
    "file": "med-students-03-toddler-preschool.html",
    "colour": "violet",
@@ -569,11 +588,6 @@
    "file": "aphorism-37-happily-examined.html",
    "colour": "plum",
    "label": "The child who lets you examine them"
-  },
-  {
-   "file": "mind-map-33-toddler-preschool.html",
-   "colour": "teal",
-   "label": "The toddler and preschool child"
   }
  ],
  "topten": [
