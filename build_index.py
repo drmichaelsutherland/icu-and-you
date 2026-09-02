@@ -61,7 +61,7 @@ def series_sort_key(m, page):
 
 def build_this_week(m):
     wk = m["this_week"]
-    pages = [p for p in m["pages"] if p.get("week")]
+    pages = [p for p in m["pages"] if p.get("week") and not p.get("standing")]
     # "pos" pins the order the cards appear in; a card without one falls
     # back to the landing-page menu order and lands at the end.
     pages.sort(key=lambda p: (p.get("pos", 999), series_sort_key(m, p)))
@@ -94,16 +94,23 @@ def build_this_week(m):
 
 
 def build_previous(m):
-    """Topic groups, most recent topic first (reverse order of first appearance)."""
+    """Topic groups, most recent topic first, then a group for the standing
+    series. Some pieces — a book review, a procedure, the Top Ten — belong to
+    the site rather than to a fortnight, and filing them under whichever topic
+    happened to be running when they went up is simply wrong. They carry
+    "standing": true in the manifest and collect here instead."""
     order, seen = [], set()
     for p in m["pages"]:
+        if p.get("standing"):
+            continue
         if not p.get("week") and p["slug"] not in seen:
             seen.add(p["slug"])
             order.append((p["slug"], p["topic"]))
 
     out = []
     for slug, topic in order:
-        pages = [p for p in m["pages"] if p["slug"] == slug and not p.get("week")]
+        pages = [p for p in m["pages"]
+                 if p["slug"] == slug and not p.get("week") and not p.get("standing")]
         pages.sort(key=lambda p: series_sort_key(m, p))
 
         dots = "".join(
@@ -129,6 +136,32 @@ def build_previous(m):
                 f'<span class="rn">{e(p.get("number") or "")}</span>'
                 f'<a class="rt" href="{p["file"]}">{e(p["title"])}</a></li>'
             )
+        out += ['        </ul>', '      </details>']
+
+    standing = [p for p in m["pages"] if p.get("standing")]
+    if standing:
+        standing.sort(key=lambda p: series_sort_key(m, p))
+        dots = "".join(
+            f'<i class="dot {p["colour"]}" title="{e(m["series"][p["series"]][0])}"></i>'
+            for p in standing)
+        n = len(standing)
+        out += [
+            '      <details class="group" data-topic="Any time" data-slug="standing">',
+            '        <summary>',
+            '          <span class="tname">Any time \u2014 not tied to a fortnight</span>',
+            f'          <span class="tdots">{dots}</span>',
+            f'          <span class="tcount">{n} piece{"s" if n != 1 else ""}</span>',
+            '        </summary>',
+            '        <ul class="rows">',
+        ]
+        for p in standing:
+            label = m["series"][p["series"]][0]
+            series_attr = " ".join([p["series"]] + p.get("guests", []))
+            out.append(
+                f'            <li class="row {p["colour"]}" data-series="{series_attr}">'
+                f'<span class="rs">{e(label)}</span>'
+                f'<span class="rn">{e(p.get("number") or "")}</span>'
+                f'<a class="rt" href="{p["file"]}">{e(p["title"])}</a></li>')
         out += ['        </ul>', '      </details>']
     return "\n".join(out)
 

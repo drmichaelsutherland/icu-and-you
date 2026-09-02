@@ -113,9 +113,10 @@
    "colour": "amethyst",
    "number": "1",
    "title": "Intraosseous access",
-   "topic": "The postneonatal infant",
-   "slug": "postneonatal-infant",
-   "week": false
+   "topic": "Any time",
+   "slug": "standing",
+   "week": false,
+   "standing": true
   },
   {
    "file": "mind-map-32-postneonatal-infant.html",
@@ -592,16 +593,19 @@
    "colour": "terracotta",
    "number": "1",
    "title": "The Body in Question",
-   "topic": "The toddler and preschool child",
-   "slug": "toddler-preschool",
-   "week": true,
-   "pos": 9,
-   "badge": "ICU Book Club",
-   "link_label": "Open",
-   "blurb": "A new column. Jonathan Miller, 1978 — we have almost no access to our own interiors, so every culture has built the body out of whatever machinery was lying around. The metaphor is not decoration. It is the instrument."
+   "topic": "Any time",
+   "slug": "standing",
+   "week": false,
+   "blurb": "A new column. Jonathan Miller, 1978 — we have almost no access to our own interiors, so every culture has built the body out of whatever machinery was lying around. The metaphor is not decoration. It is the instrument.",
+   "standing": true
   }
  ],
  "latest": [
+  {
+   "file": "book-club-01-the-body-in-question.html",
+   "colour": "terracotta",
+   "label": "ICU Book Club · The Body in Question"
+  },
   {
    "file": "chinatown-01-gua-sha.html",
    "colour": "crimson",
@@ -621,11 +625,6 @@
    "file": "anaesthetists-alley-01-toddler-preschool.html",
    "colour": "fern",
    "label": "Anaesthetists' Alley"
-  },
-  {
-   "file": "superpuzzle-50-toddler-preschool-fillable.html",
-   "colour": "rust",
-   "label": "Superpuzzle 50"
   }
  ],
  "topten": [
