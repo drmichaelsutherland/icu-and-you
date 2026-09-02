@@ -30,8 +30,10 @@ NO_REPLY_LINE = {"about.html", "corrections.html", "you-asked.html"}
 NO_SUBSCRIBE_LINE = {"about.html", "corrections.html", "glossary.html",
                      "you-asked.html"}
 
-# The Top Ten spans topics by design, so it has no single topic to link to.
-NO_TOPIC_BUTTON_PREFIX = "top-ten-"
+# Some series are not tied to a topic and so have no topic to link to:
+# the Top Ten spans topics by design, and a book review belongs to the
+# reader rather than to an age group.
+NO_TOPIC_BUTTON_PREFIX = ("top-ten-", "book-club-")
 
 SUBSCRIBE = "One email on Fridays"
 REPLY_LINE = "was%20it%20useful%20to%20you"

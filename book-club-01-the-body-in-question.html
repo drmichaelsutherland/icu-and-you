@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en-AU">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ICU AND YOU · ICU Book Club No. 1 — The Body in Question</title>
+<meta name="description" content="ICU Book Club No. 1: Jonathan Miller's The Body in Question (1978) — why the metaphor is the instrument rather than the decoration, and why the reading you do that is not medicine is not time off from medicine.">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="alternate icon" href="/favicon.ico" sizes="any">
+<link rel="apple-touch-icon" href="/icon-180.png">
+<meta name="theme-color" content="#1B2A33">
+<meta property="og:site_name" content="ICU AND YOU">
+<meta property="og:type" content="website">
+<meta property="og:title" content="ICU AND YOU · ICU Book Club No. 1 — The Body in Question">
+<meta property="og:description" content="ICU Book Club No. 1: Jonathan Miller's The Body in Question (1978) — why the metaphor is the instrument rather than the decoration, and why the reading you do that is not medicine is not time off from medicine.">
+<meta property="og:image" content="https://icuandyou.com/share-card.png">
+<meta name="twitter:card" content="summary_large_image">
+<style>
+  :root{
+    --paper:#FCF9F7; --ink:#241C19; --muted:#6E6058; --rule:#E3D6D0;
+    --sepia:#A65E4E; --sepiatint:#F7EDEA;
+    --rust:#A8442A; --rusttint:#F9EDE7;
+    --sky:#2E6E8E; --skytint:#E7F1F6;
+  }
+  *{box-sizing:border-box}
+  body{margin:0;background:#EDE4E0;color:var(--ink);
+    font:400 17px/1.65 'Iowan Old Style','Palatino Linotype',Palatino,Georgia,serif;
+    -webkit-text-size-adjust:100%;}
+  .sheet{max-width:780px;margin:0 auto;background:var(--paper);
+    box-shadow:0 1px 40px rgba(36,31,25,.10);}
+
+  header.top{padding:42px 40px 28px;border-bottom:1px solid var(--rule)}
+  .toptopic{display:inline-block;margin:0 0 16px 9px;padding:7px 16px;border-radius:20px;
+    border:1px solid currentColor;opacity:.62;text-decoration:none;color:inherit;
+    font:600 11.5px 'Helvetica Neue',Arial,sans-serif;letter-spacing:.09em;
+    text-transform:uppercase;transition:opacity .12s ease}
+  .toptopic:hover{opacity:1}
+  .topseries{display:inline-block;margin:0 0 16px 9px;padding:7px 16px;border-radius:20px;
+    border:1px solid currentColor;opacity:.62;text-decoration:none;color:inherit;
+    font:600 11.5px 'Helvetica Neue',Arial,sans-serif;letter-spacing:.09em;
+    text-transform:uppercase;transition:opacity .12s ease}
+  .topseries:hover{opacity:1}
+  .tophome{display:inline-block;margin:0 0 16px;padding:7px 16px;border-radius:20px;
+    border:1px solid currentColor;opacity:.62;text-decoration:none;color:inherit;
+    font:600 11.5px 'Helvetica Neue',Arial,sans-serif;letter-spacing:.09em;
+    text-transform:uppercase;transition:opacity .12s ease}
+  .tophome:hover{opacity:1}
+  .eyebrow{font:500 11.5px/1 'Helvetica Neue',Arial,sans-serif;letter-spacing:.24em;
+    text-transform:uppercase;color:var(--sepia);margin:0 0 14px}
+  .eyebrow a.serlink{color:inherit;text-decoration:none;border-bottom:1px solid transparent}
+  .eyebrow a.serlink:hover{border-bottom-color:currentColor}
+  .eyebrow a.mast{color:inherit;text-decoration:none;border-bottom:1px solid transparent}
+  .eyebrow a.mast:hover{border-bottom-color:currentColor}
+  h1{font-size:31px;line-height:1.2;margin:0 0 10px;font-weight:400;letter-spacing:-.012em}
+  .kicker{color:var(--muted);margin:0;font-size:16.5px;font-style:italic}
+
+  .source{margin:0;padding:26px 40px;background:var(--sepiatint);border-bottom:1px solid var(--rule)}
+  .cite{margin:0 0 16px;font-size:16px;line-height:1.6}
+  .cite b{font-weight:600}
+  .meta{display:flex;flex-wrap:wrap;gap:5px 22px;margin:0 0 16px;
+    font:400 13.5px 'Helvetica Neue',Arial,sans-serif;color:var(--muted)}
+  .meta b{color:var(--ink);font-weight:600}
+  a.read{display:inline-block;padding:14px 28px;border-radius:30px;text-decoration:none;
+    background:var(--sepia);color:#FAF6F0;
+    font:600 15px 'Helvetica Neue',Arial,sans-serif;letter-spacing:.03em}
+  a.read:hover{background:#523821}
+  .srcnote{font:400 13.5px 'Helvetica Neue',Arial,sans-serif;color:var(--muted);margin:14px 0 0}
+
+  .pad{padding:32px 40px}
+  p{margin:0 0 17px}
+  h2.sub{font:600 12px 'Helvetica Neue',Arial,sans-serif;letter-spacing:.2em;
+    text-transform:uppercase;color:var(--muted);margin:0 0 16px;
+    padding-bottom:8px;border-bottom:1px solid var(--rule)}
+  b.term{font-weight:600;color:var(--sepia)}
+
+  .three{display:flex;gap:13px;flex-wrap:wrap;margin:0 0 20px}
+  .col{flex:1 1 200px;background:#fff;border:1px solid var(--rule);border-radius:9px;padding:16px 18px}
+  .col.mid{border-top:4px solid var(--sky);background:var(--skytint)}
+  .col .age{font:600 12px 'Helvetica Neue',Arial,sans-serif;letter-spacing:.1em;
+    text-transform:uppercase;color:var(--muted);margin:0 0 7px}
+  .col.mid .age{color:var(--sky)}
+  .col p{margin:0;font-size:15px;line-height:1.5;color:#3A342A}
+
+  .caution{margin:0;padding:20px 24px;background:var(--rusttint);
+    border-left:4px solid var(--rust);border-radius:0 8px 8px 0}
+  .caution .lab{display:block;font:600 11px 'Helvetica Neue',Arial,sans-serif;
+    letter-spacing:.18em;text-transform:uppercase;color:var(--rust);margin:0 0 9px}
+  .caution p:last-child{margin:0}
+
+  .challenge{margin:0;padding:28px 32px;background:var(--rusttint);border-left:5px solid var(--rust)}
+  .challenge h2{font:600 12px 'Helvetica Neue',Arial,sans-serif;letter-spacing:.2em;
+    text-transform:uppercase;color:var(--rust);margin:0 0 13px}
+  .ask{font-size:19.5px;line-height:1.5;margin:0 0 8px}
+  .lead{font-size:15px;color:var(--muted);margin:0 0 17px;line-height:1.55}
+  .chips{display:flex;flex-wrap:wrap;gap:10px;margin:0 0 16px}
+  a.chip{text-decoration:none;padding:12px 18px;border-radius:9px;
+    background:#fff;border:1px solid #E0C4B8;color:#7C3520;
+    font:400 15px 'Iowan Old Style',Palatino,Georgia,serif;transition:transform .08s ease}
+  a.chip:hover{transform:translateY(-1px);background:#FDF4EF}
+  .fallback{font:400 13.5px 'Helvetica Neue',Arial,sans-serif;color:var(--muted);margin:0}
+  .fallback a{color:var(--rust)}
+  .subline{margin:0 0 14px;padding:0 0 13px;border-bottom:1px solid rgba(0,0,0,.09);
+    font:400 14.5px/1.55 'Iowan Old Style','Palatino Linotype',Palatino,Georgia,serif;
+    max-width:56ch;margin-left:auto;margin-right:auto}
+  .subline a{font-weight:500;border-bottom:1px solid currentColor;
+    text-decoration:none;color:inherit}
+  .firstpub{display:block;margin:0 0 10px;padding-bottom:9px;
+    border-bottom:1px solid currentColor;border-color:rgba(0,0,0,.09);
+    font:400 12px 'Helvetica Neue',Arial,sans-serif;letter-spacing:.06em;opacity:.72}
+
+  footer{padding:24px 40px 42px;border-top:1px solid var(--rule);
+    font:400 13px 'Helvetica Neue',Arial,sans-serif;color:var(--muted);text-align:center;line-height:1.7}
+  .home{display:inline-block;margin:0 0 14px;padding:8px 18px;border-radius:20px;
+    border:1px solid var(--rule);background:#F2EEE6;color:var(--sepia);text-decoration:none;
+    font:600 12.5px 'Helvetica Neue',Arial,sans-serif;letter-spacing:.05em}
+  .home:hover{background:var(--sepia);border-color:var(--sepia);color:#FAF6F0}
+
+  @media (max-width:620px){
+    header.top,.source,.pad,footer{padding-left:20px;padding-right:20px}
+    .challenge{padding:22px 20px}
+    h1{font-size:25px} body{font-size:16.5px} .ask{font-size:18px}
+  }
+  @media print{ body{background:#fff} .sheet{box-shadow:none;max-width:none} }
+
+  .agree{display:flex;gap:13px;flex-wrap:wrap;margin:0 0 22px}
+  .ag{flex:1 1 150px;background:#fff;border:1px solid var(--rule);border-radius:9px;
+    padding:16px 18px;text-align:center}
+  .ag .big{font-size:30px;line-height:1.1;color:var(--sepia);margin:0 0 4px}
+  .ag .lab2{font:400 13.5px 'Helvetica Neue',Arial,sans-serif;color:var(--muted);
+    line-height:1.45;margin:0}
+  .gap{margin:0 0 20px;padding:20px 24px;background:#F3EEE3;
+    border-left:4px solid var(--sepia);border-radius:0 8px 8px 0}
+  .gap .lab{color:var(--sepia)}
+  .gap p:last-child{margin:0}
+
+  .preamble{margin:0 0 26px;padding:22px 26px;background:#F4EFEA;
+    border-left:4px solid var(--sepia);border-radius:0 8px 8px 0}
+  .preamble .lab{display:block;font:600 11px 'Helvetica Neue',Arial,sans-serif;
+    letter-spacing:.18em;text-transform:uppercase;color:var(--sepia);margin:0 0 10px}
+  .preamble p:last-child{margin:0}
+  .pull{margin:26px 0;padding:0 0 0 22px;border-left:3px solid var(--sepia);
+    font-size:20px;line-height:1.45;font-style:italic;color:#4A3A34}
+</style>
+</head>
+<body>
+<div class="sheet">
+
+  <header class="top">
+    <a class="tophome" href="./">&larr;&nbsp; Home</a>
+    <a class="topseries" href="./?s=bookclub">All book club</a>
+    <p class="eyebrow"><a class="mast" href="./">ICU and You</a> &nbsp;·&nbsp;
+      <a class="serlink" href="./?s=bookclub">ICU Book Club</a> &nbsp;·&nbsp; Number 1</p>
+    <h1>The Body in Question</h1>
+    <p class="kicker">Jonathan Miller, 1978 &mdash; and the argument that the metaphor is the instrument</p>
+  </header>
+
+  <div class="pad">
+    <div class="preamble">
+      <span class="lab">About this series</span>
+      <p>A new column, for books that have made a difference to how we teach, train or practise in intensive
+        care. Not textbooks, or not only textbooks &mdash; anything that changed how somebody thinks about the
+        work. Some will be old. Some will not be medicine at all.</p>
+      <p>I am starting with mine, but the point of the series is what other people have to offer, and there is
+        an invitation at the foot of the page. Send me the book that did it for you.</p>
+    </div>
+
+    <div class="source">
+      <p class="cite">Jonathan Miller. <b>The Body in Question.</b> Jonathan Cape, London, 1978.
+        Written alongside the thirteen-part BBC television series of the same name.</p>
+    </div>
+
+    <p>For me, this book and the accompanying thirteen-part BBC series were hugely influential. I was young
+      enough when I read it that I cannot honestly claim it made me do medicine. Something was already forming.
+      What it did was tell me the thing I was forming into was more interesting than I had understood.</p>
+
+    <p>Miller's premise is that we have almost no useful access to our own interiors. We do not feel our kidneys
+      working. The sensations we do get are vague, poorly localised and frequently lying to us. So every culture
+      has had to build the inside of the body from the outside, out of whatever was lying around.</p>
+
+    <p>What was lying around, mostly, was machinery. The body has been a furnace, an alembic, a clockwork, a set
+      of pipes. Harvey could not demonstrate the circulation until somebody had built a decent pump for him to
+      think with. Miller's argument is that the metaphor is not decoration laid over the physiology afterwards.
+      The metaphor is the instrument. It is what makes the fact thinkable in the first place, and it also decides
+      what you will fail to see. He saw that the computer was the metaphor that would help us imagine and
+      reimagine our own brains &mdash; with our own brains.</p>
+
+    <p>This was the idea that spoke to me, and it has been quietly useful for these past decades. It says the
+      discipline advances by importing from outside itself. Which means the reading you do that is not medicine
+      is not completely time off from medicine.</p>
+
+    <div class="pull">The metaphor is the instrument. It decides what you can think, and what you will fail to see.</div>
+
+    <p>Intensive care makes this concrete in a way most specialties do not. We are the ones still watching
+      physiology happen in real time &mdash; compliance, oxygen delivery, filling pressures, the whole system
+      visible and moving on a screen at three in the morning. We intervene at the level of the mechanism. And
+      every one of our mental models is borrowed from somewhere else. Circuits. Reservoirs. Waterfalls. Even
+      ships with sails. Miller would have recognised all of it.</p>
+
+    <p>He is also the argument in person. Physician, then <em>Beyond the Fringe</em>, then thirty years of opera.
+      The man who wrote the best book about how doctors think left the profession and directed <em>Rigoletto</em>.
+      Draw from that what you like.</p>
+
+    <p>It has dated in places. Read it anyway. It is short, and the prose is most of the pleasure.</p>
+  </div>
+
+  <div class="pad" style="padding-top:6px">
+    <div class="challenge">
+      <h2>Challenge for you</h2>
+      <p class="ask">Is there a book that made a difference to you, in medicine or well outside it?</p>
+      <p class="lead">Tell me what it was and what it did. If you like, I will read it and post a review here.
+        Better still, send me your own review and I will publish the best of them, with your name on them.</p>
+      <p><a class="btn" href="mailto:icuandyou@icloud.com?subject=ICU%20Book%20Club%20-%20a%20book%20that%20made%20a%20difference&body=The%20book%3A%0D%0A%0D%0A%0D%0AWhat%20it%20did%20for%20me%3A%0D%0A%0D%0A%0D%0A---%0D%0A%0D%0AWould%20you%20like%20me%20to%20review%20it%2C%20or%20are%20you%20sending%20your%20own%20review%3F%0D%0A%0D%0A%0D%0AName%20%28and%20how%20you%20would%20like%20to%20be%20credited%29%3A%0D%0A%0A---%0A%0AThinking%20about%20this%20ICU%20AND%20YOU%20post%20overall%20%E2%80%94%20was%20it%20useful%20to%20you%2C%20or%20would%20it%20be%20useful%20to%20others%3F%0A">Send me a book</a></p>
+      <p class="fallback">The button opens a reply straight to me. If your device blocks it, write to
+        <a href="mailto:icuandyou@icloud.com">icuandyou@icloud.com</a> instead.</p>
+    </div>
+  </div>
+
+  <footer>
+    <span class="firstpub">First published September 2026</span>
+    <p class="subline">One email on Fridays &mdash; what went up and why it mattered, the best of your replies,
+      and original feature stories, news and views. <a href="https://joinlist.com/f/5adad2d6">Come and join us</a>.</p>
+    <a class="home" href="./">&larr; &nbsp;All of ICU AND YOU</a><br>
+    ICU AND YOU &nbsp;&#183;&nbsp; ICU Book Club No. 1<br>
+    A personal review, written independently. Nothing of the book is reproduced here.
+    Educational use only.
+  </footer>
+
+</div>
+<script data-goatcounter="https://icuandyou.goatcounter.com/count"
+        async src="//gc.zgo.at/count.js"></script>
+</body>
+</html>

@@ -99,6 +99,11 @@
    "Nǐ hǎo Chinatown",
    "crimson",
    "cultural"
+  ],
+  "bookclub": [
+   "ICU Book Club",
+   "terracotta",
+   "multimedia"
   ]
  },
  "pages": [
@@ -580,6 +585,20 @@
    "badge": "Nǐ hǎo Chinatown",
    "link_label": "Open",
    "blurb": "A new column, and it opens where it matters most at this age. Gua sha, cupping and moxibustion leave marks that can look like inflicted injury — what they actually look like, and the better question to ask."
+  },
+  {
+   "file": "book-club-01-the-body-in-question.html",
+   "series": "bookclub",
+   "colour": "terracotta",
+   "number": "1",
+   "title": "The Body in Question",
+   "topic": "The toddler and preschool child",
+   "slug": "toddler-preschool",
+   "week": true,
+   "pos": 9,
+   "badge": "ICU Book Club",
+   "link_label": "Open",
+   "blurb": "A new column. Jonathan Miller, 1978 — we have almost no access to our own interiors, so every culture has built the body out of whatever machinery was lying around. The metaphor is not decoration. It is the instrument."
   }
  ],
  "latest": [
