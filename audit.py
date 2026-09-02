@@ -33,7 +33,7 @@ NO_SUBSCRIBE_LINE = {"about.html", "corrections.html", "glossary.html",
 # Some series are not tied to a topic and so have no topic to link to:
 # the Top Ten spans topics by design, and a book review belongs to the
 # reader rather than to an age group.
-NO_TOPIC_BUTTON_PREFIX = ("top-ten-", "book-club-")
+NO_TOPIC_BUTTON_PREFIX = ("top-ten-", "book-club-", "procedures-")
 
 SUBSCRIBE = "One email on Fridays"
 REPLY_LINE = "was%20it%20useful%20to%20you"
@@ -175,6 +175,19 @@ def main():
                 problems.append(f"{f}: glossary link(s) with no entry: {', '.join(sorted(dead))}")
             if 'class="gl"' in src and 'glossary.js' not in src:
                 problems.append(f"{f}: uses glossary links but does not load glossary.js")
+
+    # ---- ?s= and ?g= links must resolve to a filter on the landing page ----
+    filters = set(re.findall(r'data-f="([^"]+)"', index))
+    for f in html_files:
+        src = (HERE / f).read_text(encoding="utf-8")
+        for key in set(re.findall(r'\?s=([a-z0-9-]+)', src)):
+            if key not in filters:
+                problems.append(f"{f}: links to ?s={key}, which matches no filter "
+                                f"on the landing page \u2014 it will land on the "
+                                f"unfiltered index")
+        for key in set(re.findall(r'\?g=([a-z0-9-]+)', src)):
+            if f"g:{key}" not in filters:
+                problems.append(f"{f}: links to ?g={key}, which matches no group filter")
 
     # ---- report -----------------------------------------------------------
     print()

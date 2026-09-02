@@ -427,8 +427,7 @@
       <details class="drop" data-g="procedures">
         <summary class="chip grp">Procedures</summary>
         <div class="menu">
-          <button class="mi" data-f="g:procedures"><i class="md all"></i>All procedures</button>
-          <a class="mi" href="procedures-01-intraosseous-access.html"><i class="md amethyst"></i>Intraosseous access</a>
+          <button class="mi" data-f="procedures"><i class="md amethyst"></i>All procedures</button>
         </div>
       </details>
       <details class="drop" data-g="cultural">
@@ -867,7 +866,10 @@
     var id = (window.location.hash || "").slice(1);
     if(!id || id === "top" || id === "suggestions") return;
     var el = document.getElementById(id);
-    if(el) landUnder(el);
+    if(!el) return;
+    // if the hash names a dropdown, open it rather than just scrolling past
+    if(el.tagName === "DETAILS") el.open = true;
+    landUnder(el);
   })();
 
   var totop = document.getElementById("totop");
