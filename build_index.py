@@ -214,8 +214,27 @@ def build_teaser(m):
     return "\n".join(out)
 
 
+def build_procedures(m):
+    """The Procedures menu. Unlike the other groups this one is a reference
+    shelf — readers arrive wanting a named procedure, not a stream — so it
+    lists the pages themselves under the filter. It was hand-maintained until
+    September 2026, drifted, and stopped listing anything published after the
+    first entry. Generated now."""
+    pages = sorted((p for p in m["pages"] if p["series"] == "procedures"),
+                   key=lambda p: int(p.get("number") or 0))
+    out = ['        <div class="menu">',
+           '          <button class="mi" data-f="procedures">'
+           '<i class="md amethyst"></i>All procedures</button>']
+    for p in pages:
+        out.append(f'          <a class="mi" href="{p["file"]}">'
+                   f'<i class="md amethyst"></i>{e(p["title"])}</a>')
+    out.append('        </div>')
+    return "\n".join(out)
+
+
 REGIONS = {
     "TEASER": build_teaser,
+    "PROCEDURES": build_procedures,
     "THIS-WEEK": build_this_week,
     "PREVIOUS-WEEKS": build_previous,
     "LATEST": build_latest,
@@ -245,6 +264,10 @@ def insert_markers(src):
         return src
 
     src = wrap(src, "TEASER", r'      <p class="teaser">.*?</p>')
+    src = wrap(src, "PROCEDURES",
+               r'(?<=<details class="drop" data-g="procedures">\n'
+               r'        <summary class="chip grp">Procedures</summary>\n)'
+               r'        <div class="menu">.*?</div>')
     src = wrap(src, "THIS-WEEK", r'  <section class="week".*?</section>')
     src = wrap(src, "PREVIOUS-WEEKS",
                r'      <details class="group".*</details>(?=\s*\n\s*<p class="empty")')
