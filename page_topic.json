@@ -598,9 +598,25 @@
    "week": false,
    "blurb": "A new column. Jonathan Miller, 1978 — we have almost no access to our own interiors, so every culture has built the body out of whatever machinery was lying around. The metaphor is not decoration. It is the instrument.",
    "standing": true
+  },
+  {
+   "file": "procedures-02-peripheral-iv-access.html",
+   "series": "procedures",
+   "colour": "amethyst",
+   "number": "2",
+   "title": "Peripheral intravenous access",
+   "topic": "Any time",
+   "slug": "standing",
+   "week": false,
+   "standing": true
   }
  ],
  "latest": [
+  {
+   "file": "procedures-02-peripheral-iv-access.html",
+   "colour": "amethyst",
+   "label": "Procedures 2 · Peripheral IV access"
+  },
   {
    "file": "book-club-01-the-body-in-question.html",
    "colour": "terracotta",
@@ -620,11 +636,6 @@
    "file": "med-students-03-toddler-preschool.html",
    "colour": "violet",
    "label": "Medical Students' Place 3"
-  },
-  {
-   "file": "anaesthetists-alley-01-toddler-preschool.html",
-   "colour": "fern",
-   "label": "Anaesthetists' Alley"
   }
  ],
  "topten": [

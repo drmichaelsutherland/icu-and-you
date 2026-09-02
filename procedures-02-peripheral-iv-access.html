@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en-AU">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ICU AND YOU · Procedures No. 2 — Peripheral intravenous access</title>
+<meta name="description" content="Procedures No. 2: peripheral IV access — choosing the vein, the things that decide success before the needle is out of its packet, technique, the difficult patient, and what to do when you have failed twice.">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="alternate icon" href="/favicon.ico" sizes="any">
+<link rel="apple-touch-icon" href="/icon-180.png">
+<meta name="theme-color" content="#1B2A33">
+<meta property="og:site_name" content="ICU AND YOU">
+<meta property="og:type" content="website">
+<meta property="og:title" content="ICU AND YOU · Procedures No. 2 — Peripheral intravenous access">
+<meta property="og:description" content="The commonest procedure in the hospital, and the one nobody is formally taught.">
+<meta property="og:image" content="https://icuandyou.com/share-card.png">
+<meta name="twitter:card" content="summary_large_image">
+<style>
+  :root{
+    --paper:#FBF9FC; --ink:#241F2B; --muted:#6B6377; --rule:#DFD6E6;
+    --amethyst:#7A4FA3; --amethysttint:#F1EBF7;
+    --rust:#A8442A; --rusttint:#F9EDE7;
+    --moss:#4C6B4A; --mosstint:#EAF1E9;
+    --gold:#A8721E; --goldtint:#FBF1DC;
+  }
+  *{box-sizing:border-box}
+  body{margin:0;background:#EDE8F1;color:var(--ink);
+    font:400 17px/1.64 'Iowan Old Style','Palatino Linotype',Palatino,Georgia,serif;
+    -webkit-text-size-adjust:100%;}
+  .sheet{max-width:820px;margin:0 auto;background:var(--paper);
+    box-shadow:0 1px 40px rgba(36,31,43,.10);}
+
+  header.top{padding:42px 40px 28px;border-bottom:2px solid var(--amethyst)}
+  .tophome,.topseries,.toptopic{display:inline-block;margin:0 0 16px;padding:7px 16px;
+    border-radius:20px;border:1px solid currentColor;opacity:.62;text-decoration:none;
+    color:inherit;font:600 11.5px 'Helvetica Neue',Arial,sans-serif;letter-spacing:.09em;
+    text-transform:uppercase;transition:opacity .12s ease}
+  .topseries,.toptopic{margin-left:9px}
+  .tophome:hover,.topseries:hover,.toptopic:hover{opacity:1}
+  .eyebrow a.mast,.eyebrow a.serlink{color:inherit;text-decoration:none;
+    border-bottom:1px solid transparent}
+  .eyebrow a.mast:hover,.eyebrow a.serlink:hover{border-bottom-color:currentColor}
+  .eyebrow{font:500 11.5px/1 'Helvetica Neue',Arial,sans-serif;letter-spacing:.24em;
+    text-transform:uppercase;color:var(--muted);margin:0 0 13px}
+  h1{font-size:32px;line-height:1.2;margin:0 0 9px;font-weight:400;letter-spacing:-.012em}
+  .kicker{color:var(--muted);margin:0;font-size:16.5px;font-style:italic}
+
+  .askedby{margin:0;padding:18px 40px;background:var(--amethysttint);
+    border-bottom:1px solid var(--rule);font-size:16px;color:#4A3D57}
+  .askedby a{color:var(--amethyst)}
+
+  .pad{padding:32px 40px}
+  p{margin:0 0 16px}
+  .lede{font-size:19.5px;line-height:1.55;margin:0 0 20px}
+
+  h2.sub{font:600 12px 'Helvetica Neue',Arial,sans-serif;letter-spacing:.2em;
+    text-transform:uppercase;color:var(--amethyst);margin:32px 0 15px;
+    padding-bottom:8px;border-bottom:1px solid var(--rule)}
+
+  ul.pts{list-style:none;margin:0 0 18px;padding:0}
+  ul.pts li{display:flex;gap:13px;padding:11px 0;border-bottom:1px solid #EFE9F4;
+    font-size:16.5px;line-height:1.5}
+  ul.pts li:last-child{border-bottom:0}
+  ul.pts b{flex:0 0 182px;font:600 14.5px 'Helvetica Neue',Arial,sans-serif;
+    color:var(--amethyst);line-height:1.4}
+
+  ol.steps{list-style:none;counter-reset:s;margin:0 0 18px;padding:0}
+  ol.steps li{counter-increment:s;position:relative;padding:12px 0 12px 44px;
+    border-bottom:1px solid #EFE9F4;font-size:16.5px;line-height:1.55}
+  ol.steps li:last-child{border-bottom:0}
+  ol.steps li::before{content:counter(s);position:absolute;left:0;top:12px;
+    width:28px;height:28px;border-radius:50%;background:var(--amethyst);color:#F8F5FB;
+    font:600 13px 'Helvetica Neue',Arial,sans-serif;display:flex;align-items:center;
+    justify-content:center}
+
+  .box{margin:0 0 18px;padding:20px 24px;border-radius:0 8px 8px 0}
+  .box .lab{display:block;font:600 11px 'Helvetica Neue',Arial,sans-serif;
+    letter-spacing:.18em;text-transform:uppercase;margin:0 0 9px}
+  .box p:last-child{margin:0}
+  .red{background:var(--rusttint);border-left:4px solid var(--rust)} .red .lab{color:var(--rust)}
+  .grn{background:var(--mosstint);border-left:4px solid var(--moss)} .grn .lab{color:var(--moss)}
+  .amb{background:var(--goldtint);border-left:4px solid var(--gold)} .amb .lab{color:var(--gold)}
+
+  .sites{display:flex;gap:13px;flex-wrap:wrap;margin:0 0 20px}
+  .site{flex:1 1 226px;background:#fff;border:1px solid var(--rule);border-radius:9px;
+    padding:16px 18px;border-top:4px solid var(--amethyst)}
+  .site h3{margin:0 0 7px;font:600 13px 'Helvetica Neue',Arial,sans-serif;
+    letter-spacing:.07em;text-transform:uppercase;color:var(--amethyst)}
+  .site p{margin:0;font-size:15.5px;line-height:1.5;color:#3B3345}
+
+  .challenge{margin:0;padding:28px 32px;background:var(--rusttint);border-left:5px solid var(--rust)}
+  .challenge h2{font:600 12px 'Helvetica Neue',Arial,sans-serif;letter-spacing:.2em;
+    text-transform:uppercase;color:var(--rust);margin:0 0 13px}
+  .ask{font-size:19.5px;line-height:1.5;margin:0 0 12px;font-style:italic}
+  .btn{display:inline-block;margin:6px 0 12px;padding:15px 30px;background:var(--rust);
+    color:#FDF8F5;text-decoration:none;border-radius:30px;font-style:normal;
+    font:600 15px 'Helvetica Neue',Arial,sans-serif;letter-spacing:.03em}
+  .btn:hover{background:#8A3620}
+  .fallback{font:400 13.5px 'Helvetica Neue',Arial,sans-serif;color:var(--muted);margin:0}
+  .fallback a{color:var(--rust)}
+
+  footer{padding:24px 40px 42px;border-top:1px solid var(--rule);
+    font:400 13px 'Helvetica Neue',Arial,sans-serif;color:var(--muted);text-align:center;line-height:1.7}
+  .subline{margin:0 0 14px;padding:0 0 13px;border-bottom:1px solid rgba(0,0,0,.09);
+    font:400 14.5px/1.55 'Iowan Old Style','Palatino Linotype',Palatino,Georgia,serif;
+    max-width:56ch;margin-left:auto;margin-right:auto}
+  .subline a{font-weight:500;border-bottom:1px solid currentColor;
+    text-decoration:none;color:inherit}
+  .firstpub{display:block;margin:0 0 10px;padding-bottom:9px;
+    border-bottom:1px solid rgba(0,0,0,.09);
+    font:400 12px 'Helvetica Neue',Arial,sans-serif;letter-spacing:.06em;opacity:.72}
+  .home{display:inline-block;margin:0 0 14px;padding:8px 18px;border-radius:20px;
+    border:1px solid var(--rule);background:#F3EFF7;color:var(--amethyst);text-decoration:none;
+    font:600 12.5px 'Helvetica Neue',Arial,sans-serif;letter-spacing:.05em}
+  .home:hover{background:var(--amethyst);border-color:var(--amethyst);color:#F8F5FB}
+
+  @media (max-width:640px){
+    header.top,.pad,.askedby,footer{padding-left:20px;padding-right:20px}
+    .challenge{padding:22px 20px}
+    h1{font-size:26px} body{font-size:16.5px} .ask{font-size:18px}
+    ul.pts li{flex-direction:column;gap:3px} ul.pts b{flex:none}
+  }
+  @media print{ body{background:#fff} .sheet{box-shadow:none;max-width:none} }
+</style>
+</head>
+<body>
+<div class="sheet">
+
+  <header class="top">
+    <a class="tophome" href="./">&larr;&nbsp; Home</a>
+    <a class="topseries" href="./?s=procedures">All procedures</a>
+    <a class="toptopic" href="you-asked.html">You asked</a>
+    <p class="eyebrow"><a class="mast" href="./">ICU and You</a> &nbsp;·&nbsp;
+      <a class="serlink" href="./?s=procedures">Procedures</a> &nbsp;·&nbsp; Number 2</p>
+    <h1>Peripheral intravenous access</h1>
+    <p class="kicker">The commonest procedure in the hospital, and the one nobody is ever formally taught</p>
+  </header>
+
+  <p class="askedby">Written because trainees keep asking for it, which is itself the finding. Everybody is
+    expected to be able to do this on day one and almost nobody has been shown properly &mdash;
+    see <a href="you-asked.html">You asked</a>.</p>
+
+  <div class="pad">
+    <p class="lede">Most failed cannulations are lost before the needle comes out of its packet. The vein was
+      chosen badly, or it was never going to fill, or the arm was in the wrong place, or the operator was
+      standing somewhere that made their own hand unsteady.</p>
+
+    <p>This is a manual skill, and reading about it will not give it to you. What reading can do is remove the
+      four or five errors that account for most failures, so that the practice you get is practice at the right
+      thing.</p>
+
+    <h2 class="sub">Before you touch anything</h2>
+
+    <ul class="pts">
+      <li><b>Decide what the line is for</b><span>A single dose of antibiotic and a resuscitation are different
+        problems. Flow rises with the fourth power of the radius and falls with length, so a short wide cannula
+        in a proximal vein is what you want for volume, and a small cannula in a good vein beats a big one in a
+        bad vein for everything else.</span></li>
+      <li><b>Get the patient warm</b><span>The single most useful thing you can do, and the most neglected.
+        A cold peripherally shut-down arm has no veins in it. Warm packs, warm water, a blanket for a few
+        minutes: the vein you could not find appears.</span></li>
+      <li><b>Position before you prepare</b><span>Arm below the level of the heart, supported so the patient is
+        not holding it up, and the limb rotated so the vein faces you. Then set your own height and stand so your
+        dominant hand is not crossing your body.</span></li>
+      <li><b>Choose with your finger, not your eye</b><span>A vein you can feel is better than a vein you can
+        see. Palpate for something soft, bouncy and compressible. A hard cord is thrombosed, a pulsatile one is
+        not a vein, and a blue line visible under thin skin may be too fragile to hold anything.</span></li>
+    </ul>
+
+    <h2 class="sub">Where to go</h2>
+
+    <div class="sites">
+      <div class="site">
+        <h3>Forearm, dorsal and volar</h3>
+        <p>The best all-round choice and the most under-used. Long straight segments, well supported by
+          surrounding tissue, away from joints so the line survives movement, and comfortable for the patient.
+          Start here and work proximally.</p>
+      </div>
+      <div class="site">
+        <h3>Dorsum of the hand</h3>
+        <p>Easy to see and easy to enter, but small, mobile, uncomfortable, and positional. A reasonable first
+          line for a short admission and a poor one for anything that must keep running.</p>
+      </div>
+      <div class="site">
+        <h3>Antecubital fossa</h3>
+        <p>Big, reliable, and the right answer in an emergency or when you need volume. The cost is that it sits
+          across a joint, so it kinks and occludes, and it uses up a vein you may want later for a midline or a
+          PICC. Not a first choice in someone who will be in hospital for weeks.</p>
+      </div>
+      <div class="site">
+        <h3>Feet, and the external jugular</h3>
+        <p>Both work and both have a price. Foot veins carry a higher infection and thrombosis risk and are
+          usually avoided in adults, particularly in diabetes. The external jugular is a legitimate peripheral
+          site when the arms have failed, with the patient head-down, but it is uncomfortable and easily
+          dislodged.</p>
+      </div>
+    </div>
+
+    <div class="box red">
+      <span class="lab">Arms that are not available</span>
+      <p>The side of a mastectomy or axillary clearance, an arm with a dialysis fistula or graft, a limb with
+        lymphoedema, and the affected side after a stroke. Avoid cannulating distal to a previous failed attempt
+        in the same vein, because the fluid will come out of the earlier hole. Ask the patient which arm people
+        usually use: they know, and they are almost always right.</p>
+    </div>
+
+    <h2 class="sub">Doing it</h2>
+
+    <ol class="steps">
+      <li><strong>Tourniquet, then wait.</strong> Firm enough to obstruct venous return but not the pulse, about
+        a hand's breadth above the site. Then leave it for a minute rather than five seconds. Let the arm hang,
+        ask the patient to open and close the hand a few times, and tap gently rather than slapping.</li>
+      <li><strong>Clean, and let it dry.</strong> Alcohol chlorhexidine, thirty seconds of contact, then dry
+        properly. Wet skin stings on puncture and the antisepsis has not worked yet. If you palpate again after
+        cleaning, you have to clean again.</li>
+      <li><strong>Anchor the vein.</strong> This is the step people skip and it is the one that decides the
+        outcome. Use the thumb of your non-dominant hand to put traction on the skin two to three centimetres
+        below the entry point, pulling towards you, and hold it there for the whole procedure. Veins roll
+        because nobody is holding them.</li>
+      <li><strong>Enter shallow.</strong> Ten to thirty degrees, bevel up, through the skin and then towards the
+        vein as a separate movement. Steeper than that and you go through the back wall.</li>
+      <li><strong>First flashback is the needle, not the cannula.</strong> When you see blood, the metal tip is
+        in the lumen and the plastic is still a few millimetres short. Drop the angle almost flat and advance the
+        whole assembly two to three more millimetres before you do anything else.</li>
+      <li><strong>Then advance the cannula off the needle.</strong> Hold the needle absolutely still and slide
+        the plastic forward with your finger. If it will not go, do not force it and do not re-advance the
+        needle through the cannula &mdash; that shears it.</li>
+      <li><strong>Release the tourniquet before you connect anything.</strong> Then press over the cannula tip,
+        withdraw the needle fully into its safety device, and dispose of it before your hands do anything
+        else.</li>
+      <li><strong>Flush, look, and secure.</strong> Ten millilitres of saline. It should run freely with no
+        swelling, no pain and no resistance. Secure it so the hub cannot move, date it, and document the site and
+        gauge.</li>
+    </ol>
+
+    <div class="box amb">
+      <span class="lab">The thing nobody warns you about</span>
+      <p><strong>The flashback chamber lies to beginners.</strong> Seeing blood feels like success, and the
+        instinct is to stop and advance the plastic. That instinct is the single commonest cause of a cannula
+        that will not thread, or that flushes into the tissues. The needle is longer than the cannula by design.
+        Whatever your hands want to do at the moment of flashback, the answer is <em>flatten and advance a
+        little further first</em>.</p>
+    </div>
+
+    <h2 class="sub">The patient who is genuinely difficult</h2>
+
+    <ul class="pts">
+      <li><b>Know it before you start</b><span>Intravenous drug use, chemotherapy, dialysis, obesity, oedema,
+        dark skin where visual inspection helps less, chronic illness with hundreds of previous attempts, and
+        the very young. Recognising a hard stick in advance changes who should be doing it, not just how.</span></li>
+      <li><b>Use the ultrasound earlier than you think</b><span>For deep or impalpable veins it converts a hard
+        procedure into an ordinary one. The basilic and the deep brachial veins are the usual targets. It needs
+        a longer cannula, because a standard one will fall out of a deep vein once the swelling settles.</span></li>
+      <li><b>Two attempts, then hand over</b><span>This is a discipline, not a weakness. After two failures your
+        hands are less steady, the patient is less cooperative, and the next person is more likely to succeed on
+        their first go than you are on your third. Say so out loud and ask.</span></li>
+      <li><b>And know when the answer is a different route</b><span>If the patient needs access now and does not
+        have it, stop cannulating. That is what
+        <a href="procedures-01-intraosseous-access.html">intraosseous access</a> is for, and the commonest error
+        with it is doing it late.</span></li>
+    </ul>
+
+    <div class="box grn">
+      <span class="lab">Afterwards</span>
+      <p><strong>Phlebitis</strong> is the common one, and it rises with dwell time, with cannula size relative
+        to the vein, and with irritant infusions. Look at the site every shift and take it out when it is done
+        rather than when it fails. <strong>Extravasation</strong> is the one that causes lasting harm, and the
+        drugs that do the damage &mdash; vasopressors, concentrated potassium, cytotoxics, calcium &mdash;
+        should not be running through a peripheral line you would not defend. <strong>Infection</strong> follows
+        cannulas that nobody has thought about for days, which is why the date on the dressing matters.</p>
+      <p>And the line that is not being used is not harmless. If nothing has gone through it since yesterday,
+        ask whether it should still be there.</p>
+    </div>
+  </div>
+
+  <div class="pad" style="padding-top:6px">
+    <div class="challenge">
+      <h2>Challenge for you</h2>
+      <p class="ask">What was the one thing that finally made your cannulation work?</p>
+      <p>Almost everyone has a moment when it stopped being luck &mdash; something somebody said, or a habit they
+        made you adopt. For some people it is the traction thumb. For others it is warming the arm, or waiting
+        longer with the tourniquet, or simply standing somewhere different. Send me yours and I will collect them
+        into a piece, because this is exactly the kind of knowledge that never makes it into a textbook.</p>
+      <p><a class="btn" href="mailto:icuandyou@icloud.com?subject=Procedures%20No.%202%20-%20what%20made%20it%20work&body=The%20thing%20that%20finally%20made%20cannulation%20work%20for%20me%3A%0D%0A%0D%0A%0D%0AWho%20taught%20me%2C%20or%20where%20it%20came%20from%3A%0D%0A%0D%0A%0D%0A---%0D%0A%0D%0AA%20procedure%20I%20would%20like%20covered%20next%3A%0D%0A%0D%0A%0D%0AName%20%28optional%29%3A%0D%0A%0A---%0A%0AThinking%20about%20this%20ICU%20AND%20YOU%20post%20overall%20%E2%80%94%20was%20it%20useful%20to%20you%2C%20or%20would%20it%20be%20useful%20to%20others%3F%0A">Send me your one thing</a></p>
+      <p class="fallback">The button opens a reply straight to me. If your device blocks it, write to
+        <a href="mailto:icuandyou@icloud.com">icuandyou@icloud.com</a> instead.</p>
+    </div>
+  </div>
+
+  <footer>
+    <span class="firstpub">First published September 2026</span>
+    <p class="subline">One email on Fridays &mdash; what went up and why it mattered, the best of your replies,
+      and original feature stories, news and views. <a href="https://joinlist.com/f/5adad2d6">Come and join us</a>.</p>
+    <a class="home" href="./">&larr; &nbsp;All of ICU AND YOU</a><br>
+    ICU AND YOU &nbsp;&#183;&nbsp; Procedures No. 2 &nbsp;&#183;&nbsp; Peripheral intravenous access<br>
+    Educational use within the ICU education programme. Not a clinical protocol &mdash; local policy on
+    antisepsis, dressings, dwell time and which drugs may run peripherally always takes precedence.
+  </footer>
+
+</div>
+<script data-goatcounter="https://icuandyou.goatcounter.com/count"
+        async src="//gc.zgo.at/count.js"></script>
+</body>
+</html>

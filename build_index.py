@@ -140,10 +140,16 @@ def build_previous(m):
 
     standing = [p for p in m["pages"] if p.get("standing")]
     if standing:
-        standing.sort(key=lambda p: series_sort_key(m, p))
+        standing.sort(key=lambda p: (series_sort_key(m, p), int(p.get("number") or 0)))
+        # One dot per series here, not per piece: this group grows by series
+        # over time, and twelve identical dots would say nothing.
+        seen_series = []
+        for p in standing:
+            if p["series"] not in seen_series:
+                seen_series.append(p["series"])
         dots = "".join(
-            f'<i class="dot {p["colour"]}" title="{e(m["series"][p["series"]][0])}"></i>'
-            for p in standing)
+            f'<i class="dot {m["series"][k][1]}" title="{e(m["series"][k][0])}"></i>'
+            for k in seen_series)
         n = len(standing)
         out += [
             '      <details class="group" data-topic="Any time" data-slug="standing">',
