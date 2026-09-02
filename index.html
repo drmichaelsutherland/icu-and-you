@@ -21,7 +21,8 @@
     --paper:#FBF9F5; --ink:#1B2A33; --muted:#6E6B63; --rule:#DED8CC;
     --teal:#2E6473; --plum:#6B4570; --rust:#A8442A; --olive:#5F6B33;
     --bleu:#2F4A7C; --slate:#3E4A52; --verde:#2A6B47; --sepia:#6B4A2F; --oro:#B5852A; --wine:#7C2D42; --saffron:#B5651E; --violet:#4C4A8F; --nero:#23272E; --rose:#A85A6B; --denim:#3F6FA8; --jade:#0F7A6B;
-  --fern:#3E7730; --ferntint:#ECF4EB; --fernink:#2C5821; --amethyst:#7A4FA3; --brass:#A8721E;
+  --fern:#3E7730; --ferntint:#ECF4EB; --fernink:#2C5821;
+  --crimson:#9E1B2F; --crimsontint:#F7EAEC; --crimsonink:#7A1424; --amethyst:#7A4FA3; --brass:#A8721E;
   }
   *{box-sizing:border-box}
   body{margin:0;background:#F3EFE8;color:var(--ink);
@@ -165,7 +166,7 @@
   .md.verde{background:var(--verde)} .md.oro{background:var(--oro)}
   .md.saffron{background:var(--saffron)}
   .md.rose{background:var(--rose)} .md.denim{background:var(--denim)}
-  .md.jade{background:var(--jade)}.md.fern{background:var(--fern)} .md.amethyst{background:var(--amethyst)}
+  .md.jade{background:var(--jade)}.md.fern{background:var(--fern)}.md.crimson{background:var(--crimson)} .md.amethyst{background:var(--amethyst)}
 
   /* ── This week ───────────────────────────────────────── */
   .week{padding:30px 36px 34px;background:#F6F2E8;border-bottom:1px solid var(--rule)}
@@ -183,7 +184,7 @@
   .item.oro{border-left-color:var(--oro)} .item.wine{border-left-color:var(--wine)}
   .item.saffron{border-left-color:var(--saffron)} .item.violet{border-left-color:var(--violet)}
   .item.nero{border-left-color:var(--nero)} .item.rose{border-left-color:var(--rose)}
-  .item.denim{border-left-color:var(--denim)} .item.jade{border-left-color:var(--jade)}.item.fern{border-left-color:var(--fern)} .item.amethyst{border-left-color:var(--amethyst)}
+  .item.denim{border-left-color:var(--denim)} .item.jade{border-left-color:var(--jade)}.item.fern{border-left-color:var(--fern)}.item.crimson{border-left-color:var(--crimson)} .item.amethyst{border-left-color:var(--amethyst)}
   .badge{flex:0 0 84px;text-align:center;
     font:600 10.5px 'Helvetica Neue',Arial,sans-serif;letter-spacing:.1em;
     text-transform:uppercase;color:var(--muted);padding-top:3px;line-height:1.3}
@@ -224,7 +225,7 @@
   .dot.oro{background:var(--oro)} .dot.wine{background:var(--wine)}
   .dot.saffron{background:var(--saffron)} .dot.violet{background:var(--violet)}
   .dot.nero{background:var(--nero)} .dot.rose{background:var(--rose)}
-  .dot.denim{background:var(--denim)} .dot.jade{background:var(--jade)}.dot.fern{background:var(--fern)} .dot.amethyst{background:var(--amethyst)}
+  .dot.denim{background:var(--denim)} .dot.jade{background:var(--jade)}.dot.fern{background:var(--fern)}.dot.crimson{background:var(--crimson)} .dot.amethyst{background:var(--amethyst)}
   .tcount{font:400 13.5px 'Helvetica Neue',Arial,sans-serif;color:var(--muted);
     margin-right:22px;white-space:nowrap}
 
@@ -238,7 +239,7 @@
   li.row.oro{border-left-color:var(--oro)} li.row.wine{border-left-color:var(--wine)}
   li.row.saffron{border-left-color:var(--saffron)} li.row.violet{border-left-color:var(--violet)}
   li.row.nero{border-left-color:var(--nero)} li.row.rose{border-left-color:var(--rose)}
-  li.row.denim{border-left-color:var(--denim)} li.row.jade{border-left-color:var(--jade)}.row.fern{border-left-color:var(--fern)} li.row.amethyst{border-left-color:var(--amethyst)}
+  li.row.denim{border-left-color:var(--denim)} li.row.jade{border-left-color:var(--jade)}.row.fern{border-left-color:var(--fern)}.row.crimson{border-left-color:var(--crimson)} li.row.amethyst{border-left-color:var(--amethyst)}
   li.row:hover{background:#F7F4ED}
   .rs{flex:0 0 112px;font:600 10.5px 'Helvetica Neue',Arial,sans-serif;letter-spacing:.1em;
     text-transform:uppercase;color:var(--muted)}
@@ -380,11 +381,11 @@
         <summary class="chip newbtn">Latest posts</summary>
 <!-- BUILD:LATEST -->
         <div class="menu">
+          <a class="mi newitem" href="chinatown-01-gua-sha.html"><span class="newtag">New</span><i class="md crimson"></i>Nǐ hǎo Chinatown · Guā shā</a>
           <a class="mi newitem" href="mnemonic-55-toddler.html"><span class="newtag">New</span><i class="md olive"></i>Mnemonic 55 · TODDLER</a>
           <a class="mi newitem" href="med-students-03-toddler-preschool.html"><span class="newtag">New</span><i class="md violet"></i>Medical Students&#x27; Place 3</a>
           <a class="mi newitem" href="anaesthetists-alley-01-toddler-preschool.html"><span class="newtag">New</span><i class="md fern"></i>Anaesthetists&#x27; Alley</a>
           <a class="mi newitem" href="superpuzzle-50-toddler-preschool-fillable.html"><span class="newtag">New</span><i class="md rust"></i>Superpuzzle 50</a>
-          <a class="mi newitem" href="aphorism-37-happily-examined.html"><span class="newtag">New</span><i class="md plum"></i>The child who lets you examine them</a>
         </div>
 <!-- /BUILD:LATEST -->
       </details>
@@ -436,6 +437,7 @@
           <button class="mi" data-f="italiano"><i class="md verde"></i>L&#x27;angolo italiano</button>
           <button class="mi" data-f="espanol"><i class="md oro"></i>El rincón español</button>
           <button class="mi" data-f="india"><i class="md saffron"></i>The India Room</button>
+          <button class="mi" data-f="chinatown"><i class="md crimson"></i>N&#464; h&#462;o Chinatown &#20320;&#22909;</button>
         </div>
       </details>
       <details class="drop" data-g="other">
@@ -505,6 +507,14 @@
             <h3>The toddler and preschool child</h3>
             <p>One to five years in three tiers — the science of what has changed since infancy, the encounter and how to get anything out of it, and what you will be expected to do on your first nights on call.</p>
             <div class="links"><a class="go" href="med-students-03-toddler-preschool.html">Open</a></div>
+          </div>
+        </li>
+        <li class="item crimson" data-series="chinatown">
+          <div class="badge">Nǐ hǎo Chinatown<b>1</b></div>
+          <div class="body">
+            <h3>Guā shā 刮痧</h3>
+            <p>A new column, and it opens where it matters most at this age. Gua sha, cupping and moxibustion leave marks that can look like inflicted injury — what they actually look like, and the better question to ask.</p>
+            <div class="links"><a class="go" href="chinatown-01-gua-sha.html">Open</a></div>
           </div>
         </li>
         <li class="item slate" data-series="podcast emergency">
@@ -707,7 +717,7 @@
     });
   }
 
-  var GROUPS = {"memory": ["mind-map", "aphorism", "mnemonic", "superpuzzle", "superquiz"], "multimedia": ["podcast", "journal"], "special": ["students", "nurses", "gp", "emergency", "anaesthetics"], "procedures": ["procedures"], "cultural": ["coin", "italiano", "espanol", "india"], "other": ["literary"]};
+  var GROUPS = {"memory": ["mind-map", "aphorism", "mnemonic", "superpuzzle", "superquiz"], "multimedia": ["podcast", "journal"], "special": ["students", "nurses", "gp", "emergency", "anaesthetics"], "procedures": ["procedures"], "cultural": ["coin", "italiano", "espanol", "india", "chinatown"], "other": ["literary"]};
   var LABELS = {"memory": "Memory aids and activities", "multimedia": "Multimedia", "special": "Special groups", "procedures": "Procedures", "cultural": "Cultural narratives", "other": "Other Realms"};
 
   function inFilter(sk){

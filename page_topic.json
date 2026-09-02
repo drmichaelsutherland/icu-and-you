@@ -94,6 +94,11 @@
    "Anaesthetists' Alley",
    "fern",
    "special"
+  ],
+  "chinatown": [
+   "Nǐ hǎo Chinatown",
+   "crimson",
+   "cultural"
   ]
  },
  "pages": [
@@ -456,7 +461,7 @@
    "topic": "The toddler and preschool child",
    "slug": "toddler-preschool",
    "week": true,
-   "pos": 6,
+   "pos": 7,
    "badge": "Podcast",
    "link_label": "Open",
    "guests": [
@@ -473,7 +478,7 @@
    "topic": "The toddler and preschool child",
    "slug": "toddler-preschool",
    "week": true,
-   "pos": 7,
+   "pos": 8,
    "badge": "Journal club",
    "link_label": "Open",
    "blurb": "The first expert consensus on haemodynamic monitoring in children — and an unusually honest account of how little sits underneath it. Including the gap that matters most here: no agreed blood pressure target under twelve."
@@ -561,9 +566,28 @@
    "badge": "Mnemonic",
    "link_label": "Open",
    "blurb": "TODDLER — seven things for the one to five year old, from trusting the baseline you are given to reporting what does not fit. The word is the age."
+  },
+  {
+   "file": "chinatown-01-gua-sha.html",
+   "series": "chinatown",
+   "colour": "crimson",
+   "number": "1",
+   "title": "Guā shā 刮痧",
+   "topic": "The toddler and preschool child",
+   "slug": "toddler-preschool",
+   "week": true,
+   "pos": 6,
+   "badge": "Nǐ hǎo Chinatown",
+   "link_label": "Open",
+   "blurb": "A new column, and it opens where it matters most at this age. Gua sha, cupping and moxibustion leave marks that can look like inflicted injury — what they actually look like, and the better question to ask."
   }
  ],
  "latest": [
+  {
+   "file": "chinatown-01-gua-sha.html",
+   "colour": "crimson",
+   "label": "Nǐ hǎo Chinatown · Guā shā"
+  },
   {
    "file": "mnemonic-55-toddler.html",
    "colour": "olive",
@@ -583,11 +607,6 @@
    "file": "superpuzzle-50-toddler-preschool-fillable.html",
    "colour": "rust",
    "label": "Superpuzzle 50"
-  },
-  {
-   "file": "aphorism-37-happily-examined.html",
-   "colour": "plum",
-   "label": "The child who lets you examine them"
   }
  ],
  "topten": [
