@@ -467,7 +467,7 @@
    "topic": "The toddler and preschool child",
    "slug": "toddler-preschool",
    "week": true,
-   "pos": 7,
+   "pos": 8,
    "badge": "Podcast",
    "link_label": "Open",
    "guests": [
@@ -484,7 +484,7 @@
    "topic": "The toddler and preschool child",
    "slug": "toddler-preschool",
    "week": true,
-   "pos": 8,
+   "pos": 9,
    "badge": "Journal club",
    "link_label": "Open",
    "blurb": "The first expert consensus on haemodynamic monitoring in children — and an unusually honest account of how little sits underneath it. Including the gap that matters most here: no agreed blood pressure target under twelve."
@@ -540,7 +540,7 @@
    "topic": "The toddler and preschool child",
    "slug": "toddler-preschool",
    "week": true,
-   "pos": 4,
+   "pos": 5,
    "badge": "Anaesthetists' Alley",
    "link_label": "Open",
    "blurb": "A new series. Practical anaesthesia for the one to five year old — fasting and the runny nose, premedication versus the parent at the head of the bed, the induction, laryngospasm, and the emergence delirium that gets treated as pain."
@@ -554,7 +554,7 @@
    "topic": "The toddler and preschool child",
    "slug": "toddler-preschool",
    "week": true,
-   "pos": 5,
+   "pos": 6,
    "badge": "Medical Students",
    "link_label": "Open",
    "blurb": "One to five years in three tiers — the science of what has changed since infancy, the encounter and how to get anything out of it, and what you will be expected to do on your first nights on call."
@@ -582,7 +582,7 @@
    "topic": "The toddler and preschool child",
    "slug": "toddler-preschool",
    "week": true,
-   "pos": 6,
+   "pos": 7,
    "badge": "Nǐ hǎo Chinatown",
    "link_label": "Open",
    "blurb": "A new column, and it opens where it matters most at this age. Gua sha, cupping and moxibustion leave marks that can look like inflicted injury — what they actually look like, and the better question to ask."
@@ -609,9 +609,28 @@
    "slug": "standing",
    "week": false,
    "standing": true
+  },
+  {
+   "file": "superquiz-62-toddler-preschool.html",
+   "series": "superquiz",
+   "colour": "wine",
+   "number": "62",
+   "title": "The toddler and preschool child",
+   "topic": "The toddler and preschool child",
+   "slug": "toddler-preschool",
+   "week": true,
+   "pos": 4,
+   "badge": "Superquiz",
+   "link_label": "Take the quiz",
+   "blurb": "Five open-book questions — the compliant child, the button battery, the inhaled peanut, marks that are not what they look like, and the single thing most likely to make croup worse. Three correct earns a certificate."
   }
  ],
  "latest": [
+  {
+   "file": "superquiz-62-toddler-preschool.html",
+   "colour": "wine",
+   "label": "Superquiz 62"
+  },
   {
    "file": "procedures-02-peripheral-iv-access.html",
    "colour": "amethyst",
@@ -631,11 +650,6 @@
    "file": "mnemonic-55-toddler.html",
    "colour": "olive",
    "label": "Mnemonic 55 · TODDLER"
-  },
-  {
-   "file": "med-students-03-toddler-preschool.html",
-   "colour": "violet",
-   "label": "Medical Students' Place 3"
   }
  ],
  "topten": [

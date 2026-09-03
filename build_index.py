@@ -154,7 +154,7 @@ def build_previous(m):
         out += [
             '      <details class="group" data-topic="Any time" data-slug="standing">',
             '        <summary>',
-            '          <span class="tname">Any time \u2014 not tied to a fortnight</span>',
+            '          <span class="tname">Any time. Not tied to a particular topic grouping</span>',
             f'          <span class="tdots">{dots}</span>',
             f'          <span class="tcount">{n} piece{"s" if n != 1 else ""}</span>',
             '        </summary>',
