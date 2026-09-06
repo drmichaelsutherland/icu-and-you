@@ -347,7 +347,12 @@
   .odr li:last-child{padding-bottom:0}
   .odr li::before{content:"";position:absolute;left:0;top:9px;width:6px;height:6px;
     border-radius:50%;background:#0F6E56}
-  @media (max-width:640px){ .jumpcol{align-items:flex-start} .donateline{text-align:left} }
+  @media (max-width:620px){
+    /* the row becomes a column here, so a flex-basis of 240px would be read as
+       a HEIGHT and reserve ~200px of empty space. Reset it, as .jump does. */
+    .jumpcol{flex:1 1 auto;width:100%;align-items:flex-start}
+    .donateline{text-align:left}
+  }
 </style>
 </head>
 <body>
