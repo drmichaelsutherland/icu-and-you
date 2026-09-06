@@ -627,6 +627,11 @@
  ],
  "latest": [
   {
+   "file": "#donate",
+   "colour": "teal",
+   "label": "Donation register QR added to all donation posts"
+  },
+  {
    "file": "superquiz-62-toddler-preschool.html",
    "colour": "wine",
    "label": "Superquiz 62"
@@ -645,11 +650,6 @@
    "file": "chinatown-01-gua-sha.html",
    "colour": "crimson",
    "label": "Nǐ hǎo Chinatown · Guā shā"
-  },
-  {
-   "file": "mnemonic-55-toddler.html",
-   "colour": "olive",
-   "label": "Mnemonic 55 · TODDLER"
   }
  ],
  "topten": [
