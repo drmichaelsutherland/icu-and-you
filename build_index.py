@@ -174,7 +174,12 @@ def build_previous(m):
 
 def build_latest(m):
     out = ['        <div class="menu">']
-    for x in m["latest"]:
+    items = m["latest"]
+    # an entry pointing at a section that is switched off would be a dead
+    # anchor, so drop it with the section
+    if not m.get("donation_promo", True):
+        items = [x for x in items if x["file"] != "#donate"]
+    for x in items:
         out.append(
             f'          <a class="mi newitem" href="{x["file"]}">'
             f'<span class="newtag">New</span>'
@@ -193,6 +198,36 @@ def build_topten(m):
         )
     out.append('        </div>')
     return "\n".join(out)
+
+
+def build_donate_line(m):
+    """The one-line mention beside "New here?" on the strip. Controlled by
+    "donation_promo" in the manifest so it can be switched off wholesale."""
+    if not m.get("donation_promo", True):
+        return ""
+    return ('          <p class="donateline">This site supports organ donation '
+            'registration &mdash; <a href="#donate">register your decision</a>.</p>')
+
+
+def build_donate(m):
+    """The organ donor register section at the foot of the landing page.
+    Same switch. The QR is inline SVG and lives in the manifest so the
+    landing page and the six donation pages cannot drift apart."""
+    if not m.get("donation_promo", True):
+        return ""
+    d = m.get("donation", {})
+    lis = "\n".join(f'        <li>{e(x)}</li>' for x in d.get("points", []))
+    return f'''  <section class="sub" id="donate">
+    <h2>{e(d.get("heading", "Organ and tissue donation"))}</h2>
+    <p>Scan the code, or go to
+      <a href="{d.get("url", "")}">donatelife.gov.au</a>.</p>
+    <div class="odr">
+      <div class="qr">{d.get("qr", "")}</div>
+      <ul>
+{lis}
+      </ul>
+    </div>
+  </section>'''
 
 
 def build_teaser(m):
@@ -234,6 +269,8 @@ def build_procedures(m):
 
 REGIONS = {
     "TEASER": build_teaser,
+    "DONATE-LINE": build_donate_line,
+    "DONATE": build_donate,
     "PROCEDURES": build_procedures,
     "THIS-WEEK": build_this_week,
     "PREVIOUS-WEEKS": build_previous,
@@ -249,7 +286,9 @@ REGIONS = {
 def insert_markers(src):
     """Wrap the four existing regions in marker comments. Idempotent."""
     def wrap(src, name, pattern):
-        if f"BUILD:{name}" in src:
+        # match the whole marker, not a prefix: BUILD:DONATE must not be
+        # satisfied by BUILD:DONATE-LINE
+        if f"<!-- BUILD:{name} -->" in src:
             print(f"  {name}: markers already present")
             return src
         mm = re.search(pattern, src, re.S)
@@ -264,6 +303,8 @@ def insert_markers(src):
         return src
 
     src = wrap(src, "TEASER", r'      <p class="teaser">.*?</p>')
+    src = wrap(src, "DONATE-LINE", r'          <p class="donateline">.*?</p>')
+    src = wrap(src, "DONATE", r'  <section class="sub" id="donate">.*?</section>')
     src = wrap(src, "PROCEDURES",
                r'(?<=<details class="drop" data-g="procedures">\n'
                r'        <summary class="chip grp">Procedures</summary>\n)'

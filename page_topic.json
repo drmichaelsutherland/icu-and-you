@@ -676,5 +676,18 @@
     "emphasis": true
    }
   ]
+ },
+ "donation_promo": true,
+ "donation": {
+  "heading": "Organ and tissue donation",
+  "url": "https://www.donatelife.gov.au/register-donor-today",
+  "qr": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 45 45\" class=\"segno qrimg\" role=\"img\" aria-label=\"QR code to the Australian Organ Donor Register\"><path class=\"qrline\" stroke=\"#14312e\" d=\"M2 2.5h7m1 0h1m3 0h2m1 0h2m3 0h2m2 0h1m4 0h2m1 0h1m1 0h7m-41 1h1m5 0h1m2 0h3m3 0h2m1 0h2m1 0h6m1 0h1m1 0h1m3 0h1m5 0h1m-41 1h1m1 0h3m1 0h1m1 0h1m3 0h2m1 0h2m3 0h1m3 0h2m2 0h1m2 0h1m2 0h1m1 0h3m1 0h1m-41 1h1m1 0h3m1 0h1m2 0h1m4 0h1m1 0h2m3 0h3m3 0h1m2 0h1m1 0h1m1 0h1m1 0h3m1 0h1m-41 1h1m1 0h3m1 0h1m1 0h2m4 0h3m1 0h2m1 0h2m1 0h1m3 0h1m2 0h2m1 0h1m1 0h3m1 0h1m-41 1h1m5 0h1m2 0h2m2 0h3m3 0h3m1 0h2m3 0h2m4 0h1m5 0h1m-41 1h7m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h7m-33 1h1m1 0h3m1 0h3m1 0h5m2 0h1m5 0h2m-28 1h2m2 0h1m1 0h1m1 0h1m5 0h1m1 0h4m1 0h2m1 0h1m1 0h2m1 0h1m1 0h1m1 0h1m1 0h1m-41 1h1m1 0h2m1 0h1m1 0h4m2 0h2m3 0h2m1 0h1m1 0h2m1 0h2m3 0h1m1 0h1m1 0h2m2 0h1m-40 1h2m3 0h4m1 0h1m2 0h2m2 0h5m1 0h3m1 0h1m1 0h1m2 0h2m1 0h2m-36 1h3m1 0h1m1 0h2m3 0h1m1 0h3m1 0h1m1 0h2m1 0h2m3 0h1m2 0h3m3 0h1m1 0h1m-38 1h1m1 0h8m2 0h1m1 0h2m2 0h2m4 0h2m4 0h1m1 0h2m-36 1h2m1 0h2m2 0h1m1 0h1m2 0h1m1 0h1m3 0h1m1 0h2m2 0h1m4 0h2m1 0h5m2 0h2m-41 1h3m2 0h3m1 0h2m1 0h1m1 0h1m1 0h1m5 0h1m1 0h2m1 0h2m2 0h1m1 0h1m2 0h2m-38 1h2m1 0h1m1 0h1m1 0h1m1 0h3m1 0h1m1 0h2m1 0h4m1 0h3m2 0h1m2 0h1m1 0h1m1 0h1m1 0h3m-40 1h1m1 0h1m3 0h2m3 0h2m1 0h2m2 0h2m2 0h1m1 0h4m1 0h1m1 0h3m1 0h1m1 0h2m1 0h1m-38 1h1m3 0h2m2 0h4m1 0h1m1 0h2m4 0h2m1 0h10m3 0h1m-41 1h3m2 0h2m5 0h2m1 0h1m1 0h1m1 0h2m1 0h1m2 0h4m2 0h1m1 0h1m1 0h3m2 0h1m-39 1h2m3 0h3m4 0h1m1 0h3m2 0h1m4 0h5m1 0h2m2 0h2m2 0h1m-41 1h2m1 0h1m1 0h2m3 0h2m1 0h3m3 0h2m1 0h5m11 0h1m1 0h1m-41 1h1m3 0h1m2 0h2m1 0h1m2 0h1m1 0h2m2 0h3m1 0h5m2 0h3m2 0h4m-37 1h1m3 0h1m1 0h1m3 0h2m1 0h2m2 0h1m1 0h3m1 0h1m1 0h1m1 0h1m2 0h2m2 0h1m-37 1h1m1 0h2m1 0h1m2 0h1m2 0h1m1 0h1m4 0h5m1 0h1m1 0h3m3 0h6m2 0h1m-40 1h2m3 0h1m2 0h5m3 0h2m4 0h2m3 0h1m2 0h2m1 0h2m1 0h1m1 0h2m-34 1h2m1 0h1m2 0h2m1 0h1m1 0h2m3 0h1m2 0h4m1 0h1m1 0h5m2 0h1m-41 1h1m1 0h2m1 0h2m1 0h2m1 0h1m1 0h2m1 0h2m2 0h2m3 0h1m1 0h1m1 0h1m2 0h4m3 0h1m-39 1h1m3 0h1m1 0h2m1 0h1m1 0h1m1 0h4m1 0h1m1 0h7m3 0h1m1 0h6m-38 1h3m2 0h5m1 0h4m2 0h1m1 0h1m1 0h3m1 0h1m2 0h1m1 0h1m1 0h1m3 0h3m-40 1h1m1 0h1m2 0h1m1 0h4m1 0h1m1 0h4m2 0h1m1 0h2m1 0h1m2 0h1m6 0h3m2 0h1m-41 1h2m3 0h2m1 0h2m2 0h4m3 0h1m1 0h2m3 0h1m1 0h2m1 0h3m2 0h5m-41 1h1m1 0h3m4 0h5m1 0h3m1 0h10m1 0h1m3 0h4m1 0h1m-40 1h1m1 0h3m1 0h1m1 0h2m3 0h1m3 0h1m1 0h1m1 0h1m1 0h1m1 0h2m2 0h1m2 0h5m1 0h1m-31 1h1m1 0h2m2 0h1m2 0h1m1 0h3m2 0h2m1 0h1m2 0h1m1 0h1m3 0h3m-39 1h7m2 0h2m1 0h3m1 0h1m1 0h2m1 0h4m2 0h2m1 0h3m1 0h1m1 0h2m-38 1h1m5 0h1m1 0h1m1 0h1m1 0h3m1 0h1m2 0h4m1 0h2m1 0h2m2 0h2m3 0h2m1 0h2m-41 1h1m1 0h3m1 0h1m2 0h1m1 0h1m1 0h4m2 0h1m1 0h1m3 0h1m2 0h10m-38 1h1m1 0h3m1 0h1m2 0h1m2 0h1m1 0h4m5 0h1m1 0h3m7 0h1m1 0h4m-41 1h1m1 0h3m1 0h1m2 0h1m1 0h1m1 0h1m2 0h2m1 0h1m1 0h1m1 0h5m1 0h1m1 0h1m1 0h7m-40 1h1m5 0h1m2 0h1m2 0h1m3 0h1m1 0h3m2 0h5m5 0h2m1 0h3m1 0h1m-41 1h7m2 0h1m1 0h2m3 0h1m4 0h3m3 0h1m1 0h3m1 0h4m1 0h1\"/></svg>",
+  "points": [
+   "You can register to donate one or more organs and tissues after you die.",
+   "Anyone in Australia aged 16 or over can register. You need a Medicare card, and it takes about a minute.",
+   "You can change your decision at any time.",
+   "If you do not register, your family will be asked to decide for you.",
+   "If you do register, tell your family — and ask them to record their own decision too."
+  ]
  }
 }
