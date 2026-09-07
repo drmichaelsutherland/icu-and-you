@@ -114,6 +114,11 @@
    "The Australia Page",
    "sandstone",
    "cultural"
+  ],
+  "cicm-first": [
+   "CICM First Part",
+   "pine",
+   "exam"
   ]
  },
  "pages": [
@@ -661,9 +666,25 @@
    "badge": "The Australia Page",
    "link_label": "Open",
    "blurb": "A new column. Ear disease in Aboriginal and Torres Strait Islander children starts within weeks of birth, usually does not hurt, and takes hearing during the years language is built — which undoes every bedside assessment scored on response."
+  },
+  {
+   "file": "exam-cicm-first-01-the-shape-of-the-thing.html",
+   "series": "cicm-first",
+   "colour": "pine",
+   "number": "1",
+   "title": "The shape of the thing",
+   "topic": "Any time",
+   "slug": "standing",
+   "week": false,
+   "standing": true
   }
  ],
  "latest": [
+  {
+   "file": "exam-cicm-first-01-the-shape-of-the-thing.html",
+   "colour": "pine",
+   "label": "Exam focus · CICM First Part No. 1"
+  },
   {
    "file": "australia-01-ear-disease.html",
    "colour": "sandstone",
@@ -683,11 +704,6 @@
    "file": "superquiz-62-toddler-preschool.html",
    "colour": "wine",
    "label": "Superquiz 62"
-  },
-  {
-   "file": "procedures-02-peripheral-iv-access.html",
-   "colour": "amethyst",
-   "label": "Procedures 2 · Peripheral IV access"
   }
  ],
  "topten": [

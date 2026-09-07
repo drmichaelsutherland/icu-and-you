@@ -36,7 +36,7 @@ NO_SUBSCRIBE_LINE = {"about.html", "corrections.html", "glossary.html",
 # Pieces with no topic to link to: the Top Ten spans topics, a book belongs to
 # the reader, procedures are standing, and the general-public series deliberately
 # does not send a lay reader into the clinical archive for that topic.
-NO_TOPIC_BUTTON_PREFIX = ("top-ten-", "book-club-", "procedures-", "public-")
+NO_TOPIC_BUTTON_PREFIX = ("top-ten-", "book-club-", "procedures-", "public-", "exam-")
 
 SUBSCRIBE = "One email on Fridays"
 REPLY_LINE = "was%20it%20useful%20to%20you"
