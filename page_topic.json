@@ -119,6 +119,11 @@
    "CICM First Part",
    "pine",
    "exam"
+  ],
+  "screening": [
+   "The Screening Room",
+   "copper",
+   "other"
   ]
  },
  "pages": [
@@ -482,7 +487,7 @@
    "topic": "The toddler and preschool child",
    "slug": "toddler-preschool",
    "week": true,
-   "pos": 10,
+   "pos": 11,
    "badge": "Podcast",
    "link_label": "Open",
    "guests": [
@@ -499,7 +504,7 @@
    "topic": "The toddler and preschool child",
    "slug": "toddler-preschool",
    "week": true,
-   "pos": 11,
+   "pos": 12,
    "badge": "Journal club",
    "link_label": "Open",
    "blurb": "The first expert consensus on haemodynamic monitoring in children — and an unusually honest account of how little sits underneath it. Including the gap that matters most here: no agreed blood pressure target under twelve."
@@ -648,7 +653,7 @@
    "topic": "The toddler and preschool child",
    "slug": "toddler-preschool",
    "week": true,
-   "pos": 9,
+   "pos": 10,
    "badge": "For the general public",
    "link_label": "Open",
    "blurb": "A new series, written for anyone rather than for clinicians. What the room contains, what the alarms actually mean, what parents can do — and an open invitation to send any question at all."
@@ -677,9 +682,28 @@
    "slug": "standing",
    "week": false,
    "standing": true
+  },
+  {
+   "file": "screening-room-01-something-the-lord-made.html",
+   "series": "screening",
+   "colour": "copper",
+   "number": "1",
+   "title": "Something the Lord Made",
+   "topic": "The toddler and preschool child",
+   "slug": "toddler-preschool",
+   "week": true,
+   "pos": 9,
+   "badge": "The Screening Room",
+   "link_label": "Open",
+   "blurb": "A new column. A fifteen-month-old with tetralogy of Fallot, the first Blalock–Thomas–Taussig shunt in 1944, and a film about who gets credited for knowing something."
   }
  ],
  "latest": [
+  {
+   "file": "screening-room-01-something-the-lord-made.html",
+   "colour": "copper",
+   "label": "The Screening Room · No. 1"
+  },
   {
    "file": "exam-cicm-first-01-the-shape-of-the-thing.html",
    "colour": "pine",
@@ -699,11 +723,6 @@
    "file": "#donate",
    "colour": "teal",
    "label": "Donation register QR added to all donation posts"
-  },
-  {
-   "file": "superquiz-62-toddler-preschool.html",
-   "colour": "wine",
-   "label": "Superquiz 62"
   }
  ],
  "topten": [
