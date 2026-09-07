@@ -109,6 +109,11 @@
    "For the general public",
    "ocean",
    "public"
+  ],
+  "homeground": [
+   "Home Ground",
+   "sandstone",
+   "cultural"
   ]
  },
  "pages": [
@@ -472,7 +477,7 @@
    "topic": "The toddler and preschool child",
    "slug": "toddler-preschool",
    "week": true,
-   "pos": 9,
+   "pos": 10,
    "badge": "Podcast",
    "link_label": "Open",
    "guests": [
@@ -489,7 +494,7 @@
    "topic": "The toddler and preschool child",
    "slug": "toddler-preschool",
    "week": true,
-   "pos": 10,
+   "pos": 11,
    "badge": "Journal club",
    "link_label": "Open",
    "blurb": "The first expert consensus on haemodynamic monitoring in children — and an unusually honest account of how little sits underneath it. Including the gap that matters most here: no agreed blood pressure target under twelve."
@@ -638,13 +643,32 @@
    "topic": "The toddler and preschool child",
    "slug": "toddler-preschool",
    "week": true,
-   "pos": 8,
+   "pos": 9,
    "badge": "For the general public",
    "link_label": "Open",
    "blurb": "A new series, written for anyone rather than for clinicians. What the room contains, what the alarms actually mean, what parents can do — and an open invitation to send any question at all."
+  },
+  {
+   "file": "home-ground-01-ear-disease.html",
+   "series": "homeground",
+   "colour": "sandstone",
+   "number": "1",
+   "title": "The child who is not ignoring you",
+   "topic": "The toddler and preschool child",
+   "slug": "toddler-preschool",
+   "week": true,
+   "pos": 8,
+   "badge": "Home Ground",
+   "link_label": "Open",
+   "blurb": "A new column. Ear disease in Aboriginal and Torres Strait Islander children starts within weeks of birth, usually does not hurt, and takes hearing during the years language is built — which undoes every bedside assessment scored on response."
   }
  ],
  "latest": [
+  {
+   "file": "home-ground-01-ear-disease.html",
+   "colour": "sandstone",
+   "label": "Home Ground · No. 1"
+  },
   {
    "file": "public-01-small-child-in-intensive-care.html",
    "colour": "ocean",
@@ -664,11 +688,6 @@
    "file": "procedures-02-peripheral-iv-access.html",
    "colour": "amethyst",
    "label": "Procedures 2 · Peripheral IV access"
-  },
-  {
-   "file": "book-club-01-the-body-in-question.html",
-   "colour": "terracotta",
-   "label": "ICU Book Club · The Body in Question"
   }
  ],
  "topten": [

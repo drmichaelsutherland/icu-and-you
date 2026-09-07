@@ -24,7 +24,8 @@
   --fern:#3E7730; --ferntint:#ECF4EB; --fernink:#2C5821;
   --crimson:#9E1B2F; --crimsontint:#F7EAEC; --crimsonink:#7A1424;
   --terracotta:#A65E4E; --terracottatint:#F7EDEA; --terracottaink:#7E4033;
-  --ocean:#1F6F8B; --oceantint:#EAF3F7; --oceanink:#164F66; --amethyst:#7A4FA3; --brass:#A8721E;
+  --ocean:#1F6F8B; --oceantint:#EAF3F7; --oceanink:#164F66;
+  --sandstone:#A08356; --sandstonetint:#F6F1E9; --sandstoneink:#79603A; --amethyst:#7A4FA3; --brass:#A8721E;
   }
   *{box-sizing:border-box}
   body{margin:0;background:#F3EFE8;color:var(--ink);
@@ -170,7 +171,7 @@
   .md.verde{background:var(--verde)} .md.oro{background:var(--oro)}
   .md.saffron{background:var(--saffron)}
   .md.rose{background:var(--rose)} .md.denim{background:var(--denim)}
-  .md.jade{background:var(--jade)}.md.fern{background:var(--fern)}.md.crimson{background:var(--crimson)}.md.terracotta{background:var(--terracotta)}.md.ocean{background:var(--ocean)} .md.amethyst{background:var(--amethyst)}
+  .md.jade{background:var(--jade)}.md.fern{background:var(--fern)}.md.crimson{background:var(--crimson)}.md.terracotta{background:var(--terracotta)}.md.ocean{background:var(--ocean)}.md.sandstone{background:var(--sandstone)} .md.amethyst{background:var(--amethyst)}
 
   /* ── This week ───────────────────────────────────────── */
   .week{padding:30px 36px 34px;background:#F6F2E8;border-bottom:1px solid var(--rule)}
@@ -188,7 +189,7 @@
   .item.oro{border-left-color:var(--oro)} .item.wine{border-left-color:var(--wine)}
   .item.saffron{border-left-color:var(--saffron)} .item.violet{border-left-color:var(--violet)}
   .item.nero{border-left-color:var(--nero)} .item.rose{border-left-color:var(--rose)}
-  .item.denim{border-left-color:var(--denim)} .item.jade{border-left-color:var(--jade)}.item.fern{border-left-color:var(--fern)}.item.crimson{border-left-color:var(--crimson)}.item.terracotta{border-left-color:var(--terracotta)}.item.ocean{border-left-color:var(--ocean)} .item.amethyst{border-left-color:var(--amethyst)}
+  .item.denim{border-left-color:var(--denim)} .item.jade{border-left-color:var(--jade)}.item.fern{border-left-color:var(--fern)}.item.crimson{border-left-color:var(--crimson)}.item.terracotta{border-left-color:var(--terracotta)}.item.ocean{border-left-color:var(--ocean)}.item.sandstone{border-left-color:var(--sandstone)} .item.amethyst{border-left-color:var(--amethyst)}
   .badge{flex:0 0 84px;text-align:center;
     font:600 10.5px 'Helvetica Neue',Arial,sans-serif;letter-spacing:.1em;
     text-transform:uppercase;color:var(--muted);padding-top:3px;line-height:1.3}
@@ -229,7 +230,7 @@
   .dot.oro{background:var(--oro)} .dot.wine{background:var(--wine)}
   .dot.saffron{background:var(--saffron)} .dot.violet{background:var(--violet)}
   .dot.nero{background:var(--nero)} .dot.rose{background:var(--rose)}
-  .dot.denim{background:var(--denim)} .dot.jade{background:var(--jade)}.dot.fern{background:var(--fern)}.dot.crimson{background:var(--crimson)}.dot.terracotta{background:var(--terracotta)}.dot.ocean{background:var(--ocean)} .dot.amethyst{background:var(--amethyst)}
+  .dot.denim{background:var(--denim)} .dot.jade{background:var(--jade)}.dot.fern{background:var(--fern)}.dot.crimson{background:var(--crimson)}.dot.terracotta{background:var(--terracotta)}.dot.ocean{background:var(--ocean)}.dot.sandstone{background:var(--sandstone)} .dot.amethyst{background:var(--amethyst)}
   .tcount{font:400 13.5px 'Helvetica Neue',Arial,sans-serif;color:var(--muted);
     margin-right:22px;white-space:nowrap}
 
@@ -243,7 +244,7 @@
   li.row.oro{border-left-color:var(--oro)} li.row.wine{border-left-color:var(--wine)}
   li.row.saffron{border-left-color:var(--saffron)} li.row.violet{border-left-color:var(--violet)}
   li.row.nero{border-left-color:var(--nero)} li.row.rose{border-left-color:var(--rose)}
-  li.row.denim{border-left-color:var(--denim)} li.row.jade{border-left-color:var(--jade)}.row.fern{border-left-color:var(--fern)}.row.crimson{border-left-color:var(--crimson)}.row.terracotta{border-left-color:var(--terracotta)}.row.ocean{border-left-color:var(--ocean)} li.row.amethyst{border-left-color:var(--amethyst)}
+  li.row.denim{border-left-color:var(--denim)} li.row.jade{border-left-color:var(--jade)}.row.fern{border-left-color:var(--fern)}.row.crimson{border-left-color:var(--crimson)}.row.terracotta{border-left-color:var(--terracotta)}.row.ocean{border-left-color:var(--ocean)}.row.sandstone{border-left-color:var(--sandstone)} li.row.amethyst{border-left-color:var(--amethyst)}
   li.row:hover{background:#F7F4ED}
   .rs{flex:0 0 112px;font:600 10.5px 'Helvetica Neue',Arial,sans-serif;letter-spacing:.1em;
     text-transform:uppercase;color:var(--muted)}
@@ -414,11 +415,11 @@
         <summary class="chip newbtn">Latest posts</summary>
 <!-- BUILD:LATEST -->
         <div class="menu">
+          <a class="mi newitem" href="home-ground-01-ear-disease.html"><span class="newtag">New</span><i class="md sandstone"></i>Home Ground · No. 1</a>
           <a class="mi newitem" href="public-01-small-child-in-intensive-care.html"><span class="newtag">New</span><i class="md ocean"></i>For the general public · No. 1</a>
           <a class="mi newitem" href="#donate"><span class="newtag">New</span><i class="md teal"></i>Donation register QR added to all donation posts</a>
           <a class="mi newitem" href="superquiz-62-toddler-preschool.html"><span class="newtag">New</span><i class="md wine"></i>Superquiz 62</a>
           <a class="mi newitem" href="procedures-02-peripheral-iv-access.html"><span class="newtag">New</span><i class="md amethyst"></i>Procedures 2 · Peripheral IV access</a>
-          <a class="mi newitem" href="book-club-01-the-body-in-question.html"><span class="newtag">New</span><i class="md terracotta"></i>ICU Book Club · The Body in Question</a>
         </div>
 <!-- /BUILD:LATEST -->
       </details>
@@ -475,6 +476,7 @@
           <button class="mi" data-f="espanol"><i class="md oro"></i>El rincón español</button>
           <button class="mi" data-f="india"><i class="md saffron"></i>The India Room</button>
           <button class="mi" data-f="chinatown"><i class="md crimson"></i>N&#464; h&#462;o Chinatown &#20320;&#22909;</button>
+          <button class="mi" data-f="homeground"><i class="md sandstone"></i>Home Ground</button>
         </div>
       </details>
       <details class="drop" data-g="other">
@@ -566,6 +568,14 @@
             <h3>Guā shā 刮痧</h3>
             <p>A new column, and it opens where it matters most at this age. Gua sha, cupping and moxibustion leave marks that can look like inflicted injury — what they actually look like, and the better question to ask.</p>
             <div class="links"><a class="go" href="chinatown-01-gua-sha.html">Open</a></div>
+          </div>
+        </li>
+        <li class="item sandstone" data-series="homeground">
+          <div class="badge">Home Ground<b>1</b></div>
+          <div class="body">
+            <h3>The child who is not ignoring you</h3>
+            <p>A new column. Ear disease in Aboriginal and Torres Strait Islander children starts within weeks of birth, usually does not hurt, and takes hearing during the years language is built — which undoes every bedside assessment scored on response.</p>
+            <div class="links"><a class="go" href="home-ground-01-ear-disease.html">Open</a></div>
           </div>
         </li>
         <li class="item ocean" data-series="public">
@@ -808,7 +818,7 @@
     });
   }
 
-  var GROUPS = {"memory": ["mind-map", "aphorism", "mnemonic", "superpuzzle", "superquiz"], "multimedia": ["podcast", "journal", "bookclub"], "special": ["students", "nurses", "gp", "emergency", "anaesthetics"], "procedures": ["procedures"], "cultural": ["coin", "italiano", "espanol", "india", "chinatown"], "other": ["literary"], "public": ["public"]};
+  var GROUPS = {"memory": ["mind-map", "aphorism", "mnemonic", "superpuzzle", "superquiz"], "multimedia": ["podcast", "journal", "bookclub"], "special": ["students", "nurses", "gp", "emergency", "anaesthetics"], "procedures": ["procedures"], "cultural": ["coin", "italiano", "espanol", "india", "chinatown", "homeground"], "other": ["literary"], "public": ["public"]};
   var LABELS = {"memory": "Memory aids and activities", "multimedia": "Multimedia", "special": "Special groups", "procedures": "Procedures", "cultural": "Cultural narratives", "other": "Other Realms", "public": "For the general public"};
 
   function inFilter(sk){
