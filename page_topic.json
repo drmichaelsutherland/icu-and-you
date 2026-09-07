@@ -104,6 +104,11 @@
    "ICU Book Club",
    "terracotta",
    "multimedia"
+  ],
+  "public": [
+   "For the general public",
+   "ocean",
+   "public"
   ]
  },
  "pages": [
@@ -467,7 +472,7 @@
    "topic": "The toddler and preschool child",
    "slug": "toddler-preschool",
    "week": true,
-   "pos": 8,
+   "pos": 9,
    "badge": "Podcast",
    "link_label": "Open",
    "guests": [
@@ -484,7 +489,7 @@
    "topic": "The toddler and preschool child",
    "slug": "toddler-preschool",
    "week": true,
-   "pos": 9,
+   "pos": 10,
    "badge": "Journal club",
    "link_label": "Open",
    "blurb": "The first expert consensus on haemodynamic monitoring in children — and an unusually honest account of how little sits underneath it. Including the gap that matters most here: no agreed blood pressure target under twelve."
@@ -623,9 +628,28 @@
    "badge": "Superquiz",
    "link_label": "Take the quiz",
    "blurb": "Five open-book questions — the compliant child, the button battery, the inhaled peanut, marks that are not what they look like, and the single thing most likely to make croup worse. Three correct earns a certificate."
+  },
+  {
+   "file": "public-01-small-child-in-intensive-care.html",
+   "series": "public",
+   "colour": "ocean",
+   "number": "1",
+   "title": "A small child in intensive care",
+   "topic": "The toddler and preschool child",
+   "slug": "toddler-preschool",
+   "week": true,
+   "pos": 8,
+   "badge": "For the general public",
+   "link_label": "Open",
+   "blurb": "A new series, written for anyone rather than for clinicians. What the room contains, what the alarms actually mean, what parents can do — and an open invitation to send any question at all."
   }
  ],
  "latest": [
+  {
+   "file": "public-01-small-child-in-intensive-care.html",
+   "colour": "ocean",
+   "label": "For the general public · No. 1"
+  },
   {
    "file": "#donate",
    "colour": "teal",
@@ -645,11 +669,6 @@
    "file": "book-club-01-the-body-in-question.html",
    "colour": "terracotta",
    "label": "ICU Book Club · The Body in Question"
-  },
-  {
-   "file": "chinatown-01-gua-sha.html",
-   "colour": "crimson",
-   "label": "Nǐ hǎo Chinatown · Guā shā"
   }
  ],
  "topten": [

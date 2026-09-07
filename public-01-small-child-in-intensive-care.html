@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en-AU">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ICU AND YOU · For the general public No. 1 — A small child in intensive care</title>
+<meta name="description" content="For the general public No. 1: what happens when a toddler or preschooler is admitted to intensive care — the machines, the monitors, the people, what the alarms mean, and what parents can do. Written for anyone, with no medical knowledge assumed.">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="alternate icon" href="/favicon.ico" sizes="any">
+<link rel="apple-touch-icon" href="/icon-180.png">
+<meta name="theme-color" content="#1B2A33">
+<meta property="og:site_name" content="ICU AND YOU">
+<meta property="og:type" content="website">
+<meta property="og:title" content="ICU AND YOU · For the general public No. 1 — A small child in intensive care">
+<meta property="og:description" content="What happens when a small child is admitted to intensive care. Written for anyone.">
+<meta property="og:image" content="https://icuandyou.com/share-card.png">
+<meta name="twitter:card" content="summary_large_image">
+<style>
+  :root{
+    --paper:#FAFCFD; --ink:#1B262B; --muted:#5E6E75; --rule:#D5E1E7;
+    --rose:#1F6F8B; --rosetint:#EAF3F7;
+    --sky:#2E6E8E; --skytint:#E7F1F6;
+    --rust:#A8442A; --rusttint:#F9EDE7;
+  }
+  *{box-sizing:border-box}
+  body{margin:0;background:#E7EFF3;color:var(--ink);
+    font:400 17px/1.64 'Iowan Old Style','Palatino Linotype',Palatino,Georgia,serif;
+    -webkit-text-size-adjust:100%;}
+  .sheet{max-width:800px;margin:0 auto;background:var(--paper);
+    box-shadow:0 1px 40px rgba(42,31,35,.10);}
+
+  header.top{padding:42px 40px 28px;border-bottom:2px solid var(--rose)}
+  .toptopic{display:inline-block;margin:0 0 16px 9px;padding:7px 16px;border-radius:20px;
+    border:1px solid currentColor;opacity:.62;text-decoration:none;color:inherit;
+    font:600 11.5px 'Helvetica Neue',Arial,sans-serif;letter-spacing:.09em;
+    text-transform:uppercase;transition:opacity .12s ease}
+  .toptopic:hover{opacity:1}
+  .topseries{display:inline-block;margin:0 0 16px 9px;padding:7px 16px;border-radius:20px;
+    border:1px solid currentColor;opacity:.62;text-decoration:none;color:inherit;
+    font:600 11.5px 'Helvetica Neue',Arial,sans-serif;letter-spacing:.09em;
+    text-transform:uppercase;transition:opacity .12s ease}
+  .topseries:hover{opacity:1}
+  .tophome{display:inline-block;margin:0 0 16px;padding:7px 16px;border-radius:20px;
+    border:1px solid currentColor;opacity:.62;text-decoration:none;color:inherit;
+    font:600 11.5px 'Helvetica Neue',Arial,sans-serif;letter-spacing:.09em;
+    text-transform:uppercase;transition:opacity .12s ease}
+  .tophome:hover{opacity:1}
+  .eyebrow a.mast,.eyebrow a.serlink{color:inherit;text-decoration:none;
+    border-bottom:1px solid transparent}
+  .eyebrow a.mast:hover,.eyebrow a.serlink:hover{border-bottom-color:currentColor}
+  .eyebrow{font:500 11.5px/1 'Helvetica Neue',Arial,sans-serif;letter-spacing:.24em;
+    text-transform:uppercase;color:var(--muted);margin:0 0 13px}
+  h1{font-size:32px;line-height:1.2;margin:0 0 9px;font-weight:400;letter-spacing:-.012em}
+  .kicker{color:var(--muted);margin:0;font-size:16.5px;font-style:italic}
+
+  .pad{padding:32px 40px}
+  p{margin:0 0 16px}
+  .lede{font-size:19.5px;line-height:1.55;margin:0 0 20px}
+
+  h2.sub{font:600 12px 'Helvetica Neue',Arial,sans-serif;letter-spacing:.2em;
+    text-transform:uppercase;color:var(--rose);margin:30px 0 15px;
+    padding-bottom:8px;border-bottom:1px solid var(--rule)}
+
+  ul.pts{list-style:none;margin:0 0 18px;padding:0}
+  ul.pts li{display:flex;gap:13px;padding:11px 0;border-bottom:1px solid #F0E6E9;
+    font-size:16.5px;line-height:1.5}
+  ul.pts li:last-child{border-bottom:0}
+  ul.pts b{flex:0 0 156px;font:600 14.5px 'Helvetica Neue',Arial,sans-serif;
+    color:var(--rose);line-height:1.4}
+
+  .say{margin:0 0 18px;padding:22px 26px;background:var(--skytint);
+    border-left:4px solid var(--sky);border-radius:0 8px 8px 0}
+  .say .lab{display:block;font:600 11px 'Helvetica Neue',Arial,sans-serif;
+    letter-spacing:.18em;text-transform:uppercase;color:var(--sky);margin:0 0 10px}
+  .say q{display:block;font-size:18px;line-height:1.55;font-style:italic;margin:0 0 10px}
+  .say p:last-child{margin:0;font-size:16px}
+
+  .note{margin:0;padding:20px 24px;background:var(--rosetint);
+    border-left:4px solid var(--rose);border-radius:0 8px 8px 0}
+  .note p:last-child{margin:0}
+
+  .challenge{margin:0;padding:28px 32px;background:var(--rusttint);border-left:5px solid var(--rust)}
+  .challenge h2{font:600 12px 'Helvetica Neue',Arial,sans-serif;letter-spacing:.2em;
+    text-transform:uppercase;color:var(--rust);margin:0 0 13px}
+  .ask{font-size:19.5px;line-height:1.5;margin:0 0 12px;font-style:italic}
+  .btn{display:inline-block;margin:6px 0 12px;padding:15px 30px;background:var(--rust);
+    color:#FDF8F5;text-decoration:none;border-radius:30px;font-style:normal;
+    font:600 15px 'Helvetica Neue',Arial,sans-serif;letter-spacing:.03em}
+  .btn:hover{background:#8A3620}
+  .fallback{font:400 13.5px 'Helvetica Neue',Arial,sans-serif;color:var(--muted);margin:0}
+  .fallback a{color:var(--rust)}
+  .subline{margin:0 0 14px;padding:0 0 13px;border-bottom:1px solid rgba(0,0,0,.09);
+    font:400 14.5px/1.55 'Iowan Old Style','Palatino Linotype',Palatino,Georgia,serif;
+    max-width:56ch;margin-left:auto;margin-right:auto}
+  .subline a{font-weight:500;border-bottom:1px solid currentColor;
+    text-decoration:none;color:inherit}
+  .firstpub{display:block;margin:0 0 10px;padding-bottom:9px;
+    border-bottom:1px solid currentColor;border-color:rgba(0,0,0,.09);
+    font:400 12px 'Helvetica Neue',Arial,sans-serif;letter-spacing:.06em;opacity:.72}
+
+  footer{padding:24px 40px 42px;border-top:1px solid var(--rule);
+    font:400 13px 'Helvetica Neue',Arial,sans-serif;color:var(--muted);text-align:center;line-height:1.7}
+  .home{display:inline-block;margin:0 0 14px;padding:8px 18px;border-radius:20px;
+    border:1px solid var(--rule);background:#F5EEF0;color:var(--rose);text-decoration:none;
+    font:600 12.5px 'Helvetica Neue',Arial,sans-serif;letter-spacing:.05em}
+  .home:hover{background:var(--rose);border-color:var(--rose);color:#FCF9FA}
+
+  @media (max-width:640px){
+    header.top,.pad,footer{padding-left:20px;padding-right:20px}
+    .challenge{padding:22px 20px}
+    h1{font-size:26px} body{font-size:16.5px} .ask{font-size:18px}
+    ul.pts li{flex-direction:column;gap:3px} ul.pts b{flex:none}
+  }
+  @media print{ body{background:#fff} .sheet{box-shadow:none;max-width:none} }
+  .mine{display:inline-block;margin:9px 0 0;opacity:.78;font-size:.94em}
+
+  .welcome{margin:0 0 24px;padding:22px 26px;background:#F2F7F4;
+    border-left:4px solid #2E7D5B;border-radius:0 8px 8px 0}
+  .welcome .lab{display:block;font:600 11px 'Helvetica Neue',Arial,sans-serif;
+    letter-spacing:.18em;text-transform:uppercase;color:#2E7D5B;margin:0 0 9px}
+  .welcome p:last-child{margin:0}
+  .plain p{font-size:17.5px;line-height:1.68}
+</style>
+</head>
+<body>
+<div class="sheet">
+
+  <header class="top">
+    <a class="tophome" href="./">&larr;&nbsp; Home</a>
+    <a class="topseries" href="./?s=public">More for the general public</a>
+    <p class="eyebrow"><a class="mast" href="./">ICU and You</a> &nbsp;·&nbsp;
+      <a class="serlink" href="./?s=public">For the general public</a> &nbsp;·&nbsp; Number 1</p>
+    <h1>A small child in intensive care</h1>
+    <p class="kicker">What the room contains, what the noises mean, and what you can do &mdash; written for anyone</p>
+  </header>
+
+  <div class="pad plain">
+    <div class="welcome">
+      <span class="lab">A new series, and what it is for</span>
+      <p>Almost everything else on this site is written for doctors and nurses. This part is not. It is for
+        anyone who wants to understand what goes on in an intensive care unit &mdash; because you were in one
+        once, or somebody you love was, or because you are simply curious.</p>
+      <p>No medical knowledge is assumed and nothing here is a substitute for talking to the team looking after
+        an actual person. But a great deal of what makes an intensive care unit frightening is simply that
+        nobody has explained it, and that is a fixable problem. <strong>If you have a question, send it to me.
+        I will answer it, and I will answer any question at all.</strong></p>
+    </div>
+
+    <p class="lede">The first thing to say is that intensive care for small children is, on the whole, a story
+      with a good ending. Most children who come to us go home.</p>
+
+    <p>That is worth knowing before anything else, because an intensive care unit does not look like a place
+      with good endings. It looks alarming. This piece is about why it looks that way, and what is actually
+      going on underneath.</p>
+
+    <h2 class="sub">Why a toddler ends up here</h2>
+
+    <p>Children between one and five are admitted for a fairly short list of reasons. A chest infection or a
+      bad asthma attack, where the child is working so hard to breathe that they need help before they get
+      tired. A severe infection anywhere in the body. A seizure that did not stop on its own. An injury &mdash;
+      a fall, a burn, a car accident, a near-drowning. Something swallowed or inhaled that should not have been.
+      Occasionally a planned admission after major surgery, where the child comes to us already expected.</p>
+
+    <p>Almost none of this is anybody's fault, and the thought that it might be is one of the commonest and
+      most corrosive things parents carry into that room. Small children are supposed to explore, climb, put
+      things in their mouths and catch every virus that passes. That is their job, and it is how they build
+      the immune system and the coordination they will need. Sometimes it goes wrong.</p>
+
+    <h2 class="sub">The room, and what is in it</h2>
+
+    <ul class="pts">
+      <li><b>The monitor</b><span>The screen above the bed showing coloured lines and numbers. Green is usually
+        the heart, blue the oxygen level, and the others are blood pressure and breathing rate. It is a display,
+        not a treatment. Nobody is watching it constantly, because the nurse is watching the child.</span></li>
+      <li><b>The ventilator</b><span>A breathing machine, connected either by a mask over the nose, or by a soft
+        tube through the mouth into the windpipe. It does not take over from a child who can breathe; it does the
+        work for one who cannot, or shares the work with one who is tiring. A child with a breathing tube cannot
+        make any sound, which is distressing to see and is not a sign of how they feel.</span></li>
+      <li><b>The drips</b><span>Thin plastic tubes into a vein, giving fluid, medicines, sometimes nutrition.
+        The pumps beside them count what is going in. A child may have several, and the number of drips is not a
+        measure of how sick they are.</span></li>
+      <li><b>The sedation</b><span>Most children on a breathing machine are given medicine to keep them settled
+        and comfortable, because a tube in the throat is not something a three-year-old will tolerate awake.
+        They are not unconscious in the way an anaesthetic makes you unconscious; they drift, and they often
+        hear.</span></li>
+      <li><b>The people</b><span>In most units a critically ill child has a nurse assigned to them and nobody
+        else, for the whole shift. That is the single biggest difference between intensive care and a normal
+        ward, and it is worth more than any machine in the room.</span></li>
+    </ul>
+
+    <div class="note">
+      <p><strong>About the alarms.</strong> They go off constantly, and almost none of them mean an emergency.
+        Most mean a sensor has slipped, a drip has finished, a child has moved an arm, or a number has drifted
+        slightly outside a range somebody set deliberately narrow so that it would catch things early. Staff can
+        tell the sound of a routine alarm from the sound of a real one, and you will learn to as well, faster
+        than you expect. If something is genuinely wrong, you will not have to work it out from a beep. The
+        room will change.</p>
+    </div>
+
+    <h2 class="sub">What you can do, which is more than it feels like</h2>
+
+    <p>Parents often say they feel useless in an intensive care unit, surrounded by people doing things they
+      cannot do. That is the wrong way round, and the staff know it even when they are too busy to say so.</p>
+
+    <ul class="pts">
+      <li><b>You are the one who knows this child</b><span>You know how she sounds when she is uncomfortable,
+        what her face does before she is sick, how she usually holds herself. Nobody else in that room has that
+        information, and it is genuinely useful. If you think something has changed, say so. You will not be
+        wasting anybody's time.</span></li>
+      <li><b>Your voice is a treatment</b><span>Talk, read, sing, tell them what day it is. A sedated child is
+        not absent. Familiar voices reduce distress in a way no drug does, and there is no wrong thing to say.</span></li>
+      <li><b>Bring the things from home</b><span>The particular toy, the blanket, the story that gets read every
+        night. Ask before you put anything in the bed, but ask, because these things matter more here than they
+        do at home.</span></li>
+      <li><b>Ask, and ask again</b><span>Nobody expects you to understand this the first time, or the fourth.
+        Ask what a machine is for, what a number means, what the plan is for today, what would have to happen
+        before your child could go home. Writing questions down as they occur to you is not fussy; it is what
+        experienced parents learn to do.</span></li>
+      <li><b>Look after yourself, unromantically</b><span>Eat something. Sleep when you are told the night will
+        be quiet. Take the offer of a break. A parent who collapses on day three is no use to a child who may
+        need them on day ten, and the staff would far rather send you to the cafeteria than see it happen.</span></li>
+    </ul>
+
+    <h2 class="sub">Some things that surprise people</h2>
+
+    <ul class="pts">
+      <li><b>Progress is not a straight line</b><span>Children get better in steps, with bad afternoons in
+        between. A worse day is usually a day, not a direction.</span></li>
+      <li><b>Small children recover faster than adults</b><span>Often startlingly so. A child who looked
+        desperately unwell on Monday can be sitting up and demanding a screen by Thursday.</span></li>
+      <li><b>They may be unlike themselves for a while afterwards</b><span>Clingy, unsettled at night, back in
+        nappies they had grown out of, angry. This is normal and it passes. Tell your doctor if it does
+        not.</span></li>
+      <li><b>You may be more affected than the child</b><span>Small children often remember very little of it.
+        Parents remember all of it. If you are still carrying it months later, that is common and worth talking
+        to somebody about.</span></li>
+    </ul>
+
+    <div class="note">
+      <p><strong>One thing this piece cannot do.</strong> It cannot tell you about your child, or the person
+        you are thinking about. Every child is different and the team looking after them knows things no website
+        can. If something here does not match what you have been told, what you have been told is right. Use
+        this to understand the shape of it, and ask them about the detail.</p>
+    </div>
+  </div>
+
+  <div class="pad" style="padding-top:6px">
+    <div class="challenge">
+      <h2>Ask me anything</h2>
+      <p class="ask">Really — anything. There is no such thing as a question that is too basic.</p>
+      <p>If you have been in an intensive care unit, or sat beside somebody who was, you will have questions
+        that never got asked, or got asked at a moment when you could not take the answer in. Send them. I will
+        answer, and where a question is one that many people share, I will write the next piece in this series
+        about it.</p>
+      <p>I cannot give advice about a particular person or a particular illness, and I will say so if that is
+        what is being asked. Everything else is fair game.</p>
+      <p><a class="btn" href="mailto:icuandyou@icloud.com?subject=For%20the%20general%20public%20-%20a%20question&body=My%20question%3A%0D%0A%0D%0A%0D%0A---%0D%0A%0D%0AAnything%20you%20would%20like%20me%20to%20know%20about%20why%20you%20are%20asking%20%28entirely%20optional%29%3A%0D%0A%0D%0A%0D%0AName%20%28optional%29%3A%0D%0A%0A---%0A%0AThinking%20about%20this%20ICU%20AND%20YOU%20post%20overall%20%E2%80%94%20was%20it%20useful%20to%20you%2C%20or%20would%20it%20be%20useful%20to%20others%3F%0A">Send me a question</a></p>
+      <p class="fallback">The button opens an email straight to me. If your device blocks it, write to
+        <a href="mailto:icuandyou@icloud.com">icuandyou@icloud.com</a> instead.</p>
+    </div>
+  </div>
+
+  <footer>
+    <span class="firstpub">First published September 2026</span>
+    <p class="subline">One email on Fridays &mdash; what went up and why it mattered, the best of your replies,
+      and original feature stories, news and views. <a href="https://joinlist.com/f/5adad2d6">Come and join us</a>.</p>
+    <a class="home" href="./">&larr; &nbsp;All of ICU AND YOU</a><br>
+    ICU AND YOU &nbsp;&#183;&nbsp; For the general public No. 1<br>
+    General information only. This is not medical advice and cannot take account of any individual person or
+    illness &mdash; the team caring for someone always knows more about them than any website does.<br>
+    <span class="mine">Views my own, not those of NSW Health or any other organisation. No identifiable
+    patients &mdash; scenarios are constructed or combined for teaching. <a href="about.html">More</a>.</span>
+  </footer>
+
+</div>
+<script data-goatcounter="https://icuandyou.goatcounter.com/count"
+        async src="//gc.zgo.at/count.js"></script>
+</body>
+</html>
