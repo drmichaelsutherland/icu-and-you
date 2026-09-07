@@ -110,8 +110,8 @@
    "ocean",
    "public"
   ],
-  "homeground": [
-   "Home Ground",
+  "australia": [
+   "The Australia Page",
    "sandstone",
    "cultural"
   ]
@@ -649,8 +649,8 @@
    "blurb": "A new series, written for anyone rather than for clinicians. What the room contains, what the alarms actually mean, what parents can do — and an open invitation to send any question at all."
   },
   {
-   "file": "home-ground-01-ear-disease.html",
-   "series": "homeground",
+   "file": "australia-01-ear-disease.html",
+   "series": "australia",
    "colour": "sandstone",
    "number": "1",
    "title": "The child who is not ignoring you",
@@ -658,16 +658,16 @@
    "slug": "toddler-preschool",
    "week": true,
    "pos": 8,
-   "badge": "Home Ground",
+   "badge": "The Australia Page",
    "link_label": "Open",
    "blurb": "A new column. Ear disease in Aboriginal and Torres Strait Islander children starts within weeks of birth, usually does not hurt, and takes hearing during the years language is built — which undoes every bedside assessment scored on response."
   }
  ],
  "latest": [
   {
-   "file": "home-ground-01-ear-disease.html",
+   "file": "australia-01-ear-disease.html",
    "colour": "sandstone",
-   "label": "Home Ground · No. 1"
+   "label": "The Australia Page · No. 1"
   },
   {
    "file": "public-01-small-child-in-intensive-care.html",
