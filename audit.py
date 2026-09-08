@@ -38,7 +38,7 @@ NO_SUBSCRIBE_LINE = {"about.html", "corrections.html", "glossary.html",
 # does not send a lay reader into the clinical archive for that topic.
 NO_TOPIC_BUTTON_PREFIX = ("top-ten-", "book-club-", "procedures-", "public-", "exam-")
 
-SUBSCRIBE = "One email on Fridays"
+SUBSCRIBE = "Two emails a week"
 REPLY_LINE = "was%20it%20useful%20to%20you"
 REPLY_LINE_PLAIN = "was it useful to you"
 
