@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en-AU">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ICU AND YOU · Procedures No. 3 — Urinary catheterisation</title>
+<meta name="description" content="Procedures No. 3: urinary catheterisation in intensive care — indications and contraindications, consent and refusal, the difficult male, why introducers are not a bedside technique, complications, and when to change the catheter.">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="alternate icon" href="/favicon.ico" sizes="any">
+<link rel="apple-touch-icon" href="/icon-180.png">
+<meta name="theme-color" content="#1B2A33">
+<meta property="og:site_name" content="ICU AND YOU">
+<meta property="og:type" content="website">
+<meta property="og:title" content="ICU AND YOU · Procedures No. 3 — Urinary catheterisation">
+<meta property="og:description" content="The procedure everyone assumes they can do, and the one that quietly causes harm.">
+<meta property="og:image" content="https://icuandyou.com/share-card.png">
+<meta name="twitter:card" content="summary_large_image">
+<style>
+  :root{
+    --paper:#FBF9FC; --ink:#241F2B; --muted:#6B6377; --rule:#DFD6E6;
+    --amethyst:#7A4FA3; --amethysttint:#F1EBF7;
+    --rust:#A8442A; --rusttint:#F9EDE7;
+    --moss:#4C6B4A; --mosstint:#EAF1E9;
+    --gold:#A8721E; --goldtint:#FBF1DC;
+  }
+  *{box-sizing:border-box}
+  body{margin:0;background:#EDE8F1;color:var(--ink);
+    font:400 17px/1.64 'Iowan Old Style','Palatino Linotype',Palatino,Georgia,serif;
+    -webkit-text-size-adjust:100%;}
+  .sheet{max-width:820px;margin:0 auto;background:var(--paper);
+    box-shadow:0 1px 40px rgba(36,31,43,.10);}
+
+  header.top{padding:42px 40px 28px;border-bottom:2px solid var(--amethyst)}
+  .tophome,.topseries,.toptopic{display:inline-block;margin:0 0 16px;padding:7px 16px;
+    border-radius:20px;border:1px solid currentColor;opacity:.62;text-decoration:none;
+    color:inherit;font:600 11.5px 'Helvetica Neue',Arial,sans-serif;letter-spacing:.09em;
+    text-transform:uppercase;transition:opacity .12s ease}
+  .topseries,.toptopic{margin-left:9px}
+  .tophome:hover,.topseries:hover,.toptopic:hover{opacity:1}
+  .eyebrow a.mast,.eyebrow a.serlink{color:inherit;text-decoration:none;
+    border-bottom:1px solid transparent}
+  .eyebrow a.mast:hover,.eyebrow a.serlink:hover{border-bottom-color:currentColor}
+  .eyebrow{font:500 11.5px/1 'Helvetica Neue',Arial,sans-serif;letter-spacing:.24em;
+    text-transform:uppercase;color:var(--muted);margin:0 0 13px}
+  h1{font-size:32px;line-height:1.2;margin:0 0 9px;font-weight:400;letter-spacing:-.012em}
+  .kicker{color:var(--muted);margin:0;font-size:16.5px;font-style:italic}
+
+  .askedby{margin:0;padding:18px 40px;background:var(--amethysttint);
+    border-bottom:1px solid var(--rule);font-size:16px;color:#4A3D57}
+  .askedby a{color:var(--amethyst)}
+
+  .pad{padding:32px 40px}
+  p{margin:0 0 16px}
+  .lede{font-size:19.5px;line-height:1.55;margin:0 0 20px}
+
+  h2.sub{font:600 12px 'Helvetica Neue',Arial,sans-serif;letter-spacing:.2em;
+    text-transform:uppercase;color:var(--amethyst);margin:32px 0 15px;
+    padding-bottom:8px;border-bottom:1px solid var(--rule)}
+
+  ul.pts{list-style:none;margin:0 0 18px;padding:0}
+  ul.pts li{display:flex;gap:13px;padding:11px 0;border-bottom:1px solid #EFE9F4;
+    font-size:16.5px;line-height:1.5}
+  ul.pts li:last-child{border-bottom:0}
+  ul.pts b{flex:0 0 182px;font:600 14.5px 'Helvetica Neue',Arial,sans-serif;
+    color:var(--amethyst);line-height:1.4}
+
+  ol.steps{list-style:none;counter-reset:s;margin:0 0 18px;padding:0}
+  ol.steps li{counter-increment:s;position:relative;padding:12px 0 12px 44px;
+    border-bottom:1px solid #EFE9F4;font-size:16.5px;line-height:1.55}
+  ol.steps li:last-child{border-bottom:0}
+  ol.steps li::before{content:counter(s);position:absolute;left:0;top:12px;
+    width:28px;height:28px;border-radius:50%;background:var(--amethyst);color:#F8F5FB;
+    font:600 13px 'Helvetica Neue',Arial,sans-serif;display:flex;align-items:center;
+    justify-content:center}
+
+  .box{margin:0 0 18px;padding:20px 24px;border-radius:0 8px 8px 0}
+  .box .lab{display:block;font:600 11px 'Helvetica Neue',Arial,sans-serif;
+    letter-spacing:.18em;text-transform:uppercase;margin:0 0 9px}
+  .box p:last-child{margin:0}
+  .red{background:var(--rusttint);border-left:4px solid var(--rust)} .red .lab{color:var(--rust)}
+  .grn{background:var(--mosstint);border-left:4px solid var(--moss)} .grn .lab{color:var(--moss)}
+  .amb{background:var(--goldtint);border-left:4px solid var(--gold)} .amb .lab{color:var(--gold)}
+
+  .sites{display:flex;gap:13px;flex-wrap:wrap;margin:0 0 20px}
+  .site{flex:1 1 226px;background:#fff;border:1px solid var(--rule);border-radius:9px;
+    padding:16px 18px;border-top:4px solid var(--amethyst)}
+  .site h3{margin:0 0 7px;font:600 13px 'Helvetica Neue',Arial,sans-serif;
+    letter-spacing:.07em;text-transform:uppercase;color:var(--amethyst)}
+  .site p{margin:0;font-size:15.5px;line-height:1.5;color:#3B3345}
+
+  .challenge{margin:0;padding:28px 32px;background:var(--rusttint);border-left:5px solid var(--rust)}
+  .challenge h2{font:600 12px 'Helvetica Neue',Arial,sans-serif;letter-spacing:.2em;
+    text-transform:uppercase;color:var(--rust);margin:0 0 13px}
+  .ask{font-size:19.5px;line-height:1.5;margin:0 0 12px;font-style:italic}
+  .btn{display:inline-block;margin:6px 0 12px;padding:15px 30px;background:var(--rust);
+    color:#FDF8F5;text-decoration:none;border-radius:30px;font-style:normal;
+    font:600 15px 'Helvetica Neue',Arial,sans-serif;letter-spacing:.03em}
+  .btn:hover{background:#8A3620}
+  .fallback{font:400 13.5px 'Helvetica Neue',Arial,sans-serif;color:var(--muted);margin:0}
+  .fallback a{color:var(--rust)}
+
+  footer{padding:24px 40px 42px;border-top:1px solid var(--rule);
+    font:400 13px 'Helvetica Neue',Arial,sans-serif;color:var(--muted);text-align:center;line-height:1.7}
+  .subline{margin:0 0 14px;padding:0 0 13px;border-bottom:1px solid rgba(0,0,0,.09);
+    font:400 14.5px/1.55 'Iowan Old Style','Palatino Linotype',Palatino,Georgia,serif;
+    max-width:56ch;margin-left:auto;margin-right:auto}
+  .subline a{font-weight:500;border-bottom:1px solid currentColor;
+    text-decoration:none;color:inherit}
+  .firstpub{display:block;margin:0 0 10px;padding-bottom:9px;
+    border-bottom:1px solid rgba(0,0,0,.09);
+    font:400 12px 'Helvetica Neue',Arial,sans-serif;letter-spacing:.06em;opacity:.72}
+  .home{display:inline-block;margin:0 0 14px;padding:8px 18px;border-radius:20px;
+    border:1px solid var(--rule);background:#F3EFF7;color:var(--amethyst);text-decoration:none;
+    font:600 12.5px 'Helvetica Neue',Arial,sans-serif;letter-spacing:.05em}
+  .home:hover{background:var(--amethyst);border-color:var(--amethyst);color:#F8F5FB}
+
+  @media (max-width:640px){
+    header.top,.pad,.askedby,footer{padding-left:20px;padding-right:20px}
+    .challenge{padding:22px 20px}
+    h1{font-size:26px} body{font-size:16.5px} .ask{font-size:18px}
+    ul.pts li{flex-direction:column;gap:3px} ul.pts b{flex:none}
+  }
+  @media print{ body{background:#fff} .sheet{box-shadow:none;max-width:none} }
+  .mine{display:inline-block;margin:9px 0 0;opacity:.78;font-size:.94em}
+
+  .stepnum{margin:0 0 22px;padding:0;list-style:none;counter-reset:sn}
+  .stepnum li{position:relative;padding:12px 0 12px 44px;border-bottom:1px solid #EFEAF1;line-height:1.55}
+  .stepnum li:last-child{border-bottom:0}
+  .stepnum li::before{counter-increment:sn;content:counter(sn);position:absolute;left:0;top:10px;
+    width:28px;height:28px;border-radius:50%;background:#7A4FA3;color:#fff;text-align:center;
+    font:600 14px/28px 'Helvetica Neue',Arial,sans-serif}
+</style>
+</head>
+<body>
+<div class="sheet">
+
+  <header class="top">
+    <a class="tophome" href="./">&larr;&nbsp; Home</a>
+    <a class="topseries" href="./?s=procedures">All procedures</a>
+    <p class="eyebrow"><a class="mast" href="./">ICU and You</a> &nbsp;·&nbsp;
+      <a class="serlink" href="./?s=procedures">Procedures</a> &nbsp;·&nbsp; Number 3</p>
+    <h1>Urinary catheterisation</h1>
+    <p class="kicker">The procedure everybody assumes they can do, and the one that quietly does the most harm</p>
+  </header>
+
+  <div class="pad">
+    <p class="lede">This is the most delegated procedure in the hospital. It is handed to the most junior
+      person present, taught once, and thereafter assumed. It is also a common cause of hospital-acquired
+      infection, a recognised cause of permanent urethral injury, and a reliable source of complaints.</p>
+
+    <p>Do not underrate it. A catheter placed badly in a man with an enlarged prostate can produce a false
+      passage, a stricture, and years of trouble. A catheter left in because nobody reviewed it produces a
+      bloodstream infection. Both are avoidable, and neither is avoided by confidence.</p>
+
+    <h2 class="sub">Indications, and the ones that do not count</h2>
+
+    <ul class="pts">
+      <li><b>Good reasons in intensive care</b><span>Accurate hourly urine output where that is genuinely
+        guiding treatment. Acute retention or obstruction. Neurogenic bladder with failure to empty.
+        Facilitating healing of sacral or perineal wounds in an incontinent patient. Prolonged surgery or
+        immobility. Some catheters also measure core temperature, which can be a legitimate reason in
+        itself.</span></li>
+      <li><b>The commonest bad reason</b><span>Because the patient is in intensive care. Ventilation, sedation
+        and vasopressors are not by themselves indications, and &ldquo;everyone here has one&rdquo; is not a
+        clinical decision. Nor is nursing convenience, incontinence alone, or obtaining a specimen that could
+        be caught clean.</span></li>
+      <li><b>The one to think hardest about</b><span>Hourly urine output only helps if somebody acts on it. In
+        a stable patient two days into their admission, ask what decision the number would change. Often the
+        honest answer is none, and that is the moment the catheter should come out.</span></li>
+    </ul>
+
+    <div class="box red">
+      <span class="lab">Stop, in these</span>
+      <p><strong>Suspected urethral injury.</strong> Blood at the meatus, a scrotal or perineal haematoma, a
+        high-riding or impalpable prostate, or a pelvic fracture. Do not pass a catheter. Attempting it can
+        convert a partial urethral tear into a complete one. Urology, and usually a suprapubic catheter.</p>
+      <p><strong>Recent urological surgery or reconstruction</strong>, where an ill-judged catheter can undo
+        the operation. Ask the surgeon rather than guessing.</p>
+      <p><strong>Known difficult anatomy</strong> &mdash; a stricture, an artificial sphincter, a previous
+        radical prostatectomy. Someone with an artificial urinary sphincter needs it deactivated first, and
+        catheterising around one causes erosion.</p>
+    </div>
+
+    <h2 class="sub">Consent, including when it cannot be given</h2>
+
+    <p>This is an intimate procedure and it is treated too casually. The standards are the same as for anything
+      else: explain what you are doing and why, what it will feel like, and what the alternatives are.
+      Offer a chaperone and document the offer.</p>
+
+    <ul class="pts">
+      <li><b>The sedated or unconscious patient</b><span>Cannot consent, and it is done on the basis of
+        necessity in their best interests. That does not lower the standard of dignity or gentleness, and it
+        does not remove the need to document why it was necessary. Tell them what you are doing anyway.</span></li>
+      <li><b>The patient who refuses</b><span>A patient with capacity may decline, and a delirious or
+        distressed patient who is pulling away is telling you something even if they cannot argue their case.
+        Stop. Find out whether it is fear, pain, previous trauma, or a considered objection. Very few
+        catheterisations are so urgent that they cannot wait twenty minutes for a conversation, or for someone
+        the patient trusts.</span></li>
+      <li><b>Ask about previous experience</b><span>Someone who has had a traumatic catheterisation before will
+        often say so if asked, and will not volunteer it. That single question changes who should be doing it
+        and how.</span></li>
+      <li><b>Cultural and personal preference</b><span>Some patients will strongly prefer a clinician of a
+        particular gender. Where that can be accommodated, accommodate it.</span></li>
+    </ul>
+
+    <h2 class="sub">Doing the ordinary one well</h2>
+
+    <p>Most difficulty is manufactured at the start. The steps below are the ones that prevent it.</p>
+
+    <ol class="stepnum">
+      <li><strong>Use enough local anaesthetic gel, and wait.</strong> The commonest technical failing.
+        Instil 10 to 20&nbsp;mL slowly, pinch the meatus closed so it does not run straight back out, and
+        leave it three to five minutes. The gel is a lubricant, an anaesthetic and a dilator, and none of those
+        work in thirty seconds.</li>
+      <li><strong>Hold the penis upward, at about ninety degrees.</strong> This straightens the penoscrotal
+        angle. Lowering it towards the abdomen as the catheter reaches the bulbar urethra can help the last
+        few centimetres.</li>
+      <li><strong>Insert almost to the hilt.</strong> Not to the first sight of urine. In a man the catheter
+        goes in to the bifurcation before the balloon is anywhere near the bladder, and inflating early is how
+        urethras are torn.</li>
+      <li><strong>See urine before you inflate.</strong> This is the rule that prevents the injury that
+        matters. If there is no urine, do not inflate &mdash; flush 20&nbsp;mL of saline and aspirate it, or
+        put the gel applicator on the end and use it as a sucker. No urine means either the wrong place or an
+        empty bladder, and you need to know which.</li>
+      <li><strong>Inflate with sterile water.</strong> Not saline, which crystallises and can jam the deflation
+        channel. Not air, which floats. The volume printed on the catheter, no more and no less &mdash; an
+        underfilled balloon sits eccentrically and an overfilled one distorts.</li>
+      <li><strong>Replace the foreskin.</strong> Written down because it is forgotten, and a retracted foreskin
+        left behind a swollen glans is a paraphimosis, which is painful, avoidable and occasionally
+        surgical.</li>
+      <li><strong>Document properly.</strong> Size, how easily it went, residual volume, whether urine was seen
+        before inflation, and who did it. The next person to face a difficulty will thank you.</li>
+    </ol>
+
+    <div class="box amb">
+      <span class="lab">Before you start on a difficult one</span>
+      <p><strong>Put the ultrasound on the bladder.</strong> It answers a question you would otherwise guess
+        at: is there any urine in there? A patient who is anuric from acute kidney injury does not need three
+        increasingly traumatic attempts to prove it, and a bladder containing 900&nbsp;mL tells you the
+        problem is downstream and worth persisting with.</p>
+    </div>
+
+    <h2 class="sub">The difficult male</h2>
+
+    <p>The obstacles are anatomical and they are predictable: benign prostatic enlargement, a urethral
+      stricture, a previous transurethral resection, prostate cancer or its treatment, phimosis, meatal
+      stenosis, a buried penis in an oedematous or obese patient, and — very commonly — a false
+      passage created by whoever tried before you.</p>
+
+    <ul class="pts">
+      <li><b>Go up a size, not down</b><span>The counterintuitive one. A larger catheter is stiffer and less
+        likely to buckle or fold into a false passage, so a 16&nbsp;French often passes where a 12 would not.
+        Small and soft is the wrong instinct in an enlarged prostate.</span></li>
+      <li><b>Use a Coudé tip, oriented correctly</b><span>The angled tip is designed to ride over the
+        prostatic ledge. It only works pointing anteriorly, so the balloon inflation port must be at twelve
+        o'clock throughout. A Coudé rotated as it advances is worse than a straight catheter.</span></li>
+      <li><b>Get an assistant to apply perineal pressure</b><span>Steady pressure in the perineum can direct
+        the tip up into the prostatic urethra, and it is free.</span></li>
+      <li><b>For the buried penis</b><span>Downward pressure at the base of the shaft with a hand on either
+        side will often bring the meatus into view long enough for an assistant to pass the catheter.</span></li>
+      <li><b>Two attempts, then change something</b><span>Not a third go with the same catheter by the same
+        person. Change the operator, change the catheter, or change the technique. Repeated attempts are how
+        false passages are made, and every one makes the next attempt harder.</span></li>
+    </ul>
+
+    <div class="box grn">
+      <span class="lab">The guidewire, which is the modern answer</span>
+      <p>When the blind attempts have failed, the bedside solution is a Seldinger technique rather than force.
+        A soft hydrophilic guidewire is passed gently down the urethra; if it meets resistance it is withdrawn
+        and repassed rather than pushed. Once two-thirds of it has gone without the tip reappearing at the
+        meatus, it is in the bladder. A Council-tip catheter &mdash; which has a hole at its tip for exactly
+        this purpose &mdash; is then railroaded over the wire.</p>
+      <p>With direct vision by flexible cystoscopy, success rates in the published series are very high. Blind
+        wire passage is a reasonable bedside step in trained hands. Both are much safer than persistence with a
+        catheter that will not go.</p>
+    </div>
+
+    <div class="box red">
+      <span class="lab">Introducers: the honest answer is don't</span>
+      <p>Rigid metal introducers and urethral sounds still appear on trolleys and in older teaching. They carry
+        materially higher rates of urethral injury, false passage and outright failure than a guidewire, and
+        current teaching reserves them for urologists.</p>
+      <p>If you are an intensivist, an emergency physician or a trainee, the correct sequence when the catheter
+        will not pass is: optimise the basics, try a larger or Coudé catheter, consider a guidewire if you
+        have been trained in it &mdash; and then <strong>call urology</strong>. Not reach for a sound. The
+        procedure that ends with a phone call has a far better outcome than the one that ends with a stricture.</p>
+    </div>
+
+    <h2 class="sub">The difficult female, which is a different problem</h2>
+
+    <p>Less discussed and not rare. The difficulty is almost always finding the meatus rather than passing the
+      catheter: obesity, oedema, limited hip abduction, and atrophic change that retracts the urethra
+      posteriorly.</p>
+
+    <ul class="pts">
+      <li><b>Feel for it</b><span>Where the meatus cannot be seen, a finger in the vagina will find it as a
+        buttonhole in the anterior midline, and a small catheter can be slid along the finger with gentle
+        pressure against the anterior wall.</span></li>
+      <li><b>Here, smaller and firmer is better</b><span>The opposite of the male problem. A stenosed,
+        retracted meatus takes a smaller, firmer catheter more easily than a large soft one.</span></li>
+      <li><b>If it goes into the vagina, leave it there</b><span>Then pass a second, sterile catheter into the
+        urethra alongside it. The misplaced one is now a landmark rather than a failure, and is removed
+        afterwards.</span></li>
+      <li><b>Reposition</b><span>Lateral position, or reverse Trendelenburg, or a pillow under the sacrum. In a
+        difficult pelvis, changing the position beats changing the catheter.</span></li>
+    </ul>
+
+    <h2 class="sub">Which catheter</h2>
+
+    <table style="width:100%;border-collapse:collapse;margin:0 0 20px;font:400 15px 'Helvetica Neue',Arial,sans-serif">
+      <tr><td style="padding:9px 10px;border-bottom:1px solid #EFEAF1;width:34%"><strong>Standard two-way Foley</strong></td>
+        <td style="padding:9px 10px;border-bottom:1px solid #EFEAF1">Drainage and a balloon. 14&ndash;16&nbsp;Fr covers almost everything in an adult.</td></tr>
+      <tr><td style="padding:9px 10px;border-bottom:1px solid #EFEAF1"><strong>Three-way</strong></td>
+        <td style="padding:9px 10px;border-bottom:1px solid #EFEAF1">A third channel for irrigation. For frank haematuria and clot retention, where a two-way will block. Larger, and less comfortable.</td></tr>
+      <tr><td style="padding:9px 10px;border-bottom:1px solid #EFEAF1"><strong>Coudé / Tiemann</strong></td>
+        <td style="padding:9px 10px;border-bottom:1px solid #EFEAF1">Angled tip for the enlarged prostate. Port at twelve o'clock.</td></tr>
+      <tr><td style="padding:9px 10px;border-bottom:1px solid #EFEAF1"><strong>Council tip</strong></td>
+        <td style="padding:9px 10px;border-bottom:1px solid #EFEAF1">Open at the tip so it can be passed over a guidewire. The one you want when the wire is in.</td></tr>
+      <tr><td style="padding:9px 10px;border-bottom:1px solid #EFEAF1"><strong>Silicone vs latex</strong></td>
+        <td style="padding:9px 10px;border-bottom:1px solid #EFEAF1">Silicone for anyone staying catheterised for weeks, for latex allergy, and where encrustation is a problem. Latex is softer and cheaper for short-term use.</td></tr>
+      <tr><td style="padding:9px 10px"><strong>Temperature-sensing</strong></td>
+        <td style="padding:9px 10px">Gives a continuous core temperature. Worth choosing deliberately in a patient being actively warmed or cooled.</td></tr>
+    </table>
+
+    <h2 class="sub">Complications, and the ones nobody records</h2>
+
+    <ul class="pts">
+      <li><b>Catheter-associated urinary tract infection</b><span>The one with the numbers attached. Risk rises
+        with every day the catheter stays in. Nothing in the maintenance bundle matters as much as the
+        catheter not being there — closed system, bag below the bladder, no routine bladder washouts, no
+        prophylactic antibiotics, and daily review of whether it is still needed.</span></li>
+      <li><b>Urethral trauma and false passage</b><span>Almost always from inflating the balloon in the urethra
+        or from repeated forced attempts. Frank blood on the catheter, pain out of proportion in a conscious
+        patient, or a balloon that will not inflate freely. Stop and get help. The long-term consequence is a
+        stricture, which is somebody's next twenty years.</span></li>
+      <li><b>Paraphimosis</b><span>Entirely iatrogenic and entirely preventable, and the reason replacing the
+        foreskin has its own step above.</span></li>
+      <li><b>Post-obstructive diuresis</b><span>After relieving a chronically obstructed bladder, watch the
+        output and the electrolytes. Some patients pass litres and become genuinely hypovolaemic. Modern
+        practice is to drain completely rather than in aliquots, but to monitor afterwards.</span></li>
+      <li><b>The balloon that will not deflate</b><span>Do not cut the catheter and hope. It is a urology
+        problem, and there are several graded approaches before anything invasive.</span></li>
+      <li><b>The harm without a code</b><span>Discomfort, indignity, delirium in an older patient who keeps
+        pulling at something they do not understand, and immobility because a bag is tethering somebody to a
+        bed. None of these appear in an infection audit and all of them are reasons to take it out.</span></li>
+    </ul>
+
+    <h2 class="sub">Changing it: should you, and how often</h2>
+
+    <p>The instinct to change a catheter on a schedule is strong and mostly wrong.</p>
+
+    <ul class="pts">
+      <li><b>Do not change it routinely</b><span>Routine replacement at fixed intervals does not prevent
+        infection. Every change is a fresh chance to introduce organisms and to traumatise the urethra. In a
+        patient in intensive care for a fortnight, the catheter should generally stay until there is a reason
+        to change it.</span></li>
+      <li><b>Reasons to change it</b><span>Blockage or encrustation. Damage or a leaking balloon. A change of
+        purpose, such as needing irrigation. And in suspected catheter-associated infection, replacing a
+        long-standing catheter before starting treatment is reasonable, since the biofilm on the old one will
+        not be sterilised by antibiotics.</span></li>
+      <li><b>Long-term catheters are different</b><span>A patient who is going home with one moves to a
+        planned schedule, silicone typically up to about twelve weeks and latex much sooner. That is a
+        community management question, not an intensive care one, and the interval is individual rather than
+        universal.</span></li>
+      <li><b>The most important review is the daily one</b><span>Every ward round: does this patient still need
+        a catheter? If nobody can say what decision the urine output is changing, it comes out. That single
+        habit prevents more harm than every insertion technique on this page.</span></li>
+    </ul>
+  </div>
+
+  <div class="pad" style="padding-top:6px">
+    <div class="challenge">
+      <h2>Challenge for you</h2>
+      <p class="ask">Tell me about a difficult catheterisation you have had, and how you managed it.</p>
+      <p>What made it difficult, what you tried, what worked, and what you would do differently. The ones that
+        ended with a phone call are as instructive as the ones that ended with a catheter, and the near misses
+        are the most instructive of all. I will collect the replies into a follow-up piece.</p>
+      <p><a class="btn" href="mailto:icuandyou@icloud.com?subject=Procedures%20No.%203%20-%20a%20difficult%20catheterisation&body=What%20made%20it%20difficult%3A%0D%0A%0D%0A%0D%0AWhat%20I%20tried%2C%20and%20what%20worked%3A%0D%0A%0D%0A%0D%0AWhat%20I%20would%20do%20differently%3A%0D%0A%0D%0A%0D%0A---%0D%0A%0D%0AName%20%28optional%29%3A%0D%0A%0A---%0A%0AThinking%20about%20this%20ICU%20AND%20YOU%20post%20overall%20%E2%80%94%20was%20it%20useful%20to%20you%2C%20or%20would%20it%20be%20useful%20to%20others%3F%0A">Send me yours</a></p>
+      <p class="fallback">The button opens a reply straight to me. If your device blocks it, write to
+        <a href="mailto:icuandyou@icloud.com">icuandyou@icloud.com</a> instead.</p>
+    </div>
+  </div>
+
+  <footer>
+    <span class="firstpub">First published September 2026</span>
+    <p class="subline">Two emails a week &mdash; the Friday newsletter for all subscribers, and, for clinical subscribers,
+      the mind map and puzzles the moment they go up on Tuesday. Occasional announcements of new
+      features as they arrive. What went up and why it mattered, the best of your replies, and
+      original feature stories, news and views. <a href="https://joinlist.com/f/5adad2d6">Come and join us</a>.</p>
+    <a class="home" href="./">&larr; &nbsp;All of ICU AND YOU</a><br>
+    ICU AND YOU &nbsp;&#183;&nbsp; Procedures No. 3 &nbsp;&#183;&nbsp; Urinary catheterisation<br>
+    Educational use within the ICU education programme. Not a clinical protocol &mdash; local policy on
+    catheter selection, insertion, maintenance and replacement intervals always takes precedence, and any
+    suspected urethral injury is a urological matter.<br>
+    <span class="mine">Views my own, not those of NSW Health or any other organisation. No identifiable
+    patients &mdash; scenarios are constructed or combined for teaching. <a href="about.html">More</a>.</span>
+  </footer>
+
+</div>
+<script data-goatcounter="https://icuandyou.goatcounter.com/count"
+        async src="//gc.zgo.at/count.js"></script>
+</body>
+</html>

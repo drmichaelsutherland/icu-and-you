@@ -734,9 +734,25 @@
    "badge": "Āyubōwan Sri Lanka",
    "link_label": "Open",
    "blurb": "A new column. In dengue the critical phase begins as the fever breaks, and the number that matters is the pulse pressure rather than the blood pressure — the same physiology, read with a different instrument."
+  },
+  {
+   "file": "procedures-03-urinary-catheterisation.html",
+   "series": "procedures",
+   "colour": "amethyst",
+   "number": "3",
+   "title": "Urinary catheterisation",
+   "topic": "Any time",
+   "slug": "standing",
+   "week": false,
+   "standing": true
   }
  ],
  "latest": [
+  {
+   "file": "procedures-03-urinary-catheterisation.html",
+   "colour": "amethyst",
+   "label": "Procedures 3 · Urinary catheterisation"
+  },
   {
    "file": "srilanka-01-dengue.html",
    "colour": "lotus",
@@ -756,11 +772,6 @@
    "file": "exam-cicm-first-01-the-shape-of-the-thing.html",
    "colour": "pine",
    "label": "Exam focus · CICM First Part No. 1"
-  },
-  {
-   "file": "australia-01-ear-disease.html",
-   "colour": "sandstone",
-   "label": "The Australia Page · No. 1"
   }
  ],
  "topten": [
