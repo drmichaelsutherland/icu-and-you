@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en-AU">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ICU AND YOU · Journal Club 99 — When the child is worse than the film</title>
+<meta name="description" content="Journal Club 99: a previously well nine-year-old with Mycoplasma pneumoniae developed a plastic bronchitis cast, pulmonary emboli and an intracardiac thrombus — and deteriorated far more than his chest film explained.">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="alternate icon" href="/favicon.ico" sizes="any">
+<link rel="apple-touch-icon" href="/icon-180.png">
+<meta name="theme-color" content="#1B2A33">
+<meta property="og:site_name" content="ICU AND YOU">
+<meta property="og:type" content="website">
+<meta property="og:title" content="ICU AND YOU · Journal Club 99">
+<meta property="og:description" content="When the deterioration is worse than the radiograph explains, something else is going on.">
+<meta property="og:image" content="https://icuandyou.com/share-card.png">
+<meta name="twitter:card" content="summary_large_image">
+<style>
+  :root{
+    --paper:#FAF8F3; --ink:#241F19; --muted:#6E6558; --rule:#DED5C6;
+    --sepia:#6B4A2F; --sepiatint:#F2EBE1;
+    --rust:#A8442A; --rusttint:#F9EDE7;
+    --sky:#2E6E8E; --skytint:#E7F1F6;
+  }
+  *{box-sizing:border-box}
+  body{margin:0;background:#EDE8DE;color:var(--ink);
+    font:400 17px/1.65 'Iowan Old Style','Palatino Linotype',Palatino,Georgia,serif;
+    -webkit-text-size-adjust:100%;}
+  .sheet{max-width:780px;margin:0 auto;background:var(--paper);
+    box-shadow:0 1px 40px rgba(36,31,25,.10);}
+
+  header.top{padding:42px 40px 28px;border-bottom:1px solid var(--rule)}
+  .toptopic{display:inline-block;margin:0 0 16px 9px;padding:7px 16px;border-radius:20px;
+    border:1px solid currentColor;opacity:.62;text-decoration:none;color:inherit;
+    font:600 11.5px 'Helvetica Neue',Arial,sans-serif;letter-spacing:.09em;
+    text-transform:uppercase;transition:opacity .12s ease}
+  .toptopic:hover{opacity:1}
+  .topseries{display:inline-block;margin:0 0 16px 9px;padding:7px 16px;border-radius:20px;
+    border:1px solid currentColor;opacity:.62;text-decoration:none;color:inherit;
+    font:600 11.5px 'Helvetica Neue',Arial,sans-serif;letter-spacing:.09em;
+    text-transform:uppercase;transition:opacity .12s ease}
+  .topseries:hover{opacity:1}
+  .tophome{display:inline-block;margin:0 0 16px;padding:7px 16px;border-radius:20px;
+    border:1px solid currentColor;opacity:.62;text-decoration:none;color:inherit;
+    font:600 11.5px 'Helvetica Neue',Arial,sans-serif;letter-spacing:.09em;
+    text-transform:uppercase;transition:opacity .12s ease}
+  .tophome:hover{opacity:1}
+  .eyebrow{font:500 11.5px/1 'Helvetica Neue',Arial,sans-serif;letter-spacing:.24em;
+    text-transform:uppercase;color:var(--sepia);margin:0 0 14px}
+  .eyebrow a.serlink{color:inherit;text-decoration:none;border-bottom:1px solid transparent}
+  .eyebrow a.serlink:hover{border-bottom-color:currentColor}
+  .eyebrow a.mast{color:inherit;text-decoration:none;border-bottom:1px solid transparent}
+  .eyebrow a.mast:hover{border-bottom-color:currentColor}
+  h1{font-size:31px;line-height:1.2;margin:0 0 10px;font-weight:400;letter-spacing:-.012em}
+  .kicker{color:var(--muted);margin:0;font-size:16.5px;font-style:italic}
+
+  .source{margin:0;padding:26px 40px;background:var(--sepiatint);border-bottom:1px solid var(--rule)}
+  .cite{margin:0 0 16px;font-size:16px;line-height:1.6}
+  .cite b{font-weight:600}
+  .meta{display:flex;flex-wrap:wrap;gap:5px 22px;margin:0 0 16px;
+    font:400 13.5px 'Helvetica Neue',Arial,sans-serif;color:var(--muted)}
+  .meta b{color:var(--ink);font-weight:600}
+  a.read{display:inline-block;padding:14px 28px;border-radius:30px;text-decoration:none;
+    background:var(--sepia);color:#FAF6F0;
+    font:600 15px 'Helvetica Neue',Arial,sans-serif;letter-spacing:.03em}
+  a.read:hover{background:#523821}
+  .srcnote{font:400 13.5px 'Helvetica Neue',Arial,sans-serif;color:var(--muted);margin:14px 0 0}
+
+  .pad{padding:32px 40px}
+  p{margin:0 0 17px}
+  h2.sub{font:600 12px 'Helvetica Neue',Arial,sans-serif;letter-spacing:.2em;
+    text-transform:uppercase;color:var(--muted);margin:0 0 16px;
+    padding-bottom:8px;border-bottom:1px solid var(--rule)}
+  b.term{font-weight:600;color:var(--sepia)}
+
+  .three{display:flex;gap:13px;flex-wrap:wrap;margin:0 0 20px}
+  .col{flex:1 1 200px;background:#fff;border:1px solid var(--rule);border-radius:9px;padding:16px 18px}
+  .col.mid{border-top:4px solid var(--sky);background:var(--skytint)}
+  .col .age{font:600 12px 'Helvetica Neue',Arial,sans-serif;letter-spacing:.1em;
+    text-transform:uppercase;color:var(--muted);margin:0 0 7px}
+  .col.mid .age{color:var(--sky)}
+  .col p{margin:0;font-size:15px;line-height:1.5;color:#3A342A}
+
+  .caution{margin:0;padding:20px 24px;background:var(--rusttint);
+    border-left:4px solid var(--rust);border-radius:0 8px 8px 0}
+  .caution .lab{display:block;font:600 11px 'Helvetica Neue',Arial,sans-serif;
+    letter-spacing:.18em;text-transform:uppercase;color:var(--rust);margin:0 0 9px}
+  .caution p:last-child{margin:0}
+
+  .challenge{margin:0;padding:28px 32px;background:var(--rusttint);border-left:5px solid var(--rust)}
+  .challenge h2{font:600 12px 'Helvetica Neue',Arial,sans-serif;letter-spacing:.2em;
+    text-transform:uppercase;color:var(--rust);margin:0 0 13px}
+  .ask{font-size:19.5px;line-height:1.5;margin:0 0 8px}
+  .lead{font-size:15px;color:var(--muted);margin:0 0 17px;line-height:1.55}
+  .chips{display:flex;flex-wrap:wrap;gap:10px;margin:0 0 16px}
+  a.chip{text-decoration:none;padding:12px 18px;border-radius:9px;
+    background:#fff;border:1px solid #E0C4B8;color:#7C3520;
+    font:400 15px 'Iowan Old Style',Palatino,Georgia,serif;transition:transform .08s ease}
+  a.chip:hover{transform:translateY(-1px);background:#FDF4EF}
+  .fallback{font:400 13.5px 'Helvetica Neue',Arial,sans-serif;color:var(--muted);margin:0}
+  .fallback a{color:var(--rust)}
+  .subline{margin:0 0 14px;padding:0 0 13px;border-bottom:1px solid rgba(0,0,0,.09);
+    font:400 14.5px/1.55 'Iowan Old Style','Palatino Linotype',Palatino,Georgia,serif;
+    max-width:56ch;margin-left:auto;margin-right:auto}
+  .subline a{font-weight:500;border-bottom:1px solid currentColor;
+    text-decoration:none;color:inherit}
+  .firstpub{display:block;margin:0 0 10px;padding-bottom:9px;
+    border-bottom:1px solid currentColor;border-color:rgba(0,0,0,.09);
+    font:400 12px 'Helvetica Neue',Arial,sans-serif;letter-spacing:.06em;opacity:.72}
+
+  footer{padding:24px 40px 42px;border-top:1px solid var(--rule);
+    font:400 13px 'Helvetica Neue',Arial,sans-serif;color:var(--muted);text-align:center;line-height:1.7}
+  .home{display:inline-block;margin:0 0 14px;padding:8px 18px;border-radius:20px;
+    border:1px solid var(--rule);background:#F2EEE6;color:var(--sepia);text-decoration:none;
+    font:600 12.5px 'Helvetica Neue',Arial,sans-serif;letter-spacing:.05em}
+  .home:hover{background:var(--sepia);border-color:var(--sepia);color:#FAF6F0}
+
+  @media (max-width:620px){
+    header.top,.source,.pad,footer{padding-left:20px;padding-right:20px}
+    .challenge{padding:22px 20px}
+    h1{font-size:25px} body{font-size:16.5px} .ask{font-size:18px}
+  }
+  @media print{ body{background:#fff} .sheet{box-shadow:none;max-width:none} }
+
+  .agree{display:flex;gap:13px;flex-wrap:wrap;margin:0 0 22px}
+  .ag{flex:1 1 150px;background:#fff;border:1px solid var(--rule);border-radius:9px;
+    padding:16px 18px;text-align:center}
+  .ag .big{font-size:30px;line-height:1.1;color:var(--sepia);margin:0 0 4px}
+  .ag .lab2{font:400 13.5px 'Helvetica Neue',Arial,sans-serif;color:var(--muted);
+    line-height:1.45;margin:0}
+  .gap{margin:0 0 20px;padding:20px 24px;background:#F3EEE3;
+    border-left:4px solid var(--sepia);border-radius:0 8px 8px 0}
+  .gap .lab{color:var(--sepia)}
+  .gap p:last-child{margin:0}
+  .mine{display:inline-block;margin:9px 0 0;opacity:.78;font-size:.94em}
+</style>
+</head>
+<body>
+<div class="sheet">
+
+  <header class="top">
+    <a class="tophome" href="./">&larr;&nbsp; Home</a>
+    <a class="topseries" href="./?s=journal">All journal club</a>
+    <a class="toptopic" href="./?t=school-age" title="Everything on The school-age child">All on this topic</a>
+    <p class="eyebrow"><a class="mast" href="./">ICU and You</a> &nbsp;·&nbsp; <a class="serlink" href="./?s=journal">Journal Club</a> &nbsp;·&nbsp; Number 99</p>
+    <h1>When the child is worse than the film</h1>
+    <p class="kicker">A nine-year-old with mycoplasma, and three complications nobody expects from a mild organism</p>
+  </header>
+
+  <div class="source">
+    <p class="cite">Kim SY, Kim JD, Park M, Kim KW, Sohn MH. <b>Disproportionate respiratory deterioration in
+      severe <em>Mycoplasma pneumoniae</em> pneumonia caused by airway obstruction and thromboembolism: a
+      case report.</b> <em>Archives of Pediatric Critical Care</em> 2026;4(1):17&ndash;22.</p>
+    <div class="meta">
+      <span><b>Type</b> &nbsp;Single case report</span>
+      <span><b>Where</b> &nbsp;Severance Hospital, Yonsei University, Seoul</span>
+      <span><b>Patient</b> &nbsp;Previously well boy, 9 years, 28 kg</span>
+    </div>
+    <a class="read" href="https://doi.org/10.32990/apcc.2025.00129">Read the paper</a>
+    <p class="srcnote">Open access under CC BY-NC 4.0. Worth opening for the images alone: six serial chest
+      films, the CT showing the filling defect, and the bronchoscopic view before and after the cast came
+      out.</p>
+  </div>
+
+  <div class="pad">
+    <h2 class="sub">What happened</h2>
+
+    <p>A previously well nine-year-old, five days of high fever and a productive cough, already treated for
+      three days at another hospital for a left lower lobe pneumonia and getting worse. Nasopharyngeal PCR
+      positive for <em>Mycoplasma pneumoniae</em>, viral panel negative.</p>
+
+    <p>On arrival he was lethargic but alert, febrile at 39.3, mildly tachycardic, and saturating 94 per cent
+      in air. <b class="term">His white count was normal</b> &mdash; 8,270 &mdash; with a C-reactive protein
+      of 36.8. Nothing about the blood picture suggested what was coming.</p>
+
+    <p>Over the next three days the left hemithorax whited out. A drain yielded 700 mL of straw-coloured
+      exudate: protein 4,400 mg/dL, LDH 3,300, ninety-three per cent mononuclear cells, and a preserved pH and
+      glucose with negative cultures. That combination matters, because it says this was not an empyema. It
+      was an immune effusion.</p>
+
+    <p>He defervesced and looked better. On the morning of day six he was stable on two litres of nasal
+      oxygen.</p>
+
+    <div class="gap">
+      <span class="lab">And then, the same afternoon</span>
+      <p>Intermittent desaturation, increasing somnolence, then frank hypoxaemia. The chest film showed the
+        left hemithorax opacified again. On a fifteen-litre reservoir mask his saturations stayed below 90 per
+        cent and he became progressively drowsy, and he was intubated on a general paediatric ward.</p>
+      <p><strong>He had had the identical radiographic finding two days earlier and tolerated it.</strong>
+        That is the whole case in one observation: the film was the same and the child was not.</p>
+    </div>
+
+    <h2 class="sub">Three things were happening at once</h2>
+
+    <p>The CT and the bronchoscopy, done within hours of each other, found all of them.</p>
+
+    <ul class="pts" style="list-style:none;padding:0">
+      <li><b>A cast in the left main bronchus</b><span>Dense mucus plugging nearly occluding the airway, a
+        plastic bronchitis&ndash;like cast. Removing it at bronchoscopy re-expanded the lung. The bronchoscope
+        was both the diagnosis and the treatment, which is unusual enough to be worth remembering.</span></li>
+      <li><b>Pulmonary emboli &mdash; on the other side</b><span>Filling defects in the right interlobar
+        pulmonary artery and right lower lobe branches. This is the part that explains the deterioration: his
+        left lung was collapsed and his right lung, the only one ventilating, was the one with the clot in
+        it.</span></li>
+      <li><b>A thrombus in the heart</b><span>A 4 mm mobile echogenic mass on the right ventricular papillary
+        muscle and tricuspid leaflet, held by thin strands. Biventricular function preserved, no pulmonary
+        hypertension. In a previously healthy nine-year-old.</span></li>
+    </ul>
+
+    <p>D-dimer on the day he deteriorated was 4,591 ng/mL. Heparin went up immediately, he was extubated two
+      days later, and the intracardiac thrombus had gone by day twelve. He moved to apixaban, went home on day
+      sixteen, and completed three months of anticoagulation. At two months the emboli had resolved; at three
+      months the chest film was clear.</p>
+
+    <h2 class="sub">Why any of this happens</h2>
+
+    <p>Mycoplasma is the organism of school-age community-acquired pneumonia and is usually mild and
+      self-limiting. The severe disease is not the organism doing more damage; it is the host response doing
+      it. The authors set out the proposed mechanisms for the thrombosis: immune complex&ndash;mediated
+      endothelial injury, cytokine-driven hypercoagulability, transient antiphospholipid antibodies &mdash;
+      particularly lupus anticoagulant &mdash; and local vascular inflammation next to infected lung seeding
+      thrombus in situ.</p>
+
+    <p>The same logic runs through the whole case. The effusion was immune rather than infective. The cast was
+      epithelial injury and overproduction of mucinous and fibrinous material. The clots were an inflamed
+      endothelium. One organism, three systems, and an immune response that overshot in all of them.</p>
+
+    <div class="gap">
+      <span class="lab">A detail worth not over-reading</span>
+      <p>His thrombophilia screen was normal and his antiphospholipid antibodies were negative in the acute
+        phase. Lupus anticoagulant was detected <em>only at six weeks</em>, with no other antiphospholipid
+        antibodies and no recurrent thrombosis.</p>
+      <p>That is consistent with the transient, infection-associated antibody the authors describe, and it is
+        a useful reminder in the other direction too: a positive lupus anticoagulant after an infection is not
+        by itself a diagnosis of antiphospholipid syndrome, and testing at the wrong moment generates
+        answers nobody knows what to do with.</p>
+    </div>
+
+    <h2 class="sub">What to take to the bedside</h2>
+
+    <ul class="pts" style="list-style:none;padding:0">
+      <li><b>Deterioration out of proportion to the film is itself a finding</b><span>If the child is
+        markedly worse than the radiograph explains, stop attributing it to the radiograph. Something
+        unimaged is going on &mdash; an airway that has occluded, a circulation that has embolised, or
+        both.</span></li>
+      <li><b>Recurrent or unexplained lobar collapse should make you think about the airway itself</b><span>Not
+        just about consolidation. A cast will not clear with physiotherapy and will not show as anything other
+        than collapse.</span></li>
+      <li><b>Consider a D-dimer in severe mycoplasma</b><span>Most of us would not think of pulmonary embolism
+        in a previously well nine-year-old with pneumonia, which is precisely why it gets missed. It is a cheap
+        test and the literature the authors cite reports thrombosis across several vascular territories with
+        consistently raised D-dimer.</span></li>
+      <li><b>Read the pleural fluid before you call it empyema</b><span>Mononuclear predominance, preserved pH
+        and glucose, negative culture and a high protein and LDH point to an immune effusion. It changes what
+        you expect from drainage and what you expect from antibiotics.</span></li>
+      <li><b>And remember macrolide resistance</b><span>They escalated to levofloxacin when he failed to
+        respond. Macrolide-resistant mycoplasma is common in East Asia and rising elsewhere, and a child
+        deteriorating on a macrolide is a reason to ask the question rather than to assume the diagnosis was
+        wrong.</span></li>
+    </ul>
+
+    <h2 class="sub">What to read sceptically</h2>
+
+    <div class="caution">
+      <span class="lab">Read it carefully</span>
+      <p><strong>It is one patient.</strong> A case report is the lowest rung of the evidence ladder and this
+        one is reported precisely because the combination is rare. It tells you something is possible. It
+        cannot tell you how often, in whom, or whether acting on it more widely would do more good than
+        harm.</p>
+      <p><strong>The recommendations outrun the design.</strong> The authors conclude that early bronchoscopy,
+        comprehensive imaging and prompt anticoagulation are essential for optimal outcomes. That may well be
+        right, but it is a conclusion drawn from a single favourable outcome, and one child who did well after
+        an intervention is not evidence that the intervention caused it.</p>
+      <p><strong>Confounders they cannot separate.</strong> He had methylprednisolone from the start, then a
+        change of antibiotic, then drainage, then bronchoscopy, then heparin, over six days. Any of those
+        could have mattered, and the design cannot apportion credit. The nasopharyngeal swab also grew
+        <em>Haemophilus influenzae</em>, though at a cycle threshold of 40.73 &mdash; which is essentially at
+        the limit of detection and probably means nothing.</p>
+      <p><strong>And the setting is not ours.</strong> Macrolide resistance rates in Korea are among the
+        highest in the world, and the threshold for early bronchoscopy differs a great deal between systems.
+        The mechanism travels; the management pathway may not.</p>
+    </div>
+
+    <p>None of which is a reason to dismiss it. Case reports earn their place by widening the differential,
+      and this one widens it usefully: a common, mild organism, in a well child, producing an airway
+      catastrophe and a thromboembolic one simultaneously. You will probably never see it. You will only
+      recognise it if you have read about it.</p>
+  </div>
+
+  <div class="pad" style="padding-top:6px">
+    <div class="challenge">
+      <h2>Challenge for you</h2>
+      <p class="ask">Be honest: on the afternoon of day six, what would you have done?</p>
+      <p class="lead">Same child, same unit, same film as two days before &mdash; and now he is drowsy on a
+        reservoir mask. You have to decide what to look for. Tap the closest to the truth, and add what you
+        think you would really have done.</p>
+      <div class="chips">
+        <a class="chip" href="mailto:icuandyou@icloud.com?subject=Journal%20Club%2099%20-%20I%20would%20not%20have%20thought%20of%20it&body=Pulmonary%20embolism%20would%20not%20have%20crossed%20my%20mind%20in%20a%20previously%20well%20nine-year-old%20with%20pneumonia.%0A%0AWhat%20I%20think%20I%20would%20actually%20have%20done%2C%20and%20why%3A%0A%0A%0AName%20%28optional%29%3A%0A%0A---%0A%0AThinking%20about%20this%20ICU%20AND%20YOU%20post%20overall%20%E2%80%94%20was%20it%20useful%20to%20you%2C%20or%20would%20it%20be%20useful%20to%20others%3F%0A">I would not have thought of it</a>
+        <a class="chip" href="mailto:icuandyou@icloud.com?subject=Journal%20Club%2099%20-%20I%20would%20have%20blamed%20the%20collapse&body=I%20would%20have%20attributed%20the%20deterioration%20to%20the%20lung%20that%20was%20down%2C%20and%20looked%20no%20further.%0A%0AWhat%20I%20think%20I%20would%20actually%20have%20done%2C%20and%20why%3A%0A%0A%0AName%20%28optional%29%3A%0A%0A---%0A%0AThinking%20about%20this%20ICU%20AND%20YOU%20post%20overall%20%E2%80%94%20was%20it%20useful%20to%20you%2C%20or%20would%20it%20be%20useful%20to%20others%3F%0A">I would have blamed the collapse</a>
+        <a class="chip" href="mailto:icuandyou@icloud.com?subject=Journal%20Club%2099%20-%20I%20would%20have%20gone%20to%20bronchoscopy&body=Recurrent%20collapse%20would%20have%20sent%20me%20to%20the%20bronchoscope%2C%20but%20I%20would%20not%20have%20looked%20for%20clot.%0A%0AWhat%20I%20think%20I%20would%20actually%20have%20done%2C%20and%20why%3A%0A%0A%0AName%20%28optional%29%3A%0A%0A---%0A%0AThinking%20about%20this%20ICU%20AND%20YOU%20post%20overall%20%E2%80%94%20was%20it%20useful%20to%20you%2C%20or%20would%20it%20be%20useful%20to%20others%3F%0A">I would have gone to bronchoscopy</a>
+        <a class="chip" href="mailto:icuandyou@icloud.com?subject=Journal%20Club%2099%20-%20I%20have%20seen%20something%20like%20it&body=I%20have%20met%20a%20child%20whose%20deterioration%20did%20not%20match%20the%20film.%0A%0AWhat%20I%20think%20I%20would%20actually%20have%20done%2C%20and%20why%3A%0A%0A%0AName%20%28optional%29%3A%0A%0A---%0A%0AThinking%20about%20this%20ICU%20AND%20YOU%20post%20overall%20%E2%80%94%20was%20it%20useful%20to%20you%2C%20or%20would%20it%20be%20useful%20to%20others%3F%0A">I have seen something like it</a>
+      </div>
+      <p class="fallback">Each tap opens a reply straight to me. If your device blocks it, write to
+        <a href="mailto:icuandyou@icloud.com">icuandyou@icloud.com</a> instead.</p>
+    </div>
+  </div>
+
+  <footer>
+    <span class="firstpub">First published September 2026</span>
+    <p class="subline">Two emails a week &mdash; the Friday newsletter for all subscribers, and, for clinical subscribers,
+      the mind map and puzzles the moment they go up on Tuesday. Occasional announcements of new
+      features as they arrive. What went up and why it mattered, the best of your replies, and
+      original feature stories, news and views. <a href="https://joinlist.com/f/5adad2d6">Come and join us</a>.</p>
+    <a class="home" href="./">&larr; &nbsp;All of ICU AND YOU</a><br>
+    ICU AND YOU &nbsp;·&nbsp; Journal Club No. 99 &nbsp;·&nbsp; companion to Mind Map #34, The School-Age Child<br>
+    Summarised independently and in our own words; the article is open access under CC BY 4.0 and is linked above
+    rather than reproduced. Educational use only &mdash; not a clinical protocol, and local guidance and the
+    retrieval service always take precedence.
+  <br>
+    <span class="mine">Views my own, not those of NSW Health or any other organisation. No identifiable patients — scenarios are constructed or combined for teaching. <a href="about.html">More</a>.</span>
+  </footer>
+
+</div>
+<script data-goatcounter="https://icuandyou.goatcounter.com/count"
+        async src="//gc.zgo.at/count.js"></script>
+</body>
+</html>
