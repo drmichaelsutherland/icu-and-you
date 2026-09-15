@@ -843,9 +843,25 @@
    "badge": "Medical Students",
    "link_label": "Open",
    "blurb": "Roughly six to twelve, in three tiers — the science of an almost-adult, taking a history from someone who has learned to be brave, and what you will be expected to do on your first nights on call."
+  },
+  {
+   "file": "procedures-04-arterial-lines.html",
+   "series": "procedures",
+   "colour": "amethyst",
+   "number": "4",
+   "title": "Arterial lines",
+   "topic": "Any time",
+   "slug": "standing",
+   "week": false,
+   "standing": true
   }
  ],
  "latest": [
+  {
+   "file": "procedures-04-arterial-lines.html",
+   "colour": "amethyst",
+   "label": "Procedures 4 · Arterial lines"
+  },
   {
    "file": "med-students-04-school-age.html",
    "colour": "violet",
@@ -865,11 +881,6 @@
    "file": "podcast-58-sepsis-to-society.html",
    "colour": "slate",
    "label": "Podcast 58 · From sepsis to society"
-  },
-  {
-   "file": "mind-map-34-school-age.html",
-   "colour": "teal",
-   "label": "Mind Map 34 · The school-age child"
   }
  ],
  "topten": [

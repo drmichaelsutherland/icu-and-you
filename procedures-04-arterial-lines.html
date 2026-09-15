@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="en-AU">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ICU AND YOU · Procedures No. 4 — Arterial lines</title>
+<meta name="description" content="Procedures No. 4: arterial lines — choosing a site, getting it in, and the troubleshooting nobody teaches. Damping, the square wave test, levelling errors, and the mistakes that cause real harm.">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="alternate icon" href="/favicon.ico" sizes="any">
+<link rel="apple-touch-icon" href="/icon-180.png">
+<meta name="theme-color" content="#1B2A33">
+<meta property="og:site_name" content="ICU AND YOU">
+<meta property="og:type" content="website">
+<meta property="og:title" content="ICU AND YOU · Procedures No. 4 — Arterial lines">
+<meta property="og:description" content="Getting it in is the easy part. Reading it is the job.">
+<meta property="og:image" content="https://icuandyou.com/share-card.png">
+<meta name="twitter:card" content="summary_large_image">
+<style>
+  :root{
+    --paper:#FBF9FC; --ink:#241F2B; --muted:#6B6377; --rule:#DFD6E6;
+    --amethyst:#7A4FA3; --amethysttint:#F1EBF7;
+    --rust:#A8442A; --rusttint:#F9EDE7;
+    --moss:#4C6B4A; --mosstint:#EAF1E9;
+    --gold:#A8721E; --goldtint:#FBF1DC;
+  }
+  *{box-sizing:border-box}
+  body{margin:0;background:#EDE8F1;color:var(--ink);
+    font:400 17px/1.64 'Iowan Old Style','Palatino Linotype',Palatino,Georgia,serif;
+    -webkit-text-size-adjust:100%;}
+  .sheet{max-width:820px;margin:0 auto;background:var(--paper);
+    box-shadow:0 1px 40px rgba(36,31,43,.10);}
+
+  header.top{padding:42px 40px 28px;border-bottom:2px solid var(--amethyst)}
+  .tophome,.topseries,.toptopic{display:inline-block;margin:0 0 16px;padding:7px 16px;
+    border-radius:20px;border:1px solid currentColor;opacity:.62;text-decoration:none;
+    color:inherit;font:600 11.5px 'Helvetica Neue',Arial,sans-serif;letter-spacing:.09em;
+    text-transform:uppercase;transition:opacity .12s ease}
+  .topseries,.toptopic{margin-left:9px}
+  .tophome:hover,.topseries:hover,.toptopic:hover{opacity:1}
+  .eyebrow a.mast,.eyebrow a.serlink{color:inherit;text-decoration:none;
+    border-bottom:1px solid transparent}
+  .eyebrow a.mast:hover,.eyebrow a.serlink:hover{border-bottom-color:currentColor}
+  .eyebrow{font:500 11.5px/1 'Helvetica Neue',Arial,sans-serif;letter-spacing:.24em;
+    text-transform:uppercase;color:var(--muted);margin:0 0 13px}
+  h1{font-size:32px;line-height:1.2;margin:0 0 9px;font-weight:400;letter-spacing:-.012em}
+  .kicker{color:var(--muted);margin:0;font-size:16.5px;font-style:italic}
+
+  .askedby{margin:0;padding:18px 40px;background:var(--amethysttint);
+    border-bottom:1px solid var(--rule);font-size:16px;color:#4A3D57}
+  .askedby a{color:var(--amethyst)}
+
+  .pad{padding:32px 40px}
+  p{margin:0 0 16px}
+  .lede{font-size:19.5px;line-height:1.55;margin:0 0 20px}
+
+  h2.sub{font:600 12px 'Helvetica Neue',Arial,sans-serif;letter-spacing:.2em;
+    text-transform:uppercase;color:var(--amethyst);margin:32px 0 15px;
+    padding-bottom:8px;border-bottom:1px solid var(--rule)}
+
+  ul.pts{list-style:none;margin:0 0 18px;padding:0}
+  ul.pts li{display:flex;gap:13px;padding:11px 0;border-bottom:1px solid #EFE9F4;
+    font-size:16.5px;line-height:1.5}
+  ul.pts li:last-child{border-bottom:0}
+  ul.pts b{flex:0 0 182px;font:600 14.5px 'Helvetica Neue',Arial,sans-serif;
+    color:var(--amethyst);line-height:1.4}
+
+  ol.steps{list-style:none;counter-reset:s;margin:0 0 18px;padding:0}
+  ol.steps li{counter-increment:s;position:relative;padding:12px 0 12px 44px;
+    border-bottom:1px solid #EFE9F4;font-size:16.5px;line-height:1.55}
+  ol.steps li:last-child{border-bottom:0}
+  ol.steps li::before{content:counter(s);position:absolute;left:0;top:12px;
+    width:28px;height:28px;border-radius:50%;background:var(--amethyst);color:#F8F5FB;
+    font:600 13px 'Helvetica Neue',Arial,sans-serif;display:flex;align-items:center;
+    justify-content:center}
+
+  .box{margin:0 0 18px;padding:20px 24px;border-radius:0 8px 8px 0}
+  .box .lab{display:block;font:600 11px 'Helvetica Neue',Arial,sans-serif;
+    letter-spacing:.18em;text-transform:uppercase;margin:0 0 9px}
+  .box p:last-child{margin:0}
+  .red{background:var(--rusttint);border-left:4px solid var(--rust)} .red .lab{color:var(--rust)}
+  .grn{background:var(--mosstint);border-left:4px solid var(--moss)} .grn .lab{color:var(--moss)}
+  .amb{background:var(--goldtint);border-left:4px solid var(--gold)} .amb .lab{color:var(--gold)}
+
+  .sites{display:flex;gap:13px;flex-wrap:wrap;margin:0 0 20px}
+  .site{flex:1 1 226px;background:#fff;border:1px solid var(--rule);border-radius:9px;
+    padding:16px 18px;border-top:4px solid var(--amethyst)}
+  .site h3{margin:0 0 7px;font:600 13px 'Helvetica Neue',Arial,sans-serif;
+    letter-spacing:.07em;text-transform:uppercase;color:var(--amethyst)}
+  .site p{margin:0;font-size:15.5px;line-height:1.5;color:#3B3345}
+
+  .challenge{margin:0;padding:28px 32px;background:var(--rusttint);border-left:5px solid var(--rust)}
+  .challenge h2{font:600 12px 'Helvetica Neue',Arial,sans-serif;letter-spacing:.2em;
+    text-transform:uppercase;color:var(--rust);margin:0 0 13px}
+  .ask{font-size:19.5px;line-height:1.5;margin:0 0 12px;font-style:italic}
+  .btn{display:inline-block;margin:6px 0 12px;padding:15px 30px;background:var(--rust);
+    color:#FDF8F5;text-decoration:none;border-radius:30px;font-style:normal;
+    font:600 15px 'Helvetica Neue',Arial,sans-serif;letter-spacing:.03em}
+  .btn:hover{background:#8A3620}
+  .fallback{font:400 13.5px 'Helvetica Neue',Arial,sans-serif;color:var(--muted);margin:0}
+  .fallback a{color:var(--rust)}
+
+  footer{padding:24px 40px 42px;border-top:1px solid var(--rule);
+    font:400 13px 'Helvetica Neue',Arial,sans-serif;color:var(--muted);text-align:center;line-height:1.7}
+  .subline{margin:0 0 14px;padding:0 0 13px;border-bottom:1px solid rgba(0,0,0,.09);
+    font:400 14.5px/1.55 'Iowan Old Style','Palatino Linotype',Palatino,Georgia,serif;
+    max-width:56ch;margin-left:auto;margin-right:auto}
+  .subline a{font-weight:500;border-bottom:1px solid currentColor;
+    text-decoration:none;color:inherit}
+  .firstpub{display:block;margin:0 0 10px;padding-bottom:9px;
+    border-bottom:1px solid rgba(0,0,0,.09);
+    font:400 12px 'Helvetica Neue',Arial,sans-serif;letter-spacing:.06em;opacity:.72}
+  .home{display:inline-block;margin:0 0 14px;padding:8px 18px;border-radius:20px;
+    border:1px solid var(--rule);background:#F3EFF7;color:var(--amethyst);text-decoration:none;
+    font:600 12.5px 'Helvetica Neue',Arial,sans-serif;letter-spacing:.05em}
+  .home:hover{background:var(--amethyst);border-color:var(--amethyst);color:#F8F5FB}
+
+  @media (max-width:640px){
+    header.top,.pad,.askedby,footer{padding-left:20px;padding-right:20px}
+    .challenge{padding:22px 20px}
+    h1{font-size:26px} body{font-size:16.5px} .ask{font-size:18px}
+    ul.pts li{flex-direction:column;gap:3px} ul.pts b{flex:none}
+  }
+  @media print{ body{background:#fff} .sheet{box-shadow:none;max-width:none} }
+  .mine{display:inline-block;margin:9px 0 0;opacity:.78;font-size:.94em}
+
+  .stepnum{margin:0 0 22px;padding:0;list-style:none;counter-reset:sn}
+  .stepnum li{position:relative;padding:12px 0 12px 44px;border-bottom:1px solid #EFEAF1;line-height:1.55}
+  .stepnum li:last-child{border-bottom:0}
+  .stepnum li::before{counter-increment:sn;content:counter(sn);position:absolute;left:0;top:10px;
+    width:28px;height:28px;border-radius:50%;background:#7A4FA3;color:#fff;text-align:center;
+    font:600 14px/28px 'Helvetica Neue',Arial,sans-serif}
+
+  .tbl{width:100%;border-collapse:collapse;margin:0 0 22px;
+    font:400 15px 'Helvetica Neue',Arial,sans-serif}
+  .tbl th{text-align:left;padding:9px 10px;border-bottom:2px solid #7A4FA3;
+    font:600 11.5px 'Helvetica Neue',Arial,sans-serif;letter-spacing:.1em;text-transform:uppercase;
+    color:#57365B}
+  .tbl td{padding:10px;border-bottom:1px solid #EFEAF1;vertical-align:top;line-height:1.5}
+  .tbl tr:last-child td{border-bottom:0}
+  .tbl td:first-child{width:30%;font-weight:600;color:#3B2C40}
+</style>
+</head>
+<body>
+<div class="sheet">
+
+  <header class="top">
+    <a class="tophome" href="./">&larr;&nbsp; Home</a>
+    <a class="topseries" href="./?s=procedures">All procedures</a>
+    <p class="eyebrow"><a class="mast" href="./">ICU and You</a> &nbsp;·&nbsp;
+      <a class="serlink" href="./?s=procedures">Procedures</a> &nbsp;·&nbsp; Number 4</p>
+    <h1>Arterial lines</h1>
+    <p class="kicker">Getting it in is the easy part. Reading it is the job</p>
+  </header>
+
+  <div class="pad">
+    <p class="lede">Most of what goes wrong with arterial lines does not happen at insertion. It happens
+      afterwards, quietly, in the form of a number that is wrong and believed.</p>
+
+    <p>A trainee who can cannulate a radial artery but cannot tell an overdamped trace from a genuine fall in
+      pressure is more dangerous than one who cannot get the line in at all, because the second calls for
+      help and the first starts a vasopressor. So this piece gives the insertion its due and then spends most
+      of its length on the waveform and on troubleshooting, which is the part nobody teaches formally.</p>
+
+    <h2 class="sub">When it is worth one</h2>
+
+    <ul class="pts">
+      <li><b>Beat-to-beat pressure where the pressure is changing</b><span>Vasopressor or vasodilator
+        titration, shock of any cause, a patient who will swing. This is the main one, and the value is in
+        seeing the trend within seconds rather than every fifteen minutes.</span></li>
+      <li><b>Where the cuff cannot be trusted</b><span>Profound vasoconstriction, atrial fibrillation and
+        other irregular rhythms, morbid obesity, extensive burns, and the very oedematous patient. A cuff on a
+        shut-down arm reads badly and reads badly in a consistent direction.</span></li>
+      <li><b>Frequent sampling</b><span>Repeated blood gases in respiratory failure or ketoacidosis. If you
+        are stabbing a patient four times a day, the line is kinder than the alternative.</span></li>
+      <li><b>Waveform-derived information</b><span>Cardiac output and stroke volume variation from pulse
+        contour analysis, and the crude but useful information in the shape of the trace itself.</span></li>
+    </ul>
+
+    <div class="box amb">
+      <span class="lab">Not an indication</span>
+      <p><strong>&ldquo;They are in intensive care.&rdquo;</strong> A stable patient on no vasoactive support,
+        whose gases you are not checking, does not need an arterial line, and a line that exists because
+        everybody here has one is a line that will still be there on day nine. Ask at every ward round what
+        decision the trace is changing.</p>
+    </div>
+
+    <h2 class="sub">Where to put it</h2>
+
+    <table class="tbl">
+      <tr><th>Site</th><th>What you are trading</th></tr>
+      <tr><td>Radial</td><td>First choice for almost everyone. Superficial, easy to compress, and the hand
+        usually has a dual supply. It is also the most peripheral, so in shock and after cardiopulmonary bypass
+        it can read lower than central pressure &mdash; more on that below.</td></tr>
+      <tr><td>Femoral</td><td>Bigger, easier when everything is shut down, and closer to the aorta so more
+        representative in severe shock. Harder to keep clean, harder to compress, and it tethers the patient to
+        the bed.</td></tr>
+      <tr><td>Dorsalis pedis / posterior tibial</td><td>Useful alternatives with good collateral supply.
+        Being furthest from the heart they exaggerate the systolic peak most &mdash; the mean is still
+        reliable.</td></tr>
+      <tr><td>Brachial</td><td>Large and tempting, and an end artery at the elbow with the median nerve beside
+        it. Many units avoid it in children and use it only when there is nothing else.</td></tr>
+      <tr><td>Axillary</td><td>Central pressures and a free hand, at the cost of a site that is difficult to
+        compress and close to the brachial plexus. A considered choice, not a default.</td></tr>
+    </table>
+
+    <div class="box red">
+      <span class="lab">Where not to</span>
+      <p>Through infected or burned skin. Distal to a dialysis fistula or graft. In a limb with known vascular
+        compromise, a previous cut-down, or Raynaud's or a similar vasospastic disorder. And not in the same
+        limb as a non-invasive cuff, or every cycle will corrupt your trace.</p>
+      <p>Coagulopathy is a relative contraindication, not an absolute one — but it changes the site you
+        choose towards somewhere compressible, and it changes who does it.</p>
+    </div>
+
+    <div class="box amb">
+      <span class="lab">A word about the Allen test</span>
+      <p>It is still taught and still done, and the evidence that it predicts anything is weak. It has poor
+        reproducibility, and studies have not shown that an abnormal result predicts ischaemic complications
+        or that a normal one prevents them. Ischaemic complications after radial lines are rare regardless.</p>
+      <p>Do it if your unit expects it and document it. Do not let a normal result reassure you into ignoring
+        a hand that looks wrong afterwards, and do not treat an abnormal one as the only reason to choose
+        another site. <span class="verdict">The examination that matters is the one you do the next
+        morning.</span></p>
+    </div>
+
+    <h2 class="sub">Getting it in</h2>
+
+    <ol class="stepnum">
+      <li><strong>Position deliberately.</strong> Wrist extended over a roll of gauze, thumb taped down in
+        slight abduction. <strong>Do not hyperextend</strong> &mdash; past about forty-five degrees the artery
+        flattens and flow falls, and you make a hard job harder. If the pulse disappears when you position, you
+        have gone too far.</li>
+      <li><strong>Use local anaesthetic in the conscious patient.</strong> It is a painful procedure, and pain
+        causes vasospasm, which is the commonest reason a second attempt is harder than the first.</li>
+      <li><strong>Feel the course, not just the point.</strong> Palpate along two or three centimetres so you
+        know the direction. You are aiming along an artery, not at a spot.</li>
+      <li><strong>Consider ultrasound from the start.</strong> It improves first-pass success, and in a shut
+        down or oedematous patient it turns a blind procedure into a visible one. Short axis is easier to learn;
+        long axis shows you the needle.</li>
+      <li><strong>Enter shallow, 30 to 45 degrees.</strong> Advance slowly and watch for flashback. Blood in an
+        artery comes back briskly and pulsatile; a lazy dribble usually means a vein.</li>
+      <li><strong>Then choose your technique.</strong> Direct cannulation: drop the angle almost flat and
+        advance the cannula off the needle. Transfixion: go deliberately through both walls, withdraw the
+        needle, then pull back slowly until pulsatile flow returns and thread. Seldinger: pass the wire, and if
+        it will not go, do not push &mdash; withdraw and start again.</li>
+      <li><strong>Confirm before you connect.</strong> Pulsatile flow at the hub, and a proper arterial
+        waveform once transduced. A damped, venous-looking trace at the moment of insertion is a reason to
+        look again, not to accept it.</li>
+      <li><strong>Secure it properly and label it.</strong> This is not cosmetic. The line must be
+        unmistakably an arterial line to somebody who has never met the patient.</li>
+    </ol>
+
+    <div class="box red">
+      <span class="lab">The error that causes the worst harm</span>
+      <p><strong>Drugs given into an arterial line.</strong> It is rare, catastrophic and entirely a systems
+        problem: distinctive labelling, no injection ports, red-line tubing, and a habit of tracing every line
+        back to the patient before you inject anything.</p>
+      <p>If it happens: do not pull the cannula out &mdash; it is your access for treatment. Stop the
+        injection, leave the cannula in place, give analgesia, and escalate immediately to intensive care
+        seniors and vascular surgery. Management is time-critical and beyond the scope of a trainee working
+        alone.</p>
+    </div>
+
+    <h2 class="sub">Reading the waveform</h2>
+
+    <p>The trace is not just a number generator. Its shape carries information, and the first thing to decide
+      about any arterial trace is whether you believe it.</p>
+
+    <ul class="pts">
+      <li><b>The upstroke</b><span>Steepness reflects contractility and outflow. A slow, slurred upstroke with
+        a late peak suggests a fixed obstruction such as aortic stenosis.</span></li>
+      <li><b>The dicrotic notch</b><span>Aortic valve closure. It sits high in a vasoconstricted patient and
+        slides low, or disappears, in vasodilation and severe shock. Its position is a crude, free estimate of
+        systemic resistance.</span></li>
+      <li><b>Respiratory swing</b><span>Marked variation in systolic pressure with the ventilator suggests
+        fluid responsiveness &mdash; with all the caveats about tidal volume, rhythm and spontaneous effort
+        that make it less useful than it looks.</span></li>
+      <li><b>Pulse pressure</b><span>Narrow and rising diastolic means vasoconstriction, often hypovolaemia.
+        Wide with a low diastolic means vasodilation. This is the same reasoning the
+        <a href="srilanka-01-dengue.html">dengue piece</a> is built on, and it applies at every
+        bedside.</span></li>
+    </ul>
+
+    <h2 class="sub">Troubleshooting, which is most of the job</h2>
+
+    <div class="box grn">
+      <span class="lab">Start here: the square wave test</span>
+      <p>Pull the flush for a second and let go. The trace should shoot to the top, drop sharply below
+        baseline, and then settle.</p>
+      <p><strong>One to two oscillations before it settles</strong> &mdash; the system is properly damped.
+        Believe the numbers.</p>
+      <p><strong>More than two oscillations</strong> &mdash; underdamped. The system is ringing, and the
+        systolic is being <em>overestimated</em> and the diastolic underestimated. Common with long or stiff
+        tubing, tachycardia, and a hyperdynamic circulation.</p>
+      <p><strong>Slow, sluggish return with no oscillation</strong> &mdash; overdamped. Systolic
+        <em>underestimated</em>, diastolic overestimated. This is the one that gets people started on
+        noradrenaline they do not need.</p>
+      <p><span class="verdict">In both cases the mean arterial pressure is the least affected number on the
+        screen.</span> When you are unsure whether to believe a trace, trust the MAP and treat the patient.</p>
+    </div>
+
+    <table class="tbl">
+      <tr><th>What you see</th><th>What to do</th></tr>
+      <tr><td>Damped trace, pressure falling</td>
+        <td>Before you treat the number: check the tubing for kinks, the three-way taps, and the wrist
+          position. Look for air bubbles anywhere in the line, including at the transducer. Flush and repeat
+          the square wave. Then look at the patient.</td></tr>
+      <tr><td>Positional trace &mdash; good in one wrist position, damped in another</td>
+        <td>The catheter tip is against the vessel wall or the wrist is over-extended. Reposition, resplint
+          more neutrally, and re-tape. If it only ever works at one impossible angle, it will fail
+          tonight.</td></tr>
+      <tr><td>Flushes freely but will not aspirate</td>
+        <td>Tip against the wall, a small thrombus, or spasm. Reposition, withdraw a millimetre or two, and
+          try again gently. Never force a flush against resistance &mdash; that is how emboli go
+          retrograde.</td></tr>
+      <tr><td>Blood tracking back up the tubing</td>
+        <td>The pressure bag has fallen below arterial pressure or is empty. Re-inflate to 300 mmHg. If it
+          keeps happening, the bag has a leak or nobody is checking it.</td></tr>
+      <tr><td>Flat line, no trace at all</td>
+        <td>Treat as a disconnection until proven otherwise and <strong>look at the patient and the
+          cannula</strong>: an open arterial line will exsanguinate. Then check the tap, the transducer cable
+          and the module.</td></tr>
+      <tr><td>Trace looks right but disagrees with the cuff</td>
+        <td>Check levelling and zeroing first, then the square wave, then take a manual cuff yourself. If all
+          three are right and they still disagree, see the box below.</td></tr>
+      <tr><td>Hand cool, mottled, painful, or with poor capillary return</td>
+        <td>Remove the line. Now. Do not wait for the morning round to decide, and document the hand at every
+          shift change from the moment the line goes in.</td></tr>
+    </table>
+
+    <div class="box amb">
+      <span class="lab">Zeroing and levelling are two different things</span>
+      <p><strong>Zeroing</strong> tells the transducer what atmospheric pressure is. Done once at setup and
+        whenever the numbers look implausible. <strong>Levelling</strong> sets the transducer at the
+        phlebostatic axis &mdash; fourth intercostal space, mid-axillary line &mdash; and must be repeated
+        every single time the bed height or the patient's position changes.</p>
+      <p>The arithmetic is unforgiving: roughly <strong>7.5 mmHg for every 10 cm</strong> of error. A
+        transducer taped to the bed rail and left there while the bed is raised will read high and nobody will
+        question it, because the trace looks perfect.</p>
+      <p><span class="verdict">A beautiful waveform tells you nothing about whether the transducer is in the
+        right place.</span></p>
+    </div>
+
+    <div class="box grn">
+      <span class="lab">When the radial line is telling the truth and still misleading you</span>
+      <p>In profound vasodilation &mdash; severe septic shock, and classically in the period after
+        cardiopulmonary bypass &mdash; a radial line can read substantially lower than central pressure. The
+        gradient is real, not an artefact, and it can be tens of millimetres of mercury.</p>
+      <p>So the patient who looks well perfused, with warm peripheries and good urine output, whose radial
+        line says the mean is 55, may not need more noradrenaline. If the two do not fit, consider a femoral
+        line and compare, and treat the patient in front of you rather than the number.</p>
+    </div>
+
+    <h2 class="sub">Sampling, and the anaemia we cause</h2>
+
+    <ul class="pts">
+      <li><b>Waste the dead space, but only that</b><span>Too little and your sample is diluted with flush
+        solution &mdash; a falsely low haemoglobin, a falsely low glucose, a falsely low potassium and a
+        confusing gas. Too much, repeated six times a day, and you are bleeding the patient.</span></li>
+      <li><b>Iatrogenic anaemia is not trivial</b><span>Daily phlebotomy contributes measurably to transfusion
+        in intensive care. Use paediatric or low-volume tubes where the assay allows, and use a closed
+        in-line sampling system if you have one.</span></li>
+      <li><b>Ask before you take it</b><span>The commonest reason an arterial gas is done is that the patient
+        has an arterial line. That is not a reason.</span></li>
+    </ul>
+
+    <h2 class="sub">How long it stays</h2>
+
+    <ul class="pts">
+      <li><b>Not on a schedule</b><span>Routine replacement at fixed intervals is not recommended and simply
+        creates a new procedure with a new set of risks. Change it for a reason: it is not working, the site
+        is inflamed, or it is the suspected source of infection.</span></li>
+      <li><b>Look at the site and the hand every shift</b><span>Redness, tenderness, discharge, and the colour
+        and warmth of the fingers. Write it down. This is the observation that finds the problem
+        early.</span></li>
+      <li><b>Take it out when the reason has gone</b><span>Off vasopressors, gases no longer being checked,
+        stable overnight &mdash; and the line comes out. Arterial lines are unusually easy to forget because
+        they cause so little trouble until they cause a great deal.</span></li>
+      <li><b>Press properly on removal</b><span>Five minutes of firm direct pressure as a minimum, longer if
+        coagulopathic or anticoagulated, and then look again ten minutes later. Most arterial line haematomas
+        come from somebody pressing for two minutes and walking away.</span></li>
+    </ul>
+  </div>
+
+  <div class="pad" style="padding-top:6px">
+    <div class="challenge">
+      <h2>Challenge for you</h2>
+      <p class="ask">What was the arterial line that fooled you?</p>
+      <p>The damped trace treated as a falling pressure. The transducer left at the wrong height. The
+        radial reading that sent somebody up on noradrenaline they did not need. Everybody who has worked in
+        intensive care for a while has one of these, and the near misses teach better than the textbook does.
+        Send me yours and I will collect them.</p>
+      <p><a class="btn" href="mailto:icuandyou@icloud.com?subject=Procedures%20No.%204%20-%20the%20arterial%20line%20that%20fooled%20me&body=What%20happened%3A%0D%0A%0D%0A%0D%0AWhat%20I%20worked%20out%20in%20the%20end%3A%0D%0A%0D%0A%0D%0AWhat%20I%20do%20differently%20now%3A%0D%0A%0D%0A%0D%0A---%0D%0A%0D%0AName%20%28optional%29%3A%0D%0A%0A---%0A%0AThinking%20about%20this%20ICU%20AND%20YOU%20post%20overall%20%E2%80%94%20was%20it%20useful%20to%20you%2C%20or%20would%20it%20be%20useful%20to%20others%3F%0A">Send me yours</a></p>
+      <p class="fallback">The button opens a reply straight to me. If your device blocks it, write to
+        <a href="mailto:icuandyou@icloud.com">icuandyou@icloud.com</a> instead.</p>
+    </div>
+  </div>
+
+  <footer>
+    <span class="firstpub">First published September 2026</span>
+    <p class="subline">Two emails a week &mdash; the Friday newsletter for all subscribers, and, for clinical subscribers,
+      the mind map and puzzles the moment they go up on Tuesday. Occasional announcements of new
+      features as they arrive. What went up and why it mattered, the best of your replies, and
+      original feature stories, news and views. <a href="https://joinlist.com/f/5adad2d6">Come and join us</a>.</p>
+    <a class="home" href="./">&larr; &nbsp;All of ICU AND YOU</a><br>
+    ICU AND YOU &nbsp;&#183;&nbsp; Procedures No. 4 &nbsp;&#183;&nbsp; Arterial lines<br>
+    Educational use within the ICU education programme. Not a clinical protocol &mdash; local policy on site
+    selection, insertion, monitoring and removal always takes precedence, and any suspected limb ischaemia or
+    intra-arterial injection is an emergency requiring immediate senior and vascular input.<br>
+    <span class="mine">Views my own, not those of NSW Health or any other organisation. No identifiable
+    patients &mdash; scenarios are constructed or combined for teaching. <a href="about.html">More</a>.</span>
+  </footer>
+
+</div>
+<script data-goatcounter="https://icuandyou.goatcounter.com/count"
+        async src="//gc.zgo.at/count.js"></script>
+</body>
+</html>
