@@ -815,9 +815,28 @@
    "badge": "Journal club",
    "link_label": "Open",
    "blurb": "A previously well nine-year-old with mycoplasma developed a bronchial cast, pulmonary emboli and an intracardiac thrombus at once — and deteriorated far more than his chest film explained. One organism, three systems, and an immune response that overshot."
+  },
+  {
+   "file": "literary-edge-02-peter-pan.html",
+   "series": "literary",
+   "colour": "nero",
+   "number": "2",
+   "title": "The boy who would not grow up",
+   "topic": "The school-age child",
+   "slug": "school-age",
+   "week": true,
+   "pos": 5,
+   "badge": "The Literary Edge",
+   "link_label": "Open",
+   "blurb": "Barrie's brother died at thirteen and his mother never recovered. A century later the boy who would not grow up still pays, in perpetuity, for children who do — the strangest copyright in English law, and a family that never got over a winter afternoon."
   }
  ],
  "latest": [
+  {
+   "file": "literary-edge-02-peter-pan.html",
+   "colour": "nero",
+   "label": "The Literary Edge 2 · Peter Pan"
+  },
   {
    "file": "journal-club-99-mycoplasma.html",
    "colour": "sepia",
@@ -837,11 +856,6 @@
    "file": "aphorism-38-little-adults.html",
    "colour": "plum",
    "label": "Aphorism 38 · Not little adults"
-  },
-  {
-   "file": "superpuzzle-51-school-age-fillable.html",
-   "colour": "rust",
-   "label": "Superpuzzle 51"
   }
  ],
  "topten": [
