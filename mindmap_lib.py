@@ -65,7 +65,45 @@ def card_height(bullets):
                  + CARD_PAD_BOTTOM, 1)
 
 
+# Cards are a fixed width and the renderer does not wrap, so over-length text
+# silently runs past the card edge. Character count is a poor proxy — capitals
+# and em-dashes are wide — so measure the drawn width instead.
+TEXT_INSET = 28          # card padding, left + right
+BULLET_PX = 12.2         # .cb font-size
+TITLE_PX = 13.0          # .ct font-size
+TITLE_TRACK = 0.09       # .ct letter-spacing, in em
+
+
+def _width(text, px, tracking=0.0):
+    """Approximate drawn width in SVG units, using a metric-similar font."""
+    try:
+        from PIL import ImageFont
+        f = ImageFont.truetype(
+            "/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf", int(px * 8))
+        w = f.getlength(text) / 8
+    except Exception:
+        w = len(text) * px * 0.52
+    return w + len(text) * px * tracking
+
+
+def check(spec):
+    limit = CARD_W - TEXT_INSET
+    bad = []
+    for st in spec["stations"]:
+        for br in st["branches"]:
+            w = _width(br["title"], TITLE_PX, TITLE_TRACK)
+            if w > limit:
+                bad.append(f'title {w:.0f} > {limit}px: {br["title"]}')
+            for b in br["bullets"]:
+                w = _width(b, BULLET_PX)
+                if w > limit:
+                    bad.append(f'bullet {w:.0f} > {limit}px: {b}')
+    if bad:
+        raise ValueError("text will overflow the cards:\n  " + "\n  ".join(bad))
+
+
 def measure(spec):
+    check(spec)
     """Walk the spec once to work out the canvas height and every y position."""
     y = 106 + 26                        # below the header plate
     plan = []

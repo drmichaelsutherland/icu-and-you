@@ -496,7 +496,7 @@
    "title": "PEM Myths",
    "topic": "The toddler and preschool child",
    "slug": "toddler-preschool",
-   "week": true,
+   "week": false,
    "pos": 13,
    "badge": "Podcast",
    "link_label": "Open",
@@ -513,7 +513,7 @@
    "title": "What we monitor, and what we actually know",
    "topic": "The toddler and preschool child",
    "slug": "toddler-preschool",
-   "week": true,
+   "week": false,
    "pos": 14,
    "badge": "Journal club",
    "link_label": "Open",
@@ -527,7 +527,7 @@
    "title": "The toddler and preschool child",
    "topic": "The toddler and preschool child",
    "slug": "toddler-preschool",
-   "week": true,
+   "week": false,
    "pos": 0,
    "badge": "Mind map",
    "link_label": "Open the map",
@@ -541,7 +541,7 @@
    "title": "Be wary of the toddler who readily and happily lets you examine them",
    "topic": "The toddler and preschool child",
    "slug": "toddler-preschool",
-   "week": true,
+   "week": false,
    "pos": 1,
    "badge": "Aphorism",
    "link_label": "Open",
@@ -555,7 +555,7 @@
    "title": "The toddler and preschool child",
    "topic": "The toddler and preschool child",
    "slug": "toddler-preschool",
-   "week": true,
+   "week": false,
    "pos": 3,
    "badge": "Superpuzzle",
    "link_label": "Open the puzzle",
@@ -569,7 +569,7 @@
    "title": "The twenty minutes either side",
    "topic": "The toddler and preschool child",
    "slug": "toddler-preschool",
-   "week": true,
+   "week": false,
    "pos": 6,
    "badge": "Anaesthetists' Alley",
    "link_label": "Open",
@@ -583,7 +583,7 @@
    "title": "The toddler and preschool child",
    "topic": "The toddler and preschool child",
    "slug": "toddler-preschool",
-   "week": true,
+   "week": false,
    "pos": 7,
    "badge": "Medical Students",
    "link_label": "Open",
@@ -597,7 +597,7 @@
    "title": "The toddler and preschool child",
    "topic": "The toddler and preschool child",
    "slug": "toddler-preschool",
-   "week": true,
+   "week": false,
    "pos": 2,
    "badge": "Mnemonic",
    "link_label": "Open",
@@ -611,7 +611,7 @@
    "title": "Guā shā 刮痧",
    "topic": "The toddler and preschool child",
    "slug": "toddler-preschool",
-   "week": true,
+   "week": false,
    "pos": 8,
    "badge": "Nǐ hǎo Chinatown",
    "link_label": "Open",
@@ -648,7 +648,7 @@
    "title": "The toddler and preschool child",
    "topic": "The toddler and preschool child",
    "slug": "toddler-preschool",
-   "week": true,
+   "week": false,
    "pos": 4,
    "badge": "Superquiz",
    "link_label": "Take the quiz",
@@ -662,7 +662,7 @@
    "title": "A small child in intensive care",
    "topic": "The toddler and preschool child",
    "slug": "toddler-preschool",
-   "week": true,
+   "week": false,
    "pos": 12,
    "badge": "For the general public",
    "link_label": "Open",
@@ -676,7 +676,7 @@
    "title": "The child who is not ignoring you",
    "topic": "The toddler and preschool child",
    "slug": "toddler-preschool",
-   "week": true,
+   "week": false,
    "pos": 10,
    "badge": "The Australia Page",
    "link_label": "Open",
@@ -701,7 +701,7 @@
    "title": "Something the Lord Made",
    "topic": "The toddler and preschool child",
    "slug": "toddler-preschool",
-   "week": true,
+   "week": false,
    "pos": 11,
    "badge": "The Screening Room",
    "link_label": "Open",
@@ -715,7 +715,7 @@
    "title": "Adrenaline in the small child",
    "topic": "The toddler and preschool child",
    "slug": "toddler-preschool",
-   "week": true,
+   "week": false,
    "pos": 5,
    "badge": "Drugstore",
    "link_label": "Open",
@@ -729,7 +729,7 @@
    "title": "The child who gets worse as the fever settles",
    "topic": "The toddler and preschool child",
    "slug": "toddler-preschool",
-   "week": true,
+   "week": false,
    "pos": 9,
    "badge": "Āyubōwan Sri Lanka",
    "link_label": "Open",
@@ -773,9 +773,38 @@
    "badge": "Superpuzzle",
    "link_label": "Fill it in",
    "blurb": "Twenty clues on the school-age child — asthma, trauma and ketoacidosis, a dead Edwardian physician, a boy who never grew up, and an admission almost nobody makes out loud."
+  },
+  {
+   "file": "mind-map-34-school-age.html",
+   "series": "mind-map",
+   "colour": "teal",
+   "number": "34",
+   "title": "The school-age child",
+   "topic": "The school-age child",
+   "slug": "school-age",
+   "badge": "Mind map",
+   "link_label": "Open the map",
+   "blurb": "Roughly six to twelve years. Asthma, trauma and diabetic ketoacidosis; the myocarditis wearing a gastroenteritis costume; ingestions that have stopped being accidental; and the things they will not say.",
+   "week": true,
+   "pos": 0
   }
  ],
  "latest": [
+  {
+   "file": "mind-map-34-school-age.html",
+   "colour": "teal",
+   "label": "Mind Map 34 · The school-age child"
+  },
+  {
+   "file": "aphorism-38-little-adults.html",
+   "colour": "plum",
+   "label": "Aphorism 38 · Not little adults"
+  },
+  {
+   "file": "superpuzzle-51-school-age-fillable.html",
+   "colour": "rust",
+   "label": "Superpuzzle 51"
+  },
   {
    "file": "superpuzzle-51-school-age-fillable.html",
    "colour": "rust",
@@ -785,21 +814,6 @@
    "file": "procedures-03-urinary-catheterisation.html",
    "colour": "amethyst",
    "label": "Procedures 3 · Urinary catheterisation"
-  },
-  {
-   "file": "srilanka-01-dengue.html",
-   "colour": "lotus",
-   "label": "Āyubōwan Sri Lanka · No. 1"
-  },
-  {
-   "file": "drugstore-01-adrenaline.html",
-   "colour": "mulberry",
-   "label": "Drugstore · Adrenaline"
-  },
-  {
-   "file": "screening-room-01-something-the-lord-made.html",
-   "colour": "copper",
-   "label": "The Screening Room · No. 1"
   }
  ],
  "topten": [
@@ -813,16 +827,16 @@
   "label": "Coming next",
   "lines": [
    {
-    "date": "Friday 4th September",
+    "date": "Friday 18th September",
     "what": "Newsletter (subscribers only)"
    },
    {
-    "date": "Tuesday 8th September",
-    "what": "More on the toddler and preschool child"
+    "date": "Tuesday 22nd September",
+    "what": "More on the school-age child"
    },
    {
-    "date": "Tuesday 15th September",
-    "what": "The school-age child",
+    "date": "Tuesday 29th September",
+    "what": "The adolescent",
     "emphasis": true
    }
   ]
@@ -839,5 +853,13 @@
    "If you do not register, your family will be asked to decide for you.",
    "If you do register, tell your family — and ask them to record their own decision too."
   ]
- }
+ },
+ "topic_order": [
+  "school-age",
+  "toddler-preschool",
+  "postneonatal-infant",
+  "neonatology",
+  "transplantation",
+  "organ-donation"
+ ]
 }

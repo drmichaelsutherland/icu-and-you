@@ -99,13 +99,22 @@ def build_previous(m):
     the site rather than to a fortnight, and filing them under whichever topic
     happened to be running when they went up is simply wrong. They carry
     "standing": true in the manifest and collect here instead."""
-    order, seen = [], set()
+    # Most recent topic first. Pages carry no dates and manifest position is not
+    # a reliable proxy — the early blocks were not entered in the order they ran
+    # — so the sequence is declared explicitly in "topic_order", newest first.
+    # Any slug not listed there falls to the end, in manifest order.
+    declared = m.get("topic_order", [])
+    rank = {slug: i for i, slug in enumerate(declared)}
+    seen, topics = [], {}
     for p in m["pages"]:
-        if p.get("standing"):
+        if p.get("standing") or p.get("week"):
             continue
-        if not p.get("week") and p["slug"] not in seen:
-            seen.add(p["slug"])
-            order.append((p["slug"], p["topic"]))
+        if p["slug"] not in topics:
+            topics[p["slug"]] = p["topic"]
+            seen.append(p["slug"])
+    order = [(slug, topics[slug])
+             for slug in sorted(seen, key=lambda k: (rank.get(k, len(declared)),
+                                                     seen.index(k)))]
 
     out = []
     for slug, topic in order:
