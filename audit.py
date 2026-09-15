@@ -192,6 +192,24 @@ def main():
             if f"g:{key}" not in filters:
                 problems.append(f"{f}: links to ?g={key}, which matches no group filter")
 
+    # ---- the week heading must match the pages under it -------------------
+    # The "this_week" block in the manifest supplies the heading, slug and
+    # preamble; the pages are flagged individually with "week": true. Rolling
+    # a block over means changing both, and in September 2026 only one was
+    # changed \u2014 so the landing page announced the wrong topic for a day.
+    wk = m.get("this_week", {})
+    week_slugs = {p["slug"] for p in m["pages"]
+                  if p.get("week") and not p.get("standing")}
+    if week_slugs and wk.get("slug") not in week_slugs:
+        problems.append(
+            f'page_topic.json: this_week.slug is "{wk.get("slug")}" but the pages '
+            f'flagged for this week are {sorted(week_slugs)} \u2014 the landing page '
+            f'heading will not match its own cards')
+    if len(week_slugs) > 1:
+        problems.append(
+            f"page_topic.json: pages from more than one topic are flagged "
+            f"week=true: {sorted(week_slugs)}")
+
     # ---- report -----------------------------------------------------------
     print()
     if notes and not quiet:
