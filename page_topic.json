@@ -829,9 +829,28 @@
    "badge": "The Literary Edge",
    "link_label": "Open",
    "blurb": "Barrie's brother died at thirteen and his mother never recovered. A century later the boy who would not grow up still pays, in perpetuity, for children who do — the strangest copyright in English law, and a family that never got over a winter afternoon."
+  },
+  {
+   "file": "med-students-04-school-age.html",
+   "series": "students",
+   "colour": "violet",
+   "number": "4",
+   "title": "The school-age child",
+   "topic": "The school-age child",
+   "slug": "school-age",
+   "week": true,
+   "pos": 6,
+   "badge": "Medical Students",
+   "link_label": "Open",
+   "blurb": "Roughly six to twelve, in three tiers — the science of an almost-adult, taking a history from someone who has learned to be brave, and what you will be expected to do on your first nights on call."
   }
  ],
  "latest": [
+  {
+   "file": "med-students-04-school-age.html",
+   "colour": "violet",
+   "label": "Medical Students' Place 4"
+  },
   {
    "file": "literary-edge-02-peter-pan.html",
    "colour": "nero",
@@ -851,11 +870,6 @@
    "file": "mind-map-34-school-age.html",
    "colour": "teal",
    "label": "Mind Map 34 · The school-age child"
-  },
-  {
-   "file": "aphorism-38-little-adults.html",
-   "colour": "plum",
-   "label": "Aphorism 38 · Not little adults"
   }
  ],
  "topten": [
