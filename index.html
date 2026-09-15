@@ -850,6 +850,29 @@
     });
   }
 
+  // A refresh should give you the top of the page. Two things fight that: the
+  // browser restoring the scroll position it remembers, and an anchor left in
+  // the URL from a previous click (#donate, #subscribe) which then gets
+  // re-honoured on every reload. Detect a reload and suppress both.
+  function isReload(){
+    try{
+      var nav = performance.getEntriesByType
+                && performance.getEntriesByType("navigation")[0];
+      if(nav) return nav.type === "reload";
+      return !!(performance.navigation && performance.navigation.type === 1);
+    }catch(e){ return false; }
+  }
+  var RELOADED = isReload();
+
+  if(RELOADED){
+    if("scrollRestoration" in history) history.scrollRestoration = "manual";
+    if(window.location.hash){
+      history.replaceState(null, "", window.location.pathname + window.location.search);
+    }
+    window.scrollTo(0, 0);
+    window.addEventListener("load", function(){ window.scrollTo(0, 0); });
+  }
+
   var GROUPS = {"memory": ["mind-map", "aphorism", "mnemonic", "superpuzzle", "superquiz"], "multimedia": ["podcast", "journal", "bookclub"], "special": ["students", "nurses", "gp", "emergency", "anaesthetics"], "procedures": ["procedures"], "drugstore": ["drugstore"], "exam": ["cicm-first"], "cultural": ["coin", "italiano", "espanol", "india", "chinatown", "australia", "srilanka"], "other": ["literary", "screening"], "public": ["public"]};
   var LABELS = {"memory": "Memory aids and activities", "multimedia": "Multimedia", "special": "Special groups", "procedures": "Procedures", "drugstore": "Drugstore", "exam": "Exam focus", "cultural": "Cultural narratives", "other": "Other Realms", "public": "For the general public"};
 
@@ -951,7 +974,7 @@
 
   var suggBox = document.getElementById("suggestions");
   function openSugg(){
-    if(window.location.hash === "#suggestions" && suggBox){
+    if(!RELOADED && window.location.hash === "#suggestions" && suggBox){
       suggBox.open = true;
       landUnder(suggBox);
     }
@@ -984,6 +1007,7 @@
 
   // and the same for arriving with a hash already in the URL
   (function fromHash(){
+    if(RELOADED) return;
     var id = (window.location.hash || "").slice(1);
     if(!id || id === "top" || id === "suggestions") return;
     var el = document.getElementById(id);
