@@ -745,9 +745,42 @@
    "slug": "standing",
    "week": false,
    "standing": true
+  },
+  {
+   "file": "aphorism-38-little-adults.html",
+   "series": "aphorism",
+   "colour": "plum",
+   "number": "38",
+   "title": "Not little adults, except when they are",
+   "topic": "The school-age child",
+   "slug": "school-age",
+   "week": true,
+   "pos": 1,
+   "badge": "Aphorism",
+   "link_label": "Open",
+   "blurb": "The most repeated sentence in paediatrics, and the one that quietly expires around school age without anybody saying when. Yes, No and Maybe — and the reason the changeover is not a birthday."
+  },
+  {
+   "file": "superpuzzle-51-school-age-fillable.html",
+   "series": "superpuzzle",
+   "colour": "rust",
+   "number": "51",
+   "title": "The school-age child",
+   "topic": "The school-age child",
+   "slug": "school-age",
+   "week": true,
+   "pos": 2,
+   "badge": "Superpuzzle",
+   "link_label": "Fill it in",
+   "blurb": "Twenty clues on the school-age child — asthma, trauma and ketoacidosis, a dead Edwardian physician, a boy who never grew up, and an admission almost nobody makes out loud."
   }
  ],
  "latest": [
+  {
+   "file": "superpuzzle-51-school-age-fillable.html",
+   "colour": "rust",
+   "label": "Superpuzzle 51 · The school-age child"
+  },
   {
    "file": "procedures-03-urinary-catheterisation.html",
    "colour": "amethyst",
@@ -767,11 +800,6 @@
    "file": "screening-room-01-something-the-lord-made.html",
    "colour": "copper",
    "label": "The Screening Room · No. 1"
-  },
-  {
-   "file": "exam-cicm-first-01-the-shape-of-the-thing.html",
-   "colour": "pine",
-   "label": "Exam focus · CICM First Part No. 1"
   }
  ],
  "topten": [
