@@ -787,9 +787,28 @@
    "blurb": "Roughly six to twelve years. Asthma, trauma and diabetic ketoacidosis; the myocarditis wearing a gastroenteritis costume; ingestions that have stopped being accidental; and the things they will not say.",
    "week": true,
    "pos": 0
+  },
+  {
+   "file": "podcast-58-sepsis-to-society.html",
+   "series": "podcast",
+   "colour": "slate",
+   "number": "58",
+   "title": "From sepsis to society",
+   "topic": "The school-age child",
+   "slug": "school-age",
+   "week": true,
+   "pos": 3,
+   "badge": "Podcast",
+   "link_label": "Open",
+   "blurb": "Tex Kissoon on the PCICS podcast. Almost everything we write about sepsis is about the first hour; this is about the other ninety-nine per cent — education, advocacy, systems, poverty, access, and the survivors nobody follows up."
   }
  ],
  "latest": [
+  {
+   "file": "podcast-58-sepsis-to-society.html",
+   "colour": "slate",
+   "label": "Podcast 58 · From sepsis to society"
+  },
   {
    "file": "mind-map-34-school-age.html",
    "colour": "teal",
@@ -809,11 +828,6 @@
    "file": "superpuzzle-51-school-age-fillable.html",
    "colour": "rust",
    "label": "Superpuzzle 51 · The school-age child"
-  },
-  {
-   "file": "procedures-03-urinary-catheterisation.html",
-   "colour": "amethyst",
-   "label": "Procedures 3 · Urinary catheterisation"
   }
  ],
  "topten": [

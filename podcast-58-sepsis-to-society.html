@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en-AU">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ICU AND YOU · Podcast 58 — From sepsis to society</title>
+<meta name="description" content="Podcast 58: Professor Tex Kissoon on the PCICS podcast — why transforming sepsis takes education, advocacy, health systems, poverty reduction, access and post-sepsis support, not better antibiotics.">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="alternate icon" href="/favicon.ico" sizes="any">
+<link rel="apple-touch-icon" href="/icon-180.png">
+<meta name="theme-color" content="#1B2A33">
+<meta property="og:site_name" content="ICU AND YOU">
+<meta property="og:type" content="website">
+<meta property="og:title" content="ICU AND YOU · Podcast 58 — From sepsis to society">
+<meta property="og:description" content="The disease is the easy part.">
+<meta property="og:image" content="https://icuandyou.com/share-card.png">
+<meta name="twitter:card" content="summary_large_image">
+<style>
+  :root{
+    --paper:#FAF9F7; --ink:#1E252B; --muted:#68707A; --rule:#DCDDDA;
+    --slate:#3E4A52; --slatetint:#EDF0F2;
+    --rust:#A8442A; --rusttint:#F9EDE7;
+    --gold:#A8721E;
+  }
+  *{box-sizing:border-box}
+  body{margin:0;background:#EDEDEA;color:var(--ink);
+    font:400 17px/1.64 'Iowan Old Style','Palatino Linotype',Palatino,Georgia,serif;
+    -webkit-text-size-adjust:100%;}
+  .sheet{max-width:780px;margin:0 auto;background:var(--paper);
+    box-shadow:0 1px 40px rgba(30,37,43,.10);}
+
+  header.top{padding:42px 40px 28px;border-bottom:1px solid var(--rule)}
+  .eyebrow a.serlink{color:inherit;text-decoration:none;border-bottom:1px solid transparent}
+  .eyebrow a.serlink:hover{border-bottom-color:currentColor}
+  .eyebrow a.mast{color:inherit;text-decoration:none;border-bottom:1px solid transparent}
+  .eyebrow a.mast:hover{border-bottom-color:currentColor}
+  .toptopic{display:inline-block;margin:0 0 16px 9px;padding:7px 16px;border-radius:20px;
+    border:1px solid currentColor;opacity:.62;text-decoration:none;color:inherit;
+    font:600 11.5px 'Helvetica Neue',Arial,sans-serif;letter-spacing:.09em;
+    text-transform:uppercase;transition:opacity .12s ease}
+  .toptopic:hover{opacity:1}
+  .topseries{display:inline-block;margin:0 0 16px 9px;padding:7px 16px;border-radius:20px;
+    border:1px solid currentColor;opacity:.62;text-decoration:none;color:inherit;
+    font:600 11.5px 'Helvetica Neue',Arial,sans-serif;letter-spacing:.09em;
+    text-transform:uppercase;transition:opacity .12s ease}
+  .topseries:hover{opacity:1}
+  .tophome{display:inline-block;margin:0 0 16px;padding:7px 16px;border-radius:20px;
+    border:1px solid currentColor;opacity:.62;text-decoration:none;color:inherit;
+    font:600 11.5px 'Helvetica Neue',Arial,sans-serif;letter-spacing:.09em;
+    text-transform:uppercase;transition:opacity .12s ease}
+  .tophome:hover{opacity:1}
+  .eyebrow{font:500 11.5px/1 'Helvetica Neue',Arial,sans-serif;letter-spacing:.24em;
+    text-transform:uppercase;color:var(--slate);margin:0 0 14px}
+  h1{font-size:31px;line-height:1.2;margin:0 0 10px;font-weight:400;letter-spacing:-.012em}
+  .kicker{color:var(--muted);margin:0;font-size:16.5px;font-style:italic}
+
+  /* the listen block */
+  .listen{margin:0;padding:28px 40px;background:var(--slatetint);
+    border-bottom:1px solid var(--rule)}
+  .meta{display:flex;flex-wrap:wrap;gap:6px 22px;margin:0 0 18px;
+    font:400 14px 'Helvetica Neue',Arial,sans-serif;color:var(--muted)}
+  .meta b{color:var(--ink);font-weight:600}
+  a.play{display:inline-flex;align-items:center;gap:11px;padding:15px 30px;border-radius:30px;
+    text-decoration:none;background:var(--slate);color:#F7F9FA;
+    font:600 15px 'Helvetica Neue',Arial,sans-serif;letter-spacing:.03em}
+  a.play:hover{background:#2C363D}
+  a.play:focus-visible{outline:3px solid var(--rust);outline-offset:3px}
+  a.play svg{display:block}
+  .hostnote{font:400 13.5px 'Helvetica Neue',Arial,sans-serif;color:var(--muted);margin:14px 0 0}
+
+  .pad{padding:32px 40px}
+  p{margin:0 0 17px}
+  h2.sub{font:600 12px 'Helvetica Neue',Arial,sans-serif;letter-spacing:.2em;
+    text-transform:uppercase;color:var(--muted);margin:0 0 16px;
+    padding-bottom:8px;border-bottom:1px solid var(--rule)}
+  b.term{font-weight:600;color:var(--slate)}
+
+  .challenge{margin:0;padding:28px 32px;background:var(--rusttint);border-left:5px solid var(--rust)}
+  .challenge h2{font:600 12px 'Helvetica Neue',Arial,sans-serif;letter-spacing:.2em;
+    text-transform:uppercase;color:var(--rust);margin:0 0 13px}
+  .ask{font-size:19.5px;line-height:1.5;margin:0 0 8px}
+  .lead{font-size:15px;color:var(--muted);margin:0 0 17px;line-height:1.55}
+  .chips{display:flex;flex-wrap:wrap;gap:10px;margin:0 0 16px}
+  a.chip{text-decoration:none;padding:12px 18px;border-radius:9px;
+    background:#fff;border:1px solid #E0C4B8;color:#7C3520;
+    font:400 15px 'Iowan Old Style',Palatino,Georgia,serif;
+    transition:transform .08s ease}
+  a.chip:hover{transform:translateY(-1px);background:#FDF4EF}
+  .fallback{font:400 13.5px 'Helvetica Neue',Arial,sans-serif;color:var(--muted);margin:0}
+  .fallback a{color:var(--rust)}
+  .subline{margin:0 0 14px;padding:0 0 13px;border-bottom:1px solid rgba(0,0,0,.09);
+    font:400 14.5px/1.55 'Iowan Old Style','Palatino Linotype',Palatino,Georgia,serif;
+    max-width:56ch;margin-left:auto;margin-right:auto}
+  .subline a{font-weight:500;border-bottom:1px solid currentColor;
+    text-decoration:none;color:inherit}
+  .firstpub{display:block;margin:0 0 10px;padding-bottom:9px;
+    border-bottom:1px solid currentColor;border-color:rgba(0,0,0,.09);
+    font:400 12px 'Helvetica Neue',Arial,sans-serif;letter-spacing:.06em;opacity:.72}
+
+  footer{padding:24px 40px 42px;border-top:1px solid var(--rule);
+    font:400 13px 'Helvetica Neue',Arial,sans-serif;color:var(--muted);text-align:center;line-height:1.7}
+  .home{display:inline-block;margin:0 0 14px;padding:8px 18px;border-radius:20px;
+    border:1px solid var(--rule);background:#F1F3F4;color:var(--slate);text-decoration:none;
+    font:600 12.5px 'Helvetica Neue',Arial,sans-serif;letter-spacing:.05em}
+  .home:hover{background:var(--slate);border-color:var(--slate);color:#F7F9FA}
+
+  @media (max-width:620px){
+    header.top,.listen,.pad,footer{padding-left:20px;padding-right:20px}
+    .challenge{padding:22px 20px}
+    h1{font-size:25px} body{font-size:16.5px} .ask{font-size:18px}
+  }
+  @media print{ body{background:#fff} .sheet{box-shadow:none;max-width:none} }
+
+  .topguest{display:inline-block;margin:0 0 16px 9px;padding:7px 16px;border-radius:20px;
+    border:1px dashed currentColor;opacity:.62;text-decoration:none;color:inherit;
+    font:600 11.5px 'Helvetica Neue',Arial,sans-serif;letter-spacing:.09em;
+    text-transform:uppercase;transition:opacity .12s ease}
+  .topguest:hover{opacity:1}
+  .myth{margin:0 0 22px;padding:22px 26px;background:#fff;border:1px solid var(--rule);
+    border-radius:10px;border-left:4px solid var(--slate)}
+  .myth .lab{display:block;font:600 11px 'Helvetica Neue',Arial,sans-serif;
+    letter-spacing:.18em;text-transform:uppercase;color:var(--rust);margin:0 0 8px}
+  .myth h3{margin:0 0 10px;font:400 20px 'Iowan Old Style',Palatino,Georgia,serif;
+    font-style:italic;color:var(--muted)}
+  .myth p:last-child{margin:0}
+  .verdict{font-weight:600;color:var(--slate)}
+  .mine{display:inline-block;margin:9px 0 0;opacity:.78;font-size:.94em}
+</style>
+</head>
+<body>
+<div class="sheet">
+
+  <header class="top">
+    <a class="tophome" href="./">&larr;&nbsp; Home</a>
+    <a class="topseries" href="./?s=podcast">All podcasts</a>
+    <a class="toptopic" href="./?t=school-age" title="Everything on The school-age child">All on this topic</a>
+    <p class="eyebrow"><a class="mast" href="./">ICU and You</a> &nbsp;·&nbsp; <a class="serlink" href="./?s=podcast">Podcast Sessions</a> &nbsp;·&nbsp; Number 58</p>
+    <h1>From sepsis to society</h1>
+    <p class="kicker">The disease is the easy part. Tex Kissoon on everything around it</p>
+  </header>
+
+  <div class="listen">
+    <div class="meta">
+      <span><b>Show</b> &nbsp;PCICS Podcast, episode 161</span>
+      <span><b>Guest</b> &nbsp;Prof Niranjan &ldquo;Tex&rdquo; Kissoon</span>
+      <span><b>Hosts</b> &nbsp;Saidie Rodriguez &nbsp;·&nbsp; Deanna Todd Tzanetos</span>
+      <span><b>Published</b> &nbsp;2 September 2026</span>
+      <span><b>Length</b> &nbsp;53 minutes</span>
+    </div>
+    <a class="play" href="https://soundcloud.com/user-38767700-14374902/pcics-episode-161-from-sepsis">
+      <svg width="15" height="17" viewBox="0 0 15 17" aria-hidden="true"><path d="M1 1.5 L14 8.5 L1 15.5 Z" fill="#F7F9FA"/></svg>
+      Listen to the episode
+    </a>
+    <p class="hostnote">A joint WFPICCS and PCICS production, free to listen to. One long argument rather
+      than a medley, so it wants an uninterrupted drive or a long walk rather than the gaps between
+      cases.</p>
+  </div>
+
+  <div class="pad">
+    <h2 class="sub">Why it is worth your time</h2>
+
+    <p>Almost everything we write about sepsis is about the first hour. Recognise it, take cultures, give
+      antibiotics, give fluid, escalate. That is the part intensive care is good at, and the part our
+      guidelines cover.</p>
+
+    <p>This episode is about the other ninety-nine per cent. Tex Kissoon has spent a career arguing that the
+      clinical problem is comparatively tractable and the rest of it is not &mdash; and that a child's chance
+      of surviving sepsis is determined long before anyone reaches for a cannula, by where they were born,
+      whether they were vaccinated, how far the clinic is, whether the family can pay, and whether anyone at
+      that clinic has been taught what sepsis looks like.</p>
+
+    <div class="myth">
+      <span class="lab">The scale, for context</span>
+      <p>Roughly <strong>49 million</strong> cases of sepsis a year and something over <strong>11 million</strong>
+        deaths &mdash; about one death in five worldwide. <strong>Children under five account for around 40 per
+        cent of cases</strong>, with approximately three million paediatric and neonatal deaths annually.
+        Around <strong>85 per cent</strong> of the global burden falls on low- and middle-income countries.</p>
+      <p>The World Health Assembly adopted a resolution on sepsis in 2017, proposed by the Global Sepsis
+        Alliance, calling on all member states to build national action plans. Uptake has been slow. Kissoon
+        is a co-author of the Global Burden of Disease analysis those figures come from, and now presides over
+        the organisation that drafted the resolution.</p>
+    </div>
+
+    <h2 class="sub">The six things he wants changed</h2>
+
+    <p>The episode is organised around six domains, and the interesting move is that only one of them is
+      clinical.</p>
+
+    <div class="myth">
+      <span class="lab">Education</span>
+      <p>Not of intensivists &mdash; of everybody else. The person who first sees a septic child is almost
+        never a specialist, and in much of the world is not a doctor. <span class="verdict">The
+        recognition problem is a teaching problem.</span></p>
+    </div>
+
+    <div class="myth">
+      <span class="lab">Advocacy</span>
+      <p>Sepsis kills more people than several cancers combined and almost nobody can define it. Public
+        ignorance is not incidental to the mortality; it is part of the causal chain, because it determines
+        how late people present.</p>
+    </div>
+
+    <div class="myth">
+      <span class="lab">Health systems</span>
+      <p>Oxygen, a functioning laboratory, a reliable antibiotic supply, a referral pathway that works at
+        night. <span class="verdict">Most sepsis deaths are not treatment failures but system
+        failures.</span></p>
+    </div>
+
+    <div class="myth">
+      <span class="lab">Poverty reduction</span>
+      <p>The most uncomfortable of the six for a clinical audience, and the one he does not soften. Crowding,
+        malnutrition, unsafe water and missed vaccination determine incidence. You cannot treat your way out
+        of an incidence problem.</p>
+    </div>
+
+    <div class="myth">
+      <span class="lab">Access</span>
+      <p>Distance, cost and permission. A child who reaches care late has usually not been ignored at home;
+        they have been unable to get there, or the family has been deciding what it will cost.</p>
+    </div>
+
+    <div class="myth">
+      <span class="lab">Post-sepsis support</span>
+      <p>The one most relevant to your own unit. Survivors carry new morbidity &mdash; cognitive,
+        physical, psychological &mdash; sometimes for decades, and almost no health system has anywhere to
+        send them. <span class="verdict">We count survival and then stop counting.</span></p>
+    </div>
+
+    <h2 class="sub">What it has to do with a regional Australian unit</h2>
+
+    <p>It would be easy to file this as a global health episode about somewhere else. Two reasons not to.</p>
+
+    <p><strong>The post-sepsis gap is ours too.</strong> A child who leaves your unit having survived
+      meningococcal disease goes back to a school that has not been told anything, with parents who are
+      frightened of every fever for a year, and no structured follow-up for the things sepsis actually leaves
+      behind. Research into parents' experience describes it consistently: a rupture between life before and
+      after, a sense of navigating in the dark, and guilt about warning signs they think they missed. None of
+      that is exotic and none of it is expensive to address.</p>
+
+    <p><strong>And the access argument applies on the mid north coast.</strong> Not in the same degree, but in
+      the same direction: distance to a tertiary centre, Aboriginal and Torres Strait Islander children
+      carrying a heavier burden of infection, and families for whom presenting early has a real cost in
+      petrol, time and lost pay. The six domains do not stop at a national border; they change scale.</p>
+
+    <div class="myth">
+      <span class="lab">Worth knowing about the guest</span>
+      <p>Kissoon is professor of paediatrics at the University of British Columbia, past president of the
+        World Federation of Pediatric Intensive and Critical Care Societies, president of the Global Sepsis
+        Alliance, co-chair of the paediatric arm of the Surviving Sepsis Campaign, and chair of World Sepsis
+        Day &mdash; which fell on 13 September, the fortnight this went up.</p>
+    </div>
+  </div>
+
+  <div class="pad" style="padding-top:6px">
+    <div class="challenge">
+      <h2>Challenge for you</h2>
+      <p class="ask">What happens to your sepsis survivors after they leave?</p>
+      <p class="lead">Not the mortality figure &mdash; the follow-up. Is there any? Who sees them, what is
+        looked for, and who tells the school? If the honest answer is that they go back to the GP and nobody
+        looks for anything in particular, say that; it is the commonest answer and it is the one worth
+        publishing.</p>
+      <p><a class="btn" href="mailto:icuandyou@icloud.com?subject=Podcast%2058%20-%20what%20happens%20to%20sepsis%20survivors&body=What%20follow-up%20our%20sepsis%20survivors%20actually%20get%3A%0D%0A%0D%0A%0D%0AWhat%20I%20think%20is%20missing%3A%0D%0A%0D%0A%0D%0A---%0D%0A%0D%0AName%20%28optional%29%3A%0D%0A%0A---%0A%0AThinking%20about%20this%20ICU%20AND%20YOU%20post%20overall%20%E2%80%94%20was%20it%20useful%20to%20you%2C%20or%20would%20it%20be%20useful%20to%20others%3F%0A">Send me your answer</a></p>
+      <p class="fallback">The button opens a reply straight to me. If your device blocks it, write to
+        <a href="mailto:icuandyou@icloud.com">icuandyou@icloud.com</a> instead.</p>
+    </div>
+  </div>
+
+
+  <footer>
+    <span class="firstpub">First published September 2026</span>
+    <p class="subline">Two emails a week &mdash; the Friday newsletter for all subscribers, and, for clinical subscribers,
+      the mind map and puzzles the moment they go up on Tuesday. Occasional announcements of new
+      features as they arrive. What went up and why it mattered, the best of your replies, and
+      original feature stories, news and views. <a href="https://joinlist.com/f/5adad2d6">Come and join us</a>.</p>
+    <a class="home" href="./">&larr; &nbsp;All of ICU AND YOU</a><br>
+    ICU AND YOU &nbsp;·&nbsp; Podcast Session 58 &nbsp;·&nbsp; companion to Mind Map #34, The School-Age Child<br>
+    Also listed under the Emergency Medicine Landing Bay.<br>
+    Summary written independently of the episode, which is <em>PEM Myths</em> from the Pediatric Emergency Playbook,
+    hosted by Tim Horeczko, 1 November 2022. Educational use only &mdash; not a prescribing guide, and local guidance,
+    ANZCOR and current Australian paediatric guidance always take precedence.
+  <br>
+    <span class="mine">Views my own, not those of NSW Health or any other organisation. No identifiable patients — scenarios are constructed or combined for teaching. <a href="about.html">More</a>.</span>
+  </footer>
+
+</div>
+<script data-goatcounter="https://icuandyou.goatcounter.com/count"
+        async src="//gc.zgo.at/count.js"></script>
+</body>
+</html>
