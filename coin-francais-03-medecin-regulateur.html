@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en-AU">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ICU AND YOU · Le coin français No. 3 — Le médecin régulateur</title>
+<meta name="description" content="Le coin français No. 3: in France a doctor answers the emergency call and a doctor goes to the patient. What a medicalised prehospital system does differently, and what it costs.">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="alternate icon" href="/favicon.ico" sizes="any">
+<link rel="apple-touch-icon" href="/icon-180.png">
+<meta name="theme-color" content="#1B2A33">
+<meta property="og:site_name" content="ICU AND YOU">
+<meta property="og:type" content="website">
+<meta property="og:title" content="ICU AND YOU · Le coin français No. 3 — Le médecin régulateur">
+<meta property="og:description" content="Le coin français No. 3: in France a doctor answers the emergency call and a doctor goes to the patient. What a medicalised prehospital system does differently, and what it costs.">
+<meta property="og:image" content="https://icuandyou.com/share-card.png">
+<meta name="twitter:card" content="summary_large_image">
+<style>
+  :root{
+    --paper:#FBF8F4; --ink:#22242E; --muted:#6B6A74; --rule:#DCD7CE;
+    --bleu:#2F4A7C; --bleutint:#E8EDF6;
+    --rouge:#9E2B2B; --rougetint:#F7EAEA;
+    --gold:#A8721E;
+  }
+  *{box-sizing:border-box}
+  body{margin:0;background:#EFEBE4;color:var(--ink);
+    font:400 17px/1.66 'Iowan Old Style','Palatino Linotype',Palatino,Georgia,serif;
+    -webkit-text-size-adjust:100%;}
+  .sheet{max-width:760px;margin:0 auto;background:var(--paper);
+    box-shadow:0 1px 40px rgba(34,36,46,.10);}
+
+  .flag{display:flex;height:5px}
+  .flag i{flex:1;display:block}
+  .flag i:nth-child(1){background:var(--bleu)}
+  .flag i:nth-child(2){background:#FBF8F4}
+  .flag i:nth-child(3){background:var(--rouge)}
+
+  header.top{padding:42px 42px 28px;border-bottom:1px solid var(--rule)}
+  .eyebrow a.serlink{color:inherit;text-decoration:none;border-bottom:1px solid transparent}
+  .eyebrow a.serlink:hover{border-bottom-color:currentColor}
+  .eyebrow a.mast{color:inherit;text-decoration:none;border-bottom:1px solid transparent}
+  .eyebrow a.mast:hover{border-bottom-color:currentColor}
+  .toptopic{display:inline-block;margin:0 0 16px 9px;padding:7px 16px;border-radius:20px;
+    border:1px solid currentColor;opacity:.62;text-decoration:none;color:inherit;
+    font:600 11.5px 'Helvetica Neue',Arial,sans-serif;letter-spacing:.09em;
+    text-transform:uppercase;transition:opacity .12s ease}
+  .toptopic:hover{opacity:1}
+  .topseries{display:inline-block;margin:0 0 16px 9px;padding:7px 16px;border-radius:20px;
+    border:1px solid currentColor;opacity:.62;text-decoration:none;color:inherit;
+    font:600 11.5px 'Helvetica Neue',Arial,sans-serif;letter-spacing:.09em;
+    text-transform:uppercase;transition:opacity .12s ease}
+  .topseries:hover{opacity:1}
+  .tophome{display:inline-block;margin:0 0 16px;padding:7px 16px;border-radius:20px;
+    border:1px solid currentColor;opacity:.62;text-decoration:none;color:inherit;
+    font:600 11.5px 'Helvetica Neue',Arial,sans-serif;letter-spacing:.09em;
+    text-transform:uppercase;transition:opacity .12s ease}
+  .tophome:hover{opacity:1}
+  .eyebrow{font:500 11.5px/1 'Helvetica Neue',Arial,sans-serif;letter-spacing:.24em;
+    text-transform:uppercase;color:var(--muted);margin:0 0 14px}
+  h1{font-size:34px;line-height:1.16;margin:0 0 8px;font-weight:400;letter-spacing:-.012em;
+    font-style:italic}
+  .kicker{color:var(--muted);margin:0;font-size:16.5px}
+
+  .pad{padding:34px 42px}
+  p{margin:0 0 17px}
+  .lede{font-size:20px;line-height:1.5;color:#1A1C24;margin:0 0 22px}
+
+  .fr{font-style:italic}
+  b.term{font-style:normal;font-weight:600;color:var(--bleu)}
+
+  h2.sub{font:600 12px 'Helvetica Neue',Arial,sans-serif;letter-spacing:.2em;
+    text-transform:uppercase;color:var(--muted);margin:30px 0 14px;
+    padding-bottom:8px;border-bottom:1px solid var(--rule)}
+
+  .faux{margin:0 0 17px;padding:20px 24px;background:var(--rougetint);
+    border-left:4px solid var(--rouge);border-radius:0 8px 8px 0}
+  .faux .lab{display:block;font:600 11px 'Helvetica Neue',Arial,sans-serif;
+    letter-spacing:.18em;text-transform:uppercase;color:var(--rouge);margin:0 0 9px}
+  .faux p:last-child{margin:0}
+
+  .gloss{margin:0;padding:20px 24px;background:var(--bleutint);
+    border-left:4px solid var(--bleu);border-radius:0 8px 8px 0;font-size:16px}
+  .gloss p:last-child{margin:0}
+
+  .reply{margin:0;padding:28px 32px;background:#F4EFE4;border-left:5px solid var(--gold)}
+  .reply h2{font:600 12px 'Helvetica Neue',Arial,sans-serif;letter-spacing:.2em;
+    text-transform:uppercase;color:var(--gold);margin:0 0 13px}
+  .ask{font-size:19px;line-height:1.5;font-style:italic;margin:0 0 15px}
+  .btn{display:inline-block;margin:6px 0 12px;padding:15px 30px;background:var(--bleu);
+    color:#F7F9FC;text-decoration:none;border-radius:30px;font-style:normal;
+    font:600 15px 'Helvetica Neue',Arial,sans-serif;letter-spacing:.03em}
+  .btn:hover{background:#233A63}
+  .btn:focus-visible{outline:3px solid var(--rouge);outline-offset:3px}
+  .fallback{font:400 13.5px 'Helvetica Neue',Arial,sans-serif;color:var(--muted);margin:0}
+  .fallback a{color:var(--bleu)}
+  .subline{margin:0 0 14px;padding:0 0 13px;border-bottom:1px solid rgba(0,0,0,.09);
+    font:400 14.5px/1.55 'Iowan Old Style','Palatino Linotype',Palatino,Georgia,serif;
+    max-width:56ch;margin-left:auto;margin-right:auto}
+  .subline a{font-weight:500;border-bottom:1px solid currentColor;
+    text-decoration:none;color:inherit}
+  .firstpub{display:block;margin:0 0 10px;padding-bottom:9px;
+    border-bottom:1px solid currentColor;border-color:rgba(0,0,0,.09);
+    font:400 12px 'Helvetica Neue',Arial,sans-serif;letter-spacing:.06em;opacity:.72}
+
+  footer{padding:24px 42px 42px;border-top:1px solid var(--rule);
+    font:400 13px 'Helvetica Neue',Arial,sans-serif;color:var(--muted);text-align:center;line-height:1.7}
+  .home{display:inline-block;margin:0 0 14px;padding:8px 18px;border-radius:20px;
+    border:1px solid var(--rule);background:#F2F0E9;color:var(--bleu);text-decoration:none;
+    font:600 12.5px 'Helvetica Neue',Arial,sans-serif;letter-spacing:.05em}
+  .home:hover{background:var(--bleu);border-color:var(--bleu);color:#F7F9FC}
+
+  @media (max-width:620px){
+    header.top,.pad,footer{padding-left:20px;padding-right:20px}
+    .reply{padding:22px 20px}
+    h1{font-size:26px} body{font-size:16.5px} .lede{font-size:18px} .ask{font-size:17.5px}
+  }
+  @media print{ body{background:#fff} .sheet{box-shadow:none;max-width:none} }
+
+  .donate{display:flex;gap:22px;align-items:center;flex-wrap:wrap;
+    margin:28px 0 0;padding:22px 26px;background:#EEF3F0;
+    border-left:4px solid #0F6E56;border-radius:0 8px 8px 0}
+  .donate .qr{flex:none;width:118px;height:118px;background:#fff;
+    padding:7px;border-radius:8px;border:1px solid #CFE0D8}
+  .donate .qr svg{display:block;width:100%;height:100%}
+  .donate .dt{flex:1 1 240px;min-width:0}
+  .donate .dk{display:block;font:600 11px 'Helvetica Neue',Arial,sans-serif;
+    letter-spacing:.18em;text-transform:uppercase;color:#0F6E56;margin:0 0 8px}
+  .donate p{margin:0 0 8px;font:400 15.5px/1.55 'Helvetica Neue',Arial,sans-serif;color:#2C4A42}
+  .donate p:last-child{margin:0}
+  .donate a{color:#0F6E56}
+  .donate .fine{font-size:13.5px;color:#5A7169}
+  @media (max-width:520px){ .donate{gap:16px;padding:18px} .donate .qr{width:96px;height:96px} }
+  .mine{display:inline-block;margin:9px 0 0;opacity:.78;font-size:.94em}
+
+  .why{margin:0 0 26px;padding:22px 26px;background:#F1F4F9;border-left:4px solid #2F4A7C;
+    border-radius:0 8px 8px 0}
+  .why .lab{display:block;font:600 11px 'Helvetica Neue',Arial,sans-serif;letter-spacing:.18em;
+    text-transform:uppercase;color:#22375C;margin:0 0 10px}
+  .why p{margin:0 0 10px;font-size:15.5px;line-height:1.6}
+  .why p:last-child{margin:0}
+  .vf{margin:26px 0;padding:24px 28px;background:#FBF8F1;border:1px solid #E0D6C4;border-radius:10px}
+  .vf .lab{display:block;font:600 11px 'Helvetica Neue',Arial,sans-serif;letter-spacing:.18em;
+    text-transform:uppercase;color:#9E2B2B;margin:0 0 12px}
+  .vf .orig{margin:0 0 16px;font:italic 400 17px/1.62 'Iowan Old Style',Palatino,Georgia,serif;
+    color:#2A2118}
+  .vf .tr{margin:0;padding-top:14px;border-top:1px solid #E6DCC6;font-size:15px;color:#6F6455}
+</style>
+</head>
+<body>
+<div class="sheet">
+
+  <div class="flag"><i></i><i></i><i></i></div>
+
+  <header class="top">
+    <a class="tophome" href="./">&larr;&nbsp; Home</a>
+    <a class="topseries" href="./?s=coin">More from Le coin français</a>
+    <a class="toptopic" href="./?t=school-age" title="Everything on The school-age child">All on this topic</a>
+    <p class="eyebrow"><a class="mast" href="./">ICU and You</a> &nbsp;·&nbsp;
+      <a class="serlink" href="./?s=coin">Le coin français</a> &nbsp;·&nbsp; Number 3</p>
+    <h1>Le médecin régulateur</h1>
+    <p class="kicker">In France a doctor answers the phone &mdash; and a doctor gets in the ambulance</p>
+  </header>
+
+  <div class="pad">
+    <div class="why">
+      <span class="lab">Why this section exists</span>
+      <p><strong>This is not a travel column.</strong> The people in our unit come from everywhere, and so do
+        the people who work in it. On any given shift the registrar trained in Dublin or Chennai, the nurse
+        who grew up speaking Tagalog, the family who are more comfortable in Arabic and the patient whose
+        grandmother is Gumbaynggirr are all in the same twelve square metres. That is not an unusual day. It
+        is every day, and it has been for years.</p>
+      <p>Superdiversity is not a policy word for somebody else's problem. It is a description of the room you
+        are standing in. Which means that knowing how medicine is done elsewhere is not general knowledge or
+        broadening &mdash; it is <em>local</em> knowledge about your own colleagues and your own patients.</p>
+      <p>And there is a second reason, which matters more. Everything we do here was decided by somebody. The
+        way we consent, who answers an emergency call, what we count as a fever, how we speak to a dying
+        person's family: all of it looks inevitable from inside and turns out to be one option among several
+        the moment you look at another country. <strong>Nothing shows you your own assumptions faster than
+        watching competent people make different ones.</strong></p>
+      <p>Some of these columns will change your practice. Most will not. All of them should make the familiar
+        look slightly less obvious, which is the whole point.</p>
+    </div>
+
+
+    <p class="lede">A nine-year-old comes off a bicycle on a road outside Lyon. Somebody dials 15. The person
+      who picks up is not a call-taker working to an algorithm. It is a doctor.</p>
+
+    <p>That single difference reorganises everything downstream, and it is the most instructive divergence
+      between French and Australian prehospital care.</p>
+
+    <h2 class="sub">La régulation</h2>
+
+    <p>Every call to 15 reaches a <b class="term">SAMU</b> centre &mdash; <span class="fr">Service d'aide
+      médicale urgente</span> &mdash; where an assistant takes the details and then hands the caller to
+      the <b class="term">médecin régulateur</b>. That doctor talks to the caller, forms an
+      impression, and decides what the call needs: advice and nothing else, a general practitioner, an
+      ambulance crew, or a <b class="term">SMUR</b> team &mdash; <span class="fr">Service mobile d'urgence et
+      de réanimation</span> &mdash; which carries a physician, usually an anaesthetist or emergency
+      physician, to the scene.</p>
+
+    <p>The verb is <span class="fr">réguler</span>, and it has no clean English equivalent. It is not
+      triage, which sorts people who have already arrived. It is a clinical decision made on the telephone
+      about what should happen next, taken by somebody qualified to be wrong about it.</p>
+
+    <div class="gloss">
+      <p>The underlying philosophy has a name: <span class="fr">amener l'hôpital au patient</span>
+        &mdash; bring the hospital to the patient. Where the Anglo-American model moves the patient to the
+        doctor as fast as possible, the French model moves the doctor to the patient and begins definitive
+        treatment where they lie. Intubation, sedation, chest drains, blood, and occasionally a great deal
+        more, on a roadside.</p>
+    </div>
+
+    <h2 class="sub">What it changes for a school-age child</h2>
+
+    <ul class="pts" style="list-style:none;padding:0">
+      <li><b>The first decision is made by somebody who could make the last one</b><span>A regulating doctor
+        hearing a parent describe a child who is drowsy after a fall does not need a protocol to decide
+        whether that warrants a physician team. They already know.</span></li>
+      <li><b>Treatment starts before transport</b><span>The seriously injured child is anaesthetised at the
+        scene rather than en route or on arrival. For the airway that is losing, that is a real
+        advantage.</span></li>
+      <li><b>And the destination is chosen, not defaulted</b><span>The regulating doctor selects the
+        receiving hospital and speaks to it directly. A child bypasses the wrong hospital because somebody
+        with authority decided they should.</span></li>
+      <li><b>The cost is time on scene</b><span>Doing more where the patient lies takes longer, and for
+        injuries that need an operating theatre rather than a procedure, minutes matter. This is the crux of
+        a debate that has run for decades and has never been settled by a trial anybody finds
+        convincing.</span></li>
+    </ul>
+
+    <p>Which is the honest position: both systems can point at outcomes, neither has produced the study that
+      would end the argument, and the difference between them is not really evidential. It is a judgement
+      about where definitive care should begin, made long ago, by different people, and then built into
+      buildings and training and law.</p>
+
+    <div class="vf">
+      <span class="lab">Pour nos lecteurs francophones</span>
+      <p class="orig">&laquo;&nbsp;Réguler, ce n'est pas trier. Trier, c'est choisir parmi ceux qui sont
+        déjà arrivés. Réguler, c'est décider, au téléphone, qui viendra
+        &mdash; et qui ira. C'est une décision médicale prise avant d'avoir vu le malade, par
+        quelqu'un qui accepte d'en répondre. Le médecin régulateur ne dispatche pas des
+        véhicules&nbsp;: il engage sa responsabilité, depuis une pièce où l'on n'entend
+        que des voix.&nbsp;&raquo;</p>
+      <p class="tr"><strong>In English:</strong> To regulate is not to triage. Triage means choosing among
+        those who have already arrived. Regulation means deciding, on the telephone, who will come &mdash; and
+        who will go. It is a medical decision taken before seeing the patient, by somebody prepared to answer
+        for it. The regulating doctor is not dispatching vehicles: they are putting their own name to it, from
+        a room where all you can hear is voices.</p>
+    </div>
+
+    <h2 class="sub">The one that will catch you out</h2>
+
+    <div class="faux">
+      <span class="lab">Faux ami</span>
+      <p><b class="term">Une intoxication</b> is a <em>poisoning</em>. Nothing to do with being drunk. An
+        <span class="fr">intoxication médicamenteuse volontaire</span> &mdash; abbreviated
+        <span class="fr">IMV</span> in French notes as routinely as we write DSH &mdash; is a deliberate drug
+        overdose. <span class="fr">Une intoxication au CO</span> is carbon monoxide poisoning;
+        <span class="fr">une intoxication alimentaire</span> is food poisoning.</p>
+      <p>This matters at the top of this age band, where ingestions stop being accidental. A French-trained
+        colleague saying a teenager has had <span class="fr">une intoxication</span> is telling you something
+        considerably more serious than an English ear hears.</p>
+    </div>
+
+    <h2 class="sub">Two more worth having</h2>
+
+    <p><b class="term">Le carnet de santé.</b> Every French child is issued one at birth and carries it to
+      eighteen: vaccinations, growth, every consultation, held by the family rather than the system. By school
+      age that is a decade of records that arrives with the child. We have the Blue Book and largely stop
+      opening it after infancy, which is worth thinking about the next time you are reconstructing an
+      immunisation history from memory at midnight.</p>
+
+    <p><b class="term">Le Doliprane.</b> Paracetamol, and close to a household word &mdash; one of the most
+      dispensed medicines in France, to the point that the brand name is used for the drug the way we say
+      Panadol. Which is the same hazard we describe in
+      <a href="drugstore-02-paracetamol.html">this fortnight's drug profile</a>: when a family says what they
+      have already given, they will say the brand, and the brand may be in more than one box.</p>
+  </div>
+
+  <div class="pad" style="padding-top:6px">
+    <div class="reply">
+      <h2>Over to you</h2>
+      <p class="ask">If you have worked in a system that sends a doctor to the patient &mdash; was it better?</p>
+      <p>I would particularly like to hear from colleagues who trained in France, or anywhere else with a
+        medicalised prehospital service, and from retrieval people here who have opinions about both. What
+        does it genuinely do better, and what does it do worse? And what did you find hardest to give up when
+        you moved between the two?</p>
+      <p>Everybody else is welcome too: what is the one thing you would take from another country's system if
+        you could take exactly one?</p>
+      <p><a class="btn" href="mailto:icuandyou@icloud.com?subject=Le%20coin%20fran%C3%A7ais%20No.%203%20-%20a%20response&body=Where%20I%20have%20worked%2C%20and%20what%20that%20system%20did%20differently%3A%0D%0A%0D%0A%0D%0AWhat%20it%20did%20better%2C%20and%20worse%3A%0D%0A%0D%0A%0D%0AThe%20one%20thing%20I%20would%20take%20from%20another%20system%3A%0D%0A%0D%0A%0D%0A---%0D%0A%0D%0AName%20%28optional%29%3A%0D%0A%0A---%0A%0AThinking%20about%20this%20ICU%20AND%20YOU%20post%20overall%20%E2%80%94%20was%20it%20useful%20to%20you%2C%20or%20would%20it%20be%20useful%20to%20others%3F%0A">Send me a reply</a></p>
+      <p class="fallback">The button opens a reply straight to me. If your device blocks it, write to
+        <a href="mailto:icuandyou@icloud.com">icuandyou@icloud.com</a> instead.</p>
+    </div>
+  </div>
+
+  <footer>
+    <span class="firstpub">First published September 2026</span>
+    <p class="subline">Two emails a week &mdash; the Friday newsletter for all subscribers, and, for clinical subscribers,
+      the mind map and puzzles the moment they go up on Tuesday. Occasional announcements of new
+      features as they arrive. What went up and why it mattered, the best of your replies, and
+      original feature stories, news and views. <a href="https://joinlist.com/f/5adad2d6">Come and join us</a>.</p>
+    <a class="home" href="./">&larr; &nbsp;All of ICU AND YOU</a><br>
+    Le coin français No. 3 &nbsp;&#183;&nbsp; companion to Mind Map #34, The School-Age Child<br>
+    Educational use only. Not a clinical protocol &mdash; descriptions of another country's emergency system
+    are for comparison and interest, and local policy and current guidance always take precedence.<br>
+    <span class="mine">Views my own, not those of NSW Health or any other organisation. No identifiable
+    patients &mdash; scenarios are constructed or combined for teaching. <a href="about.html">More</a>.</span>
+  </footer>
+
+</div>
+<script data-goatcounter="https://icuandyou.goatcounter.com/count"
+        async src="//gc.zgo.at/count.js"></script>
+</body>
+</html>

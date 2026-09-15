@@ -868,9 +868,28 @@
    "badge": "Drugstore",
    "link_label": "Open",
    "blurb": "The drug everyone thinks they know. The doses and where they differ under 10 kg, the tenfold error that keeps recurring, why the child at risk is the one who has stopped eating, and the metabolism that is the whole of the toxicology."
+  },
+  {
+   "file": "coin-francais-03-medecin-regulateur.html",
+   "series": "coin",
+   "colour": "bleu",
+   "number": "3",
+   "title": "Le médecin régulateur",
+   "topic": "The school-age child",
+   "slug": "school-age",
+   "week": true,
+   "pos": 8,
+   "badge": "Le coin français",
+   "link_label": "Open",
+   "blurb": "In France a doctor answers the emergency call and a doctor gets in the ambulance. What a medicalised prehospital system does differently for an injured nine-year-old, what it costs, and a faux ami that matters at this age."
   }
  ],
  "latest": [
+  {
+   "file": "coin-francais-03-medecin-regulateur.html",
+   "colour": "bleu",
+   "label": "Le coin français 3"
+  },
   {
    "file": "drugstore-02-paracetamol.html",
    "colour": "mulberry",
@@ -890,11 +909,6 @@
    "file": "literary-edge-02-peter-pan.html",
    "colour": "nero",
    "label": "The Literary Edge 2 · Peter Pan"
-  },
-  {
-   "file": "journal-club-99-mycoplasma.html",
-   "colour": "sepia",
-   "label": "Journal Club 99 · Mycoplasma"
   }
  ],
  "topten": [
