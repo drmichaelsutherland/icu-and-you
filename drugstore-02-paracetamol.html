@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en-AU">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ICU AND YOU · Drugstore No. 2 — Paracetamol in children</title>
+<meta name="description" content="Drugstore No. 2: paracetamol in children — the doses, the tenfold error that keeps happening, why a fasting child is the one at risk, and the pharmacology as the First Part wants it.">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="alternate icon" href="/favicon.ico" sizes="any">
+<link rel="apple-touch-icon" href="/icon-180.png">
+<meta name="theme-color" content="#1B2A33">
+<meta property="og:site_name" content="ICU AND YOU">
+<meta property="og:type" content="website">
+<meta property="og:title" content="ICU AND YOU · Drugstore No. 2 — Paracetamol in children">
+<meta property="og:description" content="Drugstore No. 2: paracetamol in children — the doses, the tenfold error that keeps happening, why a fasting child is the one at risk, and the pharmacology as the First Part wants it.">
+<meta property="og:image" content="https://icuandyou.com/share-card.png">
+<meta name="twitter:card" content="summary_large_image">
+<style>
+  :root{
+    --paper:#FBF9FC; --ink:#241F2B; --muted:#6B6377; --rule:#DFD6E6;
+    --amethyst:#7A3560; --amethysttint:#F1EBF7;
+    --rust:#A8442A; --rusttint:#F9EDE7;
+    --moss:#4C6B4A; --mosstint:#EAF1E9;
+    --gold:#A8721E; --goldtint:#FBF1DC;
+  }
+  *{box-sizing:border-box}
+  body{margin:0;background:#EDE8F1;color:var(--ink);
+    font:400 17px/1.64 'Iowan Old Style','Palatino Linotype',Palatino,Georgia,serif;
+    -webkit-text-size-adjust:100%;}
+  .sheet{max-width:820px;margin:0 auto;background:var(--paper);
+    box-shadow:0 1px 40px rgba(36,31,43,.10);}
+
+  header.top{padding:42px 40px 28px;border-bottom:2px solid var(--amethyst)}
+  .tophome,.topseries,.toptopic{display:inline-block;margin:0 0 16px;padding:7px 16px;
+    border-radius:20px;border:1px solid currentColor;opacity:.62;text-decoration:none;
+    color:inherit;font:600 11.5px 'Helvetica Neue',Arial,sans-serif;letter-spacing:.09em;
+    text-transform:uppercase;transition:opacity .12s ease}
+  .topseries,.toptopic{margin-left:9px}
+  .tophome:hover,.topseries:hover,.toptopic:hover{opacity:1}
+  .eyebrow a.mast,.eyebrow a.serlink{color:inherit;text-decoration:none;
+    border-bottom:1px solid transparent}
+  .eyebrow a.mast:hover,.eyebrow a.serlink:hover{border-bottom-color:currentColor}
+  .eyebrow{font:500 11.5px/1 'Helvetica Neue',Arial,sans-serif;letter-spacing:.24em;
+    text-transform:uppercase;color:var(--muted);margin:0 0 13px}
+  h1{font-size:32px;line-height:1.2;margin:0 0 9px;font-weight:400;letter-spacing:-.012em}
+  .kicker{color:var(--muted);margin:0;font-size:16.5px;font-style:italic}
+
+  .askedby{margin:0;padding:18px 40px;background:var(--amethysttint);
+    border-bottom:1px solid var(--rule);font-size:16px;color:#4A3D57}
+  .askedby a{color:var(--amethyst)}
+
+  .pad{padding:32px 40px}
+  p{margin:0 0 16px}
+  .lede{font-size:19.5px;line-height:1.55;margin:0 0 20px}
+
+  h2.sub{font:600 12px 'Helvetica Neue',Arial,sans-serif;letter-spacing:.2em;
+    text-transform:uppercase;color:var(--amethyst);margin:32px 0 15px;
+    padding-bottom:8px;border-bottom:1px solid var(--rule)}
+
+  ul.pts{list-style:none;margin:0 0 18px;padding:0}
+  ul.pts li{display:flex;gap:13px;padding:11px 0;border-bottom:1px solid #EFE9F4;
+    font-size:16.5px;line-height:1.5}
+  ul.pts li:last-child{border-bottom:0}
+  ul.pts b{flex:0 0 182px;font:600 14.5px 'Helvetica Neue',Arial,sans-serif;
+    color:var(--amethyst);line-height:1.4}
+
+  ol.steps{list-style:none;counter-reset:s;margin:0 0 18px;padding:0}
+  ol.steps li{counter-increment:s;position:relative;padding:12px 0 12px 44px;
+    border-bottom:1px solid #EFE9F4;font-size:16.5px;line-height:1.55}
+  ol.steps li:last-child{border-bottom:0}
+  ol.steps li::before{content:counter(s);position:absolute;left:0;top:12px;
+    width:28px;height:28px;border-radius:50%;background:var(--amethyst);color:#F8F5FB;
+    font:600 13px 'Helvetica Neue',Arial,sans-serif;display:flex;align-items:center;
+    justify-content:center}
+
+  .box{margin:0 0 18px;padding:20px 24px;border-radius:0 8px 8px 0}
+  .box .lab{display:block;font:600 11px 'Helvetica Neue',Arial,sans-serif;
+    letter-spacing:.18em;text-transform:uppercase;margin:0 0 9px}
+  .box p:last-child{margin:0}
+  .red{background:var(--rusttint);border-left:4px solid var(--rust)} .red .lab{color:var(--rust)}
+  .grn{background:var(--mosstint);border-left:4px solid var(--moss)} .grn .lab{color:var(--moss)}
+  .amb{background:var(--goldtint);border-left:4px solid var(--gold)} .amb .lab{color:var(--gold)}
+
+  .sites{display:flex;gap:13px;flex-wrap:wrap;margin:0 0 20px}
+  .site{flex:1 1 226px;background:#fff;border:1px solid var(--rule);border-radius:9px;
+    padding:16px 18px;border-top:4px solid var(--amethyst)}
+  .site h3{margin:0 0 7px;font:600 13px 'Helvetica Neue',Arial,sans-serif;
+    letter-spacing:.07em;text-transform:uppercase;color:var(--amethyst)}
+  .site p{margin:0;font-size:15.5px;line-height:1.5;color:#3B3345}
+
+  .challenge{margin:0;padding:28px 32px;background:var(--rusttint);border-left:5px solid var(--rust)}
+  .challenge h2{font:600 12px 'Helvetica Neue',Arial,sans-serif;letter-spacing:.2em;
+    text-transform:uppercase;color:var(--rust);margin:0 0 13px}
+  .ask{font-size:19.5px;line-height:1.5;margin:0 0 12px;font-style:italic}
+  .btn{display:inline-block;margin:6px 0 12px;padding:15px 30px;background:var(--rust);
+    color:#FDF8F5;text-decoration:none;border-radius:30px;font-style:normal;
+    font:600 15px 'Helvetica Neue',Arial,sans-serif;letter-spacing:.03em}
+  .btn:hover{background:#8A3620}
+  .fallback{font:400 13.5px 'Helvetica Neue',Arial,sans-serif;color:var(--muted);margin:0}
+  .fallback a{color:var(--rust)}
+
+  footer{padding:24px 40px 42px;border-top:1px solid var(--rule);
+    font:400 13px 'Helvetica Neue',Arial,sans-serif;color:var(--muted);text-align:center;line-height:1.7}
+  .subline{margin:0 0 14px;padding:0 0 13px;border-bottom:1px solid rgba(0,0,0,.09);
+    font:400 14.5px/1.55 'Iowan Old Style','Palatino Linotype',Palatino,Georgia,serif;
+    max-width:56ch;margin-left:auto;margin-right:auto}
+  .subline a{font-weight:500;border-bottom:1px solid currentColor;
+    text-decoration:none;color:inherit}
+  .firstpub{display:block;margin:0 0 10px;padding-bottom:9px;
+    border-bottom:1px solid rgba(0,0,0,.09);
+    font:400 12px 'Helvetica Neue',Arial,sans-serif;letter-spacing:.06em;opacity:.72}
+  .home{display:inline-block;margin:0 0 14px;padding:8px 18px;border-radius:20px;
+    border:1px solid var(--rule);background:#F3EFF7;color:var(--amethyst);text-decoration:none;
+    font:600 12.5px 'Helvetica Neue',Arial,sans-serif;letter-spacing:.05em}
+  .home:hover{background:var(--amethyst);border-color:var(--amethyst);color:#F8F5FB}
+
+  @media (max-width:640px){
+    header.top,.pad,.askedby,footer{padding-left:20px;padding-right:20px}
+    .challenge{padding:22px 20px}
+    h1{font-size:26px} body{font-size:16.5px} .ask{font-size:18px}
+    ul.pts li{flex-direction:column;gap:3px} ul.pts b{flex:none}
+  }
+  @media print{ body{background:#fff} .sheet{box-shadow:none;max-width:none} }
+  .mine{display:inline-block;margin:9px 0 0;opacity:.78;font-size:.94em}
+
+  .preamble{margin:0 0 22px;padding:20px 24px;background:#F6EBF1;border-left:4px solid #7A3560;
+    border-radius:0 8px 8px 0}
+  .preamble .lab{display:block;font:600 11px 'Helvetica Neue',Arial,sans-serif;letter-spacing:.18em;
+    text-transform:uppercase;color:#7A3560;margin:0 0 9px}
+  .preamble p:last-child{margin:0}
+  .keynote{margin:0 0 22px;padding:0;list-style:none;counter-reset:kn}
+  .keynote li{position:relative;padding:13px 0 13px 46px;border-bottom:1px solid #EFE7EA;
+    font-size:17px;line-height:1.55}
+  .keynote li:last-child{border-bottom:0}
+  .keynote li::before{counter-increment:kn;content:counter(kn);position:absolute;left:0;top:11px;
+    width:29px;height:29px;border-radius:50%;background:#7A3560;color:#fff;text-align:center;
+    font:600 14px/29px 'Helvetica Neue',Arial,sans-serif}
+  .dosetable{width:100%;border-collapse:collapse;margin:0 0 20px;
+    font:400 15px 'Helvetica Neue',Arial,sans-serif}
+  .dosetable th{text-align:left;padding:9px 10px;border-bottom:2px solid #7A3560;
+    font:600 12px 'Helvetica Neue',Arial,sans-serif;letter-spacing:.09em;text-transform:uppercase;
+    color:#5B2447}
+  .dosetable td{padding:9px 10px;border-bottom:1px solid #EFE7EA;vertical-align:top;line-height:1.5}
+  .dosetable tr:last-child td{border-bottom:0}
+  .exam{margin:0 0 20px;padding:20px 24px;background:#E8F0EC;border-left:4px solid #1D4D3F;
+    border-radius:0 8px 8px 0}
+  .exam .lab{display:block;font:600 11px 'Helvetica Neue',Arial,sans-serif;letter-spacing:.18em;
+    text-transform:uppercase;color:#1D4D3F;margin:0 0 9px}
+  .exam p:last-child{margin:0}
+</style>
+</head>
+<body>
+<div class="sheet">
+
+  <header class="top">
+    <a class="tophome" href="./">&larr;&nbsp; Home</a>
+    <a class="topseries" href="./?s=drugstore">All drug profiles</a>
+    <a class="toptopic" href="./?t=school-age" title="Everything on The school-age child">All on this topic</a>
+    <p class="eyebrow"><a class="mast" href="./">ICU and You</a> &nbsp;·&nbsp;
+      <a class="serlink" href="./?s=drugstore">Drugstore</a> &nbsp;·&nbsp; Number 2</p>
+    <h1>Paracetamol in children</h1>
+    <p class="kicker">The drug everyone thinks they know, and the one that still kills people</p>
+  </header>
+
+  <div class="pad">
+    <div class="preamble">
+      <span class="lab">About this series</span>
+      <p><strong>Drugstore</strong> is for drug profiles. Each one runs the same way: the few things that
+        matter most, then the practical business of doses, routes and the errors that recur, and then the
+        pharmacology proper &mdash; kinetics, dynamics, indications and adverse effects.</p>
+      <p>The intention is to serve two readers at once. The clinician who needs the drug at three in the
+        morning, and the First Part candidate who has to explain its metabolism. Those are different needs,
+        and most references choose one.</p>
+    </div>
+
+    <p class="askedby"><strong>This one</strong> is paracetamol as it is used in children: the doses and
+      where they differ, the specific errors that keep recurring, what to do about an overdose, and the
+      pharmacology underneath it. Almost everything here is more interesting than the drug's reputation
+      suggests.</p>
+
+    <h2 class="sub">Four things, if you take nothing else</h2>
+
+    <ol class="keynote">
+      <li><strong>It is the most useful drug on the ward and the most casually prescribed.</strong> Regular paracetamol reduces opioid requirement, works, and is almost free. It is also written up without a weight, continued for a fortnight, and duplicated inside a combination product. The harm it does is almost never from a single wrong dose.</li>
+      <li><strong>The child at risk in your unit is not the overdose.</strong> It is the child on regular therapeutic paracetamol who has stopped eating, is vomiting, is septic, or is on an enzyme inducer. Prolonged fasting and malnutrition deplete glutathione and shift metabolism towards the toxic pathway. The dose did not change; the child did.</li>
+      <li><strong>Two strengths of the intravenous formulation, one concentration, and a recurring tenfold error.</strong> Intravenous paracetamol is 10 mg/mL, supplied as 500 mg in 50 mL and 1,000 mg in 100 mL. Confusing milligrams with millilitres gives exactly ten times the intended dose, and this has killed infants. Over two hundred inadvertent overdoses were reported to the UK national reporting system in one period.</li>
+      <li><strong>A child under 10 kg is not just a smaller child.</strong> The product information specifies a lower intravenous dose below 10 kg &mdash; 7.5 mg/kg rather than 15 &mdash; and a lower daily maximum. Writing the standard dose for a 9 kg infant is a doubling, not a rounding.</li>
+    </ol>
+
+    <h2 class="sub">The practical part</h2>
+
+    <table class="dosetable">
+      <tr><th>Situation</th><th>Dose</th><th>Notes</th></tr>
+      <tr>
+        <td><strong>Oral or rectal</strong><br>child</td>
+        <td>15 mg/kg every four to six hours<br>maximum 60 mg/kg/day</td>
+        <td>Round to a sensible volume of the strength you actually have. Rectal absorption is slower and
+          less predictable than oral, so it is a fallback rather than an equivalent.</td>
+      </tr>
+      <tr>
+        <td><strong>Intravenous</strong><br>over 10 kg</td>
+        <td>15 mg/kg every six hours<br>maximum 60 mg/kg/day</td>
+        <td>Solution is 10 mg/mL. Always prescribe in <strong>milligrams</strong>, never millilitres.</td>
+      </tr>
+      <tr>
+        <td><strong>Intravenous</strong><br>10 kg or less</td>
+        <td>7.5 mg/kg every six hours<br>maximum 30 mg/kg/day</td>
+        <td>A different dose and a different ceiling. This is the one people get wrong.</td>
+      </tr>
+      <tr>
+        <td><strong>Duration at maximum dose</strong></td>
+        <td>Review by 48 to 72 hours</td>
+        <td>Particularly in the small, unwell, fasting or malnourished child. Maximum dosing was never
+          intended to be open-ended.</td>
+      </tr>
+    </table>
+
+    <p style="font-size:15px;color:#6E6558"><em>Every one of these must be checked against your own formulary
+      and local guideline before use. They are here to be recognised, not copied.</em></p>
+
+    <div class="box red">
+      <span class="lab">The errors that actually happen</span>
+      <p><strong>Milligrams read as millilitres.</strong> The single commonest serious paracetamol error in
+        paediatrics, and the reason every liquid and intravenous prescription should state the dose in
+        milligrams.</p>
+      <p><strong>The hidden second source.</strong> Combination cold and flu preparations, some
+        over-the-counter analgesics, and what the parents have already given at home. Ask what they have had
+        in the last six to eight hours before you write anything.</p>
+      <p><strong>Dosing by age rather than weight.</strong> Body habitus varies enormously by school age. Use
+        the weight, and in the obese child use a sensible lean estimate rather than the scale reading.</p>
+      <p><strong>Modified-release preparations in children.</strong> Avoid them. They behave differently in
+        overdose, the nomogram does not apply, and there is no good reason to use one in a child.</p>
+      <p><strong>The prescription nobody reviews.</strong> Written on day one for a painful procedure, still
+        running on day twelve in a child who is now septic and not eating.</p>
+    </div>
+
+    <h2 class="sub">When it is an overdose</h2>
+
+    <p>This is the commonest deliberate ingestion at school age and in adolescence, and it is also the most
+      forgiving if you catch it. Accidental liquid ingestion in the younger child is common and rarely needs
+      treatment.</p>
+
+    <ul class="pts" style="list-style:none;padding:0">
+      <li><b>The threshold that matters</b><span>An acute ingestion of <b class="term">200 mg/kg or 10 g,
+        whichever is less</b>, is potentially toxic. Above 500 mg/kg or 30 g is a massive overdose, where
+        absorption may continue for up to twenty-four hours and increased acetylcysteine doses are
+        used.</span></li>
+      <li><b>Take the level at four hours, not before</b><span>Earlier concentrations may not have peaked and
+        cannot be plotted. The nomogram applies only to acute immediate-release ingestions with a known
+        time.</span></li>
+      <li><b>The nomogram does not cover everything</b><span>Repeated supratherapeutic ingestion,
+        modified-release preparations, staggered overdoses and unknown timing all need different rules and a
+        call to the poisons centre.</span></li>
+      <li><b>Acetylcysteine, two bags</b><span>200 mg/kg over four hours, then 100 mg/kg over sixteen. The
+        dose is the same in children as in adults; what changes is the <em>dilution volume</em>, which is
+        reduced to avoid fluid overload. Getting that wrong is how a child ends up hyponatraemic.</span></li>
+      <li><b>Ring somebody</b><span>The Poisons Information Centre is 13 11 26 in Australia. Massive
+        ingestions, intravenous paracetamol overdose, and any transaminase above about a thousand warrant a
+        conversation rather than a protocol.</span></li>
+    </ul>
+
+    <div class="box amb">
+      <span class="lab">The counterintuitive bit, and its exception</span>
+      <p>Young children tolerate an acute paracetamol load relatively well. Sulfation, rather than
+        glucuronidation, is the dominant conjugation pathway in early childhood, and it has spare capacity
+        &mdash; so proportionally less paracetamol is pushed down the oxidative route that produces the toxic
+        metabolite. Most accidental paediatric liquid ingestions never need acetylcysteine.</p>
+      <p><strong>But that protection is conditional, and the condition is nutrition.</strong> A published
+        Australian case describes a previously well three-year-old who developed hepatotoxicity after an
+        accidental liquid ingestion, in the setting of a recent viral illness and poor oral intake &mdash;
+        with a metabolite profile showing a greater proportion had gone down the oxidative pathway.</p>
+      <p><span class="verdict">The reassuring generalisation and the dangerous exception are the same
+        physiology.</span></p>
+    </div>
+
+    <h2 class="sub">The pharmacology</h2>
+
+    <p><b class="term">What it does, and the honest answer.</b> Nobody is entirely sure. It is an analgesic
+      and antipyretic with almost no peripheral anti-inflammatory action, which is why it is not classed as a
+      non-steroidal anti-inflammatory. The leading explanations are central cyclo-oxygenase inhibition in an
+      environment of low peroxide tone, an active metabolite acting on vanilloid and cannabinoid receptors,
+      and augmentation of descending serotonergic inhibition. Being asked to explain a mechanism that is not
+      settled is itself a fair exam question.</p>
+
+    <p><b class="term">Kinetics.</b> Oral bioavailability is good but incomplete, with peak concentrations in
+      roughly thirty to sixty minutes for a liquid and longer for tablets. Volume of distribution is close to
+      total body water, protein binding is low, and the elimination half-life is two to three hours &mdash;
+      prolonged in overdose and in liver failure, where a rising half-life is a bad sign.</p>
+
+    <p><b class="term">Metabolism, which is the whole of the toxicology.</b> About ninety per cent is
+      conjugated to inactive glucuronide and sulfate and excreted. A small fraction is oxidised by cytochrome
+      P450, chiefly CYP2E1, to <b class="term">NAPQI</b> &mdash; which is rapidly conjugated by glutathione
+      and rendered harmless.</p>
+
+    <p>In overdose, or in a child whose glutathione is already depleted, that last step fails. Free NAPQI
+      binds covalently to hepatocyte proteins and produces centrilobular necrosis. Acetylcysteine works by
+      replenishing glutathione, which is why it is effective early and progressively less so late.</p>
+
+    <p><b class="term">Adverse effects.</b> At therapeutic doses, remarkably few &mdash; which is most of why
+      it is prescribed so casually. Hepatotoxicity is the one that matters. Rare severe cutaneous reactions
+      are described. The reported association with childhood asthma is confounded by indication and should be
+      treated as unresolved rather than as established.</p>
+
+    <p><b class="term">Interactions worth knowing.</b> Enzyme inducers &mdash; carbamazepine, phenytoin,
+      rifampicin, isoniazid, and chronic alcohol &mdash; increase flux through the oxidative pathway and
+      lower the threshold for harm. Regular therapeutic paracetamol raises the INR in a patient on warfarin,
+      which surprises people every time.</p>
+
+    <div class="exam">
+      <span class="lab">For the First Part</span>
+      <p>The predictable asks: draw the metabolic pathways with approximate proportions and name the enzymes;
+        explain the formation and fate of NAPQI and the mechanism of acetylcysteine; explain why paracetamol
+        is not a non-steroidal anti-inflammatory; account for the effect of fasting, malnutrition and enzyme
+        induction on toxicity; and explain why the nomogram cannot be read before four hours.</p>
+      <p>The structure that collects marks: <strong>classify</strong> (analgesic and antipyretic, non-opioid,
+        not an NSAID), then <strong>pharmaceutics</strong> (oral, rectal and intravenous, and the 10 mg/mL
+        solution), then <strong>kinetics</strong>, then <strong>dynamics</strong>, then
+        <strong>toxicity</strong>, then <strong>the clinical turn</strong> &mdash; with values and units
+        wherever you can give them.</p>
+    </div>
+  </div>
+
+  <div class="pad" style="padding-top:6px">
+    <div class="challenge">
+      <h2>Challenge for you</h2>
+      <p class="ask">When did you last stop a regular paracetamol prescription?</p>
+      <p>Starting it is automatic. Stopping it is nobody's job, and that is how a child ends up on maximum
+        dosing for a fortnight while their oral intake quietly fails. Tell me whether your unit reviews it at
+        all, who does, and what would have to change &mdash; and, if you have one, the paracetamol error you
+        have seen or nearly made.</p>
+      <p><a class="btn" href="mailto:icuandyou@icloud.com?subject=Drugstore%20No.%202%20-%20paracetamol&body=Whether%20regular%20paracetamol%20gets%20reviewed%20where%20I%20work%2C%20and%20by%20whom%3A%0D%0A%0D%0A%0D%0AA%20paracetamol%20error%20I%20have%20seen%20or%20nearly%20made%3A%0D%0A%0D%0A%0D%0A---%0D%0A%0D%0AName%20%28optional%29%3A%0D%0A%0A---%0A%0AThinking%20about%20this%20ICU%20AND%20YOU%20post%20overall%20%E2%80%94%20was%20it%20useful%20to%20you%2C%20or%20would%20it%20be%20useful%20to%20others%3F%0A">Send your answer</a></p>
+      <p class="fallback">The button opens a reply straight to me. If your device blocks it, write to
+        <a href="mailto:icuandyou@icloud.com">icuandyou@icloud.com</a> instead.</p>
+    </div>
+  </div>
+
+  <footer>
+    <span class="firstpub">First published September 2026</span>
+    <p class="subline">Two emails a week &mdash; the Friday newsletter for all subscribers, and, for clinical subscribers,
+      the mind map and puzzles the moment they go up on Tuesday. Occasional announcements of new
+      features as they arrive. What went up and why it mattered, the best of your replies, and
+      original feature stories, news and views. <a href="https://joinlist.com/f/5adad2d6">Come and join us</a>.</p>
+    <a class="home" href="./">&larr; &nbsp;All of ICU AND YOU</a><br>
+    ICU AND YOU &nbsp;&#183;&nbsp; Drugstore No. 2 &nbsp;&#183;&nbsp; companion to Mind Map #34, The School-Age Child<br>
+    Educational use within the ICU education programme. <strong>Not a prescribing reference.</strong> Every
+    dose, concentration and threshold here must be verified against your own formulary and current local
+    guideline before use, and poisoning management follows your regional poisons centre and toxicology
+    guidance.<br>
+    <span class="mine">Views my own, not those of NSW Health or any other organisation. No identifiable
+    patients &mdash; scenarios are constructed or combined for teaching. <a href="about.html">More</a>.</span>
+  </footer>
+
+</div>
+<script data-goatcounter="https://icuandyou.goatcounter.com/count"
+        async src="//gc.zgo.at/count.js"></script>
+</body>
+</html>

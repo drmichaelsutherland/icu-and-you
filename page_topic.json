@@ -854,9 +854,28 @@
    "slug": "standing",
    "week": false,
    "standing": true
+  },
+  {
+   "file": "drugstore-02-paracetamol.html",
+   "series": "drugstore",
+   "colour": "mulberry",
+   "number": "2",
+   "title": "Paracetamol in children",
+   "topic": "The school-age child",
+   "slug": "school-age",
+   "week": true,
+   "pos": 7,
+   "badge": "Drugstore",
+   "link_label": "Open",
+   "blurb": "The drug everyone thinks they know. The doses and where they differ under 10 kg, the tenfold error that keeps recurring, why the child at risk is the one who has stopped eating, and the metabolism that is the whole of the toxicology."
   }
  ],
  "latest": [
+  {
+   "file": "drugstore-02-paracetamol.html",
+   "colour": "mulberry",
+   "label": "Drugstore 2 · Paracetamol"
+  },
   {
    "file": "procedures-04-arterial-lines.html",
    "colour": "amethyst",
@@ -876,11 +895,6 @@
    "file": "journal-club-99-mycoplasma.html",
    "colour": "sepia",
    "label": "Journal Club 99 · Mycoplasma"
-  },
-  {
-   "file": "podcast-58-sepsis-to-society.html",
-   "colour": "slate",
-   "label": "Podcast 58 · From sepsis to society"
   }
  ],
  "topten": [
