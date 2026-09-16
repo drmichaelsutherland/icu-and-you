@@ -106,7 +106,7 @@ SPEC = {
             "branches": [
                 {"title": "SELF-HARM AND INGESTION", "bullets": [
                     "At the top of this age band, ingestions stop being accidental",
-                    "Ask directly, privately, without the parent \u2014 and ask twice",
+                    "Ask directly and privately. Suspected abuse: ask little, refer early",
                     "Paracetamol is commonest, and forgiving if you catch it",
                     "Every deliberate ingestion needs a mental health assessment",
                 ]},
