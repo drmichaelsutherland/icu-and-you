@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en-AU">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ICU AND YOU · Bare Bones No. 1 — The school-age child</title>
+<meta name="description" content="Bare Bones No. 1: the school-age child in ten points and five minutes. No discussion, no padding — just the things worth hanging your hat on.">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="alternate icon" href="/favicon.ico" sizes="any">
+<link rel="apple-touch-icon" href="/icon-180.png">
+<meta name="theme-color" content="#1B2A33">
+<meta property="og:site_name" content="ICU AND YOU">
+<meta property="og:type" content="website">
+<meta property="og:title" content="ICU AND YOU · Bare Bones No. 1 — The school-age child">
+<meta property="og:description" content="Ten points. Five minutes. No padding.">
+<meta property="og:image" content="https://icuandyou.com/share-card.png">
+<meta name="twitter:card" content="summary_large_image">
+<style>
+  :root{ --bone:#8A8578; --boneink:#5E5A50; --bonetint:#F4F2EE;
+         --ink:#22242E; --muted:#6B6A74; --rule:#E2DED6; --paper:#FCFBF8 }
+  *{box-sizing:border-box}
+  body{margin:0;background:#F1EEE8;color:var(--ink);
+    font:400 17px/1.62 'Iowan Old Style','Palatino Linotype',Palatino,Georgia,serif}
+  .sheet{max-width:760px;margin:0 auto;background:var(--paper);min-height:100vh;
+    box-shadow:0 0 44px rgba(0,0,0,.07);padding-bottom:54px}
+  .top{padding:30px 40px 26px;border-bottom:3px solid var(--bone);position:relative}
+  .tophome,.topseries,.toptopic{font:500 12.5px 'Helvetica Neue',Arial,sans-serif;
+    color:var(--boneink);text-decoration:none;letter-spacing:.02em}
+  .tophome:hover,.topseries:hover,.toptopic:hover{text-decoration:underline}
+  .topseries{margin-left:18px} .toptopic{margin-left:18px}
+  .eyebrow{margin:18px 0 0;font:500 12px 'Helvetica Neue',Arial,sans-serif;
+    letter-spacing:.17em;text-transform:uppercase;color:var(--muted)}
+  .eyebrow a{color:var(--boneink);text-decoration:none}
+  .eyebrow a:hover{text-decoration:underline}
+  h1{margin:10px 0 4px;font-size:33px;font-weight:400;letter-spacing:-.01em}
+  .kicker{margin:0;color:var(--muted);font-style:italic;font-size:17px}
+  .pad{padding:26px 40px 0}
+
+  .about{margin:0 0 28px;padding:20px 24px;background:var(--bonetint);
+    border-left:4px solid var(--bone);border-radius:0 8px 8px 0}
+  .about .lab{display:block;font:600 11px 'Helvetica Neue',Arial,sans-serif;
+    letter-spacing:.18em;text-transform:uppercase;color:var(--boneink);margin:0 0 10px}
+  .about p{margin:0 0 9px;font:400 15.5px/1.6 'Helvetica Neue',Arial,sans-serif}
+  .about p:last-child{margin:0}
+
+  .clock{margin:0 0 20px;font:500 12.5px 'Helvetica Neue',Arial,sans-serif;
+    letter-spacing:.14em;text-transform:uppercase;color:var(--bone)}
+
+  ol.bones{list-style:none;margin:0 0 6px;padding:0;counter-reset:b}
+  ol.bones li{display:flex;gap:18px;align-items:flex-start;
+    padding:16px 0;border-bottom:1px solid var(--rule)}
+  ol.bones li:last-child{border-bottom:0}
+  .num{flex:0 0 36px;font:600 17px/1.5 'Helvetica Neue',Arial,sans-serif;
+    color:var(--bone);text-align:right;padding-top:2px}
+  .pt{flex:1 1 auto;font-size:17.5px;line-height:1.58}
+
+  .challenge{margin:30px 40px 0;padding:24px 28px;background:var(--bonetint);
+    border:1px solid #DCD7CC;border-radius:12px}
+  .challenge h2{margin:0 0 8px;font-size:12px;font-weight:600;letter-spacing:.2em;
+    text-transform:uppercase;color:var(--boneink);font-family:'Helvetica Neue',Arial,sans-serif}
+  .ask{margin:0 0 10px;font-size:21px;line-height:1.45}
+  .challenge p{margin:0 0 12px;font:400 15.5px/1.6 'Helvetica Neue',Arial,sans-serif}
+  .btn{display:inline-block;margin-top:4px;padding:11px 20px;background:var(--bone);
+    color:#fff;border-radius:7px;text-decoration:none;
+    font:600 14.5px 'Helvetica Neue',Arial,sans-serif}
+  .btn:hover{background:var(--boneink)}
+  .fallback{margin:12px 0 0;font-size:13.5px;color:var(--muted)}
+  .fallback a{color:var(--boneink)}
+
+  footer{margin:34px 40px 0;padding-top:18px;border-top:1px solid var(--rule);
+    font:400 13px/1.62 'Helvetica Neue',Arial,sans-serif;color:var(--muted)}
+  footer a{color:var(--boneink)}
+  .firstpub{display:block;margin-bottom:10px;font-style:italic}
+  .subline{margin:0 0 12px}
+  .home{display:inline-block;margin:6px 0 12px;font-weight:600}
+  .mine{display:block;margin-top:10px;font-size:12.5px}
+  @media (max-width:640px){
+    .top,.pad{padding-left:22px;padding-right:22px}
+    .challenge,footer{margin-left:22px;margin-right:22px}
+    h1{font-size:28px} .pt{font-size:16.5px}
+  }
+</style>
+</head>
+<body>
+<div class="sheet">
+
+  <header class="top">
+    <a class="tophome" href="./">&larr;&nbsp; Home</a>
+    <a class="topseries" href="./?s=barebones">All Bare Bones</a>
+    <a class="toptopic" href="./?t=school-age" title="Everything on The school-age child">All on this topic</a>
+    <p class="eyebrow"><a class="mast" href="./">ICU and You</a> &nbsp;·&nbsp;
+      <a href="./?s=barebones">Bare Bones</a> &nbsp;·&nbsp; Number 1</p>
+    <h1>The school-age child</h1>
+    <p class="kicker">Ten points. Five minutes. Nothing else.</p>
+  </header>
+
+  <div class="pad">
+    <div class="about">
+      <span class="lab">About Bare Bones</span>
+      <p><strong>Everything else on this site takes its time. This does not.</strong> Bare Bones is one topic,
+        stripped to the points that carry the most weight, with no discussion, no argument and no stories.</p>
+      <p>It is for the shift you are about to start, the term you have just been allocated, or the morning you
+        realise the topic is coming and you have read none of it. Five minutes, ten points, nothing
+        decorative.</p>
+      <p>It is deliberately not enough. If a point lands, the rest of the fortnight is where it is explained
+        &mdash; but a reader who only ever read these would still be better off than one who read
+        nothing.</p>
+    </div>
+
+    <p class="clock">Roughly six to twelve years &nbsp;·&nbsp; ten points</p>
+
+    <ol class="bones">
+      <li>
+        <span class="num">1</span>
+        <span class="pt">They are not little adults &mdash; except, increasingly, they are. The mantra expires somewhere around here and nobody tells you when.</span>
+      </li>
+      <li>
+        <span class="num">2</span>
+        <span class="pt">&ldquo;Fine&rdquo; is not a symptom. They can tell you what is wrong and have learned not to. Ask privately, without the parent, at least once.</span>
+      </li>
+      <li>
+        <span class="num">3</span>
+        <span class="pt">By about eight the cords, not the cricoid, are the narrowest point. Cuffed tubes throughout, and watch the pressure.</span>
+      </li>
+      <li>
+        <span class="num">4</span>
+        <span class="pt">Output is no longer rate-dependent. They compensate better than a toddler and therefore crash later and faster.</span>
+      </li>
+      <li>
+        <span class="num">5</span>
+        <span class="pt">Everything per kilogram until puberty. Fluid 10 mL/kg, not the adult litre. Weigh them.</span>
+      </li>
+      <li>
+        <span class="num">6</span>
+        <span class="pt">Asthma is the peak age for admission and for preventable death. A quiet chest in a tiring child is the emergency.</span>
+      </li>
+      <li>
+        <span class="num">7</span>
+        <span class="pt">Trauma is the leading cause of death. Handlebar injuries hide in a soft abdomen; a seatbelt mark means bowel, mesentery and spine until excluded.</span>
+      </li>
+      <li>
+        <span class="num">8</span>
+        <span class="pt">Ketoacidosis is often the first presentation of diabetes. Cerebral oedema is what kills. Follow the protocol exactly.</span>
+      </li>
+      <li>
+        <span class="num">9</span>
+        <span class="pt">Myocarditis arrives dressed as gastroenteritis. The fluid bolus that makes them worse is the diagnostic moment.</span>
+      </li>
+      <li>
+        <span class="num">10</span>
+        <span class="pt">Ingestions have stopped being accidental. Every deliberate one needs a mental health assessment, not just a level.</span>
+      </li>
+    </ol>
+  </div>
+
+  <div class="challenge">
+    <h2>Challenge for you</h2>
+    <p class="ask">What is your eleventh?</p>
+    <p>Ten is an arbitrary number and I have certainly left out something you would not have. Tell me the one
+      you would add, in a sentence, and what it has cost somebody when it was missed.</p>
+    <p>I will publish the best of them, and where a point clearly should have been in the ten, I will put it
+      there and say who sent it.</p>
+    <p><a class="btn" href="mailto:icuandyou@icloud.com?subject=Bare%20Bones%20No.%201%20-%20my%20eleventh%20point&body=My%20eleventh%20point%3A%0D%0A%0D%0A%0D%0AWhat%20it%20has%20cost%20when%20it%20was%20missed%3A%0D%0A%0D%0A%0D%0A---%0D%0A%0D%0AName%2C%20and%20whether%20you%20would%20like%20it%20credited%3A%0D%0A%0A---%0A%0AThinking%20about%20this%20ICU%20AND%20YOU%20post%20overall%20%E2%80%94%20was%20it%20useful%20to%20you%2C%20or%20would%20it%20be%20useful%20to%20others%3F%0A">Send me your eleventh</a></p>
+    <p class="fallback">The button opens a reply straight to me. If your device blocks it, write to
+      <a href="mailto:icuandyou@icloud.com">icuandyou@icloud.com</a> instead.</p>
+  </div>
+
+  <footer>
+    <span class="firstpub">First published September 2026</span>
+    <p class="subline">Two emails a week &mdash; the Friday newsletter for all subscribers, and, for clinical subscribers,
+      the mind map and puzzles the moment they go up on Tuesday. Occasional announcements of new
+      features as they arrive. What went up and why it mattered, the best of your replies, and
+      original feature stories, news and views. <a href="https://joinlist.com/f/5adad2d6">Come and join us</a>.</p>
+    <a class="home" href="./">&larr; &nbsp;All of ICU AND YOU</a><br>
+    ICU AND YOU &nbsp;&#183;&nbsp; Bare Bones No. 1 &nbsp;&#183;&nbsp; companion to Mind Map #34, The School-Age Child<br>
+    Educational use only. Not a clinical protocol &mdash; deliberately incomplete by design, and every dose,
+    threshold and rule here must be checked against current local guidance before use.<br>
+    <span class="mine">Views my own, not those of NSW Health or any other organisation. No identifiable
+    patients &mdash; scenarios are constructed or combined for teaching. <a href="about.html">More</a>.</span>
+  </footer>
+
+</div>
+<script data-goatcounter="https://icuandyou.goatcounter.com/count"
+        async src="//gc.zgo.at/count.js"></script>
+</body>
+</html>
