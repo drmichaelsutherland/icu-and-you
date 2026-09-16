@@ -915,9 +915,25 @@
    "badge": "Bare Bones",
    "link_label": "Five minutes",
    "blurb": "A new series. One topic stripped to the ten points that carry the most weight — no discussion, no argument, no stories. Five minutes, and deliberately not enough."
+  },
+  {
+   "file": "book-club-02-color-atlas-physiology.html",
+   "series": "bookclub",
+   "colour": "terracotta",
+   "number": "2",
+   "title": "Color Atlas of Physiology",
+   "topic": "Any time",
+   "slug": "standing",
+   "week": false,
+   "standing": true
   }
  ],
  "latest": [
+  {
+   "file": "book-club-02-color-atlas-physiology.html",
+   "colour": "terracotta",
+   "label": "Book Club 2 · Color Atlas of Physiology"
+  },
   {
    "file": "bare-bones-01-school-age.html",
    "colour": "bone",
@@ -937,11 +953,6 @@
    "file": "drugstore-02-paracetamol.html",
    "colour": "mulberry",
    "label": "Drugstore 2 · Paracetamol"
-  },
-  {
-   "file": "procedures-04-arterial-lines.html",
-   "colour": "amethyst",
-   "label": "Procedures 4 · Arterial lines"
   }
  ],
  "topten": [

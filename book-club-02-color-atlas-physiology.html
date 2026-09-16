@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en-AU">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ICU AND YOU · ICU Book Club No. 2 — Color Atlas of Physiology</title>
+<meta name="description" content="ICU Book Club No. 2: the Color Atlas of Physiology — one concept to a page, illustrations that are a genuine delight, and the preface that tells you what happened to Agamemnon Despopoulos.">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="alternate icon" href="/favicon.ico" sizes="any">
+<link rel="apple-touch-icon" href="/icon-180.png">
+<meta name="theme-color" content="#1B2A33">
+<meta property="og:site_name" content="ICU AND YOU">
+<meta property="og:type" content="website">
+<meta property="og:title" content="ICU AND YOU · ICU Book Club No. 2">
+<meta property="og:description" content="Mind maps before anybody called them that — and a preface you do not forget.">
+<meta property="og:image" content="https://icuandyou.com/share-card.png">
+<meta name="twitter:card" content="summary_large_image">
+<style>
+  :root{
+    --paper:#FCF9F7; --ink:#241C19; --muted:#6E6058; --rule:#E3D6D0;
+    --sepia:#A65E4E; --sepiatint:#F7EDEA;
+    --rust:#A8442A; --rusttint:#F9EDE7;
+    --sky:#2E6E8E; --skytint:#E7F1F6;
+  }
+  *{box-sizing:border-box}
+  body{margin:0;background:#EDE4E0;color:var(--ink);
+    font:400 17px/1.65 'Iowan Old Style','Palatino Linotype',Palatino,Georgia,serif;
+    -webkit-text-size-adjust:100%;}
+  .sheet{max-width:780px;margin:0 auto;background:var(--paper);
+    box-shadow:0 1px 40px rgba(36,31,25,.10);}
+
+  header.top{padding:42px 40px 28px;border-bottom:1px solid var(--rule)}
+  .toptopic{display:inline-block;margin:0 0 16px 9px;padding:7px 16px;border-radius:20px;
+    border:1px solid currentColor;opacity:.62;text-decoration:none;color:inherit;
+    font:600 11.5px 'Helvetica Neue',Arial,sans-serif;letter-spacing:.09em;
+    text-transform:uppercase;transition:opacity .12s ease}
+  .toptopic:hover{opacity:1}
+  .topseries{display:inline-block;margin:0 0 16px 9px;padding:7px 16px;border-radius:20px;
+    border:1px solid currentColor;opacity:.62;text-decoration:none;color:inherit;
+    font:600 11.5px 'Helvetica Neue',Arial,sans-serif;letter-spacing:.09em;
+    text-transform:uppercase;transition:opacity .12s ease}
+  .topseries:hover{opacity:1}
+  .tophome{display:inline-block;margin:0 0 16px;padding:7px 16px;border-radius:20px;
+    border:1px solid currentColor;opacity:.62;text-decoration:none;color:inherit;
+    font:600 11.5px 'Helvetica Neue',Arial,sans-serif;letter-spacing:.09em;
+    text-transform:uppercase;transition:opacity .12s ease}
+  .tophome:hover{opacity:1}
+  .eyebrow{font:500 11.5px/1 'Helvetica Neue',Arial,sans-serif;letter-spacing:.24em;
+    text-transform:uppercase;color:var(--sepia);margin:0 0 14px}
+  .eyebrow a.serlink{color:inherit;text-decoration:none;border-bottom:1px solid transparent}
+  .eyebrow a.serlink:hover{border-bottom-color:currentColor}
+  .eyebrow a.mast{color:inherit;text-decoration:none;border-bottom:1px solid transparent}
+  .eyebrow a.mast:hover{border-bottom-color:currentColor}
+  h1{font-size:31px;line-height:1.2;margin:0 0 10px;font-weight:400;letter-spacing:-.012em}
+  .kicker{color:var(--muted);margin:0;font-size:16.5px;font-style:italic}
+
+  .source{margin:0;padding:26px 40px;background:var(--sepiatint);border-bottom:1px solid var(--rule)}
+  .cite{margin:0 0 16px;font-size:16px;line-height:1.6}
+  .cite b{font-weight:600}
+  .meta{display:flex;flex-wrap:wrap;gap:5px 22px;margin:0 0 16px;
+    font:400 13.5px 'Helvetica Neue',Arial,sans-serif;color:var(--muted)}
+  .meta b{color:var(--ink);font-weight:600}
+  a.read{display:inline-block;padding:14px 28px;border-radius:30px;text-decoration:none;
+    background:var(--sepia);color:#FAF6F0;
+    font:600 15px 'Helvetica Neue',Arial,sans-serif;letter-spacing:.03em}
+  a.read:hover{background:#523821}
+  .srcnote{font:400 13.5px 'Helvetica Neue',Arial,sans-serif;color:var(--muted);margin:14px 0 0}
+
+  .pad{padding:32px 40px}
+  p{margin:0 0 17px}
+  h2.sub{font:600 12px 'Helvetica Neue',Arial,sans-serif;letter-spacing:.2em;
+    text-transform:uppercase;color:var(--muted);margin:0 0 16px;
+    padding-bottom:8px;border-bottom:1px solid var(--rule)}
+  b.term{font-weight:600;color:var(--sepia)}
+
+  .three{display:flex;gap:13px;flex-wrap:wrap;margin:0 0 20px}
+  .col{flex:1 1 200px;background:#fff;border:1px solid var(--rule);border-radius:9px;padding:16px 18px}
+  .col.mid{border-top:4px solid var(--sky);background:var(--skytint)}
+  .col .age{font:600 12px 'Helvetica Neue',Arial,sans-serif;letter-spacing:.1em;
+    text-transform:uppercase;color:var(--muted);margin:0 0 7px}
+  .col.mid .age{color:var(--sky)}
+  .col p{margin:0;font-size:15px;line-height:1.5;color:#3A342A}
+
+  .caution{margin:0;padding:20px 24px;background:var(--rusttint);
+    border-left:4px solid var(--rust);border-radius:0 8px 8px 0}
+  .caution .lab{display:block;font:600 11px 'Helvetica Neue',Arial,sans-serif;
+    letter-spacing:.18em;text-transform:uppercase;color:var(--rust);margin:0 0 9px}
+  .caution p:last-child{margin:0}
+
+  .challenge{margin:0;padding:28px 32px;background:var(--rusttint);border-left:5px solid var(--rust)}
+  .challenge h2{font:600 12px 'Helvetica Neue',Arial,sans-serif;letter-spacing:.2em;
+    text-transform:uppercase;color:var(--rust);margin:0 0 13px}
+  .ask{font-size:19.5px;line-height:1.5;margin:0 0 8px}
+  .lead{font-size:15px;color:var(--muted);margin:0 0 17px;line-height:1.55}
+  .chips{display:flex;flex-wrap:wrap;gap:10px;margin:0 0 16px}
+  a.chip{text-decoration:none;padding:12px 18px;border-radius:9px;
+    background:#fff;border:1px solid #E0C4B8;color:#7C3520;
+    font:400 15px 'Iowan Old Style',Palatino,Georgia,serif;transition:transform .08s ease}
+  a.chip:hover{transform:translateY(-1px);background:#FDF4EF}
+  .fallback{font:400 13.5px 'Helvetica Neue',Arial,sans-serif;color:var(--muted);margin:0}
+  .fallback a{color:var(--rust)}
+  .subline{margin:0 0 14px;padding:0 0 13px;border-bottom:1px solid rgba(0,0,0,.09);
+    font:400 14.5px/1.55 'Iowan Old Style','Palatino Linotype',Palatino,Georgia,serif;
+    max-width:56ch;margin-left:auto;margin-right:auto}
+  .subline a{font-weight:500;border-bottom:1px solid currentColor;
+    text-decoration:none;color:inherit}
+  .firstpub{display:block;margin:0 0 10px;padding-bottom:9px;
+    border-bottom:1px solid currentColor;border-color:rgba(0,0,0,.09);
+    font:400 12px 'Helvetica Neue',Arial,sans-serif;letter-spacing:.06em;opacity:.72}
+
+  footer{padding:24px 40px 42px;border-top:1px solid var(--rule);
+    font:400 13px 'Helvetica Neue',Arial,sans-serif;color:var(--muted);text-align:center;line-height:1.7}
+  .home{display:inline-block;margin:0 0 14px;padding:8px 18px;border-radius:20px;
+    border:1px solid var(--rule);background:#F2EEE6;color:var(--sepia);text-decoration:none;
+    font:600 12.5px 'Helvetica Neue',Arial,sans-serif;letter-spacing:.05em}
+  .home:hover{background:var(--sepia);border-color:var(--sepia);color:#FAF6F0}
+
+  @media (max-width:620px){
+    header.top,.source,.pad,footer{padding-left:20px;padding-right:20px}
+    .challenge{padding:22px 20px}
+    h1{font-size:25px} body{font-size:16.5px} .ask{font-size:18px}
+  }
+  @media print{ body{background:#fff} .sheet{box-shadow:none;max-width:none} }
+
+  .agree{display:flex;gap:13px;flex-wrap:wrap;margin:0 0 22px}
+  .ag{flex:1 1 150px;background:#fff;border:1px solid var(--rule);border-radius:9px;
+    padding:16px 18px;text-align:center}
+  .ag .big{font-size:30px;line-height:1.1;color:var(--sepia);margin:0 0 4px}
+  .ag .lab2{font:400 13.5px 'Helvetica Neue',Arial,sans-serif;color:var(--muted);
+    line-height:1.45;margin:0}
+  .gap{margin:0 0 20px;padding:20px 24px;background:#F3EEE3;
+    border-left:4px solid var(--sepia);border-radius:0 8px 8px 0}
+  .gap .lab{color:var(--sepia)}
+  .gap p:last-child{margin:0}
+
+  .preamble{margin:0 0 26px;padding:22px 26px;background:#F4EFEA;
+    border-left:4px solid var(--sepia);border-radius:0 8px 8px 0}
+  .preamble .lab{display:block;font:600 11px 'Helvetica Neue',Arial,sans-serif;
+    letter-spacing:.18em;text-transform:uppercase;color:var(--sepia);margin:0 0 10px}
+  .preamble p:last-child{margin:0}
+  .pull{margin:26px 0;padding:0 0 0 22px;border-left:3px solid var(--sepia);
+    font-size:20px;line-height:1.45;font-style:italic;color:#4A3A34}
+  .mine{display:inline-block;margin:9px 0 0;opacity:.78;font-size:.94em}
+</style>
+</head>
+<body>
+<div class="sheet">
+
+  <header class="top">
+    <a class="tophome" href="./">&larr;&nbsp; Home</a>
+    <a class="topseries" href="./?s=bookclub">All book club</a>
+    <p class="eyebrow"><a class="mast" href="./">ICU and You</a> &nbsp;·&nbsp;
+      <a class="serlink" href="./?s=bookclub">ICU Book Club</a> &nbsp;·&nbsp; Number 2</p>
+    <h1>Color Atlas of Physiology</h1>
+    <p class="kicker">Silbernagl and Despopoulos &mdash; mind maps before anybody called them that, and a preface you do not forget</p>
+  </header>
+
+  <div class="pad">
+    <div class="preamble">
+      <span class="lab">About this series</span>
+      <p>A new column, for books that have made a difference to how we teach, train or practise in intensive
+        care. Not textbooks, or not only textbooks &mdash; anything that changed how somebody thinks about the
+        work. Some will be old. Some will not be medicine at all.</p>
+      <p>I am starting with mine, but the point of the series is what other people have to offer, and there is
+        an invitation at the foot of the page. Send me the book that did it for you.</p>
+    </div>
+
+    <div class="source">
+    <p class="cite">Stefan Silbernagl and Agamemnon Despopoulos. <b>Color Atlas of Physiology.</b> Thieme,
+      Stuttgart and New York. Seventh English edition, 2015. First published in German in 1979.</p>
+  </div>
+
+    <p>I found it the way you used to find books: browsing a medical bookshop as a resident, with no
+      particular plan, and pulling something off a shelf because the spine looked interesting. I have bought
+      a great many books more systematically since and remember almost none of them as well.</p>
+
+    <p>It is a small book, and the format is the whole idea. <strong>One concept, one double page.</strong>
+      Text on the left, and on the right a full-colour plate that carries the argument rather than decorating
+      it. Turn to countercurrent multiplication and there it is, entire, in front of you. Turn to the
+      cardiac cycle and the same. Nothing is continued overleaf.</p>
+
+    <div class="pull">These are mind maps, drawn thirty years before anybody thought to call them that.</div>
+
+    <p>That is not a loose comparison. The plates do exactly what a mind map does &mdash; a central idea, its
+      branches laid out spatially, the relationships carried by position and colour rather than by prose
+      &mdash; and they were doing it in 1979, long before the technique had a name or a following. When I
+      build the mind maps for this site I am, consciously, borrowing from a book I bought as a resident.</p>
+
+    <p>And the illustrations are a genuine delight. Not merely clear: handsome. Somebody cared what they
+      looked like, in a field where the usual ambition is to be unambiguous and stop there.</p>
+
+    <h2 class="sub">Who it is for</h2>
+
+    <p>Nearly everybody, which is an unusual thing to be able to say about a physiology text.</p>
+
+    <p>It suits <strong>structured thinkers</strong>, and those of us who would like to be. It suits people
+      who are <strong>short of time</strong>, which is all of us, because a double page is a complete unit
+      you can finish. It suits <strong>visual thinkers</strong> particularly well. And it works for a medical
+      student meeting the material, a fellowship candidate revising it under pressure, and an established
+      clinician who wants a refresher without committing to six hundred pages of Guyton.</p>
+
+    <p>It also suits the reader who simply likes physiology, which I make no apology for being.</p>
+
+    <h2 class="sub">The preface</h2>
+
+    <p>Now the part I did not expect, and the reason I still think about this book.</p>
+
+    <p>The name on the cover is <b>Agamemnon Despopoulos</b>, which is not a name you meet often &mdash; I
+      can think of one other, and he is three thousand years old. Despopoulos was born in New York in 1924,
+      was professor of physiology at the University of New Mexico until 1971, and then went to Basel as a
+      scientific adviser to CIBA-GEIGY.</p>
+
+    <p>The preface to the third edition explains, quietly and in a few sentences, that the first German
+      edition was already at the printer when, on <strong>2 November 1979</strong>, Despopoulos and his wife
+      Sarah Jones-Despopoulos sailed from Bizerta in Tunisia, intending to cross the Atlantic. Nothing was
+      ever heard from them again. Silbernagl writes that hope had to be given up, thanks his co-author for
+      the creative enthusiasm without which the book would not exist, says plainly that continuing it alone
+      was not easy &mdash; and signs off from W&uuml;rzburg.</p>
+
+    <p>Beside that paragraph is a photograph of Despopoulos at the wheel of the boat in an orange
+      foul-weather jacket, grinning broadly. It is the least funereal image imaginable, which is what makes
+      it land.</p>
+
+    <div class="pull">A physiologist sailed into the Atlantic and did not come back, and the book he was
+      halfway through went on without him for seven editions.</div>
+
+    <p>I do not want to make more of that than it will bear. But there is something in it about what we leave
+      and how little control we have over which part of us lasts. He was fifty-five. The book has now taught
+      physiology to two generations of doctors who have no idea what happened to the man whose name is on
+      it.</p>
+
+    <h2 class="sub">Worth knowing before you buy it</h2>
+
+    <p>The seventh English edition is from 2015, so the newest material is a decade old and the recent
+      editions are Silbernagl's work. For core physiology that matters very little &mdash; countercurrent
+      multiplication has not changed &mdash; but it is not where you go for anything current.</p>
+
+    <p>It is also not a reference and not a textbook. It will not teach you a subject from nothing and it has
+      no room for argument or uncertainty; the format forbids both. Use it for structure, for revision, and
+      for the pleasure of seeing something complicated made to fit on one page.</p>
+
+    <p>Which it does better than anything else I own.</p>
+  </div>
+
+  <div class="pad" style="padding-top:6px">
+    <div class="challenge">
+      <h2>Challenge for you</h2>
+      <p class="ask">Which book did you find by accident, and keep?</p>
+      <p class="lead">Not the one you were told to buy &mdash; the one you pulled off a shelf, or were
+        handed by somebody, or found in a hospital library at two in the morning, and have never got rid
+        of. Tell me what it was and why it stuck.</p>
+      <p class="lead">And the standing invitation: if there is a book that made a difference to you, in
+        medicine or well outside it, send it. I will read it and review it here, or publish your own review
+        with your name on it.</p>
+      <p><a class="btn" href="mailto:icuandyou@icloud.com?subject=ICU%20Book%20Club%20-%20the%20book%20I%20found%20by%20accident&body=The%20book%3A%0D%0A%0D%0A%0D%0AHow%20I%20came%20across%20it%2C%20and%20why%20I%20kept%20it%3A%0D%0A%0D%0A%0D%0A---%0D%0A%0D%0AName%2C%20and%20whether%20you%20would%20like%20it%20credited%3A%0D%0A%0A---%0A%0AThinking%20about%20this%20ICU%20AND%20YOU%20post%20overall%20%E2%80%94%20was%20it%20useful%20to%20you%2C%20or%20would%20it%20be%20useful%20to%20others%3F%0A">Send me a book</a></p>
+      <p class="fallback">The button opens a reply straight to me. If your device blocks it, write to
+        <a href="mailto:icuandyou@icloud.com">icuandyou@icloud.com</a> instead.</p>
+    </div>
+  </div>
+
+  <footer>
+    <span class="firstpub">First published September 2026</span>
+    <p class="subline">Two emails a week &mdash; the Friday newsletter for all subscribers, and, for clinical subscribers,
+      the mind map and puzzles the moment they go up on Tuesday. Occasional announcements of new
+      features as they arrive. What went up and why it mattered, the best of your replies, and
+      original feature stories, news and views. <a href="https://joinlist.com/f/5adad2d6">Come and join us</a>.</p>
+    <a class="home" href="./">&larr; &nbsp;All of ICU AND YOU</a><br>
+    ICU AND YOU &nbsp;&#183;&nbsp; ICU Book Club No. 2<br>
+    A personal review, written independently. Nothing of the book is reproduced here.
+    Educational use only.
+  <br>
+    <span class="mine">Views my own, not those of NSW Health or any other organisation. No identifiable patients — scenarios are constructed or combined for teaching. <a href="about.html">More</a>.</span>
+  </footer>
+
+</div>
+<script data-goatcounter="https://icuandyou.goatcounter.com/count"
+        async src="//gc.zgo.at/count.js"></script>
+</body>
+</html>
