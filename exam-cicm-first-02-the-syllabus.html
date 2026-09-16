@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en-AU">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ICU AND YOU · CICM First Part No. 2 — The syllabus, in one sitting</title>
+<meta name="description" content="CICM First Part No. 2: the 2025 syllabus condensed — 256 objectives across 17 sections, where the weight actually sits, the eleven verbs that set the depth, and what the three pharmacology levels mean for how you study.">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="alternate icon" href="/favicon.ico" sizes="any">
+<link rel="apple-touch-icon" href="/icon-180.png">
+<meta name="theme-color" content="#1B2A33">
+<meta property="og:site_name" content="ICU AND YOU">
+<meta property="og:type" content="website">
+<meta property="og:title" content="ICU AND YOU · CICM First Part No. 2 — The syllabus, in one sitting">
+<meta property="og:description" content="Thirty-eight pages nobody finishes, in one sitting.">
+<meta property="og:image" content="https://icuandyou.com/share-card.png">
+<meta name="twitter:card" content="summary_large_image">
+<style>
+  :root{
+    --paper:#FBF9FC; --ink:#241F2B; --muted:#6B6377; --rule:#DFD6E6;
+    --amethyst:#1D4D3F; --amethysttint:#F1EBF7;
+    --rust:#A8442A; --rusttint:#F9EDE7;
+    --moss:#4C6B4A; --mosstint:#EAF1E9;
+    --gold:#A8721E; --goldtint:#FBF1DC;
+  }
+  *{box-sizing:border-box}
+  body{margin:0;background:#EDE8F1;color:var(--ink);
+    font:400 17px/1.64 'Iowan Old Style','Palatino Linotype',Palatino,Georgia,serif;
+    -webkit-text-size-adjust:100%;}
+  .sheet{max-width:820px;margin:0 auto;background:var(--paper);
+    box-shadow:0 1px 40px rgba(36,31,43,.10);}
+
+  header.top{padding:42px 40px 28px;border-bottom:2px solid var(--amethyst)}
+  .tophome,.topseries,.toptopic{display:inline-block;margin:0 0 16px;padding:7px 16px;
+    border-radius:20px;border:1px solid currentColor;opacity:.62;text-decoration:none;
+    color:inherit;font:600 11.5px 'Helvetica Neue',Arial,sans-serif;letter-spacing:.09em;
+    text-transform:uppercase;transition:opacity .12s ease}
+  .topseries,.toptopic{margin-left:9px}
+  .tophome:hover,.topseries:hover,.toptopic:hover{opacity:1}
+  .eyebrow a.mast,.eyebrow a.serlink{color:inherit;text-decoration:none;
+    border-bottom:1px solid transparent}
+  .eyebrow a.mast:hover,.eyebrow a.serlink:hover{border-bottom-color:currentColor}
+  .eyebrow{font:500 11.5px/1 'Helvetica Neue',Arial,sans-serif;letter-spacing:.24em;
+    text-transform:uppercase;color:var(--muted);margin:0 0 13px}
+  h1{font-size:32px;line-height:1.2;margin:0 0 9px;font-weight:400;letter-spacing:-.012em}
+  .kicker{color:var(--muted);margin:0;font-size:16.5px;font-style:italic}
+
+  .askedby{margin:0;padding:18px 40px;background:var(--amethysttint);
+    border-bottom:1px solid var(--rule);font-size:16px;color:#4A3D57}
+  .askedby a{color:var(--amethyst)}
+
+  .pad{padding:32px 40px}
+  p{margin:0 0 16px}
+  .lede{font-size:19.5px;line-height:1.55;margin:0 0 20px}
+
+  h2.sub{font:600 12px 'Helvetica Neue',Arial,sans-serif;letter-spacing:.2em;
+    text-transform:uppercase;color:var(--amethyst);margin:32px 0 15px;
+    padding-bottom:8px;border-bottom:1px solid var(--rule)}
+
+  ul.pts{list-style:none;margin:0 0 18px;padding:0}
+  ul.pts li{display:flex;gap:13px;padding:11px 0;border-bottom:1px solid #EFE9F4;
+    font-size:16.5px;line-height:1.5}
+  ul.pts li:last-child{border-bottom:0}
+  ul.pts b{flex:0 0 182px;font:600 14.5px 'Helvetica Neue',Arial,sans-serif;
+    color:var(--amethyst);line-height:1.4}
+
+  ol.steps{list-style:none;counter-reset:s;margin:0 0 18px;padding:0}
+  ol.steps li{counter-increment:s;position:relative;padding:12px 0 12px 44px;
+    border-bottom:1px solid #EFE9F4;font-size:16.5px;line-height:1.55}
+  ol.steps li:last-child{border-bottom:0}
+  ol.steps li::before{content:counter(s);position:absolute;left:0;top:12px;
+    width:28px;height:28px;border-radius:50%;background:var(--amethyst);color:#F8F5FB;
+    font:600 13px 'Helvetica Neue',Arial,sans-serif;display:flex;align-items:center;
+    justify-content:center}
+
+  .box{margin:0 0 18px;padding:20px 24px;border-radius:0 8px 8px 0}
+  .box .lab{display:block;font:600 11px 'Helvetica Neue',Arial,sans-serif;
+    letter-spacing:.18em;text-transform:uppercase;margin:0 0 9px}
+  .box p:last-child{margin:0}
+  .red{background:var(--rusttint);border-left:4px solid var(--rust)} .red .lab{color:var(--rust)}
+  .grn{background:var(--mosstint);border-left:4px solid var(--moss)} .grn .lab{color:var(--moss)}
+  .amb{background:var(--goldtint);border-left:4px solid var(--gold)} .amb .lab{color:var(--gold)}
+
+  .sites{display:flex;gap:13px;flex-wrap:wrap;margin:0 0 20px}
+  .site{flex:1 1 226px;background:#fff;border:1px solid var(--rule);border-radius:9px;
+    padding:16px 18px;border-top:4px solid var(--amethyst)}
+  .site h3{margin:0 0 7px;font:600 13px 'Helvetica Neue',Arial,sans-serif;
+    letter-spacing:.07em;text-transform:uppercase;color:var(--amethyst)}
+  .site p{margin:0;font-size:15.5px;line-height:1.5;color:#3B3345}
+
+  .challenge{margin:0;padding:28px 32px;background:var(--rusttint);border-left:5px solid var(--rust)}
+  .challenge h2{font:600 12px 'Helvetica Neue',Arial,sans-serif;letter-spacing:.2em;
+    text-transform:uppercase;color:var(--rust);margin:0 0 13px}
+  .ask{font-size:19.5px;line-height:1.5;margin:0 0 12px;font-style:italic}
+  .btn{display:inline-block;margin:6px 0 12px;padding:15px 30px;background:var(--rust);
+    color:#FDF8F5;text-decoration:none;border-radius:30px;font-style:normal;
+    font:600 15px 'Helvetica Neue',Arial,sans-serif;letter-spacing:.03em}
+  .btn:hover{background:#8A3620}
+  .fallback{font:400 13.5px 'Helvetica Neue',Arial,sans-serif;color:var(--muted);margin:0}
+  .fallback a{color:var(--rust)}
+
+  footer{padding:24px 40px 42px;border-top:1px solid var(--rule);
+    font:400 13px 'Helvetica Neue',Arial,sans-serif;color:var(--muted);text-align:center;line-height:1.7}
+  .subline{margin:0 0 14px;padding:0 0 13px;border-bottom:1px solid rgba(0,0,0,.09);
+    font:400 14.5px/1.55 'Iowan Old Style','Palatino Linotype',Palatino,Georgia,serif;
+    max-width:56ch;margin-left:auto;margin-right:auto}
+  .subline a{font-weight:500;border-bottom:1px solid currentColor;
+    text-decoration:none;color:inherit}
+  .firstpub{display:block;margin:0 0 10px;padding-bottom:9px;
+    border-bottom:1px solid rgba(0,0,0,.09);
+    font:400 12px 'Helvetica Neue',Arial,sans-serif;letter-spacing:.06em;opacity:.72}
+  .home{display:inline-block;margin:0 0 14px;padding:8px 18px;border-radius:20px;
+    border:1px solid var(--rule);background:#F3EFF7;color:var(--amethyst);text-decoration:none;
+    font:600 12.5px 'Helvetica Neue',Arial,sans-serif;letter-spacing:.05em}
+  .home:hover{background:var(--amethyst);border-color:var(--amethyst);color:#F8F5FB}
+
+  @media (max-width:640px){
+    header.top,.pad,.askedby,footer{padding-left:20px;padding-right:20px}
+    .challenge{padding:22px 20px}
+    h1{font-size:26px} body{font-size:16.5px} .ask{font-size:18px}
+    ul.pts li{flex-direction:column;gap:3px} ul.pts b{flex:none}
+  }
+  @media print{ body{background:#fff} .sheet{box-shadow:none;max-width:none} }
+  .mine{display:inline-block;margin:9px 0 0;opacity:.78;font-size:.94em}
+
+  .caution{margin:0 0 20px;padding:18px 22px;background:#FBF2EE;border-left:4px solid #A8442A;
+    border-radius:0 8px 8px 0}
+  .caution .lab{display:block;font:600 11px 'Helvetica Neue',Arial,sans-serif;letter-spacing:.18em;
+    text-transform:uppercase;color:#A8442A;margin:0 0 8px}
+  .caution p:last-child{margin:0}
+
+  .tbl{width:100%;border-collapse:collapse;margin:0 0 22px;
+    font:400 14.5px 'Helvetica Neue',Arial,sans-serif}
+  .tbl th{text-align:left;padding:8px 9px;border-bottom:2px solid #1D4D3F;
+    font:600 11px 'Helvetica Neue',Arial,sans-serif;letter-spacing:.1em;text-transform:uppercase;
+    color:#123B30}
+  .tbl td{padding:8px 9px;border-bottom:1px solid #E4EBE7;vertical-align:top;line-height:1.45}
+  .tbl tr:last-child td{border-bottom:0}
+  .tbl td.n,.tbl th.n{text-align:right;font-variant-numeric:tabular-nums}
+  .tbl tr.big td{background:#EFF5F2;font-weight:600}
+  .tbl tr.tot td{border-top:2px solid #1D4D3F;font-weight:600}
+  .verbs{margin:0 0 22px;padding:0;list-style:none;
+    display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:10px}
+  .verbs li{padding:11px 14px;background:#F3F7F5;border-radius:7px;
+    font:400 14.5px/1.5 'Helvetica Neue',Arial,sans-serif}
+  .verbs b{display:block;color:#123B30;font-size:15px;margin-bottom:2px}
+</style>
+</head>
+<body>
+<div class="sheet">
+
+  <header class="top">
+    <a class="tophome" href="./">&larr;&nbsp; Home</a>
+    <a class="topseries" href="./?s=cicm-first">All CICM First Part</a>
+    <p class="eyebrow"><a class="mast" href="./">ICU and You</a> &nbsp;·&nbsp;
+      Exam focus &nbsp;·&nbsp; <a class="serlink" href="./?s=cicm-first">CICM First Part</a>
+      &nbsp;·&nbsp; Number 2</p>
+    <h1>The syllabus, in one sitting</h1>
+    <p class="kicker">Thirty-eight pages nobody finishes &mdash; what is in it, and where the marks are</p>
+  </header>
+
+  <div class="pad">
+    <p class="lede">The syllabus is the single most important document in your preparation and the one most
+      candidates never read to the end. This is a map of it. It is not a substitute for it.</p>
+
+    <p>The fifth edition was published in 2025 and is current. Every question in the examination is derived
+      from it. The College says so in the opening pages, and says the objectives set the <em>minimum</em>
+      level of understanding for each topic.</p>
+
+    <div class="box grn">
+      <span class="lab">What the best candidates actually do with it</span>
+      <p>They do not read it once. They keep it open beside the study plan and use it as a checklist,
+        because it is the only document that tells you, in the College's own words, what you are expected
+        to be able to do with each topic &mdash; not just what to know about it.</p>
+      <p>The verbs are the whole game, and almost nobody notices them. <span class="verdict">A topic marked
+        &ldquo;outline&rdquo; and a topic marked &ldquo;explain&rdquo; are different amounts of work, and
+        the difference is written down.</span></p>
+    </div>
+
+    <h2 class="sub">The shape of it, in numbers</h2>
+
+    <p>I counted, because as far as I know nobody publishes this.</p>
+
+    <ul class="pts">
+      <li><b>17 sections, A to Q</b><span>51 named subsections between them.</span></li>
+      <li><b>256 numbered learning objectives</b><span>That is the real size of the task. Many carry
+        lettered sub-parts underneath, so the true count of things you must be able to do is
+        higher.</span></li>
+      <li><b>13 pharmacopeias</b><span>Roughly 206 drug entries in total, tiered across three levels of
+        required depth.</span></li>
+      <li><b>11 verbs</b><span>Defined in a glossary at the front, and used deliberately throughout. They
+        set the depth for every objective in the document.</span></li>
+      <li><b>4 contexts, applied to everything</b><span>The multiplier most candidates miss. See
+        below.</span></li>
+    </ul>
+
+    <h2 class="sub">Where the weight sits</h2>
+
+    <p>Objectives are not evenly distributed, and the College tells you as much in the foreword: respiratory
+      and cardiovascular were given subheadings in this edition precisely because more depth is expected in
+      those two.</p>
+
+    <table class="tbl">
+      <tr><th>Section</th><th class="n">Objectives</th><th class="n">Subsections</th><th>Note</th></tr>
+      <tr class="big"><td><b>C</b>&nbsp; Respiratory system</td><td class="n">47</td><td class="n">8</td><td>Flagged by the College: given subheadings because more depth is expected</td></tr>
+      <tr class="big"><td><b>D</b>&nbsp; Cardiovascular system</td><td class="n">38</td><td class="n">6</td><td>Flagged by the College: same</td></tr>
+      <tr class="big"><td><b>B</b>&nbsp; Concepts in pharmacology</td><td class="n">28</td><td class="n">3</td><td>Kinetics, dynamics, variability &mdash; underpins every drug question</td></tr>
+      <tr><td><b>H</b>&nbsp; Nervous system, autonomic and pain</td><td class="n">27</td><td class="n">4</td><td></td></tr>
+      <tr><td><b>J</b>&nbsp; Gastrointestinal system</td><td class="n">18</td><td class="n">4</td><td>Now includes liver physiology</td></tr>
+      <tr><td><b>N</b>&nbsp; Haematological and immunological</td><td class="n">15</td><td class="n">4</td><td>Now includes immunology</td></tr>
+      <tr><td><b>E</b>&nbsp; Renal system</td><td class="n">11</td><td class="n">3</td><td></td></tr>
+      <tr><td><b>L</b>&nbsp; Endocrine system</td><td class="n">11</td><td class="n">2</td><td></td></tr>
+      <tr><td><b>P</b>&nbsp; Obstetrics and neonatal</td><td class="n">11</td><td class="n">3</td><td></td></tr>
+      <tr><td><b>K</b>&nbsp; Nutrition and metabolism</td><td class="n">9</td><td class="n">3</td><td></td></tr>
+      <tr><td><b>F</b>&nbsp; Body fluids and electrolytes</td><td class="n">8</td><td class="n">2</td><td></td></tr>
+      <tr><td><b>I</b>&nbsp; Musculoskeletal system</td><td class="n">8</td><td class="n">3</td><td></td></tr>
+      <tr><td><b>O</b>&nbsp; Microbiology</td><td class="n">8</td><td class="n">2</td><td></td></tr>
+      <tr><td><b>A</b>&nbsp; Cellular physiology</td><td class="n">6</td><td class="n">&ndash;</td><td></td></tr>
+      <tr><td><b>G</b>&nbsp; Acid&ndash;base</td><td class="n">5</td><td class="n">2</td><td>Small section, disproportionate exam presence</td></tr>
+      <tr><td><b>M</b>&nbsp; Thermoregulation</td><td class="n">5</td><td class="n">2</td><td></td></tr>
+      <tr><td><b>Q</b>&nbsp; Antidotes and decontamination</td><td class="n">1</td><td class="n">&ndash;</td><td>One objective, a whole pharmacopeia</td></tr>
+      <tr class="tot"><td>Total</td><td class="n">256</td><td class="n">51</td><td></td></tr>
+    </table>
+
+    <p><b class="term">Read that table as a time allocation, not a ranking of importance.</b> Respiratory and
+      cardiovascular together are a third of the objectives. Concepts in pharmacology is third largest and is
+      the section that makes every drug question answerable, which is a better return than memorising one
+      more pharmacopeia entry. Acid&ndash;base has five objectives and turns up far more often than five
+      objectives would suggest, because it integrates with respiratory and renal.</p>
+
+    <h2 class="sub">The four contexts &mdash; the thing that multiplies everything</h2>
+
+    <div class="box amb">
+      <span class="lab">This applies to every section and every drug</span>
+      <p>The syllabus states that for <em>all</em> sections a thorough understanding of normal physiology and
+        pharmacology is expected, together with how it varies in:</p>
+      <p><strong>1. Extremes of age</strong> &mdash; neonates, paediatrics and the elderly.<br>
+         <strong>2. Extremes of body size</strong> &mdash; obesity.<br>
+         <strong>3. Pregnancy</strong> &mdash; including parturition, and the foetus.<br>
+         <strong>4. Critical illness</strong> &mdash; sepsis, and cardiac, respiratory, liver and renal
+         failure.</p>
+      <p>The same four are repeated in the pharmacology notes, so they apply to every drug as well.
+        <span class="verdict">This is a syllabus-wide multiplier stated once, on page five, and then never
+        repeated in the individual objectives.</span> If you learn a topic only in the healthy
+        seventy-kilogram adult, you have learned a fifth of it.</p>
+    </div>
+
+    <h2 class="sub">The eleven verbs</h2>
+
+    <p>These define both the depth required and the structure your answer should take. Learn them the way you
+      would learn a drug.</p>
+
+    <ul class="verbs">
+      <li><b>Calculate</b>Work it out, and show the stages of the working.</li>
+      <li><b>Classify</b>Divide into categories and arrange by similarity.</li>
+      <li><b>Compare and contrast</b>Similarities <em>and</em> differences, and the contexts they arise in.</li>
+      <li><b>Define</b>The precise meaning. Nothing else.</li>
+      <li><b>Describe</b>A detailed account &mdash; characteristics and features.</li>
+      <li><b>Explain</b>Relate cause and effect. Give the why or the how.</li>
+      <li><b>Interpret</b>Give the meaning or significance in the context provided.</li>
+      <li><b>List</b>Itemised and concise. Not prose.</li>
+      <li><b>Outline</b>The main points only, without the minor detail.</li>
+      <li><b>Relate</b>Show the connection between things, and how far they affect each other.</li>
+      <li><b>Understand</b>Comprehend, examine the impact, and apply it to a new situation.</li>
+    </ul>
+
+    <p>Two are worth dwelling on. <b class="term">Outline</b> explicitly excludes the minor detail &mdash; a
+      candidate who writes everything they know in response to &ldquo;outline&rdquo; has misread the question
+      and spent time they needed elsewhere. And <b class="term">understand</b> requires you to apply the
+      knowledge to a new situation, which no amount of recall will produce.</p>
+
+    <h2 class="sub">The three pharmacology levels</h2>
+
+    <p>Every drug and drug class in the pharmacopeias is tagged Level 1, 2 or 3. This is the most
+      actionable thing in the document and it is on page seven.</p>
+
+    <table class="tbl">
+      <tr><th>Level</th><th>What is required</th><th class="n">Entries</th></tr>
+      <tr><td><b>Level 1</b><br>the deep ones</td>
+        <td>Class, indications and dose; <strong>pharmaceutics</strong> &mdash; packaging, formulation,
+          isomerism and its significance, compatibility, excipients; mechanism of action; pharmacodynamics
+          and adverse effects; and full pharmacokinetics.</td><td class="n">~53</td></tr>
+      <tr><td><b>Level 2</b></td>
+        <td>Class, indications and dose; mechanism; pharmacodynamics and adverse effects; and only the
+          <em>important kinetic considerations or differences in the ICU</em>.</td><td class="n">~47</td></tr>
+      <tr><td><b>Level 3</b></td>
+        <td>Class and indications; mechanism; pharmacodynamics and adverse effects. No dose, no
+          kinetics.</td><td class="n">~106</td></tr>
+    </table>
+
+    <div class="box grn">
+      <span class="lab">What that means for your time</span>
+      <p>Half the drug entries are Level 3, and Level 3 is a short answer: what class, what for, how it
+        works, what it does and what goes wrong. You do not need the kinetics.</p>
+      <p>The Level 1 list is about fifty entries and it is where isomerism, excipients and formulation
+        actually get asked. If you have ever wondered why a viva went to the ampoule and the preservative,
+        this is why. <span class="verdict">Level 1 is the only tier that demands
+        pharmaceutics.</span></p>
+      <p>The Level 1 classes, for orientation: oxygen; the adrenergic and non-adrenergic inotropes and
+        vasopressors; the antiarrhythmics; frusemide; crystalloids, colloids and buffers; the sedatives,
+        amide local anaesthetics, opioids, paracetamol, ketamine and atropine; the neuromuscular blockers;
+        heparins and warfarin and blood products; and the main antibacterial classes.</p>
+    </div>
+
+    <h2 class="sub">What changed in 2025</h2>
+
+    <ul class="pts">
+      <li><b>Liver physiology moved</b><span>It now sits inside the Gastrointestinal section rather than
+        standing alone.</span></li>
+      <li><b>Immunology moved</b><span>Now inside the Haematological section.</span></li>
+      <li><b>Anatomy and measurement were absorbed</b><span>No longer separate blocks &mdash; they are
+        distributed into the organ system they belong to. If you are working from an older set of notes
+        organised around a standalone measurement chapter, your structure no longer matches the
+        syllabus.</span></li>
+      <li><b>Respiratory and cardiovascular were expanded</b><span>Given subheadings to reflect the greater
+        depth expected. Treat that as an instruction.</span></li>
+      <li><b>Reviewed every five years</b><span>So this edition should stand until about 2030 unless
+        something significant changes.</span></li>
+    </ul>
+
+    <h2 class="sub">How to actually use it</h2>
+
+    <ol class="steps">
+      <li><strong>Download it and keep it open.</strong> Not as reading, as a reference. It is on the CICM
+        website and it is free.</li>
+      <li><strong>Turn each subsection into a checklist.</strong> Fifty-one subsections is a manageable
+        number of study blocks; 256 objectives is not a manageable reading task but is a very good
+        tick-list.</li>
+      <li><strong>Mark the verb on every objective.</strong> Outline, explain, describe, understand. Then
+        write to that depth and no further.</li>
+      <li><strong>Tier your drug learning before you start.</strong> Level 3 first, quickly, for breadth.
+        Level 1 slowly, including the pharmaceutics, because that is where the detail lives.</li>
+      <li><strong>Apply the four contexts to everything you revise.</strong> For each topic, ask what changes
+        in the neonate, the obese patient, the pregnant patient and the septic one. That single habit turns
+        recall into the applied understanding the syllabus asks for.</li>
+      <li><strong>Cross-check your course against it.</strong> Any course, any set of notes, any question
+        bank. Anything not traceable to an objective is optional; anything in the syllabus and not in your
+        notes is a gap.</li>
+    </ol>
+
+    <div class="box red">
+      <span class="lab">The limits of this page</span>
+      <p><strong>This is a map, not the territory.</strong> I have counted, grouped and summarised, but I
+        have not reproduced the objectives, and the wording of each one is the thing that matters. Two
+        objectives about the same topic can demand very different work depending on their verb, and you
+        cannot see that from a summary.</p>
+      <p>Read the actual document. Read it in pieces if you must &mdash; one section at a time, alongside
+        the topic you are studying. But read it, and go back to it, because the examiners did.</p>
+      <p>The counts here are mine, derived from the fifth edition, and are for orientation rather than
+        quotation. Verify anything that matters against the College's own document, which is the only
+        authority.</p>
+    </div>
+  </div>
+
+  <div class="pad" style="padding-top:6px">
+    <div class="challenge">
+      <h2>Challenge for you</h2>
+      <p class="ask">Open the syllabus at a section you think you know, and read the verbs.</p>
+      <p>Pick something you are confident about. Read the objectives properly, one at a time, and ask whether
+        you could do what each verb actually asks &mdash; not whether you know the topic, but whether you
+        could <em>explain</em>, <em>classify</em>, or <em>compare and contrast</em> it under time.</p>
+      <p>Tell me what you found, and what the gap was. I will collect them, because the pattern across
+        candidates is more useful than any one answer, and supervisors reading this would like to know where
+        people are consistently over-confident.</p>
+      <p><a class="btn" href="mailto:icuandyou@icloud.com?subject=CICM%20First%20Part%20No.%202%20-%20what%20I%20found%20in%20the%20syllabus&body=The%20section%20I%20opened%3A%0D%0A%0D%0A%0D%0AWhat%20the%20verbs%20asked%20that%20I%20could%20not%20do%3A%0D%0A%0D%0A%0D%0AWhat%20I%20have%20changed%20about%20how%20I%20am%20studying%3A%0D%0A%0D%0A%0D%0A---%0D%0A%0D%0AName%20%28optional%29%2C%20and%20how%20far%20into%20preparation%20you%20are%3A%0D%0A%0A---%0A%0AThinking%20about%20this%20ICU%20AND%20YOU%20post%20overall%20%E2%80%94%20was%20it%20useful%20to%20you%2C%20or%20would%20it%20be%20useful%20to%20others%3F%0A">Send me what you found</a></p>
+      <p class="fallback">The button opens a reply straight to me. If your device blocks it, write to
+        <a href="mailto:icuandyou@icloud.com">icuandyou@icloud.com</a> instead.</p>
+    </div>
+  </div>
+
+  <footer>
+    <span class="firstpub">First published September 2026</span>
+    <p class="subline">Two emails a week &mdash; the Friday newsletter for all subscribers, and, for clinical subscribers,
+      the mind map and puzzles the moment they go up on Tuesday. Occasional announcements of new
+      features as they arrive. What went up and why it mattered, the best of your replies, and
+      original feature stories, news and views. <a href="https://joinlist.com/f/5adad2d6">Come and join us</a>.</p>
+    <a class="home" href="./">&larr; &nbsp;All of ICU AND YOU</a><br>
+    ICU AND YOU &nbsp;&#183;&nbsp; Exam focus &nbsp;&#183;&nbsp; CICM First Part No. 2<br>
+    A summary and orientation only, prepared independently and not endorsed by or affiliated with the College
+    of Intensive Care Medicine. The syllabus itself, published by the College, is the sole authority on what
+    is examinable; counts and groupings here are the author's own and may contain error. Always work from the
+    current edition on the College website.<br>
+    <span class="mine">Views my own, not those of NSW Health or any other organisation. <a href="about.html">More</a>.</span>
+  </footer>
+
+</div>
+<script data-goatcounter="https://icuandyou.goatcounter.com/count"
+        async src="//gc.zgo.at/count.js"></script>
+</body>
+</html>

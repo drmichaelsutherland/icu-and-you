@@ -926,9 +926,25 @@
    "slug": "standing",
    "week": false,
    "standing": true
+  },
+  {
+   "file": "exam-cicm-first-02-the-syllabus.html",
+   "series": "cicm-first",
+   "colour": "pine",
+   "number": "2",
+   "title": "The syllabus, in one sitting",
+   "topic": "Any time",
+   "slug": "standing",
+   "week": false,
+   "standing": true
   }
  ],
  "latest": [
+  {
+   "file": "exam-cicm-first-02-the-syllabus.html",
+   "colour": "pine",
+   "label": "CICM First Part 2 · The syllabus"
+  },
   {
    "file": "book-club-02-color-atlas-physiology.html",
    "colour": "terracotta",
@@ -948,11 +964,6 @@
    "file": "coin-francais-03-medecin-regulateur.html",
    "colour": "bleu",
    "label": "Le coin français 3"
-  },
-  {
-   "file": "drugstore-02-paracetamol.html",
-   "colour": "mulberry",
-   "label": "Drugstore 2 · Paracetamol"
   }
  ],
  "topten": [
