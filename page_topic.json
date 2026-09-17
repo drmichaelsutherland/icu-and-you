@@ -802,7 +802,7 @@
    "topic": "The school-age child",
    "slug": "school-age",
    "week": true,
-   "pos": 9,
+   "pos": 10,
    "badge": "Podcast",
    "link_label": "Open",
    "blurb": "Tex Kissoon on the PCICS podcast. Almost everything we write about sepsis is about the first hour; this is about the other ninety-nine per cent — education, advocacy, systems, poverty, access, and the survivors nobody follows up."
@@ -816,7 +816,7 @@
    "topic": "The school-age child",
    "slug": "school-age",
    "week": true,
-   "pos": 10,
+   "pos": 11,
    "badge": "Journal club",
    "link_label": "Open",
    "blurb": "A previously well nine-year-old with mycoplasma developed a bronchial cast, pulmonary emboli and an intracardiac thrombus at once — and deteriorated far more than his chest film explained. One organism, three systems, and an immune response that overshot."
@@ -830,7 +830,7 @@
    "topic": "The school-age child",
    "slug": "school-age",
    "week": true,
-   "pos": 8,
+   "pos": 9,
    "badge": "The Literary Edge",
    "link_label": "Open",
    "blurb": "Barrie's brother died at thirteen and his mother never recovered. A century later the boy who would not grow up still pays, in perpetuity, for children who do — the strangest copyright in English law, and a family that never got over a winter afternoon."
@@ -844,7 +844,7 @@
    "topic": "The school-age child",
    "slug": "school-age",
    "week": true,
-   "pos": 6,
+   "pos": 7,
    "badge": "Medical Students",
    "link_label": "Open",
    "blurb": "Roughly six to twelve, in three tiers — the science of an almost-adult, taking a history from someone who has learned to be brave, and what you will be expected to do on your first nights on call."
@@ -869,7 +869,7 @@
    "topic": "The school-age child",
    "slug": "school-age",
    "week": true,
-   "pos": 5,
+   "pos": 6,
    "badge": "Drugstore",
    "link_label": "Open",
    "blurb": "The drug everyone thinks they know. The doses and where they differ under 10 kg, the tenfold error that keeps recurring, why the child at risk is the one who has stopped eating, and the metabolism that is the whole of the toxicology."
@@ -883,7 +883,7 @@
    "topic": "The school-age child",
    "slug": "school-age",
    "week": true,
-   "pos": 7,
+   "pos": 8,
    "badge": "Le coin français",
    "link_label": "Open",
    "blurb": "In France a doctor answers the emergency call and a doctor gets in the ambulance. What a medicalised prehospital system does differently for an injured nine-year-old, what it costs, and a faux ami that matters at this age."
@@ -937,9 +937,28 @@
    "slug": "standing",
    "week": false,
    "standing": true
+  },
+  {
+   "file": "superquiz-63-school-age.html",
+   "series": "superquiz",
+   "colour": "fern",
+   "number": "63",
+   "title": "The school-age child",
+   "topic": "The school-age child",
+   "slug": "school-age",
+   "week": true,
+   "pos": 5,
+   "badge": "Superquiz",
+   "link_label": "Take the quiz",
+   "blurb": "Five questions. The quiet chest, a child worse than his film explains, myocarditis wearing a gastroenteritis costume, knee pain that is hip pain, and the deliberate ingestion that is not just a level. Four correct earns a certificate."
   }
  ],
  "latest": [
+  {
+   "file": "superquiz-63-school-age.html",
+   "colour": "fern",
+   "label": "Superquiz 63 · The school-age child"
+  },
   {
    "file": "exam-cicm-first-02-the-syllabus.html",
    "colour": "pine",
@@ -959,11 +978,6 @@
    "file": "mnemonic-56-school.html",
    "colour": "teal",
    "label": "Mnemonic 56 · SCHOOL"
-  },
-  {
-   "file": "coin-francais-03-medecin-regulateur.html",
-   "colour": "bleu",
-   "label": "Le coin français 3"
   }
  ],
  "topten": [
