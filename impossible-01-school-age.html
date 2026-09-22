@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="en-AU">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ICU AND YOU · Six &quot;Impossible&quot; Things? No. 1 — Five before breakfast</title>
+<meta name="description" content="Six &quot;Impossible&quot; Things? No. 1: no child dies of sepsis, of hunger or thirst, of a vaccine-preventable disease; no post-intensive care syndrome; no distance disadvantage. Five things called impossible that are already true somewhere — and the sixth is yours.">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="alternate icon" href="/favicon.ico" sizes="any">
+<link rel="apple-touch-icon" href="/icon-180.png">
+<meta name="theme-color" content="#1B2A33">
+<meta property="og:site_name" content="ICU AND YOU">
+<meta property="og:type" content="website">
+<meta property="og:title" content="ICU AND YOU · Six &quot;Impossible&quot; Things? No. 1 — Five before breakfast">
+<meta property="og:description" content="Five things called impossible that are already true somewhere in the world. The sixth is yours.">
+<meta property="og:image" content="https://icuandyou.com/share-card.png">
+<meta name="twitter:card" content="summary_large_image">
+<style>
+  :root{
+    --paper:#FCFBFD; --ink:#26222E; --muted:#665F72; --rule:#E2DCEA;
+    --lilac:#6F5A96; --lilactint:#F1ECF7;
+    --gold:#8A6A2E; --goldtint:#F8F2E6;
+    --flag2:#B9A8D6;
+  }
+  *{box-sizing:border-box}
+  body{margin:0;background:#EAE4F1;color:var(--ink);
+    font:400 17px/1.65 'Iowan Old Style','Palatino Linotype',Palatino,Georgia,serif;
+    -webkit-text-size-adjust:100%;}
+  .sheet{max-width:790px;margin:0 auto;background:var(--paper);
+    box-shadow:0 1px 40px rgba(34,26,44,.12);}
+
+  .flag{height:6px;background:linear-gradient(90deg,var(--lilac),var(--flag2),var(--gold))}
+
+  header.top{padding:42px 40px 28px;border-bottom:1px solid var(--rule)}
+  .topseries,.toptopic,.tophome{display:inline-block;margin:0 0 16px 9px;padding:7px 16px;
+    border-radius:20px;border:1px solid currentColor;opacity:.62;text-decoration:none;
+    color:inherit;font:600 11.5px 'Helvetica Neue',Arial,sans-serif;letter-spacing:.09em;
+    text-transform:uppercase;transition:opacity .12s ease}
+  .tophome{margin-left:0}
+  .topseries:hover,.toptopic:hover,.tophome:hover{opacity:1}
+  .eyebrow{font:500 11.5px/1 'Helvetica Neue',Arial,sans-serif;letter-spacing:.24em;
+    text-transform:uppercase;color:var(--muted);margin:0 0 14px}
+  .eyebrow a.mast,.eyebrow a.serlink{color:inherit;text-decoration:none;
+    border-bottom:1px solid transparent}
+  .eyebrow a.mast:hover,.eyebrow a.serlink:hover{border-bottom-color:currentColor}
+  h1{font-size:35px;line-height:1.14;margin:0 0 8px;font-weight:400;letter-spacing:-.012em;
+    font-style:italic}
+  .kicker{color:var(--muted);margin:0;font-size:16.5px}
+
+  .pad{padding:34px 40px}
+  p{margin:0 0 17px}
+  .lede{font-size:20px;line-height:1.5;margin:0 0 22px}
+  b.term{font-weight:600;color:var(--lilac)}
+
+  h2.thing{margin:34px 0 4px;font-size:27px;font-weight:400;line-height:1.2;
+    letter-spacing:-.01em;color:var(--lilac)}
+  h2.thing .num{display:block;font:600 11px 'Helvetica Neue',Arial,sans-serif;
+    letter-spacing:.22em;text-transform:uppercase;color:var(--muted);margin:0 0 7px}
+  p.sting{margin:0 0 17px;font-size:16px;color:var(--muted);
+    padding-bottom:13px;border-bottom:1px solid var(--rule)}
+
+  blockquote{margin:0 0 20px;padding:4px 0 4px 22px;border-left:3px solid var(--lilac);
+    font-size:17.5px;line-height:1.55;color:#2F2938;font-style:italic}
+  blockquote p:last-child{margin:0}
+  blockquote cite{display:block;margin-top:9px;font:400 13.5px 'Helvetica Neue',Arial,sans-serif;
+    font-style:normal;color:var(--muted)}
+
+  .welcome{margin:0 0 24px;padding:23px 27px;background:var(--goldtint);
+    border-left:4px solid var(--gold);border-radius:0 8px 8px 0}
+  .welcome .lab{display:block;font:600 11px 'Helvetica Neue',Arial,sans-serif;
+    letter-spacing:.18em;text-transform:uppercase;color:var(--gold);margin:0 0 9px}
+  .welcome p:last-child{margin:0}
+
+  .box{margin:0 0 18px;padding:21px 25px;background:var(--lilactint);
+    border-left:4px solid var(--lilac);border-radius:0 8px 8px 0}
+  .box .lab{display:block;font:600 11px 'Helvetica Neue',Arial,sans-serif;
+    letter-spacing:.18em;text-transform:uppercase;color:var(--lilac);margin:0 0 9px}
+  .box p:last-child{margin:0}
+
+  .careful{margin:0 0 18px;padding:19px 23px;background:#FBF8F0;
+    border:1px dashed #C9B487;border-radius:9px;font-size:16px}
+  .careful .lab{display:block;font:600 11px 'Helvetica Neue',Arial,sans-serif;
+    letter-spacing:.18em;text-transform:uppercase;color:#7E6A2E;margin:0 0 9px}
+  .careful p:last-child{margin:0}
+
+  .icu{margin:0 0 20px;padding:18px 23px;background:#F4F1F8;border:1px solid #DED4EC;
+    border-radius:9px;font-size:16.5px}
+  .icu .lab{display:block;font:600 11px 'Helvetica Neue',Arial,sans-serif;
+    letter-spacing:.18em;text-transform:uppercase;color:var(--lilac);margin:0 0 8px}
+  .icu p:last-child{margin:0}
+
+  .sixth{margin:30px 0 0;padding:30px 32px;background:var(--lilac);color:#F6F2FB;
+    border-radius:12px;text-align:center}
+  .sixth .lab{display:block;font:600 11px 'Helvetica Neue',Arial,sans-serif;
+    letter-spacing:.22em;text-transform:uppercase;opacity:.8;margin:0 0 12px}
+  .sixth p{font-size:21px;line-height:1.45;margin:0 0 12px;font-style:italic}
+  .sixth p:last-child{margin:0;font-size:16.5px;font-style:normal;opacity:.92}
+
+  .reply{margin:0;padding:28px 32px;background:#F3EFF8;border-left:5px solid var(--gold)}
+  .reply h2{font:600 12px 'Helvetica Neue',Arial,sans-serif;letter-spacing:.2em;
+    text-transform:uppercase;color:var(--gold);margin:0 0 13px}
+  .ask{font-size:19px;line-height:1.5;font-style:italic;margin:0 0 15px}
+  .btn{display:inline-block;margin:6px 0 12px;padding:15px 30px;background:var(--lilac);
+    color:#FBFAFD;text-decoration:none;border-radius:30px;font-style:normal;
+    font:600 15px 'Helvetica Neue',Arial,sans-serif;letter-spacing:.03em}
+  .btn:hover{background:#54447A}
+  .btn:focus-visible{outline:3px solid var(--gold);outline-offset:3px}
+  .fallback{font:400 13.5px 'Helvetica Neue',Arial,sans-serif;color:var(--muted);margin:0}
+  .fallback a{color:var(--lilac)}
+
+  .subline{margin:0 0 14px;padding:0 0 13px;border-bottom:1px solid rgba(0,0,0,.09);
+    font:400 14.5px/1.55 'Iowan Old Style','Palatino Linotype',Palatino,Georgia,serif;
+    max-width:56ch;margin-left:auto;margin-right:auto}
+  .subline a{font-weight:500;border-bottom:1px solid currentColor;
+    text-decoration:none;color:inherit}
+  .firstpub{display:block;margin:0 0 10px;padding-bottom:9px;
+    border-bottom:1px solid currentColor;border-color:rgba(0,0,0,.09);
+    font:400 12px 'Helvetica Neue',Arial,sans-serif;letter-spacing:.06em;opacity:.72}
+
+  footer{padding:24px 40px 42px;border-top:1px solid var(--rule);
+    font:400 13px 'Helvetica Neue',Arial,sans-serif;color:var(--muted);
+    text-align:center;line-height:1.7}
+  .home{display:inline-block;margin:0 0 14px;padding:8px 18px;border-radius:20px;
+    border:1px solid var(--rule);background:#F3EFF8;color:var(--lilac);text-decoration:none;
+    font:600 12.5px 'Helvetica Neue',Arial,sans-serif;letter-spacing:.05em}
+  .home:hover{background:var(--lilac);border-color:var(--lilac);color:#FBFAFD}
+  .mine{display:inline-block;margin:9px 0 0;opacity:.78;font-size:.94em}
+  .srcs{font-size:12.5px;line-height:1.6}
+  .srcs a{color:inherit}
+
+  @media (max-width:640px){
+    header.top,.pad,footer{padding-left:20px;padding-right:20px}
+    .reply,.sixth{padding:22px 20px}
+    h1{font-size:26px} h2.thing{font-size:23px} body{font-size:16.5px}
+    .lede{font-size:18.5px} .ask{font-size:17.5px} .sixth p{font-size:18.5px}
+  }
+  @media print{ body{background:#fff} .sheet{box-shadow:none;max-width:none} }
+</style>
+</head>
+<body>
+<div class="sheet">
+
+  <div class="flag"></div>
+
+  <header class="top">
+    <a class="tophome" href="./">&larr;&nbsp; Home</a>
+    <a class="topseries" href="./?s=impossible">More impossible things</a>
+    <a class="toptopic" href="./?t=school-age" title="Everything on The school-age child">All on this topic</a>
+    <p class="eyebrow"><a class="mast" href="./">ICU and You</a> &nbsp;·&nbsp;
+      <a class="serlink" href="./?s=impossible">Six &quot;Impossible&quot; Things?</a>
+      &nbsp;·&nbsp; Number 1</p>
+    <h1>Five before breakfast</h1>
+    <p class="kicker">Things we call impossible that are already true somewhere &mdash; and the sixth, which is yours</p>
+  </header>
+
+  <div class="pad">
+    <div class="welcome">
+      <span class="lab">A new series, and what the quotation marks are doing</span>
+      <blockquote style="border-left-color:var(--gold);margin-bottom:14px">
+        <p>&ldquo;There's no use trying,&rdquo; she said: &ldquo;one <em>can't</em> believe impossible
+          things.&rdquo;</p>
+        <p>&ldquo;I daresay you haven't had much practice,&rdquo; said the Queen. &ldquo;When I was your age,
+          I always did it for half-an-hour a day. Why, sometimes I've believed as many as six impossible
+          things before breakfast.&rdquo;</p>
+        <cite>Lewis Carroll, <em>Through the Looking-Glass</em>, 1871 &mdash; the White Queen, not
+          the Hatter</cite>
+      </blockquote>
+      <p><strong>This series is for the dreamers.</strong> Not idle dreaming &mdash; the useful kind. Each
+        edition sets out five things that are commonly described as impossible, and which are nothing of the
+        sort.</p>
+      <p>That is why the word wears quotation marks and the title ends in a question mark. Every one of the
+        five below is <em>already true</em>, right now, for some children, in some places. None of them waits
+        on a discovery. What stands between them and every child is distribution, money, attention and will
+        &mdash; which are human arrangements, and human arrangements can be changed by humans.</p>
+      <p>Intensive care has a particular place in this. We are where these failures become visible; several of
+        them are made or unmade in our own units; and we are unusually well placed to say so, because nobody
+        can accuse us of not having seen it.</p>
+    </div>
+
+    <p class="lede">The White Queen managed six. Here are five. The sixth is the whole point, and it belongs
+      to you.</p>
+
+    <h2 class="thing"><span class="num">The first impossible thing</span>No child dies of sepsis</h2>
+    <p class="sting">About 25 million children a year develop sepsis. Around 3 million die. Eighty-five per
+      cent of both happen in low- and middle-income countries.</p>
+
+    <p>The argument that this is a distribution problem rather than a medical one used to be an assertion.
+      Since 2024 it has been a measurement.</p>
+
+    <p>When the international task force derived the Phoenix sepsis criteria, they applied the
+      <em>same diagnostic definition</em> to more than three million encounters across sites in the United
+      States, Bangladesh, China, Colombia and Kenya. Mortality among children meeting the criteria:</p>
+
+    <div class="box">
+      <span class="lab">The same disease, defined the same way</span>
+      <p><b class="term">7.1 per cent</b> in higher-resource settings.<br>
+         <b class="term">28.5 per cent</b> in lower-resource settings.</p>
+      <p>Four times the death rate, with the definition held constant. That difference is not biology. It is
+        oxygen, antibiotics within the hour, a functioning laboratory, someone trained to recognise it, and a
+        bed to put the child in.</p>
+    </div>
+
+    <p>Sepsis mortality has already fallen substantially worldwide, which is the encouraging half. The World
+      Health Assembly adopted a resolution on sepsis in 2017 committing member states to prevention,
+      recognition and management. The knowledge is not the missing piece.</p>
+
+    <div class="icu">
+      <span class="lab">Where we come in</span>
+      <p>Recognition systems are ours. We write the protocols, teach the courses, run the simulations and
+        staff the retrieval phones. And when a protocol developed in a well-resourced unit is exported, we are
+        the people who should be asking whether the system that makes it safe travelled with it &mdash; see
+        the second impossible thing, where that question turns out to matter enormously.</p>
+    </div>
+
+    <h2 class="thing"><span class="num">The second impossible thing</span>No child dies of hunger or thirst</h2>
+    <p class="sting">Roughly 374,000 children under five died of diarrhoea in 2024. Severe wasting affects
+      about 13.6 million children, and only about a third of them get treated.</p>
+
+    <p>In 1978 <em>The Lancet</em> ran an unsigned editorial on oral rehydration solution titled
+      <em>Water with sugar and salt</em>, and called it <b class="term">&ldquo;potentially the most important
+      medical advance this century&rdquo;</b>. It was not an overstatement.</p>
+
+    <p>Bangladesh proved the point at scale and with almost no technology. Between 1980 and 1990, BRAC sent
+      workers door to door and taught oral rehydration to more than <b class="term">twelve million
+      households</b>. By the 2010s ORS was in use in something like eighty per cent of Bangladeshi homes, and
+      diarrhoea had fallen to around two per cent of child deaths &mdash; a reduction of roughly ninety per
+      cent over three decades.</p>
+
+    <p>So here is the uncomfortable arithmetic. A course of oral rehydration salts with zinc costs well under
+      a dollar. It is not patented, not scarce, and not difficult. Global coverage of ORS with zinc for
+      children with diarrhoea is about <b class="term">twenty-two per cent</b>.</p>
+
+    <p>That is not a medical failure. There is nothing left to discover.</p>
+
+    <div class="careful">
+      <span class="lab">And a warning that belongs in this section, not in a footnote</span>
+      <p>The <b class="term">FEAST</b> trial randomised more than three thousand African children with severe
+        febrile illness and impaired perfusion to a fluid bolus or no bolus. The children who got the bolus
+        <strong>died more often</strong> &mdash; 10.5 to 10.6 per cent against 7.3 per cent at 48 hours.</p>
+      <p>Be careful what you take from that. Children with severe acute malnutrition and children with
+        gastroenteritis were <em>excluded</em>. There was essentially no mechanical ventilation or inotrope
+        support in that setting. And the secondary analysis found the excess deaths were cardiovascular
+        &mdash; arrhythmia and refractory hypotension &mdash; not the pulmonary oedema everybody had assumed.</p>
+      <p>The lesson is not that fluid is dangerous. It is that <strong>a protocol exported without the system
+        that makes it safe can kill children</strong>. Which is precisely why "just give them our guideline"
+        is not the answer to the first impossible thing either.</p>
+    </div>
+
+    <div class="icu">
+      <span class="lab">Where we come in</span>
+      <p>We see these children at the end &mdash; the ones who arrived too late, and the ones in whom
+        refeeding is now its own hazard. We are also, as a specialty, in the habit of assuming our protocols
+        generalise. FEAST is the standing correction to that habit, and we should be the ones teaching it.</p>
+    </div>
+
+    <h2 class="thing"><span class="num">The third impossible thing</span>No post-intensive care syndrome</h2>
+    <p class="sting">In Australian and New Zealand paediatric intensive care, about 97 to 98 per cent of
+      children now survive. The question has quietly changed from whether they live to what they live with.</p>
+
+    <p>This is the one we own outright. Nobody else makes it, and nobody else can fix it.</p>
+
+    <p>Paediatric post-intensive care syndrome spans physical, cognitive, emotional and social health, and
+      the paediatric framing adds something the adult version cannot: the outcome is measured against an
+      expected <em>developmental trajectory</em>, and the family is part of the unit being assessed. A child
+      does not return to a previous baseline. A child is supposed to be moving.</p>
+
+    <p>Two numbers make it concrete. Delirium is present in about <b class="term">a quarter</b> of children in
+      paediatric intensive care at any given moment, rising to something near forty per cent among those still
+      there at day six &mdash; and its contributors include the restraints, the benzodiazepines, the
+      immobility and the broken sleep that we supply.</p>
+
+    <p>And then there is the number that belongs to this fortnight in particular. A Queensland study linked
+      more than five thousand children who survived intensive care before the age of five to their Year 3
+      NAPLAN results:</p>
+
+    <div class="box">
+      <span class="lab">The school-age consequence</span>
+      <p><b class="term">14.0 per cent</b> failed to meet the national minimum standard in both numeracy and
+        reading, against <b class="term">9.0 per cent</b> of matched controls &mdash; scoring roughly thirteen
+        points below those controls across domains.</p>
+      <p>The child we discharged as a survivor turns up in Year 3 as a child who is behind. That is our
+        outcome, appearing in someone else's dataset, years later, where we never look.</p>
+    </div>
+
+    <div class="careful">
+      <span class="lab">Honesty about what works</span>
+      <p>This is the weakest evidence base of the five, and pretending otherwise would be the wrong kind of
+        dreaming. The big sedation-protocol trial, RESTORE, was <strong>null on its primary outcome</strong>.
+        Early mobilisation is feasible and safe with associations rather than demonstrated long-term benefit.
+        Follow-up clinics are widely recommended and essentially unevaluated in children. The often-quoted
+        figure linking care-bundle adherence to lower mortality is an observational association, not a causal
+        one.</p>
+      <p>So this impossible thing is different in kind from the others. For sepsis and for thirst we know what
+        to do and fail to deliver it. Here we do not yet know what to do &mdash; which makes it the one most
+        open to a reader who wants to go and find out.</p>
+    </div>
+
+    <h2 class="thing"><span class="num">The fourth impossible thing</span>No child dies of a vaccine-preventable disease</h2>
+    <p class="sting">Measles deaths have fallen 88 per cent since 2000, to about 95,000 a year. Measles cases
+      are now rising.</p>
+
+    <p>Fifty years of the Expanded Programme on Immunization is estimated to have saved <b class="term">154
+      million lives</b>, the great majority of them infants, and to account for about forty per cent of the
+      global decline in infant mortality over that period. Measles vaccine alone accounts for something like
+      94 million deaths averted.</p>
+
+    <p>Which makes what is happening now the clearest possible demonstration that these things are not
+      ratchets. Around <b class="term">14 million children received no vaccine at all</b> in a recent year,
+      more than before the pandemic. Global measles coverage sits well below the level needed to stop
+      transmission, and the number of countries with large outbreaks has roughly tripled since 2021.</p>
+
+    <p>Nor is this only a problem elsewhere. Australian childhood immunisation coverage is at a five-year low.
+      Coverage at twelve months has fallen more than four percentage points since 2020, coverage at
+      twenty-four months is below ninety per cent, and both are falling faster among Aboriginal and Torres
+      Strait Islander children.</p>
+
+    <div class="icu">
+      <span class="lab">Where we come in</span>
+      <p>We are the witnesses. In the Texas measles outbreak of 2025, among hospitalised patients with records
+        available, <strong>every single one was unvaccinated or of unknown vaccination status</strong>; seven
+        per cent needed intensive care.</p>
+      <p>And malignant pertussis is the starkest teaching case in paediatrics: young infants with
+        hyperleukocytosis, pulmonary hypertension and refractory cardiovascular failure, where one reported
+        cohort lost <strong>nine of twenty-three</strong>. Children on extracorporeal support, for a disease
+        prevented by an injection given at six weeks of age.</p>
+      <p>Few people can describe that with more authority than the person who ran the circuit.</p>
+    </div>
+
+    <h2 class="thing"><span class="num">The fifth impossible thing</span>No distance disadvantage</h2>
+    <p class="sting">In Australia, invasive infection requiring intensive care occurs in Aboriginal and Torres
+      Strait Islander children at about three times the rate of other Australian children, with a mortality
+      rate ratio of 2.65.</p>
+
+    <p>Geography should not be a prognostic variable. It is.</p>
+
+    <p>Australian mortality from potentially avoidable causes rises steadily with remoteness, reaching more
+      than twice the metropolitan rate in remote areas and higher still in very remote ones. Child mortality
+      at ages nought to four is about twice as high for Aboriginal and Torres Strait Islander children as for
+      other Australian children &mdash; and has not changed significantly across the last decade for which
+      figures exist. The 2008 target to halve that gap was not met.</p>
+
+    <p>For critical illness specifically, an Australian study across our own intensive care units found
+      invasive infection requiring intensive care at <b class="term">47.6 per 100,000</b> Aboriginal and
+      Torres Strait Islander children per year against 15.9 for other children, with invasive
+      <em>Staphylococcus aureus</em> at nearly <b class="term">eight times</b> the rate.</p>
+
+    <p>What is genuinely encouraging is that the structural fixes have evidence behind them. Larger
+      paediatric intensive care units have better risk-adjusted survival &mdash; for every additional hundred
+      annual admissions the odds of death fall measurably. Specialist paediatric retrieval teams reduce
+      adverse events in transfer. And telemedicine support to non-specialist emergency departments has been
+      shown to cut medication errors in acutely ill children from about one in eight consultations to about
+      one in thirty.</p>
+
+    <div class="careful">
+      <span class="lab">Where I will not overclaim</span>
+      <p>No paediatric tele-critical care study has demonstrated a mortality benefit; what is shown is safer,
+        better care. And the finding that retrieved children do worse than children who present directly is
+        heavily confounded &mdash; retrieved children are sicker on arrival, and the studies cannot separate
+        severity from transfer. It would be easy and wrong to say that transfer harms children.</p>
+    </div>
+
+    <div class="icu">
+      <span class="lab">Where we come in</span>
+      <p>This one is almost entirely ours to build. Retrieval services, the advice line, the conference call,
+        the tele-support to a hospital with no paediatric unit, the training that lets a regional team hold a
+        child safely for six hours &mdash; all of that is intensive care reaching outward. The technology
+        already exists. It is a question of who picks up the phone at three in the morning, and whether the
+        system has decided that is somebody's job.</p>
+    </div>
+
+    <div class="sixth">
+      <span class="lab">The sixth impossible thing</span>
+      <p>The White Queen managed six before breakfast. I have given you five.</p>
+      <p>The sixth is yours &mdash; and I would genuinely like to know what it is.</p>
+    </div>
+  </div>
+
+  <div class="pad" style="padding-top:6px">
+    <div class="reply">
+      <h2>Over to you</h2>
+      <p class="ask">What is your sixth impossible thing?</p>
+      <p>Not a wish. Something you think is described as impossible, or unaffordable, or unrealistic, or
+        simply never mentioned &mdash; and which you believe can and should be made real. It might be global
+        or it might be one ward. It might be something about children, or about the people who look after
+        them.</p>
+      <p>Tell me what it is and why you think it is achievable, and I will publish the best of them &mdash;
+        with your name on it or without, as you prefer. If enough of you write in, a future edition of this
+        series will be entirely yours.</p>
+      <p><a class="btn" href="mailto:icuandyou@icloud.com?subject=My%20sixth%20impossible%20thing&body=My%20sixth%20impossible%20thing%3A%0D%0A%0D%0A%0D%0AWhy%20I%20think%20it%20is%20achievable%3A%0D%0A%0D%0A%0D%0AWhat%20would%20have%20to%20change%20first%3A%0D%0A%0D%0A%0D%0A---%0D%0A%0D%0AName%3A%0D%0A%0D%0AHappy%20to%20be%20named%3F%20%28yes%20%2F%20no%29%3A%0D%0A%0D%0A---%0D%0A%0D%0AThinking%20about%20this%20ICU%20AND%20YOU%20post%20overall%20%E2%80%94%20was%20it%20useful%20to%20you%2C%20or%20would%20it%20be%20useful%20to%20others%3F%0D%0A">Send me your sixth</a></p>
+      <p class="fallback">The button opens a reply straight to me. If your device blocks it, write to
+        <a href="mailto:icuandyou@icloud.com">icuandyou@icloud.com</a> instead.</p>
+    </div>
+  </div>
+
+  <footer>
+    <span class="firstpub">First published September 2026</span>
+    <p class="subline">Two emails a week &mdash; the Friday newsletter for all subscribers, and, for clinical subscribers,
+      the mind map and puzzles the moment they go up on Tuesday. Occasional announcements of new
+      features as they arrive. What went up and why it mattered, the best of your replies, and
+      original feature stories, news and views. <a href="https://joinlist.com/f/5adad2d6">Come and join us</a>.</p>
+    <a class="home" href="./">&larr; &nbsp;All of ICU AND YOU</a><br>
+    Six &quot;Impossible&quot; Things? No. 1 &nbsp;&#183;&nbsp; companion to Mind Map #34, The School-Age Child<br>
+    <span class="srcs">Paediatric sepsis burden from
+    <a href="https://www.thelancet.com/journals/lanchi/article/PIIS2352-4642(24)00140-8/fulltext">Watson,
+    Kissoon et&nbsp;al., <em>Lancet Child &amp; Adolescent Health</em> 2024</a>; the resource-setting mortality
+    comparison from the
+    <a href="https://jamanetwork.com/journals/jama/fullarticle/2814296">Phoenix sepsis criteria derivation,
+    <em>JAMA</em> 2024</a>. Diarrhoea and ORS figures from
+    <a href="https://www.unicef.org/supply/oral-rehydration-salts-ors-and-zinc-market-note">UNICEF</a>; the 1978
+    quotation from <em>The Lancet</em> editorial &ldquo;Water with sugar and salt&rdquo;.
+    <a href="https://www.nejm.org/doi/full/10.1056/NEJMoa1101549">FEAST, <em>NEJM</em> 2011</a>, with the
+    mode-of-death analysis in <em>BMC Medicine</em> 2013. PICS-p framework from
+    <a href="https://pubmed.ncbi.nlm.nih.gov/29406379/">Manning et&nbsp;al., <em>PCCM</em> 2018</a>; delirium
+    prevalence from <a href="https://pubmed.ncbi.nlm.nih.gov/28079605/">Traube et&nbsp;al., <em>CCM</em> 2017</a>;
+    the NAPLAN linkage from
+    <a href="https://journals.lww.com/ccmjournal/fulltext/2022/06000/educational_outcomes_of_childhood_survivors_of.1.aspx">Tomaszewski
+    et&nbsp;al., <em>CCM</em> 2022</a>; RESTORE from
+    <a href="https://jamanetwork.com/journals/jama/fullarticle/2091543"><em>JAMA</em> 2015</a>. Immunisation
+    figures from <a href="https://www.who.int/news/item/28-11-2025-measles-deaths-down-88--since-2000--but-cases-surge">WHO</a>,
+    <a href="https://www.thelancet.com/journals/lancet/article/PIIS0140-6736(24)00850-X/fulltext">Shattock
+    et&nbsp;al., <em>The Lancet</em> 2024</a> and
+    <a href="https://ncirs.org.au/immunisation-coverage-data-and-reports/annual-immunisation-coverage-report-2025-summary">NCIRS</a>.
+    Remoteness and Aboriginal and Torres Strait Islander child data from
+    <a href="https://www.aihw.gov.au/reports/rural-remote-australians/rural-and-remote-health">AIHW</a>,
+    <a href="https://www.indigenoushpf.gov.au/measures/1-20-infant-and-child-mortality">the Indigenous Health
+    Performance Framework</a> and
+    <a href="https://www.mja.com.au/journal/2017/206/2/burden-invasive-infections-critically-ill-indigenous-children-australia">Ostrowski
+    et&nbsp;al., <em>MJA</em> 2017</a>. Figures were current when written and will move; the argument does not
+    depend on any single one of them.</span><br>
+    <span class="mine">Views my own, not those of NSW Health or any other organisation. No identifiable
+    patients &mdash; scenarios are constructed or combined for teaching. <a href="about.html">More</a>.</span>
+  </footer>
+
+</div>
+<script data-goatcounter="https://icuandyou.goatcounter.com/count"
+        async src="//gc.zgo.at/count.js"></script>
+</body>
+</html>
