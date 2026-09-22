@@ -148,7 +148,7 @@
   "dental": [
    "The Dental Files",
    "peppermint striped",
-   "other"
+   "special"
   ]
  },
  "pages": [
@@ -999,7 +999,7 @@
    "topic": "The school-age child",
    "slug": "school-age",
    "week": true,
-   "pos": 10,
+   "pos": 8,
    "badge": "The Dental Files",
    "link_label": "Open",
    "blurb": "A new series. Mixed dentition and the six-year molar that fools everybody, loose teeth before laryngoscopy, the avulsed tooth and the hour it has, the 2025 change to endocarditis prophylaxis in rheumatic heart disease, fluoride, and the mouth that closes the airway."

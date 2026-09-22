@@ -494,6 +494,7 @@
           <button class="mi" data-f="gp"><i class="md denim"></i>GP Boulevard</button>
           <button class="mi" data-f="emergency"><i class="md jade"></i>Emergency Medicine Landing Bay</button>
           <button class="mi" data-f="anaesthetics"><i class="md fern"></i>Anaesthetists&#x27; Alley</button>
+          <button class="mi" data-f="dental"><i class="md peppermint striped"></i>The Dental Files</button>
         </div>
       </details>
       <details class="drop" data-g="procedures">
@@ -541,7 +542,6 @@
           <button class="mi" data-f="g:other"><i class="md all"></i>All of Other Realms</button>
           <button class="mi" data-f="literary"><i class="md nero"></i>The Literary Edge</button>
           <button class="mi" data-f="screening"><i class="md copper"></i>The Screening Room</button>
-          <button class="mi" data-f="dental"><i class="md peppermint striped"></i>The Dental Files</button>
         </div>
       </details>
       <details class="drop" data-g="public">
@@ -628,6 +628,14 @@
             <div class="links"><a class="go" href="med-students-04-school-age.html">Open</a></div>
           </div>
         </li>
+        <li class="item peppermint striped" data-series="dental">
+          <div class="badge">The Dental Files<b>1</b></div>
+          <div class="body">
+            <h3>Open wide</h3>
+            <p>A new series. Mixed dentition and the six-year molar that fools everybody, loose teeth before laryngoscopy, the avulsed tooth and the hour it has, the 2025 change to endocarditis prophylaxis in rheumatic heart disease, fluoride, and the mouth that closes the airway.</p>
+            <div class="links"><a class="go" href="dental-01-school-age.html">Open</a></div>
+          </div>
+        </li>
         <li class="item bleu" data-series="coin">
           <div class="badge">Le coin français<b>3</b></div>
           <div class="body">
@@ -658,14 +666,6 @@
             <h3>From sepsis to society</h3>
             <p>Tex Kissoon on the PCICS podcast. Almost everything we write about sepsis is about the first hour; this is about the other ninety-nine per cent — education, advocacy, systems, poverty, access, and the survivors nobody follows up.</p>
             <div class="links"><a class="go" href="podcast-58-sepsis-to-society.html">Open</a></div>
-          </div>
-        </li>
-        <li class="item peppermint striped" data-series="dental">
-          <div class="badge">The Dental Files<b>1</b></div>
-          <div class="body">
-            <h3>Open wide</h3>
-            <p>A new series. Mixed dentition and the six-year molar that fools everybody, loose teeth before laryngoscopy, the avulsed tooth and the hour it has, the 2025 change to endocarditis prophylaxis in rheumatic heart disease, fluoride, and the mouth that closes the airway.</p>
-            <div class="links"><a class="go" href="dental-01-school-age.html">Open</a></div>
           </div>
         </li>
         <li class="item sepia" data-series="journal">
@@ -956,7 +956,7 @@
     window.addEventListener("load", function(){ window.scrollTo(0, 0); });
   }
 
-  var GROUPS = {"memory": ["barebones", "mind-map", "aphorism", "mnemonic", "superpuzzle", "superquiz"], "multimedia": ["podcast", "journal", "bookclub"], "special": ["students", "nurses", "gp", "emergency", "anaesthetics"], "procedures": ["procedures"], "drugstore": ["drugstore"], "exam": ["cicm-first"], "cultural": ["coin", "italiano", "espanol", "india", "chinatown", "australia", "srilanka", "russia"], "other": ["literary", "screening", "dental"], "public": ["public"]};
+  var GROUPS = {"memory": ["barebones", "mind-map", "aphorism", "mnemonic", "superpuzzle", "superquiz"], "multimedia": ["podcast", "journal", "bookclub"], "special": ["students", "nurses", "gp", "emergency", "anaesthetics", "dental"], "procedures": ["procedures"], "drugstore": ["drugstore"], "exam": ["cicm-first"], "cultural": ["coin", "italiano", "espanol", "india", "chinatown", "australia", "srilanka", "russia"], "other": ["literary", "screening"], "public": ["public"]};
   var LABELS = {"memory": "Memory aids and activities", "multimedia": "Multimedia", "special": "Special groups", "procedures": "Procedures", "drugstore": "Drugstore", "exam": "Exam focus", "cultural": "Cultural narratives", "other": "Other Realms", "public": "For the general public"};
 
   function inFilter(sk){
