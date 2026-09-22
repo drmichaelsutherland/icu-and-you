@@ -1060,9 +1060,25 @@
    "badge": "Myths & Misconceptions",
    "link_label": "Open",
    "blurb": "A new series. The cricoid and uncuffed tubes, fluid rate and cerebral oedema in DKA, the rule of nines, cooling after cardiac arrest, and nil by mouth from midnight — where each belief came from, what the evidence shows, and a verdict that is graded rather than gleeful."
+  },
+  {
+   "file": "procedures-05-picc-lines.html",
+   "series": "procedures",
+   "colour": "amethyst",
+   "number": "5",
+   "title": "PICC lines",
+   "topic": "Any time",
+   "slug": "standing",
+   "week": false,
+   "standing": true
   }
  ],
  "latest": [
+  {
+   "file": "procedures-05-picc-lines.html",
+   "colour": "amethyst",
+   "label": "Procedures 5 · PICC lines"
+  },
   {
    "file": "myths-01-school-age.html",
    "colour": "bramble",
@@ -1082,11 +1098,6 @@
    "file": "dental-01-school-age.html",
    "colour": "peppermint striped",
    "label": "The Dental Files 1 · Open wide"
-  },
-  {
-   "file": "public-02-put-the-thermometer-down.html",
-   "colour": "ocean",
-   "label": "For the general public 2 · Put the thermometer down"
   }
  ],
  "topten": [

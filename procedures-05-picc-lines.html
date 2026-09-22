@@ -1,0 +1,578 @@
+<!DOCTYPE html>
+<html lang="en-AU">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ICU AND YOU · Procedures No. 5 — PICC lines</title>
+<meta name="description" content="Procedures No. 5: peripherally inserted central catheters — who should and should not have one, choosing the vein and the size, tip position, thrombosis and infection with real numbers, troubleshooting, removal, and the teaching that does not survive contact with the evidence.">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="alternate icon" href="/favicon.ico" sizes="any">
+<link rel="apple-touch-icon" href="/icon-180.png">
+<meta name="theme-color" content="#1B2A33">
+<meta property="og:site_name" content="ICU AND YOU">
+<meta property="og:type" content="website">
+<meta property="og:title" content="ICU AND YOU · Procedures No. 5 — PICC lines">
+<meta property="og:description" content="Who should and should not have a PICC, choosing the vein and the size, and the teaching that does not survive contact with the evidence.">
+<meta property="og:image" content="https://icuandyou.com/share-card.png">
+<meta name="twitter:card" content="summary_large_image">
+<style>
+  :root{
+    --paper:#FBF9FC; --ink:#241F2B; --muted:#6B6377; --rule:#DFD6E6;
+    --amethyst:#7A4FA3; --amethysttint:#F1EBF7;
+    --rust:#A8442A; --rusttint:#F9EDE7;
+    --moss:#4C6B4A; --mosstint:#EAF1E9;
+    --gold:#A8721E; --goldtint:#FBF1DC;
+  }
+  *{box-sizing:border-box}
+  body{margin:0;background:#EAE3EF;color:var(--ink);
+    font:400 17px/1.64 'Iowan Old Style','Palatino Linotype',Palatino,Georgia,serif;
+    -webkit-text-size-adjust:100%;}
+  .sheet{max-width:800px;margin:0 auto;background:var(--paper);
+    box-shadow:0 1px 40px rgba(36,26,44,.11);}
+
+  header.top{padding:42px 40px 28px;border-bottom:1px solid var(--rule)}
+  .topseries,.tophome{display:inline-block;margin:0 0 16px 9px;padding:7px 16px;border-radius:20px;
+    border:1px solid currentColor;opacity:.62;text-decoration:none;color:inherit;
+    font:600 11.5px 'Helvetica Neue',Arial,sans-serif;letter-spacing:.09em;
+    text-transform:uppercase;transition:opacity .12s ease}
+  .tophome{margin-left:0}
+  .topseries:hover,.tophome:hover{opacity:1}
+  .eyebrow{font:500 11.5px/1 'Helvetica Neue',Arial,sans-serif;letter-spacing:.24em;
+    text-transform:uppercase;color:var(--muted);margin:0 0 14px}
+  .eyebrow a.mast,.eyebrow a.serlink{color:inherit;text-decoration:none;
+    border-bottom:1px solid transparent}
+  .eyebrow a.mast:hover,.eyebrow a.serlink:hover{border-bottom-color:currentColor}
+  h1{font-size:35px;line-height:1.14;margin:0 0 8px;font-weight:400;letter-spacing:-.012em}
+  .kicker{color:var(--muted);margin:0;font-size:16.5px}
+
+  .pad{padding:34px 40px}
+  p{margin:0 0 17px}
+  .lede{font-size:20px;line-height:1.5;margin:0 0 22px}
+  b.term{font-weight:600;color:var(--amethyst)}
+
+  h2.sub{font:600 12px 'Helvetica Neue',Arial,sans-serif;letter-spacing:.2em;
+    text-transform:uppercase;color:var(--amethyst);margin:32px 0 15px;
+    padding-bottom:8px;border-bottom:1px solid var(--rule)}
+
+  ul.pts{list-style:none;margin:0 0 18px;padding:0}
+  ul.pts li{display:flex;gap:13px;padding:11px 0;border-bottom:1px solid #EFE9F4;
+    font-size:16.5px;line-height:1.5}
+  ul.pts li:last-child{border-bottom:0}
+  ul.pts b{flex:0 0 182px;font:600 14.5px 'Helvetica Neue',Arial,sans-serif;
+    color:var(--amethyst);line-height:1.4}
+
+  .box{margin:0 0 18px;padding:20px 24px;border-radius:0 8px 8px 0}
+  .box .lab{display:block;font:600 11px 'Helvetica Neue',Arial,sans-serif;
+    letter-spacing:.18em;text-transform:uppercase;margin:0 0 9px}
+  .box p:last-child{margin:0}
+  .red{background:var(--rusttint);border-left:4px solid var(--rust)} .red .lab{color:var(--rust)}
+  .grn{background:var(--mosstint);border-left:4px solid var(--moss)} .grn .lab{color:var(--moss)}
+  .amb{background:var(--goldtint);border-left:4px solid var(--gold)} .amb .lab{color:var(--gold)}
+
+  .stepnum{margin:0 0 22px;padding:0;list-style:none;counter-reset:sn}
+  .stepnum li{position:relative;padding:12px 0 12px 44px;border-bottom:1px solid #EFEAF1;line-height:1.55}
+  .stepnum li:last-child{border-bottom:0}
+  .stepnum li::before{counter-increment:sn;content:counter(sn);position:absolute;left:0;top:10px;
+    width:28px;height:28px;border-radius:50%;background:#7A4FA3;color:#fff;text-align:center;
+    font:600 14px/28px 'Helvetica Neue',Arial,sans-serif}
+
+  .tbl{width:100%;border-collapse:collapse;margin:0 0 22px;
+    font:400 15px 'Helvetica Neue',Arial,sans-serif}
+  .tbl th{text-align:left;padding:9px 10px;border-bottom:2px solid #7A4FA3;
+    font:600 11.5px 'Helvetica Neue',Arial,sans-serif;letter-spacing:.1em;text-transform:uppercase;
+    color:#57365B}
+  .tbl td{padding:10px;border-bottom:1px solid #EFEAF1;vertical-align:top;line-height:1.5}
+  .tbl tr:last-child td{border-bottom:0}
+  .tbl td:first-child{width:26%;font-weight:600;color:#3B2C40}
+
+  .sites{display:flex;gap:13px;flex-wrap:wrap;margin:0 0 20px}
+  .site{flex:1 1 226px;background:#fff;border:1px solid var(--rule);border-radius:9px;
+    padding:16px 18px;border-top:4px solid var(--amethyst)}
+  .site h3{margin:0 0 7px;font:600 13px 'Helvetica Neue',Arial,sans-serif;
+    letter-spacing:.07em;text-transform:uppercase;color:var(--amethyst)}
+  .site p{margin:0;font-size:15.5px;line-height:1.5;color:#3B3345}
+
+  .challenge{margin:0;padding:28px 32px;background:var(--rusttint);border-left:5px solid var(--rust)}
+  .challenge h2{font:600 12px 'Helvetica Neue',Arial,sans-serif;letter-spacing:.2em;
+    text-transform:uppercase;color:var(--rust);margin:0 0 13px}
+  .ask{font-size:19.5px;line-height:1.5;margin:0 0 12px;font-style:italic}
+  .btn{display:inline-block;margin:6px 0 12px;padding:15px 30px;background:var(--rust);
+    color:#FDF8F5;text-decoration:none;border-radius:30px;font-style:normal;
+    font:600 15px 'Helvetica Neue',Arial,sans-serif;letter-spacing:.03em}
+  .btn:hover{background:#8A3620}
+  .btn:focus-visible{outline:3px solid var(--amethyst);outline-offset:3px}
+  .fallback{font:400 13.5px 'Helvetica Neue',Arial,sans-serif;color:var(--muted);margin:0}
+  .fallback a{color:var(--rust)}
+
+  footer{padding:24px 40px 42px;border-top:1px solid var(--rule);
+    font:400 13px 'Helvetica Neue',Arial,sans-serif;color:var(--muted);text-align:center;line-height:1.7}
+  .subline{margin:0 0 14px;padding:0 0 13px;border-bottom:1px solid rgba(0,0,0,.09);
+    font:400 14.5px/1.55 'Iowan Old Style','Palatino Linotype',Palatino,Georgia,serif;
+    max-width:56ch;margin-left:auto;margin-right:auto}
+  .subline a{font-weight:500;border-bottom:1px solid currentColor;
+    text-decoration:none;color:inherit}
+  .firstpub{display:block;margin:0 0 10px;padding-bottom:9px;
+    border-bottom:1px solid rgba(0,0,0,.09);
+    font:400 12px 'Helvetica Neue',Arial,sans-serif;letter-spacing:.06em;opacity:.72}
+  .home{display:inline-block;margin:0 0 14px;padding:8px 18px;border-radius:20px;
+    border:1px solid var(--rule);background:#F3EFF7;color:var(--amethyst);text-decoration:none;
+    font:600 12.5px 'Helvetica Neue',Arial,sans-serif;letter-spacing:.05em}
+  .home:hover{background:var(--amethyst);border-color:var(--amethyst);color:#F8F5FB}
+  .mine{display:inline-block;margin:9px 0 0;opacity:.78;font-size:.94em}
+  .srcs{font-size:12.5px;line-height:1.6}
+  .srcs a{color:inherit}
+
+  @media (max-width:640px){
+    header.top,.pad,footer{padding-left:20px;padding-right:20px}
+    .challenge{padding:22px 20px}
+    h1{font-size:27px} body{font-size:16.5px} .lede{font-size:18.5px} .ask{font-size:18px}
+    ul.pts li{flex-direction:column;gap:3px} ul.pts b{flex:none}
+    .tbl{font-size:14px} .tbl td:first-child{width:34%}
+  }
+  @media print{ body{background:#fff} .sheet{box-shadow:none;max-width:none} }
+</style>
+</head>
+<body>
+<div class="sheet">
+
+  <header class="top">
+    <a class="tophome" href="./">&larr;&nbsp; Home</a>
+    <a class="topseries" href="./?s=procedures">All procedures</a>
+    <p class="eyebrow"><a class="mast" href="./">ICU and You</a> &nbsp;·&nbsp;
+      <a class="serlink" href="./?s=procedures">Procedures</a> &nbsp;·&nbsp; Number 5</p>
+    <h1>PICC lines</h1>
+    <p class="kicker">Choosing the patient, the vein and the size &mdash; and several things you were taught that will not survive contact with the evidence</p>
+  </header>
+
+  <div class="pad">
+    <p class="lede">A PICC is the easiest central line to put in and the hardest one to justify. Almost nothing
+      goes wrong at insertion. Most of what goes wrong happens over the following fortnight, to a patient
+      somebody else is looking after, for reasons that were determined before the needle went anywhere near
+      the arm.</p>
+
+    <p>Which makes this a procedure where the thinking beforehand matters more than the hands. So this piece
+      spends its first half on decisions and its second half on technique, and that proportion is
+      deliberate.</p>
+
+    <h2 class="sub">What it is, and what it is not</h2>
+
+    <table class="tbl">
+      <tr><th>Device</th><th>Tip sits</th><th>Realistic dwell</th></tr>
+      <tr><td>Peripheral cannula</td><td>Wherever it is</td><td>3&ndash;5 days</td></tr>
+      <tr><td>Long peripheral</td><td>Mid upper arm, short of the axilla</td><td>Up to about 4 weeks</td></tr>
+      <tr><td>Midline</td><td>Axilla or infraclavicular &mdash; <strong>not central</strong></td><td>2&ndash;4 weeks</td></tr>
+      <tr><td>PICC</td><td>Cavoatrial junction</td><td>Weeks to months</td></tr>
+      <tr><td>Non-tunnelled CVC</td><td>Cavoatrial junction</td><td>Days to weeks</td></tr>
+      <tr><td>Tunnelled CVC / port</td><td>Cavoatrial junction</td><td>Months to years</td></tr>
+    </table>
+
+    <div class="box red">
+      <span class="lab">The distinction that gets people into trouble</span>
+      <p><strong>A midline is not a central line.</strong> It goes in the same way, it looks much the same
+        coming out of the arm, and it confers <em>none</em> of a PICC's tolerance for difficult infusates.
+        Vasopressors, concentrated potassium and parenteral nutrition do not belong in one.</p>
+      <p>The naming around these devices is genuinely inconsistent between services &mdash; &ldquo;extended
+        dwell&rdquo;, &ldquo;long peripheral&rdquo; and &ldquo;midline&rdquo; are used interchangeably and
+        wrongly. Do not trust the label on the handover sheet. Ask the only question that matters:
+        <strong>where is the tip?</strong></p>
+    </div>
+
+    <h2 class="sub">Should this patient have one at all?</h2>
+
+    <p>There is a structured answer to this, and it is worth knowing by name because it will be quoted at you.
+      <b class="term">MAGIC</b> &mdash; the Michigan Appropriateness Guide for Intravenous Catheters &mdash;
+      used a formal consensus method with a fifteen-member multispecialty panel to rate device choice against
+      indication and duration.</p>
+
+    <table class="tbl">
+      <tr><th>Expected duration</th><th>Appropriate device</th></tr>
+      <tr><td>5 days or fewer</td><td>Peripheral cannula. <strong>PICC is rated inappropriate.</strong></td></tr>
+      <tr><td>6&ndash;14 days</td><td>Midline preferred over PICC</td></tr>
+      <tr><td>15 days or more</td><td>PICC appropriate</td></tr>
+      <tr><td>31 days or more</td><td>Tunnelled catheter or port</td></tr>
+    </table>
+
+    <p>That table assumes the infusate could go peripherally. If it could not, the calculus changes
+      immediately &mdash; that is the one thing that justifies a PICC at short notice.</p>
+
+    <div class="box amb">
+      <span class="lab">Two ratings that should change what you ask for</span>
+      <p><strong>Multi-lumen PICCs placed &ldquo;so we have a spare&rdquo; are rated inappropriate.</strong>
+        So is a second lumen to separate sampling from infusion. Single lumen is the default, and lumen count
+        is an independent risk factor for thrombosis. Intensive care asks for triple lumens by reflex, and
+        most of the time the reflex is wrong.</p>
+      <p><strong>And be honest about the weak link.</strong> MAGIC's own panel conceded that clinicians
+        predict expected duration of access badly &mdash; which is the single input the whole algorithm runs
+        on. In intensive care that prediction is worse than anywhere.</p>
+    </div>
+
+    <p>There is a paediatric version, <b class="term">miniMAGIC</b>, partly Australian in authorship, and it
+      is not simply the adult table with smaller numbers. In neonates a PICC becomes appropriate at eight days
+      rather than fifteen, and implanted ports are rated inappropriate at any duration. Midlines in infants
+      are rated <em>uncertain</em> &mdash; the adult midline evidence does not transfer. And PICCs for
+      paediatric malignancy and for parenteral nutrition are also rated uncertain rather than appropriate,
+      which is a real divergence from what adult practice would predict.</p>
+
+    <h2 class="sub">The infusate question, and a rabbit</h2>
+
+    <p>You have been taught that osmolarity above 600 mOsm/L, or a pH below 5 or above 9, mandates central
+      access. Those numbers are quoted with great confidence. Here is where they come from.</p>
+
+    <div class="box amb">
+      <span class="lab">Where 600 comes from</span>
+      <p>A 1998 experiment in the ear veins of male Japanese white rabbits. The tolerated osmolality was
+        <strong>duration-dependent</strong>: about 820 mOsm/kg at eight hours, 690 at twelve, and 550 at
+        twenty-four.</p>
+      <p>&ldquo;600&rdquo; is a rounded midpoint of that curve &mdash; and the finding that actually mattered,
+        that the threshold <em>moves with how long you run the infusion</em>, is dropped every time the number
+        is repeated.</p>
+      <p>The American nutrition societies say 900 for peripheral parenteral nutrition. The European guideline
+        says 800&ndash;850 and adds, in terms, that there is not enough evidence to indicate a clear cut-off.
+        Thresholds in use across organisations run from 500 to 850. The international infusion standards grade
+        the whole question at their <strong>lowest evidence tier</strong>.</p>
+      <p>As for pH under 5 or over 9 &mdash; I could not find a primary source for those numbers at all. They
+        appear to be inherited convention.</p>
+    </div>
+
+    <p>What <em>is</em> solid is vesicant status. Anthracyclines, vinca alkaloids, concentrated vasopressors
+      and concentrated potassium cause tissue necrosis if they extravasate, and that is mechanism rather than
+      arithmetic. MAGIC's approach of reducing the whole question to a binary &mdash; peripherally compatible
+      or not &mdash; is more honest than a numeric threshold pretending to a precision nobody has.</p>
+
+    <h2 class="sub">The arm you must not use</h2>
+
+    <p>This is the section most likely to save somebody something they cannot get back.</p>
+
+    <div class="box red">
+      <span class="lab">Chronic kidney disease: think about the fistula they do not have yet</span>
+      <p>Every arm vein you use is a fistula somebody may need in three years. Australian guidance advises
+        vein preservation from <b class="term">CKD stage 3b &mdash; an eGFR under 45</b> &mdash; in anyone
+        likely to require dialysis, and states that PICCs <em>should be avoided</em> in chronic kidney disease
+        and considered only when there is no alternative.</p>
+      <p>MAGIC independently arrived at the same eGFR threshold, which is the strongest argument for the rule.
+        Preserve the non-dominant forearm; use the dorsal veins of the dominant hand for peripheral access;
+        and where prolonged access is genuinely needed, <strong>a small-bore internal jugular line is
+        preferred to a PICC.</strong></p>
+      <p>The evidence is observational and confounded &mdash; patients who get PICCs are sicker, and sicker
+        patients have worse fistulas. But prior PICC is associated with roughly a threefold odds of not having
+        a functioning fistula, and the alternative costs almost nothing. That asymmetry is what makes the
+        recommendation reasonable despite the evidence being imperfect.</p>
+    </div>
+
+    <div class="box amb">
+      <span class="lab">A guideline conflict you should know is real</span>
+      <p>Infection guidance prefers the <strong>subclavian</strong> site for non-tunnelled central lines.
+        Renal vein preservation prefers the <strong>internal jugular</strong> and specifically warns against
+        subclavian, because subclavian catheterisation is associated with central venous stenosis in the
+        region of 48 per cent against 22 per cent without.</p>
+      <p>These two guidelines genuinely disagree. In a patient heading for dialysis, the renal consideration
+        should win. Trainees should know the documents conflict rather than assume they have misread one.</p>
+      <p>For scale: PICCs themselves are associated with central vein stenosis in about <strong>4.8 per
+        cent</strong> and occlusion in 2.7 &mdash; real, but an order of magnitude below subclavian.</p>
+    </div>
+
+    <div class="box grn">
+      <span class="lab">And one prohibition that turns out not to be evidence-based</span>
+      <p>&ldquo;Never use the arm on the side of a mastectomy or axillary clearance&rdquo; is taught
+        everywhere. The best study &mdash; nearly 7,900 cannulas &mdash; found <strong>two complications in
+        2,743 contralateral placements against two in 5,153 ipsilateral ones</strong>, and concluded that
+        avoiding the ipsilateral arm was an unnecessary practice. ANZCA guidance says there is no
+        contraindication to ipsilateral skin puncture.</p>
+      <p><strong>But do not over-extrapolate.</strong> That evidence is about cannulas and venepuncture. A
+        PICC is a large-bore, long-dwell device with a measurable thrombosis rate, and nobody has shown it is
+        safe in a cleared axilla. The honest position: the blanket ban on ipsilateral <em>needles</em> is not
+        supported; caution about ipsilateral <em>PICCs</em> remains sensible and is also unevidenced.
+        Established lymphoedema is a reasonable relative contraindication on mechanical grounds.</p>
+    </div>
+
+    <p>The remaining contraindications are more straightforward. Absolute: infection or burn at the site;
+      known thrombosis or occlusion of the target or draining vein; a vein too small for the smallest
+      acceptable catheter; superior vena cava obstruction; refusal. Relative: an ipsilateral pacemaker or
+      defibrillator (lead-related venous narrowing is common, so use the other arm &mdash; sensible anatomy
+      rather than evidence), prior ipsilateral central stenosis, and active bacteraemia, which is a question
+      of timing rather than of site.</p>
+
+    <p>Coagulopathy, incidentally, is an argument <em>for</em> a PICC rather than against one &mdash; the
+      insertion site is compressible, which is more than can be said for a subclavian.</p>
+
+    <h2 class="sub">The vein, and the size</h2>
+
+    <div class="sites">
+      <div class="site"><h3>Basilic &mdash; first choice</h3>
+        <p>Largest calibre, most direct route to the axillary vein, straight course with fewer obstructing
+          valves, and it sits medially and superficially &mdash; away from the brachial artery and median
+          nerve.</p></div>
+      <div class="site"><h3>Brachial &mdash; third</h3>
+        <p>Paired, smaller, and sitting in the neurovascular bundle immediately beside the brachial artery and
+          the median nerve. Identify both on short-axis ultrasound before you needle anything.</p></div>
+      <div class="site"><h3>Cephalic &mdash; last</h3>
+        <p>Smaller and more variable, and it joins the axillary vein at a sharp angle at the deltopectoral
+          groove. If your catheter stops at the shoulder, this is usually why.</p></div>
+    </div>
+
+    <p>Aim for the <strong>middle third of the medial upper arm</strong>, roughly 12 to 15 cm above the medial
+      epicondyle. Too low and the site sits in the antecubital region where arm circumference changes with
+      elbow flexion and vessels converge; too high and you are near the axilla, where hair, moisture and
+      movement defeat the dressing. There is a trademarked scheme that divides the arm into zones and names
+      them by colour &mdash; the underlying anatomy is sound, the branded protocol rests on a forty-catheter
+      personal series, so learn the reasoning rather than the trademark.</p>
+
+    <div class="box amb">
+      <span class="lab">Catheter-to-vein ratio: use 45 per cent, and know what it rests on</span>
+      <p>The rule is that the catheter should occupy no more than 45 per cent of the vein's diameter. The
+        number comes from an Australian prospective cohort of <strong>136 patients</strong> that recorded
+        <strong>four</strong> symptomatic thromboses. Above 45 per cent against at or below, the relative risk
+        was 13 &mdash; with a confidence interval running from <strong>1.45 to 122.8</strong>.</p>
+      <p>That is a signal, not an estimate. The authors themselves described the previously used 33 to 50 per
+        cent range as arbitrary. Use 45, because it is the best number available and the international
+        standards have adopted it &mdash; but do not quote it as though it were established.</p>
+    </div>
+
+    <p>The better-evidenced version of the same idea is simply <b class="term">absolute catheter
+      diameter</b>. A meta-analysis of forty studies found symptomatic DVT rising steadily with gauge:
+      <strong>0.89 per cent at 3 French, 3.26 at 4, 5.46 at 5, and 10.66 at 6</strong>. Heterogeneity was
+      high, so hold the absolute values loosely &mdash; but the gradient is unambiguous and it is entirely
+      within your control.</p>
+
+    <div class="box grn">
+      <span class="lab">The four decisions that determine the thrombosis rate</span>
+      <p>Smallest diameter that will do the job. Fewest lumens. Basilic vein. Ultrasound for every step.
+        Everything else is downstream of those.</p>
+    </div>
+
+    <h2 class="sub">The tip</h2>
+
+    <p>Lower third of the superior vena cava, at the cavoatrial junction, or the upper right atrium. The
+      principle underneath, which explains both failure modes at once, is that <strong>the tip should lie
+      parallel to the vessel wall in high-flow blood</strong>.</p>
+
+    <ul class="pts">
+      <li><b>Too high</b><span>A tip in the brachiocephalic or upper SVC abuts the wall more or less
+        perpendicular to flow. That is the set-up for erosion, perforation and thrombosis. Paediatric registry
+        data put occlusion risk nearly threefold higher for SVC than right atrial tips.</span></li>
+      <li><b>Too deep</b><span>Mid or low right atrium, or worse the ventricle: arrhythmia, myocardial erosion,
+        tamponade.</span></li>
+      <li><b>Remember the arm moves the tip</b><span>Tip depth changes with arm position. Confirmatory films
+        should be taken with the arms beside the body, and a tip that looked perfect with the arm abducted may
+        not be.</span></li>
+    </ul>
+
+    <div class="box grn">
+      <span class="lab">Does every PICC need a chest film? In adults, not necessarily.</span>
+      <p>NSW guidance states that <strong>if real-time tip confirmation can be verified during insertion,
+        post-procedure chest radiographs are not required</strong>, and describes the intracavitary ECG method
+        as accurate, precise and cost-effective.</p>
+      <p>Four qualifications. It is state-level guidance, not national &mdash; check your own service. The ECG
+        method needs a discernible P wave, so atrial fibrillation and paced rhythms defeat it, which is not a
+        rare situation in intensive care. A film is still needed if there is any concern about a mechanical
+        complication. And <strong>paediatric practice is more conservative</strong> &mdash; the major
+        Australian children's hospitals require radiographic confirmation before use, full stop.</p>
+    </div>
+
+    <p>One paediatric detail worth carrying even if you mostly do adults: for a lower-limb PICC, the tip sits
+      at or just above the diaphragm, and <strong>L1 is specifically avoided because that is where the renal
+      veins enter</strong>.</p>
+
+    <h2 class="sub">What actually goes wrong</h2>
+
+    <p>Two pieces of standard teaching need correcting here, and they point in opposite directions.</p>
+
+    <div class="box red">
+      <span class="lab">Thrombosis: higher than a central line, but far lower than the famous number</span>
+      <p>The landmark meta-analysis &mdash; 64 studies, 29,503 patients &mdash; found PICCs carried
+        <strong>about 2.5 times the odds of DVT compared with centrally inserted catheters</strong>, with a
+        pooled incidence in the critically ill of nearly 14 per cent. A later analysis of over 109,000
+        patients reproduced the odds ratio almost exactly.</p>
+      <p>Two things qualify it. <strong>Restricted to randomised trials, the PICC-versus-CVC difference was
+        not statistically significant</strong> &mdash; the association is driven by observational data, in
+        which sicker and less mobile patients preferentially receive PICCs. And when analysis is restricted to
+        studies using modern technique &mdash; ultrasound, documented tip verification, deliberate size
+        selection &mdash; the pooled rate falls to <strong>2.4 per cent</strong>.</p>
+      <p>So the useful message is not a frightening odds ratio. It is that <strong>the risk is substantially
+        determined by how you place the line.</strong></p>
+    </div>
+
+    <div class="box red">
+      <span class="lab">Infection: a PICC is not the clean option</span>
+      <p>The belief that PICCs are less infective than central lines is an artefact of where they are used.
+        The meta-analysis that is usually cited in their favour found an overall relative risk of 0.62 &mdash;
+        but that advantage was almost entirely in <em>outpatients</em> (RR 0.22). In hospitalised patients it
+        was marginal. And <strong>per catheter-day, the incidence rate ratio was 0.91 with a confidence
+        interval from 0.46 to 1.79 &mdash; no difference at all.</strong></p>
+      <p>Choose a PICC for infusate, duration or access. Do not choose one because you think it is
+        cleaner.</p>
+    </div>
+
+    <p>The rest, with the honest caveat that several of these have no trustworthy denominator: occlusion is
+      common and variably reported; dislodgement affects around 6 per cent of PICCs in Australian data and is
+      the dominant mode of failure; catheter fracture and embolism exist only as case reports, so anyone
+      quoting you a rate is guessing; and insertion arrhythmia is well understood mechanistically but has
+      never been reliably counted.</p>
+
+    <div class="box grn">
+      <span class="lab">Children run the opposite way</span>
+      <p>A meta-analysis of 3,689 children (neonates excluded) found overall complications 6 per cent,
+        infection 3 per cent, <strong>thromboembolism 1 per cent</strong> &mdash; roughly an order of
+        magnitude below adult intensive care &mdash; but <strong>mechanical failure 8 per cent</strong>,
+        which is higher.</p>
+      <p>That inversion is the paediatric signature. In an adult you are mostly worrying about the vein. In a
+        child you are mostly worrying about the catheter.</p>
+    </div>
+
+    <h2 class="sub">When it will not go in, and other trouble</h2>
+
+    <p>Almost all of what follows is practice-based consensus rather than trial evidence. Treat it as
+      technique, and treat anyone who tells you otherwise with suspicion.</p>
+
+    <ul class="stepnum">
+      <li><strong>It will not advance.</strong> Abduct the arm to 45&ndash;90 degrees. Withdraw two or three
+        centimetres and re-advance rather than pushing harder. <strong>Flush while advancing</strong> &mdash;
+        hydraulic opening of valves is the single most useful manoeuvre. Apply gentle skin traction distal to
+        the site to straighten the vein, and rotate the catheter slightly. If it arrests at the shoulder you
+        are probably in the cephalic, and the answer is usually to resite. <strong>Never force against
+        resistance.</strong></li>
+      <li><strong>It has gone up the internal jugular.</strong> Prevent it: turn the head <em>towards</em> the
+        insertion side, chin down to the shoulder, as the catheter crosses the shoulder; have an assistant
+        press over the ipsilateral internal jugular; and scan the neck with ultrasound before you send anyone
+        for a film. Correct it: withdraw to below the junction, reposition the head, re-advance with a
+        vigorous flush. If it is seated in the jugular and will not redirect, <strong>remove and
+        resite</strong> &mdash; you cannot steer it round that corner.</li>
+      <li><strong>You have lost blood return.</strong> Think fibrin sheath first &mdash; it infuses freely and
+        will not aspirate. Also tip against the wall, migration, mural thrombus, a kink, or a clamp somebody
+        left shut. Sit the patient up, raise the arm, ask for a deep breath or a cough, roll them to the other
+        side. Flush 10 mL of saline with a <strong>10 mL or larger syringe</strong> and try again. Check the
+        external length against what was documented.</li>
+      <li><strong>It is occluded.</strong> In an adult of 30 kg or more, <b class="term">alteplase 2 mg in
+        2 mL</b> instilled into the lumen; assess at 30 minutes, reassess at 120, and a second dose may
+        follow. Maximum two doses. Do not apply vigorous suction and do not push against resistance &mdash;
+        you will either rupture the catheter or embolise the clot. Avoid if there is active bleeding, recent
+        surgery, or a suspected catheter infection.</li>
+      <li><strong>It is occluded, and it is a child.</strong> Paediatric dosing and dwell differ from the adult
+        label, and Australian paediatric practice has diverged from it: under 10 kg, 0.25 mg; over 10 kg,
+        1.5 mg in 1.5 mL; dwell two to four hours initially and, if needed, considerably longer. Follow your
+        local protocol and know that it will not match the adult product information.</li>
+      <li><strong>It is blocked, but not with clot.</strong> Alteplase will do nothing for a lipid residue or a
+        drug precipitate. Those need a different agent &mdash; and a pharmacist.</li>
+      <li><strong>You think it has fractured.</strong> Stop the infusion. Clamp proximal to the suspected
+        defect. Do not flush. Consider a tourniquet high on the arm if a fragment may have embolised, and get
+        an urgent chest film. Retained fragments are an interventional radiology problem.</li>
+      <li><strong>Arrhythmia during insertion.</strong> The tip is too deep. Withdraw one to two centimetres
+        and it almost always stops. The corollary matters more: an arrhythmia appearing <em>days</em> later
+        suggests inward migration &mdash; check the external length.</li>
+      <li><strong>The arm has swollen.</strong> Catheter-related upper limb DVT until proven otherwise, and it
+        needs an urgent compression ultrasound. Then the part that surprises people: <strong>a functioning,
+        correctly positioned, still-needed catheter does not automatically come out.</strong> Anticoagulate
+        and keep it. Remove it if it is infected, malpositioned, blocked, no longer needed, or if symptoms
+        progress despite anticoagulation.</li>
+    </ul>
+
+    <h2 class="sub">Taking it out</h2>
+
+    <ul class="pts">
+      <li><b>Never routinely</b><span>Do not replace PICCs on a schedule to prevent infection, and do not
+        exchange them over a wire to treat suspected infection. Both are explicit recommendations and both are
+        still done.</span></li>
+      <li><b>But promptly when done</b><span>Removing a line that is no longer essential is the single most
+        effective infection prevention measure there is, and the most neglected. Ask every day.</span></li>
+      <li><b>Not for fever alone</b><span>An explicit recommendation, and one intensive care trainees reliably
+        get wrong.</span></li>
+      <li><b>Never sitting up</b><span>Removal with the site above the heart risks air embolism. Supine or
+        head-down; ask for a Valsalva or breath hold, or remove at end of inspiration; then an
+        <strong>occlusive dressing left on for at least 24 hours</strong>, because the residual tract keeps
+        letting air in. If you suspect an embolism: left lateral, head down, 100 per cent oxygen.</span></li>
+      <li><b>If it will not come</b><span>Stop pulling. Venospasm is the usual cause. Warm compresses, wait
+        twenty or thirty minutes, reposition and relax the arm, then gentle sustained traction. Excessive
+        force is the main reason catheters fracture on removal.</span></li>
+      <li><b>Measure it</b><span>Every time, against the documented insertion length, and write down that you
+        did. A short catheter means a retained fragment until imaging says otherwise.</span></li>
+    </ul>
+
+    <h2 class="sub">The bundle, briefly</h2>
+
+    <p>Nothing here is novel and all of it is audited.</p>
+
+    <ul class="pts">
+      <li><b>Skin</b><span>2 per cent chlorhexidine in 70 per cent alcohol, applied for at least 30 seconds,
+        then <strong>allowed to dry</strong>. The drying is not optional — the antisepsis depends on contact
+        time, and wet alcohol is a fire risk. Chlorhexidine in infants under two months is an unresolved
+        question rather than a recommendation, and chlorhexidine-impregnated dressings are specifically
+        <em>not</em> for premature neonates.</span></li>
+      <li><b>Barriers</b><span>Cap, mask, sterile gown, sterile gloves, full-body drape — and, in the
+        Australian wording, <strong>eye protection and a sterile ultrasound probe cover</strong>, both of which
+        are missing from the older international list and both of which matter now that ultrasound is
+        standard.</span></li>
+      <li><b>Dressing</b><span>A chlorhexidine-impregnated transparent dressing for adults. Change transparent
+        dressings at least weekly, gauze every couple of days, and either immediately if damp, soiled or
+        lifting.</span></li>
+      <li><b>Securement</b><span>Sutureless, of some kind — that much is agreed. Which kind is not. The
+        Australian pilot trial in this area was not powered to separate its arms, dislodgement remained the
+        dominant failure mode at around 6 per cent, and tissue adhesive is promising rather than proven. Some
+        paediatric services now use subcutaneous anchoring.</span></li>
+    </ul>
+
+    <div class="box amb">
+      <span class="lab">If you remember six things</span>
+      <p>Fewer lumens than you think you need. The smallest catheter that will do the job. Basilic, middle
+        third of the arm, under ultrasound. Tip at the cavoatrial junction and parallel to the wall. Ask about
+        kidneys before you touch the arm. And take it out the day it stops being necessary.</p>
+    </div>
+  </div>
+
+  <div class="pad" style="padding-top:6px">
+    <div class="challenge">
+      <h2>Challenge for you</h2>
+      <p class="ask">What do you do when the catheter stops at the shoulder?</p>
+      <p>Everybody who places enough of these has a sequence &mdash; something about the arm, something about
+        the head, a flush at the right moment, a point at which they stop and resite rather than persisting.
+        Very little of it is written down anywhere, which is exactly why it is worth collecting.</p>
+      <p>I would also like to hear about the PICC you wish had never been inserted &mdash; the one that went
+        in easily, for a good enough reason at the time, and cost the patient something later. Those are the
+        ones this piece exists for.</p>
+      <p><a class="btn" href="mailto:icuandyou@icloud.com?subject=Procedures%20-%20PICC%20lines&body=What%20I%20do%20when%20it%20stops%20at%20the%20shoulder%3A%0D%0A%0D%0A%0D%0AA%20PICC%20I%20wish%20had%20never%20gone%20in%2C%20and%20why%3A%0D%0A%0D%0A%0D%0A---%0D%0A%0D%0AName%3A%0D%0A%0D%0AHappy%20to%20be%20named%3F%20%28yes%20%2F%20no%29%3A%0D%0A%0D%0A---%0D%0A%0D%0AThinking%20about%20this%20ICU%20AND%20YOU%20post%20overall%20%E2%80%94%20was%20it%20useful%20to%20you%2C%20or%20would%20it%20be%20useful%20to%20others%3F%0D%0A">Tell me your sequence</a></p>
+      <p class="fallback">The button opens a reply straight to me. If your device blocks it, write to
+        <a href="mailto:icuandyou@icloud.com">icuandyou@icloud.com</a> instead.</p>
+    </div>
+  </div>
+
+  <footer>
+    <span class="firstpub">First published September 2026</span>
+    <p class="subline">Two emails a week &mdash; the Friday newsletter for all subscribers, and, for clinical subscribers,
+      the mind map and puzzles the moment they go up on Tuesday. Occasional announcements of new
+      features as they arrive. What went up and why it mattered, the best of your replies, and
+      original feature stories, news and views. <a href="https://joinlist.com/f/5adad2d6">Come and join us</a>.</p>
+    <a class="home" href="./">&larr; &nbsp;All of ICU AND YOU</a><br>
+    Procedures No. 5 &nbsp;&#183;&nbsp; Not tied to a particular topic grouping<br>
+    <span class="srcs">Device appropriateness from
+    <a href="https://www.acpjournals.org/doi/10.7326/M15-0744">MAGIC, <em>Ann Intern Med</em> 2015</a> and
+    <a href="https://publications.aap.org/pediatrics/article-abstract/145/Supplement_3/S269/34468">miniMAGIC,
+    <em>Pediatrics</em> 2020</a>. Osmolarity thresholds trace to
+    <a href="https://www.sciencedirect.com/science/article/abs/pii/S0899900798000379">Kuwahara et&nbsp;al.,
+    <em>Nutrition</em> 1998</a>, with the guideline position in the
+    <a href="https://espen.org/documents/PN_CVC_GUIDELINES.pdf">ESPEN CVC guidelines</a>. Vein preservation
+    from <a href="https://www.health.wa.gov.au/-/media/Files/Corporate/general-documents/Health-Networks/Renal/171010_PAP_VeinPreservationGuideline_V04_FINAL.pdf">WA
+    Health</a> and El&nbsp;Ters et&nbsp;al., <em>Am J Kidney Dis</em> 2012; the ipsilateral-arm evidence from
+    <a href="https://atm.amegroups.org/article/view/119164/html">Hadjistyllis et&nbsp;al., <em>Ann Transl
+    Med</em> 2024</a>. Catheter-to-vein ratio from Sharp et&nbsp;al., <em>Int J Nurs Stud</em> 2015; diameter
+    and thrombosis from
+    <a href="https://journals.sagepub.com/doi/10.1177/10760296221144041">Bahl et&nbsp;al., 2023</a>.
+    Thrombosis from <a href="https://www.sciencedirect.com/science/article/abs/pii/S0140673613605929">Chopra
+    et&nbsp;al., <em>Lancet</em> 2013</a>,
+    <a href="https://www.frontiersin.org/articles/10.3389/fcvm.2022.917572/full">Zhao et&nbsp;al., 2022</a> and
+    Balsorano et&nbsp;al., <em>J Vasc Access</em> 2020; infection from
+    <a href="https://www.ncbi.nlm.nih.gov/books/NBK195264/">Chopra et&nbsp;al., <em>ICHE</em> 2013</a>.
+    Insertion, tip confirmation, dressings and removal follow the
+    <a href="https://aci.health.nsw.gov.au/__data/assets/pdf_file/0010/239626/ACI-CVAD-clinical-practice-guide.pdf">NSW
+    ACI CVAD clinical practice guide</a>, with paediatric detail from
+    <a href="https://www.rch.org.au/uploadedFiles/Main/Pages/policy/public/CVAD_procedure_revision_14032023.pdf">RCH
+    Melbourne</a>. Guidance and product information move, and the paediatric and adult alteplase regimens
+    differ &mdash; check your own local protocol before you act on any dose here. Educational use only, not a
+    clinical protocol.</span><br>
+    <span class="mine">Views my own, not those of NSW Health or any other organisation. No identifiable
+    patients &mdash; scenarios are constructed or combined for teaching. <a href="about.html">More</a>.</span>
+  </footer>
+
+</div>
+<script data-goatcounter="https://icuandyou.goatcounter.com/count"
+        async src="//gc.zgo.at/count.js"></script>
+</body>
+</html>
