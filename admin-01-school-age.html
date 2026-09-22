@@ -1,0 +1,544 @@
+<!DOCTYPE html>
+<html lang="en-AU">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ICU AND YOU · Administrators' Avenue No. 1 — Who decided that?</title>
+<meta name="description" content="Administrators' Avenue No. 1: a guide for trainees to what hospital administration actually does — role delineation, credentialing, how the money moves, what happens to the incident form you filed at 4am, and how to get something changed.">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="alternate icon" href="/favicon.ico" sizes="any">
+<link rel="apple-touch-icon" href="/icon-180.png">
+<meta name="theme-color" content="#1B2A33">
+<meta property="og:site_name" content="ICU AND YOU">
+<meta property="og:type" content="website">
+<meta property="og:title" content="ICU AND YOU · Administrators' Avenue No. 1 — Who decided that?">
+<meta property="og:description" content="A guide for trainees to what hospital administration actually does, and how to get something changed.">
+<meta property="og:image" content="https://icuandyou.com/share-card.png">
+<meta name="twitter:card" content="summary_large_image">
+<style>
+  :root{
+    --paper:#FBFBF8; --ink:#242822; --muted:#636A5C; --rule:#E0E3D8;
+    --ledger:#57663F; --ledgertint:#EFF2E8;
+    --ink2:#7A5C3E; --ink2tint:#F7F1E9;
+    --flag2:#8A9A72;
+  }
+  *{box-sizing:border-box}
+  body{margin:0;background:#E9ECE2;color:var(--ink);
+    font:400 17px/1.64 'Iowan Old Style','Palatino Linotype',Palatino,Georgia,serif;
+    -webkit-text-size-adjust:100%;}
+  .sheet{max-width:790px;margin:0 auto;background:var(--paper);
+    box-shadow:0 1px 40px rgba(30,34,24,.11);}
+
+  .flag{height:6px;background:repeating-linear-gradient(135deg,
+    var(--ledger) 0 7px, var(--flag2) 7px 14px)}
+
+  header.top{padding:42px 40px 28px;border-bottom:1px solid var(--rule)}
+  .topseries,.toptopic,.tophome{display:inline-block;margin:0 0 16px 9px;padding:7px 16px;
+    border-radius:20px;border:1px solid currentColor;opacity:.62;text-decoration:none;
+    color:inherit;font:600 11.5px 'Helvetica Neue',Arial,sans-serif;letter-spacing:.09em;
+    text-transform:uppercase;transition:opacity .12s ease}
+  .tophome{margin-left:0}
+  .topseries:hover,.toptopic:hover,.tophome:hover{opacity:1}
+  .eyebrow{font:500 11.5px/1 'Helvetica Neue',Arial,sans-serif;letter-spacing:.24em;
+    text-transform:uppercase;color:var(--muted);margin:0 0 14px}
+  .eyebrow a.mast,.eyebrow a.serlink{color:inherit;text-decoration:none;
+    border-bottom:1px solid transparent}
+  .eyebrow a.mast:hover,.eyebrow a.serlink:hover{border-bottom-color:currentColor}
+  h1{font-size:35px;line-height:1.14;margin:0 0 8px;font-weight:400;letter-spacing:-.012em;
+    font-style:italic}
+  .kicker{color:var(--muted);margin:0;font-size:16.5px}
+
+  .pad{padding:34px 40px}
+  p{margin:0 0 17px}
+  .lede{font-size:20px;line-height:1.5;margin:0 0 22px}
+  b.term{font-weight:600;color:var(--ledger)}
+
+  h2.sub{font:600 12px 'Helvetica Neue',Arial,sans-serif;letter-spacing:.2em;
+    text-transform:uppercase;color:var(--ledger);margin:32px 0 15px;
+    padding-bottom:8px;border-bottom:1px solid var(--rule)}
+
+  ul.pts{list-style:none;margin:0 0 18px;padding:0}
+  ul.pts li{display:flex;gap:14px;padding:11px 0;border-bottom:1px solid #EDEFE6;
+    font-size:16.5px;line-height:1.52}
+  ul.pts li:last-child{border-bottom:0}
+  ul.pts b{flex:0 0 176px;font:600 14.5px 'Helvetica Neue',Arial,sans-serif;
+    color:var(--ledger);line-height:1.4}
+
+  .box{margin:0 0 18px;padding:21px 25px;background:var(--ledgertint);
+    border-left:4px solid var(--ledger);border-radius:0 8px 8px 0}
+  .box .lab{display:block;font:600 11px 'Helvetica Neue',Arial,sans-serif;
+    letter-spacing:.18em;text-transform:uppercase;color:var(--ledger);margin:0 0 9px}
+  .box p:last-child{margin:0}
+
+  .welcome{margin:0 0 24px;padding:22px 26px;background:var(--ink2tint);
+    border-left:4px solid var(--ink2);border-radius:0 8px 8px 0}
+  .welcome .lab{display:block;font:600 11px 'Helvetica Neue',Arial,sans-serif;
+    letter-spacing:.18em;text-transform:uppercase;color:var(--ink2);margin:0 0 9px}
+  .welcome p:last-child{margin:0}
+
+  blockquote{margin:0 0 18px;padding:4px 0 4px 22px;border-left:3px solid var(--ledger);
+    font-size:17px;line-height:1.55;color:#33392C}
+  blockquote p:last-child{margin:0}
+  blockquote cite{display:block;margin-top:9px;font:400 13.5px 'Helvetica Neue',Arial,sans-serif;
+    font-style:normal;color:var(--muted)}
+
+  .careful{margin:0 0 18px;padding:19px 23px;background:#FBF8EF;
+    border:1px dashed #C6B486;border-radius:9px;font-size:16px}
+  .careful .lab{display:block;font:600 11px 'Helvetica Neue',Arial,sans-serif;
+    letter-spacing:.18em;text-transform:uppercase;color:#7E6A2E;margin:0 0 9px}
+  .careful p:last-child{margin:0}
+
+  .nsw{margin:0 0 20px;padding:22px 26px;background:#F3F5EE;
+    border:1px solid #CFD6C0;border-radius:10px;font-size:16px}
+  .nsw .lab{display:block;font:600 11px 'Helvetica Neue',Arial,sans-serif;
+    letter-spacing:.18em;text-transform:uppercase;color:var(--ledger);margin:0 0 10px}
+  .nsw p:last-child{margin:0}
+  .nsw ul{margin:0 0 11px;padding:0 0 0 20px}
+  .nsw li{margin:0 0 6px;line-height:1.5}
+
+  ol.steps{margin:0 0 18px;padding:0 0 0 22px}
+  ol.steps li{margin:0 0 11px;font-size:16.5px;line-height:1.52}
+  ol.steps li b{color:var(--ledger)}
+
+  .reply{margin:0;padding:28px 32px;background:#F1F3EA;border-left:5px solid var(--ink2)}
+  .reply h2{font:600 12px 'Helvetica Neue',Arial,sans-serif;letter-spacing:.2em;
+    text-transform:uppercase;color:var(--ink2);margin:0 0 13px}
+  .ask{font-size:19px;line-height:1.5;font-style:italic;margin:0 0 15px}
+  .btn{display:inline-block;margin:6px 0 12px;padding:15px 30px;background:var(--ledger);
+    color:#FBFBF8;text-decoration:none;border-radius:30px;font-style:normal;
+    font:600 15px 'Helvetica Neue',Arial,sans-serif;letter-spacing:.03em}
+  .btn:hover{background:#3F4C2E}
+  .btn:focus-visible{outline:3px solid var(--ink2);outline-offset:3px}
+  .fallback{font:400 13.5px 'Helvetica Neue',Arial,sans-serif;color:var(--muted);margin:0}
+  .fallback a{color:var(--ledger)}
+
+  .subline{margin:0 0 14px;padding:0 0 13px;border-bottom:1px solid rgba(0,0,0,.09);
+    font:400 14.5px/1.55 'Iowan Old Style','Palatino Linotype',Palatino,Georgia,serif;
+    max-width:56ch;margin-left:auto;margin-right:auto}
+  .subline a{font-weight:500;border-bottom:1px solid currentColor;
+    text-decoration:none;color:inherit}
+  .firstpub{display:block;margin:0 0 10px;padding-bottom:9px;
+    border-bottom:1px solid currentColor;border-color:rgba(0,0,0,.09);
+    font:400 12px 'Helvetica Neue',Arial,sans-serif;letter-spacing:.06em;opacity:.72}
+
+  footer{padding:24px 40px 42px;border-top:1px solid var(--rule);
+    font:400 13px 'Helvetica Neue',Arial,sans-serif;color:var(--muted);
+    text-align:center;line-height:1.7}
+  .home{display:inline-block;margin:0 0 14px;padding:8px 18px;border-radius:20px;
+    border:1px solid var(--rule);background:#F1F3EA;color:var(--ledger);text-decoration:none;
+    font:600 12.5px 'Helvetica Neue',Arial,sans-serif;letter-spacing:.05em}
+  .home:hover{background:var(--ledger);border-color:var(--ledger);color:#FBFBF8}
+  .mine{display:inline-block;margin:9px 0 0;opacity:.78;font-size:.94em}
+  .srcs{font-size:12.5px;line-height:1.6}
+  .srcs a{color:inherit}
+
+  @media (max-width:640px){
+    header.top,.pad,footer{padding-left:20px;padding-right:20px}
+    .reply{padding:22px 20px}
+    h1{font-size:27px} body{font-size:16.5px} .lede{font-size:18.5px} .ask{font-size:17.5px}
+    ul.pts li{flex-direction:column;gap:3px} ul.pts b{flex:none}
+  }
+  @media print{ body{background:#fff} .sheet{box-shadow:none;max-width:none} }
+</style>
+</head>
+<body>
+<div class="sheet">
+
+  <div class="flag"></div>
+
+  <header class="top">
+    <a class="tophome" href="./">&larr;&nbsp; Home</a>
+    <a class="topseries" href="./?s=admin">More from Administrators&#x27; Avenue</a>
+    <a class="toptopic" href="./?t=school-age" title="Everything on The school-age child">All on this topic</a>
+    <p class="eyebrow"><a class="mast" href="./">ICU and You</a> &nbsp;·&nbsp;
+      <a class="serlink" href="./?s=admin">Administrators&#x27; Avenue</a> &nbsp;·&nbsp; Number 1</p>
+    <h1>Who decided that?</h1>
+    <p class="kicker">What administration actually is, why your hospital has what it has, and how to get something changed</p>
+  </header>
+
+  <div class="pad">
+    <div class="welcome">
+      <span class="lab">What this section is for</span>
+      <p><strong>This is written for trainees, about administration. It is not written to tell
+        administrators how to do their job</strong> &mdash; they know considerably more about it than I do,
+        and a clinician lecturing an executive on management is exactly as useful as an executive lecturing
+        you on ventilation.</p>
+      <p>The purpose is narrower and, I think, more useful. You will spend your entire career inside an
+        institution that nobody has ever explained to you. You will be baffled by decisions, irritated by
+        forms, and told that things are not possible, without ever learning the machinery that produces any
+        of it. Most doctors retire still not knowing. This section is an attempt to fix that, because a
+        clinician who understands the system can change it, and one who does not can only complain about
+        it.</p>
+    </div>
+
+    <p class="lede">It is a Tuesday afternoon. A nine-year-old arrives in your emergency department, seriously
+      unwell, and over the next six hours your hospital does everything a paediatric intensive care unit would
+      do &mdash; intubation, ventilation, lines, inotropes, a consultant at the bedside and a nurse who does
+      nothing else &mdash; until the retrieval team lands and takes the child four hundred kilometres away.</p>
+
+    <p>Somewhere in those six hours a registrar asks the question that every registrar eventually asks.
+      <em>Why don't we have a paediatric intensivist? Why is the equipment in three different cupboards? Why
+      am I told I can't do something I have done a hundred times?</em> And underneath all of them, the real
+      one: <strong>who decided that?</strong></p>
+
+    <p>The answer is almost never "management, out of meanness." It is usually a document, written years ago,
+      that you have never read and could find in about four minutes. Here are the main ones.</p>
+
+    <h2 class="sub">Role delineation: the document that explains most of it</h2>
+
+    <p>Every clinical service in every public hospital carries a formally assigned level. Not a description
+      &mdash; an assignment. In New South Wales the instrument is the <b class="term">Guide to the Role
+      Delineation of Clinical Services</b>, now in its seventh edition; other states have equivalents under
+      other names. The levels run from <em>No Planned Service</em> up through Levels 1 to 6, ascending in
+      complexity, and they set out the minimum workforce, support services and infrastructure required to
+      deliver a service safely at that level.</p>
+
+    <p>This single concept answers a startling proportion of the questions trainees ask. Your hospital has
+      what it has because of what it has been delineated to provide.</p>
+
+    <div class="box">
+      <span class="lab">The bit that will surprise you</span>
+      <p><strong>Intensive care is only delineated at Levels 4, 5 and 6.</strong> There is no such thing as a
+        Level 1, 2 or 3 intensive care service. Below Level 4 the designation is <em>no planned service</em>
+        &mdash; which means high dependency or close observation, not an ICU.</p>
+      <p>A <b class="term">Level 4</b> intensive care service is defined as being part of the district's
+        critical care network and &ldquo;supported by and integrated with a Level 5 or 6 intensive care
+        service&rdquo;, providing short-term cardio-respiratory support including invasive ventilation.</p>
+      <p>Read that again, because it is the point. <strong>The relationship with the tertiary centre is not a
+        favour you are calling in. It is written into the definition of what your unit is.</strong> Retrieval
+        is not a failure of your hospital to cope; it is your hospital doing precisely the thing it is
+        designated to do.</p>
+    </div>
+
+    <p>The same framework covers paediatric medicine and surgery for children, and the highest level &mdash;
+      the specialist children's hospital &mdash; is the only one that includes paediatric intensive care.
+      Worth knowing too: services with no designated paediatric level at all are still required to hold
+      documented arrangements with the paediatric retrieval service. The retrieval relationship is a
+      requirement, not an informal courtesy between friendly consultants.</p>
+
+    <div class="careful">
+      <span class="lab">Two numbering systems, running opposite ways</span>
+      <p>The College of Intensive Care Medicine has its own definitions in <b class="term">IC-1, Minimum
+        Standards for Intensive Care Units</b>, and they run <strong>backwards</strong> relative to the state
+        framework. A CICM <em>Level III</em> unit is the tertiary referral unit; a NSW <em>Level 6</em> is.
+        A CICM Level I unit provides resuscitation and short-term support for at least several hours.</p>
+      <p>So the same hospital can accurately be described as Level 4 and Level I in the same meeting, and
+        everybody will be right and somebody will be confused. Ask which framework is being used. It is not a
+        stupid question; it is the only sensible one.</p>
+      <p>Note also what is <em>missing</em> from both: there is no category for a unit whose actual paediatric
+        role is to stabilise children expertly and transfer them. That work happens constantly and is named
+        nowhere, which is worth knowing when you wonder why it is hard to resource.</p>
+    </div>
+
+    <h2 class="sub">Why you can't just do the thing you can do</h2>
+
+    <p>Three words get used interchangeably and mean entirely different things. Getting them straight is worth
+      more to you than almost anything else in this piece.</p>
+
+    <ul class="pts">
+      <li><b>Qualification</b><span>What you have achieved. A degree, a Fellowship. Permanent, portable,
+        yours. It says what you were assessed as able to do.</span></li>
+      <li><b>Registration</b><span>National and regulatory — the Medical Board of Australia through Ahpra. It
+        grants legal authority to practise anywhere in Australia and recognises your specialty. It exists to
+        protect the public from the unqualified.</span></li>
+      <li><b>Scope of clinical practice</b><span>Organisational and local. This employer, this facility, these
+        procedures, reviewed at least every five years. It exists to match a particular person to a particular
+        environment.</span></li>
+    </ul>
+
+    <p>The national standard defines scope of clinical practice as delineating the extent of an individual's
+      practice within a particular organisation based on their credentials, competence, performance and
+      professional suitability &mdash; <strong>and the needs and the capability of the organisation to support
+      it</strong>.</p>
+
+    <p>That last clause is the whole thing. Scope of practice is a function of two variables, and only one of
+      them is you. The NSW policy says it without any diplomacy at all:</p>
+
+    <blockquote>
+      <p>There is no obligation upon a public health organisation to provide support or infrastructure for any
+        given clinical service simply because the practitioner has the credentials, skills and experience to
+        perform that service.</p>
+      <cite>NSW Health PD2019_056, Credentialing and Delineating Clinical Privileges</cite>
+    </blockquote>
+
+    <p>Which is bracing, and also correct. A surgeon credentialed for an operation that this hospital cannot
+      support &mdash; no appropriate ICU level, no after-hours imaging, no one to manage the complication at
+      three in the morning &mdash; is a hazard rather than a resource, however good they are. Clinical
+      privileges are facility-specific because facilities differ. When you are told you cannot do something
+      here that you have done elsewhere, the sentence you are actually being told is usually about the
+      building, not about you.</p>
+
+    <h2 class="sub">Where the money comes from, honestly</h2>
+
+    <p>Australian public hospitals are funded substantially through <b class="term">activity based
+      funding</b>. Activity is classified, counted, and converted into National Weighted Activity Units. A
+      national body sets a price per unit &mdash; for 2026&ndash;27 it is $7,418 per NWAU. The Commonwealth
+      pays a proportion, the state pays the larger share, and money reaches a Local Health District through a
+      service agreement that also carries its activity targets and performance measures. The district then
+      allocates to its facilities.</p>
+
+    <div class="careful">
+      <span class="lab">Where clinicians get this wrong</span>
+      <p><strong>Your hospital does not receive NWAU × the national price for your patient.</strong> That
+        figure is an input to a Commonwealth calculation several steps upstream. The state purchases activity
+        from districts under its own arrangements, and the district's internal allocation is a further step
+        removed again. Anyone who tells you what a particular patient "earned the hospital" is almost
+        certainly wrong.</p>
+    </div>
+
+    <p>Now the honest version of the thing people say about our nine-year-old. You will hear that transfers
+      are funded badly, or that the hospital is penalised for stabilising and sending on. <strong>There is no
+      transfer penalty in the pricing model.</strong> That claim will not survive contact with anyone who
+      works in finance, and using it will cost you credibility you need for better arguments.</p>
+
+    <p>What is true is more interesting and harder to fix:</p>
+
+    <ul class="pts">
+      <li><b>Averaged prices have tails</b><span>Activity based funding pays an average price for a class of
+        patient. It does not pay for this patient. Six hours of one-to-one nursing, a consultant off the
+        floor, a registrar unavailable and a resuscitation bay closed are real costs that an averaged price
+        was never designed to reflect. That is a property of prospective payment, not a conspiracy.</span></li>
+      <li><b>The unit of count matters more than the price</b><span>If the child is retrieved without ever
+        being formally admitted, the episode is counted as an emergency department presentation, which carries
+        far less weight than any admitted episode. Whether an admission happened can matter more to the
+        recorded activity than anything about the diagnosis.</span></li>
+      <li><b>The paediatric loading goes elsewhere</b><span>There is a pricing adjustment recognising that
+        children cost more to treat — but it attaches to establishments identified as delivering specialised
+        paediatric services. The loading follows the children's hospital, not the regional hospital doing the
+        resuscitation. That asymmetry is real, and it is a much better argument than the one about
+        transfers.</span></li>
+      <li><b>Some things never touch your budget at all</b><span>The retrieval service is funded centrally and
+        is free at the point of use to you. It appears nowhere in your hospital's activity or expenditure. A
+        great deal of what makes the system work is like this, which is one reason it is invisible from the
+        bedside.</span></li>
+    </ul>
+
+    <h2 class="sub">What happened to the form you filled in at 4 am</h2>
+
+    <p>Most trainees file an incident report believing it disappears into a void, or worse, that it is a
+      mechanism for allocating blame. Neither is true, and the actual process is worth knowing.</p>
+
+    <div class="careful">
+      <span class="lab">A word you are probably using that no longer exists</span>
+      <p>You were almost certainly taught <strong>SAC</strong> &mdash; Severity Assessment Code &mdash; and
+        "SAC 1" for the most serious incidents. In NSW that terminology was replaced some years ago by the
+        <b class="term">Harm Score</b>, which the system calculates itself from what you enter. Harm Score 1
+        is the most serious; Harm Score 4 is no harm or a near miss. SAC survives in other jurisdictions and
+        in older local documents, so you will keep hearing it, but if you say "SAC 1" in NSW you are using a
+        word the system you are typing into does not know.</p>
+    </div>
+
+    <p>A Harm Score 1 incident sets a formal clock running, and it runs fast: notification the same day or as
+      soon as practicable, a brief to the Ministry within 24 hours and a fuller one within 72, a preliminary
+      risk assessment within 72 hours, and a <b class="term">Serious Adverse Event Review</b> completed within
+      60 days.</p>
+
+    <p>That review is the statutory framework &mdash; and here is another detail people get wrong: it did not
+      abolish root cause analysis. RCA is now one of four approved methodologies that can be used inside a
+      SAER, alongside the London Protocol and two NSW analysis methods. The chief executive decides which is
+      used. The whole process is conducted under statutory privilege, which is what allows people to speak
+      freely inside it.</p>
+
+    <p>Alongside it sits <b class="term">open disclosure</b> &mdash; the obligation to tell a patient and
+      family openly when something has gone wrong. The national framework was revised in June 2026 and now
+      runs on five principles, including a restorative process and cultural safety. On the point trainees
+      most often agonise over: saying <em>I am sorry</em> is described as essential, and every Australian
+      jurisdiction has apology legislation protecting such statements in defined circumstances. Apologising
+      is not an admission of liability. It is the expected standard.</p>
+
+    <h2 class="sub">Why the observation chart looks like that</h2>
+
+    <p>You have almost certainly complained about the observation chart. It is worth knowing where it came
+      from, because it is the clearest example in Australian practice of administration doing exactly what it
+      is supposed to do.</p>
+
+    <p>In November 2005 a sixteen-year-old named <b class="term">Vanessa Anderson</b> was admitted to Royal
+      North Shore Hospital after being struck on the head by a golf ball. She died two days later. The
+      coroner found she died of respiratory arrest caused by the medication she had been given, and
+      identified poor communication between doctors, inadequate staffing, absent or inadequate notes, poor
+      clinical decisions and ignorance of protocols. His finding was that "almost every conceivable error or
+      omission occurred and continue to build on top of one another". He recommended a full and open inquiry
+      into the delivery of health services in New South Wales.</p>
+
+    <p>That inquiry &mdash; the Garling Special Commission &mdash; was established within weeks and reported
+      in November 2008 with 139 recommendations. On deteriorating patients it said this:</p>
+
+    <blockquote>
+      <p>Detection and management of deterioration in a patient's condition by hospital staff can be
+        problematic, particularly where the problems occur overnight when patients are under the care of
+        junior clinicians. The Clinical Excellence Commission has suggested a plan to NSW Health which will
+        assist to improve the care being provided for patients who may fall into this description. My
+        recommendation endorses that plan and commends it to NSW Health for its consideration.</p>
+      <cite>Special Commission of Inquiry into Acute Care Services in NSW Public Hospitals, 2008</cite>
+    </blockquote>
+
+    <p>Note the sequence carefully, because it is how change actually happens. The Clinical Excellence
+      Commission <em>already had the plan</em>. It had identified unrecognised deterioration as a problem
+      years earlier. What the inquest and the inquiry supplied was not the idea but the political conditions
+      in which the idea could be funded and mandated across an entire state. Good proposals frequently sit
+      waiting for a moment. Part of administration is having the proposal ready when the moment arrives.</p>
+
+    <p>That plan became <b class="term">Between the Flags</b>, which commenced in 2010 and now runs across
+      more than two hundred facilities. The colour-coded chart in front of you is its visible part: a yellow
+      zone triggering a clinical review within thirty minutes, a red zone triggering an immediate rapid
+      response. Underneath it sits National Safety and Quality Health Service <b class="term">Standard 8,
+      Recognising and Responding to Acute Deterioration</b>, one of the eight standards your hospital is
+      accredited against.</p>
+
+    <div class="nsw">
+      <span class="lab">And for our nine-year-old specifically</span>
+      <p>The paediatric observation charts are <strong>age-banded into five ranges</strong>: under 3 months,
+        3 to 12 months, 1 to 4 years, 5 to 11 years, and 12 years and over. There are parallel emergency
+        department versions, which matters because that is where a retrieval usually begins.</p>
+      <p><strong>The school-age child sits in the 5 to 11 band</strong> &mdash; so the chart that should be in
+        front of a nine-year-old is a specific one, and using the wrong band means the trigger thresholds are
+        wrong. Intensive care and other continuously monitored areas can be exempted from the standard charts,
+        which is why the ICU chart looks different and why that is not an oversight.</p>
+    </div>
+
+    <p>Accreditation is not decorative. Assessment happens on a three-year cycle with mandatory short notice
+      assessments, and a <em>Not Met</em> rating against an action starts a remediation clock with real
+      consequences attached. This matters to you for a practical reason we will come to.</p>
+
+    <h2 class="sub">The job itself</h2>
+
+    <p>Something should be said plainly here, because the default attitude of clinicians towards
+      administration is contempt, and it is lazy.</p>
+
+    <p>Consider what you do. You allocate a scarce resource &mdash; a bed, your attention, a ventilator, your
+      registrar &mdash; under uncertainty, with incomplete information, knowing that the allocation will
+      determine outcomes, and knowing you will be judged on results you do not fully control. You do it at
+      three in the morning with the data you happen to have.</p>
+
+    <p>That is also the administrator's job. The differences are the timescale and the unit of analysis. You
+      are optimising for the patient in front of you, over hours. They are optimising for every patient who
+      will arrive over the next year, including all the ones nobody can see yet, over a budget cycle. Both of
+      those are legitimate, and they pull against each other, and <strong>that tension is not a malfunction of
+      the system. It is the system working.</strong> Somebody has to argue without compromise for this child.
+      Somebody else has to hold the whole thing. A hospital where the clinicians stopped pushing would be
+      badly run; so would one where the executive simply said yes to everything until the money ran out in
+      March.</p>
+
+    <ul class="pts">
+      <li><b>They mostly cannot win visibly</b><span>When an administrator gets it right, the thing that
+        happens is that nothing happens. No incident, no gap, no crisis. Nobody is thanked for an event that
+        did not occur, and the counterfactual is invisible. You at least get to see your patient improve.</span></li>
+      <li><b>Many of them were you</b><span>A considerable number of hospital executives are clinicians who
+        took a harder and less rewarding job because somebody had to. The ones who irritate you in meetings
+        have frequently been in the room you are describing.</span></li>
+      <li><b>The refusal is often a relay</b><span>The person declining your request is regularly explaining a
+        decision taken three levels above them, years ago, in a document neither of you wrote. Arguing with
+        them about it is like arguing with the registrar about the roster.</span></li>
+      <li><b>They carry risk you never see</b><span>Every gap in the service sits on somebody's risk register
+        with their name against it. They are as aware of what the hospital cannot do as you are — usually
+        more, because they can see all of it at once rather than the part that came through your door.</span></li>
+    </ul>
+
+    <p>None of which means every decision is right, or that every administrator is good, any more than every
+      clinician is. It means the caricature is not a useful tool, and that a trainee who arrives believing it
+      will be unable to achieve anything.</p>
+
+    <h2 class="sub">Communication, which is the whole skill</h2>
+
+    <p>Clinicians speak in cases. Administrators speak in populations, recurrent cost, risk registers and
+      standards. Neither dialect is wrong and neither is superior &mdash; but they are genuinely different
+      languages, and almost every failure between the two groups is a translation failure rather than a
+      disagreement about what matters.</p>
+
+    <p>A case is the most powerful thing you have and the least persuasive way to deploy it. "I had a terrible
+      night with a sick child and we did not have what we needed" is true, and it will be heard as an
+      anecdote, because an executive's week is full of people with true anecdotes. The same material, properly
+      translated, is formidable.</p>
+
+    <div class="box">
+      <span class="lab">Making a case that can actually succeed</span>
+      <ol class="steps">
+        <li><b>State the problem in their units.</b> Not what you need — what is happening, how often, and
+          with what consequence. Frequency, risk, and where it touches a standard.</li>
+        <li><b>Use the currencies that already exist.</b> Incident data and accreditation ratings are by a
+          distance the most powerful things available to a clinician, because they already sit on somebody's
+          register with a name against them. This is the practical reason to file the form at 4 am: it is the
+          only mechanism by which a pattern becomes visible upstairs.</li>
+        <li><b>Give the base case.</b> What happens if nothing changes. Leaving it out reads as advocacy, and
+          executives are trained to look for it.</li>
+        <li><b>Offer at least three options,</b> including doing nothing and a cheaper version. A proposal
+          with one option is not a proposal, it is a request.</li>
+        <li><b>Separate recurrent from capital.</b> This is the commonest fatal flaw in clinician proposals.
+          A one-off purchase with an unacknowledged tail of staffing, training, maintenance and consumables
+          will be declined by people who can see the tail even when you cannot. Recurrent money is much harder
+          to find and comes from somewhere else entirely.</li>
+        <li><b>Show alignment.</b> To the district's service agreement, the relevant standard, and your
+          facility's role delineation level. Alignment is what turns a good idea into a fundable one.</li>
+        <li><b>Say who you have consulted, and how you will know if it worked.</b> An evaluation plan signals
+          that you are proposing a change rather than winning an argument.</li>
+      </ol>
+      <p>There is, as far as I can find, no published Australian guidance written for this scale of proposal
+        &mdash; the equipment, the protocol, the new role. The official business case guidance is built for
+        capital projects above ten million dollars. So the shape above is borrowed from that structure, which
+        is at least the shape the people reading your proposal were trained to expect.</p>
+    </div>
+
+    <p>And the underlying point, which took me a long time to learn: role delineation, credentialing, the
+      standards and the service agreement are not obstacles arranged against clinicians. <strong>They are the
+      vocabulary in which resources are allocated.</strong> A registrar who can say <em>we are a Level 4 unit,
+      our networked tertiary service expects this of us, Standard 8 requires that, our last three incidents
+      show this pattern, and here is the recurrent cost of each option</em> is not fighting administration.
+      They are speaking to it in its own language, which is very nearly the whole of the skill.</p>
+
+    <p>Learn it early. You will be doing this for thirty years.</p>
+  </div>
+
+  <div class="pad" style="padding-top:6px">
+    <div class="reply">
+      <h2>Challenge for you</h2>
+      <p class="ask">Find out what your hospital is delineated at.</p>
+      <p>Genuinely — go and look. Find your facility's role delineation level for intensive care, for
+        paediatric medicine, and for surgery for children. It will take you about ten minutes and I suspect
+        most of you have never seen it. Then ask yourself whether what you actually do on a bad night matches
+        what is written down, and if not, in which direction.</p>
+      <p>Tell me what you found. I am particularly interested in the gap between the document and the
+        Tuesday afternoon &mdash; and in hearing from anyone who has successfully got something changed in
+        their hospital, and what actually worked.</p>
+      <p><a class="btn" href="mailto:icuandyou@icloud.com?subject=Administrators%27%20Avenue%20-%20what%20I%20found&body=My%20hospital%20and%20its%20delineated%20levels%3A%0D%0A%0D%0A%0D%0AWhere%20the%20document%20and%20the%20real%20Tuesday%20afternoon%20differ%3A%0D%0A%0D%0A%0D%0AAnything%20I%20have%20managed%20to%20get%20changed%2C%20and%20what%20worked%3A%0D%0A%0D%0A%0D%0A---%0D%0A%0D%0AName%3A%0D%0A%0D%0AHappy%20to%20be%20named%3F%20%28yes%20%2F%20no%29%3A%0D%0A%0D%0A---%0D%0A%0D%0AThinking%20about%20this%20ICU%20AND%20YOU%20post%20overall%20%E2%80%94%20was%20it%20useful%20to%20you%2C%20or%20would%20it%20be%20useful%20to%20others%3F%0D%0A">Tell me what you found</a></p>
+      <p class="fallback">The button opens a reply straight to me. If your device blocks it, write to
+        <a href="mailto:icuandyou@icloud.com">icuandyou@icloud.com</a> instead.</p>
+    </div>
+  </div>
+
+  <footer>
+    <span class="firstpub">First published September 2026</span>
+    <p class="subline">Two emails a week &mdash; the Friday newsletter for all subscribers, and, for clinical subscribers,
+      the mind map and puzzles the moment they go up on Tuesday. Occasional announcements of new
+      features as they arrive. What went up and why it mattered, the best of your replies, and
+      original feature stories, news and views. <a href="https://joinlist.com/f/5adad2d6">Come and join us</a>.</p>
+    <a class="home" href="./">&larr; &nbsp;All of ICU AND YOU</a><br>
+    Administrators&#x27; Avenue No. 1 &nbsp;&#183;&nbsp; companion to Mind Map #34, The School-Age Child<br>
+    <span class="srcs">Role delineation from the
+    <a href="https://www.health.nsw.gov.au/services/Pages/role-delineation-of-clinical-services.aspx">NSW Guide
+    to the Role Delineation of Clinical Services</a> (7th edition, 2026) — note an older 2002 guide with a
+    similar name is still findable and is superseded; intensive care definitions also from
+    <a href="https://cicm.org.au/Web/Web/Policy-Advocacy/PD-Policies/IC-1-Minimum-Standards-for-Intensive-Care-Units.aspx">CICM
+    IC-1</a>. Credentialing from the
+    <a href="https://www.safetyandquality.gov.au/sites/default/files/migrated/credentl1.pdf">national Standard
+    for Credentialling and Defining the Scope of Clinical Practice</a> and
+    <a href="https://www1.health.nsw.gov.au/pds/ActivePDSDocuments/PD2019_056.pdf">NSW PD2019_056</a>. Funding
+    from the <a href="https://www.ihacpa.gov.au/resources/national-efficient-price-determination-2026-27">IHACPA
+    National Efficient Price Determination 2026–27</a>. Incident management from
+    <a href="https://www1.health.nsw.gov.au/pds/ActivePDSDocuments/PD2020_047.pdf">NSW PD2020_047</a>; open
+    disclosure from the <a href="https://www.safetyandquality.gov.au/our-work/open-disclosure/the-open-disclosure-framework">Australian
+    Open Disclosure Framework</a> (revised June 2026). Deterioration systems from
+    <a href="https://www1.health.nsw.gov.au/pds/ActivePDSDocuments/PD2025_014.pdf">NSW PD2025_014</a>,
+    <a href="https://cec.health.nsw.gov.au/keep-patients-safe/Deteriorating-patients/between-the-flags/Overview">Between
+    the Flags</a> and <a href="https://www.safetyandquality.gov.au/resources/national-safety-and-quality-health-service-standards-second-edition">NSQHS
+    Standard 8</a>. The coronial findings and the Garling report are quoted from the public record. NSW
+    instruments are used as worked examples; other states have equivalents under other names, and you should
+    read your own. Educational use only, and current local policy always takes precedence.</span><br>
+    <span class="mine">Views my own, not those of NSW Health or any other organisation. No identifiable
+    patients &mdash; scenarios are constructed or combined for teaching. <a href="about.html">More</a>.</span>
+  </footer>
+
+</div>
+<script data-goatcounter="https://icuandyou.goatcounter.com/count"
+        async src="//gc.zgo.at/count.js"></script>
+</body>
+</html>

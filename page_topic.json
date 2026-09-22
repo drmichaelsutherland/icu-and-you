@@ -149,6 +149,11 @@
    "The Dental Files",
    "peppermint striped",
    "special"
+  ],
+  "admin": [
+   "Administrators' Avenue",
+   "ledger striped",
+   "special"
   ]
  },
  "pages": [
@@ -1003,9 +1008,28 @@
    "badge": "The Dental Files",
    "link_label": "Open",
    "blurb": "A new series. Mixed dentition and the six-year molar that fools everybody, loose teeth before laryngoscopy, the avulsed tooth and the hour it has, the 2025 change to endocarditis prophylaxis in rheumatic heart disease, fluoride, and the mouth that closes the airway."
+  },
+  {
+   "file": "admin-01-school-age.html",
+   "series": "admin",
+   "colour": "ledger striped",
+   "number": "1",
+   "title": "Who decided that?",
+   "topic": "The school-age child",
+   "slug": "school-age",
+   "week": true,
+   "pos": 9,
+   "badge": "Administrators' Avenue",
+   "link_label": "Open",
+   "blurb": "A new series — for trainees, about administration, not telling administrators their job. Role delineation and why your hospital has what it has, why you cannot do the thing you can do, where the money actually comes from, what happened to the form you filed at 4 am, and how to get something changed."
   }
  ],
  "latest": [
+  {
+   "file": "admin-01-school-age.html",
+   "colour": "ledger striped",
+   "label": "Administrators' Avenue 1 · Who decided that?"
+  },
   {
    "file": "dental-01-school-age.html",
    "colour": "peppermint striped",
@@ -1025,11 +1049,6 @@
    "file": "superquiz-63-school-age.html",
    "colour": "fern",
    "label": "Superquiz 63 · The school-age child"
-  },
-  {
-   "file": "exam-cicm-first-02-the-syllabus.html",
-   "colour": "pine",
-   "label": "CICM First Part 2 · The syllabus"
   }
  ],
  "topten": [
