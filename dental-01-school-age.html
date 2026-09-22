@@ -1,0 +1,524 @@
+<!DOCTYPE html>
+<html lang="en-AU">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ICU AND YOU · The Dental Files No. 1 — Open wide</title>
+<meta name="description" content="The Dental Files No. 1: teeth in the school-age child for intensivists — mixed dentition and the six-year molar, loose teeth before laryngoscopy, the avulsed tooth, rheumatic heart disease and the 2025 change to endocarditis prophylaxis, fluoride, and Ludwig's angina.">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="alternate icon" href="/favicon.ico" sizes="any">
+<link rel="apple-touch-icon" href="/icon-180.png">
+<meta name="theme-color" content="#1B2A33">
+<meta property="og:site_name" content="ICU AND YOU">
+<meta property="og:type" content="website">
+<meta property="og:title" content="ICU AND YOU · The Dental Files No. 1 — Open wide">
+<meta property="og:description" content="Teeth in the school-age child, for intensivists who never learned any.">
+<meta property="og:image" content="https://icuandyou.com/share-card.png">
+<meta name="twitter:card" content="summary_large_image">
+<style>
+  :root{
+    --paper:#FAFCFB; --ink:#1E2A28; --muted:#5C6C68; --rule:#D8E4E1;
+    --mint:#3F7C72; --minttint:#E9F3F1;
+    --clove:#8C5A2F; --clovetint:#F8F0E6;
+    --alarm:#A8402A; --alarmtint:#FCEFEA;
+  }
+  *{box-sizing:border-box}
+  body{margin:0;background:#E5EEEC;color:var(--ink);
+    font:400 17px/1.64 'Iowan Old Style','Palatino Linotype',Palatino,Georgia,serif;
+    -webkit-text-size-adjust:100%;}
+  .sheet{max-width:790px;margin:0 auto;background:var(--paper);
+    box-shadow:0 1px 40px rgba(24,38,35,.11);}
+
+  .flag{height:6px;background:repeating-linear-gradient(135deg,
+    var(--mint) 0 7px, #7FB3A9 7px 14px)}
+
+  header.top{padding:42px 40px 28px;border-bottom:1px solid var(--rule)}
+  .topseries,.toptopic,.tophome{display:inline-block;margin:0 0 16px 9px;padding:7px 16px;
+    border-radius:20px;border:1px solid currentColor;opacity:.62;text-decoration:none;
+    color:inherit;font:600 11.5px 'Helvetica Neue',Arial,sans-serif;letter-spacing:.09em;
+    text-transform:uppercase;transition:opacity .12s ease}
+  .tophome{margin-left:0}
+  .topseries:hover,.toptopic:hover,.tophome:hover{opacity:1}
+  .eyebrow{font:500 11.5px/1 'Helvetica Neue',Arial,sans-serif;letter-spacing:.24em;
+    text-transform:uppercase;color:var(--muted);margin:0 0 14px}
+  .eyebrow a.mast,.eyebrow a.serlink{color:inherit;text-decoration:none;
+    border-bottom:1px solid transparent}
+  .eyebrow a.mast:hover,.eyebrow a.serlink:hover{border-bottom-color:currentColor}
+  h1{font-size:35px;line-height:1.14;margin:0 0 8px;font-weight:400;letter-spacing:-.012em;
+    font-style:italic}
+  .kicker{color:var(--muted);margin:0;font-size:16.5px}
+
+  .pad{padding:34px 40px}
+  p{margin:0 0 17px}
+  .lede{font-size:20px;line-height:1.5;margin:0 0 22px}
+  b.term{font-weight:600;color:var(--mint)}
+
+  h2.sub{font:600 12px 'Helvetica Neue',Arial,sans-serif;letter-spacing:.2em;
+    text-transform:uppercase;color:var(--mint);margin:32px 0 15px;
+    padding-bottom:8px;border-bottom:1px solid var(--rule)}
+
+  ul.pts{list-style:none;margin:0 0 18px;padding:0}
+  ul.pts li{display:flex;gap:14px;padding:11px 0;border-bottom:1px solid #E8EFED;
+    font-size:16.5px;line-height:1.52}
+  ul.pts li:last-child{border-bottom:0}
+  ul.pts b{flex:0 0 168px;font:600 14.5px 'Helvetica Neue',Arial,sans-serif;
+    color:var(--mint);line-height:1.4}
+
+  .box{margin:0 0 18px;padding:21px 25px;background:var(--minttint);
+    border-left:4px solid var(--mint);border-radius:0 8px 8px 0}
+  .box .lab{display:block;font:600 11px 'Helvetica Neue',Arial,sans-serif;
+    letter-spacing:.18em;text-transform:uppercase;color:var(--mint);margin:0 0 9px}
+  .box p:last-child{margin:0}
+
+  .welcome{margin:0 0 24px;padding:22px 26px;background:var(--clovetint);
+    border-left:4px solid var(--clove);border-radius:0 8px 8px 0}
+  .welcome .lab{display:block;font:600 11px 'Helvetica Neue',Arial,sans-serif;
+    letter-spacing:.18em;text-transform:uppercase;color:var(--clove);margin:0 0 9px}
+  .welcome p:last-child{margin:0}
+
+  .careful{margin:0 0 18px;padding:19px 23px;background:#FBF7EF;
+    border:1px dashed #C9AE7E;border-radius:9px;font-size:16px}
+  .careful .lab{display:block;font:600 11px 'Helvetica Neue',Arial,sans-serif;
+    letter-spacing:.18em;text-transform:uppercase;color:#8A6A2E;margin:0 0 9px}
+  .careful p:last-child{margin:0}
+
+  .proto{margin:0 0 20px;padding:24px 28px;background:var(--alarmtint);
+    border:2px solid var(--alarm);border-radius:10px}
+  .proto .lab{display:block;font:600 11.5px 'Helvetica Neue',Arial,sans-serif;
+    letter-spacing:.18em;text-transform:uppercase;color:var(--alarm);margin:0 0 12px}
+  .proto ol{margin:0 0 12px;padding:0 0 0 21px}
+  .proto li{margin:0 0 9px;font-size:16.5px;line-height:1.5}
+  .proto p:last-child{margin:0}
+
+  table.tt{width:100%;border-collapse:collapse;margin:0 0 20px;font-size:16px}
+  table.tt th{text-align:left;font:600 11.5px 'Helvetica Neue',Arial,sans-serif;
+    letter-spacing:.1em;text-transform:uppercase;color:var(--muted);
+    padding:0 10px 8px 0;border-bottom:1px solid var(--rule)}
+  table.tt td{padding:9px 10px 9px 0;border-bottom:1px solid #EAF0EE;vertical-align:top}
+  table.tt td:first-child{font-weight:600;white-space:nowrap}
+
+  .reply{margin:0;padding:28px 32px;background:#EDF4F2;border-left:5px solid var(--clove)}
+  .reply h2{font:600 12px 'Helvetica Neue',Arial,sans-serif;letter-spacing:.2em;
+    text-transform:uppercase;color:var(--clove);margin:0 0 13px}
+  .ask{font-size:19px;line-height:1.5;font-style:italic;margin:0 0 15px}
+  .btn{display:inline-block;margin:6px 0 12px;padding:15px 30px;background:var(--mint);
+    color:#FAFCFB;text-decoration:none;border-radius:30px;font-style:normal;
+    font:600 15px 'Helvetica Neue',Arial,sans-serif;letter-spacing:.03em}
+  .btn:hover{background:#2E5E56}
+  .btn:focus-visible{outline:3px solid var(--clove);outline-offset:3px}
+  .fallback{font:400 13.5px 'Helvetica Neue',Arial,sans-serif;color:var(--muted);margin:0}
+  .fallback a{color:var(--mint)}
+
+  .subline{margin:0 0 14px;padding:0 0 13px;border-bottom:1px solid rgba(0,0,0,.09);
+    font:400 14.5px/1.55 'Iowan Old Style','Palatino Linotype',Palatino,Georgia,serif;
+    max-width:56ch;margin-left:auto;margin-right:auto}
+  .subline a{font-weight:500;border-bottom:1px solid currentColor;
+    text-decoration:none;color:inherit}
+  .firstpub{display:block;margin:0 0 10px;padding-bottom:9px;
+    border-bottom:1px solid currentColor;border-color:rgba(0,0,0,.09);
+    font:400 12px 'Helvetica Neue',Arial,sans-serif;letter-spacing:.06em;opacity:.72}
+
+  footer{padding:24px 40px 42px;border-top:1px solid var(--rule);
+    font:400 13px 'Helvetica Neue',Arial,sans-serif;color:var(--muted);
+    text-align:center;line-height:1.7}
+  .home{display:inline-block;margin:0 0 14px;padding:8px 18px;border-radius:20px;
+    border:1px solid var(--rule);background:#EDF4F2;color:var(--mint);text-decoration:none;
+    font:600 12.5px 'Helvetica Neue',Arial,sans-serif;letter-spacing:.05em}
+  .home:hover{background:var(--mint);border-color:var(--mint);color:#FAFCFB}
+  .mine{display:inline-block;margin:9px 0 0;opacity:.78;font-size:.94em}
+  .srcs{font-size:12.5px;line-height:1.6}
+  .srcs a{color:inherit}
+
+  @media (max-width:640px){
+    header.top,.pad,footer{padding-left:20px;padding-right:20px}
+    .reply{padding:22px 20px}
+    h1{font-size:27px} body{font-size:16.5px} .lede{font-size:18.5px} .ask{font-size:17.5px}
+    ul.pts li{flex-direction:column;gap:3px} ul.pts b{flex:none}
+    table.tt{font-size:15px}
+  }
+  @media print{ body{background:#fff} .sheet{box-shadow:none;max-width:none} }
+</style>
+</head>
+<body>
+<div class="sheet">
+
+  <div class="flag"></div>
+
+  <header class="top">
+    <a class="tophome" href="./">&larr;&nbsp; Home</a>
+    <a class="topseries" href="./?s=dental">More from The Dental Files</a>
+    <a class="toptopic" href="./?t=school-age" title="Everything on The school-age child">All on this topic</a>
+    <p class="eyebrow"><a class="mast" href="./">ICU and You</a> &nbsp;·&nbsp;
+      <a class="serlink" href="./?s=dental">The Dental Files</a> &nbsp;·&nbsp; Number 1</p>
+    <h1>Open wide</h1>
+    <p class="kicker">Teeth in the school-age child, for intensivists who were never taught any</p>
+  </header>
+
+  <div class="pad">
+    <div class="welcome">
+      <span class="lab">A new series, and an admission</span>
+      <p>We put a metal blade into a child's mouth, lever it against their front teeth, and then spend the
+        next several days looking directly at those teeth every hour without ever once thinking about them.
+        Dentistry is the one region of the body we routinely instrument and never examine.</p>
+      <p><strong>The Dental Files</strong> is a small series about the bits of the mouth that turn up in
+        intensive care whether we invite them or not. Not dentistry &mdash; there are dentists for that
+        &mdash; but the overlap: the tooth you knocked out, the abscess that closed the airway, the
+        prophylaxis you were supposed to give, and the ten-year-old whose incisor has one hour to live.</p>
+    </div>
+
+    <p class="lede">A nine-year-old is intubated for status asthmaticus. Afterwards the registrar notices a gap
+      in the upper arch that they cannot account for, and reasons that a child of nine is losing teeth
+      anyway.</p>
+
+    <p>That reasoning is correct about a third of the time and catastrophic the rest, and telling the
+      difference takes about fifteen seconds if you know what you are looking at. So let us start with the
+      part nobody teaches.</p>
+
+    <h2 class="sub">The dentition, in the version you need</h2>
+
+    <p>Twenty primary teeth. Thirty-two permanent teeth, or twenty-eight if you leave out the wisdom teeth.
+      The primary set is complete by about two and a half.</p>
+
+    <p>Then, from about <b class="term">six to twelve years</b>, the child is in <b class="term">mixed
+      dentition</b> &mdash; primary and permanent teeth in the mouth at the same time, some firm, some
+      frankly mobile, some half-erupted. That window maps almost exactly onto the school-age band, which is
+      why this piece belongs in this fortnight.</p>
+
+    <div class="box">
+      <span class="lab">The single most useful fact in this article</span>
+      <p>At about six, the <b class="term">first permanent molar</b> erupts behind the last primary molar. It
+        does not replace anything. Nothing falls out to announce it, no gap precedes it, and it arrives
+        looking new and small at the back of a mouth full of baby teeth.</p>
+      <p>Everybody &mdash; parents, nurses, and most doctors &mdash; assumes it is a baby tooth. It is not. It
+        is a permanent molar that has to last sixty or seventy years, and it is the most commonly neglected
+        and most commonly lost tooth in the mouth.</p>
+      <p><strong>Working rule: in a child of six to twelve, count back from the midline. The sixth tooth is
+        permanent, always, however new it looks.</strong></p>
+    </div>
+
+    <p>The first permanent teeth to arrive are the lower first molars and the lower central incisors, both
+      at six to seven. Upper central incisors follow at seven to eight. Canines and the primary molars hang
+      on much longer &mdash; canines are shed at nine to twelve, second primary molars at ten to twelve
+      &mdash; so in an eight-year-old, a wobbly tooth at the front is almost certainly permanent and about to
+      be a problem, while a wobbly tooth further back is almost certainly primary and about to be nothing.</p>
+
+    <h2 class="sub">Writing it down so a dentist can read it</h2>
+
+    <p>Two digits. First digit the quadrant, counting clockwise as you look at the patient, starting upper
+      right. <b class="term">1, 2, 3, 4</b> for the permanent quadrants; <b class="term">5, 6, 7, 8</b> for
+      the primary ones. Second digit the position from the midline &mdash; one to eight for permanent teeth,
+      one to five for primary. Said aloud digit by digit: thirty-six is "three-six".</p>
+
+    <table class="tt">
+      <tr><th>Code</th><th>Tooth</th></tr>
+      <tr><td>11 / 21</td><td>Permanent upper central incisors &mdash; the ones the laryngoscope meets</td></tr>
+      <tr><td>16 26 36 46</td><td>The four first permanent molars. The six-year molars</td></tr>
+      <tr><td>51 / 61</td><td>Primary upper central incisors</td></tr>
+      <tr><td>85</td><td>Primary lower right second molar</td></tr>
+    </table>
+
+    <p>A perfectly good ICU entry: <em>&ldquo;61 and 71 mobile pre-intubation; 11, 21 erupted and firm;
+      16/26/36/46 present and firm.&rdquo;</em> It takes fifteen seconds and it is the difference between a
+      documented finding and an argument.</p>
+
+    <h2 class="sub">Before you put the blade in</h2>
+
+    <p>Dental damage is the most commonly claimed anaesthetic complication in Australia &mdash; something like
+      eighteen per cent of anaesthetic claims &mdash; which is wildly out of proportion to its clinical
+      severity and tells you something about how people feel about their teeth.</p>
+
+    <p>Damage requiring actual repair or extraction runs at roughly one in four and a half thousand general
+      anaesthetics. Small prospective studies in which a dentist formally examined children after intubation
+      report much higher rates of minor injury, around ten to sixteen per cent, but those are counting bruised
+      teeth that no anaesthetist would ever record &mdash; do not put those two numbers side by side. What
+      both agree on is where the risk sits: <b class="term">difficult laryngoscopy and repeated
+      attempts</b>.</p>
+
+    <ul class="pts">
+      <li><b>Look and ask first</b><span>Loose teeth, previous dental work, prominent upper incisors, mouth
+        opening. In a school-age child, name the mobile teeth by number in the notes. It costs nothing on the
+        way in and is worth a great deal on the way out.</span></li>
+      <li><b>The mechanism is the fulcrum</b><span>Upper incisors levered against the blade. If you are
+        struggling, the answer is a different approach, not more force on the same one.</span></li>
+      <li><b>If a tooth is missing, find it</b><span>Secure the airway, then account for it. If it cannot be
+        located, get a <strong>chest radiograph</strong> — aspirated, swallowed, or still in the room are all
+        possible and only one of them is fine. Add a lateral soft-tissue neck if it might be buried in
+        pharyngeal tissue or lip.</span></li>
+      <li><b>Consider that it did not leave</b><span>A tooth that looks avulsed may have been driven up into
+        the alveolus. Intrusion is easy to miss and needs a dental film.</span></li>
+    </ul>
+
+    <h2 class="sub">The avulsed tooth: one hour, and milk</h2>
+
+    <p>This is the dental emergency most likely to arrive in your resus bay attached to a trauma call, and the
+      one where the window closes while everybody is busy with something more obviously important.</p>
+
+    <p>What determines whether a replanted permanent tooth survives is the periodontal ligament cells on the
+      root surface. They die when they dry out, and they are destroyed by scrubbing. Everything below follows
+      from that one fact.</p>
+
+    <div class="proto">
+      <span class="lab">Avulsed PERMANENT tooth</span>
+      <ol>
+        <li><strong>Pick it up by the crown.</strong> Never the root.</li>
+        <li><strong>Do not scrub it.</strong> If it is dirty, rinse briefly and gently with milk or saline, or
+          just swirl it in the storage medium.</li>
+        <li><strong>Replant it now if you possibly can</strong> — into the socket, bite on gauze. This is by a
+          distance the highest-yield thing anybody does.</li>
+        <li><strong>If you cannot, put it in milk.</strong> Then saline. Saliva at a pinch.</li>
+        <li>Flexible splint for two weeks (four if there is an alveolar fracture), antibiotics, and check
+          tetanus status — this is a contaminated penetrating injury.</li>
+      </ol>
+      <p><strong>Dry time is the number that matters, not time since the accident.</strong> Under 15 minutes
+        dry, the cells are probably alive. Under 60 minutes, compromised but worth replanting. Over 60
+        minutes, they are gone and the goal changes to keeping the tooth as a space maintainer. A tooth that
+        sat in milk for three hours but was picked up in the first minute has a dry time of one minute.</p>
+    </div>
+
+    <div class="careful">
+      <span class="lab">Why not water</span>
+      <p>Water is hypotonic and lyses the very cells you are trying to save. Milk works because its osmolality
+        and pH are close enough to physiological. That said, the international guideline is explicit that
+        water is still better than letting the tooth dry out &mdash; so the rule is <em>milk or saline first,
+        water only if there is nothing else, never in preference.</em></p>
+    </div>
+
+    <div class="proto" style="background:#F2F6F5;border-color:var(--mint)">
+      <span class="lab" style="color:var(--mint)">Avulsed PRIMARY tooth — do not replant</span>
+      <p>The root apex of a primary incisor sits directly against the developing permanent tooth bud. Pushing
+        it back risks driving it into the follicle and damaging the permanent successor &mdash; enamel
+        defects, a bent root, or a tooth that never erupts properly. It can also ankylose and block the
+        successor, and it can be aspirated. Clean, give analgesia, arrange dental review. Do not replant.</p>
+    </div>
+
+    <p>Which leaves the question the registrar is actually standing there with, holding a tooth, at two in the
+      morning.</p>
+
+    <ul class="pts">
+      <li><b>Age and position</b><span>The most reliable guide. Central incisors go at six to seven, laterals
+        at seven to eight. A front tooth out of a nine-year-old is almost certainly permanent. Position six is
+        always permanent.</span></li>
+      <li><b>Mamelons</b><span>The most specific single sign. A newly erupted permanent incisor has three
+        rounded bumps along its biting edge, which wear flat over a few years. Primary incisors do not have
+        them. Bumps mean permanent.</span></li>
+      <li><b>Colour and size</b><span>Primary teeth are opaque, milky, almost too white. Permanent teeth are
+        greyer, yellower and more translucent at the edge — and conspicuously bigger, which is why newly
+        erupted incisors look far too large for the face.</span></li>
+      <li><b>The root, with a caveat</b><span>A tooth about to exfoliate has a short, blunt, resorbed root or
+        almost none. But a primary tooth knocked out traumatically before its time will have a full root — so
+        a long root does not prove it is permanent.</span></li>
+    </ul>
+
+    <div class="box">
+      <span class="lab">If you are not sure</span>
+      <p>Put it in milk and call someone. The cost of storing a primary tooth in milk is nothing. The cost of
+        binning a permanent incisor is permanent.</p>
+    </div>
+
+    <h2 class="sub">Rheumatic heart disease, and a guideline that changed</h2>
+
+    <p>This is the section to read even if you skip the rest, because the guidance moved recently and a lot of
+      us are still carrying the old version.</p>
+
+    <p>First, the scale of it. In 2024 there were <b class="term">506 diagnoses of acute rheumatic fever</b>
+      across the reporting jurisdictions, and <b class="term">93 per cent were in First Nations people</b>.
+      The rate in First Nations Australians was about 52 per 100,000 against 2.7 per 100,000 in non-Indigenous
+      Australians &mdash; a nineteen-fold difference. And it is a disease of exactly this age group:
+      <strong>45 per cent of all cases were in children aged five to fourteen.</strong> In the Northern
+      Territory the First Nations rate is 386 per 100,000.</p>
+
+    <div class="careful">
+      <span class="lab">Two things to get right about ARF</span>
+      <p><strong>It is not a dental disease.</strong> Acute rheumatic fever follows Group A streptococcal
+        infection. Dental caries is caused by entirely different organisms &mdash; <em>Streptococcus
+        mutans</em> and friends &mdash; and there is no causal path from bad teeth to rheumatic fever. Poor
+        oral health and ARF cluster in the same communities because they share the same social determinants,
+        not because one causes the other. Do not teach otherwise.</p>
+      <p><strong>It is not only throat infection.</strong> The Australian guideline is now explicit that
+        <em>skin</em> infection triggers ARF as well as pharyngitis, and that streptococcal impetigo is very
+        common in First Nations children. That is a real divergence from the international teaching most of us
+        grew up with, and it changes what counts as a treatable precursor.</p>
+    </div>
+
+    <p>Where teeth genuinely enter the story is the other end: a child with established rheumatic heart
+      disease has a damaged valve, and oral viridans streptococci are a classical cause of infective
+      endocarditis. Which brings us to prophylaxis.</p>
+
+    <div class="box">
+      <span class="lab">What changed in 2025</span>
+      <p>Australian guidance <em>used to</em> recommend endocarditis prophylaxis for rheumatic heart disease
+        only in Aboriginal and Torres Strait Islander people. <strong>That restriction has been removed.</strong>
+        Prophylaxis is now recommended for <strong>all patients with rheumatic heart disease</strong>,
+        whoever they are.</p>
+      <p>The genuinely Australian part of the story survives, but it is a different point from the one most
+        people remember: Australian guidance lists rheumatic heart disease as an indication for prophylaxis
+        <em>at all</em>, which the American, British and European guidelines do not. That divergence is driven
+        by the epidemiology above.</p>
+    </div>
+
+    <p>The cardiac conditions warranting prophylaxis before dental work are: a prosthetic valve or prosthetic
+      material used in valve repair; previous infective endocarditis; a ventricular assist device; congenital
+      heart disease only where there is an unrepaired cyanotic defect or residual defect adjacent to
+      prosthetic material; and rheumatic heart disease.</p>
+
+    <p>It is needed for extractions, implants, biopsy or removal of soft tissue or bone, scaling above or
+      below the gum line, and &mdash; note this, given the section above &mdash; <b class="term">replanting an
+      avulsed tooth</b>. It is not needed for local anaesthetic through healthy tissue, radiographs, or
+      adjusting appliances.</p>
+
+    <table class="tt">
+      <tr><th>Situation</th><th>Child dose, orally, 60 minutes before</th></tr>
+      <tr><td>No penicillin allergy</td><td>Amoxicillin 50 mg/kg up to 2 g</td></tr>
+      <tr><td>Non-severe penicillin allergy</td><td>Cefalexin 50 mg/kg up to 2 g</td></tr>
+      <tr><td>Severe penicillin allergy</td><td>Azithromycin 10 mg/kg up to 500 mg, or doxycycline</td></tr>
+    </table>
+
+    <p><strong>Clindamycin is no longer recommended</strong> for this indication in Australia, and neither is
+      vancomycin. A good many of us would still have reached for clindamycin without thinking. Oral
+      amoxicillin given an hour beforehand holds adequate levels for around four hours, which is worth knowing
+      when a list runs late.</p>
+
+    <h2 class="sub">Fluoride, and the only bit that will ever reach your unit</h2>
+
+    <p>Fluoride works topically and after the tooth has erupted, not systemically beforehand, which is why the
+      advice is to spit rather than rinse. It reduces demineralisation, promotes remineralisation with a more
+      acid-resistant mineral, and inhibits bacterial metabolism in plaque.</p>
+
+    <ul class="pts">
+      <li><b>Under 18 months</b><span>No toothpaste. A wet brush or cloth, twice a day.</span></li>
+      <li><b>18 months to 6 years</b><span>Children's toothpaste at 500&ndash;550 ppm, a small pea.</span></li>
+      <li><b>6 years and over</b><span>Standard toothpaste at 1,000&ndash;1,500 ppm. Children under about
+        eight still need help brushing — the dexterity is not there.</span></li>
+    </ul>
+
+    <p>Fluorosis &mdash; the mottling &mdash; comes from swallowing too much fluoride while the crown is
+      mineralising inside the jaw, which is why the amounts are restricted in the very young. A useful thing
+      to be able to tell a worried parent: <strong>a ten-year-old cannot develop fluorosis of their permanent
+      front teeth now.</strong> That window has closed.</p>
+
+    <div class="proto">
+      <span class="lab">The toothpaste ingestion call</span>
+      <p>Probably toxic dose is around <strong>5 mg/kg</strong> of elemental fluoride; around
+        <strong>15 mg/kg</strong> is potentially lethal in a small child.</p>
+      <p>Ordinary toothpaste is 1,000 ppm, which is 1 mg of fluoride per gram. For a 20 kg child that puts the
+        probably-toxic dose at 100 g of toothpaste &mdash; an entire family tube. Ordinary toothpaste
+        ingestion is almost always benign.</p>
+      <p><strong>So the question to ask is which product.</strong> High-fluoride prescription toothpaste is
+        5,000 ppm — the same child reaches a toxic dose at 20 g, which is an entirely plausible accident.
+        Fluoride tablets and professionally applied gels likewise.</p>
+      <p>Significant toxicity is GI first — fluoride forms hydrofluoric acid in the stomach and is directly
+        corrosive — then <strong>hypocalcaemia, hypomagnesaemia and hyperkalaemia</strong>, then QT
+        prolongation, ventricular dysrhythmia and arrest, which can come without warning up to six hours
+        later. Oral calcium or milk binds fluoride in the gut. Monitor, and give IV calcium and magnesium
+        early and repeatedly rather than cautiously — these arrhythmias are notoriously refractory to
+        everything else. Ring the Poisons Information Centre on <strong>13 11 26</strong>.</p>
+    </div>
+
+    <h2 class="sub">When the mouth closes the airway</h2>
+
+    <p>Ludwig's angina is a rapidly spreading cellulitis of the submandibular, sublingual and submental
+      spaces &mdash; bilateral, brawny, and in its early phase without a drainable collection. The name comes
+      from the Latin for <em>to strangle</em>, which is fair.</p>
+
+    <p>In adults it is overwhelmingly odontogenic, from lower second and third molars whose roots sit below
+      the mylohyoid line. <strong>In children it often is not</strong>, partly because a school-age child
+      has no third molars and unerupted second molars, so the classic adult route is not available. Paediatric
+      cases follow oral trauma, sialadenitis, gingivostomatitis, immunosuppression &mdash; and frequently no
+      identifiable source at all. Where it is dental in this age group, suspect a grossly carious first
+      permanent molar, which brings us neatly back to the beginning.</p>
+
+    <ul class="pts">
+      <li><b>What you will see</b><span>Trismus, a muffled hot-potato voice, drooling, dysphagia, a firm
+        indurated floor of mouth, and the tongue pushed up and back.</span></li>
+      <li><b>Why the airway is hard</b><span>The obstruction is supraglottic soft tissue. It does not improve
+        when you paralyse the patient. Plan accordingly, and involve ENT or maxillofacial and anaesthesia
+        before you need them rather than after.</span></li>
+      <li><b>But do not reflexively intubate</b><span>More than half of reported paediatric cases never need
+        an airway intervention, and modern mortality is nought to ten per cent against more than fifty in the
+        pre-antibiotic era. Prepare hard; act on the child in front of you.</span></li>
+      <li><b>A number worth carrying</b><span>Australian paediatric guidance treats an inter-incisor opening
+        under <strong>2 cm</strong> as an admission criterion, alongside fever, tachycardia, vomiting or
+        immunocompromise. Stridor, voice change, hypoxia or respiratory distress means urgent anaesthetic and
+        surgical review.</span></li>
+    </ul>
+
+    <h2 class="sub">Three smaller things, quickly</h2>
+
+    <ul class="pts">
+      <li><b>Gingival overgrowth</b><span>Phenytoin (roughly half), ciclosporin (about a third), calcium
+        channel blockers (about a fifth) — those figures are approximations from a wide literature. Children
+        are affected disproportionately, and the populations overlap precisely with ours: long-term phenytoin,
+        and transplant recipients on ciclosporin who are often also on nifedipine. It bleeds on instrumentation
+        and obscures the teeth. Plaque control is the modifiable part.</span></li>
+      <li><b>Chlorhexidine mouth care</b><span>Be careful how you state this. In adults it has been largely
+        de-adopted: no VAP benefit outside cardiac surgery, and an unrefuted mortality signal in non-cardiac
+        patients. In children, a 2025 meta-analysis of five trials and 521 children found no VAP benefit and
+        no mortality signal — but the evidence is graded very low quality and the sample is far too small to
+        exclude harm of the size seen in adults. That is <em>no demonstrated benefit and underpowered for
+        harm</em>, which is not the same as safe. Mechanical cleaning is the defensible part of an oral care
+        bundle.</span></li>
+      <li><b>Doxycycline and teeth</b><span>The old under-eight rule has softened. Doxycycline binds calcium
+        far less than tetracycline, and Australian practice now holds that it is unlikely to stain teeth in
+        children under eight when used for <strong>under 21 days</strong> — so it should be used when it is
+        the drug of choice, whatever the age. Older tetracyclines keep the under-eight caution.</span></li>
+    </ul>
+
+    <div class="careful">
+      <span class="lab">One place the guidelines disagree, and you should know it</span>
+      <p>For antibiotics after replanting an avulsed tooth, the international dental guideline advises against
+        doxycycline under twelve years, while Australian paediatric hospital guidance uses an eight-year
+        cut-off and prescribes it above that. So for a ten-year-old with a replanted incisor the two documents
+        point opposite ways. Follow your local Australian guidance and Therapeutic Guidelines &mdash; but know
+        the disagreement exists rather than being surprised by it at the bedside.</p>
+    </div>
+  </div>
+
+  <div class="pad" style="padding-top:6px">
+    <div class="reply">
+      <h2>Challenge for you</h2>
+      <p class="ask">Have you ever knocked a tooth out, or watched one go?</p>
+      <p>Most of us have, or have been standing next to it. What happened to the tooth, what did the unit do
+        next, and &mdash; the part I am most interested in &mdash; was the right thing done in the first ten
+        minutes, or did everybody find out afterwards what should have happened?</p>
+      <p>I would also like to hear from anyone who works where rheumatic heart disease is common, on what
+        dental access actually looks like for those children in practice, as opposed to what the guideline
+        assumes. Named or anonymous, entirely as you prefer.</p>
+      <p><a class="btn" href="mailto:icuandyou@icloud.com?subject=The%20Dental%20Files%20-%20a%20tooth%20story&body=What%20happened%3A%0D%0A%0D%0A%0D%0AWhat%20was%20done%20in%20the%20first%20ten%20minutes%3A%0D%0A%0D%0A%0D%0AWhat%20you%20would%20do%20differently%3A%0D%0A%0D%0A%0D%0A---%0D%0A%0D%0AName%3A%0D%0A%0D%0AHappy%20to%20be%20named%3F%20%28yes%20%2F%20no%29%3A%0D%0A%0D%0A---%0D%0A%0D%0AThinking%20about%20this%20ICU%20AND%20YOU%20post%20overall%20%E2%80%94%20was%20it%20useful%20to%20you%2C%20or%20would%20it%20be%20useful%20to%20others%3F%0D%0A">Tell me what happened</a></p>
+      <p class="fallback">The button opens a reply straight to me. If your device blocks it, write to
+        <a href="mailto:icuandyou@icloud.com">icuandyou@icloud.com</a> instead.</p>
+    </div>
+  </div>
+
+  <footer>
+    <span class="firstpub">First published September 2026</span>
+    <p class="subline">Two emails a week &mdash; the Friday newsletter for all subscribers, and, for clinical subscribers,
+      the mind map and puzzles the moment they go up on Tuesday. Occasional announcements of new
+      features as they arrive. What went up and why it mattered, the best of your replies, and
+      original feature stories, news and views. <a href="https://joinlist.com/f/5adad2d6">Come and join us</a>.</p>
+    <a class="home" href="./">&larr; &nbsp;All of ICU AND YOU</a><br>
+    The Dental Files No. 1 &nbsp;&#183;&nbsp; companion to Mind Map #34, The School-Age Child<br>
+    <span class="srcs">Avulsion management follows the
+    <a href="https://iadt-dentaltrauma.org/guidelines-and-resources/guidelines/">IADT 2020 guidelines</a> and the
+    <a href="https://www.rch.org.au/clinicalguide/guideline_index/Dental_trauma/">RCH Melbourne dental trauma
+    guideline</a>; paediatric dental emergency thresholds from the
+    <a href="https://www.childrens.health.qld.gov.au/__data/assets/pdf_file/0035/176885/gdl-00758.pdf">Queensland
+    Children's Hospital guideline</a>. The 2025 change to endocarditis prophylaxis is described in
+    <a href="https://australianprescriber.tg.org.au/articles/antibiotic-prophylaxis-for-dental-procedures-an-update.html"><em>Australian
+    Prescriber</em> 2026;49(4)</a>, following Therapeutic Guidelines: Oral and Dental 2025 — check the current
+    Therapeutic Guidelines before prescribing. ARF and RHD figures from
+    <a href="https://www.aihw.gov.au/reports/indigenous-australians/arf-rhd/contents/arf">AIHW</a> (2024 data;
+    note not all jurisdictions report) and the
+    <a href="https://www.rhdaustralia.org.au/">RHDAustralia 2025 guideline, edition 3.3</a>. Fluoride guidance
+    from <a href="https://www.nhmrc.gov.au/sites/default/files/documents/attachments/water-fluoridationqa.pdf">NHMRC</a>;
+    toxicity thresholds and management from the Australian <em>Toxicology Handbook</em> — and ring the Poisons
+    Information Centre on 13&nbsp;11&nbsp;26. Educational use only &mdash; not a clinical protocol, and current
+    local guidance and a dentist always take precedence.</span><br>
+    <span class="mine">Views my own, not those of NSW Health or any other organisation. No identifiable
+    patients &mdash; scenarios are constructed or combined for teaching. <a href="about.html">More</a>.</span>
+  </footer>
+
+</div>
+<script data-goatcounter="https://icuandyou.goatcounter.com/count"
+        async src="//gc.zgo.at/count.js"></script>
+</body>
+</html>

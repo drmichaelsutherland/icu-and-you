@@ -32,6 +32,7 @@
   --lotus:#B5537A; --lotustint:#FAEDF2; --lotusink:#8A3459;
   --bone:#8A8578; --bonetint:#F4F2EE; --boneink:#5E5A50; --amethyst:#7A4FA3; --brass:#A8721E;
   --neva:#6E7C94; --nevatint:#EFF1F5; --nevaink:#48546A;
+  --peppermint:#5E9A8C; --pepperminttint:#EDF5F3; --peppermintink:#3F7C72;
   }
   *{box-sizing:border-box}
   body{margin:0;background:#F3EFE8;color:var(--ink);
@@ -178,7 +179,7 @@
   .md.saffron{background:var(--saffron)}
   .md.rose{background:var(--rose)} .md.denim{background:var(--denim)}
   .md.jade{background:var(--jade)}.md.fern{background:var(--fern)}.md.crimson{background:var(--crimson)}.md.terracotta{background:var(--terracotta)}.md.ocean{background:var(--ocean)}.md.sandstone{background:var(--sandstone)}.md.pine{background:var(--pine)}.md.copper{background:var(--copper)}.md.mulberry{background:var(--mulberry)}.md.lotus{background:var(--lotus)}.md.bone{background:var(--bone)} .md.amethyst{background:var(--amethyst)}
-  .md.neva{background:var(--neva)}
+  .md.neva{background:var(--neva)} .md.peppermint{background:var(--peppermint)}
 
   /* ---- The second series cue: a stripe -------------------------------
      Twenty-seven series have used up the usable colour space, so a series is
@@ -218,6 +219,7 @@
   .item.nero{border-left-color:var(--nero)} .item.rose{border-left-color:var(--rose)}
   .item.denim{border-left-color:var(--denim)} .item.jade{border-left-color:var(--jade)}.item.fern{border-left-color:var(--fern)}.item.crimson{border-left-color:var(--crimson)}.item.terracotta{border-left-color:var(--terracotta)}.item.ocean{border-left-color:var(--ocean)}.item.sandstone{border-left-color:var(--sandstone)}.item.pine{border-left-color:var(--pine)}.item.copper{border-left-color:var(--copper)}.item.mulberry{border-left-color:var(--mulberry)}.item.lotus{border-left-color:var(--lotus)}.item.bone{border-left-color:var(--bone)} .item.amethyst{border-left-color:var(--amethyst)}
   .item.neva{border-left-color:var(--neva)}
+  .item.peppermint{border-left-color:var(--peppermint)}
   .badge{flex:0 0 84px;text-align:center;
     font:600 10.5px 'Helvetica Neue',Arial,sans-serif;letter-spacing:.1em;
     text-transform:uppercase;color:var(--muted);padding-top:3px;line-height:1.3}
@@ -259,7 +261,7 @@
   .dot.saffron{background:var(--saffron)} .dot.violet{background:var(--violet)}
   .dot.nero{background:var(--nero)} .dot.rose{background:var(--rose)}
   .dot.denim{background:var(--denim)} .dot.jade{background:var(--jade)}.dot.fern{background:var(--fern)}.dot.crimson{background:var(--crimson)}.dot.terracotta{background:var(--terracotta)}.dot.ocean{background:var(--ocean)}.dot.sandstone{background:var(--sandstone)}.dot.pine{background:var(--pine)}.dot.copper{background:var(--copper)}.dot.mulberry{background:var(--mulberry)}.dot.lotus{background:var(--lotus)}.dot.bone{background:var(--bone)} .dot.amethyst{background:var(--amethyst)}
-  .dot.neva{background:var(--neva)}
+  .dot.neva{background:var(--neva)} .dot.peppermint{background:var(--peppermint)}
   .tcount{font:400 13.5px 'Helvetica Neue',Arial,sans-serif;color:var(--muted);
     margin-right:22px;white-space:nowrap}
 
@@ -275,6 +277,7 @@
   li.row.nero{border-left-color:var(--nero)} li.row.rose{border-left-color:var(--rose)}
   li.row.denim{border-left-color:var(--denim)} li.row.jade{border-left-color:var(--jade)}.row.fern{border-left-color:var(--fern)}.row.crimson{border-left-color:var(--crimson)}.row.terracotta{border-left-color:var(--terracotta)}.row.ocean{border-left-color:var(--ocean)}.row.sandstone{border-left-color:var(--sandstone)}.row.pine{border-left-color:var(--pine)}.row.copper{border-left-color:var(--copper)}.row.mulberry{border-left-color:var(--mulberry)}.row.lotus{border-left-color:var(--lotus)}.row.bone{border-left-color:var(--bone)} li.row.amethyst{border-left-color:var(--amethyst)}
   li.row.neva{border-left-color:var(--neva)}
+  li.row.peppermint{border-left-color:var(--peppermint)}
   li.row:hover{background:#F7F4ED}
   .rs{flex:0 0 112px;font:600 10.5px 'Helvetica Neue',Arial,sans-serif;letter-spacing:.1em;
     text-transform:uppercase;color:var(--muted)}
@@ -450,11 +453,11 @@
         <summary class="chip newbtn">Latest posts</summary>
 <!-- BUILD:LATEST -->
         <div class="menu">
+          <a class="mi newitem" href="dental-01-school-age.html"><span class="newtag">New</span><i class="md peppermint striped"></i>The Dental Files 1 · Open wide</a>
           <a class="mi newitem" href="public-02-put-the-thermometer-down.html"><span class="newtag">New</span><i class="md ocean"></i>For the general public 2 · Put the thermometer down</a>
           <a class="mi newitem" href="russia-house-01-tsarevich.html"><span class="newtag">New</span><i class="md neva striped"></i>Russia House 1 · The boy who was a state secret</a>
           <a class="mi newitem" href="superquiz-63-school-age.html"><span class="newtag">New</span><i class="md fern"></i>Superquiz 63 · The school-age child</a>
           <a class="mi newitem" href="exam-cicm-first-02-the-syllabus.html"><span class="newtag">New</span><i class="md pine"></i>CICM First Part 2 · The syllabus</a>
-          <a class="mi newitem" href="book-club-02-color-atlas-physiology.html"><span class="newtag">New</span><i class="md terracotta"></i>Book Club 2 · Color Atlas of Physiology</a>
         </div>
 <!-- /BUILD:LATEST -->
       </details>
@@ -538,6 +541,7 @@
           <button class="mi" data-f="g:other"><i class="md all"></i>All of Other Realms</button>
           <button class="mi" data-f="literary"><i class="md nero"></i>The Literary Edge</button>
           <button class="mi" data-f="screening"><i class="md copper"></i>The Screening Room</button>
+          <button class="mi" data-f="dental"><i class="md peppermint striped"></i>The Dental Files</button>
         </div>
       </details>
       <details class="drop" data-g="public">
@@ -654,6 +658,14 @@
             <h3>From sepsis to society</h3>
             <p>Tex Kissoon on the PCICS podcast. Almost everything we write about sepsis is about the first hour; this is about the other ninety-nine per cent — education, advocacy, systems, poverty, access, and the survivors nobody follows up.</p>
             <div class="links"><a class="go" href="podcast-58-sepsis-to-society.html">Open</a></div>
+          </div>
+        </li>
+        <li class="item peppermint striped" data-series="dental">
+          <div class="badge">The Dental Files<b>1</b></div>
+          <div class="body">
+            <h3>Open wide</h3>
+            <p>A new series. Mixed dentition and the six-year molar that fools everybody, loose teeth before laryngoscopy, the avulsed tooth and the hour it has, the 2025 change to endocarditis prophylaxis in rheumatic heart disease, fluoride, and the mouth that closes the airway.</p>
+            <div class="links"><a class="go" href="dental-01-school-age.html">Open</a></div>
           </div>
         </li>
         <li class="item sepia" data-series="journal">
@@ -944,7 +956,7 @@
     window.addEventListener("load", function(){ window.scrollTo(0, 0); });
   }
 
-  var GROUPS = {"memory": ["barebones", "mind-map", "aphorism", "mnemonic", "superpuzzle", "superquiz"], "multimedia": ["podcast", "journal", "bookclub"], "special": ["students", "nurses", "gp", "emergency", "anaesthetics"], "procedures": ["procedures"], "drugstore": ["drugstore"], "exam": ["cicm-first"], "cultural": ["coin", "italiano", "espanol", "india", "chinatown", "australia", "srilanka", "russia"], "other": ["literary", "screening"], "public": ["public"]};
+  var GROUPS = {"memory": ["barebones", "mind-map", "aphorism", "mnemonic", "superpuzzle", "superquiz"], "multimedia": ["podcast", "journal", "bookclub"], "special": ["students", "nurses", "gp", "emergency", "anaesthetics"], "procedures": ["procedures"], "drugstore": ["drugstore"], "exam": ["cicm-first"], "cultural": ["coin", "italiano", "espanol", "india", "chinatown", "australia", "srilanka", "russia"], "other": ["literary", "screening", "dental"], "public": ["public"]};
   var LABELS = {"memory": "Memory aids and activities", "multimedia": "Multimedia", "special": "Special groups", "procedures": "Procedures", "drugstore": "Drugstore", "exam": "Exam focus", "cultural": "Cultural narratives", "other": "Other Realms", "public": "For the general public"};
 
   function inFilter(sk){

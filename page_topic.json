@@ -144,6 +144,11 @@
    "Russia House",
    "neva striped",
    "cultural"
+  ],
+  "dental": [
+   "The Dental Files",
+   "peppermint striped",
+   "other"
   ]
  },
  "pages": [
@@ -984,9 +989,28 @@
    "badge": "For the general public",
    "link_label": "Open",
    "blurb": "Written for anyone, not for clinicians. Why 37 degrees was a nineteenth-century average rather than a boundary, the five things a doctor actually looks at, why the glass test comes about half a day too late — and the evidence that a parent's worry beats the monitor."
+  },
+  {
+   "file": "dental-01-school-age.html",
+   "series": "dental",
+   "colour": "peppermint striped",
+   "number": "1",
+   "title": "Open wide",
+   "topic": "The school-age child",
+   "slug": "school-age",
+   "week": true,
+   "pos": 10,
+   "badge": "The Dental Files",
+   "link_label": "Open",
+   "blurb": "A new series. Mixed dentition and the six-year molar that fools everybody, loose teeth before laryngoscopy, the avulsed tooth and the hour it has, the 2025 change to endocarditis prophylaxis in rheumatic heart disease, fluoride, and the mouth that closes the airway."
   }
  ],
  "latest": [
+  {
+   "file": "dental-01-school-age.html",
+   "colour": "peppermint striped",
+   "label": "The Dental Files 1 · Open wide"
+  },
   {
    "file": "public-02-put-the-thermometer-down.html",
    "colour": "ocean",
@@ -1006,11 +1030,6 @@
    "file": "exam-cicm-first-02-the-syllabus.html",
    "colour": "pine",
    "label": "CICM First Part 2 · The syllabus"
-  },
-  {
-   "file": "book-club-02-color-atlas-physiology.html",
-   "colour": "terracotta",
-   "label": "Book Club 2 · Color Atlas of Physiology"
   }
  ],
  "topten": [
