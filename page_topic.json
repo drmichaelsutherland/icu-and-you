@@ -156,7 +156,7 @@
    "special"
   ],
   "impossible": [
-   "Six \"Impossible\" Things?",
+   "Six Impossible Things?",
    "lilac",
    "other"
   ]
@@ -1038,7 +1038,7 @@
    "slug": "school-age",
    "week": true,
    "pos": 13,
-   "badge": "Six \"Impossible\" Things?",
+   "badge": "Six Impossible Things?",
    "link_label": "Open",
    "blurb": "A new series, for the dreamers. No child dies of sepsis, of hunger or thirst, of a vaccine-preventable disease; no post-intensive care syndrome; no distance disadvantage. Five things called impossible that are already true somewhere — and the sixth is left entirely to you."
   }
@@ -1047,7 +1047,7 @@
   {
    "file": "impossible-01-school-age.html",
    "colour": "lilac",
-   "label": "Six \"Impossible\" Things? 1 · Five before breakfast"
+   "label": "Six Impossible Things? 1 · Five before breakfast"
   },
   {
    "file": "admin-01-school-age.html",
