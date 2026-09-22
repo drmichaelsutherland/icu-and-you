@@ -154,6 +154,11 @@
    "Administrators' Avenue",
    "ledger striped",
    "special"
+  ],
+  "impossible": [
+   "Six \"Impossible\" Things?",
+   "lilac",
+   "other"
   ]
  },
  "pages": [
@@ -1022,9 +1027,28 @@
    "badge": "Administrators' Avenue",
    "link_label": "Open",
    "blurb": "A new series — for trainees, about administration. Role delineation and why your hospital has what it has, why you cannot do the thing you can do, where the money actually comes from, what happened to the form you filed at 4 am, and how to get something changed."
+  },
+  {
+   "file": "impossible-01-school-age.html",
+   "series": "impossible",
+   "colour": "lilac",
+   "number": "1",
+   "title": "Five before breakfast",
+   "topic": "The school-age child",
+   "slug": "school-age",
+   "week": true,
+   "pos": 13,
+   "badge": "Six \"Impossible\" Things?",
+   "link_label": "Open",
+   "blurb": "A new series, for the dreamers. No child dies of sepsis, of hunger or thirst, of a vaccine-preventable disease; no post-intensive care syndrome; no distance disadvantage. Five things called impossible that are already true somewhere — and the sixth is left entirely to you."
   }
  ],
  "latest": [
+  {
+   "file": "impossible-01-school-age.html",
+   "colour": "lilac",
+   "label": "Six \"Impossible\" Things? 1 · Five before breakfast"
+  },
   {
    "file": "admin-01-school-age.html",
    "colour": "ledger striped",
@@ -1044,11 +1068,6 @@
    "file": "russia-house-01-tsarevich.html",
    "colour": "neva striped",
    "label": "Russia House 1 · The boy who was a state secret"
-  },
-  {
-   "file": "superquiz-63-school-age.html",
-   "colour": "fern",
-   "label": "Superquiz 63 · The school-age child"
   }
  ],
  "topten": [
