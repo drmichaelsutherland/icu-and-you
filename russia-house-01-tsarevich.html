@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="en-AU">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ICU AND YOU · Russia House No. 1 — The boy who was a state secret</title>
+<meta name="description" content="Russia House No. 1: the tsarevich Alexei had haemophilia B, proven by sequencing in 2009. A bleed with nowhere to show, the most famous telegram in medicine, and why the iliopsoas still catches people out.">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="alternate icon" href="/favicon.ico" sizes="any">
+<link rel="apple-touch-icon" href="/icon-180.png">
+<meta name="theme-color" content="#1B2A33">
+<meta property="og:site_name" content="ICU AND YOU">
+<meta property="og:type" content="website">
+<meta property="og:title" content="ICU AND YOU · Russia House No. 1 — The boy who was a state secret">
+<meta property="og:description" content="Russia House No. 1: the tsarevich Alexei had haemophilia B, proven by sequencing in 2009. A bleed with nowhere to show, the most famous telegram in medicine, and why the iliopsoas still catches people out.">
+<meta property="og:image" content="https://icuandyou.com/share-card.png">
+<meta name="twitter:card" content="summary_large_image">
+<style>
+  :root{
+    --paper:#FAFBFC; --ink:#22282F; --muted:#5F6875; --rule:#DFE4EA;
+    --rojo:#5B6A82; --rojotint:#EFF2F6;
+    --oro:#8E7230; --orotint:#F7F1E3;
+  }
+  *{box-sizing:border-box}
+  body{margin:0;background:#E7EBF0;color:var(--ink);
+    font:400 17px/1.66 'Iowan Old Style','Palatino Linotype',Palatino,Georgia,serif;
+    -webkit-text-size-adjust:100%;}
+  .sheet{max-width:760px;margin:0 auto;background:var(--paper);
+    box-shadow:0 1px 40px rgba(24,32,42,.12);}
+
+  /* The series cue, in the masthead strip: this column is striped rather
+     than plain, because the site has run out of distinguishable colours. */
+  .flag{height:6px;
+    background:repeating-linear-gradient(135deg,
+      var(--rojo) 0 7px, #8894A8 7px 14px)}
+
+  header.top{padding:42px 42px 28px;border-bottom:1px solid var(--rule)}
+  .eyebrow a.serlink{color:inherit;text-decoration:none;border-bottom:1px solid transparent}
+  .eyebrow a.serlink:hover{border-bottom-color:currentColor}
+  .eyebrow a.mast{color:inherit;text-decoration:none;border-bottom:1px solid transparent}
+  .eyebrow a.mast:hover{border-bottom-color:currentColor}
+  .toptopic,.topseries,.tophome{display:inline-block;margin:0 0 16px 9px;padding:7px 16px;
+    border-radius:20px;border:1px solid currentColor;opacity:.62;text-decoration:none;
+    color:inherit;font:600 11.5px 'Helvetica Neue',Arial,sans-serif;letter-spacing:.09em;
+    text-transform:uppercase;transition:opacity .12s ease}
+  .tophome{margin-left:0}
+  .toptopic:hover,.topseries:hover,.tophome:hover{opacity:1}
+  .eyebrow{font:500 11.5px/1 'Helvetica Neue',Arial,sans-serif;letter-spacing:.24em;
+    text-transform:uppercase;color:var(--muted);margin:0 0 14px}
+  h1{font-size:34px;line-height:1.16;margin:0 0 8px;font-weight:400;letter-spacing:-.012em;
+    font-style:italic}
+  .kicker{color:var(--muted);margin:0;font-size:16.5px}
+
+  .pad{padding:34px 42px}
+  p{margin:0 0 17px}
+  .lede{font-size:20px;line-height:1.5;color:#1A2028;margin:0 0 22px}
+
+  b.term{font-style:normal;font-weight:600;color:var(--rojo)}
+  .cyr{font-size:.97em}
+
+  h2.sub{font:600 12px 'Helvetica Neue',Arial,sans-serif;letter-spacing:.2em;
+    text-transform:uppercase;color:var(--muted);margin:30px 0 14px;
+    padding-bottom:8px;border-bottom:1px solid var(--rule)}
+
+  .faux{margin:0 0 17px;padding:20px 24px;background:var(--rojotint);
+    border-left:4px solid var(--rojo);border-radius:0 8px 8px 0}
+  .faux .lab{display:block;font:600 11px 'Helvetica Neue',Arial,sans-serif;
+    letter-spacing:.18em;text-transform:uppercase;color:var(--rojo);margin:0 0 9px}
+  .faux p:last-child{margin:0}
+
+  .gloss{margin:0 0 17px;padding:20px 24px;background:var(--orotint);
+    border-left:4px solid var(--oro);border-radius:0 8px 8px 0;font-size:16px}
+  .gloss p:last-child{margin:0}
+
+  .welcome{margin:0 0 24px;padding:20px 24px;background:var(--orotint);
+    border-left:4px solid var(--oro);border-radius:0 8px 8px 0}
+  .welcome .lab{display:block;font:600 11px 'Helvetica Neue',Arial,sans-serif;
+    letter-spacing:.18em;text-transform:uppercase;color:var(--oro);margin:0 0 9px}
+  .welcome p:last-child{margin:0}
+
+  .why{margin:0 0 26px;padding:22px 26px;background:#F1F4F9;border-left:4px solid #2F4A7C;
+    border-radius:0 8px 8px 0}
+  .why .lab{display:block;font:600 11px 'Helvetica Neue',Arial,sans-serif;letter-spacing:.18em;
+    text-transform:uppercase;color:#22375C;margin:0 0 10px}
+  .why p{margin:0 0 10px;font-size:15.5px;line-height:1.6}
+  .why p:last-child{margin:0}
+
+  .another{margin:26px 0 0;padding:22px 26px;background:#F4F1EA;
+    border:1px solid #E2DACB;border-radius:10px}
+  .another .lab{display:block;font:600 11px 'Helvetica Neue',Arial,sans-serif;
+    letter-spacing:.18em;text-transform:uppercase;color:#8A6A2E;margin:0 0 10px}
+  .another p:last-child{margin:0}
+
+  .careful{margin:0 0 17px;padding:18px 22px;background:#FBF6EC;
+    border:1px dashed #C8AE7A;border-radius:9px;font-size:16px}
+  .careful .lab{display:block;font:600 11px 'Helvetica Neue',Arial,sans-serif;
+    letter-spacing:.18em;text-transform:uppercase;color:#8A6A2E;margin:0 0 9px}
+  .careful p:last-child{margin:0}
+
+  ul.pts{list-style:none;padding:0;margin:0 0 20px}
+  ul.pts li{margin:0 0 14px;padding:0 0 0 17px;border-left:2px solid var(--rule)}
+  ul.pts li b{display:block;font-weight:600;font-size:16px}
+  ul.pts li span{display:block;color:#3C444F;font-size:16px;line-height:1.55}
+
+  .reply{margin:0;padding:28px 32px;background:#EEF1F5;border-left:5px solid var(--oro)}
+  .reply h2{font:600 12px 'Helvetica Neue',Arial,sans-serif;letter-spacing:.2em;
+    text-transform:uppercase;color:var(--oro);margin:0 0 13px}
+  .ask{font-size:19px;line-height:1.5;font-style:italic;margin:0 0 15px}
+  .btn{display:inline-block;margin:6px 0 12px;padding:15px 30px;background:var(--rojo);
+    color:#FBFCFD;text-decoration:none;border-radius:30px;font-style:normal;
+    font:600 15px 'Helvetica Neue',Arial,sans-serif;letter-spacing:.03em}
+  .btn:hover{background:#3F4C60}
+  .btn:focus-visible{outline:3px solid var(--oro);outline-offset:3px}
+  .fallback{font:400 13.5px 'Helvetica Neue',Arial,sans-serif;color:var(--muted);margin:0}
+  .fallback a{color:var(--rojo)}
+
+  .subline{margin:0 0 14px;padding:0 0 13px;border-bottom:1px solid rgba(0,0,0,.09);
+    font:400 14.5px/1.55 'Iowan Old Style','Palatino Linotype',Palatino,Georgia,serif;
+    max-width:56ch;margin-left:auto;margin-right:auto}
+  .subline a{font-weight:500;border-bottom:1px solid currentColor;
+    text-decoration:none;color:inherit}
+  .firstpub{display:block;margin:0 0 10px;padding-bottom:9px;
+    border-bottom:1px solid currentColor;border-color:rgba(0,0,0,.09);
+    font:400 12px 'Helvetica Neue',Arial,sans-serif;letter-spacing:.06em;opacity:.72}
+
+  footer{padding:24px 42px 42px;border-top:1px solid var(--rule);
+    font:400 13px 'Helvetica Neue',Arial,sans-serif;color:var(--muted);text-align:center;line-height:1.7}
+  .home{display:inline-block;margin:0 0 14px;padding:8px 18px;border-radius:20px;
+    border:1px solid var(--rule);background:#EFF2F6;color:var(--rojo);text-decoration:none;
+    font:600 12.5px 'Helvetica Neue',Arial,sans-serif;letter-spacing:.05em}
+  .home:hover{background:var(--rojo);border-color:var(--rojo);color:#FBFCFD}
+  .mine{display:inline-block;margin:9px 0 0;opacity:.78;font-size:.94em}
+  .srcs{font-size:12.5px;line-height:1.6}
+  .srcs a{color:inherit}
+
+  @media (max-width:620px){
+    header.top,.pad,footer{padding-left:20px;padding-right:20px}
+    .reply{padding:22px 20px}
+    h1{font-size:26px} body{font-size:16.5px} .lede{font-size:18px} .ask{font-size:17.5px}
+  }
+  @media print{ body{background:#fff} .sheet{box-shadow:none;max-width:none} }
+</style>
+</head>
+<body>
+<div class="sheet">
+
+  <div class="flag"></div>
+
+  <header class="top">
+    <a class="tophome" href="./">&larr;&nbsp; Home</a>
+    <a class="topseries" href="./?s=russia">More from Russia House</a>
+    <a class="toptopic" href="./?t=school-age" title="Everything on The school-age child">All on this topic</a>
+    <p class="eyebrow"><a class="mast" href="./">ICU and You</a> &nbsp;·&nbsp;
+      <a class="serlink" href="./?s=russia">Russia House <span class="cyr">Здравствуйте</span></a>
+      &nbsp;·&nbsp; Number 1</p>
+    <h1>The boy who was a state secret</h1>
+    <p class="kicker">Haemophilia B, a bleed with nowhere to show, and the most famous telegram in medicine</p>
+  </header>
+
+  <div class="pad">
+    <div class="welcome">
+      <span class="lab">A new column</span>
+      <p><span class="cyr">Здравствуйте</span> &mdash; <b class="term">zdravstvuyte</b> is the ordinary
+        Russian greeting you would use with anyone you have not known since childhood. It is not a word for
+        hello. It is an imperative built on <em>здравие</em>, health, and what it actually says is
+        <em>be well</em>. Russians say it a hundred times a day without hearing it, the way we say goodbye
+        without hearing <em>God be with you</em>.</p>
+      <p>It seemed a reasonable name for a column on a critical care site, and this first one is about a
+        Russian boy who was not well, whose illness was a secret of state, and whose diagnosis was finally
+        settled ninety-one years after he was murdered.</p>
+    </div>
+
+    <div class="why">
+      <span class="lab">Why this section exists</span>
+      <p><strong>This is not a travel column.</strong> The people in our unit come from everywhere, and so do
+        the people who work in it. On any given shift the registrar trained in Dublin or Chennai, the nurse
+        who grew up speaking Tagalog, the family who are more comfortable in Arabic and the patient whose
+        grandmother is Gumbaynggirr are all in the same twelve square metres. That is not an unusual day. It
+        is every day, and it has been for years.</p>
+      <p>Superdiversity is not a policy word for somebody else's problem. It is a description of the room you
+        are standing in. Which means that knowing how medicine is done elsewhere is not general knowledge or
+        broadening &mdash; it is <em>local</em> knowledge about your own colleagues and your own patients.</p>
+      <p>And there is a second reason, which matters more. Everything we do here was decided by somebody. The
+        way we consent, who answers an emergency call, what we count as a fever, how we speak to a dying
+        person's family: all of it looks inevitable from inside and turns out to be one option among several
+        the moment you look at another country. <strong>Nothing shows you your own assumptions faster than
+        watching competent people make different ones.</strong></p>
+      <p>Some of these columns will change your practice. Most will not. All of them should make the familiar
+        look slightly less obvious, which is the whole point.</p>
+    </div>
+
+    <p class="lede">In the autumn of 1912, at a hunting lodge at Spała in Russian Poland, an eight-year-old
+      boy lay screaming in a room the whole of Europe was watching and nobody was allowed to explain.</p>
+
+    <p>He had knocked himself getting into a boat some weeks earlier &mdash; some accounts say climbing out of
+      a bath &mdash; and seemed to recover. Then a jolting carriage ride with his mother restarted it. Over
+      the following days his left groin and upper thigh swelled, the swelling tracked up into his abdomen, and
+      he drew the leg up towards his chest and would not let anyone straighten it. He ran a high fever. He
+      became delirious. The pain came in waves roughly every quarter of an hour and he barely slept for days.
+      Two surgeons came down from St Petersburg, considered operating, and decided that opening him would kill
+      him faster. The last rites were administered.</p>
+
+    <p>Public bulletins were issued on the heir's condition for the first time in the reign, and the
+      newspapers settled into a death watch. <b class="term">The bulletins never named the illness.</b> They
+      could not: an heir to the Russian throne could not be publicly known to be chronically ill, and so the
+      most consequential medical fact in the empire was managed as a secret for the whole of the boy's
+      short life.</p>
+
+    <p>He recovered. It took weeks, and he was left with the leg fixed in flexion and unable to walk unaided
+      for about a year. The imperial train took him home slowly, with the driver instructed not to brake
+      hard.</p>
+
+    <h2 class="sub">What he actually had</h2>
+
+    <p>For most of the twentieth century the answer was &ldquo;haemophilia&rdquo;, which everyone took to mean
+      haemophilia&nbsp;A, because most haemophilia is A. In 2009 Rogaev and colleagues sequenced DNA from the
+      Romanov remains &mdash; including the second Yekaterinburg grave found in 2007, which held the boy and
+      one of his sisters &mdash; and answered it properly.</p>
+
+    <div class="faux">
+      <span class="lab">The mutation</span>
+      <p>A single base change in the <b class="term">F9</b> gene on the X chromosome, three nucleotides
+        upstream of exon&nbsp;4: <b class="term">IVS3-3A&gt;G</b>, in current notation
+        <b class="term">c.278-3A&gt;G</b>. It creates a cryptic splice acceptor site. In an exon-trap assay
+        essentially every transcript from the mutant allele &mdash; the paper says 99.98 per cent &mdash;
+        spliced at the wrong place, shifting the reading frame into a premature stop codon.</p>
+      <p>So: not haemophilia&nbsp;A at all. <strong>Haemophilia B</strong>, factor IX, predicted to be severe.
+        Alexei carried the single mutant allele; his mother Alexandra was a heterozygous carrier; one sister
+        was also a carrier &mdash; the Russian team presumed Anastasia, though which daughter was in that
+        grave has never been settled and an American group reading the same remains concluded it was Maria.</p>
+    </div>
+
+    <div class="careful">
+      <span class="lab">A teaching point hiding in there</span>
+      <p>This particular variant is <em>recurrent</em>. It has turned up independently in unrelated
+        haemophilia B families. Finding it in the remains therefore identifies the <strong>disease</strong>,
+        not the <strong>person</strong> &mdash; the identification rests on entirely separate short-tandem-repeat
+        and mitochondrial work. It is a clean illustration of something worth carrying into any conversation
+        about genomic results: a pathogenic variant tells you what is wrong, and almost never tells you who
+        you are looking at.</p>
+    </div>
+
+    <p>Nobody ever measured his factor IX, because no such assay existed in his lifetime and none can be done
+      on bone. Severity is inferred from the predicted null effect of the splice defect and from how he
+      actually behaved. It is worth saying that plainly rather than writing that he had a level under one per
+      cent, which is a number nobody has.</p>
+
+    <h2 class="sub">The bleed with nowhere to show</h2>
+
+    <p>Now read the Spała description again as a clinician. Groin and upper thigh swelling, extending into the
+      abdomen. The hip held flexed and resisting extension. Days of fever. No external blood loss at all. Weeks
+      to resolve, then a flexion contracture.</p>
+
+    <p>That is an <b class="term">iliopsoas haemorrhage</b> &mdash; a large retroperitoneal bleed. No
+      contemporary source uses the word; the diagnosis is a retrospective reading of lay descriptions by
+      people who know what the lesion looks like. But it fits so exactly that it is worth using, because the
+      lesion has lost none of its capacity to catch people out.</p>
+
+    <ul class="pts">
+      <li><b>The blood goes somewhere with no walls</b><span>The retroperitoneum is a large potential space
+        with nothing to tamponade against. Litres can accumulate with nothing to see and nothing to feel.
+        Circulatory collapse can arrive before any swelling does.</span></li>
+      <li><b>It impersonates appendicitis</b><span>Right iliac fossa pain, a positive psoas sign, low-grade
+        fever from resorption, a child who will not extend the hip. People with haemophilia have been taken
+        to theatre for a hot appendix that was an iliopsoas bleed &mdash; a laparotomy in an uncorrected
+        coagulopathy.</span></li>
+      <li><b>It is not a hip bleed, and the difference is examinable</b><span>In an iliopsoas haemorrhage
+        rotation of the hip is relatively preserved and relatively comfortable, while extension is not
+        tolerated. In a haemarthrosis of the hip, rotation is restricted and exquisite in every
+        direction.</span></li>
+      <li><b>The femoral nerve is inside the compartment</b><span>It runs within the iliacus fascia. Compression
+        gives quadriceps weakness, a lost knee jerk and numbness over the anteromedial thigh and medial leg.
+        Recovery is often incomplete, which is one plausible reading of why a boy who survived this bleed
+        could not walk properly for a year.</span></li>
+      <li><b>Factor first, scanner second</b><span>Replace before imaging, not after. Then confirm and size it,
+        replace to near-normal levels and keep going for weeks rather than days because the rebleed rate is
+        high, rest then mobilise under supervision, and do not drain or aspirate it.</span></li>
+    </ul>
+
+    <p>And the thing that makes the 1912 story worth telling at all: <strong>none of that existed.</strong>
+      There was no factor concentrate, no plasma, no cryoprecipitate, no tranexamic acid, no imaging that
+      would have shown the lesion, and no operation that would not have killed him. The entire treatment was
+      morphine, warmth, stillness and waiting to see whether the haematoma would reabsorb before the child
+      died. Every item on that list above is a century old or less. It is a useful thing to remember on a bad
+      night.</p>
+
+    <h2 class="sub">The Ras man</h2>
+
+    <p>You cannot tell this story without him, and the medical literature has generally told it badly.</p>
+
+    <p>During the worst of the crisis, the Empress had Anna Vyrubova telegraph <b class="term">Grigori
+      Rasputin</b>, who was then at home in Siberia, more than two thousand kilometres away. A reply came
+      back. As reported &mdash; and it is reported, in memoirs, rather than preserved as a document, so the
+      wording should be held loosely:</p>
+
+    <div class="gloss">
+      <p><em>&ldquo;God has seen your tears and heard your prayers. Do not grieve. The Little One will not
+        die. Do not allow the doctors to bother him too much.&rdquo;</em></p>
+    </div>
+
+    <p>Within a day or two the boy began to improve. Alexandra's faith in Rasputin became absolute, and the
+      political consequences of that ran all the way to 1917. The episode is the hinge of his whole hold over
+      the family, and Massie, whose 1967 account is where most people have met it, called it one of the most
+      mysterious episodes of the entire Rasputin legend.</p>
+
+    <p>Three things are worth saying about it, in descending order of confidence.</p>
+
+    <p><strong>First, and least romantic: haematomas resolve.</strong> If the patient survives the acute
+      phase, that is what they do. The telegram arrived somewhere around the seventh or eighth day of an
+      eleven-day illness &mdash; which is to say, at about the point when a survivor would be expected to turn.
+      Rasputin had a habit of intervening late in episodes and predicting recovery, which is a textbook way to
+      build a reputation for miracles out of base rates. This explanation requires nothing that is not already
+      known.</p>
+
+    <p><strong>Second: the advice in the telegram was not bad advice.</strong> Keeping the doctors away from a
+      child with a huge retroperitoneal haematoma means less handling, less examination, less moving him about.
+      That is, as it happens, correct management. Douglas Smith, his most serious modern biographer, argues
+      that the operative effect was the calming of a frantic mother and a terrified child, and there is a real
+      clinical observation underneath that &mdash; agitation and pain make bleeding worse, and calm, analgesia
+      and immobility help. It is worth holding on to as contributory. It is not worth believing that serenity
+      arrests an established retroperitoneal bleed in a child with no measurable factor IX.</p>
+
+    <div class="careful">
+      <span class="lab">Third: about the aspirin</span>
+      <p>You will very often read that the doctors were giving Alexei aspirin, that Rasputin's instruction to
+        keep them away caused it to be stopped, and that <em>this</em> is the explanation &mdash; an antiplatelet
+        drug withdrawn from a bleeding child. It is repeated in good places, including by historians who know
+        the period well.</p>
+      <p><strong>There does not appear to be a source for it.</strong> No contemporary record says Alexei was
+        given aspirin. No version of the telegram mentions any medicine. And the theory is sometimes credited
+        to Pierre Gilliard, the boy's tutor, which cannot be right: aspirin's effect on platelets was not
+        described until the 1950s and 60s, and Gilliard published in 1921. The pharmacology is perfectly sound
+        and the drug was certainly in fashion by 1912, so it is a reasonable <em>guess</em>. It has simply been
+        retold often enough to have acquired the shape of a fact.</p>
+      <p>Which makes the lesson here not really about Rasputin. It is about how a tidy mechanism, offered once
+        to fill an awkward gap, picks up citations, then confident retelling, and finally the shape of a fact
+        &mdash; without anyone anywhere having produced the evidence. Medicine does this to itself roughly
+        once a decade, and generally with something being taught with great assurance at the time.</p>
+    </div>
+
+    <h2 class="sub">Why this sits in a fortnight on the school-age child</h2>
+
+    <p>Because Alexei was eight, and because severe haemophilia in a school-age child is a particular
+      condition with a particular shape.</p>
+
+    <p>The bleeding that defines this age group is <b class="term">recurrent haemarthrosis</b> &mdash; ankles
+      first in childhood, then knees and elbows, the classic index joints. Children learn to recognise an
+      <b class="term">aura</b>: a tingling, a warmth, a stiffness in the joint that arrives hours before
+      anything is visible. That matters clinically, because the child telling you their ankle feels
+      &ldquo;funny&rdquo; is giving you the window in which factor works best, and the adult who waits for a
+      swollen joint has missed it. Untreated, repeated bleeds drive synovial hypertrophy, then a target joint,
+      then arthropathy and fixed deformity &mdash; which is the road Alexei was already some distance down.</p>
+
+    <p>The other thing to know for an emergency department is that intracranial haemorrhage is the leading
+      haemorrhagic killer in haemophilia, that a substantial share of events &mdash; between a third and a half
+      &mdash; happen without any identified trauma at all, and that the incidence is highest in the very young.
+      Any head injury in a child with haemophilia is <b class="term">factor first, scan second</b>, and a
+      normal-looking child is not reassurance.</p>
+
+    <p>And there is a quieter reason this piece belongs to this fortnight. The theme running through the
+      school-age block is the child who <em>can</em> tell you what is wrong and has learned not to &mdash;
+      because they are being brave, because it might mean a needle, or because a parent is in the room and
+      they are protecting them. Alexei is that child taken to its limit: a boy who could not run, could not
+      be allowed to fall, was carried in public by a sailor assigned to catch him, and whose whole diagnosis
+      was a thing the adults around him were forbidden to say out loud. Families still do versions of this.
+      Not from reasons of state, but from shame, or fear of blame, or a wish to protect a child from their own
+      chart.</p>
+
+    <h2 class="sub">What would happen now</h2>
+
+    <p>Factor IX has turned out to be much easier to extend than factor VIII, because it is not tethered to
+      the clearance of von Willebrand factor. Modern extended half-life products &mdash; albumin fusion,
+      Fc fusion, glycoPEGylation &mdash; give terminal half-lives in the range of three and a half to four
+      days and are dosed in practice somewhere between weekly and fortnightly, holding troughs well clear of
+      the severe range. That converts severe haemophilia B into something that behaves like mild disease, and
+      it is the real comparator against which everything newer has to be judged.</p>
+
+    <p>Then there is gene therapy, which is where the story gets genuinely interesting and not in the way the
+      press releases intended.</p>
+
+    <ul class="pts">
+      <li><b>Etranacogene dezaparvovec (Hemgenix)</b><span>A single infusion of an AAV5 vector carrying the
+        hyperactive Padua variant of factor IX. FDA-approved November 2022 &mdash; the first gene therapy for
+        haemophilia B. The five-year HOPE-B results published at the end of 2025 are strong: mean factor IX
+        activity around 36 IU/dL with no meaningful fall over five years, bleeding rates down by roughly
+        two-thirds, and 94 per cent of the trial cohort off prophylaxis and never restarted.</span></li>
+      <li><b>Fidanacogene elaparvovec (Beqvez)</b><span>Approved by the FDA in April 2024 and in Europe that
+        July, on positive pivotal data. Pfizer discontinued it in February 2025 and withdrew the European
+        authorisation in May, citing limited interest. Essentially no commercial patient was ever treated with
+        it.</span></li>
+    </ul>
+
+    <p>That second entry is the more instructive one. A one-time treatment for a lifelong disease, approved by
+      two major regulators on good evidence, priced at around three and a half million US dollars, was taken
+      off the market inside a year having treated almost nobody &mdash; not for any safety reason, but because
+      patients doing well on a fortnightly injection were unenthusiastic about an irreversible single shot
+      with unknown twenty-year durability, and payers were unenthusiastic about the price. Regulatory approval
+      and clinical adoption turn out to be very different things.</p>
+
+    <p>In Australia the position is that Hemgenix holds <em>provisional</em> TGA registration from March 2024,
+      and that MSAC did not support public funding in August 2024 &mdash; citing low-certainty evidence, wide
+      variation between patients with no way to predict who will respond, a screening assay for anti-AAV5
+      antibodies that was unvalidated and performed only in the United States, and a price that did not stack
+      up. Australian patients with haemophilia B are managed on factor IX concentrate funded through the
+      national blood arrangements. And in March 2026 CSL announced a temporary global stockout of Hemgenix,
+      which it attributes to the difficulty of manufacturing gene therapies rather than to anything about the
+      product.</p>
+
+    <p>So the honest summary, in 2026, is that the disease which helped bring down a dynasty is now
+      technically curable with one infusion, that almost nobody in this country is getting it, and that the
+      unglamorous injection every week or two is what actually changed these children's lives.</p>
+
+    <div class="another">
+      <span class="lab">And another thing</span>
+      <p>Alexei's haemophilia came down from <strong>Queen Victoria</strong>, through her daughter Alice to
+        Alexandra. Victoria had no haemophilia in her documented ancestry on either side, which is not
+        especially mysterious &mdash; around thirty per cent of haemophilia arises with no family history. The
+        usual conclusion is a new mutation in the germline of her father, the Duke of Kent, who was
+        fifty-one when she was born. That is an inference from paternal age and an absent family history, not
+        a demonstration; no DNA from any of them has ever been tested.</p>
+      <p>What the pedigree does demonstrate is what severe haemophilia meant before concentrates. Three of
+        Victoria's descendants &mdash; Viscount Trematon in 1928, the Infante Gonzalo of Spain in 1934, and
+        the Infante Alfonso, Prince of Asturias, in 1938 &mdash; each bled to death after a
+        <em>motor accident</em>. Three young men, three separate car crashes, three deaths from injuries that
+        would not have killed anybody else in the vehicle.</p>
+    </div>
+  </div>
+
+  <div class="pad" style="padding-top:6px">
+    <div class="reply">
+      <h2>Challenge for you</h2>
+      <p class="ask">This column has just opened, and it should not be written only by me.</p>
+      <p>If you have a Russian or Russian-speaking connection &mdash; by birth, by family, by training, by
+        marriage, by having worked there &mdash; I would like to hear from you. What does a Russian-speaking
+        family expect from a doctor that an Australian family does not? What is normal there and startling
+        here? What gets misread in our units? Which word have you had to translate and found you could not?</p>
+      <p>And the standing invitation of this whole section holds, for any culture at all: if something
+        characteristic of where you come from belongs on this site, tell me and we will put it here &mdash;
+        with your name on it, or without, entirely as you prefer. Several of these columns exist because
+        somebody wrote in.</p>
+      <p><a class="btn" href="mailto:icuandyou@icloud.com?subject=Russia%20House%20-%20a%20perspective&body=The%20culture%2C%20country%20or%20language%3A%0D%0A%0D%0A%0D%0AWhat%20is%20characteristic%20of%20it%20that%20colleagues%20here%20do%20not%20know%3A%0D%0A%0D%0A%0D%0A---%0D%0A%0D%0AName%3A%0D%0A%0D%0AWould%20you%20like%20to%20be%20named%20on%20the%20piece%3F%20%28yes%20%2F%20no%20%2F%20decide%20later%29%3A%0D%0A%0D%0A---%0D%0A%0D%0AThinking%20about%20this%20ICU%20AND%20YOU%20post%20overall%20%E2%80%94%20was%20it%20useful%20to%20you%2C%20or%20would%20it%20be%20useful%20to%20others%3F%0D%0A">Tell me about it</a></p>
+      <p class="fallback">The button opens a reply straight to me. If your device blocks it, write to
+        <a href="mailto:icuandyou@icloud.com">icuandyou@icloud.com</a> instead.</p>
+    </div>
+  </div>
+
+  <footer>
+    <span class="firstpub">First published September 2026</span>
+    <p class="subline">Two emails a week &mdash; the Friday newsletter for all subscribers, and, for clinical subscribers,
+      the mind map and puzzles the moment they go up on Tuesday. Occasional announcements of new
+      features as they arrive. What went up and why it mattered, the best of your replies, and
+      original feature stories, news and views. <a href="https://joinlist.com/f/5adad2d6">Come and join us</a>.</p>
+    <a class="home" href="./">&larr; &nbsp;All of ICU AND YOU</a><br>
+    Russia House No. 1 &nbsp;&#183;&nbsp; companion to Mind Map #34, The School-Age Child<br>
+    <span class="srcs">Genetics from <a href="https://www.science.org/doi/10.1126/science.1180660">Rogaev et al.,
+    <em>Science</em> 2009;326:817</a>; the contested identity of the second grave from
+    <a href="https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0004838">Coble et al.,
+    <em>PLoS ONE</em> 2009;4:e4838</a>. Severity definitions from the
+    <a href="https://onlinelibrary.wiley.com/doi/10.1111/hae.14046">WFH Guidelines, 3rd edition</a>;
+    intracranial haemorrhage data from <a href="https://ashpublications.org/blood/article/138/26/2853/476634/">Zwagemaker
+    et al., <em>Blood</em> 2021</a>. Five-year gene therapy outcomes from the
+    <a href="https://www.nejm.org/doi/abs/10.1056/NEJMoa2514332">HOPE-B final analysis, <em>NEJM</em> 2026</a>;
+    the Australian funding position from <a href="https://www.msac.gov.au/sites/default/files/2024-10/1728_final_psd_-_aug2024_-_redacted.pdf">MSAC
+    application 1728</a>. Historical narrative follows the memoir tradition &mdash; Vyrubova, Gilliard, the
+    diaries of Nicholas II &mdash; as gathered by Massie, and is flagged in the text where it is uncertain.
+    Educational use only &mdash; not a clinical protocol, and current local guidance always takes
+    precedence.</span><br>
+    <span class="mine">Views my own, not those of NSW Health or any other organisation. No identifiable
+    patients &mdash; scenarios are constructed or combined for teaching. <a href="about.html">More</a>.</span>
+  </footer>
+
+</div>
+<script data-goatcounter="https://icuandyou.goatcounter.com/count"
+        async src="//gc.zgo.at/count.js"></script>
+</body>
+</html>

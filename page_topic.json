@@ -139,6 +139,11 @@
    "Bare Bones",
    "bone",
    "memory"
+  ],
+  "russia": [
+   "Russia House",
+   "neva striped",
+   "cultural"
   ]
  },
  "pages": [
@@ -951,9 +956,28 @@
    "badge": "Superquiz",
    "link_label": "Take the quiz",
    "blurb": "Five questions. The quiet chest, a child worse than his film explains, myocarditis wearing a gastroenteritis costume, knee pain that is hip pain, and the deliberate ingestion that is not just a level. Four correct earns a certificate."
+  },
+  {
+   "file": "russia-house-01-tsarevich.html",
+   "series": "russia",
+   "colour": "neva striped",
+   "number": "1",
+   "title": "The boy who was a state secret",
+   "topic": "The school-age child",
+   "slug": "school-age",
+   "week": true,
+   "pos": 9,
+   "badge": "Russia House",
+   "link_label": "Open",
+   "blurb": "A new column. The tsarevich had haemophilia B, not A — settled by sequencing in 2009. A retroperitoneal bleed with nowhere to show, the most famous telegram in medicine, and an aspirin story that turns out to have no source."
   }
  ],
  "latest": [
+  {
+   "file": "russia-house-01-tsarevich.html",
+   "colour": "neva striped",
+   "label": "Russia House 1 · The boy who was a state secret"
+  },
   {
    "file": "superquiz-63-school-age.html",
    "colour": "fern",
@@ -973,11 +997,6 @@
    "file": "bare-bones-01-school-age.html",
    "colour": "bone",
    "label": "Bare Bones 1 · The school-age child"
-  },
-  {
-   "file": "mnemonic-56-school.html",
-   "colour": "teal",
-   "label": "Mnemonic 56 · SCHOOL"
   }
  ],
  "topten": [

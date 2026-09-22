@@ -31,6 +31,7 @@
   --mulberry:#7A3560; --mulberrytint:#F6EBF1; --mulberryink:#5B2447;
   --lotus:#B5537A; --lotustint:#FAEDF2; --lotusink:#8A3459;
   --bone:#8A8578; --bonetint:#F4F2EE; --boneink:#5E5A50; --amethyst:#7A4FA3; --brass:#A8721E;
+  --neva:#6E7C94; --nevatint:#EFF1F5; --nevaink:#48546A;
   }
   *{box-sizing:border-box}
   body{margin:0;background:#F3EFE8;color:var(--ink);
@@ -177,6 +178,27 @@
   .md.saffron{background:var(--saffron)}
   .md.rose{background:var(--rose)} .md.denim{background:var(--denim)}
   .md.jade{background:var(--jade)}.md.fern{background:var(--fern)}.md.crimson{background:var(--crimson)}.md.terracotta{background:var(--terracotta)}.md.ocean{background:var(--ocean)}.md.sandstone{background:var(--sandstone)}.md.pine{background:var(--pine)}.md.copper{background:var(--copper)}.md.mulberry{background:var(--mulberry)}.md.lotus{background:var(--lotus)}.md.bone{background:var(--bone)} .md.amethyst{background:var(--amethyst)}
+  .md.neva{background:var(--neva)}
+
+  /* ---- The second series cue: a stripe -------------------------------
+     Twenty-seven series have used up the usable colour space, so a series is
+     now identified by its colour AND by whether its marker is solid or
+     striped. The stripe is a translucent overlay rather than a second colour,
+     so one rule works over every existing and future colour: put "striped"
+     alongside the colour class. Nothing that is not striped changes. */
+  .md.striped,.dot.striped{
+    background-image:repeating-linear-gradient(135deg,
+      rgba(255,255,255,.74) 0 2px, rgba(255,255,255,0) 2px 4px)}
+  .item{position:relative}
+  .item.striped::before{content:"";position:absolute;left:-5px;top:-1px;bottom:-1px;
+    width:5px;border-radius:8px 0 0 8px;pointer-events:none;
+    background:repeating-linear-gradient(135deg,
+      rgba(255,255,255,.62) 0 3.5px, rgba(255,255,255,0) 3.5px 7px)}
+  li.row{position:relative}
+  li.row.striped::before{content:"";position:absolute;left:-3px;top:0;bottom:0;
+    width:3px;pointer-events:none;
+    background:repeating-linear-gradient(135deg,
+      rgba(255,255,255,.62) 0 3px, rgba(255,255,255,0) 3px 6px)}
 
   /* ── This week ───────────────────────────────────────── */
   .week{padding:30px 36px 34px;background:#F6F2E8;border-bottom:1px solid var(--rule)}
@@ -195,6 +217,7 @@
   .item.saffron{border-left-color:var(--saffron)} .item.violet{border-left-color:var(--violet)}
   .item.nero{border-left-color:var(--nero)} .item.rose{border-left-color:var(--rose)}
   .item.denim{border-left-color:var(--denim)} .item.jade{border-left-color:var(--jade)}.item.fern{border-left-color:var(--fern)}.item.crimson{border-left-color:var(--crimson)}.item.terracotta{border-left-color:var(--terracotta)}.item.ocean{border-left-color:var(--ocean)}.item.sandstone{border-left-color:var(--sandstone)}.item.pine{border-left-color:var(--pine)}.item.copper{border-left-color:var(--copper)}.item.mulberry{border-left-color:var(--mulberry)}.item.lotus{border-left-color:var(--lotus)}.item.bone{border-left-color:var(--bone)} .item.amethyst{border-left-color:var(--amethyst)}
+  .item.neva{border-left-color:var(--neva)}
   .badge{flex:0 0 84px;text-align:center;
     font:600 10.5px 'Helvetica Neue',Arial,sans-serif;letter-spacing:.1em;
     text-transform:uppercase;color:var(--muted);padding-top:3px;line-height:1.3}
@@ -236,6 +259,7 @@
   .dot.saffron{background:var(--saffron)} .dot.violet{background:var(--violet)}
   .dot.nero{background:var(--nero)} .dot.rose{background:var(--rose)}
   .dot.denim{background:var(--denim)} .dot.jade{background:var(--jade)}.dot.fern{background:var(--fern)}.dot.crimson{background:var(--crimson)}.dot.terracotta{background:var(--terracotta)}.dot.ocean{background:var(--ocean)}.dot.sandstone{background:var(--sandstone)}.dot.pine{background:var(--pine)}.dot.copper{background:var(--copper)}.dot.mulberry{background:var(--mulberry)}.dot.lotus{background:var(--lotus)}.dot.bone{background:var(--bone)} .dot.amethyst{background:var(--amethyst)}
+  .dot.neva{background:var(--neva)}
   .tcount{font:400 13.5px 'Helvetica Neue',Arial,sans-serif;color:var(--muted);
     margin-right:22px;white-space:nowrap}
 
@@ -250,6 +274,7 @@
   li.row.saffron{border-left-color:var(--saffron)} li.row.violet{border-left-color:var(--violet)}
   li.row.nero{border-left-color:var(--nero)} li.row.rose{border-left-color:var(--rose)}
   li.row.denim{border-left-color:var(--denim)} li.row.jade{border-left-color:var(--jade)}.row.fern{border-left-color:var(--fern)}.row.crimson{border-left-color:var(--crimson)}.row.terracotta{border-left-color:var(--terracotta)}.row.ocean{border-left-color:var(--ocean)}.row.sandstone{border-left-color:var(--sandstone)}.row.pine{border-left-color:var(--pine)}.row.copper{border-left-color:var(--copper)}.row.mulberry{border-left-color:var(--mulberry)}.row.lotus{border-left-color:var(--lotus)}.row.bone{border-left-color:var(--bone)} li.row.amethyst{border-left-color:var(--amethyst)}
+  li.row.neva{border-left-color:var(--neva)}
   li.row:hover{background:#F7F4ED}
   .rs{flex:0 0 112px;font:600 10.5px 'Helvetica Neue',Arial,sans-serif;letter-spacing:.1em;
     text-transform:uppercase;color:var(--muted)}
@@ -367,6 +392,7 @@
   .mine{display:inline-block;margin:9px 0 0;opacity:.78;font-size:.94em}
   .sinh{font-family:'Sinhala Sangam MN','Nirmala UI','Noto Sans Sinhala','Iskoola Pota',sans-serif;
     font-size:1.02em}
+  .cyr{font-size:.96em;letter-spacing:.01em}
 </style>
 </head>
 <body>
@@ -424,11 +450,11 @@
         <summary class="chip newbtn">Latest posts</summary>
 <!-- BUILD:LATEST -->
         <div class="menu">
+          <a class="mi newitem" href="russia-house-01-tsarevich.html"><span class="newtag">New</span><i class="md neva striped"></i>Russia House 1 · The boy who was a state secret</a>
           <a class="mi newitem" href="superquiz-63-school-age.html"><span class="newtag">New</span><i class="md fern"></i>Superquiz 63 · The school-age child</a>
           <a class="mi newitem" href="exam-cicm-first-02-the-syllabus.html"><span class="newtag">New</span><i class="md pine"></i>CICM First Part 2 · The syllabus</a>
           <a class="mi newitem" href="book-club-02-color-atlas-physiology.html"><span class="newtag">New</span><i class="md terracotta"></i>Book Club 2 · Color Atlas of Physiology</a>
           <a class="mi newitem" href="bare-bones-01-school-age.html"><span class="newtag">New</span><i class="md bone"></i>Bare Bones 1 · The school-age child</a>
-          <a class="mi newitem" href="mnemonic-56-school.html"><span class="newtag">New</span><i class="md teal"></i>Mnemonic 56 · SCHOOL</a>
         </div>
 <!-- /BUILD:LATEST -->
       </details>
@@ -503,6 +529,7 @@
           <button class="mi" data-f="chinatown"><i class="md crimson"></i>N&#464; h&#462;o Chinatown &#20320;&#22909;</button>
           <button class="mi" data-f="australia"><i class="md sandstone"></i>The Australia Page</button>
           <button class="mi" data-f="srilanka"><i class="md lotus"></i>Āyubōwan Sri Lanka <span class="sinh">ආයුබෝවන්</span></button>
+          <button class="mi" data-f="russia"><i class="md neva striped"></i>Russia House <span class="cyr">Здравствуйте</span></button>
         </div>
       </details>
       <details class="drop" data-g="other">
@@ -603,6 +630,14 @@
             <h3>Le médecin régulateur</h3>
             <p>In France a doctor answers the emergency call and a doctor gets in the ambulance. What a medicalised prehospital system does differently for an injured nine-year-old, what it costs, and a faux ami that matters at this age.</p>
             <div class="links"><a class="go" href="coin-francais-03-medecin-regulateur.html">Open</a></div>
+          </div>
+        </li>
+        <li class="item neva striped" data-series="russia">
+          <div class="badge">Russia House<b>1</b></div>
+          <div class="body">
+            <h3>The boy who was a state secret</h3>
+            <p>A new column. The tsarevich had haemophilia B, not A — settled by sequencing in 2009. A retroperitoneal bleed with nowhere to show, the most famous telegram in medicine, and an aspirin story that turns out to have no source.</p>
+            <div class="links"><a class="go" href="russia-house-01-tsarevich.html">Open</a></div>
           </div>
         </li>
         <li class="item nero" data-series="literary">
@@ -901,7 +936,7 @@
     window.addEventListener("load", function(){ window.scrollTo(0, 0); });
   }
 
-  var GROUPS = {"memory": ["barebones", "mind-map", "aphorism", "mnemonic", "superpuzzle", "superquiz"], "multimedia": ["podcast", "journal", "bookclub"], "special": ["students", "nurses", "gp", "emergency", "anaesthetics"], "procedures": ["procedures"], "drugstore": ["drugstore"], "exam": ["cicm-first"], "cultural": ["coin", "italiano", "espanol", "india", "chinatown", "australia", "srilanka"], "other": ["literary", "screening"], "public": ["public"]};
+  var GROUPS = {"memory": ["barebones", "mind-map", "aphorism", "mnemonic", "superpuzzle", "superquiz"], "multimedia": ["podcast", "journal", "bookclub"], "special": ["students", "nurses", "gp", "emergency", "anaesthetics"], "procedures": ["procedures"], "drugstore": ["drugstore"], "exam": ["cicm-first"], "cultural": ["coin", "italiano", "espanol", "india", "chinatown", "australia", "srilanka", "russia"], "other": ["literary", "screening"], "public": ["public"]};
   var LABELS = {"memory": "Memory aids and activities", "multimedia": "Multimedia", "special": "Special groups", "procedures": "Procedures", "drugstore": "Drugstore", "exam": "Exam focus", "cultural": "Cultural narratives", "other": "Other Realms", "public": "For the general public"};
 
   function inFilter(sk){
