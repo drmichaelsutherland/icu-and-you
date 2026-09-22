@@ -970,9 +970,28 @@
    "badge": "Russia House",
    "link_label": "Open",
    "blurb": "A new column. The tsarevich had haemophilia B, not A — settled by sequencing in 2009. A retroperitoneal bleed with nowhere to show, the most famous telegram in medicine, and an aspirin story that turns out to have no source."
+  },
+  {
+   "file": "public-02-put-the-thermometer-down.html",
+   "series": "public",
+   "colour": "ocean",
+   "number": "2",
+   "title": "Put the thermometer down",
+   "topic": "The school-age child",
+   "slug": "school-age",
+   "week": true,
+   "pos": 12,
+   "badge": "For the general public",
+   "link_label": "Open",
+   "blurb": "Written for anyone, not for clinicians. Why 37 degrees was a nineteenth-century average rather than a boundary, the five things a doctor actually looks at, why the glass test comes about half a day too late — and the evidence that a parent's worry beats the monitor."
   }
  ],
  "latest": [
+  {
+   "file": "public-02-put-the-thermometer-down.html",
+   "colour": "ocean",
+   "label": "For the general public 2 · Put the thermometer down"
+  },
   {
    "file": "russia-house-01-tsarevich.html",
    "colour": "neva striped",
@@ -992,11 +1011,6 @@
    "file": "book-club-02-color-atlas-physiology.html",
    "colour": "terracotta",
    "label": "Book Club 2 · Color Atlas of Physiology"
-  },
-  {
-   "file": "bare-bones-01-school-age.html",
-   "colour": "bone",
-   "label": "Bare Bones 1 · The school-age child"
   }
  ],
  "topten": [

@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="en-AU">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ICU AND YOU · For the general public No. 2 — Put the thermometer down</title>
+<meta name="description" content="For the general public No. 2: what doctors actually look at when they decide a child is seriously unwell, why 37 degrees was never magic, why the glass test comes too late, and the evidence that a parent's worry beats a machine.">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="alternate icon" href="/favicon.ico" sizes="any">
+<link rel="apple-touch-icon" href="/icon-180.png">
+<meta name="theme-color" content="#1B2A33">
+<meta property="og:site_name" content="ICU AND YOU">
+<meta property="og:type" content="website">
+<meta property="og:title" content="ICU AND YOU · For the general public No. 2 — Put the thermometer down">
+<meta property="og:description" content="What doctors actually look at when they decide a child is seriously unwell — and why the number on the thermometer is not it.">
+<meta property="og:image" content="https://icuandyou.com/share-card.png">
+<meta name="twitter:card" content="summary_large_image">
+<style>
+  :root{
+    --paper:#FAFCFD; --ink:#1B262B; --muted:#5E6E75; --rule:#D5E1E7;
+    --rose:#1F6F8B; --rosetint:#EAF3F7;
+    --sky:#2E6E8E; --skytint:#E7F1F6;
+    --rust:#A8442A; --rusttint:#F9EDE7;
+  }
+  *{box-sizing:border-box}
+  body{margin:0;background:#E7EFF3;color:var(--ink);
+    font:400 17px/1.64 'Iowan Old Style','Palatino Linotype',Palatino,Georgia,serif;
+    -webkit-text-size-adjust:100%;}
+  .sheet{max-width:800px;margin:0 auto;background:var(--paper);
+    box-shadow:0 1px 40px rgba(42,31,35,.10);}
+
+  header.top{padding:42px 40px 28px;border-bottom:2px solid var(--rose)}
+  .topseries,.tophome{display:inline-block;margin:0 0 16px 9px;padding:7px 16px;border-radius:20px;
+    border:1px solid currentColor;opacity:.62;text-decoration:none;color:inherit;
+    font:600 11.5px 'Helvetica Neue',Arial,sans-serif;letter-spacing:.09em;
+    text-transform:uppercase;transition:opacity .12s ease}
+  .tophome{margin-left:0}
+  .topseries:hover,.tophome:hover{opacity:1}
+  .eyebrow{font:500 11.5px/1 'Helvetica Neue',Arial,sans-serif;letter-spacing:.24em;
+    text-transform:uppercase;color:var(--muted);margin:0 0 14px}
+  .eyebrow a.mast,.eyebrow a.serlink{color:inherit;text-decoration:none;
+    border-bottom:1px solid transparent}
+  .eyebrow a.mast:hover,.eyebrow a.serlink:hover{border-bottom-color:currentColor}
+  h1{font-size:35px;line-height:1.14;margin:0 0 8px;font-weight:400;letter-spacing:-.012em}
+  .kicker{color:var(--muted);margin:0;font-size:16.5px}
+
+  .pad{padding:34px 40px}
+  .plain p{font-size:17.5px;line-height:1.68}
+  p{margin:0 0 17px}
+  .lede{font-size:20.5px;line-height:1.5;margin:0 0 22px}
+
+  h2.sub{font:600 12px 'Helvetica Neue',Arial,sans-serif;letter-spacing:.2em;
+    text-transform:uppercase;color:var(--rose);margin:30px 0 15px;
+    padding-bottom:8px;border-bottom:1px solid var(--rule)}
+
+  ul.pts{list-style:none;margin:0 0 18px;padding:0}
+  ul.pts li{display:flex;gap:13px;padding:11px 0;border-bottom:1px solid #E6EDF1;
+    font-size:16.5px;line-height:1.5}
+  ul.pts li:last-child{border-bottom:0}
+  ul.pts b{flex:0 0 156px;font:600 14.5px 'Helvetica Neue',Arial,sans-serif;
+    color:var(--rose);line-height:1.4}
+
+  .say{margin:0 0 18px;padding:22px 26px;background:var(--skytint);
+    border-left:4px solid var(--sky);border-radius:0 8px 8px 0}
+  .say .lab{display:block;font:600 11px 'Helvetica Neue',Arial,sans-serif;
+    letter-spacing:.18em;text-transform:uppercase;color:var(--sky);margin:0 0 9px}
+  .say p:last-child{margin:0}
+
+  .note{margin:0 0 18px;padding:20px 24px;background:var(--rosetint);
+    border-left:4px solid var(--rose);border-radius:0 8px 8px 0}
+  .note p:last-child{margin:0}
+
+  .urgent{margin:0 0 20px;padding:24px 28px;background:#FDF0EA;
+    border:2px solid var(--rust);border-radius:10px}
+  .urgent .lab{display:block;font:600 11.5px 'Helvetica Neue',Arial,sans-serif;
+    letter-spacing:.18em;text-transform:uppercase;color:var(--rust);margin:0 0 11px}
+  .urgent ul{margin:0 0 12px;padding:0 0 0 20px}
+  .urgent li{margin:0 0 7px;font-size:16.5px;line-height:1.5}
+  .urgent p:last-child{margin:0}
+
+  .welcome{margin:0 0 24px;padding:22px 26px;background:#F2F7F4;
+    border-left:4px solid #2E7D5B;border-radius:0 8px 8px 0}
+  .welcome .lab{display:block;font:600 11px 'Helvetica Neue',Arial,sans-serif;
+    letter-spacing:.18em;text-transform:uppercase;color:#2E7D5B;margin:0 0 9px}
+  .welcome p:last-child{margin:0}
+
+  .challenge{margin:0;padding:28px 32px;background:var(--rusttint);border-left:5px solid var(--rust)}
+  .challenge h2{font:600 12px 'Helvetica Neue',Arial,sans-serif;letter-spacing:.2em;
+    text-transform:uppercase;color:var(--rust);margin:0 0 13px}
+  .ask{font-size:19px;line-height:1.5;font-style:italic;margin:0 0 15px}
+  .btn{display:inline-block;margin:6px 0 12px;padding:15px 30px;background:var(--rust);
+    color:#FDF6F5;text-decoration:none;border-radius:30px;font-style:normal;
+    font:600 15px 'Helvetica Neue',Arial,sans-serif;letter-spacing:.03em}
+  .btn:hover{background:#7F3220}
+  .btn:focus-visible{outline:3px solid var(--sky);outline-offset:3px}
+  .fallback{font:400 13.5px 'Helvetica Neue',Arial,sans-serif;color:var(--muted);margin:0}
+  .fallback a{color:var(--rust)}
+
+  .subline{margin:0 0 14px;padding:0 0 13px;border-bottom:1px solid rgba(0,0,0,.09);
+    font:400 14.5px/1.55 'Iowan Old Style','Palatino Linotype',Palatino,Georgia,serif;
+    max-width:56ch;margin-left:auto;margin-right:auto}
+  .subline a{font-weight:500;border-bottom:1px solid currentColor;
+    text-decoration:none;color:inherit}
+  .firstpub{display:block;margin:0 0 10px;padding-bottom:9px;
+    border-bottom:1px solid currentColor;border-color:rgba(0,0,0,.09);
+    font:400 12px 'Helvetica Neue',Arial,sans-serif;letter-spacing:.06em;opacity:.72}
+
+  footer{padding:24px 40px 42px;border-top:1px solid var(--rule);
+    font:400 13px 'Helvetica Neue',Arial,sans-serif;color:var(--muted);
+    text-align:center;line-height:1.7}
+  .home{display:inline-block;margin:0 0 14px;padding:8px 18px;border-radius:20px;
+    border:1px solid var(--rule);background:#EEF4F7;color:var(--rose);text-decoration:none;
+    font:600 12.5px 'Helvetica Neue',Arial,sans-serif;letter-spacing:.05em}
+  .home:hover{background:var(--rose);border-color:var(--rose);color:#FBFDFE}
+  .mine{display:inline-block;margin:9px 0 0;opacity:.78;font-size:.94em}
+  .srcs{font-size:12.5px;line-height:1.6}
+  .srcs a{color:inherit}
+
+  @media (max-width:640px){
+    header.top,.pad,footer{padding-left:20px;padding-right:20px}
+    .challenge{padding:22px 20px}
+    h1{font-size:27px} body{font-size:16.5px} .lede{font-size:18.5px} .ask{font-size:17.5px}
+    ul.pts li{flex-direction:column;gap:3px} ul.pts b{flex:none}
+  }
+  @media print{ body{background:#fff} .sheet{box-shadow:none;max-width:none} }
+</style>
+</head>
+<body>
+<div class="sheet">
+
+  <header class="top">
+    <a class="tophome" href="./">&larr;&nbsp; Home</a>
+    <a class="topseries" href="./?s=public">More for the general public</a>
+    <p class="eyebrow"><a class="mast" href="./">ICU and You</a> &nbsp;·&nbsp;
+      <a class="serlink" href="./?s=public">For the general public</a> &nbsp;·&nbsp; Number 2</p>
+    <h1>Put the thermometer down</h1>
+    <p class="kicker">What doctors actually look at when they decide a child is sick &mdash; and why 37 degrees was never magic</p>
+  </header>
+
+  <div class="pad plain">
+    <div class="welcome">
+      <span class="lab">Who this is for</span>
+      <p>Most of this site is written for doctors and nurses. This part is not. It is for anyone &mdash;
+        parents, grandparents, people who look after other people's children, and anyone who has ever stood in
+        a hallway at two in the morning holding a thermometer and wondering.</p>
+      <p>No medical knowledge is assumed. Nothing here can take the place of someone actually examining your
+        child. But a lot of what makes a sick child frightening is that nobody has ever explained what the
+        professionals are looking at &mdash; and that is a fixable problem.</p>
+    </div>
+
+    <p class="lede">Here is something that will annoy you. When a doctor walks into a room to see a feverish
+      eight-year-old, the temperature is rarely the first thing they want to know, and it is almost never the
+      thing that decides what happens next.</p>
+
+    <p>This is not because the number is meaningless. It is because the number answers a different question
+      from the one you are actually asking. You want to know <em>how sick is my child</em>. The thermometer
+      tells you <em>is the thermostat turned up</em>. Those are not the same question, and for a school-age
+      child they are only loosely related.</p>
+
+    <p>So let us start with where the number came from, because it turns out to be a wonderful story about
+      how a piece of nineteenth-century arithmetic became something the whole world believes.</p>
+
+    <h2 class="sub">Where 37 degrees came from</h2>
+
+    <p>In 1868 a German physician named <strong>Carl Reinhold August Wunderlich</strong> published a book on
+      body temperature in disease. He had, by his own account, taken something in the order of a million
+      readings from around twenty-five thousand patients. He did it with a thermometer about a foot long,
+      tucked into the armpit, which took roughly twenty minutes to give a reading.</p>
+
+    <p>From all of that he concluded that normal human temperature was <strong>37.0&nbsp;°C</strong>, and that
+      anything at or above <strong>38.0&nbsp;°C</strong> counted as a fever. Those two numbers have been on
+      every thermometer, in every textbook and in every parent's head ever since.</p>
+
+    <div class="say">
+      <span class="lab">The awkward part</span>
+      <p>They have also been drifting. When researchers at Stanford compared temperature records from Union
+        Army veterans in the nineteenth century with modern American data, they found that average body
+        temperature appears to have fallen by roughly half a degree over about 150 years. The best modern
+        estimate of an adult's average is nearer <strong>36.6&nbsp;°C</strong> than 37.0.</p>
+      <p>Is that real, or is it just that old thermometers were badly made? Honestly &mdash; partly the second,
+        and the scientists themselves say so; nobody knows how those nineteenth-century instruments were
+        calibrated. But the decline also shows up <em>within</em> the old records, over decades in which the
+        instruments did not change, which is harder to explain away. Take it as probably real and not fully
+        settled.</p>
+    </div>
+
+    <p>Either way, the point for you is simpler. 37.0 was an average, not a boundary. It was never the line
+      between a well child and an unwell one, and it was never meant to be.</p>
+
+    <h2 class="sub">What a fever actually is</h2>
+
+    <p>A fever is not the illness. A fever is your child's immune system deliberately turning the thermostat
+      up, because many bacteria and viruses do less well when it is warmer and parts of the immune response do
+      better. It is a response, and a reasonably competent one.</p>
+
+    <p>Which leads to the two things parents are most surprised to be told, both of which are the settled
+      position of paediatric guidelines in Australia and Britain.</p>
+
+    <ul class="pts">
+      <li><b>How high it goes does not tell you how sick they are</b><span>In a child over six months, the
+        height of the fever on its own is explicitly <em>not</em> to be used to judge how serious the illness
+        is. The Royal Children's Hospital in Melbourne puts it about as bluntly as a guideline can: the
+        severity of illness cannot be predicted by the degree of fever, how fast it came on, or how it
+        responds to medicine.</span></li>
+      <li><b>And a low fever does not mean you are safe</b><span>This is the half that gets forgotten, and it
+        is the more important half. A large Sydney study of nearly sixteen thousand feverish children found
+        that using 38&nbsp;°C as a cut-off would miss roughly a third of the serious bacterial infections. A
+        mild temperature in a child who looks wrong is not reassurance.</span></li>
+    </ul>
+
+    <div class="note">
+      <p><strong>One real exception, and it is a big one.</strong> Everything above is about older babies and
+        children. In a baby <strong>under three months</strong>, a temperature of 38&nbsp;°C is itself a reason
+        to be seen straight away, whatever the baby looks like. Very young babies get seriously ill quietly, and
+        the rules are genuinely different. If you have a newborn with a fever, stop reading and ring someone.</p>
+    </div>
+
+    <h2 class="sub">So what does the doctor look at?</h2>
+
+    <p>Roughly five things, in this order, and none of them requires equipment.</p>
+
+    <ul class="pts">
+      <li><b>Breathing</b><span>Not the rate so much as the <em>effort</em>. Is the child working at it? Are
+        the muscles between and below the ribs sucking in? Is there a grunt at the end of each breath? Can
+        they finish a sentence? A child who has to concentrate on breathing is a child in trouble, and this
+        is the single most important thing on the list.</span></li>
+      <li><b>Colour</b><span>Pale, grey, mottled, blotchy, or blue around the lips. Cold hands and feet when
+        the rest of them is hot.</span></li>
+      <li><b>How they are behaving</b><span>Not whether they are lying down &mdash; sick children lie down.
+        Whether they can be roused, whether they are interested in anything, whether they respond to you
+        normally. A drowsiness that is not ordinary sleepiness is a serious sign.</span></li>
+      <li><b>Fluid in and out</b><span>Are they drinking? Are they weeing? Dry lips, sunken eyes, no urine for
+        many hours, or a nappy that stays dry, all matter.</span></li>
+      <li><b>The direction of travel</b><span>Better than yesterday, the same, or worse? A child who has been
+        deteriorating steadily over six hours is a different proposition from one who has been miserable but
+        stable for three days. Trajectory beats any single measurement.</span></li>
+    </ul>
+
+    <p>You will notice that a thermometer is not involved in any of them.</p>
+
+    <div class="say">
+      <span class="lab">The best question anyone ever taught me</span>
+      <p><strong>Is he playing?</strong></p>
+      <p>Not playing well. Not playing happily. Just &mdash; at any point in the last few hours, did this child
+        pick something up, argue with a sibling, ask for the iPad, complain about being bored, or take an
+        interest in anything at all?</p>
+      <p>A child who is still, in some reduced way, behaving like a person with preferences is usually a child
+        whose illness is being handled. A child who has stopped caring what happens to them is the one that
+        worries us. This is not a scientific instrument and it will not appear in any guideline. It is
+        nonetheless how a great many experienced clinicians make the first cut.</p>
+    </div>
+
+    <h2 class="sub">The glass test, and why it is not the reassurance you think</h2>
+
+    <p>Most Australian parents know the glass test: press a clear glass against a rash, and if the rash does
+      not fade, seek help urgently. That advice is correct, and you should keep doing it.</p>
+
+    <p>The problem is what people take from a <em>negative</em> result.</p>
+
+    <p>A study of 448 children and teenagers with meningococcal disease looked at when each symptom appeared.
+      The famous ones &mdash; the rash that will not fade, the stiff neck, the drowsiness &mdash; turned up at a
+      median of <strong>13 to 22 hours</strong> into the illness. But around <strong>72 per cent</strong> of
+      the children had already shown early signs of blood poisoning at a median of <strong>eight hours</strong>:</p>
+
+    <ul class="pts">
+      <li><b>Leg pains</b><span>Aching, sore legs, or refusing to stand or walk. Easy to dismiss as growing
+        pains or a bug.</span></li>
+      <li><b>Cold hands and feet</b><span>In a child who is otherwise burning up.</span></li>
+      <li><b>Abnormal skin colour</b><span>Pale, mottled, dusky, or simply not their usual colour.</span></li>
+    </ul>
+
+    <p>Read that again, because it is the most useful thing in this piece. <strong>By the time the glass test
+      works, you are typically half a day past the point at which the child was already showing signs.</strong>
+      The rash is a late sign. It can also be scanty, or start off fading under the glass, or never appear at
+      all.</p>
+
+    <div class="note">
+      <p>So: a rash that does not fade means go now. A rash that does fade, or no rash at all, means
+        <em>nothing</em>. It is a reason to act and never a reason to relax. The organisations that exist
+        specifically for this illness say the same thing &mdash; get help if you are worried, rash or no
+        rash.</p>
+    </div>
+
+    <h2 class="sub">Your worry is not a feeling. It is evidence.</h2>
+
+    <p>This is the part I would most like people to take away, because parents routinely apologise for it and
+      they should not.</p>
+
+    <p>A major review in <em>The Lancet</em> looked at which features best identify serious infection in
+      children. Near the top of the list was not a vital sign or a blood test. It was <strong>a parent saying
+      that this illness is different from their child's previous illnesses</strong>.</p>
+
+    <p>And in 2025 a Melbourne hospital published something better still. Over two years they asked caregivers
+      one question before anyone took any measurements: <em>are you worried your child is getting worse?</em>
+      Children whose caregiver said yes were admitted to intensive care <strong>6.9 per cent</strong> of the
+      time, against <strong>1.8 per cent</strong> for those whose caregiver did not.</p>
+
+    <div class="say">
+      <span class="lab">The bit that should change how you speak to us</span>
+      <p>In that study, the caregiver's worry predicted admission to intensive care <em>better than the child's
+        heart rate and better than the child's breathing rate</em>. A parent's answer to a single plain question
+        outperformed two of the numbers we write down and put on a chart.</p>
+      <p>So when you say <em>I know this sounds silly, but he's just not himself</em> &mdash; that is not a
+        silly thing you are saying to fill the silence. That is the highest-value sentence in the conversation,
+        and a good clinician's ears prick up when they hear it. Say it early, say it plainly, and do not
+        apologise for it.</p>
+    </div>
+
+    <h2 class="sub">The school-age child in particular</h2>
+
+    <p>A six-year-old can tell you what is wrong. A ten-year-old can tell you exactly what is wrong, in order,
+      with adjectives. This is the great advantage of the age group and also its trap, because you start to
+      rely on it.</p>
+
+    <p>Children this age are often being brave. They know that admitting to pain may mean a hospital, or a
+      needle, or missing the thing they were looking forward to. They are also, quite often, managing
+      <em>you</em> &mdash; a nine-year-old who can see that their mother is frightened will frequently decide
+      to be fine.</p>
+
+    <p>I should be straight with you that this is clinical experience rather than proven fact. The research on
+      children hiding symptoms is mostly about teenagers with long-term pain, not school-age children with
+      sudden illness. But every paediatric nurse you ever meet will tell you the same thing, and the practical
+      response costs nothing: <strong>believe the behaviour over the report.</strong> If a child says they are
+      fine while lying completely still and refusing to get up, the stillness is the accurate statement.</p>
+
+    <h2 class="sub">When not to think about any of this</h2>
+
+    <p>Everything above is for the ordinary situation: a child who is unwell and you are weighing up what to
+      do. Some things skip the weighing up entirely. This list is drawn from what Australian health services
+      publish for parents, and it is worth knowing before you need it.</p>
+
+    <div class="urgent">
+      <span class="lab">Call triple zero (000) if a child</span>
+      <ul>
+        <li>is having difficulty breathing</li>
+        <li>is very drowsy, floppy, or cannot be woken properly</li>
+        <li>has pale, blotchy or blue skin, or blue around the lips</li>
+        <li>has a rash that does not fade when you press on it</li>
+        <li>has a seizure</li>
+        <li>becomes very unwell very quickly</li>
+      </ul>
+      <p>Any baby <strong>under three months</strong> with a temperature of 38&nbsp;°C or more should be seen
+        the same day, without waiting to see how things go.</p>
+    </div>
+
+    <p>Between those extremes, the honest advice is the one healthdirect gives and that no algorithm has ever
+      improved on: <strong>you know your child.</strong> If something is different in a way you cannot explain,
+      that is a reason to get them looked at, and a temperature of 37.4 is not an argument against you.</p>
+
+    <div class="note">
+      <p><strong>And if you are already in a hospital and feel you are not being heard</strong>, every state now
+        has a formal route for families to escalate their own concern, independently of the treating team. In
+        New South Wales it is called <strong>Raise It</strong>; in Queensland, <strong>Ryan's Rule</strong>;
+        Victoria has a <strong>Kids Urgent Concern Helpline</strong>. They exist precisely because the evidence
+        above is taken seriously. Ask the nurse in charge how to use the one in your state &mdash; that is
+        what it is for, and using it is not rude.</p>
+    </div>
+  </div>
+
+  <div class="pad" style="padding-top:6px">
+    <div class="challenge">
+      <h2>Ask me anything</h2>
+      <p class="ask">Really — anything. There is no such thing as a question that is too basic.</p>
+      <p>Was there a time you took a child to be seen and felt foolish about it? Or a time you did not, and
+        wished you had? Was there something a doctor or nurse said that you have never forgotten, for better or
+        worse? I would like to hear about it, and those experiences shape what I write next.</p>
+      <p>I cannot give advice about a particular child or a particular illness, and I will say so if that is
+        what is being asked. Everything else is fair game.</p>
+      <p><a class="btn" href="mailto:icuandyou@icloud.com?subject=For%20the%20general%20public%20-%20a%20question&body=My%20question%3A%0D%0A%0D%0A%0D%0A---%0D%0A%0D%0AAnything%20you%20would%20like%20me%20to%20know%20about%20why%20you%20are%20asking%20%28entirely%20optional%29%3A%0D%0A%0D%0A%0D%0AName%20%28optional%29%3A%0D%0A%0D%0A---%0D%0A%0D%0AThinking%20about%20this%20ICU%20AND%20YOU%20post%20overall%20%E2%80%94%20was%20it%20useful%20to%20you%2C%20or%20would%20it%20be%20useful%20to%20others%3F%0D%0A">Send me a question</a></p>
+      <p class="fallback">The button opens an email straight to me. If your device blocks it, write to
+        <a href="mailto:icuandyou@icloud.com">icuandyou@icloud.com</a> instead.</p>
+    </div>
+  </div>
+
+  <footer>
+    <span class="firstpub">First published September 2026</span>
+    <p class="subline">Two emails a week &mdash; the Friday newsletter for all subscribers, and, for clinical subscribers,
+      the mind map and puzzles the moment they go up on Tuesday. Occasional announcements of new
+      features as they arrive. What went up and why it mattered, the best of your replies, and
+      original feature stories, news and views. <a href="https://joinlist.com/f/5adad2d6">Come and join us</a>.</p>
+    <a class="home" href="./">&larr; &nbsp;All of ICU AND YOU</a><br>
+    ICU AND YOU &nbsp;&#183;&nbsp; For the general public No. 2<br>
+    <span class="srcs">Guideline positions from the
+    <a href="https://www.rch.org.au/clinicalguide/guideline_index/Febrile_child/">Royal Children's Hospital
+    Melbourne febrile child guideline</a> and <a href="https://www.nice.org.uk/guidance/ng143">NICE NG143</a>.
+    Fever thresholds and serious infection from
+    <a href="https://pubmed.ncbi.nlm.nih.gov/26065864/">De&nbsp;S et&nbsp;al., <em>Pediatr Infect Dis J</em> 2015</a>.
+    Symptom timing in meningococcal disease from
+    <a href="https://pubmed.ncbi.nlm.nih.gov/16458763/">Thompson et&nbsp;al., <em>The Lancet</em> 2006;367:397</a>.
+    Parental concern from <a href="https://pubmed.ncbi.nlm.nih.gov/20132979/">Van den Bruel et&nbsp;al.,
+    <em>The Lancet</em> 2010;375:834</a> and
+    <a href="https://pubmed.ncbi.nlm.nih.gov/40451224/">the Monash caregiver-concern cohort,
+    <em>Lancet Child &amp; Adolescent Health</em> 2025</a>. Body temperature over time from
+    <a href="https://elifesciences.org/articles/49555">Protsiv et&nbsp;al., <em>eLife</em> 2020</a>. Emergency
+    advice as published by <a href="https://www.healthdirect.gov.au/symptoms-of-serious-illness-in-babies-and-children">healthdirect
+    Australia</a>.</span><br>
+    General information only. This is not medical advice and cannot take account of any individual person or
+    illness &mdash; the people caring for a child always know more about them than any website does. If you are
+    worried about a child now, ring your doctor, healthdirect on 1800&nbsp;022&nbsp;222, or 000.<br>
+    <span class="mine">Views my own, not those of NSW Health or any other organisation. No identifiable
+    patients &mdash; scenarios are constructed or combined for teaching. <a href="about.html">More</a>.</span>
+  </footer>
+
+</div>
+<script data-goatcounter="https://icuandyou.goatcounter.com/count"
+        async src="//gc.zgo.at/count.js"></script>
+</body>
+</html>
