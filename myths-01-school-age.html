@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html lang="en-AU">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ICU AND YOU · Myths and Misconceptions No. 1 — Five things you were taught about the school-age child</title>
+<meta name="description" content="Myths and Misconceptions No. 1: the cricoid and uncuffed tubes, fluid rate and cerebral oedema in DKA, the rule of nines, cooling after cardiac arrest, and fasting from midnight — where each belief came from, and what the evidence actually shows.">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="alternate icon" href="/favicon.ico" sizes="any">
+<link rel="apple-touch-icon" href="/icon-180.png">
+<meta name="theme-color" content="#1B2A33">
+<meta property="og:site_name" content="ICU AND YOU">
+<meta property="og:type" content="website">
+<meta property="og:title" content="ICU AND YOU · Myths and Misconceptions No. 1">
+<meta property="og:description" content="Five things you were taught about the school-age child — where each belief came from, and what the evidence actually shows.">
+<meta property="og:image" content="https://icuandyou.com/share-card.png">
+<meta name="twitter:card" content="summary_large_image">
+<style>
+  :root{
+    --paper:#FDFBFB; --ink:#2A2126; --muted:#6D5F65; --rule:#E8DEE1;
+    --bramble:#6A4A55; --brambletint:#F5EEF0;
+    --olive:#6E7355; --olivetint:#F2F3EC;
+  }
+  *{box-sizing:border-box}
+  body{margin:0;background:#EDE5E7;color:var(--ink);
+    font:400 17px/1.64 'Iowan Old Style','Palatino Linotype',Palatino,Georgia,serif;
+    -webkit-text-size-adjust:100%;}
+  .sheet{max-width:790px;margin:0 auto;background:var(--paper);
+    box-shadow:0 1px 40px rgba(40,28,34,.12);}
+
+  .flag{height:6px;background:linear-gradient(90deg,var(--bramble),#9C7683,var(--olive))}
+
+  header.top{padding:42px 40px 28px;border-bottom:1px solid var(--rule)}
+  .topseries,.toptopic,.tophome{display:inline-block;margin:0 0 16px 9px;padding:7px 16px;
+    border-radius:20px;border:1px solid currentColor;opacity:.62;text-decoration:none;
+    color:inherit;font:600 11.5px 'Helvetica Neue',Arial,sans-serif;letter-spacing:.09em;
+    text-transform:uppercase;transition:opacity .12s ease}
+  .tophome{margin-left:0}
+  .topseries:hover,.toptopic:hover,.tophome:hover{opacity:1}
+  .eyebrow{font:500 11.5px/1 'Helvetica Neue',Arial,sans-serif;letter-spacing:.24em;
+    text-transform:uppercase;color:var(--muted);margin:0 0 14px}
+  .eyebrow a.mast,.eyebrow a.serlink{color:inherit;text-decoration:none;
+    border-bottom:1px solid transparent}
+  .eyebrow a.mast:hover,.eyebrow a.serlink:hover{border-bottom-color:currentColor}
+  h1{font-size:34px;line-height:1.15;margin:0 0 8px;font-weight:400;letter-spacing:-.012em;
+    font-style:italic}
+  .kicker{color:var(--muted);margin:0;font-size:16.5px}
+
+  .pad{padding:34px 40px}
+  p{margin:0 0 17px}
+  .lede{font-size:20px;line-height:1.5;margin:0 0 22px}
+  b.term{font-weight:600;color:var(--bramble)}
+
+  .myth{margin:34px 0 0;padding:0 0 4px}
+  .myth .num{display:block;font:600 11px 'Helvetica Neue',Arial,sans-serif;
+    letter-spacing:.22em;text-transform:uppercase;color:var(--muted);margin:0 0 8px}
+  .claim{margin:0 0 18px;padding:18px 22px;background:var(--brambletint);
+    border-left:4px solid var(--bramble);border-radius:0 8px 8px 0;
+    font-size:21px;line-height:1.35;font-style:italic;color:#3A2A31}
+
+  h3.step{font:600 11px 'Helvetica Neue',Arial,sans-serif;letter-spacing:.2em;
+    text-transform:uppercase;color:var(--bramble);margin:22px 0 10px}
+
+  .verdict{margin:20px 0 0;padding:20px 24px;background:var(--olivetint);
+    border:1px solid #D3D8C4;border-radius:10px}
+  .verdict .stamp{display:inline-block;margin:0 0 9px;padding:5px 13px;border-radius:14px;
+    background:var(--olive);color:#F7F8F2;
+    font:600 11px 'Helvetica Neue',Arial,sans-serif;letter-spacing:.16em;text-transform:uppercase}
+  .verdict p{margin:0;font-size:16.5px;line-height:1.55}
+  .verdict p + p{margin-top:11px}
+
+  .welcome{margin:0 0 24px;padding:22px 26px;background:var(--olivetint);
+    border-left:4px solid var(--olive);border-radius:0 8px 8px 0}
+  .welcome .lab{display:block;font:600 11px 'Helvetica Neue',Arial,sans-serif;
+    letter-spacing:.18em;text-transform:uppercase;color:var(--olive);margin:0 0 9px}
+  .welcome p:last-child{margin:0}
+
+  .careful{margin:18px 0;padding:19px 23px;background:#FBF7F0;
+    border:1px dashed #CBAE8C;border-radius:9px;font-size:16px}
+  .careful .lab{display:block;font:600 11px 'Helvetica Neue',Arial,sans-serif;
+    letter-spacing:.18em;text-transform:uppercase;color:#8A6A2E;margin:0 0 9px}
+  .careful p:last-child{margin:0}
+
+  ul.pts{list-style:none;margin:0 0 18px;padding:0}
+  ul.pts li{display:flex;gap:14px;padding:10px 0;border-bottom:1px solid #F0E8EA;
+    font-size:16.5px;line-height:1.5}
+  ul.pts li:last-child{border-bottom:0}
+  ul.pts b{flex:0 0 150px;font:600 14.5px 'Helvetica Neue',Arial,sans-serif;
+    color:var(--bramble);line-height:1.4}
+
+  .reply{margin:0;padding:28px 32px;background:#F4EFF0;border-left:5px solid var(--olive)}
+  .reply h2{font:600 12px 'Helvetica Neue',Arial,sans-serif;letter-spacing:.2em;
+    text-transform:uppercase;color:var(--olive);margin:0 0 13px}
+  .ask{font-size:19px;line-height:1.5;font-style:italic;margin:0 0 15px}
+  .btn{display:inline-block;margin:6px 0 12px;padding:15px 30px;background:var(--bramble);
+    color:#FDFBFB;text-decoration:none;border-radius:30px;font-style:normal;
+    font:600 15px 'Helvetica Neue',Arial,sans-serif;letter-spacing:.03em}
+  .btn:hover{background:#4E353E}
+  .btn:focus-visible{outline:3px solid var(--olive);outline-offset:3px}
+  .fallback{font:400 13.5px 'Helvetica Neue',Arial,sans-serif;color:var(--muted);margin:0}
+  .fallback a{color:var(--bramble)}
+
+  .subline{margin:0 0 14px;padding:0 0 13px;border-bottom:1px solid rgba(0,0,0,.09);
+    font:400 14.5px/1.55 'Iowan Old Style','Palatino Linotype',Palatino,Georgia,serif;
+    max-width:56ch;margin-left:auto;margin-right:auto}
+  .subline a{font-weight:500;border-bottom:1px solid currentColor;
+    text-decoration:none;color:inherit}
+  .firstpub{display:block;margin:0 0 10px;padding-bottom:9px;
+    border-bottom:1px solid currentColor;border-color:rgba(0,0,0,.09);
+    font:400 12px 'Helvetica Neue',Arial,sans-serif;letter-spacing:.06em;opacity:.72}
+
+  footer{padding:24px 40px 42px;border-top:1px solid var(--rule);
+    font:400 13px 'Helvetica Neue',Arial,sans-serif;color:var(--muted);
+    text-align:center;line-height:1.7}
+  .home{display:inline-block;margin:0 0 14px;padding:8px 18px;border-radius:20px;
+    border:1px solid var(--rule);background:#F4EFF0;color:var(--bramble);text-decoration:none;
+    font:600 12.5px 'Helvetica Neue',Arial,sans-serif;letter-spacing:.05em}
+  .home:hover{background:var(--bramble);border-color:var(--bramble);color:#FDFBFB}
+  .mine{display:inline-block;margin:9px 0 0;opacity:.78;font-size:.94em}
+  .srcs{font-size:12.5px;line-height:1.6}
+  .srcs a{color:inherit}
+
+  @media (max-width:640px){
+    header.top,.pad,footer{padding-left:20px;padding-right:20px}
+    .reply{padding:22px 20px}
+    h1{font-size:26px} body{font-size:16.5px} .lede{font-size:18.5px}
+    .claim{font-size:18.5px} .ask{font-size:17.5px}
+    ul.pts li{flex-direction:column;gap:3px} ul.pts b{flex:none}
+  }
+  @media print{ body{background:#fff} .sheet{box-shadow:none;max-width:none} }
+</style>
+</head>
+<body>
+<div class="sheet">
+
+  <div class="flag"></div>
+
+  <header class="top">
+    <a class="tophome" href="./">&larr;&nbsp; Home</a>
+    <a class="topseries" href="./?s=myths">More myths and misconceptions</a>
+    <a class="toptopic" href="./?t=school-age" title="Everything on The school-age child">All on this topic</a>
+    <p class="eyebrow"><a class="mast" href="./">ICU and You</a> &nbsp;·&nbsp;
+      <a class="serlink" href="./?s=myths">Myths and Misconceptions</a> &nbsp;·&nbsp; Number 1</p>
+    <h1>Five things you were taught</h1>
+    <p class="kicker">The school-age child &mdash; where each belief came from, and what the evidence actually says</p>
+  </header>
+
+  <div class="pad">
+    <div class="welcome">
+      <span class="lab">A new series, and how it differs from the aphorisms</span>
+      <p>The <a href="./?s=aphorism">aphorisms</a> on this site take a single saying and turn it over
+        &mdash; they are about wisdom, they are contestable, and the honest verdict is often
+        <em>maybe</em>.</p>
+      <p>This series is about <strong>facts</strong>. Several per edition, each one checkable, each one
+        something a competent clinician currently believes. But every entry runs the same four steps
+        &mdash; the claim, <em>where it came from</em>, what the evidence shows, and a verdict &mdash;
+        because the origin is the most interesting part.</p>
+      <p><strong>Every durable myth was once a reasonable inference.</strong> Knowing why sensible people
+        believed a thing is the only part of this that transfers, because it is how you recognise the next
+        one while it is still forming. The verdicts here are graded rather than gleeful, except where the
+        matter really is settled.</p>
+    </div>
+
+    <p class="lede">All five of these are things I was taught, taught to others, or both.</p>
+
+    <!-- 1 -->
+    <div class="myth"><span class="num">The first</span></div>
+    <p class="claim">&ldquo;The cricoid ring is the narrowest part of a child's airway &mdash; which is why
+      you never use a cuffed tube under the age of eight.&rdquo;</p>
+
+    <h3 class="step">Where it came from</h3>
+    <p>In 1897 a French anatomist named Bayeux made plaster casts and sections of the larynges of
+      <b class="term">fifteen children</b> who had died of diphtheria, aged four months to fourteen years. In
+      all fifteen, the cricoid circumference was smaller than the glottis. In 1951 Eckenhoff reviewed that
+      work and carried it into the English-language anaesthetic literature &mdash; adding, to his credit, the
+      caution that measurements taken from the dead &ldquo;may not be completely applicable to the
+      living&rdquo;.</p>
+
+    <p>Fifteen dead children, one nineteenth-century observer, and an explicit warning from the man usually
+      blamed for it. That is the entire evidential base for a doctrine that governed paediatric airway
+      practice for sixty years. The &ldquo;under eight&rdquo; cut-off has no identifiable primary source at
+      all &mdash; it appears to be a teaching heuristic that accreted.</p>
+
+    <h3 class="step">What the evidence shows</h3>
+    <ul class="pts">
+      <li><b>MRI, 99 children</b><span>Sedated, breathing spontaneously, two months to thirteen years. The
+        narrowest transverse dimension was at the <strong>vocal cords</strong>, not the cricoid.</span></li>
+      <li><b>Bronchoscopy, 128 children</b><span>Glottic cross-sectional area 30 mm² against cricoid
+        48.9 mm² — the glottis narrower at <em>every</em> age. The cricoid measured 7.7 mm front-to-back
+        against 7.2 mm across: an ellipse, not a circle. The paediatric airway is more cylindrical than
+        funnel-shaped, and there is no funnel-to-cylinder transition with age.</span></li>
+      <li><b>Cuffed vs uncuffed, 2,246 children</b><span>Post-extubation stridor <strong>4.4 per cent with
+        cuffed tubes against 4.7 per cent uncuffed</strong> — no difference. Tube exchange
+        <strong>2.1 per cent against 30.8 per cent</strong>. Cuff pressure was capped at 20 cmH₂O and the mean
+        sealing pressure was about 10.</span></li>
+    </ul>
+
+    <div class="careful">
+      <span class="lab">The nuance worth keeping</span>
+      <p>The glottis is the narrowest <em>aperture</em>, but it is pliable &mdash; under paralysis the cords
+        abduct and offer a passing tube almost no resistance. The cricoid remains the narrowest
+        <strong>non-distensible ring</strong>, which is why it is still where mucosal injury happens.</p>
+      <p>And the ellipse matters practically: an uncuffed tube that leaks audibly can still be pressing hard
+        on the lateral tracheal wall. The audible leak was never the reassurance we treated it as.</p>
+    </div>
+
+    <div class="verdict">
+      <span class="stamp">Busted, with a caveat</span>
+      <p>The cricoid is not the narrowest part of the airway; the glottis is. It is still the narrowest rigid
+        part, so the injury concern was pointing at the right structure for the wrong reason.</p>
+      <p><strong>But do not over-correct.</strong> ANZCOR's position is that cuffed and uncuffed tubes are
+        <em>both</em> acceptable in infants and children, with attention to cuff pressure. The European
+        guidance says use cuffed. So &ldquo;cuffed is mandatory&rdquo; is, in Australia, as unsupported as
+        &ldquo;uncuffed is mandatory&rdquo; &mdash; what is dead is the idea that a cuff is dangerous.
+        Sizing: uncuffed age/4 + 4, cuffed age/4 + 3.5, and use a manometer, because palpating the pilot
+        balloon is not a measurement.</p>
+    </div>
+
+    <!-- 2 -->
+    <div class="myth"><span class="num">The second</span></div>
+    <p class="claim">&ldquo;Give fluid too fast, or with the wrong sodium, and you will cause cerebral oedema
+      in diabetic ketoacidosis.&rdquo;</p>
+
+    <h3 class="step">Where it came from</h3>
+    <p>A 1988 series of 42 children, with no comparison group, in which a faster fluid rate was associated
+      with a shorter time to herniation. Around it grew a mechanistic story that was beautiful and
+      persuasive: idiogenic osmoles accumulate in brain cells, plasma osmolality falls as you treat, water
+      follows the gradient inward, the brain swells.</p>
+
+    <p>It explained a terrifying complication, it identified a culprit, and &mdash; the part that really
+      entrenches a belief &mdash; <strong>it gave clinicians something to do about it.</strong> A 2001
+      case-control study found no association with fluid volume at all, and reported instead that low arterial
+      carbon dioxide, high urea and bicarbonate therapy carried the risk. It changed rather little.</p>
+
+    <h3 class="step">What the evidence shows</h3>
+    <p>A randomised trial across thirteen American emergency departments enrolled
+      <b class="term">1,389 episodes of DKA in 1,255 children</b>, in a two-by-two design: fast rehydration
+      against slow, crossed with half-normal against normal saline.</p>
+
+    <p>Decline in mental status occurred in 3.5 per cent of episodes and clinically apparent brain injury in
+      0.9 per cent, with <b class="term">no significant difference by rate or by sodium concentration</b>
+      &mdash; not on mental status during treatment, not on short-term memory, and not on memory or IQ months
+      later. The only faint signal pointed the other way: a non-significant trend towards faster cognitive
+      recovery in the rapidly rehydrated children.</p>
+
+    <p>The mechanism has moved with it. Current thinking is cerebral hypoperfusion during the illness,
+      reperfusion during treatment, on a background of inflammation &mdash; with the injury correlating with
+      how dehydrated and how hyperventilating the child was <em>on arrival</em>, rather than with anything
+      that happens to osmolality afterwards. Much of the damage is under way before the first bag is hung.</p>
+
+    <div class="careful">
+      <span class="lab">Where an over-corrected trainee could do harm</span>
+      <p>That trial counted <strong>twelve</strong> clinically apparent brain injuries in total. It robustly
+        excludes an effect on mental status and neurocognition. It cannot exclude a modest effect on rare
+        catastrophic herniation, and nobody should read &ldquo;no difference across 1,389 episodes&rdquo; as
+        &ldquo;no difference in the thing that kills children&rdquo;.</p>
+      <p>Nor did it test extremes: the slow arm assumed a 5 per cent deficit over 48 hours and the fast arm
+        10 per cent with two boluses. The two arms also differed in assumed deficit and number of boluses, so
+        this compares two protocols rather than isolating rate. Nothing in it licenses unrestrained fluid.</p>
+    </div>
+
+    <div class="verdict">
+      <span class="stamp">Busted &mdash; but graded</span>
+      <p>Within the range any reasonable protocol uses, neither the speed of rehydration nor the tonicity of
+        the fluid drives cerebral injury. International guidance now replaces the deficit over 24 to 48 hours
+        with anything from half-normal to normal saline, and explicitly states that deliberately driving the
+        sodium up is no longer considered necessary. Australian practice sits at the conservative end of that
+        range &mdash; 48 hours, isotonic &mdash; which is a choice within the guideline, not a disagreement
+        with it.</p>
+      <p>Cerebral injury in DKA is real, is uncommon, and kills or maims a substantial share of the children
+        it affects. It is driven by how sick the child was when they arrived, not by your drip rate. Vigilance
+        is still owed. Guilt is not.</p>
+    </div>
+
+    <!-- 3 -->
+    <div class="myth"><span class="num">The third</span></div>
+    <p class="claim">&ldquo;Estimate the burn with the rule of nines &mdash; and the patient's palm is one
+      per cent.&rdquo;</p>
+
+    <h3 class="step">Where it came from</h3>
+    <p>The rule of nines is a genuinely good adult heuristic, and heuristics travel. Lund and Browder
+      published the age-corrected chart in <b class="term">1944</b>, modifying Berkow's earlier adult
+      proportions, and their innovation was precisely the thing the nines lacks: a correction factor for
+      children. Eighty years later it is still the standard, and it is still routinely skipped.</p>
+
+    <h3 class="step">What the evidence shows</h3>
+    <p>A child is a different shape. The head is around <b class="term">19 per cent</b> of body surface at
+      birth against 7 per cent in an adult; the thighs run the other way, roughly 11 per cent combined at
+      birth against 19 in the adult. The rule of nines gives the head 9. Apply it to a young child and you
+      understate the head and overstate the legs &mdash; which are the two regions scalds most often
+      involve.</p>
+
+    <p>When adult proportions become valid is genuinely disputed. NSW guidance has you subtract one per cent
+      from the head and add half a per cent to each leg for every year of life <strong>until age
+      nine</strong>. The Lund and Browder bands themselves do not reach adult values until fifteen. Either
+      way, <strong>nobody in the school-age range has adult proportions.</strong></p>
+
+    <p>And the palm. The correct rule is the <b class="term">palm plus the fingers</b> &mdash; the whole
+      palmar surface &mdash; at approximately one per cent. The palm alone is about half that. Teaching
+      &ldquo;the palm is one per cent&rdquo; roughly doubles the true figure, and it does so precisely in the
+      patchy burns where the palmar method is used.</p>
+
+    <div class="careful">
+      <span class="lab">Does it actually matter? Yes, and asymmetrically.</span>
+      <p>A Sydney audit of <strong>698 patients</strong> transferred to adult burns units found
+        overestimation exceeded underestimation by more than <strong>three to one</strong>, and that only
+        30 per cent of referring estimates matched the burns unit's. A systematic review of 28 studies and
+        6,461 patients found overestimation in at least half of cases in most comparative studies &mdash; one
+        paediatric cohort overestimated by 100 per cent &mdash; and, in one series, 55 per cent of patients
+        received more than 125 per cent of the recommended fluid volume.</p>
+      <p>Overestimation means over-resuscitation: oedema, compartment syndrome, prolonged ventilation, and
+        children retrieved who did not need to be. Underestimation, which rises with larger burns, delays
+        resuscitation in the children least able to tolerate delay.</p>
+    </div>
+
+    <div class="verdict">
+      <span class="stamp">Settled</span>
+      <p>Use an age-specific chart in any child. The adult rule of nines is simply wrong in a school-age
+        child, and the palmar rule means palm <em>and fingers</em>.</p>
+      <p>The harder second sentence: the practical failure here is not ignorance of the chart. It is
+        confidence without it.</p>
+    </div>
+
+    <!-- 4 -->
+    <div class="myth"><span class="num">The fourth</span></div>
+    <p class="claim">&ldquo;Cool them after cardiac arrest.&rdquo;</p>
+
+    <h3 class="step">Where it came from</h3>
+    <p>Adult trials, animal work and a thoroughly plausible mechanism &mdash; reduced metabolic demand in an
+      injured brain. For about fifteen years therapeutic hypothermia went from novel to standard of care, and
+      it was taught as such. This one is a useful corrective to the idea that myths are always old.</p>
+
+    <h3 class="step">What the evidence shows</h3>
+    <p>Two randomised trials, out-of-hospital and in-hospital arrest, <b class="term">295 and 329
+      children</b>. Both compared 33°C against 36.8°C. Both were null &mdash; 20 per cent against 12 per cent
+      for good functional survival in the first, not significant; 36 against 39 per cent in the second, which
+      stopped for futility.</p>
+
+    <div class="careful">
+      <span class="lab">The detail that inverts the conclusion</span>
+      <p>In both trials the comparator arm was <strong>not usual care</strong>. It was actively maintained at
+        36.8°C, using the same cooling device, for a full 120 hours. Nobody was allowed to drift febrile.</p>
+      <p>So what the trials show is that <strong>hypothermia is not superior to controlled normothermia</strong>
+        &mdash; not that temperature does not matter. A trainee who takes &ldquo;cooling doesn't work&rdquo;
+        from these trials has inverted them, and will allow a post-arrest child to sit at 38°C.</p>
+    </div>
+
+    <p>Guidelines have landed exactly there. Continuous central temperature monitoring in the comatose child
+      after arrest is a strong recommendation on good evidence; avoiding temperatures above 37.5°C is a strong
+      recommendation on weaker, observational evidence; and either a period at 32&ndash;34°C followed by
+      normothermia, or normothermia alone, is reasonable. <b class="term">ANZCOR gives you a ceiling rather
+      than a range</b> &mdash; actively control to 37.5°C or below.</p>
+
+    <p>Worth being honest about the weak link: the evidence that fever after arrest harms children is
+      observational, not randomised. We are confident enough to mandate it, and that confidence does not come
+      from a trial. Saying so is better teaching than pretending otherwise.</p>
+
+    <div class="verdict">
+      <span class="stamp">Busted, then inverted</span>
+      <p>Don't cool. <strong>Control.</strong> Letting a comatose post-arrest child run above 37.5°C is a
+        departure from every current guideline, and it is the far commoner error now that everyone has heard
+        the trials were negative.</p>
+    </div>
+
+    <!-- 5 -->
+    <div class="myth"><span class="num">The fifth</span></div>
+    <p class="claim">&ldquo;Nil by mouth from midnight.&rdquo;</p>
+
+    <h3 class="step">Where it came from</h3>
+    <p>Mendelson's 1946 description of aspiration in obstetric anaesthesia, generalised to everybody, and
+      then made operationally convenient. Midnight is not a physiological time. It is an administrative one
+      &mdash; a list order is uncertain, so the safe institutional move is to fast everybody from the
+      earliest conceivable start.</p>
+
+    <h3 class="step">What the evidence shows</h3>
+    <p>A European consensus in 2018 recommended clear fluids up to <b class="term">one hour</b> before
+      elective anaesthesia in children. Australian guidance has followed: ANZCA's current professional
+      document allows clear fluids at 3 mL/kg/hr up to one hour beforehand, with solids at six. Some
+      Australian units have gone further and run &ldquo;sip till send&rdquo;.</p>
+
+    <p>And the safety question has now been answered at a scale that is hard to argue with. An international
+      prospective cohort of <b class="term">306,900 anaesthetic procedures</b> across 31 centres compared
+      sip-till-send, one hour and two hours. Confirmed pulmonary aspiration ran at 1.18, 0.96 and
+      <strong>1.83 per 10,000</strong> respectively. Both liberal regimens were non-inferior &mdash; and the
+      point estimates were numerically <em>lowest</em> in the liberal arms.</p>
+
+    <p>Now the number that should bother you. An Australian audit of a simple &ldquo;apple juice on
+      arrival&rdquo; protocol found that before the change, children were fasting from clear fluids for a mean
+      of <b class="term">9.9 hours</b>. Afterwards, 3.5. Preoperative blood glucose rose, severe
+      hypoglycaemia was eliminated, nobody aspirated, and the complaints from parents stopped.</p>
+
+    <div class="careful">
+      <span class="lab">Two things to carry away</span>
+      <p><strong>Breast milk is three hours, not four</strong>, in the current Australian document &mdash;
+        a number many of us were taught differently. Irrelevant to a ten-year-old, and worth knowing
+        anyway.</p>
+      <p>The one-hour rule is for <em>healthy children having elective anaesthesia</em>. Reflux,
+        gastroparesis, achalasia, severe cerebral palsy, enteropathy and renal failure are genuine
+        exceptions, and none of this applies to emergency surgery.</p>
+    </div>
+
+    <div class="verdict">
+      <span class="stamp">Not a myth &mdash; a systems failure</span>
+      <p>Nobody writes &ldquo;fast from midnight&rdquo; in a guideline any more. The guidelines changed and
+        the wards did not, and children are still going ten hours without a drink to satisfy a list order that
+        could have been communicated.</p>
+      <p>Which makes this the one on the list you can personally fix this week, and the only one where the
+        fix is a conversation rather than a paper.</p>
+    </div>
+  </div>
+
+  <div class="pad" style="padding-top:6px">
+    <div class="reply">
+      <h2>Challenge for you</h2>
+      <p class="ask">What were you taught that turned out not to be true?</p>
+      <p>Everybody has one. A rule you followed for years, a number you repeated confidently, a
+        contraindication that turned out to be somebody's habit. I am as interested in <em>when you found
+        out</em> and how it felt as in the fact itself.</p>
+      <p>I am also interested in the opposite case &mdash; something dismissed as an old wives' tale in your
+        training that turned out to be right. Those are rarer and more instructive.</p>
+      <p>Send them and I will work the best into a future edition, named or anonymous exactly as you
+        prefer.</p>
+      <p><a class="btn" href="mailto:icuandyou@icloud.com?subject=Myths%20and%20Misconceptions%20-%20one%20I%20was%20taught&body=What%20I%20was%20taught%3A%0D%0A%0D%0A%0D%0AWhen%20and%20how%20I%20found%20out%20otherwise%3A%0D%0A%0D%0A%0D%0AOr%20-%20something%20dismissed%20in%20my%20training%20that%20turned%20out%20to%20be%20right%3A%0D%0A%0D%0A%0D%0A---%0D%0A%0D%0AName%3A%0D%0A%0D%0AHappy%20to%20be%20named%3F%20%28yes%20%2F%20no%29%3A%0D%0A%0D%0A---%0D%0A%0D%0AThinking%20about%20this%20ICU%20AND%20YOU%20post%20overall%20%E2%80%94%20was%20it%20useful%20to%20you%2C%20or%20would%20it%20be%20useful%20to%20others%3F%0D%0A">Tell me yours</a></p>
+      <p class="fallback">The button opens a reply straight to me. If your device blocks it, write to
+        <a href="mailto:icuandyou@icloud.com">icuandyou@icloud.com</a> instead.</p>
+    </div>
+  </div>
+
+  <footer>
+    <span class="firstpub">First published September 2026</span>
+    <p class="subline">Two emails a week &mdash; the Friday newsletter for all subscribers, and, for clinical subscribers,
+      the mind map and puzzles the moment they go up on Tuesday. Occasional announcements of new
+      features as they arrive. What went up and why it mattered, the best of your replies, and
+      original feature stories, news and views. <a href="https://joinlist.com/f/5adad2d6">Come and join us</a>.</p>
+    <a class="home" href="./">&larr; &nbsp;All of ICU AND YOU</a><br>
+    Myths and Misconceptions No. 1 &nbsp;&#183;&nbsp; companion to Mind Map #34, The School-Age Child<br>
+    <span class="srcs">Airway anatomy from Litman et&nbsp;al., <em>Anesthesiology</em> 2003 and
+    <a href="https://www.jvsmedicscorner.com/Anaesth-Management_files/Pediatric%20laryngeal%20dimensions.pdf">Dalal
+    et&nbsp;al., <em>Anesth Analg</em> 2009</a>, with the history in
+    <a href="https://eoa.umontreal.ca/wp-content/uploads/sites/33/airwayped.pdf">Tobias, <em>Paediatr
+    Anaesth</em> 2015</a>; cuffed tubes from
+    <a href="https://academic.oup.com/bja/article/103/6/867/2911832">Weiss et&nbsp;al., <em>BJA</em> 2009</a>
+    and <a href="https://www.anzcor.org/home/paediatric-advanced-life-support/guideline-12-2-paediatric-advanced-life-support-pals">ANZCOR
+    Guideline 12.2</a>. DKA from Kuppermann et&nbsp;al., <em>NEJM</em> 2018 and the
+    <a href="https://www.ispad.org/resource/chapter-11-diabetic-ketoacidosis.html">ISPAD 2022 guideline</a>,
+    with Australian practice from <a href="https://www.rch.org.au/clinicalguide/guideline_index/Diabetic_ketoacidosis/">RCH
+    Melbourne</a>. Burn estimation from
+    <a href="https://aci.health.nsw.gov.au/networks/burn-injury/resources/patient-management/size-tbsa">NSW
+    ACI</a>, Harish et&nbsp;al., <em>Burns</em> 2015 and
+    <a href="https://www.sciencedirect.com/science/article/pii/S0305417922001152">Brekke et&nbsp;al.,
+    <em>Burns</em> 2023</a>. Temperature after arrest from
+    <a href="https://www.cpccrn.org/documents/2015_PMID25913022_Moler.pdf">THAPCA-OH</a> and
+    <a href="https://www.cpccrn.org/documents/2017_PMID28118559_Moler.pdf">THAPCA-IH</a>, with
+    <a href="https://www.anzcor.org/home/paediatric-advanced-life-support/guideline-12-5-management-after-return-of-spontaneous-circulation-rosc">ANZCOR
+    Guideline 12.5</a>. Fasting from
+    <a href="https://www.anzca.edu.au/getContentAsset/d4eb4cab-69e6-4228-8568-bbc911c6c505/80feb437-d24d-46b8-a858-4a2a28b9b970/PG07-Pre-anaesthesia-consultation-2024.pdf">ANZCA
+    PG07</a>, the 2018 European consensus, and
+    <a href="https://www.sciencedirect.com/science/article/pii/S0007091225002156">EUROFAST, <em>BJA</em>
+    2025</a>. Guidance moves &mdash; check the current version of anything here before you act on it, and
+    tell me if I am out of date.</span><br>
+    <span class="mine">Views my own, not those of NSW Health or any other organisation. No identifiable
+    patients &mdash; scenarios are constructed or combined for teaching. <a href="about.html">More</a>.</span>
+  </footer>
+
+</div>
+<script data-goatcounter="https://icuandyou.goatcounter.com/count"
+        async src="//gc.zgo.at/count.js"></script>
+</body>
+</html>

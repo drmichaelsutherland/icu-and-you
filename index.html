@@ -35,6 +35,7 @@
   --peppermint:#5E9A8C; --pepperminttint:#EDF5F3; --peppermintink:#3F7C72;
   --ledger:#6F7F5C; --ledgertint:#F0F2EA; --ledgerink:#57663F;
   --lilac:#9B86C4; --lilactint:#F2EEF8; --lilacink:#6F5A96;
+  --bramble:#6A4A55; --brambletint:#F4EEF0; --brambleink:#4E353E;
   }
   *{box-sizing:border-box}
   body{margin:0;background:#F3EFE8;color:var(--ink);
@@ -183,6 +184,7 @@
   .md.jade{background:var(--jade)}.md.fern{background:var(--fern)}.md.crimson{background:var(--crimson)}.md.terracotta{background:var(--terracotta)}.md.ocean{background:var(--ocean)}.md.sandstone{background:var(--sandstone)}.md.pine{background:var(--pine)}.md.copper{background:var(--copper)}.md.mulberry{background:var(--mulberry)}.md.lotus{background:var(--lotus)}.md.bone{background:var(--bone)} .md.amethyst{background:var(--amethyst)}
   .md.neva{background:var(--neva)} .md.peppermint{background:var(--peppermint)}
   .md.ledger{background:var(--ledger)} .md.lilac{background:var(--lilac)}
+  .md.bramble{background:var(--bramble)}
 
   /* ---- The second series cue: a stripe -------------------------------
      Twenty-seven series have used up the usable colour space, so a series is
@@ -225,6 +227,7 @@
   .item.peppermint{border-left-color:var(--peppermint)}
   .item.ledger{border-left-color:var(--ledger)}
   .item.lilac{border-left-color:var(--lilac)}
+  .item.bramble{border-left-color:var(--bramble)}
   .badge{flex:0 0 84px;text-align:center;
     font:600 10.5px 'Helvetica Neue',Arial,sans-serif;letter-spacing:.1em;
     text-transform:uppercase;color:var(--muted);padding-top:3px;line-height:1.3}
@@ -268,6 +271,7 @@
   .dot.denim{background:var(--denim)} .dot.jade{background:var(--jade)}.dot.fern{background:var(--fern)}.dot.crimson{background:var(--crimson)}.dot.terracotta{background:var(--terracotta)}.dot.ocean{background:var(--ocean)}.dot.sandstone{background:var(--sandstone)}.dot.pine{background:var(--pine)}.dot.copper{background:var(--copper)}.dot.mulberry{background:var(--mulberry)}.dot.lotus{background:var(--lotus)}.dot.bone{background:var(--bone)} .dot.amethyst{background:var(--amethyst)}
   .dot.neva{background:var(--neva)} .dot.peppermint{background:var(--peppermint)}
   .dot.ledger{background:var(--ledger)} .dot.lilac{background:var(--lilac)}
+  .dot.bramble{background:var(--bramble)}
   .tcount{font:400 13.5px 'Helvetica Neue',Arial,sans-serif;color:var(--muted);
     margin-right:22px;white-space:nowrap}
 
@@ -286,6 +290,7 @@
   li.row.peppermint{border-left-color:var(--peppermint)}
   li.row.ledger{border-left-color:var(--ledger)}
   li.row.lilac{border-left-color:var(--lilac)}
+  li.row.bramble{border-left-color:var(--bramble)}
   li.row:hover{background:#F7F4ED}
   .rs{flex:0 0 112px;font:600 10.5px 'Helvetica Neue',Arial,sans-serif;letter-spacing:.1em;
     text-transform:uppercase;color:var(--muted)}
@@ -461,11 +466,11 @@
         <summary class="chip newbtn">Latest posts</summary>
 <!-- BUILD:LATEST -->
         <div class="menu">
+          <a class="mi newitem" href="myths-01-school-age.html"><span class="newtag">New</span><i class="md bramble"></i>Myths &amp; Misconceptions 1 · Five things you were taught</a>
           <a class="mi newitem" href="impossible-01-school-age.html"><span class="newtag">New</span><i class="md lilac"></i>Six Impossible Things? 1 · Five before breakfast</a>
           <a class="mi newitem" href="admin-01-school-age.html"><span class="newtag">New</span><i class="md ledger striped"></i>Administrators&#x27; Avenue 1 · Who decided that?</a>
           <a class="mi newitem" href="dental-01-school-age.html"><span class="newtag">New</span><i class="md peppermint striped"></i>The Dental Files 1 · Open wide</a>
           <a class="mi newitem" href="public-02-put-the-thermometer-down.html"><span class="newtag">New</span><i class="md ocean"></i>For the general public 2 · Put the thermometer down</a>
-          <a class="mi newitem" href="russia-house-01-tsarevich.html"><span class="newtag">New</span><i class="md neva striped"></i>Russia House 1 · The boy who was a state secret</a>
         </div>
 <!-- /BUILD:LATEST -->
       </details>
@@ -480,6 +485,7 @@
           <button class="mi" data-f="mind-map"><i class="md teal"></i>Mind map</button>
           <button class="mi" data-f="aphorism"><i class="md plum"></i>Aphorism</button>
           <button class="mi" data-f="mnemonic"><i class="md olive"></i>Mnemonic</button>
+          <button class="mi" data-f="myths"><i class="md bramble"></i>Myths and Misconceptions</button>
           <button class="mi" data-f="superpuzzle"><i class="md rust"></i>Superpuzzle</button>
           <button class="mi" data-f="superquiz"><i class="md wine"></i>Superquiz</button>
         </div>
@@ -604,6 +610,14 @@
             <h3>SCHOOL</h3>
             <p>Six things, and the word is the place they should be. Send the parent out, the chest, the hip when they say knee, out of proportion to the film, overdose is deliberate now, and listen for what they will not say.</p>
             <div class="links"><a class="go" href="mnemonic-56-school.html">Open</a></div>
+          </div>
+        </li>
+        <li class="item bramble" data-series="myths">
+          <div class="badge">Myths &amp; Misconceptions<b>1</b></div>
+          <div class="body">
+            <h3>Five things you were taught</h3>
+            <p>A new series. The cricoid and uncuffed tubes, fluid rate and cerebral oedema in DKA, the rule of nines, cooling after cardiac arrest, and nil by mouth from midnight — where each belief came from, what the evidence shows, and a verdict that is graded rather than gleeful.</p>
+            <div class="links"><a class="go" href="myths-01-school-age.html">Open</a></div>
           </div>
         </li>
         <li class="item rust" data-series="superpuzzle">
@@ -982,7 +996,7 @@
     window.addEventListener("load", function(){ window.scrollTo(0, 0); });
   }
 
-  var GROUPS = {"memory": ["barebones", "mind-map", "aphorism", "mnemonic", "superpuzzle", "superquiz"], "multimedia": ["podcast", "journal", "bookclub"], "special": ["students", "nurses", "gp", "emergency", "anaesthetics", "dental", "admin"], "procedures": ["procedures"], "drugstore": ["drugstore"], "exam": ["cicm-first"], "cultural": ["coin", "italiano", "espanol", "india", "chinatown", "australia", "srilanka", "russia"], "other": ["literary", "screening", "impossible"], "public": ["public"]};
+  var GROUPS = {"memory": ["barebones", "mind-map", "aphorism", "mnemonic", "myths", "superpuzzle", "superquiz"], "multimedia": ["podcast", "journal", "bookclub"], "special": ["students", "nurses", "gp", "emergency", "anaesthetics", "dental", "admin"], "procedures": ["procedures"], "drugstore": ["drugstore"], "exam": ["cicm-first"], "cultural": ["coin", "italiano", "espanol", "india", "chinatown", "australia", "srilanka", "russia"], "other": ["literary", "screening", "impossible"], "public": ["public"]};
   var LABELS = {"memory": "Memory aids and activities", "multimedia": "Multimedia", "special": "Special groups", "procedures": "Procedures", "drugstore": "Drugstore", "exam": "Exam focus", "cultural": "Cultural narratives", "other": "Other Realms", "public": "For the general public"};
 
   function inFilter(sk){

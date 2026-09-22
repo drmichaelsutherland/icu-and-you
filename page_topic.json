@@ -20,6 +20,11 @@
    "olive",
    "memory"
   ],
+  "myths": [
+   "Myths and Misconceptions",
+   "bramble",
+   "memory"
+  ],
   "superpuzzle": [
    "Superpuzzle",
    "rust",
@@ -1041,9 +1046,28 @@
    "badge": "Six Impossible Things?",
    "link_label": "Open",
    "blurb": "A new series, for the dreamers. No child dies of sepsis, of hunger or thirst, of a vaccine-preventable disease; no post-intensive care syndrome; no distance disadvantage. Five things called impossible that are already true somewhere — and the sixth is left entirely to you."
+  },
+  {
+   "file": "myths-01-school-age.html",
+   "series": "myths",
+   "colour": "bramble",
+   "number": "1",
+   "title": "Five things you were taught",
+   "topic": "The school-age child",
+   "slug": "school-age",
+   "week": true,
+   "pos": 3,
+   "badge": "Myths & Misconceptions",
+   "link_label": "Open",
+   "blurb": "A new series. The cricoid and uncuffed tubes, fluid rate and cerebral oedema in DKA, the rule of nines, cooling after cardiac arrest, and nil by mouth from midnight — where each belief came from, what the evidence shows, and a verdict that is graded rather than gleeful."
   }
  ],
  "latest": [
+  {
+   "file": "myths-01-school-age.html",
+   "colour": "bramble",
+   "label": "Myths & Misconceptions 1 · Five things you were taught"
+  },
   {
    "file": "impossible-01-school-age.html",
    "colour": "lilac",
@@ -1063,11 +1087,6 @@
    "file": "public-02-put-the-thermometer-down.html",
    "colour": "ocean",
    "label": "For the general public 2 · Put the thermometer down"
-  },
-  {
-   "file": "russia-house-01-tsarevich.html",
-   "colour": "neva striped",
-   "label": "Russia House 1 · The boy who was a state secret"
   }
  ],
  "topten": [
