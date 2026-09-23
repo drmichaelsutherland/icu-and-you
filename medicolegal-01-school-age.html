@@ -1,0 +1,563 @@
+<!DOCTYPE html>
+<html lang="en-AU">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ICU AND YOU · Medicolegal No. 1 — The school-age child</title>
+<meta name="description" content="Medicolegal No. 1: Working With Children Checks, who consents for a school-age child, what the law actually asks when you suspect abuse, photography, documentation, complaints, and what happens when a child dies. Written for trainees, NSW as the worked example.">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="alternate icon" href="/favicon.ico" sizes="any">
+<link rel="apple-touch-icon" href="/icon-180.png">
+<meta name="theme-color" content="#1B2A33">
+<meta property="og:site_name" content="ICU AND YOU">
+<meta property="og:type" content="website">
+<meta property="og:title" content="ICU AND YOU · Medicolegal No. 1 — The school-age child">
+<meta property="og:description" content="What the law actually asks of a trainee looking after a school-age child. NSW as the worked example.">
+<meta property="og:image" content="https://icuandyou.com/share-card.png">
+<meta name="twitter:card" content="summary_large_image">
+<style>
+  :root{
+    --paper:#FCFAF7; --ink:#2A2620; --muted:#6B6254; --rule:#E4DCCF;
+    --gavel:#5C4A3A; --gaveltint:#F3EEE7;
+    --alarm:#9E3B2E; --alarmtint:#FAEDEA;
+    --grn:#4C6B4A; --grntint:#EAF1E9;
+  }
+  *{box-sizing:border-box}
+  body{margin:0;background:#EBE4DA;color:var(--ink);
+    font:400 17px/1.64 'Iowan Old Style','Palatino Linotype',Palatino,Georgia,serif;
+    -webkit-text-size-adjust:100%;}
+  .sheet{max-width:800px;margin:0 auto;background:var(--paper);
+    box-shadow:0 1px 40px rgba(40,32,22,.12);}
+
+  .flag{height:6px;background:repeating-linear-gradient(135deg,
+    var(--gavel) 0 7px, #9A8570 7px 14px)}
+
+  header.top{padding:42px 40px 28px;border-bottom:1px solid var(--rule)}
+  .topseries,.toptopic,.tophome{display:inline-block;margin:0 0 16px 9px;padding:7px 16px;
+    border-radius:20px;border:1px solid currentColor;opacity:.62;text-decoration:none;
+    color:inherit;font:600 11.5px 'Helvetica Neue',Arial,sans-serif;letter-spacing:.09em;
+    text-transform:uppercase;transition:opacity .12s ease}
+  .tophome{margin-left:0}
+  .topseries:hover,.toptopic:hover,.tophome:hover{opacity:1}
+  .eyebrow{font:500 11.5px/1 'Helvetica Neue',Arial,sans-serif;letter-spacing:.24em;
+    text-transform:uppercase;color:var(--muted);margin:0 0 14px}
+  .eyebrow a.mast,.eyebrow a.serlink{color:inherit;text-decoration:none;
+    border-bottom:1px solid transparent}
+  .eyebrow a.mast:hover,.eyebrow a.serlink:hover{border-bottom-color:currentColor}
+  h1{font-size:34px;line-height:1.15;margin:0 0 8px;font-weight:400;letter-spacing:-.012em}
+  .kicker{color:var(--muted);margin:0;font-size:16.5px}
+
+  .pad{padding:34px 40px}
+  p{margin:0 0 17px}
+  .lede{font-size:20px;line-height:1.5;margin:0 0 22px}
+  b.term{font-weight:600;color:var(--gavel)}
+
+  h2.sub{font:600 12px 'Helvetica Neue',Arial,sans-serif;letter-spacing:.2em;
+    text-transform:uppercase;color:var(--gavel);margin:32px 0 15px;
+    padding-bottom:8px;border-bottom:1px solid var(--rule)}
+
+  ul.pts{list-style:none;margin:0 0 18px;padding:0}
+  ul.pts li{display:flex;gap:14px;padding:11px 0;border-bottom:1px solid #EFE8DE;
+    font-size:16.5px;line-height:1.5}
+  ul.pts li:last-child{border-bottom:0}
+  ul.pts b{flex:0 0 176px;font:600 14.5px 'Helvetica Neue',Arial,sans-serif;
+    color:var(--gavel);line-height:1.4}
+
+  .box{margin:0 0 18px;padding:20px 24px;border-radius:0 8px 8px 0;
+    background:var(--gaveltint);border-left:4px solid var(--gavel)}
+  .box .lab{display:block;font:600 11px 'Helvetica Neue',Arial,sans-serif;
+    letter-spacing:.18em;text-transform:uppercase;color:var(--gavel);margin:0 0 9px}
+  .box p:last-child{margin:0}
+  .box.warn{background:var(--alarmtint);border-left-color:var(--alarm)}
+  .box.warn .lab{color:var(--alarm)}
+  .box.good{background:var(--grntint);border-left-color:var(--grn)}
+  .box.good .lab{color:var(--grn)}
+
+  .caution{margin:0 0 22px;padding:22px 26px;background:#FBF6EC;
+    border:2px solid #C9A961;border-radius:10px}
+  .caution .lab{display:block;font:600 11.5px 'Helvetica Neue',Arial,sans-serif;
+    letter-spacing:.18em;text-transform:uppercase;color:#8A6A2E;margin:0 0 10px}
+  .caution p{font-size:16px;line-height:1.55}
+  .caution p:last-child{margin:0}
+
+  .case{margin:0 0 20px;padding:22px 26px;background:#fff;border:1px solid var(--rule);
+    border-radius:10px;border-top:4px solid var(--gavel)}
+  .case .lab{display:block;font:600 11px 'Helvetica Neue',Arial,sans-serif;
+    letter-spacing:.18em;text-transform:uppercase;color:var(--gavel);margin:0 0 10px}
+  .case .story{font-style:italic;color:#3C352B;margin:0 0 15px;font-size:16.5px;line-height:1.55}
+  .case p:last-child{margin:0}
+  .case ul{margin:0 0 12px;padding:0 0 0 20px}
+  .case li{margin:0 0 7px;font-size:16px;line-height:1.5}
+
+  .num{display:block;font:600 11px 'Helvetica Neue',Arial,sans-serif;
+    letter-spacing:.2em;text-transform:uppercase;color:var(--muted);margin:0 0 6px}
+
+  .challenge{margin:0;padding:28px 32px;background:var(--gaveltint);border-left:5px solid var(--gavel)}
+  .challenge h2{font:600 12px 'Helvetica Neue',Arial,sans-serif;letter-spacing:.2em;
+    text-transform:uppercase;color:var(--gavel);margin:0 0 13px}
+  .ask{font-size:19px;line-height:1.5;margin:0 0 14px;font-style:italic}
+  .btn{display:inline-block;margin:6px 0 12px;padding:15px 30px;background:var(--gavel);
+    color:#FCFAF7;text-decoration:none;border-radius:30px;font-style:normal;
+    font:600 15px 'Helvetica Neue',Arial,sans-serif;letter-spacing:.03em}
+  .btn:hover{background:#41342A}
+  .btn:focus-visible{outline:3px solid #8A6A2E;outline-offset:3px}
+  .fallback{font:400 13.5px 'Helvetica Neue',Arial,sans-serif;color:var(--muted);margin:0}
+  .fallback a{color:var(--gavel)}
+
+  footer{padding:24px 40px 42px;border-top:1px solid var(--rule);
+    font:400 13px 'Helvetica Neue',Arial,sans-serif;color:var(--muted);text-align:center;line-height:1.7}
+  .subline{margin:0 0 14px;padding:0 0 13px;border-bottom:1px solid rgba(0,0,0,.09);
+    font:400 14.5px/1.55 'Iowan Old Style','Palatino Linotype',Palatino,Georgia,serif;
+    max-width:56ch;margin-left:auto;margin-right:auto}
+  .subline a{font-weight:500;border-bottom:1px solid currentColor;
+    text-decoration:none;color:inherit}
+  .firstpub{display:block;margin:0 0 10px;padding-bottom:9px;
+    border-bottom:1px solid rgba(0,0,0,.09);
+    font:400 12px 'Helvetica Neue',Arial,sans-serif;letter-spacing:.06em;opacity:.72}
+  .home{display:inline-block;margin:0 0 14px;padding:8px 18px;border-radius:20px;
+    border:1px solid var(--rule);background:#F2ECE3;color:var(--gavel);text-decoration:none;
+    font:600 12.5px 'Helvetica Neue',Arial,sans-serif;letter-spacing:.05em}
+  .home:hover{background:var(--gavel);border-color:var(--gavel);color:#FCFAF7}
+  .mine{display:inline-block;margin:9px 0 0;opacity:.78;font-size:.94em}
+  .srcs{font-size:12.5px;line-height:1.6}
+  .srcs a{color:inherit}
+
+  @media (max-width:640px){
+    header.top,.pad,footer{padding-left:20px;padding-right:20px}
+    .challenge{padding:22px 20px}
+    h1{font-size:26px} body{font-size:16.5px} .lede{font-size:18.5px} .ask{font-size:17.5px}
+    ul.pts li{flex-direction:column;gap:3px} ul.pts b{flex:none}
+  }
+  @media print{ body{background:#fff} .sheet{box-shadow:none;max-width:none} }
+</style>
+</head>
+<body>
+<div class="sheet">
+
+  <div class="flag"></div>
+
+  <header class="top">
+    <a class="tophome" href="./">&larr;&nbsp; Home</a>
+    <a class="topseries" href="./?s=medicolegal">More medicolegal</a>
+    <a class="toptopic" href="./?t=school-age" title="Everything on The school-age child">All on this topic</a>
+    <p class="eyebrow"><a class="mast" href="./">ICU and You</a> &nbsp;·&nbsp;
+      <a class="serlink" href="./?s=medicolegal">Medicolegal</a> &nbsp;·&nbsp; Number 1</p>
+    <h1>The school-age child</h1>
+    <p class="kicker">Who consents, what the law asks when you are worried, and the things that turn a clinical problem into a career problem</p>
+  </header>
+
+  <div class="pad">
+    <div class="caution">
+      <span class="lab">Read this first</span>
+      <p><strong>This is not legal advice, and it is not a substitute for your own hospital's policy.</strong>
+        It is a trainee's orientation to a domain nobody teaches until you are already standing in it.</p>
+      <p>It uses <strong>New South Wales</strong> as the worked example because that is where I practise. The
+        principles travel; the section numbers, the thresholds and the phone numbers do not. If you trained
+        interstate, assume you are wrong about several things here until you check &mdash; there is a box at
+        the end listing the ones most likely to catch you.</p>
+      <p>Everything below was current in <strong>September 2026</strong>. Several of the governing documents
+        are past their review dates and two significant things changed in 2024 and 2025. <strong>Check the
+        source, not a saved copy.</strong> And when something real happens: <strong>ring your medical defence
+        organisation before you do anything else</strong>. That is not a formality. It is the single most
+        useful sentence in this article.</p>
+    </div>
+
+    <p class="lede">Almost everything that goes badly wrong for a doctor in this domain goes wrong in the
+      first hour, quietly, while everyone is concentrating on something else. A photograph taken on the wrong
+      device. A question asked with the best of intentions. A line removed from a child who has just died. A
+      record amended two days later to make it clearer.</p>
+
+    <p>None of those are clinical errors. All of them are avoidable by knowing one fact in advance.</p>
+
+    <h2 class="sub">The Working With Children Check</h2>
+
+    <p>A NSW Working With Children Check applies to <b class="term">child-related work</b>, which is a
+      three-part test: the work provides services to under-18s in a listed sector, it normally involves being
+      face to face with children, and that contact is more than incidental. All three must be met, and it is
+      the <em>organisation</em> that determines who is in child-related work.</p>
+
+    <p>Which produces a question trainees actually ask: <em>I work in a mixed adult and paediatric ICU &mdash;
+      do I need one?</em></p>
+
+    <div class="box">
+      <span class="lab">The practical answer is yes</span>
+      <p>There is a statutory exemption for a private-practice practitioner treating children with another
+        adult present. It does not help you in a salaried hospital role. And NSW Health policy applies the
+        requirement to all paid and unpaid workers <strong>including staff on rotation, agency staff and
+        students on clinical placement</strong>.</p>
+      <p>So the legal answer is &ldquo;it depends&rdquo; and the employment answer is &ldquo;yes&rdquo;. The
+        employment answer is the one that determines whether you can start your rotation.</p>
+    </div>
+
+    <ul class="pts">
+      <li><b>Five years, and monitored</b><span>It is continuously monitored across that period, not a
+        point-in-time police check. New charges during the five years can trigger reassessment.</span></li>
+      <li><b>There is no card</b><span>It is an online record. You give your number to the employer, who
+        verifies it. That verification is the employer's <em>legal obligation</em>, not a
+        courtesy.</span></li>
+      <li><b>$112, or free</b><span>Free for volunteers, who must upgrade if they take paid child-related
+        work.</span></li>
+      <li><b>Apply early</b><span>The national police history check alone can take up to four weeks. Apply
+        well before a paediatric rotation starts, not in the week before.</span></li>
+      <li><b>Ahpra registration is not a substitute</b><span>Different statute, different body, different
+        purpose, no automatic notification between them. This is a common and consequential
+        misconception.</span></li>
+    </ul>
+
+    <div class="box warn">
+      <span class="lab">The interim bar &mdash; and a change most material has not caught up with</span>
+      <p>An <b class="term">interim bar</b> can be imposed <em>during</em> a risk assessment, before any
+        finding. It arrives without warning and, on receiving it, you must <strong>immediately stop working
+        in child-related employment</strong>. Internal review cannot be sought for six months.</p>
+      <p>It is not a finding of guilt. It is nonetheless career-stopping on the day it arrives. If one
+        arrives: stop, notify your Director of Medical Services the same day, and ring your MDO
+        <em>and</em> an employment lawyer.</p>
+      <p><strong>Changes in September 2025 removed the right to seek review of these decisions at NCAT.</strong>
+        Review is now internal to the Office of the Children's Guardian, within 28 days, with a fee. Any
+        material telling you to appeal to NCAT is out of date.</p>
+    </div>
+
+    <h2 class="sub">Who consents for a ten-year-old</h2>
+
+    <p>For the age group this piece is about, the answer is almost always the parent. But the detail around
+      that answer is where people come unstuck.</p>
+
+    <ul class="pts">
+      <li><b>Under 14</b><span>Consent from a parent or guardian. A child of this age may be capable of
+        genuine assent, and involving them is good practice, but they do not hold a legal
+        veto.</span></li>
+      <li><b>Either parent, not both</b><span>Assume either parent can consent alone unless a court order
+        saying otherwise is produced to you. You do not have to find the absent parent.</span></li>
+      <li><b>Ask to see the order</b><span>If a parenting order is asserted, read it &mdash; specifically
+        what it says about major long-term issues, which include health care &mdash; and file a copy. Do not
+        act on a parent's summary of an order.</span></li>
+      <li><b>In out-of-home care, ask at admission</b><span>An authorised carer can consent to treatment
+        <strong>not involving surgery</strong>, and cannot delegate that to another adult. Surgery needs the
+        departmental delegate or a parent who retains that aspect of parental responsibility. Establish who
+        holds what on the day of admission, not at 3am.</span></li>
+    </ul>
+
+    <div class="box warn">
+      <span class="lab">Two things that are commonly taught wrongly</span>
+      <p><strong>The <em>Minors (Property and Contracts) Act</em> provision people cite gives you a defence,
+        not a right.</strong> It protects a practitioner against a claim in assault or battery where a minor
+        of 14 or above consented, or where a parent of a child under 16 consented. It does not give a
+        14-year-old a right to consent, it does not resolve a conflict between child and parent, it is no
+        defence to negligence &mdash; and it offers <strong>nothing at all below 14</strong>. For a
+        school-age child you are relying on common law with no statutory safety net.</p>
+      <p><strong>The presumption of equal shared parental responsibility was repealed on 6 May 2024.</strong>
+        A great deal of hospital teaching material still recites it. The clinical bottom line is unchanged
+        &mdash; either parent can consent absent an order &mdash; but if you cite that presumption you are
+        quoting repealed law.</p>
+    </div>
+
+    <p>When parents disagree with each other: counsel them, and if the treatment is urgent, urgency
+      resolves it. If it is not urgent and no agreement emerges, escalate &mdash; consultant, then the
+      district's legal unit, then, as a last resort, an application to the Supreme Court in its
+      <em>parens patriae</em> jurisdiction. Technically one parent's consent suffices; proceeding into a known
+      dispute without escalating is where practitioners actually get into trouble.</p>
+
+    <div class="box good">
+      <span class="lab">Emergency treatment, and refusal of life-saving treatment</span>
+      <p>NSW has a specific statutory provision allowing a medical practitioner to treat a child without any
+        consent where the practitioner is of the opinion that it is <strong>necessary as a matter of urgency
+        to save life or prevent serious damage to health</strong>.</p>
+      <p>Three things about it worth knowing. It is a <strong>general</strong> emergency provision, not a
+        blood transfusion section. It requires only <em>the practitioner's</em> opinion &mdash; there is no
+        statutory second-opinion requirement, though obtaining and documenting one is strongly advisable. And
+        a 2024 Supreme Court decision confirmed it applies <strong>even where consent was sought in advance
+        and refused</strong>, and that foreseeability does not defeat urgency.</p>
+      <p>Where treatment is certain to be needed but not yet urgent, or the matter is genuinely contentious,
+        the court route is the right one and the district's legal unit drives it. In parallel, consider
+        whether the refusal itself meets the threshold for a child protection report. It usually will.</p>
+    </div>
+
+    <h2 class="sub">When you are worried about how an injury happened</h2>
+
+    <p>This is the section to read twice.</p>
+
+    <div class="box warn">
+      <span class="lab">The threshold, and what it does not require</span>
+      <p>The statutory test is <strong>reasonable grounds to suspect</strong> that a child is at risk of
+        significant harm. Suspicion &mdash; not belief, not satisfaction, not proof. Of <em>risk</em> of harm,
+        not of harm established.</p>
+      <p><strong>There is no obligation, and no expectation, that you investigate, interview the child, or
+        establish anything before reporting.</strong> Government guidance expressly directs staff not to
+        conduct investigations or interviews. You are not the investigator. You are the person who noticed.</p>
+    </div>
+
+    <p>What this means at the bedside is narrower and harder than it sounds.</p>
+
+    <ul class="pts">
+      <li><b>Ask only what is clinically necessary</b><span>Open questions only. &ldquo;Can you tell me what
+        happened?&rdquo; Direct and prompting questions are to be strictly avoided, because of the risk of
+        leading the child.</span></li>
+      <li><b>Write down the exact words</b><span>Record what the child said verbatim, in quotation marks, in
+        the child's own language — and record <em>your question</em> as well as the answer. That is what
+        later distinguishes a spontaneous account from a suggested one.</span></li>
+      <li><b>Record the explanations separately</b><span>The child's account, and each carer's account,
+        attributed to them as <em>their</em> account rather than adopted as fact. For injuries: site with
+        measurements, size, pattern, colour, tenderness, evidence of older injury.</span></li>
+      <li><b>Do not promise secrecy</b><span>Never tell a child that what they say stays between you. Say you
+        will keep it private unless you become worried about their safety, in which case you will have to tell
+        the people whose job it is to help — and that you will tell them when you do. Breaking an absolute
+        promise to a child who has just disclosed is a harm in itself.</span></li>
+      <li><b>You are not the last word</b><span>The child's evidence in any prosecution will ordinarily be a
+        recorded specialist interview. Your ward-round conversation is not the evidence. It is a document that
+        will be compared against the evidence.</span></li>
+    </ul>
+
+    <div class="box good">
+      <span class="lab">The numbers to have in your phone</span>
+      <p><b class="term">Child Protection Helpline &mdash; 132 111</b>, 24 hours. Note that the governing NSW
+        Health policy directive still prints an obsolete number; use this one.</p>
+      <p><b class="term">NSW Health Child Wellbeing Unit &mdash; 1300 480 420</b>, business hours, for NSW
+        Health staff deciding whether the threshold is met. It is not a substitute for a Helpline report
+        where it is.</p>
+      <p><b class="term">Tertiary child protection units, 24 hours</b> &mdash; The Children's Hospital at
+        Westmead (02) 9845 2434, Sydney Children's Hospital Randwick (02) 9382 1412, John Hunter Children's
+        Hospital (02) 4921 3000. Ask for the child protection consultant on call. <strong>This is the call a
+        registrar should make at two in the morning</strong>, and almost nobody knows the numbers
+        exist.</p>
+    </div>
+
+    <p>Three further things, in descending order of how often they are misunderstood.</p>
+
+    <p><strong>The duty is personal.</strong> It attaches to the person who forms the suspicion. Telling your
+      consultant is good practice and usually results in them or the social work team making the report
+      &mdash; but if no report is made, your duty has not been discharged. Check that it was made, and
+      document that you checked.</p>
+
+    <p><strong>Failing to report is not itself a criminal offence in NSW</strong> &mdash; it is a professional
+      and employment matter. But <em>concealing a child abuse offence</em> is a crime, carrying two or five
+      years depending on the underlying offence. The two interlock helpfully: <strong>making the report to
+      the Helpline is a statutory reasonable excuse</strong> for not separately going to police. That single
+      sentence resolves most of the anxiety trainees carry about this.</p>
+
+    <p><strong>The decision-support tool does not outrank your own suspicion.</strong> The Mandatory Reporter
+      Guide is required by NSW Health policy and is not a statutory requirement. If the tool says the
+      threshold is not met and you still hold a reasonable suspicion, the law requires you to report.</p>
+
+    <div class="box warn">
+      <span class="lab">Photography &mdash; the most commonly broken rule in this domain</span>
+      <p>There is a specific NSW Health policy directive on imaging in suspected child abuse, and it says, in
+        terms, that NSW Health <strong>does not support the use of personal equipment or devices</strong>
+        &mdash; mobile phones, tablets, personal cameras, USB drives.</p>
+      <p>A registrar photographing bruises on their own phone &ldquo;to show the consultant&rdquo; has
+        breached policy, created an uncontrolled copy of sensitive images of a child on a personal device,
+        and produced material that is discoverable and effectively impossible to account for. Do not do this,
+        and do not let your juniors do it.</p>
+      <p>Images must be captured by workers with suitable training, stored securely and <em>separately</em>
+        from the health record, and retained for decades. Consent is required, for each specific purpose.
+        Photography is genuinely urgent, because bruising evolves &mdash; which is an argument for ringing
+        the child protection unit early, not for improvising.</p>
+    </div>
+
+    <h2 class="sub">Two illustrations</h2>
+
+    <div class="case">
+      <span class="lab">Case one &mdash; constructed</span>
+      <p class="story">A seven-year-old is brought in with a spiral fracture of the humerus. The account is
+        that he fell from a trampoline. The registrar notices bruising of different ages over the lower back,
+        and that the child says almost nothing. Wanting to be helpful, she takes the child aside and asks
+        whether anybody has been hurting him. She photographs the bruises on her phone and texts them to the
+        consultant.</p>
+      <p>Everything she did came from decent instincts. Three of them were wrong.</p>
+      <ul>
+        <li><strong>The question.</strong> Direct questioning risks leading the child, and any account
+          obtained this way will be examined later for exactly that. The correct move was an open question if
+          anything, and otherwise nothing.</li>
+        <li><strong>The phone.</strong> Personal devices are prohibited. She has now created images she
+          cannot control, delete accountably, or produce properly.</li>
+        <li><strong>The assumption that raising it discharged her duty.</strong> It did not. The duty was
+          hers until a report was made.</li>
+      </ul>
+      <p>What was right: she noticed, and she escalated. What would have made the rest right: an open
+        question or none, a verbatim note of anything said spontaneously along with what she had asked, a call
+        to the tertiary child protection unit, a report to the Helpline, and photography arranged through the
+        proper route.</p>
+    </div>
+
+    <div class="case">
+      <span class="lab">Case two &mdash; constructed</span>
+      <p class="story">A nine-year-old with a complex neurological condition dies in ICU after a long
+        admission. The death is not unexpected. The team completes a death certificate. The nursing staff,
+        kindly and as they have always been taught, remove the lines, wash the child and make her presentable
+        before the family come in. A week later the unit learns that a risk-of-significant-harm report had
+        been made about the child's older brother eighteen months earlier.</p>
+      <p>That single fact made this a coronial death. In NSW, exclusive senior coroner jurisdiction covers a
+        child who was in care, <strong>or in respect of whom a risk report was made in the preceding three
+        years &mdash; or who is the sibling of such a child</strong>. The treating team almost never knows
+        this, and the child protection history is not on the front page of the chart.</p>
+      <ul>
+        <li>A medical certificate of cause of death must not be issued for a reportable death, and any such
+          certificate is invalid.</li>
+        <li>In a coronial case, lines and tubes <strong>stay in</strong>, the body is <strong>not
+          washed</strong>, and limbs and jaws are not tied. This runs directly against everything the
+          bedside nurse has been trained to do, and against every instinct to make a child presentable for
+          her parents.</li>
+        <li>That conversation with the family has to happen <em>before</em> they come in, not after. The
+          lines stay because the Coroner requires it, and it is not a reflection on anyone's care.</li>
+      </ul>
+      <p><strong>So: for any child death, ask whether there is a child protection history, and ask the social
+        work team to check, before assuming it is not coronial.</strong></p>
+    </div>
+
+    <h2 class="sub">When a child dies</h2>
+
+    <p>A death is reportable if it was violent or unnatural, sudden with an unknown cause, in suspicious or
+      unusual circumstances, where the person had not been attended by a doctor in six months, where they were
+      an involuntary patient in a mental health facility &mdash; or, the one intensive care should dwell on,
+      where the death <b class="term">was not the reasonably expected outcome of a health-related
+      procedure</b>.</p>
+
+    <p>That last category is broader than people assume. The instinct that &ldquo;this was a very sick child
+      who died of their disease&rdquo; is precisely the instinct that causes difficulty when an anaesthetic, a
+      line insertion, a drug or an operation sits anywhere in the causal chain. The duty to report lies on
+      <em>any person</em> with reasonable grounds to believe a death is reportable, not only the consultant.
+      If in doubt, ring the Coroner's Court and ask. That call is free and is itself protective.</p>
+
+    <p>Organ and tissue donation is not precluded by coronial status, but it cannot proceed on family consent
+      alone &mdash; the Coroner must consent. Flag coronial status to the donation team immediately, because
+      those two conversations have to run in parallel.</p>
+
+    <h2 class="sub">The record</h2>
+
+    <p>One rule, and it is the rule that most often turns a defensible clinical decision into an indefensible
+      conduct matter:</p>
+
+    <div class="box warn">
+      <span class="lab">You may always add. You may never subtract or rewrite.</span>
+      <p>Never alter an existing entry after the fact. Electronic records keep audit trails, discovery is
+        routine, and a retrospective amendment that is found converts a clinical question into an allegation
+        of dishonesty. Clinical error is usually survivable. Dishonesty is not.</p>
+      <p>The correct method: to correct an error, draw a <strong>single line</strong> through it so it remains
+        legible, mark it <em>written in error</em>, and sign, date and time it. To add something omitted, make
+        an <strong>addendum</strong> that records both the time of the original event and the time you are
+        writing. Every entry carries name, designation, date and 24-hour time.</p>
+      <p>And if a parent asks you not to document something: you cannot agree, you should say so plainly, and
+        you should <strong>document the request</strong> &mdash; neutrally and factually. In a child
+        protection context that request is itself clinically significant.</p>
+    </div>
+
+    <p>Two details worth carrying. Children's records in NSW are kept until the patient turns, or would have
+      turned, <strong>25 &mdash; or fifteen years after the last entry, whichever is longer</strong>. And the
+      test for whether a note is well written is whether you would be content for it to be read aloud, because
+      in a coronial or disciplinary setting it will be. Records containing editorial comment about parents are
+      routinely the most damaging documents in a coronial brief.</p>
+
+    <h2 class="sub">If a complaint arrives</h2>
+
+    <p>New South Wales is <b class="term">co-regulatory</b>, which genuinely differs from most of the country.
+      Ahpra and the national boards register practitioners but do not manage complaints here. The Health Care
+      Complaints Commission and the Medical Council of NSW <strong>consult each other on every complaint about
+      a registered practitioner</strong> and agree who will manage it. A complaint may be streamed as a
+      health, performance or conduct matter.</p>
+
+    <ul class="pts">
+      <li><b>Ring your MDO first</b><span>Before you write anything, before you telephone anybody back. You
+        will typically be given around fourteen days to respond in writing; extensions are routinely
+        negotiated through the MDO.</span></li>
+      <li><b>Secure the record, do not touch it</b><span>Read it, export or print a copy, note when you did
+        so. Do not tidy it.</span></li>
+      <li><b>Do not contact the complainant</b><span>However well meant, it can be construed as
+        dissuasion.</span></li>
+      <li><b>Do not respond to the regulator without advice</b><span>Including on the telephone. Take the
+        reference number and say you will respond in writing.</span></li>
+      <li><b>Tell your DPET or Director of Medical Services</b><span>As your employer's policy requires, and
+        because you will need the support.</span></li>
+    </ul>
+
+    <p>Two things nobody tells trainees. A complaint is not a finding, and the large majority are discontinued
+      at assessment. And the process is slow and corrosive out of all proportion to its eventual outcome
+      &mdash; use the MDO's support services and the doctors' health services, and tell somebody.</p>
+
+    <p>On notifying about <em>others</em>: the threshold for a <strong>treating</strong> practitioner was
+      deliberately narrowed in 2020 to a <em>substantial risk of harm to the public</em>, precisely so that
+      practitioners with health problems would seek treatment. That is a very high bar, and it is not
+      &ldquo;I am uncomfortable&rdquo;. Note the word order carefully: the general threshold is a
+      <em>risk of substantial harm</em>, and the treating-practitioner threshold is a <em>substantial risk of
+      harm</em>. They are not the same phrase and they are easy to reverse.</p>
+
+    <div class="box">
+      <span class="lab">If you trained elsewhere, five things differ in NSW</span>
+      <p><strong>One.</strong> Failing to make a mandatory report is not a criminal offence here; in the ACT,
+        NT, SA, Tasmania, Victoria and WA it attracts a penalty.</p>
+      <p><strong>Two.</strong> NSW captures physical, sexual and emotional abuse, neglect and exposure to
+        domestic violence. Victoria and Queensland are limited to physical and sexual abuse; Western Australia
+        is limited to sexual abuse alone.</p>
+      <p><strong>Three.</strong> Complaints here are co-regulatory &mdash; Ahpra does not manage them.</p>
+      <p><strong>Four.</strong> Working With Children Checks are not mutually recognised between states. A
+        NSW check does not work in Queensland, and vice versa. Apply months before an interstate move.</p>
+      <p><strong>Five.</strong> The specific statutory emergency-treatment provision for children described
+        above is a NSW provision. Do not assume an identical section exists where you came from.</p>
+    </div>
+
+    <div class="box good">
+      <span class="lab">The obligations stack</span>
+      <p>One case can engage a risk-of-significant-harm report, the concealment offence, an information
+        exchange with police, a coronial report, a reportable conduct notification and a mandatory
+        notification about a colleague &mdash; all at once. Discharging one does not discharge the others,
+        with the one helpful exception already noted, that the child protection report is a reasonable excuse
+        under the concealment offence.</p>
+      <p>And the most protective thing a trainee can write is a short structured note: the concern, the
+        grounds, who was consulted and when, the decision, and the time. In any later review the question is
+        almost never &ldquo;did you report?&rdquo; It is &ldquo;what did you consider, and who did you
+        ask?&rdquo;</p>
+    </div>
+  </div>
+
+  <div class="pad" style="padding-top:6px">
+    <div class="challenge">
+      <h2>Challenge for you</h2>
+      <p class="ask">What did nobody tell you until you needed it?</p>
+      <p>Every one of us has a moment in this domain where we discovered a rule by nearly breaking it &mdash;
+        the form nobody mentioned, the call we did not know we could make, the thing we were about to do that
+        somebody stopped. Those near-misses are the most useful teaching material in medicine and the least
+        often written down.</p>
+      <p>Tell me yours. No identifying detail, and nothing you are currently involved in &mdash; the
+        principle is what is useful, not the case. I will work the best of them into future editions, named or
+        anonymous exactly as you prefer.</p>
+      <p>And if you are a medical administrator, a medicolegal adviser or a lawyer reading this and I have
+        something wrong, I would be grateful rather than embarrassed. Corrections go up on the
+        <a href="corrections.html">corrections page</a> with attribution.</p>
+      <p><a class="btn" href="mailto:icuandyou@icloud.com?subject=Medicolegal%20-%20what%20nobody%20told%20me&body=The%20thing%20I%20found%20out%20the%20hard%20way%20%28no%20identifying%20detail%29%3A%0D%0A%0D%0A%0D%0AWhat%20I%20would%20tell%20a%20junior%20about%20it%3A%0D%0A%0D%0A%0D%0AOr%20-%20something%20in%20this%20piece%20that%20is%20wrong%20or%20out%20of%20date%3A%0D%0A%0D%0A%0D%0A---%0D%0A%0D%0AName%3A%0D%0A%0D%0AHappy%20to%20be%20named%3F%20%28yes%20%2F%20no%29%3A%0D%0A%0D%0A---%0D%0A%0D%0AThinking%20about%20this%20ICU%20AND%20YOU%20post%20overall%20%E2%80%94%20was%20it%20useful%20to%20you%2C%20or%20would%20it%20be%20useful%20to%20others%3F%0D%0A">Tell me what you learned</a></p>
+      <p class="fallback">The button opens a reply straight to me. If your device blocks it, write to
+        <a href="mailto:icuandyou@icloud.com">icuandyou@icloud.com</a> instead.</p>
+    </div>
+  </div>
+
+  <footer>
+    <span class="firstpub">First published September 2026 &nbsp;·&nbsp; Content current as at September 2026</span>
+    <p class="subline">Two emails a week &mdash; the Friday newsletter for all subscribers, and, for clinical subscribers,
+      the mind map and puzzles the moment they go up on Tuesday. Occasional announcements of new
+      features as they arrive. What went up and why it mattered, the best of your replies, and
+      original feature stories, news and views. <a href="https://joinlist.com/f/5adad2d6">Come and join us</a>.</p>
+    <a class="home" href="./">&larr; &nbsp;All of ICU AND YOU</a><br>
+    Medicolegal No. 1 &nbsp;&#183;&nbsp; companion to Mind Map #34, The School-Age Child<br>
+    <span class="srcs"><strong>This is educational material, not legal advice.</strong> Mandatory reporting and
+    emergency treatment provisions are in the <em>Children and Young Persons (Care and Protection) Act 1998</em>
+    (NSW); the concealment offence is in the <em>Crimes Act 1900</em> (NSW). NSW Health policy is at the
+    <a href="https://www1.health.nsw.gov.au/pds/Pages/doc.aspx">Policy Directives site</a> &mdash; the relevant
+    documents include the child wellbeing and child protection directive, the SCAN medical protocol, the
+    imaging directive, the health care records directive and the coroners directive, several of which are past
+    their review dates. Consent follows the
+    <a href="https://www.health.nsw.gov.au/policies/manuals/Pages/consent-manual.aspx">NSW Health Consent
+    Manual, 3rd edition, April 2025</a>. Working With Children Check requirements are at the
+    <a href="https://ocg.nsw.gov.au/working-children-check">Office of the Children's Guardian</a>. The
+    complaints framework is described by the
+    <a href="https://www.hccc.nsw.gov.au/health-providers/complaints-process-health-providers">Health Care
+    Complaints Commission</a> and the
+    <a href="https://www.hpca.nsw.gov.au/about/what-we-do-and-how-we-work">Health Professional Councils
+    Authority</a>. Reportable deaths are governed by the <em>Coroners Act 2009</em> (NSW). Cases are
+    constructed and are not accounts of real patients. <strong>Check the current version of anything here
+    before you rely on it, and ring your medical defence organisation early.</strong></span><br>
+    <span class="mine">Views my own, not those of NSW Health or any other organisation. No identifiable
+    patients &mdash; scenarios are constructed or combined for teaching. <a href="about.html">More</a>.</span>
+  </footer>
+
+</div>
+<script data-goatcounter="https://icuandyou.goatcounter.com/count"
+        async src="//gc.zgo.at/count.js"></script>
+</body>
+</html>

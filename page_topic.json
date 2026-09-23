@@ -135,6 +135,11 @@
    "mulberry",
    "drugstore"
   ],
+  "medicolegal": [
+   "Medicolegal",
+   "gavel striped",
+   "medicolegal"
+  ],
   "srilanka": [
    "Āyubōwan Sri Lanka",
    "lotus",
@@ -1071,9 +1076,28 @@
    "slug": "standing",
    "week": false,
    "standing": true
+  },
+  {
+   "file": "medicolegal-01-school-age.html",
+   "series": "medicolegal",
+   "colour": "gavel striped",
+   "number": "1",
+   "title": "The school-age child",
+   "topic": "The school-age child",
+   "slug": "school-age",
+   "week": true,
+   "pos": 7,
+   "badge": "Medicolegal",
+   "link_label": "Open",
+   "blurb": "A new section. Working With Children Checks, who can consent for a ten-year-old, what the law actually asks when you are worried about an injury, the photograph you must not take, the record you must never alter, and the one fact that makes a child's death coronial. Two constructed cases."
   }
  ],
  "latest": [
+  {
+   "file": "medicolegal-01-school-age.html",
+   "colour": "gavel striped",
+   "label": "Medicolegal 1 · The school-age child"
+  },
   {
    "file": "procedures-05-picc-lines.html",
    "colour": "amethyst",
@@ -1093,11 +1117,6 @@
    "file": "admin-01-school-age.html",
    "colour": "ledger striped",
    "label": "Administrators' Avenue 1 · Who decided that?"
-  },
-  {
-   "file": "dental-01-school-age.html",
-   "colour": "peppermint striped",
-   "label": "The Dental Files 1 · Open wide"
   }
  ],
  "topten": [
