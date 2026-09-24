@@ -159,6 +159,19 @@
   .chip.newbtn{background:var(--rust);border-color:var(--rust);color:#FDF8F5;
     font-weight:600;letter-spacing:.06em}
   .chip.newbtn:hover{background:#8A3620;border-color:#8A3620}
+  .chip.topicbtn{background:#2F6F62;border-color:#2F6F62;color:#F3FAF8;
+    font-weight:600;letter-spacing:.06em}
+  .chip.topicbtn:hover{background:#24564C;border-color:#24564C}
+  .md.topic{background:#2F6F62}
+  /* Last chip in its row, so a left-anchored menu runs off the right edge
+     at laptop widths. Anchor it to the right instead, and let it fall back
+     to left-anchored once the row wraps and the chip sits near the left. */
+  details.topics .menu{min-width:330px;left:auto;right:0}
+  details.topics .mi{white-space:nowrap}
+  @media (max-width:520px){ details.topics .menu{left:0;right:auto;min-width:0;
+    width:calc(100vw - 48px)} details.topics .mi{white-space:normal} }
+  .tcount{margin-left:auto;padding-left:14px;font:600 11.5px 'Helvetica Neue',Arial,sans-serif;
+    color:var(--muted);letter-spacing:.04em}
   a.mi.newitem{text-decoration:none}
   .newtag{flex:none;font:600 9.5px 'Helvetica Neue',Arial,sans-serif;letter-spacing:.14em;
     text-transform:uppercase;color:#fff;background:var(--rust);
@@ -476,6 +489,20 @@
           <a class="mi newitem" href="admin-01-school-age.html"><span class="newtag">New</span><i class="md ledger striped"></i>Administrators&#x27; Avenue 1 · Who decided that?</a>
         </div>
 <!-- /BUILD:LATEST -->
+      </details>
+      <details class="drop topics" id="topics">
+        <summary class="chip topicbtn">Topics</summary>
+<!-- BUILD:TOPICS -->
+        <div class="menu">
+          <button class="mi" data-t="school-age"><i class="md topic"></i>The school-age child<span class="tcount">19</span></button>
+          <button class="mi" data-t="toddler-preschool"><i class="md topic"></i>The toddler and preschool child<span class="tcount">15</span></button>
+          <button class="mi" data-t="postneonatal-infant"><i class="md topic"></i>The postneonatal infant<span class="tcount">14</span></button>
+          <button class="mi" data-t="neonatology"><i class="md topic"></i>Neonatology<span class="tcount">10</span></button>
+          <button class="mi" data-t="transplantation"><i class="md topic"></i>Transplantation<span class="tcount">4</span></button>
+          <button class="mi" data-t="organ-donation"><i class="md topic"></i>Organ donation<span class="tcount">6</span></button>
+          <button class="mi" data-t="standing"><i class="md topic"></i>Any time<span class="tcount">9</span></button>
+        </div>
+<!-- /BUILD:TOPICS -->
       </details>
     </div>
     <p class="menulabel">The menu &mdash; browse by category</p>
@@ -1090,7 +1117,10 @@
 
   var drops = Array.prototype.slice.call(document.querySelectorAll("details.drop[data-g]"));
   var alldrops = Array.prototype.slice.call(document.querySelectorAll("details.drop"));
-  var items = Array.prototype.slice.call(document.querySelectorAll(".mi:not(.newitem)"));
+  var items = Array.prototype.slice.call(
+    // topic buttons carry data-t and have their own handler below; they are
+    // not category filters and must not be treated as one.
+    document.querySelectorAll(".mi:not(.newitem):not([data-t])"));
 
   function resetLabels(){
     drops.forEach(function(d){
@@ -1182,6 +1212,11 @@
   });
 
   Array.prototype.forEach.call(chips, function(c){
+    // Not every .chip is a filter. The dropdown summaries — Top Ten, Latest
+    // posts, Topics and each category group — are chips for styling only, and
+    // clicking one used to set the filter to undefined and throw inside
+    // apply(), leaving the list half filtered.
+    if(!c.dataset.f) return;
     c.addEventListener("click", function(){
       clearAll();
       c.classList.add("on");
@@ -1191,6 +1226,9 @@
   });
 
   items.forEach(function(m){
+    // The Procedures menu lists the pages themselves as links; those carry no
+    // data-f and must navigate rather than filter.
+    if(!m.dataset.f) return;
     m.addEventListener("click", function(){
       var d = m.closest("details.drop");
       var sum = d.querySelector("summary");
@@ -1207,6 +1245,27 @@
       apply();
     });
   });
+
+  // The topic index. A topic is a different axis from the category menu, so
+  // choosing one clears any active category filter rather than combining with
+  // it — otherwise a reader picks a topic and lands on an empty section.
+  Array.prototype.forEach.call(
+    document.querySelectorAll('.mi[data-t]'), function(m){
+      m.addEventListener("click", function(){
+        var tp = m.dataset.t;
+        alldrops.forEach(function(x){ x.open = false; });
+        clearAll();
+        filter = "all";
+        var everything = document.querySelector('.chip[data-f="all"]');
+        if(everything) everything.classList.add("on");
+        if(q) q.value = "";
+        apply();
+        var wk = document.getElementById("week");
+        if(wk && wk.dataset.slug === tp){ landUnder(wk); return; }
+        var sec = document.querySelector('details.group[data-slug="' + tp + '"]');
+        if(sec){ sec.open = true; landUnder(sec); }
+      });
+    });
 
   document.addEventListener("click", function(ev){
     alldrops.forEach(function(d){
