@@ -56,13 +56,13 @@ Site-wide pages: `index.html`, `about.html`, `glossary.html`,
 ## The landing page is generated
 
 **Do not hand-edit `index.html` between the build markers.** Regions marked
-`<!-- BUILD:NAME -->` are written by `build_index.py` from `page_topic.json`.
+`<!-- BUILD:NAME -->` are written by `build-index-2.py` from `page_topic.json`.
 Anything typed inside them is overwritten on the next build.
 
 ```
 page_topic.json        the manifest: every page, its series, colour, topic,
                        blurb, and whether it is in the current fortnight
-build_index.py         rebuilds the generated regions of index.html
+build-index-2.py         rebuilds the generated regions of index.html
 audit.py               checks the whole site before publishing
 ```
 
@@ -71,7 +71,7 @@ Typical cycle:
 1. Write the page.
 2. Add an entry to `page_topic.json`. Set `"week": true` for pieces in the
    current fortnight, or `"standing": true` for those that belong to no topic.
-3. `python3 build_index.py`
+3. `python3 build-index-2.py`
 4. `python3 audit.py` — fix anything it reports.
 5. Commit.
 
