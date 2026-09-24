@@ -21,10 +21,12 @@ Usage:
     python3 build_index.py --insert-markers
 """
 
+import collections
 import json
 import re
 import sys
 from html import escape
+from html.parser import HTMLParser
 from pathlib import Path
 
 HERE = Path(__file__).resolve().parent
@@ -56,6 +58,126 @@ def series_sort_key(m, page):
 
 
 # --------------------------------------------------------------------------
+# search terms
+# --------------------------------------------------------------------------
+#
+# The landing-page search only ever saw what was printed in the row: series,
+# number and title, plus the topic heading above it. So a reader looking for
+# dengue, or for Peter Pan, got nothing, because neither word appears in the
+# row that leads to the piece. Proper full-text search is a separate job; this
+# is the cheap eighty per cent. Each row carries a hidden bag of the words that
+# distinguish its page, harvested from the page itself at build time, so a new
+# piece becomes searchable the moment it is added with no manifest work at all.
+#
+# "Distinguish" is the whole trick. A word that turns up on a dozen pages —
+# child, clinical, published — tells a searcher nothing, so it is dropped. What
+# survives is what is peculiar to this page: its proper nouns, its headings,
+# the terms it returns to. An absolute cutoff rather than a proportion of the
+# corpus keeps the output steady: a word crosses the line once, on the build
+# after it becomes common, instead of every page's list reshuffling each time
+# the site grows.
+
+WORD = r"[A-Za-zÀ-ÿ][A-Za-zÀ-ÿ'’-]{2,}"
+COMMON_AT = 12   # a word on this many pages or more has stopped distinguishing
+TERMS_PER_PAGE = 30
+COMMON_KEPT_AT = 4    # ...unless the page returns to it this often, or heads a section with it
+COMMON_PER_PAGE = 8
+
+
+class _Prose(HTMLParser):
+    """Visible text, with the headings kept separately so they can be weighted."""
+
+    def __init__(self):
+        super().__init__()
+        self.skip = 0
+        self.body = []
+        self.heads = []
+        self._h = None
+
+    def handle_starttag(self, tag, attrs):
+        if tag in ("script", "style"):
+            self.skip += 1
+        elif tag in ("h1", "h2", "h3"):
+            self._h = []
+
+    def handle_endtag(self, tag):
+        if tag in ("script", "style") and self.skip:
+            self.skip -= 1
+        elif tag in ("h1", "h2", "h3") and self._h is not None:
+            self.heads.append(" ".join(self._h))
+            self._h = None
+
+    def handle_data(self, data):
+        if self.skip:
+            return
+        self.body.append(data)
+        if self._h is not None:
+            self._h.append(data)
+
+
+def _read_prose(m):
+    """{file: (body, headings)} for every page the manifest lists that exists."""
+    out = {}
+    for pg in m["pages"]:
+        path = HERE / pg["file"]
+        if not path.exists():
+            continue
+        p = _Prose()
+        p.feed(path.read_text(encoding="utf-8"))
+        out[pg["file"]] = (" ".join(p.body), " ".join(p.heads))
+    return out
+
+
+def terms_attr(m, page):
+    """The data-k attribute for one page's row or card, empty if unharvested."""
+    t = m.get("_terms", {}).get(page["file"], "")
+    return f' data-k="{e(t)}"' if t else ""
+
+
+def build_terms(m):
+    """{file: "word word word"} — the search bag for each page."""
+    prose = _read_prose(m)
+    pages = collections.Counter()
+    for body, _ in prose.values():
+        for w in set(re.findall(WORD, body)):
+            pages[w.lower()] += 1
+
+    blurbs = {pg["file"]: pg.get("blurb", "") for pg in m["pages"]}
+    extra = {pg["file"]: pg.get("keywords", "") for pg in m["pages"]}
+
+    terms = {}
+    for f, (body, heads) in prose.items():
+        freq = collections.Counter(w.lower() for w in re.findall(WORD, body))
+        in_head = {w.lower() for w in re.findall(WORD, heads)}
+        # A capitalised word mid-sentence is a name, a place or a trade name,
+        # which is exactly what a reader is most likely to search for.
+        proper = {w.lower() for w in
+                  re.findall(r"(?<!^)(?<![.!?][ \n])\b[A-ZÀ-Þ][a-zà-ÿ]{2,}", body)}
+        scored, carried = {}, {}
+        for w, n in freq.items():
+            if pages[w] >= COMMON_AT:
+                # Common across the site, but a word can be common here and
+                # still be what this page is about — sepsis runs through a
+                # dozen pieces and is the subject of two. Keep it where the
+                # page carries it in a heading or keeps returning to it, in a
+                # bucket of its own so that it cannot crowd out a name or a
+                # term that occurs once and belongs to this page alone.
+                if w in in_head or n >= COMMON_KEPT_AT:
+                    carried[w] = n
+            elif n >= 2 or w in in_head or w in proper:
+                scored[w] = n + (6 if w in in_head else 0) + (3 if w in proper else 0)
+        keep = sorted(scored, key=lambda w: (-scored[w], w))[:TERMS_PER_PAGE]
+        keep += sorted(carried, key=lambda w: (-carried[w], w))[:COMMON_PER_PAGE]
+        # The blurb is already written for the reader and the keywords field is
+        # there for hand-correcting a miss; both go in whole, over the cap.
+        keep += re.findall(WORD, blurbs.get(f, "").lower())
+        keep += re.findall(WORD, extra.get(f, "").lower())
+        # Alphabetical, so a rebuild that changes nothing produces no diff.
+        terms[f] = " ".join(sorted(set(keep)))
+    return terms
+
+
+# --------------------------------------------------------------------------
 # region builders
 # --------------------------------------------------------------------------
 
@@ -80,7 +202,8 @@ def build_this_week(m):
         num = f'<b>{e(p["number"])}</b>' if p.get("number") else ""
         link = p.get("link_label") or "Open"
         out += [
-            f'        <li class="item {p["colour"]}" data-series="{series_attr}">',
+            f'        <li class="item {p["colour"]}" data-series="{series_attr}"'
+            f'{terms_attr(m, p)}>',
             f'          <div class="badge">{e(badge)}{num}</div>',
             '          <div class="body">',
             f'            <h3>{e(p["title"])}</h3>',
@@ -140,7 +263,8 @@ def build_previous(m):
             label = m["series"][p["series"]][0]
             series_attr = " ".join([p["series"]] + p.get("guests", []))
             out.append(
-                f'            <li class="row {p["colour"]}" data-series="{series_attr}">'
+                f'            <li class="row {p["colour"]}" data-series="{series_attr}"'
+                f'{terms_attr(m, p)}>'
                 f'<span class="rs">{e(label)}</span>'
                 f'<span class="rn">{e(p.get("number") or "")}</span>'
                 f'<a class="rt" href="{p["file"]}">{e(p["title"])}</a></li>'
@@ -173,7 +297,8 @@ def build_previous(m):
             label = m["series"][p["series"]][0]
             series_attr = " ".join([p["series"]] + p.get("guests", []))
             out.append(
-                f'            <li class="row {p["colour"]}" data-series="{series_attr}">'
+                f'            <li class="row {p["colour"]}" data-series="{series_attr}"'
+                f'{terms_attr(m, p)}>'
                 f'<span class="rs">{e(label)}</span>'
                 f'<span class="rn">{e(p.get("number") or "")}</span>'
                 f'<a class="rt" href="{p["file"]}">{e(p["title"])}</a></li>')
@@ -379,6 +504,8 @@ def main():
         return
 
     m = load()
+    # Harvested once and shared by the builders that emit rows and cards.
+    m["_terms"] = build_terms(m)
     missing = [n for n in REGIONS if f"<!-- BUILD:{n} -->" not in src]
     if missing:
         sys.exit(f"index.html has no markers for: {', '.join(missing)}\n"
