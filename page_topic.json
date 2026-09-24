@@ -169,6 +169,11 @@
    "Six Impossible Things?",
    "lilac",
    "other"
+  ],
+  "history": [
+   "Historical Snapshots",
+   "antique striped",
+   "other"
   ]
  },
  "pages": [
@@ -1090,6 +1095,20 @@
    "badge": "Medicolegal",
    "link_label": "Open",
    "blurb": "A new section. Working With Children Checks, who can consent for a ten-year-old, what the law actually asks when you are worried about an injury, the photograph you must not take, the record you must never alter, and the one fact that makes a child's death coronial. Two constructed cases."
+  },
+  {
+   "file": "history-01-serum-run.html",
+   "series": "history",
+   "colour": "antique striped",
+   "number": "1",
+   "title": "Twenty pounds of serum",
+   "topic": "The school-age child",
+   "slug": "school-age",
+   "week": true,
+   "pos": 8,
+   "badge": "Historical Snapshots",
+   "link_label": "Open",
+   "blurb": "A new section, for the history buffs. Nome, Alaska, 1925: a diphtheria outbreak, an expired supply of antitoxin, and twenty pounds of serum carried 674 miles by twenty mushers and about 150 dogs. The wrong dog got the statue, the aeroplanes would not start, and the children of Cleveland bought the team out of a sideshow. What diphtheria antitoxin can and cannot undo, in the background."
   }
  ],
  "latest": [

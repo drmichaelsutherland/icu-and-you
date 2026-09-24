@@ -35,6 +35,7 @@
   --peppermint:#5E9A8C; --pepperminttint:#EDF5F3; --peppermintink:#3F7C72;
   --ledger:#6F7F5C; --ledgertint:#F0F2EA; --ledgerink:#57663F;
   --lilac:#9B86C4; --lilactint:#F2EEF8; --lilacink:#6F5A96;
+  --antique:#836C4C; --antiquetint:#F6F1E8; --antiqueink:#63502F;
   --bramble:#6A4A55; --brambletint:#F4EEF0; --brambleink:#4E353E;
   --gavel:#5C4A3A; --gaveltint:#F1EDE7; --gavelink:#41342A;
   }
@@ -198,6 +199,7 @@
   .md.jade{background:var(--jade)}.md.fern{background:var(--fern)}.md.crimson{background:var(--crimson)}.md.terracotta{background:var(--terracotta)}.md.ocean{background:var(--ocean)}.md.sandstone{background:var(--sandstone)}.md.pine{background:var(--pine)}.md.copper{background:var(--copper)}.md.mulberry{background:var(--mulberry)}.md.lotus{background:var(--lotus)}.md.bone{background:var(--bone)} .md.amethyst{background:var(--amethyst)}
   .md.neva{background:var(--neva)} .md.peppermint{background:var(--peppermint)}
   .md.ledger{background:var(--ledger)} .md.lilac{background:var(--lilac)}
+  .md.antique{background:var(--antique)}
   .md.bramble{background:var(--bramble)} .md.gavel{background:var(--gavel)}
 
   /* ---- The second series cue: a stripe -------------------------------
@@ -241,6 +243,7 @@
   .item.peppermint{border-left-color:var(--peppermint)}
   .item.ledger{border-left-color:var(--ledger)}
   .item.lilac{border-left-color:var(--lilac)}
+  .item.antique{border-left-color:var(--antique)}
   .item.bramble{border-left-color:var(--bramble)}
   .item.gavel{border-left-color:var(--gavel)}
   .badge{flex:0 0 84px;text-align:center;
@@ -286,6 +289,7 @@
   .dot.denim{background:var(--denim)} .dot.jade{background:var(--jade)}.dot.fern{background:var(--fern)}.dot.crimson{background:var(--crimson)}.dot.terracotta{background:var(--terracotta)}.dot.ocean{background:var(--ocean)}.dot.sandstone{background:var(--sandstone)}.dot.pine{background:var(--pine)}.dot.copper{background:var(--copper)}.dot.mulberry{background:var(--mulberry)}.dot.lotus{background:var(--lotus)}.dot.bone{background:var(--bone)} .dot.amethyst{background:var(--amethyst)}
   .dot.neva{background:var(--neva)} .dot.peppermint{background:var(--peppermint)}
   .dot.ledger{background:var(--ledger)} .dot.lilac{background:var(--lilac)}
+  .dot.antique{background:var(--antique)}
   .dot.bramble{background:var(--bramble)} .dot.gavel{background:var(--gavel)}
   .tcount{font:400 13.5px 'Helvetica Neue',Arial,sans-serif;color:var(--muted);
     margin-right:22px;white-space:nowrap}
@@ -305,6 +309,7 @@
   li.row.peppermint{border-left-color:var(--peppermint)}
   li.row.ledger{border-left-color:var(--ledger)}
   li.row.lilac{border-left-color:var(--lilac)}
+  li.row.antique{border-left-color:var(--antique)}
   li.row.bramble{border-left-color:var(--bramble)}
   li.row.gavel{border-left-color:var(--gavel)}
   li.row:hover{background:#F7F4ED}
@@ -494,7 +499,7 @@
         <summary class="chip topicbtn">Topics</summary>
 <!-- BUILD:TOPICS -->
         <div class="menu">
-          <button class="mi" data-t="school-age"><i class="md topic"></i>The school-age child<span class="tcount">19</span></button>
+          <button class="mi" data-t="school-age"><i class="md topic"></i>The school-age child<span class="tcount">20</span></button>
           <button class="mi" data-t="toddler-preschool"><i class="md topic"></i>The toddler and preschool child<span class="tcount">15</span></button>
           <button class="mi" data-t="postneonatal-infant"><i class="md topic"></i>The postneonatal infant<span class="tcount">14</span></button>
           <button class="mi" data-t="neonatology"><i class="md topic"></i>Neonatology<span class="tcount">10</span></button>
@@ -595,6 +600,7 @@
           <button class="mi" data-f="literary"><i class="md nero"></i>The Literary Edge</button>
           <button class="mi" data-f="screening"><i class="md copper"></i>The Screening Room</button>
           <button class="mi" data-f="impossible"><i class="md lilac"></i>Six Impossible Things?</button>
+          <button class="mi" data-f="history"><i class="md antique striped"></i>Historical Snapshots</button>
         </div>
       </details>
       <details class="drop" data-g="public">
@@ -689,7 +695,7 @@
             <div class="links"><a class="go" href="med-students-04-school-age.html">Open</a></div>
           </div>
         </li>
-        <li class="item gavel striped" data-series="medicolegal" data-k="about actually ahpra alter and apply are asks assume can cases checks child child&#x27;s children children&#x27;s complaint complaints consent consents constructed consultant coroner coronial court death dies directive fact for guardian helpline illustrations images injury law legal makes mandatory material medicolegal must never new not offence one personal photograph photography protection record report section services statutory take ten-year-old that the two what when who with working worried you">
+        <li class="item gavel striped" data-series="medicolegal" data-k="about actually ahpra alter and are asks assume can cases checks child child&#x27;s children children&#x27;s complaint complaints consent consents constructed consultant coroner coronial court death dies directive fact for guardian helpline illustrations images injury law legal makes mandatory material medicolegal must never new not offence one personal photograph photography practitioner protection record report section services statutory take ten-year-old that the two what when who with working worried you">
           <div class="badge">Medicolegal<b>1</b></div>
           <div class="body">
             <h3>The school-age child</h3>
@@ -711,6 +717,14 @@
             <h3>Le médecin régulateur</h3>
             <p>In France a doctor answers the emergency call and a doctor gets in the ambulance. What a medicalised prehospital system does differently for an injured nine-year-old, what it costs, and a faux ami that matters at this age.</p>
             <div class="links"><a class="go" href="coin-francais-03-medecin-regulateur.html">Open</a></div>
+          </div>
+        </li>
+        <li class="item antique striped" data-series="history" data-k="about aeroplanes alaska and antitoxin background balto bought buffs can cannot carried children cleveland diphtheria dog dogs expired february films for got had him historical history iditarod january miles museum mushers native new nome not out outbreak papers plinth postscripts pounds relay section seppala serum sideshow sled snapshots start statue supply team that the togo twenty undo was what which would wrong">
+          <div class="badge">Historical Snapshots<b>1</b></div>
+          <div class="body">
+            <h3>Twenty pounds of serum</h3>
+            <p>A new section, for the history buffs. Nome, Alaska, 1925: a diphtheria outbreak, an expired supply of antitoxin, and twenty pounds of serum carried 674 miles by twenty mushers and about 150 dogs. The wrong dog got the statue, the aeroplanes would not start, and the children of Cleveland bought the team out of a sideshow. What diphtheria antitoxin can and cannot undo, in the background.</p>
+            <div class="links"><a class="go" href="history-01-serum-run.html">Open</a></div>
           </div>
         </li>
         <li class="item ledger striped" data-series="admin" data-k="about activity actually administration and are avenue can can&#x27;t cannot changed clinicians comes commission communication credentialing decided delineation deterioration disclosure event explains filed for form framework from get happened has honestly hospital how incident inquiry levels money new not price public role sac scope score series services skill something standards that the thing trainees what where why you your">
@@ -797,7 +811,7 @@
             <li class="row sandstone" data-series="australia" data-k="aboriginal alert and assessment assuming bedside belongs birth built catches child children choices column disease does during ear ears engagement every excellence figures hearing hurt ignoring institute islander language liaison media menzies middle new northern not organization otitis remote research response scale scored starts strait takes territory that the they torres undoes usually weeks welfare which within workers years you"><span class="rs">The Australia Page</span><span class="rn">1</span><a class="rt" href="australia-01-ear-disease.html">The child who is not ignoring you</a></li>
             <li class="row lotus" data-series="srilanka" data-k="and bali begins blood bottle breaks capillaries catches child colombo column critical dengue diastolic different differently directions english fever for haematocrit has improving instinct instrument kerosene lanka lankan leak managing matters meet ministry new not number organization phase physiology pressure pulse rather ration read reshock returning same settles sinhala sri systolic than that the wan with you yub"><span class="rs">Āyubōwan Sri Lanka</span><span class="rn">1</span><a class="rt" href="srilanka-01-dengue.html">The child who gets worse as the fever settles</a></li>
             <li class="row copper" data-series="screening" data-k="about alan alfred american and award blalock column credited def eileen emmys fallot fifteen-month-old film films first for fortnight&#x27;s gets had helen him hopkins johns joseph knowing lord magazine man mary masterson mos new not operation rickman sargent saxon screening shunt something stuart taussig tetralogy that the thomas vivien was what who with"><span class="rs">The Screening Room</span><span class="rn">1</span><a class="rt" href="screening-room-01-something-the-lord-made.html">Something the Lord Made</a></li>
-            <li class="row ocean" data-series="public" data-k="actually alarms all and any anybody&#x27;s anyone bad breathe bring can clingy clinicians constantly contains drips eat ends feels for got invitation machine mean monday new night not nurse occasionally open parents passes progress public question questions rather really room screen send series sometimes sound staff surprise talk than that the they thin thursday understand what written you"><span class="rs">For the general public</span><span class="rn">1</span><a class="rt" href="public-01-small-child-in-intensive-care.html">A small child in intensive care</a></li>
+            <li class="row ocean" data-series="public" data-k="actually alarms all and any anybody&#x27;s anyone breathe bring can clingy clinicians constantly contains drips eat ends feels for got invitation machine mean monday new night not nurse occasionally open parents passes progress public question questions rather really room screen send series sometimes sound staff surprise talk talking than that the they thin thursday understand what written you"><span class="rs">For the general public</span><span class="rn">1</span><a class="rt" href="public-01-small-child-in-intensive-care.html">A small child in intensive care</a></li>
             <li class="row mulberry" data-series="drugstore" data-k="adrenaline adverse alpha alpha- anaphylaxis and are arrest autoinjector autoinjectors beta beta- between buys concentration confused croup dose draw drugstore effect effects first five four get half-life intramuscular kinetics lateral matter microgram muscle new non-selective not one part pharmacology profiles receptor section situation strengths tachyarrhythmia that the thigh things two used wants watched you"><span class="rs">Drugstore</span><span class="rn">1</span><a class="rt" href="drugstore-01-adrenaline.html">Adrenaline in the small child</a></li>
         </ul>
       </details>
@@ -808,7 +822,7 @@
           <span class="tcount">14 pieces</span>
         </summary>
         <ul class="rows">
-            <li class="row teal" data-series="mind-map" data-k="anaphylaxis and are bilious bradycardia breastfeeding compliant consider dehydration delayed discomfort empirical face foreign gas hypotension incarcerated intraosseous intussusception kawasaki meanwhile metabolic not pertussis photograph pneumonia previous redcurrant resuscitate retinal stabilise sudden that the they vasoconstriction what you"><span class="rs">Mind map</span><span class="rn">32</span><a class="rt" href="mind-map-32-postneonatal-infant.html">The postneonatal infant — 29 days to one year</a></li>
+            <li class="row teal" data-series="mind-map" data-k="anaphylaxis and are bilious bradycardia breastfeeding compliant consider dehydration delayed discomfort empirical foreign gas hypotension incarcerated intraosseous intussusception kawasaki meanwhile metabolic not pertussis photograph pneumonia previous redcurrant resuscitate retinal stabilise sudden that the they urinary vasoconstriction what you"><span class="rs">Mind map</span><span class="rn">32</span><a class="rt" href="mind-map-32-postneonatal-infant.html">The postneonatal infant — 29 days to one year</a></li>
             <li class="row plum" data-series="aphorism" data-k="and aphorism baseline describing deterioration for herself maybe meanwhile monitor not observations parent parental preamble reflection the what you"><span class="rs">Aphorism</span><span class="rn">36</span><a class="rt" href="aphorism-36-parent-is-the-monitor.html">In an infant, the parent is the monitor</a></li>
             <li class="row olive" data-series="mnemonic" data-k="all and drying effort engagement eyes feeding for get icu mnemonic nappies spotting the tick you"><span class="rs">Mnemonic</span><span class="rn">54</span><a class="rt" href="mnemonic-54-feeding.html">FEEDING</a></li>
             <li class="row rust" data-series="superpuzzle" data-k="and april are banned bowel british bronchiolitis canada clostridium clue clues estimated for grid haemorrhages infant membrane not rash red seat sending sleep superpuzzle sweet that the type verdict victorian virus wheeled you"><span class="rs">Superpuzzle</span><span class="rn">49</span><a class="rt" href="superpuzzle-49-postneonatal-fillable.html">The postneonatal infant</a></li>
@@ -816,7 +830,7 @@
             <li class="row slate" data-series="podcast" data-k="academy algorithm algorithms american and apple are bands champion evaluation for guideline horeczko host identical inflammatory listen markers not pantell pediatric pediatrics playbook podcast podcasts procalcitonin session sessions subcommittee summary talking the tim well-appearing what you"><span class="rs">Podcast</span><span class="rn">56</span><a class="rt" href="podcast-56-febrile-infant.html">The Febrile Infant</a></li>
             <li class="row sepia" data-series="journal" data-k="and arguing bhubaneswar boundary brain by-nc-nd cared distinct editor for growth india infant institute journal kalinga letter mature mishra mohakud month newborns not odisha pages pediatric picu proposal sceptically sciences summarised sydney that the this transitional type unit"><span class="rs">Journal club</span><span class="rn">97</span><a class="rt" href="journal-club-97-infant-intensive-care.html">A unit for the first year of life</a></li>
             <li class="row violet" data-series="students" data-k="and appearance are beginnings big bronchiolitis compliant concern development escalating examined fast final fluids growth grunting horizontal immunity increasing infancy infant integrated intussusception maternal not one safeguarding science social students&#x27; sudden surface taking the tier wales you your"><span class="rs">Medical Students</span><span class="rn">1</span><a class="rt" href="med-students-01-postneonatal-infant.html">The postneonatal infant, in three tiers</a></li>
-            <li class="row rose" data-series="nurses" data-k="ago and cluster cool face feed fewer for has him interested lead making minimal mottling nappy nest not noticed nurses&#x27; observations pathway quote recession settled the they tone what you"><span class="rs">Nurses&#x27; Nest</span><span class="rn">1</span><a class="rt" href="nurses-nest-01-postneonatal-infant.html">You will notice first</a></li>
+            <li class="row rose" data-series="nurses" data-k="ago and cluster cool feed fewer for has him interested lead making minimal mottling nappy nest not noticed nurses&#x27; observations pathway quote recession settled the they tone what you"><span class="rs">Nurses&#x27; Nest</span><span class="rn">1</span><a class="rt" href="nurses-nest-01-postneonatal-infant.html">You will notice first</a></li>
             <li class="row denim" data-series="gp" data-k="and bilious boulevard bronchiolitis for forty household intermittent interval intussusception judgement lethargy malrotation meningococcaemia not one peaks presentation regardless rural safety-netting that the they wales well-looking worry you"><span class="rs">GP Boulevard</span><span class="rn">1</span><a class="rt" href="gp-boulevard-01-postneonatal-infant.html">Fifteen minutes and a well-looking baby</a></li>
             <li class="row jade" data-series="emergency" data-k="admit and appearance automatically bay bilious bronchiolitis comfortable cry department discharge disposition door escalating fill for green grunting infant landing mottling not one pallor pathways return safety-netting senior stay surgical that the tone transfer triage uncertainty wales you"><span class="rs">Emergency Medicine Landing Bay</span><span class="rn">1</span><a class="rt" href="emergency-bay-01-postneonatal-infant.html">Everything after triage is a disposition</a></li>
             <li class="row verde" data-series="italiano" data-k="alps and bethlehem christmas closes crèche detour english europe falso firmin for french from giuseppe greek historical italian italy laura loop manger mantegazza milan nativity nest nido nursery one opened pio sacchi solera that the voi what you"><span class="rs">L&#x27;angolo italiano</span><span class="rn">2</span><a class="rt" href="angolo-italiano-02-il-nido.html">Il nido</a></li>
@@ -882,11 +896,11 @@
             <li class="row terracotta" data-series="bookclub" data-k="agamemnon american and atlantic atlas basel bizerta book buy color despopoulos edition editions english for german greece greek guyton homer independence mexico not november physiologie preface sarah silbernagl stefan stuttgart suits taschenatlas text that the was york you"><span class="rs">ICU Book Club</span><span class="rn">2</span><a class="rt" href="book-club-02-color-atlas-physiology.html">Color Atlas of Physiology</a></li>
             <li class="row amethyst" data-series="procedures" data-k="access and arm bloods bone choose complications confirm crystalloid differ distal doses essentially extravasation femur flush for fracture handover humerus identify insertion intraosseous markedly marrow medial needle ninety not one osteomyelitis proximal remove secure the tibia with you"><span class="rs">Procedures</span><span class="rn">1</span><a class="rt" href="procedures-01-intraosseous-access.html">Intraosseous access</a></li>
             <li class="row amethyst" data-series="procedures" data-k="alcohol anchor and antecubital arm arms big cannula choose clean dorsal dorsum enter external extravasation feet firm flush for forearm fossa jugular needle not peripheral phlebitis release seeing that the touch tourniquet vein veins volar with you your"><span class="rs">Procedures</span><span class="rn">2</span><a class="rt" href="procedures-02-peripheral-iv-access.html">Peripheral intravenous access</a></li>
-            <li class="row amethyst" data-series="procedures" data-k="and are attempts balloon bladder bleeding catheter catheterisation changing complications consent coudé endocarditis false female for force indications inflate insertion male meatus not pass passage patient previous procedure prostate routine suspected that the tip urethra urethral urinary you"><span class="rs">Procedures</span><span class="rn">3</span><a class="rt" href="procedures-03-urinary-catheterisation.html">Urinary catheterisation</a></li>
+            <li class="row amethyst" data-series="procedures" data-k="and are attempts balloon bladder bleeding catheter catheterisation changing complications consent coudé endocarditis false female for force indications inflate insertion male meatus not pass passage patient previous procedure prostate reasons suspected that the tip urethra urethral urinary you"><span class="rs">Procedures</span><span class="rn">3</span><a class="rt" href="procedures-03-urinary-catheterisation.html">Urinary catheterisation</a></li>
             <li class="row amethyst" data-series="procedures" data-k="anaemia and aortic arterial artery attempt axis cannula cuff damped femoral flashback for levelling line lines needle not one profound pull pulsatile pulse radial sampling slow stays that the tip trace transducer transfixion troubleshooting waveform wrist you zeroing"><span class="rs">Procedures</span><span class="rn">4</span><a class="rt" href="procedures-04-arterial-lines.html">Arterial lines</a></li>
             <li class="row amethyst" data-series="procedures" data-k="alteplase and appropriate are arm arrhythmia axilla basilic brachial briefly bundle catheter cavoatrial cephalic dressing flush for infusate insertion ipsilateral lines midline not nutrition peripheral picc piccs rabbit taking that the thrombosis tip trouble ultrasound vein with you"><span class="rs">Procedures</span><span class="rn">5</span><a class="rt" href="procedures-05-picc-lines.html">PICC lines</a></li>
             <li class="row pine" data-series="cicm-first" data-k="accredited and applied approach are axes breadth candidate candidates cicm colleagues college component eligibility exam examining fail focus for format graphs handwriting mark multiple not organised pass practise protect questions rewarding sane sat structure that the they you"><span class="rs">CICM First Part</span><span class="rn">1</span><a class="rt" href="exam-cicm-first-01-the-shape-of-the-thing.html">The shape of the thing</a></li>
-            <li class="row pine" data-series="cicm-first" data-k="anatomy and applied apply are candidates cardiovascular cicm class college contexts depth eleven entries exam flagged for kinetics levels measurement multiplies not objectives online outline pharmacology pick recommended renal subsections syllabus texts that the understand verbs what you"><span class="rs">CICM First Part</span><span class="rn">2</span><a class="rt" href="exam-cicm-first-02-the-syllabus.html">The syllabus, in one sitting</a></li>
+            <li class="row pine" data-series="cicm-first" data-k="acid anatomy and applied are candidates cardiovascular cicm class college contexts depth eleven entries exam flagged for kinetics levels measurement multiplies not objectives online outline pharmacology pick recommended renal subsections syllabus texts that the understand verbs what you"><span class="rs">CICM First Part</span><span class="rn">2</span><a class="rt" href="exam-cicm-first-02-the-syllabus.html">The syllabus, in one sitting</a></li>
         </ul>
       </details>
 <!-- /BUILD:PREVIOUS-WEEKS -->
