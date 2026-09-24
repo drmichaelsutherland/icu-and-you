@@ -210,6 +210,34 @@ def main():
             f"page_topic.json: pages from more than one topic are flagged "
             f"week=true: {sorted(week_slugs)}")
 
+    # ---- this week's pages must appear in Latest posts --------------------
+    # Everything else about a new piece follows from the manifest: the card,
+    # the topic group, the series menu, the topic index, the counts. Latest
+    # posts does not — it is a hand-set list, so a page can go up complete in
+    # every other respect and still be missing from the one control a returning
+    # reader actually looks at. That happened in September 2026 and the reader
+    # found it before the audit did.
+    # New pages are appended, so the tail of "pages" is the order they went up,
+    # and the newest few should be exactly what "latest" holds. Comparing the
+    # tail rather than the whole fortnight keeps this quiet: a block runs to
+    # twenty pieces and the control holds five, so "every page of this week"
+    # would cry wolf fifteen times. If a page is ever inserted into the middle
+    # of "pages" rather than appended, this check will misread which are newest.
+    listed = {x["file"] for x in m.get("latest", [])}
+    n_slots = len(m.get("latest", []))
+    newest = m["pages"][-n_slots:] if n_slots else []
+    for p in newest:
+        if p["file"] in listed:
+            continue
+        label = m["series"][p["series"]][0]
+        num = f' {p["number"]}' if p.get("number") else ""
+        problems.append(
+            f'page_topic.json: {p["file"]} is one of the {n_slots} most recently '
+            f'added pages but is not in "latest" — it will not appear under '
+            f'Latest posts. Add, at the top:  '
+            f'{{"file": "{p["file"]}", "colour": "{p["colour"]}", '
+            f'"label": "{label}{num} · {p["title"]}"}}')
+
     # ---- report -----------------------------------------------------------
     print()
     if notes and not quiet:
