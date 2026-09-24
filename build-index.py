@@ -13,12 +13,12 @@ strip, the about section, the JavaScript — is left untouched.
 
 The regions are delimited in index.html by marker comments:
     <!-- BUILD:THIS-WEEK -->  ...  <!-- /BUILD:THIS-WEEK -->
-Run  python3 build-index-2.py --insert-markers  once to add them.
+Run  python3 build-index.py --insert-markers  once to add them.
 
 Usage:
-    python3 build-index-2.py                 rewrite index.html in place
-    python3 build-index-2.py --check         report what would change, write nothing
-    python3 build-index-2.py --insert-markers
+    python3 build-index.py                 rewrite index.html in place
+    python3 build-index.py --check         report what would change, write nothing
+    python3 build-index.py --insert-markers
 """
 
 import collections
@@ -500,7 +500,7 @@ def main():
         print("Inserting build markers into index.html")
         out = insert_markers(src)
         INDEX.write_text(out, encoding="utf-8")
-        print("Done. Commit this, then build-index-2.py can run normally.")
+        print("Done. Commit this, then build-index.py can run normally.")
         return
 
     m = load()
@@ -509,7 +509,7 @@ def main():
     missing = [n for n in REGIONS if f"<!-- BUILD:{n} -->" not in src]
     if missing:
         sys.exit(f"index.html has no markers for: {', '.join(missing)}\n"
-                 f"Run:  python3 build-index-2.py --insert-markers")
+                 f"Run:  python3 build-index.py --insert-markers")
 
     changed = []
     for name, fn in REGIONS.items():
