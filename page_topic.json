@@ -1113,11 +1113,6 @@
  ],
  "latest": [
   {
-   "file": "history-01-serum-run.html",
-   "colour": "antique striped",
-   "label": "Historical Snapshots 1 · Twenty pounds of serum"
-  },
-  {
    "file": "medicolegal-01-school-age.html",
    "colour": "gavel striped",
    "label": "Medicolegal 1 · The school-age child"
@@ -1136,6 +1131,11 @@
    "file": "impossible-01-school-age.html",
    "colour": "lilac",
    "label": "Six Impossible Things? 1 · Five before breakfast"
+  },
+  {
+   "file": "admin-01-school-age.html",
+   "colour": "ledger striped",
+   "label": "Administrators' Avenue 1 · Who decided that?"
   }
  ],
  "topten": [
