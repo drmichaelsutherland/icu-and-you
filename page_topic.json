@@ -1149,17 +1149,17 @@
   "label": "Coming next",
   "lines": [
    {
-    "date": "Tuesday 22nd September",
-    "what": "More on the school-age child"
-   },
-   {
-    "date": "Friday 25th September",
-    "what": "Newsletter (subscribers only)"
-   },
-   {
     "date": "Tuesday 29th September",
     "what": "The adolescent",
     "emphasis": true
+   },
+   {
+    "date": "Friday 2nd October",
+    "what": "Newsletter (subscribers only)"
+   },
+   {
+    "date": "Tuesday 6th October",
+    "what": "The adolescent, part two"
    }
   ]
  },
