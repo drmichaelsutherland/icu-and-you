@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="en-AU">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ICU AND YOU · Journal Club 100 — The sixteenth birthday</title>
+<meta name="description" content="Journal Club 100: Wood and colleagues on 37,320 adolescent intensive care admissions in the UK — where adolescents are admitted, what brings them in, and the question the study could not answer.">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="alternate icon" href="/favicon.ico" sizes="any">
+<link rel="apple-touch-icon" href="/icon-180.png">
+<meta name="theme-color" content="#1B2A33">
+<meta property="og:site_name" content="ICU AND YOU">
+<meta property="og:type" content="website">
+<meta property="og:title" content="ICU AND YOU · Journal Club 100 — The sixteenth birthday">
+<meta property="og:description" content="A fifteen-year-old goes to the children&#39;s unit. A sixteen-year-old goes to the adult one. Almost nothing else changes.">
+<meta property="og:image" content="https://icuandyou.com/share-card.png">
+<meta name="twitter:card" content="summary_large_image">
+<style>
+  :root{
+    --paper:#FAF8F3; --ink:#241F19; --muted:#6E6558; --rule:#DED5C6;
+    --sepia:#6B4A2F; --sepiatint:#F2EBE1;
+    --rust:#A8442A; --rusttint:#F9EDE7;
+    --sky:#2E6E8E; --skytint:#E7F1F6;
+  }
+  *{box-sizing:border-box}
+  body{margin:0;background:#EDE8DE;color:var(--ink);
+    font:400 17px/1.65 'Iowan Old Style','Palatino Linotype',Palatino,Georgia,serif;
+    -webkit-text-size-adjust:100%;}
+  .sheet{max-width:780px;margin:0 auto;background:var(--paper);
+    box-shadow:0 1px 40px rgba(36,31,25,.10);}
+
+  header.top{padding:42px 40px 28px;border-bottom:1px solid var(--rule)}
+  .toptopic{display:inline-block;margin:0 0 16px 9px;padding:7px 16px;border-radius:20px;
+    border:1px solid currentColor;opacity:.62;text-decoration:none;color:inherit;
+    font:600 11.5px 'Helvetica Neue',Arial,sans-serif;letter-spacing:.09em;
+    text-transform:uppercase;transition:opacity .12s ease}
+  .toptopic:hover{opacity:1}
+  .topseries{display:inline-block;margin:0 0 16px 9px;padding:7px 16px;border-radius:20px;
+    border:1px solid currentColor;opacity:.62;text-decoration:none;color:inherit;
+    font:600 11.5px 'Helvetica Neue',Arial,sans-serif;letter-spacing:.09em;
+    text-transform:uppercase;transition:opacity .12s ease}
+  .topseries:hover{opacity:1}
+  .tophome{display:inline-block;margin:0 0 16px;padding:7px 16px;border-radius:20px;
+    border:1px solid currentColor;opacity:.62;text-decoration:none;color:inherit;
+    font:600 11.5px 'Helvetica Neue',Arial,sans-serif;letter-spacing:.09em;
+    text-transform:uppercase;transition:opacity .12s ease}
+  .tophome:hover{opacity:1}
+  .eyebrow{font:500 11.5px/1 'Helvetica Neue',Arial,sans-serif;letter-spacing:.24em;
+    text-transform:uppercase;color:var(--sepia);margin:0 0 14px}
+  .eyebrow a.serlink{color:inherit;text-decoration:none;border-bottom:1px solid transparent}
+  .eyebrow a.serlink:hover{border-bottom-color:currentColor}
+  .eyebrow a.mast{color:inherit;text-decoration:none;border-bottom:1px solid transparent}
+  .eyebrow a.mast:hover{border-bottom-color:currentColor}
+  h1{font-size:31px;line-height:1.2;margin:0 0 10px;font-weight:400;letter-spacing:-.012em}
+  .kicker{color:var(--muted);margin:0;font-size:16.5px;font-style:italic}
+
+  .source{margin:0;padding:26px 40px;background:var(--sepiatint);border-bottom:1px solid var(--rule)}
+  .cite{margin:0 0 16px;font-size:16px;line-height:1.6}
+  .cite b{font-weight:600}
+  .meta{display:flex;flex-wrap:wrap;gap:5px 22px;margin:0 0 16px;
+    font:400 13.5px 'Helvetica Neue',Arial,sans-serif;color:var(--muted)}
+  .meta b{color:var(--ink);font-weight:600}
+  a.read{display:inline-block;padding:14px 28px;border-radius:30px;text-decoration:none;
+    background:var(--sepia);color:#FAF6F0;
+    font:600 15px 'Helvetica Neue',Arial,sans-serif;letter-spacing:.03em}
+  a.read:hover{background:#523821}
+  .srcnote{font:400 13.5px 'Helvetica Neue',Arial,sans-serif;color:var(--muted);margin:14px 0 0}
+
+  .pad{padding:32px 40px}
+  p{margin:0 0 17px}
+  h2.sub{font:600 12px 'Helvetica Neue',Arial,sans-serif;letter-spacing:.2em;
+    text-transform:uppercase;color:var(--muted);margin:0 0 16px;
+    padding-bottom:8px;border-bottom:1px solid var(--rule)}
+  b.term{font-weight:600;color:var(--sepia)}
+
+  .three{display:flex;gap:13px;flex-wrap:wrap;margin:0 0 20px}
+  .col{flex:1 1 200px;background:#fff;border:1px solid var(--rule);border-radius:9px;padding:16px 18px}
+  .col.mid{border-top:4px solid var(--sky);background:var(--skytint)}
+  .col .age{font:600 12px 'Helvetica Neue',Arial,sans-serif;letter-spacing:.1em;
+    text-transform:uppercase;color:var(--muted);margin:0 0 7px}
+  .col.mid .age{color:var(--sky)}
+  .col p{margin:0;font-size:15px;line-height:1.5;color:#3A342A}
+
+  .caution{margin:0;padding:20px 24px;background:var(--rusttint);
+    border-left:4px solid var(--rust);border-radius:0 8px 8px 0}
+  .caution .lab{display:block;font:600 11px 'Helvetica Neue',Arial,sans-serif;
+    letter-spacing:.18em;text-transform:uppercase;color:var(--rust);margin:0 0 9px}
+  .caution p:last-child{margin:0}
+
+  .challenge{margin:0;padding:28px 32px;background:var(--rusttint);border-left:5px solid var(--rust)}
+  .challenge h2{font:600 12px 'Helvetica Neue',Arial,sans-serif;letter-spacing:.2em;
+    text-transform:uppercase;color:var(--rust);margin:0 0 13px}
+  .ask{font-size:19.5px;line-height:1.5;margin:0 0 8px}
+  .lead{font-size:15px;color:var(--muted);margin:0 0 17px;line-height:1.55}
+  .chips{display:flex;flex-wrap:wrap;gap:10px;margin:0 0 16px}
+  a.chip{text-decoration:none;padding:12px 18px;border-radius:9px;
+    background:#fff;border:1px solid #E0C4B8;color:#7C3520;
+    font:400 15px 'Iowan Old Style',Palatino,Georgia,serif;transition:transform .08s ease}
+  a.chip:hover{transform:translateY(-1px);background:#FDF4EF}
+  .fallback{font:400 13.5px 'Helvetica Neue',Arial,sans-serif;color:var(--muted);margin:0}
+  .fallback a{color:var(--rust)}
+  .subline{margin:0 0 14px;padding:0 0 13px;border-bottom:1px solid rgba(0,0,0,.09);
+    font:400 14.5px/1.55 'Iowan Old Style','Palatino Linotype',Palatino,Georgia,serif;
+    max-width:56ch;margin-left:auto;margin-right:auto}
+  .subline a{font-weight:500;border-bottom:1px solid currentColor;
+    text-decoration:none;color:inherit}
+  .firstpub{display:block;margin:0 0 10px;padding-bottom:9px;
+    border-bottom:1px solid currentColor;border-color:rgba(0,0,0,.09);
+    font:400 12px 'Helvetica Neue',Arial,sans-serif;letter-spacing:.06em;opacity:.72}
+
+  footer{padding:24px 40px 42px;border-top:1px solid var(--rule);
+    font:400 13px 'Helvetica Neue',Arial,sans-serif;color:var(--muted);text-align:center;line-height:1.7}
+  .home{display:inline-block;margin:0 0 14px;padding:8px 18px;border-radius:20px;
+    border:1px solid var(--rule);background:#F2EEE6;color:var(--sepia);text-decoration:none;
+    font:600 12.5px 'Helvetica Neue',Arial,sans-serif;letter-spacing:.05em}
+  .home:hover{background:var(--sepia);border-color:var(--sepia);color:#FAF6F0}
+
+  @media (max-width:620px){
+    header.top,.source,.pad,footer{padding-left:20px;padding-right:20px}
+    .challenge{padding:22px 20px}
+    h1{font-size:25px} body{font-size:16.5px} .ask{font-size:18px}
+  }
+  @media print{ body{background:#fff} .sheet{box-shadow:none;max-width:none} }
+
+  .agree{display:flex;gap:13px;flex-wrap:wrap;margin:0 0 22px}
+  .ag{flex:1 1 150px;background:#fff;border:1px solid var(--rule);border-radius:9px;
+    padding:16px 18px;text-align:center}
+  .ag .big{font-size:30px;line-height:1.1;color:var(--sepia);margin:0 0 4px}
+  .ag .lab2{font:400 13.5px 'Helvetica Neue',Arial,sans-serif;color:var(--muted);
+    line-height:1.45;margin:0}
+  .gap{margin:0 0 20px;padding:20px 24px;background:#F3EEE3;
+    border-left:4px solid var(--sepia);border-radius:0 8px 8px 0}
+  .gap .lab{color:var(--sepia)}
+  .gap p:last-child{margin:0}
+  .mine{display:inline-block;margin:9px 0 0;opacity:.78;font-size:.94em}
+  .howto{margin:0 0 26px;padding:22px 26px;background:#F2EDE3;border-left:4px solid #6B4A2F;
+    border-radius:0 8px 8px 0}
+  .howto .lab{display:block;font:600 11px 'Helvetica Neue',Arial,sans-serif;letter-spacing:.18em;
+    text-transform:uppercase;color:#54381F;margin:0 0 10px}
+  .howto p{margin:0 0 10px;font-size:15.5px;line-height:1.6}
+  .howto p:last-child{margin:0}
+
+  /* Point lists. The template used .pts markup without ever defining it, so the
+     bold lead-in ran straight into its own explanation as one unbroken line. */
+  .pts{list-style:none;margin:0 0 20px;padding:0}
+  .pts li{display:flex;flex-direction:column;gap:3px;padding:12px 0;
+    border-bottom:1px solid var(--rule);font-size:16.5px;line-height:1.55}
+  .pts li:last-child{border-bottom:0}
+  .pts b{font:600 14.5px 'Helvetica Neue',Arial,sans-serif;color:var(--sepia);line-height:1.4}
+</style>
+</head>
+<body>
+<div class="sheet">
+
+  <header class="top">
+    <a class="tophome" href="./">&larr;&nbsp; Home</a>
+    <a class="topseries" href="./?s=journal">All journal club</a>
+    <a class="toptopic" href="./?t=adolescent" title="Everything on The adolescent">All on this topic</a>
+    <p class="eyebrow"><a class="mast" href="./">ICU and You</a> &nbsp;·&nbsp; <a class="serlink" href="./?s=journal">Journal Club</a> &nbsp;·&nbsp; Number 100</p>
+    <h1>The sixteenth birthday</h1>
+    <p class="kicker">37,320 adolescent intensive care admissions, and the day the unit changes</p>
+  </header>
+
+  <div class="source">
+    <p class="cite">Wood D, Goodwin S, Pappachan J, Davis P, Parslow R, Harrison D, Ramnarayan P.
+      <b>Characteristics of adolescents requiring intensive care in the United Kingdom: a retrospective
+      cohort study.</b> <em>Journal of the Intensive Care Society</em> 2018;19(3):209&ndash;213.</p>
+    <div class="meta">
+      <span><b>Type</b> &nbsp;Retrospective national cohort, two audit databases</span>
+      <span><b>Where</b> &nbsp;United Kingdom &mdash; all PICUs, and 212 adult general critical care units</span>
+      <span><b>When</b> &nbsp;Eight years, 2007 to 2014</span>
+      <span><b>Size</b> &nbsp;37,320 admissions, aged 12 to 19</span>
+    </div>
+    <a class="read" href="https://pmc.ncbi.nlm.nih.gov/articles/PMC6110017/">Read the paper</a>
+    <p class="srcnote">Free full text. Four pages, three tables and one figure &mdash; and the figure is
+      the paper. Admissions by single year of age, children&#39;s unit against adult unit. If you read
+      nothing else, look at that.</p>
+  </div>
+
+  <div class="pad">
+        <div class="howto">
+      <span class="lab">Why bother with the journals at all</span>
+      <p><strong>Because they are the news.</strong> Not the formal, ceremonial version of reading &mdash; the
+        daily kind. The journals are our news pages, our opinion columns, our form guide and our sports
+        results. People who would not dream of going a week without knowing what happened in the world will
+        go a year without knowing what happened in their own specialty, and then wonder why the registrar
+        knows something they do not.</p>
+      <p>It does not have to be a session. You do not need an hour, a highlighter or a plan. Read the
+        abstracts. Skim the contents page of one journal while the kettle boils. Open the one paper in ten
+        that looks interesting and abandon it at paragraph three if it is not. Nobody is marking this.</p>
+      <p><strong>What matters is staying curious rather than staying current</strong> &mdash; nobody is
+        current, and the people who claim to be are reading less than they say. What you are actually
+        maintaining is the habit of noticing: that a question is open, that a practice has shifted, that
+        somebody has published the thing you were arguing about last month.</p>
+      <p>And then do the part that makes it stick. Mention it on a ward round. Argue about it with somebody
+        who disagrees. Ask what the study could not have shown. A paper read alone is half a paper.</p>
+      <p><em>Publish or perish is the line we all know. The quieter one is this: absorb it, or lose your
+        edge.</em></p>
+    </div>
+
+    <h2 class="sub">The question</h2>
+
+    <p>Where should a critically ill fifteen-year-old be looked after? Not in principle &mdash; in practice,
+      tonight, in the hospital you are standing in. The United Kingdom answered that with a line: under
+      sixteen to the paediatric intensive care unit, sixteen and over to the adult one. That line has been
+      policy since a Department of Health document in 1997.</p>
+
+    <p>This paper is the first to go and look at what actually happens. Not what the policy says, but where
+      37,320 adolescents were actually admitted over eight years, what was wrong with them when they arrived,
+      how long they stayed and how many died.</p>
+
+    <h2 class="sub">What they did</h2>
+
+    <p>Two national audit databases, which between them capture nearly everything. The Case Mix Programme
+      holds the adult units &mdash; 212 of them, about 94 per cent of general critical care units in England,
+      Wales and Northern Ireland. The Paediatric Intensive Care Audit Network holds every paediatric unit in
+      England, Wales, Scotland, Northern Ireland and the Republic of Ireland. Both were searched for every
+      admission aged 12 to 19 between January 2007 and December 2014.</p>
+
+    <div class="agree">
+      <div class="ag"><p class="big">37,320</p>admissions over eight years, about 4,600 a year</div>
+      <div class="ag"><p class="big">13%</p>were in the &ldquo;wrong&rdquo; unit by the age rule</div>
+      <div class="ag"><p class="big">6.0 / 5.7</p>per cent mortality, paediatric against adult</div>
+    </div>
+
+    <p>Numbers in each setting were remarkably similar overall &mdash; about 18,400 admissions to adult
+      units and about 18,900 to paediatric ones. Strip out elective surgery, though, and the picture changes:
+      16,830 emergency admissions to adult units against 10,612 to paediatric ones. A great deal of what
+      fills a children&#39;s unit is planned.</p>
+
+    <h2 class="sub">What happens on the birthday</h2>
+
+    <p>The policy is followed most of the time. Some 83 per cent of twelve to fifteen year olds went to a
+      paediatric unit, and 90 per cent of sixteen to nineteen year olds went to an adult one. But the
+      interesting part is the shape of the transition, and it is not a slope.</p>
+
+    <div class="three">
+      <div class="col">
+        <p class="age">At fifteen</p>
+        <p>2,367 admissions to a paediatric unit, 865 to an adult one. Roughly three in four are children.</p>
+      </div>
+      <div class="col mid">
+        <p class="age">At sixteen</p>
+        <p>985 to a paediatric unit, 2,506 to an adult one. Roughly one in four is a child.</p>
+      </div>
+      <div class="col">
+        <p class="age">At nineteen</p>
+        <p>47 to a paediatric unit, 4,647 to an adult one. Essentially nobody is a child.</p>
+      </div>
+    </div>
+
+    <p>Nothing happens to a person between the last day of being fifteen and the first day of being sixteen.
+      The physiology does not move, the family does not change, the disease does not know. What changes is
+      which building they are taken to, who is trained in what, whether the ward round uses their first name,
+      whether a parent can stay overnight, and whether anybody on the unit has looked after somebody their
+      age this month.</p>
+
+    <h2 class="sub">What comes in the door &mdash; and it is not the same illness</h2>
+
+    <p>Excluding elective surgery, the two settings are seeing genuinely different adolescents.</p>
+
+    <ul class="pts">
+      <li><b>Adult units: trauma, then overdose</b><span>Trauma accounts for 25 per cent of adolescent
+        admissions, and poisoning with drugs or alcohol for a further 13.5 per cent. Between them, nearly
+        two in five.</span></li>
+      <li><b>Paediatric units: respiratory, and hardly any toxicology</b><span>Respiratory disease accounts
+        for 25 per cent of admissions, rising to 31.5 per cent in the over-sixteens who are still there.
+        Drug and alcohol toxicity is uncommon, and adolescents over sixteen in a paediatric unit are rarely
+        admitted after trauma.</span></li>
+      <li><b>The exception proves the pattern</b><span>Twelve to fifteen year olds admitted to adult units
+        are not a random sample: their commonest diagnoses are trauma and overdose, and their median stay is
+        0.9 days against about 2 days for everybody else.</span></li>
+    </ul>
+
+    <div class="gap">
+      <span class="lab">What the authors think is really going on</span>
+      <p>Clinicians are not triaging by age. They are triaging by diagnosis, and the age rule is being
+        quietly overruled by it.</p>
+      <p>A fifteen-year-old with an &ldquo;adult&rdquo; problem &mdash; major trauma, a deliberate overdose
+        &mdash; gets looked after locally in the adult unit, because an adult intensivist is confident with
+        that problem and because the stay will be short. A seventeen-year-old with a complex
+        childhood-onset illness stays under the paediatric team, because that is where the expertise for
+        their underlying condition lives. Both decisions are defensible. Neither is what the policy says.</p>
+    </div>
+
+    <h2 class="sub">The question the study could not answer</h2>
+
+    <p>Which is better? The paper is admirably direct about this: it cannot say. Unadjusted mortality was
+      6.0 per cent in paediatric units and 5.7 per cent in adult ones, and those two numbers should not be
+      compared, because the two databases do not use comparable mortality risk scoring. There is no
+      correction for severity of acute illness and none for the burden of chronic illness &mdash; and we have
+      just established that the two populations differ systematically in exactly those respects.</p>
+
+    <div class="caution">
+      <span class="lab">Read this one carefully</span>
+      <p>Two raw mortality figures that are almost identical will be quoted as if they settled the question.
+        They do not. The adolescents in adult units are more often trauma and overdose with short stays; the
+        adolescents in paediatric units more often have chronic disease. A crude rate cannot see any of
+        that.</p>
+      <p>The most that can honestly be said is that nothing in this dataset suggests one setting is
+        dramatically worse than the other &mdash; which is a much weaker and much more useful claim than the
+        one the numbers invite.</p>
+    </div>
+
+    <p>What evidence there is comes from elsewhere. Previous studies, restricted to adolescent trauma and
+      mostly American, have consistently found no difference in mortality between adult and paediatric
+      centres, but a higher intervention rate in adult ones. Make of that what you will; more procedures
+      is not automatically worse care, and it is not automatically better either.</p>
+
+    <h2 class="sub">And now the Australian question</h2>
+
+    <p>Read this as a British paper about a British rule and it is interesting. Read it from a regional
+      Australian hospital and it becomes something else, because the study describes a <em>choice</em> that
+      a great many of us do not have.</p>
+
+    <p>When a fourteen-year-old arrives critically ill at a hospital several hundred kilometres from a
+      paediatric intensive care unit, nobody triages them by diagnosis into the most appropriate setting.
+      They go to the intensive care unit that exists. The retrieval conversation happens around them, and
+      depending on distance, weather and the state of the child, the answer is sometimes that they stay.</p>
+
+    <p>Which makes the paper&#39;s closing sentence land harder here than it does where it was written:
+      services planned for the majority of adult and paediatric intensive care patients may not be optimal
+      for critically ill adolescents. In a regional unit, that is not a policy observation. It is a
+      description of Tuesday.</p>
+
+    <h2 class="sub">What to take to the bedside</h2>
+
+    <ul class="pts">
+      <li><b>Adolescents are a small group and a real one</b><span>About 4,600 admissions a year across an
+        entire country, which is a small share of intensive care and a large number of young people. Small
+        enough to fall between services; large enough to plan for.</span></li>
+      <li><b>Know which adolescent you are getting</b><span>If you work in an adult unit, the adolescent
+        arriving is statistically likely to be trauma or overdose and to be gone within a day. That is a
+        specific set of skills, and one of them is not clinical.</span></li>
+      <li><b>The short stay is the risk, not the reassurance</b><span>A median stay under a day in the
+        twelve to fifteens in adult units means the mental health assessment, the child protection thinking
+        and the follow-up all have to happen inside that day, in a unit not built to do them.</span></li>
+      <li><b>Ask who is responsible for the non-clinical part</b><span>Consent, confidentiality, education,
+        the parent sleeping in the corridor. In a paediatric unit somebody owns these. In an adult unit it
+        is worth finding out whether anybody does.</span></li>
+    </ul>
+
+    <h2 class="sub">What to read sceptically</h2>
+
+    <ul class="pts">
+      <li><b>The data are old now</b><span>Collected 2007 to 2014 and published in 2018. The paper itself
+        notes that Major Trauma Networks were changing where injured children go, and that was eight years
+        ago. The pattern is probably still broadly right; the precise proportions are not current.</span></li>
+      <li><b>The denominators are not symmetrical</b><span>The paediatric database covers every unit in the
+        British Isles; the adult one excludes Scotland, the Republic of Ireland and some non-participating
+        units. The authors say plainly that the absolute numbers admitted to each setting should be
+        interpreted with caution.</span></li>
+      <li><b>Mortality before unit discharge is a narrow outcome</b><span>It is what audit databases hold.
+        It is not what an adolescent or their family would nominate as the thing that mattered about the
+        admission.</span></li>
+      <li><b>It is descriptive, and says so</b><span>This is a paper about what happens, not about what
+        should. It was designed as the first step of a mixed-methods project. Treating it as evidence for a
+        service model is asking it to do something it did not attempt.</span></li>
+    </ul>
+
+  </div>
+
+  <div class="pad" style="padding-top:6px">
+    <div class="challenge">
+      <h2>Challenge for you</h2>
+      <p class="ask">In your hospital, where does a fifteen-year-old actually go?</p>
+      <p class="lead">Not what the policy says &mdash; what happens. And then the harder half: once they are
+        there, who is responsible for the parts an adult unit is not built for? The consent conversation. The
+        mental health assessment before discharge. Somebody telling the school. A parent who wants to stay
+        overnight in a unit with no chairs that recline.</p>
+      <p>If the honest answer is that it depends who is on, say so. That is the commonest answer and it is
+        the one worth publishing. I am especially interested in replies from regional and rural units, where
+        the question is not which unit but whether the child stays at all.</p>
+      <p><a class="btn" href="mailto:icuandyou@icloud.com?subject=Journal%20Club%20100%20-%20where%20the%20fifteen-year-old%20goes&body=Where%20a%20fifteen-year-old%20actually%20goes%20in%20my%20hospital%3A%0D%0A%0D%0A%0D%0AWho%20owns%20the%20non-clinical%20parts%20once%20they%20are%20there%3A%0D%0A%0D%0A%0D%0AHospital%20type%20%28tertiary%20%2F%20regional%20%2F%20rural%29%3A%0D%0A%0D%0A---%0D%0A%0D%0AName%20%28optional%29%3A%0D%0A%0A---%0A%0AThinking%20about%20this%20ICU%20AND%20YOU%20post%20overall%20%E2%80%94%20was%20it%20useful%20to%20you%2C%20or%20would%20it%20be%20useful%20to%20others%3F%0A">Send me your answer</a></p>
+      <p class="fallback">Each tap opens a reply straight to me. If your device blocks it, write to
+        <a href="mailto:icuandyou@icloud.com">icuandyou@icloud.com</a> instead.</p>
+    </div>
+  </div>
+
+  <footer>
+    <span class="firstpub">First published September 2026</span>
+    <p class="subline">Two emails a week &mdash; the Friday newsletter for all subscribers, and, for clinical subscribers,
+      the mind map and puzzles the moment they go up on Tuesday. Occasional announcements of new
+      features as they arrive. What went up and why it mattered, the best of your replies, and
+      original feature stories, news and views. <a href="https://joinlist.com/f/5adad2d6">Come and join us</a>.</p>
+    <a class="home" href="./">&larr; &nbsp;All of ICU AND YOU</a><br>
+    ICU AND YOU &nbsp;·&nbsp; Journal Club No. 100 &nbsp;·&nbsp; companion to Mind Map #34, The School-Age Child<br>
+    Summarised independently and in our own words; the article is open access under CC BY 4.0 and is linked above
+    rather than reproduced. Educational use only &mdash; not a clinical protocol, and local guidance and the
+    retrieval service always take precedence.
+  <br>
+    <span class="mine">Views my own, not those of NSW Health or any other organisation. No identifiable patients — scenarios are constructed or combined for teaching. <a href="about.html">More</a>.</span>
+  </footer>
+
+</div>
+<script data-goatcounter="https://icuandyou.goatcounter.com/count"
+        async src="//gc.zgo.at/count.js"></script>
+</body>
+</html>
