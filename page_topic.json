@@ -1139,17 +1139,17 @@
   "label": "Coming next",
   "lines": [
    {
-    "date": "Tuesday 29th September",
-    "what": "The adolescent",
-    "emphasis": true
-   },
-   {
     "date": "Friday 2nd October",
     "what": "Newsletter (subscribers only)"
    },
    {
     "date": "Tuesday 6th October",
-    "what": "The adolescent, part two"
+    "what": "The adolescent, part two",
+    "emphasis": true
+   },
+   {
+    "date": "Friday 9th October",
+    "what": "Newsletter (subscribers only)"
    }
   ]
  },
