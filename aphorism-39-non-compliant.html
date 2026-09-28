@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en-AU">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ICU AND YOU · Aphorism 39 — Never say non-compliant</title>
+<meta name="description" content="Aphorism 39: with teenagers, never say they are non-compliant — what the word describes accurately, what it explains wrongly, and the case for and against retiring it.">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="alternate icon" href="/favicon.ico" sizes="any">
+<link rel="apple-touch-icon" href="/icon-180.png">
+<meta name="theme-color" content="#1B2A33">
+<meta property="og:site_name" content="ICU AND YOU">
+<meta property="og:type" content="website">
+<meta property="og:title" content="ICU AND YOU · Aphorism 39">
+<meta property="og:description" content="A word that is a verdict wearing the clothes of an observation.">
+<meta property="og:image" content="https://icuandyou.com/share-card.png">
+<meta name="twitter:card" content="summary_large_image">
+<style>
+  :root{
+    --paper:#FCFAF6; --ink:#26221B; --muted:#736C60; --rule:#E2DCCE;
+    --sky:#215058; --skytint:#FAF1DE;
+    --rust:#A8442A; --rustdk:#8A3620; --rusttint:#F9EDE7;
+    --plum:#6B4570; --plumtint:#F2ECF3;
+    --moss:#4C6B4A; --mosstint:#EAF1E9;
+    --gold:#2F6E7A; --goldtint:#E9F2F3;
+  }
+  *{box-sizing:border-box}
+  body{margin:0;background:#EFEAE0;color:var(--ink);
+    font:400 17px/1.62 'Iowan Old Style','Palatino Linotype',Palatino,Georgia,serif;
+    -webkit-text-size-adjust:100%;}
+  .sheet{max-width:820px;margin:0 auto;background:var(--paper);
+    box-shadow:0 1px 40px rgba(27,42,51,.10);}
+  header.top{padding:44px 40px 26px;border-bottom:1px solid var(--rule)}
+  .eyebrow a.serlink{color:inherit;text-decoration:none;border-bottom:1px solid transparent}
+  .eyebrow a.serlink:hover{border-bottom-color:currentColor}
+  .eyebrow a.mast{color:inherit;text-decoration:none;border-bottom:1px solid transparent}
+  .eyebrow a.mast:hover{border-bottom-color:currentColor}
+  .toptopic{display:inline-block;margin:0 0 16px 9px;padding:7px 16px;border-radius:20px;
+    border:1px solid currentColor;opacity:.62;text-decoration:none;color:inherit;
+    font:600 11.5px 'Helvetica Neue',Arial,sans-serif;letter-spacing:.09em;
+    text-transform:uppercase;transition:opacity .12s ease}
+  .toptopic:hover{opacity:1}
+  .topseries{display:inline-block;margin:0 0 16px 9px;padding:7px 16px;border-radius:20px;
+    border:1px solid currentColor;opacity:.62;text-decoration:none;color:inherit;
+    font:600 11.5px 'Helvetica Neue',Arial,sans-serif;letter-spacing:.09em;
+    text-transform:uppercase;transition:opacity .12s ease}
+  .topseries:hover{opacity:1}
+  .tophome{display:inline-block;margin:0 0 16px;padding:7px 16px;border-radius:20px;
+    border:1px solid currentColor;opacity:.62;text-decoration:none;color:inherit;
+    font:600 11.5px 'Helvetica Neue',Arial,sans-serif;letter-spacing:.09em;
+    text-transform:uppercase;transition:opacity .12s ease}
+  .tophome:hover{opacity:1}
+  .eyebrow{font:500 11.5px/1 'Helvetica Neue',Arial,sans-serif;letter-spacing:.24em;
+    text-transform:uppercase;color:var(--muted);margin:0}
+  .pad{padding:34px 40px}
+  p{margin:0 0 15px}
+
+  .quote{padding:46px 40px 44px;text-align:center;
+    border-top:2px solid var(--sky);border-bottom:2px solid var(--sky);
+    background:linear-gradient(180deg,#EFF6FA 0%, var(--paper) 100%)}
+  .quote blockquote{margin:0;font-size:31px;line-height:1.36;font-style:italic;
+    letter-spacing:-.005em;color:#16222A}
+  .quote .mark{display:block;font:500 11.5px 'Helvetica Neue',Arial,sans-serif;
+    letter-spacing:.24em;text-transform:uppercase;color:var(--sky);margin:0 0 20px}
+
+  h2.sec{font:600 12px 'Helvetica Neue',Arial,sans-serif;letter-spacing:.2em;
+    text-transform:uppercase;color:var(--muted);margin:0 0 16px;
+    padding-bottom:9px;border-bottom:1px solid var(--rule)}
+
+  .note{margin:0;padding:18px 22px;background:var(--goldtint);
+    border-left:4px solid var(--gold);border-radius:0 8px 8px 0;font-size:16px}
+
+  .verdicts{display:flex;gap:14px;flex-wrap:wrap;margin:0 0 6px}
+  .v{flex:1 1 220px;border-radius:10px;padding:20px 20px 18px;
+    font-size:15.5px;line-height:1.5}
+  .v h3{margin:0 0 9px;font:600 13px 'Helvetica Neue',Arial,sans-serif;
+    letter-spacing:.16em;text-transform:uppercase}
+  .yes{background:var(--skytint);border:1px solid var(--sky);border-top:4px solid var(--sky)}
+  .yes h3{color:var(--sky)}
+  .no{background:var(--plumtint);border:1px solid var(--plum);border-top:4px solid var(--plum)}
+  .no h3{color:var(--plum)}
+  .maybe{background:var(--mosstint);border:1px solid var(--moss);border-top:4px solid var(--moss)}
+  .maybe h3{color:var(--moss)}
+
+  .reflect{margin:0;padding:30px 34px;background:var(--rusttint);border-left:5px solid var(--rust)}
+  .reflect h2{font:600 12px 'Helvetica Neue',Arial,sans-serif;letter-spacing:.2em;
+    text-transform:uppercase;color:var(--rust);margin:0 0 14px}
+  .ask{font-size:20px;line-height:1.5;font-style:italic;margin:0 0 16px;color:#16222A}
+  .btn{display:inline-block;margin:6px 0 12px;padding:15px 30px;background:var(--rust);
+    color:#FDF8F5;text-decoration:none;border-radius:30px;
+    font:600 15px 'Helvetica Neue',Arial,sans-serif;letter-spacing:.03em;font-style:normal}
+  .btn:hover{background:var(--rustdk)}
+  .btn:focus-visible{outline:3px solid var(--sky);outline-offset:3px}
+  .fallback{font:400 13.5px 'Helvetica Neue',Arial,sans-serif;color:var(--muted);margin:0}
+  .fallback a{color:var(--rust)}
+  .subline{margin:0 0 14px;padding:0 0 13px;border-bottom:1px solid rgba(0,0,0,.09);
+    font:400 14.5px/1.55 'Iowan Old Style','Palatino Linotype',Palatino,Georgia,serif;
+    max-width:56ch;margin-left:auto;margin-right:auto}
+  .subline a{font-weight:500;border-bottom:1px solid currentColor;
+    text-decoration:none;color:inherit}
+  .firstpub{display:block;margin:0 0 10px;padding-bottom:9px;
+    border-bottom:1px solid currentColor;border-color:rgba(0,0,0,.09);
+    font:400 12px 'Helvetica Neue',Arial,sans-serif;letter-spacing:.06em;opacity:.72}
+
+  footer{padding:24px 40px 40px;border-top:1px solid var(--rule);
+    font:400 13px 'Helvetica Neue',Arial,sans-serif;color:var(--muted);text-align:center}
+  .home{display:inline-block;margin:0 0 14px;padding:8px 18px;border-radius:20px;
+    border:1px solid var(--rule);background:#F1F3F1;color:var(--sky);text-decoration:none;
+    font:600 12.5px 'Helvetica Neue',Arial,sans-serif;letter-spacing:.05em}
+  .home:hover{background:var(--sky);border-color:var(--sky);color:#F6FAFB}
+
+  @media (max-width:640px){
+    header.top,.pad,.quote,footer{padding-left:20px;padding-right:20px}
+    .reflect{padding:24px 20px}
+    .quote blockquote{font-size:24px}
+    body{font-size:16.5px} .ask{font-size:18px}
+  }
+  @media print{
+    body{background:#fff} .sheet{box-shadow:none;max-width:none}
+    .btn{border:1px solid var(--rust)} .quote{background:none}
+  }
+  .mine{display:inline-block;margin:9px 0 0;opacity:.78;font-size:.94em}
+  .howto{margin:0 0 4px;padding:22px 26px;background:#EAF2F3;border-left:4px solid #2F6E7A;
+    border-radius:0 8px 8px 0}
+  .howto .lab{display:block;font:600 11px 'Helvetica Neue',Arial,sans-serif;letter-spacing:.18em;
+    text-transform:uppercase;color:#215058;margin:0 0 10px}
+  .howto p{margin:0 0 10px;font-size:16px;line-height:1.6}
+  .howto p:last-child{margin:0}
+</style>
+</head>
+<body>
+<div class="sheet">
+
+  <header class="top">
+    <a class="tophome" href="./">&larr;&nbsp; Home</a>
+    <a class="topseries" href="./?s=aphorism">All aphorisms</a>
+    <a class="toptopic" href="./?t=adolescent" title="Everything on The adolescent">All on this topic</a>
+    <p class="eyebrow"><a class="mast" href="./">ICU and You</a> &nbsp;·&nbsp; <a class="serlink" href="./?s=aphorism">Aphorism Series</a> &nbsp;·&nbsp; Number 39</p>
+  </header>
+
+  <div class="quote">
+    <span class="mark">The aphorism for this topic</span>
+    <blockquote>&ldquo;With teenagers, never say they are non-compliant.&rdquo;</blockquote>
+  </div>
+
+    <div class="howto">
+      <span class="lab">How to use an aphorism</span>
+      <p><strong>An aphorism is a compressed argument, not a rule.</strong> It earns its shape by leaving
+        things out, which is exactly what makes it memorable and what makes it arguable. Every one in this
+        series is contestable, and chosen because it is.</p>
+      <p>Each is a mantra, a paradigm, a truism or occasionally a plain myth &mdash; something repeated in our
+        units often enough that nobody examines it any more. The piece sets out the case for it, the case
+        against it, and the case for something in between, and then asks which you hold.</p>
+      <p>There is no right answer waiting at the bottom. The point is to find out what you actually believe
+        and why, because the beliefs that run your practice at three in the morning are mostly ones you have
+        never said out loud.</p>
+    </div>
+
+  <div class="pad">
+    <h2 class="sec">Preamble</h2>
+
+    <p>It is one of the few words in medicine that is a verdict wearing the clothes of an observation. It
+      appears in the handover, it appears in the discharge summary, and once it is in the record it travels
+      with the patient for years. Nobody writing it thinks they are passing judgement. Everybody reading it
+      receives one.</p>
+
+    <p>And it attaches to adolescents more than to any other group. Not because they are worse at taking
+      medicines than the rest of us &mdash; adults are unremarkable at it too &mdash; but because
+      adolescence is the period when responsibility for the medicine transfers from a parent to a person
+      whose judgement is still arriving, and the consequences of the handover show up in intensive care.</p>
+
+    <p>The consequences are real and they are documented. In established type 1 diabetes, insulin omission
+      is the cause of most episodes of ketoacidosis, and a small minority of patients generate a large share
+      of all admissions. In transplantation, graft loss peaks between about seventeen and twenty-four years,
+      with no recipient group exempt from it. These are not soft findings.</p>
+
+    <p class="note">But look at what the registries actually record. In that literature non-adherence is an
+      <em>attributed</em> cause, not a measured one &mdash; somebody wrote it in a box. The number counts how
+      often a clinician reached for the explanation, which is not the same as how often the explanation was
+      right.</p>
+
+    <p>That is the first problem. The second is what the word does to the person saying it. &ldquo;Non-compliant&rdquo;
+      is a complete sentence. It closes the file. It converts a modifiable situation into a fixed
+      characteristic, moves the problem from the clinician's side of the bed to the patient's, and ends the
+      inquiry at the exact point where the useful questions begin: what does the regimen actually cost them?
+      Who is paying for it? Where do they take it, and who watches them do it? What happened in the week it
+      stopped?</p>
+
+    <p>A seventeen-year-old who stops tacrolimus because taking it in front of friends means explaining the
+      transplant has not failed at compliance. They have made a completely intelligible choice with a
+      catastrophic price, and every part of that sentence points at something you could work on. &ldquo;Non-compliant&rdquo;
+      points at nothing.</p>
+
+    <p>There is also a plain question of accuracy. Compliance describes obedience to an instruction, and it
+      was largely retired for that reason in favour of adherence, and then concordance &mdash; words that at
+      least imply two parties. Adolescence is the age at which a patient stops being someone to be obeyed
+      into health. Using the older word in exactly the age group where it is least true is a small failure of
+      attention that tells the reader something about the writer.</p>
+
+    <h2 class="sec">Do you agree? &nbsp;Yes / No / Maybe</h2>
+    <div class="verdicts">
+      <div class="v yes">
+        <h3>Yes</h3>
+        The word does no clinical work that a plain description would not do better, and it does real harm:
+        it ends inquiry, it sticks to the patient for years, and it quietly relocates the problem to the
+        person least able to solve it. Anything it can say, a sentence about what actually happened can say
+        more usefully.
+      </div>
+      <div class="v no">
+        <h3>No</h3>
+        Sometimes the blunt word is the accurate one, and softening it hides a safety problem. A recipient
+        who has not taken immunosuppression for three weeks needs that stated flatly at handover, not
+        dissolved into &ldquo;engagement difficulties&rdquo;. Banning vocabulary tends to produce longer
+        phrases meaning the same thing, and clinicians who have learned to say the approved word while
+        thinking the old one.
+      </div>
+      <div class="v maybe">
+        <h3>Maybe</h3>
+        The rule may be right about the explanation and wrong about the description. Recording that the
+        medicine was not taken is a fact and belongs in the notes. Recording that the patient <em>is
+        non-compliant</em> is a theory about a person, and it is the theory that follows them. Say what
+        happened; do not say what they are.
+      </div>
+    </div>
+  </div>
+
+  <div class="pad" style="padding-top:6px">
+    <div class="reflect">
+      <h2>Optional reflection</h2>
+      <p class="ask">What did you find out once you stopped calling it non-compliance?</p>
+      <p>Most of us have had the case where the label was already in the notes, and where asking one
+        ordinary question &mdash; about money, about school, about who else is in the house, about what the
+        medicine actually does to them &mdash; produced an answer that made the whole thing obvious.</p>
+      <p>Tell me yours, and tell me your verdict. And if you think the word is fine and the objection is
+        fashionable, say so &mdash; that case deserves making and I would rather print it than not.</p>
+      <p><a class="btn" href="mailto:icuandyou@icloud.com?subject=Aphorism%2039%20-%20never%20say%20non-compliant&body=My%20verdict%20%28Yes%20/%20No%20/%20Maybe%29%3A%0D%0A%0D%0A%0D%0AWhat%20I%20found%20out%20once%20I%20stopped%20calling%20it%20non-compliance%3A%0D%0A%0D%0A%0D%0A---%0D%0A%0D%0AName%20%28optional%29%3A%0A---%0A%0AThinking%20about%20this%20ICU%20AND%20YOU%20post%20overall%20%E2%80%94%20was%20it%20useful%20to%20you%2C%20or%20would%20it%20be%20useful%20to%20others%3F%0A">Send your verdict</a></p>
+      <p class="fallback">The button opens a reply straight to me. If your device blocks it, write to
+        <a href="mailto:icuandyou@icloud.com">icuandyou@icloud.com</a> instead.</p>
+    </div>
+  </div>
+
+  <footer>
+    <span class="firstpub">First published September 2026</span>
+    <p class="subline">Two emails a week &mdash; the Friday newsletter for all subscribers, and, for clinical subscribers,
+      the mind map and puzzles the moment they go up on Tuesday. Occasional announcements of new
+      features as they arrive. What went up and why it mattered, the best of your replies, and
+      original feature stories, news and views. <a href="https://joinlist.com/f/5adad2d6">Come and join us</a>.</p>
+    <a class="home" href="./">&larr; &nbsp;All of ICU AND YOU</a><br>
+    ICU AND YOU &nbsp;&#183;&nbsp; Aphorism #39 &nbsp;&#183;&nbsp; companion to Mind Map #35, The Adolescent<br>
+    Educational use within the ICU education programme. Not a clinical protocol &mdash; local policy and current
+    paediatric guidance always take precedence.
+  <br>
+    <span class="mine">Views my own, not those of NSW Health or any other organisation. No identifiable patients — scenarios are constructed or combined for teaching. <a href="about.html">More</a>.</span>
+  </footer>
+
+</div>
+<script data-goatcounter="https://icuandyou.goatcounter.com/count"
+        async src="//gc.zgo.at/count.js"></script>
+</body>
+</html>
