@@ -1134,9 +1134,21 @@
   });
   toggleTop();
 
+  // Choosing a filter changes what you are looking at but never the address
+  // bar. So a reader who arrives from a content page at index.html?s=podcast,
+  // then clicks Everything, is still standing on that URL — and a refresh
+  // silently reapplies the podcast filter. Once the reader has made a choice
+  // of their own, forget the one the URL arrived with. The hash is left alone,
+  // because that is how the section anchors work.
+  function forgetURLFilter(){
+    if(!history.replaceState || !window.location.search) return;
+    history.replaceState(null, "", window.location.pathname + window.location.hash);
+  }
+
   q.addEventListener("input", apply);
 
   document.getElementById("clear").addEventListener("click", function(){
+    forgetURLFilter();
     clearAll();
     var everything = document.querySelector('.chip[data-f="all"]');
     if(everything) everything.classList.add("on");
@@ -1153,6 +1165,7 @@
     // apply(), leaving the list half filtered.
     if(!c.dataset.f) return;
     c.addEventListener("click", function(){
+      forgetURLFilter();
       clearAll();
       c.classList.add("on");
       filter = c.dataset.f;
@@ -1165,6 +1178,7 @@
     // data-f and must navigate rather than filter.
     if(!m.dataset.f) return;
     m.addEventListener("click", function(){
+      forgetURLFilter();
       var d = m.closest("details.drop");
       var sum = d.querySelector("summary");
       clearAll();
@@ -1187,6 +1201,7 @@
   Array.prototype.forEach.call(
     document.querySelectorAll('.mi[data-t]'), function(m){
       m.addEventListener("click", function(){
+        forgetURLFilter();
         var tp = m.dataset.t;
         alldrops.forEach(function(x){ x.open = false; });
         clearAll();
