@@ -1,8 +1,8 @@
 {
  "this_week": {
-  "topic": "The school-age child",
-  "slug": "school-age",
-  "blurb": "Roughly six to twelve. The toddler could not tell you what was wrong; this one can, and has learned not to — because they are being brave, because it might mean a needle, or because the parent is in the room and they are protecting them. The physiology stops being exotic at about this age, and the history becomes the hard part."
+  "topic": "The adolescent",
+  "slug": "adolescent",
+  "blurb": "Puberty to eighteen. An adult body, and not an adult — and almost every error in this age group comes from applying one of those and quietly forgetting the other. The physiology has finished arguing; what has not is who may consent, who may be told, and what they will admit to with a parent in the room."
  },
  "series": {
   "mind-map": [
@@ -794,10 +794,6 @@
    "title": "Not little adults, except when they are",
    "topic": "The school-age child",
    "slug": "school-age",
-   "week": true,
-   "pos": 2,
-   "badge": "Aphorism",
-   "link_label": "Open",
    "blurb": "The most repeated sentence in paediatrics, and the one that quietly expires around school age without anybody saying when. Yes, No and Maybe — and the reason the changeover is not a birthday."
   },
   {
@@ -808,10 +804,6 @@
    "title": "The school-age child",
    "topic": "The school-age child",
    "slug": "school-age",
-   "week": true,
-   "pos": 4,
-   "badge": "Superpuzzle",
-   "link_label": "Fill it in",
    "blurb": "Twenty clues on the school-age child — asthma, trauma and ketoacidosis, a dead Edwardian physician, a boy who never grew up, and an admission almost nobody makes out loud."
   },
   {
@@ -822,11 +814,7 @@
    "title": "The school-age child",
    "topic": "The school-age child",
    "slug": "school-age",
-   "badge": "Mind map",
-   "link_label": "Open the map",
-   "blurb": "Roughly six to twelve years. Asthma, trauma and diabetic ketoacidosis; the myocarditis wearing a gastroenteritis costume; ingestions that have stopped being accidental; and the things they will not say.",
-   "week": true,
-   "pos": 1
+   "blurb": "Roughly six to twelve years. Asthma, trauma and diabetic ketoacidosis; the myocarditis wearing a gastroenteritis costume; ingestions that have stopped being accidental; and the things they will not say."
   },
   {
    "file": "podcast-58-sepsis-to-society.html",
@@ -836,10 +824,6 @@
    "title": "From sepsis to society",
    "topic": "The school-age child",
    "slug": "school-age",
-   "week": true,
-   "pos": 10,
-   "badge": "Podcast",
-   "link_label": "Open",
    "blurb": "Tex Kissoon on the PCICS podcast. Almost everything we write about sepsis is about the first hour; this is about the other ninety-nine per cent — education, advocacy, systems, poverty, access, and the survivors nobody follows up."
   },
   {
@@ -850,10 +834,6 @@
    "title": "When the child is worse than the film",
    "topic": "The school-age child",
    "slug": "school-age",
-   "week": true,
-   "pos": 11,
-   "badge": "Journal club",
-   "link_label": "Open",
    "blurb": "A previously well nine-year-old with mycoplasma developed a bronchial cast, pulmonary emboli and an intracardiac thrombus at once — and deteriorated far more than his chest film explained. One organism, three systems, and an immune response that overshot."
   },
   {
@@ -864,10 +844,6 @@
    "title": "The boy who would not grow up",
    "topic": "The school-age child",
    "slug": "school-age",
-   "week": true,
-   "pos": 9,
-   "badge": "The Literary Edge",
-   "link_label": "Open",
    "blurb": "Barrie's brother died at thirteen and his mother never recovered. A century later the boy who would not grow up still pays, in perpetuity, for children who do — the strangest copyright in English law, and a family that never got over a winter afternoon."
   },
   {
@@ -878,10 +854,6 @@
    "title": "The school-age child",
    "topic": "The school-age child",
    "slug": "school-age",
-   "week": true,
-   "pos": 7,
-   "badge": "Medical Students",
-   "link_label": "Open",
    "blurb": "Roughly six to twelve, in three tiers — the science of an almost-adult, taking a history from someone who has learned to be brave, and what you will be expected to do on your first nights on call."
   },
   {
@@ -903,10 +875,6 @@
    "title": "Paracetamol in children",
    "topic": "The school-age child",
    "slug": "school-age",
-   "week": true,
-   "pos": 6,
-   "badge": "Drugstore",
-   "link_label": "Open",
    "blurb": "The drug everyone thinks they know. The doses and where they differ under 10 kg, the tenfold error that keeps recurring, why the child at risk is the one who has stopped eating, and the metabolism that is the whole of the toxicology."
   },
   {
@@ -917,10 +885,6 @@
    "title": "Le médecin régulateur",
    "topic": "The school-age child",
    "slug": "school-age",
-   "week": true,
-   "pos": 8,
-   "badge": "Le coin français",
-   "link_label": "Open",
    "blurb": "In France a doctor answers the emergency call and a doctor gets in the ambulance. What a medicalised prehospital system does differently for an injured nine-year-old, what it costs, and a faux ami that matters at this age."
   },
   {
@@ -931,10 +895,6 @@
    "title": "SCHOOL",
    "topic": "The school-age child",
    "slug": "school-age",
-   "week": true,
-   "pos": 3,
-   "badge": "Mnemonic",
-   "link_label": "Open",
    "blurb": "Six things, and the word is the place they should be. Send the parent out, the chest, the hip when they say knee, out of proportion to the film, overdose is deliberate now, and listen for what they will not say."
   },
   {
@@ -945,10 +905,6 @@
    "title": "The school-age child",
    "topic": "The school-age child",
    "slug": "school-age",
-   "week": true,
-   "pos": 0,
-   "badge": "Bare Bones",
-   "link_label": "Five minutes",
    "blurb": "A new series. One topic stripped to the ten points that carry the most weight — no discussion, no argument, no stories. Five minutes, and deliberately not enough."
   },
   {
@@ -981,10 +937,6 @@
    "title": "The school-age child",
    "topic": "The school-age child",
    "slug": "school-age",
-   "week": true,
-   "pos": 5,
-   "badge": "Superquiz",
-   "link_label": "Take the quiz",
    "blurb": "Five questions. The quiet chest, a child worse than his film explains, myocarditis wearing a gastroenteritis costume, knee pain that is hip pain, and the deliberate ingestion that is not just a level. Four correct earns a certificate."
   },
   {
@@ -995,10 +947,6 @@
    "title": "The boy who was a state secret",
    "topic": "The school-age child",
    "slug": "school-age",
-   "week": true,
-   "pos": 9,
-   "badge": "Russia House",
-   "link_label": "Open",
    "blurb": "A new column. The tsarevich had haemophilia B, not A — settled by sequencing in 2009. A retroperitoneal bleed with nowhere to show, the most famous telegram in medicine, and an aspirin story that turns out to have no source."
   },
   {
@@ -1009,10 +957,6 @@
    "title": "Put the thermometer down",
    "topic": "The school-age child",
    "slug": "school-age",
-   "week": true,
-   "pos": 12,
-   "badge": "For the general public",
-   "link_label": "Open",
    "blurb": "Written for anyone, not for clinicians. Why 37 degrees was a nineteenth-century average rather than a boundary, the five things a doctor actually looks at, why the glass test comes about half a day too late — and the evidence that a parent's worry beats the monitor."
   },
   {
@@ -1023,10 +967,6 @@
    "title": "Open wide",
    "topic": "The school-age child",
    "slug": "school-age",
-   "week": true,
-   "pos": 8,
-   "badge": "The Dental Files",
-   "link_label": "Open",
    "blurb": "A new series. Mixed dentition and the six-year molar that fools everybody, loose teeth before laryngoscopy, the avulsed tooth and the hour it has, the 2025 change to endocarditis prophylaxis in rheumatic heart disease, fluoride, and the mouth that closes the airway."
   },
   {
@@ -1037,10 +977,6 @@
    "title": "Who decided that?",
    "topic": "The school-age child",
    "slug": "school-age",
-   "week": true,
-   "pos": 9,
-   "badge": "Administrators' Avenue",
-   "link_label": "Open",
    "blurb": "A new series — for trainees, about administration. Role delineation and why your hospital has what it has, why you cannot do the thing you can do, where the money actually comes from, what happened to the form you filed at 4 am, and how to get something changed."
   },
   {
@@ -1051,10 +987,6 @@
    "title": "Five before breakfast",
    "topic": "The school-age child",
    "slug": "school-age",
-   "week": true,
-   "pos": 13,
-   "badge": "Six Impossible Things?",
-   "link_label": "Open",
    "blurb": "A new series, for the dreamers. No child dies of sepsis, of hunger or thirst, of a vaccine-preventable disease; no post-intensive care syndrome; no distance disadvantage. Five things called impossible that are already true somewhere — and the sixth is left entirely to you."
   },
   {
@@ -1065,10 +997,6 @@
    "title": "Five things you were taught",
    "topic": "The school-age child",
    "slug": "school-age",
-   "week": true,
-   "pos": 3,
-   "badge": "Myths & Misconceptions",
-   "link_label": "Open",
    "blurb": "A new series. The cricoid and uncuffed tubes, fluid rate and cerebral oedema in DKA, the rule of nines, cooling after cardiac arrest, and nil by mouth from midnight — where each belief came from, what the evidence shows, and a verdict that is graded rather than gleeful."
   },
   {
@@ -1090,10 +1018,6 @@
    "title": "The school-age child",
    "topic": "The school-age child",
    "slug": "school-age",
-   "week": true,
-   "pos": 7,
-   "badge": "Medicolegal",
-   "link_label": "Open",
    "blurb": "A new section. Working With Children Checks, who can consent for a ten-year-old, what the law actually asks when you are worried about an injury, the photograph you must not take, the record you must never alter, and the one fact that makes a child's death coronial. Two constructed cases."
   },
   {
@@ -1104,38 +1028,104 @@
    "title": "Twenty pounds of serum",
    "topic": "The school-age child",
    "slug": "school-age",
-   "week": true,
-   "pos": 8,
-   "badge": "Historical Snapshots",
-   "link_label": "Open",
    "blurb": "A new section, for the history buffs. Nome, Alaska, 1925: a diphtheria outbreak, an expired supply of antitoxin, and twenty pounds of serum carried 674 miles by twenty mushers and about 150 dogs. The wrong dog got the statue, the aeroplanes would not start, and the children of Cleveland bought the team out of a sideshow. What diphtheria antitoxin can and cannot undo, in the background."
+  },
+  {
+   "file": "bare-bones-02-adolescent.html",
+   "series": "barebones",
+   "colour": "bone",
+   "number": "2",
+   "title": "The adolescent",
+   "topic": "The adolescent",
+   "slug": "adolescent",
+   "week": true,
+   "pos": 1,
+   "badge": "Bare Bones",
+   "link_label": "Open",
+   "blurb": "Ten points, five minutes, nothing decorative. An adult body with a child's legal status, capacity that turns on maturity rather than a birthday, deliberate self-harm as 7.2% of Australian ICU admissions in this age band, the serogroup B gap, and the dosing rule that is a myth."
+  },
+  {
+   "file": "mind-map-35-adolescent.html",
+   "series": "mind-map",
+   "colour": "teal",
+   "number": "35",
+   "title": "The adolescent",
+   "topic": "The adolescent",
+   "slug": "adolescent",
+   "week": true,
+   "pos": 2,
+   "badge": "Mind map",
+   "link_label": "Open",
+   "blurb": "Four stations rather than six, and deliberately shorter than the last one. What has changed, what brings them in, what hides, and the part that outlasts the admission."
+  },
+  {
+   "file": "aphorism-39-non-compliant.html",
+   "series": "aphorism",
+   "colour": "plum",
+   "number": "39",
+   "title": "Never say non-compliant",
+   "topic": "The adolescent",
+   "slug": "adolescent",
+   "week": true,
+   "pos": 3,
+   "badge": "Aphorism",
+   "link_label": "Open",
+   "blurb": "“With teenagers, never say they are non-compliant.” A word that is a verdict wearing the clothes of an observation — it describes the behaviour accurately and explains it wrongly, and the explanation is what follows the patient through the record for years. Yes, no, maybe."
+  },
+  {
+   "file": "podcast-59-hyperosmolar-dka.html",
+   "series": "podcast",
+   "colour": "slate",
+   "number": "59",
+   "title": "The protocol is the problem",
+   "topic": "The adolescent",
+   "slug": "adolescent",
+   "week": true,
+   "pos": 4,
+   "badge": "Podcast",
+   "link_label": "Open",
+   "blurb": "Nicole Glaser on PedsCrit. Hyperosmolar DKA does badly on the standard DKA pathway — because somebody put it on the pathway. Why the fluid has to go in before the insulin, why these children get less cerebral oedema rather than more, and the single thread running through the malpractice cases."
+  },
+  {
+   "file": "journal-club-100-adolescents-in-icu.html",
+   "series": "journal",
+   "colour": "sepia",
+   "number": "100",
+   "title": "The sixteenth birthday",
+   "topic": "The adolescent",
+   "slug": "adolescent",
+   "week": true,
+   "pos": 5,
+   "badge": "Journal club",
+   "link_label": "Open",
+   "blurb": "37,320 adolescent intensive care admissions across eight years of UK audit data. At fifteen, three in four are in a children's unit; at sixteen, three in four are in an adult one. What actually decides where they go, the two mortality figures that will be misquoted, and the question a regional Australian hospital cannot ask because it has no choice."
   }
  ],
  "latest": [
   {
-   "file": "history-01-serum-run.html",
-   "colour": "antique striped",
-   "label": "Historical Snapshots 1 · Twenty pounds of serum"
+   "file": "journal-club-100-adolescents-in-icu.html",
+   "colour": "sepia",
+   "label": "Journal club 100 · The sixteenth birthday"
   },
   {
-   "file": "medicolegal-01-school-age.html",
-   "colour": "gavel striped",
-   "label": "Medicolegal 1 · The school-age child"
+   "file": "podcast-59-hyperosmolar-dka.html",
+   "colour": "slate",
+   "label": "Podcast 59 · The protocol is the problem"
   },
   {
-   "file": "procedures-05-picc-lines.html",
-   "colour": "amethyst",
-   "label": "Procedures 5 · PICC lines"
+   "file": "aphorism-39-non-compliant.html",
+   "colour": "plum",
+   "label": "Aphorism 39 · Never say non-compliant"
   },
   {
-   "file": "myths-01-school-age.html",
-   "colour": "bramble",
-   "label": "Myths & Misconceptions 1 · Five things you were taught"
+   "file": "mind-map-35-adolescent.html",
+   "colour": "teal",
+   "label": "Mind map 35 · The adolescent"
   },
   {
-   "file": "impossible-01-school-age.html",
-   "colour": "lilac",
-   "label": "Six Impossible Things? 1 · Five before breakfast"
+   "file": "bare-bones-02-adolescent.html",
+   "colour": "bone",
+   "label": "Bare Bones 2 · The adolescent"
   }
  ],
  "topten": [
@@ -1177,6 +1167,7 @@
   ]
  },
  "topic_order": [
+  "adolescent",
   "school-age",
   "toddler-preschool",
   "postneonatal-infant",
