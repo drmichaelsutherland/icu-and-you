@@ -120,6 +120,11 @@
    "sandstone",
    "cultural"
   ],
+  "england": [
+   "A View from England",
+   "woad striped",
+   "cultural"
+  ],
   "cicm-first": [
    "CICM First Part",
    "pine",
@@ -1099,9 +1104,28 @@
    "badge": "Journal club",
    "link_label": "Open",
    "blurb": "37,320 adolescent intensive care admissions across eight years of UK audit data. At fifteen, three in four are in a children's unit; at sixteen, three in four are in an adult one. What actually decides where they go, the two mortality figures that will be misquoted, and the question a regional Australian hospital cannot ask because it has no choice."
+  },
+  {
+   "file": "england-01-foundling.html",
+   "series": "england",
+   "colour": "woad striped",
+   "number": "1",
+   "title": "Bound out",
+   "topic": "The adolescent",
+   "slug": "adolescent",
+   "week": true,
+   "pos": 6,
+   "badge": "A View from England",
+   "link_label": "Open",
+   "blurb": "A new column. The London Foundling Hospital took children in by lottery drawn in public, renamed them after its donors, publicly denied teaching them to write, and then at fourteen bound them out to a master and stopped. Of fifty-three apprenticed in 1805, fewer than half were doing well and more than a quarter had run away. The same transition problem as this fortnight's journal club, 270 years earlier."
   }
  ],
  "latest": [
+  {
+   "file": "england-01-foundling.html",
+   "colour": "woad striped",
+   "label": "A View from England 1 · Bound out"
+  },
   {
    "file": "journal-club-100-adolescents-in-icu.html",
    "colour": "sepia",
@@ -1121,11 +1145,6 @@
    "file": "mind-map-35-adolescent.html",
    "colour": "teal",
    "label": "Mind map 35 · The adolescent"
-  },
-  {
-   "file": "bare-bones-02-adolescent.html",
-   "colour": "bone",
-   "label": "Bare Bones 2 · The adolescent"
   }
  ],
  "topten": [

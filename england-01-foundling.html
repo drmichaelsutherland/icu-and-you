@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="en-AU">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ICU AND YOU · A View from England No. 1 — Bound out</title>
+<meta name="description" content="A View from England No. 1: the London Foundling Hospital, what it taught its children on purpose, and what happened to them at fourteen — an institution whose responsibility ended at the indenture.">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="alternate icon" href="/favicon.ico" sizes="any">
+<link rel="apple-touch-icon" href="/icon-180.png">
+<meta name="theme-color" content="#1B2A33">
+<meta property="og:site_name" content="ICU AND YOU">
+<meta property="og:type" content="website">
+<meta property="og:title" content="ICU AND YOU · A View from England No. 1 — Bound out">
+<meta property="og:description" content="It raised them, and then at fourteen it handed them to a stranger and stopped.">
+<meta property="og:image" content="https://icuandyou.com/share-card.png">
+<meta name="twitter:card" content="summary_large_image">
+<style>
+  :root{
+    --paper:#FAFBFC; --ink:#22282F; --muted:#5F6875; --rule:#DFE4EA;
+    --rojo:#3B5A78; --rojotint:#ECF1F6;
+    --oro:#8A6A3A; --orotint:#F7F0E4;
+  }
+  *{box-sizing:border-box}
+  body{margin:0;background:#E6EBF1;color:var(--ink);
+    font:400 17px/1.66 'Iowan Old Style','Palatino Linotype',Palatino,Georgia,serif;
+    -webkit-text-size-adjust:100%;}
+  .sheet{max-width:760px;margin:0 auto;background:var(--paper);
+    box-shadow:0 1px 40px rgba(24,32,42,.12);}
+
+  /* The series cue, in the masthead strip: this column is striped rather
+     than plain, because the site has run out of distinguishable colours. */
+  .flag{height:6px;
+    background:repeating-linear-gradient(135deg,
+      var(--rojo) 0 7px, #7E96AF 7px 14px)}
+
+  header.top{padding:42px 42px 28px;border-bottom:1px solid var(--rule)}
+  .eyebrow a.serlink{color:inherit;text-decoration:none;border-bottom:1px solid transparent}
+  .eyebrow a.serlink:hover{border-bottom-color:currentColor}
+  .eyebrow a.mast{color:inherit;text-decoration:none;border-bottom:1px solid transparent}
+  .eyebrow a.mast:hover{border-bottom-color:currentColor}
+  .toptopic,.topseries,.tophome{display:inline-block;margin:0 0 16px 9px;padding:7px 16px;
+    border-radius:20px;border:1px solid currentColor;opacity:.62;text-decoration:none;
+    color:inherit;font:600 11.5px 'Helvetica Neue',Arial,sans-serif;letter-spacing:.09em;
+    text-transform:uppercase;transition:opacity .12s ease}
+  .tophome{margin-left:0}
+  .toptopic:hover,.topseries:hover,.tophome:hover{opacity:1}
+  .eyebrow{font:500 11.5px/1 'Helvetica Neue',Arial,sans-serif;letter-spacing:.24em;
+    text-transform:uppercase;color:var(--muted);margin:0 0 14px}
+  h1{font-size:34px;line-height:1.16;margin:0 0 8px;font-weight:400;letter-spacing:-.012em;
+    font-style:italic}
+  .kicker{color:var(--muted);margin:0;font-size:16.5px}
+
+  .pad{padding:34px 42px}
+  p{margin:0 0 17px}
+  .lede{font-size:20px;line-height:1.5;color:#1A2028;margin:0 0 22px}
+
+  b.term{font-style:normal;font-weight:600;color:var(--rojo)}
+  .cyr{font-size:.97em}
+
+  h2.sub{font:600 12px 'Helvetica Neue',Arial,sans-serif;letter-spacing:.2em;
+    text-transform:uppercase;color:var(--muted);margin:30px 0 14px;
+    padding-bottom:8px;border-bottom:1px solid var(--rule)}
+
+  .faux{margin:0 0 17px;padding:20px 24px;background:var(--rojotint);
+    border-left:4px solid var(--rojo);border-radius:0 8px 8px 0}
+  .faux .lab{display:block;font:600 11px 'Helvetica Neue',Arial,sans-serif;
+    letter-spacing:.18em;text-transform:uppercase;color:var(--rojo);margin:0 0 9px}
+  .faux p:last-child{margin:0}
+
+  .gloss{margin:0 0 17px;padding:20px 24px;background:var(--orotint);
+    border-left:4px solid var(--oro);border-radius:0 8px 8px 0;font-size:16px}
+  .gloss p:last-child{margin:0}
+
+  .welcome{margin:0 0 24px;padding:20px 24px;background:var(--orotint);
+    border-left:4px solid var(--oro);border-radius:0 8px 8px 0}
+  .welcome .lab{display:block;font:600 11px 'Helvetica Neue',Arial,sans-serif;
+    letter-spacing:.18em;text-transform:uppercase;color:var(--oro);margin:0 0 9px}
+  .welcome p:last-child{margin:0}
+
+  .why{margin:0 0 26px;padding:22px 26px;background:#F1F4F9;border-left:4px solid #2F4A7C;
+    border-radius:0 8px 8px 0}
+  .why .lab{display:block;font:600 11px 'Helvetica Neue',Arial,sans-serif;letter-spacing:.18em;
+    text-transform:uppercase;color:#22375C;margin:0 0 10px}
+  .why p{margin:0 0 10px;font-size:15.5px;line-height:1.6}
+  .why p:last-child{margin:0}
+
+  .another{margin:26px 0 0;padding:22px 26px;background:#F4F1EA;
+    border:1px solid #E2DACB;border-radius:10px}
+  .another .lab{display:block;font:600 11px 'Helvetica Neue',Arial,sans-serif;
+    letter-spacing:.18em;text-transform:uppercase;color:#8A6A2E;margin:0 0 10px}
+  .another p:last-child{margin:0}
+
+  .careful{margin:0 0 17px;padding:18px 22px;background:#FBF6EC;
+    border:1px dashed #C8AE7A;border-radius:9px;font-size:16px}
+  .careful .lab{display:block;font:600 11px 'Helvetica Neue',Arial,sans-serif;
+    letter-spacing:.18em;text-transform:uppercase;color:#8A6A2E;margin:0 0 9px}
+  .careful p:last-child{margin:0}
+
+  ul.pts{list-style:none;padding:0;margin:0 0 20px}
+  ul.pts li{margin:0 0 14px;padding:0 0 0 17px;border-left:2px solid var(--rule)}
+  ul.pts li b{display:block;font-weight:600;font-size:16px}
+  ul.pts li span{display:block;color:#3C444F;font-size:16px;line-height:1.55}
+
+  .reply{margin:0;padding:28px 32px;background:#EEF1F5;border-left:5px solid var(--oro)}
+  .reply h2{font:600 12px 'Helvetica Neue',Arial,sans-serif;letter-spacing:.2em;
+    text-transform:uppercase;color:var(--oro);margin:0 0 13px}
+  .ask{font-size:19px;line-height:1.5;font-style:italic;margin:0 0 15px}
+  .btn{display:inline-block;margin:6px 0 12px;padding:15px 30px;background:var(--rojo);
+    color:#FBFCFD;text-decoration:none;border-radius:30px;font-style:normal;
+    font:600 15px 'Helvetica Neue',Arial,sans-serif;letter-spacing:.03em}
+  .btn:hover{background:#3F4C60}
+  .btn:focus-visible{outline:3px solid var(--oro);outline-offset:3px}
+  .fallback{font:400 13.5px 'Helvetica Neue',Arial,sans-serif;color:var(--muted);margin:0}
+  .fallback a{color:var(--rojo)}
+
+  .subline{margin:0 0 14px;padding:0 0 13px;border-bottom:1px solid rgba(0,0,0,.09);
+    font:400 14.5px/1.55 'Iowan Old Style','Palatino Linotype',Palatino,Georgia,serif;
+    max-width:56ch;margin-left:auto;margin-right:auto}
+  .subline a{font-weight:500;border-bottom:1px solid currentColor;
+    text-decoration:none;color:inherit}
+  .firstpub{display:block;margin:0 0 10px;padding-bottom:9px;
+    border-bottom:1px solid currentColor;border-color:rgba(0,0,0,.09);
+    font:400 12px 'Helvetica Neue',Arial,sans-serif;letter-spacing:.06em;opacity:.72}
+
+  footer{padding:24px 42px 42px;border-top:1px solid var(--rule);
+    font:400 13px 'Helvetica Neue',Arial,sans-serif;color:var(--muted);text-align:center;line-height:1.7}
+  .home{display:inline-block;margin:0 0 14px;padding:8px 18px;border-radius:20px;
+    border:1px solid var(--rule);background:#EFF2F6;color:var(--rojo);text-decoration:none;
+    font:600 12.5px 'Helvetica Neue',Arial,sans-serif;letter-spacing:.05em}
+  .home:hover{background:var(--rojo);border-color:var(--rojo);color:#FBFCFD}
+  .mine{display:inline-block;margin:9px 0 0;opacity:.78;font-size:.94em}
+  .srcs{font-size:12.5px;line-height:1.6}
+  .srcs a{color:inherit}
+
+  @media (max-width:620px){
+    header.top,.pad,footer{padding-left:20px;padding-right:20px}
+    .reply{padding:22px 20px}
+    h1{font-size:26px} body{font-size:16.5px} .lede{font-size:18px} .ask{font-size:17.5px}
+  }
+  @media print{ body{background:#fff} .sheet{box-shadow:none;max-width:none} }
+
+  /* One quotation in this piece has to stand on its own — a governor, in 1767,
+     saying the quiet part. The cultural template had no pull quote. */
+  blockquote.pull{margin:24px 0;padding:2px 0 2px 24px;border-left:3px solid var(--oro);
+    font-size:20px;line-height:1.5;font-style:italic;color:#3A424C}
+  @media (max-width:620px){ blockquote.pull{font-size:17.5px;padding-left:18px} }
+</style>
+</head>
+<body>
+<div class="sheet">
+
+  <div class="flag"></div>
+
+  <header class="top">
+    <a class="tophome" href="./">&larr;&nbsp; Home</a>
+    <a class="topseries" href="./?s=england">More from A View from England</a>
+    <a class="toptopic" href="./?t=adolescent" title="Everything on The adolescent">All on this topic</a>
+    <p class="eyebrow"><a class="mast" href="./">ICU and You</a> &nbsp;·&nbsp;
+      <a class="serlink" href="./?s=england">A View from England</a> &nbsp;·&nbsp; Number 1</p>
+    <h1>Bound out</h1>
+    <p class="kicker">London, 1741 &mdash; a hospital that raised children, and the day it stopped</p>
+  </header>
+
+  <div class="pad">
+    <div class="welcome">
+      <span class="lab">A new column</span>
+      <p><strong>England, specifically.</strong> Not Britain, which is a different and larger argument, and
+        not the United Kingdom, which is a constitutional arrangement rather than a place. Scotland, Wales
+        and Ireland have their own stories and will get their own columns when there is somebody to write
+        them properly.</p>
+      <p>This one is a melange &mdash; English perspectives on themselves, and English perspectives on
+        everybody else, which are frequently the same thing wearing a different hat. A great deal of what
+        Australian medicine assumes is inherited English practice that nobody here has re-examined since it
+        arrived, and some of it was odd when it left.</p>
+      <p>We open with a charity that is still operating after 287 years, and with the part of its story that
+        its own founder would have found hardest to read.</p>
+    </div>
+
+    <div class="why">
+      <span class="lab">Why this section exists</span>
+      <p><strong>This is not a travel column.</strong> The people in our unit come from everywhere, and so do
+        the people who work in it. On any given shift the registrar trained in Dublin or Chennai, the nurse
+        who grew up speaking Tagalog, the family who are more comfortable in Arabic and the patient whose
+        grandmother is Gumbaynggirr are all in the same twelve square metres. That is not an unusual day. It
+        is every day, and it has been for years.</p>
+      <p>Superdiversity is not a policy word for somebody else's problem. It is a description of the room you
+        are standing in. Which means that knowing how medicine is done elsewhere is not general knowledge or
+        broadening &mdash; it is <em>local</em> knowledge about your own colleagues and your own patients.</p>
+      <p>And there is a second reason, which matters more. Everything we do here was decided by somebody. The
+        way we consent, who answers an emergency call, what we count as a fever, how we speak to a dying
+        person's family: all of it looks inevitable from inside and turns out to be one option among several
+        the moment you look at another country. <strong>Nothing shows you your own assumptions faster than
+        watching competent people make different ones.</strong></p>
+      <p>Some of these columns will change your practice. Most will not. All of them should make the familiar
+        look slightly less obvious, which is the whole point.</p>
+    </div>
+
+    <p class="lede">On the night of 25 March 1741, in a temporary house in Hatton Garden, the Foundling
+      Hospital opened its doors at eight o'clock and admitted thirty children. Of those thirty, six lived
+      long enough to be apprenticed.</p>
+
+    <p>That is not the sentence the story is usually told with, and it is the one to start from, because
+      everything else about the Foundling Hospital &mdash; the Hogarths on the wall, Handel conducting in the
+      chapel, the most famous act of charity in eighteenth-century London &mdash; has to be held alongside
+      it.</p>
+
+    <h2 class="sub">Seventeen and a half years</h2>
+
+    <p>Thomas Coram was a sea captain and shipwright from Lyme Regis who spent a decade in Massachusetts
+      building ships at Taunton and being thoroughly disliked by his Puritan neighbours for being an
+      Anglican. He came home, and then spent, in his own words, <em>&ldquo;seventeen years and a half's
+      contrivance, labour and fatigue&rdquo;</em> obtaining a charter for a hospital for abandoned
+      children.</p>
+
+    <div class="careful">
+      <p><strong>One thing the story usually says that nobody can actually verify.</strong> You will read
+        that Coram was moved to act by repeatedly seeing infants left dying by the roadside on his walk into
+        London. It is a nineteenth-century account, and the Foundling Museum itself declines to assert it
+        &mdash; their position is that we simply do not know what moved him. Infant exposure and appalling
+        illegitimate-infant mortality in London were real and documented. Coram's particular moment of
+        conversion is tradition, and worth enjoying as tradition.</p>
+    </div>
+
+    <p>What is documented is how English the mechanism was. He could not get anywhere for years, so in 1735
+      he went round the aristocracy and produced a petition signed by twenty-one titled women &mdash; the
+      Ladies' Petition &mdash; and then, in 1737, a gentlemen's petition with some 375 signatures. George II
+      granted the charter on 17 October 1739. The full name is worth having: the <em>Hospital for the
+      Maintenance and Education of Exposed and Deserted Young Children</em>.</p>
+
+    <p>Note that <em>education</em>. We will come back to it.</p>
+
+    <h2 class="sub">Charity as a spectator sport</h2>
+
+    <p>The Hospital needed money, and the way England raised money was to make the charity fashionable and
+      then let people come and look at it.</p>
+
+    <p>William Hogarth was a founding governor. He designed the coat of arms and the children's uniform,
+      painted Coram's portrait &mdash; his first full-length grand-manner portrait, of a merchant seaman
+      rather than a peer, which was itself a statement &mdash; and then persuaded other artists to donate
+      work. What resulted was the first permanent public display of contemporary British art in Britain, and
+      a direct ancestor of the Royal Academy. Handel gave the chapel its organ, conducted a benefit concert
+      in the unfinished chapel in 1749, and from 1 May 1750 performed <em>Messiah</em> there annually until
+      his death. He raised something over six and a half thousand pounds in his lifetime, and left the
+      Hospital a fair copy of the score and parts in a codicil to his will.</p>
+
+    <p>So far, so admirable. Now the part that is harder to read.</p>
+
+    <div class="faux">
+      <span class="lab">The ballot</span>
+      <p>From October 1742, more mothers applied than there were places, so admission was decided by lottery.
+        A mother drew a ball from a bag. <strong>White</strong> meant the child was admitted, subject to
+        passing a medical inspection. <strong>Black</strong> meant refused, and she took her baby home.
+        A third colour &mdash; usually given as red &mdash; meant a place on the waiting list, to be used
+        only if a white-ball child failed the examination.</p>
+      <p>The drawing was conducted <strong>in public</strong>, and spectators were admitted to watch.</p>
+    </div>
+
+    <p>Read that alongside the chapel concerts and the picture gallery and a pattern appears. The art, the
+      music and the children were the same asset. Visitors came to hear <em>Messiah</em>, admire the
+      Hogarths, watch the foundlings file into chapel in their uniforms and, at certain seasons, watch women
+      draw lots for their children's futures. The charity's revenue model depended on the children being
+      looked at.</p>
+
+    <h2 class="sub">What was asked of the mothers</h2>
+
+    <p>A place was not a right and it was not granted on need. It was granted on an assessment of the
+      mother's respectability &mdash; specifically, of whether she could be salvaged.</p>
+
+    <p>Women collected petition forms at the gate from the porter, who made a first judgement on their
+      clothing, speech and manner. Those who got further were questioned by committee: whether the father
+      was married, whether there had been deception or force, whether she had resisted, when she had
+      disclosed the pregnancy. The governing test, in the Hospital's own framing, was whether &mdash;
+      relieved of the child &mdash; she might be restored <em>in the course of virtue</em>. Later policy put
+      it plainly: admission was for the child of a woman of previous good character, with the exception of
+      this one fall.</p>
+
+    <p>Every admitted child was baptised and renamed, which was presented as protecting the mother's
+      anonymity and was also a complete severance from origin. The earliest were named for the Hospital's
+      own patrons &mdash; the first child was christened Eunice Coram, after the founder's wife. Later ones
+      took names from history, geography and the natural world. Children left carrying the names of the
+      people who had paid for them.</p>
+
+    <p>Mothers could reclaim a child, and a few did. Esther Doherty left her three-month-old son in June
+      1757, came back a fortnight later, and was charged one pound fifteen shillings for his nursing and
+      transport. Reclamation was rare: the surviving figures do not reconcile well enough to give a
+      proportion, but on any of them it is a fraction of admissions.</p>
+
+    <h2 class="sub">Taught as little as possible, on purpose</h2>
+
+    <p>The charter said education. The 1746 regulations said the children's work should be <em>simple and
+      laborious</em>, suited to accustom them to the lowliest and most laborious of professions. Both are
+      true, and the second is the operative one.</p>
+
+    <p>Reading was taught, because reading meant the Bible and the catechism. Writing was another matter.
+      When critics in Parliament complained that educating foundlings was making them less fit for useful
+      labour, the Hospital's response in 1765 was not to defend education. <strong>It was to publish a
+      denial that it provided any</strong> &mdash; rebutting claims that the children were taught French, or
+      drawing, or even to write.</p>
+
+    <blockquote class="pull">Among the poor Foundlings I do not know of one of them taught to write, in the
+      hospital, except by accident.</blockquote>
+
+    <p>That is Jonas Hanway, a governor, in 1767. Writing was restored for boys ten years later, and the
+      governors justified it on the ground that a shopkeeper's apprentice needs to keep accounts. Girls were
+      not routinely taught to write until 1800.</p>
+
+    <p>A charity that publicly denied teaching its children to write, in order to protect its funding, is not
+      a charity that had failed at education. It is one that had understood exactly what its subscribers were
+      buying.</p>
+
+    <h2 class="sub">Bound out</h2>
+
+    <p>And now the part this column is actually about.</p>
+
+    <p>Foundling children were sent to wet nurses in the country as infants and came back to the Hospital at
+      around three, or from the 1770s at five or six. They were fed, clothed, drilled, prayed over, taught to
+      read and set to work. And then, at an age the Hospital set for itself, they were <b class="term">bound
+      out</b> &mdash; apprenticed to a master &mdash; and the institution's obligation ended.</p>
+
+    <p>The age moved about, and the direction of travel tells you what it was for. The first cohorts went at
+      <strong>ten</strong>. By 1766 children as young as eight were being bound. A resolution in 1806 set a
+      floor of fourteen. By the mid-nineteenth century girls rarely went before sixteen.</p>
+
+    <p>Boys went to sea, to husbandry, and to trades &mdash; glazier, candlemaker, baker, tailor; about half
+      of the earliest foundlings went to sea, as Coram had. From 1847 the Hospital ran a boys' band, which
+      fed directly into the bands of the Household Troops. Girls went, overwhelmingly, into domestic
+      service.</p>
+
+    <div class="faux">
+      <span class="lab">Two documents worth more than any adjective</span>
+      <p>In <strong>1769</strong> the governors recorded that girls were <em>&ldquo;more difficult to
+        apprentice.&rdquo;</em> By <strong>1799</strong> the rules included a condition that no girl be
+        apprenticed to an unmarried man.</p>
+      <p>Rules of that kind are written for a reason, and the reason is always something that has already
+        happened.</p>
+    </div>
+
+    <p>Was anybody watching afterwards? Very nearly not. The Hospital ran a genuinely impressive district
+      inspectorate over its country wet nurses &mdash; named local inspectors, about two in five of them
+      women, choosing nurses, paying them, supervising medical care, arranging funerals; Hogarth himself
+      inspected at Chiswick. That system was for babies. There was no equivalent standing inspection of
+      apprenticed adolescents. Oversight was reactive: a complaint, a letter, a child who ran.</p>
+
+    <p>Here is the Hospital's own return for 1805. Of fifty-three children bound out that year:</p>
+
+    <div class="another">
+      <p>26 were doing well &middot; 4 had been sent to sea for misconduct &middot; 3 were complained of for
+        misbehaviour but had promised amendment &middot; <strong>14 had absconded and gone to sea</strong>
+        &middot; 6 had been apprenticed to their friends.</p>
+      <p>Fewer than half were doing well. More than a quarter had run away.</p>
+    </div>
+
+    <p>And it was not, mostly, the children. Sir Thomas Bernard, the Hospital's own reformer, conceded in
+      1799 that while some failures came down to the children's bad dispositions, most were caused by the
+      <em>&ldquo;impatience or caprice of their masters.&rdquo;</em> That is the institution grading its own
+      placements.</p>
+
+    <p>The archive holds the individual versions. <b class="term">Thomas Waugh</b> was admitted in 1758,
+      nursed by Elizabeth Taylor at Sandridge in Hertfordshire, and apprenticed in May 1769, aged ten, to a
+      glazier in Lawrence Lane. He was beaten. He absconded repeatedly, and each time he ran, he ran back to
+      his nurse &mdash; against the Hospital's wishes. The record does not say how it ended.
+      <b class="term">John Coldfield</b> was apprenticed at ten, two days after returning to the Hospital, to
+      a candlemaker in Rose Lane. He was beaten badly enough to have holes in his legs. He absconded
+      repeatedly, and the Hospital threatened to whip him for it.</p>
+
+    <div class="careful">
+      <p><strong>A correction to a story you may meet.</strong> Elizabeth Brownrigg was hanged at Tyburn in
+        1767 for the murder of a servant girl she starved, chained and flogged. The case is often told as a
+        Foundling Hospital story and largely is not: of the three girls in that house, only Mary Jones came
+        from the Hospital. Mary Clifford, who died, was a parish apprentice from Whitefriars.</p>
+      <p>But the Foundling half of it is the part that matters here. Mary Jones escaped and got back to the
+        Hospital. A surgeon examined her and found her wounds <em>of a most alarming nature</em>. The
+        governors instructed their solicitor to write to the Brownriggs <strong>threatening
+        prosecution</strong> &mdash; obtained Mary Jones's discharge from the indenture &mdash; and then let
+        the matter drop.</p>
+      <p>Two years later, in the same house, Mary Clifford died.</p>
+    </div>
+
+    <h2 class="sub">Why this sits in a fortnight on the adolescent</h2>
+
+    <p>Because it is the same problem, and the Foundling Hospital had it first.</p>
+
+    <p>An institution took responsibility for a young person, discharged that responsibility well by the
+      standards of its day, and then stopped &mdash; at an age it had chosen for reasons of its own, with no
+      transition, no follow-up and no plan for what happened next. Everything before the indenture was
+      thought about carefully. Everything after it was somebody else's business.</p>
+
+    <p>This fortnight's <a href="journal-club-100-adolescents-in-icu.html">journal club</a> is 37,320
+      adolescent intensive care admissions in the United Kingdom, and the finding is that at fifteen three in
+      four are in a children's unit and at sixteen three in four are in an adult one. Nothing happens to a
+      person on that birthday. The line is drawn where it suits the institutions.</p>
+
+    <p>I am not suggesting our transitions are the eighteenth century's. Nobody is being bound to a
+      candlemaker. But the shape is recognisable: a date chosen for the service rather than the young person,
+      an assumption that whatever is on the other side will hold, and a system that is much better at
+      recording what it did than at finding out what happened afterwards. The 1805 return is a follow-up
+      study, and a rather good one. Most units could not produce its equivalent for the adolescents they
+      discharged last year.</p>
+
+    <h2 class="sub">What is there now</h2>
+
+    <p>The Hospital sold the Bloomsbury site in the 1920s and the great building came down. The children went
+      to Redhill and then in 1935 to a purpose-built school at Berkhamsted; residential care ended in the
+      mid-1950s, when the charity became the first in the country to close its home and place every child in
+      its care with a foster family.</p>
+
+    <p>Seven acres of the original fifty-six were saved by public campaign and opened in 1936 as
+      <b class="term">Coram's Fields</b>. The Tuscan colonnades that flank it are the Hospital's own, from
+      the rope walks where boys were taught net-making for the fishing fleet. It is a children's playground,
+      and it has one rule that visitors always remember: <strong>no adult may enter without a
+      child</strong>.</p>
+
+    <p>Round the corner at 40 Brunswick Square, the Foundling Museum holds the Court Room, the paintings,
+      Handel's will, and the tokens &mdash; the scraps of fabric, ribbons, buttons and halved coins mothers
+      left so a child could be identified if they ever came back. They are the most affecting objects in
+      London, and worth one honest caveat: from 1758 the Hospital itself cut a square of cloth from the
+      child's own clothing to pin to the record, so some of what survives is filing rather than farewell.</p>
+
+    <p>And Coram is still going, 287 years on, doing adoption, legal advocacy and children's rights from the
+      same square. Which is the English thing entire, really: an institution that got a great deal wrong,
+      wrote most of it down, and is still there.</p>
+
+  </div>
+
+  <div class="pad" style="padding-top:6px">
+    <div class="reply">
+      <h2>Challenge for you</h2>
+      <p class="ask">Who finds out what happened to the adolescents you discharged last year?</p>
+      <p>Not the readmissions, which somebody counts. The rest of it: whether they went back to school,
+        whether the diabetes team ever saw them again, whether the follow-up letter went to a parent who
+        no longer lives with them. The Foundling Hospital managed a return in 1805 saying how many of its
+        fifty-three apprentices were doing well and how many had run away to sea. Could your unit produce
+        the equivalent?</p>
+      <p>If the answer is no, say so &mdash; it is the commonest answer and it is the one worth publishing.
+        And the standing invitation of this whole section holds: if something characteristic of where you
+        come from belongs on this site, tell me and we will put it here, with your name on it or without,
+        entirely as you prefer. Several of these columns exist because somebody wrote in.</p>
+      <p><a class="btn" href="mailto:icuandyou@icloud.com?subject=A%20View%20from%20England%20-%20what%20happens%20after%20discharge&body=What%20happens%20to%20your%20adolescents%20after%20we%20discharge%20them%3A%0D%0A%0D%0A%0D%0AWhether%20anybody%20actually%20finds%20out%3A%0D%0A%0D%0A%0D%0AOr%20-%20something%20English%20in%20our%20practice%20that%20deserves%20re-examining%3A%0D%0A%0D%0A%0D%0A---%0D%0A%0D%0AName%3A%0D%0A%0D%0AWould%20you%20like%20to%20be%20named%20on%20the%20piece%3F%20%28yes%20/%20no%20/%20decide%20later%29%3A%0D%0A%0D%0A---%0D%0A%0D%0AThinking%20about%20this%20ICU%20AND%20YOU%20post%20overall%20%E2%80%94%20was%20it%20useful%20to%20you%2C%20or%20would%20it%20be%20useful%20to%20others%3F%0D%0A">Send me your answer</a></p>
+      <p class="fallback">The button opens a reply straight to me. If your device blocks it, write to
+        <a href="mailto:icuandyou@icloud.com">icuandyou@icloud.com</a> instead.</p>
+    </div>
+  </div>
+
+  <footer>
+    <span class="firstpub">First published September 2026</span>
+    <p class="subline">Two emails a week &mdash; the Friday newsletter for all subscribers, and, for clinical subscribers,
+      the mind map and puzzles the moment they go up on Tuesday. Occasional announcements of new
+      features as they arrive. What went up and why it mattered, the best of your replies, and
+      original feature stories, news and views. <a href="https://joinlist.com/f/5adad2d6">Come and join us</a>.</p>
+    <a class="home" href="./">&larr; &nbsp;All of ICU AND YOU</a><br>
+    A View from England No. 1 &nbsp;&#183;&nbsp; companion to Mind Map #35, The Adolescent<br>
+    <span class="srcs">Historical detail from the Foundling Museum, Coram, and Coram Story's
+    published research drawn from the Foundling Hospital Archive, which is held at The London Archives
+    (reference A/FH) and substantially digitised. The apprenticeship figures for 1805, the 1765 denial of
+    teaching writing, Hanway's remark of 1767, Bernard's verdict of 1799 and the cases of Thomas Waugh and
+    John Coldfield are all from that archive. Where the record is contested &mdash; Coram's motivation, the
+    proportion of children reclaimed, the precise mortality of the General Reception &mdash; this piece says
+    so rather than choosing a figure. Educational and historical use only.</span><br>
+    <span class="mine">Views my own, not those of NSW Health or any other organisation. No identifiable
+    patients &mdash; scenarios are constructed or combined for teaching. <a href="about.html">More</a>.</span>
+  </footer>
+
+</div>
+<script data-goatcounter="https://icuandyou.goatcounter.com/count"
+        async src="//gc.zgo.at/count.js"></script>
+</body>
+</html>
