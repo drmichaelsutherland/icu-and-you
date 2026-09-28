@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="en-AU">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ICU AND YOU · Podcast 59 — The protocol is the problem</title>
+<meta name="description" content="Podcast 59: Nicole Glaser on PedsCrit — hyperosmolar DKA, the presentation that does badly on the standard DKA pathway, why fluid must go in before insulin, and the thread running through the malpractice cases.">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="alternate icon" href="/favicon.ico" sizes="any">
+<link rel="apple-touch-icon" href="/icon-180.png">
+<meta name="theme-color" content="#1B2A33">
+<meta property="og:site_name" content="ICU AND YOU">
+<meta property="og:type" content="website">
+<meta property="og:title" content="ICU AND YOU · Podcast 59 — The protocol is the problem">
+<meta property="og:description" content="The children who do badly on the protocol are the ones who were put on it.">
+<meta property="og:image" content="https://icuandyou.com/share-card.png">
+<meta name="twitter:card" content="summary_large_image">
+<style>
+  :root{
+    --paper:#FAF9F7; --ink:#1E252B; --muted:#68707A; --rule:#DCDDDA;
+    --slate:#3E4A52; --slatetint:#EDF0F2;
+    --rust:#A8442A; --rusttint:#F9EDE7;
+    --gold:#A8721E;
+  }
+  *{box-sizing:border-box}
+  body{margin:0;background:#EDEDEA;color:var(--ink);
+    font:400 17px/1.64 'Iowan Old Style','Palatino Linotype',Palatino,Georgia,serif;
+    -webkit-text-size-adjust:100%;}
+  .sheet{max-width:780px;margin:0 auto;background:var(--paper);
+    box-shadow:0 1px 40px rgba(30,37,43,.10);}
+
+  header.top{padding:42px 40px 28px;border-bottom:1px solid var(--rule)}
+  .eyebrow a.serlink{color:inherit;text-decoration:none;border-bottom:1px solid transparent}
+  .eyebrow a.serlink:hover{border-bottom-color:currentColor}
+  .eyebrow a.mast{color:inherit;text-decoration:none;border-bottom:1px solid transparent}
+  .eyebrow a.mast:hover{border-bottom-color:currentColor}
+  .toptopic{display:inline-block;margin:0 0 16px 9px;padding:7px 16px;border-radius:20px;
+    border:1px solid currentColor;opacity:.62;text-decoration:none;color:inherit;
+    font:600 11.5px 'Helvetica Neue',Arial,sans-serif;letter-spacing:.09em;
+    text-transform:uppercase;transition:opacity .12s ease}
+  .toptopic:hover{opacity:1}
+  .topseries{display:inline-block;margin:0 0 16px 9px;padding:7px 16px;border-radius:20px;
+    border:1px solid currentColor;opacity:.62;text-decoration:none;color:inherit;
+    font:600 11.5px 'Helvetica Neue',Arial,sans-serif;letter-spacing:.09em;
+    text-transform:uppercase;transition:opacity .12s ease}
+  .topseries:hover{opacity:1}
+  .tophome{display:inline-block;margin:0 0 16px;padding:7px 16px;border-radius:20px;
+    border:1px solid currentColor;opacity:.62;text-decoration:none;color:inherit;
+    font:600 11.5px 'Helvetica Neue',Arial,sans-serif;letter-spacing:.09em;
+    text-transform:uppercase;transition:opacity .12s ease}
+  .tophome:hover{opacity:1}
+  .eyebrow{font:500 11.5px/1 'Helvetica Neue',Arial,sans-serif;letter-spacing:.24em;
+    text-transform:uppercase;color:var(--slate);margin:0 0 14px}
+  h1{font-size:31px;line-height:1.2;margin:0 0 10px;font-weight:400;letter-spacing:-.012em}
+  .kicker{color:var(--muted);margin:0;font-size:16.5px;font-style:italic}
+
+  /* the listen block */
+  .listen{margin:0;padding:28px 40px;background:var(--slatetint);
+    border-bottom:1px solid var(--rule)}
+  .meta{display:flex;flex-wrap:wrap;gap:6px 22px;margin:0 0 18px;
+    font:400 14px 'Helvetica Neue',Arial,sans-serif;color:var(--muted)}
+  .meta b{color:var(--ink);font-weight:600}
+  a.play{display:inline-flex;align-items:center;gap:11px;padding:15px 30px;border-radius:30px;
+    text-decoration:none;background:var(--slate);color:#F7F9FA;
+    font:600 15px 'Helvetica Neue',Arial,sans-serif;letter-spacing:.03em}
+  a.play:hover{background:#2C363D}
+  a.play:focus-visible{outline:3px solid var(--rust);outline-offset:3px}
+  a.play svg{display:block}
+  .hostnote{font:400 13.5px 'Helvetica Neue',Arial,sans-serif;color:var(--muted);margin:14px 0 0}
+
+  .pad{padding:32px 40px}
+  p{margin:0 0 17px}
+  h2.sub{font:600 12px 'Helvetica Neue',Arial,sans-serif;letter-spacing:.2em;
+    text-transform:uppercase;color:var(--muted);margin:0 0 16px;
+    padding-bottom:8px;border-bottom:1px solid var(--rule)}
+  b.term{font-weight:600;color:var(--slate)}
+
+  .challenge{margin:0;padding:28px 32px;background:var(--rusttint);border-left:5px solid var(--rust)}
+  .challenge h2{font:600 12px 'Helvetica Neue',Arial,sans-serif;letter-spacing:.2em;
+    text-transform:uppercase;color:var(--rust);margin:0 0 13px}
+  .ask{font-size:19.5px;line-height:1.5;margin:0 0 8px}
+  .lead{font-size:15px;color:var(--muted);margin:0 0 17px;line-height:1.55}
+  .chips{display:flex;flex-wrap:wrap;gap:10px;margin:0 0 16px}
+  a.chip{text-decoration:none;padding:12px 18px;border-radius:9px;
+    background:#fff;border:1px solid #E0C4B8;color:#7C3520;
+    font:400 15px 'Iowan Old Style',Palatino,Georgia,serif;
+    transition:transform .08s ease}
+  a.chip:hover{transform:translateY(-1px);background:#FDF4EF}
+  .fallback{font:400 13.5px 'Helvetica Neue',Arial,sans-serif;color:var(--muted);margin:0}
+  .fallback a{color:var(--rust)}
+  .subline{margin:0 0 14px;padding:0 0 13px;border-bottom:1px solid rgba(0,0,0,.09);
+    font:400 14.5px/1.55 'Iowan Old Style','Palatino Linotype',Palatino,Georgia,serif;
+    max-width:56ch;margin-left:auto;margin-right:auto}
+  .subline a{font-weight:500;border-bottom:1px solid currentColor;
+    text-decoration:none;color:inherit}
+  .firstpub{display:block;margin:0 0 10px;padding-bottom:9px;
+    border-bottom:1px solid currentColor;border-color:rgba(0,0,0,.09);
+    font:400 12px 'Helvetica Neue',Arial,sans-serif;letter-spacing:.06em;opacity:.72}
+
+  footer{padding:24px 40px 42px;border-top:1px solid var(--rule);
+    font:400 13px 'Helvetica Neue',Arial,sans-serif;color:var(--muted);text-align:center;line-height:1.7}
+  .home{display:inline-block;margin:0 0 14px;padding:8px 18px;border-radius:20px;
+    border:1px solid var(--rule);background:#F1F3F4;color:var(--slate);text-decoration:none;
+    font:600 12.5px 'Helvetica Neue',Arial,sans-serif;letter-spacing:.05em}
+  .home:hover{background:var(--slate);border-color:var(--slate);color:#F7F9FA}
+
+  @media (max-width:620px){
+    header.top,.listen,.pad,footer{padding-left:20px;padding-right:20px}
+    .challenge{padding:22px 20px}
+    h1{font-size:25px} body{font-size:16.5px} .ask{font-size:18px}
+  }
+  @media print{ body{background:#fff} .sheet{box-shadow:none;max-width:none} }
+
+  .topguest{display:inline-block;margin:0 0 16px 9px;padding:7px 16px;border-radius:20px;
+    border:1px dashed currentColor;opacity:.62;text-decoration:none;color:inherit;
+    font:600 11.5px 'Helvetica Neue',Arial,sans-serif;letter-spacing:.09em;
+    text-transform:uppercase;transition:opacity .12s ease}
+  .topguest:hover{opacity:1}
+  .myth{margin:0 0 22px;padding:22px 26px;background:#fff;border:1px solid var(--rule);
+    border-radius:10px;border-left:4px solid var(--slate)}
+  .myth .lab{display:block;font:600 11px 'Helvetica Neue',Arial,sans-serif;
+    letter-spacing:.18em;text-transform:uppercase;color:var(--rust);margin:0 0 8px}
+  .myth h3{margin:0 0 10px;font:400 20px 'Iowan Old Style',Palatino,Georgia,serif;
+    font-style:italic;color:var(--muted)}
+  .myth p:last-child{margin:0}
+  .verdict{font-weight:600;color:var(--slate)}
+  .mine{display:inline-block;margin:9px 0 0;opacity:.78;font-size:.94em}
+  .howto{margin:0 0 24px;padding:22px 26px;background:#EEF1F3;border-left:4px solid #4A5560;
+    border-radius:0 8px 8px 0}
+  .howto .lab{display:block;font:600 11px 'Helvetica Neue',Arial,sans-serif;letter-spacing:.18em;
+    text-transform:uppercase;color:#39434D;margin:0 0 10px}
+  .howto p{margin:0 0 10px;font-size:15.5px;line-height:1.6}
+  .howto p:last-child{margin:0}
+
+  /* Boxes and pull quotes. The podcast template grew up around the myth/verdict
+     shape of Session 58; this session argues a single case through, so it needs
+     a plain aside and a quotation that can stand on its own. */
+  .box{margin:22px 0;padding:20px 26px;background:#fff;border:1px solid var(--rule);
+    border-radius:10px;border-left:4px solid var(--slate)}
+  .box .lab{display:block;font:600 11px 'Helvetica Neue',Arial,sans-serif;
+    letter-spacing:.18em;text-transform:uppercase;color:var(--slate);margin:0 0 9px}
+  .box p{margin:0 0 11px}
+  .box p:last-child{margin:0}
+  .box.warn{background:var(--rusttint);border-left-color:var(--rust)}
+  .box.warn .lab{color:var(--rust)}
+
+  blockquote.pull{margin:24px 0;padding:2px 0 2px 24px;border-left:3px solid var(--gold);
+    font-size:20px;line-height:1.5;font-style:italic;color:#39434D}
+
+  @media (max-width:620px){
+    .box{padding:18px 20px} blockquote.pull{font-size:17.5px;padding-left:18px}
+  }
+</style>
+</head>
+<body>
+<div class="sheet">
+
+  <header class="top">
+    <a class="tophome" href="./">&larr;&nbsp; Home</a>
+    <a class="topseries" href="./?s=podcast">All podcasts</a>
+    <a class="toptopic" href="./?t=adolescent" title="Everything on The adolescent">All on this topic</a>
+    <p class="eyebrow"><a class="mast" href="./">ICU and You</a> &nbsp;·&nbsp; <a class="serlink" href="./?s=podcast">Podcast Sessions</a> &nbsp;·&nbsp; Number 59</p>
+    <h1>The protocol is the problem</h1>
+    <p class="kicker">Nicole Glaser on the DKA that does badly on the DKA pathway</p>
+  </header>
+
+  <div class="listen">
+    <div class="meta">
+      <span><b>Show</b> &nbsp;PedsCrit</span>
+      <span><b>Guest</b> &nbsp;Dr Nicole Glaser, paediatric endocrinologist, UC Davis</span>
+      <span><b>Hosts</b> &nbsp;Zac Hodges &nbsp;&#183;&nbsp; Alice Shanklin</span>
+      <span><b>Published</b> &nbsp;15 December 2025</span>
+    </div>
+    <a class="play" href="https://www.pedscrit.com/hyperosmolar-dka-with-dr-nicole-glaser/">
+      <svg width="15" height="17" viewBox="0 0 15 17" aria-hidden="true"><path d="M1 1.5 L14 8.5 L1 15.5 Z" fill="#F7F9FA"/></svg>
+      Listen to the episode
+    </a>
+    <p class="hostnote">Free to listen to, with a transcript on the show's own site. It is built around a
+      single case and worked through in order, so it survives being listened to in pieces better than most.</p>
+  </div>
+
+  <div class="pad">
+
+    <div class="howto">
+      <span class="lab">How to use a podcast</span>
+      <p><strong>Listen first. It is not a test.</strong> Do not take notes, do not try to hold the numbers,
+        and do not stop to look anything up. Let it wash over you on a drive or a walk and accept that most
+        of it will not stick. That is not a failure of attention; it is how listening works.</p>
+      <p>What a podcast does that no paper can is let you hear somebody <em>think</em>. The hesitations, the
+        qualifications, the places where an expert says plainly that we do not know &mdash; none of that
+        survives into print, and it is most of what you are actually there for. You are picking up how
+        somebody holds a problem, not a set of facts.</p>
+      <p>Then talk about it. Bring one thing to a ward round, argue with somebody about it over coffee,
+        disagree with the guest out loud. An episode discussed once is worth three listened to alone.</p>
+      <p>And if something matters enough to act on, look it up properly afterwards. A podcast is a way in,
+        not a source.</p>
+    </div>
+
+    <p class="lead"><strong>A registrar takes a transport call.</strong> Fifteen-year-old, known type 1
+      diabetes, no insulin for a couple of days, drowsy. Glucose 800, pH 6.9, ketones in the urine, sodium
+      155. One 20 mL/kg bolus given. The referring hospital asks whether to start insulin.</p>
+
+    <p>Say yes, and over the next hour the glucose will fall, the osmolality will fall, and the patient will
+      go into shock while receiving intravenous fluid. That is the episode.</p>
+
+    <h2 class="sub">Why it is worth your time</h2>
+
+    <p>Nicole Glaser is a paediatric endocrinologist at the University of California at Davis who has spent a
+      career on paediatric DKA &mdash; clinical work, basic science, and several international guidelines,
+      including the ISPAD revision she was working on when this was recorded. The hosts are two paediatric
+      intensivists. The whole episode is one case, worked through in order.</p>
+
+    <p>And its subject is a presentation most of us have met without naming. DKA is the most
+      protocol-driven thing we do, and for good reason: garden-variety DKA does well on the standard
+      pathway. Glaser's point is that a particular subgroup does badly on it &mdash; and that the reason they
+      do badly is that somebody put them on it.</p>
+
+    <blockquote class="pull">These are the kids that are likely to not do well on the standard protocol&hellip;
+      I think that's often the biggest mistake in taking care of these kids, is that they do get sort of
+      started on the regular DKA protocol. And it's not until sometime down the line that people notice that
+      they actually need something a little different, or are developing complications.</blockquote>
+
+    <h2 class="sub">What it is, and why the glucose will not tell you</h2>
+
+    <p>Hyperosmolar DKA is exactly what the name says: a child who meets the criteria for DKA and also has
+      the hyperosmolar state that characterises hyperglycaemic hyperosmolar syndrome. HHS is defined by a
+      glucose above 600 with an osmolality above 320 and without significant ketosis or acidosis. Hyperosmolar
+      DKA has that same severe hyperglycaemia and hyperosmolarity, <em>plus</em> the ketosis and acidosis.</p>
+
+    <p>The host asks the obvious practical question &mdash; does a transport call with a glucose above 600
+      mean you pivot? And the answer is no, and this is the part worth carrying:</p>
+
+    <div class="box">
+      <span class="lab">Two numbers, not one</span>
+      <p>&ldquo;Not everyone who has a glucose above 600 necessarily has hyperosmolar DKA. It really depends
+        on the osmolality.&rdquo; A glucose above 600 with a low sodium is not especially hyperosmolar and does
+        not carry these worries.</p>
+      <p>In the case, the measured sodium is 155 and the <strong>corrected sodium is 166</strong>. That is
+        what makes him hyperosmolar, and it is arrived at by looking at the glucose and the sodium together.
+        Look at one without the other and you will misclassify him in both directions.</p>
+    </div>
+
+    <h2 class="sub">Why the usual caution about fluid is the wrong instinct</h2>
+
+    <p>A typical child with DKA is about 7% dehydrated. A typical child with HHS is 12% to 15% &mdash; roughly
+      double. So a single 20 mL/kg bolus, which would be unremarkable in DKA, is almost certainly not enough
+      here. Glaser would expect at least two boluses of that volume and quite possibly more, with ongoing
+      rates at least one and a half to twice what you would usually run.</p>
+
+    <p>Her practical anchor, when the host presses on where the number comes from: go through the
+      calculations assuming 12% dehydration, work out the volume, and base the rate on that. Not a fixed
+      multiple of maintenance &mdash; an actual sum, for this patient.</p>
+
+    <p>Then the piece of advice that runs directly against what we teach about DKA:</p>
+
+    <div class="box warn">
+      <span class="lab">Replace the urine output</span>
+      <p>We do not usually replace urine output in DKA. In hyperosmolar DKA we often should, because at a
+        glucose of 900 or 1,000 it takes a very long time for the level to fall far enough to stop the osmotic
+        diuresis. The polyuria goes on for hours after you have stopped expecting it.</p>
+      <p>The test is the balance chart rather than a rule: if the infusion rate is high and the urine output
+        is still so brisk that you are not making steady positive gains, replace it. Glaser would reach for a
+        catheter and one-to-one replacement at exactly that point and not before.</p>
+    </div>
+
+    <h2 class="sub">The mechanism, which is the whole episode in one idea</h2>
+
+    <p>These children arrive with their tissues supremely dehydrated and their circulating volume
+      <em>relatively preserved</em> &mdash; because the osmolality is holding water in the vessels. As one of
+      the hosts puts it, if the osms are pulling everything into the intravascular space, it will plump up the
+      vessel more than you would expect in someone that dehydrated. It is also why these patients can be
+      profoundly dry and only look unwell for a day or two.</p>
+
+    <p>Now start insulin. The glucose falls, the osmolality falls, and the water that was being held in the
+      circulation moves out into the tissues where it was always needed. The circulation contracts.</p>
+
+    <div class="box warn">
+      <span class="lab">The trap, stated plainly</span>
+      <p>You can produce organ hypoperfusion, or frank shock, <strong>in a patient who is receiving
+        intravenous fluid</strong> &mdash; because the fluid going in is not keeping pace with the volume
+        leaving the circulation as the osmolality falls.</p>
+      <p>Which is why the fluid has to go in <em>before</em> the glucose comes down, and why the answer to
+        that phone call is to resuscitate first and have a clear plan for when insulin starts, rather than to
+        start it now because the protocol says so.</p>
+    </div>
+
+    <h2 class="sub">The paradox: less cerebral oedema, not more</h2>
+
+    <p>One of the hosts asks the question everybody would ask. These are the sickest DKA patients, the main
+      treatment for cerebral oedema is more hyperosmolar therapy, and the patient is already hyperosmolar
+      &mdash; so how bad is the cerebral oedema risk here?</p>
+
+    <p>Lower, as it turns out, or at least no higher. No study has directly compared the rates, but the level
+      of hyperglycaemia at presentation has not been associated with cerebral oedema risk across multiple
+      studies controlled for severity; and in HHS, where glucose levels run to 900 and 1,000, cerebral oedema
+      is rare enough to be a case-report phenomenon, probably less frequent than in ordinary DKA. Glaser's
+      estimate is that hyperosmolar DKA carries much the same risk as any other DKA.</p>
+
+    <p>And the reason follows from the mechanism above. If cerebral oedema arises from hypoperfusion followed
+      by reperfusion, then a very high osmolality is protective, because it keeps the circulation full. The
+      thing that makes these patients dangerous to treat is the same thing that is protecting their brain
+      while you have not yet treated them.</p>
+
+    <p>Which leaves a genuinely hard clinical problem, and Glaser does not pretend otherwise: patients in a
+      hyperosmolar state very frequently have altered mental status at presentation, nobody has a good
+      explanation for why, and it looks exactly like the thing you are afraid of.</p>
+
+    <h2 class="sub">The pace &mdash; and a reason that has quietly changed</h2>
+
+    <p>This is the part I would make a registrar read twice, because it is a case of the right advice
+      surviving after its original justification collapsed.</p>
+
+    <div class="box">
+      <span class="lab">Same advice, different reason</span>
+      <p>We used to lower glucose and sodium slowly in DKA because we were afraid of cerebral oedema. That
+        fear has, in Glaser's words, &ldquo;pretty much been debunked&rdquo; &mdash; studies show no
+        association between fluid rate or fluid sodium content and cerebral oedema risk.</p>
+      <p>But in <em>these</em> patients you should still bring the glucose and sodium down gradually, for an
+        entirely different reason: circulating volume and organ perfusion. Let them snap back to normal and
+        the volume leaves the circulation faster than you are replacing it.</p>
+      <p>Which means the habit is right and the reasoning most people carry for it is wrong &mdash; and that
+        matters, because a habit with the wrong reason attached gets applied in the wrong places and dropped
+        in the right ones.</p>
+    </div>
+
+    <p>The working figure is a fall of 50 to 100 per hour, and she is admirably honest about its provenance:
+      &ldquo;I don't know that there's a real evidence base necessarily to support that specific number, but
+      that's the one that's sort of been used.&rdquo; She also points out that an early rapid fall on
+      rehydration alone is not something to chase &mdash; that is reperfused kidneys clearing glucose, doing
+      what kidneys do.</p>
+
+    <p>On the insulin itself: 0.05 units/kg/hour is reasonable in a child who is very hyperosmolar but only
+      modestly acidotic, following beta-hydroxybutyrate to confirm the ketosis is still falling. At a pH of
+      6.9 it is a genuine toss-up &mdash; try the lower dose if you like, but move to the standard dose
+      quickly if the ketones and the pH do not shift.</p>
+
+    <h2 class="sub">What to monitor, and the one most protocols leave out</h2>
+
+    <p>Electrolyte deficits in hyperosmolar DKA and HHS are far more extreme than in ordinary DKA, so these
+      children are much more exposed to severe hypokalaemia. Two-hourly bloods, hourly if something is moving
+      fast.</p>
+
+    <p>And then the catch:</p>
+
+    <blockquote class="pull">Not every DKA protocol has a lot of monitoring of phosphate levels. But in a
+      patient like this, you would definitely want to include that &mdash; and probably just as frequently as
+      monitoring of potassium.</blockquote>
+
+    <p>Hypophosphataemia here is linked to rhabdomyolysis and to haemolytic anaemia. A trainee following the
+      standard protocol will not be looking for it, because the standard protocol does not ask them to.
+      Alongside that: acute kidney injury, more severe than the AKI that attends ordinary DKA and occasionally
+      reaching renal failure; thrombosis; and ischaemic intestinal necrosis. What she asks you to watch is the
+      <em>trend</em> &mdash; the phosphate drifting down, the creatinine rising when it ought to be falling.</p>
+
+    <p>On lines, the hosts are refreshingly conservative. Central line thrombosis rates in DKA are high, with
+      some studies suggesting around 50%, so central access only if it is needed to resuscitate; arterial line
+      with a low threshold if mental status or perfusion are shifting. And a heuristic worth keeping:</p>
+
+    <blockquote class="pull">If they wouldn't notice you putting in an arterial line with full sterile
+      technique, then you might want to consider that.</blockquote>
+
+    <p>The patient's tolerance of the procedure is the assessment of their conscious state. Readers of the
+      <a href="aphorism-37-happily-examined.html">happily examined</a> aphorism will recognise the shape of
+      that.</p>
+
+    <h2 class="sub">Do not become the chart-checking doctor</h2>
+
+    <p>One of the hosts names something I have watched happen for thirty years, and names it well. DKA
+      management invites you to manage a flowsheet: the hourly sugars, the two-hourly electrolytes, the
+      little columns. It is absorbing, it feels like vigilance, and it can be done from the desk.</p>
+
+    <blockquote class="pull">We should be much more worried about the status of our patient than about
+      whether the sugar fell by 101 versus 99 in the last hour.</blockquote>
+
+    <p>Glaser's own answer to what she would emphasise is going to the bedside and re-evaluating the patient
+      &mdash; looking at perfusion, at the vital signs, at mental status &mdash; because these patients need
+      individualised care and you cannot individualise from a number.</p>
+
+    <h2 class="sub">And for those of us a long way from a PICU</h2>
+
+    <p>There is a section of this episode that will land harder in Coffs Harbour than in Dallas. The host
+      describes taking transport calls from hundreds of miles away, from a referring clinician who is
+      extremely busy, and the possibility that if the retrieval team cannot come immediately, <em>nobody will
+      have another conversation about this child for three or four hours</em>. He is uneasy about issuing
+      prescriptions down a phone line with no reassessment built into them.</p>
+
+    <p>Glaser agrees, and her answer is not a pathway but a practice: get lots of detail, and talk to the
+      outside hospital frequently, because the balance of acidosis, dehydration and hyperglycaemia is
+      different in every one of these children and no single pathway covers them.</p>
+
+    <p>If you are the referring clinician in that conversation, the useful thing to say out loud is the
+      corrected sodium, and then to agree explicitly when the next call will happen and what will have been
+      measured by then.</p>
+
+    <h2 class="sub">How these children die</h2>
+
+    <p>Not, mostly, by the route we are trained to fear. Asked directly, Glaser says the case reports come
+      back to shock and circulatory volume: treated initially on the standard DKA protocol, the fluid volume
+      was not enough, and shock and renal failure and other organ injury followed on that basis. Beyond that,
+      arrhythmias from rapid falls in potassium or phosphate, and the consequences of very low phosphate.</p>
+
+    <p>Her summary of the whole thing is the sentence to take away: once you recognise that this person has
+      hyperosmolar DKA and that it needs treating differently from the usual protocol, <strong>that is more
+      than half the battle</strong>.</p>
+
+    <h2 class="sub">The thread through the malpractice cases</h2>
+
+    <p>The last question is about medicolegal considerations, and the answer is the best thing in the
+      episode. Glaser reviews cases sent to her over concerns about malpractice, and says the most common
+      thread is almost always the same one:</p>
+
+    <blockquote class="pull">It wasn't really recognised that the patient had something different from
+      garden-variety DKA&hellip; when you look back at what was happening with fluid balance during treatment,
+      the patient wasn't really having a nice positive fluid balance. They were maybe staying neutral or even
+      becoming more dehydrated, because they had very high urine output, and that wasn't noted or
+      addressed.</blockquote>
+
+    <p>Read that again as a description of a ward round rather than a lawsuit. Nobody did anything dramatic.
+      The protocol was followed. The observations were charted. The urine output was measured and written
+      down, in the correct column, by somebody competent. And the sum of those numbers &mdash; the one number
+      nobody was actually looking at &mdash; was quietly going the wrong way for hours.</p>
+
+    <p>Which is as good an argument as I have heard for the oldest habit in intensive care: go and look at
+      the patient, and add up the balance yourself.</p>
+
+  </div>
+
+  <div class="pad" style="padding-top:6px">
+    <div class="challenge">
+      <h2>Challenge for you</h2>
+      <p class="ask">Does your DKA protocol tell you what to do when the glucose is 800?</p>
+      <p class="lead">Go and read it &mdash; properly, this week, not from memory. Does it mention
+        hyperosmolar DKA at all? Does it ask you to calculate a corrected sodium? Does it say anything about
+        replacing urine output, or about phosphate? And if a registrar followed it exactly on the patient in
+        this episode, where would it take them?</p>
+      <p>Tell me what yours says, and what it leaves out. I would like to know whether this is a gap in a few
+        protocols or in most of them, and that is a question a lot of readers can answer in ten minutes each
+        and nobody can answer alone.</p>
+      <p><a class="btn" href="mailto:icuandyou@icloud.com?subject=Podcast%2059%20-%20what%20my%20DKA%20protocol%20says&body=What%20my%20protocol%20says%20about%20hyperosmolar%20DKA%20%28or%20does%20not%29%3A%0D%0A%0D%0A%0D%0AWhere%20it%20would%20take%20a%20registrar%20with%20the%20patient%20in%20this%20episode%3A%0D%0A%0D%0A%0D%0AHospital%20type%20%28tertiary%20%2F%20regional%20%2F%20rural%29%3A%0D%0A%0D%0A---%0D%0A%0D%0AName%20%28optional%29%3A%0D%0A%0A---%0A%0AThinking%20about%20this%20ICU%20AND%20YOU%20post%20overall%20%E2%80%94%20was%20it%20useful%20to%20you%2C%20or%20would%20it%20be%20useful%20to%20others%3F%0A">Send me your answer</a></p>
+      <p class="fallback">The button opens a reply straight to me. If your device blocks it, write to
+        <a href="mailto:icuandyou@icloud.com">icuandyou@icloud.com</a> instead.</p>
+    </div>
+
+    <div class="challenge" style="margin-top:22px">
+      <h2>Send me an episode</h2>
+      <p class="ask">Heard something worth other people's time?</p>
+      <p class="lead">I take suggestions from anyone reading this. Tell me the show, the episode and why it
+        was worth an hour, and I will listen. If you would rather write the review yourself, I will publish it
+        here with your name on it &mdash; or without, entirely as you prefer.</p>
+      <p><a class="btn" href="mailto:icuandyou@icloud.com?subject=Podcast%20suggestion&body=The%20show%20and%20episode%3A%0D%0A%0D%0A%0D%0AWhy%20it%20is%20worth%20an%20hour%3A%0D%0A%0D%0A%0D%0AWould%20you%20like%20to%20write%20the%20review%20yourself%3F%20%28yes%20%2F%20no%29%3A%0D%0A%0D%0A%0D%0AName%2C%20and%20how%20you%20would%20like%20to%20be%20credited%3A%0D%0A%0A---%0A%0AThinking%20about%20this%20ICU%20AND%20YOU%20post%20overall%20%E2%80%94%20was%20it%20useful%20to%20you%2C%20or%20would%20it%20be%20useful%20to%20others%3F%0A">Suggest an episode</a></p>
+      <p class="fallback">The button opens a reply straight to me. If your device blocks it, write to
+        <a href="mailto:icuandyou@icloud.com">icuandyou@icloud.com</a> instead.</p>
+    </div>
+  </div>
+
+  <footer>
+    <span class="firstpub">First published September 2026</span>
+    <p class="subline">Two emails a week &mdash; the Friday newsletter for all subscribers, and, for clinical subscribers,
+      the mind map and puzzles the moment they go up on Tuesday. Occasional announcements of new
+      features as they arrive. What went up and why it mattered, the best of your replies, and
+      original feature stories, news and views. <a href="https://joinlist.com/f/5adad2d6">Come and join us</a>.</p>
+    <a class="home" href="./">&larr; &nbsp;All of ICU AND YOU</a><br>
+    ICU AND YOU &nbsp;·&nbsp; Podcast Session 59 &nbsp;·&nbsp; companion to Mind Map #35, The Adolescent<br>
+        Summary written independently of the episode, which is <em>Hyperosmolar DKA with Dr Nicole Glaser</em>
+    from PedsCrit, 15 December 2025. Quotations are from the show's automatically generated transcript, lightly
+    corrected for obvious transcription errors. Educational use only &mdash; not a prescribing guide. Every figure
+    here must be checked against your own unit's protocol and current paediatric guidance, which always take
+    precedence.
+  <br>
+    <span class="mine">Views my own, not those of NSW Health or any other organisation. No identifiable patients — scenarios are constructed or combined for teaching. <a href="about.html">More</a>.</span>
+  </footer>
+
+</div>
+<script data-goatcounter="https://icuandyou.goatcounter.com/count"
+        async src="//gc.zgo.at/count.js"></script>
+</body>
+</html>
