@@ -1145,6 +1145,17 @@
     history.replaceState(null, "", window.location.pathname + window.location.hash);
   }
 
+  // A topic is the one thing on this page worth sending somebody. Picking one
+  // used to change the view without changing the address, so copying the bar
+  // gave them the bare landing page and they had to be told where to scroll.
+  // Write the topic into the URL instead, in the same ?t= form the content
+  // pages already link with, so the address bar IS the shareable link.
+  function setURLTopic(slug){
+    if(!history.replaceState) return;
+    history.replaceState(null, "", window.location.pathname + "?t=" +
+      encodeURIComponent(slug));
+  }
+
   q.addEventListener("input", apply);
 
   document.getElementById("clear").addEventListener("click", function(){
@@ -1201,8 +1212,8 @@
   Array.prototype.forEach.call(
     document.querySelectorAll('.mi[data-t]'), function(m){
       m.addEventListener("click", function(){
-        forgetURLFilter();
         var tp = m.dataset.t;
+        setURLTopic(tp);
         alldrops.forEach(function(x){ x.open = false; });
         clearAll();
         filter = "all";
