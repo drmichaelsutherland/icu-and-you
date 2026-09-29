@@ -204,6 +204,25 @@ def make_printable(fillable_path):
                     required=False, default="")
     eyebrow = grab(src, r'<p class="eyebrow">(.*?)</p>')
     footer = grab(src, r'<footer[^>]*>(.*?)</footer>')
+    # The template re-emits the first-published line itself, and the footer we
+    # just grabbed already carries one. Drop it here or it prints twice.
+    footer = re.sub(r'\s*<span class="firstpub">.*?</span>', "", footer, flags=re.S)
+
+    # Every printable in the series opens with "What these puzzles are for".
+    # It was being added by hand, so the generator's output had drifted from
+    # the published pages; carry it over from the fillable instead, with the
+    # reciprocal link turned round to point back at the fillable.
+    howto = grab(src, r'(<div class="howto">.*?</div>)', required=False, default="")
+    if howto:
+        # The fillable's last line points at the printable and says "if you
+        # would rather do it on paper", which makes no sense once you are on
+        # the paper version. Replace the whole sentence, not just the link.
+        howto = re.sub(
+            r'<p>There is a <a href="[^"]*">.*?</p>',
+            f'<p>There is a <a href="{Path(fillable_path).name}">fill it in on '
+            f'screen</a> if you would rather work that way, and a challenge at '
+            f'the foot of the page.</p>',
+            howto, count=1, flags=re.S)
     topic_btn = grab(src, r'(<a class="toptopic".*?</a>)', required=False, default="")
 
     svg, n_cells, n_starts = build_svg(geom, no)
@@ -247,6 +266,7 @@ def make_printable(fillable_path):
   </header>
 
   <div class="pad">
+    {howto}
     <p class="instruct">The printable version &mdash; grid and clues, nothing to tap.
       Print it, or fill it in with a pen at the desk.</p>
     <div class="gridwrap">{svg}</div>
