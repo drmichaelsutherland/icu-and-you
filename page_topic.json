@@ -179,6 +179,11 @@
    "Historical Snapshots",
    "antique striped",
    "other"
+  ],
+  "doctors": [
+   "Notable Doctors",
+   "laurel",
+   "other"
   ]
  },
  "pages": [
@@ -1132,9 +1137,28 @@
    "badge": "Superpuzzle",
    "link_label": "Open the puzzle",
    "blurb": "Twenty clues from the fortnight — consent and capacity, the front-of-neck membrane whose size matters more than any birthday, the serogroup the school dose misses, a sea captain, and the Australian vaccine that may eliminate a cancer. Fill it in on screen, or print it."
+  },
+  {
+   "file": "doctors-01-frazer.html",
+   "series": "doctors",
+   "colour": "laurel",
+   "number": "1",
+   "title": "The particle and the man who never saw it",
+   "topic": "The adolescent",
+   "slug": "adolescent",
+   "week": true,
+   "pos": 8,
+   "badge": "Notable Doctors",
+   "link_label": "Open",
+   "blurb": "A new column. Ian Frazer is a renal physician who never trained in virology; the vaccine his name is on prevents a cancer he has never treated. Jian Zhou, who suggested the step that made it work, died in 1999 aged forty-two, seven years before it was approved. The royalties now fund a medal in his name."
   }
  ],
  "latest": [
+  {
+   "file": "doctors-01-frazer.html",
+   "colour": "laurel",
+   "label": "Notable Doctors 1 · The particle and the man who never saw it"
+  },
   {
    "file": "superpuzzle-52-adolescent-fillable.html",
    "colour": "rust",
@@ -1154,11 +1178,6 @@
    "file": "podcast-59-hyperosmolar-dka.html",
    "colour": "slate",
    "label": "Podcast 59 · The protocol is the problem"
-  },
-  {
-   "file": "aphorism-39-non-compliant.html",
-   "colour": "plum",
-   "label": "Aphorism 39 · Never say non-compliant"
   }
  ],
  "topten": [
