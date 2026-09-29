@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en-AU">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ICU AND YOU · Mnemonic 57 — ADULT</title>
+<meta name="description" content="Mnemonic 57: ADULT — five things for the adolescent in intensive care. An adult body and adult doses, admissions that are decisions rather than failures, seeing them unaccompanied, a law that differs by jurisdiction, and the transition where they are lost.">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="alternate icon" href="/favicon.ico" sizes="any">
+<link rel="apple-touch-icon" href="/icon-180.png">
+<meta name="theme-color" content="#1B2A33">
+<meta property="og:site_name" content="ICU AND YOU">
+<meta property="og:type" content="website">
+<meta property="og:title" content="ICU AND YOU · Mnemonic 57 — ADULT">
+<meta property="og:description" content="An adult body, and not an adult. Five things for the adolescent in intensive care.">
+<meta property="og:image" content="https://icuandyou.com/share-card.png">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Spectral:wght@400;500&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  :root{--paper:#FAFBF6;--card:#FFFFFF;--ink:#26291B;--ink-soft:#535741;--hair:#E0E4D2;--sky:#2E5E73;--amber:#9A6410;}
+  *{box-sizing:border-box;}
+  body{margin:0;background:var(--paper);color:var(--ink);font-family:"Spectral",Georgia,serif;font-size:16px;line-height:1.62;-webkit-font-smoothing:antialiased;}
+  .wrap{max-width:640px;margin:0 auto;padding:34px 22px 68px;}
+  .card{background:var(--card);border:1px solid var(--hair);padding:38px 42px 34px;}
+  .toptopic{display:inline-block;margin:0 0 16px 9px;padding:7px 16px;border-radius:20px;
+    border:1px solid currentColor;opacity:.62;text-decoration:none;color:inherit;
+    font:600 11.5px 'Helvetica Neue',Arial,sans-serif;letter-spacing:.09em;
+    text-transform:uppercase;transition:opacity .12s ease}
+  .toptopic:hover{opacity:1}
+  .topseries{display:inline-block;margin:0 0 16px 9px;padding:7px 16px;border-radius:20px;
+    border:1px solid currentColor;opacity:.62;text-decoration:none;color:inherit;
+    font:600 11.5px 'Helvetica Neue',Arial,sans-serif;letter-spacing:.09em;
+    text-transform:uppercase;transition:opacity .12s ease}
+  .topseries:hover{opacity:1}
+  .tophome{display:inline-block;margin:0 0 16px;padding:7px 16px;border-radius:20px;
+    border:1px solid currentColor;opacity:.62;text-decoration:none;color:inherit;
+    font:600 11.5px 'Helvetica Neue',Arial,sans-serif;letter-spacing:.09em;
+    text-transform:uppercase;transition:opacity .12s ease}
+  .tophome:hover{opacity:1}
+  .eyebrow{font-family:"IBM Plex Mono",monospace;font-size:11.5px;letter-spacing:.18em;text-transform:uppercase;color:var(--sky);font-weight:500;margin:0 0 12px;}
+  .eyebrow a.serlink{color:inherit;text-decoration:none;border-bottom:1px solid transparent}
+  .eyebrow a.serlink:hover{border-bottom-color:currentColor}
+  .eyebrow a.mast{color:inherit;text-decoration:none;border-bottom:1px solid transparent;}
+  .eyebrow a.mast:hover{border-bottom-color:currentColor;}
+  h1{font-family:"Fraunces",serif;font-weight:600;font-size:30px;margin:0 0 4px;letter-spacing:-.01em;}
+  .sub{color:var(--ink-soft);margin:0 0 26px;font-size:15px;}
+  .sub b{color:var(--ink);font-weight:500;letter-spacing:.14em;}
+
+  .acrostic{margin:0 0 6px;}
+  .row{display:flex;align-items:center;gap:16px;padding:9px 0;border-bottom:1px solid var(--hair);}
+  .row:last-child{border-bottom:0;}
+  .ltr{font-family:"Fraunces",serif;font-weight:600;font-size:30px;color:var(--sky);width:30px;text-align:center;flex:none;}
+  .txt{display:flex;flex-direction:column;}
+  .stitle{font-family:"Fraunces",serif;font-weight:500;font-size:16px;color:var(--ink);}
+  .sdetail{font-size:14.5px;color:var(--ink-soft);line-height:1.45;}
+
+  .trace{display:block;width:100%;height:22px;margin:26px 0 4px;}
+
+  .challenge{margin-top:22px;}
+  .ch-k{font-family:"IBM Plex Mono",monospace;font-size:11px;letter-spacing:.16em;text-transform:uppercase;color:var(--amber);font-weight:500;margin:0 0 6px;}
+  .ch-q{font-family:"Fraunces",serif;font-weight:500;font-size:19px;color:var(--ink);margin:0 0 6px;}
+  .ch-lead{font-size:14.5px;color:var(--ink-soft);margin:0 0 16px;}
+
+  .picks{display:flex;flex-direction:column;gap:7px;}
+  .pick{display:flex;align-items:center;gap:11px;padding:11px 14px;border-radius:9px;
+        background:#F4F6EC;border:1px solid #D6DDC2;color:#3D4426;cursor:pointer;
+        font-family:"Spectral",serif;font-size:15px;transition:background .12s ease,border-color .12s ease;}
+  .pick:hover{border-color:#A8B487;}
+  .pick input{accent-color:var(--sky);width:17px;height:17px;flex:none;margin:0;}
+  .pick.on{background:#EAEEDC;border-color:var(--sky);}
+  .pt{flex:1;}
+  .cl{font-family:"Fraunces",serif;font-weight:600;font-size:15px;color:var(--sky);width:15px;flex:none;}
+
+  .sendrow{display:flex;align-items:center;gap:14px;flex-wrap:wrap;margin:18px 0 0;}
+  .send{padding:14px 28px;border:0;border-radius:28px;background:var(--sky);color:#F6FBFD;cursor:pointer;
+        font-family:"IBM Plex Mono",monospace;font-size:12.5px;font-weight:500;letter-spacing:.09em;
+        text-transform:uppercase;}
+  .send:hover{background:#245876;}
+  .tally{font-family:"IBM Plex Mono",monospace;font-size:11.5px;color:var(--ink-soft);}
+
+  .invite{margin:26px 0 0;padding-top:20px;border-top:1px solid var(--hair);font-size:15px;color:var(--ink-soft);}
+  .home{display:inline-block;margin:0 0 12px;padding:8px 18px;border-radius:20px;
+    border:1px solid var(--hair);background:#EFF2E4;color:var(--sky);text-decoration:none;
+    font-family:"IBM Plex Mono",monospace;font-size:11px;font-weight:500;
+    letter-spacing:.08em;text-transform:uppercase;}
+  .home:hover{background:var(--sky);border-color:var(--sky);color:#F6FBFD;}
+  .subline{margin:0 0 14px;padding:0 0 13px;border-bottom:1px solid rgba(0,0,0,.09);
+    font:400 14.5px/1.55 'Iowan Old Style','Palatino Linotype',Palatino,Georgia,serif;
+    max-width:56ch;margin-left:auto;margin-right:auto}
+  .subline a{font-weight:500;border-bottom:1px solid currentColor;
+    text-decoration:none;color:inherit}
+  .firstpub{display:block;margin:0 0 10px;padding-bottom:9px;
+    border-bottom:1px solid currentColor;border-color:rgba(0,0,0,.09);
+    font:400 12px 'Helvetica Neue',Arial,sans-serif;letter-spacing:.06em;opacity:.72}
+  footer{font-family:"IBM Plex Mono",monospace;font-size:11px;color:var(--ink-soft);text-align:center;margin-top:20px;line-height:1.7;}
+  @media (max-width:520px){.card{padding:30px 22px;} h1{font-size:26px;}}
+  @media print{.picks,.sendrow{display:none;}}
+  .mine{display:inline-block;margin:9px 0 0;opacity:.78;font-size:.94em}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="card">
+    <a class="tophome" href="./">&larr;&nbsp; Home</a>
+    <a class="topseries" href="./?s=mnemonic">All mnemonics</a>
+    <a class="toptopic" href="./?t=adolescent" title="Everything on The adolescent">All on this topic</a>
+    <p class="eyebrow"><a class="mast" href="./">ICU and You</a> · <a class="serlink" href="./?s=mnemonic">Mnemonic Series</a> · Number 57</p>
+    <h1>The adolescent</h1>
+    <p class="sub">Five things, and the word is the trap: <b>ADULT</b>.</p>
+
+    <div class="acrostic">
+      <div class="row">
+        <div class="ltr">A</div>
+        <div class="txt"><span class="stitle">Adult body, adult doses</span><span class="sdetail">Dose by weight and never exceed the adult maximum. There is no 50 kg switch and no pubertal switch &mdash; that is a myth. Heparins, insulin, vasoactives and relaxants never stop being size-dosed, and tidal volume comes from predicted body weight calculated from height, never from the scales. Front-of-neck access uses the adult scalpel technique rather than a needle, because the size of the membrane decides it and not the birthday &mdash; though the adult tube may still not fit a sixteen-year-old.</span></div>
+      </div>
+      <div class="row">
+        <div class="ltr">D</div>
+        <div class="txt"><span class="stitle">Deliberate, not delinquent</span><span class="sdetail">Insulin omission, or an interrupted pump, lies behind most ketoacidosis in established diabetes, and graft loss peaks between seventeen and twenty-four. A seventeen-year-old who stops tacrolimus because taking it in front of friends means explaining the transplant has made an intelligible choice with a catastrophic price. <b>Every part of that sentence points at something you could work on.</b> &ldquo;Non-compliant&rdquo; points at nothing.</span></div>
+      </div>
+      <div class="row">
+        <div class="ltr">U</div>
+        <div class="txt"><span class="stitle">Unaccompanied, for part of every admission</span><span class="sdetail">Some part of every admission without the parent in the room &mdash; and say what confidentiality does and does not cover <b>before</b> they tell you anything. Be concrete about where the line falls: what they smoke at the weekend stays within the treating team, a disclosure that somebody is hurting them does not. Never offer a secrecy you will have to break. Their account of what happened is often not the parents' account.</span></div>
+      </div>
+      <div class="row">
+        <div class="ltr">L</div>
+        <div class="txt"><span class="stitle">Law is local</span><span class="sdetail">Maturity decides capacity, not the birthday &mdash; the principle from the English Gillick case, which now runs through most of the common-law world. What differs, country by country and state by state, is the statute built around it. Consent and refusal are not mirror images either: a competent young person's consent generally stands, while a refusal of life-saving treatment can be overridden by a court. Look up your own jurisdiction rather than the number you were taught.</span></div>
+      </div>
+      <div class="row">
+        <div class="ltr">T</div>
+        <div class="txt"><span class="stitle">Transition is where they are lost</span><span class="sdetail">The handover from paediatric to adult services is the point at which a chronic disease most often comes off the rails, and it is the same years in which graft loss peaks. School, exams and sport are the outcomes that matter to them, and they are old enough to report their own &mdash; so they can hold their own follow-up, if anybody asks them to.</span></div>
+      </div>
+    </div>
+
+    <svg class="trace" viewBox="0 0 536 22" preserveAspectRatio="none" aria-hidden="true">
+      <path d="M0 11 L120 11 L128 4 L136 18 L144 8 L150 11 L210 11 L218 4 L226 18 L234 8 L240 11 L300 11 L308 4 L316 18 L324 8 L330 11 L536 11"
+            fill="none" stroke="#2E5E73" stroke-width="1.3" stroke-linejoin="round" stroke-linecap="round"/>
+    </svg>
+
+    <div class="challenge">
+      <p class="ch-k">Challenge for you</p>
+      <p class="ch-q">Which of the five is most often skipped where you work?</p>
+      <p class="ch-lead">Not the one you think matters least &mdash; the one that actually gets left out on a full unit at half past two in the morning. Choose it, add a line on why, and I will publish the tally and the best of the reasoning.</p>
+      <div class="picks">
+        <label class="pick" for="p0">
+          <input type="radio" name="skip" id="p0" value="0">
+          <span class="cl">A</span><span class="pt">Adult body, adult doses</span>
+        </label>
+        <label class="pick" for="p1">
+          <input type="radio" name="skip" id="p1" value="1">
+          <span class="cl">D</span><span class="pt">Deliberate, not delinquent</span>
+        </label>
+        <label class="pick" for="p2">
+          <input type="radio" name="skip" id="p2" value="2">
+          <span class="cl">U</span><span class="pt">Unaccompanied, for part of every admission</span>
+        </label>
+        <label class="pick" for="p3">
+          <input type="radio" name="skip" id="p3" value="3">
+          <span class="cl">L</span><span class="pt">Law is local</span>
+        </label>
+        <label class="pick" for="p4">
+          <input type="radio" name="skip" id="p4" value="4">
+          <span class="cl">T</span><span class="pt">Transition is where they are lost</span>
+        </label>
+      </div>
+      <div class="sendrow">
+        <button class="send" id="send" type="button">Send my answer</button>
+        <span class="tally" id="tally">nothing selected yet</span>
+      </div>
+    </div>
+
+    <p class="invite">Choose one, then send. The button opens a reply straight to me with your choice already in it &mdash;
+      just add your reasoning.</p>
+  </div>
+  <footer>
+    <span class="firstpub">First published September 2026</span>
+    <p class="subline">Two emails a week &mdash; the Friday newsletter for all subscribers, and, for clinical subscribers,
+      the mind map and puzzles the moment they go up on Tuesday. Occasional announcements of new
+      features as they arrive. What went up and why it mattered, the best of your replies, and
+      original feature stories, news and views. <a href="https://joinlist.com/f/5adad2d6">Come and join us</a>.</p>
+    <a class="home" href="./">&larr; &nbsp;All of ICU AND YOU</a><br>
+    ICU AND YOU · Mnemonic No. 57 · companion to Mind Map #35, The Adolescent<br>
+    Educational use only. Not a clinical protocol &mdash; verify every dose against your own formulary,
+    and local guidance always takes precedence.
+  <br>
+    <span class="mine">Views my own, not those of NSW Health or any other organisation. No identifiable patients — scenarios are constructed or combined for teaching. <a href="about.html">More</a>.</span>
+  </footer>
+</div>
+<script>
+(function(){
+  var ITEMS = [{"l": "A", "t": "Adult body, adult doses"}, {"l": "D", "t": "Deliberate, not delinquent"}, {"l": "U", "t": "Unaccompanied, for part of every admission"}, {"l": "L", "t": "Law is local"}, {"l": "T", "t": "Transition is where they are lost"}];
+  var radios = Array.prototype.slice.call(document.querySelectorAll(".pick input"));
+  var tally  = document.getElementById("tally");
+
+  function refresh(){
+    var chosen = null;
+    radios.forEach(function(r){
+      r.parentNode.classList.toggle("on", r.checked);
+      if(r.checked) chosen = +r.value;
+    });
+    tally.textContent = (chosen === null)
+      ? "nothing selected yet"
+      : ITEMS[chosen].l + " \u2014 " + ITEMS[chosen].t;
+    return chosen;
+  }
+  radios.forEach(function(r){ r.addEventListener("change", refresh); });
+
+  document.getElementById("send").addEventListener("click", function(){
+    var chosen = refresh();
+    if(chosen === null){
+      tally.textContent = "choose one first";
+      return;
+    }
+    var it = ITEMS[chosen];
+    var body = "ICU Mnemonic #57 \u2014 ADULT\n\n"
+      + "The step most often skipped where I work:\n  "
+      + it.l + " \u2014 " + it.t + "\n\n"
+      + "Why, and what happens when it is:\n\n\n"
+      + "---\n\nName (optional):\n"
+      + "\n---\n\nThinking about this ICU AND YOU post overall \u2014 was it useful to you, "
+      + "or would it be useful to others?\n";
+    window.location.href = "mailto:icuandyou@icloud.com?subject="
+      + encodeURIComponent("ICU Mnemonic 57 - most often skipped")
+      + "&body=" + encodeURIComponent(body);
+  });
+  refresh();
+})();
+</script>
+<script src="glossary.js"></script>
+<script data-goatcounter="https://icuandyou.goatcounter.com/count"
+        async src="//gc.zgo.at/count.js"></script>
+</body>
+</html>
