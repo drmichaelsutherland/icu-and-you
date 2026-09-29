@@ -315,12 +315,16 @@
       function(i){ if(i.value.trim()) n++; });
     document.getElementById("count").textContent = n+" of "+TOTAL+" squares filled";
   }
+  // Clicking a crossing square again switches direction, as crosswords do.
+  // This has to be mousedown, not focusin: the square is already focused, so
+  // focus never moves and focusin never fires.
+  document.getElementById("grid").addEventListener("mousedown", function(ev){
+    if(ev.target.tagName!=="INPUT" || cur !== ev.target) return;
+    var es = entriesAt(+ev.target.dataset.x, +ev.target.dataset.y);
+    if(es.length>1){ dir = (dir==="A") ? "D" : "A"; light(); }
+  });
   document.getElementById("grid").addEventListener("focusin", function(ev){
     if(ev.target.tagName!=="INPUT") return;
-    if(cur === ev.target){
-      var es = entriesAt(+ev.target.dataset.x, +ev.target.dataset.y);
-      if(es.length>1) dir = (dir==="A") ? "D" : "A";
-    }
     cur = ev.target; light();
   });
   document.getElementById("grid").addEventListener("input", function(ev){
@@ -350,7 +354,9 @@
       if(!e) return;
       dir = d;
       var el = inp(e.c[0][0], e.c[0][1]);
-      if(el){ cur = el; el.focus(); light(); }
+      // Do not set cur here: focusin uses cur === target to mean a second
+      // click on the same square, and would flip the direction we just set.
+      if(el){ el.focus(); dir = d; light(); }
     });
   });
   document.getElementById("clear").addEventListener("click", function(){
