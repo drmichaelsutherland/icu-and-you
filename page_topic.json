@@ -1118,9 +1118,28 @@
    "badge": "A View from England",
    "link_label": "Open",
    "blurb": "A new column. The London Foundling Hospital took children in by lottery drawn in public, renamed them after its donors, publicly denied teaching them to write, and then at fourteen bound them out to a master and stopped. Of fifty-three apprenticed in 1805, fewer than half were doing well and more than a quarter had run away. The same transition problem as this fortnight's journal club, 270 years earlier."
+  },
+  {
+   "file": "superpuzzle-52-adolescent-fillable.html",
+   "series": "superpuzzle",
+   "colour": "rust",
+   "number": "52",
+   "title": "The adolescent",
+   "topic": "The adolescent",
+   "slug": "adolescent",
+   "week": true,
+   "pos": 7,
+   "badge": "Superpuzzle",
+   "link_label": "Open the puzzle",
+   "blurb": "Twenty clues from the fortnight — consent and capacity, the front-of-neck membrane whose size matters more than any birthday, the serogroup the school dose misses, a sea captain, and the Australian vaccine that may eliminate a cancer. Fill it in on screen, or print it."
   }
  ],
  "latest": [
+  {
+   "file": "superpuzzle-52-adolescent-fillable.html",
+   "colour": "rust",
+   "label": "Superpuzzle 52 · The adolescent"
+  },
   {
    "file": "england-01-foundling.html",
    "colour": "woad striped",
@@ -1140,11 +1159,6 @@
    "file": "aphorism-39-non-compliant.html",
    "colour": "plum",
    "label": "Aphorism 39 · Never say non-compliant"
-  },
-  {
-   "file": "mind-map-35-adolescent.html",
-   "colour": "teal",
-   "label": "Mind map 35 · The adolescent"
   }
  ],
  "topten": [
