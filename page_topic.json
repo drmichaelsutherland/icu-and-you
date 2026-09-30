@@ -1151,9 +1151,28 @@
    "badge": "Notable Doctors",
    "link_label": "Open",
    "blurb": "A new column. The cervical cancer vaccine did not begin in a laboratory. It began in a Melbourne clinic in the early 1980s, with a physician noticing that a group of his patients could not get rid of their warts, and a cytologist who asked him what that might mean in women. Ian Frazer worked as a clinician for twenty years. Jian Zhou, who suggested the step that made the particle assemble, died in 1999 aged forty-two, seven years before the vaccine was approved."
+  },
+  {
+   "file": "mnemonic-57-adolescent.html",
+   "series": "mnemonic",
+   "colour": "olive",
+   "number": "57",
+   "title": "ADULT",
+   "topic": "The adolescent",
+   "slug": "adolescent",
+   "week": true,
+   "pos": 9,
+   "badge": "Mnemonic",
+   "link_label": "Open",
+   "blurb": "An adult body, and not an adult — which is the trap the word is named for. Five things: adult doses with no pubertal switch, admissions that are decisions rather than failures of character, seeing them without the parent in the room, a law that differs by country and by state, and the transition to adult services where a chronic disease comes off the rails."
   }
  ],
  "latest": [
+  {
+   "file": "mnemonic-57-adolescent.html",
+   "colour": "olive",
+   "label": "Mnemonic 57 · ADULT"
+  },
   {
    "file": "doctors-01-frazer.html",
    "colour": "laurel",
@@ -1173,14 +1192,14 @@
    "file": "journal-club-100-adolescents-in-icu.html",
    "colour": "sepia",
    "label": "Journal club 100 · The sixteenth birthday"
-  },
-  {
-   "file": "podcast-59-hyperosmolar-dka.html",
-   "colour": "slate",
-   "label": "Podcast 59 · The protocol is the problem"
   }
  ],
  "topten": [
+  {
+   "file": "top-ten-2026-09-september.html",
+   "colour": "brass",
+   "label": "September 2026"
+  },
   {
    "file": "top-ten-2026-08-august.html",
    "colour": "brass",
