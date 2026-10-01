@@ -192,6 +192,59 @@ def main():
             if f"g:{key}" not in filters:
                 problems.append(f"{f}: links to ?g={key}, which matches no group filter")
 
+    # ---- a page must agree with itself ------------------------------------
+    # Every page here is built by copying the last one in its series, and the
+    # bits nobody re-reads are the footer line and the body of the reply
+    # email. Mnemonic 57 shipped with "Mnemonic No. 56 ... The School-Age
+    # Child" in its footer; superquizzes 62 and 63 both opened their result
+    # email "ICU Superquiz #6N — The postneonatal infant", inherited from 61
+    # and carried forward twice. Grepping for the old topic missed all three,
+    # because the stale text used a different spelling each time.
+    #
+    # So compare the page against itself and against its own manifest entry
+    # rather than searching for whatever is expected to be wrong.
+    series_label = {k: v[0] for k, v in m.get("series", {}).items()}
+    topic_names = {p.get("topic") for p in m["pages"] if p.get("topic")}
+    by_file = {p["file"]: p for p in m["pages"]}
+
+    for f in content:
+        p = by_file.get(f)
+        if not p:
+            continue
+        s = (HERE / f).read_text(encoding="utf-8")
+        label, num = series_label.get(p.get("series")), p.get("number")
+
+        # 1. Every time a page names its own series and a number, it must be
+        #    this page's number.
+        if label and num:
+            pat = re.escape(label) + r"\s*(?:&nbsp;)?\s*(?:No\.|Number|#)\s*(\d+)"
+            wrong = {n for n in re.findall(pat, s, re.I) if n != str(num)}
+            if wrong:
+                problems.append(
+                    f"{f}: calls itself {label} #{', #'.join(sorted(wrong))} somewhere, "
+                    f"but the manifest says #{num} — usually a footer or an email "
+                    f"body carried over from the previous piece")
+
+        # 2. The topic button must point at this page's own topic.
+        if not f.startswith(NO_TOPIC_BUTTON_PREFIX):
+            for slug in set(re.findall(r'\?t=([a-z0-9-]+)', s)):
+                if p.get("slug") and slug != p["slug"]:
+                    problems.append(
+                        f'{f}: links to ?t={slug} but the manifest puts it under '
+                        f'"{p["slug"]}"')
+
+        # 3. A reply email is about the page it sits on, so any topic named in
+        #    one must be this page's topic. This is the check that catches a
+        #    mail body inherited from a different block.
+        mail = " ".join(re.findall(r'mailto:[^"\']+', s)
+                        + re.findall(r'var body\s*=\s*(.*?);\s*\n', s, re.S))
+        if mail and p.get("topic"):
+            for t in topic_names:
+                if t != p["topic"] and t.lower() in mail.lower():
+                    problems.append(
+                        f'{f}: its reply email names "{t}", but the page is filed '
+                        f'under "{p["topic"]}"')
+
     # ---- the week heading must match the pages under it -------------------
     # The "this_week" block in the manifest supplies the heading, slug and
     # preamble; the pages are flagged individually with "week": true. Rolling
