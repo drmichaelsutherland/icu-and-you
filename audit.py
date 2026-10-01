@@ -20,15 +20,16 @@ HERE = Path(__file__).resolve().parent
 
 # Site-wide pages: not content, exempt from the content-page checks.
 SITEWIDE = {"index.html", "about.html", "glossary.html",
-            "corrections.html", "you-asked.html"}
+            "corrections.html", "you-asked.html", "on-your-phone.html"}
 
 # Pages that deliberately carry no reply-email line.
-NO_REPLY_LINE = {"about.html", "corrections.html", "you-asked.html"}
+NO_REPLY_LINE = {"about.html", "corrections.html", "you-asked.html",
+                 "on-your-phone.html"}
 
 # Pages that deliberately carry no subscribe footer line.
 # (Site-wide pages don't sell the newsletter — set by Michael, Aug 2026.)
 NO_SUBSCRIBE_LINE = {"about.html", "corrections.html", "glossary.html",
-                     "you-asked.html"}
+                     "you-asked.html", "on-your-phone.html"}
 
 # Some series are not tied to a topic and so have no topic to link to:
 # the Top Ten spans topics by design, and a book review belongs to the
