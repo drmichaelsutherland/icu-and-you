@@ -1165,9 +1165,28 @@
    "badge": "Mnemonic",
    "link_label": "Open",
    "blurb": "An adult body, and not an adult — which is the trap the word is named for. Five things: adult doses with no pubertal switch, admissions that are decisions rather than failures of character, seeing them without the parent in the room, a law that differs by country and by state, and the transition to adult services where a chronic disease comes off the rails."
+  },
+  {
+   "file": "superquiz-64-adolescent.html",
+   "series": "superquiz",
+   "colour": "wine",
+   "number": "64",
+   "title": "The adolescent",
+   "topic": "The adolescent",
+   "slug": "adolescent",
+   "week": true,
+   "pos": 10,
+   "badge": "Superquiz",
+   "link_label": "Take the quiz",
+   "blurb": "Five questions on the adolescent — why the fluid goes in before the glucose comes down, the membrane that may not take the tube you brought, what to say before they tell you anything, the serogroup the school dose misses, and what belongs in the notes. Open book, and three right earns a certificate."
   }
  ],
  "latest": [
+  {
+   "file": "superquiz-64-adolescent.html",
+   "colour": "wine",
+   "label": "Superquiz 64 · The adolescent"
+  },
   {
    "file": "mnemonic-57-adolescent.html",
    "colour": "olive",
@@ -1187,11 +1206,6 @@
    "file": "england-01-foundling.html",
    "colour": "woad striped",
    "label": "A View from England 1 · Bound out"
-  },
-  {
-   "file": "journal-club-100-adolescents-in-icu.html",
-   "colour": "sepia",
-   "label": "Journal club 100 · The sixteenth birthday"
   }
  ],
  "topten": [
