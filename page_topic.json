@@ -1179,9 +1179,26 @@
    "badge": "Superquiz",
    "link_label": "Take the quiz",
    "blurb": "Five questions on the adolescent — why the fluid goes in before the glucose comes down, the membrane that may not take the tube you brought, what to say before they tell you anything, the serogroup the school dose misses, and what belongs in the notes. Open book, and three right earns a certificate."
+  },
+  {
+   "file": "doctors-02-farmer.html",
+   "series": "doctors",
+   "colour": "laurel",
+   "number": "2",
+   "title": "A failure of imagination",
+   "topic": "Any time",
+   "slug": "standing",
+   "week": false,
+   "standing": true,
+   "blurb": "Nominated by a reader. In 1993 the World Health Organization put the cost of treating one patient with multidrug-resistant tuberculosis at up to $250,000 and called it a virtual death sentence in the developing world. Paul Farmer treated them anyway, published the outcomes, and thirteen years later somebody ran the sum properly and found it was cost-effective after all."
   }
  ],
  "latest": [
+  {
+   "file": "doctors-02-farmer.html",
+   "colour": "laurel",
+   "label": "Notable Doctors 2 · A failure of imagination"
+  },
   {
    "file": "superquiz-64-adolescent.html",
    "colour": "wine",
@@ -1201,11 +1218,6 @@
    "file": "superpuzzle-52-adolescent-fillable.html",
    "colour": "rust",
    "label": "Superpuzzle 52 · The adolescent"
-  },
-  {
-   "file": "england-01-foundling.html",
-   "colour": "woad striped",
-   "label": "A View from England 1 · Bound out"
   }
  ],
  "topten": [

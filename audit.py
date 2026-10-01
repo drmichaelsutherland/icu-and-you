@@ -79,10 +79,13 @@ def main():
 
     # ---- per-page structural checks -------------------------------------
     content = [f for f in html_files if f not in SITEWIDE]
+    # A standing piece belongs to no fortnight, so it has no topic to link to.
+    standing = {p["file"]: True for p in (m or {}).get("pages", []) if p.get("standing")}
     for f in content:
         s = (HERE / f).read_text(encoding="utf-8")
         for label, test in CHECKS:
-            if label == "topic button" and f.startswith(NO_TOPIC_BUTTON_PREFIX):
+            if label == "topic button" and (
+                    f.startswith(NO_TOPIC_BUTTON_PREFIX) or standing.get(f)):
                 continue
             if not test(s):
                 problems.append(f"{f}: missing {label}")
