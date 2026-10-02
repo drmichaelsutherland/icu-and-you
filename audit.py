@@ -196,6 +196,57 @@ def main():
             if f"g:{key}" not in filters:
                 problems.append(f"{f}: links to ?g={key}, which matches no group filter")
 
+    # ---- the GROUPS map must know every series --------------------------
+    # The landing page carries the series-to-group map twice: once as the
+    # buttons in the menu, and once as a JavaScript object the "All of ..."
+    # filters read. Adding a series touches the first and it is easy to
+    # forget the second, at which point the series still has its own button
+    # and quietly vanishes from its group's "All" filter. That had happened
+    # to three of them -- A View from England, Historical Snapshots and
+    # Notable Doctors -- before this check existed.
+    gm = re.search(r'var GROUPS = (\{.*?\});', index, re.S)
+    if not gm:
+        problems.append("index.html: GROUPS map not found")
+    else:
+        try:
+            groups = json.loads(gm.group(1))
+        except ValueError as exc:
+            problems.append(f"index.html: GROUPS map is not valid JSON ({exc})")
+            groups = None
+        if groups is not None:
+            declared = {k: v[2] for k, v in m.get("series", {}).items()
+                        if len(v) > 2}
+            for series, group in sorted(declared.items()):
+                if group not in groups:
+                    problems.append(f"index.html: series {series!r} is in group "
+                                    f"{group!r}, which is not in the GROUPS map")
+                elif series not in groups[group]:
+                    problems.append(f"index.html: series {series!r} is missing "
+                                    f"from GROUPS[{group!r}] — it will not "
+                                    f"appear under “All” for that group")
+            for group, members in sorted(groups.items()):
+                for series in members:
+                    if series not in declared:
+                        problems.append(f"index.html: GROUPS[{group!r}] lists "
+                                        f"{series!r}, which is not a series in "
+                                        f"the manifest")
+                    elif declared[series] != group:
+                        problems.append(f"index.html: GROUPS[{group!r}] lists "
+                                        f"{series!r}, but the manifest puts it "
+                                        f"in {declared[series]!r}")
+            labels = re.search(r'var LABELS = (\{.*?\});', index, re.S)
+            if labels:
+                try:
+                    lab = json.loads(labels.group(1))
+                except ValueError:
+                    lab = None
+                if lab is not None:
+                    for group in sorted(groups):
+                        if group not in lab:
+                            problems.append(f"index.html: group {group!r} has no "
+                                            f"entry in LABELS, so its chip will "
+                                            f"not re-label after a reset")
+
     # ---- a page must agree with itself ------------------------------------
     # Every page here is built by copying the last one in its series, and the
     # bits nobody re-reads are the footer line and the body of the reply

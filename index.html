@@ -603,6 +603,16 @@
           <button class="mi" data-f="russia"><i class="md neva striped"></i>Russia House <span class="cyr">Здравствуйте</span></button>
         </div>
       </details>
+      <details class="drop" data-g="doctors">
+        <summary class="chip grp two"><span>Notable<br>Doctors</span></summary>
+<!-- BUILD:DOCTORS -->
+        <div class="menu">
+          <button class="mi" data-f="doctors"><i class="md laurel"></i>All Notable Doctors</button>
+          <a class="mi" href="doctors-01-frazer.html"><i class="md laurel"></i>The warts that would not clear</a>
+          <a class="mi" href="doctors-02-farmer.html"><i class="md laurel"></i>A failure of imagination</a>
+        </div>
+<!-- /BUILD:DOCTORS -->
+      </details>
       <details class="drop" data-g="other">
         <summary class="chip grp two"><span>Other<br>Realms</span></summary>
         <div class="menu">
@@ -611,7 +621,6 @@
           <button class="mi" data-f="screening"><i class="md copper"></i>The Screening Room</button>
           <button class="mi" data-f="impossible"><i class="md lilac"></i>Six Impossible Things?</button>
           <button class="mi" data-f="history"><i class="md antique striped"></i>Historical Snapshots</button>
-          <button class="mi" data-f="doctors"><i class="md laurel"></i>Notable Doctors</button>
         </div>
       </details>
       <details class="drop" data-g="public">
@@ -1017,8 +1026,8 @@
     window.addEventListener("load", function(){ window.scrollTo(0, 0); });
   }
 
-  var GROUPS = {"memory": ["barebones", "mind-map", "aphorism", "mnemonic", "myths", "superpuzzle", "superquiz"], "multimedia": ["podcast", "journal", "bookclub"], "special": ["students", "nurses", "gp", "emergency", "anaesthetics", "dental", "admin"], "procedures": ["procedures"], "drugstore": ["drugstore"], "medicolegal": ["medicolegal"], "exam": ["cicm-first"], "cultural": ["coin", "italiano", "espanol", "india", "chinatown", "australia", "srilanka", "russia"], "other": ["literary", "screening", "impossible"], "public": ["public"]};
-  var LABELS = {"memory": "Memory aids and activities", "multimedia": "Multimedia", "special": "Special groups", "procedures": "Procedures", "drugstore": "Drugstore", "medicolegal": "Medicolegal", "exam": "Exam focus", "cultural": "Cultural narratives", "other": "Other Realms", "public": "For the general public"};
+  var GROUPS = {"memory": ["barebones", "mind-map", "aphorism", "mnemonic", "myths", "superpuzzle", "superquiz"], "multimedia": ["podcast", "journal", "bookclub"], "special": ["students", "nurses", "gp", "emergency", "anaesthetics", "dental", "admin"], "procedures": ["procedures"], "drugstore": ["drugstore"], "medicolegal": ["medicolegal"], "exam": ["cicm-first"], "cultural": ["coin", "italiano", "espanol", "india", "chinatown", "australia", "england", "srilanka", "russia"], "doctors": ["doctors"], "other": ["literary", "screening", "impossible", "history"], "public": ["public"]};
+  var LABELS = {"memory": "Memory aids and activities", "multimedia": "Multimedia", "special": "Special groups", "procedures": "Procedures", "drugstore": "Drugstore", "medicolegal": "Medicolegal", "exam": "Exam focus", "cultural": "Cultural narratives", "doctors": "Notable Doctors", "other": "Other Realms", "public": "For the general public"};
 
   function inFilter(sk){
     // data-series may hold more than one key, space separated. The first is the

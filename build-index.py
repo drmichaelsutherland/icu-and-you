@@ -34,7 +34,8 @@ INDEX = HERE / "index.html"
 MANIFEST = HERE / "page_topic.json"
 
 # Order the groups appear in the landing-page menu.
-GROUP_ORDER = ["memory", "multimedia", "special", "procedures", "cultural", "other"]
+GROUP_ORDER = ["memory", "multimedia", "special", "procedures", "cultural",
+               "doctors", "other"]
 
 
 def e(s):
@@ -383,22 +384,38 @@ def build_teaser(m):
     return "\n".join(out)
 
 
-def build_procedures(m):
-    """The Procedures menu. Unlike the other groups this one is a reference
-    shelf — readers arrive wanting a named procedure, not a stream — so it
-    lists the pages themselves under the filter. It was hand-maintained until
-    September 2026, drifted, and stopped listing anything published after the
-    first entry. Generated now."""
-    pages = sorted((p for p in m["pages"] if p["series"] == "procedures"),
+def _shelf(m, series, all_label):
+    """A menu that lists its own pages rather than just offering a filter.
+
+    Most groups in the menu are streams: a reader opens "Memory aids" to see
+    what is there. A few are reference shelves instead — the reader already
+    knows which piece they want and is looking for it by name. Those list the
+    pages themselves under the filter. Procedures was the first, hand-
+    maintained until September 2026, by which time it had drifted and stopped
+    listing anything published after the first entry. Generated now, and the
+    shape is shared so the next shelf cannot drift either."""
+    label, colour, _ = m["series"][series]
+    pages = sorted((p for p in m["pages"] if p["series"] == series),
                    key=lambda p: int(p.get("number") or 0))
     out = ['        <div class="menu">',
-           '          <button class="mi" data-f="procedures">'
-           '<i class="md amethyst"></i>All procedures</button>']
+           f'          <button class="mi" data-f="{series}">'
+           f'<i class="md {colour}"></i>{e(all_label)}</button>']
     for p in pages:
         out.append(f'          <a class="mi" href="{p["file"]}">'
-                   f'<i class="md amethyst"></i>{e(p["title"])}</a>')
+                   f'<i class="md {colour}"></i>{e(p["title"])}</a>')
     out.append('        </div>')
     return "\n".join(out)
+
+
+def build_procedures(m):
+    return _shelf(m, "procedures", "All procedures")
+
+
+def build_doctors(m):
+    """Notable Doctors became a shelf of its own in October 2026, promoted out
+    of Other Realms. The pieces are read by name — a reader wants Farmer, or
+    wants to see who is in the column — so the titles belong in the menu."""
+    return _shelf(m, "doctors", "All Notable Doctors")
 
 
 def build_topics(m):
@@ -438,6 +455,7 @@ REGIONS = {
     "DONATE-LINE": build_donate_line,
     "DONATE": build_donate,
     "PROCEDURES": build_procedures,
+    "DOCTORS": build_doctors,
     "THIS-WEEK": build_this_week,
     "PREVIOUS-WEEKS": build_previous,
     "LATEST": build_latest,
