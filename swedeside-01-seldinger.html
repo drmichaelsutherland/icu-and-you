@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en-AU">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ICU AND YOU · Swedeside No. 1 — A severe attack of common sense</title>
+<meta name="description" content="Swedeside No. 1: Sven Ivar Seldinger, who worked out in 1953 what order to use a needle, a wire and a catheter in — and whose own department did not think it was enough to base a thesis on.">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="alternate icon" href="/favicon.ico" sizes="any">
+<link rel="apple-touch-icon" href="/icon-180.png">
+<link rel="manifest" href="/site.webmanifest">
+<meta name="theme-color" content="#1B2A33">
+<meta property="og:site_name" content="ICU AND YOU">
+<meta property="og:type" content="website">
+<meta property="og:title" content="ICU AND YOU · Swedeside No. 1 — A severe attack of common sense">
+<meta property="og:description" content="You performed his technique this week. His own department thought it too slight for a doctorate.">
+<meta property="og:image" content="https://icuandyou.com/share-card.png">
+<meta name="twitter:card" content="summary_large_image">
+<style>
+  :root{
+    --paper:#FAFBFC; --ink:#22282F; --muted:#5F6875; --rule:#DFE4EA;
+    --rojo:#6C2618; --rojotint:#F6EBE8;
+    --oro:#3C5F86; --orotint:#ECF1F6;
+  }
+  *{box-sizing:border-box}
+  body{margin:0;background:#E6EBF1;color:var(--ink);
+    font:400 17px/1.66 'Iowan Old Style','Palatino Linotype',Palatino,Georgia,serif;
+    -webkit-text-size-adjust:100%;}
+  .sheet{max-width:760px;margin:0 auto;background:var(--paper);
+    box-shadow:0 1px 40px rgba(24,32,42,.12);}
+
+  /* The series cue, in the masthead strip: this column is striped rather
+     than plain, because the site has run out of distinguishable colours. */
+  .flag{height:6px;
+    background:repeating-linear-gradient(135deg,
+      #3C5F86 0 7px, #C09A3E 7px 14px)}
+
+  header.top{padding:42px 42px 28px;border-bottom:1px solid var(--rule)}
+  .eyebrow a.serlink{color:inherit;text-decoration:none;border-bottom:1px solid transparent}
+  .eyebrow a.serlink:hover{border-bottom-color:currentColor}
+  .eyebrow a.mast{color:inherit;text-decoration:none;border-bottom:1px solid transparent}
+  .eyebrow a.mast:hover{border-bottom-color:currentColor}
+  .toptopic,.topseries,.tophome{display:inline-block;margin:0 0 16px 9px;padding:7px 16px;
+    border-radius:20px;border:1px solid currentColor;opacity:.62;text-decoration:none;
+    color:inherit;font:600 11.5px 'Helvetica Neue',Arial,sans-serif;letter-spacing:.09em;
+    text-transform:uppercase;transition:opacity .12s ease}
+  .tophome{margin-left:0}
+  .toptopic:hover,.topseries:hover,.tophome:hover{opacity:1}
+  .eyebrow{font:500 11.5px/1 'Helvetica Neue',Arial,sans-serif;letter-spacing:.24em;
+    text-transform:uppercase;color:var(--muted);margin:0 0 14px}
+  h1{font-size:34px;line-height:1.16;margin:0 0 8px;font-weight:400;letter-spacing:-.012em;
+    font-style:italic}
+  .kicker{color:var(--muted);margin:0;font-size:16.5px}
+
+  .pad{padding:34px 42px}
+  p{margin:0 0 17px}
+  .lede{font-size:20px;line-height:1.5;color:#1A2028;margin:0 0 22px}
+
+  b.term{font-style:normal;font-weight:600;color:var(--rojo)}
+  .cyr{font-size:.97em}
+
+  h2.sub{font:600 12px 'Helvetica Neue',Arial,sans-serif;letter-spacing:.2em;
+    text-transform:uppercase;color:var(--muted);margin:30px 0 14px;
+    padding-bottom:8px;border-bottom:1px solid var(--rule)}
+
+  .faux{margin:0 0 17px;padding:20px 24px;background:var(--rojotint);
+    border-left:4px solid var(--rojo);border-radius:0 8px 8px 0}
+  .faux .lab{display:block;font:600 11px 'Helvetica Neue',Arial,sans-serif;
+    letter-spacing:.18em;text-transform:uppercase;color:var(--rojo);margin:0 0 9px}
+  .faux p:last-child{margin:0}
+
+  .gloss{margin:0 0 17px;padding:20px 24px;background:var(--orotint);
+    border-left:4px solid var(--oro);border-radius:0 8px 8px 0;font-size:16px}
+  .gloss p:last-child{margin:0}
+
+  .welcome{margin:0 0 24px;padding:20px 24px;background:var(--orotint);
+    border-left:4px solid var(--oro);border-radius:0 8px 8px 0}
+  .welcome .lab{display:block;font:600 11px 'Helvetica Neue',Arial,sans-serif;
+    letter-spacing:.18em;text-transform:uppercase;color:var(--oro);margin:0 0 9px}
+  .welcome p:last-child{margin:0}
+
+  .why{margin:0 0 26px;padding:22px 26px;background:#F1F4F9;border-left:4px solid #2F4A7C;
+    border-radius:0 8px 8px 0}
+  .why .lab{display:block;font:600 11px 'Helvetica Neue',Arial,sans-serif;letter-spacing:.18em;
+    text-transform:uppercase;color:#22375C;margin:0 0 10px}
+  .why p{margin:0 0 10px;font-size:15.5px;line-height:1.6}
+  .why p:last-child{margin:0}
+
+  .another{margin:26px 0 0;padding:22px 26px;background:#F4F1EA;
+    border:1px solid #E2DACB;border-radius:10px}
+  .another .lab{display:block;font:600 11px 'Helvetica Neue',Arial,sans-serif;
+    letter-spacing:.18em;text-transform:uppercase;color:#8A6A2E;margin:0 0 10px}
+  .another p:last-child{margin:0}
+
+  .careful{margin:0 0 17px;padding:18px 22px;background:#FBF6EC;
+    border:1px dashed #C8AE7A;border-radius:9px;font-size:16px}
+  .careful .lab{display:block;font:600 11px 'Helvetica Neue',Arial,sans-serif;
+    letter-spacing:.18em;text-transform:uppercase;color:#8A6A2E;margin:0 0 9px}
+  .careful p:last-child{margin:0}
+
+  ul.pts{list-style:none;padding:0;margin:0 0 20px}
+  ul.pts li{margin:0 0 14px;padding:0 0 0 17px;border-left:2px solid var(--rule)}
+  ul.pts li b{display:block;font-weight:600;font-size:16px}
+  ul.pts li span{display:block;color:#3C444F;font-size:16px;line-height:1.55}
+
+  .reply{margin:0;padding:28px 32px;background:#EEF1F5;border-left:5px solid var(--oro)}
+  .reply h2{font:600 12px 'Helvetica Neue',Arial,sans-serif;letter-spacing:.2em;
+    text-transform:uppercase;color:var(--oro);margin:0 0 13px}
+  .ask{font-size:19px;line-height:1.5;font-style:italic;margin:0 0 15px}
+  .btn{display:inline-block;margin:6px 0 12px;padding:15px 30px;background:var(--rojo);
+    color:#FBFCFD;text-decoration:none;border-radius:30px;font-style:normal;
+    font:600 15px 'Helvetica Neue',Arial,sans-serif;letter-spacing:.03em}
+  .btn:hover{background:#3F4C60}
+  .btn:focus-visible{outline:3px solid var(--oro);outline-offset:3px}
+  .fallback{font:400 13.5px 'Helvetica Neue',Arial,sans-serif;color:var(--muted);margin:0}
+  .fallback a{color:var(--rojo)}
+
+  .subline{margin:0 0 14px;padding:0 0 13px;border-bottom:1px solid rgba(0,0,0,.09);
+    font:400 14.5px/1.55 'Iowan Old Style','Palatino Linotype',Palatino,Georgia,serif;
+    max-width:56ch;margin-left:auto;margin-right:auto}
+  .subline a{font-weight:500;border-bottom:1px solid currentColor;
+    text-decoration:none;color:inherit}
+  .firstpub{display:block;margin:0 0 10px;padding-bottom:9px;
+    border-bottom:1px solid currentColor;border-color:rgba(0,0,0,.09);
+    font:400 12px 'Helvetica Neue',Arial,sans-serif;letter-spacing:.06em;opacity:.72}
+
+  footer{padding:24px 42px 42px;border-top:1px solid var(--rule);
+    font:400 13px 'Helvetica Neue',Arial,sans-serif;color:var(--muted);text-align:center;line-height:1.7}
+  .home{display:inline-block;margin:0 0 14px;padding:8px 18px;border-radius:20px;
+    border:1px solid var(--rule);background:#EFF2F6;color:var(--rojo);text-decoration:none;
+    font:600 12.5px 'Helvetica Neue',Arial,sans-serif;letter-spacing:.05em}
+  .home:hover{background:var(--rojo);border-color:var(--rojo);color:#FBFCFD}
+  .mine{display:inline-block;margin:9px 0 0;opacity:.78;font-size:.94em}
+  .srcs{font-size:12.5px;line-height:1.6}
+  .srcs a{color:inherit}
+
+  @media (max-width:620px){
+    header.top,.pad,footer{padding-left:20px;padding-right:20px}
+    .reply{padding:22px 20px}
+    h1{font-size:26px} body{font-size:16.5px} .lede{font-size:18px} .ask{font-size:17.5px}
+  }
+  @media print{ body{background:#fff} .sheet{box-shadow:none;max-width:none} }
+
+  /* One quotation in this piece has to stand on its own — a governor, in 1767,
+     saying the quiet part. The cultural template had no pull quote. */
+  blockquote.pull{margin:24px 0;padding:2px 0 2px 24px;border-left:3px solid var(--rojo);
+    font-size:20px;line-height:1.5;font-style:italic;color:#3A424C}
+  @media (max-width:620px){ blockquote.pull{font-size:17.5px;padding-left:18px} }
+</style>
+</head>
+<body>
+<div class="sheet">
+
+  <div class="flag"></div>
+
+  <header class="top">
+    <a class="tophome" href="./">&larr;&nbsp; Home</a>
+    <a class="topseries" href="./?s=swedeside">More from Swedeside</a>
+    <p class="eyebrow"><a class="mast" href="./">ICU and You</a> &nbsp;·&nbsp;
+      <a class="serlink" href="./?s=swedeside">Swedeside</a> &nbsp;·&nbsp; Number 1</p>
+    <h1>A severe attack of common sense</h1>
+    <p class="kicker">Stockholm, 1953 &mdash; three objects in one hand, and what his own department made of them</p>
+  </header>
+
+  <div class="pad">
+    <div class="welcome">
+      <span class="lab">A new column</span>
+      <p><strong>Sweden, to begin with.</strong> This one exists because I met a Swedish intensivist, which
+        is how most of these columns start, and because the more I looked the odder the omission seemed.
+        Denmark owns the founding myth of intensive care &mdash; Copenhagen, 1952, polio, medical students
+        hand-ventilating in relay around the clock. It is a good story and it is true. But a great deal of
+        the equipment that made the specialty repeatable rather than heroic came from the other side of the
+        Öresund, and almost nobody can name any of it.</p>
+      <p>So we start with the one you used this week without thinking about it at all.</p>
+    </div>
+
+    <p class="lede">Needle in. Wire through the needle. Needle off over the wire. Catheter onto the wire.
+      Catheter in. Wire out. If you have put a line into anybody in the last fortnight &mdash; central,
+      arterial, a vascath, a PICC, a drain, a percutaneous trache, an ECMO cannula &mdash; you performed a
+      Swedish radiologist's name, and the odds are you have never wondered whose.</p>
+
+    <p>He was alive until 1998. He could have been telephoned.</p>
+
+    <h2 class="sub">What the problem actually was</h2>
+
+    <p>Before 1953 there were two ways to get a catheter into an artery, and both were bad. You could cut
+      down and expose the vessel surgically &mdash; Seldinger's own description of that is
+      &ldquo;time-consuming, troublesome and may present certain risks&rdquo;. Or you could puncture
+      percutaneously with a very large needle, twelve to fifteen gauge, and thread a catheter down the
+      inside of it. That worked, after a fashion, and it left a hole in the artery necessarily larger than
+      the catheter filling it, which is an arrangement that bleeds.</p>
+
+    <p>The constraint underneath is hydraulic, and Seldinger said so himself in plain terms: by Poiseuille,
+      flow through a long narrow tube varies with roughly the fourth power of the diameter. He was injecting
+      contrast. A catheter that must fit inside a needle is a thin catheter, and a thin catheter is a slow
+      one. The question was not only how to stop the bleeding. It was how to get a decent bolus of contrast
+      into an artery before the picture was taken.</p>
+
+    <p>His answer inverted the geometry. Let the catheter be <em>as large as the hole</em> rather than
+      smaller than the needle. The Swedish biographical dictionary puts the gain at catheters fifty to a
+      hundred per cent wider, something like five times the flow, and injection times cut by about four
+      fifths.</p>
+
+    <h2 class="sub">Three objects in his hand</h2>
+
+    <p>The moment is documented, which is rarer than you would think, and it is documented by Seldinger
+      himself in a retrospective essay he wrote in 1987. He had been trying a workaround of his own &mdash;
+      a catheter with a side hole cut in it so a needle could pass through and protrude a millimetre or two
+      past the tip &mdash; and it had just failed again.</p>
+
+    <blockquote class="pull">After an unsuccessful attempt to use this technique I found myself disappointed
+      and sad, with three objects in my hand &mdash; a needle, a wire and a catheter &mdash; and &hellip; in
+      a split second I realized in what sequence I should use them.</blockquote>
+
+    <p>Then the sequence, in his own beats, and it is longer than the version we teach:
+      <em>Needle in &mdash; wire in &mdash; needle off &mdash; catheter on wire &mdash; catheter in &mdash;
+      catheter advance &mdash; wire off.</em></p>
+
+    <p>Asked afterwards where the idea came from, he said this:</p>
+
+    <blockquote class="pull">I have been asked how this idea turned up and I quote Phokion, the Greek.
+      &ldquo;I had a severe attack of common sense.&rdquo;</blockquote>
+
+    <div class="careful">
+      <span class="lab">Three things everybody adds, and one he got wrong himself</span>
+      <p>You will have heard that this happened in a darkroom, that he sat down in despair, or that he sat
+        on the floor with the three items laid out in front of him. <strong>None of that appears anywhere
+        &mdash; not in his own account, not in the memorial by his colleague Torgny Greitz that quotes it,
+        not in the Swedish biographical dictionary.</strong> He was standing, holding three things, after a
+        failed attempt. The floor is an accretion, and it is a good illustration of what happens to a story
+        that gets retold admiringly for seventy years.</p>
+      <p>And the famous line is not his own epigram. He is quoting, and he attributes it to Phokion the
+        Athenian. It is not in Plutarch's life of Phocion and it does not appear in the classical sources at
+        all; it reads as a modern joke. So the most-quoted sentence about the most-used technique in medicine
+        is a misattribution &mdash; deployed, self-deprecatingly, by a man explaining that his own discovery
+        had been too obvious to need explaining.</p>
+    </div>
+
+    <h2 class="sub">The contribution was the order, not the hardware</h2>
+
+    <p>It is worth being precise about what was new, because he was precise about it. Wires were not new.
+      Stig Radner, at Lund, had used a wire guide to stiffen catheters in 1948. Percutaneous puncture was not
+      new; Peirce had published the large-needle method in 1951. Catheterisation of an exposed artery went
+      back to Fariñas in 1941, and translumbar aortography to dos Santos in 1929. Seldinger cited all of
+      them.</p>
+
+    <p>What was new was that the wire holds the hole open while the needle leaves. That is the whole of it.
+      Every component was on the table already and had been for years; the invention was the order in which
+      you pick them up. This is why his own account dwells on sequence and says almost nothing about
+      equipment, and it is why the paper &mdash; nine pages in <em>Acta Radiologica</em>, volume 39, 1953
+      &mdash; is mostly six lettered steps and a diagram.</p>
+
+    <h2 class="sub">What his department made of it</h2>
+
+    <p>Here is the part that your Swedish colleague may or may not know, and the part this piece is really
+      about.</p>
+
+    <p>Seldinger wanted to take a doctorate. The obvious subject was the technique, and the obvious argument
+      was the one the technique had already proved in practice: that every artery in the human body could now
+      be reached by a simple percutaneous procedure. According to Greitz, his chief at the Karolinska
+      radiology department <strong>did not think that was enough to form the basis for a thesis</strong>.</p>
+
+    <p>So he did something else. He spent the next decade applying his own access principle to the bile
+      ducts, and defended a dissertation on percutaneous transhepatic cholangiography on 31 May 1966 &mdash;
+      thirteen years after the paper that every hospital in the world was by then using daily. He took his
+      <em>docentur</em> the following year at Gothenburg, not at Karolinska. On 1 January 1968 he became head
+      of radiology at the hospital in Mora, the small town in Dalarna where he had been born, and he stayed
+      there until 1986.</p>
+
+    <div class="careful">
+      <span class="lab">How much weight that paragraph will bear</span>
+      <p><strong>The thesis story rests on one source.</strong> It comes from Torgny Greitz's memorial in the
+        <em>American Journal of Neuroradiology</em> in 1999 &mdash; a Karolinska colleague writing a year
+        after Seldinger died. It is a good source and nobody has contradicted it. But the Swedish
+        biographical dictionary, which is thorough enough to record the exact date of his medical
+        licentiate, records the dissertation and its subject and says nothing whatever about the catheter
+        work having been turned away. One account, uncorroborated.</p>
+      <p>Two further cautions, because the popular telling has hardened. Greitz does not say the thesis was
+        <em>rejected</em> &mdash; there is no record of anything being submitted and failed. He says the
+        chief did not think it was enough to base a thesis on, which is discouragement beforehand, not an
+        examination result. And Greitz does not name the chief. The 1953 paper gives the department director
+        as Professor Knut Lindblom, which makes him the overwhelming likelihood, but that is an inference
+        from a title page and I am flagging it as one.</p>
+      <p>Nor is there any record of Seldinger complaining. There is no quotation anywhere in which he
+        discusses credit, recognition, or being overlooked. Greitz, who knew him, says he was
+        &ldquo;modest about his contribution&rdquo; and had &ldquo;a modest and somewhat sulky appearance
+        that did not always attract people who met him&rdquo;. The grievance in this piece is mine and
+        possibly yours. It does not appear to have been his.</p>
+    </div>
+
+    <h2 class="sub">The arithmetic of recognition</h2>
+
+    <p>I would rather give you dates than adjectives, so here they are. The paper is 1953. The first
+      substantial international honour I can document is the Valentine Award of the New York Academy of
+      Medicine in 1975 &mdash; twenty-two years later. The <em>American Journal of Roentgenology</em> gave
+      him an eleven-page tribute in January 1984, with contributions from Charles Dotter among others.
+      Uppsala gave him an honorary doctorate on 30 May 1984, thirty-one years after the paper, and from
+      Uppsala rather than from Karolinska. Case Western Reserve made him a named professor of radiology in
+      1991, when he was seventy.</p>
+
+    <p>Set against that: in 1956, three years after Seldinger published the access method that made cardiac
+      catheterisation an ordinary procedure, the Nobel Prize in Physiology or Medicine went to Forssmann,
+      Cournand and Richards for cardiac catheterisation. That is not a complaint about the 1956 award, which
+      was plainly deserved. It is an observation about what gets seen. The destination was a discovery. The
+      road to it was a technique.</p>
+
+    <p>And on the Nobel question specifically, a word of discipline: you will occasionally see it claimed
+      that Seldinger was nominated. Nomination records are sealed for fifty years, so for any plausible year
+      the archive cannot yet be consulted. Anybody asserting it &mdash; in either direction &mdash; is
+      asserting something they cannot know.</p>
+
+    <h2 class="sub">What we teach is not quite what he did</h2>
+
+    <p>One last wrinkle, and it is a nice one for a Friday. What is now taught as the
+      &ldquo;traditional Seldinger technique&rdquo;, with its deliberate through-and-through puncture of
+      both vessel walls, is not what Seldinger illustrated. His 1953 diagram shows a single anterior wall
+      puncture. The double-wall version appears to have arrived by conflation with the Cournand needle, which
+      was in concurrent use, and it has carried his name ever since.</p>
+
+    <p>So the eponym has drifted from the man twice over. We attribute to him a technique whose components
+      he did not invent, in a form he did not describe, under a name he never used &mdash; he called it
+      nothing at all, and in Sweden it was known for years simply as <em>S-metoden</em>, the S-method.</p>
+
+    <h2 class="sub">Mora</h2>
+
+    <p>His mother's family were the clockmakers of Mora, which is a real trade and not a decorative detail:
+      the Mora clock is a Swedish object the way the Dala horse is, and the family ran the mechanical
+      workshop in the town. One of his great-grandfathers is the bearded watchmaker in Anders Zorn's painting
+      <em>Djos Mats</em>, and Zorn described the men of that workshop as technical geniuses. The family name
+      was Svensson before it was Seldinger.</p>
+
+    <p>He went back there in 1968 and ran a district radiology department for eighteen years, and he died in
+      his house in Mora in February 1998, at seventy-six. Whether the return was retreat, preference or
+      simply going home, no source says, and I am not going to invent a motive for a man who declined to
+      supply one himself.</p>
+
+    <p>What can be said is this. Somewhere in your unit tonight, probably within the hour, somebody will hold
+      a needle, a wire and a catheter, and will use them in the order a disappointed Swede worked out while
+      standing in a Stockholm X-ray department in 1953 — the order that his own department thought too slight
+      to build a doctorate on.</p>
+
+  </div>
+
+  <div class="pad" style="padding-top:6px">
+    <div class="reply">
+      <h2>Challenge for you</h2>
+      <p class="ask">If it happened in your hospital this year, would it go differently?</p>
+      <p>A trainee works out something simple that turns out to matter enormously &mdash; not a trial, not a
+        grant, a <em>rearrangement</em>. Does your system notice? Think about what it would actually have to
+        pass through: a department head's view of whether it is substantial enough, an ethics application for
+        something that is arguably not research, a journal that wants a sample size, a college that counts
+        publications, and a promotions committee that has a form with no box for &ldquo;changed how the
+        procedure is done&rdquo;.</p>
+      <p>I can argue it both ways and I would like to hear which way you argue it. <strong>For:</strong> we
+        have quality improvement structures, registries, implementation science, social media, and a
+        registrar can now reach ten thousand colleagues from a phone &mdash; Seldinger needed a journal and a
+        chief. <strong>Against:</strong> we have more gatekeeping than 1953, not less; the metrics reward
+        volume and novelty rather than usefulness; and a technique with no product attached to it has nobody
+        to champion it.</p>
+      <p>Three things I would particularly like:</p>
+      <p><strong>One.</strong> Something clever you have seen a junior colleague do that never went anywhere.
+        I will publish these, named or anonymous, and I suspect it will be the most useful list this site has
+        run.<br>
+        <strong>Two.</strong> Whether you have ever had an idea turned away for being too small, and what
+        happened to it.<br>
+        <strong>Three.</strong> Your verdict on the question above &mdash; have we evolved, or have we simply
+        changed who does the declining?</p>
+      <p>And the standing invitation of this section holds: if something characteristic of where you come
+        from belongs on this site, tell me and we will put it here, with your name on it or without, entirely
+        as you prefer. Several of these columns exist because somebody wrote in. This one exists because of a
+        conversation with a Swedish intensivist.</p>
+      <p><a class="btn" href="mailto:icuandyou@icloud.com?subject=Swedeside%201%20-%20Seldinger&body=Something%20clever%20a%20junior%20colleague%20did%20that%20never%20went%20anywhere%3A%0D%0A%0D%0A%0D%0AAn%20idea%20of%20mine%20that%20was%20turned%20away%20for%20being%20too%20small%3A%0D%0A%0D%0A%0D%0AHave%20we%20evolved%2C%20or%20just%20changed%20who%20declines%3F%0D%0A%0D%0A%0D%0A---%0D%0A%0D%0AName%3A%0D%0A%0D%0AWould%20you%20like%20to%20be%20named%20on%20the%20piece%3F%20%28yes%20/%20no%20/%20decide%20later%29%3A%0D%0A%0D%0A---%0D%0A%0D%0AThinking%20about%20this%20ICU%20AND%20YOU%20post%20overall%20%E2%80%94%20was%20it%20useful%20to%20you%2C%20or%20would%20it%20be%20useful%20to%20others%3F%0D%0A">Send me your answer</a></p>
+      <p class="fallback">The button opens a reply straight to me. If your device blocks it, write to
+        <a href="mailto:icuandyou@icloud.com">icuandyou@icloud.com</a> instead.</p>
+    </div>
+  </div>
+
+  <footer>
+    <span class="firstpub">First published September 2026</span>
+    <p class="subline">Two emails a week &mdash; the Friday newsletter for all subscribers, and, for clinical subscribers,
+      the mind map and puzzles the moment they go up on Tuesday. Occasional announcements of new
+      features as they arrive. What went up and why it mattered, the best of your replies, and
+      original feature stories, news and views. <a href="https://joinlist.com/f/5adad2d6">Come and join us</a>.</p>
+    <a class="home" href="./">&larr; &nbsp;All of ICU AND YOU</a><br>
+    Swedeside No. 1 &nbsp;&#183;&nbsp; Not tied to a particular topic grouping<br>
+    <span class="srcs">Seldinger's own account of the moment is &ldquo;A Leaf out of the History of Angiography&rdquo;, in <em>Pioneers in Angiography</em> (Elsevier, 1987), quoted at length in Torgny Greitz's memorial, <a href="https://www.ajnr.org/content/20/6/1180"><em>AJNR</em> 1999;20:1180</a>, which is also the only source for the thesis story. The technique is Seldinger, <em>Acta Radiologica</em> 1953;39(5):368&ndash;376. Dates, appointments, the family name and the Mora clockmakers are from the <a href="https://sok.riksarkivet.se/sbl/Presentation.aspx?id=5858">Svenskt Biografiskt Lexikon</a>, which also records the 1984 Uppsala honorary doctorate and the 1991 Case Western professorship. Nobel nomination records are sealed for fifty years, which is why this piece makes no claim either way. Where sources conflict &mdash; Greitz gives 21 February 1998 for his death and the biographical dictionary gives the 19th &mdash; this piece says so rather than choosing. Educational and historical use only.</span><br>
+    <span class="mine">Views my own, not those of NSW Health or any other organisation. No identifiable
+    patients &mdash; scenarios are constructed or combined for teaching. <a href="about.html">More</a>.</span>
+  </footer>
+
+</div>
+<script data-goatcounter="https://icuandyou.goatcounter.com/count"
+        async src="//gc.zgo.at/count.js"></script>
+</body>
+</html>

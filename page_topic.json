@@ -160,6 +160,11 @@
    "neva striped",
    "cultural"
   ],
+  "swedeside": [
+   "Swedeside",
+   "falu",
+   "cultural"
+  ],
   "dental": [
    "The Dental Files",
    "peppermint striped",
@@ -1191,9 +1196,26 @@
    "week": false,
    "standing": true,
    "blurb": "Nominated by a reader. In 1993 the World Health Organization put the cost of treating one patient with multidrug-resistant tuberculosis at up to $250,000 and called it a virtual death sentence in the developing world. Paul Farmer treated them anyway, published the outcomes, and thirteen years later somebody ran the sum properly and found it was cost-effective after all."
+  },
+  {
+   "file": "swedeside-01-seldinger.html",
+   "series": "swedeside",
+   "colour": "falu",
+   "number": "1",
+   "title": "A severe attack of common sense",
+   "topic": "Any time",
+   "slug": "standing",
+   "week": false,
+   "standing": true,
+   "blurb": "A new column. In 1953 a Swedish radiologist stood holding a needle, a wire and a catheter after a failed attempt, and worked out what order to use them in. You performed his name this week. His own department did not think it was enough to base a doctorate on."
   }
  ],
  "latest": [
+  {
+   "file": "swedeside-01-seldinger.html",
+   "colour": "falu",
+   "label": "Swedeside 1 \u00b7 A severe attack of common sense"
+  },
   {
    "file": "doctors-02-farmer.html",
    "colour": "laurel",
@@ -1213,11 +1235,6 @@
    "file": "doctors-01-frazer.html",
    "colour": "laurel",
    "label": "Notable Doctors 1 · The warts that would not clear"
-  },
-  {
-   "file": "superpuzzle-52-adolescent-fillable.html",
-   "colour": "rust",
-   "label": "Superpuzzle 52 · The adolescent"
   }
  ],
  "topten": [
