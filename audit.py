@@ -196,6 +196,27 @@ def main():
             if f"g:{key}" not in filters:
                 problems.append(f"{f}: links to ?g={key}, which matches no group filter")
 
+    # ---- a page that asks for a reply must say how credit works ----------
+    # Agreed October 2026, after a survey found 54 of 88 pages with a reply
+    # box said nothing at all about what happens to a contributor's name,
+    # and the 34 that did say something said it eleven different ways —
+    # usually covering only the case where the reader writes the piece, so
+    # somebody who merely sent in a paper or an answer was told nothing.
+    # One sentence now, identical everywhere, as standard furniture in the
+    # box. This check exists so the next new page cannot quietly omit it.
+    CREDIT = "How you are credited is entirely your call"
+    for f in content:
+        s = (HERE / f).read_text(encoding="utf-8")
+        if 'class="challenge"' not in s and 'class="reply"' not in s:
+            continue
+        n = s.count(CREDIT)
+        if n == 0:
+            problems.append(f"{f}: has a reply box but no credit line — a reader "
+                            f"is being asked to send something without being told "
+                            f"whether their name goes on it")
+        elif n > 1:
+            problems.append(f"{f}: the credit line appears {n} times")
+
     # ---- the GROUPS map must know every series --------------------------
     # The landing page carries the series-to-group map twice: once as the
     # buttons in the menu, and once as a JavaScript object the "All of ..."
