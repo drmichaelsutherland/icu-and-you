@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="en-AU">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ICU AND YOU · Medical Students’ Place No. 5 — The adolescent</title>
+<meta name="description" content="Medical Students’ Place No. 5: the adolescent in intensive care, in three tiers — the physiology of a body that finished before the brain did, the consultation nobody teaches you to have, and what you will be expected to do.">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="alternate icon" href="/favicon.ico" sizes="any">
+<link rel="apple-touch-icon" href="/icon-180.png">
+<link rel="manifest" href="/site.webmanifest">
+<meta name="theme-color" content="#1B2A33">
+<meta property="og:site_name" content="ICU AND YOU">
+<meta property="og:type" content="website">
+<meta property="og:title" content="ICU AND YOU · Medical Students’ Place No. 5 — The adolescent">
+<meta property="og:description" content="An adult body, and not an adult. Three tiers, so you can read only the one you need.">
+<meta property="og:image" content="https://icuandyou.com/share-card.png">
+<meta name="twitter:card" content="summary_large_image">
+<style>
+  :root{
+    --paper:#FBFAF8; --ink:#1F2130; --muted:#6A6A78; --rule:#DEDCE4;
+    --violet:#4C4A8F; --violettint:#EDECF6;
+    --sky:#2E6E8E; --skytint:#E7F1F6;
+    --moss:#4C6B4A; --mosstint:#EAF1E9;
+    --rust:#A8442A; --rusttint:#F9EDE7;
+  }
+  *{box-sizing:border-box}
+  body{margin:0;background:#EFEEF3;color:var(--ink);
+    font:400 17px/1.64 'Iowan Old Style','Palatino Linotype',Palatino,Georgia,serif;
+    -webkit-text-size-adjust:100%;}
+  .sheet{max-width:840px;margin:0 auto;background:var(--paper);
+    box-shadow:0 1px 40px rgba(31,33,48,.10);}
+
+  header.top{padding:44px 40px 28px;border-bottom:2px solid var(--violet)}
+  .eyebrow a.serlink{color:inherit;text-decoration:none;border-bottom:1px solid transparent}
+  .eyebrow a.serlink:hover{border-bottom-color:currentColor}
+  .eyebrow a.mast{color:inherit;text-decoration:none;border-bottom:1px solid transparent}
+  .eyebrow a.mast:hover{border-bottom-color:currentColor}
+  .toptopic{display:inline-block;margin:0 0 16px 9px;padding:7px 16px;border-radius:20px;
+    border:1px solid currentColor;opacity:.62;text-decoration:none;color:inherit;
+    font:600 11.5px 'Helvetica Neue',Arial,sans-serif;letter-spacing:.09em;
+    text-transform:uppercase;transition:opacity .12s ease}
+  .toptopic:hover{opacity:1}
+  .topseries{display:inline-block;margin:0 0 16px 9px;padding:7px 16px;border-radius:20px;
+    border:1px solid currentColor;opacity:.62;text-decoration:none;color:inherit;
+    font:600 11.5px 'Helvetica Neue',Arial,sans-serif;letter-spacing:.09em;
+    text-transform:uppercase;transition:opacity .12s ease}
+  .topseries:hover{opacity:1}
+  .tophome{display:inline-block;margin:0 0 16px;padding:7px 16px;border-radius:20px;
+    border:1px solid currentColor;opacity:.62;text-decoration:none;color:inherit;
+    font:600 11.5px 'Helvetica Neue',Arial,sans-serif;letter-spacing:.09em;
+    text-transform:uppercase;transition:opacity .12s ease}
+  .tophome:hover{opacity:1}
+  .eyebrow{font:500 11.5px/1 'Helvetica Neue',Arial,sans-serif;letter-spacing:.24em;
+    text-transform:uppercase;color:var(--muted);margin:0 0 14px}
+  h1{font-size:33px;line-height:1.18;margin:0 0 8px;font-weight:400;letter-spacing:-.012em}
+  .kicker{color:var(--muted);margin:0;font-size:16.5px;font-style:italic}
+
+  .pad{padding:32px 40px}
+  p{margin:0 0 16px}
+  .lede{font-size:19px;line-height:1.55;margin:0 0 20px}
+
+  /* tier navigation */
+  .jump{margin:0;padding:14px 40px;background:var(--violettint);
+    border-bottom:1px solid var(--rule);text-align:center;
+    font:400 15.5px 'Iowan Old Style',Palatino,Georgia,serif;color:var(--muted)}
+  .jump a{color:var(--violet);text-decoration:none;border-bottom:1px solid #BFBDDC;
+    padding-bottom:1px;font-weight:500}
+  .jump a:hover{color:var(--ink);border-bottom-color:var(--ink)}
+  html{scroll-behavior:smooth}
+  section[id]{scroll-margin-top:20px}
+
+  /* tiers */
+  section.tier{padding:32px 40px;border-top:1px solid var(--rule)}
+  .tier-k{font:600 11px 'Helvetica Neue',Arial,sans-serif;letter-spacing:.22em;
+    text-transform:uppercase;margin:0 0 8px}
+  .tier h2{font-size:26px;font-weight:400;margin:0 0 6px;line-height:1.24}
+  .tier .who{font-style:italic;color:var(--muted);margin:0 0 22px;font-size:16px}
+  .t1 .tier-k{color:var(--sky)} .t1{background:#FCFDFE}
+  .t2 .tier-k{color:var(--moss)} .t2{background:#FBFCFB}
+  .t3 .tier-k{color:var(--rust)} .t3{background:#FDFBFA}
+
+  ul.pts{list-style:none;margin:0 0 18px;padding:0}
+  ul.pts li{display:flex;gap:13px;padding:10px 0;border-bottom:1px solid #EDEBF2;
+    font-size:16.5px;line-height:1.5}
+  ul.pts li:last-child{border-bottom:0}
+  ul.pts b{flex:0 0 176px;font:600 14.5px 'Helvetica Neue',Arial,sans-serif;
+    line-height:1.4}
+  .t1 ul.pts b{color:var(--sky)} .t2 ul.pts b{color:var(--moss)} .t3 ul.pts b{color:var(--rust)}
+
+  .take{margin:0;padding:18px 22px;border-radius:0 8px 8px 0;font-size:16.5px}
+  .take b{font-weight:600}
+  .t1 .take{background:var(--skytint);border-left:4px solid var(--sky)}
+  .t2 .take{background:var(--mosstint);border-left:4px solid var(--moss)}
+  .t3 .take{background:var(--rusttint);border-left:4px solid var(--rust)}
+
+  .exam{margin:18px 0 0;font:400 14.5px 'Helvetica Neue',Arial,sans-serif;
+    color:var(--muted);line-height:1.6}
+  .exam b{color:var(--ink);font-weight:600}
+
+  .reply{margin:0;padding:30px 34px;background:var(--violettint);border-left:5px solid var(--violet)}
+  .reply h2{font:600 12px 'Helvetica Neue',Arial,sans-serif;letter-spacing:.2em;
+    text-transform:uppercase;color:var(--violet);margin:0 0 14px}
+  .ask{font-size:19.5px;line-height:1.5;font-style:italic;margin:0 0 15px}
+  .btn{display:inline-block;margin:6px 0 12px;padding:15px 30px;background:var(--violet);
+    color:#F8F8FC;text-decoration:none;border-radius:30px;font-style:normal;
+    font:600 15px 'Helvetica Neue',Arial,sans-serif;letter-spacing:.03em}
+  .btn:hover{background:#3A3873}
+  .fallback{font:400 13.5px 'Helvetica Neue',Arial,sans-serif;color:var(--muted);margin:0}
+  .fallback a{color:var(--violet)}
+  .subline{margin:0 0 14px;padding:0 0 13px;border-bottom:1px solid rgba(0,0,0,.09);
+    font:400 14.5px/1.55 'Iowan Old Style','Palatino Linotype',Palatino,Georgia,serif;
+    max-width:56ch;margin-left:auto;margin-right:auto}
+  .subline a{font-weight:500;border-bottom:1px solid currentColor;
+    text-decoration:none;color:inherit}
+  .firstpub{display:block;margin:0 0 10px;padding-bottom:9px;
+    border-bottom:1px solid currentColor;border-color:rgba(0,0,0,.09);
+    font:400 12px 'Helvetica Neue',Arial,sans-serif;letter-spacing:.06em;opacity:.72}
+
+  footer{padding:24px 40px 42px;border-top:1px solid var(--rule);
+    font:400 13px 'Helvetica Neue',Arial,sans-serif;color:var(--muted);text-align:center;line-height:1.7}
+  .home{display:inline-block;margin:0 0 14px;padding:8px 18px;border-radius:20px;
+    border:1px solid var(--rule);background:#F2F1F6;color:var(--violet);text-decoration:none;
+    font:600 12.5px 'Helvetica Neue',Arial,sans-serif;letter-spacing:.05em}
+  .home:hover{background:var(--violet);border-color:var(--violet);color:#F8F8FC}
+
+  @media (max-width:640px){
+    header.top,.pad,.jump,section.tier,footer{padding-left:20px;padding-right:20px}
+    .reply{padding:24px 20px}
+    h1{font-size:26px} .tier h2{font-size:22px} body{font-size:16.5px}
+    ul.pts li{flex-direction:column;gap:3px}
+    ul.pts b{flex:none}
+  }
+  @media print{ body{background:#fff} .sheet{box-shadow:none;max-width:none} }
+  .srcs{font-size:12.5px;line-height:1.6}
+  .mine{display:inline-block;margin:9px 0 0;opacity:.78;font-size:.94em}
+</style>
+</head>
+<body>
+<div class="sheet">
+
+  <header class="top">
+    <a class="tophome" href="./">&larr;&nbsp; Home</a>
+    <a class="topseries" href="./?s=students">More from Medical Students&#x27; Place</a>
+    <a class="topseries" href="you-asked.html">You asked</a>
+    <a class="toptopic" href="./?t=adolescent" title="Everything on The adolescent">All on this topic</a>
+    <p class="eyebrow"><a class="mast" href="./">ICU and You</a> &nbsp;·&nbsp; <a class="serlink" href="./?s=students">Medical Students&#x27; Place</a> &nbsp;·&nbsp; Number 5</p>
+    <h1>The adolescent</h1>
+    <p class="kicker">Puberty to eighteen &mdash; in three tiers, so you can read only the one you need</p>
+  </header>
+
+  <p class="jump">
+    Find your level: <a href="#early">Early years</a>
+    &nbsp;·&nbsp; <a href="#middle">Clinical years</a>
+    &nbsp;·&nbsp; <a href="#senior">Final years</a>
+  </p>
+
+  <div class="pad">
+    <p class="lede">This set is about the years between puberty and eighteen. The physiology has
+      finished arguing. What has not is who may consent, who may be told, and what they will admit to
+      with a parent in the room.</p>
+    <p>The tiers map roughly onto the three phases of a six-year medical programme &mdash; the science,
+      then the clinical reasoning, then what you will actually be expected to do with your own hands.
+      Read the one that fits, and glance at the one above it. If you are on a rural clinical school
+      placement with us, all three are fair game on a ward round.</p>
+    <p>More of this is about law and conversation than about drugs, deliberately. This is the age group
+      where the commonest serious errors are not pharmacological.</p>
+  </div>
+
+  <section class="tier t1" id="early">
+    <p class="tier-k">Tier one</p>
+    <h2>The science of a body that finished before the brain did</h2>
+    <p class="who">Phase 1 &mdash; the foundational years, and anything called <em>Beginnings, Growth and Development</em></p>
+
+    <ul class="pts">
+      <li><b>Puberty is staged, and on two scales, not one</b><span>Tanner scores breast or genital
+        development separately from pubic hair. There is no combined &ldquo;Tanner 3&rdquo;, and
+        discordance is normal and informative &mdash; hair running ahead points at adrenal androgens. The
+        age spread is wide enough that the stage tells you more than the birthday.</span></li>
+      <li><b>The body finishes before the control system does</b><span>Maturation is asynchronous: the
+        reward systems arrive before the prefrontal machinery that moderates them, and that gradient is
+        part of why this age group takes risks. What is <em>not</em> defensible is the line you will hear
+        everywhere, that the brain is not developed until twenty-five. There is no switch at twenty-five.
+        Development is continuous, hugely variable between individuals, and group imaging says nothing
+        about the patient in front of you.</span></li>
+      <li><b>Airway and circulation are adult</b><span>The cords, not the cricoid ring, are the narrowest
+        point; cuffed tubes, and cuff pressure is measured rather than guessed. Stroke volume is no longer
+        near-fixed, so output is not rate-dependent. From twelve there is consensus on a mean arterial
+        pressure of at least 65 &mdash; the first agreed number anywhere in this series.</span></li>
+      <li><b>Weight-based dosing becomes the hazard rather than the safeguard</b><span>Australian safety
+        guidance is explicit: above roughly forty to fifty kilograms, do not exceed adult upper dose
+        limits, and calculating from total body weight can overdose. There is no single cut-off &mdash; it
+        is drug by drug &mdash; but a seventy-kilogram sixteen-year-old dosed per kilogram out of habit is
+        a recognised way to hurt somebody.</span></li>
+      <li><b>Creatinine climbs with muscle, and no eGFR is reported under eighteen</b><span>Australian
+        laboratories do not issue one, because the adult equations are not validated there. So a
+        creatinine sitting inside the adult range can conceal real impairment in a small adolescent &mdash;
+        and on a long admission, muscle wasting lowers creatinine and flatters kidneys that do not deserve
+        it.</span></li>
+      <li><b>The growth plates are still open</b><span>Which is why a limp or a knee complaint still sends
+        you to the hip: slipped upper femoral epiphysis belongs to this age band and presents as knee pain
+        in someone who looks well.</span></li>
+    </ul>
+
+    <p class="take"><b>If you take one thing:</b> the body in front of you is adult and the system steering
+      it is not. Almost everything difficult about this age group follows from that asymmetry.</p>
+
+    <p class="exam"><b>Likely to be examined as:</b> a short answer on Tanner staging and what it actually
+      stages, or on why creatinine is a poor guide to renal function across puberty. A good viva opener is
+      <em>at what weight do you stop dosing per kilogram, and why is that the wrong question?</em></p>
+  </section>
+
+  <section class="tier t2" id="middle">
+    <p class="tier-k">Tier two</p>
+    <h2>The consultation nobody taught you to have</h2>
+    <p class="who">Phase 2 &mdash; the clinical years, integrated clinical studies, and the ICE</p>
+
+    <ul class="pts">
+      <li><b>Ask the parent to step out, routinely</b><span>Australian paediatric bodies recommend seeing
+        the adolescent alone for part of every consultation, and none sets a minimum age. Do it as
+        ordinary practice so it does not read as an accusation: <em>I see everyone your age on their own
+        for a few minutes.</em> Note where the evidence actually sits &mdash; the randomised trial is for
+        the confidentiality <em>assurance</em>, which lifted willingness to disclose from 39 to 47 per cent
+        and willingness to return from 53 to 67. That the room should be empty is consensus, and
+        sound, but it is consensus.</span></li>
+      <li><b>Say what confidentiality covers before you start</b><span>Never promise the unconditional
+        version. The NSW formulation has four exceptions and fits in one breath: if you intend to harm
+        yourself, if you intend to harm someone else, if someone is harming you, or if you know of someone
+        else at risk. Then &mdash; <em>everything else stays between us.</em> Saying it first is part of
+        the method, not a disclaimer bolted on.</span></li>
+      <li><b>HEEADSSS, and the version to use</b><span>Home, Education and employment, Eating, Activities,
+        Drugs, Sexuality, Suicide and depression, Safety. The current form is HEEADSSS 3.0 (2014), whose
+        addition is online life threaded through every domain rather than parked in a letter of its own.
+        Two honesties: it has never been validated and is a consensus framework rather than an instrument,
+        and the Spirituality and Strengths appended locally are not part of the published
+        acronym.</span></li>
+      <li><b>Consent: what the New South Wales law actually says</b><span>You will be taught that section
+        49 of the <em>Minors (Property and Contracts) Act 1970</em> lets a fourteen-year-old consent. It
+        does not say that. It shields the practitioner from a claim in assault or battery, says nothing
+        about negligence, gives the young person no priority over a parent, and expressly preserves the
+        common law. Capacity comes from the common law &mdash; <em>Gillick</em>, received here in
+        <em>Marion&rsquo;s case</em> in 1992 &mdash; and that test is decision-specific, not age-specific:
+        a graze needs less maturity than starting contraception. NSW has no statutory presumption at
+        sixteen. South Australia is the national exception, with statutory adult-equivalent consent at
+        sixteen.</span></li>
+      <li><b>Refusal is not consent in reverse</b><span>The crude version &mdash; they can consent but
+        cannot refuse &mdash; survives neither the NSW Health manual, which says a minor with capacity may
+        refuse, nor the judgments. A competent adolescent&rsquo;s refusal is legally real and must be taken
+        seriously, but it stays subject to the court&rsquo;s <em>parens patriae</em> jurisdiction in a way
+        an adult&rsquo;s does not. In <em>H v AC</em> (2024) the court found a seventeen-year-old Gillick
+        competent and authorised treatment anyway.</span></li>
+      <li><b>Mandatory reporting: know where the line falls</b><span>In NSW the statutory duty attaches to
+        a <em>child</em>, defined as under sixteen. For a sixteen- or seventeen-year-old, reporting is
+        permitted and often right but not mandatory under that section &mdash; the opposite of what most
+        people assume on an adolescent ward. As a student your position is simpler: take any suspicion
+        straight to your supervisor, who is unambiguously a mandatory reporter. You do not discharge a
+        concern by deciding alone that no duty applied.</span></li>
+      <li><b>Ask about self-harm directly, privately, more than once</b><span>Indirect questions get
+        indirect answers. Ask in the room you cleared, in plain words, and ask again later if the first
+        answer arrived too quickly.</span></li>
+    </ul>
+
+    <p class="take"><b>If you take one thing:</b> the examination is the easy part of an adolescent
+      consultation. Almost everything that matters is decided before it &mdash; by whether you got the room
+      right, and whether you said what you would and would not keep to yourself.</p>
+
+    <p class="exam"><b>Likely to be examined as:</b> a long case or OSCE where the marks sit in the
+      approach rather than the findings &mdash; whether you ask the parent out, whether you set out the
+      limits of confidentiality unprompted, whether you address the young person rather than across them.
+      A favourite viva: <em>this fifteen-year-old refuses the operation &mdash; what now?</em></p>
+  </section>
+
+  <section class="tier t3" id="senior">
+    <p class="tier-k">Tier three</p>
+    <h2>What you will be expected to do</h2>
+    <p class="who">Phase 3 &mdash; the final clinical years, the pre-internship term, and your first nights on call</p>
+
+    <ul class="pts">
+      <li><b>For resuscitation, the Australian rule is not the American one</b><span>You will read that a
+        child becomes an adult at the signs of puberty. That is the American Heart Association. ANZCOR
+        defines a child as up to the eighteenth birthday, with the rider that if the patient appears to be
+        an adult you use adult guidelines. The paediatric numbers hold while you are on them: four joules
+        per kilogram for every shock, adrenaline ten micrograms per kilogram to a maximum single dose of
+        one milligram.</span></li>
+      <li><b>Ketoacidosis: the adolescent risk is recurrence, not cerebral oedema</b><span>Most episodes in
+        established type 1 diabetes follow omitted or interrupted insulin, and deliberate omission is a
+        recognised event rather than a lapse &mdash; so the admission has a conversation in it, not just a
+        fluid order. Cerebral injury complicates well under one per cent of episodes and kills about a
+        fifth of those, but the risk is weighted towards <em>younger</em> children; teaching it as the
+        adolescent hazard is a common inversion. About a third of Australian children still present in
+        ketoacidosis at diagnosis.</span></li>
+      <li><b>Anaphylaxis: the peak-risk group for fatal food reactions</b><span>Lay them flat and do not
+        let them stand or walk &mdash; that is what kills. Intramuscular adrenaline, 0.01 mL/kg of 1:1000
+        to a maximum of 0.5 mL, repeated after five minutes if the response is inadequate. An adolescent
+        carries a 300 microgram device, with a 500 microgram option from fifty kilograms, and intranasal
+        adrenaline is now registered here alongside the injectors. The bands were revised in 2026 &mdash;
+        read the current ASCIA chart, not the one you memorised.</span></li>
+      <li><b>Meningococcus: the funded vaccine misses the common one</b><span>MenACWY is on the National
+        Immunisation Program at fourteen to sixteen, usually through school. Serogroup B causes the large
+        majority of Australian notifications and is <em>not</em> nationally funded for healthy adolescents
+        &mdash; only South Australia and Queensland fund it. So &ldquo;fully vaccinated&rdquo; in a sick
+        sixteen-year-old with a rash excludes much less than it sounds like.</span></li>
+      <li><b>Deliberate self-poisoning is an admission category of its own</b><span>Australian intensive
+        care units took 813 admissions of twelve to seventeen-year-olds for deliberate self-harm between
+        2015 and 2021, around two-thirds of them girls, and the monthly rate rose after March 2020. Each
+        needs a mental health assessment, not merely a drug level, and it belongs to the admission rather
+        than to the discharge.</span></li>
+      <li><b>Injury is what kills them</b><span>Injury accounts for roughly three-quarters of deaths
+        between fifteen and twenty-four; suicide is the single leading cause at about a third. Keep those
+        apart &mdash; you will hear the three-quarters attached to suicide, and it belongs to injury as a
+        whole. On the ward: they compensate well and then do not, so a normal blood pressure in a bleeding
+        adolescent describes their physiology, not their blood volume.</span></li>
+      <li><b>Testicular torsion, and the sign that points the wrong way</b><span>Peak incidence runs right
+        through this age band, and salvage falls from about ninety per cent inside six hours to about
+        twenty by twenty-four. Two traps: relief on elevating the testis &mdash; Prehn&rsquo;s sign &mdash;
+        was present in the large majority of <em>proven</em> torsions, so the classic teaching is
+        backwards; and a normal Doppler does not exclude it. It also presents as lower abdominal pain in
+        someone nobody has examined below the waist.</span></li>
+      <li><b>Know where they go, and call early</b><span>Adolescents fall down a gap in the Australian data
+        &mdash; the adult registry excludes under-sixteens, the paediatric one thins out above fifteen,
+        and no national ranking of adolescent admissions has been published. The gap exists in the
+        buildings too: whether your fifteen-year-old goes to an adult unit, a children&rsquo;s unit or a
+        retrieval depends on where you are standing. In New South Wales, NETS is 1300 36 2500.</span></li>
+    </ul>
+
+    <p class="take"><b>If you take one thing:</b> the error at your stage is treating them as a large child
+      or a small adult. They are neither, and in this age group the traps are as often legal and
+      conversational as they are pharmacological.</p>
+
+    <p class="exam"><b>Likely to be examined as:</b> an OSCE on the adolescent consultation, a viva on
+      consent and capacity, or a resuscitation scenario where what the examiner really wants to know is
+      whether you reach for paediatric or adult numbers, and whether you can say why.</p>
+
+    <p class="take" style="margin-top:18px"><b>And one for you.</b> Medical students are not exempt from
+      anything on this page. If this material lands closer to home than it should, Doctors&rsquo; Health
+      NSW runs a confidential peer-support line for doctors and students on 02 9437 6552, and Lifeline is
+      13 11 14.</p>
+  </section>
+
+  <div class="pad" style="padding-top:24px">
+    <div class="reply">
+      <h2>Over to you</h2>
+      <p class="ask">Which tier did you read &mdash; and what were you taught that this page contradicts?</p>
+      <p>Tell me your year, which tier fitted, and what was missing, too basic or too advanced. That part is
+        the same every time, and it is how these get better.</p>
+      <p>This one has a second question I would particularly like answered. Several things here are taught
+        the other way round in perfectly good medical schools: that section 49 lets a fourteen-year-old
+        consent, that a child becomes an adult at the signs of puberty, that adolescents are the high-risk
+        group for cerebral oedema, that Prehn&rsquo;s sign tells you something. <strong>Which of them were
+        you taught?</strong> No names and no universities &mdash; I want to know which survive into
+        practice, and a few dozen replies would tell me something I cannot find out any other way.</p>
+      <p>And if a topic is giving you trouble, say so and I will build the next one around it.</p>
+      <p><a class="btn" href="mailto:icuandyou@icloud.com?subject=Medical%20Students%205%20-%20the%20adolescent&body=My%20year%2C%20and%20which%20tier%20fitted%3A%0D%0A%0D%0A%0D%0AWhat%20was%20missing%2C%20too%20basic%20or%20too%20advanced%3A%0D%0A%0D%0A%0D%0ASomething%20on%20this%20page%20I%20was%20taught%20the%20other%20way%20round%3A%0D%0A%0D%0A%0D%0AA%20topic%20I%20am%20struggling%20with%3A%0D%0A%0D%0A---%0D%0A%0D%0AName%3A%0D%0A%0D%0A---%0D%0A%0D%0AThinking%20about%20this%20ICU%20AND%20YOU%20post%20overall%20%E2%80%94%20was%20it%20useful%20to%20you%2C%20or%20would%20it%20be%20useful%20to%20others%3F%0D%0A">Send your feedback</a></p>
+      <p class="fallback" style="margin-bottom:9px">How you are credited is entirely your call &mdash; by name, by initials, or not at all &mdash; whether you write the piece or I do, and whether I quote you or simply say who sent something in; nothing of yours goes up with your name on it unless you have said yes.</p>
+<p class="fallback">The button opens a reply straight to me. If your device blocks it, write to
+        <a href="mailto:icuandyou@icloud.com">icuandyou@icloud.com</a> instead.</p>
+    </div>
+  </div>
+
+  <footer>
+    <span class="firstpub">First published September 2026</span>
+    <p class="subline">Two emails a week &mdash; the Friday newsletter for all subscribers, and, for clinical subscribers,
+      the mind map and puzzles the moment they go up on Tuesday. Occasional announcements of new
+      features as they arrive. What went up and why it mattered, the best of your replies, and
+      original feature stories, news and views. <a href="https://joinlist.com/f/5adad2d6">Come and join us</a>.</p>
+    <a class="home" href="./">&larr; &nbsp;All of ICU AND YOU</a><br>
+    ICU AND YOU &nbsp;&#183;&nbsp; Medical Students&#x27; Place No. 5 &nbsp;&#183;&nbsp; companion to Mind Map #35, The Adolescent<br>
+    Educational use within the ICU education programme. Not a clinical protocol &mdash; local policy, current
+    paediatric guidance and the retrieval service always take precedence. Verify every dose against your own
+    formulary before use.
+  <br>
+    <span class="srcs">Where this page contradicts something you were taught, here is what it rests on.
+    Consent and capacity: <em>Minors (Property and Contracts) Act 1970</em> (NSW) s49, <em>Marion&rsquo;s
+    case</em> (1992) 175 CLR 218, <em>H v AC</em> [2024] NSWSC 40, and the
+    <a href="https://www.health.nsw.gov.au/policies/manuals/Documents/consent-section-8.pdf">NSW Health
+    consent manual</a>. Mandatory reporting: <em>Children and Young Persons (Care and Protection) Act
+    1998</em> (NSW) s27, whose duty attaches to a child under sixteen. The interview is HEEADSSS 3.0
+    (Klein, Goldenring and Adelman, 2014), with the Australian position in the
+    <a href="https://www.racp.edu.au/docs/default-source/advocacy-library/racp-position-statement-confidential-health-care-for-adolescents-and-young-adults-12-24-years.pdf">RACP
+    statement on confidential health care</a>; the disclosure figures are Ford and colleagues,
+    <em>JAMA</em> 1997. Resuscitation is
+    <a href="https://www.anzcor.org/home/paediatric-advanced-life-support/guideline-12-2-paediatric-advanced-life-support-pals">ANZCOR
+    Guideline 12.2</a> rather than the American equivalent. Adrenaline devices and doses are the
+    <a href="https://allergy.org.au/hp/anaphylaxis/adrenaline-device-prescription">ASCIA guidelines</a> as
+    at July 2026, and the weight bands changed that year. Ketoacidosis follows ISPAD 2022; immunisation
+    the <a href="https://immunisationhandbook.health.gov.au/node/152">Australian Immunisation
+    Handbook</a>; mortality the <a href="https://www.aihw.gov.au/reports/children-youth/deaths">AIHW</a>;
+    and the self-harm admission figures are Corrigan and colleagues, <em>JAMA Network Open</em>
+    2022.</span>
+  <br>
+    <span class="mine">Views my own, not those of NSW Health or any other organisation. No identifiable patients — scenarios are constructed or combined for teaching. <a href="about.html">More</a>.</span>
+  </footer>
+
+</div>
+<script src="glossary.js"></script>
+<script data-goatcounter="https://icuandyou.goatcounter.com/count"
+        async src="//gc.zgo.at/count.js"></script>
+</body>
+</html>

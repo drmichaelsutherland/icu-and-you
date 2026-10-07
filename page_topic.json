@@ -1208,9 +1208,25 @@
    "week": false,
    "standing": true,
    "blurb": "A new column. In 1953 a Swedish radiologist stood holding a needle, a wire and a catheter after a failed attempt, and worked out what order to use them in. You performed his name this week. His own department did not think it was enough to base a doctorate on."
+  },
+  {
+   "file": "med-students-05-adolescent.html",
+   "series": "students",
+   "colour": "violet",
+   "number": "5",
+   "title": "The adolescent",
+   "topic": "The adolescent",
+   "slug": "adolescent",
+   "week": true,
+   "blurb": "Three tiers, so you can read only the one you need. The physiology of a body that finished before the brain did, the consultation nobody teaches you to have, and what you will be expected to do \u2014 including several things taught the other way round in perfectly good medical schools."
   }
  ],
  "latest": [
+  {
+   "file": "med-students-05-adolescent.html",
+   "colour": "violet",
+   "label": "Medical Students 5 \u00b7 The adolescent"
+  },
   {
    "file": "swedeside-01-seldinger.html",
    "colour": "falu",
@@ -1230,11 +1246,6 @@
    "file": "mnemonic-57-adolescent.html",
    "colour": "olive",
    "label": "Mnemonic 57 · ADULT"
-  },
-  {
-   "file": "doctors-01-frazer.html",
-   "colour": "laurel",
-   "label": "Notable Doctors 1 · The warts that would not clear"
   }
  ],
  "topten": [
