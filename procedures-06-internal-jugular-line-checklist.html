@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en-AU">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ICU AND YOU · Internal jugular line — one-page checklist</title>
+<meta name="description" content="A one-page checklist for internal jugular central line insertion — set-up, the three stop points, and what to document. Made to be printed.">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="alternate icon" href="/favicon.ico" sizes="any">
+<link rel="apple-touch-icon" href="/icon-180.png">
+<link rel="manifest" href="/site.webmanifest">
+<meta name="theme-color" content="#1B2A33">
+<meta property="og:site_name" content="ICU AND YOU">
+<meta property="og:type" content="website">
+<meta property="og:title" content="ICU AND YOU · Internal jugular line — checklist">
+<meta property="og:description" content="One page. Three stop points. Print it.">
+<meta property="og:image" content="https://icuandyou.com/share-card.png">
+<meta name="twitter:card" content="summary_large_image">
+<style>
+  :root{
+    --paper:#FBF9FC; --ink:#241F2B; --muted:#6B6377; --rule:#DFD6E6;
+    --amethyst:#7A4FA3; --amethysttint:#F1EBF7;
+    --rust:#A8442A; --rusttint:#F9EDE7;
+    --moss:#4C6B4A; --mosstint:#EAF1E9;
+    --gold:#A8721E; --goldtint:#FBF1DC;
+  }
+  *{box-sizing:border-box}
+  body{margin:0;background:#EAE3EF;color:var(--ink);
+    font:400 17px/1.64 'Iowan Old Style','Palatino Linotype',Palatino,Georgia,serif;
+    -webkit-text-size-adjust:100%;}
+  .sheet{max-width:800px;margin:0 auto;background:var(--paper);
+    box-shadow:0 1px 40px rgba(36,26,44,.11);}
+
+  header.top{padding:42px 40px 28px;border-bottom:1px solid var(--rule)}
+  .topseries,.tophome{display:inline-block;margin:0 0 16px 9px;padding:7px 16px;border-radius:20px;
+    border:1px solid currentColor;opacity:.62;text-decoration:none;color:inherit;
+    font:600 11.5px 'Helvetica Neue',Arial,sans-serif;letter-spacing:.09em;
+    text-transform:uppercase;transition:opacity .12s ease}
+  .tophome{margin-left:0}
+  .topseries:hover,.tophome:hover{opacity:1}
+  .eyebrow{font:500 11.5px/1 'Helvetica Neue',Arial,sans-serif;letter-spacing:.24em;
+    text-transform:uppercase;color:var(--muted);margin:0 0 14px}
+  .eyebrow a.mast,.eyebrow a.serlink{color:inherit;text-decoration:none;
+    border-bottom:1px solid transparent}
+  .eyebrow a.mast:hover,.eyebrow a.serlink:hover{border-bottom-color:currentColor}
+  h1{font-size:35px;line-height:1.14;margin:0 0 8px;font-weight:400;letter-spacing:-.012em}
+  .kicker{color:var(--muted);margin:0;font-size:16.5px}
+
+  .pad{padding:34px 40px}
+  p{margin:0 0 17px}
+  .lede{font-size:20px;line-height:1.5;margin:0 0 22px}
+  b.term{font-weight:600;color:var(--amethyst)}
+
+  h2.sub{font:600 12px 'Helvetica Neue',Arial,sans-serif;letter-spacing:.2em;
+    text-transform:uppercase;color:var(--amethyst);margin:32px 0 15px;
+    padding-bottom:8px;border-bottom:1px solid var(--rule)}
+
+  ul.pts{list-style:none;margin:0 0 18px;padding:0}
+  ul.pts li{display:flex;gap:13px;padding:11px 0;border-bottom:1px solid #EFE9F4;
+    font-size:16.5px;line-height:1.5}
+  ul.pts li:last-child{border-bottom:0}
+  ul.pts b{flex:0 0 182px;font:600 14.5px 'Helvetica Neue',Arial,sans-serif;
+    color:var(--amethyst);line-height:1.4}
+
+  .box{margin:0 0 18px;padding:20px 24px;border-radius:0 8px 8px 0}
+  .box .lab{display:block;font:600 11px 'Helvetica Neue',Arial,sans-serif;
+    letter-spacing:.18em;text-transform:uppercase;margin:0 0 9px}
+  .box p:last-child{margin:0}
+  .red{background:var(--rusttint);border-left:4px solid var(--rust)} .red .lab{color:var(--rust)}
+  .grn{background:var(--mosstint);border-left:4px solid var(--moss)} .grn .lab{color:var(--moss)}
+  .amb{background:var(--goldtint);border-left:4px solid var(--gold)} .amb .lab{color:var(--gold)}
+
+  .stepnum{margin:0 0 22px;padding:0;list-style:none;counter-reset:sn}
+  .stepnum li{position:relative;padding:12px 0 12px 44px;border-bottom:1px solid #EFEAF1;line-height:1.55}
+  .stepnum li:last-child{border-bottom:0}
+  .stepnum li::before{counter-increment:sn;content:counter(sn);position:absolute;left:0;top:10px;
+    width:28px;height:28px;border-radius:50%;background:#7A4FA3;color:#fff;text-align:center;
+    font:600 14px/28px 'Helvetica Neue',Arial,sans-serif}
+
+  .tbl{width:100%;border-collapse:collapse;margin:0 0 22px;
+    font:400 15px 'Helvetica Neue',Arial,sans-serif}
+  .tbl th{text-align:left;padding:9px 10px;border-bottom:2px solid #7A4FA3;
+    font:600 11.5px 'Helvetica Neue',Arial,sans-serif;letter-spacing:.1em;text-transform:uppercase;
+    color:#57365B}
+  .tbl td{padding:10px;border-bottom:1px solid #EFEAF1;vertical-align:top;line-height:1.5}
+  .tbl tr:last-child td{border-bottom:0}
+  .tbl td:first-child{width:26%;font-weight:600;color:#3B2C40}
+
+  .sites{display:flex;gap:13px;flex-wrap:wrap;margin:0 0 20px}
+  .site{flex:1 1 226px;background:#fff;border:1px solid var(--rule);border-radius:9px;
+    padding:16px 18px;border-top:4px solid var(--amethyst)}
+  .site h3{margin:0 0 7px;font:600 13px 'Helvetica Neue',Arial,sans-serif;
+    letter-spacing:.07em;text-transform:uppercase;color:var(--amethyst)}
+  .site p{margin:0;font-size:15.5px;line-height:1.5;color:#3B3345}
+
+  .challenge{margin:0;padding:28px 32px;background:var(--rusttint);border-left:5px solid var(--rust)}
+  .challenge h2{font:600 12px 'Helvetica Neue',Arial,sans-serif;letter-spacing:.2em;
+    text-transform:uppercase;color:var(--rust);margin:0 0 13px}
+  .ask{font-size:19.5px;line-height:1.5;margin:0 0 12px;font-style:italic}
+  .btn{display:inline-block;margin:6px 0 12px;padding:15px 30px;background:var(--rust);
+    color:#FDF8F5;text-decoration:none;border-radius:30px;font-style:normal;
+    font:600 15px 'Helvetica Neue',Arial,sans-serif;letter-spacing:.03em}
+  .btn:hover{background:#8A3620}
+  .btn:focus-visible{outline:3px solid var(--amethyst);outline-offset:3px}
+  .fallback{font:400 13.5px 'Helvetica Neue',Arial,sans-serif;color:var(--muted);margin:0}
+  .fallback a{color:var(--rust)}
+
+  footer{padding:24px 40px 42px;border-top:1px solid var(--rule);
+    font:400 13px 'Helvetica Neue',Arial,sans-serif;color:var(--muted);text-align:center;line-height:1.7}
+  .subline{margin:0 0 14px;padding:0 0 13px;border-bottom:1px solid rgba(0,0,0,.09);
+    font:400 14.5px/1.55 'Iowan Old Style','Palatino Linotype',Palatino,Georgia,serif;
+    max-width:56ch;margin-left:auto;margin-right:auto}
+  .subline a{font-weight:500;border-bottom:1px solid currentColor;
+    text-decoration:none;color:inherit}
+  .firstpub{display:block;margin:0 0 10px;padding-bottom:9px;
+    border-bottom:1px solid rgba(0,0,0,.09);
+    font:400 12px 'Helvetica Neue',Arial,sans-serif;letter-spacing:.06em;opacity:.72}
+  .home{display:inline-block;margin:0 0 14px;padding:8px 18px;border-radius:20px;
+    border:1px solid var(--rule);background:#F3EFF7;color:var(--amethyst);text-decoration:none;
+    font:600 12.5px 'Helvetica Neue',Arial,sans-serif;letter-spacing:.05em}
+  .home:hover{background:var(--amethyst);border-color:var(--amethyst);color:#F8F5FB}
+  .mine{display:inline-block;margin:9px 0 0;opacity:.78;font-size:.94em}
+  .srcs{font-size:12.5px;line-height:1.6}
+  .srcs a{color:inherit}
+
+  @media (max-width:640px){
+    header.top,.pad,footer{padding-left:20px;padding-right:20px}
+    .challenge{padding:22px 20px}
+    h1{font-size:27px} body{font-size:16.5px} .lede{font-size:18.5px} .ask{font-size:18px}
+    ul.pts li{flex-direction:column;gap:3px} ul.pts b{flex:none}
+    .tbl{font-size:14px} .tbl td:first-child{width:34%}
+  }
+  @media print{ body{background:#fff} .sheet{box-shadow:none;max-width:none} }
+  .ck{margin:0 0 20px}
+  .ck h2{font-size:17px;margin:22px 0 9px;letter-spacing:.01em}
+  .ck ul{list-style:none;margin:0;padding:0}
+  .ck li{position:relative;padding:5px 0 5px 27px;font-size:15.5px;line-height:1.45;
+    border-bottom:1px solid #EFEBE2}
+  .ck li::before{content:"";position:absolute;left:0;top:10px;width:13px;height:13px;
+    border:1.5px solid #B8AE9C;border-radius:3px}
+  .ck li b{font-weight:600}
+  .stop{margin:16px 0;padding:13px 16px 13px 18px;border-left:5px solid #A8442A;
+    background:#FBF0EC;border-radius:0 7px 7px 0}
+  .stop .lab{display:block;font:700 10.5px 'Helvetica Neue',Arial,sans-serif;letter-spacing:.17em;
+    text-transform:uppercase;color:#A8442A;margin:0 0 5px}
+  .stop p{margin:0;font-size:15px;line-height:1.5}
+  .cols{display:grid;grid-template-columns:1fr 1fr;gap:0 34px}
+  @media (max-width:700px){ .cols{grid-template-columns:1fr} }
+  @media print{
+    .top a, .challenge, .subline, .reply, .srcs, nav{display:none !important}
+    body{background:#fff} .sheet{box-shadow:none;margin:0;max-width:100%}
+    .ck li{border-bottom:1px solid #DDD;padding-top:4px;padding-bottom:4px}
+    h1{font-size:25px} .pad{padding:0 10px}
+  }
+</style>
+</head>
+<body>
+<div class="sheet">
+
+  <header class="top">
+    <a class="tophome" href="./">&larr;&nbsp; Home</a>
+    <a class="topseries" href="./?s=procedures">All procedures</a>
+    <p class="eyebrow"><a class="mast" href="./">ICU and You</a> &nbsp;·&nbsp;
+      <a class="serlink" href="./?s=procedures">Procedures</a> &nbsp;·&nbsp; Number 6</p>
+    <h1>Internal jugular line</h1>
+    <p class="kicker">One page, for the trolley. The reasoning is in <a href="procedures-06-internal-jugular-line.html">the long version</a>.</p>
+  </header>
+
+  <div class="pad">
+    <p class="lede">Adult, right internal jugular, real-time ultrasound. Tick down. The three red boxes
+      are the ones that turn a routine line into a disaster, and none of them takes more than a few
+      seconds.</p>
+
+    <div class="ck">
+      <div class="cols">
+        <div>
+          <h2>Before you scrub</h2>
+          <ul>
+            <li><b>Indication</b> still stands, and is not &ldquo;to measure the CVP&rdquo;</li>
+            <li><b>Consent</b> &mdash; patient, person responsible, or section 37 emergency, and it is
+              written down</li>
+            <li><b>Platelets and INR</b> known; under 50 and elective, consider transfusing</li>
+            <li><b>Scan both sides undraped</b> &mdash; patent, compressible, where is the carotid in
+              <i>this</i> neck</li>
+            <li><b>Side chosen</b>; avoid subclavian entirely if kidneys are failing</li>
+            <li><b>Monitoring on and visible</b>; assistant present and staying</li>
+            <li><b>Everything open</b> before you scrub; all lumens flushed</li>
+            <li><b>Position</b>: head down 10&ndash;15&deg;, head rotated as little as possible</li>
+          </ul>
+
+          <h2>Sterile set-up</h2>
+          <ul>
+            <li>Hat over all hair, mask, eye protection, sleeves up, bare hands and wrists</li>
+            <li>Surgical scrub, gown, gloves; assistant in hat and mask</li>
+            <li>Chlorhexidine in alcohol &mdash; <b>allowed to dry</b></li>
+            <li>Full-body drape, puncture site only; sterile probe cover, gel inside and out</li>
+          </ul>
+        </div>
+
+        <div>
+          <h2>Doing it</h2>
+          <ul>
+            <li>Re-identify vein and artery; <b>compress to be sure</b></li>
+            <li>Local anaesthetic, and wait for it</li>
+            <li>Puncture with the <b>needle tip in view at all times</b></li>
+            <li>Wire passes with <b>no resistance</b>; stop if it does not</li>
+            <li>Wire in <b>15 cm</b>, no further &mdash; watch for ectopy</li>
+            <li><b>Confirm venous. Twice.</b> See the stop box</li>
+            <li>Nick with the blade away from the wire</li>
+            <li>Dilate <b>held near the skin</b>, skin and tissue only, never let go of the wire</li>
+            <li>Catheter to ~15 cm right, ~18&ndash;20 cm left</li>
+            <li><b>Wire out, and look at it</b></li>
+            <li>Aspirate and flush every lumen</li>
+            <li>Secure; chlorhexidine dressing over a clean, dry site</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="stop">
+        <span class="lab">Stop 1 &mdash; before the dilator</span>
+        <p><b>Blood colour and the absence of pulsatility prove nothing.</b> Two confirmations, at least
+          one objective: <b>see the wire in the vein on ultrasound</b> in two planes, and/or transduce or
+          run a manometry column. If you transduce, check the scale is arterial.</p>
+      </div>
+
+      <div class="stop">
+        <span class="lab">Stop 2 &mdash; if you have dilated an artery</span>
+        <p><b>Leave it in.</b> Do not remove and press. Call vascular surgery or interventional radiology
+          now. Removal and compression fails in the great majority and has killed people; leaving it in
+          place while theatre is arranged does not.</p>
+      </div>
+
+      <div class="stop">
+        <span class="lab">Stop 3 &mdash; before anything is thrown away</span>
+        <p><b>Say the guidewire out loud and hold it up.</b> Assistant confirms. Nothing goes in the bin
+          until the wire is accounted for. This is an omission error that happens to careful people who
+          were interrupted &mdash; being careful is not the control.</p>
+      </div>
+
+      <h2>Afterwards</h2>
+      <div class="cols">
+        <div>
+          <ul>
+            <li>Tip to lower SVC or upper right atrium</li>
+            <li>Film if it was difficult, left-sided, or you are unsure &mdash; <b>not routinely</b></li>
+            <li>A film cannot tell you the line is venous. Transduce</li>
+            <li>Check for pneumothorax if the patient changes</li>
+          </ul>
+        </div>
+        <div>
+          <ul>
+            <li><b>Document</b>: indication, consent basis, site, supervision, ultrasound, passes, how
+              venous position was confirmed, depth, wire accounted for</li>
+            <li>Ask tomorrow, and every day, whether it is still needed</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <p class="lede" style="font-size:16px;margin-top:26px">Everything here is reasoned out, with the
+      evidence and the numbers, in
+      <a href="procedures-06-internal-jugular-line.html">the long version</a>. If you are learning this,
+      read that once before you rely on this.</p>
+  </div>
+
+  <div class="pad" style="padding-top:6px">
+    <div class="challenge">
+      <h2>Challenge for you</h2>
+      <p class="ask">Give one tip to somebody learning this.</p>
+      <p>The thing you actually do that is not in any guideline &mdash; a way of holding the probe, a
+        trick for a neck that will not give you a vein, a near miss you still think about. I am
+        collecting them, and publishing them anonymously unless you say otherwise. There is more about
+        why in <a href="procedures-06-internal-jugular-line.html">the long version</a>.</p>
+      <p><a class="btn" href="mailto:icuandyou@icloud.com?subject=Procedures%206%20-%20internal%20jugular%20lines&body=A%20good%20method%20%E2%80%94%20something%20I%20actually%20do%3A%0D%0A%0D%0A%0D%0AThe%20difficult%20one%20%E2%80%94%20how%20I%20get%20a%20hard%20neck%20done%3A%0D%0A%0D%0A%0D%0ASomething%20to%20watch%20out%20for%20%E2%80%94%20the%20near%20miss%20I%20still%20think%20about%3A%0D%0A%0D%0A%0D%0AYears%20of%20experience%20%28roughly%29%3A%0D%0A%0D%0AName%3A%0D%0A%0D%0A---%0D%0A%0D%0AThinking%20about%20this%20ICU%20AND%20YOU%20post%20overall%20%E2%80%94%20was%20it%20useful%20to%20you%2C%20or%20would%20it%20be%20useful%20to%20others%3F%0D%0A">Send me your tip</a></p>
+      <p class="fallback" style="margin-bottom:9px">How you are credited is entirely your call &mdash; by name, by initials, or not at all &mdash; whether you write the piece or I do, and whether I quote you or simply say who sent something in; nothing of yours goes up with your name on it unless you have said yes.</p>
+<p class="fallback">The button opens a reply straight to me. If your device blocks it, write to
+        <a href="mailto:icuandyou@icloud.com">icuandyou@icloud.com</a> instead.</p>
+    </div>
+  </div>
+
+  <footer>
+    <span class="firstpub">First published October 2026</span>
+    <p class="subline">Two emails a week &mdash; the Friday newsletter for all subscribers, and, for clinical subscribers,
+      the mind map and puzzles the moment they go up on Tuesday. Occasional announcements of new
+      features as they arrive. What went up and why it mattered, the best of your replies, and
+      original feature stories, news and views. <a href="https://joinlist.com/f/5adad2d6">Come and join us</a>.</p>
+    <a class="home" href="./">&larr; &nbsp;All of ICU AND YOU</a><br>
+    Procedures No. 6 &nbsp;&#183;&nbsp; One-page checklist &nbsp;&#183;&nbsp; <a href="procedures-06-internal-jugular-line.html">the long version</a><br>
+    <span class="srcs">A summary sheet, not a protocol. Every item here is sourced and explained in <a href="procedures-06-internal-jugular-line.html">the long version</a>; local policy and your own credentialling take precedence over both. Educational use only.</span><br>
+    <span class="mine">Views my own, not those of NSW Health or any other organisation. No identifiable
+    patients &mdash; scenarios are constructed or combined for teaching. <a href="about.html">More</a>.</span>
+  </footer>
+
+</div>
+<script data-goatcounter="https://icuandyou.goatcounter.com/count"
+        async src="//gc.zgo.at/count.js"></script>
+</body>
+</html>

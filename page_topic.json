@@ -1219,9 +1219,26 @@
    "slug": "adolescent",
    "week": true,
    "blurb": "Three tiers, so you can read only the one you need. The physiology of a body that finished before the brain did, the consultation nobody teaches you to have, and what you will be expected to do \u2014 including several things taught the other way round in perfectly good medical schools."
+  },
+  {
+   "file": "procedures-06-internal-jugular-line.html",
+   "series": "procedures",
+   "colour": "amethyst",
+   "number": "6",
+   "title": "Internal jugular lines",
+   "topic": "Any time",
+   "slug": "standing",
+   "week": false,
+   "standing": true,
+   "blurb": "The big one for trainees, and the sequence comes first. Then indications, consent, contraindications and complications \u2014 including the three steps that turn a routine line into a catastrophe. With a one-page checklist for the trolley."
   }
  ],
  "latest": [
+  {
+   "file": "procedures-06-internal-jugular-line.html",
+   "colour": "amethyst",
+   "label": "Procedures 6 \u00b7 Internal jugular lines"
+  },
   {
    "file": "med-students-05-adolescent.html",
    "colour": "violet",
@@ -1241,11 +1258,6 @@
    "file": "superquiz-64-adolescent.html",
    "colour": "wine",
    "label": "Superquiz 64 · The adolescent"
-  },
-  {
-   "file": "mnemonic-57-adolescent.html",
-   "colour": "olive",
-   "label": "Mnemonic 57 · ADULT"
   }
  ],
  "topten": [

@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<html lang="en-AU">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ICU AND YOU · Procedures No. 6 — Internal jugular lines</title>
+<meta name="description" content="Procedures No. 6: internal jugular central venous catheter insertion — the sequence first, then indications, consent, contraindications and complications, and the two or three things that turn a routine line into a catastrophe.">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="alternate icon" href="/favicon.ico" sizes="any">
+<link rel="apple-touch-icon" href="/icon-180.png">
+<link rel="manifest" href="/site.webmanifest">
+<meta name="theme-color" content="#1B2A33">
+<meta property="og:site_name" content="ICU AND YOU">
+<meta property="og:type" content="website">
+<meta property="og:title" content="ICU AND YOU · Procedures No. 6 — Internal jugular lines">
+<meta property="og:description" content="The how-to first. Then everything that decides whether it goes well.">
+<meta property="og:image" content="https://icuandyou.com/share-card.png">
+<meta name="twitter:card" content="summary_large_image">
+<style>
+  :root{
+    --paper:#FBF9FC; --ink:#241F2B; --muted:#6B6377; --rule:#DFD6E6;
+    --amethyst:#7A4FA3; --amethysttint:#F1EBF7;
+    --rust:#A8442A; --rusttint:#F9EDE7;
+    --moss:#4C6B4A; --mosstint:#EAF1E9;
+    --gold:#A8721E; --goldtint:#FBF1DC;
+  }
+  *{box-sizing:border-box}
+  body{margin:0;background:#EAE3EF;color:var(--ink);
+    font:400 17px/1.64 'Iowan Old Style','Palatino Linotype',Palatino,Georgia,serif;
+    -webkit-text-size-adjust:100%;}
+  .sheet{max-width:800px;margin:0 auto;background:var(--paper);
+    box-shadow:0 1px 40px rgba(36,26,44,.11);}
+
+  header.top{padding:42px 40px 28px;border-bottom:1px solid var(--rule)}
+  .topseries,.tophome{display:inline-block;margin:0 0 16px 9px;padding:7px 16px;border-radius:20px;
+    border:1px solid currentColor;opacity:.62;text-decoration:none;color:inherit;
+    font:600 11.5px 'Helvetica Neue',Arial,sans-serif;letter-spacing:.09em;
+    text-transform:uppercase;transition:opacity .12s ease}
+  .tophome{margin-left:0}
+  .topseries:hover,.tophome:hover{opacity:1}
+  .eyebrow{font:500 11.5px/1 'Helvetica Neue',Arial,sans-serif;letter-spacing:.24em;
+    text-transform:uppercase;color:var(--muted);margin:0 0 14px}
+  .eyebrow a.mast,.eyebrow a.serlink{color:inherit;text-decoration:none;
+    border-bottom:1px solid transparent}
+  .eyebrow a.mast:hover,.eyebrow a.serlink:hover{border-bottom-color:currentColor}
+  h1{font-size:35px;line-height:1.14;margin:0 0 8px;font-weight:400;letter-spacing:-.012em}
+  .kicker{color:var(--muted);margin:0;font-size:16.5px}
+
+  .pad{padding:34px 40px}
+  p{margin:0 0 17px}
+  .lede{font-size:20px;line-height:1.5;margin:0 0 22px}
+  b.term{font-weight:600;color:var(--amethyst)}
+
+  h2.sub{font:600 12px 'Helvetica Neue',Arial,sans-serif;letter-spacing:.2em;
+    text-transform:uppercase;color:var(--amethyst);margin:32px 0 15px;
+    padding-bottom:8px;border-bottom:1px solid var(--rule)}
+
+  ul.pts{list-style:none;margin:0 0 18px;padding:0}
+  ul.pts li{display:flex;gap:13px;padding:11px 0;border-bottom:1px solid #EFE9F4;
+    font-size:16.5px;line-height:1.5}
+  ul.pts li:last-child{border-bottom:0}
+  ul.pts b{flex:0 0 182px;font:600 14.5px 'Helvetica Neue',Arial,sans-serif;
+    color:var(--amethyst);line-height:1.4}
+
+  .box{margin:0 0 18px;padding:20px 24px;border-radius:0 8px 8px 0}
+  .box .lab{display:block;font:600 11px 'Helvetica Neue',Arial,sans-serif;
+    letter-spacing:.18em;text-transform:uppercase;margin:0 0 9px}
+  .box p:last-child{margin:0}
+  .red{background:var(--rusttint);border-left:4px solid var(--rust)} .red .lab{color:var(--rust)}
+  .grn{background:var(--mosstint);border-left:4px solid var(--moss)} .grn .lab{color:var(--moss)}
+  .amb{background:var(--goldtint);border-left:4px solid var(--gold)} .amb .lab{color:var(--gold)}
+
+  .stepnum{margin:0 0 22px;padding:0;list-style:none;counter-reset:sn}
+  .stepnum li{position:relative;padding:12px 0 12px 44px;border-bottom:1px solid #EFEAF1;line-height:1.55}
+  .stepnum li:last-child{border-bottom:0}
+  .stepnum li::before{counter-increment:sn;content:counter(sn);position:absolute;left:0;top:10px;
+    width:28px;height:28px;border-radius:50%;background:#7A4FA3;color:#fff;text-align:center;
+    font:600 14px/28px 'Helvetica Neue',Arial,sans-serif}
+
+  .tbl{width:100%;border-collapse:collapse;margin:0 0 22px;
+    font:400 15px 'Helvetica Neue',Arial,sans-serif}
+  .tbl th{text-align:left;padding:9px 10px;border-bottom:2px solid #7A4FA3;
+    font:600 11.5px 'Helvetica Neue',Arial,sans-serif;letter-spacing:.1em;text-transform:uppercase;
+    color:#57365B}
+  .tbl td{padding:10px;border-bottom:1px solid #EFEAF1;vertical-align:top;line-height:1.5}
+  .tbl tr:last-child td{border-bottom:0}
+  .tbl td:first-child{width:26%;font-weight:600;color:#3B2C40}
+
+  .sites{display:flex;gap:13px;flex-wrap:wrap;margin:0 0 20px}
+  .site{flex:1 1 226px;background:#fff;border:1px solid var(--rule);border-radius:9px;
+    padding:16px 18px;border-top:4px solid var(--amethyst)}
+  .site h3{margin:0 0 7px;font:600 13px 'Helvetica Neue',Arial,sans-serif;
+    letter-spacing:.07em;text-transform:uppercase;color:var(--amethyst)}
+  .site p{margin:0;font-size:15.5px;line-height:1.5;color:#3B3345}
+
+  .challenge{margin:0;padding:28px 32px;background:var(--rusttint);border-left:5px solid var(--rust)}
+  .challenge h2{font:600 12px 'Helvetica Neue',Arial,sans-serif;letter-spacing:.2em;
+    text-transform:uppercase;color:var(--rust);margin:0 0 13px}
+  .ask{font-size:19.5px;line-height:1.5;margin:0 0 12px;font-style:italic}
+  .btn{display:inline-block;margin:6px 0 12px;padding:15px 30px;background:var(--rust);
+    color:#FDF8F5;text-decoration:none;border-radius:30px;font-style:normal;
+    font:600 15px 'Helvetica Neue',Arial,sans-serif;letter-spacing:.03em}
+  .btn:hover{background:#8A3620}
+  .btn:focus-visible{outline:3px solid var(--amethyst);outline-offset:3px}
+  .fallback{font:400 13.5px 'Helvetica Neue',Arial,sans-serif;color:var(--muted);margin:0}
+  .fallback a{color:var(--rust)}
+
+  footer{padding:24px 40px 42px;border-top:1px solid var(--rule);
+    font:400 13px 'Helvetica Neue',Arial,sans-serif;color:var(--muted);text-align:center;line-height:1.7}
+  .subline{margin:0 0 14px;padding:0 0 13px;border-bottom:1px solid rgba(0,0,0,.09);
+    font:400 14.5px/1.55 'Iowan Old Style','Palatino Linotype',Palatino,Georgia,serif;
+    max-width:56ch;margin-left:auto;margin-right:auto}
+  .subline a{font-weight:500;border-bottom:1px solid currentColor;
+    text-decoration:none;color:inherit}
+  .firstpub{display:block;margin:0 0 10px;padding-bottom:9px;
+    border-bottom:1px solid rgba(0,0,0,.09);
+    font:400 12px 'Helvetica Neue',Arial,sans-serif;letter-spacing:.06em;opacity:.72}
+  .home{display:inline-block;margin:0 0 14px;padding:8px 18px;border-radius:20px;
+    border:1px solid var(--rule);background:#F3EFF7;color:var(--amethyst);text-decoration:none;
+    font:600 12.5px 'Helvetica Neue',Arial,sans-serif;letter-spacing:.05em}
+  .home:hover{background:var(--amethyst);border-color:var(--amethyst);color:#F8F5FB}
+  .mine{display:inline-block;margin:9px 0 0;opacity:.78;font-size:.94em}
+  .srcs{font-size:12.5px;line-height:1.6}
+  .srcs a{color:inherit}
+
+  @media (max-width:640px){
+    header.top,.pad,footer{padding-left:20px;padding-right:20px}
+    .challenge{padding:22px 20px}
+    h1{font-size:27px} body{font-size:16.5px} .lede{font-size:18.5px} .ask{font-size:18px}
+    ul.pts li{flex-direction:column;gap:3px} ul.pts b{flex:none}
+    .tbl{font-size:14px} .tbl td:first-child{width:34%}
+  }
+  @media print{ body{background:#fff} .sheet{box-shadow:none;max-width:none} }
+</style>
+</head>
+<body>
+<div class="sheet">
+
+  <header class="top">
+    <a class="tophome" href="./">&larr;&nbsp; Home</a>
+    <a class="topseries" href="./?s=procedures">All procedures</a>
+    <p class="eyebrow"><a class="mast" href="./">ICU and You</a> &nbsp;·&nbsp;
+      <a class="serlink" href="./?s=procedures">Procedures</a> &nbsp;·&nbsp; Number 6</p>
+    <h1>Internal jugular lines</h1>
+    <p class="kicker">The sequence first, then everything that decides whether it goes well &mdash; and a one-page checklist for the trolley</p>
+  </header>
+
+  <div class="pad">
+    <p class="lede">This is the line your trainees judge themselves by, and the one most likely to
+      hurt somebody while you are still learning it. The good news is that the technique is short and
+      teachable. The bad news is that almost all of the serious harm comes from two or three steps that
+      take seconds, and from one decision made after things have already gone wrong.</p>
+
+    <p>So this piece opens with the sequence. Indications, consent, contraindications and complications
+      follow, because you will look those up before a list and the sequence before a line. There is also a
+      <a href="procedures-06-internal-jugular-line-checklist.html">one-page checklist</a> meant to be
+      printed and put where the trolley lives.</p>
+
+    <h2 class="sub">Doing it</h2>
+
+    <p>What follows assumes a right internal jugular in an adult, with real-time ultrasound, which is the
+      default and should be.</p>
+
+    <div class="box amb">
+      <span class="lab">Before you are sterile</span>
+      <p><strong>Scan first, undraped.</strong> Look at both sides before you commit. You are checking the
+        vein is there, that it is patent and compressible, where the carotid actually sits in <em>this</em>
+        patient, and whether the other side is better. This takes twenty seconds and changes the plan often
+        enough to be worth it every time.</p>
+      <p><strong>Then set up as though it will go badly.</strong> Monitoring on and visible. An assistant who
+        is staying. Everything opened before you scrub, because the thing you discover you need at the
+        wrong moment is the thing that breaks asepsis. Flush and check every lumen, and know which one the
+        wire exits.</p>
+    </div>
+
+    <ol class="pts">
+      <li><b>Position</b><span>Supine, head-down by about ten to fifteen degrees &mdash; the vein distends
+        with any tilt beyond five, and the benefit plateaus by ten, so steeper is not better and is harder
+        on a patient with raised intracranial pressure or marginal respiratory function. Turn the head away
+        <em>as little as you can get away with</em>. This is the opposite of what most people are taught:
+        at eighty degrees of rotation the carotid lies in the high-risk position beneath the vein in
+        roughly sixty per cent of right-sided patients, against about forty per cent in neutral. Rotate
+        enough to get a probe on the neck, then look.</span></li>
+      <li><b>Prepare</b><span>Hat covering all hair, mask, eye protection, sleeves up, nothing on the hands
+        or wrists. Surgical scrub, gown, gloves. Chlorhexidine in alcohol, allowed to dry &mdash; the drying
+        is the antisepsis, not a delay. Full-body drape, with only the puncture site exposed, and a sterile
+        probe cover with gel inside and out. The assistant wears a hat and mask.</span></li>
+      <li><b>Find it again, sterile</b><span>Short axis to orient. The vein is compressible, the artery is
+        not; if you are unsure which is which, press. Then decide your approach &mdash; short axis is easier
+        to learn and tracks the tip poorly, long axis shows the whole needle and is fiddly to line up. The
+        honest position is that the trial evidence does not separate them on success, but posterior wall
+        puncture is commoner in short axis. Learn short axis first; learn long axis before you need
+        it.</span></li>
+      <li><b>Local anaesthetic</b><span>In an awake patient, generously, and wait. A patient who moves at
+        the wrong moment is a complication waiting to be written up.</span></li>
+      <li><b>Puncture</b><span>Shallow angle, needle under constant vision. The single commonest novice
+        error is advancing a needle whose tip you cannot see &mdash; what you are watching is usually the
+        shaft, and the tip is somewhere deeper than you think. Aspirate as you go. If you lose the tip,
+        stop advancing and find it.</span></li>
+      <li><b>Wire</b><span>It should pass with no resistance at all. Resistance means it is not where you
+        think. Watch the monitor &mdash; ectopy means the wire is in the right atrium and should come back.
+        Keep the insertion depth short: in one randomised study of right internal jugular lines, arrhythmia
+        occurred in twenty-six per cent at fifteen centimetres of wire and sixty-five per cent at twenty.
+        Fifteen is enough.</span></li>
+      <li><b>Confirm &mdash; and this is the step</b><span>See the box below. Do not dilate on a feeling.</span></li>
+      <li><b>Nick, dilate, rail</b><span>Scalpel away from the wire, blade up, a small nick at the wire.
+        Dilate over the wire with the dilator held near the skin, not at its hub &mdash; a dilator advanced
+        full-length is how the back wall of a vein becomes a mediastinum. The dilator makes a track through
+        skin and tissue; it is not meant to be buried. Never let go of the wire.</span></li>
+      <li><b>Catheter</b><span>About fifteen centimetres on the right, eighteen to twenty on the left. There
+        is no validated formula for this &mdash; the height-based one widely taught is right about three
+        times in four &mdash; so take the number as a starting estimate and confirm it afterwards. Wire out,
+        and <strong>look at the wire</strong>. Aspirate and flush every lumen.</span></li>
+      <li><b>Secure and dress</b><span>Suture or a sutureless device, then a chlorhexidine-impregnated
+        transparent dressing in an adult. Clean the blood off first with chlorhexidine; blood under a
+        dressing is a culture medium with a window.</span></li>
+      <li><b>Document before you leave</b><span>Indication, consent and its basis, site, operator and
+        supervision, ultrasound used, number of passes, how venous position was confirmed, depth,
+        complications, and that the guidewire was accounted for. The last one matters more than it
+        looks.</span></li>
+    </ol>
+
+    <div class="box red">
+      <span class="lab">The step that prevents the catastrophe</span>
+      <p><strong>Blood colour and the absence of pulsatility are not confirmation.</strong> The American
+        Society of Anesthesiologists says so in terms: they <em>should not be relied upon</em>. In a pooled
+        series of eighty arterial injuries, pulsatile flow identified twelve of them, a blood gas six, and
+        a transduced waveform four; in thirty-seven the method was not even recorded. A hypoxic,
+        hypotensive patient has dark arterial blood, and a flat-looking column can still be an artery.</p>
+      <p>Use <strong>two confirmations, at least one of them objective</strong>, before the dilator:</p>
+      <p><b>See the wire in the vein.</b> Ultrasound, in both axes, before you dilate. It is easier to see
+        than the needle, and it is the single most useful habit on this page.<br>
+        <b>Or transduce it</b>, or run a manometry column &mdash; a length of sterile tubing held up and
+        allowed to fill. Venous blood sits; arterial blood climbs and keeps climbing. If you transduce,
+        check the monitor is on an arterial scale, or you will convince yourself with a flat trace.</p>
+      <p>And know the limit of your tools: ultrasound <em>does not always exclude</em> an arterial
+        placement. There is a reported case of a needle passing through the back wall of the vein into the
+        carotid under real-time vision. That is an argument for two checks, not for abandoning the
+        first.</p>
+    </div>
+
+    <h2 class="sub">Where ultrasound helps, and where it does not</h2>
+
+    <p>The effect is large and it is not in dispute. Against landmarks, for internal jugular lines,
+      real-time ultrasound reduces inadvertent arterial puncture by around seventy per cent, reduces
+      haematoma similarly, raises first-attempt success by about half, and takes roughly one attempt off
+      the average. Those are the Cochrane figures, from thirty-five studies and five thousand patients.</p>
+
+    <p>Two honesties to carry with them. The quality of that evidence is graded low to very low for most
+      outcomes, because the trials are old, unblindable and heterogeneous. And the comparison is against
+      <em>landmarks</em>, not against a careful operator using ultrasound properly: nothing in that body of
+      work tells you how much of the benefit survives a probe held badly.</p>
+
+    <div class="box amb">
+      <span class="lab">Three things about ultrasound that are commonly overstated</span>
+      <p><strong>Marking the skin beforehand is not ultrasound guidance.</strong> Static pre-procedural
+        marking is explicitly advised against as a substitute &mdash; the neck is not the same shape once
+        you have draped it, turned the head and tilted the bed. Scan beforehand to plan; scan in real time
+        to puncture.</p>
+      <p><strong>No Australian college mandates it.</strong> You will hear that one does. The strong wording
+        is British &mdash; NICE calls two-dimensional ultrasound the preferred method and the Association of
+        Anaesthetists says it should be used routinely. Safer Care Victoria says &ldquo;whenever
+        possible&rdquo; and labels that expert opinion. What binds you is your own service's credentialling,
+        and the fact that the evidence is one-directional.</p>
+      <p><strong>Oblique and long axis are not proven better.</strong> The pooled adult analysis found no
+        difference between axes for success or complications. One good trial found less posterior wall
+        puncture in long and oblique axis &mdash; four and seven per cent against fifteen &mdash; which is a
+        reason to know them, not a reason to claim superiority.</p>
+    </div>
+
+    <h2 class="sub">When it is worth one</h2>
+
+    <p>There is no graded list of indications anywhere, which is itself worth knowing. The defensible ones
+      are drugs that cannot go peripherally for long &mdash; vasoactives, concentrated potassium, central
+      parenteral nutrition &mdash; renal replacement, transvenous pacing, plasmapheresis, central venous
+      oxygen saturation sampling, and a patient in whom no other access can be obtained.</p>
+
+    <div class="box grn">
+      <span class="lab">Not an indication</span>
+      <p><strong>To measure the central venous pressure.</strong> The pooled correlation between CVP and
+        the change in stroke volume after a fluid bolus is 0.18, and the area under the curve for
+        predicting fluid responsiveness is 0.56 &mdash; which is a coin toss with a decimal point. CVP has
+        narrow uses as a trend, and as the downstream term in a perfusion pressure, but it is not a reason
+        to put a line in somebody.</p>
+      <p><strong>&ldquo;Needs intravenous antibiotics.&rdquo;</strong> No. The guidance runs the other way:
+        assess daily whether the access is still needed, and take it out when it is not.</p>
+      <p><strong>&ldquo;Difficult peripheral access&rdquo;</strong>, on its own, and before anyone has tried
+        an ultrasound-guided peripheral cannula or a midline. Often the honest translation is that three
+        people have failed with a landmark technique.</p>
+      <p><strong>&ldquo;Needs noradrenaline&rdquo;</strong> &mdash; which is a reason, but not an emergency
+        one. Short peripheral infusions at or above the antecubital fossa are unlikely to cause tissue
+        injury; the great majority of reported extravasation injury was from cannulae distal to the elbow
+        or knee. Peripheral noradrenaline is a legitimate bridge to a line placed properly, in daylight, by
+        someone who is not rushing.</p>
+    </div>
+
+    <h2 class="sub">Where to put it</h2>
+
+    <p>The honest summary of the site argument is that it is closer than the teaching suggests. In the
+      largest randomised comparison &mdash; three thousand patients, three and a half thousand catheters
+      &mdash; the composite of bloodstream infection and symptomatic thrombosis favoured the subclavian:
+      1.5 events per thousand catheter-days against 3.6 for jugular and 4.6 for femoral.</p>
+
+    <p>But subclavian bought that with mechanical harm. Pneumothorax was three times commoner, 1.5 per cent
+      against 0.5, and the subclavian arm had the most mechanical complications overall. Put the two
+      together &mdash; infection and thrombosis <em>plus</em> serious mechanical complications &mdash; and
+      the totals were 3.1 per cent subclavian, 3.7 jugular, 3.3 femoral. There is no winner in that row.
+      Ultrasound use was not randomised, which flatters the subclavian further.</p>
+
+    <p>So: the right internal jugular is the sensible default for most intensive care patients, because it
+      is the site ultrasound helps most, it has a straight run to the right atrium, and its failure modes
+      are mostly recoverable. The left is a second choice &mdash; two near-right-angle turns, the thoracic
+      duct entering at the jugulo-subclavian junction, and a carotid that sits in the high-risk position
+      more often than on the right.</p>
+
+    <div class="box red">
+      <span class="lab">The kidney exception, which outranks the infection advice</span>
+      <p>If the patient has advanced kidney disease or may need dialysis, <strong>avoid the
+        subclavian</strong>. Subclavian stenosis destroys the arm you were going to make a fistula in. This
+        is not a conflict between guidelines, although it is often taught as one &mdash; it is written
+        inside the infection guidance itself, and at a higher grade of evidence than the subclavian
+        preference it qualifies. Read the two recommendations together and the answer is already
+        there.</p>
+    </div>
+
+    <h2 class="sub">Contraindications, and the one that is overstated</h2>
+
+    <p>The genuinely absolute ones are short: refusal by a patient with capacity, and infection or burn
+      over the puncture site. Everything else is relative and most of it is modified by looking first
+      &mdash; thrombosed or absent vein, previous surgery or radiotherapy, a tracheostomy that makes the
+      field filthy, a contralateral pneumonectomy that means you cannot afford a pneumothorax, raised
+      intracranial pressure that makes head-down unwise, a patient who will not keep still.</p>
+
+    <div class="box amb">
+      <span class="lab">Coagulopathy: the answer has recently become less comfortable</span>
+      <p><strong>INR first, where the teaching is right.</strong> The INR does not predict procedural
+        bleeding, plasma does not meaningfully correct a mildly raised one, and venous access is classed as
+        a low-bleeding-risk procedure. The British haematology guidance withdrew its recommendation to
+        routinely check coagulation before moderate-risk procedures in 2023. Observational series of
+        thousands of ultrasound-guided lines show no excess bleeding with abnormal coagulation until the
+        INR is above five.</p>
+      <p><strong>Platelets, where it is not.</strong> Everyone now says you do not need to transfuse before
+        a central line. The only randomised trial in this space says otherwise. In patients with platelets
+        between 10 and 50, withholding a unit before insertion produced catheter-related bleeding in 11.9
+        per cent against 4.8 per cent &mdash; a relative risk of 2.45, and non-inferiority was not met. Most
+        of that bleeding was moderate rather than dangerous, and the trial was open-label, but the result
+        is the result. The British threshold for a central line remains a platelet count of 20.</p>
+      <p>Which leaves a defensible position rather than a rule: ultrasound-guided insertion is safe in
+        coagulopathy and is not a reason to delay a line that is needed; and if the count is under 50 and
+        the procedure is elective, the transfusion is more justifiable than you were taught.</p>
+    </div>
+
+    <h2 class="sub">Consent</h2>
+
+    <p>Most of these lines go into people who cannot consent, which does not make consent irrelevant &mdash;
+      it changes who gives it and what you write down.</p>
+
+    <p><strong>If the patient has capacity</strong>, the risks worth naming are bleeding, arterial puncture,
+      pneumothorax, infection, thrombosis, and failure requiring another site. New South Wales does not
+      list central lines in either its written-consent category or its minor-procedure category, which
+      leaves a judgement: a line carries known significant risks, so written consent is the better reading
+      where the patient has capacity and circumstances allow. Check your own district's policy, which may
+      settle it.</p>
+
+    <p><strong>If they do not</strong>, the <em>Guardianship Act 1987</em> sets a hierarchy of person
+      responsible &mdash; guardian with the relevant authority, then spouse or de facto partner, then an
+      unpaid carer, then a close unpaid friend or relative. If somebody at one level is absent, unwilling or
+      lacks capacity themselves, you record that and move down. Where there is a guardian with authority to
+      consent to treatment, only the guardian can.</p>
+
+    <p><strong>In an emergency</strong>, section 37 lets you proceed without consent where treatment is
+      urgently necessary to save life, prevent serious damage to health, or relieve significant pain or
+      distress. It does not override a valid advance care directive. Write in the notes that you relied on
+      it and why &mdash; the documentation <em>is</em> the safeguard here, and it is the part most often
+      skipped at three in the morning.</p>
+
+    <h2 class="sub">When it goes wrong</h2>
+
+    <p>Modern pooled figures, from a 2024 meta-analysis of central lines generally: arterial puncture about
+      16 per thousand catheters, pneumothorax about 4 per thousand, placement failure about 20 per
+      thousand. Infection runs at roughly 4.8 per thousand catheter-days and deep vein thrombosis 2.7.
+      Ultrasound cuts arterial puncture to a fifth and pneumothorax to a quarter.</p>
+
+    <div class="box red">
+      <span class="lab">If you have dilated the artery, do not pull it out</span>
+      <p>This is the most important paragraph on the page. If a dilator or a catheter of six French or
+        larger is in the carotid, <strong>leave it exactly where it is</strong> and call vascular surgery or
+        interventional radiology now.</p>
+      <p>The instinct is to remove it and press, and the instinct is wrong. In one review, complications
+        followed in 47 per cent of patients managed by removal and pressure, against none of those repaired
+        surgically. In a pooled series of eighty cases, removal and compression succeeded in 5.6 per cent
+        against 94.6 per cent for endovascular repair and 100 per cent for open surgery; seventeen of
+        eighteen compression cases had complications, including three deaths. A carotid is not compressible
+        in the way the word implies, and a haematoma in that space closes an airway.</p>
+      <p>A needle puncture is different &mdash; remove it, press properly, and then watch, scan and
+        document.</p>
+    </div>
+
+    <p><strong>Pneumothorax</strong> is uncommon from a jugular and should still be considered when the
+      patient deteriorates afterwards. <strong>Air embolism</strong> needs 200 to 300 millilitres, or three
+      to five per kilogram, to be lethal in an adult &mdash; but an open 14-gauge hub can entrain around a
+      hundred millilitres a second, so the volume is reached faster than the number suggests. Occlude the
+      entry point, give oxygen at one hundred per cent, aspirate from the line if the tip is in the atrium,
+      support the circulation, and start compressions even without arrest, which fragments the air-lock.
+      The left lateral head-down position everybody teaches rests on a dog experiment from 1947; do it if
+      it costs nothing, but never before the oxygen.</p>
+
+    <p><strong>Thrombosis</strong> is commoner than clinical impression suggests, and the jugular is the
+      worst site for it. On daily screening, a quarter of patients developed a catheter-related thrombosis;
+      the jugular rate was four times that of other sites, left-sided lines nearly three times right-sided
+      &mdash; and every single one was asymptomatic. <strong>Chylothorax</strong> from thoracic duct injury
+      on the left is rare enough that no incidence has been established; it appears as milky fluid at the
+      site, in the line, or as a left effusion that may only declare itself once feeding starts.</p>
+
+    <div class="box red">
+      <span class="lab">The guidewire, and why being careful is not the answer</span>
+      <p>Retained guidewire happens about once in three thousand procedures, is a Never Event in the United
+        Kingdom and falls under the Australian sentinel event for a retained foreign object. Reported
+        mortality is four to six per cent.</p>
+      <p>The useful finding is about its mechanism: it is an <em>omission</em> error, and it happens to
+        careful people who are interrupted at the wrong second. Operator-focused safeguards were found to
+        be largely ineffective, none of them completely so. What works is a forcing function &mdash; a
+        system in which the wire must be physically accounted for before the sharps can be disposed of.
+        Locked procedure packs built on that principle prevented retention in ten out of ten simulated
+        forced errors against two out of ten with ordinary practice.</p>
+      <p>Until your unit has one: say the wire out loud, hold it up, and have the assistant confirm it
+        before anything is thrown away. And if a wire has gone below skin level, suction retrieves it far
+        more reliably than trying to grasp and pull.</p>
+    </div>
+
+    <h2 class="sub">Afterwards</h2>
+
+    <p><strong>The tip</strong> belongs in the lower superior vena cava or the upper right atrium, lying
+      parallel to the vessel wall. <strong>A chest film is not mandatory</strong> &mdash; no guideline
+      requires one, and in more than thirteen hundred ultrasound-guided right jugular insertions,
+      malposition needing adjustment ran at one per cent and pneumothorax at one in a thousand. Order one
+      when something was difficult, when the left side was used, or when you are not sure.</p>
+
+    <p>What a film cannot do is tell you the line is venous. A British safety body had to say this
+      explicitly after a case in which the film was accepted as satisfactory and the catheter was in the
+      carotid. Radiography is for depth and for pneumothorax. Vessel identity is settled by transduction or
+      by ultrasound, and it is settled before you dilate, not afterwards.</p>
+
+    <p><strong>How long can it stay?</strong> There is no maximum and no routine change interval. Replacing
+      lines on a schedule is explicitly advised against, as is exchanging one over a wire to treat suspected
+      infection, and as is removing one for fever alone. The intervention that works is the daily question
+      of whether it is still needed &mdash; which is the single most effective infection control measure
+      available, and the most neglected.</p>
+
+    <div class="box grn">
+      <span class="lab">A divergence worth knowing about</span>
+      <p>Chlorhexidine-impregnated dressings cut bloodstream infection by about sixty per cent in a trial of
+        nearly two thousand patients. American guidance now recommends them for all adult short-term
+        central lines; the Australian intensive care guideline, which dates from 2012 and has not been
+        updated, still treats them as something to add if your rates stay high. The divergence is real and
+        your unit has probably picked a side without telling you which. The one harm worth knowing: severe
+        contact dermatitis in roughly one per hundred catheters, and they are not for premature
+        neonates.</p>
+    </div>
+
+    <div class="box amb">
+      <span class="lab">If you remember six things</span>
+      <p>Scan both sides before you scrub. Rotate the head as little as possible. Keep the needle tip in
+        view. See the wire in the vein before the dilator touches anything. If you have dilated an artery,
+        leave it in and pick up the phone. And ask tomorrow whether the line is still needed.</p>
+    </div>
+  </div>
+
+  <div class="pad" style="padding-top:6px">
+    <div class="challenge">
+      <h2>Challenge for you</h2>
+      <p class="ask">Give one tip to somebody learning this.</p>
+      <p>Not the textbook. The thing you actually do &mdash; a way of holding the probe, a trick for the
+        neck that will not give you a vein, a habit you adopted after something went wrong, a sign you have
+        learned to distrust. One is plenty. Three if you are feeling generous.</p>
+      <p>I am collecting these because they are the part of the procedure that never gets written down.
+        Everybody who has put in a few hundred of these has four or five things they do that are not in any
+        guideline, and most of them have never told anyone, because nobody asked. The ones I would most
+        like:</p>
+      <p><strong>A good method</strong> &mdash; how you set up, how you hold things, what order you do it
+        in.<br>
+        <strong>The difficult one</strong> &mdash; the short neck, the hypovolaemic collapsed vein, the
+        patient who cannot lie flat, the one with a tracheostomy in the way.<br>
+        <strong>Something to watch out for</strong> &mdash; the near miss you still think about.</p>
+      <p>I will publish the collection. Anonymously by default unless you tell me otherwise, because the
+        most useful tips tend to come attached to the least flattering stories.</p>
+      <p><a class="btn" href="mailto:icuandyou@icloud.com?subject=Procedures%206%20-%20internal%20jugular%20lines&body=A%20good%20method%20%E2%80%94%20something%20I%20actually%20do%3A%0D%0A%0D%0A%0D%0AThe%20difficult%20one%20%E2%80%94%20how%20I%20get%20a%20hard%20neck%20done%3A%0D%0A%0D%0A%0D%0ASomething%20to%20watch%20out%20for%20%E2%80%94%20the%20near%20miss%20I%20still%20think%20about%3A%0D%0A%0D%0A%0D%0AYears%20of%20experience%20%28roughly%29%3A%0D%0A%0D%0AName%3A%0D%0A%0D%0A---%0D%0A%0D%0AThinking%20about%20this%20ICU%20AND%20YOU%20post%20overall%20%E2%80%94%20was%20it%20useful%20to%20you%2C%20or%20would%20it%20be%20useful%20to%20others%3F%0D%0A">Send me your tip</a></p>
+      <p class="fallback" style="margin-bottom:9px">How you are credited is entirely your call &mdash; by name, by initials, or not at all &mdash; whether you write the piece or I do, and whether I quote you or simply say who sent something in; nothing of yours goes up with your name on it unless you have said yes.</p>
+<p class="fallback">The button opens a reply straight to me. If your device blocks it, write to
+        <a href="mailto:icuandyou@icloud.com">icuandyou@icloud.com</a> instead.</p>
+    </div>
+  </div>
+
+  <footer>
+    <span class="firstpub">First published October 2026</span>
+    <p class="subline">Two emails a week &mdash; the Friday newsletter for all subscribers, and, for clinical subscribers,
+      the mind map and puzzles the moment they go up on Tuesday. Occasional announcements of new
+      features as they arrive. What went up and why it mattered, the best of your replies, and
+      original feature stories, news and views. <a href="https://joinlist.com/f/5adad2d6">Come and join us</a>.</p>
+    <a class="home" href="./">&larr; &nbsp;All of ICU AND YOU</a><br>
+    Procedures No. 6 &nbsp;&#183;&nbsp; Not tied to a particular topic grouping &nbsp;&#183;&nbsp; <a href="procedures-06-internal-jugular-line-checklist.html">One-page checklist</a><br>
+    <span class="srcs">Ultrasound effect sizes are Brass and colleagues, Cochrane 2015 (CD006962); modern complication rates are Teja and colleagues, <em>JAMA Internal Medicine</em> 2024. Site comparison is the 3SITES trial, Parienti and colleagues, <em>NEJM</em> 2015, and the composite including mechanical harm is calculated from its own reported figures. Confirmation of venous placement follows the <a href="https://www.asahq.org/standards-and-practice-parameters">ASA practice guidelines for central venous access</a> (2020), which state that blood colour and absence of pulsatile flow should not be relied upon, and the Association of Anaesthetists’ <em>Safe Vascular Access</em> (2016). The management of arterial cannulation is Guilbert and colleagues 2008 and Dixon and colleagues’ pooled series. Guidewire retention data and the forcing-function trial are Mariyaselvam and colleagues. Platelet transfusion is the PACER trial, <em>NEJM</em> 2023, against the British Society for Haematology threshold. Consent follows the <em>Guardianship Act 1987</em> (NSW) and the <a href="https://www.health.nsw.gov.au/policies/manuals/Documents/consent-section-7.pdf">NSW Health consent manual</a>. The Australian insertion bundle is the <a href="https://anzics.org/wp-content/uploads/2018/08/ANZICS_Insertionmaintenance_guideline2012_04.pdf">ANZICS central line guideline</a>, which dates from 2012 and diverges from current American guidance on chlorhexidine dressings &mdash; this piece says so rather than choosing. No incidence is quoted for haemothorax, nerve injury or chylothorax, because no defensible pooled figure was found. Educational use only, not a clinical protocol &mdash; local policy and your own credentialling take precedence.</span><br>
+    <span class="mine">Views my own, not those of NSW Health or any other organisation. No identifiable
+    patients &mdash; scenarios are constructed or combined for teaching. <a href="about.html">More</a>.</span>
+  </footer>
+
+</div>
+<script data-goatcounter="https://icuandyou.goatcounter.com/count"
+        async src="//gc.zgo.at/count.js"></script>
+</body>
+</html>
