@@ -1256,9 +1256,28 @@
    "badge": "Podcast",
    "link_label": "Open",
    "blurb": "Katie Cranfield on FICM Learning. Half of the women who die in the UK are not dying of anything obstetric \u2014 they are dying of what we deal with every day. Fetal fixation, the creatinine that does not flag, and why a tertiary unit admitting thirty a year cannot be fluent in them."
+  },
+  {
+   "file": "journal-club-101-young-adult-sepsis.html",
+   "series": "journal",
+   "colour": "sepia",
+   "number": "101",
+   "title": "Nineteen, in a children\u2019s unit",
+   "topic": "The young adult",
+   "slug": "young-adult",
+   "week": true,
+   "pos": 7,
+   "badge": "Journal club",
+   "link_label": "Open",
+   "blurb": "Young adults with severe sepsis died more often in paediatric units than adult ones \u2014 13.5% against 8.2%. The odds ratio rests on twenty-two deaths, there is no adjustment for how sick anyone was on arrival, and the authors say plainly that the thing they adjusted for is the thing they could not measure."
   }
  ],
  "latest": [
+  {
+   "file": "journal-club-101-young-adult-sepsis.html",
+   "colour": "sepia",
+   "label": "Journal Club 101 \u00b7 Young adult sepsis"
+  },
   {
    "file": "podcast-60-obstetric-critical-care.html",
    "colour": "slate",
@@ -1278,11 +1297,6 @@
    "file": "med-students-05-adolescent.html",
    "colour": "violet",
    "label": "Medical Students 5 \u00b7 The adolescent"
-  },
-  {
-   "file": "swedeside-01-seldinger.html",
-   "colour": "falu",
-   "label": "Swedeside 1 \u00b7 A severe attack of common sense"
   }
  ],
  "topten": [

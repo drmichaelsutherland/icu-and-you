@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="en-AU">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ICU AND YOU · Journal Club 101 — Nineteen, in a children's unit</title>
+<meta name="description" content="Journal Club 101: Zakutansky and colleagues on young adults with severe sepsis in paediatric versus adult intensive care — a higher mortality in the PICU, and why almost nothing in the study can tell you whether the unit caused it.">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="alternate icon" href="/favicon.ico" sizes="any">
+<link rel="apple-touch-icon" href="/icon-180.png">
+<link rel="manifest" href="/site.webmanifest">
+<meta name="theme-color" content="#1B2A33">
+<meta property="og:site_name" content="ICU AND YOU">
+<meta property="og:type" content="website">
+<meta property="og:title" content="ICU AND YOU · Journal Club 101 — Nineteen, in a children's unit">
+<meta property="og:description" content="Twice the deaths, and an odds ratio resting on twenty-two of them. A lesson in what a claims database cannot see.">
+<meta property="og:image" content="https://icuandyou.com/share-card.png">
+<meta name="twitter:card" content="summary_large_image">
+<style>
+  :root{
+    --paper:#FAF8F3; --ink:#241F19; --muted:#6E6558; --rule:#DED5C6;
+    --sepia:#6B4A2F; --sepiatint:#F2EBE1;
+    --rust:#A8442A; --rusttint:#F9EDE7;
+    --sky:#2E6E8E; --skytint:#E7F1F6;
+  }
+  *{box-sizing:border-box}
+  body{margin:0;background:#EDE8DE;color:var(--ink);
+    font:400 17px/1.65 'Iowan Old Style','Palatino Linotype',Palatino,Georgia,serif;
+    -webkit-text-size-adjust:100%;}
+  .sheet{max-width:780px;margin:0 auto;background:var(--paper);
+    box-shadow:0 1px 40px rgba(36,31,25,.10);}
+
+  header.top{padding:42px 40px 28px;border-bottom:1px solid var(--rule)}
+  .toptopic{display:inline-block;margin:0 0 16px 9px;padding:7px 16px;border-radius:20px;
+    border:1px solid currentColor;opacity:.62;text-decoration:none;color:inherit;
+    font:600 11.5px 'Helvetica Neue',Arial,sans-serif;letter-spacing:.09em;
+    text-transform:uppercase;transition:opacity .12s ease}
+  .toptopic:hover{opacity:1}
+  .topseries{display:inline-block;margin:0 0 16px 9px;padding:7px 16px;border-radius:20px;
+    border:1px solid currentColor;opacity:.62;text-decoration:none;color:inherit;
+    font:600 11.5px 'Helvetica Neue',Arial,sans-serif;letter-spacing:.09em;
+    text-transform:uppercase;transition:opacity .12s ease}
+  .topseries:hover{opacity:1}
+  .tophome{display:inline-block;margin:0 0 16px;padding:7px 16px;border-radius:20px;
+    border:1px solid currentColor;opacity:.62;text-decoration:none;color:inherit;
+    font:600 11.5px 'Helvetica Neue',Arial,sans-serif;letter-spacing:.09em;
+    text-transform:uppercase;transition:opacity .12s ease}
+  .tophome:hover{opacity:1}
+  .eyebrow{font:500 11.5px/1 'Helvetica Neue',Arial,sans-serif;letter-spacing:.24em;
+    text-transform:uppercase;color:var(--sepia);margin:0 0 14px}
+  .eyebrow a.serlink{color:inherit;text-decoration:none;border-bottom:1px solid transparent}
+  .eyebrow a.serlink:hover{border-bottom-color:currentColor}
+  .eyebrow a.mast{color:inherit;text-decoration:none;border-bottom:1px solid transparent}
+  .eyebrow a.mast:hover{border-bottom-color:currentColor}
+  h1{font-size:31px;line-height:1.2;margin:0 0 10px;font-weight:400;letter-spacing:-.012em}
+  .kicker{color:var(--muted);margin:0;font-size:16.5px;font-style:italic}
+
+  .source{margin:0;padding:26px 40px;background:var(--sepiatint);border-bottom:1px solid var(--rule)}
+  .cite{margin:0 0 16px;font-size:16px;line-height:1.6}
+  .cite b{font-weight:600}
+  .meta{display:flex;flex-wrap:wrap;gap:5px 22px;margin:0 0 16px;
+    font:400 13.5px 'Helvetica Neue',Arial,sans-serif;color:var(--muted)}
+  .meta b{color:var(--ink);font-weight:600}
+  a.read{display:inline-block;padding:14px 28px;border-radius:30px;text-decoration:none;
+    background:var(--sepia);color:#FAF6F0;
+    font:600 15px 'Helvetica Neue',Arial,sans-serif;letter-spacing:.03em}
+  a.read:hover{background:#523821}
+  .srcnote{font:400 13.5px 'Helvetica Neue',Arial,sans-serif;color:var(--muted);margin:14px 0 0}
+
+  .pad{padding:32px 40px}
+  p{margin:0 0 17px}
+  h2.sub{font:600 12px 'Helvetica Neue',Arial,sans-serif;letter-spacing:.2em;
+    text-transform:uppercase;color:var(--muted);margin:0 0 16px;
+    padding-bottom:8px;border-bottom:1px solid var(--rule)}
+  b.term{font-weight:600;color:var(--sepia)}
+
+  .three{display:flex;gap:13px;flex-wrap:wrap;margin:0 0 20px}
+  .col{flex:1 1 200px;background:#fff;border:1px solid var(--rule);border-radius:9px;padding:16px 18px}
+  .col.mid{border-top:4px solid var(--sky);background:var(--skytint)}
+  .col .age{font:600 12px 'Helvetica Neue',Arial,sans-serif;letter-spacing:.1em;
+    text-transform:uppercase;color:var(--muted);margin:0 0 7px}
+  .col.mid .age{color:var(--sky)}
+  .col p{margin:0;font-size:15px;line-height:1.5;color:#3A342A}
+
+  .caution{margin:0;padding:20px 24px;background:var(--rusttint);
+    border-left:4px solid var(--rust);border-radius:0 8px 8px 0}
+  .caution .lab{display:block;font:600 11px 'Helvetica Neue',Arial,sans-serif;
+    letter-spacing:.18em;text-transform:uppercase;color:var(--rust);margin:0 0 9px}
+  .caution p:last-child{margin:0}
+
+  .challenge{margin:0;padding:28px 32px;background:var(--rusttint);border-left:5px solid var(--rust)}
+  .challenge h2{font:600 12px 'Helvetica Neue',Arial,sans-serif;letter-spacing:.2em;
+    text-transform:uppercase;color:var(--rust);margin:0 0 13px}
+  .ask{font-size:19.5px;line-height:1.5;margin:0 0 8px}
+  .lead{font-size:15px;color:var(--muted);margin:0 0 17px;line-height:1.55}
+  .chips{display:flex;flex-wrap:wrap;gap:10px;margin:0 0 16px}
+  a.chip{text-decoration:none;padding:12px 18px;border-radius:9px;
+    background:#fff;border:1px solid #E0C4B8;color:#7C3520;
+    font:400 15px 'Iowan Old Style',Palatino,Georgia,serif;transition:transform .08s ease}
+  a.chip:hover{transform:translateY(-1px);background:#FDF4EF}
+  .btn{display:inline-block;margin:6px 0 12px;padding:15px 30px;background:var(--rust);
+    color:#FDF8F5;text-decoration:none;border-radius:30px;
+    font:600 15px 'Helvetica Neue',Arial,sans-serif;letter-spacing:.03em}
+  .btn:hover{background:#8A3620}
+  .fallback{font:400 13.5px 'Helvetica Neue',Arial,sans-serif;color:var(--muted);margin:0}
+  .fallback a{color:var(--rust)}
+  .subline{margin:0 0 14px;padding:0 0 13px;border-bottom:1px solid rgba(0,0,0,.09);
+    font:400 14.5px/1.55 'Iowan Old Style','Palatino Linotype',Palatino,Georgia,serif;
+    max-width:56ch;margin-left:auto;margin-right:auto}
+  .subline a{font-weight:500;border-bottom:1px solid currentColor;
+    text-decoration:none;color:inherit}
+  .firstpub{display:block;margin:0 0 10px;padding-bottom:9px;
+    border-bottom:1px solid currentColor;border-color:rgba(0,0,0,.09);
+    font:400 12px 'Helvetica Neue',Arial,sans-serif;letter-spacing:.06em;opacity:.72}
+
+  footer{padding:24px 40px 42px;border-top:1px solid var(--rule);
+    font:400 13px 'Helvetica Neue',Arial,sans-serif;color:var(--muted);text-align:center;line-height:1.7}
+  .home{display:inline-block;margin:0 0 14px;padding:8px 18px;border-radius:20px;
+    border:1px solid var(--rule);background:#F2EEE6;color:var(--sepia);text-decoration:none;
+    font:600 12.5px 'Helvetica Neue',Arial,sans-serif;letter-spacing:.05em}
+  .home:hover{background:var(--sepia);border-color:var(--sepia);color:#FAF6F0}
+
+  @media (max-width:620px){
+    header.top,.source,.pad,footer{padding-left:20px;padding-right:20px}
+    .challenge{padding:22px 20px}
+    h1{font-size:25px} body{font-size:16.5px} .ask{font-size:18px}
+  }
+  @media print{ body{background:#fff} .sheet{box-shadow:none;max-width:none} }
+
+  .agree{display:flex;gap:13px;flex-wrap:wrap;margin:0 0 22px}
+  .ag{flex:1 1 150px;background:#fff;border:1px solid var(--rule);border-radius:9px;
+    padding:16px 18px;text-align:center}
+  .ag .big{font-size:30px;line-height:1.1;color:var(--sepia);margin:0 0 4px}
+  .ag .lab2{font:400 13.5px 'Helvetica Neue',Arial,sans-serif;color:var(--muted);
+    line-height:1.45;margin:0}
+  .gap{margin:0 0 20px;padding:20px 24px;background:#F3EEE3;
+    border-left:4px solid var(--sepia);border-radius:0 8px 8px 0}
+  .gap .lab{color:var(--sepia)}
+  .gap p:last-child{margin:0}
+  .mine{display:inline-block;margin:9px 0 0;opacity:.78;font-size:.94em}
+  .howto{margin:0 0 26px;padding:22px 26px;background:#F2EDE3;border-left:4px solid #6B4A2F;
+    border-radius:0 8px 8px 0}
+  .howto .lab{display:block;font:600 11px 'Helvetica Neue',Arial,sans-serif;letter-spacing:.18em;
+    text-transform:uppercase;color:#54381F;margin:0 0 10px}
+  .howto p{margin:0 0 10px;font-size:15.5px;line-height:1.6}
+  .howto p:last-child{margin:0}
+
+  /* Point lists. The template used .pts markup without ever defining it, so the
+     bold lead-in ran straight into its own explanation as one unbroken line. */
+  .pts{list-style:none;margin:0 0 20px;padding:0}
+  .pts li{display:flex;flex-direction:column;gap:3px;padding:12px 0;
+    border-bottom:1px solid var(--rule);font-size:16.5px;line-height:1.55}
+  .pts li:last-child{border-bottom:0}
+  .pts b{font:600 14.5px 'Helvetica Neue',Arial,sans-serif;color:var(--sepia);line-height:1.4}
+</style>
+</head>
+<body>
+<div class="sheet">
+
+  <header class="top">
+    <a class="tophome" href="./">&larr;&nbsp; Home</a>
+    <a class="topseries" href="./?s=journal">All journal club</a>
+    <a class="toptopic" href="./?t=young-adult" title="Everything on The young adult">All on this topic</a>
+    <p class="eyebrow"><a class="mast" href="./">ICU and You</a> &nbsp;·&nbsp; <a class="serlink" href="./?s=journal">Journal Club</a> &nbsp;·&nbsp; Number 101</p>
+    <h1>Nineteen, in a children&rsquo;s unit</h1>
+    <p class="kicker">163 young adults with severe sepsis in a PICU, and the trap waiting in their mortality rate</p>
+  </header>
+
+  <div class="source">
+    <p class="cite">Zakutansky SK, McCaffery H, Viglianti EM, Carlton EF.
+      <b>Characteristics and outcomes of young adult patients with severe sepsis admitted to pediatric
+      intensive care units versus medical/surgical intensive care units.</b>
+      <em>Journal of Intensive Care Medicine</em> 2023;38(3):290&ndash;298.</p>
+    <div class="meta">
+      <span><b>Type</b> &nbsp;Retrospective cohort, administrative claims database</span>
+      <span><b>Where</b> &nbsp;United States &mdash; Truven MarketScan, commercial and Medicaid claims</span>
+      <span><b>When</b> &nbsp;Six years, 2010 to 2015</span>
+      <span><b>Size</b> &nbsp;1,115 admissions, aged 18 to 26</span>
+    </div>
+    <a class="read" href="https://doi.org/10.1177/08850666221119685">Read the paper</a>
+    <p class="srcnote">Not open access &mdash; unlike most of what gets reviewed here, this one is behind
+      a publisher paywall, so you will need your hospital library. Nine pages, three tables and two figures.
+      Table&nbsp;1 is the paper: read the two columns of comorbidities side by side and you will have
+      worked out the problem before the authors raise it.</p>
+  </div>
+
+  <div class="pad">
+        <div class="howto">
+      <span class="lab">Why bother with the journals at all</span>
+      <p><strong>Because they are the news.</strong> Not the formal, ceremonial version of reading &mdash; the
+        daily kind. The journals are our news pages, our opinion columns, our form guide and our sports
+        results. People who would not dream of going a week without knowing what happened in the world will
+        go a year without knowing what happened in their own specialty, and then wonder why the registrar
+        knows something they do not.</p>
+      <p>It does not have to be a session. You do not need an hour, a highlighter or a plan. Read the
+        abstracts. Skim the contents page of one journal while the kettle boils. Open the one paper in ten
+        that looks interesting and abandon it at paragraph three if it is not. Nobody is marking this.</p>
+      <p><strong>What matters is staying curious rather than staying current</strong> &mdash; nobody is
+        current, and the people who claim to be are reading less than they say. What you are actually
+        maintaining is the habit of noticing: that a question is open, that a practice has shifted, that
+        somebody has published the thing you were arguing about last month.</p>
+      <p>And then do the part that makes it stick. Mention it on a ward round. Argue about it with somebody
+        who disagrees. Ask what the study could not have shown. A paper read alone is half a paper.</p>
+      <p><em>Publish or perish is the line we all know. The quieter one is this: absorb it, or lose your
+        edge.</em></p>
+    </div>
+
+    <h2 class="sub">The question</h2>
+
+    <p>A nineteen-year-old with relapsed leukaemia arrives in septic shock. She has been looked after by
+      the same children&rsquo;s hospital since she was six. Does it matter whether tonight she goes to the
+      paediatric intensive care unit that knows her, or to an adult one that does not?</p>
+
+    <p><a href="journal-club-100-adolescents-in-icu.html">Journal Club 100</a> asked where the
+      sixteen-year-old goes. This asks the harder half: once they get there, does it change anything.</p>
+
+    <h2 class="sub">What they did</h2>
+
+    <p>Truven MarketScan is a very large American claims database &mdash; employer-based insurance plus
+      Medicaid from a selection of states. The authors took every hospitalisation of a patient aged 0 to 26
+      between 2010 and 2015, pulled out the young adults aged 18 to 26 with severe sepsis by diagnosis code,
+      and then split them by the <em>type of provider</em> who billed for their critical care: paediatric
+      critical care medicine, or adult medical and surgical critical care.</p>
+
+    <div class="agree">
+      <div class="ag"><p class="big">18,900</p>young adult admissions with severe sepsis</div>
+      <div class="ag"><p class="big">1,491</p>of them treated by an ICU physician &mdash; fewer than one in twelve</div>
+      <div class="ag"><p class="big">163 / 952</p>final cohort, paediatric unit against adult unit</div>
+    </div>
+
+    <p>That middle number deserves a pause. Of nearly nineteen thousand young adults hospitalised with
+      severe sepsis, fewer than eight per cent were billed as having been treated by an intensivist at all.
+      Some of that is real &mdash; plenty of severe sepsis is managed on a ward. A good deal of it is the
+      method: identifying intensive care by who submitted the bill undercounts it, and the authors say so.
+      Either way, the paper is describing a narrow and unusual slice.</p>
+
+    <h2 class="sub">Who ends up where</h2>
+
+    <p>The two groups are not the same patients, and the gap is not subtle.</p>
+
+    <div class="three">
+      <div class="col mid">
+        <p class="age">Paediatric unit &nbsp;&#183;&nbsp; 163</p>
+        <p>Median age 19. A complex chronic condition in <b>95.7%</b>. Malignancy in <b>70.6%</b>, transplant
+          10.4%, a genetic condition 9.2%. More often male, more often on Medicaid.</p>
+      </div>
+      <div class="col">
+        <p class="age">Adult unit &nbsp;&#183;&nbsp; 952</p>
+        <p>Median age 22. A complex chronic condition in 85.3%. Malignancy in 42.5%, transplant 3.9%,
+          a genetic condition 2.8%.</p>
+      </div>
+      <div class="col">
+        <p class="age">The same in both</p>
+        <p>Technology dependence &mdash; 34.4% against 33.1%. Gastrostomies, tracheostomies and shunts are
+          distributed evenly. It is the <em>diagnoses</em> that differ, not the hardware.</p>
+      </div>
+    </div>
+
+    <p>Read the first column again. A nineteen-year-old in a paediatric intensive care unit with severe
+      sepsis is, seven times in ten, a cancer patient. These are not young adults who happened to end up in
+      the wrong building. They are the children of that hospital, grown up and still coming back.</p>
+
+    <h2 class="sub">The headline, and the trap underneath it</h2>
+
+    <p>Unadjusted mortality was <b class="term">13.5%</b> in the paediatric units and <b class="term">8.2%</b>
+      in the adult ones. Adjusted for age, sex, insurance status and comorbidity, admission to an adult unit
+      carried roughly half the odds of dying: odds ratio 0.50, 95% confidence interval 0.29 to 0.89. The
+      second model, using a different comorbidity index, gives the same answer. Length of stay was identical
+      &mdash; a median of nine days in both. Paediatric admissions cost about forty per cent more &mdash; a median of $48,484 against $35,050.</p>
+
+    <p>You can already see how that will be quoted.</p>
+
+    <div class="caution">
+      <span class="lab">Before you repeat the odds ratio</span>
+      <p>It rests on <b>twenty-two deaths</b>. That is the entire paediatric numerator &mdash; 22 of 163.</p>
+      <p>And there is <b>no adjustment for severity of illness on admission</b>. No SOFA, no PRISM, no
+        APACHE, nothing. The models know the patient&rsquo;s age, sex, insurance and a count of chronic
+        conditions. They do not know how sick she was when she arrived, which is the single largest
+        determinant of whether she lives.</p>
+      <p>Nor is there any information on advance directives &mdash; and in a population where seven in ten
+        have cancer, limitations of treatment are not a footnote.</p>
+    </div>
+
+    <p>There is a deeper problem, and it is the one I would raise first at a journal club. Severe sepsis
+      was identified by diagnosis code &mdash; but paediatric and adult medicine do not define sepsis the
+      same way. Adult practice uses Sepsis-3 and the SOFA score; paediatric practice at the time used
+      systemic inflammatory response criteria. The authors put it plainly: given that difference, comparisons
+      between the two groups &ldquo;may be unequal&rdquo;. Two cohorts, two definitions, one odds ratio.</p>
+
+    <h2 class="sub">What the authors say about their own adjustment</h2>
+
+    <div class="gap">
+      <span class="lab">Unusually honest, and easy to miss</span>
+      <p>No validated comorbidity index exists for young adults, so the authors used two &mdash; a paediatric
+        one and an adult one &mdash; and ran the models separately. Then they looked at what the two indices
+        actually caught, and found the overlap was almost nothing: of all the comorbidities that distinguished
+        the paediatric group, only malignancy appeared in both.</p>
+      <p>Their conclusion is a sentence most papers would have buried: neither index is likely adequate to
+        capture the comorbidity profile of this population. Which is to say the thing they adjusted for is
+        the thing they could not measure.</p>
+      <p>Their stated verdict on the mortality gap is correspondingly careful: the variation is
+        &ldquo;likely due to significant differences in the patient populations&rdquo;. Not the unit. The
+        patients.</p>
+    </div>
+
+    <h2 class="sub">Two results that point the other way</h2>
+
+    <p>The first is in the paper, in a sensitivity analysis almost nobody will quote. The authors widened
+      the lens beyond intensive care and compared every young adult looked after by paediatric medical and
+      surgical providers against every one looked after by adult providers &mdash; 138 against 9,049, ICU and
+      ward together. Mortality was 6.5% against 5.8%, with a p-value of 0.71. No difference at all. Widen the
+      denominator and the signal evaporates, which is what case-mix confounding looks like.</p>
+
+    <p>The second arrived four years later and is the study this question actually needed. Using a national
+      database of nearly 20,000 patients aged 14 to 22 across 856 hospitals, Badesch and colleagues exploited
+      the fact that
+      the age-18 boundary allocates near-identical patients to different units almost arbitrarily &mdash; a
+      regression discontinuity design, which is about as close to randomisation as observational data gets.
+      They found the same practice differences you would expect, including adrenaline as the first-line
+      vasopressor in paediatric units and noradrenaline in adult ones, and <b class="term">no significant
+      effect of paediatric unit admission on mortality</b> at any bandwidth around the cutoff, adjusted or
+      not. Their own conclusion was that there is now enough equipoise to randomise.</p>
+
+    <p>One caveat, and it matters: that second study is so far a <em>conference abstract</em> only &mdash;
+      presented to the American Thoracic Society in 2026, and not yet a peer-reviewed paper. I include it because it is the right design and it points the
+      same way as the sensitivity analysis above, not because an abstract settles anything. Watch for the
+      full publication.</p>
+
+    <h2 class="sub">And the young adult they both left out</h2>
+
+    <p>This paper excluded pregnancy-related hospitalisations, on the reasonable-sounding grounds that
+      maternal sepsis is usually treated as a separate entity. The
+      <a href="podcast-60-obstetric-critical-care.html">podcast running alongside this one</a> is about a
+      specialty that does the same thing in the other direction.</p>
+
+    <p>So in a single fortnight we have the largest study of young-adult sepsis removing the pregnant
+      patient from the denominator, and an intensivist arguing that the great mistake we make with her is
+      treating her as a separate entity. Sepsis is among the leading causes of maternal death in both the
+      United Kingdom and Australia. She is a young adult with sepsis. She is simply never in the cohort.</p>
+
+    <h2 class="sub">What to take to the bedside</h2>
+
+    <ul class="pts">
+      <li><b>The young adult with sepsis is usually not a well young adult</b><span>Across both groups here,
+        between 85 and 96 per cent carried a complex chronic condition. The healthy nineteen-year-old who
+        becomes septic out of a clear sky is the one we teach and the rarer case in the data.</span></li>
+      <li><b>Ask who looked after them before</b><span>Seven in ten of the paediatric-unit patients had a
+        malignancy. If a young adult arrives in your unit with a childhood-onset illness, somebody else holds
+        years of notes on how they behave when they deteriorate. Get them.</span></li>
+      <li><b>Comorbidity count, not unit type, predicted death</b><span>Each additional point on the adult
+        comorbidity index carried higher odds of dying &mdash; 1.14, and statistically solid. That is the
+        finding in this paper I would actually use.</span></li>
+      <li><b>Nine days, either way</b><span>Median length of stay was identical and adjusted analysis found
+        no difference. Whatever else is going on, these admissions are not short.</span></li>
+      <li><b>Women went home sooner, and nobody knows why</b><span>Females had significantly shorter stays in
+        both models. The authors speculate about neuromuscular disease and ventilatory support in young men.
+        It is unexplained, and it is the sort of thing worth noticing rather than smoothing over.</span></li>
+    </ul>
+
+    <h2 class="sub">What to read sceptically</h2>
+
+    <ul class="pts">
+      <li><b>These are bills, not patients</b><span>Sepsis by diagnosis code, intensive care by who submitted
+        the claim. The method misclassifies treatment setting and under-identifies ICU care, and paediatric
+        <em>surgical</em> critical care was not even a provider category in the database.</span></li>
+      <li><b>No severity adjustment, and no advance directives</b><span>The two variables most likely to
+        explain a mortality difference in this population are both absent. Any causal reading of the odds
+        ratio requires assuming they do not matter.</span></li>
+      <li><b>The deaths that were removed</b><span>179 patients had 270 recurrent admissions and only the
+        first was counted. The authors note this may have excluded deaths, and so may understate
+        mortality &mdash; in both arms, but not necessarily equally.</span></li>
+      <li><b>Not a random sample of anything</b><span>Truven is a convenience sample built on employer-based
+        insurance, with Medicaid data from a handful of states. The uninsured are largely absent, which in an
+        American sepsis cohort is a substantial absence.</span></li>
+      <li><b>And it is now a decade old</b><span>Data to 2015, published 2023, read in 2026. Sepsis
+        definitions, paediatric guidelines and the units themselves have all moved since.</span></li>
+    </ul>
+
+    <p>None of which makes it a bad paper. It is a careful study that describes something real &mdash; that
+      young adults with severe sepsis are scattered across two systems, that the ones in children&rsquo;s
+      units are overwhelmingly childhood-disease survivors, and that nobody has a comorbidity index that fits
+      them. It simply cannot answer the question its headline number appears to answer, and it is honest
+      enough to say so. Papers like that are the ones worth taking to a journal club, because the argument
+      is not about the result. It is about what the result is allowed to mean.</p>
+  </div>
+
+  <div class="pad" style="padding-top:6px">
+    <div class="challenge">
+      <h2>Challenge for you</h2>
+      <p class="ask">Can you actually get the paediatric notes?</p>
+      <p class="lead">A twenty-year-old with a childhood-onset condition arrives in your adult unit at two in
+        the morning. Somewhere there are fifteen years of records describing exactly how this person
+        deteriorates, what their baseline saturation is, which antibiotic they reacted to, and what their
+        family was told last time.</p>
+      <p>Have you ever got hold of them inside an admission? What did it take &mdash; a phone call, a fax, a
+        shared record, a parent with a folder? Or is the honest answer that you have never tried, because
+        there is no route and everyone knows it? That answer is as useful as the other one, and I suspect it
+        is commoner. Replies from regional and rural units especially welcome, where the children&rsquo;s
+        hospital is several hundred kilometres away.</p>
+      <p><a class="btn" href="mailto:icuandyou@icloud.com?subject=Journal%20Club%20101%20-%20getting%20the%20paediatric%20notes&body=The%20last%20young%20adult%20with%20a%20childhood-onset%20illness%20in%20my%20unit%3A%0D%0A%0D%0A%0D%0ADid%20we%20get%20their%20paediatric%20records%2C%20and%20how%20long%20did%20it%20take%3F%0D%0A%0D%0A%0D%0AWhat%20would%20have%20to%20change%20to%20make%20that%20routine%3A%0D%0A%0D%0A%0D%0AHospital%20type%20%28tertiary%20%2F%20regional%20%2F%20rural%29%3A%0D%0A%0D%0A---%0D%0A%0D%0AName%20%28optional%29%3A%0D%0A%0A---%0A%0AThinking%20about%20this%20ICU%20AND%20YOU%20post%20overall%20%E2%80%94%20was%20it%20useful%20to%20you%2C%20or%20would%20it%20be%20useful%20to%20others%3F%0A">Send me your answer</a></p>
+      <p class="fallback">The button opens a reply straight to me. If your device blocks it, write to
+        <a href="mailto:icuandyou@icloud.com">icuandyou@icloud.com</a> instead.</p>
+    </div>
+    <div class="challenge" style="margin-top:22px">
+      <h2>Send me a paper</h2>
+      <p class="ask">Read something that changed what you do?</p>
+      <p class="lead">This column runs on what people bring to it. Tell me the paper and, more to the point,
+        tell me what it changed &mdash; a journal club is not a reading list, it is an argument about whether
+        something ought to alter practice. Papers that <em>failed</em> to convince you are just as welcome,
+        and a good deal rarer in print.</p>
+      <p>If you would rather write the appraisal yourself, I will publish it here with your name on it
+        &mdash; or without, entirely as you prefer. Trainees especially: if you have already appraised
+        something for a teaching session, most of the work is done.</p>
+      <p><a class="btn" href="mailto:icuandyou@icloud.com?subject=Journal%20club%20suggestion&body=The%20paper%20%28title%2C%20journal%20and%20year%2C%20or%20just%20the%20DOI%29%3A%0D%0A%0D%0A%0D%0AWhat%20it%20changed%20%E2%80%94%20or%20why%20it%20did%20not%20convince%20you%3A%0D%0A%0D%0A%0D%0AWould%20you%20like%20to%20write%20the%20appraisal%20yourself%3F%20%28yes%20%2F%20no%29%3A%0D%0A%0D%0A%0D%0AIf%20I%20write%20it%20up%2C%20may%20I%20say%20who%20suggested%20it%3F%20%28yes%2C%20by%20name%20%2F%20yes%2C%20initials%20only%20%2F%20no%2C%20please%20leave%20me%20out%29%3A%0D%0A%0D%0A%0D%0AName%3A%0D%0A%0D%0A---%0D%0A%0D%0AThinking%20about%20this%20ICU%20AND%20YOU%20post%20overall%20%E2%80%94%20was%20it%20useful%20to%20you%2C%20or%20would%20it%20be%20useful%20to%20others%3F%0D%0A">Suggest a paper</a></p>
+      <p class="fallback" style="margin-bottom:9px">How you are credited is entirely your call &mdash; by name, by initials, or not at all &mdash; whether you write the piece or I do, and whether I quote you or simply say who sent something in; nothing of yours goes up with your name on it unless you have said yes.</p>
+<p class="fallback">The button opens a reply straight to me. If your device blocks it, write to
+        <a href="mailto:icuandyou@icloud.com">icuandyou@icloud.com</a> instead.</p>
+    </div>
+  </div>
+
+  <footer>
+    <span class="firstpub">First published October 2026</span>
+    <p class="subline">Two emails a week &mdash; the Friday newsletter for all subscribers, and, for clinical subscribers,
+      the mind map and puzzles the moment they go up on Tuesday. Occasional announcements of new
+      features as they arrive. What went up and why it mattered, the best of your replies, and
+      original feature stories, news and views. <a href="https://joinlist.com/f/5adad2d6">Come and join us</a>.</p>
+    <a class="home" href="./">&larr; &nbsp;All of ICU AND YOU</a><br>
+    ICU AND YOU &nbsp;·&nbsp; Journal Club No. 101 &nbsp;·&nbsp; companion to Mind Map #36, The Young Adult<br>
+    Summarised independently and in our own words; the article is not open access and is linked above rather
+    than reproduced. Figures are quoted from the published paper. Educational use only &mdash; not a clinical
+    protocol, and local guidance and the retrieval service always take precedence.
+  <br>
+    <span class="mine">Views my own, not those of NSW Health or any other organisation. No identifiable patients — scenarios are constructed or combined for teaching. <a href="about.html">More</a>.</span>
+  </footer>
+
+</div>
+<script data-goatcounter="https://icuandyou.goatcounter.com/count"
+        async src="//gc.zgo.at/count.js"></script>
+</body>
+</html>
