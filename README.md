@@ -64,6 +64,8 @@ page_topic.json        the manifest: every page, its series, colour, topic,
                        blurb, and whether it is in the current fortnight
 build-index.py         rebuilds the generated regions of index.html
 audit.py               checks the whole site before publishing
+prose_baseline.json    wording that is SHARED BETWEEN PAGES on purpose
+make_prose_baseline.py regenerates that file — only after reading what changed
 ```
 
 Typical cycle:
@@ -73,7 +75,10 @@ Typical cycle:
    current fortnight, or `"standing": true` for those that belong to no topic.
 3. `python3 build-index.py`
 4. `python3 audit.py` — fix anything it reports.
-5. Commit.
+5. **Read the new page through, start to finish**, as a reader would. The
+   audit cannot tell you that a sentence is about the wrong age group, that
+   an argument does not land, or that the challenge is the wrong question.
+6. Commit.
 
 When a block ends, set the old pieces' `"week"` to `false`, add the new topic
 to the top of `topic_order`, and update `teaser` in the manifest.
@@ -93,9 +98,32 @@ glossary.js            the definition cards behind dotted-underlined terms
 Run it before every commit. It checks for orphan pages, dead links, missing
 meta descriptions, missing disclaimers and subscribe lines, glossary links with
 no entry, series links that resolve to no filter, mind map text that will
-overflow its card, and puzzle grids whose dimensions do not match their cells.
+overflow its card, puzzle grids whose dimensions do not match their cells,
+classes used in the markup that nothing styles, and prose carried over from
+the page a new page was built from.
 
 Most of those checks exist because something went wrong once.
+
+### Inherited prose
+
+Every page here is built from an earlier one, which is how the house style
+stays consistent — and it means an unrewritten paragraph is invisible. Mind
+Map 36 published with Mind Map 35's entire opening, three paragraphs about
+adolescents, and every other check passed: the page was valid, linked
+correctly, rendered correctly, and was about the wrong patient.
+
+So `audit.py` flags prose appearing on two to five pages. Wording on more
+pages than that is furniture; a paragraph on two or three was copied and
+forgotten. Companion pages of the same piece — a printable and its fillable,
+a checklist and its long version — are exempt, because there the copying is
+the point.
+
+Deliberate sharing lives in `prose_baseline.json`, keyed by a hash of the
+text rather than by which pages carry it, so adding a new piece to a series
+does not re-trigger its explainer. When the audit flags something, **read it**
+and then either fix the page or paste the printed line into the baseline.
+Running `make_prose_baseline.py` to clear a report without reading it would
+bless the mistake, which is the only way this check can be defeated.
 
 ## Before you publish
 

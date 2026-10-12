@@ -11,9 +11,11 @@ than a memory test.
     python3 audit.py --quiet    problems only (exit 1 if any)
 """
 
+import hashlib
 import json
 import re
 import sys
+from collections import defaultdict
 from pathlib import Path
 
 HERE = Path(__file__).resolve().parent
@@ -262,6 +264,68 @@ def main():
         shown = ", ".join(fs[:3]) + (f" and {len(fs) - 3} more" if len(fs) > 3 else "")
         notes.append(f'class "{cls}" is used but never styled, on {len(fs)} '
                      f"page{'s' if len(fs) > 1 else ''}: {shown}")
+
+    # ---- prose inherited from the page a new page was built from ----------
+    # October 2026, and the reason this check exists: Mind Map 36 went out
+    # with Mind Map 35's entire opening — lede and two paragraphs, word for
+    # word, about adolescents. Every other check passed, because nothing was
+    # broken. The page was valid, linked correctly, rendered correctly and
+    # was about the wrong patient. Michael found it by reading it.
+    #
+    # Every page here is built from an earlier one, so this will happen again.
+    # The discriminator is how many pages a block appears on: the subscribe
+    # line and the series explainers are furniture and appear on dozens; a
+    # paragraph of body prose on exactly two or three pages was copied and
+    # forgotten.
+    #
+    # Today's intentional sharing is recorded in prose_baseline.json by its
+    # hash, not by which pages carry it, so adding Bare Bones 3 does not
+    # re-trigger the Bare Bones explainer. Anything NOT in that file is new,
+    # and new shared prose is the bug. If it turns out to be deliberate, the
+    # fix is to paste the printed line into the baseline.
+    MIN_WORDS, FURNITURE_AT = 14, 6
+    seen = defaultdict(set)
+    for f in content:
+        s = (HERE / f).read_text(encoding="utf-8")
+        s = re.sub(r"<style>.*?</style>|<script.*?</script>|<svg.*?</svg>|<!--.*?-->",
+                   "", s, flags=re.S)
+        for c in re.findall(r"<p\b[^>]*>(.*?)</p>|<li\b[^>]*>(.*?)</li>", s, re.S):
+            t = re.sub(r"<[^>]+>", " ", c[0] or c[1])
+            t = re.sub(r"&[a-z]+;|&#\d+;", " ", t)
+            t = re.sub(r"\s+", " ", t).strip()
+            if len(t.split()) >= MIN_WORDS:
+                seen[t].add(f)
+
+    bl_path = HERE / "prose_baseline.json"
+    try:
+        baseline = json.loads(bl_path.read_text(encoding="utf-8"))
+    except FileNotFoundError:
+        baseline = {}
+        notes.append("prose_baseline.json is missing — the inherited-prose check "
+                     "cannot tell new sharing from old, so it is passing everything")
+
+    # A companion page is the same piece in another format — the printable and
+    # fillable superpuzzles are generated from each other, and a procedure's
+    # checklist is a cut-down of its long version. Identical text across those
+    # is the point, so collapse them to one stem before judging.
+    def stem(f):
+        return re.sub(r"-(fillable|printable|checklist)\.html$", ".html", f)
+
+    for t, ps in sorted(seen.items(), key=lambda kv: -len(kv[1])):
+        if not (2 <= len(ps) < FURNITURE_AT):
+            continue
+        if len({stem(p) for p in ps}) == 1:
+            continue
+        h = hashlib.sha1(t.encode()).hexdigest()[:16]
+        if h in baseline:
+            continue
+        problems.append(
+            f"inherited prose: {len(t.split())} words appear on "
+            f"{' and '.join(sorted(ps))} — if that is a page built from another "
+            f"and not rewritten, fix the page; if it is deliberate, add to "
+            f'prose_baseline.json:  "{h}": {{"note": "...", '
+            f'"opening": "{" ".join(t.split()[:9])}…"}}\n'
+            f"             “{t[:120]}…”")
 
     # ---- the GROUPS map must know every series --------------------------
     # The landing page carries the series-to-group map twice: once as the
