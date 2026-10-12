@@ -217,6 +217,52 @@ def main():
         elif n > 1:
             problems.append(f"{f}: the credit line appears {n} times")
 
+    # ---- a class used in the markup must be styled somewhere in the page --
+    # Found October 2026: twelve pages — the whole Multimedia group — used
+    # class="btn" for the reply button and never defined .btn, so the button
+    # that is the entire point of a challenge box rendered as a plain blue
+    # underlined link. Nothing else caught it, because each page was valid,
+    # linked correctly and read correctly; only looking at it showed the
+    # problem, and nobody looks at a page they wrote six weeks ago.
+    #
+    # Same principle as the other checks here: compare the page against
+    # itself. A class in a class="" attribute with no mention anywhere in the
+    # page's own <style> block is either dead markup or an unstyled element.
+    # Matching the bare name rather than a full selector keeps this quiet for
+    # classes styled by descent (.challenge h2) or in a media query.
+    #
+    # .btn is a problem because a dead reply button costs replies. The rest
+    # are notes, because some are legitimately styled elsewhere and the point
+    # is to put the list in front of a human each Friday, not to block.
+    STYLED_ELSEWHERE = {
+        "gl", "gl-card",            # glossary.js injects its own rules
+        "segno", "qrimg", "qrline",  # QR markup; the SVG carries its own attrs
+        "ct", "ot",                  # puzzle SVG text, styled by attribute
+    }
+    unstyled = {}
+    for f in content:
+        s = (HERE / f).read_text(encoding="utf-8")
+        style = "\n".join(re.findall(r"<style>(.*?)</style>", s, re.S))
+        if not style:
+            continue
+        markup = re.sub(r"<style>.*?</style>", "", s, flags=re.S)
+        used = set()
+        for attr in re.findall(r'class="([^"]*)"', markup):
+            used |= set(attr.split())
+        for cls in sorted(used - STYLED_ELSEWHERE):
+            if re.search(r"[.\s]" + re.escape(cls) + r"\b", style):
+                continue
+            if cls == "btn":
+                problems.append(
+                    f'{f}: uses class="btn" but never defines .btn — the reply '
+                    f"button will render as a plain underlined link")
+            else:
+                unstyled.setdefault(cls, []).append(f)
+    for cls, fs in sorted(unstyled.items(), key=lambda kv: -len(kv[1])):
+        shown = ", ".join(fs[:3]) + (f" and {len(fs) - 3} more" if len(fs) > 3 else "")
+        notes.append(f'class "{cls}" is used but never styled, on {len(fs)} '
+                     f"page{'s' if len(fs) > 1 else ''}: {shown}")
+
     # ---- the GROUPS map must know every series --------------------------
     # The landing page carries the series-to-group map twice: once as the
     # buttons in the menu, and once as a JavaScript object the "All of ..."
