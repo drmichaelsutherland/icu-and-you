@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html lang="en-AU">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ICU AND YOU · Podcast 60 — Just imagine the bump isn't there</title>
+<meta name="description" content="Podcast 60: Katie Cranfield on FICM Learning — obstetric critical care. Half of the women who die are not dying of anything obstetric, why these patients compensate and then collapse, fetal fixation, and the numbers that do not flag.">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="alternate icon" href="/favicon.ico" sizes="any">
+<link rel="apple-touch-icon" href="/icon-180.png">
+<link rel="manifest" href="/site.webmanifest">
+<meta name="theme-color" content="#1B2A33">
+<meta property="og:site_name" content="ICU AND YOU">
+<meta property="og:type" content="website">
+<meta property="og:title" content="ICU AND YOU · Podcast 60 — Just imagine the bump isn't there">
+<meta property="og:description" content="Wherever you look after her, her care is compromised. Knowing which compromise you are making is most of the job.">
+<meta property="og:image" content="https://icuandyou.com/share-card.png">
+<meta name="twitter:card" content="summary_large_image">
+<style>
+  :root{
+    --paper:#FAF9F7; --ink:#1E252B; --muted:#68707A; --rule:#DCDDDA;
+    --slate:#3E4A52; --slatetint:#EDF0F2;
+    --rust:#A8442A; --rusttint:#F9EDE7;
+    --gold:#A8721E;
+  }
+  *{box-sizing:border-box}
+  body{margin:0;background:#EDEDEA;color:var(--ink);
+    font:400 17px/1.64 'Iowan Old Style','Palatino Linotype',Palatino,Georgia,serif;
+    -webkit-text-size-adjust:100%;}
+  .sheet{max-width:780px;margin:0 auto;background:var(--paper);
+    box-shadow:0 1px 40px rgba(30,37,43,.10);}
+
+  header.top{padding:42px 40px 28px;border-bottom:1px solid var(--rule)}
+  .eyebrow a.serlink{color:inherit;text-decoration:none;border-bottom:1px solid transparent}
+  .eyebrow a.serlink:hover{border-bottom-color:currentColor}
+  .eyebrow a.mast{color:inherit;text-decoration:none;border-bottom:1px solid transparent}
+  .eyebrow a.mast:hover{border-bottom-color:currentColor}
+  .toptopic{display:inline-block;margin:0 0 16px 9px;padding:7px 16px;border-radius:20px;
+    border:1px solid currentColor;opacity:.62;text-decoration:none;color:inherit;
+    font:600 11.5px 'Helvetica Neue',Arial,sans-serif;letter-spacing:.09em;
+    text-transform:uppercase;transition:opacity .12s ease}
+  .toptopic:hover{opacity:1}
+  .topseries{display:inline-block;margin:0 0 16px 9px;padding:7px 16px;border-radius:20px;
+    border:1px solid currentColor;opacity:.62;text-decoration:none;color:inherit;
+    font:600 11.5px 'Helvetica Neue',Arial,sans-serif;letter-spacing:.09em;
+    text-transform:uppercase;transition:opacity .12s ease}
+  .topseries:hover{opacity:1}
+  .tophome{display:inline-block;margin:0 0 16px;padding:7px 16px;border-radius:20px;
+    border:1px solid currentColor;opacity:.62;text-decoration:none;color:inherit;
+    font:600 11.5px 'Helvetica Neue',Arial,sans-serif;letter-spacing:.09em;
+    text-transform:uppercase;transition:opacity .12s ease}
+  .tophome:hover{opacity:1}
+  .eyebrow{font:500 11.5px/1 'Helvetica Neue',Arial,sans-serif;letter-spacing:.24em;
+    text-transform:uppercase;color:var(--slate);margin:0 0 14px}
+  h1{font-size:31px;line-height:1.2;margin:0 0 10px;font-weight:400;letter-spacing:-.012em}
+  .kicker{color:var(--muted);margin:0;font-size:16.5px;font-style:italic}
+
+  /* the listen block */
+  .listen{margin:0;padding:28px 40px;background:var(--slatetint);
+    border-bottom:1px solid var(--rule)}
+  .meta{display:flex;flex-wrap:wrap;gap:6px 22px;margin:0 0 18px;
+    font:400 14px 'Helvetica Neue',Arial,sans-serif;color:var(--muted)}
+  .meta b{color:var(--ink);font-weight:600}
+  a.play{display:inline-flex;align-items:center;gap:11px;padding:15px 30px;border-radius:30px;
+    text-decoration:none;background:var(--slate);color:#F7F9FA;
+    font:600 15px 'Helvetica Neue',Arial,sans-serif;letter-spacing:.03em}
+  a.play:hover{background:#2C363D}
+  a.play:focus-visible{outline:3px solid var(--rust);outline-offset:3px}
+  a.play svg{display:block}
+  .hostnote{font:400 13.5px 'Helvetica Neue',Arial,sans-serif;color:var(--muted);margin:14px 0 0}
+
+  .pad{padding:32px 40px}
+  p{margin:0 0 17px}
+  h2.sub{font:600 12px 'Helvetica Neue',Arial,sans-serif;letter-spacing:.2em;
+    text-transform:uppercase;color:var(--muted);margin:0 0 16px;
+    padding-bottom:8px;border-bottom:1px solid var(--rule)}
+  b.term{font-weight:600;color:var(--slate)}
+
+  .challenge{margin:0;padding:28px 32px;background:var(--rusttint);border-left:5px solid var(--rust)}
+  .challenge h2{font:600 12px 'Helvetica Neue',Arial,sans-serif;letter-spacing:.2em;
+    text-transform:uppercase;color:var(--rust);margin:0 0 13px}
+  .ask{font-size:19.5px;line-height:1.5;margin:0 0 8px}
+  .lead{font-size:15px;color:var(--muted);margin:0 0 17px;line-height:1.55}
+  .chips{display:flex;flex-wrap:wrap;gap:10px;margin:0 0 16px}
+  a.chip{text-decoration:none;padding:12px 18px;border-radius:9px;
+    background:#fff;border:1px solid #E0C4B8;color:#7C3520;
+    font:400 15px 'Iowan Old Style',Palatino,Georgia,serif;
+    transition:transform .08s ease}
+  a.chip:hover{transform:translateY(-1px);background:#FDF4EF}
+  .btn{display:inline-block;margin:6px 0 12px;padding:15px 30px;background:var(--rust);
+    color:#FDF8F5;text-decoration:none;border-radius:30px;
+    font:600 15px 'Helvetica Neue',Arial,sans-serif;letter-spacing:.03em}
+  .btn:hover{background:#8A3620}
+  .fallback{font:400 13.5px 'Helvetica Neue',Arial,sans-serif;color:var(--muted);margin:0}
+  .fallback a{color:var(--rust)}
+  .subline{margin:0 0 14px;padding:0 0 13px;border-bottom:1px solid rgba(0,0,0,.09);
+    font:400 14.5px/1.55 'Iowan Old Style','Palatino Linotype',Palatino,Georgia,serif;
+    max-width:56ch;margin-left:auto;margin-right:auto}
+  .subline a{font-weight:500;border-bottom:1px solid currentColor;
+    text-decoration:none;color:inherit}
+  .firstpub{display:block;margin:0 0 10px;padding-bottom:9px;
+    border-bottom:1px solid currentColor;border-color:rgba(0,0,0,.09);
+    font:400 12px 'Helvetica Neue',Arial,sans-serif;letter-spacing:.06em;opacity:.72}
+
+  footer{padding:24px 40px 42px;border-top:1px solid var(--rule);
+    font:400 13px 'Helvetica Neue',Arial,sans-serif;color:var(--muted);text-align:center;line-height:1.7}
+  .home{display:inline-block;margin:0 0 14px;padding:8px 18px;border-radius:20px;
+    border:1px solid var(--rule);background:#F1F3F4;color:var(--slate);text-decoration:none;
+    font:600 12.5px 'Helvetica Neue',Arial,sans-serif;letter-spacing:.05em}
+  .home:hover{background:var(--slate);border-color:var(--slate);color:#F7F9FA}
+
+  @media (max-width:620px){
+    header.top,.listen,.pad,footer{padding-left:20px;padding-right:20px}
+    .challenge{padding:22px 20px}
+    h1{font-size:25px} body{font-size:16.5px} .ask{font-size:18px}
+  }
+  @media print{ body{background:#fff} .sheet{box-shadow:none;max-width:none} }
+
+  .topguest{display:inline-block;margin:0 0 16px 9px;padding:7px 16px;border-radius:20px;
+    border:1px dashed currentColor;opacity:.62;text-decoration:none;color:inherit;
+    font:600 11.5px 'Helvetica Neue',Arial,sans-serif;letter-spacing:.09em;
+    text-transform:uppercase;transition:opacity .12s ease}
+  .topguest:hover{opacity:1}
+  .myth{margin:0 0 22px;padding:22px 26px;background:#fff;border:1px solid var(--rule);
+    border-radius:10px;border-left:4px solid var(--slate)}
+  .myth .lab{display:block;font:600 11px 'Helvetica Neue',Arial,sans-serif;
+    letter-spacing:.18em;text-transform:uppercase;color:var(--rust);margin:0 0 8px}
+  .myth h3{margin:0 0 10px;font:400 20px 'Iowan Old Style',Palatino,Georgia,serif;
+    font-style:italic;color:var(--muted)}
+  .myth p:last-child{margin:0}
+  .verdict{font-weight:600;color:var(--slate)}
+  .mine{display:inline-block;margin:9px 0 0;opacity:.78;font-size:.94em}
+  .howto{margin:0 0 24px;padding:22px 26px;background:#EEF1F3;border-left:4px solid #4A5560;
+    border-radius:0 8px 8px 0}
+  .howto .lab{display:block;font:600 11px 'Helvetica Neue',Arial,sans-serif;letter-spacing:.18em;
+    text-transform:uppercase;color:#39434D;margin:0 0 10px}
+  .howto p{margin:0 0 10px;font-size:15.5px;line-height:1.6}
+  .howto p:last-child{margin:0}
+
+  /* Boxes and pull quotes. The podcast template grew up around the myth/verdict
+     shape of Session 58; this session argues a single case through, so it needs
+     a plain aside and a quotation that can stand on its own. */
+  .box{margin:22px 0;padding:20px 26px;background:#fff;border:1px solid var(--rule);
+    border-radius:10px;border-left:4px solid var(--slate)}
+  .box .lab{display:block;font:600 11px 'Helvetica Neue',Arial,sans-serif;
+    letter-spacing:.18em;text-transform:uppercase;color:var(--slate);margin:0 0 9px}
+  .box p{margin:0 0 11px}
+  .box p:last-child{margin:0}
+  .box.warn{background:var(--rusttint);border-left-color:var(--rust)}
+  .box.warn .lab{color:var(--rust)}
+
+  blockquote.pull{margin:24px 0;padding:2px 0 2px 24px;border-left:3px solid var(--gold);
+    font-size:20px;line-height:1.5;font-style:italic;color:#39434D}
+
+  @media (max-width:620px){
+    .box{padding:18px 20px} blockquote.pull{font-size:17.5px;padding-left:18px}
+  }
+
+</style>
+</head>
+<body>
+<div class="sheet">
+
+  <header class="top">
+    <a class="tophome" href="./">&larr;&nbsp; Home</a>
+    <a class="topseries" href="./?s=podcast">All podcasts</a>
+    <a class="toptopic" href="./?t=young-adult" title="Everything on The young adult">All on this topic</a>
+    <p class="eyebrow"><a class="mast" href="./">ICU and You</a> &nbsp;·&nbsp; <a class="serlink" href="./?s=podcast">Podcast Sessions</a> &nbsp;·&nbsp; Number 60</p>
+    <h1>Just imagine the bump isn&rsquo;t there</h1>
+    <p class="kicker">Katie Cranfield on the women an adult unit sees thirty times a year, and forgets</p>
+  </header>
+
+  <div class="listen">
+    <div class="meta">
+      <span><b>Show</b> &nbsp;FICM Learning</span>
+      <span><b>Guest</b> &nbsp;Dr Katie Cranfield, intensivist and obstetric physician, Royal Victoria Infirmary, Newcastle</span>
+      <span><b>Host</b> &nbsp;Dr Cathy Ross, Southmead Hospital, Bristol</span>
+      <span><b>Released</b> &nbsp;31 July 2025</span>
+    </div>
+    <a class="play" href="https://www.ficm.ac.uk/podcast-obstetric-critical-care">
+      <svg width="15" height="17" viewBox="0 0 15 17" aria-hidden="true"><path d="M1 1.5 L14 8.5 L1 15.5 Z" fill="#F7F9FA"/></svg>
+      Listen to the episode
+    </a>
+    <p class="hostnote">Free, from the Faculty of Intensive Care Medicine, and about forty minutes. Two
+      intensivists talking shop rather than a lecture &mdash; Ross leads her own trust&rsquo;s obstetric
+      critical care, so the questions are the ones you would ask.</p>
+  </div>
+
+  <div class="pad">
+
+    <div class="howto">
+      <span class="lab">How to use a podcast</span>
+      <p><strong>Listen first. It is not a test.</strong> Do not take notes, do not try to hold the numbers,
+        and do not stop to look anything up. Let it wash over you on a drive or a walk and accept that most
+        of it will not stick. That is not a failure of attention; it is how listening works.</p>
+      <p>What a podcast does that no paper can is let you hear somebody <em>think</em>. The hesitations, the
+        qualifications, the places where an expert says plainly that we do not know &mdash; none of that
+        survives into print, and it is most of what you are actually there for. You are picking up how
+        somebody holds a problem, not a set of facts.</p>
+      <p>Then talk about it. Bring one thing to a ward round, argue with somebody about it over coffee,
+        disagree with the guest out loud. An episode discussed once is worth three listened to alone.</p>
+      <p>And if something matters enough to act on, look it up properly afterwards. A podcast is a way in,
+        not a source.</p>
+    </div>
+
+    <p class="lead"><strong>A reasonable-sized tertiary centre admits thirty to forty of these women a
+      year.</strong> Cranfield&rsquo;s own unit, and she says it as a problem rather than a boast: &ldquo;it&rsquo;s
+      really hard to make sure that people are competent in things that they don&rsquo;t do that often.&rdquo;
+      If you work somewhere smaller, divide.</p>
+
+    <p>And about half of the women who die are not dying of anything obstetric. They are dying of the things
+      you do every day.</p>
+
+    <h2 class="sub">Why it is worth your time &mdash; and what has happened since</h2>
+
+    <p>Katie Cranfield is an adult intensivist at the Royal Victoria Infirmary in Newcastle who also leads
+      obstetric medicine for the North East and North Cumbria Maternal Medicine Network &mdash; days in maternal
+      medicine, on-calls all critical care. She is an assessor for MBRRACE-UK, the UK confidential enquiry into
+      maternal deaths, and a named author of its chapter on hypertensive disorders. She spends this episode
+      arguing that these women belong to us: not to obstetrics with us visiting, but to intensive care. It is
+      worth knowing how that argument has gone.</p>
+
+    <div class="box">
+      <span class="lab">What has happened since it was recorded</span>
+      <p>On 10 September 2026 MBRRACE-UK published <em>Saving Lives, Improving Mothers&rsquo; Care 2022&ndash;24</em>.
+        Chapter 7, page 89: <strong>&ldquo;Lessons for critical care&rdquo;</strong> &mdash; a standalone chapter,
+        which the previous report did not have. Cranfield presented the critical care messages at the launch
+        conference the same day. So this is not a podcast about a specialty interest; it is a recording of
+        somebody making a case, fourteen months before the national enquiry agreed with her.</p>
+      <p>Two things she refers to have also resolved. The government ambition to halve maternal deaths by 2025
+        was missed &mdash; the rate rose from 10.63 to 12.80 per 100,000 maternities. And the national maternity
+        investigation she says was announced &ldquo;yesterday&rdquo; (in fact 23 June 2025) reported on 30 June
+        2026, concluding that the system &ldquo;is not set up to deliver consistently safe, high quality and
+        compassionate care.&rdquo;</p>
+    </div>
+
+    <h2 class="sub">Half of them are not dying of obstetrics</h2>
+
+    <blockquote class="pull">About half of the women in the UK who died during pregnancy in the year after
+      their birth, they don&rsquo;t actually die from anything related to their pregnancy in terms of obstetric
+      complication. They are often dying from medical complications, medical things that we are very used to
+      dealing with.</blockquote>
+
+    <p>Her list is thromboembolism, cardiac disease, sepsis, COVID &mdash; &ldquo;absolute bread and
+      butter&hellip; things that we are used to managing as intensivists.&rdquo;</p>
+
+    <p>The arithmetic is in fact better than she says. Of the 252 women who died within 42 days of the end of
+      pregnancy, 135 died of indirect causes &mdash; 54%, so &ldquo;about half&rdquo; is right. But 598 women
+      died during pregnancy or in the year after it, and only 117 of those deaths were direct obstetric: across
+      the whole year, <strong>four in five are not obstetric deaths at all</strong>. Nor is the ranking the
+      quartet we were taught. Thrombosis first, at more than twice the rate of any other direct cause; cardiac
+      disease second; mental health third within 42 days and <em>first</em> beyond them, with suicide killing
+      61 women, 19% of all late maternal deaths. Pre-eclampsia is tenth. Haemorrhage is eleventh.</p>
+
+    <div class="box">
+      <span class="lab">And this is not a British quirk</span>
+      <p>Australian data for 2014&ndash;2023 put cardiovascular disease first at 14%, then sepsis 12%, suicide
+        10%, thromboembolism 10%. Hypertensive disease appears in none of those leading-cause lists. Only 18%
+        of deaths are intrapartum; 45% are postpartum. Two countries, two systems, the same answer: the
+        dangerous period is after the baby is out, and the cause is usually not the pregnancy.</p>
+    </div>
+
+    <h2 class="sub">The improvable-care finding, which has got worse</h2>
+
+    <blockquote class="pull">About half of the cases that we review, not only are there often found to be
+      improvements in care that would have been desirable, but in many of those cases, had those improvements
+      in care been made, those women may not have died.</blockquote>
+
+    <p>&ldquo;About half&rdquo; was accurate when she said it &mdash; 45% in the report current at the time.
+      In the report published last month it is <strong>61%</strong>: 108 of the 178 women whose care was
+      reviewed in depth. Only 29 received care the assessors called good. One honest caveat is that the
+      enquiry chapters rotate, so the denominators are not like for like, and this year&rsquo;s mix was more
+      acute. Some of the jump is the topics. Not all of it.</p>
+
+    <h2 class="sub">The idea the episode turns on</h2>
+
+    <blockquote class="pull">More so than any other patient group in the hospital, wherever you look after
+      these patients, they&rsquo;re going to experience significant compromises in their care. And having an
+      awareness of that, the compromises that you&rsquo;re likely to make, I think sometimes makes it a little
+      bit easier to provide good care for these women.</blockquote>
+
+    <p>It is not a complaint about resources. It is a claim that <em>there is no right answer</em>, only two
+      wrong ones, and that choosing knowingly beats choosing by default.</p>
+
+    <p><b class="term">Delivery suite</b> keeps mother and baby together, has staff who prescribe for pregnancy
+      without thinking about it, and has people on hand if she labours. It may also have nobody on the floor
+      with a nursing qualification, and no adult intensive care on the site at all.</p>
+
+    <p><b class="term">Critical care</b> has the nursing ratio, the organ support and the consultant presence.
+      What it does not have is &ldquo;staff who are familiar with prescribing for these women, staff who feel
+      confident in what the physiology of a woman in pregnancy is, and are able to pick up a woman who&rsquo;s
+      deteriorating.&rdquo; And &mdash; her words, worth sitting with &mdash; &ldquo;when you admit a woman to
+      critical care, you are managing to remove that woman from her baby.&rdquo;</p>
+
+    <p>The offsets she offers are concrete and cheap: promote infant feeding, make space for nappy changes and
+      baths and cuddles and photos, and swap muslins &mdash; one tucked between the mother&rsquo;s breasts, one
+      down with the baby &mdash; so each of them smells of the other. Partners, she notes, are often worst
+      affected of anyone: &ldquo;imagine becoming a new parent and your partner is also critically unwell on
+      critical care and you&rsquo;re trying to split your time between your baby and your partner.&rdquo;</p>
+
+    <p>What she will <em>not</em> do is let you copy her unit&rsquo;s policy on who comes to critical care.
+      &ldquo;I think that&rsquo;s a really dangerous place to be, because you know what it&rsquo;s like,
+      situations change.&rdquo; Delivery suite may be quiet while critical care is fit to bursting; the right
+      place for that woman on Monday is the wrong place on Tuesday. She wants outreach instead &mdash;
+      continuous liaison, and a decision reassessed rather than protocolised. For once the answer to a safety
+      problem is not a document.</p>
+
+    <h2 class="sub">Why they are hard to recognise</h2>
+
+    <p>Normal pregnancy &mdash; vasodilatation, tachycardia, increased respiratory drive &mdash; looks like
+      sepsis, closely enough that the SOFA score performs badly in pregnant women. Then there is the
+      reserve.</p>
+
+    <blockquote class="pull">Because of the way that the body prepares itself for pregnancy and for delivery,
+      actually these women are very capable of compensating until incredibly late, and then they fall off their
+      perch spectacularly.</blockquote>
+
+    <p>Plasma volume is up by roughly half at term. RCOG puts it plainly: an otherwise healthy woman can lose
+      up to 35% of her circulating volume before she becomes symptomatic, and &ldquo;maternal tachycardia may be
+      the only sign of hypovolaemia until very late in the haemorrhage.&rdquo; So people see a critically unwell
+      obstetric patient and &ldquo;are falsely reassured by the fact that they look okay from the end of the
+      bed.&rdquo;</p>
+
+    <p>Her MBRRACE lesson was about recognition <em>outside</em> maternity services &mdash; the emergency
+      department, the assessment unit. &ldquo;Has your hospital got a way to flag those patients up, and have
+      you got a route to bring them to critical care?&rdquo; And her verdict on how we do: &ldquo;we are not
+      very good at doing the basics very well when it comes to this patient group.&rdquo;</p>
+
+    <h2 class="sub">The numbers that do not flag</h2>
+
+    <blockquote class="pull">You will be so used to seeing patients with creatinines well into the hundreds
+      that&hellip; you&rsquo;re not going to bat an eyelid at a woman who&rsquo;s two days postpartum with a
+      creatinine of 105 unless you&rsquo;re specifically looking for it.</blockquote>
+
+    <p>She is right, and the point survives being made carefully. Her figure was that a normal creatinine in
+      pregnancy is never really more than 75; the RCP&rsquo;s acute care toolkit sets the threshold that should
+      prompt investigation for acute kidney injury at <strong>77 &micro;mol/L</strong>, and the best recent
+      prospective data put the upper limit of normal lower still, around 63 to 67.</p>
+
+    <div class="box warn">
+      <span class="lab">But do not judge a postpartum value against a pregnancy range</span>
+      <p>Creatinine falls through pregnancy and then <em>peaks</em> in the early postpartum weeks: the 95th
+        centile postpartum is about 84 &micro;mol/L, not 75. So her patient at two days postpartum with a
+        creatinine of 105 is genuinely abnormal and genuinely missable &mdash; but argue it from the postpartum
+        range. A registrar who carries only the headline figure will use it on the wrong day.</p>
+    </div>
+
+    <p>The same blindness applies upward: &ldquo;you will be so used to seeing women or patients who are
+      hypertensive that a blood pressure of 140, 150 systolic is not going to flag on your subconscious
+      radar.&rdquo;</p>
+
+    <h2 class="sub">Treat her as if she were not pregnant</h2>
+
+    <blockquote class="pull">Wherever possible treat these women as if they were not pregnant, unless there is
+      a very good reason not to do so.</blockquote>
+
+    <p>This, she says, is the message MBRRACE tries to get out year on year. Refer for extracorporeal support
+      at the same early opportunity as anyone else. Think about ischaemic heart disease in a thirty-year-old and
+      manage it as you otherwise would. The COVID trials did not initially include pregnant patients in their
+      cohorts, which is the same failure in research form.</p>
+
+    <p>Then she names the thing that goes wrong, and the name is good enough to keep:</p>
+
+    <div class="box">
+      <span class="lab">Fetal fixation</span>
+      <p>&ldquo;I think things often go wrong when we end up with what I call fetal fixation. Everybody becomes
+        really worried about this bump. Oh my goodness, I don&rsquo;t know if I can do that scan because
+        there&rsquo;s a baby on board&hellip; But actually <strong>the inertia of doing nothing is often what
+        causes the problem</strong> rather than getting the scan, doing the prescription, giving the
+        medication.&rdquo;</p>
+      <p>Ross has her own version, and it is the title of this piece: &ldquo;I always just say, just imagine
+        the bump isn&rsquo;t there. What would you do if there was no bump? And you will almost always be on the
+        right track&hellip; if you would offer the treatment to a non-pregnant person, then you should probably
+        be offering it to a pregnant person.&rdquo;</p>
+    </div>
+
+    <p>One claim in this stretch does not survive checking. Ross says outcomes on extracorporeal support are
+      better in pregnant women than in non-pregnant women. Survival in pregnancy does run higher &mdash;
+      roughly 70 to 80% against published general adult figures of 59% respiratory and 42% cardiac &mdash; but
+      every available comparison is unmatched, and the registry authors themselves put the gap down to youth,
+      absent comorbidity and closer monitoring. Pregnancy is not protective; being thirty and otherwise well
+      is. The advice underneath it stands without it.</p>
+
+    <div class="box warn">
+      <span class="lab">The corollary the episode does not reach</span>
+      <p>To treat her as a patient rather than a pregnancy you need a score that works on her. The RCP says of
+        its own NEWS2 that it &ldquo;has not been validated in pregnancy&rdquo;, and RCOG does not recommend it
+        beyond 20 weeks &mdash; but RCOG is equally blunt about the alternative: &ldquo;no validated system for
+        pregnant women currently exists.&rdquo; Obstetric scores beat general ones only modestly, their
+        thresholds are consensus rather than evidence, and because severe events are rare their positive
+        predictive value runs between 8% and 39%. Both colleges land in the same place: escalate a woman who
+        looks or feels unwell, whatever the score says.</p>
+    </div>
+
+    <h2 class="sub">The best passage in the episode has nothing to do with pregnancy</h2>
+
+    <p>Asked what intensive care can offer a maternal medicine network, she goes somewhere nobody would
+      predict.</p>
+
+    <blockquote class="pull">This process doesn&rsquo;t actually start when a woman&rsquo;s pregnant. We see vast
+      numbers of women through the doors, or people of childbearing capacity who have chronic diseases&hellip; We
+      may be seeing them from when they are 16, and they&rsquo;re repeatedly being admitted in status or
+      repeatedly being admitted in DKA. We have this amazing opportunity at that point to ask people, what are
+      your plans or have you had any thoughts about your plans related to pregnancy?</blockquote>
+
+    <p>The answer may well be that they are sixteen and do not want a baby. You refer for preconception care
+      anyway &mdash; contraception, and a medication review, &ldquo;say, for example, epilepsy, making sure
+      they&rsquo;re not on valproate.&rdquo;</p>
+
+    <p>That is a genuinely new thought about an intensive care admission: the recurrent DKA in a teenager is a
+      preconception consultation nobody is having. The rest follows &mdash; ask on admission whether a pregnancy
+      test has been done in anyone of childbearing capacity; refer the woman with kyphoscoliosis and restrictive
+      spirometry <em>before</em> she conceives; be in the delivery planning for the Fontan and the pulmonary
+      hypertension, and bring her up to see the unit beforehand so she knows where she will wake up. And the
+      reverse: a high-risk maternal medicine patient arriving on your unit means &ldquo;you&rsquo;ve immediately
+      got to phone a friend.&rdquo;</p>
+
+    <h2 class="sub">And then the kindest thing anybody has said on a medical podcast</h2>
+
+    <p>Her practical advice is unglamorous and right: a care bundle so the little things do not get missed. The
+      VTE risk assessment that differs in obstetric patients. A safety mechanism for the dose and duration of
+      low molecular weight heparin. A way to flag a maternal early warning score on a critical care unit. She
+      offers her own bundle to anyone who emails her: &ldquo;there is no point in everybody reinventing the
+      wheel.&rdquo;</p>
+
+    <p>And then this, which I would pin up:</p>
+
+    <blockquote class="pull">There is no way that you can be expected to remember something you do once or
+      twice a year. And this is not some kind of final FICM exam where you&rsquo;re expected to have the answer
+      at your fingertips. As long as you know where to look for what you&rsquo;re trying to do and you&rsquo;ve
+      got mechanisms in place to make sure that there is a safety net for you, I would very much encourage you
+      to use it. Nobody is trying to trick you, nobody&rsquo;s trying to catch you out.</blockquote>
+
+    <p>Thirty to forty a year, in a good-sized unit. You cannot be fluent in that. The whole episode is an
+      argument that the answer to low volume is not heroics or shame but prompts, pathways and a phone number
+      &mdash; and that admitting you will not remember is the professional position, not the embarrassing
+      one.</p>
+
+    <p>Which is a thing worth hearing from somebody who writes the reports on what went wrong.</p>
+  </div>
+
+  <div class="pad" style="padding-top:6px">
+    <div class="challenge">
+      <h2>Challenge for you</h2>
+      <p class="ask">Where does she actually go in your hospital?</p>
+      <p class="lead">Not where the policy says. Where she goes at three in the morning &mdash; the woman who
+        is twelve hours postpartum, tachycardic, and not right. Delivery suite, your unit, a high dependency
+        bed, or into an ambulance.</p>
+      <p>Then tell me what the compromise is, in Cranfield&rsquo;s sense: what she loses by being wherever she
+        ends up, and whether anything is in place to offset it. I am curious whether Australian and New Zealand
+        units have solved this better than she describes, or differently, or not at all &mdash; and that is a
+        question dozens of readers can each answer in five minutes and nobody can answer alone.</p>
+      <p><a class="btn" href="mailto:icuandyou@icloud.com?subject=Podcast%2060%20-%20where%20she%20actually%20goes&body=Where%20a%20critically%20unwell%20pregnant%20or%20recently%20pregnant%20woman%20actually%20goes%20in%20my%20hospital%3A%0D%0A%0D%0A%0D%0AThe%20compromise%20that%20comes%20with%20it%3A%0D%0A%0D%0A%0D%0AAnything%20we%20have%20in%20place%20to%20offset%20it%3A%0D%0A%0D%0A%0D%0AHospital%20type%20%28tertiary%20%2F%20regional%20%2F%20rural%20%2F%20no%20adult%20ICU%20on%20site%29%3A%0D%0A%0D%0A---%0D%0A%0D%0AName%20%28optional%29%3A%0D%0A%0A---%0A%0AThinking%20about%20this%20ICU%20AND%20YOU%20post%20overall%20%E2%80%94%20was%20it%20useful%20to%20you%2C%20or%20would%20it%20be%20useful%20to%20others%3F%0A">Send me your answer</a></p>
+      <p class="fallback">The button opens a reply straight to me. If your device blocks it, write to
+        <a href="mailto:icuandyou@icloud.com">icuandyou@icloud.com</a> instead.</p>
+    </div>
+
+    <div class="challenge" style="margin-top:22px">
+      <h2>Send me an episode</h2>
+      <p class="ask">Heard something worth other people's time?</p>
+      <p class="lead">I take suggestions from anyone reading this. Tell me the show, the episode and why it
+        was worth an hour, and I will listen. If you would rather write the review yourself, I will publish it
+        here with your name on it &mdash; or without, entirely as you prefer.</p>
+      <p><a class="btn" href="mailto:icuandyou@icloud.com?subject=Podcast%20suggestion&body=The%20show%20and%20episode%3A%0D%0A%0D%0A%0D%0AWhy%20it%20is%20worth%20an%20hour%3A%0D%0A%0D%0A%0D%0AWould%20you%20like%20to%20write%20the%20review%20yourself%3F%20%28yes%20%2F%20no%29%3A%0D%0A%0D%0A%0D%0AIf%20I%20write%20it%20up%2C%20may%20I%20say%20who%20suggested%20it%3F%20%28yes%2C%20by%20name%20%2F%20yes%2C%20initials%20only%20%2F%20no%2C%20please%20leave%20me%20out%29%3A%0D%0A%0D%0A%0D%0AName%3A%0D%0A%0A---%0A%0AThinking%20about%20this%20ICU%20AND%20YOU%20post%20overall%20%E2%80%94%20was%20it%20useful%20to%20you%2C%20or%20would%20it%20be%20useful%20to%20others%3F%0A">Suggest an episode</a></p>
+      <p class="fallback" style="margin-bottom:9px">How you are credited is entirely your call &mdash; by name, by initials, or not at all &mdash; whether you write the piece or I do, and whether I quote you or simply say who sent something in; nothing of yours goes up with your name on it unless you have said yes.</p>
+<p class="fallback">The button opens a reply straight to me. If your device blocks it, write to
+        <a href="mailto:icuandyou@icloud.com">icuandyou@icloud.com</a> instead.</p>
+    </div>
+  </div>
+
+  <footer>
+    <span class="firstpub">First published October 2026</span>
+    <p class="subline">Two emails a week &mdash; the Friday newsletter for all subscribers, and, for clinical subscribers,
+      the mind map and puzzles the moment they go up on Tuesday. Occasional announcements of new
+      features as they arrive. What went up and why it mattered, the best of your replies, and
+      original feature stories, news and views. <a href="https://joinlist.com/f/5adad2d6">Come and join us</a>.</p>
+    <a class="home" href="./">&larr; &nbsp;All of ICU AND YOU</a><br>
+    ICU AND YOU &nbsp;·&nbsp; Podcast Session 60 &nbsp;·&nbsp; companion to Mind Map #36, The Young Adult<br>
+        Summary written independently of the episode, which is <em>Obstetric Critical Care</em> &mdash; Dr Katie
+    Cranfield with Dr Cathy Ross, FICM Learning, released 31 July 2025. Quotations are from the automatically
+    generated transcript, corrected for obvious transcription errors. Mortality figures are from MBRRACE-UK,
+    <em>Saving Lives, Improving Mothers&rsquo; Care 2022&ndash;24</em> (September 2026) and, for Australia, the
+    AIHW maternal deaths collection; the clinical figures are sourced in the text. Educational use only &mdash;
+    not a prescribing guide. Local policy and current guidance always take precedence.
+  <br>
+    <span class="mine">Views my own, not those of NSW Health or any other organisation. No identifiable patients — scenarios are constructed or combined for teaching. <a href="about.html">More</a>.</span>
+  </footer>
+
+</div>
+<script data-goatcounter="https://icuandyou.goatcounter.com/count"
+        async src="//gc.zgo.at/count.js"></script>
+</body>
+</html>

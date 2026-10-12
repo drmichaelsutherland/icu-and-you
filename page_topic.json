@@ -1242,9 +1242,28 @@
    "slug": "young-adult",
    "week": true,
    "blurb": "Four stations: the reserve that hides deterioration, what actually brings them in, the pregnant patient, and what outlasts the admission. Several lines contradict what is normally taught \u2014 the Australian causes of maternal death are not the classic quartet, and there is no four-minute rule."
+  },
+  {
+   "file": "podcast-60-obstetric-critical-care.html",
+   "series": "podcast",
+   "colour": "slate",
+   "number": "60",
+   "title": "Just imagine the bump isn\u2019t there",
+   "topic": "The young adult",
+   "slug": "young-adult",
+   "week": true,
+   "pos": 6,
+   "badge": "Podcast",
+   "link_label": "Open",
+   "blurb": "Katie Cranfield on FICM Learning. Half of the women who die in the UK are not dying of anything obstetric \u2014 they are dying of what we deal with every day. Fetal fixation, the creatinine that does not flag, and why a tertiary unit admitting thirty a year cannot be fluent in them."
   }
  ],
  "latest": [
+  {
+   "file": "podcast-60-obstetric-critical-care.html",
+   "colour": "slate",
+   "label": "Podcast 60 \u00b7 Obstetric critical care"
+  },
   {
    "file": "mind-map-36-young-adult.html",
    "colour": "teal",
@@ -1264,11 +1283,6 @@
    "file": "swedeside-01-seldinger.html",
    "colour": "falu",
    "label": "Swedeside 1 \u00b7 A severe attack of common sense"
-  },
-  {
-   "file": "doctors-02-farmer.html",
-   "colour": "laurel",
-   "label": "Notable Doctors 2 · A failure of imagination"
   }
  ],
  "topten": [
