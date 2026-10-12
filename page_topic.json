@@ -1270,9 +1270,28 @@
    "badge": "Journal club",
    "link_label": "Open",
    "blurb": "Young adults with severe sepsis died more often in paediatric units than adult ones \u2014 13.5% against 8.2%. The odds ratio rests on twenty-two deaths, there is no adjustment for how sick anyone was on arrival, and the authors say plainly that the thing they adjusted for is the thing they could not measure."
+  },
+  {
+   "file": "aphorism-40-assume-she-is-pregnant.html",
+   "series": "aphorism",
+   "colour": "plum",
+   "number": "40",
+   "title": "Assume she is pregnant",
+   "topic": "The young adult",
+   "slug": "young-adult",
+   "week": true,
+   "pos": 3,
+   "badge": "Aphorism",
+   "link_label": "Open",
+   "blurb": "\u201cAssume every woman of childbearing age is pregnant until proven otherwise.\u201d The rule tells you to disbelieve her, and the two best studies say she is right essentially every time \u2014 so it survives on asymmetry of consequence, not on women being unreliable. Yes, No and Maybe."
   }
  ],
  "latest": [
+  {
+   "file": "aphorism-40-assume-she-is-pregnant.html",
+   "colour": "plum",
+   "label": "Aphorism 40 \u00b7 Assume she is pregnant"
+  },
   {
    "file": "journal-club-101-young-adult-sepsis.html",
    "colour": "sepia",
@@ -1292,11 +1311,6 @@
    "file": "procedures-06-internal-jugular-line.html",
    "colour": "amethyst",
    "label": "Procedures 6 \u00b7 Internal jugular lines"
-  },
-  {
-   "file": "med-students-05-adolescent.html",
-   "colour": "violet",
-   "label": "Medical Students 5 \u00b7 The adolescent"
   }
  ],
  "topten": [
