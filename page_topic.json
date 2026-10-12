@@ -1,8 +1,8 @@
 {
  "this_week": {
-  "topic": "The adolescent",
-  "slug": "adolescent",
-  "blurb": "Puberty to eighteen. An adult body, and not an adult — and almost every error in this age group comes from applying one of those and quietly forgetting the other. The physiology has finished arguing; what has not is who may consent, who may be told, and what they will admit to with a parent in the room."
+  "topic": "The young adult",
+  "slug": "young-adult",
+  "blurb": "Eighteen to thirty. The most physiological reserve you will ever treat, and the narrowest margin once it is spent \u2014 they hold their numbers long after the loss is serious, and then go all at once. Almost everything that brings them in is something that happened rather than something that grew. And pregnancy sits squarely in this band, which an adult unit forgets."
  },
  "series": {
   "mind-map": [
@@ -1053,7 +1053,7 @@
    "title": "The adolescent",
    "topic": "The adolescent",
    "slug": "adolescent",
-   "week": true,
+   "week": false,
    "pos": 1,
    "badge": "Bare Bones",
    "link_label": "Open",
@@ -1067,7 +1067,7 @@
    "title": "The adolescent",
    "topic": "The adolescent",
    "slug": "adolescent",
-   "week": true,
+   "week": false,
    "pos": 2,
    "badge": "Mind map",
    "link_label": "Open",
@@ -1081,7 +1081,7 @@
    "title": "Never say non-compliant",
    "topic": "The adolescent",
    "slug": "adolescent",
-   "week": true,
+   "week": false,
    "pos": 3,
    "badge": "Aphorism",
    "link_label": "Open",
@@ -1095,7 +1095,7 @@
    "title": "The protocol is the problem",
    "topic": "The adolescent",
    "slug": "adolescent",
-   "week": true,
+   "week": false,
    "pos": 4,
    "badge": "Podcast",
    "link_label": "Open",
@@ -1109,7 +1109,7 @@
    "title": "The sixteenth birthday",
    "topic": "The adolescent",
    "slug": "adolescent",
-   "week": true,
+   "week": false,
    "pos": 5,
    "badge": "Journal club",
    "link_label": "Open",
@@ -1123,7 +1123,7 @@
    "title": "Bound out",
    "topic": "The adolescent",
    "slug": "adolescent",
-   "week": true,
+   "week": false,
    "pos": 6,
    "badge": "A View from England",
    "link_label": "Open",
@@ -1137,7 +1137,7 @@
    "title": "The adolescent",
    "topic": "The adolescent",
    "slug": "adolescent",
-   "week": true,
+   "week": false,
    "pos": 7,
    "badge": "Superpuzzle",
    "link_label": "Open the puzzle",
@@ -1151,7 +1151,7 @@
    "title": "The warts that would not clear",
    "topic": "The adolescent",
    "slug": "adolescent",
-   "week": true,
+   "week": false,
    "pos": 8,
    "badge": "Notable Doctors",
    "link_label": "Open",
@@ -1165,7 +1165,7 @@
    "title": "ADULT",
    "topic": "The adolescent",
    "slug": "adolescent",
-   "week": true,
+   "week": false,
    "pos": 9,
    "badge": "Mnemonic",
    "link_label": "Open",
@@ -1179,7 +1179,7 @@
    "title": "The adolescent",
    "topic": "The adolescent",
    "slug": "adolescent",
-   "week": true,
+   "week": false,
    "pos": 10,
    "badge": "Superquiz",
    "link_label": "Take the quiz",
@@ -1217,7 +1217,7 @@
    "title": "The adolescent",
    "topic": "The adolescent",
    "slug": "adolescent",
-   "week": true,
+   "week": false,
    "blurb": "Three tiers, so you can read only the one you need. The physiology of a body that finished before the brain did, the consultation nobody teaches you to have, and what you will be expected to do \u2014 including several things taught the other way round in perfectly good medical schools."
   },
   {
@@ -1231,9 +1231,25 @@
    "week": false,
    "standing": true,
    "blurb": "The big one for trainees, and the sequence comes first. Then indications, consent, contraindications and complications \u2014 including the three steps that turn a routine line into a catastrophe. With a one-page checklist for the trolley."
+  },
+  {
+   "file": "mind-map-36-young-adult.html",
+   "series": "mind-map",
+   "colour": "teal",
+   "number": "36",
+   "title": "The young adult",
+   "topic": "The young adult",
+   "slug": "young-adult",
+   "week": true,
+   "blurb": "Four stations: the reserve that hides deterioration, what actually brings them in, the pregnant patient, and what outlasts the admission. Several lines contradict what is normally taught \u2014 the Australian causes of maternal death are not the classic quartet, and there is no four-minute rule."
   }
  ],
  "latest": [
+  {
+   "file": "mind-map-36-young-adult.html",
+   "colour": "teal",
+   "label": "Mind Map 36 \u00b7 The young adult"
+  },
   {
    "file": "procedures-06-internal-jugular-line.html",
    "colour": "amethyst",
@@ -1253,11 +1269,6 @@
    "file": "doctors-02-farmer.html",
    "colour": "laurel",
    "label": "Notable Doctors 2 · A failure of imagination"
-  },
-  {
-   "file": "superquiz-64-adolescent.html",
-   "colour": "wine",
-   "label": "Superquiz 64 · The adolescent"
   }
  ],
  "topten": [
@@ -1276,10 +1287,6 @@
   "label": "Coming next",
   "lines": [
    {
-    "date": "Friday 9th October",
-    "what": "Newsletter (subscribers only)"
-   },
-   {
     "date": "Tuesday 13th October",
     "what": "The young adult",
     "emphasis": true
@@ -1287,6 +1294,10 @@
    {
     "date": "Friday 16th October",
     "what": "Newsletter (subscribers only)"
+   },
+   {
+    "date": "Tuesday 20th October",
+    "what": "The young adult, part two"
    }
   ]
  },
@@ -1304,6 +1315,7 @@
   ]
  },
  "topic_order": [
+  "young-adult",
   "adolescent",
   "school-age",
   "toddler-preschool",
