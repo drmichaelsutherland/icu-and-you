@@ -1284,9 +1284,28 @@
    "badge": "Aphorism",
    "link_label": "Open",
    "blurb": "\u201cAssume every woman of childbearing age is pregnant until proven otherwise.\u201d The rule tells you to disbelieve her, and the two best studies say she is right essentially every time \u2014 so it survives on asymmetry of consequence, not on women being unreliable. Yes, No and Maybe."
+  },
+  {
+   "file": "superpuzzle-53-young-adult-fillable.html",
+   "series": "superpuzzle",
+   "colour": "rust",
+   "number": "53",
+   "title": "The young adult",
+   "topic": "The young adult",
+   "slug": "young-adult",
+   "week": true,
+   "pos": 2,
+   "badge": "Superpuzzle",
+   "link_label": "Open the puzzle",
+   "blurb": "Twenty clues on the young adult \u2014 the obstetric emergencies an adult unit forgets, the trauma that fills the beds, the collapses of sport, and the forty per cent of young sudden cardiac deaths nobody can explain. Fill it in on screen, or print it."
   }
  ],
  "latest": [
+  {
+   "file": "superpuzzle-53-young-adult-fillable.html",
+   "colour": "rust",
+   "label": "Superpuzzle 53 \u00b7 The young adult"
+  },
   {
    "file": "aphorism-40-assume-she-is-pregnant.html",
    "colour": "plum",
@@ -1306,11 +1325,6 @@
    "file": "mind-map-36-young-adult.html",
    "colour": "teal",
    "label": "Mind Map 36 \u00b7 The young adult"
-  },
-  {
-   "file": "procedures-06-internal-jugular-line.html",
-   "colour": "amethyst",
-   "label": "Procedures 6 \u00b7 Internal jugular lines"
   }
  ],
  "topten": [

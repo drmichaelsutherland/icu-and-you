@@ -158,6 +158,15 @@ def clues_for_challenge(src):
     return extract_clues(src)
 
 
+# Every page with a reply box carries this, and audit.py checks for it. It was
+# missing here, so each regenerated printable silently lost it — including, had
+# anyone rebuilt them, the ones that already had it added by hand.
+CREDIT = ("How you are credited is entirely your call &mdash; by name, by initials, or "
+          "not at all &mdash; whether you write the piece or I do, and whether I quote "
+          "you or simply say who sent something in; nothing of yours goes up with your "
+          "name on it unless you have said yes.")
+
+
 def build_challenge(src, no, clues):
     """Reuse the fillable's own reply button, so the printable sends the same
     email. The usefulness line is appended, as on every other content page."""
@@ -181,6 +190,7 @@ def build_challenge(src, no, clues):
       <p>Finish it, or get as far as you get &mdash; partial sets are welcome and are
         how I find out which clue was unfair.</p>
       <p><a class="btn" href="{mailto}">Send your answers</a></p>
+      <p class="fallback" style="margin-bottom:9px">{CREDIT}</p>
       <p class="fallback">The button opens a reply straight to me with the clue numbers
         already listed. If your device blocks it, write to
         <a href="mailto:icuandyou@icloud.com">icuandyou@icloud.com</a> instead.</p>
