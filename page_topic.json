@@ -1298,9 +1298,28 @@
    "badge": "Superpuzzle",
    "link_label": "Open the puzzle",
    "blurb": "Twenty clues on the young adult \u2014 the obstetric emergencies an adult unit forgets, the trauma that fills the beds, the collapses of sport, and the forty per cent of young sudden cardiac deaths nobody can explain. Fill it in on screen, or print it."
+  },
+  {
+   "file": "mnemonic-58-lipids.html",
+   "series": "mnemonic",
+   "colour": "olive",
+   "number": "58",
+   "title": "Infarct in the young",
+   "topic": "The young adult",
+   "slug": "young-adult",
+   "week": true,
+   "pos": 4,
+   "badge": "Mnemonic",
+   "link_label": "Open",
+   "blurb": "LIPIDS \u2014 and the joke is that it is also the answer. Lipids, Inflammation, Pregnancy (and SCAD, which is mostly not pregnancy), Idiopathic, Drugs and radiation, Supply-demand and Structural. The etc covers thrombophilia and whatever the next workup finds."
   }
  ],
  "latest": [
+  {
+   "file": "mnemonic-58-lipids.html",
+   "colour": "olive",
+   "label": "Mnemonic 58 \u00b7 Infarct in the young"
+  },
   {
    "file": "superpuzzle-53-young-adult-fillable.html",
    "colour": "rust",
@@ -1320,11 +1339,6 @@
    "file": "podcast-60-obstetric-critical-care.html",
    "colour": "slate",
    "label": "Podcast 60 \u00b7 Obstetric critical care"
-  },
-  {
-   "file": "mind-map-36-young-adult.html",
-   "colour": "teal",
-   "label": "Mind Map 36 \u00b7 The young adult"
   }
  ],
  "topten": [
