@@ -16,6 +16,7 @@ import json
 import re
 import sys
 from collections import defaultdict
+from html import unescape
 from pathlib import Path
 
 HERE = Path(__file__).resolve().parent
@@ -345,11 +346,11 @@ def main():
     # holds plain text and the markup holds entities.
     for f in content:
         s = (HERE / f).read_text(encoding="utf-8")
-        m = re.search(r'var ITEMS = (\[.*?\]);', s, re.S)
-        if not m:
+        arr = re.search(r'var ITEMS = (\[.*?\]);', s, re.S)
+        if not arr:
             continue
         try:
-            items = json.loads(m.group(1))
+            items = json.loads(arr.group(1))
         except json.JSONDecodeError:
             problems.append(f"{f}: the ITEMS array in its script is not valid JSON")
             continue

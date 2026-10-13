@@ -52,7 +52,8 @@
   .acrostic{margin:0 0 6px;}
   .row{display:flex;align-items:center;gap:16px;padding:9px 0;border-bottom:1px solid var(--hair);}
   .row:last-child{border-bottom:0;}
-  .ltr{font-family:"Fraunces",serif;font-weight:600;font-size:30px;color:var(--sky);width:30px;text-align:center;flex:none;}
+  \g<1>\n  .ltr.rest{font-size:15px;font-style:italic;letter-spacing:.01em;opacity:.75;}
+  a.send{display:inline-block;text-decoration:none;}
   .txt{display:flex;flex-direction:column;}
   .stitle{font-family:"Fraunces",serif;font-weight:500;font-size:16px;color:var(--ink);}
   .sdetail{font-size:14.5px;color:var(--ink-soft);line-height:1.45;}
@@ -138,6 +139,10 @@
         <div class="ltr">S</div>
         <div class="txt"><span class="stitle">Supply and demand &mdash; and Structural</span><span class="sdetail"><b>Supply and demand</b> is the second largest category in the best data &mdash; 23% of infarcts under sixty-five, and 34% in women &mdash; and it is the one you will actually meet on the unit: sepsis, tachyarrhythmia, profound anaemia, hypoxia, and the exertional presentation in somebody young and fit. <b>Structural</b> covers anomalous coronary origin and myocardial bridging, both of which are common findings and uncommon causes &mdash; a third of adults have a bridge and almost none infarct from it. Aortic stenosis belongs here too, bicuspid in this age group. And so does aortic dissection extending into a coronary ostium, which presents as an inferior infarct and is the one you must not thrombolyse.</span></div>
       </div>
+      <div class="row">
+        <div class="ltr rest">etc</div>
+        <div class="txt"><span class="stitle">&hellip; and the list does not close</span><span class="sdetail">Inherited thrombophilia sits here rather than above, because the effect is small &mdash; odds ratios of about 1.2 to 1.7, larger in the young and larger again alongside high cholesterol &mdash; which makes it a modifier rather than a cause, and <b>routine thrombophilia screening after a young infarct is explicitly not recommended</b>. Antiphospholipid syndrome is the member of that family worth taking seriously. Coronary embolism belongs here too: real, but a mean age of sixty-six and three quarters of it atrial fibrillation, so it is an older person&rsquo;s mechanism. And then whatever the next workup turns up, which is the point of the etc.</span></div>
+      </div>
     </div>
 
     <svg class="trace" viewBox="0 0 536 22" preserveAspectRatio="none" aria-hidden="true">
@@ -146,43 +151,18 @@
     </svg>
 
     <div class="challenge">
-      <p class="ch-k">Challenge for you</p>
-      <p class="ch-q">Which of the six do you think gets missed most often &mdash; and what was the young infarct you nearly explained away?</p>
-      <p class="ch-lead">Pick the letter you think is most often skipped, then tell me the case. I am particularly interested in the ones where the answer turned out to be the history rather than the angiogram &mdash; the question somebody thought to ask.</p>
+            <p class="ch-k">Challenge for you</p>
+      <p class="ch-q">What is your <em>etc</em>?</p>
+      <p class="ch-lead">A cause of infarct in a young person that you have actually seen, and that the
+        six letters above do not cover. The mnemonic ends in <em>etc</em> because the list is open, and
+        the only way a list like that gets longer is if the people who have met the exceptions say so.</p>
       <p class="fallback" style="margin-bottom:9px">How you are credited is entirely your call &mdash; by name, by initials, or not at all &mdash; whether you write the piece or I do, and whether I quote you or simply say who sent something in; nothing of yours goes up with your name on it unless you have said yes.</p>
-      <div class="picks">
-        <label class="pick" for="p0">
-          <input type="radio" name="skip" id="p0" value="0">
-          <span class="cl">L</span><span class="pt">Lipids &mdash; still two thirds of them</span>
-        </label>
-        <label class="pick" for="p1">
-          <input type="radio" name="skip" id="p1" value="1">
-          <span class="cl">I</span><span class="pt">Inflammation</span>
-        </label>
-        <label class="pick" for="p2">
-          <input type="radio" name="skip" id="p2" value="2">
-          <span class="cl">P</span><span class="pt">Pregnancy &mdash; and SCAD, which is mostly not pregnancy</span>
-        </label>
-        <label class="pick" for="p3">
-          <input type="radio" name="skip" id="p3" value="3">
-          <span class="cl">I</span><span class="pt">Idiopathic &mdash; and it depends how hard you looked</span>
-        </label>
-        <label class="pick" for="p4">
-          <input type="radio" name="skip" id="p4" value="4">
-          <span class="cl">D</span><span class="pt">Drugs and radiation</span>
-        </label>
-        <label class="pick" for="p5">
-          <input type="radio" name="skip" id="p5" value="5">
-          <span class="cl">S</span><span class="pt">Supply and demand &mdash; and Structural</span>
-        </label>
-      </div>
       <div class="sendrow">
-        <button class="send" id="send" type="button">Send my answer</button>
-        <span class="tally" id="tally">nothing selected yet</span>
+        <a class="send" href="mailto:icuandyou@icloud.com?subject=ICU%20Mnemonic%2058%20-%20my%20etc&body=My%20etc%20%E2%80%94%20a%20cause%20of%20infarct%20in%20a%20young%20person%20that%20LIPIDS%20does%20not%20cover%3A%0D%0A%0D%0A%0D%0AThe%20case%2C%20and%20how%20it%20was%20found%3A%0D%0A%0D%0A%0D%0A---%0D%0A%0D%0AName%20%28optional%29%3A%0D%0A%0D%0A---%0D%0A%0D%0AThinking%20about%20this%20ICU%20AND%20YOU%20post%20overall%20%E2%80%94%20was%20it%20useful%20to%20you%2C%20or%20would%20it%20be%20useful%20to%20others%3F%0D%0A">Send me your etc</a>
       </div>
     </div>
 
-    <p class="invite">Choose one, then send. The button opens a reply straight to me with your choice already in it &mdash; just add the case.</p>
+    <p class="invite">The button opens a reply straight to me. If your device blocks it, write to <a href="mailto:icuandyou@icloud.com">icuandyou@icloud.com</a> instead. I will add what comes back &mdash; the etc is meant to grow.</p>
   </div>
   <footer>
     <span class="firstpub">First published October 2026</span>
@@ -198,46 +178,6 @@
     <span class="mine">Views my own, not those of NSW Health or any other organisation. No identifiable patients — scenarios are constructed or combined for teaching. <a href="about.html">More</a>.</span>
   </footer>
 </div>
-<script>
-(function(){
-  var ITEMS = [{"l": "L", "t": "Lipids \u2014 still two thirds of them"}, {"l": "I", "t": "Inflammation"}, {"l": "P", "t": "Pregnancy \u2014 and SCAD, which is mostly not pregnancy"}, {"l": "I", "t": "Idiopathic \u2014 and it depends how hard you looked"}, {"l": "D", "t": "Drugs and radiation"}, {"l": "S", "t": "Supply and demand \u2014 and Structural"}];
-  var radios = Array.prototype.slice.call(document.querySelectorAll(".pick input"));
-  var tally  = document.getElementById("tally");
-
-  function refresh(){
-    var chosen = null;
-    radios.forEach(function(r){
-      r.parentNode.classList.toggle("on", r.checked);
-      if(r.checked) chosen = +r.value;
-    });
-    tally.textContent = (chosen === null)
-      ? "nothing selected yet"
-      : ITEMS[chosen].l + " \u2014 " + ITEMS[chosen].t;
-    return chosen;
-  }
-  radios.forEach(function(r){ r.addEventListener("change", refresh); });
-
-  document.getElementById("send").addEventListener("click", function(){
-    var chosen = refresh();
-    if(chosen === null){
-      tally.textContent = "choose one first";
-      return;
-    }
-    var it = ITEMS[chosen];
-    var body = "ICU Mnemonic #58 \u2014 LIPIDS\n\n"
-      + "The cause I think gets missed most often:\n  "
-      + it.l + " \u2014 " + it.t + "\n\n"
-      + "The case, and what it turned out to be:\n\n\n"
-      + "---\n\nName (optional):\n"
-      + "\n---\n\nThinking about this ICU AND YOU post overall \u2014 was it useful to you, "
-      + "or would it be useful to others?\n";
-    window.location.href = "mailto:icuandyou@icloud.com?subject="
-      + encodeURIComponent("ICU Mnemonic 58 - most often missed")
-      + "&body=" + encodeURIComponent(body);
-  });
-  refresh();
-})();
-</script>
 <script src="glossary.js"></script>
 <script data-goatcounter="https://icuandyou.goatcounter.com/count"
         async src="//gc.zgo.at/count.js"></script>
