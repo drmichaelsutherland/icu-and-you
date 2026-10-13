@@ -327,6 +327,50 @@ def main():
             f'"opening": "{" ".join(t.split()[:9])}…"}}\n'
             f"             “{t[:120]}…”")
 
+    # ---- a page's script must agree with the page's own markup ----------
+    # October 2026, and this one would have shipped. Mnemonic 58 was built
+    # from Mnemonic 57, which drives its answer picker from a JavaScript
+    # array of the options. The markup was rewritten with the new six; the
+    # array was not. Choosing "L - Lipids" displayed "A - Adult body, adult
+    # doses", and that is what the reply email would have carried, so every
+    # response would have been about the wrong piece.
+    #
+    # Nothing structural saw it. The HTML was valid, the letters rendered,
+    # the links resolved, the audit passed. It showed up only on clicking a
+    # radio button and reading what came back.
+    #
+    # Same family as the inherited-prose check above, but for behaviour
+    # rather than text: where a page states its options twice, the two
+    # statements must match. Compared on the visible label, since the array
+    # holds plain text and the markup holds entities.
+    for f in content:
+        s = (HERE / f).read_text(encoding="utf-8")
+        m = re.search(r'var ITEMS = (\[.*?\]);', s, re.S)
+        if not m:
+            continue
+        try:
+            items = json.loads(m.group(1))
+        except json.JSONDecodeError:
+            problems.append(f"{f}: the ITEMS array in its script is not valid JSON")
+            continue
+        labels = re.findall(r'<span class="cl">(.*?)</span>\s*<span class="pt">(.*?)</span>', s, re.S)
+        if not labels:
+            problems.append(f"{f}: has an ITEMS array but no options in the markup for it to drive")
+            continue
+        if len(labels) != len(items):
+            problems.append(
+                f"{f}: {len(labels)} options in the markup but {len(items)} in the script's "
+                f"ITEMS array — the reply will report the wrong one")
+            continue
+        for i, ((cl, pt), it) in enumerate(zip(labels, items)):
+            want = (unescape(cl).strip(), re.sub(r"\s+", " ", unescape(re.sub(r"<[^>]+>", "", pt))).strip())
+            got = (str(it.get("l", "")).strip(), re.sub(r"\s+", " ", str(it.get("t", ""))).strip())
+            if want != got:
+                problems.append(
+                    f"{f}: option {i + 1} is {want[0]!r} / {want[1]!r} in the markup but "
+                    f"{got[0]!r} / {got[1]!r} in the script — a reader choosing it would "
+                    f"send the wrong answer")
+
     # ---- the GROUPS map must know every series --------------------------
     # The landing page carries the series-to-group map twice: once as the
     # buttons in the menu, and once as a JavaScript object the "All of ..."
