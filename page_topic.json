@@ -1312,9 +1312,28 @@
    "badge": "Mnemonic",
    "link_label": "Open",
    "blurb": "LIPIDS \u2014 and the joke is that it is also the answer. Lipids, Inflammation, Pregnancy (and SCAD, which is mostly not pregnancy), Idiopathic, Drugs and radiation, Supply-demand and Structural. The etc covers thrombophilia and whatever the next workup finds."
+  },
+  {
+   "file": "superquiz-65-young-adult.html",
+   "series": "superquiz",
+   "colour": "wine",
+   "number": "65",
+   "title": "The young adult",
+   "topic": "The young adult",
+   "slug": "young-adult",
+   "week": true,
+   "pos": 5,
+   "badge": "Superquiz",
+   "link_label": "Take the quiz",
+   "blurb": "Five open-book questions \u2014 what actually brings an eighteen to thirty year old in, maternal cardiac arrest and the four-minute rule that is not Australian guidance, the postpartum creatinine that does not flag, coronary dissection after delivery, and the arterial line nobody should pull out."
   }
  ],
  "latest": [
+  {
+   "file": "superquiz-65-young-adult.html",
+   "colour": "wine",
+   "label": "Superquiz 65 \u00b7 The young adult"
+  },
   {
    "file": "mnemonic-58-lipids.html",
    "colour": "olive",
@@ -1334,11 +1353,6 @@
    "file": "journal-club-101-young-adult-sepsis.html",
    "colour": "sepia",
    "label": "Journal Club 101 \u00b7 Young adult sepsis"
-  },
-  {
-   "file": "podcast-60-obstetric-critical-care.html",
-   "colour": "slate",
-   "label": "Podcast 60 \u00b7 Obstetric critical care"
   }
  ],
  "topten": [
