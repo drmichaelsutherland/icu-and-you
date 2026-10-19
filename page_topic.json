@@ -1340,9 +1340,28 @@
    "badge": "Medical Students",
    "link_label": "Open",
    "blurb": "Eighteen to thirty in three tiers \u2014 the most reserve you will ever treat, what actually brings them in, and what you will be expected to do. Plus a short fourth section that is not about patients at all, because for most medical students this is their own age band."
+  },
+  {
+   "file": "public-03-rejoice-we-conquer.html",
+   "series": "public",
+   "colour": "ocean",
+   "number": "3",
+   "title": "Rejoice, we conquer",
+   "topic": "The young adult",
+   "slug": "young-adult",
+   "week": true,
+   "pos": 9,
+   "badge": "For the general public",
+   "link_label": "Open",
+   "blurb": "Written for anyone, not for clinicians. The most famous last words in the history of running, which nobody said \u2014 what the only near-contemporary source actually describes, the five hundred years it took the runner to start dying, and what really happens to fit young people. Most of it does not happen on the sports field."
   }
  ],
  "latest": [
+  {
+   "file": "public-03-rejoice-we-conquer.html",
+   "colour": "ocean",
+   "label": "For the general public 3 \u00b7 Rejoice, we conquer"
+  },
   {
    "file": "med-students-06-young-adult.html",
    "colour": "violet",
@@ -1362,11 +1381,6 @@
    "file": "superpuzzle-53-young-adult-fillable.html",
    "colour": "rust",
    "label": "Superpuzzle 53 \u00b7 The young adult"
-  },
-  {
-   "file": "aphorism-40-assume-she-is-pregnant.html",
-   "colour": "plum",
-   "label": "Aphorism 40 \u00b7 Assume she is pregnant"
   }
  ],
  "topten": [
