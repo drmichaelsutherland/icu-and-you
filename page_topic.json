@@ -1354,9 +1354,28 @@
    "badge": "For the general public",
    "link_label": "Open",
    "blurb": "Written for anyone, not for clinicians. The most famous last words in the history of running, which nobody said \u2014 what the only near-contemporary source actually describes, the five hundred years it took the runner to start dying, and what really happens to fit young people. Most of it does not happen on the sports field."
+  },
+  {
+   "file": "bare-bones-03-young-adult.html",
+   "series": "barebones",
+   "colour": "bone",
+   "number": "3",
+   "title": "The young adult",
+   "topic": "The young adult",
+   "slug": "young-adult",
+   "week": true,
+   "pos": 1,
+   "badge": "Bare Bones",
+   "link_label": "Open",
+   "blurb": "Ten points, five minutes, nothing decorative. The reserve that hides deterioration and then goes all at once, the pregnancy question asked twice, the arterial gas that starts somewhere else, the four-minute rule that is not Australian guidance, and the 40% of young sudden cardiac deaths that stay unexplained."
   }
  ],
  "latest": [
+  {
+   "file": "bare-bones-03-young-adult.html",
+   "colour": "bone",
+   "label": "Bare Bones 3 \u00b7 The young adult"
+  },
   {
    "file": "public-03-rejoice-we-conquer.html",
    "colour": "ocean",
@@ -1376,11 +1395,6 @@
    "file": "mnemonic-58-lipids.html",
    "colour": "olive",
    "label": "Mnemonic 58 \u00b7 Infarct in the young"
-  },
-  {
-   "file": "superpuzzle-53-young-adult-fillable.html",
-   "colour": "rust",
-   "label": "Superpuzzle 53 \u00b7 The young adult"
   }
  ],
  "topten": [
