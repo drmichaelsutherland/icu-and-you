@@ -207,10 +207,18 @@ def main():
     # somebody who merely sent in a paper or an answer was told nothing.
     # One sentence now, identical everywhere, as standard furniture in the
     # box. This check exists so the next new page cannot quietly omit it.
+    # Widened October 2026. The first version looked only for class="challenge"
+    # and class="reply", so it had never once examined the seven aphorism pages,
+    # which use class="reflect". That is why Aphorism 40 passed clean when it was
+    # built and was in fact missing the line — it was built from Aphorism 39,
+    # which did not have one either. class="picks" is checked here too for
+    # completeness, though every mnemonic page carrying it also carries a
+    # challenge box, so it adds nothing today and may not always.
     CREDIT = "How you are credited is entirely your call"
+    BOXES = ('challenge', 'reply', 'reflect', 'picks')
     for f in content:
         s = (HERE / f).read_text(encoding="utf-8")
-        if 'class="challenge"' not in s and 'class="reply"' not in s:
+        if not any('class="%s"' % c in s for c in BOXES):
             continue
         n = s.count(CREDIT)
         if n == 0:
