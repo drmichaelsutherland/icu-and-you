@@ -220,6 +220,30 @@ def main():
         elif n > 1:
             problems.append(f"{f}: the credit line appears {n} times")
 
+    # ---- scaffolding left in a finished page ------------------------------
+    # The cheapest possible check, and worth having. Pages here get built in
+    # stages — the prose first, the source line or a figure filled in once it
+    # has been verified — and a placeholder is by definition something that
+    # looked fine at the moment it was typed. Anything in this list is a
+    # sentence nobody meant a reader to see.
+    # Matched case-sensitively on purpose. Scaffolding is written in capitals
+    # and real prose is not: the India Room page says its own name "is a
+    # placeholder" and every quiz has an input with placeholder="Type your
+    # name", and neither is a defect.
+    SHOUTED = ("PLACEHOLDER", "TODO", "TK TK", "FIXME", "XXXX", "TBC", "TBD")
+    QUIET = ("lorem ipsum", "[insert ", "[add ")
+    for f in content:
+        s = (HERE / f).read_text(encoding="utf-8")
+        body = re.sub(r"<script.*?</script>|<!--.*?-->", "", s, flags=re.S)
+        for tag in SHOUTED:
+            if tag in body:
+                problems.append(f'{f}: still contains "{tag}" — scaffolding left '
+                                f"in a page that is otherwise finished")
+        for tag in QUIET:
+            if tag in body.lower():
+                problems.append(f'{f}: still contains "{tag}" — scaffolding left '
+                                f"in a page that is otherwise finished")
+
     # ---- a class used in the markup must be styled somewhere in the page --
     # Found October 2026: twelve pages — the whole Multimedia group — used
     # class="btn" for the reply button and never defined .btn, so the button
@@ -284,14 +308,29 @@ def main():
     # re-trigger the Bare Bones explainer. Anything NOT in that file is new,
     # and new shared prose is the bug. If it turns out to be deliberate, the
     # fix is to paste the printed line into the baseline.
+    # The footer is the second place this happens, and the first version of
+    # this check could not see it. Mind Map 36 went up carrying Mind Map 35's
+    # source line — the ANZPIC registry, the Immunisation Handbook and
+    # anaphylaxis series, on a page about eighteen to thirty year olds — because
+    # that line is bare text between <br> tags inside <footer> rather than a
+    # <p> or an <li>, so nothing below was looking at it. Footer prose is now
+    # collected too: split the footer on its line breaks and judge each chunk
+    # on the same thresholds. The subscribe line and the standing disclaimer
+    # appear on every page and so fall out as furniture by themselves.
     MIN_WORDS, FURNITURE_AT = 14, 6
     seen = defaultdict(set)
     for f in content:
         s = (HERE / f).read_text(encoding="utf-8")
         s = re.sub(r"<style>.*?</style>|<script.*?</script>|<svg.*?</svg>|<!--.*?-->",
                    "", s, flags=re.S)
-        for c in re.findall(r"<p\b[^>]*>(.*?)</p>|<li\b[^>]*>(.*?)</li>", s, re.S):
-            t = re.sub(r"<[^>]+>", " ", c[0] or c[1])
+        blocks = [c[0] or c[1] for c in
+                  re.findall(r"<p\b[^>]*>(.*?)</p>|<li\b[^>]*>(.*?)</li>", s, re.S)]
+        foot = re.search(r"<footer\b[^>]*>(.*?)</footer>", s, re.S)
+        if foot:
+            body = re.sub(r"<p\b[^>]*>.*?</p>", "", foot.group(1), flags=re.S)
+            blocks += re.split(r"<br\s*/?>", body)
+        for c in blocks:
+            t = re.sub(r"<[^>]+>", " ", c)
             t = re.sub(r"&[a-z]+;|&#\d+;", " ", t)
             t = re.sub(r"\s+", " ", t).strip()
             if len(t.split()) >= MIN_WORDS:

@@ -146,5 +146,57 @@
  "c7d1b5e740e29018": {
   "note": "shared across series — standing wording",
   "opening": "I am interested in both halves. If nine of these were familiar,…"
+ },
+ "12189d67eb9a0aef": {
+  "note": "Standing footer disclaimer, aphorism series, paediatric fortnights",
+  "opening": "Educational use within the ICU education programme. Not a clinical protocol — local policy and current paediatric guidance…"
+ },
+ "f54fb82a94057603": {
+  "note": "Standing footer disclaimer, mind map series, paediatric fortnights",
+  "opening": "Educational use within the ICU education programme. Not a clinical protocol — local policy, current paediatric guidance…"
+ },
+ "bbafc58700599c70": {
+  "note": "Standing footer disclaimer, mnemonic series",
+  "opening": "Educational use only. Not a clinical protocol — verify every dose against your own formulary…"
+ },
+ "3d38ceab79daf82b": {
+  "note": "Journal club open-access credit line; correct only where the paper IS CC BY 4.0, so check it per paper",
+  "opening": "Summarised independently and in our own words; the article is open access under CC BY 4.0…"
+ },
+ "2419add7ebae688a": {
+  "note": "Standing footer disclaimer, Medical Students' Place, paediatric fortnights",
+  "opening": "Educational use within the ICU education programme. Not a clinical protocol — local policy, current paediatric guidance…"
+ },
+ "21ae80adfc2736b9": {
+  "note": "Standing footer disclaimer, adult fortnights — the paediatric wording removed",
+  "opening": "Educational use within the ICU education programme. Not a clinical protocol — local policy, current guidance…"
+ },
+ "f02b9a5e6f8ce6f3": {
+  "note": "Standing footer disclaimer, transplantation and donation pages",
+  "opening": "Educational use within the ICU education programme. Not a clinical protocol — local and transplant-unit guidance…"
+ },
+ "d2e45fa2f7860a2b": {
+  "note": "Standing footer note, Book Club — nothing of the book reproduced",
+  "opening": "A personal review, written independently. Nothing of the book is reproduced here. Educational use only."
+ },
+ "4a5f0bed604fc118": {
+  "note": "The standing question of Medical Students' Place — deliberately the same every time",
+  "opening": "Which tier did you read — and what were you taught that this page contradicts?"
+ },
+ "2f79de19346a5105": {
+  "note": "The standing feedback ask of Medical Students' Place; the text says so itself",
+  "opening": "Tell me your year, which tier fitted, and what was missing, too basic or too advanced…"
+ },
+ "5a1c926850ad8bee": {
+  "note": "Drowning source line — correct on both the toddler and school-age maps",
+  "opening": "Drowning figures from Royal Life Saving Society – Australia and the Australian Institute of Health and Welfare."
+ },
+ "bc036da30186dbea": {
+  "note": "Standing footer disclaimer, superquiz series, resuscitation topics",
+  "opening": "Educational use only. Not a clinical protocol — ANZCOR guidelines, local policy and the retrieval service…"
+ },
+ "f823dcd365d22c70": {
+  "note": "Standing footer disclaimer, monthly Top Ten pages",
+  "opening": "Educational use only. Not a clinical protocol — every dose and threshold here is a summary of a fuller piece…"
  }
 }

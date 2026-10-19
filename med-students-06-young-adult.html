@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html lang="en-AU">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ICU AND YOU · Medical Students’ Place No. 6 — The young adult</title>
+<meta name="description" content="Medical Students’ Place No. 6: the young adult in intensive care, in three tiers — the most reserve you will ever treat, what actually brings them in, and what you will be expected to do. Plus one section that is about you, because this is your own age band.">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="alternate icon" href="/favicon.ico" sizes="any">
+<link rel="apple-touch-icon" href="/icon-180.png">
+<link rel="manifest" href="/site.webmanifest">
+<meta name="theme-color" content="#1B2A33">
+<meta property="og:site_name" content="ICU AND YOU">
+<meta property="og:type" content="website">
+<meta property="og:title" content="ICU AND YOU · Medical Students’ Place No. 6 — The young adult">
+<meta property="og:description" content="Eighteen to thirty. For most of you reading this, that is your own age band. Three tiers, so you can read only the one you need.">
+<meta property="og:image" content="https://icuandyou.com/share-card.png">
+<meta name="twitter:card" content="summary_large_image">
+<style>
+  :root{
+    --paper:#FBFAF8; --ink:#1F2130; --muted:#6A6A78; --rule:#DEDCE4;
+    --violet:#4C4A8F; --violettint:#EDECF6;
+    --sky:#2E6E8E; --skytint:#E7F1F6;
+    --moss:#4C6B4A; --mosstint:#EAF1E9;
+    --rust:#A8442A; --rusttint:#F9EDE7;
+    --amber:#8A6A3B;
+  }
+  *{box-sizing:border-box}
+  body{margin:0;background:#EFEEF3;color:var(--ink);
+    font:400 17px/1.64 'Iowan Old Style','Palatino Linotype',Palatino,Georgia,serif;
+    -webkit-text-size-adjust:100%;}
+  .sheet{max-width:840px;margin:0 auto;background:var(--paper);
+    box-shadow:0 1px 40px rgba(31,33,48,.10);}
+
+  header.top{padding:44px 40px 28px;border-bottom:2px solid var(--violet)}
+  .eyebrow a.serlink{color:inherit;text-decoration:none;border-bottom:1px solid transparent}
+  .eyebrow a.serlink:hover{border-bottom-color:currentColor}
+  .eyebrow a.mast{color:inherit;text-decoration:none;border-bottom:1px solid transparent}
+  .eyebrow a.mast:hover{border-bottom-color:currentColor}
+  .toptopic{display:inline-block;margin:0 0 16px 9px;padding:7px 16px;border-radius:20px;
+    border:1px solid currentColor;opacity:.62;text-decoration:none;color:inherit;
+    font:600 11.5px 'Helvetica Neue',Arial,sans-serif;letter-spacing:.09em;
+    text-transform:uppercase;transition:opacity .12s ease}
+  .toptopic:hover{opacity:1}
+  .topseries{display:inline-block;margin:0 0 16px 9px;padding:7px 16px;border-radius:20px;
+    border:1px solid currentColor;opacity:.62;text-decoration:none;color:inherit;
+    font:600 11.5px 'Helvetica Neue',Arial,sans-serif;letter-spacing:.09em;
+    text-transform:uppercase;transition:opacity .12s ease}
+  .topseries:hover{opacity:1}
+  .tophome{display:inline-block;margin:0 0 16px;padding:7px 16px;border-radius:20px;
+    border:1px solid currentColor;opacity:.62;text-decoration:none;color:inherit;
+    font:600 11.5px 'Helvetica Neue',Arial,sans-serif;letter-spacing:.09em;
+    text-transform:uppercase;transition:opacity .12s ease}
+  .tophome:hover{opacity:1}
+  .eyebrow{font:500 11.5px/1 'Helvetica Neue',Arial,sans-serif;letter-spacing:.24em;
+    text-transform:uppercase;color:var(--muted);margin:0 0 14px}
+  h1{font-size:33px;line-height:1.18;margin:0 0 8px;font-weight:400;letter-spacing:-.012em}
+  .kicker{color:var(--muted);margin:0;font-size:16.5px;font-style:italic}
+
+  .pad{padding:32px 40px}
+  p{margin:0 0 16px}
+  .lede{font-size:19px;line-height:1.55;margin:0 0 20px}
+
+  /* tier navigation */
+  .jump{margin:0;padding:14px 40px;background:var(--violettint);
+    border-bottom:1px solid var(--rule);text-align:center;
+    font:400 15.5px 'Iowan Old Style',Palatino,Georgia,serif;color:var(--muted)}
+  .jump a{color:var(--violet);text-decoration:none;border-bottom:1px solid #BFBDDC;
+    padding-bottom:1px;font-weight:500}
+  .jump a:hover{color:var(--ink);border-bottom-color:var(--ink)}
+  html{scroll-behavior:smooth}
+  section[id]{scroll-margin-top:20px}
+
+  /* tiers */
+  section.tier{padding:32px 40px;border-top:1px solid var(--rule)}
+  .tier-k{font:600 11px 'Helvetica Neue',Arial,sans-serif;letter-spacing:.22em;
+    text-transform:uppercase;margin:0 0 8px}
+  .tier h2{font-size:26px;font-weight:400;margin:0 0 6px;line-height:1.24}
+  .tier .who{font-style:italic;color:var(--muted);margin:0 0 22px;font-size:16px}
+  .t1 .tier-k{color:var(--sky)} .t1{background:#FCFDFE}
+  .t2 .tier-k{color:var(--moss)} .t2{background:#FBFCFB}
+  .t3 .tier-k{color:var(--rust)} .t3{background:#FDFBFA}
+
+  ul.pts{list-style:none;margin:0 0 18px;padding:0}
+  ul.pts li{display:flex;gap:13px;padding:10px 0;border-bottom:1px solid #EDEBF2;
+    font-size:16.5px;line-height:1.5}
+  ul.pts li:last-child{border-bottom:0}
+  ul.pts b{flex:0 0 176px;font:600 14.5px 'Helvetica Neue',Arial,sans-serif;
+    line-height:1.4}
+  .t1 ul.pts b{color:var(--sky)} .t2 ul.pts b{color:var(--moss)} .t3 ul.pts b{color:var(--rust)}
+
+  .take{margin:0;padding:18px 22px;border-radius:0 8px 8px 0;font-size:16.5px}
+  .take b{font-weight:600}
+  .t1 .take{background:var(--skytint);border-left:4px solid var(--sky)}
+  .t2 .take{background:var(--mosstint);border-left:4px solid var(--moss)}
+  .t3 .take{background:var(--rusttint);border-left:4px solid var(--rust)}
+
+  .exam{margin:18px 0 0;font:400 14.5px 'Helvetica Neue',Arial,sans-serif;
+    color:var(--muted);line-height:1.6}
+  .exam b{color:var(--ink);font-weight:600}
+
+  /* the section that is not about patients */
+  section.mirror{padding:34px 40px;border-top:1px solid var(--rule);background:#FAF7F1}
+  .mirror .tier-k{color:var(--amber)}
+  .mirror h2{font-size:26px;font-weight:400;margin:0 0 6px;line-height:1.24}
+  .mirror .who{font-style:italic;color:var(--muted);margin:0 0 22px;font-size:16px}
+  .mirror .q{margin:0 0 14px;padding:0 0 0 18px;border-left:3px solid #DCCDB0;
+    font-style:italic;font-size:16.5px;line-height:1.55}
+  .mirror .help{margin:20px 0 0;padding:18px 22px;background:#fff;
+    border:1px solid var(--rule);border-radius:8px;
+    font:400 15px/1.65 'Helvetica Neue',Arial,sans-serif}
+  .mirror .help b{font-weight:600}
+  .mirror .help p{margin:0 0 11px}
+  .mirror .help p:last-child{margin:0}
+  .mirror .help a{color:var(--violet)}
+
+  .reply{margin:0;padding:30px 34px;background:var(--violettint);border-left:5px solid var(--violet)}
+  .reply h2{font:600 12px 'Helvetica Neue',Arial,sans-serif;letter-spacing:.2em;
+    text-transform:uppercase;color:var(--violet);margin:0 0 14px}
+  .ask{font-size:19.5px;line-height:1.5;font-style:italic;margin:0 0 15px}
+  .btn{display:inline-block;margin:6px 0 12px;padding:15px 30px;background:var(--violet);
+    color:#F8F8FC;text-decoration:none;border-radius:30px;font-style:normal;
+    font:600 15px 'Helvetica Neue',Arial,sans-serif;letter-spacing:.03em}
+  .btn:hover{background:#3A3873}
+  .fallback{font:400 13.5px 'Helvetica Neue',Arial,sans-serif;color:var(--muted);margin:0}
+  .fallback a{color:var(--violet)}
+  .subline{margin:0 0 14px;padding:0 0 13px;border-bottom:1px solid rgba(0,0,0,.09);
+    font:400 14.5px/1.55 'Iowan Old Style','Palatino Linotype',Palatino,Georgia,serif;
+    max-width:56ch;margin-left:auto;margin-right:auto}
+  .subline a{font-weight:500;border-bottom:1px solid currentColor;
+    text-decoration:none;color:inherit}
+  .firstpub{display:block;margin:0 0 10px;padding-bottom:9px;
+    border-bottom:1px solid currentColor;border-color:rgba(0,0,0,.09);
+    font:400 12px 'Helvetica Neue',Arial,sans-serif;letter-spacing:.06em;opacity:.72}
+
+  footer{padding:24px 40px 42px;border-top:1px solid var(--rule);
+    font:400 13px 'Helvetica Neue',Arial,sans-serif;color:var(--muted);text-align:center;line-height:1.7}
+  .home{display:inline-block;margin:0 0 14px;padding:8px 18px;border-radius:20px;
+    border:1px solid var(--rule);background:#F2F1F6;color:var(--violet);text-decoration:none;
+    font:600 12.5px 'Helvetica Neue',Arial,sans-serif;letter-spacing:.05em}
+  .home:hover{background:var(--violet);border-color:var(--violet);color:#F8F8FC}
+
+  @media (max-width:640px){
+    header.top,.pad,.jump,section.tier,section.mirror,footer{padding-left:20px;padding-right:20px}
+    .reply{padding:24px 20px}
+    h1{font-size:26px} .tier h2{font-size:22px} .mirror h2{font-size:22px} body{font-size:16.5px}
+    ul.pts li{flex-direction:column;gap:3px}
+    ul.pts b{flex:none}
+  }
+  @media print{ body{background:#fff} .sheet{box-shadow:none;max-width:none} }
+  .srcs{font-size:12.5px;line-height:1.6}
+  .mine{display:inline-block;margin:9px 0 0;opacity:.78;font-size:.94em}
+</style>
+</head>
+<body>
+<div class="sheet">
+
+  <header class="top">
+    <a class="tophome" href="./">&larr;&nbsp; Home</a>
+    <a class="topseries" href="./?s=students">More from Medical Students&#x27; Place</a>
+    <a class="topseries" href="you-asked.html">You asked</a>
+    <a class="toptopic" href="./?t=young-adult" title="Everything on The young adult">All on this topic</a>
+    <p class="eyebrow"><a class="mast" href="./">ICU and You</a> &nbsp;·&nbsp; <a class="serlink" href="./?s=students">Medical Students&#x27; Place</a> &nbsp;·&nbsp; Number 6</p>
+    <h1>The young adult</h1>
+    <p class="kicker">Eighteen to thirty &mdash; which, for most of you reading this, is your own age band</p>
+  </header>
+
+  <p class="jump">
+    Find your level: <a href="#early">Early years</a>
+    &nbsp;·&nbsp; <a href="#middle">Clinical years</a>
+    &nbsp;·&nbsp; <a href="#senior">Final years</a>
+    &nbsp;·&nbsp; <a href="#you">And one on you</a>
+  </p>
+
+  <div class="pad">
+    <p class="lede">Hey guys &mdash; this one is most of you. Every other set in this series has been
+      about somebody younger than the person reading it. This is the first where the patient and the
+      reader are the same age, and that turns out to change what is difficult about it.</p>
+    <p>The tiers map roughly onto the three phases of a six-year medical programme &mdash; the science,
+      then the clinical reasoning, then what you will actually be expected to do with your own hands.
+      Read the one that fits, and glance at the one above it.</p>
+    <p>What is difficult here is not the physiology. Airway, doses and circulation have been adult for
+      years, and capacity is presumed rather than negotiated. The difficulty is that this age group
+      holds its numbers long after the loss is serious, and that almost everything bringing them in is
+      something that happened rather than something that grew. Both of those are traps for a student,
+      and for the rest of us.</p>
+    <p>There is a fourth section, at the end, which is not about patients at all. The mortality data in
+      tier two is your own, and nothing about being a medical student takes you out of it. It is short,
+      and you can skip it.</p>
+  </div>
+
+  <section class="tier t1" id="early">
+    <p class="tier-k">Tier one</p>
+    <h2>The most reserve you will ever treat</h2>
+    <p class="who">Phase 1 &mdash; the foundational years, and anything on shock, compensation and the physiology of pregnancy</p>
+    <ul class="pts">
+      <li><b>Where the reserve actually sits</b><span>Not mainly in the heart. A young adult defends
+        arterial pressure by constricting the splanchnic and cutaneous beds and recruiting the blood
+        parked in them, so the circulation is topped up from inside before anybody gives anything. That
+        is why the blood pressure in front of you describes the vasoconstriction rather than the
+        volume.</span></li>
+      <li><b>Why the curve has a cliff in it</b><span>Compensation is a flat line that ends, not a slope
+        that warns you. Each further loss is met by the same mechanisms until those are maximal, and
+        then there is nothing left to recruit. The shape matters more than the numbers: there is no
+        gentle middle segment in which to notice.</span></li>
+      <li><b>Narrowing comes before falling</b><span>Resistance rises before output fails, so the
+        diastolic climbs while the systolic is still held and the pulse pressure quietly narrows.
+        A pressure of 125/95 in a twenty-two-year-old is a more frightening set of numbers than 100/60
+        in someone of seventy, and no monitor will flag either.</span></li>
+      <li><b>Tachycardia, and the six good reasons you will dismiss it</b><span>Often the only variable
+        that has moved, and in this age group the easiest to explain away: pain, the drive in, the
+        salbutamol, the three coffees, the fact that they are frightened of you, and the fact that they
+        are twenty-two. Every explanation is plausible. Together they will cost you an hour.</span></li>
+      <li><b>You cannot read a rate without a baseline</b><span>Resting rates in the forties are normal
+        in trained young people, so a rate of 90 can be a tachycardia of fifty beats. The only sources
+        for the baseline are the patient and whoever came in with them, and neither will be there
+        later.</span></li>
+      <li><b>A second normal: pregnancy</b><span>Cardiac output rises by a third to a half and plasma
+        volume by about half. Functional residual capacity falls by a fifth while oxygen consumption
+        rises by a fifth, which is why she desaturates fast. And uteroplacental flow is sacrificed
+        first, so the fetus declares the shock before the mother does.</span></li>
+      <li><b>Which makes forty the wrong sort of normal</b><span>Her arterial gas starts somewhere else:
+        a PaCO<sub>2</sub> around 30&ndash;32&nbsp;mmHg (roughly 4&nbsp;kPa) and a bicarbonate of
+        18&ndash;21&nbsp;mmol/L. So a PaCO<sub>2</sub> of 40 in a breathless pregnant woman is not
+        reassurance &mdash; it is a woman who has stopped being able to hyperventilate &mdash; and it is
+        the one figure every system you use will report as normal.</span></li>
+      <li><b>Creatinine falls in pregnancy too</b><span>Which is the same trap wearing different
+        clothes. A postpartum creatinine sitting inside the quoted reference range can represent a
+        substantial loss of function, and the laboratory will not mark it. The estimating equations are
+        not validated in pregnancy either, so the eGFR beside it is decoration.</span></li>
+      <li><b>They may not be new patients</b><span>Median survival in cystic fibrosis is now around
+        fifty-four years, median life expectancy in Duchenne is past twenty-four and rising, and
+        five-year survival for cancer at fifteen to twenty-four is about ninety per cent. A generation
+        that used to be paediatric now arrives in adult units carrying twenty years of history that
+        somebody else is holding.</span></li>
+      <li><b>The Fontan circulation, grown up</b><span>Flow through the lungs is passive, so it is
+        preload-dependent and it hates positive pressure. Anything that raises pulmonary impedance
+        &mdash; PEEP, hypoxia, acidosis, an embolus &mdash; produces shock rather than hypoxia. Find out
+        the baseline saturation before you set a target for it.</span></li>
+    </ul>
+    <p class="take"><b>If you take one thing:</b> in this age group the blood pressure is the last number
+      to move and the first one you will be shown. Everything in tier one exists to stop you believing
+      it.</p>
+    <p class="exam"><b>Likely to be examined as:</b> a short answer on the cardiovascular and
+      respiratory changes of pregnancy and how they alter the arterial blood gas, or on the
+      physiological basis of compensated shock. A good viva opener is <em>a fit twenty-two-year-old off
+      a motorbike, heart rate 120, blood pressure 128/96 &mdash; what is that blood pressure telling
+      you?</em></p>
+  </section>
+
+  <section class="tier t2" id="middle">
+    <p class="tier-k">Tier two</p>
+    <h2>What actually brings them in, and the history you take alone</h2>
+    <p class="who">Phase 2 &mdash; the clinical years, integrated clinical studies, and the ICE</p>
+    <ul class="pts">
+      <li><b>Something that happened, not something that grew</b><span>External causes lead every
+        Australian age band up to forty-four. Road, work, water, assault, sport. For a clinical student
+        the consequence is structural: the history is an event rather than a progression, and the people
+        who can describe the event are frequently not the patient.</span></li>
+      <li><b>Look for what you cannot see</b><span>A young chest wall transmits force without breaking,
+        so the ribs are intact over the contused lung and the pelvis springs back over the torn vessel.
+        Mechanism outranks examination here more than at any other age, and the mechanism is a history
+        question.</span></li>
+      <li><b>Alcohol is in the history more often than the chart</b><span>It changes the examination, the
+        consent and the airway, and it is the most reliably under-recorded item in this age group. Ask
+        it the way you would ask about a medication &mdash; plainly, with a number, and without making
+        a face.</span></li>
+      <li><b>What they took</b><span>Deliberate and recreational, and often both at once. Suicide
+        accounts for more than one in five deaths between twenty-five and forty-four, and the highest
+        female rate in Australia is in women aged twenty-five to twenty-nine. The psychiatric assessment
+        belongs to the admission rather than to the discharge: the person who can do it properly is
+        rarely free at four in the morning, and the window does not stay open.</span></li>
+      <li><b>Well on Friday, septic on Sunday</b><span>Meningococcal disease, invasive group A
+        streptococcus, influenza. Toxic shock syndrome has a median age in the low twenties. There is no
+        comorbidity to blame it on and no slow decline to have noticed, so the index of suspicion has to
+        come from you rather than from the chart.</span></li>
+      <li><b>The infarct that is not atherosclerosis &mdash; except that mostly it is</b><span>Roughly
+        two thirds of infarcts under sixty-five are still atherothrombotic, and in pooled Australian
+        registry data half of all acute coronary syndrome patients aged twenty to fifty-four were
+        current smokers. Then the rest: inflammation, pregnancy and spontaneous coronary artery
+        dissection, drugs and radiation, supply&ndash;demand and structural causes. Dissection accounts
+        for about eleven per cent of infarcts in women under sixty-five, and over half of those were
+        initially called something else.</span></li>
+      <li><b>Pregnant, or recently</b><span>Not something a general adult unit sees often, which is
+        most of the problem. In
+        Australia between 2014 and 2023 the leading causes of maternal death were cardiovascular
+        disease, sepsis, suicide and thromboembolism &mdash; not the quartet usually taught &mdash; and
+        forty-five per cent of the deaths were postpartum against eighteen per cent intrapartum.
+        <em>Recently</em> pregnant is a question you have to ask out loud, because nothing on the
+        admission paperwork will answer it for you.</span></li>
+      <li><b>Who else is in the room</b><span>This is the first age at which the patient is
+        unambiguously the historian, and the first at which you must notice who is listening. Partner,
+        housemate, parent, employer, the friend who drove. Pregnancy, substances, sexual health, driving,
+        what actually happened, and whether anybody at home is frightening them are all answered
+        differently with an audience. Ask who they would like to stay, and ask it as routine rather than
+        as a signal.</span></li>
+      <li><b>The paediatric history somebody else is holding</b><span>If they were a child with
+        something, the useful document is twenty years old and in another hospital. Congenital heart
+        disease, childhood cancer, neuromuscular disease: you want the baseline saturation, the last
+        echocardiogram, the anthracycline total, the airway history. None of it will be
+        volunteered.</span></li>
+      <li><b>The young heart that stopped</b><span>In a prospective Australian and New Zealand study of
+        490 sudden cardiac deaths at ages one to thirty-five, forty per cent were still unexplained
+        after a full autopsy, with coronary disease twenty-four per cent and the inherited
+        cardiomyopathies sixteen. Among the unexplained deaths that went on to genetic testing, a
+        clinically relevant variant was found in about twenty-seven per cent. And most of these arrests
+        happen at rest rather than on the field, which is the opposite of the story everybody
+        carries.</span></li>
+    </ul>
+    <p class="take"><b>If you take one thing:</b> at this age the examination gets easier and the history
+      gets quietly harder. What you most need to know is usually the thing that will not be said with
+      the person who drove them in sitting beside the bed.</p>
+    <p class="exam"><b>Likely to be examined as:</b> a long case or an ICE station where the marks sit in
+      the structure of the history rather than in the findings &mdash; whether you establish who the
+      patient wants present, whether you ask about pregnancy and about substances without apologising
+      for it, whether you take a mechanism. A favourite viva: <em>a twenty-six-year-old woman with
+      abdominal pain and a brief faint. What is your first test?</em></p>
+  </section>
+
+  <section class="tier t3" id="senior">
+    <p class="tier-k">Tier three</p>
+    <h2>What you will be expected to do</h2>
+    <p class="who">Phase 3 &mdash; the final clinical years, the pre-internship term, and your first nights on call</p>
+    <ul class="pts">
+      <li><b>The pregnancy test, every time</b><span>Not because women are unreliable &mdash; the two
+        best studies on this found that what women said about their own dates and history was right
+        essentially every time &mdash; but because the cost of the miss is nothing like the cost of the
+        test. Before the imaging, before the drug, before theatre.</span></li>
+      <li><b>If she arrests</b><span>Displace the uterus to the left with your hands, from about twenty
+        weeks or whenever the fundus is at or above the umbilicus. Do not tilt the bed; it degrades your
+        compressions. Hysterotomy is considered in the second half of pregnancy, it is done where she
+        is, a scalpel is enough, and compressions continue throughout. ANZCOR Guideline 11.10 sets no
+        time threshold for it &mdash; the four-minute rule you have probably been taught is not
+        Australian guidance and was never a rule.</span></li>
+      <li><b>Tranexamic acid, and the clock on it</b><span>After significant trauma, and within three
+        hours of the onset of postpartum haemorrhage when it is indicated. Both windows are measured in
+        hours, both are routinely missed, and the drug is in the fridge of every unit you will ever work
+        in.</span></li>
+      <li><b>Thromboprophylaxis, because nobody remembers</b><span>The omission is close to specific to
+        this age group: a young patient looks like the opposite of a thrombotic risk. Meanwhile
+        immobility, injury, sepsis, pregnancy and the oral contraceptive are all sitting there in the
+        notes you just wrote.</span></li>
+      <li><b>If you cannulate the artery by mistake</b><span>Leave it in. Do not pull the catheter out
+        and hold pressure on a subclavian or carotid puncture you cannot compress &mdash; tell somebody
+        senior and get vascular advice with the catheter still in place. The prevention is upstream: see
+        the wire in the vein on ultrasound, in two planes, before you dilate anything.</span></li>
+      <li><b>Capacity, practically</b><span>Presumed in an adult and specific to the decision in front
+        of you. Injury, hypoxia, pain, fear and intoxication remove it temporarily, so a patient who
+        cannot consent at eleven can often consent at two. Record the basis rather than the verdict. And
+        find out who they actually want told: in this band the partner is frequently not the next of
+        kin, and the two are often different people.</span></li>
+      <li><b>Ask the question about the unit</b><span>American claims data on young adults with severe
+        sepsis found higher mortality in paediatric than adult intensive care &mdash; on small numbers,
+        with no severity adjustment, and with the comorbidity burden almost certainly explaining it. The
+        decision is not yours at your stage. But <em>is this person in the right place</em> is a
+        reasonable thing for a student to ask out loud, and it is better asked on day one than on day
+        four.</span></li>
+      <li><b>Say what happened, in words</b><span>They will carry this admission for another fifty
+        years. Around sixty per cent of intensive care survivors are back at work at a year, and new
+        physical, cognitive or psychological problems are the rule rather than the exception; there is
+        no young-adult-specific evidence here, so do not assume they bounce. The sentence they still
+        have in ten years will be one somebody said in the first week, and it may as well be an accurate
+        one.</span></li>
+      <li><b>When it goes the other way</b><span>Young adults are a small share of deceased organ donors
+        overall and a large share of donation after suicide. There were 557 deceased donors in Australia
+        in 2025. Asking properly, separately, and not as an afterthought is a skill, and at some point
+        you will watch it done badly.</span></li>
+    </ul>
+    <p class="take"><b>If you take one thing:</b> the commonest error at your stage in this age group is
+      believing the numbers. The second is forgetting that she might be pregnant. The third is assuming
+      that because they are young they will be fine afterwards.</p>
+    <p class="exam"><b>Likely to be examined as:</b> an OSCE or viva on trauma, on the collapsed young
+      adult, or on maternal resuscitation. The examiner is listening for whether you ask about pregnancy
+      unprompted, whether you can justify manual uterine displacement over tilting the bed, and whether
+      you say out loud at what point you would call for help.</p>
+  </section>
+
+  <section class="mirror" id="you">
+    <p class="tier-k">And one on you</p>
+    <h2>You have just read your own age band&rsquo;s mortality data</h2>
+    <p class="who">Not examinable. Skippable. Here because it would be strange to leave it out.</p>
+    <p>Everything in tier two is a list of things that happen to people exactly your age, and medical
+      students are not a protected class within it. There is no version of this section that is not
+      slightly awkward to write, so here is the short version.</p>
+    <p>The exposures are mostly ordinary and mostly structural. You will drive home from places you
+      should not be driving home from, at hours when the roads are worst and you are at your least
+      sharp. Alcohol is woven through the social life of a medical course and is almost never discussed
+      in it as an exposure of any kind. Shift work arrives early and sleep debt
+      compounds quietly. Sport and water and the things that make the years worth having carry their own
+      arithmetic. And a good number of you do not have a general practitioner of your own, which is an
+      odd position to be in while learning to be one.</p>
+    <p class="q">Who is your own doctor, and when did you last see them as a patient rather than as a
+      colleague?</p>
+    <p class="q">How do you get home after a late shift or a night out &mdash; actually, not in
+      principle?</p>
+    <p class="q">What would have to happen before you told somebody you were not coping, and who would
+      it be?</p>
+    <p>That last one is worth sitting with, because what stops people is usually a belief about
+      consequences rather than an absence of services. So here are the two things worth knowing before
+      you need them.</p>
+    <p><b>It is not rare.</b> The most recent national survey of Australian medical students&rsquo;
+      mental health was run in 2013. It is thirteen years old and there has been no repeat, which tells
+      you something in itself. It reached more than eighteen hundred students: more than four in ten
+      screened as likely to have a psychiatric disorder, and around one in five reported having thought
+      about suicide in the preceding year. Four in ten believed that a doctor with a mental health
+      condition is seen by colleagues as less competent. The first two figures are what make the third
+      one so expensive.</p>
+    <p><b>And asking for help does not put your registration at risk</b> &mdash; which is close to the
+      opposite of what most students believe, and is the one item on this page I would most like you to
+      take away. Mandatory notification about a student has not been abolished, whatever you may have
+      read; what changed in 2020 is that the threshold was raised. A treating practitioner is now
+      required to notify only where an impairment places the public at substantial risk of harm, which
+      Ahpra itself describes as &ldquo;a very high threshold&rdquo; and says was set there in order to
+      &ldquo;give practitioners the confidence to seek help without the fear of a mandatory
+      notification.&rdquo; Its guidelines for students are blunter still: a student may undertake
+      clinical training with a mental health condition, and that &ldquo;is not enough to trigger a
+      mandatory notification.&rdquo; In Western Australia, treating practitioners are exempt from the
+      requirement altogether. Having a condition and being impaired are not the same thing &mdash; and
+      being treated for one is among the things that stops it becoming the other.</p>
+    <div class="help">
+      <p><b>If you would rather talk to somebody who is not your university</b></p>
+      <p><b>Drs4Drs &mdash; 1300 374 377.</b> Twenty-four hours, every day, anywhere in Australia, for
+        doctors and medical students. Free and confidential, and it includes up to three funded
+        counselling sessions. The state and territory services are listed on
+        <a href="https://www.drs4drs.com.au/getting-help">the same site</a>.</p>
+      <p><b>Doctors&rsquo; Health NSW &mdash; 02 9437 6552.</b> Twenty-four hours. Covers NSW doctors,
+        dentists, veterinarians and students in all three, and family or colleagues worried about one.
+        It states that it is independent of the regulators and that it does not report callers to Ahpra,
+        to employers, to training providers or to colleges.
+        <a href="https://doctorshealth.org.au/">doctorshealth.org.au</a> &mdash; and note the name has
+        changed, so you may still find it listed as the Doctors&rsquo; Health Advisory Service.</p>
+      <p><b>Lifeline &mdash; 13 11 14</b>, or text 0477 13 11 14, twenty-four hours, for anybody. And
+        <b>Beyond Blue &mdash; 1300 22 4636</b>, also around the clock. Neither has an upper age limit,
+        which several of the youth services do.</p>
+      <p>If you are at UNSW, the faculty wellbeing team is at
+        <a href="mailto:mh.wellbeing@unsw.edu.au">mh.wellbeing@unsw.edu.au</a>, and the
+        <a href="https://www.unsw.edu.au/medicine-health/study-with-us/student-life-resources/wellbeing">Medicine
+        and Health wellbeing page</a> lists the university services alongside these. Ahpra, for its part,
+        has a page called simply
+        <a href="https://www.ahpra.gov.au/Notifications/mandatorynotifications/Seek-help.aspx">Seek
+        help</a>, which is worth two minutes if the paragraph above has not convinced you.</p>
+    </div>
+  </section>
+
+  <div class="pad" style="padding-top:24px">
+    <div class="reply">
+      <h2>Over to you</h2>
+      <p class="ask">Which tier did you read &mdash; and what were you taught that this page
+        contradicts?</p>
+      <p>Tell me your year, which tier fitted, and what was missing, too basic or too advanced. That part
+        is the same every time, and it is how these get better.</p>
+      <p>This one has a second question. The four-minute rule for hysterotomy is still taught in
+        perfectly good medical schools and is not in Australian guidance; the tilted bed is still taught
+        and degrades compressions; the normal-looking postpartum creatinine is still read as normal.
+        <strong>Which of those three were you taught, and which way round?</strong> No names and no
+        universities. A few dozen replies would tell me something I cannot find out any other way.</p>
+      <p>And if the last section landed closer to home than the rest of the page, you do not have to
+        reply to me about it. Talk to one of the people in the box above instead.</p>
+      <p><a class="btn" href="mailto:icuandyou@icloud.com?subject=Medical%20Students%206%20-%20the%20young%20adult&body=My%20year%2C%20and%20which%20tier%20fitted%3A%0D%0A%0D%0A%0D%0AWhat%20was%20missing%2C%20too%20basic%20or%20too%20advanced%3A%0D%0A%0D%0A%0D%0AWhich%20of%20the%20three%20I%20was%20taught%2C%20and%20which%20way%20round%3A%0D%0A%0D%0A%0D%0AA%20topic%20I%20am%20struggling%20with%3A%0D%0A%0D%0A---%0D%0A%0D%0AName%3A%0D%0A%0D%0A---%0D%0A%0D%0AThinking%20about%20this%20ICU%20AND%20YOU%20post%20overall%20%E2%80%94%20was%20it%20useful%20to%20you%2C%20or%20would%20it%20be%20useful%20to%20others%3F%0D%0A">Send your feedback</a></p>
+      <p class="fallback" style="margin-bottom:9px">How you are credited is entirely your call &mdash; by name, by initials, or not at all &mdash; whether you write the piece or I do, and whether I quote you or simply say who sent something in; nothing of yours goes up with your name on it unless you have said yes.</p>
+      <p class="fallback">The button opens a reply straight to me. If your device blocks it, write to
+        <a href="mailto:icuandyou@icloud.com">icuandyou@icloud.com</a> instead.</p>
+    </div>
+  </div>
+
+  <footer>
+    <span class="firstpub">First published October 2026</span>
+    <p class="subline">Two emails a week &mdash; the Friday newsletter for all subscribers, and, for clinical subscribers,
+      the mind map and puzzles the moment they go up on Tuesday. Occasional announcements of new
+      features as they arrive. What went up and why it mattered, the best of your replies, and
+      original feature stories, news and views. <a href="https://joinlist.com/f/5adad2d6">Come and join us</a>.</p>
+    <a class="home" href="./">&larr; &nbsp;All of ICU AND YOU</a><br>
+    ICU AND YOU &nbsp;&#183;&nbsp; Medical Students&#x27; Place No. 6 &nbsp;&#183;&nbsp; companion to Mind Map #36, The young adult<br>
+    Educational use within the ICU education programme. Not a clinical protocol &mdash; local policy, current
+    guidance and the retrieval service always take precedence. Verify every dose against your own
+    formulary before use.
+  <br>
+    <span class="srcs">Where this page contradicts something you were taught, here is what it rests on.
+    Deaths and external causes: the <a href="https://www.aihw.gov.au/reports/children-youth/young-australians">Australian
+    Institute of Health and Welfare</a> and the Australian Bureau of Statistics causes-of-death collection.
+    Maternal deaths for 2014&ndash;2023 are the AIHW maternal deaths reporting; maternal resuscitation, including
+    the absence of any time threshold for hysterotomy, is ANZCOR Guideline 11.10 (April 2025) rather
+    than the American equivalent. Tranexamic acid is CRASH-2 for trauma and the WOMAN trial
+    for postpartum haemorrhage. Sudden cardiac death in the young is Bagnall and colleagues, a
+    prospective study of 490 deaths at ages one to thirty-five in Australia and New Zealand,
+    <em>New England Journal of Medicine</em> 2016. Infarct in the young is set out with its sources in
+    <a href="mnemonic-58-lipids.html">Mnemonic 58</a>; the paediatric-versus-adult unit question is
+    Zakutansky and colleagues, <em>Journal of Intensive Care Medicine</em> 2023, reviewed in
+    <a href="journal-club-101-young-adult-sepsis.html">Journal Club 101</a>. Survival into adulthood with
+    childhood disease: the Australian Cystic Fibrosis Data Registry, published Duchenne survival series,
+    and AIHW cancer survival at fifteen to twenty-four. Donor numbers are DonateLife and Organ and Tissue
+    Authority activity data for 2025. Capacity and consent are jurisdictional &mdash; check your own.
+    For the last section: student figures are beyondblue&rsquo;s <em>National Mental Health Survey of
+    Doctors and Medical Students</em>, 2013, which remains the only national Australian survey of its kind;
+    the notification position and the quotations are
+    <a href="https://www.ahpra.gov.au/Notifications/mandatorynotifications/Mandatory-notifications.aspx">Ahpra&rsquo;s
+    own</a>, including the 2020 <em>Guidelines: mandatory notifications about registered students</em> and
+    the Western Australian exemption. Services and numbers were checked in October 2026; if one has
+    changed, tell me and I will fix it the same day.</span>
+  <br>
+    <span class="mine">Views my own, not those of NSW Health or any other organisation. No identifiable patients — scenarios are constructed or combined for teaching. <a href="about.html">More</a>.</span>
+  </footer>
+
+</div>
+<script src="glossary.js"></script>
+<script data-goatcounter="https://icuandyou.goatcounter.com/count"
+        async src="//gc.zgo.at/count.js"></script>
+</body>
+</html>

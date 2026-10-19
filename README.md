@@ -99,8 +99,8 @@ Run it before every commit. It checks for orphan pages, dead links, missing
 meta descriptions, missing disclaimers and subscribe lines, glossary links with
 no entry, series links that resolve to no filter, mind map text that will
 overflow its card, puzzle grids whose dimensions do not match their cells,
-classes used in the markup that nothing styles, and prose carried over from
-the page a new page was built from.
+classes used in the markup that nothing styles, scaffolding left in a finished
+page, and prose carried over from the page a new page was built from.
 
 Most of those checks exist because something went wrong once.
 
@@ -124,6 +124,26 @@ does not re-trigger its explainer. When the audit flags something, **read it**
 and then either fix the page or paste the printed line into the baseline.
 Running `make_prose_baseline.py` to clear a report without reading it would
 bless the mistake, which is the only way this check can be defeated.
+
+The footer counts. The first version of this check read only `<p>` and `<li>`,
+so it could not see the footer — and Mind Map 36 went up a second time with an
+inherited line, this time the source credit, naming the ANZPIC registry, the
+Immunisation Handbook and Australian anaphylaxis series on a page about
+eighteen to thirty year olds. Widening it to footer text found two more at
+once: Podcast 58 was crediting Podcast 57's episode, host and date, and
+Literary Edge 2 said it quoted the King James Version and deferred to Red Nose
+on safe sleeping, on a page about *Peter Pan*. Misattributing somebody else's
+podcast is the worst of those three, and nothing but this check was ever going
+to find it.
+
+### Scaffolding
+
+A one-line check for `PLACEHOLDER`, `TODO`, `FIXME`, `TBC`, `lorem ipsum` and
+the like. Pages here get built in stages — prose first, a source line or a
+figure filled in once it has been verified — and a placeholder is by
+definition something that looked fine at the moment it was typed. Matched
+case-sensitively on purpose: the India Room page says its own name "is a
+placeholder", and every quiz has an input with `placeholder="Type your name"`.
 
 ## Before you publish
 
