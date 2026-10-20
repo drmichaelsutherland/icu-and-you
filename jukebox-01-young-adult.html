@@ -86,6 +86,15 @@
     letter-spacing:.18em;text-transform:uppercase;color:var(--amber);margin:0 0 9px}
   .aside p:last-child{margin:0}
 
+  /* Standing furniture: one playlist per edition, linked once. Links rather
+     than embeds — an embed drags in third-party scripts and cookies, adds
+     weight, and eventually renders a dead grey box when a video is pulled or
+     region-locked. A text link degrades gracefully. */
+  .listen{margin:0 0 22px;padding:14px 20px;background:#F6EEF4;border:1px solid #E4D5E0;
+    border-radius:9px;font:400 15.5px/1.6 'Helvetica Neue',Arial,sans-serif;color:#5B4E57}
+  .listen b{color:var(--neonink);font-weight:600}
+  .listen a{color:var(--neon);font-weight:600}
+
   .pull{margin:26px 0;padding:0 0 0 22px;border-left:3px solid var(--neon);
     font-size:21px;line-height:1.45;font-style:italic;color:#3A2E37}
 
@@ -165,6 +174,10 @@
 
     <p>So here are five that do, with the stories behind them checked rather than repeated. They happen to
       arrange themselves into something like an admission.</p>
+
+    <p class="listen"><b>Listen along.</b> All of these, in order, are on
+      <a href="PLACEHOLDER-playlist-url">one playlist</a> &mdash; including the two in the tea room at the end,
+      and the Phoebe Bridgers track that started the argument. Eight songs, about half an hour.</p>
 
     <h2 class="sub">One &middot; The coma</h2>
 
