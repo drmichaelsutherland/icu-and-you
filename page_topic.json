@@ -190,6 +190,11 @@
    "antique striped",
    "other"
   ],
+  "jukebox": [
+   "The Jukebox",
+   "neon",
+   "other"
+  ],
   "doctors": [
    "Notable Doctors",
    "laurel",
@@ -1401,9 +1406,28 @@
    "badge": "Drugstore",
    "link_label": "Open",
    "blurb": "One hormone and about twenty ways to give it, none of them interchangeable. What is actually available in Australia now and what disappears on 31 December, why the infusion is down to a single product line, the ketoacidosis numbers and how they differ between states, hyperkalaemia, and the kinetics and dynamics as the First Part wants them."
+  },
+  {
+   "file": "jukebox-01-young-adult.html",
+   "series": "jukebox",
+   "colour": "neon",
+   "number": "1",
+   "title": "Five songs from the young adult ward",
+   "topic": "The young adult",
+   "slug": "young-adult",
+   "week": true,
+   "pos": 12,
+   "badge": "The Jukebox",
+   "link_label": "Open",
+   "blurb": "A new column for songs that wander into this territory. A coma, a cancer, a mind with no way out, an organ donor and one young man refusing to die \u2014 with the backstories checked, which is how we discover that the most famous coma song in English pop began as an attempt at reggae by a man who had publicly called reggae vile."
   }
  ],
  "latest": [
+  {
+   "file": "jukebox-01-young-adult.html",
+   "colour": "neon",
+   "label": "The Jukebox 1 \u00b7 Five songs from the young adult ward"
+  },
   {
    "file": "drugstore-03-insulin.html",
    "colour": "mulberry",
@@ -1423,11 +1447,6 @@
    "file": "public-03-rejoice-we-conquer.html",
    "colour": "ocean",
    "label": "For the general public 3 \u00b7 Rejoice, we conquer"
-  },
-  {
-   "file": "med-students-06-young-adult.html",
-   "colour": "violet",
-   "label": "Medical Students 6 \u00b7 The young adult"
   }
  ],
  "topten": [
