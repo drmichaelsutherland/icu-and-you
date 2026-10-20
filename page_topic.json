@@ -1387,9 +1387,28 @@
    "badge": "Out of Africa",
    "link_label": "Open",
    "blurb": "A new column, and the site\u2019s first on Africa. Nigeria accounts for 28.7% of the world\u2019s maternal deaths. The phrase everybody quotes to explain it \u2014 too far to walk \u2014 does not survive being measured: in Lagos, most women who died had travelled under ten kilometres and arrived within half an hour. What fails instead is oxytocin that has stopped working, blood that has to be found by the family, and theatres that cannot open."
+  },
+  {
+   "file": "drugstore-03-insulin.html",
+   "series": "drugstore",
+   "colour": "mulberry",
+   "number": "3",
+   "title": "Insulin",
+   "topic": "The young adult",
+   "slug": "young-adult",
+   "week": true,
+   "pos": 11,
+   "badge": "Drugstore",
+   "link_label": "Open",
+   "blurb": "One hormone and about twenty ways to give it, none of them interchangeable. What is actually available in Australia now and what disappears on 31 December, why the infusion is down to a single product line, the ketoacidosis numbers and how they differ between states, hyperkalaemia, and the kinetics and dynamics as the First Part wants them."
   }
  ],
  "latest": [
+  {
+   "file": "drugstore-03-insulin.html",
+   "colour": "mulberry",
+   "label": "Drugstore 3 \u00b7 Insulin"
+  },
   {
    "file": "africa-01-too-far-to-walk.html",
    "colour": "bronze striped",
@@ -1409,11 +1428,6 @@
    "file": "med-students-06-young-adult.html",
    "colour": "violet",
    "label": "Medical Students 6 \u00b7 The young adult"
-  },
-  {
-   "file": "superquiz-65-young-adult.html",
-   "colour": "wine",
-   "label": "Superquiz 65 \u00b7 The young adult"
   }
  ],
  "topten": [

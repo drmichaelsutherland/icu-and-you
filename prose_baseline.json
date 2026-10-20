@@ -198,5 +198,13 @@
  "f823dcd365d22c70": {
   "note": "Standing footer disclaimer, monthly Top Ten pages",
   "opening": "Educational use only. Not a clinical protocol — every dose and threshold here is a summary of a fuller piece…"
+ },
+ "b714cdb53d0670d3": {
+  "note": "The standing 'About this series' explainer for Drugstore — identical on purpose",
+  "opening": "Drugstore is for drug profiles. Each one runs the same way: the few things that matter most…"
+ },
+ "898bca64f0307db2": {
+  "note": "Second paragraph of the same Drugstore explainer box",
+  "opening": "The intention is to serve two readers at once. The clinician who needs the drug at three in the morning…"
  }
 }

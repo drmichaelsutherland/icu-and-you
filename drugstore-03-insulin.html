@@ -1,0 +1,540 @@
+<!DOCTYPE html>
+<html lang="en-AU">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ICU AND YOU · Drugstore No. 3 — Insulin</title>
+<meta name="description" content="Drugstore No. 3: insulin. What is actually available in Australia in late 2026 and what disappears on 31 December, the infusion and what it sticks to, ketoacidosis, hyperkalaemia, and the kinetics and dynamics as the First Part wants them.">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="alternate icon" href="/favicon.ico" sizes="any">
+<link rel="apple-touch-icon" href="/icon-180.png">
+<meta name="theme-color" content="#1B2A33">
+<meta property="og:site_name" content="ICU AND YOU">
+<meta property="og:type" content="website">
+<meta property="og:title" content="ICU AND YOU · Drugstore No. 3 — Insulin">
+<meta property="og:description" content="One hormone, a shrinking list of Australian products, and the infusion that behaves differently from all of them.">
+<meta property="og:image" content="https://icuandyou.com/share-card.png">
+<meta name="twitter:card" content="summary_large_image">
+<style>
+  :root{
+    --paper:#FBF9FC; --ink:#241F2B; --muted:#6B6377; --rule:#DFD6E6;
+    --amethyst:#7A3560; --amethysttint:#F1EBF7;
+    --rust:#A8442A; --rusttint:#F9EDE7;
+    --moss:#4C6B4A; --mosstint:#EAF1E9;
+    --gold:#A8721E; --goldtint:#FBF1DC;
+  }
+  *{box-sizing:border-box}
+  body{margin:0;background:#EDE8F1;color:var(--ink);
+    font:400 17px/1.64 'Iowan Old Style','Palatino Linotype',Palatino,Georgia,serif;
+    -webkit-text-size-adjust:100%;}
+  .sheet{max-width:820px;margin:0 auto;background:var(--paper);
+    box-shadow:0 1px 40px rgba(36,31,43,.10);}
+
+  header.top{padding:42px 40px 28px;border-bottom:2px solid var(--amethyst)}
+  .tophome,.topseries,.toptopic{display:inline-block;margin:0 0 16px;padding:7px 16px;
+    border-radius:20px;border:1px solid currentColor;opacity:.62;text-decoration:none;
+    color:inherit;font:600 11.5px 'Helvetica Neue',Arial,sans-serif;letter-spacing:.09em;
+    text-transform:uppercase;transition:opacity .12s ease}
+  .topseries,.toptopic{margin-left:9px}
+  .tophome:hover,.topseries:hover,.toptopic:hover{opacity:1}
+  .eyebrow a.mast,.eyebrow a.serlink{color:inherit;text-decoration:none;
+    border-bottom:1px solid transparent}
+  .eyebrow a.mast:hover,.eyebrow a.serlink:hover{border-bottom-color:currentColor}
+  .eyebrow{font:500 11.5px/1 'Helvetica Neue',Arial,sans-serif;letter-spacing:.24em;
+    text-transform:uppercase;color:var(--muted);margin:0 0 13px}
+  h1{font-size:32px;line-height:1.2;margin:0 0 9px;font-weight:400;letter-spacing:-.012em}
+  .kicker{color:var(--muted);margin:0;font-size:16.5px;font-style:italic}
+
+  .askedby{margin:0;padding:18px 40px;background:var(--amethysttint);
+    border-bottom:1px solid var(--rule);font-size:16px;color:#4A3D57}
+  .askedby a{color:var(--amethyst)}
+
+  .pad{padding:32px 40px}
+  p{margin:0 0 16px}
+  .lede{font-size:19.5px;line-height:1.55;margin:0 0 20px}
+
+  h2.sub{font:600 12px 'Helvetica Neue',Arial,sans-serif;letter-spacing:.2em;
+    text-transform:uppercase;color:var(--amethyst);margin:32px 0 15px;
+    padding-bottom:8px;border-bottom:1px solid var(--rule)}
+
+  ul.pts{list-style:none;margin:0 0 18px;padding:0}
+  ul.pts li{display:flex;gap:13px;padding:11px 0;border-bottom:1px solid #EFE9F4;
+    font-size:16.5px;line-height:1.5}
+  ul.pts li:last-child{border-bottom:0}
+  ul.pts b{flex:0 0 182px;font:600 14.5px 'Helvetica Neue',Arial,sans-serif;
+    color:var(--amethyst);line-height:1.4}
+
+  ol.steps{list-style:none;counter-reset:s;margin:0 0 18px;padding:0}
+  ol.steps li{counter-increment:s;position:relative;padding:12px 0 12px 44px;
+    border-bottom:1px solid #EFE9F4;font-size:16.5px;line-height:1.55}
+  ol.steps li:last-child{border-bottom:0}
+  ol.steps li::before{content:counter(s);position:absolute;left:0;top:12px;
+    width:28px;height:28px;border-radius:50%;background:var(--amethyst);color:#F8F5FB;
+    font:600 13px 'Helvetica Neue',Arial,sans-serif;display:flex;align-items:center;
+    justify-content:center}
+
+  .box{margin:0 0 18px;padding:20px 24px;border-radius:0 8px 8px 0}
+  .box .lab{display:block;font:600 11px 'Helvetica Neue',Arial,sans-serif;
+    letter-spacing:.18em;text-transform:uppercase;margin:0 0 9px}
+  .box p:last-child{margin:0}
+  .red{background:var(--rusttint);border-left:4px solid var(--rust)} .red .lab{color:var(--rust)}
+  .grn{background:var(--mosstint);border-left:4px solid var(--moss)} .grn .lab{color:var(--moss)}
+  .amb{background:var(--goldtint);border-left:4px solid var(--gold)} .amb .lab{color:var(--gold)}
+
+  .sites{display:flex;gap:13px;flex-wrap:wrap;margin:0 0 20px}
+  .site{flex:1 1 226px;background:#fff;border:1px solid var(--rule);border-radius:9px;
+    padding:16px 18px;border-top:4px solid var(--amethyst)}
+  .site h3{margin:0 0 7px;font:600 13px 'Helvetica Neue',Arial,sans-serif;
+    letter-spacing:.07em;text-transform:uppercase;color:var(--amethyst)}
+  .site p{margin:0;font-size:15.5px;line-height:1.5;color:#3B3345}
+
+  .challenge{margin:0;padding:28px 32px;background:var(--rusttint);border-left:5px solid var(--rust)}
+  .challenge h2{font:600 12px 'Helvetica Neue',Arial,sans-serif;letter-spacing:.2em;
+    text-transform:uppercase;color:var(--rust);margin:0 0 13px}
+  .ask{font-size:19.5px;line-height:1.5;margin:0 0 12px;font-style:italic}
+  .btn{display:inline-block;margin:6px 0 12px;padding:15px 30px;background:var(--rust);
+    color:#FDF8F5;text-decoration:none;border-radius:30px;font-style:normal;
+    font:600 15px 'Helvetica Neue',Arial,sans-serif;letter-spacing:.03em}
+  .btn:hover{background:#8A3620}
+  .fallback{font:400 13.5px 'Helvetica Neue',Arial,sans-serif;color:var(--muted);margin:0}
+  .fallback a{color:var(--rust)}
+
+  footer{padding:24px 40px 42px;border-top:1px solid var(--rule);
+    font:400 13px 'Helvetica Neue',Arial,sans-serif;color:var(--muted);text-align:center;line-height:1.7}
+  .subline{margin:0 0 14px;padding:0 0 13px;border-bottom:1px solid rgba(0,0,0,.09);
+    font:400 14.5px/1.55 'Iowan Old Style','Palatino Linotype',Palatino,Georgia,serif;
+    max-width:56ch;margin-left:auto;margin-right:auto}
+  .subline a{font-weight:500;border-bottom:1px solid currentColor;
+    text-decoration:none;color:inherit}
+  .firstpub{display:block;margin:0 0 10px;padding-bottom:9px;
+    border-bottom:1px solid rgba(0,0,0,.09);
+    font:400 12px 'Helvetica Neue',Arial,sans-serif;letter-spacing:.06em;opacity:.72}
+  .home{display:inline-block;margin:0 0 14px;padding:8px 18px;border-radius:20px;
+    border:1px solid var(--rule);background:#F3EFF7;color:var(--amethyst);text-decoration:none;
+    font:600 12.5px 'Helvetica Neue',Arial,sans-serif;letter-spacing:.05em}
+  .home:hover{background:var(--amethyst);border-color:var(--amethyst);color:#F8F5FB}
+
+  @media (max-width:640px){
+    header.top,.pad,.askedby,footer{padding-left:20px;padding-right:20px}
+    .challenge{padding:22px 20px}
+    h1{font-size:26px} body{font-size:16.5px} .ask{font-size:18px}
+    ul.pts li{flex-direction:column;gap:3px} ul.pts b{flex:none}
+    .dosetable{font-size:13.5px} .dosetable th,.dosetable td{padding:7px 6px}
+  }
+  @media print{ body{background:#fff} .sheet{box-shadow:none;max-width:none} }
+  .mine{display:inline-block;margin:9px 0 0;opacity:.78;font-size:.94em}
+
+  .preamble{margin:0 0 22px;padding:20px 24px;background:#F6EBF1;border-left:4px solid #7A3560;
+    border-radius:0 8px 8px 0}
+  .preamble .lab{display:block;font:600 11px 'Helvetica Neue',Arial,sans-serif;letter-spacing:.18em;
+    text-transform:uppercase;color:#7A3560;margin:0 0 9px}
+  .preamble p:last-child{margin:0}
+  .keynote{margin:0 0 22px;padding:0;list-style:none;counter-reset:kn}
+  .keynote li{position:relative;padding:13px 0 13px 46px;border-bottom:1px solid #EFE7EA;
+    font-size:17px;line-height:1.55}
+  .keynote li:last-child{border-bottom:0}
+  .keynote li::before{counter-increment:kn;content:counter(kn);position:absolute;left:0;top:11px;
+    width:29px;height:29px;border-radius:50%;background:#7A3560;color:#fff;text-align:center;
+    font:600 14px/29px 'Helvetica Neue',Arial,sans-serif}
+  .tscroll{overflow-x:auto;-webkit-overflow-scrolling:touch;margin:0 0 20px}
+  .tscroll .dosetable{margin-bottom:0;min-width:540px}
+  .dosetable{width:100%;border-collapse:collapse;margin:0 0 20px;
+    font:400 15px 'Helvetica Neue',Arial,sans-serif}
+  .dosetable th{text-align:left;padding:9px 10px;border-bottom:2px solid #7A3560;
+    font:600 12px 'Helvetica Neue',Arial,sans-serif;letter-spacing:.09em;text-transform:uppercase;
+    color:#5B2447}
+  .dosetable td{padding:9px 10px;border-bottom:1px solid #EFE7EA;vertical-align:top;line-height:1.5}
+  .dosetable tr:last-child td{border-bottom:0}
+  .dosetable .cls{font-weight:600;color:#5B2447}
+  .exam{margin:0 0 20px;padding:20px 24px;background:#E8F0EC;border-left:4px solid #1D4D3F;
+    border-radius:0 8px 8px 0}
+  .exam .lab{display:block;font:600 11px 'Helvetica Neue',Arial,sans-serif;letter-spacing:.18em;
+    text-transform:uppercase;color:#1D4D3F;margin:0 0 9px}
+  .exam p:last-child{margin:0}
+</style>
+</head>
+<body>
+<div class="sheet">
+
+  <header class="top">
+    <a class="tophome" href="./">&larr;&nbsp; Home</a>
+    <a class="topseries" href="./?s=drugstore">All drug profiles</a>
+    <a class="toptopic" href="./?t=young-adult" title="Everything on The young adult">All on this topic</a>
+    <p class="eyebrow"><a class="mast" href="./">ICU and You</a> &nbsp;·&nbsp;
+      <a class="serlink" href="./?s=drugstore">Drugstore</a> &nbsp;·&nbsp; Number 3</p>
+    <h1>Insulin</h1>
+    <p class="kicker">One hormone, a shrinking list of Australian products, and an infusion that behaves like none of them</p>
+  </header>
+
+  <div class="pad">
+    <div class="preamble">
+      <span class="lab">About this series</span>
+      <p><strong>Drugstore</strong> is for drug profiles. Each one runs the same way: the few things that
+        matter most, then the practical business of doses, routes and the errors that recur, and then the
+        pharmacology proper &mdash; kinetics, dynamics, indications and adverse effects.</p>
+      <p>The intention is to serve two readers at once. The clinician who needs the drug at three in the
+        morning, and the First Part candidate who has to explain its metabolism. Those are different needs,
+        and most references choose one.</p>
+    </div>
+
+    <p class="askedby"><strong>This one</strong> is insulin, with the weight on the preparations &mdash;
+      which is where the practical difficulty actually lives. It sits in a fortnight about young adults
+      because ketoacidosis from omitted insulin is one of the most predictable admissions in that age
+      group, and because a twenty-four-year-old with type 1 diabetes will outlive every protocol you write
+      for them.</p>
+
+    <p class="lede">There is one insulin. There are about twenty ways to give it, they are not
+      interchangeable, and the Australian list is shorter this year than it was last year and will be
+      shorter again in ten weeks.</p>
+
+    <h2 class="sub">The ten that matter</h2>
+
+    <ol class="keynote">
+      <li><strong>Prescribe in units, written in full.</strong> Never <em>u</em>, never <em>U</em>, never a
+        trailing zero. The NSW Clinical Excellence Commission names this as a documented source of
+        tenfold error, and if a dose is ambiguous the instruction is to contact the prescriber and have
+        the order amended before administering &mdash; not to interpret it.</li>
+      <li><strong>Clear is not short-acting.</strong> It used to be a safe shorthand. Glargine and degludec
+        are clear solutions and last more than a day. The only thing clarity now tells you is that the
+        preparation is a solution rather than a suspension.</li>
+      <li><strong>Only a solution can go intravenously.</strong> Every suspension &mdash; Protaphane, the
+        premixes, NovoMix, Humalog Mix, Ryzodeg &mdash; and every long-acting analogue, including
+        Optisulin, Toujeo, Tresiba and the weekly Awiqli, is prohibited by its own Product Information
+        from intravenous use. In practice the infusion is neutral human insulin.</li>
+      <li><strong>Insulin sticks to the giving set.</strong> The Actrapid Product Information says plainly
+        that on mixing with infusion fluid &ldquo;an unpredictable amount of insulin will be adsorbed to
+        the infusion material&rdquo;. This is why protocols tell you to prime and waste, and the volumes
+        they specify differ.</li>
+      <li><strong>Basal insulin is never omitted in type 1 diabetes.</strong> Not for fasting, not for a
+        procedure, not because the glucose is normal. A person with no endogenous insulin becomes
+        ketoacidotic without it whatever the glucose is doing, and this is among the most common serious
+        inpatient insulin errors.</li>
+      <li><strong>In ketoacidosis the endpoint is the ketones, not the glucose.</strong> Queensland&rsquo;s
+        protocol is the cleanest statement of it: stop when ketones are below 0.6&nbsp;mmol/L and the anion
+        gap has closed, explicitly disregarding a residual hyperchloraemic acidosis.</li>
+      <li><strong>Give the long-acting insulin at least two hours before the infusion stops.</strong>
+        Subcutaneous basal insulin takes that long to establish. Stopping an infusion and writing up
+        subcutaneous insulin at the same moment is how people go back into ketoacidosis on the ward.</li>
+      <li><strong>The cartridge belongs to its own pen.</strong> As the disposable pens disappear, cartridges
+        are replacing them &mdash; and Novo cartridges fit only NovoPen devices, Humulin cartridges only
+        HumaPen. NSW Health has issued a safety notice specifically about this.</li>
+      <li><strong>Never draw insulin out of a pen with a syringe.</strong> The pen's internal markings do not
+        correspond to a syringe scale. For the U-200 products the error is a doubling.</li>
+      <li><strong>Tight glycaemic control is settled, and the answer is no.</strong> NICE-SUGAR found it
+        killed people; TGC-Fast found that even with the hypoglycaemia nearly engineered out, it bought
+        nothing.</li>
+    </ol>
+
+    <h2 class="sub">What is actually available in Australia</h2>
+
+    <p>Onset, peak and duration below are from Australian Product Information rather than an overseas
+      textbook, and two honest caveats come with them. The Australian PIs give no numerical onset or
+      duration at all for glulisine, for Fiasp, or for the Humalog mixes &mdash; the ultra-rapid data are
+      expressed only as differences from NovoRapid. And where two sponsors describe the same class they
+      disagree, which is why some rows carry two sets of figures. Any single-range table is a smoothing.</p>
+
+    <div class="tscroll"><table class="dosetable">
+      <tr><th>Class and Australian brands</th><th>Onset</th><th>Peak</th><th>Duration</th></tr>
+      <tr><td><span class="cls">Rapid analogue</span><br>aspart (NovoRapid), lispro (Humalog, and Humalog U200), glulisine (Apidra)</td>
+          <td>10&ndash;20 min<br><small>lispro within 15 min</small></td>
+          <td>1&ndash;3 h</td>
+          <td>3&ndash;5 h</td></tr>
+      <tr><td><span class="cls">Ultra-rapid</span><br>faster aspart (Fiasp) &mdash; Penfill cartridge only</td>
+          <td colspan="3">No absolute figures in the Australian PI. Relative to NovoRapid: in the circulation about 4 min after injection, glucose-lowering onset about 5 min sooner, peak effect about 11 min earlier, and a shorter tail.</td></tr>
+      <tr><td><span class="cls">Neutral (human)</span><br>Actrapid, Humulin R</td>
+          <td>~30 min</td>
+          <td>2.5&ndash;5 h<br><small>Humulin R 2&ndash;4 h</small></td>
+          <td>~8 h<br><small>Humulin R 6&ndash;8 h</small></td></tr>
+      <tr><td><span class="cls">Isophane / NPH</span><br>Protaphane, Humulin NPH</td>
+          <td>~1.5 h<br><small>Humulin ~1 h</small></td>
+          <td>4&ndash;12 h<br><small>Humulin 4&ndash;10 h</small></td>
+          <td>up to 24 h<br><small>Humulin 16&ndash;18 h</small></td></tr>
+      <tr><td><span class="cls">Glargine U-100</span><br>Optisulin, Semglee (biosimilar)</td>
+          <td>slower than isophane</td>
+          <td>no peak</td>
+          <td>to 24 h</td></tr>
+      <tr><td><span class="cls">Glargine U-300</span><br>Toujeo SoloStar</td>
+          <td>slower again</td>
+          <td>flat</td>
+          <td>beyond 24 h, up to 36 h; steady state 3&ndash;4 days</td></tr>
+      <tr><td><span class="cls">Degludec</span><br>Tresiba (U-100 and U-200)</td>
+          <td>&mdash;</td>
+          <td>flat</td>
+          <td>over 42 h; half-life ~25 h and dose-independent; steady state 2&ndash;3 days</td></tr>
+      <tr><td><span class="cls">Premixed analogue</span><br>NovoMix 30, Humalog Mix25 and Mix50</td>
+          <td>10&ndash;20 min</td>
+          <td>1&ndash;4 h</td>
+          <td>up to 24 h</td></tr>
+      <tr><td><span class="cls">Co-formulation</span><br>Ryzodeg 70/30 &mdash; Penfill only</td>
+          <td>rapid; aspart component ~14 min</td>
+          <td>aspart ~72 min, degludec flat</td>
+          <td>over 24 h</td></tr>
+      <tr><td><span class="cls">Weekly</span><br>Awiqli (icodec), U-700</td>
+          <td>&mdash;</td>
+          <td>flat</td>
+          <td>half-life about one week; steady state 2&ndash;4 weeks</td></tr>
+    </table></div>
+
+    <p>One practical warning that belongs with that table. <strong>The concentrations are not
+      interchangeable unit for unit.</strong> The Toujeo Product Information says so in terms: glargine
+      100&nbsp;units/mL and glargine 300&nbsp;units/mL &ldquo;are not bioequivalent and are not directly
+      interchangeable&rdquo;. Moving an adult from U-100 to U-300 needs roughly 10 to 18 per cent more
+      units, and about 8 per cent more in a child. Treating a concentration change as arithmetic is one of
+      the ways people get hurt.</p>
+
+    <div class="box red">
+      <span class="lab">What disappears on 31 December 2026</span>
+      <p>Australia is part-way through a staged withdrawal of its human and older insulins. On
+        <strong>31 December 2026</strong> three more presentations go: the <strong>Actrapid Penfill
+        cartridge</strong>, the <strong>Protaphane Penfill cartridge</strong>, and <strong>Levemir in both
+        the FlexPen and the Penfill</strong> &mdash; which means no insulin detemir in Australia at all
+        from 2027, with no like-for-like substitute. Actrapid and Protaphane continue as 10&nbsp;mL vials
+        only.</p>
+      <p>Already gone, if your protocol still names them: Mixtard (2024), Fiasp vials and FlexTouch,
+        Ryzodeg FlexTouch, Protaphane InnoLet, <strong>Humulin R vials (February 2026)</strong>, Humulin
+        30/70 vials, Humalog vials, and Humulin NPH vials (August 2026). And
+        <strong>Lantus has not been available in Australia since July 2020</strong> &mdash; it was replaced
+        by Optisulin and Semglee. Written material across the country still says Lantus out of habit.</p>
+    </div>
+
+    <div class="box amb">
+      <span class="lab">A consequence worth noticing</span>
+      <p>Humulin R vials went in February 2026, and the Humulin Product Information prohibits intravenous
+        use of the cartridge. Essentially every Australian intravenous insulin protocol specifies
+        &ldquo;Actrapid or Humulin R&rdquo; and is made up from a vial.</p>
+      <p>Which leaves the <strong>Actrapid 10&nbsp;mL vial as the only human neutral insulin vial in the
+        country</strong> &mdash; and from January, Actrapid&rsquo;s only presentation. Every intravenous
+        insulin infusion in Australia now depends on a single product line. That is an inference from the
+        supply position rather than a published warning, but it is worth your unit knowing, and it is worth
+        checking what your own protocol still says.</p>
+    </div>
+
+    <h2 class="sub">The infusion</h2>
+
+    <ul class="pts">
+      <li><b>Concentration</b><span>One unit per millilitre is the Australian standard &mdash; 50 units in
+        50&nbsp;mL or 100 units in 100&nbsp;mL of sodium chloride 0.9%. The NSW Clinical Excellence
+        Commission also permits 2&nbsp;units/mL (100 units in 50&nbsp;mL) in critical care.</span></li>
+      <li><b>Priming, and the number nobody agrees on</b><span>NSW says prime with 10&nbsp;mL. The Western
+        Australian paediatric monographs say 20&nbsp;mL, and the neonatal guideline goes further: prime,
+        wait twenty minutes, then discard the line contents and the priming syringe. The underlying
+        evidence is Goldberg and colleagues in 2006, who measured it: with no priming the delivered
+        concentration was 15.8% low, at 10&nbsp;mL still 6.6% low, and at 20&nbsp;mL 3.4% low and no
+        longer significantly different from maximum. The Australian 10&nbsp;mL instruction leaves a
+        measurable shortfall.</span></li>
+      <li><b>Compatibility</b><span>Compatible with glucose 5% and 10%, sodium chloride 0.9%, Hartmann's
+        and Ringer's. Y-site compatible with potassium chloride, esmolol, milrinone and sodium
+        nitroprusside. <strong>Incompatible with noradrenaline</strong>, and with dopamine, ketamine,
+        labetalol, rocuronium, piperacillin-tazobactam, aminophylline and protamine. The noradrenaline
+        incompatibility is the one that catches people, because the two run together so often.</span></li>
+      <li><b>Separate pumps</b><span>Insulin and glucose infusions belong on separate pumps. If they share
+        one, a pump failure removes the glucose and the insulin together, or worse, only one of
+        them.</span></li>
+    </ul>
+
+    <h2 class="sub">Ketoacidosis, in adults</h2>
+
+    <p>There is no current national Australian adult protocol. What exists is state-based, follows the
+      United Kingdom Joint British Diabetes Societies, and varies between jurisdictions in ways worth
+      knowing if you work across borders or read somebody else&rsquo;s guideline.</p>
+
+    <div class="tscroll"><table class="dosetable">
+      <tr><th></th><th>Queensland</th><th>WA Country Health</th><th>NSW (ACI)</th></tr>
+      <tr><td class="cls">Infusion rate</td>
+          <td>0.1 units/kg/h, starting maximum 10 units/h</td>
+          <td>0.1 units/kg/h by actual body weight</td>
+          <td><strong>Emergency department 0.05 units/kg/h, maximum 5 units/h.</strong> ICU 0.1 units/kg/h</td></tr>
+      <tr><td class="cls">Bolus</td><td>Explicitly not recommended</td><td>None specified</td><td>None specified</td></tr>
+      <tr><td class="cls">Withhold insulin until</td>
+          <td>Potassium above 3.5 mmol/L</td>
+          <td>No insulin-linked threshold stated</td>
+          <td>Potassium above 3.5 mmol/L</td></tr>
+      <tr><td class="cls">Add glucose</td>
+          <td>10% glucose 100 mL/h once below 14 mmol/L</td>
+          <td>10% glucose 125 mL/h below 14 mmol/L</td>
+          <td>5% glucose 125 mL/h below 15 mmol/L; below 20 if SGLT2-inhibitor related</td></tr>
+      <tr><td class="cls">Stop when</td>
+          <td>Ketones below 0.6 mmol/L, anion gap normal, eating and drinking, basal insulin given</td>
+          <td>Ketones below 0.6 mmol/L, with bicarbonate 18 or pH 7.35</td>
+          <td>pH above 7.30, ketones below 1.5, bicarbonate above 15</td></tr>
+      <tr><td class="cls">Subcutaneous overlap</td>
+          <td>Basal at least 2 h before stopping</td>
+          <td>Stop 30&ndash;60 min after the first meal-time dose</td>
+          <td>Basal 0.2 units/kg; overlap not specified</td></tr>
+    </table></div>
+
+    <p>Three things generalise. <strong>No bolus.</strong> <strong>Potassium before insulin</strong>, because
+      insulin drives it intracellularly and the total body deficit is already large. And <strong>glucose is
+      added to permit the insulin to continue</strong>, rather than the insulin being reduced to permit the
+      glucose to rise &mdash; because it is the insulin that is switching off ketogenesis, which is the
+      thing you are actually treating.</p>
+
+    <div class="box amb">
+      <span class="lab">Euglycaemic ketoacidosis</span>
+      <p>An SGLT2 inhibitor can produce ketoacidosis at a glucose that looks reassuring. The joint
+        Australian and New Zealand alert defines presumed ketoacidosis as ketones above 1.0&nbsp;mmol/L
+        with a base excess below &minus;5, and presumed euglycaemic ketoacidosis if the glucose is also
+        below 14. Glucose is added to the fluids below 15&nbsp;mmol/L, or straight away. Check ketones in
+        any unwell patient on one of these drugs, whatever the glucose says.</p>
+    </div>
+
+    <h2 class="sub">Hyperkalaemia</h2>
+
+    <ul class="pts">
+      <li><b>When</b><span>Consider insulin and glucose at a potassium of 6&nbsp;mmol/L or above.</span></li>
+      <li><b>What</b><span>Ten units of short-acting insulin intravenously with 25&nbsp;g of glucose
+        &mdash; 50&nbsp;mL of 50%. Omit the glucose if the pre-treatment reading is above
+        14&nbsp;mmol/L.</span></li>
+      <li><b>And if they start low</b><span>If the pre-treatment glucose is below 7&nbsp;mmol/L, follow the
+        bolus with a further 25&nbsp;g as an infusion &mdash; 250&nbsp;mL of 10% over five hours. A
+        pre-treatment glucose below 7 is the single strongest predictor of hypoglycaemia
+        afterwards.</span></li>
+      <li><b>How much it buys</b><span>A fall of 0.65 to 1.4&nbsp;mmol/L, and it is a shift rather than a
+        removal. Rebound is common, so potassium at one to two hours, again at two to four, and at
+        twenty-four.</span></li>
+      <li><b>The hypoglycaemia</b><span>Up to 30% of patients, typically about two hours later, and rarely
+        before thirty minutes or after five. Monitor glucose half-hourly for two hours and then hourly for
+        at least six &mdash; and the clock restarts if a further dose is given.</span></li>
+      <li><b>The documented trap</b><span>Monitoring is most often inadequate in the patients without
+        diabetes, who are the ones at highest risk. Australian guidance also suggests considering a
+        reduced dose of five units in severe kidney dysfunction, while noting the evidence for that is
+        not settled.</span></li>
+    </ul>
+
+    <h2 class="sub">How tightly to control it</h2>
+
+    <p><strong>NICE-SUGAR</strong> settled the question and is largely an Australian and New Zealand trial
+      &mdash; 6,104 patients across 42 centres, of whom seven in eight were in this part of the world.
+      Intensive control to 4.5&ndash;6.0&nbsp;mmol/L against a conventional target of 10 or less produced
+      90-day mortality of <strong>27.5% against 24.9%</strong>, odds ratio 1.14, p&nbsp;=&nbsp;0.02 &mdash;
+      against the tight arm. Severe hypoglycaemia ran at <strong>6.8% against 0.5%</strong>.</p>
+
+    <p><strong>TGC-Fast</strong> in 2023 asked whether the harm had been the hypoglycaemia rather than the
+      target. It randomised 9,230 patients, used a computerised algorithm to titrate, and got severe
+      hypoglycaemia down to 1.0% in the tight arm. There was still no benefit: no difference in time to
+      discharge readiness and 90-day mortality of 10.5% against 10.1%. Two caveats keep it honest &mdash;
+      its liberal arm withheld insulin until the glucose exceeded 11.9&nbsp;mmol/L, which is looser than
+      any guideline, so it does not tell you that 10 is no better than 12; and a 1% hypoglycaemia rate
+      reflects an algorithm rather than a bedside protocol.</p>
+
+    <p>So the working Australian position remains the conventional arm of NICE-SUGAR, a glucose of
+      10&nbsp;mmol/L or less with a floor set to keep clear of hypoglycaemia. International guidance has
+      drifted slightly looser rather than tighter. Worth noting that the Australian Diabetes Society's
+      inpatient guidance is from 2012 and explicitly excludes intensive care, so there is no current
+      Australian ICU target to cite &mdash; which is itself a small scandal.</p>
+
+    <h2 class="sub">The errors that recur</h2>
+
+    <ol class="steps">
+      <li><strong>The pen and the syringe.</strong> Withdrawing insulin from a pen device with a needle and
+        syringe is prohibited, and with a U-200 product it delivers double.</li>
+      <li><strong>The wrong cartridge in the pen.</strong> Now the live risk, as cartridges replace
+        disposable pens. Novo cartridges fit NovoPen devices, Humulin cartridges fit HumaPen. Check the
+        name is visible through the window before each dose.</li>
+      <li><strong>Two vials that look alike.</strong> Actrapid and Protaphane are both reverting to
+        10&nbsp;mL vials from the same sponsor, one clear and short-acting, one cloudy and intermediate.
+        They already share a consumer information document.</li>
+      <li><strong>Basal omitted in type 1 diabetes.</strong> Covered above, and worth two mentions.</li>
+      <li><strong>The pump disconnected first.</strong> Start the intravenous or subcutaneous insulin
+        <em>before</em> the pump comes off, never after. Document the brand, the insulin, the set and the
+        site on admission, and never override the pump's own dose-error software.</li>
+      <li><strong>The protocol nobody updated.</strong> Any local document still naming Humulin R vials,
+        Lantus, Mixtard or Fiasp FlexTouch is describing products that no longer exist.</li>
+    </ol>
+
+    <div class="exam">
+      <span class="lab">For the First Part</span>
+      <p><strong>Structure.</strong> A 51-amino-acid polypeptide: an A chain of 21 and a B chain of 30,
+        joined by two interchain disulfide bonds with a third intrachain bond within the A chain.
+        Synthesised as preproinsulin, cleaved to proinsulin, then to insulin and C-peptide in equimolar
+        amounts by the prohormone convertases. Be ready for the follow-up: equimolar <em>secretion</em>
+        does not mean equal plasma concentrations, because insulin undergoes substantial first-pass hepatic
+        extraction and C-peptide does not &mdash; which is precisely why C-peptide is the marker of
+        endogenous secretion.</p>
+      <p><strong>Dynamics.</strong> A receptor tyrosine kinase, an &alpha;<sub>2</sub>&beta;<sub>2</sub>
+        heterotetramer. Autophosphorylation, then insulin receptor substrate proteins, then
+        phosphoinositide 3-kinase, then Akt, then translocation of GLUT4 to the membrane in muscle and fat.
+        Mention the MAPK arm in one clause so the answer is not purely PI3K. Effects: glucose uptake,
+        glycogenesis, lipogenesis and protein synthesis; inhibition of gluconeogenesis, glycogenolysis,
+        lipolysis and ketogenesis; and an intracellular potassium shift through the sodium-potassium ATPase,
+        which is the basis of its use in hyperkalaemia.</p>
+      <p><strong>Kinetics.</strong> Intravenous half-life four to six minutes &mdash; and the examiner's
+        point is that the clinical effect long outlasts it, which is why an infusion is titrated and why
+        stopping one does not restore euglycaemia immediately. Volume of distribution around
+        0.1&ndash;0.4&nbsp;L/kg, approximating extracellular fluid. Clearance: liver 50&ndash;60%, kidney
+        about 30%, by receptor-mediated endocytosis and then insulin-degrading enzyme; around 1% appears
+        unchanged in urine. The first-pass figure of roughly half applies to <em>endogenous</em> insulin
+        arriving by the portal vein &mdash; exogenous insulin, subcutaneous or intravenous, bypasses the
+        portal circulation entirely, which is a favourite distinction.</p>
+      <p><strong>And the renal question.</strong> Requirements fall in renal failure for three reasons:
+        reduced renal clearance of insulin, loss of renal gluconeogenesis, and reduced intake. The mark is
+        in the counterweight &mdash; uraemia also causes insulin resistance, so the net effect is that
+        requirements become unpredictable and hypoglycaemia more likely, rather than simply
+        lower.</p>
+      <p>One caution for candidates. The Australian Product Information for these products states that
+        pharmacokinetic data were not assessed at registration, so it gives no half-life and no volume of
+        distribution. The figures above come from the pharmacology literature, not from a regulatory
+        document, and if you are asked where they come from, that is the honest answer.</p>
+    </div>
+
+    <div class="challenge">
+      <h2>Challenge for you</h2>
+      <p class="ask">Go and look at your unit's insulin infusion protocol. Which insulin does it name?</p>
+      <p>If it says Humulin R, it is naming a vial that stopped being available in February. If it says
+        Actrapid, check whether it specifies the vial, because the cartridge goes at the end of December.
+        Tell me what yours says, and whether anybody has looked at it this year.</p>
+      <p>And a second one, for anyone who teaches: what is the insulin error you have actually seen? Not the
+        famous ones &mdash; the specific thing that happened on your unit, and what was changed
+        afterwards.</p>
+      <p><a class="btn" href="mailto:icuandyou@icloud.com?subject=Drugstore%20No.%203%20-%20insulin&body=What%20my%20unit%27s%20insulin%20infusion%20protocol%20names%2C%20and%20when%20it%20was%20last%20reviewed%3A%0D%0A%0D%0A%0D%0AAn%20insulin%20error%20I%20have%20seen%2C%20and%20what%20changed%20afterwards%3A%0D%0A%0D%0A%0D%0A---%0D%0A%0D%0AName%3A%0D%0A%0D%0A---%0D%0A%0D%0AThinking%20about%20this%20ICU%20AND%20YOU%20post%20overall%20%E2%80%94%20was%20it%20useful%20to%20you%2C%20or%20would%20it%20be%20useful%20to%20others%3F%0D%0A">Send me a reply</a></p>
+      <p class="fallback" style="margin-bottom:9px">How you are credited is entirely your call &mdash; by name, by initials, or not at all &mdash; whether you write the piece or I do, and whether I quote you or simply say who sent something in; nothing of yours goes up with your name on it unless you have said yes.</p>
+      <p class="fallback">The button opens a reply straight to me. If your device blocks it, write to
+        <a href="mailto:icuandyou@icloud.com">icuandyou@icloud.com</a> instead.</p>
+    </div>
+  </div>
+
+  <footer>
+    <span class="firstpub">First published October 2026</span>
+    <p class="subline">Two emails a week &mdash; the Friday newsletter for all subscribers, and, for clinical subscribers,
+      the mind map and puzzles the moment they go up on Tuesday. Occasional announcements of new
+      features as they arrive. What went up and why it mattered, the best of your replies, and
+      original feature stories, news and views. <a href="https://joinlist.com/f/5adad2d6">Come and join us</a>.</p>
+    <a class="home" href="./">&larr; &nbsp;All of ICU AND YOU</a><br>
+    ICU AND YOU &nbsp;&#183;&nbsp; Drugstore No. 3 &nbsp;&#183;&nbsp; companion to Mind Map #36, The young adult<br>
+    <span class="srcs">Onset, peak and duration are the Australian Product Information for each product
+    (NovoRapid, Humalog, Apidra, Fiasp, Actrapid, Protaphane, Optisulin, Toujeo, Tresiba, Ryzodeg, Awiqli),
+    accessed October 2026. Discontinuation dates are the
+    <a href="https://www.tga.gov.au/safety/shortages-and-supply-disruptions/medicine-shortages/major-or-ongoing-medicine-shortages/about-changes-supply-insulin-products">TGA&rsquo;s
+    page on the changes to insulin supply</a>, with
+    <a href="https://www.health.nsw.gov.au/sabs/Documents/2025-sn-023.pdf">NSW Health Safety Notice
+    SN:023/25</a> and the
+    <a href="https://www.safetyandquality.gov.au/sites/default/files/2026-07/Discontinuation-of-insulin-products-Strategies-and-safety-considerations.pdf">Commission
+    on Safety and Quality&rsquo;s discontinuation guidance</a>. Infusion concentration and priming are the
+    <a href="https://cec.health.nsw.gov.au/therapeutics-safety/continuous-infusions/adult/insulin-standard-dose">NSW
+    Clinical Excellence Commission</a>; the priming volumes are Goldberg and colleagues,
+    <em>Diabetes Technology &amp; Therapeutics</em> 2006;8(5):598. Ketoacidosis is
+    <a href="https://www.health.qld.gov.au/__data/assets/pdf_file/0019/621640/diabetic-ketoacidosis.pdf">Queensland
+    Health SW566</a>, WA Country Health&rsquo;s adult guideline and
+    <a href="https://aci.health.nsw.gov.au/__data/assets/pdf_file/0004/699097/ACI-Management-diabetic-ketoacidosis-hyperosmolar-hyperglycaemic-state-adults-ED-flow-chart.pdf">the
+    NSW ACI flow chart</a>; the SGLT2-inhibitor definitions are the ADS, ADEA, ANZCA and NZSSD joint alert.
+    Hyperkalaemia is Ford, Zipf and Williams,
+    <a href="https://australianprescriber.tg.org.au/articles/management-of-acute-hyperkalaemia-evidence-practice-and-pitfalls.html"><em>Australian
+    Prescriber</em> 2026;49:194</a>. Glycaemic control is NICE-SUGAR, <em>New England Journal of Medicine</em>
+    2009;360:1283, and Gunst and colleagues (TGC-Fast), <em>New England Journal of Medicine</em>
+    2023;388:1286. Safety material is the
+    <a href="https://cec.health.nsw.gov.au/therapeutics-safety/high-risk/insulin">Clinical Excellence
+    Commission&rsquo;s high-risk medicines standard for insulin</a>. Where state protocols differ I have
+    shown the difference rather than picking one.</span><br>
+    Educational use within the ICU education programme. Not a clinical protocol &mdash; local policy, current
+    guidance and the retrieval service always take precedence. Verify every dose against your own formulary
+    before use, and check product availability, which is changing.<br>
+    <span class="mine">Views my own, not those of NSW Health or any other organisation. No identifiable
+    patients &mdash; scenarios are constructed or combined for teaching. <a href="about.html">More</a>.</span>
+  </footer>
+
+</div>
+<script src="glossary.js"></script>
+<script data-goatcounter="https://icuandyou.goatcounter.com/count"
+        async src="//gc.zgo.at/count.js"></script>
+</body>
+</html>
