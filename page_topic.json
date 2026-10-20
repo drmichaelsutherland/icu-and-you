@@ -165,6 +165,11 @@
    "falu",
    "cultural"
   ],
+  "africa": [
+   "Out of Africa",
+   "bronze striped",
+   "cultural"
+  ],
   "dental": [
    "The Dental Files",
    "peppermint striped",
@@ -1368,9 +1373,28 @@
    "badge": "Bare Bones",
    "link_label": "Open",
    "blurb": "Ten points, five minutes, nothing decorative. The reserve that hides deterioration and then goes all at once, the pregnancy question asked twice, the arterial gas that starts somewhere else, the four-minute rule that is not Australian guidance, and the 40% of young sudden cardiac deaths that stay unexplained."
+  },
+  {
+   "file": "africa-01-too-far-to-walk.html",
+   "series": "africa",
+   "colour": "bronze striped",
+   "number": "1",
+   "title": "Too far to walk",
+   "topic": "The young adult",
+   "slug": "young-adult",
+   "week": true,
+   "pos": 10,
+   "badge": "Out of Africa",
+   "link_label": "Open",
+   "blurb": "A new column, and the site\u2019s first on Africa. Nigeria accounts for 28.7% of the world\u2019s maternal deaths. The phrase everybody quotes to explain it \u2014 too far to walk \u2014 does not survive being measured: in Lagos, most women who died had travelled under ten kilometres and arrived within half an hour. What fails instead is oxytocin that has stopped working, blood that has to be found by the family, and theatres that cannot open."
   }
  ],
  "latest": [
+  {
+   "file": "africa-01-too-far-to-walk.html",
+   "colour": "bronze striped",
+   "label": "Out of Africa 1 \u00b7 Too far to walk"
+  },
   {
    "file": "bare-bones-03-young-adult.html",
    "colour": "bone",
@@ -1390,11 +1414,6 @@
    "file": "superquiz-65-young-adult.html",
    "colour": "wine",
    "label": "Superquiz 65 \u00b7 The young adult"
-  },
-  {
-   "file": "mnemonic-58-lipids.html",
-   "colour": "olive",
-   "label": "Mnemonic 58 \u00b7 Infarct in the young"
   }
  ],
  "topten": [

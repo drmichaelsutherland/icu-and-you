@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="en-AU">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ICU AND YOU · Out of Africa No. 1 — Too far to walk</title>
+<meta name="description" content="Out of Africa No. 1: Nigeria accounts for more than a quarter of the world's maternal deaths. The phrase everyone quotes to explain it is a title, not a diagnosis — and the researchers who showed that are Nigerian.">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="alternate icon" href="/favicon.ico" sizes="any">
+<link rel="apple-touch-icon" href="/icon-180.png">
+<meta name="theme-color" content="#1B2A33">
+<meta property="og:site_name" content="ICU AND YOU">
+<meta property="og:type" content="website">
+<meta property="og:title" content="ICU AND YOU · Out of Africa No. 1 — Too far to walk">
+<meta property="og:description" content="More than a quarter of the world's maternal deaths happen in one country. The usual explanation does not survive contact with the data.">
+<meta property="og:image" content="https://icuandyou.com/share-card.png">
+<meta name="twitter:card" content="summary_large_image">
+<style>
+  :root{
+    --paper:#FDFBF5; --ink:#241F14; --muted:#6A6052; --rule:#E6DFCD;
+    --bronze:#7E6C26; --bronzetint:#F5F2E6;
+    --deep:#5A4D18; --deeptint:#EFEBD9;
+    --clay:#A3561F; --claytint:#F8EEE4;
+  }
+  *{box-sizing:border-box}
+  body{margin:0;background:#EFE9D9;color:var(--ink);
+    font:400 17px/1.66 'Iowan Old Style','Palatino Linotype',Palatino,Georgia,serif;
+    -webkit-text-size-adjust:100%;}
+  .sheet{max-width:760px;margin:0 auto;background:var(--paper);
+    box-shadow:0 1px 40px rgba(36,31,20,.10);}
+
+  /* The series strip is bronze rather than any one country's flag — the
+     column is meant to travel. */
+  .flag{display:flex;height:5px}
+  .flag i{display:block}
+  .flag i:nth-child(1){flex:2;background:var(--deep)}
+  .flag i:nth-child(2){flex:3;background:var(--bronze)}
+  .flag i:nth-child(3){flex:2;background:var(--clay)}
+
+  header.top{padding:42px 42px 28px;border-bottom:1px solid var(--rule)}
+  .eyebrow a.serlink,.eyebrow a.mast{color:inherit;text-decoration:none;
+    border-bottom:1px solid transparent}
+  .eyebrow a.serlink:hover,.eyebrow a.mast:hover{border-bottom-color:currentColor}
+  .toptopic,.topseries{display:inline-block;margin:0 0 16px 9px;padding:7px 16px;border-radius:20px;
+    border:1px solid currentColor;opacity:.62;text-decoration:none;color:inherit;
+    font:600 11.5px 'Helvetica Neue',Arial,sans-serif;letter-spacing:.09em;
+    text-transform:uppercase;transition:opacity .12s ease}
+  .tophome{display:inline-block;margin:0 0 16px;padding:7px 16px;border-radius:20px;
+    border:1px solid currentColor;opacity:.62;text-decoration:none;color:inherit;
+    font:600 11.5px 'Helvetica Neue',Arial,sans-serif;letter-spacing:.09em;
+    text-transform:uppercase;transition:opacity .12s ease}
+  .toptopic:hover,.topseries:hover,.tophome:hover{opacity:1}
+  .eyebrow{font:500 11.5px/1 'Helvetica Neue',Arial,sans-serif;letter-spacing:.24em;
+    text-transform:uppercase;color:var(--muted);margin:0 0 14px}
+  h1{font-size:34px;line-height:1.16;margin:0 0 8px;font-weight:400;letter-spacing:-.012em;
+    font-style:italic}
+  .kicker{color:var(--muted);margin:0;font-size:16.5px}
+
+  .pad{padding:34px 42px}
+  p{margin:0 0 17px}
+  .lede{font-size:20px;line-height:1.5;margin:0 0 22px}
+
+  h2.sub{font:600 12px 'Helvetica Neue',Arial,sans-serif;letter-spacing:.2em;
+    text-transform:uppercase;color:var(--muted);margin:32px 0 14px;
+    padding-bottom:8px;border-bottom:1px solid var(--rule)}
+
+  .welcome{margin:0 0 24px;padding:20px 24px;background:var(--bronzetint);
+    border-left:4px solid var(--bronze);border-radius:0 8px 8px 0}
+  .welcome .lab{display:block;font:600 11px 'Helvetica Neue',Arial,sans-serif;
+    letter-spacing:.18em;text-transform:uppercase;color:var(--deep);margin:0 0 9px}
+  .welcome p{margin:0 0 10px;font-size:16px}
+  .welcome p:last-child{margin:0}
+
+  .figs{display:flex;gap:14px;flex-wrap:wrap;margin:0 0 22px}
+  .fig{flex:1 1 150px;background:var(--deeptint);border:1px solid #DDD5BC;
+    border-radius:9px;padding:16px 18px}
+  .fig .big{font-size:27px;line-height:1.1;color:var(--deep);margin:0 0 5px}
+  .fig .lab{font:400 13.5px 'Helvetica Neue',Arial,sans-serif;color:var(--muted);line-height:1.4}
+
+  .faux{margin:0 0 18px;padding:20px 24px;background:var(--claytint);
+    border-left:4px solid var(--clay);border-radius:0 8px 8px 0}
+  .faux .lab{display:block;font:600 11px 'Helvetica Neue',Arial,sans-serif;
+    letter-spacing:.18em;text-transform:uppercase;color:var(--clay);margin:0 0 9px}
+  .faux p:last-child{margin:0}
+
+  .gloss{margin:0 0 18px;padding:20px 24px;background:var(--bronzetint);
+    border-left:4px solid var(--bronze);border-radius:0 8px 8px 0;font-size:16px}
+  .gloss p:last-child{margin:0}
+
+  blockquote.said{margin:0 0 18px;padding:4px 0 4px 22px;border-left:3px solid var(--bronze)}
+  blockquote.said p{font-size:18.5px;line-height:1.5;font-style:italic;margin:0 0 8px}
+  blockquote.said .who{display:block;font:400 14px 'Helvetica Neue',Arial,sans-serif;
+    font-style:normal;color:var(--muted);line-height:1.5}
+
+  .reply{margin:0;padding:28px 32px;background:var(--deeptint);border-left:5px solid var(--deep)}
+  .reply h2{font:600 12px 'Helvetica Neue',Arial,sans-serif;letter-spacing:.2em;
+    text-transform:uppercase;color:var(--deep);margin:0 0 13px}
+  .ask{font-size:19px;line-height:1.5;font-style:italic;margin:0 0 15px}
+  .btn{display:inline-block;margin:6px 0 12px;padding:15px 30px;background:var(--bronze);
+    color:#FDFBF5;text-decoration:none;border-radius:30px;font-style:normal;
+    font:600 15px 'Helvetica Neue',Arial,sans-serif;letter-spacing:.03em}
+  .btn:hover{background:var(--deep)}
+  .btn:focus-visible{outline:3px solid var(--clay);outline-offset:3px}
+  .fallback{font:400 13.5px 'Helvetica Neue',Arial,sans-serif;color:var(--muted);margin:0}
+  .fallback a{color:var(--deep)}
+
+  .subline{margin:0 0 14px;padding:0 0 13px;border-bottom:1px solid rgba(0,0,0,.09);
+    font:400 14.5px/1.55 'Iowan Old Style','Palatino Linotype',Palatino,Georgia,serif;
+    max-width:56ch;margin-left:auto;margin-right:auto}
+  .subline a{font-weight:500;border-bottom:1px solid currentColor;
+    text-decoration:none;color:inherit}
+  .firstpub{display:block;margin:0 0 10px;padding-bottom:9px;
+    border-bottom:1px solid currentColor;border-color:rgba(0,0,0,.09);
+    font:400 12px 'Helvetica Neue',Arial,sans-serif;letter-spacing:.06em;opacity:.72}
+
+  footer{padding:24px 42px 42px;border-top:1px solid var(--rule);
+    font:400 13px 'Helvetica Neue',Arial,sans-serif;color:var(--muted);text-align:center;line-height:1.7}
+  .home{display:inline-block;margin:0 0 14px;padding:8px 18px;border-radius:20px;
+    border:1px solid var(--rule);background:#F3EFE2;color:var(--deep);text-decoration:none;
+    font:600 12.5px 'Helvetica Neue',Arial,sans-serif;letter-spacing:.05em}
+  .home:hover{background:var(--deep);border-color:var(--deep);color:#FDFBF5}
+  .mine{display:inline-block;margin:9px 0 0;opacity:.78;font-size:.94em}
+  .srcs{font-size:12.5px;line-height:1.6}
+  .srcs a{color:inherit}
+
+  @media (max-width:620px){
+    header.top,.pad,footer{padding-left:20px;padding-right:20px}
+    .reply{padding:22px 20px}
+    h1{font-size:26px} body{font-size:16.5px} .lede{font-size:18px} .ask{font-size:17.5px}
+  }
+  @media print{ body{background:#fff} .sheet{box-shadow:none;max-width:none} }
+</style>
+</head>
+<body>
+<div class="sheet">
+
+  <div class="flag"><i></i><i></i><i></i></div>
+
+  <header class="top">
+    <a class="tophome" href="./">&larr;&nbsp; Home</a>
+    <a class="topseries" href="./?s=africa">More from Out of Africa</a>
+    <a class="toptopic" href="./?t=young-adult" title="Everything on The young adult">All on this topic</a>
+    <p class="eyebrow"><a class="mast" href="./">ICU and You</a> &nbsp;·&nbsp;
+      <a class="serlink" href="./?s=africa">Out of Africa</a> &nbsp;·&nbsp; Number 1</p>
+    <h1>Too far to walk</h1>
+    <p class="kicker">More than a quarter of the world&rsquo;s maternal deaths happen in one country &mdash; and the phrase everybody uses to explain it turns out not to survive being measured</p>
+  </header>
+
+  <div class="pad">
+    <div class="welcome">
+      <span class="lab">A new column</span>
+      <p>This site has columns for Sri Lanka, China, India, Russia, Spain, Italy, France, England, Sweden
+        and Australia, and until today not one for a continent that holds nearly a fifth of the people alive. That
+        was an oversight rather than a decision, and this is the start of correcting it.</p>
+      <p><strong>Out of Africa</strong> takes its name from where all of us came from, which is the only
+        honest sense in which any of this is anybody&rsquo;s. The column will travel &mdash; fifty-four
+        countries, and no intention of treating them as one place.</p>
+      <p>It begins with Nigeria, in a fortnight about young adults, because this is the subject in which the
+        young adult and the arithmetic meet.</p>
+    </div>
+
+    <p class="lede">In 2023 an estimated 260,000 women died of a maternal cause worldwide. About 75,000 of
+      them died in Nigeria. One country, more than a quarter of the whole.</p>
+
+    <div class="figs">
+      <div class="fig"><p class="big">993</p><p class="lab">Nigerian maternal deaths per 100,000 live births, 2023 &mdash; against 197 globally</p></div>
+      <div class="fig"><p class="big">28.7%</p><p class="lab">of the world&rsquo;s maternal deaths, in a country holding about 3% of the world&rsquo;s people</p></div>
+      <div class="fig"><p class="big">18</p><p class="lab">median age in years. Nigeria is a country of young adults</p></div>
+    </div>
+
+    <p>Those are the numbers you will see quoted, and before going any further it is worth being honest
+      about what kind of numbers they are.</p>
+
+    <h2 class="sub">First, the denominator</h2>
+
+    <p>A maternal mortality ratio is deaths over live births. Nigeria&rsquo;s last completed census was in
+      2006 &mdash; twenty years ago, disputed at the time, and never repeated. Every population figure since
+      is a projection, and federal money and political seats are allocated by state population, which gives
+      every state a standing reason to want a bigger number.</p>
+
+    <p>So the 993 carries an uncertainty interval of 718 to 1,540. That is not statistical fussiness. It is
+      an accurate statement of how much is actually known.</p>
+
+    <div class="faux">
+      <span class="lab">And one comparison not to make</span>
+      <p>Nigeria&rsquo;s 2018 Demographic and Health Survey reported a maternal mortality ratio of 512. The
+        modelled figure for 2023 is 993. It is tempting to put those side by side and conclude the situation
+        has nearly doubled in badness. Do not. They are different instruments &mdash; one a household survey
+        asking women about the deaths of their sisters, the other a Bayesian model drawing on many sources
+        &mdash; and they are not a series.</p>
+      <p>The 2024 survey, for its part, publishes no maternal mortality ratio at all. Nigeria currently has
+        no recent national <em>measurement</em> of maternal death. It has an estimate.</p>
+    </div>
+
+    <h2 class="sub">The phrase everybody quotes</h2>
+
+    <p>In 1994 Sereen Thaddeus and Deborah Maine published a paper in <em>Social Science &amp; Medicine</em>
+      called &ldquo;Too far to walk: maternal mortality in context&rdquo;. It is one of the most cited papers
+      in global health, and it gave the field the three delays.</p>
+
+    <p><strong>The first</strong> is the delay in deciding to seek care &mdash; by the woman, her family, or
+      both. <strong>The second</strong> is the delay in reaching a facility that can actually help.
+      <strong>The third</strong> is the delay in receiving adequate care once she is inside it.</p>
+
+    <p>Almost everyone who quotes the three delays drops the argument the authors built them for, which is
+      that the first is produced by the other two. A woman does not decide late because she is ignorant. She
+      decides late because she has a reasonably accurate idea of what is waiting: whether there is blood,
+      whether there is an anaesthetist, and what she will be asked to pay at the door.</p>
+
+    <h2 class="sub">What happened when Nigerians measured it</h2>
+
+    <p>Aduragbemi Banke-Thomas and colleagues in Lagos did something that sounds obvious and almost nobody
+      had done. They traced the actual journeys of women arriving at public hospitals with obstetric
+      emergencies &mdash; four thousand of them &mdash; and timed them.</p>
+
+    <p>Eighty per cent reached care within an hour. Ninety-six per cent within two.</p>
+
+    <p>Then they looked at the women who died. Of 4,181 women with obstetric emergencies, 182 died. Among
+      those 182, sixty per cent had travelled ten kilometres or less, and sixty-two per cent had arrived
+      within half an hour of setting out.</p>
+
+    <div class="gloss">
+      <p>Which is to say: most of the Lagos women who died had not been too far to walk. They were already
+        there.</p>
+    </div>
+
+    <p>This is not an argument that distance does not matter. The same group mapped two thousand emergency
+      obstetric facilities across fifteen Nigerian cities and found that in five of them &mdash; Lagos,
+      Kaduna, Onitsha, Port Harcourt and Benin City &mdash; the poorest fifth of women could reach exactly
+      zero public facilities within an hour, while the wealthiest fifth in Lagos could reach nine. Distance
+      is real, and inside a city it is a wealth gradient rather than a geographical one.</p>
+
+    <p>But for the women who died in the hospitals of Lagos, geography was not what killed them. Something
+      else did, and it is worth a clinician&rsquo;s attention because much of it is recognisable.</p>
+
+    <h2 class="sub">What actually fails</h2>
+
+    <p>Start with the one that stops an intensivist in their tracks. In field surveys of oxytocin collected
+      from Nigerian pharmacies and health facilities, <strong>seventy-four per cent of samples failed assay
+      testing</strong>. A third of misoprostol samples failed too.</p>
+
+    <p>Read that again as a clinical scenario rather than a statistic. The third stage is being actively
+      managed. The drug is drawn up and given, correctly, by somebody who knows what they are doing. And the
+      uterus does not contract, because the ampoule has been sitting at thirty-four degrees in a supply chain
+      with no cold storage and there is very little oxytocin left in it.</p>
+
+    <p>Then blood. Nigeria has a national blood service, founded in 2005 and given a statutory footing in
+      2021, running seventeen centres. By its own account, the overwhelming majority of blood transfused in
+      Nigeria comes not from voluntary unpaid donors but from paid commercial donors and from families
+      required to replace what their relative uses. That is a structural fact with an obvious bedside
+      consequence, and it is why a woman&rsquo;s relatives are sometimes out looking for donors while she is
+      bleeding.</p>
+
+    <blockquote class="said">
+      <p>&ldquo;Not having a steady supply of safely donated and screened blood available in our blood
+        banks.&rdquo;</p>
+      <span class="who">Dr Adaeze Oreh, consultant family physician, Commissioner for Health in Rivers State
+        and formerly of the National Blood Service Commission, naming the main challenge in a state with one
+        of Nigeria&rsquo;s highest maternal death rates</span>
+    </blockquote>
+
+    <p>Then the facilities themselves. A national emergency obstetric care assessment reported in 2026
+      examined 913 public facilities in three states. <strong>Three and a half per cent of the basic units
+      could perform all of the signal functions they are defined by.</strong> Among the comprehensive units
+      &mdash; the ones that are supposed to operate and transfuse &mdash; thirty per cent could. Two per cent
+      of basic units reported a regular oxygen supply.</p>
+
+    <p>And the national programme set up to attack all this reports, in its 172 priority local government
+      areas, that ninety-one per cent now have functioning basic emergency obstetric care and twenty-six per
+      cent have functioning comprehensive care. That pair of numbers is the whole problem in miniature. The
+      midwife is there. The theatre and the blood are not.</p>
+
+    <h2 class="sub">And the causes are not quite what you would guess</h2>
+
+    <p>Globally, haemorrhage leads. In the best Nigerian facility data, using the World Health
+      Organization&rsquo;s own maternal death classification, it does not always. At the University of Abuja
+      Teaching Hospital, across five years of deaths, <strong>hypertensive disorders accounted for 36.5% and
+      haemorrhage for 30.8%</strong>. In Ogun State&rsquo;s death reviews the order reversed, haemorrhage
+      43% against pre-eclampsia and eclampsia at around 36%.</p>
+
+    <p>So the honest statement is that the two together account for two-thirds to three-quarters of deaths
+      and which one leads depends on where you look. Two other features of the Nigerian data are worth
+      carrying: <strong>ruptured uterus</strong> appears as a substantial category in its own right in a way
+      it simply does not in Australian series, and <strong>anaesthetic deaths</strong> run higher than the
+      pooled figure for comparable countries. Nearly half the women who died at Abuja died within
+      twenty-four hours of arriving.</p>
+
+    <h2 class="sub">A word about who gets blamed</h2>
+
+    <p>In 2026 Roy, Balogun and Banke-Thomas did something unusual: they analysed how maternal
+      death is reported in the West African press. Across fifty-three articles, <strong>the third delay
+      &mdash; the failure of the facility and the people in it &mdash; was invoked in eighty-five per cent of
+      them</strong>. The second delay appeared in thirteen. The first, in six.</p>
+
+    <p>That is almost exactly the reverse of what Nigeria&rsquo;s own death reviews find. The authors call it
+      ping-ponging blame, and note drily that it is probably more interesting to report negligence than
+      stock-outs. Patient-facing health workers were quoted in seven articles out of fifty-three.</p>
+
+    <p>Anyone writing about this is writing into a genre that has spent a decade making the Nigerian nurse
+      the villain. Your Nigerian-trained colleagues have read that genre. It is worth not adding to it.</p>
+
+    <h2 class="sub">What is being done, and what it cost to find out</h2>
+
+    <p>Nigeria put 2,488 midwives into 652 rural clinics from 2009, four to a clinic, to cover births around
+      the clock. It was evaluated properly, which is more than most such schemes manage, and the evaluation
+      found no effect on skilled birth attendance at all.</p>
+
+    <p>The reason is in the evaluation and it is not mysterious. By 2014 only about a third of the clinics
+      still had four midwives. Fifty-seven per cent of local governments owed their midwives salary arrears,
+      a median of five months&rsquo; worth. They were being paid around &#8358;42,000 against the
+      &#8358;60,000 they had been promised. The scheme did not fail because deploying midwives does not work.
+      It failed because the midwives were not paid, and it was Nigerian health economists who established
+      that.</p>
+
+    <p>What is working tends to be specific and unglamorous. Heat-stable carbetocin &mdash; which does not
+      need a cold chain, and so answers the oxytocin problem directly &mdash; was registered in Nigeria in
+      2022 and seeded into three states; within months one implementation study had given it to nearly
+      fourteen thousand women. In Kano, 145 primary care facilities across 26 local government areas have
+      been training community health extension workers to recognise and start treating haemorrhage and
+      eclampsia, with senior midwives mentoring them.</p>
+
+    <blockquote class="said">
+      <p>&ldquo;Hafsat stabilised the woman by administering magnesium sulfate before we referred
+        her.&rdquo;</p>
+      <span class="who">Yusif Adamu, officer in charge, Jaen primary health care centre, Kano State</span>
+    </blockquote>
+
+    <p>That sentence is what task-shifting looks like when it works, and it is worth noticing how ordinary
+      it is.</p>
+
+    <h2 class="sub">The other side of the ledger</h2>
+
+    <p>Nigeria sits on the World Health Organization&rsquo;s health workforce support and safeguards list
+      &mdash; fifty-five countries where the density of doctors, nurses and midwives is low enough that
+      active international recruitment is formally discouraged. Nigeria&rsquo;s own workforce migration
+      policy records where its departing doctors go: sixty-eight per cent to the United Kingdom, ten to
+      Canada, seven to the United States, and three per cent to Australia.</p>
+
+    <p>Three per cent is not nothing. If you work in an Australian hospital you have colleagues who trained
+      in the country this piece is about, and they did not leave a country without doctors so much as a
+      country that could not pay, equip or protect the ones it had.</p>
+
+    <p>Which brings me to the thing I most want to leave you with. Nearly every figure above &mdash; the
+      Lagos travel times, the cause-of-death breakdown, the media analysis, the midwife evaluation &mdash;
+      was produced by Nigerian researchers working in Nigerian institutions on their own country&rsquo;s
+      problem. Banke-Thomas, Afolabi, Akaba, Okonofua, Sageer, Onwujekwe, Sotunsa. The corrective to the
+      lazy version of this story did not come from outside. It came from the people who stayed.</p>
+
+    <blockquote class="said">
+      <p>&ldquo;We can keep our women alive if we look inward and maximise our opportunities.&rdquo;</p>
+      <span class="who">Professor John Sotunsa, Professor of Obstetrics and Gynaecology, Babcock University,
+        in his inaugural lecture &mdash; <em>Beyond Superficial Success: Holistic Approaches to Maternal
+        Mortality</em></span>
+    </blockquote>
+
+    <p>Too far to walk is a very good title. It was never meant to be the diagnosis, and in the country where
+      it matters most, it mostly is not.</p>
+
+    <div class="reply">
+      <h2>Over to you</h2>
+      <p class="ask">That was something of the Nigerian picture. What does this column need to cover next,
+        and from where?</p>
+      <p>Fifty-four countries and one column. I would rather be directed than guess &mdash; so if you trained
+        somewhere on the continent, or have worked there, tell me what an Australian unit consistently
+        misunderstands about it. A disease that is ordinary where you come from. A way of doing something
+        that is done better there than here. A number that gets quoted about your country that is wrong.</p>
+      <p>And if you are a Nigerian clinician and I have got something in this piece wrong, I would
+        particularly like to hear it, and I will correct it on the page.</p>
+      <p><a class="btn" href="mailto:icuandyou@icloud.com?subject=Out%20of%20Africa%20-%20a%20reply&body=The%20country%20or%20region%3A%0D%0A%0D%0A%0D%0AWhat%20an%20Australian%20unit%20misunderstands%20about%20it%3A%0D%0A%0D%0A%0D%0AAnything%20in%20this%20piece%20I%20have%20got%20wrong%3A%0D%0A%0D%0A%0D%0A---%0D%0A%0D%0AName%3A%0D%0A%0D%0A---%0D%0A%0D%0AThinking%20about%20this%20ICU%20AND%20YOU%20post%20overall%20%E2%80%94%20was%20it%20useful%20to%20you%2C%20or%20would%20it%20be%20useful%20to%20others%3F%0D%0A">Send me a reply</a></p>
+      <p class="fallback" style="margin-bottom:9px">How you are credited is entirely your call &mdash; by name, by initials, or not at all &mdash; whether you write the piece or I do, and whether I quote you or simply say who sent something in; nothing of yours goes up with your name on it unless you have said yes.</p>
+      <p class="fallback">The button opens a reply straight to me. If your device blocks it, write to
+        <a href="mailto:icuandyou@icloud.com">icuandyou@icloud.com</a> instead.</p>
+    </div>
+  </div>
+
+  <footer>
+    <span class="firstpub">First published October 2026</span>
+    <p class="subline">Two emails a week &mdash; the Friday newsletter for all subscribers, and, for clinical subscribers,
+      the mind map and puzzles the moment they go up on Tuesday. Occasional announcements of new
+      features as they arrive. What went up and why it mattered, the best of your replies, and
+      original feature stories, news and views. <a href="https://joinlist.com/f/5adad2d6">Come and join us</a>.</p>
+    <a class="home" href="./">&larr; &nbsp;All of ICU AND YOU</a><br>
+    ICU AND YOU &nbsp;&#183;&nbsp; Out of Africa No. 1 &nbsp;&#183;&nbsp; companion to Mind Map #36, The young adult<br>
+    <span class="srcs">Global and Nigerian maternal mortality figures are the UN Maternal Mortality Estimation
+    Inter-Agency Group, <a href="https://www.unfpa.org/sites/default/files/pub-pdf/9789240108462-eng.pdf"><em>Trends
+    in maternal mortality 2000 to 2023</em></a>; the 2018 comparison and the 2024 service-coverage figures are the
+    <a href="https://dhsprogram.com/pubs/pdf/SR294/SR294.pdf">Nigeria Demographic and Health Survey</a>, which
+    publishes no maternal mortality ratio for 2024. The three delays are Thaddeus S and Maine D,
+    &ldquo;<a href="https://mamazur.org/wp-content/uploads/2021/03/Thaddeau_1994_TooFarToWalk.pdf">Too far to walk:
+    maternal mortality in context</a>&rdquo;, <em>Social Science &amp; Medicine</em> 1994;38(8):1091&ndash;1110.
+    Lagos travel times are Banke-Thomas and colleagues,
+    <a href="https://academic.oup.com/heapol/article/36/9/1384/6356472"><em>Health Policy and Planning</em>
+    2021;36(9):1384</a> and <a href="https://researchonline.lse.ac.uk/id/eprint/114904/3/e008604.full.pdf"><em>BMJ
+    Global Health</em></a>; the fifteen-city access mapping is
+    <a href="https://www.nature.com/articles/s43856-024-00458-2"><em>Communications Medicine</em> 2024</a>.
+    Causes of death are Akaba and colleagues,
+    <a href="https://journals.plos.org/plosone/article?id=10.1371%2Fjournal.pone.0244984"><em>PLOS ONE</em>
+    2021;16(1):e0244984</a> and Sageer and colleagues, <em>BMC Pregnancy and Childbirth</em> 2019;19:63.
+    The media analysis is Roy, Balogun and Banke-Thomas,
+    <a href="https://journals.plos.org/globalpublichealth/article?id=10.1371%2Fjournal.pgph.0006254"><em>PLOS
+    Global Public Health</em> 2026</a>. The Midwives Service Scheme evaluation is
+    <a href="https://www.3ieimpact.org/sites/default/files/2019-01/ie56-midwives-nigeria.pdf">Okeke and colleagues,
+    3ie Impact Evaluation Report 56 (2017)</a>. Uterotonic quality and the carbetocin rollout are the
+    <a href="https://scidar.org/wp-content/uploads/2024/05/Heat-Stable-Carbetocin-Introduction-In-Nigeria_Factsheet_June2023.pdf">Smiles
+    for Mothers programme factsheet</a>; the workforce list is
+    <a href="https://www.who.int/news/item/14-03-2023-who-renews-alert-on-safeguards-for-health-worker-recruitment">WHO&rsquo;s
+    2023 health workforce support and safeguards list</a>, and destination shares are Nigeria&rsquo;s own
+    National Policy on Health Workforce Migration (2023). Quotations are as published and linked to their
+    sources above. Where Nigerian sources disagree with each other, I have said so rather than picking the
+    tidier number.</span><br>
+    Educational use within the ICU education programme. Not a clinical protocol &mdash; local policy, current
+    guidance and the retrieval service always take precedence.<br>
+    <span class="mine">Views my own, not those of NSW Health or any other organisation. No identifiable
+    patients &mdash; scenarios are constructed or combined for teaching. <a href="about.html">More</a>.</span>
+  </footer>
+
+</div>
+<script src="glossary.js"></script>
+<script data-goatcounter="https://icuandyou.goatcounter.com/count"
+        async src="//gc.zgo.at/count.js"></script>
+</body>
+</html>
