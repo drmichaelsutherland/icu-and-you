@@ -523,6 +523,30 @@ def main():
                         f'{f}: its reply email names "{t}", but the page is filed '
                         f'under "{p["topic"]}"')
 
+    # ---- every page in the week needs a position --------------------------
+    # build-index.py sorts the week's cards by "pos" and gives anything without
+    # one a sort key of 999, so a page with no position silently lands last.
+    # That happened to Mind Map 36 in October 2026: the map a whole fortnight is
+    # built around sat below twelve companion pieces for two days, and nothing
+    # reported it, because the page was valid and linked and correct in every
+    # other respect. A duplicate position is the same fault wearing a hat —
+    # two cards tie and the order falls to whichever the series menu lists first.
+    wk = [p for p in m["pages"] if p.get("week") and not p.get("standing")]
+    noposn = [p["file"] for p in wk if p.get("pos") is None]
+    if noposn:
+        problems.append(
+            'page_topic.json: in "this week", no "pos" on ' + ", ".join(sorted(noposn))
+            + " — the card will sort to the end of the week regardless of what it is")
+    seenpos = defaultdict(list)
+    for p in wk:
+        if p.get("pos") is not None:
+            seenpos[p["pos"]].append(p["file"])
+    for n, fs in sorted(seenpos.items()):
+        if len(fs) > 1:
+            problems.append(f'page_topic.json: "pos": {n} is used by '
+                            + " and ".join(sorted(fs)) + " — the tie is broken "
+                            "arbitrarily, so the order is not what the manifest says")
+
     # ---- the week heading must match the pages under it -------------------
     # The "this_week" block in the manifest supplies the heading, slug and
     # preamble; the pages are flagged individually with "week": true. Rolling
