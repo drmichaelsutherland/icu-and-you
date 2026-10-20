@@ -98,6 +98,28 @@
   .pull{margin:26px 0;padding:0 0 0 22px;border-left:3px solid var(--neon);
     font-size:21px;line-height:1.45;font-style:italic;color:#3A2E37}
 
+  /* Reader poll. The song names are read out of the markup at run time rather
+     than held in a parallel array — a page built from this one can change the
+     eight songs without the script quietly emailing the old ones. */
+  .poll{margin:0 0 20px;padding:24px 28px;background:var(--neontint);
+    border:1px solid #E4D5E0;border-radius:12px}
+  .poll .lab{display:block;font:600 11px 'Helvetica Neue',Arial,sans-serif;
+    letter-spacing:.18em;text-transform:uppercase;color:var(--neonink);margin:0 0 10px}
+  .poll h3{margin:0 0 6px;font:400 21px 'Iowan Old Style',Palatino,Georgia,serif;color:var(--ink)}
+  .poll .sub2{margin:0 0 16px;font:400 15px/1.6 'Helvetica Neue',Arial,sans-serif;color:#5B4E57}
+  .opts{display:flex;flex-direction:column;gap:7px;margin:0 0 15px;padding:0;list-style:none}
+  .opt{display:flex;align-items:center;gap:12px;padding:11px 14px;border-radius:9px;
+    background:#FCF8FB;border:1px solid #E4D5E0;cursor:pointer;
+    font:400 16px 'Iowan Old Style',Palatino,Georgia,serif;transition:border-color .12s ease}
+  .opt:hover{border-color:var(--neon)}
+  .opt input{accent-color:var(--neon);width:17px;height:17px;flex:none;margin:0}
+  .opt.on{background:#F3E2EE;border-color:var(--neon)}
+  .opt.off{opacity:.42;cursor:default}
+  .song{font-weight:600;color:var(--neonink)}
+  .by{color:#6B5F68;font-size:.92em}
+  .count{display:block;margin:0 0 12px;font:500 13px 'Helvetica Neue',Arial,sans-serif;
+    color:var(--muted);letter-spacing:.04em}
+
   .reply{margin:0;padding:28px 32px;background:#F3ECF1;border-left:5px solid var(--neonink)}
   .reply h2{font:600 12px 'Helvetica Neue',Arial,sans-serif;letter-spacing:.2em;
     text-transform:uppercase;color:var(--neonink);margin:0 0 13px}
@@ -330,6 +352,49 @@
         on during his years in the band, which he has since mentioned being a bit peeved about.</p>
     </div>
 
+    <div class="poll">
+      <span class="lab">The vote</span>
+      <h3>Give me your top three of the eight</h3>
+      <p class="sub2">No reasoning required, though I will take it if you have some. I will publish the
+        order in a later edition, and it will tell me what this column should be chasing.</p>
+      <ul class="opts">
+        <li><label class="opt" for="s0">
+          <input type="checkbox" id="s0" value="0">
+          <span class="song">I See You</span> <span class="by">&mdash; Phoebe Bridgers</span>
+        </label></li>
+        <li><label class="opt" for="s1">
+          <input type="checkbox" id="s1" value="1">
+          <span class="song">Girlfriend in a Coma</span> <span class="by">&mdash; The Smiths</span>
+        </label></li>
+        <li><label class="opt" for="s2">
+          <input type="checkbox" id="s2" value="2">
+          <span class="song">Cancer</span> <span class="by">&mdash; My Chemical Romance</span>
+        </label></li>
+        <li><label class="opt" for="s3">
+          <input type="checkbox" id="s3" value="3">
+          <span class="song">One</span> <span class="by">&mdash; Metallica</span>
+        </label></li>
+        <li><label class="opt" for="s4">
+          <input type="checkbox" id="s4" value="4">
+          <span class="song">Lightning Crashes</span> <span class="by">&mdash; Live</span>
+        </label></li>
+        <li><label class="opt" for="s5">
+          <input type="checkbox" id="s5" value="5">
+          <span class="song">Live Forever</span> <span class="by">&mdash; Oasis</span>
+        </label></li>
+        <li><label class="opt" for="s6">
+          <input type="checkbox" id="s6" value="6">
+          <span class="song">Stayin&rsquo; Alive</span> <span class="by">&mdash; Bee Gees</span>
+        </label></li>
+        <li><label class="opt" for="s7">
+          <input type="checkbox" id="s7" value="7">
+          <span class="song">Ventilator Blues</span> <span class="by">&mdash; The Rolling Stones</span>
+        </label></li>
+      </ul>
+      <span class="count" id="count">none chosen yet &mdash; pick three</span>
+      <p><a class="btn" href="#" id="vote">Send my three</a></p>
+    </div>
+
     <div class="reply">
       <h2>Over to you</h2>
       <p class="ask">What goes in the next one?</p>
@@ -377,6 +442,52 @@
   </footer>
 
 </div>
+<script>
+(function(){
+  var MAX = 3;
+  var boxes = [].slice.call(document.querySelectorAll(".opt input"));
+  var count = document.getElementById("count");
+  if(!boxes.length || !count) return;
+
+  // Read the song straight off the element it belongs to. No second copy.
+  function nameOf(b){
+    var l = b.parentNode;
+    return l.querySelector(".song").textContent.trim() + " \u2014 " +
+           l.querySelector(".by").textContent.replace(/^[\s\u2014-]+/, "").trim();
+  }
+  function chosen(){ return boxes.filter(function(b){ return b.checked; }); }
+
+  function refresh(){
+    var n = chosen().length, full = n >= MAX;
+    boxes.forEach(function(b){
+      b.disabled = full && !b.checked;
+      b.parentNode.classList.toggle("on", b.checked);
+      b.parentNode.classList.toggle("off", b.disabled);
+    });
+    count.textContent = n === 0 ? "none chosen yet \u2014 pick three"
+                      : n + " of " + MAX + " chosen" + (full ? "" : " \u2014 keep going");
+    return n;
+  }
+  boxes.forEach(function(b){ b.addEventListener("change", refresh); });
+
+  document.getElementById("vote").addEventListener("click", function(e){
+    e.preventDefault();
+    var picks = chosen();
+    if(!picks.length){ count.textContent = "choose at least one first"; return; }
+    var body = "My top three from The Jukebox No. 1\n\n"
+      + picks.map(function(b,i){ return (i+1) + ". " + nameOf(b); }).join("\n")
+      + "\n\nWhy, if you feel like saying (optional):\n\n\n"
+      + "A song for the next edition:\n\n\n"
+      + "---\n\nName, and whether you would like it credited:\n"
+      + "\n---\n\nThinking about this ICU AND YOU post overall \u2014 was it useful to you, "
+      + "or would it be useful to others?\n";
+    window.location.href = "mailto:icuandyou@icloud.com?subject="
+      + encodeURIComponent("The Jukebox 1 - my top three")
+      + "&body=" + encodeURIComponent(body);
+  });
+  refresh();
+})();
+</script>
 <script data-goatcounter="https://icuandyou.goatcounter.com/count"
         async src="//gc.zgo.at/count.js"></script>
 </body>
