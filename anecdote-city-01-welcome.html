@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en-AU">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ICU AND YOU · Anecdote City No. 1 — Welcome to Anecdote City</title>
+<meta name="description" content="Anecdote City No. 1: a hundred-odd stories from forty years of intensive care, going up a few at a time — and room for yours.">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="alternate icon" href="/favicon.ico" sizes="any">
+<link rel="apple-touch-icon" href="/icon-180.png">
+<meta name="theme-color" content="#1B3350">
+<meta property="og:site_name" content="ICU AND YOU">
+<meta property="og:type" content="website">
+<meta property="og:title" content="ICU AND YOU · Anecdote City No. 1 — Welcome to Anecdote City">
+<meta property="og:description" content="Every unit has a tearoom, and in every tearoom somebody is telling a story. This one does not have a door.">
+<meta property="og:image" content="https://icuandyou.com/share-card.png">
+<meta name="twitter:card" content="summary_large_image">
+<style>
+  /* ANECDOTE CITY runs on its own stationery. Warm kraft rather than the
+     site's cool paper, a bookish Baskerville rather than Iowan Old Style,
+     and typewriter furniture — so that a story is visibly not a guideline
+     before a word of it has been read. */
+  :root{
+    --kraft:#DED3B8; --paper:#FBF6EA; --ink:#241E16; --muted:#6E6354; --rule:#E0D4BC;
+    --indigo:#1B3350; --indigotint:#EDEFF3; --deep:#0F1F33;
+    --lamp:#B0601E; --lamptint:#F8EFE3;
+    --book:'Hoefler Text',Baskerville,'Libre Baskerville',Constantia,'Times New Roman',Georgia,serif;
+    --type:'American Typewriter','Courier New',Courier,monospace;
+  }
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--kraft);color:var(--ink);
+    font:400 18px/1.7 var(--book);-webkit-text-size-adjust:100%;}
+  .sheet{max-width:720px;margin:0 auto;background:var(--paper);
+    box-shadow:0 1px 40px rgba(36,30,22,.16);}
+
+  .flag{display:flex;height:6px}
+  .flag i{display:block}
+  .flag i:nth-child(1){flex:3;background:var(--deep)}
+  .flag i:nth-child(2){flex:1;background:var(--lamp)}
+  .flag i:nth-child(3){flex:3;background:var(--indigo)}
+
+  header.top{padding:44px 44px 30px;border-bottom:2px solid var(--indigo)}
+  .eyebrow a.serlink,.eyebrow a.mast{color:inherit;text-decoration:none;
+    border-bottom:1px solid transparent}
+  .eyebrow a.serlink:hover,.eyebrow a.mast:hover{border-bottom-color:currentColor}
+  .toptopic,.topseries,.tophome{display:inline-block;margin:0 0 16px;padding:7px 15px;
+    border-radius:3px;border:1px solid currentColor;opacity:.58;text-decoration:none;color:inherit;
+    font:400 11px var(--type);letter-spacing:.11em;text-transform:uppercase;
+    transition:opacity .12s ease}
+  .topseries,.toptopic{margin-left:8px}
+  .toptopic:hover,.topseries:hover,.tophome:hover{opacity:1}
+  .eyebrow{font:400 11.5px/1 var(--type);letter-spacing:.2em;
+    text-transform:uppercase;color:var(--muted);margin:0 0 18px}
+
+  /* the number as a street number, stamped */
+  .addr{display:inline-block;margin:0 0 16px;padding:7px 14px;background:var(--indigo);
+    color:var(--paper);font:400 12px var(--type);letter-spacing:.17em;text-transform:uppercase}
+  h1{font:400 40px/1.1 var(--type);margin:0 0 14px;letter-spacing:-.018em}
+  .kicker{color:var(--muted);margin:0;font-size:17.5px;font-style:italic}
+
+  .pad{padding:38px 44px}
+  p{margin:0 0 19px}
+  .lede{font-size:21px;line-height:1.55;margin:0 0 24px}
+  .lede::first-letter{float:left;font:400 58px/0.82 var(--type);color:var(--indigo);
+    margin:5px 9px 0 0}
+
+  .beat{margin:30px 0;text-align:center;color:var(--indigo);font:400 22px/1 var(--type);
+    letter-spacing:.34em;opacity:.72}
+
+  .gloss{margin:0 0 22px;padding:22px 26px;background:var(--indigotint);
+    border-left:4px solid var(--indigo)}
+  .gloss .lab{display:block;font:400 11px var(--type);letter-spacing:.17em;
+    text-transform:uppercase;color:var(--deep);margin:0 0 10px}
+  .gloss p{font-size:16.5px}
+  .gloss p:last-child{margin:0}
+
+  .rule-box{margin:0 0 22px;padding:22px 26px;background:var(--lamptint);
+    border-left:4px solid var(--lamp)}
+  .rule-box .lab{display:block;font:400 11px var(--type);letter-spacing:.17em;
+    text-transform:uppercase;color:var(--lamp);margin:0 0 10px}
+  .rule-box p{font-size:16.5px}
+  .rule-box p:last-child{margin:0}
+
+  .reply{margin:0;padding:30px 34px;background:var(--indigo);color:#F2EEE4}
+  .reply h2{font:400 12px var(--type);letter-spacing:.2em;
+    text-transform:uppercase;color:#C3CEDC;margin:0 0 14px}
+  .ask{font-size:20px;line-height:1.5;font-style:italic;margin:0 0 16px}
+  .reply p{color:#E7E2D6}
+  .btn{display:inline-block;margin:8px 0 14px;padding:15px 30px;background:var(--lamp);
+    color:#FBF6EA;text-decoration:none;border-radius:3px;font-style:normal;
+    font:400 14px var(--type);letter-spacing:.09em;text-transform:uppercase}
+  .btn:hover{background:#FBF6EA;color:var(--deep)}
+  .btn:focus-visible{outline:3px solid #C3CEDC;outline-offset:3px}
+  .fallback{font:400 13.5px/1.6 var(--type);color:#AFBAC9;margin:0}
+  .fallback a{color:#DCE3EC}
+
+  .subline{margin:0 0 14px;padding:0 0 13px;border-bottom:1px solid rgba(0,0,0,.09);
+    font:400 14.5px/1.55 var(--book);max-width:56ch;margin-left:auto;margin-right:auto}
+  .subline a{font-weight:500;border-bottom:1px solid currentColor;
+    text-decoration:none;color:inherit}
+  .firstpub{display:block;margin:0 0 10px;padding-bottom:9px;
+    border-bottom:1px solid rgba(0,0,0,.09);
+    font:400 11.5px var(--type);letter-spacing:.09em;opacity:.7}
+
+  footer{padding:26px 44px 44px;border-top:2px solid var(--indigo);
+    font:400 13px/1.7 var(--type);color:var(--muted);text-align:center}
+  .home{display:inline-block;margin:0 0 14px;padding:8px 18px;border-radius:3px;
+    border:1px solid var(--rule);background:#F3ECDC;color:var(--deep);text-decoration:none;
+    font:400 12px var(--type);letter-spacing:.08em;text-transform:uppercase}
+  .home:hover{background:var(--deep);border-color:var(--deep);color:#FBF6EA}
+  .mine{display:block;margin:12px 0 0;opacity:.78;font-size:.94em}
+  .srcs{display:block;max-width:56ch;margin:4px auto 0;font:400 13.5px/1.6 var(--book);
+    font-style:italic}
+  .srcs a{color:inherit}
+
+  @media (max-width:620px){
+    header.top,.pad,footer{padding-left:20px;padding-right:20px}
+    .reply{padding:24px 20px}
+    h1{font-size:29px} body{font-size:17px} .lede{font-size:19px} .ask{font-size:18px}
+    .lede::first-letter{font-size:48px}
+  }
+  @media print{ body{background:#fff} .sheet{box-shadow:none;max-width:none} }
+</style>
+</head>
+<body>
+<div class="sheet">
+
+  <div class="flag"><i></i><i></i><i></i></div>
+
+  <header class="top">
+    <a class="tophome" href="./">&larr;&nbsp; Home</a>
+    <a class="topseries" href="./?s=anecdote">More from Anecdote City</a>
+    <a class="toptopic" href="./?t=standing" title="Everything in Any time">All on this topic</a>
+    <p class="eyebrow"><a class="mast" href="./">ICU and You</a> &nbsp;·&nbsp;
+      <a class="serlink" href="./?s=anecdote">Anecdote City</a></p>
+    <span class="addr">No. 1</span>
+    <h1>Welcome to Anecdote City</h1>
+    <p class="kicker">A hundred-odd stories, going up a few at a time &mdash; and room for yours</p>
+  </header>
+
+  <div class="pad">
+    <p class="lede">Every unit has a tearoom, and in every tearoom somebody is telling a story.</p>
+
+    <p>You will have heard one this week. It begins with <em>that reminds me of the time</em>, and the
+      registrar who already had her bag on her shoulder sits back down, and it goes wherever it goes.
+      Eight minutes later everybody in the room knows something they did not know before. Not one of them
+      could tell you what.</p>
+
+    <p>I have been doing that in print for a hundred-odd newsletters. It was never a plan.</p>
+
+    <div class="beat">&#42;&nbsp;&#42;&nbsp;&#42;</div>
+
+    <p>There are respectable arguments for why it works. Narrative medicine has a literature, a journal, and
+      a chair at Columbia. Stories are said to build empathy, to teach us to sit with uncertainty, to carry
+      the tacit knowledge that no guideline has ever managed to hold, to rehearse us quietly for the night it
+      happens for real. Most of that is probably true. I have quoted a fair bit of it myself, usually to
+      committees.</p>
+
+    <p>But that is not why I keep them.</p>
+
+    <p>I keep them because the guideline I read in 2004 is gone, and the man in bed nine is not. He is still
+      there, sitting up, asking me a question I did not have an answer to. Everything I actually know how to
+      do arrived attached to somebody.</p>
+
+    <div class="beat">&#42;&nbsp;&#42;&nbsp;&#42;</div>
+
+    <p>So: Anecdote City. More than a hundred of mine, written across a dozen years and a good deal more
+      practice than that, going up here a few at a time as I work through the backlog. Some are five
+      paragraphs. Some are one. They were written for people in medicine, but most of them do not need you to
+      be one, and I will say so where it matters.</p>
+
+    <p>There is no running order. A city is not a corridor. You arrive where you arrive.</p>
+
+    <p>And there is room for yours &mdash; which is the part I am actually interested in. I have forty years
+      of these and that is precisely the problem: they are all from one angle, one country, mostly one
+      specialty, and told by somebody who was in the room and therefore cannot see all of it. The nurse who
+      was also in that room saw a different thing. So did the wardsman. So did the daughter.</p>
+
+    <div class="rule-box">
+      <span class="lab">The one rule</span>
+      <p>Nobody in these stories is identifiable, and that is not negotiable. Change the age, the decade, the
+        hospital, the sex and the diagnosis if the diagnosis is not the point. If a detail is so unusual that
+        it identifies the person, it goes &mdash; and if the story only works because of that detail, the
+        story stays in the tearoom.</p>
+      <p>Write it as though the family will read it, because one day somebody&rsquo;s family will. I check
+        every one before it goes up, and I will ask you about anything that gives me pause.</p>
+    </div>
+
+    <div class="gloss">
+      <span class="lab">What makes a good one</span>
+      <p>Not the save. The ones worth reading are almost never the ones where it all went well &mdash; they
+        are the ones where somebody said something unexpected, or where the thing you were certain of turned
+        out to be the thing you were wrong about, or where the technical problem was solved and the actual
+        problem was somewhere else entirely.</p>
+      <p>Short is good. One page is plenty. If you find yourself explaining the physiology, you are writing a
+        different piece and I would like that one too, but somewhere else on the site.</p>
+    </div>
+
+    <p>It need not be dramatic. Some of the best things I have are about a corridor, or a cup of tea, or
+      somebody&rsquo;s shoes.</p>
+
+    <div class="beat">&#42;&nbsp;&#42;&nbsp;&#42;</div>
+
+    <p>The tearoom holds eleven people and the story stops when the door swings shut.</p>
+
+    <p>This place does not have a door.</p>
+
+    <div class="reply">
+      <h2>Send me one</h2>
+      <p class="ask">You have one. You have told it at least twice.</p>
+      <p>One page. Write it the way you say it &mdash; I would rather have it rough and in your own voice
+        than smooth and in nobody&rsquo;s. If writing it down is the barrier, tell it to your phone and send
+        me the recording; I have done that myself more than once.</p>
+      <p>You decide how you are credited, and you see it before anybody else does.</p>
+      <p><a class="btn" href="mailto:icuandyou@icloud.com?subject=Anecdote%20City%20-%20one%20from%20me&body=The%20story%3A%0D%0A%0D%0A%0D%0A%0D%0AAnything%20that%20needs%20changing%20to%20keep%20people%20unidentifiable%3A%0D%0A%0D%0A%0D%0AHow%20you%20would%20like%20to%20be%20credited%3A%0D%0A%0D%0A%0D%0A---%0D%0A%0D%0AName%3A%0D%0A%0D%0A---%0D%0A%0D%0AThinking%20about%20this%20ICU%20AND%20YOU%20post%20overall%20%E2%80%94%20was%20it%20useful%20to%20you%2C%20or%20would%20it%20be%20useful%20to%20others%3F%0D%0A">Send me your anecdote</a></p>
+      <p class="fallback" style="margin-bottom:9px">How you are credited is entirely your call &mdash; by name, by initials, or not at all &mdash; whether you write the piece or I do, and whether I quote you or simply say who sent something in; nothing of yours goes up with your name on it unless you have said yes.</p>
+      <p class="fallback">The button opens a reply straight to me. If your device blocks it, write to
+        <a href="mailto:icuandyou@icloud.com">icuandyou@icloud.com</a> instead.</p>
+    </div>
+  </div>
+
+  <footer>
+    <span class="firstpub">First published October 2026</span>
+    <p class="subline">Two emails a week &mdash; the Friday newsletter for all subscribers, and, for clinical subscribers,
+      the mind map and puzzles the moment they go up on Tuesday. Occasional announcements of new
+      features as they arrive. What went up and why it mattered, the best of your replies, and
+      original feature stories, news and views. <a href="https://joinlist.com/f/5adad2d6">Come and join us</a>.</p>
+    <a class="home" href="./">&larr; &nbsp;All of ICU AND YOU</a><br>
+    ICU AND YOU &nbsp;&#183;&nbsp; Anecdote City No. 1<br>
+    <span class="srcs">The chair in narrative medicine referred to is the programme founded by Rita Charon at
+    Columbia University. Everything else here is mine, and the stories that follow are set down as I remember
+    them, which is not the same as how they happened.</span>
+    <span class="mine">Michael Sutherland</span>
+  </footer>
+
+</div>
+<script src="glossary.js"></script>
+<script data-goatcounter="https://icuandyou.goatcounter.com/count"
+        async src="//gc.zgo.at/count.js"></script>
+</body>
+</html>
