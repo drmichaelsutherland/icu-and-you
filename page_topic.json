@@ -951,7 +951,8 @@
    "topic": "Any time",
    "slug": "standing",
    "week": false,
-   "standing": true
+   "standing": true,
+   "blurb": "Silbernagl and Despopoulos — mind maps before anybody called them that. One concept to a double page, text on the left and a full-colour plate on the right that carries the argument rather than decorating it. Found by browsing a medical bookshop as a resident and pulling it off the shelf because the spine looked interesting. And a preface you do not forget, about what happened to Agamemnon Despopoulos."
   },
   {
    "file": "exam-cicm-first-02-the-syllabus.html",
@@ -1473,9 +1474,26 @@
    "badge": "Anecdote City",
    "link_label": "Open",
    "blurb": "A Monday morning, a young woman with acute severe asthma nobody could oxygenate or ventilate, and a tidal volume of 150 ml. The consultant called for the one instrument the registrar was certain would kill her. There was no asthma."
+  },
+  {
+   "file": "book-club-03-ohs-intensive-care-manual.html",
+   "series": "bookclub",
+   "colour": "terracotta",
+   "number": "3",
+   "title": "The book I slept beside",
+   "topic": "Any time",
+   "slug": "standing",
+   "week": false,
+   "standing": true,
+   "blurb": "Oh's Intensive Care Manual — the bible for trainees in Australia, New Zealand and Singapore since 1979, and a book with every fault a multi-author textbook can have. Eighteen parts, 120 chapters, seventeen hundred pages, and it is still called a manual. No voice, no flow, and no unified message — and the same arrangement is exactly why it is any good."
   }
  ],
  "latest": [
+  {
+   "file": "book-club-03-ohs-intensive-care-manual.html",
+   "colour": "terracotta",
+   "label": "ICU Book Club 3 \u00b7 The book I slept beside"
+  },
   {
    "file": "anecdote-city-01-manic-monday.html",
    "colour": "indigo striped",
@@ -1495,11 +1513,6 @@
    "file": "jukebox-01-young-adult.html",
    "colour": "neon",
    "label": "The Jukebox 1 \u00b7 Five songs from the young adult ward"
-  },
-  {
-   "file": "drugstore-03-insulin.html",
-   "colour": "mulberry",
-   "label": "Drugstore 3 \u00b7 Insulin"
   }
  ],
  "topten": [

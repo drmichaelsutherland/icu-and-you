@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en-AU">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ICU AND YOU · ICU Book Club No. 3 — The book I slept beside</title>
+<meta name="description" content="ICU Book Club No. 3: Oh's Intensive Care Manual. The bible for trainees in Australia, New Zealand and Singapore for four decades — and a book with every fault a multi-author textbook can have.">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="alternate icon" href="/favicon.ico" sizes="any">
+<link rel="apple-touch-icon" href="/icon-180.png">
+<meta name="theme-color" content="#1B2A33">
+<meta property="og:site_name" content="ICU AND YOU">
+<meta property="og:type" content="website">
+<meta property="og:title" content="ICU AND YOU · ICU Book Club No. 3 — The book I slept beside">
+<meta property="og:description" content="One hundred and twenty chapters, eighteen parts, seventeen hundred pages, and it is still called a manual.">
+<meta property="og:image" content="https://icuandyou.com/share-card.png">
+<meta name="twitter:card" content="summary_large_image">
+<style>
+  :root{
+    --paper:#FCF9F7; --ink:#241C19; --muted:#6E6058; --rule:#E3D6D0;
+    --sepia:#A65E4E; --sepiatint:#F7EDEA;
+    --rust:#A8442A; --rusttint:#F9EDE7;
+    --sky:#2E6E8E; --skytint:#E7F1F6;
+  }
+  *{box-sizing:border-box}
+  body{margin:0;background:#EDE4E0;color:var(--ink);
+    font:400 17px/1.65 'Iowan Old Style','Palatino Linotype',Palatino,Georgia,serif;
+    -webkit-text-size-adjust:100%;}
+  .sheet{max-width:780px;margin:0 auto;background:var(--paper);
+    box-shadow:0 1px 40px rgba(36,31,25,.10);}
+
+  header.top{padding:42px 40px 28px;border-bottom:1px solid var(--rule)}
+  .toptopic,.topseries{display:inline-block;margin:0 0 16px 9px;padding:7px 16px;border-radius:20px;
+    border:1px solid currentColor;opacity:.62;text-decoration:none;color:inherit;
+    font:600 11.5px 'Helvetica Neue',Arial,sans-serif;letter-spacing:.09em;
+    text-transform:uppercase;transition:opacity .12s ease}
+  .tophome{display:inline-block;margin:0 0 16px;padding:7px 16px;border-radius:20px;
+    border:1px solid currentColor;opacity:.62;text-decoration:none;color:inherit;
+    font:600 11.5px 'Helvetica Neue',Arial,sans-serif;letter-spacing:.09em;
+    text-transform:uppercase;transition:opacity .12s ease}
+  .toptopic:hover,.topseries:hover,.tophome:hover{opacity:1}
+  .eyebrow{font:500 11.5px/1 'Helvetica Neue',Arial,sans-serif;letter-spacing:.24em;
+    text-transform:uppercase;color:var(--sepia);margin:0 0 14px}
+  .eyebrow a.serlink,.eyebrow a.mast{color:inherit;text-decoration:none;
+    border-bottom:1px solid transparent}
+  .eyebrow a.serlink:hover,.eyebrow a.mast:hover{border-bottom-color:currentColor}
+  h1{font-size:31px;line-height:1.2;margin:0 0 10px;font-weight:400;letter-spacing:-.012em}
+  .kicker{color:var(--muted);margin:0;font-size:16.5px;font-style:italic}
+
+  .source{margin:0;padding:26px 40px;background:var(--sepiatint);border-bottom:1px solid var(--rule)}
+  .cite{margin:0 0 16px;font-size:16px;line-height:1.6}
+  .cite b{font-weight:600}
+  .meta{display:flex;flex-wrap:wrap;gap:5px 22px;margin:0 0 16px;
+    font:400 13.5px 'Helvetica Neue',Arial,sans-serif;color:var(--muted)}
+  .meta b{color:var(--ink);font-weight:600}
+  a.read{display:inline-block;padding:14px 28px;border-radius:30px;text-decoration:none;
+    background:var(--sepia);color:#FAF6F0;
+    font:600 15px 'Helvetica Neue',Arial,sans-serif;letter-spacing:.03em}
+  a.read:hover{background:#7E4234}
+  .srcnote{font:400 13.5px 'Helvetica Neue',Arial,sans-serif;color:var(--muted);margin:14px 0 0}
+
+  .pad{padding:32px 40px}
+  p{margin:0 0 17px}
+  h2.sub{font:600 12px 'Helvetica Neue',Arial,sans-serif;letter-spacing:.2em;
+    text-transform:uppercase;color:var(--muted);margin:30px 0 16px;
+    padding-bottom:8px;border-bottom:1px solid var(--rule)}
+  b.term{font-weight:600;color:var(--sepia)}
+
+  .agree{display:flex;gap:13px;flex-wrap:wrap;margin:0 0 22px}
+  .ag{flex:1 1 150px;background:#fff;border:1px solid var(--rule);border-radius:9px;
+    padding:16px 18px;text-align:center}
+  .ag .big{font-size:30px;line-height:1.1;color:var(--sepia);margin:0 0 4px}
+  .ag .lab2{font:400 13.5px 'Helvetica Neue',Arial,sans-serif;color:var(--muted);
+    line-height:1.45;margin:0}
+
+  /* the eighteen parts, as a shelf you can run your eye along */
+  .shelf{margin:0 0 22px;padding:20px 24px;background:#F6F2EC;border:1px solid var(--rule);
+    border-radius:9px;font:400 15px/1.75 'Helvetica Neue',Arial,sans-serif;color:#4A3A34}
+  .shelf .lab{display:block;font:600 11px 'Helvetica Neue',Arial,sans-serif;
+    letter-spacing:.18em;text-transform:uppercase;color:var(--sepia);margin:0 0 11px}
+  .shelf i{font-style:normal;color:var(--muted)}
+
+  .gap{margin:0 0 20px;padding:20px 24px;background:#F3EEE3;
+    border-left:4px solid var(--sepia);border-radius:0 8px 8px 0}
+  .gap .lab{display:block;font:600 11px 'Helvetica Neue',Arial,sans-serif;
+    letter-spacing:.18em;text-transform:uppercase;color:var(--sepia);margin:0 0 9px}
+  .gap p:last-child{margin:0}
+
+  .caution{margin:0 0 20px;padding:20px 24px;background:var(--rusttint);
+    border-left:4px solid var(--rust);border-radius:0 8px 8px 0}
+  .caution .lab{display:block;font:600 11px 'Helvetica Neue',Arial,sans-serif;
+    letter-spacing:.18em;text-transform:uppercase;color:var(--rust);margin:0 0 9px}
+  .caution p:last-child{margin:0}
+
+  .challenge{margin:0;padding:28px 32px;background:var(--rusttint);border-left:5px solid var(--rust)}
+  .challenge h2{font:600 12px 'Helvetica Neue',Arial,sans-serif;letter-spacing:.2em;
+    text-transform:uppercase;color:var(--rust);margin:0 0 13px}
+  .ask{font-size:19.5px;line-height:1.5;margin:0 0 8px}
+  .lead{font-size:15px;color:var(--muted);margin:0 0 17px;line-height:1.55}
+  .btn{display:inline-block;margin:6px 0 12px;padding:15px 30px;background:var(--rust);
+    color:#FDF8F5;text-decoration:none;border-radius:30px;
+    font:600 15px 'Helvetica Neue',Arial,sans-serif;letter-spacing:.03em}
+  .btn:hover{background:#8A3620}
+  .fallback{font:400 13.5px 'Helvetica Neue',Arial,sans-serif;color:var(--muted);margin:0}
+  .fallback a{color:var(--rust)}
+
+  .preamble{margin:0 0 26px;padding:22px 26px;background:#F4EFEA;
+    border-left:4px solid var(--sepia);border-radius:0 8px 8px 0}
+  .preamble .lab{display:block;font:600 11px 'Helvetica Neue',Arial,sans-serif;
+    letter-spacing:.18em;text-transform:uppercase;color:var(--sepia);margin:0 0 10px}
+  .preamble p:last-child{margin:0}
+  .pull{margin:26px 0;padding:0 0 0 22px;border-left:3px solid var(--sepia);
+    font-size:20px;line-height:1.45;font-style:italic;color:#4A3A34}
+
+  .subline{margin:0 0 14px;padding:0 0 13px;border-bottom:1px solid rgba(0,0,0,.09);
+    font:400 14.5px/1.55 'Iowan Old Style','Palatino Linotype',Palatino,Georgia,serif;
+    max-width:56ch;margin-left:auto;margin-right:auto}
+  .subline a{font-weight:500;border-bottom:1px solid currentColor;
+    text-decoration:none;color:inherit}
+  .firstpub{display:block;margin:0 0 10px;padding-bottom:9px;
+    border-bottom:1px solid currentColor;border-color:rgba(0,0,0,.09);
+    font:400 12px 'Helvetica Neue',Arial,sans-serif;letter-spacing:.06em;opacity:.72}
+
+  footer{padding:24px 40px 42px;border-top:1px solid var(--rule);
+    font:400 13px 'Helvetica Neue',Arial,sans-serif;color:var(--muted);text-align:center;line-height:1.7}
+  .home{display:inline-block;margin:0 0 14px;padding:8px 18px;border-radius:20px;
+    border:1px solid var(--rule);background:#F2EEE6;color:var(--sepia);text-decoration:none;
+    font:600 12.5px 'Helvetica Neue',Arial,sans-serif;letter-spacing:.05em}
+  .home:hover{background:var(--sepia);border-color:var(--sepia);color:#FAF6F0}
+  .mine{display:inline-block;margin:9px 0 0;opacity:.78;font-size:.94em}
+
+  @media (max-width:620px){
+    header.top,.source,.pad,footer{padding-left:20px;padding-right:20px}
+    .challenge{padding:22px 20px}
+    h1{font-size:25px} body{font-size:16.5px} .ask{font-size:18px}
+  }
+  @media print{ body{background:#fff} .sheet{box-shadow:none;max-width:none} }
+</style>
+</head>
+<body>
+<div class="sheet">
+
+  <header class="top">
+    <a class="tophome" href="./">&larr;&nbsp; Home</a>
+    <a class="topseries" href="./?s=bookclub">All book club</a>
+    <p class="eyebrow"><a class="mast" href="./">ICU and You</a> &nbsp;·&nbsp;
+      <a class="serlink" href="./?s=bookclub">ICU Book Club</a> &nbsp;·&nbsp; Number 3</p>
+    <h1>The book I slept beside</h1>
+    <p class="kicker">Oh&rsquo;s Intensive Care Manual &mdash; the bible for four decades, and a book with
+      every fault the form can have</p>
+  </header>
+
+  <div class="source">
+    <p class="cite">Jonathan M. Handy, Bala Venkatesh, Jeremy Cohen and Daniel Martin, editors.
+      <b>Oh&rsquo;s Intensive Care Manual.</b> Ninth edition. Elsevier, October 2025. About 1,700 pages,
+      120 chapters in 18 parts. Print and eBook. First published in 1979 by T.&nbsp;E.&nbsp;Oh.</p>
+    <p class="meta"><span><b>Started</b> 1979</span><span><b>Now</b> 9th edition</span>
+      <span><b>Founding editor</b> T. E. Oh</span><span><b>Still called</b> a manual</span></p>
+    <a class="read" href="https://shop.elsevier.com/books/ohs-intensive-care-manual/handy/978-0-443-11611-7">At the publisher</a>
+    <p class="srcnote">Not an affiliate link, and nobody has asked me to write this.</p>
+  </div>
+
+  <div class="pad">
+    <div class="preamble">
+      <span class="lab">About this series</span>
+      <p>Books that have made a difference to how we teach, train or practise in intensive care. Not
+        textbooks, or not only textbooks &mdash; anything that changed how somebody thinks about the work.
+        <a href="book-club-01-the-body-in-question.html">No. 1</a> was not a medical book at all. This one
+        is about as medical as a book can get.</p>
+    </div>
+
+    <p>For about three years it lived on the floor beside my bed.</p>
+
+    <p>I want to be precise about that, because it sounds like devotion and it was mostly logistics. I was a
+      senior registrar. The thing was too heavy to keep carrying back and forth, and I needed it at hours
+      when I was in no condition to go looking. So it stayed where it landed.</p>
+
+    <p>I did not read it in bed. Nobody has ever read Oh&rsquo;s in bed. It is not bedtime reading and it has
+      never pretended to be.</p>
+
+    <p>If you trained in Australia, New Zealand or Singapore at any point in the last forty years, none of
+      this needs explaining. It is the bible. It has been the bible for so long that nobody alive can recall
+      the decision being made. You sat the exams out of it. You settled arguments with it. At some point you
+      stopped saying the title and started saying <em>Oh&rsquo;s</em>, the way you say <em>the</em> defib.</p>
+
+    <h2 class="sub">The scope of the thing</h2>
+
+    <div class="agree">
+      <div class="ag"><p class="big">18</p><p class="lab2">parts</p></div>
+      <div class="ag"><p class="big">120</p><p class="lab2">chapters</p></div>
+      <div class="ag"><p class="big">~1,700</p><p class="lab2">pages</p></div>
+    </div>
+
+    <p>It opens, before a single patient appears, with the design and organisation of an intensive care unit.
+      The room first. Then who staffs it, how they hand over, how they move a patient down a corridor or
+      across a state. Only then does anybody get sick.</p>
+
+    <div class="shelf">
+      <span class="lab">The eighteen parts</span>
+      Structure and process <i>·</i> Decision making <i>·</i> Sepsis and infections <i>·</i>
+      Cardiovascular <i>·</i> Respiratory failure <i>·</i> Gastroenterological emergencies and surgery <i>·</i>
+      Acute renal failure <i>·</i> Neurological disorders <i>·</i> Endocrine disorders <i>·</i>
+      The surgical patient <i>·</i> Severe and multiple trauma <i>·</i> Special populations <i>·</i>
+      The paediatric patient <i>·</i> Environmental injuries <i>·</i> Inflammatory and immune disorders <i>·</i>
+      Haematological management <i>·</i> Transplantation <i>·</i> Pharmacologic considerations
+    </div>
+
+    <p>Inside that, the range is what gets you. There is a chapter on the determination of death and a
+      chapter on severity scoring. There is one on tropical infections and one on blast and ballistic trauma,
+      and one on chemical, biological, radiological and nuclear exposure, which I hope you never need and
+      which somebody, somewhere, is reading tonight. There is a chapter on M&#257;ori, Aboriginal and Torres
+      Strait Islander populations and critical illness. There is a chapter on allied health professionals in
+      the unit, which is new, and overdue.</p>
+
+    <p>Two of this week&rsquo;s pieces on this site are chapters in it. Humidifiers sit in Part Five, which is
+      the whole of <a href="anecdote-city-01-manic-monday.html">Manic Monday</a> in one unglamorous heading.
+      Envenomation sits in Part Fourteen, which is where
+      <a href="registrars-01-snake-bites.html">Maheshani&rsquo;s talk</a> would go. That is the trick of a book
+      like this. Whatever happened to you last Tuesday, it is in there, filed under something flatter than
+      the way you remember it.</p>
+
+    <div class="pull">It is called a manual. It is seventeen hundred pages. Somebody should have said
+      something in 1979 and now it is too late.</div>
+
+    <p>Reviewing the sixth edition in <em>Anaesthesia and Intensive Care</em>, K. M. Ho of Perth called it a
+      truly outstanding and comprehensive intensive care textbook, and noted drily that it is far more
+      comprehensive than a usual clinical manual &mdash; which is the politest possible way of saying the
+      title stopped being accurate several editions ago.</p>
+
+    <h2 class="sub">What is wrong with it</h2>
+
+    <p>Everything that is wrong with any multi-author textbook, and I have never found a way round it.</p>
+
+    <p>There is no voice. There cannot be. A hundred and twenty chapters by a hundred-odd people produces a
+      hundred-odd registers, and you feel the join every time you cross one. The flow is not there either.
+      You do not read Oh&rsquo;s so much as consult it, then look up, then consult it again somewhere else.</p>
+
+    <p>Worse, and this is the real cost: there is no unified message. Two chapters that touch the same
+      patient from different directions will not necessarily agree about her, and nobody will tell you they
+      disagree. You find it yourself, usually at three in the morning, usually when you were hoping to be
+      told.</p>
+
+    <div class="gap">
+      <span class="lab">And yet</span>
+      <p>The same arrangement is the reason the book is any good. Every chapter is written by somebody who
+        actually does that thing, and you can feel it &mdash; the energy of a person writing about their own
+        corner, not a generalist being even-handed about somebody else&rsquo;s. The expertise is real and it
+        is specific. You would not get that from one author, and one author could not possibly have written
+        it. The flaw and the virtue are the same decision.</p>
+    </div>
+
+    <h2 class="sub">The problem it cannot solve</h2>
+
+    <p>Traditional textbooks are in trouble in a fast specialty, and this one has the receipts. The fourth
+      edition, which T. E. Oh edited himself in 1997, ran to just over a thousand pages. The ninth runs to
+      about seventeen hundred. The specialty grew by two thirds of a book in less than thirty years, and that
+      is only the part that could be squeezed in.</p>
+
+    <p>Nothing in print can keep up with that. A chapter is written, then edited, then typeset, then printed,
+      then shipped, and somewhere in there a trial reports and makes a paragraph of it wrong. Everyone knows
+      this. Nobody has solved it.</p>
+
+    <p>The ninth edition does the sensible things available to it. There is an eBook with every copy, which
+      means the thing is searchable and in your pocket and not on the floor beside the bed. There is online
+      content, some of it arriving after the print date, which is at least an admission that the print date
+      is not the end of the story. Whether that is enough is a fair question. It is more than the fourth
+      edition could do, which was nothing.</p>
+
+    <div class="caution">
+      <span class="lab">One fair criticism, and it is ours</span>
+      <p>Reviewing the seventh edition in the <em>British Journal of Anaesthesia</em>, MacBrayne and Webster
+        of Aberdeen praised contributors who were undoubtedly experts in their fields and a book designed for
+        global appeal, then observed that the contributions came overwhelmingly from Australasia and the UK,
+        with no North American input at all.</p>
+      <p>From where we sit that is not obviously a defect &mdash; it is precisely why the book fits our
+        practice so well. But it is worth knowing what you are holding. It is not a neutral survey of world
+        intensive care. It is our tradition, written down.</p>
+    </div>
+
+    <h2 class="sub">So</h2>
+
+    <p>I have read it more times than I care to admit, and I have complained about it for most of those
+      times. Both things are true and neither cancels the other. It is a love-hate relationship of the
+      ordinary kind, the sort you have with an institution rather than a book.</p>
+
+    <p>It is cherished. It has a place, and it will go on having one, because whatever replaces the printed
+      textbook has not arrived yet and this is the best version of the old thing that anybody has managed.
+      The name on the cover belongs to a man who stopped editing it a quarter of a century ago and whose
+      judgement is still somehow in the architecture.</p>
+
+    <p>Mine is not on the floor beside the bed any more. It is on the shelf in the office, at eye level,
+      where I can reach it without standing up.</p>
+
+    <p>Which is roughly what promotion amounts to.</p>
+  </div>
+
+  <div class="pad" style="padding-top:6px">
+    <div class="challenge">
+      <h2>Challenge for you</h2>
+      <p class="ask">Is there a book that made a difference to you, in medicine or well outside it?</p>
+      <p class="lead">Tell me what it was and what it did. If you like, I will read it and post a review here.
+        Better still, send me your own review and I will publish the best of them, with your name on them.
+        And if you have a view about Oh&rsquo;s &mdash; particularly if you think I have been unfair to it,
+        or not nearly hard enough &mdash; I would like that too.</p>
+      <p><a class="btn" href="mailto:icuandyou@icloud.com?subject=ICU%20Book%20Club%20-%20a%20book%20that%20made%20a%20difference&body=The%20book%3A%0D%0A%0D%0A%0D%0AWhat%20it%20did%20for%20me%3A%0D%0A%0D%0A%0D%0A---%0D%0A%0D%0AWould%20you%20like%20me%20to%20review%20it%2C%20or%20are%20you%20sending%20your%20own%20review%3F%0D%0A%0D%0A%0D%0AName%20%28and%20how%20you%20would%20like%20to%20be%20credited%29%3A%0D%0A%0D%0A---%0D%0A%0D%0AThinking%20about%20this%20ICU%20AND%20YOU%20post%20overall%20%E2%80%94%20was%20it%20useful%20to%20you%2C%20or%20would%20it%20be%20useful%20to%20others%3F%0D%0A">Send me a book</a></p>
+      <p class="fallback" style="margin-bottom:9px">How you are credited is entirely your call &mdash; by name, by initials, or not at all &mdash; whether you write the piece or I do, and whether I quote you or simply say who sent something in; nothing of yours goes up with your name on it unless you have said yes.</p>
+      <p class="fallback">The button opens a reply straight to me. If your device blocks it, write to
+        <a href="mailto:icuandyou@icloud.com">icuandyou@icloud.com</a> instead.</p>
+    </div>
+  </div>
+
+  <footer>
+    <span class="firstpub">First published October 2026</span>
+    <p class="subline">Two emails a week &mdash; the Friday newsletter for all subscribers, and, for clinical subscribers,
+      the mind map and puzzles the moment they go up on Tuesday. Occasional announcements of new
+      features as they arrive. What went up and why it mattered, the best of your replies, and
+      original feature stories, news and views. <a href="https://joinlist.com/f/5adad2d6">Come and join us</a>.</p>
+    <a class="home" href="./">&larr; &nbsp;All of ICU AND YOU</a><br>
+    ICU AND YOU &nbsp;&#183;&nbsp; ICU Book Club No. 3<br>
+    A personal review, written independently. Nothing of the book is reproduced here.
+    Educational use only. Edition details, chapter and part structure from the publisher&rsquo;s listing for
+    the ninth edition; the 1997 page count from the fourth edition, Butterworth-Heinemann. The two reviews
+    quoted are K. M. Ho, <em>Anaesthesia and Intensive Care</em> 2009;37(4), on the sixth edition, and
+    J. MacBrayne and N. R. Webster, <em>British Journal of Anaesthesia</em> 2015;114(2):354, on the seventh.
+  <br>
+    <span class="mine">Views my own, not those of NSW Health or any other organisation. No identifiable patients — scenarios are constructed or combined for teaching. <a href="about.html">More</a>.</span>
+  </footer>
+
+</div>
+<script data-goatcounter="https://icuandyou.goatcounter.com/count"
+        async src="//gc.zgo.at/count.js"></script>
+</body>
+</html>
