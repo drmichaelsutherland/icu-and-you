@@ -1480,19 +1480,19 @@
    "series": "bookclub",
    "colour": "terracotta",
    "number": "3",
-   "title": "The book I slept beside",
+   "title": "T. E. Oh's Intensive Care Manual",
    "topic": "Any time",
    "slug": "standing",
    "week": false,
    "standing": true,
-   "blurb": "Oh's Intensive Care Manual — the bible for trainees in Australia, New Zealand and Singapore since 1979, and a book with every fault a multi-author textbook can have. Eighteen parts, 120 chapters, seventeen hundred pages, and it is still called a manual. No voice, no flow, and no unified message — and the same arrangement is exactly why it is any good."
+   "blurb": "The book I slept beside — the bible for trainees in Australia, New Zealand and Singapore since 1979, and a book with every fault a multi-author textbook can have. Eighteen parts, 120 chapters, seventeen hundred pages, and it is still called a manual. No voice, no flow, and no unified message — and the same arrangement is exactly why it is any good."
   }
  ],
  "latest": [
   {
    "file": "book-club-03-ohs-intensive-care-manual.html",
    "colour": "terracotta",
-   "label": "ICU Book Club 3 \u00b7 The book I slept beside"
+   "label": "ICU Book Club 3 \u00b7 T. E. Oh's Intensive Care Manual"
   },
   {
    "file": "anecdote-city-01-manic-monday.html",
