@@ -1447,10 +1447,10 @@
    "blurb": "A new group, and an invitation to the registrars at Coffs Harbour to have their teaching published under their own names. Maheshani Wijenatha goes first, on snake bite: why the bite site tells you nothing, why an INR of 1.3 is abnormal here, why the venom detection kit has left the pathway, and why a child receives the same dose of antivenom as an adult."
   },
   {
-   "file": "anecdote-city-01-welcome.html",
+   "file": "anecdote-city-00-welcome.html",
    "series": "anecdote",
    "colour": "indigo striped",
-   "number": "1",
+   "number": "0",
    "title": "Welcome to Anecdote City",
    "topic": "Any time",
    "slug": "standing",
@@ -1459,13 +1459,32 @@
    "badge": "Anecdote City",
    "link_label": "Open",
    "blurb": "A new group, on its own stationery. More than a hundred stories from forty years of practice, going up a few at a time as the backlog is worked through \u2014 and room for yours. Not the saves: the ones where somebody said something unexpected, or where the thing you were certain of turned out to be the thing you were wrong about."
+  },
+  {
+   "file": "anecdote-city-01-dead-space.html",
+   "series": "anecdote",
+   "colour": "indigo striped",
+   "number": "1",
+   "title": "Dead space",
+   "topic": "Any time",
+   "slug": "standing",
+   "week": false,
+   "standing": true,
+   "badge": "Anecdote City",
+   "link_label": "Open",
+   "blurb": "A Monday morning, a young woman with acute severe asthma nobody could oxygenate or ventilate, and a tidal volume of 150 ml. The consultant called for the one instrument the registrar was certain would kill her. There was no asthma."
   }
  ],
  "latest": [
   {
-   "file": "anecdote-city-01-welcome.html",
+   "file": "anecdote-city-01-dead-space.html",
    "colour": "indigo striped",
-   "label": "Anecdote City 1 \u00b7 Welcome to Anecdote City"
+   "label": "Anecdote City 1 \u00b7 Dead space"
+  },
+  {
+   "file": "anecdote-city-00-welcome.html",
+   "colour": "indigo striped",
+   "label": "Anecdote City 0 \u00b7 Welcome to Anecdote City"
   },
   {
    "file": "registrars-01-snake-bites.html",
@@ -1481,11 +1500,6 @@
    "file": "drugstore-03-insulin.html",
    "colour": "mulberry",
    "label": "Drugstore 3 \u00b7 Insulin"
-  },
-  {
-   "file": "africa-01-too-far-to-walk.html",
-   "colour": "bronze striped",
-   "label": "Out of Africa 1 \u00b7 Too far to walk"
   }
  ],
  "topten": [
