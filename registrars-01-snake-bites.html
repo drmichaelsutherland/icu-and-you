@@ -1,0 +1,526 @@
+<!DOCTYPE html>
+<html lang="en-AU">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ICU AND YOU · Registrar Presentations No. 1 — Australian snake bites</title>
+<meta name="description" content="Registrar Presentations No. 1: Maheshani Wijenatha on Australian terrestrial snake bites — first aid, the three questions at the door, reading the coagulopathy, and when antivenom is still worth giving.">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="alternate icon" href="/favicon.ico" sizes="any">
+<link rel="apple-touch-icon" href="/icon-180.png">
+<meta name="theme-color" content="#1B2A33">
+<meta property="og:site_name" content="ICU AND YOU">
+<meta property="og:type" content="website">
+<meta property="og:title" content="ICU AND YOU · Registrar Presentations No. 1 — Australian snake bites">
+<meta property="og:description" content="Most people bitten by an Australian snake are not envenomed. The whole job is working out, quickly, which ones are.">
+<meta property="og:image" content="https://icuandyou.com/share-card.png">
+<meta name="twitter:card" content="summary_large_image">
+<style>
+  :root{
+    --paper:#FDFBF7; --ink:#201B26; --muted:#6B6473; --rule:#E2DCE8;
+    --heather:#635574; --heathertint:#F1EEF6;
+    --deep:#473C56; --deeptint:#E9E5EF;
+    --alert:#A8442A; --alerttint:#F9EDE9;
+  }
+  *{box-sizing:border-box}
+  body{margin:0;background:#E8E4EE;color:var(--ink);
+    font:400 17px/1.66 'Iowan Old Style','Palatino Linotype',Palatino,Georgia,serif;
+    -webkit-text-size-adjust:100%;}
+  .sheet{max-width:760px;margin:0 auto;background:var(--paper);
+    box-shadow:0 1px 40px rgba(32,27,38,.10);}
+
+  .flag{display:flex;height:5px}
+  .flag i{display:block}
+  .flag i:nth-child(1){flex:2;background:var(--deep)}
+  .flag i:nth-child(2){flex:3;background:var(--heather)}
+  .flag i:nth-child(3){flex:2;background:var(--alert)}
+
+  header.top{padding:42px 42px 28px;border-bottom:1px solid var(--rule)}
+  .eyebrow a.serlink,.eyebrow a.mast{color:inherit;text-decoration:none;
+    border-bottom:1px solid transparent}
+  .eyebrow a.serlink:hover,.eyebrow a.mast:hover{border-bottom-color:currentColor}
+  .toptopic,.topseries{display:inline-block;margin:0 0 16px 9px;padding:7px 16px;border-radius:20px;
+    border:1px solid currentColor;opacity:.62;text-decoration:none;color:inherit;
+    font:600 11.5px 'Helvetica Neue',Arial,sans-serif;letter-spacing:.09em;
+    text-transform:uppercase;transition:opacity .12s ease}
+  .tophome{display:inline-block;margin:0 0 16px;padding:7px 16px;border-radius:20px;
+    border:1px solid currentColor;opacity:.62;text-decoration:none;color:inherit;
+    font:600 11.5px 'Helvetica Neue',Arial,sans-serif;letter-spacing:.09em;
+    text-transform:uppercase;transition:opacity .12s ease}
+  .toptopic:hover,.topseries:hover,.tophome:hover{opacity:1}
+  .eyebrow{font:500 11.5px/1 'Helvetica Neue',Arial,sans-serif;letter-spacing:.24em;
+    text-transform:uppercase;color:var(--muted);margin:0 0 14px}
+  h1{font-size:34px;line-height:1.16;margin:0 0 8px;font-weight:400;letter-spacing:-.012em;
+    font-style:italic}
+  .kicker{color:var(--muted);margin:0 0 16px;font-size:16.5px}
+  .byline{margin:0;padding:14px 0 0;border-top:1px solid var(--rule);
+    font:400 15px 'Helvetica Neue',Arial,sans-serif;color:var(--muted);line-height:1.6}
+  .byline b{color:var(--deep);font-weight:600}
+
+  .pad{padding:34px 42px}
+  p{margin:0 0 17px}
+  .lede{font-size:20px;line-height:1.5;margin:0 0 22px}
+
+  h2.sub{font:600 12px 'Helvetica Neue',Arial,sans-serif;letter-spacing:.2em;
+    text-transform:uppercase;color:var(--muted);margin:32px 0 14px;
+    padding-bottom:8px;border-bottom:1px solid var(--rule)}
+
+  .welcome{margin:0 0 24px;padding:20px 24px;background:var(--heathertint);
+    border-left:4px solid var(--heather);border-radius:0 8px 8px 0}
+  .welcome .lab{display:block;font:600 11px 'Helvetica Neue',Arial,sans-serif;
+    letter-spacing:.18em;text-transform:uppercase;color:var(--deep);margin:0 0 9px}
+  .welcome p{margin:0 0 10px;font-size:16px}
+  .welcome p:last-child{margin:0}
+
+  .figs{display:flex;gap:14px;flex-wrap:wrap;margin:0 0 22px}
+  .fig{flex:1 1 150px;background:var(--deeptint);border:1px solid #D7D0E0;
+    border-radius:9px;padding:16px 18px}
+  .fig .big{font-size:27px;line-height:1.1;color:var(--deep);margin:0 0 5px}
+  .fig .lab{font:400 13.5px 'Helvetica Neue',Arial,sans-serif;color:var(--muted);line-height:1.4}
+
+  .alert{margin:0 0 18px;padding:20px 24px;background:var(--alerttint);
+    border-left:4px solid var(--alert);border-radius:0 8px 8px 0}
+  .alert .lab{display:block;font:600 11px 'Helvetica Neue',Arial,sans-serif;
+    letter-spacing:.18em;text-transform:uppercase;color:var(--alert);margin:0 0 9px}
+  .alert p:last-child{margin:0}
+
+  .gloss{margin:0 0 18px;padding:20px 24px;background:var(--heathertint);
+    border-left:4px solid var(--heather);border-radius:0 8px 8px 0;font-size:16px}
+  .gloss .lab{display:block;font:600 11px 'Helvetica Neue',Arial,sans-serif;
+    letter-spacing:.18em;text-transform:uppercase;color:var(--deep);margin:0 0 9px}
+  .gloss p:last-child{margin:0}
+
+  ol.steps{margin:0 0 20px;padding:0 0 0 22px}
+  ol.steps li{margin:0 0 11px;padding-left:5px}
+  ul.plain{margin:0 0 18px;padding:0 0 0 22px}
+  ul.plain li{margin:0 0 9px;padding-left:4px}
+
+  .tscroll{overflow-x:auto;margin:0 0 22px;-webkit-overflow-scrolling:touch}
+  table{border-collapse:collapse;width:100%;min-width:520px;
+    font:400 15px/1.5 'Helvetica Neue',Arial,sans-serif}
+  caption{caption-side:top;text-align:left;font:600 11px 'Helvetica Neue',Arial,sans-serif;
+    letter-spacing:.16em;text-transform:uppercase;color:var(--muted);padding:0 0 9px}
+  th,td{border:1px solid var(--rule);padding:9px 12px;vertical-align:top;text-align:left}
+  thead th{background:var(--deeptint);color:var(--deep);font-weight:600}
+  tbody th{background:var(--heathertint);font-weight:600;white-space:nowrap}
+  td ul{margin:0;padding-left:17px}
+  td li{margin:0 0 3px}
+
+  .phone{display:block;margin:0 0 20px;padding:18px 24px;background:var(--deep);
+    color:#FDFBF7;border-radius:9px;text-align:center;text-decoration:none}
+  .phone .lab{display:block;font:600 11px 'Helvetica Neue',Arial,sans-serif;
+    letter-spacing:.18em;text-transform:uppercase;opacity:.75;margin:0 0 7px}
+  .phone .num{font:600 29px 'Helvetica Neue',Arial,sans-serif;letter-spacing:.04em}
+
+  .reply{margin:0;padding:28px 32px;background:var(--deeptint);border-left:5px solid var(--deep)}
+  .reply h2{font:600 12px 'Helvetica Neue',Arial,sans-serif;letter-spacing:.2em;
+    text-transform:uppercase;color:var(--deep);margin:0 0 13px}
+  .ask{font-size:19px;line-height:1.5;font-style:italic;margin:0 0 15px}
+  .btn{display:inline-block;margin:6px 0 12px;padding:15px 30px;background:var(--heather);
+    color:#FDFBF7;text-decoration:none;border-radius:30px;font-style:normal;
+    font:600 15px 'Helvetica Neue',Arial,sans-serif;letter-spacing:.03em}
+  .btn:hover{background:var(--deep)}
+  .btn:focus-visible{outline:3px solid var(--alert);outline-offset:3px}
+  .fallback{font:400 13.5px 'Helvetica Neue',Arial,sans-serif;color:var(--muted);margin:0}
+  .fallback a{color:var(--deep)}
+
+  .subline{margin:0 0 14px;padding:0 0 13px;border-bottom:1px solid rgba(0,0,0,.09);
+    font:400 14.5px/1.55 'Iowan Old Style','Palatino Linotype',Palatino,Georgia,serif;
+    max-width:56ch;margin-left:auto;margin-right:auto}
+  .subline a{font-weight:500;border-bottom:1px solid currentColor;
+    text-decoration:none;color:inherit}
+  .firstpub{display:block;margin:0 0 10px;padding-bottom:9px;
+    border-bottom:1px solid currentColor;border-color:rgba(0,0,0,.09);
+    font:400 12px 'Helvetica Neue',Arial,sans-serif;letter-spacing:.06em;opacity:.72}
+
+  footer{padding:24px 42px 42px;border-top:1px solid var(--rule);
+    font:400 13px 'Helvetica Neue',Arial,sans-serif;color:var(--muted);text-align:center;line-height:1.7}
+  .home{display:inline-block;margin:0 0 14px;padding:8px 18px;border-radius:20px;
+    border:1px solid var(--rule);background:#F2EFF6;color:var(--deep);text-decoration:none;
+    font:600 12.5px 'Helvetica Neue',Arial,sans-serif;letter-spacing:.05em}
+  .home:hover{background:var(--deep);border-color:var(--deep);color:#FDFBF7}
+  .mine{display:inline-block;margin:9px 0 0;opacity:.78;font-size:.94em}
+  .srcs{font-size:12.5px;line-height:1.6}
+  .srcs a{color:inherit}
+
+  @media (max-width:620px){
+    header.top,.pad,footer{padding-left:20px;padding-right:20px}
+    .reply{padding:22px 20px}
+    h1{font-size:26px} body{font-size:16.5px} .lede{font-size:18px} .ask{font-size:17.5px}
+    .phone .num{font-size:25px}
+  }
+  @media print{ body{background:#fff} .sheet{box-shadow:none;max-width:none} }
+</style>
+</head>
+<body>
+<div class="sheet">
+
+  <div class="flag"><i></i><i></i><i></i></div>
+
+  <header class="top">
+    <a class="tophome" href="./">&larr;&nbsp; Home</a>
+    <a class="topseries" href="./?s=registrars">More Registrar Presentations</a>
+    <a class="toptopic" href="./?t=standing" title="Everything in Any time">All on this topic</a>
+    <p class="eyebrow"><a class="mast" href="./">ICU and You</a> &nbsp;·&nbsp;
+      <a class="serlink" href="./?s=registrars">Registrar Presentations</a> &nbsp;·&nbsp; Number 1</p>
+    <h1>Australian snake bites</h1>
+    <p class="kicker">Most people bitten by an Australian snake are never envenomed. The whole job is working out, quickly and without a reliable test, which ones are</p>
+    <p class="byline">A teaching presentation given at Coffs Harbour Health Campus by <b>Dr Maheshani Wijenatha</b>,
+      Intensive Care Registrar. Moderator: <b>Dr Azad</b>. Set for the web by ICU AND YOU with her permission;
+      the clinical content and its selection are hers.</p>
+  </header>
+
+  <div class="pad">
+    <div class="welcome">
+      <span class="lab">A new group</span>
+      <p>Coffs Harbour trains registrars who prepare, every few weeks, a piece of teaching far better than its
+        audience of eleven people in a room. Then the file goes into a folder and nobody sees it again.</p>
+      <p><strong>Registrar Presentations</strong> is an invitation to stop doing that. If you have given a
+        departmental talk and you are willing to have it read more widely, it can go up here under your own
+        name, properly credited, and you can put it on your CV as a publication rather than as a line in a
+        teaching log.</p>
+      <p>Maheshani Wijenatha has gone first, which is the hardest position in any queue. If you work at Coffs
+        and you have a talk, the button at the foot of this page reaches me.</p>
+    </div>
+
+    <p class="lede">About three thousand people a year are bitten by a snake in Australia. Roughly one in twenty
+      receives antivenom. Between one and four die &mdash; most often from a brown snake, and most often
+      early, before anybody has had the chance to do very much at all.</p>
+
+    <div class="figs">
+      <div class="fig"><p class="big">~3,000</p><p class="lab">suspected bites a year</p></div>
+      <div class="fig"><p class="big">~5%</p><p class="lab">receive antivenom</p></div>
+      <div class="fig"><p class="big">1&ndash;4</p><p class="lab">deaths a year, mostly brown snake</p></div>
+    </div>
+
+    <p>Those numbers carry the shape of the problem. The denominator is large, the treated fraction is small,
+      and the deaths cluster at the very front of the timeline. This is not a disease where thoroughness
+      compensates for delay.</p>
+
+    <h2 class="sub">What the venom does</h2>
+
+    <p>It helps to separate what happens at the bite from what happens everywhere else, because the first is
+      mostly irrelevant and the second is the entire clinical problem.</p>
+
+    <p><strong>Locally</strong>, Australian elapid bites are unimpressive. There may be scratches, a pair of
+      punctures, mild swelling, sometimes nothing visible at all. Tissue necrosis of the kind seen with vipers
+      elsewhere in the world is not a feature here. A benign-looking bite site excludes nothing.</p>
+
+    <p><strong>Systemically</strong>, four syndromes matter, in roughly descending order of frequency:
+      venom-induced consumption coagulopathy, neurotoxicity, myotoxicity and acute kidney injury, with
+      thrombotic microangiopathy and early cardiovascular collapse as the serious outliers.</p>
+
+    <p>The earliest symptoms are maddeningly nonspecific &mdash; headache, nausea and vomiting, abdominal pain,
+      diaphoresis, blurred vision, collapse. In a well-looking patient these are easy to attribute to anxiety,
+      and that is the trap. Headache and vomiting after a possible bite are systemic envenoming until the
+      bloods say otherwise.</p>
+
+    <h2 class="sub">Before hospital</h2>
+
+    <p>Pressure immobilisation is the only first aid that has ever been shown to help, and the detail matters
+      more than the enthusiasm.</p>
+
+    <ul class="plain">
+      <li>A broad elastic bandage, about 15&nbsp;cm wide, applied as firmly as for a sprain &mdash; snug, not
+        arterial.</li>
+      <li>Start over the bite and bandage the <em>whole limb</em>, then splint it.</li>
+      <li>Immobilise the patient, not just the limb. Walking defeats the point.</li>
+      <li>Apply it to anyone presenting within four hours of the bite, including those who arrive without one.</li>
+      <li>Do not wash the bite site, do not cut, do not suck, do not apply a tourniquet.</li>
+    </ul>
+
+    <div class="alert">
+      <span class="lab">The bandage is not a parking space</span>
+      <p>A correctly applied pressure bandage buys time. A tight bandage left on for many hours during a long
+        country transfer causes harm of its own. If you are receiving a patient who has been bandaged since a
+        property two hours away, the bandage is now a clinical problem as well as a treatment.</p>
+    </div>
+
+    <h2 class="sub">At the door: three questions</h2>
+
+    <p>Everything that follows in the first hour is an attempt to answer three things.</p>
+
+    <ol class="steps">
+      <li><strong>Is this patient envenomed?</strong> Not &ldquo;was this patient bitten&rdquo; &mdash; the
+        majority of bites deliver no significant venom load, and those patients need observation rather than
+        treatment.</li>
+      <li><strong>If so, which syndrome?</strong> The coagulation screen usually answers this before the
+        examination does.</li>
+      <li><strong>Does this patient need antivenom, and is it still early enough to matter?</strong></li>
+    </ol>
+
+    <div class="gloss">
+      <span class="lab">The kit you no longer reach for</span>
+      <p>Venom detection kits are no longer recommended for the management of snake bite in Australia. The
+        false-positive rate in patients who turn out not to be envenomed has been reported around 36%, and the
+        result almost never changed what was given. Currently available point-of-care devices are not
+        recommended either. Geography, syndrome and the bloods are what choose the antivenom now.</p>
+    </div>
+
+    <h2 class="sub">The bloods</h2>
+
+    <p>Baseline, and repeated: coagulation screen with INR, APTT, fibrinogen and D-dimer; full blood count with
+      film; creatine kinase; electrolytes, urea and creatinine; and a venous gas if the patient is unwell.</p>
+
+    <p>The thresholds worth carrying in your head:</p>
+
+    <ul class="plain">
+      <li><strong>INR above 1.2</strong> in this context is abnormal and means coagulopathy until proven
+        otherwise. This is not the threshold you use anywhere else in the hospital.</li>
+      <li><strong>D-dimer above 2.5&nbsp;mg/L</strong> suggests partial consumption coagulopathy; in complete
+        VICC it runs a hundred to a thousand times the assay cut-off.</li>
+      <li><strong>CK above 1,000&nbsp;U/L</strong> points to myotoxicity.</li>
+      <li><strong>The thrombotic microangiopathy triad</strong> &mdash; falling platelets, rising creatinine,
+        red cell fragments on the film &mdash; is the one that declares itself late and does the long-term
+        damage.</li>
+    </ul>
+
+    <p>D-dimer is useful for making the diagnosis and useless for following it, because it stays high for
+      days after the coagulopathy has resolved.</p>
+
+    <h2 class="sub">Reading the coagulopathy</h2>
+
+    <p>Two quite different things get called coagulopathy, and conflating them leads to the wrong expectations
+      about antivenom.</p>
+
+    <div class="tscroll">
+      <table>
+        <caption>The two coagulopathies</caption>
+        <thead>
+          <tr><th scope="col"></th>
+            <th scope="col">VICC (procoagulant)</th>
+            <th scope="col">Anticoagulant coagulopathy</th></tr>
+        </thead>
+        <tbody>
+          <tr><th scope="row">Mechanism</th>
+            <td>Prothrombin activators in the venom consume fibrinogen, factor V and factor VIII</td>
+            <td>An anticoagulant present in the venom</td></tr>
+          <tr><th scope="row">Snakes</th>
+            <td>Brown, tiger, rough-scaled, taipan, <em>Hoplocephalus</em> species</td>
+            <td>Black snakes &mdash; mulga, Collett&rsquo;s, red-bellied black</td></tr>
+          <tr><th scope="row">Bloods</th>
+            <td><ul>
+              <li>Complete: INR &gt;3.0 or unrecordable, fibrinogen undetectable, D-dimer enormous</li>
+              <li>Partial: INR &lt;3.0, fibrinogen low but present, D-dimer &gt;2.5&nbsp;mg/L</li>
+            </ul></td>
+            <td>INR and APTT mildly to moderately raised; fibrinogen and D-dimer normal (D-dimer may rise with
+              red-bellied black)</td></tr>
+          <tr><th scope="row">Clinically</th>
+            <td>Major bleeding, blood that will not clot, prolonged oozing from venepunctures, thrombotic
+              microangiopathy</td>
+            <td>Not clinically significant</td></tr>
+          <tr><th scope="row">After antivenom</th>
+            <td>Clotting improves over 12&ndash;36 hours. Antivenom does not reverse it &mdash; recovery
+              requires the liver to resynthesise the factors</td>
+            <td>Reverses rapidly</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <p>The last row is the one that changes behaviour. Persistent coagulopathy twelve hours after a brown snake
+      bite is expected physiology, not a failure of treatment, and it is not an indication for more antivenom.</p>
+
+    <h2 class="sub">Which snake, which syndrome</h2>
+
+    <p>Identification by appearance is unreliable and should not drive treatment. Geography and syndrome
+      should.</p>
+
+    <div class="tscroll">
+      <table>
+        <caption>Envenoming syndromes by snake group</caption>
+        <thead>
+          <tr><th scope="col">Snake</th><th scope="col">Syndrome</th><th scope="col">Where</th></tr>
+        </thead>
+        <tbody>
+          <tr><th scope="row">Brown<br><em>Pseudonaja</em></th>
+            <td>VICC, cardiovascular collapse, acute kidney injury, thrombotic microangiopathy</td>
+            <td>Mainland Australia</td></tr>
+          <tr><th scope="row">Tiger<br><em>Notechis</em></th>
+            <td>VICC, myotoxicity, neurotoxicity, acute kidney injury, thrombotic microangiopathy,
+              nonspecific systemic symptoms, cardiovascular collapse</td>
+            <td>Southern Australia, including Tasmania and southern WA</td></tr>
+          <tr><th scope="row">Rough-scaled<br><em>Tropidechis carinatus</em></th>
+            <td>VICC, myotoxicity, neurotoxicity, acute kidney injury, thrombotic microangiopathy</td>
+            <td>Eastern Australia</td></tr>
+          <tr><th scope="row"><em>Hoplocephalus</em></th>
+            <td>VICC, acute kidney injury, thrombotic microangiopathy</td>
+            <td>Eastern Australia</td></tr>
+          <tr><th scope="row">Red-bellied black<br><em>Pseudechis porphyriacus</em></th>
+            <td>Nonspecific systemic symptoms, anticoagulant coagulopathy, myotoxicity</td>
+            <td>Eastern Australia</td></tr>
+          <tr><th scope="row">Mulga<br><em>Pseudechis australis</em></th>
+            <td>Myotoxicity, nonspecific systemic symptoms, anticoagulant coagulopathy</td>
+            <td>Mainland Australia, not the eastern seaboard</td></tr>
+          <tr><th scope="row">Death adder<br><em>Acanthophis</em></th>
+            <td>Neurotoxicity, nonspecific systemic symptoms</td>
+            <td>Mainland Australia, not Victoria</td></tr>
+          <tr><th scope="row">Taipan<br><em>Oxyuranus</em></th>
+            <td>VICC, neurotoxicity, cardiovascular collapse, myotoxicity, acute kidney injury, thrombotic
+              microangiopathy</td>
+            <td>Northern Australia, mainly far north Queensland</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <p>On the mid north coast the practical list is short: brown, red-bellied black, rough-scaled, and
+      <em>Hoplocephalus</em>. Tiger snake sits at the southern edge of its range.</p>
+
+    <h2 class="sub">Neurotoxicity and myotoxicity</h2>
+
+    <p>Neurotoxicity is descending and starts with the cranial nerves &mdash; ptosis first, then
+      ophthalmoplegia, then bulbar weakness, then the diaphragm. Ptosis in someone who may have been bitten is
+      not a cosmetic finding.</p>
+
+    <p>The practical distinction is between presynaptic and postsynaptic blockade. Postsynaptic toxins are
+      competitive and may reverse with antivenom. Presynaptic toxins destroy the nerve terminal, and once
+      established no amount of antivenom reverses them &mdash; recovery takes days to weeks and depends on
+      regeneration. That is the clinical argument for giving antivenom early rather than confidently.</p>
+
+    <p>Myotoxicity presents as muscle pain and tenderness, a rising CK, and myoglobinuria, with hyperkalaemia
+      and acute kidney injury as the consequences to watch.</p>
+
+    <h2 class="sub">Antivenom: when</h2>
+
+    <p>Antivenom is indicated for clinical or laboratory evidence of systemic envenoming. Timing drives
+      effectiveness more than dose does.</p>
+
+    <ul class="plain">
+      <li>Ideally <strong>within two to three hours</strong> of the bite for most snake types.</li>
+      <li>Between <strong>six and twelve hours</strong> it is unlikely to be effective, but should still be
+        considered.</li>
+      <li><strong>Beyond twelve hours</strong> it should not be given.</li>
+    </ul>
+
+    <p>Early cardiovascular collapse is the most common cause of death from snake bite in Australia, which is
+      why the window is as unforgiving as it is.</p>
+
+    <a class="phone" href="tel:131126">
+      <span class="lab">Poisons Information Centre &mdash; any hour, any state</span>
+      <span class="num">13 11 26</span>
+    </a>
+
+    <p>Ring them. They will take the call from a registrar at two in the morning, they know what is stocked
+      where, and the clinical toxicologist on the other end has seen more of this than the whole department
+      put together.</p>
+
+    <h2 class="sub">Antivenom: which, and how much</h2>
+
+    <p>Where the snake is unidentified, <strong>one vial of brown snake antivenom and one vial of tiger snake
+      antivenom</strong> cover every snake in most of Australia &mdash; 4,000 units in total. Polyvalent is
+      the alternative where death adder, taipan or mulga are in the geographical frame.</p>
+
+    <div class="alert">
+      <span class="lab">Dose is about the snake, not the patient</span>
+      <p>There is no weight-based calculation. <strong>A child receives the same dose as an adult</strong>,
+        because the dose neutralises the venom the snake injected, and the snake did not adjust for the
+        patient. One vial neutralises the venom from one snake; extra vials do not hasten recovery, and there
+        is no role for redosing.</p>
+    </div>
+
+    <p>Administration: dilute the vial roughly <strong>1:10</strong> in 0.9% sodium chloride &mdash; around
+      1:5 where fluid overload is a genuine concern &mdash; and give it intravenously over about fifteen
+      minutes. In cardiac arrest attributed to envenoming, it is given undiluted by rapid push.</p>
+
+    <p>Be ready to treat anaphylaxis before you start the infusion, every time. Adrenaline drawn up, not
+      merely available.</p>
+
+    <h2 class="sub">When it goes wrong</h2>
+
+    <p>Antivenom is horse-derived immunoglobulin and behaves accordingly.</p>
+
+    <ul class="plain">
+      <li><strong>Hypersensitivity reactions in around 25%</strong>, most of them mild.</li>
+      <li><strong>Severe anaphylaxis in 2&ndash;3%</strong>, which is why the adrenaline is drawn up.</li>
+      <li><strong>Routine premedication is not recommended.</strong> It does not prevent the reactions and
+        carries its own risk.</li>
+      <li><strong>Serum sickness at four to fourteen days</strong> &mdash; fever, rash, arthralgia,
+        lymphadenopathy. Treated with prednisolone 25&ndash;50&nbsp;mg daily. Every patient who receives
+        antivenom goes home knowing to expect it and where to go, and their GP should be told in writing.</li>
+    </ul>
+
+    <p>For major bleeding in VICC, fresh frozen plasma can be given to replace consumed factors &mdash; but
+      not within six hours of the bite, while circulating prothrombin activators are still present to consume
+      whatever you give.</p>
+
+    <h2 class="sub">Observation and discharge</h2>
+
+    <p>Anyone with a suspected snake bite is observed for <strong>at least twelve hours</strong>, with
+      coagulation studies and a neurological examination repeated at <strong>six and twelve hours</strong>
+      after the bite.</p>
+
+    <p>The pressure bandage comes off once the patient is somewhere with antivenom and a laboratory. If
+      envenomed, it comes off after antivenom has been given; then bloods and neurological examination are
+      repeated an hour later, because removing the bandage can release a further bolus of venom.</p>
+
+    <p>Discharge in daylight hours, when envenoming is resolving and the patient is well &mdash; a point that
+      sounds like bureaucracy and is not. It means the patient is not driving home to an empty house in the
+      dark at the hour when deterioration would be least likely to be noticed.</p>
+
+    <h2 class="sub">Eight things to take away</h2>
+
+    <ol class="steps">
+      <li>Most bites are not envenomings, and most patients need observation rather than antivenom.</li>
+      <li>A normal-looking bite site excludes nothing.</li>
+      <li>Headache and vomiting are systemic envenoming until the bloods disagree.</li>
+      <li>Pressure immobilisation of the whole limb, within four hours, and immobilise the patient too.</li>
+      <li>Venom detection kits are no longer part of the pathway.</li>
+      <li>INR above 1.2 is abnormal here.</li>
+      <li>Antivenom early or not at all &mdash; and the paediatric dose is the adult dose.</li>
+      <li>Twelve hours of observation, bloods at six and twelve, and warn every treated patient about serum
+        sickness.</li>
+    </ol>
+
+    <div class="gloss">
+      <span class="lab">A note added in setting this for the web</span>
+      <p>Two small refinements against the most recent published reviews, neither of which changes the
+        management. Current sources give the ideal antivenom window as three hours rather than two for most
+        snake types; and the six-to-twelve-hour period is now described as unlikely to be effective but still
+        worth considering, which is a little softer than a flat cut-off. The twelve-hour limit stands.</p>
+    </div>
+
+    <div class="reply">
+      <h2>Registrars &mdash; this space is yours</h2>
+      <p class="ask">Have you given a departmental talk that deserved a bigger room?</p>
+      <p>Send it to me and I will set it for the web as this one has been set: your name on it, your clinical
+        content, your structure. You keep the authorship entirely. It becomes something you can point at
+        rather than something in a folder.</p>
+      <p>One practical thing worth knowing before you send: teaching slides are usually built from screenshots
+        of guidelines, textbooks and journals, which is fine in a tutorial room and not fine on a public
+        website. So the figures get rebuilt from the underlying facts rather than reproduced. That is part of
+        what I do with it, and it costs you nothing but a conversation.</p>
+      <p><a class="btn" href="mailto:icuandyou@icloud.com?subject=Registrar%20Presentations%20-%20I%20have%20a%20talk&body=The%20talk%3A%0D%0A%0D%0A%0D%0AWhen%20and%20where%20it%20was%20given%3A%0D%0A%0D%0A%0D%0AHow%20you%20would%20like%20to%20be%20credited%3A%0D%0A%0D%0A%0D%0A---%0D%0A%0D%0AName%3A%0D%0A%0D%0A---%0D%0A%0D%0AThinking%20about%20this%20ICU%20AND%20YOU%20post%20overall%20%E2%80%94%20was%20it%20useful%20to%20you%2C%20or%20would%20it%20be%20useful%20to%20others%3F%0D%0A">Send me your talk</a></p>
+      <p class="fallback" style="margin-bottom:9px">How you are credited is entirely your call &mdash; by name, by initials, or not at all &mdash; whether you write the piece or I do, and whether I quote you or simply say who sent something in; nothing of yours goes up with your name on it unless you have said yes.</p>
+      <p class="fallback">The button opens a reply straight to me. If your device blocks it, write to
+        <a href="mailto:icuandyou@icloud.com">icuandyou@icloud.com</a> instead.</p>
+    </div>
+  </div>
+
+  <footer>
+    <span class="firstpub">First published October 2026</span>
+    <p class="subline">Two emails a week &mdash; the Friday newsletter for all subscribers, and, for clinical subscribers,
+      the mind map and puzzles the moment they go up on Tuesday. Occasional announcements of new
+      features as they arrive. What went up and why it mattered, the best of your replies, and
+      original feature stories, news and views. <a href="https://joinlist.com/f/5adad2d6">Come and join us</a>.</p>
+    <a class="home" href="./">&larr; &nbsp;All of ICU AND YOU</a><br>
+    ICU AND YOU &nbsp;&#183;&nbsp; Registrar Presentations No. 1 &nbsp;&#183;&nbsp; a teaching presentation by Dr Maheshani Wijenatha<br>
+    <span class="srcs">The clinical content is Dr Wijenatha&rsquo;s, prepared for a departmental teaching
+    session at Coffs Harbour Health Campus, moderated by Dr Azad. Her sources were
+    <a href="https://www.tg.org.au">Therapeutic Guidelines</a> (snake bite) and the
+    <a href="https://www.mja.com.au/journal/2013/199/11/snakebite-australia-practical-approach-diagnosis-and-treatment">Medical
+    Journal of Australia</a>. Figures and tables on this page have been rebuilt from the underlying clinical
+    facts rather than reproduced. Points checked in setting it for the web against Isbister and colleagues,
+    &ldquo;<a href="https://medicinetoday.com.au/mt/2025/jan-feb/feature-article/snake-envenoming-approach-suspected-snakebites-and-delivering-effective-antivenom">Snake
+    envenoming: an approach to suspected snakebites</a>&rdquo;, <em>Medicine Today</em> January&ndash;February
+    2025, and the Royal Children&rsquo;s Hospital
+    <a href="https://www.rch.org.au/clinicalguide/guideline_index/Snakebite/">clinical practice guideline on
+    snakebite</a>. Nothing here replaces a call to the Poisons Information Centre on 13 11 26, or your own
+    unit&rsquo;s protocol.</span>
+    <span class="mine">Set for the web by Michael Sutherland</span>
+  </footer>
+
+</div>
+<script src="glossary.js"></script>
+<script data-goatcounter="https://icuandyou.goatcounter.com/count"
+        async src="//gc.zgo.at/count.js"></script>
+</body>
+</html>

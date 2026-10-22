@@ -195,6 +195,11 @@
    "neon",
    "other"
   ],
+  "registrars": [
+   "Registrar Presentations",
+   "heather striped",
+   "registrars"
+  ],
   "doctors": [
    "Notable Doctors",
    "laurel",
@@ -1421,9 +1426,28 @@
    "badge": "The Jukebox",
    "link_label": "Open",
    "blurb": "A new column for songs that wander into this territory. A coma, a cancer, a mind with no way out, an organ donor and one young man refusing to die \u2014 with the backstories checked, which is how we discover that the most famous coma song in English pop began as an attempt at reggae by a man who had publicly called reggae vile."
+  },
+  {
+   "file": "registrars-01-snake-bites.html",
+   "series": "registrars",
+   "colour": "heather striped",
+   "number": "1",
+   "title": "Australian snake bites",
+   "topic": "Any time",
+   "slug": "standing",
+   "week": false,
+   "standing": true,
+   "badge": "Registrar Presentations",
+   "link_label": "Open",
+   "blurb": "A new group, and an invitation to the registrars at Coffs Harbour to have their teaching published under their own names. Maheshani Wijenatha goes first, on snake bite: why the bite site tells you nothing, why an INR of 1.3 is abnormal here, why the venom detection kit has left the pathway, and why a child receives the same dose of antivenom as an adult."
   }
  ],
  "latest": [
+  {
+   "file": "registrars-01-snake-bites.html",
+   "colour": "heather striped",
+   "label": "Registrar Presentations 1 \u00b7 Australian snake bites"
+  },
   {
    "file": "jukebox-01-young-adult.html",
    "colour": "neon",
@@ -1443,11 +1467,6 @@
    "file": "bare-bones-03-young-adult.html",
    "colour": "bone",
    "label": "Bare Bones 3 \u00b7 The young adult"
-  },
-  {
-   "file": "public-03-rejoice-we-conquer.html",
-   "colour": "ocean",
-   "label": "For the general public 3 \u00b7 Rejoice, we conquer"
   }
  ],
  "topten": [

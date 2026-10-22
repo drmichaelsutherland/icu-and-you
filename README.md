@@ -157,6 +157,19 @@ take precedence, that doses must be verified, that no identifiable patient is
 described, and that the views are the author's own. New pages need them too;
 `audit.py` checks.
 
+**Material submitted by other people needs an image-provenance check before
+anything goes up.** Teaching slides are almost always built from screenshots of
+guidelines, textbooks and journals. That is ordinary fair dealing in a tutorial
+room and straightforward infringement on a public website, and it is this site
+that would be publishing it. Unpack the file, look at every embedded image, and
+assume a figure is third-party until shown otherwise — one of the first deck's
+images still carried the publisher's copyright line inside the artwork.
+
+The remedy is not to crop the notice off. Facts are not copyright, only the
+particular expression of them, so a borrowed table gets rebuilt from the
+underlying clinical facts as the site's own markup, and the source is credited
+in the footer. `audit.py` cannot see any of this; it is a human step.
+
 ## Contact
 
 Corrections and replies to `icuandyou@icloud.com`. Anything that could affect
