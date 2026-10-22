@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en-AU">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ICU AND YOU · Anecdote City No. 1 — Manic Monday</title>
+<meta name="description" content="Anecdote City No. 1: a Monday morning, a young woman with asthma nobody could ventilate, a consultant who called for the one instrument that looked certain to kill her, and a diagnosis that was not asthma at all.">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="alternate icon" href="/favicon.ico" sizes="any">
+<link rel="apple-touch-icon" href="/icon-180.png">
+<meta name="theme-color" content="#1B3350">
+<meta property="og:site_name" content="ICU AND YOU">
+<meta property="og:type" content="website">
+<meta property="og:title" content="ICU AND YOU · Anecdote City No. 1 — Manic Monday">
+<meta property="og:description" content="Her lungs are like lumps of rock, he said. It is just impossible. He was right about the rock and wrong about the lungs.">
+<meta property="og:image" content="https://icuandyou.com/share-card.png">
+<meta name="twitter:card" content="summary_large_image">
+<style>
+  /* ANECDOTE CITY runs on its own stationery. Warm kraft rather than the
+     site's cool paper, a bookish Baskerville rather than Iowan Old Style,
+     and typewriter furniture — so that a story is visibly not a guideline
+     before a word of it has been read. */
+  :root{
+    --kraft:#DED3B8; --paper:#FBF6EA; --ink:#241E16; --muted:#6E6354; --rule:#E0D4BC;
+    --indigo:#1B3350; --indigotint:#EDEFF3; --deep:#0F1F33;
+    --lamp:#B0601E; --lamptint:#F8EFE3;
+    --book:'Hoefler Text',Baskerville,'Libre Baskerville',Constantia,'Times New Roman',Georgia,serif;
+    --type:'American Typewriter','Courier New',Courier,monospace;
+  }
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--kraft);color:var(--ink);
+    font:400 18px/1.7 var(--book);-webkit-text-size-adjust:100%;}
+  .sheet{max-width:720px;margin:0 auto;background:var(--paper);
+    box-shadow:0 1px 40px rgba(36,30,22,.16);}
+
+  .flag{display:flex;height:6px}
+  .flag i{display:block}
+  .flag i:nth-child(1){flex:3;background:var(--deep)}
+  .flag i:nth-child(2){flex:1;background:var(--lamp)}
+  .flag i:nth-child(3){flex:3;background:var(--indigo)}
+
+  header.top{padding:44px 44px 30px;border-bottom:2px solid var(--indigo)}
+  .eyebrow a.serlink,.eyebrow a.mast{color:inherit;text-decoration:none;
+    border-bottom:1px solid transparent}
+  .eyebrow a.serlink:hover,.eyebrow a.mast:hover{border-bottom-color:currentColor}
+  .toptopic,.topseries,.tophome{display:inline-block;margin:0 0 16px;padding:7px 15px;
+    border-radius:3px;border:1px solid currentColor;opacity:.58;text-decoration:none;color:inherit;
+    font:400 11px var(--type);letter-spacing:.11em;text-transform:uppercase;
+    transition:opacity .12s ease}
+  .topseries,.toptopic{margin-left:8px}
+  .toptopic:hover,.topseries:hover,.tophome:hover{opacity:1}
+  .eyebrow{font:400 11.5px/1 var(--type);letter-spacing:.2em;
+    text-transform:uppercase;color:var(--muted);margin:0 0 18px}
+
+  .addr{display:inline-block;margin:0 0 16px;padding:7px 14px;background:var(--indigo);
+    color:var(--paper);font:400 12px var(--type);letter-spacing:.17em;text-transform:uppercase}
+  h1{font:400 40px/1.1 var(--type);margin:0 0 14px;letter-spacing:-.018em}
+  .kicker{color:var(--muted);margin:0;font-size:17.5px;font-style:italic}
+
+  .pad{padding:38px 44px}
+  p{margin:0 0 19px}
+  .lede{font-size:21px;line-height:1.55;margin:0 0 24px}
+  .lede::first-letter{float:left;font:400 58px/0.82 var(--type);color:var(--indigo);
+    margin:5px 9px 0 0}
+
+  .beat{margin:30px 0;text-align:center;color:var(--indigo);font:400 22px/1 var(--type);
+    letter-spacing:.34em;opacity:.72}
+
+  /* the recurring footer box — what this place is, on every anecdote */
+  .cityline{margin:34px 0 0;padding:22px 26px;background:var(--indigotint);
+    border-top:2px solid var(--indigo)}
+  .cityline .lab{display:block;font:400 11px var(--type);letter-spacing:.17em;
+    text-transform:uppercase;color:var(--deep);margin:0 0 10px}
+  .cityline p{font-size:16px;margin:0 0 12px}
+  .cityline .acts{margin:0 0 11px}
+  .cityline .acts a{display:inline-block;margin:0 14px 0 0;padding:9px 17px;
+    background:var(--indigo);color:var(--paper);text-decoration:none;border-radius:3px;
+    font:400 12px var(--type);letter-spacing:.08em;text-transform:uppercase}
+  .cityline .acts a:hover{background:var(--lamp)}
+  .cityline .fine{font:400 12.5px/1.6 var(--book);font-style:italic;color:var(--muted);margin:0}
+
+  .subline{margin:0 0 14px;padding:0 0 13px;border-bottom:1px solid rgba(0,0,0,.09);
+    font:400 14.5px/1.55 var(--book);max-width:56ch;margin-left:auto;margin-right:auto}
+  .subline a{font-weight:500;border-bottom:1px solid currentColor;
+    text-decoration:none;color:inherit}
+  .firstpub{display:block;margin:0 0 10px;padding-bottom:9px;
+    border-bottom:1px solid rgba(0,0,0,.09);
+    font:400 11.5px var(--type);letter-spacing:.09em;opacity:.7}
+
+  footer{padding:26px 44px 44px;border-top:2px solid var(--indigo);
+    font:400 13px/1.7 var(--type);color:var(--muted);text-align:center}
+  .home{display:inline-block;margin:0 0 14px;padding:8px 18px;border-radius:3px;
+    border:1px solid var(--rule);background:#F3ECDC;color:var(--deep);text-decoration:none;
+    font:400 12px var(--type);letter-spacing:.08em;text-transform:uppercase}
+  .home:hover{background:var(--deep);border-color:var(--deep);color:#FBF6EA}
+  .mine{display:block;margin:12px 0 0;opacity:.78;font-size:.94em}
+  .srcs{display:block;max-width:56ch;margin:4px auto 0;font:400 13.5px/1.6 var(--book);
+    font-style:italic}
+  .srcs a{color:inherit}
+
+  @media (max-width:620px){
+    header.top,.pad,footer{padding-left:20px;padding-right:20px}
+    .cityline{padding:20px}
+    h1{font-size:29px} body{font-size:17px} .lede{font-size:19px}
+    .lede::first-letter{font-size:48px}
+    .cityline .acts a{display:block;margin:0 0 9px;text-align:center}
+  }
+  @media print{ body{background:#fff} .sheet{box-shadow:none;max-width:none} }
+</style>
+</head>
+<body>
+<div class="sheet">
+
+  <div class="flag"><i></i><i></i><i></i></div>
+
+  <header class="top">
+    <a class="tophome" href="./">&larr;&nbsp; Home</a>
+    <a class="topseries" href="./?s=anecdote">More from Anecdote City</a>
+    <a class="toptopic" href="./?t=standing" title="Everything in Any time">All on this topic</a>
+    <p class="eyebrow"><a class="mast" href="./">ICU and You</a> &nbsp;·&nbsp;
+      <a class="serlink" href="./?s=anecdote">Anecdote City</a></p>
+    <span class="addr">No. 1</span>
+    <h1>Manic Monday</h1>
+    <p class="kicker">&ldquo;Her lungs are like lumps of rock,&rdquo; he said. He was right about the
+      rock and wrong about the lungs</p>
+  </header>
+
+  <div class="pad">
+    <p class="lede">It was just another busy Monday morning.</p>
+
+    <p>I was the senior Registrar on call for ICU, and they called me down to the Emergency Department
+      first thing. It was a crisis. Acute severe asthma in a 30-something female. She was already tubed, and
+      they had been working on her for a couple of hours. She was struggling. In fact, the ED physician said
+      to me on the phone, &ldquo;I think she is going to arrest.&rdquo; He quickly summarised that she had
+      been tubed the night before, but now they could neither oxygenate nor ventilate her. The lungs were
+      super tight, and he could not inflate them easily, and they were using manual compression to try to
+      empty the lungs with each expiratory phase of the cycle. The sats were at rock bottom, and so were the
+      blood pressure and perfusion.</p>
+
+    <p>&ldquo;Her lungs are like lumps of rock&rdquo;, he said, adding, &ldquo;It is just
+      impossible&rdquo;.</p>
+
+    <p>A lot goes through your mind as you rush down to attend a call like this. None of them are good
+      things. Deaths from asthma, even in young people, were not unknown, but were becoming rarer and rarer.
+      Usually, the various follow-ups ended up finding something or other that could have been done better,
+      and that &ldquo;something or other&rdquo; was the important thing to know to prevent the death in the
+      first place.</p>
+
+    <p>The Emergency Department of this particular hospital was absolutely top-notch, and the clinicians
+      down there were super. That didn&rsquo;t necessarily make me feel better, because they were absolutely
+      fantastic at treating desperate emergencies, and &hellip; now they were calling for help&hellip; from
+      us?</p>
+
+    <p>I didn&rsquo;t at all like the sound of &ldquo;manual compressions&rdquo;, neither in the domain of
+      &ldquo;manual&rdquo; nor in the domain of &ldquo;compressions&rdquo;. He quoted a tidal volume of about
+      150 ml, which is pretty much what is known as the anatomical dead space, and the &ldquo;dead
+      space&rdquo; appeared to be where this was heading.</p>
+
+    <div class="beat">&#42;&nbsp;&#42;&nbsp;&#42;</div>
+
+    <p>Fortunately, I was standing next to the ICU Consultant when I took the call, and he offered to come
+      down to the ED with me. This was a guy who went on to become one of Australia&rsquo;s leading
+      Intensivists, and he was a handy guy to have with me.</p>
+
+    <p>The scene was Gothic, without the mood music. I had no idea what we could possibly do to assist.
+      Ventilation was impossible, and ECMO wasn&rsquo;t available.</p>
+
+    <p>My boss called for the bronchoscope. Oxygen saturation was 50%, and the patient was blue. I was pale
+      as a sheet. I thought even trying a bronchoscopy would be fatal for the patient.</p>
+
+    <p>&ldquo;Look at this,&rdquo; said the Intensivist. I had a peek. At the end of the bronchoscope was a
+      glue-like collection of gludgy, dry, clay-like goo. Dried secretions, with a tiny hole at the centre.
+      He pushed the scope through the goo. And suddenly the patient could be ventilated. And she survived
+      and thrived.</p>
+
+    <div class="beat">&#42;&nbsp;&#42;&nbsp;&#42;</div>
+
+    <p>There was no asthma. It turned out the patient had been intubated the day before at a small, isolated
+      facility, and the circuit had had no humidification.</p>
+
+    <p>And you need humidification. Dry gases in dry airways create obstructing, brick-like mucus that
+      obstructs the passages.</p>
+
+    <p>In biological terms, you need a patent tube and plenty of lube.</p>
+
+    <p>Just another manic Monday.</p>
+
+    <div class="cityline">
+      <span class="lab">Anecdote City</span>
+      <p>Short pieces from a working life in intensive care &mdash; more than a hundred of them, going up
+        here a few at a time. They happened. Nobody in them is identifiable. And there is room for
+        yours, whatever you do and wherever you do it: the nurse, the wardsman and the daughter were all in
+        that room too, and all three saw a different thing.</p>
+      <p class="acts"><a href="anecdote-city-00-welcome.html">What this is</a><a href="mailto:icuandyou@icloud.com?subject=Anecdote%20City%20-%20one%20from%20me&body=The%20story%3A%0D%0A%0D%0A%0D%0A%0D%0AAnything%20that%20needs%20changing%20to%20keep%20people%20unidentifiable%3A%0D%0A%0D%0A%0D%0AHow%20you%20would%20like%20to%20be%20credited%3A%0D%0A%0D%0A%0D%0A---%0D%0A%0D%0AName%3A%0D%0A%0D%0A---%0D%0A%0D%0AThinking%20about%20this%20ICU%20AND%20YOU%20post%20overall%20%E2%80%94%20was%20it%20useful%20to%20you%2C%20or%20would%20it%20be%20useful%20to%20others%3F%0D%0A">Send me one of yours</a></p>
+      <p class="fine">How you are credited is entirely your call &mdash; by name, by initials, or not at all &mdash; whether you write the piece or I do, and whether I quote you or simply say who sent something in; nothing of yours goes up with your name on it unless you have said yes.</p>
+    </div>
+  </div>
+
+  <footer>
+    <span class="firstpub">First published October 2026</span>
+    <p class="subline">Two emails a week &mdash; the Friday newsletter for all subscribers, and, for clinical subscribers,
+      the mind map and puzzles the moment they go up on Tuesday. Occasional announcements of new
+      features as they arrive. What went up and why it mattered, the best of your replies, and
+      original feature stories, news and views. <a href="https://joinlist.com/f/5adad2d6">Come and join us</a>.</p>
+    <a class="home" href="./">&larr; &nbsp;All of ICU AND YOU</a><br>
+    ICU AND YOU &nbsp;&#183;&nbsp; Anecdote City No. 1<br>
+    <span class="srcs">Set down as I remember it, which is not the same as how it happened. The patient, the
+    hospital and the year have been changed or left out as required, and nobody here is identifiable.</span>
+    <span class="mine">Michael Sutherland</span>
+  </footer>
+
+</div>
+<script src="glossary.js"></script>
+<script data-goatcounter="https://icuandyou.goatcounter.com/count"
+        async src="//gc.zgo.at/count.js"></script>
+</body>
+</html>

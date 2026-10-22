@@ -1461,11 +1461,11 @@
    "blurb": "A new group, on its own stationery. More than a hundred stories from forty years of practice, going up a few at a time as the backlog is worked through \u2014 and room for yours. Not the saves: the ones where somebody said something unexpected, or where the thing you were certain of turned out to be the thing you were wrong about."
   },
   {
-   "file": "anecdote-city-01-dead-space.html",
+   "file": "anecdote-city-01-manic-monday.html",
    "series": "anecdote",
    "colour": "indigo striped",
    "number": "1",
-   "title": "Dead space",
+   "title": "Manic Monday",
    "topic": "Any time",
    "slug": "standing",
    "week": false,
@@ -1477,9 +1477,9 @@
  ],
  "latest": [
   {
-   "file": "anecdote-city-01-dead-space.html",
+   "file": "anecdote-city-01-manic-monday.html",
    "colour": "indigo striped",
-   "label": "Anecdote City 1 \u00b7 Dead space"
+   "label": "Anecdote City 1 \u00b7 Manic Monday"
   },
   {
    "file": "anecdote-city-00-welcome.html",
