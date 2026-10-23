@@ -58,13 +58,13 @@
     },
     "adr-croup": {
       "page": "drugstore-01-adrenaline.html",
-      "claim": "Croup, nebulised: 0.5 mL/kg of 1:1000 to a maximum of 5 mL",
-      "source": "The long-standing weight-based formulation. The Royal Children's Hospital croup guideline now gives a flat 5 mL of 1:1000 and no mL/kg at all",
-      "url": "https://www.rch.org.au/clinicalguide/guideline_index/croup_laryngotracheobronchitis/",
+      "claim": "Croup, nebulised: 5 mg — 5 mL of 1:1000, every age and weight",
+      "source": "Children's Health Queensland, which states \"in all ages/weights, the adrenaline dose will be 5mg via nebuliser\", and the Royal Children's Hospital croup guideline, which gives a flat 5 mL of 1:1000 and no mL/kg",
+      "url": "https://www.childrens.health.qld.gov.au/__data/assets/pdf_file/0034/193669/Adrenaline-Use-Croup.pdf",
       "checked": "2026-10-23",
       "interval": "12m",
-      "verdict": "flagged",
-      "note": "Not an error — the formula reaches the 5 mL cap at 10 kg, so the two agree in practice. But the page should either follow RCH's flat dose or name the source it is using. Michael's decision."
+      "verdict": "corrected",
+      "note": "The page previously gave 0.5 mL/kg of 1:1000 to a maximum of 5 mL, the long-standing weight-based form. Two major Australian paediatric services have moved to a flat dose. The two agree at 10 kg and above, where the formula hits the cap; below that the flat dose gives roughly twice as much, which is the point of the change — what reaches an inflamed larynx does not scale with body weight. Changed 23 October 2026."
     }
   }
 }
