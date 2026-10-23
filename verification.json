@@ -1,13 +1,15 @@
 {
   "_README": "The verification record. One entry per clinically weighty number that has been checked against a PRIMARY source. make_verification.py turns this into verification.js. A page appears as verified on the site only when every number on it is listed here — see README.md. Intervals: 'never' for arithmetic and settled history, '12m' for guideline-derived numbers and drug doses, '12m' for epidemiological figures, which republish yearly.",
-
   "pages": {
     "drugstore-01-adrenaline.html": {
       "checked": "2026-10-23",
-      "note": "All six numeric claims on the page checked. One corrected on the day (autoinjector weight bands), one flagged for a source decision (croup). The shock infusion rate was missed by the first extraction pass, which had no pattern for units spelt out in full, and was found because this page's verification band made every row visible at once."
+      "note": "All six numeric claims checked. Two corrected on the day: the autoinjector weight bands, and croup moved from the weight-based 0.5 mL/kg to the flat 5 mg / 5 mL. The shock infusion rate was missed by the first extraction pass, which had no pattern for units spelt out in full, and was found because this page's verification band made every row visible at once."
+    },
+    "drugstore-02-paracetamol.html": {
+      "checked": "2026-10-23",
+      "note": "All eight numeric claims checked. One corrected: a modified-release rule had been stated as if it covered every overdose. One marked as genuinely contested rather than wrong: the intravenous dose below 10 kg, where the approved product information and NSW TAG disagree twofold."
     }
   },
-
   "claims": {
     "adr-concentrations": {
       "page": "drugstore-01-adrenaline.html",
@@ -65,6 +67,83 @@
       "interval": "12m",
       "verdict": "corrected",
       "note": "The page previously gave 0.5 mL/kg of 1:1000 to a maximum of 5 mL, the long-standing weight-based form. Two major Australian paediatric services have moved to a flat dose. The two agree at 10 kg and above, where the formula hits the cap; below that the flat dose gives roughly twice as much, which is the point of the change — what reaches an inflamed larynx does not scale with body weight. Changed 23 October 2026."
+    },
+    "par-conc": {
+      "page": "drugstore-02-paracetamol.html",
+      "claim": "Intravenous paracetamol is 10 mg/mL, supplied as 500 mg in 50 mL and 1,000 mg in 100 mL",
+      "source": "Perth Children's Hospital paracetamol monograph, which gives the IV infusion as 1 g/100 mL (10 mg/mL)",
+      "url": "https://pch.health.wa.gov.au/~/media/Files/Hospitals/PCH/General-documents/Health-professionals/MedicationMonographs/Paracetamol.pdf",
+      "checked": "2026-10-23",
+      "interval": "12m",
+      "verdict": "confirmed",
+      "note": "PCH stocks only the 1 g/100 mL presentation; both are registered in Australia, so formularies vary. The concentration, which is the number that matters for the tenfold error, is the same in both."
+    },
+    "par-oral": {
+      "page": "drugstore-02-paracetamol.html",
+      "claim": "Oral or rectal, child: 15 mg/kg every four to six hours, maximum 60 mg/kg/day",
+      "source": "Perth Children's Hospital paracetamol monograph: \"15 mg/kg (up to 1000 mg) every 4-6 hours\", \"maximum of 60 mg/kg (up to 4000 mg) per day\"",
+      "url": "https://pch.health.wa.gov.au/~/media/Files/Hospitals/PCH/General-documents/Health-professionals/MedicationMonographs/Paracetamol.pdf",
+      "checked": "2026-10-23",
+      "interval": "12m",
+      "verdict": "confirmed"
+    },
+    "par-iv-large": {
+      "page": "drugstore-02-paracetamol.html",
+      "claim": "Intravenous, over 10 kg: 15 mg/kg every six hours, maximum 60 mg/kg/day",
+      "source": "Perth Children's Hospital paracetamol monograph: \"15 mg/kg (up to 1000 mg) every 6 hours\", \"maximum of 60 mg/kg (up to 4000 mg) per day\"",
+      "url": "https://pch.health.wa.gov.au/~/media/Files/Hospitals/PCH/General-documents/Health-professionals/MedicationMonographs/Paracetamol.pdf",
+      "checked": "2026-10-23",
+      "interval": "12m",
+      "verdict": "confirmed"
+    },
+    "par-iv-small": {
+      "page": "drugstore-02-paracetamol.html",
+      "claim": "Intravenous, 10 kg or less: 7.5 mg/kg every four to six hours, maximum 30 mg/kg/day",
+      "source": "NSW TAG position statement addendum, which records that \"the TGA approved dose for infants < 10 kg is now 7.5 mg/kg/dose 4-6 hourly (max 30 mg/kg/day)\" — and then recommends against it, supporting 15 mg/kg (max 60 mg/kg/day)",
+      "url": "https://www.nswtag.org.au/wp-content/uploads/2017/07/paracetamol-iv-addendum-dec-2012.pdf",
+      "checked": "2026-10-23",
+      "interval": "12m",
+      "verdict": "contested",
+      "note": "The page previously gave this as every six hours; the product information says four to six. More importantly it presented the PI dose as simply the dose. NSW TAG and Perth Children's Hospital both recommend 15 mg/kg here instead, so the two differ twofold. The page now says so rather than picking a side quietly."
+    },
+    "par-threshold": {
+      "page": "drugstore-02-paracetamol.html",
+      "claim": "An acute ingestion of 200 mg/kg or 10 g, whichever is less, is potentially toxic",
+      "source": "Chiew et al, Updated guidelines for the management of paracetamol poisoning in Australia and New Zealand, MJA 2020, Box 1: \"= 10 g or = 200 mg/kg (whichever is less)\"",
+      "url": "https://aci.health.nsw.gov.au/__data/assets/pdf_file/0005/558527/MJA-Guidelines-management-paracetamol-poisoning.pdf",
+      "checked": "2026-10-23",
+      "interval": "12m",
+      "verdict": "confirmed"
+    },
+    "par-massive": {
+      "page": "drugstore-02-paracetamol.html",
+      "claim": "For modified-release preparations, 500 mg/kg or 30 g is a massive overdose with absorption up to 24 hours; for immediate-release the trigger is a concentration more than double the nomogram line",
+      "source": "Chiew et al, MJA 2020: \"All patients who ingest 30 g or more or 500 mg/kg or more of modified release paracetamol... should receive an increased dose of acetylcysteine\", and separately that an initial concentration \"greater than double the nomogram line may benefit from an increased dose\"",
+      "url": "https://aci.health.nsw.gov.au/__data/assets/pdf_file/0005/558527/MJA-Guidelines-management-paracetamol-poisoning.pdf",
+      "checked": "2026-10-23",
+      "interval": "12m",
+      "verdict": "corrected",
+      "note": "The page previously read \"Above 500 mg/kg or 30 g is a massive overdose, where absorption may continue for up to twenty-four hours and increased acetylcysteine doses are used\", with no mention of modified release. That threshold is specific to modified-release preparations. For immediate-release the guideline sets no dose threshold at all — the decision is made on the concentration. Corrected 23 October 2026."
+    },
+    "par-nac": {
+      "page": "drugstore-02-paracetamol.html",
+      "claim": "Acetylcysteine, two bags: 200 mg/kg (maximum 22 g) over four hours, then 100 mg/kg (maximum 11 g) over sixteen",
+      "source": "Chiew et al, MJA 2020, Box 3: \"acetylcysteine 200 mg/kg (maximum 22 g)\" over 4 hours, then \"acetylcysteine 100 mg/kg (maximum 11 g)\" over 16 hours",
+      "url": "https://aci.health.nsw.gov.au/__data/assets/pdf_file/0005/558527/MJA-Guidelines-management-paracetamol-poisoning.pdf",
+      "checked": "2026-10-23",
+      "interval": "12m",
+      "verdict": "confirmed",
+      "note": "The regimen was right; the maximum doses were missing and have been added."
+    },
+    "par-duration": {
+      "page": "drugstore-02-paracetamol.html",
+      "claim": "Duration at maximum dose: review by 48 to 72 hours",
+      "source": "Perth Children's Hospital paracetamol monograph, which caps the increased 90 mg/kg/day ceiling at 48 hours and advises the lowest effective dose beyond a week",
+      "url": "https://pch.health.wa.gov.au/~/media/Files/Hospitals/PCH/General-documents/Health-professionals/MedicationMonographs/Paracetamol.pdf",
+      "checked": "2026-10-23",
+      "interval": "12m",
+      "verdict": "confirmed",
+      "note": "Practice guidance rather than a guideline threshold. No Australian source sets a hard 48-to-72-hour limit at the standard maximum dose; the monograph's explicit 48-hour cap applies to the raised 90 mg/kg/day ceiling. The page's framing as a review point, not a stop, is a fair reading."
     }
   }
 }

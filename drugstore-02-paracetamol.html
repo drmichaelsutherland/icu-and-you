@@ -183,7 +183,7 @@
     <ol class="keynote">
       <li><strong>It is the most useful drug on the ward and the most casually prescribed.</strong> Regular paracetamol reduces opioid requirement, works, and is almost free. It is also written up without a weight, continued for a fortnight, and duplicated inside a combination product. The harm it does is almost never from a single wrong dose.</li>
       <li><strong>The child at risk in your unit is not the overdose.</strong> It is the child on regular therapeutic paracetamol who has stopped eating, is vomiting, is septic, or is on an enzyme inducer. Prolonged fasting and malnutrition deplete glutathione and shift metabolism towards the toxic pathway. The dose did not change; the child did.</li>
-      <li><strong>Two strengths of the intravenous formulation, one concentration, and a recurring tenfold error.</strong> Intravenous paracetamol is 10 mg/mL, supplied as 500 mg in 50 mL and 1,000 mg in 100 mL. Confusing milligrams with millilitres gives exactly ten times the intended dose, and this has killed infants. Over two hundred inadvertent overdoses were reported to the UK national reporting system in one period.</li>
+      <li><strong>Two strengths of the intravenous formulation, one concentration, and a recurring tenfold error.</strong> Intravenous paracetamol is 10 mg/mL, supplied as 500 mg in 50 mL and 1,000 mg in 100 mL.<sup class="vf" data-v="par-conc"></sup> Confusing milligrams with millilitres gives exactly ten times the intended dose, and this has killed infants. Over two hundred inadvertent overdoses were reported to the UK national reporting system in one period.</li>
       <li><strong>A child under 10 kg is not just a smaller child.</strong> The product information specifies a lower intravenous dose below 10 kg &mdash; 7.5 mg/kg rather than 15 &mdash; and a lower daily maximum. Writing the standard dose for a 9 kg infant is a doubling, not a rounding.</li>
     </ol>
 
@@ -193,23 +193,26 @@
       <tr><th>Situation</th><th>Dose</th><th>Notes</th></tr>
       <tr>
         <td><strong>Oral or rectal</strong><br>child</td>
-        <td>15 mg/kg every four to six hours<br>maximum 60 mg/kg/day</td>
+        <td>15 mg/kg every four to six hours<br>maximum 60 mg/kg/day<sup class="vf" data-v="par-oral"></sup></td>
         <td>Round to a sensible volume of the strength you actually have. Rectal absorption is slower and
           less predictable than oral, so it is a fallback rather than an equivalent.</td>
       </tr>
       <tr>
         <td><strong>Intravenous</strong><br>over 10 kg</td>
-        <td>15 mg/kg every six hours<br>maximum 60 mg/kg/day</td>
+        <td>15 mg/kg every six hours<br>maximum 60 mg/kg/day<sup class="vf" data-v="par-iv-large"></sup></td>
         <td>Solution is 10 mg/mL. Always prescribe in <strong>milligrams</strong>, never millilitres.</td>
       </tr>
       <tr>
         <td><strong>Intravenous</strong><br>10 kg or less</td>
-        <td>7.5 mg/kg every six hours<br>maximum 30 mg/kg/day</td>
-        <td>A different dose and a different ceiling. This is the one people get wrong.</td>
+        <td>7.5 mg/kg every four to six hours<br>maximum 30 mg/kg/day<sup class="vf" data-v="par-iv-small"></sup></td>
+        <td>A different dose and a different ceiling. This is the one people get wrong &mdash; and it is also
+          genuinely contested: NSW TAG and several children&rsquo;s hospitals recommend 15 mg/kg and
+          60 mg/kg/day here instead, departing from the approved product information. Know which your unit
+          follows, because the two differ twofold.</td>
       </tr>
       <tr>
         <td><strong>Duration at maximum dose</strong></td>
-        <td>Review by 48 to 72 hours</td>
+        <td>Review by 48 to 72 hours<sup class="vf" data-v="par-duration"></sup></td>
         <td>Particularly in the small, unwell, fasting or malnourished child. Maximum dosing was never
           intended to be open-ended.</td>
       </tr>
@@ -242,16 +245,20 @@
 
     <ul class="pts" style="list-style:none;padding:0">
       <li><b>The threshold that matters</b><span>An acute ingestion of <b class="term">200 mg/kg or 10 g,
-        whichever is less</b>, is potentially toxic. Above 500 mg/kg or 30 g is a massive overdose, where
-        absorption may continue for up to twenty-four hours and increased acetylcysteine doses are
-        used.</span></li>
+        whichever is less</b><sup class="vf" data-v="par-threshold"></sup>, is potentially toxic. For <em>modified-release</em> preparations, 500 mg/kg
+        or 30 g is a massive overdose: absorption may continue for up to twenty-four hours and an increased
+        acetylcysteine dose is used. For immediate-release there is no equivalent dose threshold &mdash; the
+        trigger is a concentration more than double the nomogram line, which doubles the second bag to
+        200 mg/kg. Those patients have usually taken 30 g or more, but it is the concentration that decides,
+        not the history.<sup class="vf" data-v="par-massive"></sup></span></li>
       <li><b>Take the level at four hours, not before</b><span>Earlier concentrations may not have peaked and
         cannot be plotted. The nomogram applies only to acute immediate-release ingestions with a known
         time.</span></li>
       <li><b>The nomogram does not cover everything</b><span>Repeated supratherapeutic ingestion,
         modified-release preparations, staggered overdoses and unknown timing all need different rules and a
         call to the poisons centre.</span></li>
-      <li><b>Acetylcysteine, two bags</b><span>200 mg/kg over four hours, then 100 mg/kg over sixteen. The
+      <li><b>Acetylcysteine, two bags</b><span>200 mg/kg (maximum 22 g) over four hours, then 100 mg/kg
+        (maximum 11 g) over sixteen.<sup class="vf" data-v="par-nac"></sup> The
         dose is the same in children as in adults; what changes is the <em>dilution volume</em>, which is
         reduced to avoid fluid overload. Getting that wrong is how a child ends up hyponatraemic.</span></li>
       <li><b>Ring somebody</b><span>The Poisons Information Centre is 13 11 26 in Australia. Massive
@@ -352,6 +359,7 @@
   </footer>
 
 </div>
+<script src="verification.js"></script>
 <script data-goatcounter="https://icuandyou.goatcounter.com/count"
         async src="//gc.zgo.at/count.js"></script>
 </body>
