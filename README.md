@@ -145,6 +145,32 @@ definition something that looked fine at the moment it was typed. Matched
 case-sensitively on purpose: the India Room page says its own name "is a
 placeholder", and every quiz has an input with `placeholder="Type your name"`.
 
+## The verification record
+
+**`verification.json` is the record; `make_verification.py` turns it into
+`verification.js`.** Edit the JSON, never the JS — the same arrangement as
+`glossary.py` → `glossary.js`. A page that loads `verification.js` and is listed
+under `pages` shows a band saying every number on it has been checked, and each
+checked number carries a small tick that opens its source and date.
+
+**A page is only listed when EVERY number on it has been done.** That is the
+whole value of the thing: a marked page means the page has been through it, so
+an unmarked page implies nothing about the numbers on it. Half-checking a page
+earns nothing, which is deliberate.
+
+**Review intervals go by volatility, not by a uniform rule.** Guideline-derived
+numbers and drug doses get `12m`; epidemiological figures get `12m`, since new
+estimates publish yearly; arithmetic and settled history get `never` and stay
+out of the queue. `audit.py` reports anything past its date, every Friday, so
+nothing ages quietly.
+
+**A number that was right when written and has been superseded is maintenance,
+not a correction.** Record the new source and date. It does not go on the
+corrections page.
+
+`audit.py` enforces three things: every tick names a real claim, every recorded
+claim has its tick in the page, and nothing is silently overdue.
+
 ## Before you publish
 
 **The repository is public**, and so is anything in it. Never commit an answer

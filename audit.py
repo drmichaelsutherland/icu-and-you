@@ -593,6 +593,53 @@ def main():
             f'{{"file": "{p["file"]}", "colour": "{p["colour"]}", '
             f'"label": "{label}{num} · {p["title"]}"}}')
 
+    # ---- verification record ----------------------------------------------
+    # Three things must stay true, or the ticks start lying:
+    #   every data-v in a page names a real claim, filed against that page;
+    #   every claim in the record has its marker present in its page;
+    #   and anything past its review date gets said out loud, every Friday.
+    vfile = HERE / "verification.json"
+    if vfile.exists():
+        import datetime
+        vdata = json.loads(vfile.read_text(encoding="utf-8"))
+        vclaims = vdata.get("claims", {})
+        used = {}
+        for f in html_files:
+            s = (HERE / f).read_text(encoding="utf-8")
+            for cid in re.findall(r'<sup class="vf" data-v="([^"]+)"', s):
+                used.setdefault(cid, []).append(f)
+        for cid, files in sorted(used.items()):
+            if cid not in vclaims:
+                problems.append(
+                    f'verification: {files[0]} carries a tick for "{cid}", which is not '
+                    f"in verification.json — the reader would get an empty card")
+            elif vclaims[cid]["page"] not in files:
+                problems.append(
+                    f'verification: "{cid}" is filed against {vclaims[cid]["page"]} '
+                    f'but its tick is on {files[0]}')
+        for cid, c in sorted(vclaims.items()):
+            if cid not in used:
+                problems.append(
+                    f'verification: "{cid}" is recorded as checked but has no tick in '
+                    f'{c["page"]} — the work is invisible to the reader')
+        for f in sorted(vdata.get("pages", {})):
+            if f not in html_files:
+                problems.append(f"verification: {f} is listed as verified but is not on disk")
+        today = datetime.date.today().strftime("%Y-%m")
+        overdue = []
+        for cid, c in vclaims.items():
+            iv = c["interval"]
+            if iv == "never":
+                continue
+            y, mo, _ = (int(x) for x in c["checked"].split("-"))
+            mo += int(iv.rstrip("m"))
+            y, mo = y + (mo - 1) // 12, (mo - 1) % 12 + 1
+            if f"{y}-{mo:02d}" <= today:
+                overdue.append(cid)
+        if overdue:
+            notes.append(f"{len(overdue)} verification item(s) DUE FOR REVIEW: "
+                         + ", ".join(sorted(overdue)))
+
     # ---- report -----------------------------------------------------------
     print()
     if notes and not quiet:
