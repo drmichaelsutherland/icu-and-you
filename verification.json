@@ -1,0 +1,70 @@
+{
+  "_README": "The verification record. One entry per clinically weighty number that has been checked against a PRIMARY source. make_verification.py turns this into verification.js. A page appears as verified on the site only when every number on it is listed here — see README.md. Intervals: 'never' for arithmetic and settled history, '12m' for guideline-derived numbers and drug doses, '12m' for epidemiological figures, which republish yearly.",
+
+  "pages": {
+    "drugstore-01-adrenaline.html": {
+      "checked": "2026-10-23",
+      "note": "All six numeric claims on the page checked. One corrected on the day (autoinjector weight bands), one flagged for a source decision (croup). The shock infusion rate was missed by the first extraction pass, which had no pattern for units spelt out in full, and was found because this page's verification band made every row visible at once."
+    }
+  },
+
+  "claims": {
+    "adr-concentrations": {
+      "page": "drugstore-01-adrenaline.html",
+      "claim": "1:1000 is 1 mg/mL; 1:10,000 is 0.1 mg/mL",
+      "source": "Definitional, and consistent with ASCIA Guidelines: Acute Management of Anaphylaxis (2026)",
+      "url": "https://www.allergy.org.au/images/ASCIA_HP_Guidelines_Acute_Management_Anaphylaxis_2026_v2.pdf",
+      "checked": "2026-10-23",
+      "interval": "never",
+      "verdict": "confirmed"
+    },
+    "adr-anaphylaxis": {
+      "page": "drugstore-01-adrenaline.html",
+      "claim": "Anaphylaxis, intramuscular: 10 microgram/kg to a maximum of 500 microgram — 0.01 mL/kg of 1:1000",
+      "source": "ASCIA Guidelines: Acute Management of Anaphylaxis (2026), which gives 0.01 mg/kg up to 0.5 mg per dose",
+      "url": "https://www.allergy.org.au/images/ASCIA_HP_Guidelines_Acute_Management_Anaphylaxis_2026_v2.pdf",
+      "checked": "2026-10-23",
+      "interval": "12m",
+      "verdict": "confirmed"
+    },
+    "adr-autoinjector": {
+      "page": "drugstore-01-adrenaline.html",
+      "claim": "Autoinjectors: 0.15 mg for 7.5–20 kg, 0.3 mg from 20 kg, 0.5 mg from 50 kg",
+      "source": "ASCIA Guidelines: Adrenaline (Epinephrine) Device Prescription (2026), and the Royal Children's Hospital anaphylaxis guideline, which agree on 7.5–20 kg, over 20 kg and over 50 kg",
+      "url": "https://www.allergy.org.au/images/stories/anaphylaxis/2025/ASCIA_HP_Guidelines_Adrenaline_Device_Prescription_2026.pdf",
+      "checked": "2026-10-23",
+      "interval": "12m",
+      "verdict": "corrected",
+      "note": "The page previously read 0.15 mg from about 15 kg and 0.3 mg from about 30 kg. Both thresholds were too high, and the 0.5 mg band was missing. Corrected 23 October 2026."
+    },
+    "adr-arrest": {
+      "page": "drugstore-01-adrenaline.html",
+      "claim": "Cardiac arrest, intravenous or intraosseous: 10 microgram/kg — 0.1 mL/kg of 1:10,000, every three to five minutes",
+      "source": "Royal Children's Hospital, Adrenaline and fluid bolus administration in resuscitation, which gives 0.1 mL/kg of 1:10,000 = 10 microgram/kg",
+      "url": "https://www.rch.org.au/rchcpg/hospital_clinical_guideline_index/Adrenaline_and_fluid_bolus_administration_in_resuscitation/",
+      "checked": "2026-10-23",
+      "interval": "12m",
+      "verdict": "confirmed",
+      "note": "RCH states a four-minute interval; three to five minutes is the international convention and is retained."
+    },
+    "adr-shock": {
+      "page": "drugstore-01-adrenaline.html",
+      "claim": "Shock, infusion: titrated from about 0.05 microgram/kg/min",
+      "source": "Perth Children's Hospital adrenaline medication monograph, which gives \"initially 0.05–0.1 microgram/kg/minute, then titrate according to response\" from birth to 18 years",
+      "url": "https://pch.health.wa.gov.au/~/media/Files/Hospitals/PCH/General-documents/Health-professionals/MedicationMonographs/Adrenaline.pdf",
+      "checked": "2026-10-23",
+      "interval": "12m",
+      "verdict": "confirmed"
+    },
+    "adr-croup": {
+      "page": "drugstore-01-adrenaline.html",
+      "claim": "Croup, nebulised: 0.5 mL/kg of 1:1000 to a maximum of 5 mL",
+      "source": "The long-standing weight-based formulation. The Royal Children's Hospital croup guideline now gives a flat 5 mL of 1:1000 and no mL/kg at all",
+      "url": "https://www.rch.org.au/clinicalguide/guideline_index/croup_laryngotracheobronchitis/",
+      "checked": "2026-10-23",
+      "interval": "12m",
+      "verdict": "flagged",
+      "note": "Not an error — the formula reaches the 5 mL cap at 10 kg, so the two agree in practice. But the page should either follow RCH's flat dose or name the source it is using. Michael's decision."
+    }
+  }
+}
