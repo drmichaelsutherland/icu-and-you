@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+<html lang="en-AU">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ICU AND YOU · Journal Club 102 — Thirty-two, in a coronary care unit</title>
+<meta name="description" content="Journal Club 102: Isath and colleagues on young adults in the cardiac intensive care unit — 29,035 admissions, and the finding that the commonest reason a young adult is there is heart failure, not a heart attack.">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="alternate icon" href="/favicon.ico" sizes="any">
+<link rel="apple-touch-icon" href="/icon-180.png">
+<link rel="manifest" href="/site.webmanifest">
+<meta name="theme-color" content="#1B2A33">
+<meta property="og:site_name" content="ICU AND YOU">
+<meta property="og:type" content="website">
+<meta property="og:title" content="ICU AND YOU · Journal Club 102 — Thirty-two, in a coronary care unit">
+<meta property="og:description" content="Same SOFA, same lactate, more shock, more ECMO — and half the mortality. The most interesting number in the paper is the one nobody adjusted.">
+<meta property="og:image" content="https://icuandyou.com/share-card.png">
+<meta name="twitter:card" content="summary_large_image">
+<style>
+  :root{
+    --paper:#FAF8F3; --ink:#241F19; --muted:#6E6558; --rule:#DED5C6;
+    --sepia:#6B4A2F; --sepiatint:#F2EBE1;
+    --rust:#A8442A; --rusttint:#F9EDE7;
+    --sky:#2E6E8E; --skytint:#E7F1F6;
+  }
+  *{box-sizing:border-box}
+  body{margin:0;background:#EDE8DE;color:var(--ink);
+    font:400 17px/1.65 'Iowan Old Style','Palatino Linotype',Palatino,Georgia,serif;
+    -webkit-text-size-adjust:100%;}
+  .sheet{max-width:780px;margin:0 auto;background:var(--paper);
+    box-shadow:0 1px 40px rgba(36,31,25,.10);}
+
+  header.top{padding:42px 40px 28px;border-bottom:1px solid var(--rule)}
+  .toptopic{display:inline-block;margin:0 0 16px 9px;padding:7px 16px;border-radius:20px;
+    border:1px solid currentColor;opacity:.62;text-decoration:none;color:inherit;
+    font:600 11.5px 'Helvetica Neue',Arial,sans-serif;letter-spacing:.09em;
+    text-transform:uppercase;transition:opacity .12s ease}
+  .toptopic:hover{opacity:1}
+  .topseries{display:inline-block;margin:0 0 16px 9px;padding:7px 16px;border-radius:20px;
+    border:1px solid currentColor;opacity:.62;text-decoration:none;color:inherit;
+    font:600 11.5px 'Helvetica Neue',Arial,sans-serif;letter-spacing:.09em;
+    text-transform:uppercase;transition:opacity .12s ease}
+  .topseries:hover{opacity:1}
+  .tophome{display:inline-block;margin:0 0 16px;padding:7px 16px;border-radius:20px;
+    border:1px solid currentColor;opacity:.62;text-decoration:none;color:inherit;
+    font:600 11.5px 'Helvetica Neue',Arial,sans-serif;letter-spacing:.09em;
+    text-transform:uppercase;transition:opacity .12s ease}
+  .tophome:hover{opacity:1}
+  .eyebrow{font:500 11.5px/1 'Helvetica Neue',Arial,sans-serif;letter-spacing:.24em;
+    text-transform:uppercase;color:var(--sepia);margin:0 0 14px}
+  .eyebrow a.serlink{color:inherit;text-decoration:none;border-bottom:1px solid transparent}
+  .eyebrow a.serlink:hover{border-bottom-color:currentColor}
+  .eyebrow a.mast{color:inherit;text-decoration:none;border-bottom:1px solid transparent}
+  .eyebrow a.mast:hover{border-bottom-color:currentColor}
+  h1{font-size:31px;line-height:1.2;margin:0 0 10px;font-weight:400;letter-spacing:-.012em}
+  .kicker{color:var(--muted);margin:0;font-size:16.5px;font-style:italic}
+
+  .source{margin:0;padding:26px 40px;background:var(--sepiatint);border-bottom:1px solid var(--rule)}
+  .cite{margin:0 0 16px;font-size:16px;line-height:1.6}
+  .cite b{font-weight:600}
+  .meta{display:flex;flex-wrap:wrap;gap:5px 22px;margin:0 0 16px;
+    font:400 13.5px 'Helvetica Neue',Arial,sans-serif;color:var(--muted)}
+  .meta b{color:var(--ink);font-weight:600}
+  a.read{display:inline-block;padding:14px 28px;border-radius:30px;text-decoration:none;
+    background:var(--sepia);color:#FAF6F0;
+    font:600 15px 'Helvetica Neue',Arial,sans-serif;letter-spacing:.03em}
+  a.read:hover{background:#523821}
+  .srcnote{font:400 13.5px 'Helvetica Neue',Arial,sans-serif;color:var(--muted);margin:14px 0 0}
+
+  .pad{padding:32px 40px}
+  p{margin:0 0 17px}
+  h2.sub{font:600 12px 'Helvetica Neue',Arial,sans-serif;letter-spacing:.2em;
+    text-transform:uppercase;color:var(--muted);margin:0 0 16px;
+    padding-bottom:8px;border-bottom:1px solid var(--rule)}
+  b.term{font-weight:600;color:var(--sepia)}
+
+  .three{display:flex;gap:13px;flex-wrap:wrap;margin:0 0 20px}
+  .col{flex:1 1 200px;background:#fff;border:1px solid var(--rule);border-radius:9px;padding:16px 18px}
+  .col.mid{border-top:4px solid var(--sky);background:var(--skytint)}
+  .col .age{font:600 12px 'Helvetica Neue',Arial,sans-serif;letter-spacing:.1em;
+    text-transform:uppercase;color:var(--muted);margin:0 0 7px}
+  .col.mid .age{color:var(--sky)}
+  .col p{margin:0;font-size:15px;line-height:1.5;color:#3A342A}
+
+  .caution{margin:0 0 20px;padding:20px 24px;background:var(--rusttint);
+    border-left:4px solid var(--rust);border-radius:0 8px 8px 0}
+  .caution .lab{display:block;font:600 11px 'Helvetica Neue',Arial,sans-serif;
+    letter-spacing:.18em;text-transform:uppercase;color:var(--rust);margin:0 0 9px}
+  .caution p:last-child{margin:0}
+
+  .challenge{margin:0;padding:28px 32px;background:var(--rusttint);border-left:5px solid var(--rust)}
+  .challenge h2{font:600 12px 'Helvetica Neue',Arial,sans-serif;letter-spacing:.2em;
+    text-transform:uppercase;color:var(--rust);margin:0 0 13px}
+  .ask{font-size:19.5px;line-height:1.5;margin:0 0 8px}
+  .lead{font-size:15px;color:var(--muted);margin:0 0 17px;line-height:1.55}
+  .btn{display:inline-block;margin:6px 0 12px;padding:15px 30px;background:var(--rust);
+    color:#FDF8F5;text-decoration:none;border-radius:30px;
+    font:600 15px 'Helvetica Neue',Arial,sans-serif;letter-spacing:.03em}
+  .btn:hover{background:#8A3620}
+  .fallback{font:400 13.5px 'Helvetica Neue',Arial,sans-serif;color:var(--muted);margin:0}
+  .fallback a{color:var(--rust)}
+  .subline{margin:0 0 14px;padding:0 0 13px;border-bottom:1px solid rgba(0,0,0,.09);
+    font:400 14.5px/1.55 'Iowan Old Style','Palatino Linotype',Palatino,Georgia,serif;
+    max-width:56ch;margin-left:auto;margin-right:auto}
+  .subline a{font-weight:500;border-bottom:1px solid currentColor;
+    text-decoration:none;color:inherit}
+  .firstpub{display:block;margin:0 0 10px;padding-bottom:9px;
+    border-bottom:1px solid currentColor;border-color:rgba(0,0,0,.09);
+    font:400 12px 'Helvetica Neue',Arial,sans-serif;letter-spacing:.06em;opacity:.72}
+
+  footer{padding:24px 40px 42px;border-top:1px solid var(--rule);
+    font:400 13px 'Helvetica Neue',Arial,sans-serif;color:var(--muted);text-align:center;line-height:1.7}
+  .home{display:inline-block;margin:0 0 14px;padding:8px 18px;border-radius:20px;
+    border:1px solid var(--rule);background:#F2EEE6;color:var(--sepia);text-decoration:none;
+    font:600 12.5px 'Helvetica Neue',Arial,sans-serif;letter-spacing:.05em}
+  .home:hover{background:var(--sepia);border-color:var(--sepia);color:#FAF6F0}
+
+  @media (max-width:620px){
+    header.top,.source,.pad,footer{padding-left:20px;padding-right:20px}
+    .challenge{padding:22px 20px}
+    h1{font-size:25px} body{font-size:16.5px} .ask{font-size:18px}
+  }
+  @media print{ body{background:#fff} .sheet{box-shadow:none;max-width:none} }
+
+  .agree{display:flex;gap:13px;flex-wrap:wrap;margin:0 0 22px}
+  .ag{flex:1 1 150px;background:#fff;border:1px solid var(--rule);border-radius:9px;
+    padding:16px 18px;text-align:center}
+  .ag .big{font-size:30px;line-height:1.1;color:var(--sepia);margin:0 0 4px}
+  .ag .lab2{font:400 13.5px 'Helvetica Neue',Arial,sans-serif;color:var(--muted);
+    line-height:1.45;margin:0}
+  .gap{margin:0 0 20px;padding:20px 24px;background:#F3EEE3;
+    border-left:4px solid var(--sepia);border-radius:0 8px 8px 0}
+  .gap .lab{display:block;font:600 11px 'Helvetica Neue',Arial,sans-serif;
+    letter-spacing:.18em;text-transform:uppercase;color:var(--sepia);margin:0 0 9px}
+  .gap p:last-child{margin:0}
+  .mine{display:inline-block;margin:9px 0 0;opacity:.78;font-size:.94em}
+  .howto{margin:0 0 26px;padding:22px 26px;background:#F2EDE3;border-left:4px solid #6B4A2F;
+    border-radius:0 8px 8px 0}
+  .howto .lab{display:block;font:600 11px 'Helvetica Neue',Arial,sans-serif;letter-spacing:.18em;
+    text-transform:uppercase;color:#54381F;margin:0 0 10px}
+  .howto p{margin:0 0 10px;font-size:15.5px;line-height:1.6}
+  .howto p:last-child{margin:0}
+
+  .pts{list-style:none;margin:0 0 20px;padding:0}
+  .pts li{display:flex;flex-direction:column;gap:3px;padding:12px 0;
+    border-bottom:1px solid var(--rule);font-size:16.5px;line-height:1.55}
+  .pts li:last-child{border-bottom:0}
+  .pts b{font:600 14.5px 'Helvetica Neue',Arial,sans-serif;color:var(--sepia);line-height:1.4}
+
+  /* The diagnosis comparison. Two columns of percentages read far better as a
+     table than as a sentence, and this one is the whole point of the paper. */
+  table.dx{width:100%;border-collapse:collapse;margin:0 0 20px;
+    font:400 16px 'Iowan Old Style',Palatino,Georgia,serif}
+  table.dx th{text-align:left;font:600 11px 'Helvetica Neue',Arial,sans-serif;
+    letter-spacing:.14em;text-transform:uppercase;color:var(--muted);
+    padding:0 10px 8px 0;border-bottom:1px solid var(--rule)}
+  table.dx th.n{text-align:right}
+  table.dx td{padding:9px 10px 9px 0;border-bottom:1px solid #EAE3D6}
+  table.dx td.n{text-align:right;font-weight:600;color:var(--sepia);white-space:nowrap}
+  table.dx td.o{text-align:right;color:var(--muted);white-space:nowrap}
+  table.dx tr:last-child td{border-bottom:none}
+  table.dx tr.hi td{background:#F6F0E4}
+</style>
+</head>
+<body>
+<div class="sheet">
+
+  <header class="top">
+    <a class="tophome" href="./">&larr;&nbsp; Home</a>
+    <a class="topseries" href="./?s=journal">All journal club</a>
+    <a class="toptopic" href="./?t=early-middle-age" title="Everything on Early middle age">All on this topic</a>
+    <p class="eyebrow"><a class="mast" href="./">ICU and You</a> &nbsp;·&nbsp; <a class="serlink" href="./?s=journal">Journal Club</a> &nbsp;·&nbsp; Number 102</p>
+    <h1>Thirty-two, in a coronary care unit</h1>
+    <p class="kicker">Twenty-nine thousand admissions, and the discovery that the young heart in trouble is usually not a heart attack</p>
+  </header>
+
+  <div class="source">
+    <p class="cite">Isath A, Sharma T, Mahmood U, Smith D, Berg DD, Bohula EA, et&nbsp;al.
+      <b>Young adults in the cardiac intensive care unit: insights from the Critical Care Cardiology Trials
+      Network registry.</b>
+      <em>European Heart Journal: Acute Cardiovascular Care</em> 2026;15:403&ndash;407.</p>
+    <div class="meta">
+      <span><b>Type</b> &nbsp;Brief report &mdash; observational multicentre registry</span>
+      <span><b>Where</b> &nbsp;41 advanced cardiac ICUs, North America (CCCTN)</span>
+      <span><b>When</b> &nbsp;Annual two-month collection periods, 2018 to 2023</span>
+      <span><b>Size</b> &nbsp;29,035 admissions; 1,959 aged 18 to 39</span>
+    </div>
+    <a class="read" href="https://doi.org/10.1093/ehjacc/zuaf161">Read the paper</a>
+    <p class="srcnote">Not open access &mdash; all rights reserved, so you will need your hospital library.
+      Five pages, one table and two figures, which for once is the right length for what it has to say.
+      Figure&nbsp;1 is the paper: seven bars, and the two that cross over tell you most of it.</p>
+  </div>
+
+  <div class="pad">
+    <div class="howto">
+      <span class="lab">Why bother with the journals at all</span>
+      <p><strong>Because they are the news.</strong> Not the formal, ceremonial version of reading &mdash; the
+        daily kind. The journals are our news pages, our opinion columns, our form guide and our sports
+        results. People who would not dream of going a week without knowing what happened in the world will
+        go a year without knowing what happened in their own specialty, and then wonder why the registrar
+        knows something they do not.</p>
+      <p>It does not have to be a session. You do not need an hour, a highlighter or a plan. Read the
+        abstracts. Skim the contents page of one journal while the kettle boils. Open the one paper in ten
+        that looks interesting and abandon it at paragraph three if it is not. Nobody is marking this.</p>
+      <p><strong>What matters is staying curious rather than staying current</strong> &mdash; nobody is
+        current, and the people who claim to be are reading less than they say. What you are actually
+        maintaining is the habit of noticing: that a question is open, that a practice has shifted, that
+        somebody has published the thing you were arguing about last month.</p>
+      <p>And then do the part that makes it stick. Mention it on a ward round. Argue about it with somebody
+        who disagrees. Ask what the study could not have shown. A paper read alone is half a paper.</p>
+      <p><em>Publish or perish is the line we all know. The quieter one is this: absorb it, or lose your
+        edge.</em></p>
+    </div>
+
+    <h2 class="sub">The question</h2>
+
+    <p>Everything written about the coronary care unit for twenty years has been about it getting older. The
+      median age in this registry is sixty-seven. So what is the other end of the distribution doing &mdash;
+      and is the thirty-two-year-old in bed four simply a younger version of the sixty-eight-year-old in bed
+      five?</p>
+
+    <p>She is not. That is the paper.</p>
+
+    <h2 class="sub">What they did</h2>
+
+    <p>The Critical Care Cardiology Trials Network is a registry of advanced cardiac intensive care units in
+      North America, co-ordinated by the TIMI Study Group in Boston. Each participating unit submits every
+      consecutive admission during an annual collection period of at least two months. The authors took six
+      years of that, split it at forty, and compared.</p>
+
+    <div class="agree">
+      <div class="ag"><p class="big">29,035</p><p class="lab2">admissions across 41 centres, 2018 to 2023</p></div>
+      <div class="ag"><p class="big">6.7%</p><p class="lab2">aged 18 to 39 &mdash; 1,959 of them</p></div>
+      <div class="ag"><p class="big">32 v 68</p><p class="lab2">median age, young against the rest</p></div>
+    </div>
+
+    <p>One housekeeping note before anything else, because it matters for this fortnight. The paper&rsquo;s
+      &ldquo;young adults&rdquo; are 18 to 39, which straddles two of our own bands. But the median is
+      <b class="term">thirty-two</b>, with an interquartile range of 27 to 36 &mdash; so in practice this
+      cohort sits almost exactly on early middle age. The comparator is everyone aged forty and over, which
+      is a problem we will come back to.</p>
+
+    <h2 class="sub">Who they are</h2>
+
+    <div class="three">
+      <div class="col mid">
+        <p class="age">Aged 18&ndash;39 &nbsp;&#183;&nbsp; 1,959</p>
+        <p>Hypertension in <b>23.5%</b>, diabetes <b>11.1%</b>, coronary artery disease <b>5.6%</b>. But
+          congenital heart disease in <b>11.4%</b> and a previous heart transplant in <b>3.8%</b>. Female
+          40.0%, non-White 55.4%.</p>
+      </div>
+      <div class="col">
+        <p class="age">Aged 40 and over &nbsp;&#183;&nbsp; 27,075</p>
+        <p>Hypertension <b>66.3%</b>, diabetes <b>36.1%</b>, coronary artery disease <b>37.6%</b>.
+          Congenital heart disease 1.2%, prior transplant 1.2%. Female 36.4%, non-White 43.5%.</p>
+      </div>
+      <div class="col">
+        <p class="age">The same in both</p>
+        <p>Lactate on arrival &mdash; a median of <b>1.8</b> in each group. SOFA score &mdash;
+          <b>3.0</b> in each. By the two measures we use to say how sick somebody is, these patients arrive
+          equally sick.</p>
+      </div>
+    </div>
+
+    <p>Read the first column again. Almost none of the furniture of cardiovascular risk, and a tenfold excess
+      of congenital heart disease. A young adult in a coronary care unit is not an old patient who arrived
+      early. Mostly they are somebody with a heart that was different from the beginning, or that failed for
+      a reason that has nothing to do with plaque.</p>
+
+    <p>Two quieter findings in the same table are worth lifting out. Of the young adults with chronic kidney
+      disease, <b class="term">43.2%</b> already had end-stage renal disease, against 20.8% of the older
+      ones &mdash; so young kidney disease here is further advanced, not milder. And of the young adults with
+      a history of heart failure, <b class="term">73.2%</b> had an ejection fraction under 40%, against
+      60.1%. Fewer of them have heart failure. The ones who do have worse ventricles.</p>
+
+    <h2 class="sub">The finding that should change what you expect</h2>
+
+    <p>Primary admission diagnosis, young against older:</p>
+
+    <table class="dx">
+      <tr><th>Primary diagnosis</th><th class="n">18&ndash;39</th><th class="n">40+</th></tr>
+      <tr class="hi"><td>Heart failure</td><td class="n">26%</td><td class="o">20%</td></tr>
+      <tr class="hi"><td>Acute coronary syndrome</td><td class="n">11%</td><td class="o">29%</td></tr>
+      <tr><td>Arrhythmia</td><td class="n">19%</td><td class="o">17%</td></tr>
+      <tr><td>Valvular</td><td class="n">7%</td><td class="o">7%</td></tr>
+      <tr><td>Tamponade</td><td class="n">5%</td><td class="o">2%</td></tr>
+      <tr><td>Hypertensive emergency</td><td class="n">4%</td><td class="o">2%</td></tr>
+      <tr><td>Congenital</td><td class="n">2%</td><td class="o">&lt;1%</td></tr>
+    </table>
+
+    <p>Two bars cross over and the rest barely move. <b class="term">Heart failure is the leading admission
+      diagnosis in young adults &mdash; one in four &mdash; and acute coronary syndrome is less than half as
+      common as it is in everybody else.</b> Valvular disease is identical in the two groups, which is quietly
+      interesting in itself, and arrhythmia nearly so.</p>
+
+    <p>If your mental image of a young person in a coronary care unit is a heart attack, the data say you have
+      the wrong picture about seven times in eight. The authors point to the rising burden of heart failure in
+      young adults, and to a heart failure phenotype in this group that is substantively different from the
+      older one &mdash; myocarditis and the genetic cardiomyopathies rather than ischaemic damage.</p>
+
+    <div class="gap">
+      <span class="lab">The same story this fortnight is telling from the other end</span>
+      <p>This sits squarely beside <a href="podcast-61-scad.html">Podcast 61</a>, where a cardiologist argues
+        that the young heart attack is a different disease with opposite genetics. Here is the registry
+        version: the young are in the unit far less often <em>for</em> a heart attack at all.</p>
+      <p>And a detail that completes it &mdash; when young adults <em>do</em> have an acute coronary syndrome,
+        they get angiography or PCI at the same rate as anybody else (88.7% against 87.1%, with a p-value of
+        0.47). The gap is not in how we treat their infarcts. It is that they are not mostly having
+        infarcts.</p>
+    </div>
+
+    <h2 class="sub">And they are sicker when they get there</h2>
+
+    <p>Despite the thin risk-factor profile, the young arrive in more trouble. <b class="term">Cardiogenic
+      shock in 22.4%</b> against 18.7%. <b class="term">Cardiac arrest in 12.7%</b> against 10.6%. The
+      commonest single indication for admission is the same in both groups and is not cardiac at all &mdash;
+      respiratory insufficiency, about a quarter of each.</p>
+
+    <p>What is done for them differs more than that. Mechanical ventilation 26% against 23%. Right heart
+      catheterisation 21% against 16%, and among those admitted with shock or heart failure, 50.1% against
+      38.3%. Mechanical circulatory support 13% against 11%. Coronary angiography, going the other way, 19%
+      against 38%.</p>
+
+    <p>But the striking one is <em>which</em> support:</p>
+
+    <table class="dx">
+      <tr><th>Of those receiving mechanical circulatory support</th><th class="n">18&ndash;39</th><th class="n">40+</th></tr>
+      <tr><td>Intra-aortic balloon pump</td><td class="n">52%</td><td class="o">78%</td></tr>
+      <tr><td>Impella</td><td class="n">24%</td><td class="o">27%</td></tr>
+      <tr class="hi"><td>ECMO</td><td class="n">29%</td><td class="o">10%</td></tr>
+    </table>
+
+    <p>Nearly a third of supported young adults go on extracorporeal membrane oxygenation, against one in ten
+      of the older. That is the single most operationally useful number in the paper. It tells you what a
+      young adult in cardiogenic shock is likely to need, and therefore which conversation needs to start
+      early, and with which hospital.</p>
+
+    <h2 class="sub">The headline, and the trap underneath it</h2>
+
+    <p>Intensive care mortality was <b class="term">6.5%</b> in the young against 10.5%. Hospital mortality
+      <b class="term">9.5%</b> against 14.4%. Both differences are highly significant. Length of stay was
+      longer in the young &mdash; a median of 2.7 days against 2.2.</p>
+
+    <p>So: sicker on arrival, treated harder, stayed longer, died substantially less.</p>
+
+    <div class="caution">
+      <span class="lab">Before you repeat the mortality figures</span>
+      <p><b>These comparisons are unadjusted.</b> The paper reports crude proportions. A thirty-two-year-old
+        survives critical illness better than a sixty-eight-year-old, and no reader needed a registry to
+        learn that. Taken at face value the finding is close to a tautology.</p>
+      <p>What rescues it is the third column of the table above. <b>SOFA and lactate were identical</b> in
+        the two groups &mdash; so by the usual measures these patients arrived equally deranged, and the
+        young still died at two thirds the rate. That is a real observation. It is also resting on a single
+        median SOFA score of 3 in each group, which is a blunt instrument that hides a great deal.</p>
+      <p>And the comparator is <b>everybody aged forty and over</b>. A forty-one-year-old and a
+        ninety-five-year-old sit in the same column. The authors concede the group is heterogeneous. Any
+        mortality difference across a boundary like that is partly just the shape of the age distribution on
+        the other side of it.</p>
+    </div>
+
+    <h2 class="sub">The uncomfortable reading the authors raise themselves</h2>
+
+    <div class="gap">
+      <span class="lab">Two explanations, and only one of them is cheerful</span>
+      <p>Young patients received more of everything. The authors offer the obvious reading &mdash; an
+        appropriately more aggressive approach in people with more to gain &mdash; and then, to their credit,
+        the other one. This may be a <em>risk&ndash;treatment paradox</em>: older adults, at greater risk of
+        a poor outcome and therefore with more absolute benefit to gain, being treated less aggressively
+        precisely because they are old.</p>
+      <p>If that is what is happening, then part of the mortality gap in this paper is not biology. It is us.
+        The paper cannot distinguish the two, and it does not pretend to.</p>
+    </div>
+
+    <h2 class="sub">The finding nobody should skip</h2>
+
+    <p>The young cohort was more female (40.0% against 36.4%) and considerably more likely to be non-White
+      (<b class="term">55.4% against 43.5%</b>). The authors do not let that sit as a demographic curiosity.
+      They name what they think it reflects: earlier onset of cardiovascular risk factors, and structural
+      inequity &mdash; limited access to specialty care &mdash; compounding vulnerability in those
+      populations.</p>
+
+    <p>In other words, the people arriving in a coronary care unit decades before they should be are
+      disproportionately women and people of colour. Whatever is driving the young end of this distribution
+      is not distributed evenly, and a registry of forty-one advanced North American units has just said so
+      in print.</p>
+
+    <h2 class="sub">What to take to the bedside</h2>
+
+    <ul class="pts">
+      <li><b>Expect heart failure, not infarction</b><span>One in four young admissions is heart failure and
+        barely one in nine is an acute coronary syndrome. In a young adult with a failing heart, think
+        myocarditis, genetic cardiomyopathy and congenital disease before you think plaque.</span></li>
+      <li><b>Ask about the childhood heart</b><span>Congenital heart disease in 11.4%, prior transplant in
+        3.8% &mdash; roughly tenfold and threefold the older rates. Somebody has been following this patient
+        for twenty years and holds the operative history you need.</span></li>
+      <li><b>Think ECMO early, and think about transfer</b><span>Nearly a third of young adults needing
+        mechanical support get ECMO, against a tenth of older ones. In a unit without it, that is a phone
+        call that should happen sooner than instinct suggests.</span></li>
+      <li><b>Low risk-factor burden is not reassurance</b><span>These patients had less hypertension, less
+        diabetes and a seventh of the coronary disease &mdash; and arrived with more shock and more cardiac
+        arrest. A clean risk profile in a young person tells you about the mechanism, not the
+        severity.</span></li>
+      <li><b>The commonest reason to be there is breathing</b><span>Respiratory insufficiency was the leading
+        indication for admission in both groups, about a quarter of each. The coronary care unit is a
+        respiratory ward with a cardiology badge, at every age.</span></li>
+    </ul>
+
+    <h2 class="sub">What to read sceptically</h2>
+
+    <ul class="pts">
+      <li><b>Unadjusted mortality across a forty-year age gap</b><span>The central comparison has no
+        multivariable adjustment reported. Identical SOFA and lactate make it more interesting than a
+        tautology, but not much more than that.</span></li>
+      <li><b>&ldquo;Forty and over&rdquo; is not a comparator</b><span>It is five decades of patients in one
+        column, and the authors say so. Nothing here tells you how a thirty-eight-year-old differs from a
+        forty-five-year-old, which for our purposes is the interesting boundary.</span></li>
+      <li><b>Two months a year, not six years</b><span>Collection periods are annual snapshots of at least
+        two months, not continuous enrolment. Whatever is seasonal is sampled unevenly.</span></li>
+      <li><b>Forty-one advanced North American units</b><span>Predominantly tertiary and academic centres
+        with ECMO on site &mdash; which is precisely the thing being measured. The ECMO finding in
+        particular cannot be read straight across to a regional unit, or to Australia.</span></li>
+      <li><b>Readmissions are invisible</b><span>The registry captures anonymised admissions, so a young
+        patient readmitted three times appears three times. The authors note readmission may well be
+        commoner in the young, which would inflate their apparent numbers and dilute their apparent
+        mortality.</span></li>
+      <li><b>And it stops at the hospital door</b><span>No quality of life, no long-term outcome &mdash; the
+        limitation the authors themselves call out as mattering most &ldquo;in a younger population with
+        extended post-critical illness survival&rdquo;. A thirty-two-year-old who survives has fifty years
+        of whatever this did to her, and this paper ends on day five.</span></li>
+    </ul>
+
+    <p>That last gap is the one I would spend the journal club on. The paper&rsquo;s conclusion is that young
+      adults do better, and within its own four walls that is correct. But survival to discharge is the
+      outcome that suits a registry, not the outcome that suits the patient. We have built a unit that is
+      good at getting a thirty-two-year-old out of the building alive and we have almost no idea what we hand
+      back to her. The authors say as much, in a sentence near the end that is easy to read past &mdash; care
+      models designed for this population, and survivorship programmes tailored to it, are what the data are
+      actually asking for.</p>
+
+    <p>Which makes this a good paper to argue with rather than a good paper to quote. It describes something
+      real and under-described, it is honest about what it cannot see, and the most important thing in it is
+      the question it leaves open.</p>
+  </div>
+
+  <div class="pad" style="padding-top:6px">
+    <div class="challenge">
+      <h2>Challenge for you</h2>
+      <p class="ask">What happens to your thirty-five-year-old in cardiogenic shock tonight?</p>
+      <p class="lead">Not the guideline answer. The real one. Does the conversation about extracorporeal
+        support happen at the bedside, on the phone, or not at all &mdash; and how far away is the nearest
+        unit that could take her?</p>
+      <p>I am interested in the timing above everything. How many hours from arrival to somebody saying the
+        word ECMO out loud? And if your unit does not retrieve for it, do you know that before you need to
+        know it, or do you find out on the night? Replies from regional and rural units particularly welcome;
+        this is a paper written entirely in tertiary academic centres with the machine down the corridor, and
+        most of us do not work there.</p>
+      <p><a class="btn" href="mailto:icuandyou@icloud.com?subject=Journal%20Club%20102%20-%20the%20young%20adult%20in%20cardiogenic%20shock&body=What%20happens%20to%20a%2035-year-old%20in%20cardiogenic%20shock%20in%20my%20hospital%3A%0D%0A%0D%0A%0D%0AHow%20long%20before%20somebody%20says%20ECMO%2C%20and%20who%20says%20it%3A%0D%0A%0D%0A%0D%0AWhere%20is%20the%20nearest%20unit%20that%20could%20take%20her%2C%20and%20do%20people%20know%20that%20in%20advance%3F%0D%0A%0D%0A%0D%0AHospital%20type%20%28tertiary%20%2F%20regional%20%2F%20rural%29%3A%0D%0A%0D%0A---%0D%0A%0D%0AName%20%28optional%29%3A%0D%0A%0A---%0A%0AThinking%20about%20this%20ICU%20AND%20YOU%20post%20overall%20%E2%80%94%20was%20it%20useful%20to%20you%2C%20or%20would%20it%20be%20useful%20to%20others%3F%0A">Send me your answer</a></p>
+      <p class="fallback">The button opens a reply straight to me. If your device blocks it, write to
+        <a href="mailto:icuandyou@icloud.com">icuandyou@icloud.com</a> instead.</p>
+    </div>
+    <div class="challenge" style="margin-top:22px">
+      <h2>Send me a paper</h2>
+      <p class="ask">Read something that changed what you do?</p>
+      <p class="lead">This column runs on what people bring to it. Tell me the paper and, more to the point,
+        tell me what it changed &mdash; a journal club is not a reading list, it is an argument about whether
+        something ought to alter practice. Papers that <em>failed</em> to convince you are just as welcome,
+        and a good deal rarer in print.</p>
+      <p>If you would rather write the appraisal yourself, I will publish it here with your name on it
+        &mdash; or without, entirely as you prefer. Trainees especially: if you have already appraised
+        something for a teaching session, most of the work is done.</p>
+      <p><a class="btn" href="mailto:icuandyou@icloud.com?subject=Journal%20club%20suggestion&body=The%20paper%20%28title%2C%20journal%20and%20year%2C%20or%20just%20the%20DOI%29%3A%0D%0A%0D%0A%0D%0AWhat%20it%20changed%20%E2%80%94%20or%20why%20it%20did%20not%20convince%20you%3A%0D%0A%0D%0A%0D%0AWould%20you%20like%20to%20write%20the%20appraisal%20yourself%3F%20%28yes%20%2F%20no%29%3A%0D%0A%0D%0A%0D%0AIf%20I%20write%20it%20up%2C%20may%20I%20say%20who%20suggested%20it%3F%20%28yes%2C%20by%20name%20%2F%20yes%2C%20initials%20only%20%2F%20no%2C%20please%20leave%20me%20out%29%3A%0D%0A%0D%0A%0D%0AName%3A%0D%0A%0D%0A---%0D%0A%0D%0AThinking%20about%20this%20ICU%20AND%20YOU%20post%20overall%20%E2%80%94%20was%20it%20useful%20to%20you%2C%20or%20would%20it%20be%20useful%20to%20others%3F%0D%0A">Suggest a paper</a></p>
+      <p class="fallback" style="margin-bottom:9px">How you are credited is entirely your call &mdash; by name, by initials, or not at all &mdash; whether you write the piece or I do, and whether I quote you or simply say who sent something in; nothing of yours goes up with your name on it unless you have said yes.</p>
+<p class="fallback">The button opens a reply straight to me. If your device blocks it, write to
+        <a href="mailto:icuandyou@icloud.com">icuandyou@icloud.com</a> instead.</p>
+    </div>
+  </div>
+
+  <footer>
+    <span class="firstpub">First published October 2026</span>
+    <p class="subline">Two emails a week &mdash; the Friday newsletter for all subscribers, and, for clinical subscribers,
+      the mind map and puzzles the moment they go up on Tuesday. Occasional announcements of new
+      features as they arrive. What went up and why it mattered, the best of your replies, and
+      original feature stories, news and views. <a href="https://joinlist.com/f/5adad2d6">Come and join us</a>.</p>
+    <a class="home" href="./">&larr; &nbsp;All of ICU AND YOU</a><br>
+    ICU AND YOU &nbsp;·&nbsp; Journal Club No. 102 &nbsp;·&nbsp; companion to the Early middle age fortnight<br>
+    Summarised independently and in our own words; the article is not open access and is linked above rather
+    than reproduced. Figures are quoted from the published paper. The study was supported in part by
+    National Institutes of Health grant T32 HL007227; several authors are members of the TIMI Study Group,
+    which receives institutional research grant support from a large number of pharmaceutical and device
+    companies, and individual authors declare consulting relationships &mdash; the full disclosure statement
+    is in the paper. Educational use only &mdash; not a clinical protocol, and local guidance and the
+    retrieval service always take precedence.
+  <br>
+    <span class="mine">Views my own, not those of NSW Health or any other organisation. No identifiable patients — scenarios are constructed or combined for teaching. <a href="about.html">More</a>.</span>
+  </footer>
+
+</div>
+<script data-goatcounter="https://icuandyou.goatcounter.com/count"
+        async src="//gc.zgo.at/count.js"></script>
+</body>
+</html>
