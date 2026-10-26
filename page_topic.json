@@ -1526,9 +1526,28 @@
    "week": true,
    "pos": 1,
    "blurb": "Four stations: where the two lines cross, what actually brings them in, what grows and what we give them, and what outlasts the admission. Suicide leads the causes of death in this band, Aboriginal and Torres Strait Islander patients carry the burden of a much older patient, and the drugs we now give have a critical illness of their own."
+  },
+  {
+   "file": "aphorism-41-throw-everything.html",
+   "series": "aphorism",
+   "colour": "plum",
+   "number": "41",
+   "title": "When they're young, throw everything at them",
+   "topic": "Early middle age",
+   "slug": "early-middle-age",
+   "week": true,
+   "pos": 4,
+   "badge": "Aphorism",
+   "link_label": "Open",
+   "blurb": "\u201cWhen they\u2019re young, throw everything at them.\u201d The registry data support it, the risk\u2013treatment paradox undermines it, and ICE-CUB 2 put its silent converse to a randomised test in the over-seventy-fives \u2014 doubling their ICU admission saved none of them. A rationing rule nobody will call one, and the word in it is the wrong word. Yes, No and Maybe."
   }
  ],
  "latest": [
+  {
+   "file": "aphorism-41-throw-everything.html",
+   "colour": "plum",
+   "label": "Aphorism 41 \u00b7 When they\u2019re young, throw everything at them"
+  },
   {
    "file": "mind-map-37-early-middle-age.html",
    "colour": "teal",
@@ -1548,11 +1567,6 @@
    "file": "book-club-03-ohs-intensive-care-manual.html",
    "colour": "terracotta",
    "label": "ICU Book Club 3 \u00b7 T. E. Oh's Intensive Care Manual"
-  },
-  {
-   "file": "anecdote-city-01-manic-monday.html",
-   "colour": "indigo striped",
-   "label": "Anecdote City 1 \u00b7 Manic Monday"
   }
  ],
  "topten": [
