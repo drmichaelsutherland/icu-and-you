@@ -150,6 +150,29 @@
     .phone .num{font-size:25px}
   }
   @media print{ body{background:#fff} .sheet{box-shadow:none;max-width:none} }
+
+  /* The contributor's note. Four fields, the same four every time, so the next
+     person sending in a presentation can see exactly what is being asked of
+     them and fill it in without a conversation. The photograph is optional;
+     without one the block simply closes up around the text. */
+  .bio{display:flex;gap:22px;align-items:flex-start;margin:0 0 28px;
+    padding:24px 26px;background:var(--heathertint);
+    border-left:4px solid var(--heather);border-radius:0 9px 9px 0}
+  .bio img{width:132px;height:132px;flex:0 0 132px;border-radius:9px;
+    object-fit:cover;display:block}
+  .bio .who{flex:1 1 260px;min-width:0}
+  .bio .nm{margin:0 0 14px;font:600 19px 'Iowan Old Style',Palatino,Georgia,serif;
+    color:var(--deep)}
+  .bio dl{margin:0;display:grid;grid-template-columns:auto 1fr;gap:8px 18px}
+  .bio dt{font:600 10.5px 'Helvetica Neue',Arial,sans-serif;letter-spacing:.14em;
+    text-transform:uppercase;color:var(--heather);padding-top:5px;white-space:nowrap}
+  .bio dd{margin:0;font-size:16px;line-height:1.5}
+  @media (max-width:620px){
+    .bio{flex-direction:column;padding:20px 20px;gap:18px}
+    .bio img{width:116px;height:116px;flex-basis:116px}
+    .bio dl{grid-template-columns:1fr;gap:1px 0}
+    .bio dt{padding-top:11px}
+  }
 </style>
 </head>
 <body>
@@ -166,7 +189,7 @@
     <h1>Australian snake bites</h1>
     <p class="kicker">Most people bitten by an Australian snake are never envenomed. The whole job is working out, quickly and without a reliable test, which ones are</p>
     <p class="byline">A teaching presentation given at Coffs Harbour Health Campus by <b>Dr Maheshani Wijenatha</b>,
-      Intensive Care Registrar. Moderator: <b>Dr Azad</b>. Set for the web by ICU AND YOU with her permission;
+      Intensive Care Registrar. Moderator: <b>Dr Raman Azad</b>. Set for the web by ICU AND YOU with her permission;
       the clinical content and its selection are hers.</p>
   </header>
 
@@ -184,6 +207,24 @@
         something good, the invitation is open to you.</p>
       <p>Maheshani Wijenatha has gone first, which is the hardest position in any queue. The button at the
         foot of this page reaches me.</p>
+    </div>
+
+    <div class="bio">
+      <img src="maheshani-wijenatha.jpg" alt="Dr Maheshani Wijenatha">
+      <div class="who">
+        <p class="nm">Dr Maheshani Wijenatha</p>
+        <dl>
+          <dt>Origin</dt>
+          <dd>Sri Lanka. Trained at the University of Peradeniya.</dd>
+          <dt>Now</dt>
+          <dd>Intensive Care Registrar at Coffs Harbour Health Campus.</dd>
+          <dt>Golden rule</dt>
+          <dd>Treat the patient, not just the numbers.</dd>
+          <dt>One lesson</dt>
+          <dd>How much teamwork and clear communication matter in critical care &mdash; especially in the
+            most challenging moments.</dd>
+        </dl>
+      </div>
     </div>
 
     <p class="lede">About three thousand people a year are bitten by a snake in Australia. Roughly one in twenty
@@ -513,7 +554,7 @@
     <a class="home" href="./">&larr; &nbsp;All of ICU AND YOU</a><br>
     ICU AND YOU &nbsp;&#183;&nbsp; Your Presentations No. 1 &nbsp;&#183;&nbsp; a teaching presentation by Dr Maheshani Wijenatha<br>
     <span class="srcs">The clinical content is Dr Wijenatha&rsquo;s, prepared for a departmental teaching
-    session at Coffs Harbour Health Campus, moderated by Dr Azad. Her sources were
+    session at Coffs Harbour Health Campus, moderated by Dr Raman Azad. Her sources were
     <a href="https://www.tg.org.au">Therapeutic Guidelines</a> (snake bite) and the
     <a href="https://www.mja.com.au/journal/2013/199/11/snakebite-australia-practical-approach-diagnosis-and-treatment">Medical
     Journal of Australia</a>. Figures and tables on this page have been rebuilt from the underlying clinical
