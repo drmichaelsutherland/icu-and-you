@@ -1486,9 +1486,47 @@
    "week": false,
    "standing": true,
    "blurb": "The book I slept beside — the bible for trainees in Australia, New Zealand and Singapore since 1979, and a book with every fault a multi-author textbook can have. Eighteen parts, 120 chapters, seventeen hundred pages, and it is still called a manual. No voice, no flow, and no unified message — and the same arrangement is exactly why it is any good."
+  },
+  {
+   "file": "podcast-61-scad.html",
+   "series": "podcast",
+   "colour": "slate",
+   "number": "61",
+   "title": "The opposite of hard arteries",
+   "topic": "Early middle age",
+   "slug": "early-middle-age",
+   "week": false,
+   "pos": 7,
+   "badge": "Podcast",
+   "link_label": "Open",
+   "blurb": "Jason Kovacic on Healthed. Spontaneous coronary artery dissection \u2014 the heart attack whose genetics run opposite to atherosclerosis, why the thirty-year-old woman gets worked up for pneumonia, and an expert saying the striking thing and then, unprompted, the true one."
+  },
+  {
+   "file": "journal-club-102-young-adults-cicu.html",
+   "series": "journal",
+   "colour": "sepia",
+   "number": "102",
+   "title": "Thirty-two, in a coronary care unit",
+   "topic": "Early middle age",
+   "slug": "early-middle-age",
+   "week": false,
+   "pos": 8,
+   "badge": "Journal club",
+   "link_label": "Open",
+   "blurb": "Isath and colleagues, 29,035 cardiac ICU admissions. Heart failure, not heart attack, is the leading reason a young adult is there \u2014 and nearly a third of those needing mechanical support go on ECMO. Plus the mortality figure that nobody adjusted."
   }
  ],
  "latest": [
+  {
+   "file": "journal-club-102-young-adults-cicu.html",
+   "colour": "sepia",
+   "label": "Journal Club 102 \u00b7 Thirty-two, in a coronary care unit"
+  },
+  {
+   "file": "podcast-61-scad.html",
+   "colour": "slate",
+   "label": "Podcast 61 \u00b7 The opposite of hard arteries"
+  },
   {
    "file": "book-club-03-ohs-intensive-care-manual.html",
    "colour": "terracotta",
@@ -1503,16 +1541,6 @@
    "file": "anecdote-city-00-welcome.html",
    "colour": "indigo striped",
    "label": "Anecdote City 0 \u00b7 Welcome to Anecdote City"
-  },
-  {
-   "file": "registrars-01-snake-bites.html",
-   "colour": "heather striped",
-   "label": "Your Presentations 1 \u00b7 Australian snake bites"
-  },
-  {
-   "file": "jukebox-01-young-adult.html",
-   "colour": "neon",
-   "label": "The Jukebox 1 \u00b7 Five songs from the young adult ward"
   }
  ],
  "topten": [
@@ -1565,6 +1593,7 @@
   ]
  },
  "topic_order": [
+  "early-middle-age",
   "young-adult",
   "adolescent",
   "school-age",
