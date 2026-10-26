@@ -254,6 +254,122 @@
       "interval": "12m",
       "verdict": "contested",
       "note": "The guest's restriction list is markedly more conservative than the published guidance written by, among others, the heads of the Mayo registry and the European cohorts. He labels his own advice as intuition rather than evidence every time he gives it. Recorded as contested rather than corrected because neither position rests on trial data; the page sets them side by side and notes that the cost of each precaution falls on the patient's life, not the clinician's."
+    },
+    "nn-temp": {
+      "page": "mind-map-31-neonatal.html",
+      "claim": "Target newborn temperature 36.5-37.5 degrees C",
+      "source": "ANZCOR 2021 newborn guidelines, key recommendations: maintain a temperature between 36.5 and 37.5 degrees C in non-asphyxiated infants of all gestational ages. ANZCOR Guideline 13.8 repeats the same range as the normothermia goal",
+      "url": "https://www.neoresus.org.au/wp-content/uploads/2021/10/ANZCOR-2021-Newborn-Guidelines-Key-recommendations.pdf",
+      "checked": "2026-10-26",
+      "interval": "12m",
+      "verdict": "confirmed"
+    },
+    "nn-ppv": {
+      "page": "mind-map-31-neonatal.html",
+      "claim": "Start positive pressure ventilation if not breathing or heart rate under 100",
+      "source": "ANZCOR Guideline 13.4 (April 2021): start positive pressure ventilation where the newborn is apnoeic or breathing inadequately and \"the heart rate is less than 100 beats per min and not increasing\"",
+      "url": "https://www.anzcor.org/home/neonatal-resuscitation/guideline-13-4-airway-management-and-mask-ventilation-of-the-newborn",
+      "checked": "2026-10-26",
+      "interval": "12m",
+      "verdict": "confirmed",
+      "note": "Confirmed. The guideline's full wording adds \"and not increasing\", which the map compresses out. Left as it stands: a mind map is a prompt, and the rising heart rate is already the subject of the box beside it."
+    },
+    "nn-pressures": {
+      "page": "mind-map-31-neonatal.html",
+      "claim": "Inflation pressure about 30 cmH2O at term, 20-25 preterm, PEEP 5",
+      "source": "ANZCOR Guideline 13.4 (April 2021): \"the suggested initial pressures are 30 cm H2O for term newborns and 20 to 25 cm H2O for premature newborns\", and for PEEP \"5 cm H2O is the suggested initial setting\"",
+      "url": "https://www.anzcor.org/home/neonatal-resuscitation/guideline-13-4-airway-management-and-mask-ventilation-of-the-newborn",
+      "checked": "2026-10-26",
+      "interval": "12m",
+      "verdict": "confirmed",
+      "note": "All three exact. The guideline's wider PEEP recommendation is to commence at 5 to 8 cmH2O with caution above 8; 5 is the stated initial setting, so the map's single figure is correct."
+    },
+    "nn-rate": {
+      "page": "mind-map-31-neonatal.html",
+      "claim": "Ventilation rate 40-60 per minute",
+      "source": "ANZCOR Guideline 13.4 (April 2021): \"40 to 60 inflations per minute\", with an inspiratory time of 0.3 to 0.5 seconds",
+      "url": "https://www.anzcor.org/home/neonatal-resuscitation/guideline-13-4-airway-management-and-mask-ventilation-of-the-newborn",
+      "checked": "2026-10-26",
+      "interval": "12m",
+      "verdict": "confirmed"
+    },
+    "nn-compressions": {
+      "page": "mind-map-31-neonatal.html",
+      "claim": "Heart rate under 60 despite effective ventilation: compressions 3:1, 120 events a minute, two thumbs encircling",
+      "source": "ANZCOR newborn guidelines via NeoResus: compressions are indicated when the heart rate remains below 60 bpm despite 30 seconds of effective positive pressure ventilation; ratio 3:1; approximately 120 events per minute, being 90 compressions and 30 inflations; two-thumb hand-encircling technique preferred, two-finger the alternative",
+      "url": "https://www.neoresus.org.au/learning-resources/key-concepts/first-response/circulation/",
+      "checked": "2026-10-26",
+      "interval": "12m",
+      "verdict": "confirmed",
+      "note": "Every element exact, including the arithmetic of 120 events as 90 compressions plus 30 inflations."
+    },
+    "nn-oxygen": {
+      "page": "mind-map-31-neonatal.html",
+      "claim": "Start resuscitation in air at term; 21-30% under 35 weeks",
+      "source": "ANZCOR Guideline 13.4 for term and near-term newborns: \"air should be used initially\". ANZCOR Guideline 13.8 for preterm newborns UNDER 35 WEEKS: \"suggests commencing resuscitation either using room air or blended air and oxygen up to an oxygen concentration of 30%\" (weak recommendation, very low certainty evidence)",
+      "url": "https://www.anzcor.org/home/neonatal-resuscitation/guideline-13-8-the-resuscitation-of-the-newborn-in-special-circumstances",
+      "checked": "2026-10-26",
+      "interval": "12m",
+      "verdict": "corrected",
+      "note": "The page previously read \"under 32 weeks\". The 21-30% range is correct; the gestational threshold was three weeks too low. ANZCOR sets this recommendation at under 35 weeks. Most likely conflated with the polyethylene wrap threshold, which genuinely is 32 weeks and sits in an adjacent box. Corrected 26 October 2026."
+    },
+    "nn-cord": {
+      "page": "mind-map-31-neonatal.html",
+      "claim": "Delayed cord clamping for at least 60 seconds if vigorous",
+      "source": "ANZCOR 2021 newborn guidelines, key recommendations: for term and late preterm infants at 34 weeks or more who are vigorous or do not need immediate resuscitation, delay cord clamping for at least 60 seconds. For infants born under 34 weeks not needing immediate resuscitation, delay for at least 30 seconds",
+      "url": "https://www.neoresus.org.au/wp-content/uploads/2021/10/ANZCOR-2021-Newborn-Guidelines-Key-recommendations.pdf",
+      "checked": "2026-10-26",
+      "interval": "12m",
+      "verdict": "confirmed",
+      "note": "Correct as written but incomplete: the map does not carry the separate 30-second recommendation for infants under 34 weeks. Flagged for the author rather than changed, since adding it alters the line's meaning."
+    },
+    "nn-sats": {
+      "page": "mind-map-31-neonatal.html",
+      "claim": "Preductal saturation targets: 1 min 60-70%, 2 min 65-85%, 3 min 70-90%, 4 min 75-90%, 5 min 80-90%, 10 min 85-90%",
+      "source": "ANZCOR Guideline 13.4, Recommendation 20, target range for oxygen saturations during newborn resuscitation. All six pairs match the published table exactly",
+      "url": "https://www.resus.org.nz/assets/Uploads/Neonatal-Resuscitation-All-Guidelines.pdf",
+      "checked": "2026-10-26",
+      "interval": "12m",
+      "verdict": "confirmed"
+    },
+    "nn-roomtemp": {
+      "page": "mind-map-31-neonatal.html",
+      "claim": "Ambient room temperature 26 degrees C or more for the preterm newborn, with hat, warmer and polyethylene wrap under 32 weeks",
+      "source": "ANZCOR Guideline 13.8: place the newborn immediately after birth, without drying, in a polyethylene bag or under a polyethylene sheet, and establish \"an ambient temperature of at least 26 degrees C\". The ANZCOR 2021 key recommendations give the same figure among the additional measures for preterm infants",
+      "url": "https://www.anzcor.org/home/neonatal-resuscitation/guideline-13-8-the-resuscitation-of-the-newborn-in-special-circumstances",
+      "checked": "2026-10-26",
+      "interval": "12m",
+      "verdict": "corrected",
+      "note": "The page previously read \"room at 23-25 degrees C\" in the same sentence as the preterm polyethylene wrap. 23-25 degrees C is a common general delivery-room figure but is below the ANZCOR recommendation for the preterm newborn, which is at least 26. The sentence is explicitly about the preterm baby, so as written it was too cold for the infant it described. Corrected 26 October 2026."
+    },
+    "nn-ett-size": {
+      "page": "mind-map-31-neonatal.html",
+      "claim": "Endotracheal tube internal diameter: 2.5 under 1 kg, 3.0 at 1-2 kg, 3.5 at 2-3 kg, 3.5-4.0 above",
+      "source": "ANZCOR Guideline 13.5, weight-based tube sizes: 2.5 mm under 1 kg, 3.0 mm for 1 to 2 kg, 3.5 mm for 2 to 3 kg, and 3.5 or 4.0 mm above 3 kg. The guideline also gives a gestation rule, internal diameter in mm equal to gestational age in weeks divided by 10",
+      "url": "https://www.anzcor.org/home/neonatal-resuscitation/guideline-13-5-tracheal-intubation-and-ventilation-of-the-newborn",
+      "checked": "2026-10-26",
+      "interval": "12m",
+      "verdict": "confirmed"
+    },
+    "nn-ett-depth": {
+      "page": "mind-map-31-neonatal.html",
+      "claim": "Depth at the lip in centimetres is approximately weight in kg plus 6, and overestimates under 1 kg",
+      "source": "ANZCOR Guideline 13.5 gives the formula \"weight in kg plus 6 cm\" but describes the result as approximate and states that its table is \"likely to result in greater precision\", recommending the table for extremely low birth weight and preterm infants. The table gives 5.5 cm at 0.5-0.6 kg, where the formula gives 6.5 cm",
+      "url": "https://www.anzcor.org/home/neonatal-resuscitation/guideline-13-5-tracheal-intubation-and-ventilation-of-the-newborn",
+      "checked": "2026-10-26",
+      "interval": "12m",
+      "verdict": "corrected",
+      "note": "The formula is in the guideline, so the page was not wrong, but it was unsafe without the caveat: at 500 g the formula is a full centimetre too deep, which in a newborn with a short trachea is the right main bronchus. The page now carries the caution. The underlying guideline table should be the source of truth in the smallest infants."
+    },
+    "nn-uvc": {
+      "page": "mind-map-31-neonatal.html",
+      "claim": "Emergency umbilical venous catheter inserted 4-5 cm beyond the abdominal wall, until blood draws freely",
+      "source": "No ANZCOR source. Guideline 13.7 does not give an insertion depth, nor does 13.8, nor the NeoResus circulation material. The nearest Australian guideline located is Royal Hospital for Women Newborn Care Centre, Umbilical Catheterisation (August 2018), which gives \"emergency UVC access 5 cm plus cord length\" - a different figure measured from a different landmark",
+      "url": "https://www.seslhd.health.nsw.gov.au/sites/default/files/groups/Royal_Hospital_for_Women/Neonatal/Medical/nccumbilicalcath2018.pdf",
+      "checked": "2026-10-26",
+      "interval": "12m",
+      "verdict": "flagged",
+      "note": "The depth itself is conventional and widely taught, but it has no guideline source and the published Australian figure is measured from the cut cord rather than the abdominal wall. The page now names the landmark, which was the actual ambiguity, and the real safeguard remains the instruction to stop when blood draws freely. Worth revisiting if ANZCOR ever specifies a depth."
     }
   }
 }
