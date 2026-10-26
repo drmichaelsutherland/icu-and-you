@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en-AU">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ICU AND YOU · Aphorism 41 — When they&rsquo;re young, throw everything at them</title>
+<meta name="description" content="Aphorism 41: &quot;When they’re young, throw everything at them.&quot; The registry data support it, the risk–treatment paradox undermines it, and a randomised trial tested its converse in the elderly. The case for, against, and in between.">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="alternate icon" href="/favicon.ico" sizes="any">
+<link rel="apple-touch-icon" href="/icon-180.png">
+<link rel="manifest" href="/site.webmanifest">
+<meta name="theme-color" content="#1B2A33">
+<meta property="og:site_name" content="ICU AND YOU">
+<meta property="og:type" content="website">
+<meta property="og:title" content="ICU AND YOU · Aphorism 41 — When they&rsquo;re young, throw everything at them">
+<meta property="og:description" content="A rationing rule that nobody calls a rationing rule — and the trial that tested its other half.">
+<meta property="og:image" content="https://icuandyou.com/share-card.png">
+<meta name="twitter:card" content="summary_large_image">
+<style>
+  :root{
+    --paper:#FCFAF6; --ink:#26221B; --muted:#736C60; --rule:#E2DCCE;
+    --sky:#215058; --skytint:#FAF1DE;
+    --rust:#A8442A; --rustdk:#8A3620; --rusttint:#F9EDE7;
+    --plum:#6B4570; --plumtint:#F2ECF3;
+    --moss:#4C6B4A; --mosstint:#EAF1E9;
+    --gold:#2F6E7A; --goldtint:#E9F2F3;
+  }
+  *{box-sizing:border-box}
+  body{margin:0;background:#EFEAE0;color:var(--ink);
+    font:400 17px/1.62 'Iowan Old Style','Palatino Linotype',Palatino,Georgia,serif;
+    -webkit-text-size-adjust:100%;}
+  .sheet{max-width:820px;margin:0 auto;background:var(--paper);
+    box-shadow:0 1px 40px rgba(27,42,51,.10);}
+  header.top{padding:44px 40px 26px;border-bottom:1px solid var(--rule)}
+  .eyebrow a.serlink{color:inherit;text-decoration:none;border-bottom:1px solid transparent}
+  .eyebrow a.serlink:hover{border-bottom-color:currentColor}
+  .eyebrow a.mast{color:inherit;text-decoration:none;border-bottom:1px solid transparent}
+  .eyebrow a.mast:hover{border-bottom-color:currentColor}
+  .toptopic{display:inline-block;margin:0 0 16px 9px;padding:7px 16px;border-radius:20px;
+    border:1px solid currentColor;opacity:.62;text-decoration:none;color:inherit;
+    font:600 11.5px 'Helvetica Neue',Arial,sans-serif;letter-spacing:.09em;
+    text-transform:uppercase;transition:opacity .12s ease}
+  .toptopic:hover{opacity:1}
+  .topseries{display:inline-block;margin:0 0 16px 9px;padding:7px 16px;border-radius:20px;
+    border:1px solid currentColor;opacity:.62;text-decoration:none;color:inherit;
+    font:600 11.5px 'Helvetica Neue',Arial,sans-serif;letter-spacing:.09em;
+    text-transform:uppercase;transition:opacity .12s ease}
+  .topseries:hover{opacity:1}
+  .tophome{display:inline-block;margin:0 0 16px;padding:7px 16px;border-radius:20px;
+    border:1px solid currentColor;opacity:.62;text-decoration:none;color:inherit;
+    font:600 11.5px 'Helvetica Neue',Arial,sans-serif;letter-spacing:.09em;
+    text-transform:uppercase;transition:opacity .12s ease}
+  .tophome:hover{opacity:1}
+  .eyebrow{font:500 11.5px/1 'Helvetica Neue',Arial,sans-serif;letter-spacing:.24em;
+    text-transform:uppercase;color:var(--muted);margin:0}
+  .pad{padding:34px 40px}
+  p{margin:0 0 15px}
+
+  .quote{padding:46px 40px 44px;text-align:center;
+    border-top:2px solid var(--sky);border-bottom:2px solid var(--sky);
+    background:linear-gradient(180deg,#EFF6FA 0%, var(--paper) 100%)}
+  .quote blockquote{margin:0;font-size:31px;line-height:1.36;font-style:italic;
+    letter-spacing:-.005em;color:#16222A}
+  .quote .mark{display:block;font:500 11.5px 'Helvetica Neue',Arial,sans-serif;
+    letter-spacing:.24em;text-transform:uppercase;color:var(--sky);margin:0 0 20px}
+
+  h2.sec{font:600 12px 'Helvetica Neue',Arial,sans-serif;letter-spacing:.2em;
+    text-transform:uppercase;color:var(--muted);margin:0 0 16px;
+    padding-bottom:9px;border-bottom:1px solid var(--rule)}
+
+  .note{margin:0;padding:18px 22px;background:var(--goldtint);
+    border-left:4px solid var(--gold);border-radius:0 8px 8px 0;font-size:16px}
+
+  .verdicts{display:flex;gap:14px;flex-wrap:wrap;margin:0 0 6px}
+  .v{flex:1 1 220px;border-radius:10px;padding:20px 20px 18px;
+    font-size:15.5px;line-height:1.5}
+  .v h3{margin:0 0 9px;font:600 13px 'Helvetica Neue',Arial,sans-serif;
+    letter-spacing:.16em;text-transform:uppercase}
+  .yes{background:var(--skytint);border:1px solid var(--sky);border-top:4px solid var(--sky)}
+  .yes h3{color:var(--sky)}
+  .no{background:var(--plumtint);border:1px solid var(--plum);border-top:4px solid var(--plum)}
+  .no h3{color:var(--plum)}
+  .maybe{background:var(--mosstint);border:1px solid var(--moss);border-top:4px solid var(--moss)}
+  .maybe h3{color:var(--moss)}
+
+  .reflect{margin:0;padding:30px 34px;background:var(--rusttint);border-left:5px solid var(--rust)}
+  .reflect h2{font:600 12px 'Helvetica Neue',Arial,sans-serif;letter-spacing:.2em;
+    text-transform:uppercase;color:var(--rust);margin:0 0 14px}
+  .ask{font-size:20px;line-height:1.5;font-style:italic;margin:0 0 16px;color:#16222A}
+  .btn{display:inline-block;margin:6px 0 12px;padding:15px 30px;background:var(--rust);
+    color:#FDF8F5;text-decoration:none;border-radius:30px;
+    font:600 15px 'Helvetica Neue',Arial,sans-serif;letter-spacing:.03em;font-style:normal}
+  .btn:hover{background:var(--rustdk)}
+  .btn:focus-visible{outline:3px solid var(--sky);outline-offset:3px}
+  .fallback{font:400 13.5px 'Helvetica Neue',Arial,sans-serif;color:var(--muted);margin:0}
+  .fallback a{color:var(--rust)}
+  .subline{margin:0 0 14px;padding:0 0 13px;border-bottom:1px solid rgba(0,0,0,.09);
+    font:400 14.5px/1.55 'Iowan Old Style','Palatino Linotype',Palatino,Georgia,serif;
+    max-width:56ch;margin-left:auto;margin-right:auto}
+  .subline a{font-weight:500;border-bottom:1px solid currentColor;
+    text-decoration:none;color:inherit}
+  .firstpub{display:block;margin:0 0 10px;padding-bottom:9px;
+    border-bottom:1px solid currentColor;border-color:rgba(0,0,0,.09);
+    font:400 12px 'Helvetica Neue',Arial,sans-serif;letter-spacing:.06em;opacity:.72}
+
+  footer{padding:24px 40px 40px;border-top:1px solid var(--rule);
+    font:400 13px 'Helvetica Neue',Arial,sans-serif;color:var(--muted);text-align:center}
+  .home{display:inline-block;margin:0 0 14px;padding:8px 18px;border-radius:20px;
+    border:1px solid var(--rule);background:#F1F3F1;color:var(--sky);text-decoration:none;
+    font:600 12.5px 'Helvetica Neue',Arial,sans-serif;letter-spacing:.05em}
+  .home:hover{background:var(--sky);border-color:var(--sky);color:#F6FAFB}
+
+  @media (max-width:640px){
+    header.top,.pad,.quote,footer{padding-left:20px;padding-right:20px}
+    .reflect{padding:24px 20px}
+    .quote blockquote{font-size:24px}
+    body{font-size:16.5px} .ask{font-size:18px}
+  }
+  @media print{
+    body{background:#fff} .sheet{box-shadow:none;max-width:none}
+    .btn{border:1px solid var(--rust)} .quote{background:none}
+  }
+  .mine{display:inline-block;margin:9px 0 0;opacity:.78;font-size:.94em}
+  .howto{margin:0 0 4px;padding:22px 26px;background:#EAF2F3;border-left:4px solid #2F6E7A;
+    border-radius:0 8px 8px 0}
+  .howto .lab{display:block;font:600 11px 'Helvetica Neue',Arial,sans-serif;letter-spacing:.18em;
+    text-transform:uppercase;color:#215058;margin:0 0 10px}
+  .howto p{margin:0 0 10px;font-size:16px;line-height:1.6}
+  .howto p:last-child{margin:0}
+  b.term{font-weight:600;color:var(--sky)}
+</style>
+</head>
+<body>
+<div class="sheet">
+
+  <header class="top">
+    <a class="tophome" href="./">&larr;&nbsp; Home</a>
+    <a class="topseries" href="./?s=aphorism">All aphorisms</a>
+    <a class="toptopic" href="./?t=early-middle-age" title="Everything on Early middle age">All on this topic</a>
+    <p class="eyebrow"><a class="mast" href="./">ICU and You</a> &nbsp;·&nbsp; <a class="serlink" href="./?s=aphorism">Aphorism Series</a> &nbsp;·&nbsp; Number 41</p>
+  </header>
+
+  <div class="quote">
+    <span class="mark">The aphorism for this topic</span>
+    <blockquote>&ldquo;When they&rsquo;re young, throw everything at them.&rdquo;</blockquote>
+  </div>
+
+    <div class="howto">
+      <span class="lab">How to use an aphorism</span>
+      <p><strong>An aphorism is a compressed argument, not a rule.</strong> It earns its shape by leaving
+        things out, which is exactly what makes it memorable and what makes it arguable. Every one in this
+        series is contestable, and chosen because it is.</p>
+      <p>Each is a mantra, a paradigm, a truism or occasionally a plain myth &mdash; something repeated in our
+        units often enough that nobody examines it any more. The piece sets out the case for it, the case
+        against it, and the case for something in between, and then asks which you hold.</p>
+      <p>There is no right answer waiting at the bottom. The point is to find out what you actually believe
+        and why, because the beliefs that run your practice at three in the morning are mostly ones you have
+        never said out loud.</p>
+    </div>
+
+  <div class="pad">
+    <h2 class="sec">Preamble</h2>
+
+    <p>It sounds like generosity, and part of it is arithmetic. Absolute benefit scales with the years a
+      person has left, so the same intervention buys more in a thirty-two-year-old than in anybody else in
+      the unit. Nobody says the sentence meaning anything unkind.</p>
+
+    <p>And the behaviour is real. <a href="journal-club-102-young-adults-cicu.html">This fortnight&rsquo;s
+      journal club</a> is a registry of twenty-nine thousand cardiac intensive care admissions in which
+      the 18-to-39s received more of nearly everything &mdash; more mechanical ventilation, more invasive
+      haemodynamic assessment, more mechanical circulatory support &mdash; and where, among those supported,
+      <strong>29% went on extracorporeal membrane oxygenation against 10% of the older patients</strong>.
+      They stayed longer. And they died at roughly two-thirds the rate.</p>
+
+    <p>So the aphorism describes something that happens, and the outcome appears to vindicate it. The
+      difficulty is what else could be producing that picture.</p>
+
+    <p>The authors of that paper raise it against themselves, which is to their credit. The
+      <b class="term">risk&ndash;treatment paradox</b> is the well-described finding that the patients at
+      highest risk &mdash; who therefore stand to gain most in absolute terms &mdash; are the least likely to
+      receive the treatment that would help them. If that is what is operating here, then part of the
+      survival gap in that registry is not physiology at all. It is us, treating the person we expect to
+      live as though they will, and the person we expect to die as though they must.</p>
+
+    <p>Which would make the aphorism self-fulfilling, and the data supporting it circular.</p>
+
+    <h2 class="sec">Except that somebody tested the other half</h2>
+
+    <p>The sentence has a silent converse: <em>and when they are old, do not</em>. That converse has been
+      through a randomised trial, which is more than most aphorisms manage.</p>
+
+    <p><b class="term">ICE-CUB 2</b> cluster-randomised twenty-four French hospitals to a programme that
+      systematically promoted intensive care admission for critically ill patients aged seventy-five and
+      over &mdash; and not the frailest of them either: preserved functional status, no cachexia, no active
+      cancer, median age eighty-five. The programme worked as designed. <strong>ICU admission rose from 34%
+      to 61%.</strong></p>
+
+    <p>Six-month mortality was <strong>45% in the intervention arm against 39% in the control</strong>.
+      Adjusted, the relative risk was 1.05, confidence interval 0.96 to 1.14 &mdash; no benefit. In-hospital
+      mortality was <strong>30% against 21%</strong>. Nearly doubling the rate at which these patients were
+      admitted to intensive care saved none of them, and the in-hospital figures point the other way.</p>
+
+    <p>The trial has its critics, and they are not wrong: the arms differed at baseline in illness severity,
+      recruitment was uneven, and it is one country with one set of admission customs. It should not be read
+      as proof that intensive care harms the elderly. But it is a genuine test of the thing the aphorism
+      quietly assumes, and the thing the aphorism quietly assumes survived it.</p>
+
+    <h2 class="sec">What &ldquo;everything&rdquo; actually costs</h2>
+
+    <p>The other half of the sentence deserves the same scrutiny, and gets far less. <em>Everything</em> is
+      spoken as though it were free, or at worst wasted. It is neither.</p>
+
+    <p>A thirty-eight-year-old who survives an extracorporeal run and three weeks of ventilation walks out
+      with the longest post-intensive care syndrome in the building, because they have the longest left to
+      carry it. The physical, cognitive and psychological consequences that an eighty-year-old lives with for
+      two years, this patient lives with for forty. Throwing everything at the young is not the costless half
+      of the aphorism. It is the half where the cost is deferred and nobody is measuring it.</p>
+
+    <div class="note">
+      <span class="lab">The same mistake, caught once already on this site</span>
+      <p><a href="podcast-60-obstetric-critical-care.html">Podcast 60</a> turned on a claim that outcomes
+        from extracorporeal support are better in pregnant women. Survival does run higher &mdash; but every
+        available comparison is unmatched, and the registry authors themselves put the gap down to youth,
+        absent comorbidity and closer monitoring. <strong>Pregnancy is not protective; being thirty and
+        otherwise well is.</strong></p>
+      <p>Which is the whole of this aphorism, wearing a different costume. The thing doing the work is never
+        the category. It is the reserve underneath it.</p>
+    </div>
+
+    <h2 class="sec">And the word it uses is the wrong one</h2>
+
+    <p>The sentence says <em>young</em>. What it means is <em>has reserve, and has no comorbidity worth
+      naming</em>. Those travel together often enough that the shorthand mostly works, and the places it
+      fails are the places that matter.</p>
+
+    <p>It fails at the seventy-year-old who runs, takes nothing, and has better physiology than half the
+      unit &mdash; who gets less because the number is wrong. It fails at the thirty-five-year-old with
+      end-stage disease who gets an extracorporeal run that was never going to work, because the number is
+      right. The aphorism gets both of those backwards, and it gets them backwards for the same reason: it
+      has substituted a proxy for the thing itself and then forgotten it did.</p>
+
+    <p>One last discomfort, which is the real reason this sentence is said rather than written. It is a
+      rationing rule. It allocates a scarce resource on the basis of a patient characteristic, at the bedside,
+      by a clinician with no mandate to ration and no process behind them. We would not accept it stated that
+      plainly in a policy. We say it in a corridor several times a week.</p>
+    <h2 class="sec">Do you agree? &nbsp;Yes / No / Maybe</h2>
+    <div class="verdicts">
+      <div class="v yes">
+        <h3>Yes</h3>
+        Absolute benefit really does scale with years remaining and with reserve, and the young have both.
+        When a trial deliberately pushed more intensive care into the over-seventy-fives it saved nobody and
+        the in-hospital mortality went the wrong way. A clinician who tries hardest for the patient most
+        likely to survive is not being unfair. They are being accurate, and accuracy is the only thing we
+        have to offer in a unit with fewer beds than patients.
+      </div>
+      <div class="v no">
+        <h3>No</h3>
+        It is a rationing rule that will not admit to being one, applied at the bedside by somebody with no
+        mandate to ration, using a proxy instead of the variable. The risk&ndash;treatment paradox says the
+        patients with most to gain in absolute terms are the ones we try least hard for &mdash; which makes
+        the outcome data that appear to support this sentence partly a record of the sentence being obeyed.
+        And &ldquo;everything&rdquo; is not a gift. In the young it buys the longest survivorship in the
+        building.
+      </div>
+      <div class="v maybe">
+        <h3>Maybe</h3>
+        Right about the physiology, wrong about the noun. Say <em>reserve</em>, not <em>young</em>, and the
+        sentence stops being a rationing rule and becomes an assessment &mdash; one you can be shown to be
+        wrong about, which the age version does not allow. It also gets the two hard cases the right way
+        round: the seventy-year-old who runs, and the thirty-five-year-old with end-stage disease.
+      </div>
+    </div>
+  </div>
+<div class="reflect">
+      <h2>Optional reflection</h2>
+      <p class="ask">Have you seen this sentence operate in reverse?</p>
+      <p>The two cases that test it are the ones people remember. The older patient somebody nearly did not
+        admit, who walked out. And the young one where everything was offered, everything was done, and
+        everything turned out to be the wrong answer &mdash; for them, or for the family left holding what
+        came after.</p>
+      <p>Tell me which you have seen, and tell me your verdict. I am particularly interested from anyone who
+        thinks the objection is overdone and that treating the young harder is simply correct triage honestly
+        described. That case deserves making, and I would rather print it than not.</p>
+      <p><a class="btn" href="mailto:icuandyou@icloud.com?subject=Aphorism%2041%20-%20throw%20everything%20at%20them&body=My%20verdict%20%28Yes%20%2F%20No%20%2F%20Maybe%29%3A%0D%0A%0D%0A%0D%0AHow%20pregnancy%20status%20is%20actually%20confirmed%20in%20my%20hospital%3A%0D%0A%0D%0A%0D%0AWhether%20consent%20is%20sought%2C%20and%20who%20hears%20the%20result%3A%0D%0A%0D%0A%0D%0AHospital%20type%20%28tertiary%20%2F%20regional%20%2F%20rural%29%3A%0D%0A%0D%0A---%0D%0A%0D%0AName%20%28optional%29%3A%0A---%0A%0AThinking%20about%20this%20ICU%20AND%20YOU%20post%20overall%20%E2%80%94%20was%20it%20useful%20to%20you%2C%20or%20would%20it%20be%20useful%20to%20others%3F%0A">Send your verdict</a></p>
+      <p class="fallback">How you are credited is entirely your call &mdash; by name, by initials, or not at all &mdash; whether you write the piece or I do, and whether I quote you or simply say who sent something in; nothing of yours goes up with your name on it unless you have said yes.</p>
+      <p class="fallback">The button opens a reply straight to me. If your device blocks it, write to
+        <a href="mailto:icuandyou@icloud.com">icuandyou@icloud.com</a> instead.</p>
+    </div>
+  </div>
+
+  <footer>
+    <span class="firstpub">First published October 2026</span>
+    <p class="subline">Two emails a week &mdash; the Friday newsletter for all subscribers, and, for clinical subscribers,
+      the mind map and puzzles the moment they go up on Tuesday. Occasional announcements of new
+      features as they arrive. What went up and why it mattered, the best of your replies, and
+      original feature stories, news and views. <a href="https://joinlist.com/f/5adad2d6">Come and join us</a>.</p>
+    <a class="home" href="./">&larr; &nbsp;All of ICU AND YOU</a><br>
+    ICU AND YOU &nbsp;&#183;&nbsp; Aphorism #41 &nbsp;&#183;&nbsp; companion to Mind Map #37, Early middle age<br>
+    Figures are drawn from Isath and colleagues, <em>European Heart Journal: Acute Cardiovascular Care</em>
+    2026;15:403&ndash;407, for the cardiac intensive care registry; from Guidet and colleagues, &ldquo;Effect
+    of Systematic Intensive Care Unit Triage on Long-term Mortality Among Critically Ill Elderly Patients in
+    France&rdquo;, <em>JAMA</em> 2017;318:1450&ndash;1459 (ICE-CUB 2); and, for the risk&ndash;treatment
+    paradox, McAlister, <em>Journal of the American College of Cardiology</em> 2011;58:1766&ndash;1767.
+    Educational use within the ICU education programme. Not a clinical protocol &mdash; local policy and
+    current guidance always take precedence.
+  <br>
+    <span class="mine">Views my own, not those of NSW Health or any other organisation. No identifiable patients — scenarios are constructed or combined for teaching. <a href="about.html">More</a>.</span>
+  </footer>
+
+</div>
+<script data-goatcounter="https://icuandyou.goatcounter.com/count"
+        async src="//gc.zgo.at/count.js"></script>
+</body>
+</html>
