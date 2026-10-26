@@ -1,8 +1,8 @@
 {
  "this_week": {
-  "topic": "The young adult",
-  "slug": "young-adult",
-  "blurb": "Eighteen to thirty. The most physiological reserve you will ever treat, and the narrowest margin once it is spent \u2014 they hold their numbers long after the loss is serious, and then go all at once. Almost everything that brings them in is something that happened rather than something that grew. And pregnancy sits squarely in this band, which an adult unit forgets."
+  "topic": "Early middle age",
+  "slug": "early-middle-age",
+  "blurb": "Thirty to forty-five. The band where the two lines cross \u2014 still mostly something that happened, increasingly something that grew. Full physiological reserve sitting over a first chronic disease nobody has diagnosed, and a household of people depending on the answer. Suicide leads the causes of death here, and the drugs we now give have a critical illness of their own."
  },
  "series": {
   "mind-map": [
@@ -1261,7 +1261,7 @@
    "title": "The young adult",
    "topic": "The young adult",
    "slug": "young-adult",
-   "week": true,
+   "week": false,
    "pos": 2,
    "blurb": "Four stations: the reserve that hides deterioration, what actually brings them in, the pregnant patient, and what outlasts the admission. Several lines contradict what is normally taught \u2014 the Australian causes of maternal death are not the classic quartet, and there is no four-minute rule."
   },
@@ -1273,7 +1273,7 @@
    "title": "Just imagine the bump isn\u2019t there",
    "topic": "The young adult",
    "slug": "young-adult",
-   "week": true,
+   "week": false,
    "pos": 7,
    "badge": "Podcast",
    "link_label": "Open",
@@ -1287,7 +1287,7 @@
    "title": "Nineteen, in a children\u2019s unit",
    "topic": "The young adult",
    "slug": "young-adult",
-   "week": true,
+   "week": false,
    "pos": 8,
    "badge": "Journal club",
    "link_label": "Open",
@@ -1301,7 +1301,7 @@
    "title": "Assume she is pregnant",
    "topic": "The young adult",
    "slug": "young-adult",
-   "week": true,
+   "week": false,
    "pos": 4,
    "badge": "Aphorism",
    "link_label": "Open",
@@ -1315,7 +1315,7 @@
    "title": "The young adult",
    "topic": "The young adult",
    "slug": "young-adult",
-   "week": true,
+   "week": false,
    "pos": 3,
    "badge": "Superpuzzle",
    "link_label": "Open the puzzle",
@@ -1329,7 +1329,7 @@
    "title": "Infarct in the young",
    "topic": "The young adult",
    "slug": "young-adult",
-   "week": true,
+   "week": false,
    "pos": 5,
    "badge": "Mnemonic",
    "link_label": "Open",
@@ -1343,7 +1343,7 @@
    "title": "The young adult",
    "topic": "The young adult",
    "slug": "young-adult",
-   "week": true,
+   "week": false,
    "pos": 6,
    "badge": "Superquiz",
    "link_label": "Take the quiz",
@@ -1357,7 +1357,7 @@
    "title": "The young adult",
    "topic": "The young adult",
    "slug": "young-adult",
-   "week": true,
+   "week": false,
    "pos": 9,
    "badge": "Medical Students",
    "link_label": "Open",
@@ -1371,7 +1371,7 @@
    "title": "Rejoice, we conquer",
    "topic": "The young adult",
    "slug": "young-adult",
-   "week": true,
+   "week": false,
    "pos": 10,
    "badge": "For the general public",
    "link_label": "Open",
@@ -1385,7 +1385,7 @@
    "title": "The young adult",
    "topic": "The young adult",
    "slug": "young-adult",
-   "week": true,
+   "week": false,
    "pos": 1,
    "badge": "Bare Bones",
    "link_label": "Open",
@@ -1399,7 +1399,7 @@
    "title": "Too far to walk",
    "topic": "The young adult",
    "slug": "young-adult",
-   "week": true,
+   "week": false,
    "pos": 11,
    "badge": "Out of Africa",
    "link_label": "Open",
@@ -1413,7 +1413,7 @@
    "title": "Insulin",
    "topic": "The young adult",
    "slug": "young-adult",
-   "week": true,
+   "week": false,
    "pos": 12,
    "badge": "Drugstore",
    "link_label": "Open",
@@ -1427,7 +1427,7 @@
    "title": "Five songs from the young adult ward",
    "topic": "The young adult",
    "slug": "young-adult",
-   "week": true,
+   "week": false,
    "pos": 13,
    "badge": "The Jukebox",
    "link_label": "Open",
@@ -1495,7 +1495,7 @@
    "title": "The opposite of hard arteries",
    "topic": "Early middle age",
    "slug": "early-middle-age",
-   "week": false,
+   "week": true,
    "pos": 7,
    "badge": "Podcast",
    "link_label": "Open",
@@ -1509,14 +1509,31 @@
    "title": "Thirty-two, in a coronary care unit",
    "topic": "Early middle age",
    "slug": "early-middle-age",
-   "week": false,
+   "week": true,
    "pos": 8,
    "badge": "Journal club",
    "link_label": "Open",
    "blurb": "Isath and colleagues, 29,035 cardiac ICU admissions. Heart failure, not heart attack, is the leading reason a young adult is there \u2014 and nearly a third of those needing mechanical support go on ECMO. Plus the mortality figure that nobody adjusted."
+  },
+  {
+   "file": "mind-map-37-early-middle-age.html",
+   "series": "mind-map",
+   "colour": "teal",
+   "number": "37",
+   "title": "Early middle age",
+   "topic": "Early middle age",
+   "slug": "early-middle-age",
+   "week": true,
+   "pos": 1,
+   "blurb": "Four stations: where the two lines cross, what actually brings them in, what grows and what we give them, and what outlasts the admission. Suicide leads the causes of death in this band, Aboriginal and Torres Strait Islander patients carry the burden of a much older patient, and the drugs we now give have a critical illness of their own."
   }
  ],
  "latest": [
+  {
+   "file": "mind-map-37-early-middle-age.html",
+   "colour": "teal",
+   "label": "Mind Map 37 \u00b7 Early middle age"
+  },
   {
    "file": "journal-club-102-young-adults-cicu.html",
    "colour": "sepia",
@@ -1536,11 +1553,6 @@
    "file": "anecdote-city-01-manic-monday.html",
    "colour": "indigo striped",
    "label": "Anecdote City 1 \u00b7 Manic Monday"
-  },
-  {
-   "file": "anecdote-city-00-welcome.html",
-   "colour": "indigo striped",
-   "label": "Anecdote City 0 \u00b7 Welcome to Anecdote City"
   }
  ],
  "topten": [
@@ -1564,11 +1576,6 @@
   "label": "Coming next",
   "lines": [
    {
-    "date": "Tuesday 27th October",
-    "what": "Early middle age, part one",
-    "emphasis": true
-   },
-   {
     "date": "Friday 30th October",
     "what": "Newsletter (subscribers only)"
    },
@@ -1576,6 +1583,10 @@
     "date": "Tuesday 3rd November",
     "what": "Early middle age, part two",
     "emphasis": true
+   },
+   {
+    "date": "Friday 6th November",
+    "what": "Newsletter (subscribers only)"
    }
   ]
  },
