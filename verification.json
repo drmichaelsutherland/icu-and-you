@@ -144,6 +144,116 @@
       "interval": "12m",
       "verdict": "confirmed",
       "note": "Practice guidance rather than a guideline threshold. No Australian source sets a hard 48-to-72-hour limit at the standard maximum dose; the monograph's explicit 48-hour cap applies to the raised 90 mg/kg/day ceiling. The page's framing as a review point, not a stop, is a fair reading."
+    },
+    "scad-inverse": {
+      "page": "podcast-61-scad.html",
+      "claim": "The genetics of SCAD run opposite to those of coronary artery disease: six colocalised loci with opposite risk alleles, and a negative genome-wide genetic correlation of -0.12",
+      "source": "Adlam, Berrandou, Georges et al, Nature Genetics 2023;55:964-972 - \"several associated variants have diametrically opposite associations with CAD\"; colocalisation at six loci (posterior probability 84-100%), all with opposite risk alleles; rg = -0.12 +/- 0.04, P = 3.7e-3. Elevated blood pressure was the only shared genetic risk factor; BMI, lipids, type 2 diabetes and smoking showed no effect on SCAD risk",
+      "url": "https://www.nature.com/articles/s41588-023-01410-1",
+      "checked": "2026-10-26",
+      "interval": "never",
+      "verdict": "confirmed",
+      "note": "The direction is confirmed and the mechanism is better evidenced than the episode states it - COL4A1/COL4A2 raises SCAD risk with higher collagen IV expression and CAD risk with lower. But the strength is not: a correlation of -0.12 is weak, and does not support the guest's stronger claim that the two diseases do not co-exist. The page says so."
+    },
+    "scad-share": {
+      "page": "podcast-61-scad.html",
+      "claim": "SCAD's share of heart attacks in women under 50 is reported as 4-5%, about 25%, up to 35%, and about 1%, depending on the source",
+      "source": "Kovacic on this episode (4-5%); Victor Chang Cardiac Research Institute (about 25%); JACC State-of-the-Art Review 2020;76:961-984 (up to 35% of ACS in women under 50, flagged in the same text as single-centre and for ACS rather than MI, with Californian discharge data giving about 0.98% of women presenting with AMI); and Raphael et al, JACC 2025, which puts atherothrombosis at 47% of infarcts in women up to 65",
+      "url": "https://www.jacc.org/doi/10.1016/j.jacc.2020.05.084",
+      "checked": "2026-10-26",
+      "interval": "12m",
+      "verdict": "contested",
+      "note": "Genuinely unsettled, and the guest states both a maximal and a minimal version within two sentences. The claim that SCAD is the most common cause of MI in women under 50 is made by Kovacic here and by Sharonne Hayes in the ACC's own magazine, but no published figure places it above atherothrombosis. The page presents the spread rather than picking a number."
+    },
+    "scad-peripartum": {
+      "page": "podcast-61-scad.html",
+      "claim": "SCAD is the single commonest cause of heart attack around the time of childbirth, accounting for 15 to 43% of pregnancy-associated infarcts",
+      "source": "American College of Cardiology, \"Hidden in Plain Sight\", August 2025, citing Hayes 2020 and Milani 2025: SCAD accounts for 15-43% of pregnancy-associated acute MI, about 1.81 per 100,000 pregnancies, with upwards of 70% in the first postpartum week. The Victor Chang Cardiac Research Institute states the same",
+      "url": "https://www.acc.org/Latest-in-Cardiology/Articles/2025/08/01/01/Cover-Story-Hidden-in-Plain-Sight",
+      "checked": "2026-10-26",
+      "interval": "12m",
+      "verdict": "confirmed",
+      "note": "This is the qualified form of the contested claim above, and it holds. The qualifier - at the time of childbirth - is doing all the work."
+    },
+    "scad-syndromic": {
+      "page": "podcast-61-scad.html",
+      "claim": "About 10% of SCAD patients have an identifiable syndromic connective tissue condition underneath",
+      "source": "JACC State-of-the-Art Review 2020;76:961-984, which puts pathogenic variants in connective tissue or aortopathy genes at 5 to 9% of events, with familial SCAD under 1%",
+      "url": "https://www.jacc.org/doi/10.1016/j.jacc.2020.05.084",
+      "checked": "2026-10-26",
+      "interval": "12m",
+      "verdict": "confirmed",
+      "note": "The guest's 10% sits just above the published 5-9% and is a fair round figure for a spoken answer. Note this is a different quantity from the common-variant genetics: around twenty susceptibility genes point at collagen and matrix biology without explaining cases in a Mendelian way."
+    },
+    "scad-fmd": {
+      "page": "podcast-61-scad.html",
+      "claim": "Fibromuscular dysplasia is found in about half of women presenting with SCAD",
+      "source": "JACC State-of-the-Art Review 2020;76:961-984: among cohorts of more than 100 patients screened, FMD prevalence ran from 45.2% (Prasad 2015) to 77.6% (Saw 2017), with 54% (Tweet 2014) and 58% (Kok 2018) in between",
+      "url": "https://www.jacc.org/doi/10.1016/j.jacc.2020.05.084",
+      "checked": "2026-10-26",
+      "interval": "12m",
+      "verdict": "confirmed",
+      "note": "About 50% is at the conservative end of a 45 to 78% range. Screening is of the renal, carotid and other extracoronary arteries; the consensus documents recommend head-to-pelvis CT or MR angiography."
+    },
+    "scad-ddimer": {
+      "page": "podcast-61-scad.html",
+      "claim": "A D-dimer should not be ordered without first establishing pre-test probability, and should not be ordered at all in a patient who is low-risk and PERC-negative, or who is high-risk and needs imaging regardless",
+      "source": "Raja, Greenberg, Qaseem, Denberg, Fitterman & Schuur, \"Evaluation of Patients With Suspected Acute Pulmonary Embolism: Best Practice Advice From the Clinical Guidelines Committee of the American College of Physicians\", Ann Intern Med 2015;163:701-711 - BPA 1 (establish pre-test probability first), BPA 2 (do not order a D-dimer in low-risk patients meeting all PERC criteria) and BPA 6 (do not order a D-dimer at high pre-test probability)",
+      "url": "https://www.acpjournals.org/doi/10.7326/M14-1772",
+      "checked": "2026-10-26",
+      "interval": "12m",
+      "verdict": "flagged",
+      "note": "Recorded against the guest's advice to add a D-dimer whenever a troponin is ordered. Defensible in his own setting, where pre-test probability is not low, but this episode is addressed to general practice and the advice does not generalise. The page carries the caveat."
+    },
+    "scad-recurrence": {
+      "page": "podcast-61-scad.html",
+      "claim": "Recurrent SCAD is independently predicted by hypertension (raises risk) and beta blocker use (lowers it). Fibromuscular dysplasia is NOT an independent predictor of recurrence",
+      "source": "Saw, Humphries, Aymong, Sedlak, Prakash, Starovoytov & Mancini, \"Spontaneous Coronary Artery Dissection: Clinical Outcomes and Risk of Recurrence\", J Am Coll Cardiol 2017;70:1148-1158. 327 patients, median follow-up 3.1 years, recurrent de novo SCAD in 10.4%. On multivariable analysis only two factors remained independent: hypertension HR 2.46 (95% CI 1.23-4.93, p=0.011) and beta blocker use HR 0.36 (95% CI 0.18-0.73, p=0.004). Fibromuscular dysplasia was not significantly associated with recurrence",
+      "url": "https://iscadregistry.bidmc.org/images/2/28/2017_Saw_JACC_recurrence.pdf",
+      "checked": "2026-10-26",
+      "interval": "12m",
+      "verdict": "corrected",
+      "note": "The guest names three predictors - absent beta blocker, FMD, and untreated hypertension. Two of the three hold. FMD did not predict recurrence in this cohort, which is the study the claim derives from. The distinction favours the patient and the page makes it. His headline recurrence figure of 20-30% is also the top half of a 10-30% reported range; this cohort recorded 10.4% over three years."
+    },
+    "scad-conservative": {
+      "page": "podcast-61-scad.html",
+      "claim": "Most SCAD is managed conservatively rather than stented - the guest says two thirds to 70%, the largest published cohort 83%",
+      "source": "Saw et al, J Am Coll Cardiol 2017;70:1148-1158: \"the majority (83.1%) were initially treated medically\" (the Results section gives 83.2%). The JACC State-of-the-Art Review 2020 reports a 53% procedural failure rate for PCI in SCAD, which is the reason conservative management predominates",
+      "url": "https://iscadregistry.bidmc.org/images/2/28/2017_Saw_JACC_recurrence.pdf",
+      "checked": "2026-10-26",
+      "interval": "12m",
+      "verdict": "confirmed",
+      "note": "The guest's figure is lower than the published one, so if anything he understates how often SCAD is left alone. Both support the clinical point: do not stent a stable patient with flow in the vessel."
+    },
+    "scad-phactr1": {
+      "page": "podcast-61-scad.html",
+      "claim": "The same PHACTR1 risk allele raises the risk of fibromuscular dysplasia, spontaneous coronary artery dissection, cervical artery dissection, migraine and hypertension, while the opposite allele raises the risk of coronary artery disease",
+      "source": "Georges, Yang, Berrandou et al, \"Genetic investigation of fibromuscular dysplasia identifies risk loci and shared genetics with common cardiovascular diseases\", Nature Communications 2021;12:6031. PHACTR1 (rs9349379, P = 5e-15) is described as a pleiotropic locus involved in a large number of vascular diseases; PHACTR1 and LRP1 associate with migraine, SCAD and cervical artery dissection with the SAME risk allele as FMD; the top loci raise FMD and hypertension risk with the same alleles (rg = 0.36); and for CAD the risk alleles are opposite, with a negative genetic correlation (rg = -0.31 conditioned on systolic blood pressure). Migraine-FMD genetic correlation rg = 0.28",
+      "url": "https://www.nature.com/articles/s41467-021-26174-2",
+      "checked": "2026-10-26",
+      "interval": "never",
+      "verdict": "confirmed",
+      "note": "Confirms the guest's migraine point and, independently of the Nature Genetics 2023 paper, the inverse relationship with coronary disease. The presence of cervical artery dissection in the same allelic family is what makes his blanket advice against neck manipulation anatomical rather than merely sceptical. Note the 2021 paper does not support the previously proposed EDN1 regulatory mechanism at this locus."
+    },
+    "scad-quinolone": {
+      "page": "podcast-61-scad.html",
+      "claim": "Fluoroquinolones carry a warning for aortic aneurysm and dissection, and should not be used in people with the genetic conditions associated with those unless no other treatment is available",
+      "source": "FDA Drug Safety Communication, December 2018, on the fluoroquinolone class (ciprofloxacin, levofloxacin, moxifloxacin, ofloxacin, gemifloxacin). It states the drugs should not be used in people with certain genetic conditions associated with aortic aneurysm and dissection, naming Marfan, Ehlers-Danlos and Loeys-Dietz syndromes, unless no other treatment options are available. The TGA has published its own Australian advisory on the same question",
+      "url": "https://www.tga.gov.au/news/safety-updates/fluoroquinolone-antibiotics-and-risk-aortic-aneurysmdissection",
+      "checked": "2026-10-26",
+      "interval": "12m",
+      "verdict": "flagged",
+      "note": "The warning is AORTIC and names three syndromes. SCAD and FMD are not among them, so the guest is extending it by analogy to an arteriopathy. The extension is reasonable - FMD is itself an arteriopathy and about 10% of SCAD patients carry one of the named syndromes - but it is an extension and the page says so. Flagged rather than confirmed because the claim as the guest states it (strongly contraindicated in all SCAD and FMD) goes beyond the source. The FDA page itself could not be read directly - rate limited on two attempts - and the wording here is taken from a secondary summary; re-read the primary at next review. The TGA page is robots-disallowed to automated fetching."
+    },
+    "scad-exercise": {
+      "page": "podcast-61-scad.html",
+      "claim": "Published expert guidance finds no data to support restricting scuba diving, roller coasters or skydiving after SCAD, sets no weight limit in kilograms, and recommends moderate aerobic exercise 30-40 minutes 5-7 days a week plus cardiac rehabilitation for every patient",
+      "source": "Tweet, Olin, Bonikowske, Adlam & Hayes, \"Physical Activity and Exercise in Patients With Spontaneous Coronary Artery Dissection and Fibromuscular Dysplasia\", European Heart Journal 2021;42:3825-3828. Low-resistance weight training with proper technique and avoidance of Valsalva or straining rather than a stated weight limit; caution for endurance training, muscle building, yoga with extreme head and neck positions, and high-intensity exercise in extreme environmental conditions; extreme or unusual exercise reported as a trigger in up to 29% of patients; after carotid or vertebral dissection avoid push-ups and sit-ups for 8-12 weeks",
+      "url": "https://www.acc.org/latest-in-cardiology/ten-points-to-remember/2021/10/11/17/27/physical-activity-and-exercise-in-patients",
+      "checked": "2026-10-26",
+      "interval": "12m",
+      "verdict": "contested",
+      "note": "The guest's restriction list is markedly more conservative than the published guidance written by, among others, the heads of the Mayo registry and the European cohorts. He labels his own advice as intuition rather than evidence every time he gives it. Recorded as contested rather than corrected because neither position rests on trial data; the page sets them side by side and notes that the cost of each precaution falls on the patient's life, not the clinician's."
     }
   }
 }
