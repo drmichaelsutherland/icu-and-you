@@ -1540,9 +1540,28 @@
    "badge": "Aphorism",
    "link_label": "Open",
    "blurb": "\u201cWhen they\u2019re young, throw everything at them.\u201d The registry data support it, the risk\u2013treatment paradox undermines it, and ICE-CUB 2 put its silent converse to a randomised test in the over-seventy-fives \u2014 doubling their ICU admission saved none of them. A rationing rule nobody will call one, and the word in it is the wrong word. Yes, No and Maybe."
+  },
+  {
+   "file": "superpuzzle-54-early-middle-age-fillable.html",
+   "series": "superpuzzle",
+   "colour": "rust",
+   "number": "54",
+   "title": "Early middle age",
+   "topic": "Early middle age",
+   "slug": "early-middle-age",
+   "week": true,
+   "pos": 3,
+   "badge": "Superpuzzle",
+   "link_label": "Open the puzzle",
+   "blurb": "Twenty clues on early middle age \u2014 the heart attack whose genetics run opposite to the usual kind, a ketoacidosis with a normal blood sugar, the autoimmune encephalitis mistaken for a first psychosis, and the cosmetic operation that kills more people than any other. Fill it in on screen, or print it."
   }
  ],
  "latest": [
+  {
+   "file": "superpuzzle-54-early-middle-age-fillable.html",
+   "colour": "rust",
+   "label": "Superpuzzle 54 \u00b7 Early middle age"
+  },
   {
    "file": "aphorism-41-throw-everything.html",
    "colour": "plum",
@@ -1562,11 +1581,6 @@
    "file": "podcast-61-scad.html",
    "colour": "slate",
    "label": "Podcast 61 \u00b7 The opposite of hard arteries"
-  },
-  {
-   "file": "book-club-03-ohs-intensive-care-manual.html",
-   "colour": "terracotta",
-   "label": "ICU Book Club 3 \u00b7 T. E. Oh's Intensive Care Manual"
   }
  ],
  "topten": [
