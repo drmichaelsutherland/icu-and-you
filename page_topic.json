@@ -196,7 +196,7 @@
    "other"
   ],
   "registrars": [
-   "Registrar Presentations",
+   "Your Presentations",
    "heather striped",
    "registrars"
   ],
@@ -1443,7 +1443,7 @@
    "slug": "standing",
    "week": false,
    "standing": true,
-   "badge": "Registrar Presentations",
+   "badge": "Your Presentations",
    "link_label": "Open",
    "blurb": "A new group, and an invitation to the registrars at Coffs Harbour to have their teaching published under their own names. Maheshani Wijenatha goes first, on snake bite: why the bite site tells you nothing, why an INR of 1.3 is abnormal here, why the venom detection kit has left the pathway, and why a child receives the same dose of antivenom as an adult."
   },
@@ -1507,7 +1507,7 @@
   {
    "file": "registrars-01-snake-bites.html",
    "colour": "heather striped",
-   "label": "Registrar Presentations 1 \u00b7 Australian snake bites"
+   "label": "Your Presentations 1 \u00b7 Australian snake bites"
   },
   {
    "file": "jukebox-01-young-adult.html",
@@ -1516,6 +1516,11 @@
   }
  ],
  "topten": [
+  {
+   "file": "top-ten-2026-10-october.html",
+   "colour": "brass",
+   "label": "October 2026"
+  },
   {
    "file": "top-ten-2026-09-september.html",
    "colour": "brass",
@@ -1531,17 +1536,18 @@
   "label": "Coming next",
   "lines": [
    {
-    "date": "Friday 23rd October",
-    "what": "Newsletter (subscribers only)"
-   },
-   {
     "date": "Tuesday 27th October",
-    "what": "Early middle age",
+    "what": "Early middle age, part one",
     "emphasis": true
    },
    {
     "date": "Friday 30th October",
     "what": "Newsletter (subscribers only)"
+   },
+   {
+    "date": "Tuesday 3rd November",
+    "what": "Early middle age, part two",
+    "emphasis": true
    }
   ]
  },
