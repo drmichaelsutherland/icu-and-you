@@ -370,6 +370,159 @@
       "interval": "12m",
       "verdict": "flagged",
       "note": "The depth itself is conventional and widely taught, but it has no guideline source and the published Australian figure is measured from the cut cord rather than the abdominal wall. The page now names the landmark, which was the actual ambiguity, and the real safeguard remains the instruction to stop when blood draws freely. Worth revisiting if ANZCOR ever specifies a depth."
+    },
+    "cm-ici": {
+      "page": "mnemonic-59-cardio-stress.html",
+      "claim": "Immune checkpoint inhibitor myocarditis: incidence about 1%, median onset 27-34 days, mortality 27-50%, troponin raised in 94%, methylprednisolone 500-1000 mg daily for 3-5 days, up to half steroid-refractory",
+      "source": "Mauriello A et al, Immune Checkpoint Inhibitor Myocarditis, Journal of Clinical Medicine 2026;15:814, which gives incidence 0.3-1.4%, median onset 27-34 days (IQR 18-75) with most within the first 65 days, mortality 27-50%, troponin elevation in 94%, and methylprednisolone 500-1000 mg/day for 3-5 days",
+      "url": "https://www.mdpi.com/2077-0383/15/3/814",
+      "checked": "2026-10-28",
+      "interval": "12m",
+      "verdict": "confirmed"
+    },
+    "cm-etoh-share": {
+      "page": "mnemonic-59-cardio-stress.html",
+      "claim": "Alcohol accounts for 23-47% of cases labelled idiopathic dilated cardiomyopathy in European series",
+      "source": "Guzzo-Merello G et al, Alcoholic cardiomyopathy, World Journal of Cardiology 2014;6:771-781",
+      "url": "https://www.wjgnet.com/1949-8462/full/v6/i8/771.htm",
+      "checked": "2026-10-28",
+      "interval": "12m",
+      "verdict": "confirmed"
+    },
+    "cm-etoh-threshold": {
+      "page": "mnemonic-59-cardio-stress.html",
+      "claim": "The diagnostic threshold of more than 80 g of alcohol a day for at least five years is arbitrary, by the authors' own description",
+      "source": "Guzzo-Merello G et al, World Journal of Cardiology 2014;6:771-781, which states the threshold is \"arbitrary and not based on robust experimental or epidemiological data\"",
+      "url": "https://www.wjgnet.com/1949-8462/full/v6/i8/771.htm",
+      "checked": "2026-10-28",
+      "interval": "never",
+      "verdict": "confirmed",
+      "note": "Quoted rather than paraphrased on the page, because the point of the claim is that the number is soft. Clinicians use it as if it were a cut-off."
+    },
+    "cm-etoh-recovery": {
+      "page": "mnemonic-59-cardio-stress.html",
+      "claim": "After withdrawal, ejection fraction improved from 30 plus or minus 12% to 43 plus or minus 16% at nine months",
+      "source": "Guzzo-Merello G et al, World Journal of Cardiology 2014;6:771-781, reporting 30+/-12% to 43+/-16% at 9+/-4 months",
+      "url": "https://www.wjgnet.com/1949-8462/full/v6/i8/771.htm",
+      "checked": "2026-10-28",
+      "interval": "12m",
+      "verdict": "confirmed"
+    },
+    "cm-rate-camera": {
+      "page": "mnemonic-59-cardio-stress.html",
+      "claim": "CAMERA-MRI: in persistent AF with ejection fraction 45% or less, ablation raised ejection fraction by 18% absolute against 4.4% for rate control, and normalised it in 58% against 9%",
+      "source": "CAMERA-MRI (Prabhu S et al), presented ESC 2017 and published in the Journal of the American College of Cardiology 2017. Figures taken from the American College of Cardiology's own trial summary: 68 randomised of 301 screened, entry LVEF 45% or less with persistent AF and idiopathic cardiomyopathy, LVEF +18+/-13% versus +4.4+/-13% (p<0.0001), normalisation to 50% or more in 58% versus 9% (p=0.0002)",
+      "url": "https://www.acc.org/latest-in-cardiology/journal-scans/2017/08/27/05/39/catheter-ablation-versus-medical-rate-control-in-af-esc-2017",
+      "checked": "2026-10-28",
+      "interval": "12m",
+      "verdict": "flagged",
+      "note": "Flagged, not confirmed: the numbers come from the publishing society's summary of the trial, not from the primary paper, because the JACC full text would not load. The society is about as good as a secondary source gets and the figures are internally consistent, but the primary should be read at next review and the volume and page numbers added."
+    },
+    "cm-meth-rise": {
+      "page": "mnemonic-59-cardio-stress.html",
+      "claim": "Methamphetamine-associated cardiomyopathy rose from 1.8% of new cardiomyopathy diagnoses in 2009 to 5.6% in 2014, and an Australian autopsy series of methamphetamine-related deaths found cardiomyopathy in 5.5%",
+      "source": "Clinical Characteristics and Management of Methamphetamine-Associated Cardiomyopathy: State-of-the-Art Review, Journal of the American Heart Association 2020;9:e016704",
+      "url": "https://www.ahajournals.org/doi/10.1161/JAHA.120.016704",
+      "checked": "2026-10-28",
+      "interval": "12m",
+      "verdict": "confirmed",
+      "note": "The 1.8% to 5.6% figures are from one region of southern California, which the page says. They are a trend in one place, not an Australian incidence. The Australian figure in the same review is the autopsy one."
+    },
+    "cm-meth-ef": {
+      "page": "mnemonic-59-cardio-stress.html",
+      "claim": "Methamphetamine cardiomyopathy presents with mean ejection fraction 20 plus or minus 11%, and about a third recover left ventricular function by six weeks with abstinence",
+      "source": "Journal of the American Heart Association 2020;9:e016704, reporting mean LVEF 20+/-11% in a 19-patient series, of whom 6 (32%) recovered by 6 weeks",
+      "url": "https://www.ahajournals.org/doi/10.1161/JAHA.120.016704",
+      "checked": "2026-10-28",
+      "interval": "12m",
+      "verdict": "confirmed",
+      "note": "Nineteen patients, so the recovery proportion is six people. The page says \"about a third\", which is faithful, but the denominator is small and a reader should know it."
+    },
+    "cm-cloz": {
+      "page": "mnemonic-59-cardio-stress.html",
+      "claim": "Clozapine myocarditis monitoring: weekly troponin and CRP for the first four weeks; troponin above twice the upper limit of normal, or CRP above 100 mg/L, means stop the drug and arrange an echocardiogram",
+      "source": "Hunter New England, Clozapine-induced Myocarditis Monitoring Guideline, which specifies high-sensitivity troponin I or T and CRP weekly for weeks 1 to 4 then six-monthly, continuation permitted below twice the upper limit of normal with CRP under 100 mg/L, and cessation plus echocardiography above either threshold",
+      "url": "https://hnc.org.au/wp-content/uploads/2021/12/Draft-Clozapine-induced-Myocarditis-Monitoring-Guideline-2021.pdf",
+      "checked": "2026-10-28",
+      "interval": "12m",
+      "verdict": "confirmed",
+      "note": "A local health district guideline, which is the right kind of source for a monitoring protocol but is local. The document located is marked draft and dated 2021; the thresholds match the protocol in general Australian use. No incidence figure is asserted on the page because this guideline gives none."
+    },
+    "cm-myo-fulminant": {
+      "page": "mnemonic-59-cardio-stress.html",
+      "claim": "Fulminant myocarditis is 3-9% of acute myocarditis; within fulminant cases sustained ventricular arrhythmia occurs in about 47% and about 26% present with sudden cardiac death; about 75% of unselected cases are uncomplicated",
+      "source": "2025 ESC Guidelines for the management of myocarditis and pericarditis, European Heart Journal 2025;46(40):3952-4041, doi:10.1093/eurheartj/ehaf192",
+      "url": "https://academic.oup.com/eurheartj/article/46/40/3952/8234483",
+      "checked": "2026-10-28",
+      "interval": "12m",
+      "verdict": "confirmed"
+    },
+    "cm-myo-recovery": {
+      "page": "mnemonic-59-cardio-stress.html",
+      "claim": "In biopsy-diagnosed acute myocarditis, up to 50% recover spontaneously, up to 25% have persistent stable dysfunction, and 10-25% progress to end-stage disease, transplantation or death",
+      "source": "2025 ESC Guidelines for the management of myocarditis and pericarditis, European Heart Journal 2025;46(40):3952-4041",
+      "url": "https://academic.oup.com/eurheartj/article/46/40/3952/8234483",
+      "checked": "2026-10-28",
+      "interval": "12m",
+      "verdict": "confirmed",
+      "note": "Biopsy-diagnosed, therefore a selected and sicker population than all-comers with myocarditis. The page states the condition."
+    },
+    "cm-ppcm": {
+      "page": "mnemonic-59-cardio-stress.html",
+      "claim": "Peripartum cardiomyopathy: incidence about 1 in 100 in Nigeria to 1 in 10,000 in Denmark; mortality 8.0% at six months and 9.8% at twelve; recurrence in a subsequent pregnancy 30-50%",
+      "source": "Farroni S et al, Peripartum cardiomyopathy, Vessel Plus 2025;9:2, giving Nigeria 1:100, Haiti 1:299, South Africa 1:1000, United States 1:1316 (2011) and Denmark 1:10,000; mortality 8.0% at 6 months and 9.8% at 12 months; recurrence 30-50%; and the ESC position against subsequent pregnancy where LVEF has not returned to baseline",
+      "url": "https://www.oaepublish.com/articles/2574-1209.2024.69",
+      "checked": "2026-10-28",
+      "interval": "12m",
+      "verdict": "confirmed",
+      "note": "No Australian incidence figure was located. The page places Australia between the quoted extremes without giving a number, which is as much as the source supports."
+    },
+    "cm-sarcoid": {
+      "page": "mnemonic-59-cardio-stress.html",
+      "claim": "Cardiac involvement is found in 20-30% of systemic sarcoidosis but is symptomatic in only about 5%; atrioventricular block occurs in 35-50% of cardiac sarcoidosis; suspect it in anyone under sixty with unexplained heart block",
+      "source": "Merck Manual Professional Edition, Cardiac Sarcoidosis",
+      "url": "https://www.merckmanuals.com/professional/cardiovascular-disorders/arrhythmogenic-cardiac-disorders/cardiac-sarcoidosis",
+      "checked": "2026-10-28",
+      "interval": "12m",
+      "verdict": "flagged",
+      "note": "Flagged on two counts. It is a tertiary source, and the primary - the Heart Rhythm Society expert consensus statement on cardiac sarcoidosis - was not read. And the source contradicts itself: the body text says 20 to 30% and its own Key Points say 20 to 35%. The page uses the lower, body-text figure. The actionable part, suspicion under sixty with unexplained block, is the part least likely to move. Separately, the often-quoted figure that about a quarter of unexplained atrioventricular block in 18 to 55 year olds is sarcoid or giant cell myocarditis (Kandolin et al, 2011) was deliberately left off the page because the paper could not be reached to check it."
+    },
+    "cm-inherited": {
+      "page": "mnemonic-59-cardio-stress.html",
+      "claim": "Up to 20-30% of dilated cardiomyopathy is monogenic",
+      "source": "ESC consensus material on the genetics of dilated cardiomyopathy and family screening (PMC12614981)",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12614981/",
+      "checked": "2026-10-28",
+      "interval": "12m",
+      "verdict": "confirmed"
+    },
+    "cm-family": {
+      "page": "mnemonic-59-cardio-stress.html",
+      "claim": "Screening first-degree relatives finds cardiomyopathy in 9-22% at the baseline visit, and 11% of pathogenic or likely-pathogenic variant carriers with a normal baseline developed dilated cardiomyopathy over a median three years",
+      "source": "ESC consensus material on the genetics of dilated cardiomyopathy and family screening (PMC12614981), which also gives about 2% per person-year on serial screening, up to 8.9% in variant carriers, and recommends baseline ECG and cardiac imaging for every first-degree relative",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12614981/",
+      "checked": "2026-10-28",
+      "interval": "12m",
+      "verdict": "confirmed"
+    },
+    "cm-iron": {
+      "page": "mnemonic-59-cardio-stress.html",
+      "claim": "Cardiac T2* below 10 ms is severe myocardial iron loading, and in transfusion-dependent thalassaemia the one-year risk of heart failure was 47% below 6 ms against 0.2% above 10 ms",
+      "source": "Agrawal A et al, A Contemporary Review of Clinical Manifestations, Evaluation, and Management of Cardiac Complications of Iron Overload, Hearts 2025;6(3):17, doi:10.3390/hearts6030017, citing 652 patients with thalassaemia major: one-year heart failure risk 47% at T2* under 6 ms, 21% at 6-10 ms, 0.2% above 10 ms",
+      "url": "https://www.mdpi.com/2673-3846/6/3/17",
+      "checked": "2026-10-28",
+      "interval": "12m",
+      "verdict": "confirmed"
+    },
+    "cm-tts": {
+      "page": "mnemonic-59-cardio-stress.html",
+      "claim": "Takotsubo syndrome is about 90% women, mean age 67-70, about 80% over fifty; recurrence 1.8% per patient-year; in-hospital mortality comparable to STEMI",
+      "source": "International Expert Consensus Document on Takotsubo Syndrome, European Heart Journal 2018;39:2032",
+      "url": "https://academic.oup.com/eurheartj/article/39/22/2032/5025411",
+      "checked": "2026-10-28",
+      "interval": "12m",
+      "verdict": "confirmed",
+      "note": "Carried on this page to make the opposite point from the usual one: the word STRESS completes the mnemonic but the disease belongs to an older patient. The secondary, catecholamine-driven form described alongside it is a mechanism rather than a counted entity and carries no number."
     }
   }
 }

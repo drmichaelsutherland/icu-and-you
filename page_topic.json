@@ -1568,9 +1568,28 @@
    "badge": "Your Presentations",
    "link_label": "Open",
    "blurb": "Dr John Alexander on feeding the critically ill \u2014 screening, requirements, enteral and parenteral routes, and the argument now running about how much energy and protein a patient in the acute phase should actually get. The talk caught the field mid-change, and the page says so."
+  },
+  {
+   "file": "mnemonic-59-cardio-stress.html",
+   "series": "mnemonic",
+   "colour": "olive",
+   "number": "59",
+   "title": "Cardiomyopathy at forty",
+   "topic": "Early middle age",
+   "slug": "early-middle-age",
+   "week": true,
+   "pos": 5,
+   "badge": "Mnemonic",
+   "link_label": "Open",
+   "blurb": "CARDIO STRESS \u2014 why the heart of a forty-year-old fails. Chemo, including the checkpoint inhibitor myocarditis that arrives in the first month and kills a third of the people who get it. Alcohol, on a threshold its own authors call arbitrary. Rate, which may be the cause rather than the consequence. Drugs, Infection, and Other \u2014 obstetric, sarcoid, valves, inherited, iron. And STRESS, which is takotsubo and is mostly not this patient."
   }
  ],
  "latest": [
+  {
+   "file": "mnemonic-59-cardio-stress.html",
+   "colour": "olive",
+   "label": "Mnemonic 59 \u00b7 Cardiomyopathy at forty"
+  },
   {
    "file": "registrars-02-nutrition.html",
    "colour": "heather striped",
@@ -1590,11 +1609,6 @@
    "file": "mind-map-37-early-middle-age.html",
    "colour": "teal",
    "label": "Mind Map 37 \u00b7 Early middle age"
-  },
-  {
-   "file": "journal-club-102-young-adults-cicu.html",
-   "colour": "sepia",
-   "label": "Journal Club 102 \u00b7 Thirty-two, in a coronary care unit"
   }
  ],
  "topten": [
