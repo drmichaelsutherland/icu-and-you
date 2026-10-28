@@ -1,0 +1,751 @@
+<!DOCTYPE html>
+<html lang="en-AU">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ICU AND YOU &middot; Your Presentations 2 &mdash; Nutrition in intensive care</title>
+<meta name="description" content="Your Presentations 2: Dr John Alexander on nutritional issues in intensive care &mdash; screening, requirements, enteral and parenteral feeding, and the argument about energy and protein that is going on right now.">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="alternate icon" href="/favicon.ico" sizes="any">
+<link rel="apple-touch-icon" href="/icon-180.png">
+<link rel="manifest" href="/site.webmanifest">
+<meta name="theme-color" content="#1B2A33">
+<meta property="og:site_name" content="ICU AND YOU">
+<meta property="og:type" content="website">
+<meta property="og:title" content="ICU AND YOU &middot; Your Presentations 2 &mdash; Nutrition in intensive care">
+<meta property="og:description" content="Feed early, feed enough, feed protein. Two of those three are now in question.">
+<meta property="og:image" content="https://icuandyou.com/share-card.png">
+<meta name="twitter:card" content="summary_large_image">
+<style>
+  :root{
+    --paper:#FDFBF7; --ink:#201B26; --muted:#6B6473; --rule:#E2DCE8;
+    --heather:#635574; --heathertint:#F1EEF6;
+    --deep:#473C56; --deeptint:#E9E5EF;
+    --alert:#A8442A; --alerttint:#F9EDE9;
+  }
+  *{box-sizing:border-box}
+  body{margin:0;background:#E8E4EE;color:var(--ink);
+    font:400 17px/1.66 'Iowan Old Style','Palatino Linotype',Palatino,Georgia,serif;
+    -webkit-text-size-adjust:100%;}
+  .sheet{max-width:760px;margin:0 auto;background:var(--paper);
+    box-shadow:0 1px 40px rgba(32,27,38,.10);}
+
+  .flag{display:flex;height:5px}
+  .flag i{display:block}
+  .flag i:nth-child(1){flex:2;background:var(--deep)}
+  .flag i:nth-child(2){flex:3;background:var(--heather)}
+  .flag i:nth-child(3){flex:2;background:var(--alert)}
+
+  header.top{padding:42px 42px 28px;border-bottom:1px solid var(--rule)}
+  .eyebrow a.serlink,.eyebrow a.mast{color:inherit;text-decoration:none;
+    border-bottom:1px solid transparent}
+  .eyebrow a.serlink:hover,.eyebrow a.mast:hover{border-bottom-color:currentColor}
+  .toptopic,.topseries{display:inline-block;margin:0 0 16px 9px;padding:7px 16px;border-radius:20px;
+    border:1px solid currentColor;opacity:.62;text-decoration:none;color:inherit;
+    font:600 11.5px 'Helvetica Neue',Arial,sans-serif;letter-spacing:.09em;
+    text-transform:uppercase;transition:opacity .12s ease}
+  .tophome{display:inline-block;margin:0 0 16px;padding:7px 16px;border-radius:20px;
+    border:1px solid currentColor;opacity:.62;text-decoration:none;color:inherit;
+    font:600 11.5px 'Helvetica Neue',Arial,sans-serif;letter-spacing:.09em;
+    text-transform:uppercase;transition:opacity .12s ease}
+  .toptopic:hover,.topseries:hover,.tophome:hover{opacity:1}
+  .eyebrow{font:500 11.5px/1 'Helvetica Neue',Arial,sans-serif;letter-spacing:.24em;
+    text-transform:uppercase;color:var(--muted);margin:0 0 14px}
+  h1{font-size:34px;line-height:1.16;margin:0 0 8px;font-weight:400;letter-spacing:-.012em;
+    font-style:italic}
+  .kicker{color:var(--muted);margin:0 0 16px;font-size:16.5px}
+  .byline{margin:0;padding:14px 0 0;border-top:1px solid var(--rule);
+    font:400 15px 'Helvetica Neue',Arial,sans-serif;color:var(--muted);line-height:1.6}
+  .byline b{color:var(--deep);font-weight:600}
+
+  .pad{padding:34px 42px}
+  p{margin:0 0 17px}
+  .lede{font-size:20px;line-height:1.5;margin:0 0 22px}
+
+  h2.sub{font:600 12px 'Helvetica Neue',Arial,sans-serif;letter-spacing:.2em;
+    text-transform:uppercase;color:var(--muted);margin:32px 0 14px;
+    padding-bottom:8px;border-bottom:1px solid var(--rule)}
+
+  .welcome{margin:0 0 24px;padding:20px 24px;background:var(--heathertint);
+    border-left:4px solid var(--heather);border-radius:0 8px 8px 0}
+  .welcome .lab{display:block;font:600 11px 'Helvetica Neue',Arial,sans-serif;
+    letter-spacing:.18em;text-transform:uppercase;color:var(--deep);margin:0 0 9px}
+  .welcome p{margin:0 0 10px;font-size:16px}
+  .welcome p:last-child{margin:0}
+
+  .figs{display:flex;gap:14px;flex-wrap:wrap;margin:0 0 22px}
+  .fig{flex:1 1 150px;background:var(--deeptint);border:1px solid #D7D0E0;
+    border-radius:9px;padding:16px 18px}
+  .fig .big{font-size:27px;line-height:1.1;color:var(--deep);margin:0 0 5px}
+  .fig .lab{font:400 13.5px 'Helvetica Neue',Arial,sans-serif;color:var(--muted);line-height:1.4}
+
+  .alert{margin:0 0 18px;padding:20px 24px;background:var(--alerttint);
+    border-left:4px solid var(--alert);border-radius:0 8px 8px 0}
+  .alert .lab{display:block;font:600 11px 'Helvetica Neue',Arial,sans-serif;
+    letter-spacing:.18em;text-transform:uppercase;color:var(--alert);margin:0 0 9px}
+  .alert p:last-child{margin:0}
+
+  .gloss{margin:0 0 18px;padding:20px 24px;background:var(--heathertint);
+    border-left:4px solid var(--heather);border-radius:0 8px 8px 0;font-size:16px}
+  .gloss .lab{display:block;font:600 11px 'Helvetica Neue',Arial,sans-serif;
+    letter-spacing:.18em;text-transform:uppercase;color:var(--deep);margin:0 0 9px}
+  .gloss p:last-child{margin:0}
+
+  ol.steps{margin:0 0 20px;padding:0 0 0 22px}
+  ol.steps li{margin:0 0 11px;padding-left:5px}
+  ul.plain{margin:0 0 18px;padding:0 0 0 22px}
+  ul.plain li{margin:0 0 9px;padding-left:4px}
+
+  .tscroll{overflow-x:auto;margin:0 0 22px;-webkit-overflow-scrolling:touch}
+  table{border-collapse:collapse;width:100%;min-width:520px;
+    font:400 15px/1.5 'Helvetica Neue',Arial,sans-serif}
+  caption{caption-side:top;text-align:left;font:600 11px 'Helvetica Neue',Arial,sans-serif;
+    letter-spacing:.16em;text-transform:uppercase;color:var(--muted);padding:0 0 9px}
+  th,td{border:1px solid var(--rule);padding:9px 12px;vertical-align:top;text-align:left}
+  thead th{background:var(--deeptint);color:var(--deep);font-weight:600}
+  tbody th{background:var(--heathertint);font-weight:600;white-space:nowrap}
+  td ul{margin:0;padding-left:17px}
+  td li{margin:0 0 3px}
+
+  .phone{display:block;margin:0 0 20px;padding:18px 24px;background:var(--deep);
+    color:#FDFBF7;border-radius:9px;text-align:center;text-decoration:none}
+  .phone .lab{display:block;font:600 11px 'Helvetica Neue',Arial,sans-serif;
+    letter-spacing:.18em;text-transform:uppercase;opacity:.75;margin:0 0 7px}
+  .phone .num{font:600 29px 'Helvetica Neue',Arial,sans-serif;letter-spacing:.04em}
+
+  .reply{margin:0;padding:28px 32px;background:var(--deeptint);border-left:5px solid var(--deep)}
+  .reply h2{font:600 12px 'Helvetica Neue',Arial,sans-serif;letter-spacing:.2em;
+    text-transform:uppercase;color:var(--deep);margin:0 0 13px}
+  .ask{font-size:19px;line-height:1.5;font-style:italic;margin:0 0 15px}
+  .btn{display:inline-block;margin:6px 0 12px;padding:15px 30px;background:var(--heather);
+    color:#FDFBF7;text-decoration:none;border-radius:30px;font-style:normal;
+    font:600 15px 'Helvetica Neue',Arial,sans-serif;letter-spacing:.03em}
+  .btn:hover{background:var(--deep)}
+  .btn:focus-visible{outline:3px solid var(--alert);outline-offset:3px}
+  .fallback{font:400 13.5px 'Helvetica Neue',Arial,sans-serif;color:var(--muted);margin:0}
+  .fallback a{color:var(--deep)}
+
+  .subline{margin:0 0 14px;padding:0 0 13px;border-bottom:1px solid rgba(0,0,0,.09);
+    font:400 14.5px/1.55 'Iowan Old Style','Palatino Linotype',Palatino,Georgia,serif;
+    max-width:56ch;margin-left:auto;margin-right:auto}
+  .subline a{font-weight:500;border-bottom:1px solid currentColor;
+    text-decoration:none;color:inherit}
+  .firstpub{display:block;margin:0 0 10px;padding-bottom:9px;
+    border-bottom:1px solid currentColor;border-color:rgba(0,0,0,.09);
+    font:400 12px 'Helvetica Neue',Arial,sans-serif;letter-spacing:.06em;opacity:.72}
+
+  footer{padding:24px 42px 42px;border-top:1px solid var(--rule);
+    font:400 13px 'Helvetica Neue',Arial,sans-serif;color:var(--muted);text-align:center;line-height:1.7}
+  .home{display:inline-block;margin:0 0 14px;padding:8px 18px;border-radius:20px;
+    border:1px solid var(--rule);background:#F2EFF6;color:var(--deep);text-decoration:none;
+    font:600 12.5px 'Helvetica Neue',Arial,sans-serif;letter-spacing:.05em}
+  .home:hover{background:var(--deep);border-color:var(--deep);color:#FDFBF7}
+  .mine{display:inline-block;margin:9px 0 0;opacity:.78;font-size:.94em}
+  .srcs{font-size:12.5px;line-height:1.6}
+  .srcs a{color:inherit}
+
+  @media (max-width:620px){
+    header.top,.pad,footer{padding-left:20px;padding-right:20px}
+    .reply{padding:22px 20px}
+    h1{font-size:26px} body{font-size:16.5px} .lede{font-size:18px} .ask{font-size:17.5px}
+    .phone .num{font-size:25px}
+  }
+  @media print{ body{background:#fff} .sheet{box-shadow:none;max-width:none} }
+
+  /* The contributor's note. Four fields, the same four every time, so the next
+     person sending in a presentation can see exactly what is being asked of
+     them and fill it in without a conversation. The photograph is optional;
+     without one the block simply closes up around the text. */
+  .bio{display:flex;gap:22px;align-items:flex-start;margin:0 0 28px;
+    padding:24px 26px;background:var(--heathertint);
+    border-left:4px solid var(--heather);border-radius:0 9px 9px 0}
+  .bio img{width:132px;height:132px;flex:0 0 132px;border-radius:9px;
+    object-fit:cover;display:block}
+  .bio .who{flex:1 1 260px;min-width:0}
+  .bio .nm{margin:0 0 14px;font:600 19px 'Iowan Old Style',Palatino,Georgia,serif;
+    color:var(--deep)}
+  .bio dl{margin:0;display:grid;grid-template-columns:auto 1fr;gap:8px 18px}
+  .bio dt{font:600 10.5px 'Helvetica Neue',Arial,sans-serif;letter-spacing:.14em;
+    text-transform:uppercase;color:var(--heather);padding-top:5px;white-space:nowrap}
+  .bio dd{margin:0;font-size:16px;line-height:1.5}
+  @media (max-width:620px){
+    .bio{flex-direction:column;padding:20px 20px;gap:18px}
+    .bio img{width:116px;height:116px;flex-basis:116px}
+    .bio dl{grid-template-columns:1fr;gap:1px 0}
+    .bio dt{padding-top:11px}
+  }
+</style>
+<style>
+  /* Nutrition page additions. The source deck carried its reference content as
+     screenshots of other people's tables; rebuilt here as real tables, which is
+     the one thing HTML does better than the slide ever did. */
+  table.cmp td.y{background:#F3F6F1}
+  table.cmp td.n{background:#FAF2EF}
+  .pill{display:inline-block;padding:1px 9px;border-radius:11px;
+    font:600 10.5px 'Helvetica Neue',Arial,sans-serif;letter-spacing:.08em;
+    text-transform:uppercase;vertical-align:1px}
+  .pill.old{background:var(--deeptint);color:var(--deep)}
+  .pill.new{background:#E8F0E6;color:#3F5B38}
+  .route{margin:0 0 24px;padding:22px 24px;background:#fff;
+    border:1px solid var(--rule);border-radius:10px}
+  .route svg{display:block;width:100%;height:auto;max-width:640px;margin:0 auto}
+</style>
+</head>
+<body>
+<div class="sheet">
+  <div class="flag"><i></i><i></i><i></i></div>
+
+  <header class="top">
+    <a class="tophome" href="./">&larr;&nbsp; Home</a>
+    <a class="topseries" href="./?s=registrars">More from Your Presentations</a>
+    <a class="toptopic" href="./?t=standing" title="Everything in Any time">All on this topic</a>
+    <p class="eyebrow"><a class="mast" href="./">ICU and You</a> &nbsp;&middot;&nbsp;
+      <a class="serlink" href="./?s=registrars">Your Presentations</a> &nbsp;&middot;&nbsp; Number 2</p>
+    <h1>Nutrition in intensive care</h1>
+    <p class="kicker">Feed early, feed enough, feed protein. Two of those three are now in question &mdash; and the argument is live enough that this talk contains both sides of it</p>
+    <p class="byline">A teaching presentation given at Coffs Harbour Health Campus by <b>Dr John Alexander</b>.
+      Set for the web by ICU AND YOU with his permission; the clinical content and its selection are his.</p>
+  </header>
+
+  <div class="pad">
+    <div class="welcome">
+      <span class="lab">About this group</span>
+      <p><strong>Your Presentations</strong> publishes teaching that would otherwise be given once and filed.
+        If you have given a departmental talk and you are willing to have it read more widely, it can go up
+        here under your own name, properly credited, and you can put it on your CV as a publication rather
+        than as a line in a teaching log.</p>
+      <p>It began with Coffs Harbour and it is not limited to Coffs Harbour, or to registrars. Medical
+        students, nurses, doctors at any stage and any health professional at all &mdash; if you have made
+        something good, the invitation is open to you. The button at the foot of this page reaches me.</p>
+    </div>
+
+    <div class="bio">
+      <div class="who">
+        <p class="nm">Dr John Alexander</p>
+        <dl>
+          <dt>Origin</dt>
+          <dd>India. Trained and practised there before moving to Australia for broader experience in
+            critical care.</dd>
+          <dt>Now</dt>
+          <dd>Intensive Care Registrar at Coffs Harbour Health Campus.</dd>
+          <dt>Golden rule</dt>
+          <dd>A few pieces of evidence are non-negotiable. Most are guidance to support your decision-making
+            &mdash; and that decision-making improves with every patient.</dd>
+          <dt>One lesson</dt>
+          <dd>Critical care is fundamentally evidence-based, held together by clinical judgement and common
+            sense. Which is why its core principles hold across the world, and travel with you.</dd>
+        </dl>
+      </div>
+    </div>
+
+    <p class="lede">This is a reference piece rather than an argument. It is the shape of a nutrition
+      round &mdash; who needs screening, how much to give, by which route, what goes wrong &mdash; set out so
+      you can find a number at three in the morning rather than read it end to end.</p>
+
+    <p>With one exception. Somewhere in the middle of assembling this talk, the ground moved, and the talk
+      caught it moving. That belongs at the front.</p>
+
+    <h2 class="sub">The argument that is going on right now</h2>
+
+    <p>For twenty years the teaching was: feed early, work up to the target, and give plenty of protein
+      because the patient is catabolic and protein is what they are losing. The 2016 and 2022 American
+      guidelines say versions of that. Most of this page says versions of that.</p>
+
+    <p>Then a run of trials did not show what everybody expected, and a 2026 review in
+      <em>Intensive Care Medicine</em> &mdash; which appears in this deck, on slide two &mdash; states the
+      position now emerging. It does not agree with the rest of the deck. It does not agree with most of what
+      any of us were taught.</p>
+
+    <div class="tscroll">
+    <table class="cmp">
+      <caption>The same two numbers, from two places, four years apart</caption>
+      <thead>
+        <tr><th></th><th>ASPEN 2022 <span class="pill old">established</span></th>
+          <th>Peake and colleagues, <em>Intensive Care Medicine</em> 2026 <span class="pill new">emerging</span></th></tr>
+      </thead>
+      <tbody>
+        <tr><th>Energy, acute phase</th>
+          <td class="y">12&ndash;25 kcal/kg/day through the first 7 to 10 days</td>
+          <td class="n">Avoid overfeeding above <b>20 kcal/kg/day</b>. In severe illness needing organ
+            support, consider <b>6&ndash;8 kcal/kg/day</b></td></tr>
+        <tr><th>Protein, acute phase</th>
+          <td class="y">1.2&ndash;2.0 g/kg/day, to mitigate catabolism and muscle loss</td>
+          <td class="n">Avoid above <b>1.2 g/kg/day</b>. In severe illness needing organ support, consider
+            <b>0.2&ndash;0.4 g/kg/day</b>. High protein delivery <b>may be deleterious</b>, particularly with
+            organ failure or acute kidney injury</td></tr>
+        <tr><th>Recovery phase</th>
+          <td class="y">Not separately specified</td>
+          <td class="n">20&ndash;30 kcal/kg/day and 1.0&ndash;1.3 g/kg/day, with underfeeding in this phase
+            thought to impair long-term recovery</td></tr>
+      </tbody>
+    </table>
+    </div>
+
+    <div class="alert">
+      <span class="lab">Read the rest of this page knowing that</span>
+      <p>Several sections below quote the established targets &mdash; 25 to 30 kcal/kg, 1.2 to 2.0 g/kg of
+        protein, 1.5 to 2.0 in burns, 2.0 to 2.5 in obesity. Those are what the guidelines currently say and
+        they are reproduced faithfully. They are also the numbers the 2026 review is arguing against for the
+        acute phase.</p>
+      <p>This is not a flaw in the talk. It is an accurate photograph of a field mid-argument, and the honest
+        thing is to show you both rather than quietly average them. <b>What is not in dispute:</b> that the
+        metabolic phase matters, that overfeeding is harmful, and that the patient on day ten is not the
+        patient on day one.</p>
+    </div>
+
+    <h2 class="sub">Why the phase matters</h2>
+
+    <p>Stress, surgery and trauma change the metabolic milieu wholesale: substrate utilisation shifts,
+      synthesis rates alter, metabolic rate rises, and lean body mass is consumed &mdash; what the talk calls,
+      memorably, <b>auto-cannibalism</b>.</p>
+
+    <div class="tscroll">
+    <table>
+      <caption>Two phases, two different problems</caption>
+      <thead><tr><th>&nbsp;</th><th>Acute critical illness</th><th>Recovery</th></tr></thead>
+      <tbody>
+        <tr><th>Balance</th><td>Catabolism exceeds anabolism</td><td>Anabolism exceeds catabolism</td></tr>
+        <tr><th>Fuel</th><td>Carbohydrate is the preferred energy source, because fat mobilisation is
+          impaired</td><td>Normal substrate handling returns</td></tr>
+        <tr><th>What protein is for</th><td>The hope of blunting the breakdown of muscle protein into amino
+          acids, which then feed gluconeogenesis</td><td>Restoring lean body mass and function</td></tr>
+        <tr><th>The risk</th><td>Overfeeding a patient who is already generating endogenous
+          energy</td><td>Underfeeding a patient who can finally use what you give them</td></tr>
+      </tbody>
+    </table>
+    </div>
+
+    <p>What drives malnutrition and negative nitrogen balance in these patients is rarely one thing: poor
+      intake, prolonged bed rest, altered substrate use, the stress response itself, hypermetabolism,
+      exogenous steroids and major surgery all contribute.</p>
+
+    <h2 class="sub">Screening: who is actually at risk</h2>
+
+    <p>Assess every patient on admission. Two instruments are in common use, and the talk presents both.</p>
+
+    <div class="tscroll">
+    <table>
+      <caption>NRS 2002 &mdash; the European screening tool</caption>
+      <thead><tr><th>Score</th><th>Impaired nutritional status</th><th>Severity of disease</th></tr></thead>
+      <tbody>
+        <tr><th>0 &mdash; absent</th><td>Normal nutritional status</td><td>Normal requirements</td></tr>
+        <tr><th>1 &mdash; mild</th><td>Weight loss over 5% in 3 months, or intake 50&ndash;75% of normal in
+          the preceding week</td><td>Hip fracture; chronic illness with acute complications &mdash; cirrhosis,
+          COPD, chronic haemodialysis, diabetes, oncology</td></tr>
+        <tr><th>2 &mdash; moderate</th><td>Weight loss over 5% in 2 months; or BMI 18.5&ndash;20.5 with
+          impaired general condition; or intake 25&ndash;60% of normal in the preceding week</td>
+          <td>Major abdominal surgery, stroke, severe pneumonia, haematological malignancy</td></tr>
+        <tr><th>3 &mdash; severe</th><td>Weight loss over 5% in 1 month (over 15% in 3 months); or BMI under
+          18.5 with impaired general condition; or intake 0&ndash;25% of normal in the preceding week</td>
+          <td>Head injury, bone marrow transplantation, intensive care patients with APACHE over 10</td></tr>
+      </tbody>
+    </table>
+    </div>
+
+    <p>Add the two scores together. <b>If the patient is 70 or older, add one more point.</b> That total is
+      the age-adjusted score.</p>
+
+    <div class="tscroll">
+    <table>
+      <caption>NUTRIC &mdash; the Canadian score, built for intensive care</caption>
+      <thead><tr><th>Variable</th><th>Range</th><th>Points</th></tr></thead>
+      <tbody>
+        <tr><th rowspan="3">Age</th><td>Under 50</td><td>0</td></tr>
+        <tr><td>50 to under 75</td><td>1</td></tr>
+        <tr><td>75 or over</td><td>2</td></tr>
+        <tr><th rowspan="4">APACHE II</th><td>Under 15</td><td>0</td></tr>
+        <tr><td>15 to under 20</td><td>1</td></tr>
+        <tr><td>20 to 28</td><td>2</td></tr>
+        <tr><td>28 or over</td><td>3</td></tr>
+        <tr><th rowspan="3">SOFA</th><td>Under 6</td><td>0</td></tr>
+        <tr><td>6 to under 10</td><td>1</td></tr>
+        <tr><td>10 or over</td><td>2</td></tr>
+        <tr><th rowspan="2">Comorbidities</th><td>0 to 1</td><td>0</td></tr>
+        <tr><td>2 or more</td><td>1</td></tr>
+        <tr><th rowspan="2">Days from hospital to ICU</th><td>0 to under 1</td><td>0</td></tr>
+        <tr><td>1 or more</td><td>1</td></tr>
+        <tr><th rowspan="2">Interleukin-6</th><td>0 to under 400</td><td>0</td></tr>
+        <tr><td>400 or over</td><td>1</td></tr>
+      </tbody>
+    </table>
+    </div>
+
+    <p>Interpretation depends on whether you have an interleukin-6 result, which in most Australian units you
+      will not. <b>With IL-6:</b> 6 to 10 is a high score, 0 to 5 low. <b>Without IL-6:</b> 5 to 9 is high,
+      0 to 4 low. A high score marks the patients with worse outcomes &mdash; mortality and ventilation
+      &mdash; and those most likely to benefit from aggressive nutrition therapy.</p>
+
+    <h2 class="sub">Working out the requirement</h2>
+
+    <p>Three ways, in descending order of accuracy. <b class="term">Indirect calorimetry</b> measures it.
+      <b class="term">Predictive equations</b> estimate it. <b class="term">25 to 30 kcal/kg</b> is the
+      bedside shorthand, and it is the figure most units actually run on.</p>
+
+    <div class="gloss">
+      <span class="lab">The equations, for when you need them</span>
+      <p><b>Harris&ndash;Benedict, basal energy expenditure:</b><br>
+        Men &mdash; 66.5 + (13.75 &times; weight in kg) + (5.003 &times; height in cm) &minus; (6.775 &times; age in years)<br>
+        Women &mdash; 655.1 + (9.563 &times; weight in kg) + (1.850 &times; height in cm) &minus; (4.676 &times; age in years)</p>
+      <p><b>Resting energy expenditure:</b> REE = BEE &times; 1.2, or BEE &times; a stress factor.</p>
+      <p><b>Weir, from indirect calorimetry:</b><br>
+        REE in kcal/day = [(3.941 &times; VO&#8322;) + (1.106 &times; VCO&#8322;)] &times; 1440, with VO&#8322; and
+        VCO&#8322; in litres per minute.</p>
+      <p>That is the abbreviated form, and it is the one everybody uses. The full equation then subtracts
+        <b>2.17 &times; urinary nitrogen in g/day</b> from the daily total &mdash; note <em>from the total</em>,
+        not from inside the bracket. At ordinary nitrogen excretion that correction is worth around
+        60&nbsp;kcal a day, which is why it is almost always left out.</p>
+      <p><b>Nitrogen balance:</b> (protein intake in g &divide; 6.25) &minus; (urinary nitrogen + 4). Each gram
+        of urinary nitrogen represents 6.25 g of degraded protein, and the goal is a positive balance of 4 to
+        6 g. A negative balance means insufficient non-protein calories &mdash; the body is burning the
+        protein you gave it.</p>
+    </div>
+
+    <div class="tscroll">
+    <table>
+      <caption>Daily requirements</caption>
+      <thead><tr><th>&nbsp;</th><th>Target</th><th>Notes</th></tr></thead>
+      <tbody>
+        <tr><th>Energy</th><td>25&ndash;30 kcal/kg</td><td>Add roughly 10% for each degree of fever</td></tr>
+        <tr><th>Water</th><td>30 mL/kg, or about 1 mL per kcal</td><td>An additional 300&ndash;500 mL per day
+          for each degree of temperature rise</td></tr>
+        <tr><th>Carbohydrate</th><td>55&ndash;70% of total energy</td><td>A minimum of 100 g per day to avoid
+          ketosis</td></tr>
+        <tr><th>Fat</th><td>15&ndash;30% of total energy</td><td>Saturated fat no more than a third of total
+          fat, which is 0&ndash;10% of total energy</td></tr>
+        <tr><th>Protein</th><td>10&ndash;15% of total energy</td><td>See the argument at the top of this
+          page</td></tr>
+      </tbody>
+    </table>
+    </div>
+
+    <h2 class="sub">Enteral nutrition, which is the default</h2>
+
+    <p>If the gut works, use it. Start within <b>24 to 48 hours</b> in any critically ill patient who cannot
+      maintain their own intake. Early enteral feeding preserves gut immune function, reduces inflammation,
+      and may lower the incidence of infection.</p>
+
+    <div class="alert">
+      <span class="lab">Two things people get wrong</span>
+      <p><b>Bowel sounds are not required.</b> Neither is any other evidence of bowel function. Waiting for
+        them delays feeding for no benefit.</p>
+      <p><b>But hold feed until the patient is fully resuscitated.</b> Feeding a gut that is not perfused is
+        the one way early enteral nutrition does harm.</p>
+    </div>
+
+    <p>Feed into the stomach unless there is a reason not to. Consider a post-pyloric tube when the aspiration
+      risk is high, or when gastric feeding has already failed in this patient.</p>
+
+    <div class="tscroll">
+    <table>
+      <caption>Dosing by risk</caption>
+      <thead><tr><th>&nbsp;</th><th>Low nutrition risk</th><th>High nutrition risk</th></tr></thead>
+      <tbody>
+        <tr><th>First week</th><td>No specialised nutrition support required</td><td>Advance to goal over
+          24&ndash;48 hours as tolerated</td></tr>
+        <tr><th>Target</th><td>Trophic feeding is appropriate &mdash; particularly in ARDS, acute lung injury,
+          and anyone ventilated beyond three days</td><td>More than 80% of estimated requirements, with
+          high-dose protein</td></tr>
+        <tr><th>Watch for</th><td>&mdash;</td><td>Refeeding syndrome</td></tr>
+      </tbody>
+    </table>
+    </div>
+
+    <h2 class="sub">Tolerance, and the measurement to stop taking</h2>
+
+    <div class="alert">
+      <span class="lab">Gastric residual volumes</span>
+      <p><b>Do not use gastric residual volumes</b> to assess tolerance or as a marker of aspiration risk.
+        The quality of evidence behind that recommendation is low, but the direction is consistent, and both
+        the 2016 and 2022 guidelines say it.</p>
+      <p>If your unit still measures them, the practical rule is that <b>feed should not be held for a residual
+        under 500 mL</b> in the absence of any other sign of intolerance.</p>
+    </div>
+
+    <p>What to do instead: review daily, and protect the feed from the thing that actually stops it, which is
+      not intolerance but fasting for tests and procedures. Volume-based protocols, which allow the nurse to
+      catch up after an interruption, deliver more of the prescribed feed than rate-based ones.</p>
+
+    <p>To reduce aspiration risk &mdash; post-pyloric access, continuous rather than bolus feeding, a
+      prokinetic, the head of the bed at 30 to 45 degrees, and chlorhexidine mouthwash. Two things not to do:
+      <b>no colouring agent</b> added to feed as an aspiration marker, and <b>do not stop the feed for
+      diarrhoea</b>.</p>
+
+    <h2 class="sub">Formulas, and what gets added to them</h2>
+
+    <div class="tscroll">
+    <table>
+      <caption>The two families of enteral formula</caption>
+      <thead><tr><th>&nbsp;</th><th>What is in it</th><th>Who it is for</th></tr></thead>
+      <tbody>
+        <tr><th>Polymeric</th><td>Intact protein, fat and carbohydrate requiring digestion before absorption,
+          with electrolytes, trace elements, vitamins and fibre. Usually lactose-free, because lactose
+          intolerance is common in the unwell</td><td>Almost everyone</td></tr>
+        <tr><th>Elemental</th><td>Macronutrients already in absorbable form &mdash; protein as peptides or
+          amino acids, lipid as medium-chain triglycerides, carbohydrate as mono- and
+          disaccharides</td><td>Where digestion or absorption is the problem</td></tr>
+      </tbody>
+    </table>
+    </div>
+
+    <div class="tscroll">
+    <table>
+      <caption>Additives, and the reasoning behind each</caption>
+      <thead><tr><th>Additive</th><th>Why</th></tr></thead>
+      <tbody>
+        <tr><th>Glutamine</th><td>The principal fuel of bowel mucosa; argued to be essential in the
+          hypermetabolic, stressed patient</td></tr>
+        <tr><th>Dietary fibre</th><td>Fragmented &mdash; cellulose, pectin, gums. Non-fragmented &mdash;
+          lignin. Several mechanisms by which fibre reduces the tendency to diarrhoea</td></tr>
+        <tr><th>Branched-chain amino acids</th><td>Leucine, isoleucine and valine &mdash; for trauma and for
+          hepatic encephalopathy</td></tr>
+        <tr><th>Carnitine</th><td>Required to transport fatty acids into mitochondria for oxidation.
+          Deficiency appears in cardiomyopathy, skeletal myopathy and hypoglycaemia</td></tr>
+      </tbody>
+    </table>
+    </div>
+
+    <h2 class="sub">When the enteral route is closed</h2>
+
+    <p>The enteral route is always preferred except where it is actually contraindicated, and that list is
+      short: <b>intestinal obstruction or ileus, intestinal ischaemia, a high-output fistula, or severe
+      intestinal haemorrhage</b>.</p>
+
+    <div class="route">
+      <svg viewBox="0 0 640 300" role="img" aria-label="Decision diagram: a functional gastrointestinal tract leads to enteral nutrition with standard or specialty formulas; a non-functional tract leads to parenteral nutrition, peripheral or central.">
+        <defs>
+          <marker id="ar" markerWidth="8" markerHeight="8" refX="6" refY="4" orient="auto">
+            <path d="M0 0 L7 4 L0 8 z" fill="#635574"/>
+          </marker>
+          <style>
+            .bx{fill:#F1EEF6;stroke:#635574;stroke-width:1.1;rx:7}
+            .bt{font:500 13px 'Helvetica Neue',Arial,sans-serif;fill:#473C56;text-anchor:middle}
+            .ln{stroke:#635574;stroke-width:1.3;fill:none;marker-end:url(#ar)}
+          </style>
+        </defs>
+        <rect class="bx" x="235" y="10" width="170" height="36" rx="7"/>
+        <text class="bt" x="320" y="33">Functional GI tract?</text>
+        <path class="ln" d="M320 46 L320 62 L160 62 L160 78"/>
+        <path class="ln" d="M320 46 L320 62 L480 62 L480 78"/>
+        <rect class="bx" x="110" y="80" width="100" height="34" rx="7"/>
+        <text class="bt" x="160" y="102">Yes</text>
+        <rect class="bx" x="430" y="80" width="100" height="34" rx="7"/>
+        <text class="bt" x="480" y="102">No</text>
+        <path class="ln" d="M160 114 L160 142"/>
+        <path class="ln" d="M480 114 L480 142"/>
+        <rect class="bx" x="80" y="144" width="160" height="36" rx="7"/>
+        <text class="bt" x="160" y="167">Enteral nutrition</text>
+        <rect class="bx" x="400" y="144" width="160" height="36" rx="7"/>
+        <text class="bt" x="480" y="167">Parenteral nutrition</text>
+        <path class="ln" d="M160 180 L160 198 L105 198 L105 216"/>
+        <path class="ln" d="M160 180 L160 198 L215 198 L215 216"/>
+        <path class="ln" d="M480 180 L480 198 L425 198 L425 216"/>
+        <path class="ln" d="M480 180 L480 198 L535 198 L535 216"/>
+        <rect class="bx" x="40" y="218" width="130" height="36" rx="7"/>
+        <text class="bt" x="105" y="241">Standard</text>
+        <rect class="bx" x="180" y="218" width="130" height="36" rx="7"/>
+        <text class="bt" x="245" y="241">Specialty formula</text>
+        <rect class="bx" x="360" y="218" width="130" height="36" rx="7"/>
+        <text class="bt" x="425" y="241">Peripheral</text>
+        <rect class="bx" x="500" y="218" width="120" height="36" rx="7"/>
+        <text class="bt" x="560" y="241">Central</text>
+      </svg>
+    </div>
+
+    <h2 class="sub">Parenteral nutrition</h2>
+
+    <p>Two situations. In a patient at <b>high nutrition risk or already malnourished</b> in whom enteral
+      feeding is impossible, start parenteral nutrition as soon as possible after admission. In everyone else,
+      if enteral feeding has failed to deliver <b>60% of energy and protein requirements after 7 to 10
+      days</b>, add supplemental parenteral nutrition.</p>
+
+    <div class="alert">
+      <span class="lab">Not before day seven</span>
+      <p>In a non-malnourished patient already receiving enteral nutrition, <b>do not start supplemental
+        parenteral nutrition before day 7</b>. This is one of the firmer recommendations in the 2022
+        guideline and one of the easiest to breach with good intentions.</p>
+    </div>
+
+    <p>In the first week, use <b>hypocaloric dosing with adequate protein</b> &mdash; under 20 kcal/kg/day, or
+      80% of estimated energy needs, with protein above 1.2 g/kg/day. Withhold or limit soybean-oil lipid
+      emulsions during that first week. There is no clinical advantage to compounded over standardised
+      formulations. Taper once the patient tolerates 60% of their enteral target.</p>
+
+    <p>Blood glucose target on parenteral nutrition: <b>7.8&ndash;10.0 mmol/L</b> (140&ndash;180 mg/dL).</p>
+
+    <div class="tscroll">
+    <table>
+      <caption>Peripheral parenteral nutrition &mdash; the limits</caption>
+      <thead><tr><th>&nbsp;</th><th>Limit</th></tr></thead>
+      <tbody>
+        <tr><th>Maximum osmolarity</th><td><b>900 mosm/L</b> in a peripheral vein</td></tr>
+        <tr><th>Glucose</th><td>5&ndash;10%</td></tr>
+        <tr><th>Amino acids</th><td>2&ndash;4%</td></tr>
+        <tr><th>Lipid</th><td>10&ndash;20% &mdash; both concentrations are iso-osmolar</td></tr>
+        <tr><th>Unsuitable when</th><td>Peripheral access is poor; energy or nitrogen requirements are high;
+          fluid requirements are high; or nutrition will be needed for a long time</td></tr>
+      </tbody>
+    </table>
+    </div>
+
+    <p>For total parenteral nutrition, the infusion needs a large-bore, high-flow vessel to limit vessel
+      irritation. Subclavian puncture and peripherally inserted central catheters are the commonest routes;
+      the internal jugular is less desirable because of its higher infection rate. Confirm the position
+      radiographically. Give it as a continuous infusion, keep the total infused volume constant while the
+      nutritional content is increased, and do not run additional maintenance fluid alongside it.</p>
+
+    <div class="tscroll">
+    <table>
+      <caption>Complications of parenteral nutrition</caption>
+      <thead><tr><th>Mechanical</th><th>Infective</th><th>Metabolic, early</th><th>Metabolic, late</th></tr></thead>
+      <tbody>
+        <tr>
+          <td><ul><li>Air embolism</li><li>Pneumothorax</li><li>Haemothorax</li><li>Cardiac tamponade</li>
+            <li>Arterial and venous injury</li><li>Thoracic duct injury</li><li>Brachial plexus injury</li></ul></td>
+          <td>Catheter-related sepsis &mdash; <i>Staphylococcus epidermidis</i> and <i>aureus</i>,
+            enterococcus, candida, <i>E.&nbsp;coli</i>, pseudomonas, klebsiella</td>
+          <td><ul><li>Hyperglycaemia</li><li>Hypoglycaemia</li><li>Hyperlipidaemia</li>
+            <li>Refeeding syndrome</li></ul></td>
+          <td><ul><li>Hepatic dysfunction &mdash; steatosis, steatohepatitis, cholestasis, cirrhosis</li>
+            <li>Acalculous cholecystitis, cholelithiasis</li><li>Metabolic bone disease</li>
+            <li>Fluid overload</li><li>Sodium, potassium and calcium disturbance</li></ul></td>
+        </tr>
+      </tbody>
+    </table>
+    </div>
+
+    <div class="gloss">
+      <span class="lab">Stopping it</span>
+      <p>Discontinue when the patient meets <b>60 to 75%</b> of their caloric and protein needs by mouth or
+        enterally. Halve the infusion rate for an hour, halve it again for the next hour, then stop &mdash;
+        which prevents rebound hypoglycaemia from residual hyperinsulinaemia. If the patient has demonstrated
+        glycaemic stability, tapering is not necessary.</p>
+    </div>
+
+    <h2 class="sub">Micronutrients</h2>
+
+    <div class="tscroll">
+    <table>
+      <caption>Daily vitamin requirements &mdash; enteral, then parenteral</caption>
+      <thead><tr><th>Vitamin</th><th>Enteral</th><th>Parenteral</th></tr></thead>
+      <tbody>
+        <tr><th>B1 thiamine</th><td>1.2 mg</td><td>3.0 mg</td></tr>
+        <tr><th>B2 riboflavin</th><td>1.3 mg</td><td>3&ndash;6 mg</td></tr>
+        <tr><th>B5 pantothenic acid</th><td>5 mg</td><td>15 mg</td></tr>
+        <tr><th>B3 niacin</th><td>16 mg</td><td>40 mg</td></tr>
+        <tr><th>B6 pyridoxine</th><td>1.7 mg</td><td>4 mg</td></tr>
+        <tr><th>B7 biotin</th><td>30 microgram</td><td>60 microgram</td></tr>
+        <tr><th>B9 folic acid</th><td>400 microgram</td><td>400 microgram</td></tr>
+        <tr><th>B12 cyanocobalamin</th><td>2.4 microgram</td><td>5 microgram</td></tr>
+        <tr><th>C ascorbic acid</th><td>90 mg</td><td>100 mg</td></tr>
+        <tr><th>A retinoic acid</th><td>900 microgram</td><td>1000 microgram</td></tr>
+        <tr><th>D ergocalciferol</th><td>15 microgram</td><td>5 microgram</td></tr>
+        <tr><th>E alpha-tocopherol</th><td>15 mg</td><td>10 mg</td></tr>
+        <tr><th>K phytomenadione</th><td>120 microgram</td><td>1 mg per 24 hours</td></tr>
+      </tbody>
+    </table>
+    </div>
+
+    <h2 class="sub">By condition</h2>
+
+    <div class="tscroll">
+    <table>
+      <caption>Where the general rules bend</caption>
+      <thead><tr><th>Condition</th><th>What changes</th></tr></thead>
+      <tbody>
+        <tr><th>Acute pancreatitis</th><td>Mild &mdash; advance to an oral diet. Moderate to severe &mdash;
+          enteral nutrition within 24 to 48 hours, standard polymeric formula, gastric or jejunal. Consider
+          probiotics. If enteral feeding is not tolerated, consider parenteral nutrition after one week from
+          the onset of symptoms</td></tr>
+        <tr><th>Trauma</th><td>Early enteral feeding, high-protein polymeric formula. In severe trauma,
+          consider an immune-modulating formula with arginine and fish oils</td></tr>
+        <tr><th>Traumatic brain injury</th><td>Start within 24 to 48 hours. Either an immune-modulating
+          formula, or supplement with EPA and DHA</td></tr>
+        <tr><th>Open abdomen</th><td>In the absence of bowel injury, start within 24 to 48 hours. Add 15 to 30
+          g of protein per litre of exudate lost</td></tr>
+        <tr><th>Burns</th><td>Enteral feeding unless not feasible. Indirect calorimetry recommended. Protein
+          1.5&ndash;2.0 g/kg/day. &ldquo;Early&rdquo; here means <b>within 4 to 6 hours</b> of injury, which
+          is a far tighter window than anywhere else on this page</td></tr>
+        <tr><th>Major surgery</th><td>Determine nutrition risk. Start within 24 hours. Routine use of an
+          immune-modulating formula is recommended. Persist with enteral feeding even through a difficult
+          post-operative course, and delay parenteral nutrition 5 to 7 days. When diet is advanced, prefer
+          solid food to clear fluids</td></tr>
+        <tr><th>Sepsis</th><td>Start within 24 to 48 hours once resuscitated. <b>Avoid parenteral nutrition in
+          the acute phase.</b> Trophic feeds initially, under 500 kcal/day, advancing after 24 to 48 hours
+          toward 80% of target over the first week, with 1.2&ndash;2.0 g/kg/day of protein</td></tr>
+        <tr><th>Obesity</th><td>Start within 24 to 48 hours. High-protein, hypocaloric feeding to preserve
+          lean mass. Energy 65&ndash;70% of measured requirements &mdash; 11&ndash;14 kcal/kg
+          <b>actual</b> body weight at BMI 30&ndash;50, or 22&ndash;25 kcal/kg <b>ideal</b> body weight above
+          BMI 50. Protein 2.0 g/kg ideal body weight at BMI 30&ndash;40, 2.5 g/kg above BMI 40</td></tr>
+        <tr><th>Liver disease</th><td>Low sodium, with altered amino acid content to reduce
+          encephalopathy</td></tr>
+        <tr><th>Renal disease</th><td>Low phosphate and potassium; energy-dense at 2 kcal/mL</td></tr>
+        <tr><th>Respiratory disease</th><td>Higher fat content, to reduce carbon dioxide production</td></tr>
+      </tbody>
+    </table>
+    </div>
+
+    <h2 class="sub">What to carry away</h2>
+
+    <ol class="steps">
+      <li>Screen everyone on admission. The score matters less than the fact of having looked.</li>
+      <li>If the gut works, use it, and start within 24 to 48 hours. Do not wait for bowel sounds. Do wait for
+        resuscitation.</li>
+      <li>Stop measuring gastric residual volumes, and stop stopping feed for diarrhoea.</li>
+      <li>Protect the feed from fasting more than from intolerance &mdash; that is where the calories
+        actually go.</li>
+      <li>Do not add parenteral nutrition before day seven in a well-nourished patient who is already being
+        fed.</li>
+      <li>And hold the energy and protein targets more loosely than you were taught to. The number that was
+        right in 2022 may not be the number that is right now, and the honest position is that we are in the
+        middle of finding out.</li>
+    </ol>
+
+    <div class="reply">
+      <h2>This space is yours</h2>
+      <p class="ask">Have you given a talk that deserved a bigger room?</p>
+      <p><strong>If you work at Coffs Harbour</strong> &mdash; registrar, resident, student, nurse or
+        anything else &mdash; send it to me and I will set it for the web as this one has been set: your name
+        on it, your content, your structure. You keep the authorship entirely. It becomes something you can
+        point at rather than something in a folder.</p>
+      <p><strong>And if you are not at Coffs</strong>, the invitation still stands. Medical students, doctors
+        at any stage, nurses, paramedics, pharmacists, physiotherapists &mdash; any health professional at
+        all. Send me a message and your presentation and I will read it properly and come back to you. I
+        cannot promise everything will go up, but I can promise it will be looked at by someone who wants it
+        to work.</p>
+      <p>One practical thing worth knowing before you send: teaching slides are usually built from screenshots
+        of guidelines, textbooks and journals, which is fine in a tutorial room and not fine on a public
+        website. So the figures get rebuilt from the underlying facts rather than reproduced. That is part of
+        what I do with it, and it costs you nothing but a conversation.</p>
+      <p><a class="btn" href="mailto:icuandyou@icloud.com?subject=Your%20Presentations%20-%20I%20have%20a%20talk&body=The%20talk%3A%0D%0A%0D%0A%0D%0AWhen%20and%20where%20it%20was%20given%3A%0D%0A%0D%0A%0D%0AHow%20you%20would%20like%20to%20be%20credited%3A%0D%0A%0D%0A%0D%0A---%0D%0A%0D%0AName%3A%0D%0A%0D%0A---%0D%0A%0D%0AThinking%20about%20this%20ICU%20AND%20YOU%20post%20overall%20%E2%80%94%20was%20it%20useful%20to%20you%2C%20or%20would%20it%20be%20useful%20to%20others%3F%0D%0A">Send me your talk</a></p>
+      <p class="fallback" style="margin-bottom:9px">How you are credited is entirely your call &mdash; by name, by initials, or not at all &mdash; whether you write the piece or I do, and whether I quote you or simply say who sent something in; nothing of yours goes up with your name on it unless you have said yes.</p>
+      <p class="fallback">The button opens a reply straight to me. If your device blocks it, write to
+        <a href="mailto:icuandyou@icloud.com">icuandyou@icloud.com</a> instead.</p>
+    </div>
+  </div>
+
+  <footer>
+    <span class="firstpub">First published October 2026</span>
+    <p class="subline">Two emails a week &mdash; the Friday newsletter for all subscribers, and, for clinical subscribers,
+      the mind map and puzzles the moment they go up on Tuesday. Occasional announcements of new
+      features as they arrive. What went up and why it mattered, the best of your replies, and
+      original feature stories, news and views. <a href="https://joinlist.com/f/5adad2d6">Come and join us</a>.</p>
+    <a class="home" href="./">&larr; &nbsp;All of ICU AND YOU</a><br>
+    ICU AND YOU &nbsp;&middot;&nbsp; Your Presentations No. 2 &nbsp;&middot;&nbsp; Nutrition in intensive care<br>
+    <span class="srcs">From a teaching session at Coffs Harbour Health Campus by Dr John Alexander. The
+      clinical content and its selection are his; the figures and tables have been rebuilt in this site&rsquo;s
+      own markup from the underlying facts rather than reproduced from the original slides. Guideline material
+      is from the ASPEN/SCCM critical care nutrition guidelines of 2016 and 2022; the emerging position at the
+      head of the page is from Peake SL, Ridley EJ, Reignier J and colleagues, <em>Nutrition Support in the
+      ICU: Current Evidence and Evolving Standards</em>, <em>Intensive Care Medicine</em> 2026,
+      doi:10.1007/s00134-026-08474-7. Screening instruments are NRS 2002 (Kondrup and colleagues, for ESPEN)
+      and the NUTRIC score (Heyland and colleagues). Educational use only &mdash; not a prescribing guide.
+      Local policy, your dietitian and current guidance always take precedence.</span>
+  <br>
+    <span class="mine">Views my own, not those of NSW Health or any other organisation. No identifiable patients &mdash; scenarios are constructed or combined for teaching. <a href="about.html">More</a>.</span>
+  </footer>
+
+</div>
+<script data-goatcounter="https://icuandyou.goatcounter.com/count"
+        async src="//gc.zgo.at/count.js"></script>
+</body>
+</html>

@@ -1554,9 +1554,28 @@
    "badge": "Superpuzzle",
    "link_label": "Open the puzzle",
    "blurb": "Twenty clues on early middle age \u2014 the heart attack whose genetics run opposite to the usual kind, a ketoacidosis with a normal blood sugar, the autoimmune encephalitis mistaken for a first psychosis, and the cosmetic operation that kills more people than any other. Fill it in on screen, or print it."
+  },
+  {
+   "file": "registrars-02-nutrition.html",
+   "series": "registrars",
+   "colour": "heather striped",
+   "number": "2",
+   "title": "Nutrition in intensive care",
+   "topic": "Any time",
+   "slug": "standing",
+   "week": false,
+   "standing": true,
+   "badge": "Your Presentations",
+   "link_label": "Open",
+   "blurb": "Dr John Alexander on feeding the critically ill \u2014 screening, requirements, enteral and parenteral routes, and the argument now running about how much energy and protein a patient in the acute phase should actually get. The talk caught the field mid-change, and the page says so."
   }
  ],
  "latest": [
+  {
+   "file": "registrars-02-nutrition.html",
+   "colour": "heather striped",
+   "label": "Your Presentations 2 \u00b7 Nutrition in intensive care"
+  },
   {
    "file": "superpuzzle-54-early-middle-age-fillable.html",
    "colour": "rust",
@@ -1576,11 +1595,6 @@
    "file": "journal-club-102-young-adults-cicu.html",
    "colour": "sepia",
    "label": "Journal Club 102 \u00b7 Thirty-two, in a coronary care unit"
-  },
-  {
-   "file": "podcast-61-scad.html",
-   "colour": "slate",
-   "label": "Podcast 61 \u00b7 The opposite of hard arteries"
   }
  ],
  "topten": [
