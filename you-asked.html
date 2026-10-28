@@ -74,6 +74,7 @@
     text-transform:uppercase;padding:3px 9px;border-radius:11px;color:#fff}
   .tag.students{background:var(--violet)}
   .tag.procedures{background:var(--amethyst)}
+  .tag.medicolegal{background:#5C4A3A}
 
   blockquote.q{margin:0 0 16px;padding:16px 22px;background:var(--tealtint);
     border-left:4px solid var(--teal);border-radius:0 8px 8px 0;
@@ -154,6 +155,41 @@
       Use the button at the foot of the page.</p>
 
     <!-- ── 1 ─────────────────────────────────────────── -->
+    <div class="qa" data-series="medicolegal">
+      <div class="meta">
+        <span class="when">October 2026</span>
+        <span class="from">from Dr John Alexander, Intensive Care Registrar, Coffs Harbour</span>
+        <span class="tag medicolegal">Medicolegal</span>
+      </div>
+      <blockquote class="q">
+        <p>&ldquo;It is said that when a child dies, ask whether there is a child protection history, and ask
+          the social work team to check, before assuming it is not coronial. What happens if the child dies
+          at 10pm? Social work won&rsquo;t be available till the next morning.&rdquo;</p>
+      </blockquote>
+      <div class="a">
+        <p><strong>This one found a hole in the page, and the page has been changed because of it.</strong>
+          The advice as written only worked in office hours, which is not when most of these deaths
+          happen.</p>
+        <p>The short answer is that you do not wait, because the decision was never social work&rsquo;s to
+          make. Under <b>section 35 of the Coroners Act 2009</b> a reportable death is reported to
+          <b>police or a coroner</b> &mdash; and the police are there at ten at night.</p>
+        <p>But the better answer is that <b>at ten at night there is nothing you have to decide.</b> There
+          are only three things you cannot undo: taking the lines out, washing and laying out the body, and
+          signing the death certificate. None of them has to happen that night, and under section 38 you must
+          not issue a certificate for a reportable death anyway. So treat it as potentially coronial until
+          somebody establishes otherwise. If the morning shows there was no child protection history, you
+          have lost a few hours of paperwork. If it shows there was, you have preserved everything.</p>
+        <p>And the routes are open if you want to ask that night: the <b>Child Protection Helpline on
+          13 21 11 runs 24 hours, seven days</b>, the tertiary child protection consultants are on call
+          around the clock, and the attending police are a prescribed body under Chapter 16A, as is NSW
+          Health, so the question can be asked and answered verbally without consent.</p>
+        <p>What genuinely cannot wait is the conversation with the family &mdash; and before that, a word
+          with the bedside nurse, who will otherwise do the kind and instinctive thing.</p>
+        <p><a class="more" href="medicolegal-01-school-age.html">Read the amended section &rarr;</a></p>
+      </div>
+    </div>
+
+    <!-- ── 2 ─────────────────────────────────────────── -->
     <div class="qa" data-series="students">
       <div class="meta">
         <span class="when">August 2026</span>
@@ -177,7 +213,7 @@
       </div>
     </div>
 
-    <!-- ── 2 ─────────────────────────────────────────── -->
+    <!-- ── 3 ─────────────────────────────────────────── -->
     <div class="qa" data-series="students">
       <div class="meta">
         <span class="when">August 2026</span>
@@ -253,17 +289,17 @@
 (function(){
   var GROUPS = {"memory":["mind-map","aphorism","mnemonic","superpuzzle","superquiz"],
     "multimedia":["podcast","journal"],"special":["students","nurses","gp","emergency"],
-    "procedures":["procedures"],"cultural":["coin","italiano","espanol","india"],
+    "procedures":["procedures"],"medicolegal":["medicolegal"],"cultural":["coin","italiano","espanol","india"],
     "other":["literary"]};
   var NAMES = {"mind-map":"the mind maps","aphorism":"the aphorisms","mnemonic":"the mnemonics",
     "superpuzzle":"the superpuzzles","superquiz":"the superquizzes",
     "students":"Medical Students' Place","nurses":"Nurses' Nest","gp":"GP Boulevard",
     "emergency":"the Emergency Medicine Landing Bay","podcast":"the podcast sessions",
-    "journal":"journal club","procedures":"Procedures","coin":"Le coin fran\u00e7ais",
+    "journal":"journal club","procedures":"Procedures","medicolegal":"the Medicolegal pages","coin":"Le coin fran\u00e7ais",
     "italiano":"L'angolo italiano","espanol":"El rinc\u00f3n espa\u00f1ol",
     "india":"The India Room","literary":"The Literary Edge"};
   var GNAMES = {"memory":"memory aids and activities","multimedia":"multimedia",
-    "special":"the special groups","procedures":"Procedures",
+    "special":"the special groups","procedures":"Procedures","medicolegal":"Medicolegal",
     "cultural":"the cultural narratives","other":"Other Realms"};
 
   var qs = new URLSearchParams(window.location.search);
