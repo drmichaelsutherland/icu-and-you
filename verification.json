@@ -523,6 +523,94 @@
       "interval": "12m",
       "verdict": "confirmed",
       "note": "Carried on this page to make the opposite point from the usual one: the word STRESS completes the mnemonic but the disease belongs to an older patient. The secondary, catecholamine-driven form described alongside it is a mechanism rather than a counted entity and carries no number."
+    },
+    "ef3-structure": {
+      "page": "exam-cicm-first-03-the-mcq-paper.html",
+      "claim": "The CICM First Part written examination is two papers, each carrying 50 multiple choice questions and 10 short answer questions",
+      "source": "CICM T-17 Notes to Candidates for the First Part Examination (2026-2), which describes '2 x 2.5 hour written papers' with 50 MCQs and 10 SAQs each. Confirmed independently on the College's First Part Examination page, which states the same structure",
+      "url": "https://cicm.org.au/common/Uploaded%20files/Assets/Training%20and%20Education/Trainee%20Documents/T-17%202026-2.pdf",
+      "checked": "2026-10-28",
+      "interval": "12m",
+      "verdict": "confirmed"
+    },
+    "ef3-schedule": {
+      "page": "exam-cicm-first-03-the-mcq-paper.html",
+      "claim": "The published schedule for each paper is 165 minutes: 5 minutes labelling, 10 minutes reading with no writing, 50 minutes for the MCQs and 100 minutes for the SAQs",
+      "source": "CICM T-17 Notes to Candidates (2026-2), which gives the segment timings and states that this allows '1 minute per MCQ and 10 minutes for each SAQ'",
+      "url": "https://cicm.org.au/common/Uploaded%20files/Assets/Training%20and%20Education/Trainee%20Documents/T-17%202026-2.pdf",
+      "checked": "2026-10-28",
+      "interval": "12m",
+      "verdict": "confirmed",
+      "note": "Worth stating carefully, because the paper is described everywhere as a 2.5 hour paper, which is 150 minutes - that is the question time. The labelling and reading segments sit outside it, so the candidate is in the room for 165 minutes. Both figures are correct and they are not the same thing."
+    },
+    "ef3-format": {
+      "page": "exam-cicm-first-03-the-mcq-paper.html",
+      "claim": "Each MCQ offers four options, A to D, and asks for one answer; answers are recorded on the prescribed sheet in 2B pencil only; non-programmable calculators are permitted and programmable ones are not",
+      "source": "CICM T-17 Notes to Candidates (2026-2), which instructs candidates to 'Select ONE answer from the four options', requires a '2B pencil ONLY' for the MCQ answer sheet, and permits non-programmable calculators. The College's First Part Examination page separately lists permitted and prohibited items",
+      "url": "https://cicm.org.au/common/Uploaded%20files/Assets/Training%20and%20Education/Trainee%20Documents/T-17%202026-2.pdf",
+      "checked": "2026-10-28",
+      "interval": "12m",
+      "verdict": "confirmed"
+    },
+    "ef3-marks": {
+      "page": "exam-cicm-first-03-the-mcq-paper.html",
+      "claim": "The College's table values the MCQs at 100 marks and the SAQs at 400 marks",
+      "source": "CICM T-17 Notes to Candidates (2026-2), marks table. The orals are listed separately at 160 marks across 8 vivas",
+      "url": "https://cicm.org.au/common/Uploaded%20files/Assets/Training%20and%20Education/Trainee%20Documents/T-17%202026-2.pdf",
+      "checked": "2026-10-28",
+      "interval": "12m",
+      "verdict": "confirmed",
+      "note": "The page draws the inference that MCQs are a fifth of the written marks and about a third of the working time. The 100 and 400 are the College's figures; the ratio is arithmetic on them. T-17 does not state a per-question MCQ mark."
+    },
+    "ef3-angoff": {
+      "page": "exam-cicm-first-03-the-mcq-paper.html",
+      "claim": "A candidate must reach or exceed the Angoff pass mark on the MCQ component and on the SAQ component separately, with no aggregate between them",
+      "source": "CICM First Part Examination page, which states that to progress to the vivas candidates must reach the Angoff score or greater on the SAQ section and on the MCQs, listing them as separate criteria and describing no combined score. T-17 states the same",
+      "url": "https://www.cicm.org.au/Web/Training-and-Education/TrainingPages/General-and-Paediatric-ICT-Program-Pages/Assessments-and-Examinations/First-Part-Examination.aspx",
+      "checked": "2026-10-28",
+      "interval": "12m",
+      "verdict": "confirmed",
+      "note": "This is the load-bearing fact of the whole page: it is what makes a component worth only a fifth of the marks impossible to ignore. Both College documents say it independently, which is why it is recorded as confirmed rather than as an inference."
+    },
+    "ef3-passrate": {
+      "page": "exam-cicm-first-03-the-mcq-paper.html",
+      "claim": "In the 2023.1 sitting the MCQ pass rate was 86% overall, 92% on Paper 1 and 82% on Paper 2; 76 candidates sat the written and 37 were invited to the orals",
+      "source": "Report of the Intensive Care First Part Examination, March/May 2023 (2023.1), published by CICM",
+      "url": "https://cicm.org.au/common/Uploaded%20files/Assets/Training%20and%20Education/General%20and%20Paediatric%20Intensive%20Care/Assessments%20and%20Examination/First%20Part%20Examination/2020-2024/FINAL_First-Part-Exam-Report-2023-1.pdf",
+      "checked": "2026-10-28",
+      "interval": "12m",
+      "verdict": "confirmed",
+      "note": "One sitting, and sittings vary - the page says 2023.1 by name rather than presenting it as a standing figure. The report gives these percentages under its MCQ heading without defining 'pass rate' precisely; read in context it is the proportion of candidates reaching the standard on that paper's MCQs. The 76 and 37 are from the same report and are the figures that carry the argument, since they show the written component halving the cohort while the MCQ pass rate stayed high."
+    },
+    "ef3-nopastmcq": {
+      "page": "exam-cicm-first-03-the-mcq-paper.html",
+      "claim": "The College publishes past short answer questions but does not publish past multiple choice questions",
+      "source": "CICM First Part Examination page, whose past written papers are listed as 2026.2 and 2025.2 in morning (SAQs 1-10) and afternoon (SAQs 11-20) versions only. The published examination reports give MCQ pass rates and no MCQ items",
+      "url": "https://www.cicm.org.au/Web/Training-and-Education/TrainingPages/General-and-Paediatric-ICT-Program-Pages/Assessments-and-Examinations/First-Part-Examination.aspx",
+      "checked": "2026-10-28",
+      "interval": "12m",
+      "verdict": "confirmed",
+      "note": "An absence rather than a statement, so it is evidenced by what the College publishes rather than by a sentence saying so. Checked against the current page listing and against the 2023.1 report. If the College ever releases MCQs this claim fails quietly, which is why it carries a 12-month interval rather than 'never'."
+    },
+    "ef3-blank": {
+      "page": "exam-cicm-first-03-the-mcq-paper.html",
+      "claim": "Candidates are advised to attempt every question because each is scored equally and unanswered questions forfeit marks; no negative marking is published",
+      "source": "Report of the Intensive Care First Part Examination, March/May 2023, general advice to candidates: attempt all questions, since each is scored equally and unanswered questions forfeit marks, and apportion time accordingly",
+      "url": "https://cicm.org.au/common/Uploaded%20files/Assets/Training%20and%20Education/General%20and%20Paediatric%20Intensive%20Care/Assessments%20and%20Examination/First%20Part%20Examination/2020-2024/FINAL_First-Part-Exam-Report-2023-1.pdf",
+      "checked": "2026-10-28",
+      "interval": "12m",
+      "verdict": "flagged",
+      "note": "Flagged rather than confirmed on the negative-marking half. The College's advice to attempt everything is quoted directly and is unambiguous. That no negative marking exists is an inference from its absence in T-17, in the First Part Examination page and in the examination reports - no document says so in terms. The practical advice on the page (never leave a blank) is safe under either scheme, since the College's own instruction is to attempt everything. Worth asking the College directly, or checking a future T-17 for an explicit statement."
+    },
+    "ef3-firstinstinct": {
+      "page": "exam-cicm-first-03-the-mcq-paper.html",
+      "claim": "Changing an answer on a multiple choice paper more often helps than harms: of 3,291 changed answers 51% went wrong to right and 25% right to wrong, and of students who changed at least one answer 54% were helped and 19% hurt",
+      "source": "Kruger J, Wirtz D, Miller DT. Counterfactual thinking and the first instinct fallacy. Journal of Personality and Social Psychology 2005;88(5):725-735. Study 1, 1,561 University of Illinois students. The paper also cites a review of 33 studies finding test takers were not harmed on average by changing answers",
+      "url": "https://people.wku.edu/steven.wininger/Kruger%20First%20Instinct%20Myth.pdf",
+      "checked": "2026-10-28",
+      "interval": "never",
+      "verdict": "confirmed",
+      "note": "Interval set to never: this is a published result from a fixed dataset, not a figure that republishes. Note what it does and does not license. It refutes the folk rule that a first instinct should be preserved; it does not say that changing answers is good in itself, and the undergraduate setting is not a postgraduate specialist examination. The page states it as a reason to change on a stated reason rather than on a feeling, which is the defensible reading."
     }
   }
 }

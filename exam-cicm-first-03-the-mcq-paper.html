@@ -1,0 +1,1207 @@
+<!DOCTYPE html>
+<html lang="en-AU">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ICU AND YOU &#183; Exam focus &#183; CICM First Part No. 3 &mdash; Fifty minutes, fifty questions</title>
+<meta name="description" content="CICM First Part No. 3: the multiple choice half of each paper — the arithmetic of the time, how to spend the minute, how to prepare for a component with no published past papers, where the question banks are, fourteen rules of technique, and twenty practice questions with an explanation for every option.">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="alternate icon" href="/favicon.ico" sizes="any">
+<link rel="apple-touch-icon" href="/icon-180.png">
+<meta name="theme-color" content="#1B2A33">
+<meta property="og:site_name" content="ICU AND YOU">
+<meta property="og:type" content="website">
+<meta property="og:title" content="ICU AND YOU &#183; Exam focus &#183; CICM First Part No. 3 &mdash; Fifty minutes, fifty questions">
+<meta property="og:description" content="The multiple choice half of each CICM First Part paper: the time, the technique, the resources, and twenty practice questions with an explanation for every option — right and wrong.">
+<meta property="og:image" content="https://icuandyou.com/share-card.png">
+<meta name="twitter:card" content="summary_large_image">
+<style>
+  :root{
+    --paper:#FBF9FC; --ink:#241F2B; --muted:#6B6377; --rule:#DFD6E6;
+    --amethyst:#1D4D3F; --amethysttint:#F1EBF7;
+    --rust:#A8442A; --rusttint:#F9EDE7;
+    --moss:#4C6B4A; --mosstint:#EAF1E9;
+    --gold:#A8721E; --goldtint:#FBF1DC;
+  }
+  *{box-sizing:border-box}
+  body{margin:0;background:#EDE8F1;color:var(--ink);
+    font:400 17px/1.64 'Iowan Old Style','Palatino Linotype',Palatino,Georgia,serif;
+    -webkit-text-size-adjust:100%;}
+  .sheet{max-width:820px;margin:0 auto;background:var(--paper);
+    box-shadow:0 1px 40px rgba(36,31,43,.10);}
+
+  header.top{padding:42px 40px 28px;border-bottom:2px solid var(--amethyst)}
+  .tophome,.topseries,.toptopic{display:inline-block;margin:0 0 16px;padding:7px 16px;
+    border-radius:20px;border:1px solid currentColor;opacity:.62;text-decoration:none;
+    color:inherit;font:600 11.5px 'Helvetica Neue',Arial,sans-serif;letter-spacing:.09em;
+    text-transform:uppercase;transition:opacity .12s ease}
+  .topseries,.toptopic{margin-left:9px}
+  .tophome:hover,.topseries:hover,.toptopic:hover{opacity:1}
+  .eyebrow a.mast,.eyebrow a.serlink{color:inherit;text-decoration:none;
+    border-bottom:1px solid transparent}
+  .eyebrow a.mast:hover,.eyebrow a.serlink:hover{border-bottom-color:currentColor}
+  .eyebrow{font:500 11.5px/1 'Helvetica Neue',Arial,sans-serif;letter-spacing:.24em;
+    text-transform:uppercase;color:var(--muted);margin:0 0 13px}
+  h1{font-size:32px;line-height:1.2;margin:0 0 9px;font-weight:400;letter-spacing:-.012em}
+  .kicker{color:var(--muted);margin:0;font-size:16.5px;font-style:italic}
+
+  .pad{padding:32px 40px}
+  p{margin:0 0 16px}
+  .lede{font-size:19.5px;line-height:1.55;margin:0 0 20px}
+
+  h2.sub{font:600 12px 'Helvetica Neue',Arial,sans-serif;letter-spacing:.2em;
+    text-transform:uppercase;color:var(--amethyst);margin:32px 0 15px;
+    padding-bottom:8px;border-bottom:1px solid var(--rule)}
+  h3.mini{font:600 14.5px 'Helvetica Neue',Arial,sans-serif;color:var(--amethyst);
+    margin:24px 0 9px}
+
+  ul.pts{list-style:none;margin:0 0 18px;padding:0}
+  ul.pts li{display:flex;gap:13px;padding:11px 0;border-bottom:1px solid #EFE9F4;
+    font-size:16.5px;line-height:1.5}
+  ul.pts li:last-child{border-bottom:0}
+  ul.pts b{flex:0 0 182px;font:600 14.5px 'Helvetica Neue',Arial,sans-serif;
+    color:var(--amethyst);line-height:1.4}
+
+  ol.steps{list-style:none;counter-reset:s;margin:0 0 18px;padding:0}
+  ol.steps li{counter-increment:s;position:relative;padding:12px 0 12px 44px;
+    border-bottom:1px solid #EFE9F4;font-size:16.5px;line-height:1.55}
+  ol.steps li:last-child{border-bottom:0}
+  ol.steps li::before{content:counter(s);position:absolute;left:0;top:12px;
+    width:28px;height:28px;border-radius:50%;background:var(--amethyst);color:#F8F5FB;
+    font:600 13px 'Helvetica Neue',Arial,sans-serif;display:flex;align-items:center;
+    justify-content:center}
+  ol.steps li b{color:var(--amethyst)}
+
+  .box{margin:0 0 18px;padding:20px 24px;border-radius:0 8px 8px 0}
+  .box .lab{display:block;font:600 11px 'Helvetica Neue',Arial,sans-serif;
+    letter-spacing:.18em;text-transform:uppercase;margin:0 0 9px}
+  .box p:last-child{margin:0}
+  .red{background:var(--rusttint);border-left:4px solid var(--rust)} .red .lab{color:var(--rust)}
+  .grn{background:var(--mosstint);border-left:4px solid var(--moss)} .grn .lab{color:var(--moss)}
+  .amb{background:var(--goldtint);border-left:4px solid var(--gold)} .amb .lab{color:var(--gold)}
+
+  table.fig{width:100%;border-collapse:collapse;margin:0 0 20px;font-size:16px}
+  table.fig th{text-align:left;font:600 12px 'Helvetica Neue',Arial,sans-serif;
+    letter-spacing:.11em;text-transform:uppercase;color:var(--amethyst);
+    border-bottom:2px solid var(--amethyst);padding:9px 10px 8px}
+  table.fig td{padding:9px 10px;border-bottom:1px solid #EFE9F4;vertical-align:top}
+  table.fig td.n{text-align:right;font-variant-numeric:tabular-nums;white-space:nowrap}
+  table.fig tr.tot td{font-weight:600;border-top:2px solid var(--amethyst);border-bottom:0}
+
+  .sites{display:flex;gap:13px;flex-wrap:wrap;margin:0 0 20px}
+  .site{flex:1 1 226px;background:#fff;border:1px solid var(--rule);border-radius:9px;
+    padding:16px 18px;border-top:4px solid var(--amethyst)}
+  .site h3{margin:0 0 7px;font:600 13px 'Helvetica Neue',Arial,sans-serif;
+    letter-spacing:.07em;text-transform:uppercase;color:var(--amethyst)}
+  .site p{margin:0;font-size:15.5px;line-height:1.5;color:#3B3345}
+  .site p+p{margin-top:8px}
+  .site .cost{font:600 12px 'Helvetica Neue',Arial,sans-serif;letter-spacing:.06em;
+    text-transform:uppercase;color:var(--muted)}
+  .site a{color:var(--amethyst)}
+
+  /* ---- the paper ---- */
+  .paper{background:#fff;border-top:3px solid var(--amethyst);
+    border-bottom:3px solid var(--amethyst);padding:30px 40px 36px;margin:30px 0 0}
+  .ptitle{font:600 12px 'Helvetica Neue',Arial,sans-serif;letter-spacing:.2em;
+    text-transform:uppercase;color:var(--amethyst);margin:0 0 10px}
+  .prow{display:flex;gap:14px;flex-wrap:wrap;align-items:center;margin:0 0 6px;
+    padding:14px 16px;background:var(--amethysttint);border-radius:8px}
+  .prow button{padding:11px 20px;border:0;border-radius:24px;background:var(--amethyst);
+    color:#F2F7F4;font:600 12.5px 'Helvetica Neue',Arial,sans-serif;letter-spacing:.07em;
+    text-transform:uppercase;cursor:pointer}
+  .prow button:hover{background:#153A2F}
+  .prow button.ghost{background:transparent;color:var(--amethyst);
+    border:1px solid var(--amethyst)}
+  .prow button.ghost:hover{background:var(--amethyst);color:#F2F7F4}
+  .clock{font:600 22px 'Helvetica Neue',Arial,sans-serif;color:var(--amethyst);
+    font-variant-numeric:tabular-nums;letter-spacing:.02em}
+  .clock.over{color:var(--rust)}
+  .tally{font:400 14.5px 'Helvetica Neue',Arial,sans-serif;color:var(--muted);
+    margin-left:auto;text-align:right}
+  .tally b{color:var(--amethyst);font-size:17px}
+
+  article.q{padding:26px 0 8px;border-bottom:1px solid var(--rule)}
+  article.q:last-of-type{border-bottom:0}
+  .qhead{display:flex;align-items:center;gap:12px;margin:0 0 10px}
+  .qn{flex:none;width:30px;height:30px;border-radius:50%;background:var(--amethyst);
+    color:#F2F7F4;font:600 14px 'Helvetica Neue',Arial,sans-serif;display:flex;
+    align-items:center;justify-content:center}
+  .qsec{font:600 11px 'Helvetica Neue',Arial,sans-serif;letter-spacing:.17em;
+    text-transform:uppercase;color:var(--muted)}
+  .qmark{margin-left:auto;font:600 12px 'Helvetica Neue',Arial,sans-serif;
+    letter-spacing:.11em;text-transform:uppercase}
+  article.q.done .qmark::after{content:"Answered"}
+  article.q.revealed .qmark{color:var(--muted)}
+  article.q.revealed .qmark::after{content:"Revealed"}
+  article.q.gotit .qmark{color:var(--moss)}
+  article.q.gotit .qmark::after{content:"Correct"}
+  article.q.missed .qmark{color:var(--rust)}
+  article.q.missed .qmark::after{content:"Not this time"}
+  .stem{font-size:17.5px;line-height:1.56;margin:0 0 14px}
+
+  ol.opts{list-style:none;margin:0 0 10px;padding:0}
+  li.opt{margin:0 0 7px}
+  .pick{display:flex;width:100%;gap:13px;align-items:flex-start;text-align:left;
+    padding:13px 16px;border:1px solid var(--rule);border-radius:9px;background:#fff;
+    cursor:pointer;font:400 16.5px/1.5 'Iowan Old Style','Palatino Linotype',Palatino,Georgia,serif;
+    color:var(--ink);transition:border-color .12s ease,background .12s ease}
+  .pick:hover{border-color:var(--amethyst);background:#FAFCFA}
+  .lt{flex:none;font:600 13px 'Helvetica Neue',Arial,sans-serif;color:var(--amethyst);
+    width:17px;padding-top:3px}
+  .ot{flex:1}
+  li.opt.chosen .pick{border-width:2px}
+  li.opt.key .pick{border-color:var(--moss);background:var(--mosstint)}
+  li.opt.key .lt{color:var(--moss)}
+  li.opt.bad .pick{border-color:var(--rust);background:var(--rusttint)}
+  li.opt.bad .lt{color:var(--rust)}
+  article.q.done .pick{cursor:default}
+  article.q.done .pick:hover{border-color:var(--rule);background:#fff}
+  article.q.done li.opt.key .pick:hover{border-color:var(--moss);background:var(--mosstint)}
+  article.q.done li.opt.bad .pick:hover{border-color:var(--rust);background:var(--rusttint)}
+
+  .why{display:none;margin:7px 0 0 30px;padding:12px 16px;border-left:3px solid var(--rule);
+    font-size:15.5px;line-height:1.56;color:#4A4354}
+  li.opt.show .why{display:block}
+  li.opt.key.show .why{border-left-color:var(--moss)}
+  li.opt.bad.show .why{border-left-color:var(--rust)}
+
+  .revealall{margin:4px 0 0}
+  .rev{background:none;border:0;padding:0;cursor:pointer;color:var(--amethyst);
+    font:600 13px 'Helvetica Neue',Arial,sans-serif;letter-spacing:.04em;
+    border-bottom:1px solid currentColor}
+  article.q.allshown .revealall{display:none}
+
+  .point{display:none;margin:14px 0 0;padding:13px 17px;background:var(--goldtint);
+    border-left:4px solid var(--gold);font-size:16px;line-height:1.52}
+  .point b{color:var(--gold)}
+  article.q.done .point{display:block}
+
+  .score{margin:26px 0 0;padding:22px 26px;background:var(--amethysttint);
+    border-left:5px solid var(--amethyst);display:none}
+  .score.on{display:block}
+  .score h3{margin:0 0 10px;font:600 12px 'Helvetica Neue',Arial,sans-serif;
+    letter-spacing:.2em;text-transform:uppercase;color:var(--amethyst)}
+  .score .big{font:600 30px 'Helvetica Neue',Arial,sans-serif;color:var(--amethyst);
+    margin:0 0 10px}
+  .score p{margin:0 0 10px;font-size:16.5px}
+  .score p:last-child{margin:0}
+
+  .nojs{padding:14px 18px;background:var(--goldtint);border-left:4px solid var(--gold);
+    font-size:15.5px;margin:0 0 18px}
+
+  .challenge{margin:0;padding:28px 32px;background:var(--rusttint);border-left:5px solid var(--rust)}
+  .challenge h2{font:600 12px 'Helvetica Neue',Arial,sans-serif;letter-spacing:.2em;
+    text-transform:uppercase;color:var(--rust);margin:0 0 13px}
+  .ask{font-size:19.5px;line-height:1.5;margin:0 0 12px;font-style:italic}
+  .btn{display:inline-block;margin:6px 0 12px;padding:15px 30px;background:var(--rust);
+    color:#FDF8F5;text-decoration:none;border-radius:30px;font-style:normal;
+    font:600 15px 'Helvetica Neue',Arial,sans-serif;letter-spacing:.03em}
+  .btn:hover{background:#8A3620}
+  .fallback{font:400 13.5px 'Helvetica Neue',Arial,sans-serif;color:var(--muted);margin:0}
+  .fallback a{color:var(--rust)}
+  .fallback+.fallback{margin-top:9px}
+
+  footer{padding:24px 40px 42px;border-top:1px solid var(--rule);
+    font:400 13px 'Helvetica Neue',Arial,sans-serif;color:var(--muted);text-align:center;line-height:1.7}
+  .subline{margin:0 0 14px;padding:0 0 13px;border-bottom:1px solid rgba(0,0,0,.09);
+    font:400 14.5px/1.55 'Iowan Old Style','Palatino Linotype',Palatino,Georgia,serif;
+    max-width:56ch;margin-left:auto;margin-right:auto}
+  .subline a{font-weight:500;border-bottom:1px solid currentColor;
+    text-decoration:none;color:inherit}
+  .firstpub{display:block;margin:0 0 10px;padding-bottom:9px;
+    border-bottom:1px solid rgba(0,0,0,.09);
+    font:400 12px 'Helvetica Neue',Arial,sans-serif;letter-spacing:.06em;opacity:.72}
+  .home{display:inline-block;margin:0 0 12px;padding:8px 18px;border-radius:20px;
+    border:1px solid var(--rule);background:var(--amethysttint);color:var(--amethyst);
+    text-decoration:none;font:600 11px 'Helvetica Neue',Arial,sans-serif;
+    letter-spacing:.08em;text-transform:uppercase}
+  .home:hover{background:var(--amethyst);border-color:var(--amethyst);color:#F2F7F4}
+  .mine{display:inline-block;margin:9px 0 0;opacity:.78;font-size:.94em}
+  a{color:var(--amethyst)}
+
+  @media (max-width:620px){
+    header.top,.pad,.paper,footer{padding-left:22px;padding-right:22px}
+    .challenge{padding:24px 22px}
+    h1{font-size:26px}
+    ul.pts li{flex-direction:column;gap:3px}
+    ul.pts b{flex:none}
+    .tally{margin-left:0;text-align:left;width:100%}
+  }
+  @media print{
+    .prow,.rev,.revealall{display:none}
+    .why,.point{display:block !important}
+    body{background:#fff} .sheet{box-shadow:none}
+  }
+</style>
+</head>
+<body>
+<div class="sheet">
+
+<header class="top">
+  <a class="tophome" href="./">&larr;&nbsp; Home</a>
+  <a class="topseries" href="./?s=cicm-first">All CICM First Part</a>
+  <p class="eyebrow"><a class="mast" href="./">ICU and You</a> &#183;
+    <a class="serlink" href="./?s=cicm-first">Exam focus &#183; CICM First Part</a> &#183; Number 3</p>
+  <h1>Fifty minutes, fifty questions</h1>
+  <p class="kicker">The multiple choice half of each paper &mdash; preparing for it, spending the minute,
+    and twenty questions to sit</p>
+</header>
+
+<div class="pad">
+  <p class="lede">The multiple choice component is the part of the written examination most candidates
+    prepare for last and worry about least. That instinct is half right, and the half that is wrong
+    is the half that ends a sitting.</p>
+
+  <p>Here is why it is half right. In the 2023.1 sitting the College reported an overall pass rate on
+    the multiple choice questions of <b>86%</b> &mdash; 92% on Paper 1 and 82% on Paper 2.<sup class="vf" data-v="ef3-passrate"></sup> In the same
+    sitting 76 candidates sat the written component and 37 were invited to the orals. Put those figures
+    side by side and the picture is unambiguous: a little under half the cohort got through the written,
+    and it was overwhelmingly the short answers that stopped the rest. Most people who
+    fail the First Part do not fail on the MCQs. They fail on the short answers, which is where the marks
+    are and where the series will spend most of its time.</p>
+
+  <p>And here is why the other half matters. The written examination is standard-set by the Angoff method,
+    and a candidate must reach or exceed the Angoff score <b>on the multiple choice questions and on the
+    short answer questions separately</b><sup class="vf" data-v="ef3-angoff"></sup>. There is no aggregate. A brilliant set of short answers does
+    not rescue a poor morning with a pencil, and no amount of effort on the larger component buys you a
+    single mark on the smaller one.</p>
+
+  <p>So the sensible position is neither to ignore the MCQs nor to pour months into them. It is to
+    understand the component properly, practise it in the shape it will arrive in, and make sure you are
+    nowhere near the line. This piece is about how.</p>
+
+  <h2 class="sub">The arithmetic of the paper</h2>
+
+  <p>There are two written papers. Each carries <b>50 multiple choice questions and 10 short answer
+    questions</b><sup class="vf" data-v="ef3-structure"></sup>, and each is described as a two-and-a-half-hour paper &mdash; but the schedule the
+    College publishes in its Notes to Candidates runs to 165 minutes<sup class="vf" data-v="ef3-schedule"></sup>, because labelling and reading time
+    sit outside the question time:</p>
+
+  <table class="fig">
+    <tr><th>Segment</th><th>Minutes</th><th>What happens</th></tr>
+    <tr><td>Labelling</td><td class="n">5</td><td>Booklets and answer sheet. No reading.</td></tr>
+    <tr><td>Reading time</td><td class="n">10</td><td>Reading only. No writing of any kind.</td></tr>
+    <tr><td>Multiple choice</td><td class="n">50</td><td>50 questions. One minute each.</td></tr>
+    <tr><td>Short answers</td><td class="n">100</td><td>10 questions. Ten minutes each.</td></tr>
+    <tr class="tot"><td>Per paper</td><td class="n">165</td><td>Two papers, so twice this.</td></tr>
+  </table>
+
+  <p>Each question offers <b>four options, A to D</b>, and asks for one answer. Not true or false, not
+    multiple true/false &mdash; single best answer, which is a different game and rewards a different
+    technique. Answers go on a machine-marked sheet in <b>2B pencil only</b>. A non-programmable calculator
+    is allowed; a programmable one is not.<sup class="vf" data-v="ef3-format"></sup></p>
+
+  <div class="box amb">
+    <span class="lab">The ratio worth noticing</span>
+    <p>The College's own table puts the multiple choice questions at <b>100 marks</b> and the short answers
+      at <b>400</b>.<sup class="vf" data-v="ef3-marks"></sup> So the MCQs are a fifth of the written marks and take around a third of the working
+      time &mdash; which looks like an argument for not over-investing in them, and is, right up until you
+      remember that the two components are standard-set separately. The marks ratio tells you where to
+      spend your <em>study</em>; the separate pass requirement tells you that you cannot spend nothing.</p>
+  </div>
+
+  <h2 class="sub">Preparing for a component with no past papers</h2>
+
+  <p>This is the structural problem, and it is worth stating plainly because almost nobody does.
+    <b>The College publishes past short answer questions. It does not publish past multiple choice
+    questions.</b><sup class="vf" data-v="ef3-nopastmcq"></sup> The past papers on the website are the SAQs, morning and afternoon. The examination
+    reports give pass rates for the MCQ component and no questions.</p>
+
+  <p>Two things follow. The first is that every MCQ bank you will ever use &mdash; free or paid &mdash; is
+    somebody's reconstruction or invention, written to resemble the examination rather than drawn from it.
+    They vary in quality and in calibration, and a bank that is harder or easier than the real thing will
+    mislead you about where you stand. The second is that the best free resource in this field, Alex
+    Yartsev's Deranged Physiology, is organised around past SAQs, because those are what exist. It is
+    superb and you should live in it; it is not an MCQ bank.</p>
+
+  <p>So MCQ practice has to be manufactured, and the most reliable factory is the syllabus itself.</p>
+
+  <ul class="pts">
+    <li><b>Mine the verbs</b><span>The syllabus glossary sets a depth for every objective. The shallow
+      verbs &mdash; <em>define</em>, <em>list</em>, <em>outline</em> &mdash; describe content that is
+      naturally MCQ-shaped, because it has a short determinate answer. The deep verbs point at the short
+      answers instead. Reading the syllabus with that filter tells you which material to drill as
+      questions and which to drill as structured prose.</span></li>
+    <li><b>Hunt the numbers</b><span>Normal values, thresholds, proportions, half-lives, the points at
+      which curves bend. Single best answer questions love a number, because a number makes three wrong
+      options easy to write. Keep a running list as you read, and test yourself on it rather than
+      rereading it.</span></li>
+    <li><b>Hunt the comparisons</b><span>Anywhere two things are alike but not identical &mdash; shunt and
+      low V&#775;/Q&#775;, the two arteriolar ends of the glomerulus, flow against oxygen in the hepatic
+      supply, the left ventricle against the right &mdash; there is a question waiting. The distractors
+      write themselves, which is exactly why examiners use them.</span></li>
+    <li><b>Apply the four contexts</b><span>The syllabus asks for every topic in extremes of age, extremes
+      of body size, pregnancy and critical illness. That is a multiplier you can turn on any fact you
+      already know: take a normal value and ask what it does in a neonate, in a patient of 160&nbsp;kg, at
+      term, and in septic shock. Three of those four will be examinable and at least one will catch
+      you.</span></li>
+    <li><b>Write questions, don't just answer them</b><span>The single most efficient MCQ exercise there
+      is. Writing three plausible wrong options forces you to know the boundary of a fact rather than the
+      fact, and the boundary is what the examination tests. Do it in a study group and swap.</span></li>
+  </ul>
+
+  <div class="box grn">
+    <span class="lab">Readiness, measured rather than felt</span>
+    <p>The great virtue of the MCQ component is that it produces a <em>number</em>, quickly and
+      repeatedly, which almost nothing else in your preparation does. Use it as an instrument. Sit a timed
+      set &mdash; 40 or 50 questions at a minute each, no notes, no pausing &mdash; at the same interval
+      every week or fortnight, and write the score down.</p>
+    <p>What you are looking for is not a single good score but a <b>stable trend above your target</b>
+      across several consecutive sittings, from banks you have not seen before. That is a far better basis
+      for deciding when to sit than the feeling of being ready, which is unreliable in both directions:
+      it talks confident candidates into sitting early and talks well-prepared anxious ones out of sitting
+      at all. If you are working with a supervisor of training, bring the plotted scores to the
+      conversation rather than an impression.</p>
+  </div>
+
+  <h2 class="sub">The fifty minutes themselves</h2>
+
+  <p>One minute per question is the design, not a suggestion, and the practical consequence is that there
+    is no time to be stuck. The structure that works for most people is three passes.</p>
+
+  <ol class="steps">
+    <li><b>Reading time is a planning tool.</b> Ten minutes, no writing permitted. Most candidates spend
+      all of it on the short answers, which is reasonable &mdash; but read a few of the MCQs too, because
+      your subconscious will work on them while your hand is busy, and because knowing that the paper
+      contains three calculations tells you something about how to pace it.</li>
+    <li><b>First pass: answer everything you know.</b> Move briskly. If a question has not resolved in
+      about forty seconds, put down your best current guess, mark the question number in the booklet, and
+      go. Never leave the sheet blank at this stage &mdash; you may not get back, and an unmarked bubble
+      is a guaranteed zero where a guess is a one-in-four.</li>
+    <li><b>Second pass: the marked ones.</b> You will now have time that you earned on the first pass, and
+      you will be surprised how often a question that was opaque at minute four is obvious at minute
+      thirty-five. Something you read in question 38 unlocked question 11.</li>
+    <li><b>Third pass: transcription check.</b> Not a rethink &mdash; a check that answer 37 is on line 37.
+      A single slipped row is the worst thing that can happen in this component, and it is both entirely
+      preventable and entirely invisible to you at the time.</li>
+  </ol>
+
+  <div class="box red">
+    <span class="lab">Transcribe as you go</span>
+    <p>Fill the answer sheet in blocks of five or ten as you work, not in one batch at the end. Candidates
+      run short of time and transcribe forty answers in ninety seconds, which is how rows slip. It is also
+      how people run out of time altogether and leave the sheet partly empty, having actually answered
+      every question in the booklet &mdash; the most painful way there is to fail a component you had
+      passed.</p>
+  </div>
+
+  <h2 class="sub">Fourteen rules for the minute</h2>
+
+  <ol class="steps">
+    <li><b>Read the stem twice before you look at the options.</b> The commonest error in multiple choice
+      is a confident answer to a question that was not asked. Reading is where the minute is best spent.</li>
+    <li><b>Answer it in your head first.</b> Where the question allows, decide what you think before you
+      read A to D, then look for your answer among them. Options are written to be attractive, and a mind
+      that has not committed to anything is easily led by them.</li>
+    <li><b>Read all four options anyway.</b> Even when A is obviously right. The format asks for the
+      <em>best</em> answer, not a correct one, and B is sometimes more precisely right than A. This costs
+      ten seconds and is the cheapest insurance in the paper.</li>
+    <li><b>Mark the negatives.</b> <em>Least</em>, <em>except</em>, <em>not</em>, <em>incorrect</em>.
+      Underline the word physically. A negative stem inverts everything and is the single most reliable
+      way for a well-prepared candidate to lose a mark.</li>
+    <li><b>Eliminate on paper, not in your head.</b> Strike the dead options through in the question
+      booklet. Working memory is scarce under time, and crossing out moves the bookkeeping onto the page
+      where it costs nothing.</li>
+    <li><b>Two options that say the same thing are both wrong.</b> If A and C are paraphrases, neither can
+      be the single best answer, and you have just eliminated half the paper for free.</li>
+    <li><b>Notice matched pairs and odd ones out.</b> Where two options are mirror images, the key is
+      usually one of them. Where three share a property and one does not, the odd one is often the key.
+      These are artefacts of how questions get written, and they are worth knowing &mdash; as a tiebreak,
+      never as a substitute for knowing the physiology.</li>
+    <li><b>Treat absolute words with suspicion, and only suspicion.</b> <em>Always</em>, <em>never</em>,
+      <em>all</em>, <em>only</em>, <em>alone</em>. They make an option fragile, because one exception
+      destroys it. But basic science does contain genuine absolutes, so this is a thumb on the scale, not
+      a rule.</li>
+    <li><b>When two remain, find the difference.</b> Do not reread both hoping for a feeling. Identify the
+      one clause on which they differ, and ask which the stem's exact wording favours. The difference
+      <em>is</em> the question &mdash; everything else in those two options is scenery.</li>
+    <li><b>Check the units and the magnitude of a calculated answer.</b> Calculation questions reliably
+      include double and half of the right answer, and often the figure you would get by using the right
+      formula on the wrong quantity. Reaching an option is not evidence that you reached it correctly.</li>
+    <li><b>Never leave a blank.</b> The College's examination report tells candidates to attempt every
+      question, since each is scored equally and unanswered questions forfeit marks &mdash; and no
+      negative marking is published anywhere in the College's documents.<sup class="vf" data-v="ef3-blank"></sup> With four options, a blind guess
+      is worth a quarter of a mark and a guess after eliminating one option is worth a third. Over a
+      paper, that is the difference between components.</li>
+    <li><b>Change an answer when you have a reason, and the evidence is on your side.</b> The folk rule
+      that you should stick with your first instinct is simply false. In the largest study of it, of 3,291
+      changed answers, <b>51% went from wrong to right and only 25% from right to wrong</b>; among
+      students who changed at least one answer, 54% were helped and 19% hurt.<sup class="vf" data-v="ef3-firstinstinct"></sup> The belief persists because
+      changing a right answer to a wrong one stings far more than failing to correct a wrong one, so you
+      remember it &mdash; the authors call it the first instinct fallacy. What this does not license is
+      changing answers out of anxiety. Change on a reason you can state.</li>
+    <li><b>Do not look for patterns in the letters.</b> There is no rule that the answers are evenly
+      distributed, and a run of four Cs is not evidence of anything. Candidates have talked themselves out
+      of correct answers on this basis.</li>
+    <li><b>Keep the clock in the corner of your eye.</b> You are allowed an analogue watch or clock, not a
+      digital one and certainly not a smart one. At question 25 you should have 25 minutes left. Check at
+      10, 25 and 40, and adjust once rather than continuously.</li>
+  </ol>
+
+  <h2 class="sub">Where to get questions</h2>
+
+  <p>In rough order of what I would reach for. I have no connection to any of the commercial products
+    below, no arrangement with any of them, and I have not audited the accuracy of anybody's question
+    bank &mdash; including, for that matter, my own twenty below.</p>
+
+  <h3 class="mini">The College's own, and free</h3>
+  <div class="sites">
+    <div class="site">
+      <h3>The syllabus, fifth edition</h3>
+      <p>Not a question bank, and still the most useful document you own for building questions. Every
+        question in the examination derives from it, and the verbs tell you which objectives are
+        MCQ-shaped.</p>
+      <p class="cost">Free</p>
+    </div>
+    <div class="site">
+      <h3>T-17 Notes to Candidates</h3>
+      <p>The paper structure, the timing table, what you may bring, what the pencil must be. Read it once
+        properly, months before, and again the week before. It changes.</p>
+      <p class="cost">Free</p>
+    </div>
+    <div class="site">
+      <h3>Examination reports</h3>
+      <p>Published from 2020 onward. No MCQs in them, but the examiners' comments tell you what they
+        thought of the cohort and which areas were weak &mdash; and the pass-rate figures tell you how
+        this component actually behaves.</p>
+      <p class="cost">Free</p>
+    </div>
+    <div class="site">
+      <h3>Self-Assessment of Readiness Tool</h3>
+      <p>The College's own 2026 preparation and readiness instrument. Worth using alongside your own
+        timed scores rather than instead of them.</p>
+      <p class="cost">Free</p>
+    </div>
+    <div class="site">
+      <h3>ANZCA Library guide</h3>
+      <p>The College's recommended reading list for the First Part, with most of the textbooks available
+        online through the CICM Member Portal. Kam and Power, Nunn and Lumb, West, Pappano, Vander,
+        Birkett, Katzung. If you are buying books before checking this list, stop.</p>
+      <p class="cost">Free with member login</p>
+    </div>
+  </div>
+
+  <h3 class="mini">Free, and not the College's</h3>
+  <div class="sites">
+    <div class="site">
+      <h3>Deranged Physiology</h3>
+      <p>Alex Yartsev's, and the central free resource for this examination &mdash; past SAQs by syllabus
+        topic with model answers, discussion and references, alongside a very large body of revision
+        notes. Organised around short answers rather than MCQs, which is a reason to use it for
+        understanding and find your question practice elsewhere.</p>
+      <p class="cost">Free</p>
+    </div>
+    <div class="site">
+      <h3>Open Exam Prep</h3>
+      <p>A free bank of 100 First Part MCQs with explanations, no registration. The provider states
+        plainly that these are independently written simulations rather than real or recalled items, and
+        that it has no affiliation with the College &mdash; which is the right disclosure and is more than
+        some make.</p>
+      <p class="cost">Free</p>
+    </div>
+    <div class="site">
+      <h3>LITFL and Intensive Blog</h3>
+      <p>Large free critical care libraries with exam sections. Pitched more at the Fellowship than the
+        First Part, but good for the measurement, equipment and statistics material that candidates
+        most often neglect.</p>
+      <p class="cost">Free</p>
+    </div>
+    <div class="site">
+      <h3>Your own deck</h3>
+      <p>Spaced repetition, in whatever software you like. Shared First Part decks circulate widely and
+        are of variable quality; cards you have written yourself are worth several times cards you have
+        downloaded, because the writing is the learning.</p>
+      <p class="cost">Free</p>
+    </div>
+  </div>
+
+  <h3 class="mini">Paid</h3>
+  <div class="sites">
+    <div class="site">
+      <h3>eMedici</h3>
+      <p>Over 1,400 anatomy, physiology and pharmacology items in both MCQ and SAQ format with
+        explanations, plus two mock examinations blueprinted across the syllabus with comparison against
+        the rest of the cohort. The blueprinting and the cohort comparison are the genuinely useful parts
+        &mdash; a calibrated score against other candidates is hard to get any other way.</p>
+      <p class="cost">About A$500 for three months, A$700 for six &#183; free trial</p>
+    </div>
+    <div class="site">
+      <h3>Course-linked banks</h3>
+      <p>Several Australian primary-exam courses bundle MCQ banks, some with free notes attached as a
+        front door. Quality varies and so does calibration. Before paying, ask a recent successful
+        candidate from your own unit which they used, and ask specifically whether the questions felt
+        harder or easier than the day.</p>
+      <p class="cost">Varies</p>
+    </div>
+    <div class="site">
+      <h3>FRCA and ANZCA question books</h3>
+      <p>The ANZCA library guide lists a shelf of them. The basic science overlaps heavily with the First
+        Part syllabus, which makes them useful raw material &mdash; but much of it is in true/false or
+        multiple-true/false format, which trains a different skill from single best answer. Use them for
+        content, not for rehearsal.</p>
+      <p class="cost">Purchase</p>
+    </div>
+  </div>
+
+  <div class="box red">
+    <span class="lab">One caution about banks</span>
+    <p>A question bank measures your performance on that bank. Because no real MCQs are published, nobody
+      &mdash; including the people selling them &mdash; can tell you how a bank is calibrated against the
+      examination. Use more than one, treat a sudden score improvement on a bank you have seen before as
+      recall rather than learning, and never let a bank become the syllabus. The syllabus is the
+      syllabus.</p>
+  </div>
+</div>
+
+<div class="paper">
+  <p class="ptitle">Twenty questions</p>
+  <p>Written in the shape of the examination: single best answer, four options, spread across the
+    syllabus. Every option has an explanation &mdash; the wrong ones as well as the right one, because
+    knowing why a distractor is wrong is most of what separates a candidate who scores well from one who
+    knows the same physiology and does not. Click an option to answer. The explanations stay on the page,
+    so this prints as a complete answer sheet.</p>
+
+  <p class="nojs">Twenty questions at one minute each. That is the real pace, and sitting it at the real
+    pace is the entire point of doing it at all.</p>
+
+  <div class="prow">
+    <button type="button" id="go">Start the clock</button>
+    <span class="clock" id="clk">20:00</span>
+    <button type="button" class="ghost" id="all">Reveal everything</button>
+    <span class="tally" id="tal"><b>0</b> of 20 answered</span>
+  </div>
+
+    <article class="q" id="q1">
+      <p class="qhead"><span class="qn">1</span><span class="qsec">Respiratory</span><span class="qmark"></span></p>
+      <p class="stem">A patient with dense lobar consolidation has a PaO&#8322; of 55&nbsp;mmHg on an FiO&#8322; of 0.4. Raising the FiO&#8322; to 0.8 produces almost no rise in PaO&#8322;. The best explanation is:</p>
+      <ol class="opts">
+      <li class="opt">
+        <button type="button" class="pick"><span class="lt">A</span><span class="ot">Diffusion limitation</span></button>
+        <div class="why">Diffusion limitation responds <em>well</em> to added oxygen, because raising the alveolar partial pressure raises the driving gradient across the membrane. It is also a rare cause of hypoxaemia at rest at sea level in any case &mdash; the red cell spends about three times longer in the pulmonary capillary than it needs.</div>
+      </li>
+      <li class="opt">
+        <button type="button" class="pick"><span class="lt">B</span><span class="ot">Hypoventilation</span></button>
+        <div class="why">Hypoventilation raises the PaCO&#8322; &mdash; the question gives you no reason to think it has &mdash; and hypoxaemia from hypoventilation alone is corrected dramatically by a small increase in inspired oxygen. If oxygen fixes it easily, it was never shunt.</div>
+      </li>
+      <li class="opt">
+        <button type="button" class="pick"><span class="lt">C</span><span class="ot">Low ventilation&ndash;perfusion units</span></button>
+        <div class="why">This is the distractor that matters, because low V&#775;/Q&#775; and shunt are often spoken of as if they were the same thing. They are not, and the difference is exactly this test: a low V&#775;/Q&#775; unit is still ventilated, so raising the FiO&#8322; raises its alveolar oxygen and it responds. Shunt is V&#775;/Q&#775; of zero, and it does not.</div>
+      </li>
+      <li class="opt" data-correct="1">
+        <button type="button" class="pick"><span class="lt">D</span><span class="ot">Shunt</span></button>
+        <div class="why">Correct. Shunt is blood reaching the left heart without passing a ventilated alveolus, so no amount of inspired oxygen reaches it. The small rise you do see comes from the extra dissolved oxygen in the non-shunted blood, which is why the response is poor rather than absolutely nil. Refractoriness to oxygen is the defining behaviour of shunt and the thing that separates it from every other cause of hypoxaemia.</div>
+      </li>
+      </ol>
+      <p class="revealall"><button type="button" class="rev">Show all four explanations</button></p>
+      <p class="point"><b>The point.</b> Response to oxygen is the bedside test that separates shunt from low V/Q. Nothing else distinguishes them as cleanly.</p>
+    </article>
+    <article class="q" id="q2">
+      <p class="qhead"><span class="qn">2</span><span class="qsec">Respiratory</span><span class="qmark"></span></p>
+      <p class="stem">A ventilated patient has a PaCO&#8322; of 40&nbsp;mmHg and a mixed expired CO&#8322; of 20&nbsp;mmHg. The physiological dead space fraction is approximately:</p>
+      <ol class="opts">
+      <li class="opt">
+        <button type="button" class="pick"><span class="lt">A</span><span class="ot">0.2</span></button>
+        <div class="why">This would require a mixed expired CO&#8322; of 32&nbsp;mmHg. Check the subtraction before you check the division &mdash; most wrong answers to this question are arithmetic, not physiology.</div>
+      </li>
+      <li class="opt">
+        <button type="button" class="pick"><span class="lt">B</span><span class="ot">0.33</span></button>
+        <div class="why">This is the figure for a <em>normal</em> dead space fraction, which is roughly a third, and it is the answer you will choose if you recall the normal value instead of doing the sum. The examiners know that, which is why it is here.</div>
+      </li>
+      <li class="opt" data-correct="1">
+        <button type="button" class="pick"><span class="lt">C</span><span class="ot">0.5</span></button>
+        <div class="why">Correct. The Bohr equation in its Enghoff form is V<sub>D</sub>/V<sub>T</sub> = (PaCO&#8322; &minus; P&#275;CO&#8322;) / PaCO&#8322; = (40 &minus; 20) / 40 = 0.5. Half of every breath is going nowhere useful &mdash; which in a patient on a ventilator should make you think about pulmonary embolism, excessive PEEP, low cardiac output, or simply a lot of apparatus between the carina and the Y-piece.</div>
+      </li>
+      <li class="opt">
+        <button type="button" class="pick"><span class="lt">D</span><span class="ot">0.67</span></button>
+        <div class="why">This inverts the fraction, or divides by the expired rather than the arterial value. A dead space fraction of two thirds is survivable but grim, and is prognostically important in ARDS.</div>
+      </li>
+      </ol>
+      <p class="revealall"><button type="button" class="rev">Show all four explanations</button></p>
+      <p class="point"><b>The point.</b> Know the Bohr&ndash;Enghoff equation cold. It is short, it recurs, and the normal value is a ready-made distractor.</p>
+    </article>
+    <article class="q" id="q3">
+      <p class="qhead"><span class="qn">3</span><span class="qsec">Respiratory</span><span class="qmark"></span></p>
+      <p class="stem">Which of the following shifts the oxyhaemoglobin dissociation curve to the <b>left</b>?</p>
+      <ol class="opts">
+      <li class="opt" data-correct="1">
+        <button type="button" class="pick"><span class="lt">A</span><span class="ot">Acute hypocapnia</span></button>
+        <div class="why">Correct. A fall in CO&#8322; raises pH, and through the Bohr effect raises haemoglobin's affinity for oxygen &mdash; a left shift. The other left-shifters worth having ready: hypothermia, a fall in 2,3-DPG, fetal haemoglobin, carboxyhaemoglobin and methaemoglobin.</div>
+      </li>
+      <li class="opt">
+        <button type="button" class="pick"><span class="lt">B</span><span class="ot">Hyperthermia</span></button>
+        <div class="why">Shifts it right. Heat unloads oxygen where metabolism is highest, which is the point of it. The exam-relevant reverse is the hypothermic patient, whose curve is left-shifted and whose saturation therefore overstates the oxygen actually delivered.</div>
+      </li>
+      <li class="opt">
+        <button type="button" class="pick"><span class="lt">C</span><span class="ot">An increase in 2,3-diphosphoglycerate</span></button>
+        <div class="why">Shifts it right. 2,3-DPG binds the beta chains of deoxyhaemoglobin and stabilises the tense state, unloading oxygen. It rises in chronic hypoxaemia and anaemia, and it falls in stored blood, which is why old packed cells release oxygen reluctantly for the first day or so.</div>
+      </li>
+      <li class="opt">
+        <button type="button" class="pick"><span class="lt">D</span><span class="ot">An increase in hydrogen ion concentration</span></button>
+        <div class="why">Shifts it right. This is the Bohr effect stated the other way round from the hypocapnia option, and seeing that two options are the same mechanism in opposite directions is itself a clue: in a single-best-answer question, one of a mirrored pair is usually the key.</div>
+      </li>
+      </ol>
+      <p class="revealall"><button type="button" class="rev">Show all four explanations</button></p>
+      <p class="point"><b>The point.</b> Right shift unloads oxygen: acid, heat, CO&#8322;, 2,3-DPG. Everything else is the mirror.</p>
+    </article>
+    <article class="q" id="q4">
+      <p class="qhead"><span class="qn">4</span><span class="qsec">Cardiovascular</span><span class="qmark"></span></p>
+      <p class="stem">On a left ventricular pressure&ndash;volume loop, the slope of the end-systolic pressure&ndash;volume relationship (E<sub>es</sub>) is best described as a measure of:</p>
+      <ol class="opts">
+      <li class="opt">
+        <button type="button" class="pick"><span class="lt">A</span><span class="ot">Preload</span></button>
+        <div class="why">Preload is read off the loop as the end-diastolic volume &mdash; the bottom right corner &mdash; or, more properly, as end-diastolic myocyte fibre length. It is a point on the loop, not a slope.</div>
+      </li>
+      <li class="opt">
+        <button type="button" class="pick"><span class="lt">B</span><span class="ot">Afterload</span></button>
+        <div class="why">Afterload on a pressure&ndash;volume loop is approximated by effective arterial elastance (E<sub>a</sub>), which is a different line: it runs from end-diastolic volume on the volume axis to the end-systolic point, with a negative slope. The ratio E<sub>a</sub>/E<sub>es</sub> describes ventriculo-arterial coupling and is worth knowing by name.</div>
+      </li>
+      <li class="opt" data-correct="1">
+        <button type="button" class="pick"><span class="lt">C</span><span class="ot">Contractility, essentially independently of loading conditions</span></button>
+        <div class="why">Correct, and the phrase &ldquo;load-independent&rdquo; is why this relationship matters at all. Every bedside index of contractility &mdash; ejection fraction, fractional area change, dP/dt<sub>max</sub> &mdash; moves when you change the filling or the afterload. E<sub>es</sub> largely does not, which makes it the reference standard, at the cost of needing several loops at different loading states to construct.</div>
+      </li>
+      <li class="opt">
+        <button type="button" class="pick"><span class="lt">D</span><span class="ot">Lusitropy</span></button>
+        <div class="why">Lusitropy is active relaxation, and it is described by the end-<em>diastolic</em> pressure&ndash;volume relationship and by the time constant of isovolumetric relaxation, tau. Note that this option differs from the key by one word of the loop&rsquo;s anatomy &mdash; systolic against diastolic. Read those words slowly.</div>
+      </li>
+      </ol>
+      <p class="revealall"><button type="button" class="rev">Show all four explanations</button></p>
+      <p class="point"><b>The point.</b> E<sub>es</sub> is contractility and is load-independent; E<sub>a</sub> is afterload. Their ratio is coupling.</p>
+    </article>
+    <article class="q" id="q5">
+      <p class="qhead"><span class="qn">5</span><span class="qsec">Cardiovascular</span><span class="qmark"></span></p>
+      <p class="stem">Which statement about coronary blood flow is correct?</p>
+      <ol class="opts">
+      <li class="opt">
+        <button type="button" class="pick"><span class="lt">A</span><span class="ot">Right ventricular perfusion, like left, occurs almost entirely during diastole</span></button>
+        <div class="why">The right ventricle is perfused throughout the cardiac cycle, because its intramural pressure never approaches aortic pressure. That changes in pulmonary hypertension and in right ventricular hypertrophy, where systolic wall pressure rises enough to make the right ventricle behave like the left &mdash; which is one reason the hypertrophied right ventricle is so vulnerable to systemic hypotension.</div>
+      </li>
+      <li class="opt">
+        <button type="button" class="pick"><span class="lt">B</span><span class="ot">Coronary autoregulation maintains constant flow between a mean pressure of 20 and 200&nbsp;mmHg</span></button>
+        <div class="why">The autoregulatory range is roughly 60 to 140&nbsp;mmHg. The very wide range quoted here should look wrong on sight: an option offering implausible precision across an implausible span is usually a distractor built by stretching a real number.</div>
+      </li>
+      <li class="opt">
+        <button type="button" class="pick"><span class="lt">C</span><span class="ot">Coronary flow is maximal at the peak of aortic pressure</span></button>
+        <div class="why">Left coronary flow is at its <em>minimum</em>, and may briefly reverse, in early systole &mdash; precisely when aortic pressure is highest. This is the most counter-intuitive fact in coronary physiology and therefore a favourite.</div>
+      </li>
+      <li class="opt" data-correct="1">
+        <button type="button" class="pick"><span class="lt">D</span><span class="ot">Left ventricular subendocardial perfusion occurs almost entirely during diastole</span></button>
+        <div class="why">Correct. Subendocardial wall tension in systole exceeds coronary perfusion pressure, so that layer is perfused in diastole alone. Three consequences follow and all three are examinable: tachycardia shortens diastole and therefore ischaemia risk rises with rate; aortic diastolic pressure, not mean pressure, is the perfusion pressure; and the subendocardium is the first layer to infarct.</div>
+      </li>
+      </ol>
+      <p class="revealall"><button type="button" class="rev">Show all four explanations</button></p>
+      <p class="point"><b>The point.</b> Diastole perfuses the left subendocardium. Rate, diastolic pressure and wall tension all follow from that one fact.</p>
+    </article>
+    <article class="q" id="q6">
+      <p class="qhead"><span class="qn">6</span><span class="qsec">Cardiovascular</span><span class="qmark"></span></p>
+      <p class="stem">A euvolaemic patient receives a rapid 500&nbsp;mL colloid bolus. On a Guyton venous return curve, the immediate effect is:</p>
+      <ol class="opts">
+      <li class="opt" data-correct="1">
+        <button type="button" class="pick"><span class="lt">A</span><span class="ot">A rightward shift, with an increase in mean systemic filling pressure</span></button>
+        <div class="why">Correct. A bolus adds to the stressed volume, which raises mean systemic filling pressure &mdash; the x-intercept of the curve, and the pressure that would exist everywhere in the circulation if the heart stopped. The curve shifts right in parallel, so at any given right atrial pressure venous return is greater. Noradrenaline does something similar by converting unstressed to stressed volume without adding a millilitre, which is a comparison worth being able to make out loud.</div>
+      </li>
+      <li class="opt">
+        <button type="button" class="pick"><span class="lt">B</span><span class="ot">An increase in the slope of the curve, from reduced resistance to venous return</span></button>
+        <div class="why">The slope of the venous return curve is the reciprocal of the resistance to venous return, and a fluid bolus does not change that resistance. A vasodilator or a change in blood viscosity would.</div>
+      </li>
+      <li class="opt">
+        <button type="button" class="pick"><span class="lt">C</span><span class="ot">A leftward shift, with a reduction in mean systemic filling pressure</span></button>
+        <div class="why">This is what haemorrhage does, or what venodilatation does. The direction is simply inverted here, and inverted-direction options are the most common single type of distractor in cardiovascular physiology.</div>
+      </li>
+      <li class="opt">
+        <button type="button" class="pick"><span class="lt">D</span><span class="ot">No change until cardiac output rises</span></button>
+        <div class="why">This reverses cause and effect. The venous return curve describes the circulation's willingness to deliver blood to the heart; the cardiac function curve describes what the heart does with it. Output changes because the two curves now intersect at a new point, not the other way round.</div>
+      </li>
+      </ol>
+      <p class="revealall"><button type="button" class="rev">Show all four explanations</button></p>
+      <p class="point"><b>The point.</b> Volume and venoconstriction both raise mean systemic filling pressure. Resistance changes the slope; volume moves the intercept.</p>
+    </article>
+    <article class="q" id="q7">
+      <p class="qhead"><span class="qn">7</span><span class="qsec">Pharmacology</span><span class="qmark"></span></p>
+      <p class="stem">A drug has a volume of distribution of 0.6&nbsp;L/kg and a clearance of 4&nbsp;L/h in a 70&nbsp;kg patient. Its elimination half-life is closest to:</p>
+      <ol class="opts">
+      <li class="opt">
+        <button type="button" class="pick"><span class="lt">A</span><span class="ot">3.5 hours</span></button>
+        <div class="why">This is the answer you get by halving correctly but forgetting the 0.693, or by using 35&nbsp;L rather than 42&nbsp;L for the volume. Do the volume first and write it down.</div>
+      </li>
+      <li class="opt" data-correct="1">
+        <button type="button" class="pick"><span class="lt">B</span><span class="ot">7 hours</span></button>
+        <div class="why">Correct. V<sub>d</sub> = 0.6 &times; 70 = 42&nbsp;L. t&#189; = 0.693 &times; V<sub>d</sub> / CL = 0.693 &times; 42 / 4 = 7.3 hours. The relationship worth carrying into the room is that half-life is a <em>derived</em> quantity: it rises when the volume of distribution rises and falls when clearance rises, and in critical illness both change at once, often in opposite directions.</div>
+      </li>
+      <li class="opt">
+        <button type="button" class="pick"><span class="lt">C</span><span class="ot">10.5 hours</span></button>
+        <div class="why">This drops the 0.693 and simply divides 42 by 4. That is the time constant, not the half-life &mdash; a real quantity, and one about 1.44 times longer.</div>
+      </li>
+      <li class="opt">
+        <button type="button" class="pick"><span class="lt">D</span><span class="ot">14 hours</span></button>
+        <div class="why">Double the key. A doubling or halving of the right answer is deliberately placed in almost every calculation question, to catch a single misplaced factor of two.</div>
+      </li>
+      </ol>
+      <p class="revealall"><button type="button" class="rev">Show all four explanations</button></p>
+      <p class="point"><b>The point.</b> t&#189; = 0.693 V<sub>d</sub>/CL. The time constant, V<sub>d</sub>/CL, is the sibling answer sitting next to it.</p>
+    </article>
+    <article class="q" id="q8">
+      <p class="qhead"><span class="qn">8</span><span class="qsec">Pharmacology</span><span class="qmark"></span></p>
+      <p class="stem">Context-sensitive half time is best defined as:</p>
+      <ol class="opts">
+      <li class="opt">
+        <button type="button" class="pick"><span class="lt">A</span><span class="ot">The elimination half-life following a single bolus dose</span></button>
+        <div class="why">That is simply the elimination half-life, and the existence of a separate term tells you it must mean something else. Watch for options that redefine the thing being asked about as something simpler &mdash; it is the commonest way a plausible-looking distractor is built.</div>
+      </li>
+      <li class="opt" data-correct="1">
+        <button type="button" class="pick"><span class="lt">B</span><span class="ot">The time for the plasma concentration to fall by half after stopping an infusion of stated duration</span></button>
+        <div class="why">Correct, and the &ldquo;stated duration&rdquo; is the context. It is not a constant: for fentanyl it lengthens steeply as the infusion runs, because drug returns from peripheral compartments faster than it is cleared; for remifentanil it stays at a few minutes however long you infuse, because clearance by plasma esterases is so fast that the peripheral compartments never dominate. That contrast is the reason the concept exists.</div>
+      </li>
+      <li class="opt">
+        <button type="button" class="pick"><span class="lt">C</span><span class="ot">The time taken to reach half the eventual steady-state concentration</span></button>
+        <div class="why">That is a property of the approach to steady state, which takes about one half-life to reach 50% and four to five to get near enough to 100%. It describes the start of an infusion; context-sensitive half time describes the end of one.</div>
+      </li>
+      <li class="opt">
+        <button type="button" class="pick"><span class="lt">D</span><span class="ot">Half the time constant of the effect compartment</span></button>
+        <div class="why">The effect-site equilibration constant, k<sub>e0</sub>, and its half-time describe the lag between plasma and effect site &mdash; why propofol takes a couple of minutes to work rather than acting instantly. Related, genuinely examinable, and not this.</div>
+      </li>
+      </ol>
+      <p class="revealall"><button type="button" class="rev">Show all four explanations</button></p>
+      <p class="point"><b>The point.</b> Context-sensitive half time is about <em>stopping</em> an infusion, and it depends on how long the infusion ran.</p>
+    </article>
+    <article class="q" id="q9">
+      <p class="qhead"><span class="qn">9</span><span class="qsec">Nervous system</span><span class="qmark"></span></p>
+      <p class="stem">Which of the following produces the <b>greatest</b> increase in cerebral blood flow?</p>
+      <ol class="opts">
+      <li class="opt">
+        <button type="button" class="pick"><span class="lt">A</span><span class="ot">A fall in PaO&#8322; from 100 to 70&nbsp;mmHg</span></button>
+        <div class="why">Almost nothing happens. Cerebral blood flow is remarkably indifferent to oxygen tension until it falls below about 50 to 60&nbsp;mmHg, at which point the curve turns sharply upward. Between 100 and 70 you are still on the flat part.</div>
+      </li>
+      <li class="opt">
+        <button type="button" class="pick"><span class="lt">B</span><span class="ot">A rise in mean arterial pressure from 70 to 90&nbsp;mmHg</span></button>
+        <div class="why">Within the autoregulatory range, conventionally about 50 to 150&nbsp;mmHg, flow is held near constant by myogenic adjustment of arteriolar tone. In chronic hypertension the whole curve shifts right, which is why a &ldquo;normal&rdquo; pressure can be an ischaemic one.</div>
+      </li>
+      <li class="opt">
+        <button type="button" class="pick"><span class="lt">C</span><span class="ot">A fall in PaCO&#8322; from 40 to 30&nbsp;mmHg</span></button>
+        <div class="why">This <em>reduces</em> cerebral blood flow, by roughly 1 to 2&nbsp;mL per 100&nbsp;g per minute for each mmHg, which is the entire basis of hyperventilation for raised intracranial pressure and the entire reason it is dangerous. The direction is wrong, which disqualifies it however large the effect.</div>
+      </li>
+      <li class="opt" data-correct="1">
+        <button type="button" class="pick"><span class="lt">D</span><span class="ot">A fall in PaO&#8322; from 60 to 50&nbsp;mmHg</span></button>
+        <div class="why">Correct. This is the knee of the curve, and below it cerebral blood flow rises steeply &mdash; roughly doubling by a PaO&#8322; of 30&nbsp;mmHg. Note that the question asks which change is greatest, not which is real, so both oxygen options are true statements of direction and only one is on the steep part. Questions asking for the greatest effect are nearly always testing where you sit on a non-linear curve.</div>
+      </li>
+      </ol>
+      <p class="revealall"><button type="button" class="rev">Show all four explanations</button></p>
+      <p class="point"><b>The point.</b> CO&#8322; is the most potent minute-to-minute regulator, but oxygen below 60&nbsp;mmHg produces the largest single rise.</p>
+    </article>
+    <article class="q" id="q10">
+      <p class="qhead"><span class="qn">10</span><span class="qsec">Nervous system</span><span class="qmark"></span></p>
+      <p class="stem">Which best indicates adequate recovery from non-depolarising neuromuscular blockade?</p>
+      <ol class="opts">
+      <li class="opt">
+        <button type="button" class="pick"><span class="lt">A</span><span class="ot">A train-of-four count of four with visible fade</span></button>
+        <div class="why">Visible fade at a count of four means residual block, by definition. A count of four tells you only that all four twitches are present, which occurs at a train-of-four ratio somewhere around 0.4 and upwards &mdash; nowhere near recovery.</div>
+      </li>
+      <li class="opt">
+        <button type="button" class="pick"><span class="lt">B</span><span class="ot">Sustained tetanus at 20&nbsp;Hz for five seconds</span></button>
+        <div class="why">The classical clinical test is tetanus at 50&nbsp;Hz, not 20, and even 50&nbsp;Hz sustained for five seconds can be present with a ratio as low as about 0.7. An option that alters one number in an otherwise familiar statement is a standard construction; read the numbers, not the shape of the sentence.</div>
+      </li>
+      <li class="opt" data-correct="1">
+        <button type="button" class="pick"><span class="lt">C</span><span class="ot">A train-of-four ratio of 0.9 or greater, objectively measured</span></button>
+        <div class="why">Correct, and both halves of that phrase carry weight. The threshold is 0.9 because pharyngeal coordination and the hypoxic ventilatory response remain impaired below it; and it must be <em>measured</em>, because the human eye and hand cannot detect fade above a ratio of about 0.4 to 0.5. That is the single most important point here: subjective assessment is not merely less accurate, it is blind in exactly the range that matters.</div>
+      </li>
+      <li class="opt">
+        <button type="button" class="pick"><span class="lt">D</span><span class="ot">Double-burst stimulation with no palpable fade</span></button>
+        <div class="why">Double-burst stimulation is a genuine improvement on train-of-four for detecting fade by hand, and it is still subjective &mdash; it lowers the blind spot to a ratio of about 0.6, rather than abolishing it. A better wrong answer than it looks, which is the point.</div>
+      </li>
+      </ol>
+      <p class="revealall"><button type="button" class="rev">Show all four explanations</button></p>
+      <p class="point"><b>The point.</b> 0.9, objectively measured. The eye cannot see fade in the range where residual block still does harm.</p>
+    </article>
+    <article class="q" id="q11">
+      <p class="qhead"><span class="qn">11</span><span class="qsec">Measurement</span><span class="qmark"></span></p>
+      <p class="stem">An arterial line trace shows a tall, narrow systolic peak with prominent oscillations after the dicrotic notch, and the measured systolic pressure exceeds a simultaneous cuff reading. The most likely cause is:</p>
+      <ol class="opts">
+      <li class="opt" data-correct="1">
+        <button type="button" class="pick"><span class="lt">A</span><span class="ot">Excessively long or compliant connecting tubing</span></button>
+        <div class="why">Correct. Lengthening the fluid column lowers the natural frequency of the system towards the harmonics of the arterial waveform, so it resonates: systolic pressure is overestimated, diastolic underestimated, and the trace rings. Mean pressure stays roughly accurate, which is why mean is the number to trust when a trace looks wrong.</div>
+      </li>
+      <li class="opt">
+        <button type="button" class="pick"><span class="lt">B</span><span class="ot">A small air bubble in the tubing</span></button>
+        <div class="why">Air bubbles cause <em>over</em>damping, not under. They absorb energy and blunt the trace, narrowing the pulse pressure &mdash; which is the opposite appearance to the one described. This is the most frequently chosen wrong answer to this question, because bubbles are the thing everybody has been told to look for.</div>
+      </li>
+      <li class="opt">
+        <button type="button" class="pick"><span class="lt">C</span><span class="ot">A clot partially occluding the catheter tip</span></button>
+        <div class="why">Also overdamping &mdash; a slurred upstroke, a lost dicrotic notch and an underestimated systolic pressure. Note that two of the four options describe overdamping, and they cannot both be right in a single-best-answer question. Spotting that pair halves the paper before you have thought about the physics.</div>
+      </li>
+      <li class="opt">
+        <button type="button" class="pick"><span class="lt">D</span><span class="ot">The transducer positioned above the level of the phlebostatic axis</span></button>
+        <div class="why">A levelling error shifts every pressure in the trace by the same amount, about 0.74&nbsp;mmHg per centimetre of height, and does not distort the waveform at all. The question describes a change in shape, so a pure offset cannot explain it.</div>
+      </li>
+      </ol>
+      <p class="revealall"><button type="button" class="rev">Show all four explanations</button></p>
+      <p class="point"><b>The point.</b> Rings and overshoots: underdamped. Slurred and flattened: overdamped. Either way, the mean is the surviving number.</p>
+    </article>
+    <article class="q" id="q12">
+      <p class="qhead"><span class="qn">12</span><span class="qsec">Acid&ndash;base</span><span class="qmark"></span></p>
+      <p class="stem">Arterial blood gas: pH 7.28, PaCO&#8322; 30&nbsp;mmHg, HCO&#8322;&#8315; 14&nbsp;mmol/L. Sodium 140, chloride 100&nbsp;mmol/L. The best interpretation is:</p>
+      <ol class="opts">
+      <li class="opt">
+        <button type="button" class="pick"><span class="lt">A</span><span class="ot">Anion gap 26: a raised anion gap metabolic acidosis with an additional respiratory alkalosis</span></button>
+        <div class="why">This is the answer you give if you reason that a PaCO&#8322; of 30 is low and therefore abnormal, without testing it against the expected value. Low CO&#8322; in a metabolic acidosis is the compensation; it becomes a second disorder only when it falls outside the predicted range.</div>
+      </li>
+      <li class="opt" data-correct="1">
+        <button type="button" class="pick"><span class="lt">B</span><span class="ot">Anion gap 26: a raised anion gap metabolic acidosis with appropriate respiratory compensation</span></button>
+        <div class="why">Correct. The gap is 140 &minus; (100 + 14) = 26, clearly raised. Winter&rsquo;s formula gives an expected PaCO&#8322; of (1.5 &times; 14) + 8 = 29, plus or minus 2 &mdash; and the measured value is 30. So the respiratory response is exactly what it should be, and there is no second disorder. Compensation is never complete and never an overshoot: if the CO&#8322; had been 22 you would be looking at an additional respiratory alkalosis.</div>
+      </li>
+      <li class="opt">
+        <button type="button" class="pick"><span class="lt">C</span><span class="ot">Anion gap 12: a normal anion gap metabolic acidosis</span></button>
+        <div class="why">Twelve is the upper end of the normal range and is here because it is the number most candidates half-remember. The arithmetic gives 26. Note also that this option is internally consistent &mdash; <em>if</em> the gap were 12 the conclusion would follow &mdash; which is what makes a good distractor dangerous.</div>
+      </li>
+      <li class="opt">
+        <button type="button" class="pick"><span class="lt">D</span><span class="ot">Anion gap 26: a raised anion gap metabolic acidosis with inadequate compensation</span></button>
+        <div class="why">Inadequate compensation would mean a PaCO&#8322; above about 31, and would suggest a coexisting respiratory acidosis &mdash; a tiring patient, or one being under-ventilated. At 30 the response is appropriate, and calling it inadequate would send you looking for a problem that is not there.</div>
+      </li>
+      </ol>
+      <p class="revealall"><button type="button" class="rev">Show all four explanations</button></p>
+      <p class="point"><b>The point.</b> Calculate the gap, then test the compensation against a formula. Never judge a PaCO&#8322; by whether it looks low.</p>
+    </article>
+    <article class="q" id="q13">
+      <p class="qhead"><span class="qn">13</span><span class="qsec">Renal</span><span class="qmark"></span></p>
+      <p class="stem">Tubuloglomerular feedback is best described as:</p>
+      <ol class="opts">
+      <li class="opt">
+        <button type="button" class="pick"><span class="lt">A</span><span class="ot">Atrial natriuretic peptide&ndash;mediated afferent arteriolar constriction</span></button>
+        <div class="why">ANP does the opposite: it dilates the afferent and constricts the efferent, which raises glomerular filtration and is how it promotes natriuresis. It is also hormonal rather than a local feedback loop, so it fails the definition twice over.</div>
+      </li>
+      <li class="opt">
+        <button type="button" class="pick"><span class="lt">B</span><span class="ot">Juxtaglomerular cell sensing of distal sodium, altering efferent arteriolar tone</span></button>
+        <div class="why">Two errors, each individually plausible. Juxtaglomerular cells are the renin-secreting granular cells of the afferent arteriole and are baroreceptors, not chemoreceptors; and the arteriole acted on in tubuloglomerular feedback is the afferent, not the efferent. An option that is half right in two different ways is harder to reject than one that is wholly wrong.</div>
+      </li>
+      <li class="opt">
+        <button type="button" class="pick"><span class="lt">C</span><span class="ot">Baroreceptor sensing within the efferent arteriole, adjusting renin release</span></button>
+        <div class="why">The renal baroreceptor mechanism is real and is one of the three triggers for renin release, along with sympathetic stimulation and the macula densa signal &mdash; but it sits in the <em>afferent</em> arteriole, and it is a separate mechanism from tubuloglomerular feedback.</div>
+      </li>
+      <li class="opt" data-correct="1">
+        <button type="button" class="pick"><span class="lt">D</span><span class="ot">Macula densa sensing of distal chloride delivery, altering afferent arteriolar tone</span></button>
+        <div class="why">Correct. The macula densa sits at the end of the thick ascending limb and senses sodium chloride through the NKCC2 transporter &mdash; functionally, chloride delivery. A rise in delivery, which implies a glomerular filtration rate that is too high, triggers adenosine release and afferent arteriolar constriction, bringing it back down. It is a negative feedback loop that stabilises filtration in a single nephron, and it is the reason loop diuretics, which block NKCC2, blind the sensor and abolish the response.</div>
+      </li>
+      </ol>
+      <p class="revealall"><button type="button" class="rev">Show all four explanations</button></p>
+      <p class="point"><b>The point.</b> Macula densa, chloride, adenosine, afferent constriction. Loop diuretics switch the sensor off.</p>
+    </article>
+    <article class="q" id="q14">
+      <p class="qhead"><span class="qn">14</span><span class="qsec">Fluids</span><span class="qmark"></span></p>
+      <p class="stem">One litre of 0.9% sodium chloride is infused into a euvolaemic adult. Once distribution is complete, approximately how much remains in the intravascular compartment?</p>
+      <ol class="opts">
+      <li class="opt">
+        <button type="button" class="pick"><span class="lt">A</span><span class="ot">100&nbsp;mL</span></button>
+        <div class="why">This is roughly the figure for a litre of 5% dextrose, which distributes through total body water &mdash; about 42&nbsp;L in a 70&nbsp;kg adult, of which plasma is around 3&nbsp;L. It is here to catch the candidate who knows the principle but attaches it to the wrong fluid.</div>
+      </li>
+      <li class="opt" data-correct="1">
+        <button type="button" class="pick"><span class="lt">B</span><span class="ot">250&nbsp;mL</span></button>
+        <div class="why">Correct. Isotonic saline distributes through the extracellular fluid and essentially nowhere else, because the sodium load holds it there. The extracellular compartment is about 14&nbsp;L, of which plasma is roughly a quarter, so about a quarter of the litre stays intravascular. This single number is the reason crystalloid resuscitation requires volumes that surprise people, and the reason it reliably produces oedema.</div>
+      </li>
+      <li class="opt">
+        <button type="button" class="pick"><span class="lt">C</span><span class="ot">500&nbsp;mL</span></button>
+        <div class="why">Half is more than any crystalloid achieves and less than a colloid achieves transiently. A middle value placed between two defensible answers is a common construction &mdash; it looks like a compromise, and compromise is not a physiological mechanism.</div>
+      </li>
+      <li class="opt">
+        <button type="button" class="pick"><span class="lt">D</span><span class="ot">750&nbsp;mL</span></button>
+        <div class="why">This approaches the initial retention of a colloid in a patient with an intact glycocalyx, which is a condition most critically ill patients do not meet. In sepsis, colloid behaves a great deal more like crystalloid than the textbook figure suggests.</div>
+      </li>
+      </ol>
+      <p class="revealall"><button type="button" class="rev">Show all four explanations</button></p>
+      <p class="point"><b>The point.</b> Saline fills the extracellular space; plasma is a quarter of it. A quarter of the bag stays where you wanted it.</p>
+    </article>
+    <article class="q" id="q15">
+      <p class="qhead"><span class="qn">15</span><span class="qsec">Endocrine</span><span class="qmark"></span></p>
+      <p class="stem">The principal mechanism by which cortisol supports arterial blood pressure in critical illness is:</p>
+      <ol class="opts">
+      <li class="opt">
+        <button type="button" class="pick"><span class="lt">A</span><span class="ot">Direct positive inotropy at the cardiac myocyte</span></button>
+        <div class="why">Cortisol has no meaningful direct inotropic action. Cardiac output does often improve when corticosteroid is given in septic shock, but by way of restored vascular tone and reduced vasodilatation, not by making the myocyte contract harder.</div>
+      </li>
+      <li class="opt">
+        <button type="button" class="pick"><span class="lt">B</span><span class="ot">Mineralocorticoid activity alone, through renal sodium retention</span></button>
+        <div class="why">Cortisol does have mineralocorticoid activity &mdash; hydrocortisone roughly as much again as its glucocorticoid potency &mdash; and sodium retention contributes. But it is far too slow to explain a haemodynamic response measured in hours, and the word <em>alone</em> makes an otherwise partly true option false. Absolute qualifiers deserve suspicion.</div>
+      </li>
+      <li class="opt" data-correct="1">
+        <button type="button" class="pick"><span class="lt">C</span><span class="ot">A permissive effect, enhancing vascular responsiveness to circulating catecholamines</span></button>
+        <div class="why">Correct, and &ldquo;permissive&rdquo; is the term to know: cortisol does little to vascular tone by itself, but without it catecholamines work poorly. It maintains adrenoceptor expression and post-receptor signalling, and it restrains the induction of nitric oxide synthase. This is why adrenal insufficiency presents as catecholamine-resistant shock, and why the response to hydrocortisone can look so disproportionate to the dose.</div>
+      </li>
+      <li class="opt">
+        <button type="button" class="pick"><span class="lt">D</span><span class="ot">Increased endothelial nitric oxide production</span></button>
+        <div class="why">The direction is inverted. Cortisol <em>suppresses</em> inducible nitric oxide synthase; increased nitric oxide would cause vasodilatation and lower the blood pressure, which is a mechanism of septic shock rather than a treatment for it.</div>
+      </li>
+      </ol>
+      <p class="revealall"><button type="button" class="rev">Show all four explanations</button></p>
+      <p class="point"><b>The point.</b> Permissive, not direct. Adrenal insufficiency looks like catecholamine resistance.</p>
+    </article>
+    <article class="q" id="q16">
+      <p class="qhead"><span class="qn">16</span><span class="qsec">Haematology</span><span class="qmark"></span></p>
+      <p class="stem">A patient with inherited antithrombin deficiency is most likely to show a reduced anticoagulant response to:</p>
+      <ol class="opts">
+      <li class="opt" data-correct="1">
+        <button type="button" class="pick"><span class="lt">A</span><span class="ot">Unfractionated heparin</span></button>
+        <div class="why">Correct. Heparin is not itself an anticoagulant in any useful sense: it binds antithrombin and accelerates its inhibition of thrombin and factor Xa roughly a thousandfold. Without adequate antithrombin there is little to accelerate, which is the mechanism of so-called heparin resistance. Acquired antithrombin deficiency, from sepsis, nephrotic syndrome, liver disease or simply prolonged heparin exposure, is far commoner than the inherited form and should be the first thought when the APTT will not move.</div>
+      </li>
+      <li class="opt">
+        <button type="button" class="pick"><span class="lt">B</span><span class="ot">Warfarin</span></button>
+        <div class="why">Warfarin inhibits vitamin K epoxide reductase and so reduces synthesis of factors II, VII, IX and X &mdash; and, relevantly, of proteins C and S. It has nothing to do with antithrombin, and the response is unaffected.</div>
+      </li>
+      <li class="opt">
+        <button type="button" class="pick"><span class="lt">C</span><span class="ot">Dabigatran</span></button>
+        <div class="why">A direct thrombin inhibitor, binding thrombin itself without any cofactor. Antithrombin concentration is irrelevant to it &mdash; which is precisely why direct inhibitors are an answer to heparin resistance.</div>
+      </li>
+      <li class="opt">
+        <button type="button" class="pick"><span class="lt">D</span><span class="ot">Rivaroxaban</span></button>
+        <div class="why">A direct factor Xa inhibitor, and again antithrombin-independent. Note that the three wrong options share a property: none of them needs a cofactor. When three options have something in common and one does not, the odd one out is usually the key.</div>
+      </li>
+      </ol>
+      <p class="revealall"><button type="button" class="rev">Show all four explanations</button></p>
+      <p class="point"><b>The point.</b> Heparin is a catalyst, not an anticoagulant. No antithrombin, no effect.</p>
+    </article>
+    <article class="q" id="q17">
+      <p class="qhead"><span class="qn">17</span><span class="qsec">Gastrointestinal</span><span class="qmark"></span></p>
+      <p class="stem">Which statement about hepatic blood supply is correct?</p>
+      <ol class="opts">
+      <li class="opt">
+        <button type="button" class="pick"><span class="lt">A</span><span class="ot">The portal vein supplies about 25% of flow and about 50% of oxygen delivery</span></button>
+        <div class="why">The flow figure is inverted. This option is built from the right numbers attached to the wrong vessel, and the oxygen half happens to be correct &mdash; which makes it feel right on a quick reading. Attach each number to its vessel deliberately.</div>
+      </li>
+      <li class="opt">
+        <button type="button" class="pick"><span class="lt">B</span><span class="ot">The portal vein supplies about 75% of flow and about 75% of oxygen delivery</span></button>
+        <div class="why">The flow figure is right and the oxygen figure is not. If portal blood delivered three quarters of the oxygen as well, there would be little reason for a dual supply, and no reason for the centrilobular zone to be the first to die in shock.</div>
+      </li>
+      <li class="opt">
+        <button type="button" class="pick"><span class="lt">C</span><span class="ot">The hepatic artery supplies about 75% of flow and about 50% of oxygen delivery</span></button>
+        <div class="why">The vessels are swapped. Three of these four options are permutations of the same two numbers, which is a sign that the question is testing one specific fact and that guessing between superficially similar options is a poor strategy.</div>
+      </li>
+      <li class="opt" data-correct="1">
+        <button type="button" class="pick"><span class="lt">D</span><span class="ot">The portal vein supplies about 75% of flow and about 50% of oxygen delivery</span></button>
+        <div class="why">Correct. The portal vein carries roughly three quarters of hepatic blood flow but, being post-capillary blood from the gut, it is partly desaturated, so it delivers only about half the oxygen. The hepatic artery contributes the remaining quarter of flow and the other half of the oxygen. The practical consequence is the hepatic arterial buffer response: when portal flow falls, adenosine accumulates and the hepatic artery dilates to compensate &mdash; but the reverse does not happen, so a fall in hepatic arterial flow is not buffered at all.</div>
+      </li>
+      </ol>
+      <p class="revealall"><button type="button" class="rev">Show all four explanations</button></p>
+      <p class="point"><b>The point.</b> Three quarters of the flow, half the oxygen. The buffer response works one way only.</p>
+    </article>
+    <article class="q" id="q18">
+      <p class="qhead"><span class="qn">18</span><span class="qsec">Obstetrics</span><span class="qmark"></span></p>
+      <p class="stem">Which physiological change is correct at term in normal pregnancy?</p>
+      <ol class="opts">
+      <li class="opt" data-correct="1">
+        <button type="button" class="pick"><span class="lt">A</span><span class="ot">Cardiac output rises by about 40% and systemic vascular resistance falls</span></button>
+        <div class="why">Correct. Output rises 30 to 50% by the early third trimester, through both stroke volume and rate, while systemic vascular resistance falls by 20 to 30% &mdash; progesterone, relaxin and the low-resistance placental bed between them. Blood pressure therefore falls slightly in the second trimester despite the increased output, which is worth being able to explain rather than merely recall.</div>
+      </li>
+      <li class="opt">
+        <button type="button" class="pick"><span class="lt">B</span><span class="ot">Cardiac output rises by about 40% and systemic vascular resistance rises</span></button>
+        <div class="why">Internally contradictory, unless blood pressure rose dramatically, which it does not. When two options differ by a single word, that word is the question &mdash; here, the direction of the resistance change.</div>
+      </li>
+      <li class="opt">
+        <button type="button" class="pick"><span class="lt">C</span><span class="ot">Plasma volume rises by about 45%, matched by a proportionate rise in red cell mass</span></button>
+        <div class="why">The plasma figure is right and the matching is wrong. Red cell mass rises only 20 to 30%, so the haematocrit falls: the physiological anaemia of pregnancy, which is a dilutional state rather than a deficiency, and which incidentally reduces blood viscosity in a useful direction.</div>
+      </li>
+      <li class="opt">
+        <button type="button" class="pick"><span class="lt">D</span><span class="ot">Functional residual capacity rises by about 20%</span></button>
+        <div class="why">It <em>falls</em> by about 20% at term, as the diaphragm is displaced upward, while oxygen consumption rises by a similar proportion. A smaller oxygen store being consumed faster is the reason a pregnant woman desaturates within seconds of apnoea, and that single inversion is probably the most clinically consequential fact in this question.</div>
+      </li>
+      </ol>
+      <p class="revealall"><button type="button" class="rev">Show all four explanations</button></p>
+      <p class="point"><b>The point.</b> Output up, resistance down, FRC down, oxygen consumption up. The last two together are why intubation is urgent.</p>
+    </article>
+    <article class="q" id="q19">
+      <p class="qhead"><span class="qn">19</span><span class="qsec">Microbiology</span><span class="qmark"></span></p>
+      <p class="stem">Resistance conferred by an extended-spectrum beta-lactamase is best explained by:</p>
+      <ol class="opts">
+      <li class="opt">
+        <button type="button" class="pick"><span class="lt">A</span><span class="ot">Alteration of penicillin binding proteins</span></button>
+        <div class="why">This is the mechanism of methicillin resistance in <em>Staphylococcus aureus</em>, through mecA and PBP2a, and of penicillin resistance in pneumococcus. It is a target change rather than an enzymatic one, and no beta-lactamase inhibitor touches it.</div>
+      </li>
+      <li class="opt">
+        <button type="button" class="pick"><span class="lt">B</span><span class="ot">Loss of outer membrane porins alone</span></button>
+        <div class="why">Porin loss reduces drug entry and contributes genuinely to resistance in <em>Klebsiella</em> and <em>Pseudomonas</em>, particularly to carbapenems when combined with an AmpC or an ESBL. The word <em>alone</em> is what makes it wrong, and you should expect that word to be doing work wherever it appears.</div>
+      </li>
+      <li class="opt" data-correct="1">
+        <button type="button" class="pick"><span class="lt">C</span><span class="ot">Plasmid-encoded enzymatic hydrolysis of the beta-lactam ring</span></button>
+        <div class="why">Correct. Extended-spectrum beta-lactamases are plasmid-borne enzymes that hydrolyse penicillins, third-generation cephalosporins and aztreonam, and are characteristically inhibited by clavulanate and by tazobactam. Two consequences follow: they do not confer carbapenem resistance, which is why a carbapenem is the usual answer; and being on a plasmid they transfer horizontally between organisms, which is why they spread as an infection-control problem rather than only as a pharmacological one.</div>
+      </li>
+      <li class="opt">
+        <button type="button" class="pick"><span class="lt">D</span><span class="ot">Upregulation of efflux pumps alone</span></button>
+        <div class="why">Again real, again contributory, again not the defining mechanism. Note that this option and the porin option are constructed identically &mdash; a true contributory mechanism plus the word <em>alone</em>. Matched-pair construction usually means neither is the key.</div>
+      </li>
+      </ol>
+      <p class="revealall"><button type="button" class="rev">Show all four explanations</button></p>
+      <p class="point"><b>The point.</b> ESBL: plasmid, enzyme, inhibited by clavulanate, beaten by carbapenems.</p>
+    </article>
+    <article class="q" id="q20">
+      <p class="qhead"><span class="qn">20</span><span class="qsec">Statistics</span><span class="qmark"></span></p>
+      <p class="stem">A randomised trial reports 90-day mortality of 30% in the control arm and 24% in the intervention arm. The number needed to treat is:</p>
+      <ol class="opts">
+      <li class="opt">
+        <button type="button" class="pick"><span class="lt">A</span><span class="ot">4</span></button>
+        <div class="why">This is 1 divided by the <em>relative</em> risk reduction of 0.20, and it is the single most common error in this calculation. Number needed to treat is built from the absolute difference, never the relative one.</div>
+      </li>
+      <li class="opt" data-correct="1">
+        <button type="button" class="pick"><span class="lt">B</span><span class="ot">17</span></button>
+        <div class="why">Correct. The absolute risk reduction is 30% &minus; 24% = 6%, and the number needed to treat is 1/0.06 = 16.7, conventionally rounded up to 17. It is worth noticing what the same result sounds like stated the other way: a relative risk reduction of 20%, which is the figure a press release would use and which describes exactly the same effect. Knowing that one number flatters and the other informs is most of what research methods is for in this examination.</div>
+      </li>
+      <li class="opt">
+        <button type="button" class="pick"><span class="lt">C</span><span class="ot">20</span></button>
+        <div class="why">This is the relative risk reduction expressed as a percentage, offered as though it were a count of patients. Mixing up the units of the answer is a distractor in its own right.</div>
+      </li>
+      <li class="opt">
+        <button type="button" class="pick"><span class="lt">D</span><span class="ot">25</span></button>
+        <div class="why">This is 1/0.04, which is the answer if you subtract carelessly. Sanity-check an NNT against the absolute difference: a 6% difference must give something between 16 and 17, and nothing else.</div>
+      </li>
+      </ol>
+      <p class="revealall"><button type="button" class="rev">Show all four explanations</button></p>
+      <p class="point"><b>The point.</b> NNT is 1 over the <em>absolute</em> risk reduction. The relative figure always sounds better.</p>
+    </article>
+
+  <div class="score" id="sc">
+    <h3>Your twenty</h3>
+    <p class="big" id="scbig">&mdash;</p>
+    <p id="scsay"></p>
+    <p>One set of twenty is a reading, not a verdict &mdash; far too few questions to say anything
+      reliable about where you stand. Its value is as one point on a line. Write the score and the date
+      down, do the same thing in a fortnight with questions you have not seen, and look at the direction
+      of travel.</p>
+    <p>And go back over every question you got right by elimination rather than by knowing. Those are
+      the ones that will not be there next time.</p>
+  </div>
+</div>
+
+<div class="pad" style="padding-top:26px">
+  <div class="box grn">
+    <span class="lab">The short version</span>
+    <p>Fifty questions, fifty minutes, four options, one answer, pencil. You must clear the standard on
+      this component separately, so it cannot be ignored &mdash; and it is the smaller component by marks,
+      so it should not be where your year goes. Read the stem twice, read every option once, eliminate on
+      paper, never leave a blank, and change an answer when you have a reason. Practise timed, write the
+      scores down, and let the line rather than the feeling decide when you sit.</p>
+  </div>
+
+  <p>The next piece in this series goes to the short answers, which is where the marks are, where most
+    candidates lose them, and where the College has published a great deal more to work from.</p>
+</div>
+
+<div class="pad" style="padding-top:6px">
+  <div class="challenge">
+    <h2>Challenge for you</h2>
+    <p class="ask">Which of the twenty was wrong, unfair, or badly written?</p>
+    <p>I would genuinely rather know. These are my questions, not the College's, and nobody who writes
+      twenty of anything gets twenty right &mdash; if an option is ambiguous, or two of them are defensible,
+      or I have simply got a number wrong, tell me and I will correct it on the page and say so on the
+      corrections page.</p>
+    <p>And if you have sat this component: what surprised you about it on the day?</p>
+    <p><a class="btn" href="mailto:icuandyou@icloud.com?subject=CICM%20First%20Part%20No.%203%20-%20the%20MCQ%20paper&body=The%20question%20number%2C%20and%20what%20is%20wrong%20with%20it%3A%0D%0A%0D%0A%0D%0AWhat%20surprised%20me%20about%20the%20MCQ%20component%20on%20the%20day%3A%0D%0A%0D%0A%0D%0AWhat%20I%20would%20like%20this%20series%20to%20cover%20next%3A%0D%0A%0D%0A%0D%0A---%0D%0A%0D%0AName%20%28optional%29%3A%0D%0A%0D%0A---%0D%0A%0D%0AThinking%20about%20this%20ICU%20AND%20YOU%20post%20overall%20%E2%80%94%20was%20it%20useful%20to%20you%2C%20or%20would%20it%20be%20useful%20to%20others%3F%0D%0A">Send your answer</a></p>
+    <p class="fallback">How you are credited is entirely your call &mdash; by name, by initials, or not at all &mdash; whether you write the piece or I do, and whether I quote you or simply say who sent something in; nothing of yours goes up with your name on it unless you have said yes.</p>
+    <p class="fallback">The button opens a reply straight to me. If your device blocks it, write to
+      <a href="mailto:icuandyou@icloud.com">icuandyou@icloud.com</a> instead.</p>
+  </div>
+</div>
+
+<footer>
+  <span class="firstpub">First published October 2026</span>
+  <p class="subline">Two emails a week &mdash; the Friday newsletter for all subscribers, and, for clinical subscribers,
+    the mind map and puzzles the moment they go up on Tuesday. Occasional announcements of new
+    features as they arrive. What went up and why it mattered, the best of your replies, and
+    original feature stories, news and views. <a href="https://joinlist.com/f/5adad2d6">Come and join us</a>.</p>
+  <a class="home" href="./">&larr; &nbsp;All of ICU AND YOU</a><br>
+  ICU AND YOU &nbsp;&#183;&nbsp; Exam focus &nbsp;&#183;&nbsp; CICM First Part No. 3<br>
+  The twenty questions here are written by me in the style of the examination. They are not past
+  questions, not recalled questions, and not endorsed by anybody.<br>
+  Not affiliated with, endorsed by, or produced on behalf of the College of Intensive Care Medicine of
+  Australia and New Zealand. Examination format, fees, eligibility and standard setting are set by the
+  college and change between sittings &mdash; always confirm the current position on the CICM website and in
+  the college's own published examination reports before relying on anything here.<br>
+  <span class="mine">Views my own, not those of NSW Health or any other organisation. No identifiable
+  patients &mdash; scenarios are constructed or combined for teaching. <a href="about.html">More</a>.</span>
+</footer>
+
+</div>
+<script>
+(function () {
+  var qs = [].slice.call(document.querySelectorAll('article.q'));
+  var tal = document.getElementById('tal');
+  var sc = document.getElementById('sc');
+  var scbig = document.getElementById('scbig');
+  var scsay = document.getElementById('scsay');
+  var done = 0, right = 0;
+
+  function update() {
+    tal.innerHTML = '<b>' + done + '</b> of ' + qs.length + ' answered'
+      + (done ? ' &#183; ' + right + ' correct' : '');
+    if (done === qs.length) {
+      sc.classList.add('on');
+      scbig.textContent = right + ' out of ' + qs.length;
+      var pc = Math.round(right / qs.length * 100);
+      scsay.textContent = pc >= 85
+        ? 'That is a comfortable score on a small sample. The useful question now is how many of them you knew outright.'
+        : pc >= 70
+        ? 'Around the range where most candidates sit when they are getting close. Look at which sections the misses clustered in.'
+        : pc >= 50
+        ? 'Plenty to work with. Read every explanation, including the ones for options you never considered.'
+        : 'Early days, and that is information rather than bad news. Work from the explanations back to the syllabus objective behind each question.';
+    }
+  }
+
+  function showAll(q) {
+    [].slice.call(q.querySelectorAll('li.opt')).forEach(function (li) { li.classList.add('show'); });
+    q.classList.add('allshown');
+  }
+
+  qs.forEach(function (q) {
+    var opts = [].slice.call(q.querySelectorAll('li.opt'));
+    opts.forEach(function (li) {
+      li.querySelector('.pick').addEventListener('click', function () {
+        if (q.classList.contains('done')) return;
+        var ok = li.hasAttribute('data-correct');
+        li.classList.add('chosen', 'show', ok ? 'key' : 'bad');
+        if (!ok) {
+          var key = q.querySelector('li.opt[data-correct]');
+          key.classList.add('key', 'show');
+        }
+        q.classList.add('done', ok ? 'gotit' : 'missed');
+        done++; if (ok) right++;
+        update();
+      });
+    });
+    q.querySelector('.rev').addEventListener('click', function () {
+      opts.forEach(function (li) {
+        if (li.hasAttribute('data-correct')) li.classList.add('key');
+        else if (!li.classList.contains('chosen')) li.classList.add('bad');
+      });
+      showAll(q);
+      if (!q.classList.contains('done')) q.classList.add('done', 'revealed');
+    });
+  });
+
+  document.getElementById('all').addEventListener('click', function () {
+    qs.forEach(function (q) {
+      var k = q.querySelector('li.opt[data-correct]');
+      k.classList.add('key');
+      [].slice.call(q.querySelectorAll('li.opt')).forEach(function (li) {
+        if (!li.hasAttribute('data-correct') && !li.classList.contains('chosen')) li.classList.add('bad');
+      });
+      showAll(q);
+      if (!q.classList.contains('done')) q.classList.add('revealed');
+      q.classList.add('done');
+    });
+    tal.innerHTML = 'All explanations shown';
+  });
+
+  var t = 20 * 60, iv = null, clk = document.getElementById('clk'), go = document.getElementById('go');
+  function paint() {
+    var m = Math.floor(Math.abs(t) / 60), s = Math.abs(t) % 60;
+    clk.textContent = (t < 0 ? '+' : '') + m + ':' + (s < 10 ? '0' : '') + s;
+    clk.classList.toggle('over', t < 0);
+  }
+  go.addEventListener('click', function () {
+    if (iv) { clearInterval(iv); iv = null; go.textContent = 'Restart the clock'; t = 20 * 60; paint(); return; }
+    go.textContent = 'Stop';
+    iv = setInterval(function () { t--; paint(); }, 1000);
+  });
+  paint();
+  update();
+})();
+</script>
+<script src="verification.js"></script>
+<script data-goatcounter="https://icuandyou.goatcounter.com/count"
+        async src="//gc.zgo.at/count.js"></script>
+</body>
+</html>

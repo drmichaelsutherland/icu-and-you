@@ -1582,9 +1582,25 @@
    "badge": "Mnemonic",
    "link_label": "Open",
    "blurb": "CARDIO STRESS \u2014 why the heart of a forty-year-old fails. Chemo, including the checkpoint inhibitor myocarditis that arrives in the first month and kills a third of the people who get it. Alcohol, on a threshold its own authors call arbitrary. Rate, which may be the cause rather than the consequence. Drugs, Infection, and Other \u2014 obstetric, sarcoid, valves, inherited, iron. And STRESS, which is takotsubo and is mostly not this patient."
+  },
+  {
+   "file": "exam-cicm-first-03-the-mcq-paper.html",
+   "series": "cicm-first",
+   "colour": "pine",
+   "number": "3",
+   "title": "Fifty minutes, fifty questions",
+   "topic": "Any time",
+   "slug": "standing",
+   "week": false,
+   "standing": true
   }
  ],
  "latest": [
+  {
+   "file": "exam-cicm-first-03-the-mcq-paper.html",
+   "colour": "pine",
+   "label": "Exam focus \u00b7 CICM First Part 3 \u00b7 Fifty minutes, fifty questions"
+  },
   {
    "file": "mnemonic-59-cardio-stress.html",
    "colour": "olive",
@@ -1604,11 +1620,6 @@
    "file": "aphorism-41-throw-everything.html",
    "colour": "plum",
    "label": "Aphorism 41 \u00b7 When they\u2019re young, throw everything at them"
-  },
-  {
-   "file": "mind-map-37-early-middle-age.html",
-   "colour": "teal",
-   "label": "Mind Map 37 \u00b7 Early middle age"
   }
  ],
  "topten": [
