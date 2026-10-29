@@ -925,7 +925,7 @@
   {
    "file": "mnemonic-56-school.html",
    "series": "mnemonic",
-   "colour": "teal",
+   "colour": "olive",
    "number": "56",
    "title": "SCHOOL",
    "topic": "The school-age child",
@@ -968,7 +968,7 @@
   {
    "file": "superquiz-63-school-age.html",
    "series": "superquiz",
-   "colour": "fern",
+   "colour": "wine",
    "number": "63",
    "title": "The school-age child",
    "topic": "The school-age child",
@@ -1593,9 +1593,28 @@
    "slug": "standing",
    "week": false,
    "standing": true
+  },
+  {
+   "file": "superquiz-66-early-middle-age.html",
+   "series": "superquiz",
+   "colour": "wine",
+   "number": "66",
+   "title": "Early middle age",
+   "topic": "Early middle age",
+   "slug": "early-middle-age",
+   "week": true,
+   "pos": 6,
+   "badge": "Superquiz",
+   "link_label": "Take the quiz",
+   "blurb": "Five open-book questions \u2014 the ketoacidosis with a blood sugar of 9.8, the coronary dissection that must not be stented or lysed, the myocarditis that arrives in the first month of a cancer drug, what actually fills a cardiac ICU at thirty-five, and the first psychosis that turns out not to be one. Three correct earns a certificate."
   }
  ],
  "latest": [
+  {
+   "file": "superquiz-66-early-middle-age.html",
+   "colour": "wine",
+   "label": "Superquiz 66 \u00b7 Early middle age"
+  },
   {
    "file": "exam-cicm-first-03-the-mcq-paper.html",
    "colour": "pine",
@@ -1615,11 +1634,6 @@
    "file": "superpuzzle-54-early-middle-age-fillable.html",
    "colour": "rust",
    "label": "Superpuzzle 54 \u00b7 Early middle age"
-  },
-  {
-   "file": "aphorism-41-throw-everything.html",
-   "colour": "plum",
-   "label": "Aphorism 41 \u00b7 When they\u2019re young, throw everything at them"
   }
  ],
  "topten": [

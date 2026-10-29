@@ -419,6 +419,68 @@ def main():
                     f"{got[0]!r} / {got[1]!r} in the script — a reader choosing it would "
                     f"send the wrong answer")
 
+    # ---- a certificate must not be printed from inside a hidden box -----
+    # October 2026, and it had been broken on every superquiz since the
+    # series began. The print rules hid .pad with display:none !important
+    # and then set .result to display:block !important -- but .result sits
+    # INSIDE .pad, and no declaration on a child can override display:none
+    # on an ancestor. So printing a superquiz certificate, which is the only
+    # thing these pages print and the whole point of the series, produced a
+    # blank sheet. Every structural check passed, because nothing was
+    # malformed; it showed up only on rendering a page to PDF and looking
+    # at it.
+    #
+    # The fix is to hide ol.qs rather than the whole .pad. The check below
+    # is deliberately narrow: any page carrying a certificate must not hide
+    # the container its certificate lives in. It recurs the moment somebody
+    # builds the next superquiz from the last one, which is how every
+    # superquiz is built.
+    for f in content:
+        s = (HERE / f).read_text(encoding="utf-8")
+        if 'class="cert"' not in s:
+            continue
+        pm = re.search(r"@media\s+print\s*\{(.*?)\n\s*\}", s, re.S)
+        if not pm:
+            problems.append(f"{f}: has a certificate but no @media print block, "
+                            f"so it will print the whole page")
+            continue
+        block = pm.group(1)
+        for rule in re.findall(r"([^{}]+)\{([^{}]*)\}", block):
+            sel, decl = rule[0], rule[1].replace(" ", "")
+            if "display:none" not in decl:
+                continue
+            for hidden in (x.strip() for x in sel.split(",")):
+                if hidden in (".pad", ".result", ".sheet", "body"):
+                    problems.append(
+                        f"{f}: its print rules hide {hidden!r}, which contains the "
+                        f"certificate — a child cannot override display:none on an "
+                        f"ancestor, so the certificate will print blank")
+        if "display:block" not in block.replace(" ", ""):
+            problems.append(f"{f}: print block never shows .result, so nothing will print")
+
+    # ---- a page's colour must be its series' colour ---------------------
+    # October 2026. A series is identified on the landing page by its colour
+    # and by whether the dot is solid or striped, so a page carrying another
+    # series' colour is wearing the wrong badge -- and nothing else notices,
+    # because the colour is a valid class, the dot renders, and the page
+    # links correctly. Two had drifted, both from the school-age fortnight
+    # and both plainly copy-paste: mnemonic-56-school.html was teal, the
+    # mind map colour, and superquiz-63-school-age.html was fern, which
+    # belongs to Anaesthetists' Alley.
+    #
+    # Checked against the series registry in page_topic.json, which is the
+    # single statement of what each series looks like. A page whose series
+    # is not in the registry is left alone; the GROUPS check below catches
+    # that case instead.
+    reg_colour = {k: v[1] for k, v in m.get("series", {}).items() if len(v) > 1}
+    for p in m.get("pages", []):
+        s, c = p.get("series"), p.get("colour")
+        if s in reg_colour and c != reg_colour[s]:
+            problems.append(
+                f"{p['file']}: colour is {c!r} but series {s!r} is registered as "
+                f"{reg_colour[s]!r} — the page will show another series' colour "
+                f"on the landing page")
+
     # ---- the GROUPS map must know every series --------------------------
     # The landing page carries the series-to-group map twice: once as the
     # buttons in the menu, and once as a JavaScript object the "All of ..."
