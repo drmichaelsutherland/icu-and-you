@@ -447,7 +447,15 @@
     if(!cur) return null;
     var es = entriesAt(+cur.dataset.x, +cur.dataset.y);
     var m = es.filter(function(g){ return g.d===dir; });
-    return m.length ? m[0] : (es[0]||null);
+    if(m.length) return m[0];
+    // Nothing here runs in the current direction, so the direction is stale:
+    // the reader clicked straight into a square instead of onto a clue, and
+    // dir is still whatever it was last. Adopt the direction of the run they
+    // are actually in, and keep it. Without this the fallback quietly works
+    // until the first crossing square, where the stale direction takes over
+    // and the cursor jumps into the other word in the middle of an answer.
+    if(es.length){ dir = es[0].d; return es[0]; }
+    return null;
   }
   function light(){
     Array.prototype.forEach.call(document.querySelectorAll(".c input"),
