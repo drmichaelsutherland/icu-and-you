@@ -419,6 +419,96 @@ def main():
                     f"{got[0]!r} / {got[1]!r} in the script — a reader choosing it would "
                     f"send the wrong answer")
 
+    # ---- a crossword's script must describe the grid on its own page ----
+    # October 2026, reported by a reader who filled in Superpuzzle 54 and got
+    # an emailed answer sheet with her letters scattered across the wrong
+    # clues. Superpuzzle 54's fillable page had been built from 53 and kept
+    # 53's GEOM array -- the grid, the clues and the numbering were 54's own,
+    # only the JavaScript geometry was the previous puzzle's. The two happen
+    # to have 171 squares each, so TOTAL matched and the "n of 171 squares
+    # filled" counter behaved perfectly.
+    #
+    # Nothing structural saw it. The page was valid, every link resolved, the
+    # clue list was right and the grid rendered correctly. It showed up only
+    # when somebody typed answers in and read what came back.
+    #
+    # Same family as the ITEMS check above: where a page states its geometry
+    # twice -- once as the squares in the markup, once as an array in the
+    # script -- the two statements must agree. Here the markup is the truth,
+    # because that is what the reader sees and clicks.
+    #
+    # Also checks maxlength, which is the second fault the same report turned
+    # up: maxlength="1" makes the browser swallow a keystroke aimed at a
+    # square that already holds a letter, so the letter is lost and the
+    # cursor does not advance. It bites at every crossing.
+    for f in content:
+        s = (HERE / f).read_text(encoding="utf-8")
+        gm = re.search(r"var GEOM = (\[.*?\]);", s, re.S)
+        if not gm:
+            continue
+        try:
+            geom = json.loads(gm.group(1))
+        except ValueError as exc:
+            problems.append(f"{f}: the GEOM array in its script is not valid JSON ({exc})")
+            continue
+
+        cells, nums = set(), {}
+        for cm in re.finditer(
+                r'<div class="c"[^>]*>(?:<span class="n">(\d+)</span>)?<input id="i(\d+)_(\d+)"', s):
+            n, x, y = cm.group(1), int(cm.group(2)), int(cm.group(3))
+            cells.add((x, y))
+            if n:
+                nums[(x, y)] = int(n)
+
+        if ' maxlength="1"' in s:
+            problems.append(
+                f'{f}: its squares carry maxlength="1" — the browser will swallow a '
+                f"keystroke aimed at a square that already holds a letter, so the "
+                f"letter is lost and the cursor does not advance")
+
+        true = []
+        for d, (dx, dy) in (("A", (1, 0)), ("D", (0, 1))):
+            for (x, y) in sorted(cells, key=lambda p: (p[1], p[0])):
+                if (x - dx, y - dy) in cells:
+                    continue
+                run, cx, cy = [], x, y
+                while (cx, cy) in cells:
+                    run.append((cx, cy)); cx += dx; cy += dy
+                if len(run) >= 2:
+                    true.append(((nums.get((x, y)), d), run))
+
+        gmap = {(g["n"], g["d"]): [tuple(p) for p in g["c"]] for g in geom}
+        tmap = dict(true)
+        for k in sorted(set(gmap) | set(tmap), key=lambda k: (k[1], k[0] or 0)):
+            if gmap.get(k) == tmap.get(k):
+                continue
+            n, d = k
+            if k not in tmap:
+                problems.append(
+                    f"{f}: its script has an entry {n}{d} that the grid has not got — "
+                    f"the script describes a different puzzle")
+            elif k not in gmap:
+                problems.append(
+                    f"{f}: the grid has an entry {n}{d} that its script never names — "
+                    f"those squares cannot be reached or read back")
+            else:
+                problems.append(
+                    f"{f}: entry {n}{d} starts at {tmap[k][0]} in the grid but at "
+                    f"{gmap[k][0]} in the script — answers will be typed into and "
+                    f"reported from the wrong squares")
+
+        tm = re.search(r"var TOTAL = (\d+);", s)
+        if tm and int(tm.group(1)) != len(cells):
+            problems.append(f"{f}: TOTAL is {tm.group(1)} but the grid has "
+                            f"{len(cells)} squares")
+
+        clue_keys = {(int(cm.group(1)), cm.group(2))
+                     for cm in re.finditer(r'<li data-n="(\d+)" data-d="([AD])"', s)}
+        if clue_keys and clue_keys != set(gmap):
+            for k in sorted(clue_keys ^ set(gmap)):
+                problems.append(f"{f}: clue {k[0]}{k[1]} appears in the clue list or the "
+                                f"script but not in both")
+
     # ---- a certificate must not be printed from inside a hidden box -----
     # October 2026, and it had been broken on every superquiz since the
     # series began. The print rules hid .pad with display:none !important
