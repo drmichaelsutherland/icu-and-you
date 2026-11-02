@@ -380,6 +380,17 @@ def build_teaser(m):
         cls = "tt" if ln.get("emphasis") else "tm"
         out.append(f'        <span class="{cls}"><b>{e(ln["date"])}</b> '
                    f'&nbsp;&mdash;&nbsp; {e(ln["what"])}</span>')
+    # An optional standing note under the dates, for anything that is about
+    # the rhythm rather than about a particular day — a slower stretch over
+    # the holidays, say. Set "note" in the manifest, with an optional
+    # "note_lead" that is rendered in bold in front of it. Added November
+    # 2026; without it the only way to say "we are still here, just further
+    # apart" was to invent a dated line for something that has no date.
+    note = t.get("note")
+    if note:
+        lead = t.get("note_lead")
+        inner = (f'<b>{e(lead)}</b> {e(note)}' if lead else e(note))
+        out.append(f'        <span class="tn">{inner}</span>')
     out.append('      </p>')
     return "\n".join(out)
 

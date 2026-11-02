@@ -1657,10 +1657,6 @@
   "label": "Coming next",
   "lines": [
    {
-    "date": "Friday 30th October",
-    "what": "Newsletter (subscribers only)"
-   },
-   {
     "date": "Tuesday 3rd November",
     "what": "Early middle age, part two",
     "emphasis": true
@@ -1673,8 +1669,19 @@
     "date": "Tuesday 10th November",
     "what": "Late middle age, part one",
     "emphasis": true
+   },
+   {
+    "date": "Tuesday 24th November",
+    "what": "Late middle age, part two",
+    "emphasis": true
+   },
+   {
+    "date": "Friday 27th November",
+    "what": "Newsletter (subscribers only)"
    }
-  ]
+  ],
+  "note_lead": "Holiday pace from 6 November.",
+  "note": "New material keeps arriving, just further apart \u2014 the full fortnightly programme resumes at the end of January."
  },
  "donation_promo": true,
  "donation": {
