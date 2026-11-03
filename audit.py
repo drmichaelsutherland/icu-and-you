@@ -786,6 +786,27 @@ def main():
             f'{{"file": "{p["file"]}", "colour": "{p["colour"]}", '
             f'"label": "{label}{num} · {p["title"]}"}}')
 
+    # ---- the lay series stays out of the clinical archive -------------------
+    # The general-public pages carry no topic button on purpose: a lay reader
+    # asking about their own illness should not be handed the registrar's
+    # reading on it. The same reasoning applies to links in the body, and it is
+    # easy to forget when a fortnight's pages are written together.
+    CLINICAL_PREFIX = ("superquiz-", "mnemonic-", "journal-club-", "podcast-", "mind-map-",
+                       "bare-bones-", "med-students-", "drugstore-", "exam-", "superpuzzle-",
+                       "aphorism-", "procedures-", "registrars-", "myths-")
+    for pg in m["pages"]:
+        if pg["series"] != "public":
+            continue
+        f = HERE / pg["file"]
+        if not f.exists():
+            continue
+        for href in sorted(set(re.findall(r'href="([^"#?]+\.html)"',
+                                          f.read_text(encoding="utf-8")))):
+            if href.startswith(CLINICAL_PREFIX):
+                problems.append(
+                    f'{pg["file"]}: links to {href}. The general-public series '
+                    f"deliberately does not send a lay reader into the clinical archive")
+
     # ---- the drug menu ----------------------------------------------------
     # drug-menu.html is generated from the "drugs" and "also" fields on the
     # drugstore entries, for the same reason the Procedures shelf is generated:

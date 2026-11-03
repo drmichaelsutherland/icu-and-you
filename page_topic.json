@@ -1657,9 +1657,28 @@
    "drugs": ["Pantoprazole"],
    "also": ["Proton pump inhibitors", "Somac"],
    "blurb": "The drug almost every patient is on and almost nobody decided to start. Who is actually at risk, why the prophylactic dose is the low one, the bleeding ulcer regimen and the fact that neither use is registered in Australia, the label that contraindicates it in cirrhosis while we all give it anyway, and a one-hour half-life that suppresses acid for a day. Every number on the page checked."
+  },
+  {
+   "file": "public-04-early-middle-age.html",
+   "series": "public",
+   "colour": "ocean",
+   "number": "4",
+   "title": "It was always going to be a Tuesday",
+   "topic": "Early middle age",
+   "slug": "early-middle-age",
+   "week": true,
+   "pos": 11,
+   "badge": "For the general public",
+   "link_label": "Open",
+   "blurb": "Written for anyone, not for clinicians. What actually brings people between thirty and forty-five into intensive care \u2014 almost never the thing they are afraid of. The fifteen years in which it is quietly decided, the four numbers most people in this band have never had measured, three things worth knowing before you need them, and what to do if somebody you love is admitted. With clear take-home messages."
   }
  ],
  "latest": [
+  {
+   "file": "public-04-early-middle-age.html",
+   "colour": "ocean",
+   "label": "For the general public 4 \u00b7 It was always going to be a Tuesday"
+  },
   {
    "file": "drugstore-04-pantoprazole.html",
    "colour": "mulberry",
@@ -1679,11 +1698,6 @@
    "file": "superquiz-66-early-middle-age.html",
    "colour": "wine",
    "label": "Superquiz 66 \u00b7 Early middle age"
-  },
-  {
-   "file": "exam-cicm-first-03-the-mcq-paper.html",
-   "colour": "pine",
-   "label": "Exam focus \u00b7 CICM First Part 3 \u00b7 Fifty minutes, fifty questions"
   }
  ],
  "topten": [

@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="en-AU">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ICU AND YOU · For the general public No. 4 — It was always going to be a Tuesday</title>
+<meta name="description" content="For the general public No. 4: what actually brings people between thirty and forty-five into intensive care, the fifteen years in which it is decided, three things worth knowing in advance, and what to do if somebody you love is admitted.">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="alternate icon" href="/favicon.ico" sizes="any">
+<link rel="apple-touch-icon" href="/icon-180.png">
+<meta name="theme-color" content="#1B2A33">
+<meta property="og:site_name" content="ICU AND YOU">
+<meta property="og:type" content="website">
+<meta property="og:title" content="ICU AND YOU · For the general public No. 4 — It was always going to be a Tuesday">
+<meta property="og:description" content="What actually brings people between thirty and forty-five into intensive care. It is almost never the thing you are afraid of.">
+<meta property="og:image" content="https://icuandyou.com/share-card.png">
+<meta name="twitter:card" content="summary_large_image">
+<style>
+  :root{
+    --paper:#FAFCFD; --ink:#1B262B; --muted:#5E6E75; --rule:#D5E1E7;
+    --rose:#1F6F8B; --rosetint:#EAF3F7;
+    --sky:#2E6E8E; --skytint:#E7F1F6;
+    --rust:#A8442A; --rusttint:#F9EDE7;
+  }
+  *{box-sizing:border-box}
+  body{margin:0;background:#E7EFF3;color:var(--ink);
+    font:400 17px/1.64 'Iowan Old Style','Palatino Linotype',Palatino,Georgia,serif;
+    -webkit-text-size-adjust:100%;}
+  .sheet{max-width:800px;margin:0 auto;background:var(--paper);
+    box-shadow:0 1px 40px rgba(42,31,35,.10);}
+
+  header.top{padding:42px 40px 28px;border-bottom:2px solid var(--rose)}
+  .topseries,.tophome{display:inline-block;margin:0 0 16px 9px;padding:7px 16px;border-radius:20px;
+    border:1px solid currentColor;opacity:.62;text-decoration:none;color:inherit;
+    font:600 11.5px 'Helvetica Neue',Arial,sans-serif;letter-spacing:.09em;
+    text-transform:uppercase;transition:opacity .12s ease}
+  .tophome{margin-left:0}
+  .topseries:hover,.tophome:hover{opacity:1}
+  .eyebrow{font:500 11.5px/1 'Helvetica Neue',Arial,sans-serif;letter-spacing:.24em;
+    text-transform:uppercase;color:var(--muted);margin:0 0 14px}
+  .eyebrow a.mast,.eyebrow a.serlink{color:inherit;text-decoration:none;
+    border-bottom:1px solid transparent}
+  .eyebrow a.mast:hover,.eyebrow a.serlink:hover{border-bottom-color:currentColor}
+  h1{font-size:35px;line-height:1.14;margin:0 0 8px;font-weight:400;letter-spacing:-.012em}
+  .kicker{color:var(--muted);margin:0;font-size:16.5px}
+
+  .pad{padding:34px 40px}
+  .plain p{font-size:17.5px;line-height:1.68}
+  p{margin:0 0 17px}
+  .lede{font-size:20.5px;line-height:1.5;margin:0 0 22px}
+
+  h2.sub{font:600 12px 'Helvetica Neue',Arial,sans-serif;letter-spacing:.2em;
+    text-transform:uppercase;color:var(--rose);margin:30px 0 15px;
+    padding-bottom:8px;border-bottom:1px solid var(--rule)}
+
+  ul.pts{list-style:none;margin:0 0 18px;padding:0}
+  ul.pts li{display:flex;gap:13px;padding:11px 0;border-bottom:1px solid #E6EDF1;
+    font-size:16.5px;line-height:1.5}
+  ul.pts li:last-child{border-bottom:0}
+  ul.pts b{flex:0 0 156px;font:600 14.5px 'Helvetica Neue',Arial,sans-serif;
+    color:var(--rose);line-height:1.4}
+
+  .say{margin:0 0 18px;padding:22px 26px;background:var(--skytint);
+    border-left:4px solid var(--sky);border-radius:0 8px 8px 0}
+  .say .lab{display:block;font:600 11px 'Helvetica Neue',Arial,sans-serif;
+    letter-spacing:.18em;text-transform:uppercase;color:var(--sky);margin:0 0 9px}
+  .say p:last-child{margin:0}
+
+  .note{margin:0 0 18px;padding:20px 24px;background:var(--rosetint);
+    border-left:4px solid var(--rose);border-radius:0 8px 8px 0}
+  .note p:last-child{margin:0}
+
+  .urgent{margin:0 0 20px;padding:24px 28px;background:#FDF0EA;
+    border:2px solid var(--rust);border-radius:10px}
+  .urgent .lab{display:block;font:600 11.5px 'Helvetica Neue',Arial,sans-serif;
+    letter-spacing:.18em;text-transform:uppercase;color:var(--rust);margin:0 0 11px}
+  .urgent ul{margin:0 0 12px;padding:0 0 0 20px}
+  .urgent li{margin:0 0 7px;font-size:16.5px;line-height:1.5}
+  .urgent p:last-child{margin:0}
+
+  .welcome{margin:0 0 24px;padding:22px 26px;background:#F2F7F4;
+    border-left:4px solid #2E7D5B;border-radius:0 8px 8px 0}
+  .welcome .lab{display:block;font:600 11px 'Helvetica Neue',Arial,sans-serif;
+    letter-spacing:.18em;text-transform:uppercase;color:#2E7D5B;margin:0 0 9px}
+  .welcome p:last-child{margin:0}
+
+  .challenge{margin:0;padding:28px 32px;background:var(--rusttint);border-left:5px solid var(--rust)}
+  .challenge h2{font:600 12px 'Helvetica Neue',Arial,sans-serif;letter-spacing:.2em;
+    text-transform:uppercase;color:var(--rust);margin:0 0 13px}
+  .ask{font-size:19px;line-height:1.5;font-style:italic;margin:0 0 15px}
+  .btn{display:inline-block;margin:6px 0 12px;padding:15px 30px;background:var(--rust);
+    color:#FDF6F5;text-decoration:none;border-radius:30px;font-style:normal;
+    font:600 15px 'Helvetica Neue',Arial,sans-serif;letter-spacing:.03em}
+  .btn:hover{background:#7F3220}
+  .btn:focus-visible{outline:3px solid var(--sky);outline-offset:3px}
+  .fallback{font:400 13.5px 'Helvetica Neue',Arial,sans-serif;color:var(--muted);margin:0}
+  .fallback a{color:var(--rust)}
+
+  .subline{margin:0 0 14px;padding:0 0 13px;border-bottom:1px solid rgba(0,0,0,.09);
+    font:400 14.5px/1.55 'Iowan Old Style','Palatino Linotype',Palatino,Georgia,serif;
+    max-width:56ch;margin-left:auto;margin-right:auto}
+  .subline a{font-weight:500;border-bottom:1px solid currentColor;
+    text-decoration:none;color:inherit}
+  .firstpub{display:block;margin:0 0 10px;padding-bottom:9px;
+    border-bottom:1px solid currentColor;border-color:rgba(0,0,0,.09);
+    font:400 12px 'Helvetica Neue',Arial,sans-serif;letter-spacing:.06em;opacity:.72}
+
+  footer{padding:24px 40px 42px;border-top:1px solid var(--rule);
+    font:400 13px 'Helvetica Neue',Arial,sans-serif;color:var(--muted);
+    text-align:center;line-height:1.7}
+  .home{display:inline-block;margin:0 0 14px;padding:8px 18px;border-radius:20px;
+    border:1px solid var(--rule);background:#EEF4F7;color:var(--rose);text-decoration:none;
+    font:600 12.5px 'Helvetica Neue',Arial,sans-serif;letter-spacing:.05em}
+  .home:hover{background:var(--rose);border-color:var(--rose);color:#FBFDFE}
+  .mine{display:inline-block;margin:9px 0 0;opacity:.78;font-size:.94em}
+  .srcs{font-size:12.5px;line-height:1.6}
+  .srcs a{color:inherit}
+
+  @media (max-width:640px){
+    header.top,.pad,footer{padding-left:20px;padding-right:20px}
+    .challenge{padding:22px 20px}
+    h1{font-size:27px} body{font-size:16.5px} .lede{font-size:18.5px} .ask{font-size:17.5px}
+    ul.pts li{flex-direction:column;gap:3px} ul.pts b{flex:none}
+  }
+
+  .takehome{margin:28px 0 0;padding:26px 30px;background:#F2F7F4;
+    border:2px solid #2E7D5B;border-radius:10px}
+  .takehome .lab{display:block;font:600 11.5px 'Helvetica Neue',Arial,sans-serif;
+    letter-spacing:.18em;text-transform:uppercase;color:#2E7D5B;margin:0 0 14px}
+  .takehome ol{list-style:none;counter-reset:th;margin:0;padding:0}
+  .takehome li{counter-increment:th;position:relative;padding:12px 0 12px 44px;
+    border-bottom:1px solid #DCE8E1;font-size:16.5px;line-height:1.55}
+  .takehome li:last-child{border-bottom:0;padding-bottom:0}
+  .takehome li::before{content:counter(th);position:absolute;left:0;top:12px;
+    width:28px;height:28px;border-radius:50%;background:#2E7D5B;color:#F2F7F4;
+    font:600 13px 'Helvetica Neue',Arial,sans-serif;display:flex;align-items:center;
+    justify-content:center}
+  @media (max-width:640px){ .takehome{padding:22px 20px} }
+  @media print{ body{background:#fff} .sheet{box-shadow:none;max-width:none} }
+</style>
+</head>
+<body>
+<div class="sheet">
+
+  <header class="top">
+    <a class="tophome" href="./">&larr;&nbsp; Home</a>
+    <a class="topseries" href="./?s=public">More for the general public</a>
+    <p class="eyebrow"><a class="mast" href="./">ICU and You</a> &nbsp;&#183;&nbsp;
+      <a class="serlink" href="./?s=public">For the general public</a> &nbsp;&#183;&nbsp; Number 4</p>
+    <h1>It was always going to be a Tuesday</h1>
+    <p class="kicker">What actually brings people between thirty and forty-five into intensive care.
+      It is almost never the thing you are afraid of.</p>
+  </header>
+
+  <div class="pad plain">
+    <div class="welcome">
+      <span class="lab">Who this is for</span>
+      <p>Anyone at all. No medicine is assumed and none is required. This one is for the age group the
+        site is spending a fortnight on &mdash; roughly thirty to forty-five &mdash; and for the people
+        who love them, which is a considerably larger group.</p>
+      <p>I am an intensive care specialist in a regional unit. Some of what follows is the part everybody
+        already knows and nobody acts on. Some of it is the part almost nobody knows. And the last
+        section is the one I would most like you to have read before you need it.</p>
+      <p>The statistics and the telephone numbers here are Australian. If you are reading this somewhere
+        else, the shape of it will be much the same; those will not.</p>
+    </div>
+
+    <p class="lede">People ask me what I see. They expect the answer to be dramatic, and I think they are
+      usually a little disappointed.</p>
+
+    <p>Not the shark. Not the snake, which Australians living overseas are asked about constantly and which
+      has almost never been the reason. Not the light aircraft, not the cliff, not the tropical fever
+      carried home in a suitcase. Those exist. I have seen them. I could tell you about them for an hour
+      and you would be entertained, and you would learn nothing you could use.</p>
+
+    <p>What I see, in people between thirty and forty-five, is a Tuesday.</p>
+
+    <p>An ordinary Tuesday, in an ordinary week, in a life that was going along perfectly well. And almost
+      always, when you go back through it, what happened on the Tuesday was settled some years earlier by
+      a series of things so small that nobody involved can remember deciding any of them.</p>
+
+    <h2 class="sub">The fifteen years nobody writes down</h2>
+
+    <p>Here is the odd thing about this age group, and it is why I am giving it a fortnight of its
+      own.</p>
+
+    <p>At thirty-five you feel exactly as you did at twenty-five. Not approximately. Exactly. You can still
+      do the run, carry the toddler, work the long day, and recover from the late night with nothing worse
+      than a complaint. Nothing in your body is telling you anything has changed.</p>
+
+    <p>Meanwhile, quietly, things are changing.</p>
+
+    <p>Blood pressure drifts up a little each year. The weight arrives so gradually that no single week is
+      the week it happened. The drinking that was a university habit becomes a Wednesday habit. The sleep
+      gets worse, and is blamed on the children, who are genuinely responsible for some of it. None of this
+      hurts. That is the entire difficulty with it: there is no symptom, because none of these things has
+      one.</p>
+
+    <p>Two in five Australian adults have high blood pressure. Of those, almost two in three do not know
+      they have it. And among the eighteen to thirty-four-year-olds who do have it, fewer than one in five
+      has it treated and controlled.</p>
+
+    <p>Stop on the middle number. It is not that people are managing it badly. It is that most of them
+      have never been told there is anything to manage.</p>
+
+    <div class="note">
+      <p>High blood pressure does not feel like anything. It does not give you headaches, or a red face, or
+        a sense that something is wrong. People are certain it does, and they are thinking of the
+        afternoon they were furious about something. The only way to find out before it has done any
+        damage is to put a cuff on an arm, which takes about a minute, and which plenty of adults in this
+        age group have not had done since they were last pregnant or last needed a medical for work.</p>
+    </div>
+
+    <p>So that is the reminder. You already knew it, and you have very likely not had it measured.</p>
+
+    <h2 class="sub">What actually brings people in</h2>
+
+    <p>If I set aside the units that only take one kind of patient, and think about the people who come
+      through an ordinary general unit at this age, the list is short and it is not mysterious.</p>
+
+    <p><strong>The car.</strong> Injury and the other external causes &mdash; crashes, falls, poisonings
+      &mdash; are together the leading cause of death in every Australian age group up to forty-four. The
+      common thread at this age is not recklessness. It is being tired, being late, and being four minutes
+      from home on a road you have driven nine hundred times.</p>
+
+    <p><strong>The drink.</strong> Not usually as a dramatic event. Usually as a quantity, applied steadily
+      over fifteen years, to a liver, a pancreas, a heart and a set of reflexes. The Australian guideline
+      is no more than ten standard drinks a week, and no more than four on any one day. I have yet to meet
+      a person outside medicine who could tell me that number. It is not a wall with safe on one side.
+      It is a slope, and all the number does is tell you roughly where on it you are standing.</p>
+
+    <p><strong>The infection you worked through.</strong> This is the one that catches the competent. A
+      chest infection, a skin infection, a tooth, a urinary infection, in a person with a deadline and a
+      reputation for not making a fuss. The ones who arrive very late are nearly always the ones who were
+      very reliable.</p>
+
+    <p><strong>The first heart event.</strong> In Australian men, coronary heart disease becomes the
+      leading cause of death from forty-five. It does not arrive at forty-five. It arrives having been built, piece by piece, during the fifteen
+      years before it.</p>
+
+    <p>And then there is the one that leads the whole list, and that hardly anyone puts on it.</p>
+
+    <div class="note">
+      <p>Those external causes are a group. Taken singly, the most common cause of death in Australia
+        between fifteen and forty-four is suicide, and between twenty-five and forty-four it accounts for
+        about one death in five.</p>
+      <p>I am not going to dress that up, and I am not going to leave it as a statistic either. People in
+        this band are at the point of maximum load &mdash; work, money, young children, ageing parents,
+        a relationship under strain &mdash; and at the point of minimum willingness to say that they are
+        not coping, because everybody is depending on them and it does not feel like an option. That
+        combination is the risk. Not weakness. Load, plus silence.</p>
+      <p>If that is you, the thing to know is that this responds to treatment, that people come through it
+        every day who were certain they would not, and that the first conversation is far less difficult
+        than you are imagining. Lifeline is
+        <strong>13 11 14</strong> or text <strong>0477 13 11 14</strong>, and Beyond Blue is
+        <strong>1300 22 4636</strong>. Both are twenty-four hours, both will talk to anyone, and neither
+        requires you to be in a crisis to be allowed to ring.</p>
+      <p>And if it is someone you love: ask them directly. The fear that asking will plant the idea is one
+        of the most durable pieces of folklore there is, and it is wrong &mdash; asking does not raise the
+        risk. The question people regret is the one they decided would be awkward, and never asked.</p>
+    </div>
+
+    <h2 class="sub">Four things you may not know, and probably should</h2>
+
+    <ul class="pts">
+      <li><b>Your medicine list is medical information</b>At three in the morning nobody can look up what
+        you take. Your pharmacy is shut, your general practitioner is asleep, and the hospital record, if
+        there is one, is years out of date. A photograph of your boxes, or a typed list in your phone, is the most useful
+        thing you can carry into a hospital &mdash; and in this age band it matters more
+        than it did ten years ago, because more people are on long-term medicines by this age, and the
+        medicine is sometimes part of the problem rather than part of the background.</li>
+      <li><b>A normal blood sugar does not always mean what you think</b>If you take one of the newer
+        tablets for diabetes, heart failure or kidney disease &mdash; the ones whose names end in
+        <em>-gliflozin</em> &mdash; you can become seriously ill with ketoacidosis while your blood sugar
+        reading looks perfectly fine. Two practical consequences. If you are vomiting, not eating, or
+        unwell, say out loud that you take it. And if you are having an operation, ask well in advance
+        when to stop it, because there is a rule about that and it is easy to miss.</li>
+      <li><b>Chest pain in a woman in her thirties is not nothing</b>A heart attack at that age is often
+        not a blocked artery at all. It is a tear in the wall of one, it happens overwhelmingly to women,
+        it has little to do with cholesterol or lifestyle, and some of the usual treatments for a heart
+        attack can make it worse. We call it anxiety, or reflux, or a panic attack, more often than we
+        should. If you are told it is probably nothing and you are not reassured, say so, in those
+        words.</li>
+      <li><b>&ldquo;Previously fit and well&rdquo; is a sentence to be careful with</b>It appears at the
+        top of almost every referral in this age group, and what it usually means is that nobody has
+        checked. It is also how a decision gets made without anybody making one &mdash;
+        <em>he&rsquo;s young, he&rsquo;ll be fine</em> sounds like a clinical judgement, and often stands in
+        for one.</li>
+    </ul>
+
+    <div class="say">
+      <span class="lab">If you remember one thing from this page</span>
+      <p>Four numbers, and you can have all of them inside a month: your blood pressure, your weight,
+        your cholesterol and your blood sugar. One appointment. No preparation, no drama, no particular
+        courage required.</p>
+      <p>Everything above is a long way of saying that in this fifteen-year stretch your body stops
+        reporting to you, and those four numbers are what it has instead of symptoms. Most people in this
+        band have not had them measured since they last needed a form signed.</p>
+    </div>
+
+    <h2 class="sub">If someone you love ends up in intensive care</h2>
+
+    <p>This is the part I would most like you to have read in advance, because nobody takes anything in on
+      the first day.</p>
+
+    <p>The room will be worse than you expect and the news will usually be better than the room. There will
+      be more equipment than seems reasonable, and a great deal of it is monitoring rather than treatment.
+      The alarms mostly mean that a number has stepped outside a range somebody set, which is how they are
+      designed to behave. If something were urgent, you would see people walking quickly, and you would not
+      have to work it out from the noise.</p>
+
+    <p>A few things that are worth knowing before you are standing there.</p>
+
+    <ul class="pts">
+      <li><b>Sedation is not sleep</b>It is a drugged state, and people drift up through it without looking
+        any different. Assume you are heard. Say the ordinary things &mdash; who is at school, who fed the
+        dog, who sends their love. Familiar voices genuinely help, and the ordinary is more use than the
+        profound.</li>
+      <li><b>Confusion is expected</b>A great many patients become muddled, and some are frightened and
+        convinced of things that are not happening. It is common, it is usually temporary, and it is not
+        madness and not a sign of brain damage. Your calm presence and a window with daylight in it do more
+        than you would think.</li>
+      <li><b>Appoint one person</b>One family member who rings, and who then tells everyone else. It is
+        kinder to the family and it is much safer for the patient, because the story stops drifting as it
+        is relayed. Ask for a time of day when you can expect a call, and get the name of the person to ask for.</li>
+      <li><b>Bring the medicine list</b>Yes, this again. The family who walk in with a photograph of the
+        boxes change what happens in the first hour.</li>
+      <li><b>Write your questions down</b>You will not remember them. You will also not remember the
+        answers, so take notes, or bring somebody whose job is to take them.</li>
+      <li><b>You may be asked what they would have wanted</b>Not because anybody is giving up, but because
+        in this age group it has usually never been discussed &mdash; so when I ask, I am asking you to
+        guess, at the worst possible moment. Knowing the answer is a kindness you can only give in
+        advance.</li>
+      <li><b>Eat something, and go home and sleep</b>You are no use to anyone on day nine if you have not
+        slept since day one, and day nine is a real possibility. Nothing will be decided in the hours you
+        are away, and the staff will ring you.</li>
+    </ul>
+
+    <p>And one thing about afterwards, because it is routinely a shock. People do not leave intensive care
+      and resume. They come out weak, out of breath on a flight of stairs, with a memory that is not
+      working properly and a mood that is not their own, and that can run for months. It is so usual that
+      it has a name: post-intensive care syndrome. It is not a sign that something went wrong, and it is
+      not weakness in somebody who has always been strong. Knowing it is coming helps more than anything
+      else I can tell a family on the way out the door.</p>
+
+    <p>One more thing worth saying out loud in this age group, and it is the one most often missed. There
+      are usually children. Nobody asks about them, because it is not on any form, and the ward will not
+      know unless somebody says. Say it. Say who is at home, and who is looking after them, and whether
+      that arrangement will last the week. It is the question whose answer most often turns out to need
+      somebody to act on it.</p>
+
+    <div class="takehome">
+      <span class="lab">Take home</span>
+      <ol>
+        <li><strong>Get the four numbers.</strong> Blood pressure, weight, cholesterol, blood sugar. One
+          appointment, this month. If you have no general practitioner, that is the first thing to fix.</li>
+        <li><strong>Know the alcohol number.</strong> Ten standard drinks a week, four on any one day. Work
+          out roughly where you are. Nobody needs to be told the answer but you.</li>
+        <li><strong>Carry your medicine list.</strong> A photograph of the boxes, on your phone, today.</li>
+        <li><strong>If you are ill and not getting better, get seen</strong> &mdash; and stop working while
+          you do.</li>
+        <li><strong>Do not let &ldquo;probably nothing&rdquo; be the end of it</strong> if you are not
+          reassured. Say that you are not reassured. It is a legitimate sentence and it changes
+          consultations.</li>
+        <li><strong>Ask the direct question</strong> of anyone you are worried about. It does not plant the
+          idea. Lifeline 13 11 14, text 0477 13 11 14, Beyond Blue 1300 22 4636.</li>
+        <li><strong>Tell the people close to you what you would want</strong> if you could not speak for
+          yourself. Once, badly, over dinner, is infinitely better than never.</li>
+        <li><strong>If someone you love is admitted:</strong> one spokesperson, a written list of questions,
+          the medicine list, and say who is at home and who is looking after the children. Then go home
+          and sleep.</li>
+      </ol>
+    </div>
+
+    <h2 class="sub">And the Tuesday</h2>
+
+    <p>None of this is a warning about how fragile you are. The opposite, really. People in this age band
+      have more physiological reserve than they will ever have again, which is exactly why they can carry
+      an untreated blood pressure for a decade without noticing, and exactly why they arrive looking well
+      when they are not.</p>
+
+    <p>The reserve is real. It is just not infinite, and it is quiet about where it has got to.</p>
+
+        <p>So, no, it was never going to be the shark. It was going to be an ordinary Tuesday. Some of what
+      landed on it had been accumulating quietly for fifteen years. Some had been building for months, in
+      somebody carrying more than they had told anyone. And some of it was four minutes from home on a
+      familiar road at the end of a long day.</p>
+
+    <p>None of the three is as fixed as it looks from inside it. One takes an appointment. One takes a
+      sentence, said out loud, to somebody. And one takes stopping the car twenty minutes short of home,
+      which is the hardest of the three and the only one that costs nothing.</p>
+
+    <p>Four numbers. One appointment. Not next year.</p>
+
+    <div class="challenge">
+      <h2>Ask me anything</h2>
+      <p class="ask">Really &mdash; anything. There is no such thing as a question that is too basic.</p>
+      <p>This one invites two in particular. If you have ever sat beside someone in an intensive care unit,
+        what did nobody tell you that you wish somebody had? I would like to put the answers into a future
+        page, and the ones that come from families are better than the ones that come from us. And second
+        &mdash; if you are in this age band and you have had none of the four numbers measured, I would
+        quite like to know what has got in the way. I am not asking in order to tell you off. I am asking
+        because the answer is probably fixable and I do not know what it is.</p>
+      <p>I cannot give advice about a particular person or a particular illness, and I will say so plainly
+        if that is what is being asked. Everything else is fair game.</p>
+      <p><a class="btn" href="mailto:icuandyou@icloud.com?subject=For%20the%20general%20public%204%20-%20a%20question&body=My%20question%3A%0D%0A%0D%0A%0D%0AIf%20you%20have%20sat%20beside%20somebody%20in%20intensive%20care%20%E2%80%94%20what%20did%20nobody%20tell%20you%20that%20you%20wish%20they%20had%3F%0D%0A%0D%0A%0D%0AIf%20you%20have%20not%20had%20the%20four%20numbers%20measured%2C%20what%20has%20got%20in%20the%20way%3F%0D%0A%0D%0A%0D%0A---%0D%0A%0D%0AAnything%20you%20would%20like%20me%20to%20know%20about%20why%20you%20are%20asking%20%28entirely%20optional%29%3A%0D%0A%0D%0A%0D%0AName%20%28optional%29%3A%0D%0A%0D%0A---%0D%0A%0D%0AThinking%20about%20this%20ICU%20AND%20YOU%20post%20overall%20%E2%80%94%20was%20it%20useful%20to%20you%2C%20or%20would%20it%20be%20useful%20to%20others%3F%0D%0A">Send me a question</a></p>
+      <p class="fallback" style="margin-bottom:9px">How you are credited is entirely your call &mdash; by name, by initials, or not at all &mdash; whether you write the piece or I do, and whether I quote you or simply say who sent something in; nothing of yours goes up with your name on it unless you have said yes.</p>
+      <p class="fallback">The button opens a reply straight to me. If your device blocks it, write to
+        <a href="mailto:icuandyou@icloud.com">icuandyou@icloud.com</a> instead.</p>
+    </div>
+  </div>
+
+  <footer>
+    <span class="firstpub">First published November 2026</span>
+    <p class="subline">Two emails a week &mdash; the Friday newsletter for all subscribers, and, for clinical subscribers,
+      the mind map and puzzles the moment they go up on Tuesday. Occasional announcements of new
+      features as they arrive. What went up and why it mattered, the best of your replies, and
+      original feature stories, news and views. <a href="https://joinlist.com/f/5adad2d6">Come and join us</a>.</p>
+    <a class="home" href="./">&larr; &nbsp;All of ICU AND YOU</a><br>
+    ICU AND YOU &nbsp;&#183;&nbsp; For the general public No. 4<br>
+    <span class="srcs">The blood pressure figures &mdash; two in five adults, almost two in three of them
+    not aware, and control in fewer than one in five of those aged eighteen to thirty-four &mdash; are the
+    Australian Institute of Health and Welfare&rsquo;s
+    <a href="https://www.aihw.gov.au/news-media/media-releases/2026/may/high-blood-pressure-impacts-2-in-5-australian-adults-and-many-aren-t-aware"><em>Hypertension
+    in Australia</em></a>, May 2026, reporting 2022 measured data. Leading causes of death by age are the
+    AIHW&rsquo;s
+    <a href="https://www.aihw.gov.au/reports/life-expectancy-deaths/what-do-australians-die-from/contents/how-do-causes-of-death-vary-by-age">causes
+    of death by age</a> and
+    <a href="https://www.aihw.gov.au/reports/life-expectancy-deaths/deaths-in-australia/contents/leading-causes-of-death">leading
+    causes of death</a>: external causes lead to forty-four, suicide is the most common single cause from
+    fifteen to forty-four and about one death in five between twenty-five and forty-four, and coronary
+    heart disease leads in males from forty-five. The alcohol figures are the
+    <a href="https://nhmrc.gov.au/health-advice/alcohol">NHMRC Australian guidelines to reduce health risks
+    from drinking alcohol</a>. The ketoacidosis point is the joint alert of the Australian Diabetes Society,
+    the Australian Diabetes Educators Association, ANZCA and the New Zealand Society for the Study of
+    Diabetes on ketoacidosis with SGLT2 inhibitors. The coronary dissection material follows the
+    published cohorts of spontaneous coronary artery dissection; the clinical pages on this site cover
+    both in detail, and I have deliberately not sent you to them from here. Lifeline and Beyond Blue
+    details are from the services themselves. Nothing here is
+    about any particular person.</span><br>
+        General information only. This is not medical advice and cannot take account of any individual person
+    or illness. If you are worried about yourself or somebody else now, ring your doctor, healthdirect on
+    1800&nbsp;022&nbsp;222, or 000.<br>
+    <span class="mine">Views my own, not those of NSW Health or any other organisation. No identifiable
+    patients &mdash; scenarios are constructed or combined for teaching. <a href="about.html">More</a>.</span>
+  </footer>
+
+</div>
+<script data-goatcounter="https://icuandyou.goatcounter.com/count"
+        async src="//gc.zgo.at/count.js"></script>
+</body>
+</html>
