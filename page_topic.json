@@ -205,6 +205,7 @@
    "indigo striped",
    "anecdote"
   ],
+  "salon": ["Senior Intensivists' Salon", "claret striped", "special"],
   "doctors": [
    "Notable Doctors",
    "laurel",
@@ -1671,9 +1672,28 @@
    "badge": "For the general public",
    "link_label": "Open",
    "blurb": "Written for anyone, not for clinicians. What actually brings people between thirty and forty-five into intensive care \u2014 almost never the thing they are afraid of. The fifteen years in which it is quietly decided, the four numbers most people in this band have never had measured, three things worth knowing before you need them, and what to do if somebody you love is admitted. With clear take-home messages."
+  },
+  {
+   "file": "salon-01-ninety-minutes.html",
+   "series": "salon",
+   "colour": "claret striped",
+   "number": "1",
+   "title": "Ninety minutes",
+   "topic": "Any time",
+   "slug": "standing",
+   "week": false,
+   "standing": true,
+   "badge": "Salon",
+   "link_label": "Take the floor",
+   "blurb": "A new section, for the arguments we actually have. A registrar tells me that once you have given the lytic for a pulmonary embolism arrest you are committed to ninety minutes. He is quoting the guideline correctly \u2014 and ANZCOR, approved in July, still carries the figure without the qualifier the Europeans added. What the evidence underneath it is, why the famous hundred-minute case argues the opposite of what it is cited for, why a dilated right ventricle is not a diagnosis, and what anecdote is and is not good for. Thirty minutes and a judgement call, or the full ninety? The floor is open."
   }
  ],
  "latest": [
+  {
+   "file": "salon-01-ninety-minutes.html",
+   "colour": "claret striped",
+   "label": "Senior Intensivists' Salon 1 \u00b7 Ninety minutes"
+  },
   {
    "file": "public-04-early-middle-age.html",
    "colour": "ocean",
@@ -1693,11 +1713,6 @@
    "file": "bare-bones-04-early-middle-age.html",
    "colour": "bone",
    "label": "Bare Bones 4 \u00b7 Early middle age"
-  },
-  {
-   "file": "superquiz-66-early-middle-age.html",
-   "colour": "wine",
-   "label": "Superquiz 66 \u00b7 Early middle age"
   }
  ],
  "topten": [

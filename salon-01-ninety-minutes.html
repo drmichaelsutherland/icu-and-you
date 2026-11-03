@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="en-AU">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ICU AND YOU &#183; Senior Intensivists&#x27; Salon No. 1 &mdash; Ninety minutes</title>
+<meta name="description" content="Senior Intensivists' Salon No. 1: the instruction to continue CPR for 60 to 90 minutes after a thrombolytic in suspected pulmonary embolism. What the guidelines actually say, what changed in 2025, what the evidence underneath it is, and whether this is a rule or a judgement. The floor is open.">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="alternate icon" href="/favicon.ico" sizes="any">
+<link rel="apple-touch-icon" href="/icon-180.png">
+<meta name="theme-color" content="#1B2A33">
+<meta property="og:site_name" content="ICU AND YOU">
+<meta property="og:type" content="website">
+<meta property="og:title" content="ICU AND YOU &#183; Senior Intensivists&#x27; Salon No. 1 &mdash; Ninety minutes">
+<meta property="og:description" content="Four words were added to the guideline in 2025. Nobody has said who they are for.">
+<meta property="og:image" content="https://icuandyou.com/share-card.png">
+<meta name="twitter:card" content="summary_large_image">
+<style>
+  :root{
+    --paper:#FCFAFA; --ink:#211A1E; --muted:#6B5F64; --rule:#E2D6DA;
+    --claret:#6A2A3C; --claretint:#F5ECEF; --claretink:#4C1B2A;
+    --slate:#3E4A52; --slatetint:#EDEFF1;
+    --rust:#A8442A; --rusttint:#F9EDE7;
+    --moss:#4C6B4A; --mosstint:#EAF1E9;
+  }
+  *{box-sizing:border-box}
+  body{margin:0;background:#EDE6E8;color:var(--ink);
+    font:400 17px/1.66 'Iowan Old Style','Palatino Linotype',Palatino,Georgia,serif;
+    -webkit-text-size-adjust:100%;}
+  .sheet{max-width:800px;margin:0 auto;background:var(--paper);
+    box-shadow:0 1px 40px rgba(33,26,30,.10);}
+
+  header.top{padding:42px 40px 28px;border-bottom:2px solid var(--claret)}
+  .tophome,.topseries{display:inline-block;margin:0 0 16px;padding:7px 16px;border-radius:20px;
+    border:1px solid currentColor;opacity:.62;text-decoration:none;color:inherit;
+    font:600 11.5px 'Helvetica Neue',Arial,sans-serif;letter-spacing:.09em;
+    text-transform:uppercase;transition:opacity .12s ease}
+  .topseries{margin-left:9px}
+  .tophome:hover,.topseries:hover{opacity:1}
+  .eyebrow{font:500 11.5px/1 'Helvetica Neue',Arial,sans-serif;letter-spacing:.24em;
+    text-transform:uppercase;color:var(--muted);margin:0 0 14px}
+  .eyebrow a.mast,.eyebrow a.serlink{color:inherit;text-decoration:none;
+    border-bottom:1px solid transparent}
+  .eyebrow a.mast:hover,.eyebrow a.serlink:hover{border-bottom-color:currentColor}
+  h1{font-size:35px;line-height:1.14;margin:0 0 8px;font-weight:400;letter-spacing:-.012em}
+  .kicker{color:var(--muted);margin:0;font-size:16.5px;font-style:italic}
+
+  .pad{padding:34px 40px}
+  p{margin:0 0 17px}
+  .lede{font-size:20px;line-height:1.52;margin:0 0 22px}
+
+  h2.sub{font:600 12px 'Helvetica Neue',Arial,sans-serif;letter-spacing:.2em;
+    text-transform:uppercase;color:var(--claret);margin:34px 0 15px;
+    padding-bottom:8px;border-bottom:1px solid var(--rule)}
+
+  .preamble{margin:0 0 24px;padding:20px 24px;background:var(--claretint);
+    border-left:4px solid var(--claret);border-radius:0 8px 8px 0}
+  .preamble .lab{display:block;font:600 11px 'Helvetica Neue',Arial,sans-serif;
+    letter-spacing:.18em;text-transform:uppercase;color:var(--claret);margin:0 0 9px}
+  .preamble p:last-child{margin:0}
+
+  /* The three guideline texts, set as what they are: quotations whose exact
+     words are the argument. */
+  .wording{margin:0 0 22px;padding:0;list-style:none}
+  .wording li{padding:17px 0 17px 0;border-bottom:1px solid var(--rule)}
+  .wording li:last-child{border-bottom:0}
+  .wording .who{display:block;font:600 11.5px 'Helvetica Neue',Arial,sans-serif;
+    letter-spacing:.13em;text-transform:uppercase;color:var(--claret);margin:0 0 8px}
+  .wording q{display:block;font-size:17.5px;line-height:1.58;quotes:none}
+  .wording q::before,.wording q::after{content:""}
+  .wording .gloss{display:block;margin:8px 0 0;font:400 14.5px/1.55 'Helvetica Neue',Arial,sans-serif;
+    color:var(--muted)}
+  .wording ins{text-decoration:none;background:#F3DCE3;box-shadow:0 0 0 2px #F3DCE3;
+    border-radius:2px;font-weight:600}
+
+  .box{margin:0 0 20px;padding:21px 25px;border-radius:0 8px 8px 0}
+  .box .lab{display:block;font:600 11px 'Helvetica Neue',Arial,sans-serif;
+    letter-spacing:.18em;text-transform:uppercase;margin:0 0 9px}
+  .box p:last-child{margin:0}
+  .case{background:var(--slatetint);border-left:4px solid var(--slate)}
+  .case .lab{color:var(--slate)}
+  .own{background:var(--rusttint);border-left:4px solid var(--rust)}
+  .own .lab{color:var(--rust)}
+  .fair{background:var(--mosstint);border-left:4px solid var(--moss)}
+  .fair .lab{color:var(--moss)}
+
+  ul.pts{list-style:none;margin:0 0 18px;padding:0}
+  ul.pts li{display:flex;gap:13px;padding:11px 0;border-bottom:1px solid #EFE7EA;
+    font-size:16.5px;line-height:1.5}
+  ul.pts li:last-child{border-bottom:0}
+  ul.pts b{flex:0 0 168px;font:600 14.5px 'Helvetica Neue',Arial,sans-serif;
+    color:var(--claret);line-height:1.4}
+
+  .floor{margin:0;padding:28px 32px;background:var(--claretint);border-left:5px solid var(--claret)}
+  .floor h2{font:600 12px 'Helvetica Neue',Arial,sans-serif;letter-spacing:.2em;
+    text-transform:uppercase;color:var(--claret);margin:0 0 13px}
+  .ask{font-size:19.5px;line-height:1.5;margin:0 0 14px;font-style:italic}
+  .floor ol{margin:0 0 16px;padding:0 0 0 22px}
+  .floor li{margin:0 0 9px;font-size:16.5px;line-height:1.52}
+  .btn{display:inline-block;margin:6px 0 12px;padding:15px 30px;background:var(--claret);
+    color:#FBF5F7;text-decoration:none;border-radius:30px;font-style:normal;
+    font:600 15px 'Helvetica Neue',Arial,sans-serif;letter-spacing:.03em}
+  .btn:hover{background:#4C1B2A}
+  .btn:focus-visible{outline:3px solid var(--slate);outline-offset:3px}
+  .fallback{font:400 13.5px 'Helvetica Neue',Arial,sans-serif;color:var(--muted);margin:0}
+  .fallback a{color:var(--claret)}
+
+  footer{padding:24px 40px 42px;border-top:1px solid var(--rule);
+    font:400 13px 'Helvetica Neue',Arial,sans-serif;color:var(--muted);
+    text-align:center;line-height:1.7}
+  .subline{margin:0 0 14px;padding:0 0 13px;border-bottom:1px solid rgba(0,0,0,.09);
+    font:400 14.5px/1.55 'Iowan Old Style','Palatino Linotype',Palatino,Georgia,serif;
+    max-width:56ch;margin-left:auto;margin-right:auto}
+  .subline a{font-weight:500;border-bottom:1px solid currentColor;
+    text-decoration:none;color:inherit}
+  .firstpub{display:block;margin:0 0 10px;padding-bottom:9px;
+    border-bottom:1px solid rgba(0,0,0,.09);
+    font:400 12px 'Helvetica Neue',Arial,sans-serif;letter-spacing:.06em;opacity:.72}
+  .home{display:inline-block;margin:0 0 14px;padding:8px 18px;border-radius:20px;
+    border:1px solid var(--rule);background:#F4EEF0;color:var(--claret);text-decoration:none;
+    font:600 12.5px 'Helvetica Neue',Arial,sans-serif;letter-spacing:.05em}
+  .home:hover{background:var(--claret);border-color:var(--claret);color:#FBF5F7}
+  .mine{display:inline-block;margin:9px 0 0;opacity:.78;font-size:.94em}
+  .srcs{display:inline-block;margin:4px 0 6px;font-size:12.5px;line-height:1.6;text-align:left}
+  .srcs a{color:inherit}
+
+  @media (max-width:640px){
+    header.top,.pad,footer{padding-left:20px;padding-right:20px}
+    .floor{padding:22px 20px}
+    h1{font-size:27px} body{font-size:16.5px} .lede{font-size:18.5px} .ask{font-size:18px}
+    ul.pts li{flex-direction:column;gap:3px} ul.pts b{flex:none}
+  }
+  @media print{ body{background:#fff} .sheet{box-shadow:none;max-width:none} }
+</style>
+</head>
+<body>
+<div class="sheet">
+
+  <header class="top">
+    <a class="tophome" href="./">&larr;&nbsp; Home</a>
+    <a class="topseries" href="./?s=salon">More from the Salon</a>
+    <p class="eyebrow"><a class="mast" href="./">ICU and You</a> &nbsp;&#183;&nbsp;
+      <a class="serlink" href="./?s=salon">Senior Intensivists&#x27; Salon</a> &nbsp;&#183;&nbsp; Number 1</p>
+    <h1>Ninety minutes</h1>
+    <p class="kicker">On being told that once you have given the lytic, you are committed</p>
+  </header>
+
+  <div class="pad">
+    <div class="preamble">
+      <span class="lab">About this series</span>
+      <p><strong>The Senior Intensivists&#x27; Salon</strong> is a room for the arguments we actually have
+        &mdash; the ones about practice that is widely done, thinly supported, and difficult to stop doing.
+        No teaching, no answers at the back. A position is put, as honestly as I can put it, and then the
+        floor is open.</p>
+      <p>I will be wrong in some of these. That is rather the point of a salon.</p>
+    </div>
+
+    <p class="lede">A registrar said it to me recently, in the corridor, with the easy confidence of
+      somebody who has read the thing properly: if you give a thrombolytic for pulmonary embolism during an
+      arrest, you have to keep going for an hour and a half.</p>
+
+    <p>He was not making it up. It is in the guidelines, it is in the courses, and he could have quoted me
+      the number. I asked where it came from. He said the guidelines.</p>
+
+    <p>Which is true, and is not the same as an answer.</p>
+
+    <p>So let me put the uncomfortable version of the question. If that instruction is followed as written,
+      we are going to perform a great many ninety-minute resuscitations. Not on a selected handful of
+      young, witnessed, obvious cases. On everybody in whom somebody raised the possibility of pulmonary
+      embolism and reached for the drug &mdash; which, once the drug is given, is everybody in whom the
+      thought was entertained.</p>
+
+    <p>How many of those will be futile? And how many will be worse than futile, in the sense that a death
+      which was going to happen anyway is extended by an hour and a quarter, in front of a family, with a
+      team working hard at something nobody in the room believes in?</p>
+
+    <h2 class="sub">What the guideline actually says</h2>
+
+    <p>It is worth putting the three texts side by side, because the argument is in the wording and
+      nowhere else.</p>
+
+    <ul class="wording">
+      <li>
+        <span class="who">European Resuscitation Council, 2021</span>
+        <q>Consider CPR for 60-90 min after administration of thrombolytic drugs.</q>
+        <span class="gloss">The sentence as it stood for four years.<sup class="vf" data-v="salon-erc2021"></sup></span>
+      </li>
+      <li>
+        <span class="who">European Resuscitation Council and Resuscitation Council UK, 2025</span>
+        <q><ins>In select patients with suspected pulmonary embolism,</ins> consider CPR for 60-90 min
+          after administration of thrombolytic drugs.</q>
+        <span class="gloss">Seven words added at the front. Nothing else changed.<sup class="vf" data-v="salon-erc2025"></sup></span>
+      </li>
+      <li>
+        <span class="who">ANZCOR Guideline 11.10, approved July 2026</span>
+        <q>Consider performing CPR for 60 to 90 min before termination of resuscitation attempts.</q>
+        <span class="gloss">A Good Practice Statement, with no qualifier. This is the one that applies
+          here.<sup class="vf" data-v="salon-anzcor"></sup></span>
+      </li>
+    </ul>
+
+    <p>Three things follow from that, and I think only the third is interesting.</p>
+
+    <p>The first is that the European default has moved. Under the 2021 wording, giving the lytic committed
+      you: stopping early was the decision that needed justifying. Under the 2025 wording, continuing is
+      the decision that needs justifying. The weight has shifted from the drug to the patient, which is
+      where it belongs.</p>
+
+    <p>The second is that ours has not moved. ANZCOR&#x27;s current guideline was approved in July, and it
+      carries the figure without the qualifier. A colleague here who stops at thirty minutes is working
+      against the letter of the document that governs them, while a colleague in Britain doing exactly the
+      same thing is working within it. Same patient, same evidence, same drug.</p>
+
+    <p>The third is the one I keep returning to. The 2025 wording tells us that this is for selected
+      patients, and then does not say who they are. It hands the discretion back without handing back any
+      means of exercising it. We are invited to select, and left to invent the criteria ourselves, and
+      whatever we invent will be unvalidated.</p>
+
+    <h2 class="sub">We have done this before</h2>
+
+    <p>Those of us who have been at this a while will recognise the shape of it, because we spent a decade
+      cooling people.</p>
+
+    <p>Two small trials in 2002, both positive: the European HACA study<sup class="vf" data-v="salon-haca"></sup>, and Stephen
+      Bernard&#x27;s seventy-seven patients<sup class="vf" data-v="salon-bernard"></sup>. Within a few years, thirty-two to thirty-four
+      degrees was close to mandatory, units had bought the machines, and protocols had been written
+      around them. Then TTM in 2013 found that thirty-three was no better than thirty-six<sup class="vf" data-v="salon-ttm"></sup>.
+      Then TTM2 in 2021 found that hypothermia was no better than simply not letting people get hot
+      &mdash; fifty per cent dead at six months against forty-eight<sup class="vf" data-v="salon-ttm2"></sup>. And the language drifted,
+      in small steps that each looked reasonable: cool them, then control the temperature, then prevent
+      fever.</p>
+
+    <p>Nobody ever announced that we had been wrong. The practice simply thinned out.</p>
+
+    <p>The ninety minutes has the same architecture. A plausible mechanism &mdash; the drug needs time to
+      work. Thin evidence hardened into a default. Equipment that made the default feasible, and which we
+      bought: cooling machines then, mechanical compression devices now. And then a softening of the
+      wording, once enough people had become uneasy.</p>
+
+    <div class="fair">
+      <span class="lab">The honest counter-example</span>
+      <p>It does not always go that way, and I should say so. We proned enormous numbers of patients on
+        physiological grounds long before there was evidence, and the early trials were negative. Then
+        PROSEVA restricted it to a P/F ratio under 150, started early, in sessions of sixteen hours or
+        more, and twenty-eight day mortality went from 32.8% to 16%.<sup class="vf" data-v="salon-proseva"></sup> Selection did not kill proning. It
+        rescued it, and turned it into one of the few interventions in ARDS that demonstrably saves
+        lives.</p>
+      <p>So &ldquo;in selected patients&rdquo; can be the first step of a retreat, or it can be the
+        refinement that finds the people who actually benefit. The difference is whether anybody does the
+        work of defining the selection. Proning had PROSEVA. The ninety minutes has four words and an
+        empty space.</p>
+    </div>
+
+    <h2 class="sub">What is underneath it</h2>
+
+    <p>The best observational dataset remains Er and colleagues from Cologne: 104 consecutive witnessed
+      in-hospital arrests with confirmed or strongly suspected pulmonary embolism, all given rtPA during
+      CPR. Thirty-eight and a half per cent achieved return of circulation; 18.3% left hospital.<sup class="vf" data-v="salon-er-cohort"></sup></p>
+
+    <p>Now look at where the signal actually sits. The patients who achieved return of circulation had been
+      given the drug at 13.6 minutes. Those who did not were given it at 24.6. Those who survived to
+      discharge had it at 11.0 minutes, against 22.5 for everybody else.<sup class="vf" data-v="salon-er-timing"></sup></p>
+
+    <p>That is a study about when you give the drug. It is not a study about how long you continue
+      afterwards, and it has been read as though it were.</p>
+
+    <p>Then there is the case. The ERC&#x27;s own reference base for this recommendation includes a report
+      of good neurological recovery after a hundred minutes of CPR, and it is the sort of case that settles
+      an argument in a tearoom. I went and read it.</p>
+
+    <div class="case">
+      <span class="lab">The hundred-minute case, in full</span>
+      <p>A seventy-year-old man, arrest on a neurology ward, pulseless electrical activity. Ventricular
+        fibrillation once, defibrillation unsuccessful. Then narrow-complex PEA for the next hour
+        &mdash; <strong>with intermittent return of spontaneous circulation throughout</strong>. Alteplase
+        was given near the end: five milligrams as a bolus, then forty-five by infusion.</p>
+      <p>About <strong>two minutes</strong> later the rhythm converted to sinus and circulation was
+        established. Extensive bilateral emboli were confirmed afterwards. He survived with no major
+        neurological sequelae, after three months of renal replacement therapy and an occipital infarct
+        along the way.<sup class="vf" data-v="salon-case"></sup></p>
+    </div>
+
+    <p>Read that case again with the recommendation in mind. It is used to justify waiting an hour for the
+      drug to work. It is a case in which the drug worked in about two minutes, in a patient who had a
+      circulation for much of the preceding hour.</p>
+
+    <p>It is a wonderful case. It is an argument for giving the lytic earlier. It is not an argument for
+      the tail.</p>
+
+    <p>And the comparison nobody makes: we do not say this about coronary occlusion. TROICA randomised 827
+      patients to tenecteplase or placebo during resuscitation and was stopped for futility &mdash;
+      thirty-day survival 18.2% against 20.2%.<sup class="vf" data-v="salon-troica"></sup> The pharmacokinetics of alteplase during low flow do not
+      know which artery they are in. If the drug needs an hour in the pulmonary circulation, it needs an
+      hour in the coronary one. We decided it did not, and moved on.</p>
+
+    <h2 class="sub">And they are not all the same arrest</h2>
+
+    <p>This is the part that gets lost in the word <em>suspected</em>.</p>
+
+    <p>At one end: a witnessed collapse in a post-operative patient with a known deep venous thrombosis, a
+      short no-flow time, compressions within seconds, and a story that was pointing at pulmonary embolism
+      before the arrest happened. At the other: a found-down asystolic arrest of unknown duration, in which
+      somebody put a probe on the chest and saw a big right ventricle.</p>
+
+    <p>Both are recorded as a suspected pulmonary embolism arrest. Both attract the same instruction. They
+      are not the same event, and no single number can sensibly govern both.</p>
+
+    <p>And the big right ventricle deserves a paragraph of its own, because it is doing more work at the
+      bedside than it can bear. Aagaard and colleagues arrested pigs three ways &mdash; pulmonary embolism,
+      hypoxia, primary arrhythmia &mdash; and measured the right ventricle during resuscitation. It was
+      dilated in all three. Thirty-two millimetres in the embolism group, against twenty-three and
+      twenty-five. Clinicians with focused echo training separated them with 79% sensitivity and
+      <strong>68% specificity</strong>.<sup class="vf" data-v="salon-rv"></sup></p>
+
+    <p>A third of the non-embolic arrests looked like embolism. We have all seen the dilated right
+      ventricle on the arrest echo and felt the diagnosis firm up under us. It mostly should not.</p>
+
+    <h2 class="sub">The anecdote problem</h2>
+
+    <p>Which brings me to the form of argument that actually decides these cases at three in the morning,
+      and it is not a guideline.</p>
+
+    <p>It goes: <em>we had one like this, we kept going, and he walked out of here.</em> Therefore.</p>
+
+    <p>That story has exactly one legitimate use, and it is a good one. It defeats a <em>never</em>. If
+      somebody survived ninety minutes, then nobody-survives-after-thirty is false, and anyone asserting it
+      is corrected. That is a real contribution and I would not want to lose it.</p>
+
+    <p>What the story cannot do is set an expectation, for the oldest reason there is: the denominator is
+      missing. Nobody writes up the hundred ninety-minute resuscitations that ended the way everyone in the
+      room expected. The published cases are the survivors, which is what makes the odds feel plausible
+      when you are standing there.</p>
+
+    <p>And the story moves the burden of proof. Whoever has the anecdote makes the person who wants to stop
+      into the person who has to justify stopping. That is a rhetorical move, not a clinical one, and it
+      wins almost every time.</p>
+
+    <div class="own">
+      <span class="lab">The part I like least</span>
+      <p>In the moment, we are frequently not weighing evidence at all. We are managing the possibility of
+        being wrong in public. <em>We had better keep going</em> is sometimes a clinical judgement and
+        often a defensive one &mdash; because the resuscitation that ran ninety minutes will never be
+        criticised, and the one that stopped at twenty-five might be.</p>
+      <p>I have made that calculation myself and I expect I will again. It is worth naming it rather than
+        dressing it up, because a defensible decision and a defensive one are not the same thing, and only
+        one of them is about the patient.</p>
+    </div>
+
+    <h2 class="sub">How these things persist</h2>
+
+    <p>Once an idea like this is established, we all follow suit. And honestly &mdash; how can you not?</p>
+
+    <p>The registrar has read it. The nurse has read it. The course taught it, the protocol repeats it, and
+      the person who stops at thirty minutes does so in front of a room full of people who know what the
+      guideline says. The social cost of being the one who stopped early is immediate and personal. The
+      cost of ninety minutes of futile resuscitation is diffuse, shared, and falls mostly on somebody who
+      is already dead.</p>
+
+    <p>So we follow suit. Until we don&#x27;t.</p>
+
+    <p>Nobody will publish the trial that overturns this one. Nobody is going to randomise embolism arrests
+      to thirty minutes against ninety. It will go the way cooling went: a qualifier here, a quieter
+      protocol there, extracorporeal CPR taking the argument over in the centres that have it, and in ten
+      years a registrar will say <em>we used to do ninety minutes</em> and somebody will have to explain
+      why.</p>
+
+    <p>I would rather we had the argument now, deliberately, than arrive at the same place by attrition
+      and call it progress.</p>
+
+    <div class="floor">
+      <h2>The floor is yours</h2>
+      <p class="ask">Thirty minutes and a judgement call &mdash; or the full ninety, as a matter of
+        course?</p>
+      <p>That is the question, and I would genuinely like to know where the room sits. Four more, if you
+        have the time for them:</p>
+      <ol>
+        <li>What would make <em>you</em> stop at thirty? Name the actual criteria you would use, not the
+          ones you would write down afterwards. I suspect we are all using something, and that none of us
+          has said it out loud.</li>
+        <li>Have you ever continued a resuscitation because of a story &mdash; somebody&#x27;s case from
+          five years ago? I have. I am interested in how common that is.</li>
+        <li>Does your unit have a local position on this, and does it follow ANZCOR&#x27;s wording or the
+          European one? If the two are being applied side by side in Australian units, that is worth
+          knowing.</li>
+        <li>If you have extracorporeal CPR available, does any of this argument survive for you, or does
+          the ninety minutes simply become transport time?</li>
+      </ol>
+      <p>Replies may be published, in whole or in part, in a follow-up page &mdash; including the ones that
+        tell me I have this wrong, which are the ones I most want. How you are credited is entirely your
+        call.</p>
+      <p><a class="btn" href="mailto:icuandyou@icloud.com?subject=Salon%20No.%201%20-%20ninety%20minutes&body=Thirty%20minutes%20and%20a%20judgement%20call%2C%20or%20the%20full%20ninety%3F%0D%0A%0D%0A%0D%0AWhat%20would%20make%20me%20stop%20at%20thirty%3A%0D%0A%0D%0A%0D%0AHave%20I%20ever%20continued%20because%20of%20a%20story%3F%0D%0A%0D%0A%0D%0AMy%20unit%27s%20position%2C%20and%20whether%20we%20have%20ECPR%3A%0D%0A%0D%0A%0D%0A---%0D%0A%0D%0AName%20and%20how%20you%20would%20like%20to%20be%20credited%20%28or%20not%29%3A%0D%0A%0D%0A---%0D%0A%0D%0AThinking%20about%20this%20ICU%20AND%20YOU%20post%20overall%20%E2%80%94%20was%20it%20useful%20to%20you%2C%20or%20would%20it%20be%20useful%20to%20others%3F%0D%0A">Take the floor</a></p>
+      <p class="fallback" style="margin-bottom:9px">How you are credited is entirely your call &mdash; by name, by initials, or not at all &mdash; whether you write the piece or I do, and whether I quote you or simply say who sent something in; nothing of yours goes up with your name on it unless you have said yes.</p>
+      <p class="fallback">The button opens a reply straight to me. If your device blocks it, write to
+        <a href="mailto:icuandyou@icloud.com">icuandyou@icloud.com</a> instead.</p>
+    </div>
+  </div>
+
+  <footer>
+    <span class="firstpub">First published November 2026</span>
+    <p class="subline">Two emails a week &mdash; the Friday newsletter for all subscribers, and, for clinical subscribers,
+      the mind map and puzzles the moment they go up on Tuesday. Occasional announcements of new
+      features as they arrive. What went up and why it mattered, the best of your replies, and
+      original feature stories, news and views. <a href="https://joinlist.com/f/5adad2d6">Come and join us</a>.</p>
+    <a class="home" href="./">&larr; &nbsp;All of ICU AND YOU</a><br>
+    ICU AND YOU &nbsp;&#183;&nbsp; Senior Intensivists&#x27; Salon No. 1<br>
+    <span class="srcs">The three guideline texts are quoted verbatim and were read on 3 November 2026:
+    <a href="https://semicyuc.org/wp-content/uploads/2021/09/RCP-Guias-ERC-2021-05-SVA-adulto-Resuscitation-2021.pdf">ERC
+    2021 Adult Advanced Life Support</a>; the
+    <a href="https://www.resus.org.uk/professional-library/2025-resuscitation-guidelines/adult-advanced-life-support-guidelines">2025
+    Adult Advanced Life Support guidelines</a> as published by Resuscitation Council UK, which carry the
+    ERC 2025 wording; and
+    <a href="https://www.anzcor.org/home/adult-advanced-life-support/guideline-11-10-resuscitation-in-special-circumstances">ANZCOR
+    Guideline 11.10, Resuscitation in Special Circumstances</a>, approved July 2026, where the
+    fibrinolysis recommendation is weak with very low certainty of evidence and the duration is a Good
+    Practice Statement. The Cologne series is Er F, Nia AM, Gassanov N and colleagues, Impact of
+    rescue-thrombolysis during cardiopulmonary resuscitation in patients with pulmonary embolism,
+    <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2788709/"><em>PLoS ONE</em> 2009;4(12):e8323</a>.
+    The hundred-minute case is Wu JP, Gu DY, Wang S and colleagues,
+    <a href="https://jtd.amegroups.org/article/view/3595/html"><em>Journal of Thoracic Disease</em>
+    2014;6(12):E289</a>. TROICA is B&ouml;ttiger BW, Arntz HR, Chamberlain DA and colleagues, Thrombolysis
+    during resuscitation for out-of-hospital cardiac arrest, <em>New England Journal of Medicine</em>
+    2008;359:2651. The right ventricle work is Aagaard R, Caap P, Hansson NC, B&oslash;tker MT, Granfeldt A,
+    L&oslash;fgren B, Detection of pulmonary embolism during cardiac arrest &mdash; ultrasonographic
+    findings should be interpreted with caution, <em>Critical Care Medicine</em> 2017;45(7):e695, which is
+    a porcine study and is described as one here. Temperature management is Nielsen N and colleagues (TTM),
+    <em>New England Journal of Medicine</em> 2013;369:2197, and Dankiewicz J and colleagues (TTM2),
+    <em>New England Journal of Medicine</em> 2021;384:2283. Proning is Gu&eacute;rin C and colleagues
+    (PROSEVA), <em>New England Journal of Medicine</em> 2013;368:2159. Every number on this page has been
+    checked against its source; the ticks show which source, and the two positions I am arguing for are
+    mine and are not supported by any of them.</span><br>
+    Educational use within the ICU education programme. Not a clinical protocol &mdash; local policy, current
+    guidance and the retrieval service always take precedence. This page argues against the plain reading
+    of a current ANZCOR Good Practice Statement, and says so; follow your own guidelines and your own
+    judgement, not this page.<br>
+    <span class="mine">Views my own, not those of NSW Health or any other organisation. No identifiable
+    patients &mdash; the exchange described is reconstructed and the published case is cited as published.
+    <a href="about.html">More</a>.</span>
+  </footer>
+
+</div>
+<script src="glossary.js"></script>
+<script src="verification.js"></script>
+<script data-goatcounter="https://icuandyou.goatcounter.com/count"
+        async src="//gc.zgo.at/count.js"></script>
+</body>
+</html>

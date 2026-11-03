@@ -12,6 +12,10 @@
   "drugstore-04-pantoprazole.html": {
    "checked": "2026-11-03",
    "note": "Every number on the page checked against its source. Two entries are flagged rather than confirmed: the band ligation meta-analysis, which exists only as a conference abstract, and the thousandfold canalicular accumulation, where the primary measurement has not been read. Three numbers changed during checking. A widely circulated summary of the ACG guideline gives absolute reductions of 3% for mortality and 10% for rebleeding after endoscopic haemostasis; the guideline itself reports only relative risks, and the page now uses those. The REVISE severity interaction p value is given as 0.12 in one secondary summary and 0.27 in two others, so the page quotes none of them. And a reduced hepatic dose of 20 mg was removed, because the Australian label directs a reduced initial dose without naming a number."
+  },
+  "salon-01-ninety-minutes.html": {
+   "checked": "2026-11-03",
+   "note": "Every number and every quotation checked against its source. The three guideline texts were read in the originals rather than taken from a summary, because the argument of the page is the difference between them word for word. One correction during checking: an earlier draft said four words had been added to the 2025 wording. It is seven. The builder now asserts that the 2025 sentence is the 2021 sentence with the qualifier in front, and counts the inserted words against what the page claims. Nothing on the page is flagged, but two entries carry limits worth reading: the right ventricle data are porcine, and the reading of the hundred-minute case is mine while the facts in it are the authors'."
   }
  },
  "claims": {
@@ -1000,6 +1004,130 @@
    "interval": "12m",
    "verdict": "flagged",
    "note": "FLAGGED because the primary measurement has not been read. Two independent secondary sources agree, and the figure is used on the page as an order of magnitude in an explanation of mechanism, not as a quantity anyone would act on."
+  },
+  "salon-erc2021": {
+   "page": "salon-01-ninety-minutes.html",
+   "claim": "ERC 2021 Adult Advanced Life Support, verbatim: 'Consider CPR for 60-90 min after administration of thrombolytic drugs.' No qualifier about selected patients appears in that sentence or in the thrombolysis recommendation beside it",
+   "source": "European Resuscitation Council Guidelines 2021: Adult advanced life support, read in full on 3 November 2026. The thrombolysis recommendation in the same section reads 'Consider thrombolytic drug therapy when pulmonary embolus is the suspected or confirmed cause of cardiac arrest'",
+   "url": "https://semicyuc.org/wp-content/uploads/2021/09/RCP-Guias-ERC-2021-05-SVA-adulto-Resuscitation-2021.pdf",
+   "checked": "2026-11-03",
+   "interval": "12m",
+   "verdict": "confirmed",
+   "note": "The word 'selected' does appear elsewhere in the 2021 chapter, in the recommendation on extracorporeal CPR. It does not appear in the pulmonary embolism recommendation, which is the claim the page makes."
+  },
+  "salon-erc2025": {
+   "page": "salon-01-ninety-minutes.html",
+   "claim": "The 2025 wording is the 2021 sentence with seven words inserted in front of it: 'In select patients with suspected pulmonary embolism, consider CPR for 60-90 min after administration of thrombolytic drugs.' Nothing else in the sentence changed",
+   "source": "2025 Adult Advanced Life Support guidelines as published by Resuscitation Council UK, carrying the ERC 2025 wording, read on 3 November 2026. The 2025 Special Circumstances chapter carries the same sentence, qualifier included",
+   "url": "https://www.resus.org.uk/professional-library/2025-resuscitation-guidelines/adult-advanced-life-support-guidelines",
+   "checked": "2026-11-03",
+   "interval": "12m",
+   "verdict": "confirmed",
+   "note": "The page's whole argument rests on the two sentences being otherwise identical, so the builder asserts it mechanically: it checks that the 2025 string ends with the 2021 string, lower-cased at the join, and that the inserted span is seven words. An earlier draft of this page said four words. The check caught it."
+  },
+  "salon-anzcor": {
+   "page": "salon-01-ninety-minutes.html",
+   "claim": "ANZCOR Guideline 11.10, approved July 2026, carries the duration as a Good Practice Statement with no selection qualifier: 'consider performing CPR for 60 to 90 min before termination of resuscitation attempts.' Its fibrinolysis recommendation for suspected pulmonary embolism is weak, on very low-certainty evidence",
+   "source": "ANZCOR Guideline 11.10, Resuscitation in Special Circumstances, section 11.0, read on 3 November 2026; the page states it was approved in July 2026. The same section gives pulmonary embolism as the cause in about 2 to 7% of out-of-hospital arrests",
+   "url": "https://www.anzcor.org/home/adult-advanced-life-support/guideline-11-10-resuscitation-in-special-circumstances",
+   "checked": "2026-11-03",
+   "interval": "12m",
+   "verdict": "confirmed",
+   "note": "This is the load-bearing claim of the page, because it is what makes the argument local rather than academic: the European wording has moved and the Australian wording has not. Worth re-reading whenever ANZCOR reissues 11.10."
+  },
+  "salon-er-cohort": {
+   "page": "salon-01-ninety-minutes.html",
+   "claim": "Er and colleagues, Cologne: 104 consecutive witnessed in-hospital arrests with confirmed (63) or strongly suspected (41) pulmonary embolism, all given rtPA during CPR; return of circulation in 40/104 (38.5%), survival to discharge 19/104 (18.3%)",
+   "source": "Er F, Nia AM, Gassanov N and colleagues, Impact of rescue-thrombolysis during cardiopulmonary resuscitation in patients with pulmonary embolism, PLoS ONE 2009;4(12):e8323. Retrospective, University Hospital of Cologne, 2004 to 2008",
+   "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2788709/",
+   "checked": "2026-11-03",
+   "interval": "12m",
+   "verdict": "confirmed"
+  },
+  "salon-er-timing": {
+   "page": "salon-01-ninety-minutes.html",
+   "claim": "In the same series, thrombolysis was given at 13.6 +/- 1.2 minutes after the start of CPR in patients who achieved return of circulation, against 24.6 +/- 0.8 minutes in those who did not (p<0.001); patients who survived to discharge had it at 11.0 +/- 1.3 minutes against 22.5 +/- 0.9 for everybody else (p<0.001)",
+   "source": "Er and colleagues, PLoS ONE 2009;4(12):e8323. The Results section gives the no-ROSC figure as 24.7 +/- 0.8 in one place and 24.6 +/- 0.8 in another",
+   "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2788709/",
+   "checked": "2026-11-03",
+   "interval": "12m",
+   "verdict": "confirmed",
+   "note": "The paper itself is internally inconsistent by a tenth of a minute on the no-ROSC figure. The page uses 24.6, which is the figure the abstract carries, and nothing in the argument turns on which is right."
+  },
+  "salon-case": {
+   "page": "salon-01-ninety-minutes.html",
+   "claim": "The hundred-minute case: a 70-year-old man, arrest on a neurology ward, one episode of ventricular fibrillation with unsuccessful defibrillation, then narrow-complex pulseless electrical activity for about an hour with intermittent return of spontaneous circulation throughout; alteplase 5 mg bolus then 45 mg by infusion given near the end, with conversion to sinus rhythm about two minutes after the infusion started; extensive bilateral emboli confirmed; survived without major neurological sequelae after about three months of renal replacement therapy and an occipital infarct",
+   "source": "Wu JP, Gu DY, Wang S, Zhang ZJ, Zhou JC, Zhang RF. Good neurological recovery after rescue thrombolysis of presumed pulmonary embolism despite prior 100 minutes CPR. Journal of Thoracic Disease 2014;6(12):E289-E293",
+   "url": "https://jtd.amegroups.org/article/view/3595/html",
+   "checked": "2026-11-03",
+   "interval": "12m",
+   "verdict": "confirmed",
+   "note": "Read in full precisely because it is cited in support of the recommendation and is usually quoted only as 'survived after 100 minutes of CPR'. The intermittent return of circulation and the two-minute response to the drug are both in the published report, and both cut against the use the case is put to. That reading is mine; the facts are the authors'."
+  },
+  "salon-troica": {
+   "page": "salon-01-ninety-minutes.html",
+   "claim": "TROICA: 827 patients with witnessed out-of-hospital arrest of presumed cardiac origin randomised to tenecteplase or placebo during CPR; 30-day survival 18.2% against 20.2% (p=0.51); hospital admission 59.0% against 59.5%; stopped early for futility on the recommendation of the data safety monitoring board",
+   "source": "Boettiger BW, Arntz HR, Chamberlain DA and colleagues, Thrombolysis during resuscitation for out-of-hospital cardiac arrest, New England Journal of Medicine 2008;359(25):2651-62, as recorded in the American College of Cardiology trial summary",
+   "url": "https://www.acc.org/Latest-in-Cardiology/Clinical-Trials/2013/05/30/16/42/TROICA",
+   "checked": "2026-11-03",
+   "interval": "12m",
+   "verdict": "confirmed"
+  },
+  "salon-rv": {
+   "page": "salon-01-ninety-minutes.html",
+   "claim": "In pigs arrested by pulmonary embolism, hypoxia or primary arrhythmia, the right ventricle dilated in all three groups: about 32 mm in the embolism group against 23 mm (hypoxia) and 25 mm (arrhythmia). Clinicians with focused echocardiography training separated the groups with 79% sensitivity and 68% specificity",
+   "source": "Aagaard R, Caap P, Hansson NC, Botker MT, Granfeldt A, Lofgren B. Detection of Pulmonary Embolism During Cardiac Arrest - Ultrasonographic Findings Should Be Interpreted With Caution. Critical Care Medicine 2017;45(7):e695-e702. Twenty-four anaesthetised pigs, arrest untreated for 7 minutes before resuscitation",
+   "url": "https://ouci.dntb.gov.ua/works/42kLxwWl",
+   "checked": "2026-11-03",
+   "interval": "12m",
+   "verdict": "confirmed",
+   "note": "A porcine study, and the page says so in the text as well as here. It is the cleanest available test of the question, because the three arrest aetiologies cannot be randomised in people, but it is animal data and the sensitivity and specificity figures should not be carried across to human practice as though they were measured there."
+  },
+  "salon-haca": {
+   "page": "salon-01-ninety-minutes.html",
+   "claim": "HACA, 2002: 275 patients randomised to 32-34 degrees for 24 hours or normothermia after out-of-hospital arrest; favourable neurological outcome at six months 55% against 39%, relative risk 1.40 (95% CI 1.08-1.81), p=0.009; stopped early for slow enrolment and funding",
+   "source": "Hypothermia after Cardiac Arrest Study Group. Mild therapeutic hypothermia to improve the neurologic outcome after cardiac arrest. New England Journal of Medicine 2002;346(8):549-556",
+   "url": "https://criticalcarereviews.com/foundational-trials/haca-trial",
+   "checked": "2026-11-03",
+   "interval": "12m",
+   "verdict": "confirmed"
+  },
+  "salon-bernard": {
+   "page": "salon-01-ninety-minutes.html",
+   "claim": "Bernard, 2002: 77 patients with out-of-hospital ventricular fibrillation arrest and persistent coma after return of circulation, randomised to 33 degrees for 12 hours or normothermia; favourable discharge destination 49% against 26% (p=0.046)",
+   "source": "Bernard SA, Gray TW, Buist MD and colleagues. Treatment of comatose survivors of out-of-hospital cardiac arrest with induced hypothermia. New England Journal of Medicine 2002;346(8):557-63",
+   "url": "https://clincalc.com/blog/2013/10/bernard-2002-australian-hypothermia-study-for-out-of-hospital-arrest/",
+   "checked": "2026-11-03",
+   "interval": "12m",
+   "verdict": "confirmed",
+   "note": "The page names Bernard and the number of patients but not the city. The source consulted does not state where the trial ran, so the page does not either."
+  },
+  "salon-ttm": {
+   "page": "salon-01-ninety-minutes.html",
+   "claim": "TTM, 2013: 939 patients randomised to 33 degrees (473) or 36 degrees (466) after out-of-hospital arrest; all-cause mortality 50% against 48% (p=0.51)",
+   "source": "Nielsen N, Wetterslev J, Cronberg T and colleagues, on behalf of the TTM Trial Investigators. Targeted Temperature Management at 33 degrees C Versus 36 degrees C After Cardiac Arrest. New England Journal of Medicine 2013;369:2197-2206, as recorded in the American College of Cardiology trial summary. Death or poor neurological function at 180 days gave a hazard ratio of 1.02 (p=0.78)",
+   "url": "https://www.acc.org/Latest-in-Cardiology/Clinical-Trials/2013/12/05/22/12/TTM",
+   "checked": "2026-11-03",
+   "interval": "12m",
+   "verdict": "confirmed"
+  },
+  "salon-ttm2": {
+   "page": "salon-01-ninety-minutes.html",
+   "claim": "TTM2, 2021: 1,900 randomised and 1,861 analysed, hypothermia to 33 degrees against targeted normothermia with early fever treatment; death at six months 50% (465/925) against 48% (446/925), relative risk 1.04 (95% CI 0.94-1.14), p=0.37",
+   "source": "Dankiewicz J, Cronberg T, Lilja G and colleagues. Hypothermia versus Normothermia after Out-of-Hospital Cardiac Arrest. New England Journal of Medicine 2021;384(24):2283-2294. Arrhythmia causing haemodynamic compromise was commoner with hypothermia, 24% against 17%",
+   "url": "https://criticalcarereviews.com/foundational-trials/ttm2-trial",
+   "checked": "2026-11-03",
+   "interval": "12m",
+   "verdict": "confirmed"
+  },
+  "salon-proseva": {
+   "page": "salon-01-ninety-minutes.html",
+   "claim": "PROSEVA, 2013: 474 patients with severe ARDS, a PaO2:FiO2 ratio below 150 on FiO2 at least 0.6, proned for at least 16 consecutive hours; 28-day mortality 16% against 32.8% (p<0.001), adjusted odds ratio 0.42 (95% CI 0.26-0.66)",
+   "source": "Guerin C and colleagues, for the PROSEVA Study Group. Prone Positioning in Severe Acute Respiratory Distress Syndrome. New England Journal of Medicine 2013;368:2159-68",
+   "url": "https://www.thebottomline.org.uk/summaries/icm/proseva-study-group-prone-positioning-in-severe-acute-respiratory-distress-syndrome/",
+   "checked": "2026-11-03",
+   "interval": "12m",
+   "verdict": "confirmed"
   }
  }
 }
