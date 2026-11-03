@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="en-AU">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ICU AND YOU · Medical Students’ Place No. 7 — Early middle age</title>
+<meta name="description" content="Medical Students’ Place No. 7: early middle age in intensive care, in three tiers — the band where the two lines cross, the drug chart as a diagnostic document, and what you will be expected to do.">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="alternate icon" href="/favicon.ico" sizes="any">
+<link rel="apple-touch-icon" href="/icon-180.png">
+<link rel="manifest" href="/site.webmanifest">
+<meta name="theme-color" content="#1B2A33">
+<meta property="og:site_name" content="ICU AND YOU">
+<meta property="og:type" content="website">
+<meta property="og:title" content="ICU AND YOU · Medical Students’ Place No. 7 — Early middle age">
+<meta property="og:description" content="Thirty to forty-five — the first patients who arrive with a history. Three tiers, so you can read only the one you need.">
+<meta property="og:image" content="https://icuandyou.com/share-card.png">
+<meta name="twitter:card" content="summary_large_image">
+<style>
+  :root{
+    --paper:#FBFAF8; --ink:#1F2130; --muted:#6A6A78; --rule:#DEDCE4;
+    --violet:#4C4A8F; --violettint:#EDECF6;
+    --sky:#2E6E8E; --skytint:#E7F1F6;
+    --moss:#4C6B4A; --mosstint:#EAF1E9;
+    --rust:#A8442A; --rusttint:#F9EDE7;
+    --amber:#8A6A3B;
+  }
+  *{box-sizing:border-box}
+  body{margin:0;background:#EFEEF3;color:var(--ink);
+    font:400 17px/1.64 'Iowan Old Style','Palatino Linotype',Palatino,Georgia,serif;
+    -webkit-text-size-adjust:100%;}
+  .sheet{max-width:840px;margin:0 auto;background:var(--paper);
+    box-shadow:0 1px 40px rgba(31,33,48,.10);}
+
+  header.top{padding:44px 40px 28px;border-bottom:2px solid var(--violet)}
+  .eyebrow a.serlink{color:inherit;text-decoration:none;border-bottom:1px solid transparent}
+  .eyebrow a.serlink:hover{border-bottom-color:currentColor}
+  .eyebrow a.mast{color:inherit;text-decoration:none;border-bottom:1px solid transparent}
+  .eyebrow a.mast:hover{border-bottom-color:currentColor}
+  .toptopic{display:inline-block;margin:0 0 16px 9px;padding:7px 16px;border-radius:20px;
+    border:1px solid currentColor;opacity:.62;text-decoration:none;color:inherit;
+    font:600 11.5px 'Helvetica Neue',Arial,sans-serif;letter-spacing:.09em;
+    text-transform:uppercase;transition:opacity .12s ease}
+  .toptopic:hover{opacity:1}
+  .topseries{display:inline-block;margin:0 0 16px 9px;padding:7px 16px;border-radius:20px;
+    border:1px solid currentColor;opacity:.62;text-decoration:none;color:inherit;
+    font:600 11.5px 'Helvetica Neue',Arial,sans-serif;letter-spacing:.09em;
+    text-transform:uppercase;transition:opacity .12s ease}
+  .topseries:hover{opacity:1}
+  .tophome{display:inline-block;margin:0 0 16px;padding:7px 16px;border-radius:20px;
+    border:1px solid currentColor;opacity:.62;text-decoration:none;color:inherit;
+    font:600 11.5px 'Helvetica Neue',Arial,sans-serif;letter-spacing:.09em;
+    text-transform:uppercase;transition:opacity .12s ease}
+  .tophome:hover{opacity:1}
+  .eyebrow{font:500 11.5px/1 'Helvetica Neue',Arial,sans-serif;letter-spacing:.24em;
+    text-transform:uppercase;color:var(--muted);margin:0 0 14px}
+  h1{font-size:33px;line-height:1.18;margin:0 0 8px;font-weight:400;letter-spacing:-.012em}
+  .kicker{color:var(--muted);margin:0;font-size:16.5px;font-style:italic}
+
+  .pad{padding:32px 40px}
+  p{margin:0 0 16px}
+  .lede{font-size:19px;line-height:1.55;margin:0 0 20px}
+
+  /* tier navigation */
+  .jump{margin:0;padding:14px 40px;background:var(--violettint);
+    border-bottom:1px solid var(--rule);text-align:center;
+    font:400 15.5px 'Iowan Old Style',Palatino,Georgia,serif;color:var(--muted)}
+  .jump a{color:var(--violet);text-decoration:none;border-bottom:1px solid #BFBDDC;
+    padding-bottom:1px;font-weight:500}
+  .jump a:hover{color:var(--ink);border-bottom-color:var(--ink)}
+  html{scroll-behavior:smooth}
+  section[id]{scroll-margin-top:20px}
+
+  /* tiers */
+  section.tier{padding:32px 40px;border-top:1px solid var(--rule)}
+  .tier-k{font:600 11px 'Helvetica Neue',Arial,sans-serif;letter-spacing:.22em;
+    text-transform:uppercase;margin:0 0 8px}
+  .tier h2{font-size:26px;font-weight:400;margin:0 0 6px;line-height:1.24}
+  .tier .who{font-style:italic;color:var(--muted);margin:0 0 22px;font-size:16px}
+  .t1 .tier-k{color:var(--sky)} .t1{background:#FCFDFE}
+  .t2 .tier-k{color:var(--moss)} .t2{background:#FBFCFB}
+  .t3 .tier-k{color:var(--rust)} .t3{background:#FDFBFA}
+
+  ul.pts{list-style:none;margin:0 0 18px;padding:0}
+  ul.pts li{display:flex;gap:13px;padding:10px 0;border-bottom:1px solid #EDEBF2;
+    font-size:16.5px;line-height:1.5}
+  ul.pts li:last-child{border-bottom:0}
+  ul.pts b{flex:0 0 176px;font:600 14.5px 'Helvetica Neue',Arial,sans-serif;
+    line-height:1.4}
+  .t1 ul.pts b{color:var(--sky)} .t2 ul.pts b{color:var(--moss)} .t3 ul.pts b{color:var(--rust)}
+
+  .take{margin:0;padding:18px 22px;border-radius:0 8px 8px 0;font-size:16.5px}
+  .take b{font-weight:600}
+  .t1 .take{background:var(--skytint);border-left:4px solid var(--sky)}
+  .t2 .take{background:var(--mosstint);border-left:4px solid var(--moss)}
+  .t3 .take{background:var(--rusttint);border-left:4px solid var(--rust)}
+
+  .exam{margin:18px 0 0;font:400 14.5px 'Helvetica Neue',Arial,sans-serif;
+    color:var(--muted);line-height:1.6}
+  .exam b{color:var(--ink);font-weight:600}
+
+  /* the section that is not about patients */
+  section.mirror{padding:34px 40px;border-top:1px solid var(--rule);background:#FAF7F1}
+  .mirror .tier-k{color:var(--amber)}
+  .mirror h2{font-size:26px;font-weight:400;margin:0 0 6px;line-height:1.24}
+  .mirror .who{font-style:italic;color:var(--muted);margin:0 0 22px;font-size:16px}
+  .mirror .q{margin:0 0 14px;padding:0 0 0 18px;border-left:3px solid #DCCDB0;
+    font-style:italic;font-size:16.5px;line-height:1.55}
+  .mirror .help{margin:20px 0 0;padding:18px 22px;background:#fff;
+    border:1px solid var(--rule);border-radius:8px;
+    font:400 15px/1.65 'Helvetica Neue',Arial,sans-serif}
+  .mirror .help b{font-weight:600}
+  .mirror .help p{margin:0 0 11px}
+  .mirror .help p:last-child{margin:0}
+  .mirror .help a{color:var(--violet)}
+
+  .reply{margin:0;padding:30px 34px;background:var(--violettint);border-left:5px solid var(--violet)}
+  .reply h2{font:600 12px 'Helvetica Neue',Arial,sans-serif;letter-spacing:.2em;
+    text-transform:uppercase;color:var(--violet);margin:0 0 14px}
+  .ask{font-size:19.5px;line-height:1.5;font-style:italic;margin:0 0 15px}
+  .btn{display:inline-block;margin:6px 0 12px;padding:15px 30px;background:var(--violet);
+    color:#F8F8FC;text-decoration:none;border-radius:30px;font-style:normal;
+    font:600 15px 'Helvetica Neue',Arial,sans-serif;letter-spacing:.03em}
+  .btn:hover{background:#3A3873}
+  .fallback{font:400 13.5px 'Helvetica Neue',Arial,sans-serif;color:var(--muted);margin:0}
+  .fallback a{color:var(--violet)}
+  .subline{margin:0 0 14px;padding:0 0 13px;border-bottom:1px solid rgba(0,0,0,.09);
+    font:400 14.5px/1.55 'Iowan Old Style','Palatino Linotype',Palatino,Georgia,serif;
+    max-width:56ch;margin-left:auto;margin-right:auto}
+  .subline a{font-weight:500;border-bottom:1px solid currentColor;
+    text-decoration:none;color:inherit}
+  .firstpub{display:block;margin:0 0 10px;padding-bottom:9px;
+    border-bottom:1px solid currentColor;border-color:rgba(0,0,0,.09);
+    font:400 12px 'Helvetica Neue',Arial,sans-serif;letter-spacing:.06em;opacity:.72}
+
+  footer{padding:24px 40px 42px;border-top:1px solid var(--rule);
+    font:400 13px 'Helvetica Neue',Arial,sans-serif;color:var(--muted);text-align:center;line-height:1.7}
+  .home{display:inline-block;margin:0 0 14px;padding:8px 18px;border-radius:20px;
+    border:1px solid var(--rule);background:#F2F1F6;color:var(--violet);text-decoration:none;
+    font:600 12.5px 'Helvetica Neue',Arial,sans-serif;letter-spacing:.05em}
+  .home:hover{background:var(--violet);border-color:var(--violet);color:#F8F8FC}
+
+  @media (max-width:640px){
+    header.top,.pad,.jump,section.tier,section.mirror,footer{padding-left:20px;padding-right:20px}
+    .reply{padding:24px 20px}
+    h1{font-size:26px} .tier h2{font-size:22px} .mirror h2{font-size:22px} body{font-size:16.5px}
+    ul.pts li{flex-direction:column;gap:3px}
+    ul.pts b{flex:none}
+  }
+  @media print{ body{background:#fff} .sheet{box-shadow:none;max-width:none} }
+  .srcs{font-size:12.5px;line-height:1.6}
+  .mine{display:inline-block;margin:9px 0 0;opacity:.78;font-size:.94em}
+</style>
+</head>
+<body>
+<div class="sheet">
+
+  <header class="top">
+    <a class="tophome" href="./">&larr;&nbsp; Home</a>
+    <a class="topseries" href="./?s=students">More from Medical Students&#x27; Place</a>
+    <a class="topseries" href="you-asked.html">You asked</a>
+    <a class="toptopic" href="./?t=early-middle-age" title="Everything on Early middle age">All on this topic</a>
+    <p class="eyebrow"><a class="mast" href="./">ICU and You</a> &nbsp;·&nbsp; <a class="serlink" href="./?s=students">Medical Students&#x27; Place</a> &nbsp;·&nbsp; Number 7</p>
+    <h1>Early middle age</h1>
+    <p class="kicker">Thirty to forty-five &mdash; the first patients who arrive carrying a history</p>
+  </header>
+
+  <p class="jump">
+    Find your level: <a href="#early">Early years</a>
+    &nbsp;·&nbsp; <a href="#middle">Clinical years</a>
+    &nbsp;·&nbsp; <a href="#senior">Final years</a>
+  </p>
+
+  <div class="pad">
+    <p class="lede">Everything earlier in this series was about a patient whose story was short. This
+      is the first band where they arrive with one already written &mdash; a GP, a diagnosis, a
+      medication list, and usually people who depend on them.</p>
+    <p>The tiers map roughly onto the three phases of a six-year medical programme &mdash; the science,
+      then the clinical reasoning, then what you will actually be expected to do with your own hands.
+      Read the one that fits, and glance at the one above it.</p>
+    <p>What is difficult here is not any single disease. It is that two different kinds of patient
+      arrive through the same door. External causes lead every Australian age band up to forty-four, and
+      from forty-five coronary heart disease takes over as the leading cause of death in men. You are
+      working the fifteen years in which those lines cross, and the same unit will hold both on the same
+      night.</p>
+    <p>If this page has one argument, it is this: <strong>in this band the drug chart is a diagnostic
+      document.</strong> More of the illness you will meet here is caused by treatment than in any
+      earlier age group, and the medication list is where that is written down. Read it before you read
+      the notes.</p>
+  </div>
+
+  <section class="tier t1" id="early">
+    <p class="tier-k">Tier one</p>
+    <h2>A body that has started to change, and a pharmacology that changes with it</h2>
+    <p class="who">Phase 1 &mdash; the foundational years, and anything on body composition, drug handling and the physiology of ageing</p>
+    <ul class="pts">
+      <li><b>Where the two lines cross</b><span>This band is defined by a crossover rather than by a
+        disease. Up to forty-four, what kills people is something that happened; from forty-five it is
+        something that grew. Nothing about a thirty-two-year-old and a forty-four-year-old is the same
+        clinical problem, and the age on the front of the notes will not tell you which one you have.</span></li>
+      <li><b>Reserve does not disappear, it narrows</b><span>And it narrows in the variables nobody
+        measures: lean muscle mass, chest wall compliance, arterial stiffness, maximal oxygen uptake.
+        None of these appears on an observation chart, which is exactly why a patient in this band can
+        look physiologically identical to a twenty-five-year-old and behave differently under load.</span></li>
+      <li><b>Body composition changes what a dose means</b><span>Volume of distribution is a property of
+        the body, not of the number on the scale. A lipophilic drug distributes into fat, so the loading
+        dose rises and the offset is prolonged; a hydrophilic drug does not, so giving it on total body
+        weight overdoses it. This is the mechanism behind every &ldquo;which weight?&rdquo; question you
+        will ever be asked.</span></li>
+      <li><b>And the honest part of that</b><span>The published guidance is not as settled as it is
+        taught. Pharmacokinetic data in obesity are missing for most drugs, and sources disagree with
+        each other &mdash; including, in one widely used exam resource, the model answer disagreeing
+        with its own discussion about which weight to use for lipophilic drugs. The useful habit is not
+        a memorised table. It is to know which weight your unit&rsquo;s protocol means, say it out loud
+        when you prescribe, and ask for levels where the therapeutic index is narrow.</span></li>
+      <li><b>Why the obese patient desaturates so fast</b><span>Functional residual capacity falls as
+        the abdomen loads the diaphragm, and it falls <em>towards closing capacity</em> &mdash; so small
+        airways begin shutting during ordinary tidal breathing, shunt rises, and the oxygen store that
+        buys you time during apnoea is much smaller. Meanwhile oxygen consumption is higher. Less in the
+        tank, and a faster drain.</span></li>
+      <li><b>What chronic alcohol does to a myocardium</b><span>Not an acute poisoning but a slow
+        cardiomyopathy, and it accounts for <strong>23 to 47%</strong> of what gets labelled idiopathic
+        dilated cardiomyopathy in European series. It is also one of the few cardiomyopathies that
+        substantially recovers if the exposure stops, which is why the quantity belongs in the history
+        and not in the social section.</span></li>
+      <li><b>Thiamine runs out in weeks, not years</b><span>Body stores are small, the vitamin is
+        water-soluble and not stored in fat, and absorption is impaired by alcohol. That is the whole
+        mechanism behind a rule you will be given in tier three and rarely told the reason for.</span></li>
+      <li><b>Why an SGLT2 inhibitor uncouples glucose from ketones</b><span>The drug makes the kidney
+        spill glucose, so the blood sugar stays unremarkable. Ketogenesis is driven by the insulin to
+        glucagon ratio, not by the glucose, and fasting or illness drives it anyway. So the two things
+        you were taught to see together &mdash; a high sugar and ketoacidosis &mdash; come apart. The
+        physiology is the entire reason the diagnosis gets missed.</span></li>
+      <li><b>The autoimmune window</b><span>Many autoimmune diseases have their onset in exactly this
+        band and most of them fall disproportionately on women. For intensive care that matters in two
+        directions: the disease itself can present as organ failure, and the immunosuppression used to
+        treat it changes what infection looks like when it arrives.</span></li>
+    </ul>
+    <p class="take"><b>If you take one thing:</b> nothing in this band has changed enough to show up on
+      an observation chart, and almost everything has changed enough to alter how a drug behaves.</p>
+    <p class="exam"><b>Likely to be examined as:</b> a short answer on the pharmacokinetic consequences
+      of obesity, or on the respiratory physiology of obesity and why it shortens safe apnoea time.
+      A fair viva opener is <em>why can a patient on an SGLT2 inhibitor be in ketoacidosis with a blood
+      glucose of nine?</em></p>
+  </section>
+
+  <section class="tier t2" id="middle">
+    <p class="tier-k">Tier two</p>
+    <h2>The drug chart is a diagnostic document</h2>
+    <p class="who">Phase 2 &mdash; the clinical years, integrated clinical studies, and the ICE</p>
+    <ul class="pts">
+      <li><b>Read it before you read the notes</b><span>In every earlier band the medication list is
+        short and mostly irrelevant. Here it is the single most information-dense page in the file, and
+        several of the diagnoses below cannot be reached without it. If you take one habit from this
+        page into the clinical years, take that one.</span></li>
+      <li><b>A normal blood sugar does not exclude ketoacidosis</b><span>On an SGLT2 inhibitor &mdash;
+        prescribed now for diabetes, heart failure and kidney disease, so you will meet them constantly
+        &mdash; the Australian definition is <strong>blood ketones above 1.0&nbsp;mmol/L with a standard
+        base excess below &minus;5</strong>, and a glucose below 14&nbsp;mmol/L makes it euglycaemic.
+        Fasting, bowel preparation, surgery and intercurrent illness are the precipitants. Measure blood
+        ketones, not urine.</span></li>
+      <li><b>Immunotherapy has a cardiac complication and it is early</b><span>Myocarditis from an
+        immune checkpoint inhibitor occurs in about <strong>1%</strong>, at a median of <strong>27 to 34
+        days after the first dose</strong> &mdash; so it is a first-cycle event, not a late one &mdash;
+        and it kills <strong>27 to 50%</strong> of those who get it. Troponin is raised in 94%. The
+        clinical lesson is small and specific: anyone on these drugs who feels unwell gets a
+        troponin.</span></li>
+      <li><b>Clozapine, and an Australian monitoring protocol worth knowing</b><span>Weekly troponin and
+        CRP for the first four weeks, because that is when almost all of it happens. <strong>Troponin
+        above twice the upper limit of normal, or CRP above 100&nbsp;mg/L, means stop the drug and get
+        an echocardiogram.</strong> You will be the person who notices the result.</span></li>
+      <li><b>Serotonin toxicity, and its mirror image</b><span>A combination rather than one agent at a
+        toxic level, which is why the drug chart finds it and a single level will not. <em>Clonus,
+        hyperreflexia, agitation and hyperthermia, worse in the legs than the arms, within hours.</em>
+        Neuroleptic malignant syndrome is the other way round in every respect: days rather than hours,
+        rigidity rather than clonus, reflexes down rather than up.</span></li>
+      <li><b>Distrust the words <em>previously fit and well</em></b><span>They do two jobs at once. They
+        delay the diagnosis of whatever has been accumulating unrecorded through this whole band, and
+        they stand in for a decision nobody has actually made. <em>He&rsquo;s young, he&rsquo;ll
+        tolerate it</em> sounds like a clinical judgement and is frequently a substitute for one.</span></li>
+      <li><b>Chest pain in a woman of thirty-eight</b><span>Not reassuring, and both obvious reflexes
+        are wrong. Spontaneous coronary artery dissection is an intramural haematoma, not a plaque, so
+        thrombolysis extends it and a wire can enter the false lumen. Conservative management is the
+        default &mdash; <strong>83% in the largest published cohort</strong>. The patient most at risk
+        is exactly the one described: young, female, troponin rising, and a team that has pattern-
+        matched to a STEMI.</span></li>
+      <li><b>Heart failure, not heart attack</b><span>In a registry of 29,035 cardiac intensive care
+        admissions, heart failure led the diagnoses in the eighteen to thirty-nines (26% against 20%)
+        while acute coronary syndrome led in the older group (29% against 11%). And of those who went on
+        to mechanical circulatory support, <strong>29% of the young received ECMO against 10%</strong>.
+        A young adult in cardiogenic shock is likelier to need a therapy the hospital you are standing
+        in may not have.</span></li>
+      <li><b>A first psychosis at thirty with neurological signs is not a first psychosis</b><span>Anti-NMDA
+        receptor encephalitis runs in a sequence &mdash; psychiatric prodrome, then a movement disorder
+        with orofacial dyskinesia, then seizures and autonomic instability. About <strong>78% are
+        women</strong> and roughly <strong>28% have an ovarian teratoma</strong>. Two things to
+        remember: cerebrospinal fluid antibodies are more sensitive than serum, and a normal MRI
+        excludes nothing.</span></li>
+      <li><b>Who is in front of you, and what the raw numbers hide</b><span>In 330,712 Australian ICU
+        admissions, the median age at admission was <strong>51.2 years for Aboriginal and Torres Strait
+        Islander patients against 66.5</strong> &mdash; fifteen years younger &mdash; with the same
+        illness severity on arrival. Unadjusted twelve-month mortality was identical, 15.8% against
+        15.7%. <strong>Adjusted for age, diagnosis, severity and socio-economic status it was 1.24
+        (95% CI 1.16&ndash;1.33).</strong> The unadjusted figure reassures; the adjusted one does not.</span></li>
+      <li><b>The history here is partly about other people</b><span>Ask a thirty-eight-year-old what
+        they are worried about and the answer is usually not their own prognosis. It is work, money, and
+        who is collecting the children. That is clinically relevant information, not small talk: it
+        predicts self-discharge, it shapes what they will consent to, and it is the thing nobody
+        else will have written down.</span></li>
+    </ul>
+    <p class="take"><b>If you take one thing:</b> more of the illness in this band is caused by
+      treatment than in any band before it. The chart that lists the treatment is therefore a list of
+      differential diagnoses.</p>
+    <p class="exam"><b>Likely to be examined as:</b> a case with an unremarkable glucose and a metabolic
+      acidosis, or a young woman with chest pain and a troponin rise. In a long case, the marks for
+      &ldquo;relevant medication history&rdquo; are rarely for reciting the list &mdash; they are for
+      saying what each drug makes possible.</p>
+  </section>
+
+  <section class="tier t3" id="senior">
+    <p class="tier-k">Tier three</p>
+    <h2>What you will be expected to do</h2>
+    <p class="who">Phase 3 &mdash; the final clinical years, the pre-internship term, and your first nights on call</p>
+    <ul class="pts">
+      <li><b>Take the medication history properly, and name your source</b><span>This is a job that will
+        fall to you, and it is the one on this page with the highest yield. The ward list is not the
+        source. The GP, the community pharmacy, My Health Record and the person who came in with them
+        are. Write down where each item came from, because the next person needs to know how much to
+        trust it.</span></li>
+      <li><b>Thiamine before glucose</b><span>In anyone with chronic alcohol use or poor intake, give
+        thiamine before or with a glucose load, not after. The mechanism is in tier one: the stores are
+        small and glucose metabolism consumes what is left.</span></li>
+      <li><b>Do not withhold insulin because the sugar is normal</b><span>In euglycaemic ketoacidosis
+        the insulin is what switches off ketogenesis, and <strong>the glucose infusion exists so that
+        you can keep giving it</strong>. This is the error that does the harm, and it is made by people
+        who treat ordinary ketoacidosis perfectly well.</span></li>
+      <li><b>Send the troponin</b><span>On anyone on an immune checkpoint inhibitor who feels unwell,
+        and on anyone in the first month of clozapine with a fever, tachycardia or breathlessness. Both
+        are cheap tests on an unglamorous suspicion, and both have a mortality attached to missing
+        them.</span></li>
+      <li><b>Recognise serotonin toxicity at the bedside</b><span>Clonus is the sign to go looking for,
+        and the ankles are where to look. Stop the serotonergic drugs, cool actively, and treat
+        agitation and rigidity with benzodiazepines. Do not add another serotonergic agent, which is the
+        commonest way it is made worse.</span></li>
+      <li><b>Know when the conversation is a retrieval conversation</b><span>If a patient in this band is
+        in cardiogenic shock in a hospital without extracorporeal support, the referral is not something
+        to raise after the next blood gas. Your job as a student or intern is not to make that call
+        &mdash; it is to recognise that it is the call, and to say so to somebody senior early.</span></li>
+      <li><b>Find out who is looking after the children tonight</b><span>It is a real clinical task, it
+        is nearly always delegated to the most junior person present, and it is almost never written in
+        anybody&rsquo;s curriculum. Ask it early, because the answer sometimes turns out to be
+        &ldquo;nobody&rdquo;.</span></li>
+      <li><b>Ask about alcohol in units, and write the number down</b><span>&ldquo;Social drinker&rdquo;
+        is not a history. The thresholds that matter clinically are quantitative, the withdrawal you
+        will be managing on night three is predicted by the number, and nobody downstream can reconstruct
+        it from an adjective.</span></li>
+      <li><b>Do not let &ldquo;he&rsquo;s young&rdquo; do the work of a decision</b><span>Registry data
+        do show young adults receiving more of everything and dying less &mdash; but those comparisons
+        are unadjusted, and the comparator is everybody over forty. Escalation in this band is usually
+        right. It should still be a decision somebody has made out loud, with a reason you could write
+        in the notes.</span></li>
+    </ul>
+    <p class="take"><b>If you take one thing:</b> the two jobs on this list that nobody will praise you
+      for &mdash; the real medication history and finding out who is at home &mdash; are the two that
+      change what happens next.</p>
+    <p class="exam"><b>Likely to be examined as:</b> a prescribing or medication-reconciliation station,
+      or a communication station with a patient refusing admission because of work. In an OSCE, the
+      marks for the alcohol history are for the quantity and the pattern, not for having raised the
+      subject.</p>
+  </section>
+
+  <div class="pad" style="padding-top:24px">
+    <div class="reply">
+      <h2>Over to you</h2>
+      <p class="ask">Which tier did you read &mdash; and what were you taught that this page
+        contradicts?</p>
+      <p>Tell me your year, which tier fitted, and what was missing, too basic or too advanced. That part
+        is the same every time, and it is how these get better.</p>
+      <p>This one has a second question, because three things on this page are still taught the other way
+        round. That a normal blood glucose rules out ketoacidosis. That chest pain with a troponin rise
+        in a young woman is a STEMI until proved otherwise, and should be treated as one. That a first
+        episode of psychosis at thirty is a psychiatric diagnosis.
+        <strong>Which of those three were you taught, and which way round?</strong> No names and no
+        universities. A few dozen replies would tell me something I cannot find out any other way.</p>
+      <p><a class="btn" href="mailto:icuandyou@icloud.com?subject=Medical%20Students%207%20-%20early%20middle%20age&body=My%20year%2C%20and%20which%20tier%20fitted%3A%0D%0A%0D%0A%0D%0AWhat%20was%20missing%2C%20too%20basic%20or%20too%20advanced%3A%0D%0A%0D%0A%0D%0AWhich%20of%20the%20three%20I%20was%20taught%2C%20and%20which%20way%20round%3A%0D%0A%0D%0A%0D%0AA%20topic%20I%20am%20struggling%20with%3A%0D%0A%0D%0A---%0D%0A%0D%0AName%3A%0D%0A%0D%0A---%0D%0A%0D%0AThinking%20about%20this%20ICU%20AND%20YOU%20post%20overall%20%E2%80%94%20was%20it%20useful%20to%20you%2C%20or%20would%20it%20be%20useful%20to%20others%3F%0D%0A">Send your feedback</a></p>
+      <p class="fallback" style="margin-bottom:9px">How you are credited is entirely your call &mdash; by name, by initials, or not at all &mdash; whether you write the piece or I do, and whether I quote you or simply say who sent something in; nothing of yours goes up with your name on it unless you have said yes.</p>
+      <p class="fallback">The button opens a reply straight to me. If your device blocks it, write to
+        <a href="mailto:icuandyou@icloud.com">icuandyou@icloud.com</a> instead.</p>
+    </div>
+  </div>
+
+  <footer>
+    <span class="firstpub">First published November 2026</span>
+    <p class="subline">Two emails a week &mdash; the Friday newsletter for all subscribers, and, for clinical subscribers,
+      the mind map and puzzles the moment they go up on Tuesday. Occasional announcements of new
+      features as they arrive. What went up and why it mattered, the best of your replies, and
+      original feature stories, news and views. <a href="https://joinlist.com/f/5adad2d6">Come and join us</a>.</p>
+    <a class="home" href="./">&larr; &nbsp;All of ICU AND YOU</a><br>
+    ICU AND YOU &nbsp;&#183;&nbsp; Medical Students&#x27; Place No. 7 &nbsp;&#183;&nbsp; companion to Mind Map #37, Early middle age<br>
+    Educational use within the ICU education programme. Not a clinical protocol &mdash; local policy, current
+    guidance and the retrieval service always take precedence. Verify every dose against your own
+    formulary before use.
+  <br>
+    <span class="srcs">Where this page contradicts something you were taught, here is what it rests on.
+    Leading causes of death by age band are the Australian Institute of Health and Welfare&rsquo;s
+    <a href="https://www.aihw.gov.au/reports/life-expectancy-deaths/deaths-in-australia/contents/leading-causes-of-death">leading
+    causes of death</a> reporting and the Australian Bureau of Statistics causes-of-death collection.
+    The age at intensive care admission and the twelve-month mortality figures for Aboriginal and Torres
+    Strait Islander patients are Secombe and colleagues, a registry-based data linkage study of 330,712
+    admissions, <em>Medical Journal of Australia</em> 2022. Ketoacidosis with SGLT2 inhibitors, including
+    the ketone and base excess thresholds and the perioperative withholding period, is the joint alert of
+    the Australian Diabetes Society, the Australian Diabetes Educators Association, ANZCA and the New
+    Zealand Society for the Study of Diabetes. Clozapine monitoring is Hunter New England&rsquo;s
+    clozapine-induced myocarditis guideline. Immune checkpoint inhibitor myocarditis is a 2026 review in
+    the <em>Journal of Clinical Medicine</em>; anti-NMDA receptor encephalitis is a 2026 review in
+    <em>Biomedicines</em>; both are set out with their figures in
+    <a href="superquiz-66-early-middle-age.html">Superquiz 66</a>. Spontaneous coronary artery dissection,
+    including the proportion managed conservatively and the predictors of recurrence, is set out with its
+    sources in <a href="podcast-61-scad.html">Podcast 61</a> and its verification record. The cardiac
+    intensive care figures are the Critical Care Cardiology Trials Network registry, reviewed in
+    <a href="journal-club-102-young-adults-cicu.html">Journal Club 102</a>. The causes of cardiomyopathy
+    at this age, including the alcohol figures, are in <a href="mnemonic-59-cardio-stress.html">Mnemonic
+    59</a>. On dosing in obesity: the inconsistency noted in tier one is in a widely used Australian
+    exam resource, where the model answer and its own discussion differ on which weight to use for
+    lipophilic drugs &mdash; which is the reason that point is phrased as a habit rather than a rule.
+    Capacity, consent and prescribing protocols are jurisdictional &mdash; check your own.</span>
+  <br>
+    <span class="mine">Views my own, not those of NSW Health or any other organisation. No identifiable patients — scenarios are constructed or combined for teaching. <a href="about.html">More</a>.</span>
+  </footer>
+
+</div>
+<script src="glossary.js"></script>
+<script data-goatcounter="https://icuandyou.goatcounter.com/count"
+        async src="//gc.zgo.at/count.js"></script>
+</body>
+</html>
