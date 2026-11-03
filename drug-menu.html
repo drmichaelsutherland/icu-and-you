@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en-AU">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ICU AND YOU · Drug menu</title>
+<meta name="description" content="Every drug covered in the Drugstore series, in alphabetical order, with a link to its profile. Brand names and class names are cross-referenced to the drug they belong to.">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="alternate icon" href="/favicon.ico" sizes="any">
+<link rel="apple-touch-icon" href="/icon-180.png">
+<meta name="theme-color" content="#1B2A33">
+<meta property="og:site_name" content="ICU AND YOU">
+<meta property="og:type" content="website">
+<meta property="og:title" content="ICU AND YOU · Drug menu">
+<meta property="og:description" content="Every drug covered, alphabetically, with a link to its profile.">
+<meta property="og:image" content="https://icuandyou.com/share-card.png">
+<meta name="twitter:card" content="summary_large_image">
+<style>
+  :root{
+    --paper:#FBF9FC; --ink:#241F2B; --muted:#6B6377; --rule:#DFD6E6;
+    --amethyst:#7A3560; --amethysttint:#F1EBF7;
+  }
+  *{box-sizing:border-box}
+  body{margin:0;background:#EDE8F1;color:var(--ink);
+    font:400 17px/1.64 'Iowan Old Style','Palatino Linotype',Palatino,Georgia,serif;
+    -webkit-text-size-adjust:100%;}
+  .sheet{max-width:820px;margin:0 auto;background:var(--paper);
+    box-shadow:0 1px 40px rgba(36,31,43,.10);}
+
+  header.top{padding:42px 40px 28px;border-bottom:2px solid var(--amethyst)}
+  .tophome,.topseries{display:inline-block;margin:0 0 16px;padding:7px 16px;
+    border-radius:20px;border:1px solid currentColor;opacity:.62;text-decoration:none;
+    color:inherit;font:600 11.5px 'Helvetica Neue',Arial,sans-serif;letter-spacing:.09em;
+    text-transform:uppercase;transition:opacity .12s ease}
+  .topseries{margin-left:9px}
+  .tophome:hover,.topseries:hover{opacity:1}
+  .eyebrow a.mast,.eyebrow a.serlink{color:inherit;text-decoration:none;
+    border-bottom:1px solid transparent}
+  .eyebrow a.mast:hover,.eyebrow a.serlink:hover{border-bottom-color:currentColor}
+  .eyebrow{font:500 11.5px/1 'Helvetica Neue',Arial,sans-serif;letter-spacing:.24em;
+    text-transform:uppercase;color:var(--muted);margin:0 0 13px}
+  h1{font-size:32px;line-height:1.2;margin:0 0 9px;font-weight:400;letter-spacing:-.012em}
+  .kicker{color:var(--muted);margin:0;font-size:16.5px;font-style:italic}
+
+  .pad{padding:32px 40px}
+  p{margin:0 0 16px}
+  .lede{font-size:19.5px;line-height:1.55;margin:0 0 20px}
+  .note{font:400 15px/1.6 'Helvetica Neue',Arial,sans-serif;color:var(--muted);
+    margin:0 0 26px;padding:0 0 22px;border-bottom:1px solid var(--rule)}
+
+  .jump{margin:0 0 26px;font:600 13px 'Helvetica Neue',Arial,sans-serif;letter-spacing:.06em}
+  .jump a{display:inline-block;margin:0 5px 6px 0;padding:5px 11px;border-radius:6px;
+    background:var(--amethysttint);color:var(--amethyst);text-decoration:none}
+  .jump a:hover{background:var(--amethyst);color:#F8F5FB}
+  .jump span{display:inline-block;margin:0 5px 6px 0;padding:5px 11px;border-radius:6px;
+    color:#B6AEC0}
+
+  .letter{font:600 13px 'Helvetica Neue',Arial,sans-serif;letter-spacing:.2em;
+    text-transform:uppercase;color:var(--amethyst);margin:30px 0 10px;
+    padding-bottom:7px;border-bottom:1px solid var(--rule);scroll-margin-top:12px}
+  ul.drugs{list-style:none;margin:0;padding:0}
+  ul.drugs li{display:flex;gap:14px;align-items:baseline;padding:11px 0;
+    border-bottom:1px solid #EFE9F4;font-size:16.5px;line-height:1.5}
+  ul.drugs li:last-child{border-bottom:0}
+  ul.drugs .nm{flex:0 0 206px;font:600 15.5px 'Helvetica Neue',Arial,sans-serif;
+    line-height:1.4}
+  ul.drugs .nm a{color:var(--amethyst);text-decoration:none;
+    border-bottom:1px solid rgba(122,53,96,.3)}
+  ul.drugs .nm a:hover{border-bottom-color:var(--amethyst)}
+  ul.drugs .where{color:#4A4252}
+  ul.drugs .where a{color:var(--amethyst)}
+  ul.drugs li.xref .nm{font-weight:400;color:var(--muted)}
+  ul.drugs li.xref .where{color:var(--muted);font-style:italic}
+  .srs{font:600 11px 'Helvetica Neue',Arial,sans-serif;letter-spacing:.1em;
+    text-transform:uppercase;color:var(--muted);margin-left:8px;white-space:nowrap}
+  /* where the profile is titled with the drug's own name the row carries the
+     series reference alone, so it must not start with the separating space */
+  ul.drugs .where > .srs:first-child{margin-left:0}
+
+  .empty{margin:26px 0 0;padding:20px 24px;background:var(--amethysttint);
+    border-left:4px solid var(--amethyst);border-radius:0 8px 8px 0;
+    font-size:16.5px;line-height:1.55}
+  .empty p:last-child{margin:0}
+
+  footer{padding:24px 40px 42px;border-top:1px solid var(--rule);
+    font:400 13px 'Helvetica Neue',Arial,sans-serif;color:var(--muted);text-align:center;line-height:1.7}
+  .home{display:inline-block;margin:0 0 14px;padding:8px 18px;border-radius:20px;
+    border:1px solid var(--rule);background:#F3EFF7;color:var(--amethyst);text-decoration:none;
+    font:600 12.5px 'Helvetica Neue',Arial,sans-serif;letter-spacing:.05em}
+  .home:hover{background:var(--amethyst);border-color:var(--amethyst);color:#F8F5FB}
+  .mine{display:inline-block;margin:9px 0 0;opacity:.78;font-size:.94em}
+
+  @media (max-width:640px){
+    header.top,.pad,footer{padding-left:20px;padding-right:20px}
+    h1{font-size:26px} body{font-size:16.5px} .lede{font-size:18px}
+    ul.drugs li{flex-direction:column;gap:3px} ul.drugs .nm{flex:none}
+    /* stacked, the series reference needs its own line: run on, it reads as
+       part of the title */
+    ul.drugs .srs{display:block;margin-left:0;margin-top:3px}
+  }
+  @media print{ body{background:#fff} .sheet{box-shadow:none;max-width:none}
+    .jump{display:none} }
+</style>
+</head>
+<body>
+<div class="sheet">
+
+  <header class="top">
+    <a class="tophome" href="./">&larr;&nbsp; Home</a>
+    <a class="topseries" href="./?s=drugstore">All drug profiles</a>
+    <p class="eyebrow"><a class="mast" href="./">ICU and You</a> &nbsp;&#183;&nbsp;
+      <a class="serlink" href="./?s=drugstore">Drugstore</a></p>
+    <h1>Drug menu</h1>
+    <p class="kicker">Every drug covered so far, alphabetically, with a link to its profile</p>
+  </header>
+
+  <div class="pad">
+    <p class="lede">A short list that is meant to get long. If a drug has had a profile in the
+      <a href="./?s=drugstore">Drugstore</a> series, it is here, and so are the brand names and class
+      names that would send you looking for it.</p>
+
+    <p class="note">Cross-references are in grey: a brand name, an alternative generic name, or a class,
+      pointing at the profile that covers it. The profiles themselves are listed under the generic name.
+      Drugs discussed in passing elsewhere on the site are not indexed here &mdash; this is a menu of
+      profiles, not of mentions. Use the <a href="glossary.html">glossary</a> for terms, and the
+      <a href="./">search box on the front page</a> for anything else.</p>
+
+<!-- BUILD:DRUG-INDEX -->
+    <p class="jump">
+      <a href="#LA">A</a>
+      <span>B</span>
+      <span>C</span>
+      <span>D</span>
+      <a href="#LE">E</a>
+      <a href="#LF">F</a>
+      <span>G</span>
+      <a href="#LH">H</a>
+      <a href="#LI">I</a>
+      <span>J</span>
+      <span>K</span>
+      <a href="#LL">L</a>
+      <a href="#LM">M</a>
+      <a href="#LN">N</a>
+      <a href="#LO">O</a>
+      <a href="#LP">P</a>
+      <span>Q</span>
+      <a href="#LR">R</a>
+      <a href="#LS">S</a>
+      <a href="#LT">T</a>
+      <span>U</span>
+      <span>V</span>
+      <span>W</span>
+      <span>X</span>
+      <span>Y</span>
+      <span>Z</span>
+    </p>
+    <h2 class="letter" id="LA">A</h2>
+    <ul class="drugs">
+      <li class="xref"><span class="nm">Acetaminophen</span><span class="where">see <a href="drugstore-02-paracetamol.html">Paracetamol</a></span></li>
+      <li class="xref"><span class="nm">Acetylcysteine</span><span class="where">see <a href="drugstore-02-paracetamol.html">Paracetamol</a></span></li>
+      <li class="xref"><span class="nm">Actrapid</span><span class="where">see <a href="drugstore-03-insulin.html">Insulin</a></span></li>
+      <li><span class="nm"><a href="drugstore-01-adrenaline.html">Adrenaline</a></span><span class="where">Adrenaline in the small child<span class="srs">Drugstore 1</span></span></li>
+      <li class="xref"><span class="nm">Apidra</span><span class="where">see <a href="drugstore-03-insulin.html">Insulin</a></span></li>
+      <li class="xref"><span class="nm">Awiqli</span><span class="where">see <a href="drugstore-03-insulin.html">Insulin</a></span></li>
+    </ul>
+    <h2 class="letter" id="LE">E</h2>
+    <ul class="drugs">
+      <li class="xref"><span class="nm">Epinephrine</span><span class="where">see <a href="drugstore-01-adrenaline.html">Adrenaline</a></span></li>
+    </ul>
+    <h2 class="letter" id="LF">F</h2>
+    <ul class="drugs">
+      <li class="xref"><span class="nm">Fiasp</span><span class="where">see <a href="drugstore-03-insulin.html">Insulin</a></span></li>
+    </ul>
+    <h2 class="letter" id="LH">H</h2>
+    <ul class="drugs">
+      <li class="xref"><span class="nm">Humalog</span><span class="where">see <a href="drugstore-03-insulin.html">Insulin</a></span></li>
+      <li class="xref"><span class="nm">Humulin</span><span class="where">see <a href="drugstore-03-insulin.html">Insulin</a></span></li>
+    </ul>
+    <h2 class="letter" id="LI">I</h2>
+    <ul class="drugs">
+      <li><span class="nm"><a href="drugstore-03-insulin.html">Insulin</a></span><span class="where"><span class="srs">Drugstore 3</span></span></li>
+      <li class="xref"><span class="nm">Insulin aspart</span><span class="where">see <a href="drugstore-03-insulin.html">Insulin</a></span></li>
+      <li class="xref"><span class="nm">Insulin degludec</span><span class="where">see <a href="drugstore-03-insulin.html">Insulin</a></span></li>
+      <li class="xref"><span class="nm">Insulin glargine</span><span class="where">see <a href="drugstore-03-insulin.html">Insulin</a></span></li>
+      <li class="xref"><span class="nm">Insulin glulisine</span><span class="where">see <a href="drugstore-03-insulin.html">Insulin</a></span></li>
+      <li class="xref"><span class="nm">Insulin lispro</span><span class="where">see <a href="drugstore-03-insulin.html">Insulin</a></span></li>
+      <li class="xref"><span class="nm">Isophane insulin</span><span class="where">see <a href="drugstore-03-insulin.html">Insulin</a></span></li>
+    </ul>
+    <h2 class="letter" id="LL">L</h2>
+    <ul class="drugs">
+      <li class="xref"><span class="nm">Lantus</span><span class="where">see <a href="drugstore-03-insulin.html">Insulin</a></span></li>
+      <li class="xref"><span class="nm">Levemir</span><span class="where">see <a href="drugstore-03-insulin.html">Insulin</a></span></li>
+    </ul>
+    <h2 class="letter" id="LM">M</h2>
+    <ul class="drugs">
+      <li class="xref"><span class="nm">Mixtard</span><span class="where">see <a href="drugstore-03-insulin.html">Insulin</a></span></li>
+    </ul>
+    <h2 class="letter" id="LN">N</h2>
+    <ul class="drugs">
+      <li class="xref"><span class="nm">Neutral insulin</span><span class="where">see <a href="drugstore-03-insulin.html">Insulin</a></span></li>
+      <li class="xref"><span class="nm">NovoMix</span><span class="where">see <a href="drugstore-03-insulin.html">Insulin</a></span></li>
+      <li class="xref"><span class="nm">NovoRapid</span><span class="where">see <a href="drugstore-03-insulin.html">Insulin</a></span></li>
+    </ul>
+    <h2 class="letter" id="LO">O</h2>
+    <ul class="drugs">
+      <li class="xref"><span class="nm">Optisulin</span><span class="where">see <a href="drugstore-03-insulin.html">Insulin</a></span></li>
+    </ul>
+    <h2 class="letter" id="LP">P</h2>
+    <ul class="drugs">
+      <li><span class="nm"><a href="drugstore-04-pantoprazole.html">Pantoprazole</a></span><span class="where"><span class="srs">Drugstore 4</span></span></li>
+      <li><span class="nm"><a href="drugstore-02-paracetamol.html">Paracetamol</a></span><span class="where">Paracetamol in children<span class="srs">Drugstore 2</span></span></li>
+      <li class="xref"><span class="nm">Protaphane</span><span class="where">see <a href="drugstore-03-insulin.html">Insulin</a></span></li>
+      <li class="xref"><span class="nm">Proton pump inhibitors</span><span class="where">see <a href="drugstore-04-pantoprazole.html">Pantoprazole</a></span></li>
+    </ul>
+    <h2 class="letter" id="LR">R</h2>
+    <ul class="drugs">
+      <li class="xref"><span class="nm">Ryzodeg</span><span class="where">see <a href="drugstore-03-insulin.html">Insulin</a></span></li>
+    </ul>
+    <h2 class="letter" id="LS">S</h2>
+    <ul class="drugs">
+      <li class="xref"><span class="nm">Somac</span><span class="where">see <a href="drugstore-04-pantoprazole.html">Pantoprazole</a></span></li>
+    </ul>
+    <h2 class="letter" id="LT">T</h2>
+    <ul class="drugs">
+      <li class="xref"><span class="nm">Toujeo</span><span class="where">see <a href="drugstore-03-insulin.html">Insulin</a></span></li>
+      <li class="xref"><span class="nm">Tresiba</span><span class="where">see <a href="drugstore-03-insulin.html">Insulin</a></span></li>
+    </ul>
+<!-- /BUILD:DRUG-INDEX -->
+
+    <div class="empty">
+      <p><strong>A drug you want covered?</strong> The series takes requests, and a drug that has caught
+        somebody out is worth more than a drug that is merely common. Tell me which one, and what the
+        difficulty with it actually is &mdash; the dose nobody agrees on, the preparation that changed,
+        the error you have watched happen.
+        <a href="mailto:icuandyou@icloud.com?subject=Drugstore%20-%20a%20drug%20to%20cover&body=The%20drug%3A%0D%0A%0D%0A%0D%0AWhat%20the%20difficulty%20with%20it%20is%3A%0D%0A%0D%0A%0D%0A---%0D%0A%0D%0AName%3A%0D%0A">Write
+        to me</a>, or use the reply button on any of the profiles.</p>
+    </div>
+  </div>
+
+  <footer>
+    <a class="home" href="./">&larr; &nbsp;All of ICU AND YOU</a><br>
+    ICU AND YOU &nbsp;&#183;&nbsp; Drug menu &nbsp;&#183;&nbsp; an index to the
+    <a href="./?s=drugstore">Drugstore</a> series<br>
+    Educational use within the ICU education programme. Not a clinical protocol &mdash; local policy, current
+    guidance and the retrieval service always take precedence. Verify every dose against your own formulary
+    before use.<br>
+    <span class="mine">Views my own, not those of NSW Health or any other organisation. No identifiable
+    patients &mdash; scenarios are constructed or combined for teaching. <a href="about.html">More</a>.</span>
+  </footer>
+
+</div>
+<script data-goatcounter="https://icuandyou.goatcounter.com/count"
+        async src="//gc.zgo.at/count.js"></script>
+</body>
+</html>

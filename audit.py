@@ -16,23 +16,24 @@ import json
 import re
 import sys
 from collections import defaultdict
-from html import unescape
+from html import escape as html_escape, unescape
 from pathlib import Path
 
 HERE = Path(__file__).resolve().parent
 
 # Site-wide pages: not content, exempt from the content-page checks.
 SITEWIDE = {"index.html", "about.html", "glossary.html",
-            "corrections.html", "you-asked.html", "on-your-phone.html"}
+            "corrections.html", "you-asked.html", "on-your-phone.html",
+            "drug-menu.html"}
 
 # Pages that deliberately carry no reply-email line.
 NO_REPLY_LINE = {"about.html", "corrections.html", "you-asked.html",
-                 "on-your-phone.html"}
+                 "on-your-phone.html", "drug-menu.html"}
 
 # Pages that deliberately carry no subscribe footer line.
 # (Site-wide pages don't sell the newsletter — set by Michael, Aug 2026.)
 NO_SUBSCRIBE_LINE = {"about.html", "corrections.html", "glossary.html",
-                     "you-asked.html", "on-your-phone.html"}
+                     "you-asked.html", "on-your-phone.html", "drug-menu.html"}
 
 # Some series are not tied to a topic and so have no topic to link to:
 # the Top Ten spans topics by design, and a book review belongs to the
@@ -784,6 +785,45 @@ def main():
             f'Latest posts. Add, at the top:  '
             f'{{"file": "{p["file"]}", "colour": "{p["colour"]}", '
             f'"label": "{label}{num} · {p["title"]}"}}')
+
+    # ---- the drug menu ----------------------------------------------------
+    # drug-menu.html is generated from the "drugs" and "also" fields on the
+    # drugstore entries, for the same reason the Procedures shelf is generated:
+    # an index kept by hand stops listing things. These three checks make a
+    # stale or incomplete menu loud rather than quiet.
+    dm = HERE / "drug-menu.html"
+    if dm.exists():
+        dtxt = dm.read_text(encoding="utf-8")
+        region = re.search(
+            r"<!-- BUILD:DRUG-INDEX -->(.*?)<!-- /BUILD:DRUG-INDEX -->", dtxt, re.S)
+        if not region:
+            problems.append("drug menu: drug-menu.html has lost its BUILD:DRUG-INDEX markers, "
+                            "so build-index.py can no longer keep it current")
+        else:
+            body = region.group(1)
+            seen = []
+            for p in m["pages"]:
+                if p["series"] != "drugstore":
+                    continue
+                if not p.get("drugs"):
+                    problems.append(
+                        f'drug menu: {p["file"]} has no "drugs" in the manifest, so the '
+                        f"profile is missing from the menu entirely")
+                for d in (p.get("drugs") or []) + (p.get("also") or []):
+                    seen.append(d.lower())
+                    if f">{html_escape(d)}<" not in body:
+                        problems.append(
+                            f'drug menu: "{d}" is listed in the manifest but does not '
+                            f"appear in drug-menu.html — rerun build-index.py")
+                if p["file"] not in body:
+                    problems.append(
+                        f'drug menu: {p["file"]} is a drug profile but nothing in '
+                        f"drug-menu.html links to it — rerun build-index.py")
+            for d in {x for x in seen if seen.count(x) > 1}:
+                problems.append(f'drug menu: "{d}" is listed against more than one profile')
+            for href in set(re.findall(r'href="([^"#]+\.html)"', body)):
+                if not (HERE / href).exists():
+                    problems.append(f"drug menu: links to {href}, which is not on disk")
 
     # ---- verification record ----------------------------------------------
     # Three things must stay true, or the ticks start lying:

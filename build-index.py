@@ -429,6 +429,63 @@ def build_doctors(m):
     return _shelf(m, "doctors", "All Notable Doctors")
 
 
+def build_drug_index(m):
+    """The Drug menu page: every drug the Drugstore series has profiled, in
+    alphabetical order, with the brand and class names that would send someone
+    looking for it cross-referenced to the profile that covers them.
+
+    Generated rather than hand-kept for the reason the Procedures shelf is:
+    a hand-maintained index stops listing things. The data lives on the
+    drugstore entries in the manifest — "drugs" for the profile's own subject,
+    "also" for the names that point at it — so adding a profile adds its
+    entries here and nowhere else."""
+    pages = [p for p in m["pages"] if p["series"] == "drugstore"]
+    rows = []                       # (sortkey, name, is_xref, page, primary)
+    for p in pages:
+        primary = (p.get("drugs") or [p["title"]])
+        for d in primary:
+            rows.append((d.lower(), d, False, p, primary[0]))
+        for d in (p.get("also") or []):
+            rows.append((d.lower(), d, True, p, primary[0]))
+
+    dupes = [k for k, n in collections.Counter(r[0] for r in rows).items() if n > 1]
+    if dupes:
+        raise SystemExit("drug menu: the same name is listed twice: "
+                         + ", ".join(sorted(dupes)))
+    rows.sort()
+
+    letters = sorted({r[0][0].upper() for r in rows})
+    jump = ['    <p class="jump">']
+    for ch in [chr(c) for c in range(65, 91)]:
+        jump.append(f'      <a href="#L{ch}">{ch}</a>' if ch in letters
+                    else f'      <span>{ch}</span>')
+    jump.append("    </p>")
+    out = jump
+
+    for ch in letters:
+        out.append(f'    <h2 class="letter" id="L{ch}">{ch}</h2>')
+        out.append('    <ul class="drugs">')
+        for _, name, xref, p, primary in [r for r in rows if r[0][0].upper() == ch]:
+            num = p.get("number") or ""
+            if xref:
+                out.append(
+                    f'      <li class="xref"><span class="nm">{e(name)}</span>'
+                    f'<span class="where">see <a href="{p["file"]}">{e(primary)}</a>'
+                    f'</span></li>')
+            else:
+                # Where the profile is titled with the drug's own name there is
+                # nothing to add, so the row carries the series reference alone
+                # rather than saying "Insulin ... Insulin".
+                title = "" if p["title"].strip().lower() == name.lower() else e(p["title"])
+                out.append(
+                    f'      <li><span class="nm">'
+                    f'<a href="{p["file"]}">{e(name)}</a></span>'
+                    f'<span class="where">{title}'
+                    f'<span class="srs">Drugstore {e(num)}</span></span></li>')
+        out.append("    </ul>")
+    return "\n".join(out)
+
+
 def build_topics(m):
     """The topic index in the control bar. Topics accumulate as the programme
     works along the lifespan, and the only other way to reach one is to scroll
@@ -472,6 +529,12 @@ REGIONS = {
     "LATEST": build_latest,
     "TOPTEN": build_topten,
     "TOPICS": build_topics,
+}
+
+# Regions in pages other than index.html. Same marker mechanism, same rule:
+# generated from the manifest so the page cannot drift from what is published.
+OTHER_FILES = {
+    HERE / "drug-menu.html": {"DRUG-INDEX": build_drug_index},
 }
 
 
@@ -540,21 +603,44 @@ def main():
         sys.exit(f"index.html has no markers for: {', '.join(missing)}\n"
                  f"Run:  python3 build-index.py --insert-markers")
 
-    changed = []
-    for name, fn in REGIONS.items():
-        pat = re.compile(
-            f"(<!-- BUILD:{name} -->\n).*?(\n<!-- /BUILD:{name} -->)", re.S
-        )
-        new_body = fn(m)
-        old = pat.search(src).group(0)
-        new = f"<!-- BUILD:{name} -->\n{new_body}\n<!-- /BUILD:{name} -->"
-        if old != new:
-            changed.append(name)
-        src = pat.sub(lambda _: new, src, count=1)
+    def rewrite(text, regions, where):
+        """Substitute every marked region in one file. Returns the new text and
+        the names of the regions whose content actually changed."""
+        touched = []
+        for name, fn in regions.items():
+            pat = re.compile(
+                f"(<!-- BUILD:{name} -->\n).*?(\n<!-- /BUILD:{name} -->)", re.S
+            )
+            hit = pat.search(text)
+            if not hit:
+                sys.exit(f"{where} has no markers for: {name}")
+            new = f"<!-- BUILD:{name} -->\n{fn(m)}\n<!-- /BUILD:{name} -->"
+            if hit.group(0) != new:
+                touched.append(name)
+            text = pat.sub(lambda _: new, text, count=1)
+        return text, touched
+
+    src, changed = rewrite(src, REGIONS, "index.html")
+
+    others = []
+    for path, regions in OTHER_FILES.items():
+        if not path.exists():
+            sys.exit(f"{path.name} is missing — it carries generated regions")
+        txt = path.read_text(encoding="utf-8")
+        txt, touched = rewrite(txt, regions, path.name)
+        others.append((path, txt, touched))
 
     if "--check" in args:
-        print("would change:", ", ".join(changed) if changed else "nothing")
+        print("index.html would change:", ", ".join(changed) if changed else "nothing")
+        for path, _, touched in others:
+            print(f"{path.name} would change:",
+                  ", ".join(touched) if touched else "nothing")
         return
+
+    for path, txt, touched in others:
+        path.write_text(txt, encoding="utf-8")
+        if touched:
+            print(f"{path.name} rebuilt — regions changed: {', '.join(touched)}")
 
     INDEX.write_text(src, encoding="utf-8")
     n_week = sum(1 for p in m["pages"] if p.get("week"))

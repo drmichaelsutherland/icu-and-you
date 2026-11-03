@@ -794,7 +794,9 @@
    "pos": 5,
    "badge": "Drugstore",
    "link_label": "Open",
-   "blurb": "A new section. Adrenaline as it is used between one and five — the four things that matter, the two strengths that get confused, and the pharmacology as the First Part wants it."
+   "blurb": "A new section. Adrenaline as it is used between one and five — the four things that matter, the two strengths that get confused, and the pharmacology as the First Part wants it.",
+   "drugs": ["Adrenaline"],
+   "also": ["Epinephrine"]
   },
   {
    "file": "srilanka-01-dengue.html",
@@ -910,7 +912,9 @@
    "title": "Paracetamol in children",
    "topic": "The school-age child",
    "slug": "school-age",
-   "blurb": "The drug everyone thinks they know. The doses and where they differ under 10 kg, the tenfold error that keeps recurring, why the child at risk is the one who has stopped eating, and the metabolism that is the whole of the toxicology."
+   "blurb": "The drug everyone thinks they know. The doses and where they differ under 10 kg, the tenfold error that keeps recurring, why the child at risk is the one who has stopped eating, and the metabolism that is the whole of the toxicology.",
+   "drugs": ["Paracetamol"],
+   "also": ["Acetaminophen", "Acetylcysteine"]
   },
   {
    "file": "coin-francais-03-medecin-regulateur.html",
@@ -1417,7 +1421,9 @@
    "pos": 12,
    "badge": "Drugstore",
    "link_label": "Open",
-   "blurb": "One hormone and about twenty ways to give it, none of them interchangeable. What is actually available in Australia now and what disappears on 31 December, why the infusion is down to a single product line, the ketoacidosis numbers and how they differ between states, hyperkalaemia, and the kinetics and dynamics as the First Part wants them."
+   "blurb": "One hormone and about twenty ways to give it, none of them interchangeable. What is actually available in Australia now and what disappears on 31 December, why the infusion is down to a single product line, the ketoacidosis numbers and how they differ between states, hyperkalaemia, and the kinetics and dynamics as the First Part wants them.",
+   "drugs": ["Insulin"],
+   "also": ["Actrapid", "Apidra", "Awiqli", "Fiasp", "Humalog", "Humulin", "Insulin aspart", "Insulin degludec", "Insulin glargine", "Insulin glulisine", "Insulin lispro", "Isophane insulin", "Lantus", "Levemir", "Mixtard", "Neutral insulin", "NovoMix", "NovoRapid", "Optisulin", "Protaphane", "Ryzodeg", "Toujeo", "Tresiba"]
   },
   {
    "file": "jukebox-01-young-adult.html",
@@ -1635,9 +1641,30 @@
    "badge": "Medical Students",
    "link_label": "Open",
    "blurb": "Thirty to forty-five in three tiers \u2014 the band where the two lines cross, the body composition that changes what a dose means, and what you will be expected to do. The argument of the page is that here the drug chart is a diagnostic document. Plus three things still taught the other way round, and a question asking which of them you were taught."
+  },
+  {
+   "file": "drugstore-04-pantoprazole.html",
+   "series": "drugstore",
+   "colour": "mulberry",
+   "number": "4",
+   "title": "Pantoprazole",
+   "topic": "Early middle age",
+   "slug": "early-middle-age",
+   "week": true,
+   "pos": 10,
+   "badge": "Drugstore",
+   "link_label": "Open",
+   "drugs": ["Pantoprazole"],
+   "also": ["Proton pump inhibitors", "Somac"],
+   "blurb": "The drug almost every patient is on and almost nobody decided to start. Who is actually at risk, why the prophylactic dose is the low one, the bleeding ulcer regimen and the fact that neither use is registered in Australia, the label that contraindicates it in cirrhosis while we all give it anyway, and a one-hour half-life that suppresses acid for a day. Every number on the page checked."
   }
  ],
  "latest": [
+  {
+   "file": "drugstore-04-pantoprazole.html",
+   "colour": "mulberry",
+   "label": "Drugstore 4 \u00b7 Pantoprazole"
+  },
   {
    "file": "med-students-07-early-middle-age.html",
    "colour": "violet",
@@ -1657,11 +1684,6 @@
    "file": "exam-cicm-first-03-the-mcq-paper.html",
    "colour": "pine",
    "label": "Exam focus \u00b7 CICM First Part 3 \u00b7 Fifty minutes, fifty questions"
-  },
-  {
-   "file": "mnemonic-59-cardio-stress.html",
-   "colour": "olive",
-   "label": "Mnemonic 59 \u00b7 Cardiomyopathy at forty"
   }
  ],
  "topten": [
