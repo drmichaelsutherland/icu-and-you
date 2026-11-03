@@ -1524,7 +1524,7 @@
    "topic": "Early middle age",
    "slug": "early-middle-age",
    "week": true,
-   "pos": 1,
+   "pos": 2,
    "blurb": "Four stations: where the two lines cross, what actually brings them in, what grows and what we give them, and what outlasts the admission. Suicide leads the causes of death in this band, Aboriginal and Torres Strait Islander patients carry the burden of a much older patient, and the drugs we now give have a critical illness of their own."
   },
   {
@@ -1607,9 +1607,28 @@
    "badge": "Superquiz",
    "link_label": "Take the quiz",
    "blurb": "Five open-book questions \u2014 the ketoacidosis with a blood sugar of 9.8, the coronary dissection that must not be stented or lysed, the myocarditis that arrives in the first month of a cancer drug, what actually fills a cardiac ICU at thirty-five, and the first psychosis that turns out not to be one. Three correct earns a certificate."
+  },
+  {
+   "file": "bare-bones-04-early-middle-age.html",
+   "series": "barebones",
+   "colour": "bone",
+   "number": "4",
+   "title": "Early middle age",
+   "topic": "Early middle age",
+   "slug": "early-middle-age",
+   "week": true,
+   "pos": 1,
+   "badge": "Bare Bones",
+   "link_label": "Open",
+   "blurb": "Ten points, five minutes, nothing decorative. The band where the two lines cross, the overdose that is on their own prescribed medicines, an Aboriginal or Torres Strait Islander patient carrying the illness burden of someone fifteen years older, heart failure rather than heart attack, the coronary dissection you must not thrombolyse, and the ketoacidosis with a normal blood sugar."
   }
  ],
  "latest": [
+  {
+   "file": "bare-bones-04-early-middle-age.html",
+   "colour": "bone",
+   "label": "Bare Bones 4 \u00b7 Early middle age"
+  },
   {
    "file": "superquiz-66-early-middle-age.html",
    "colour": "wine",
@@ -1629,11 +1648,6 @@
    "file": "registrars-02-nutrition.html",
    "colour": "heather striped",
    "label": "Your Presentations 2 \u00b7 Nutrition in intensive care"
-  },
-  {
-   "file": "superpuzzle-54-early-middle-age-fillable.html",
-   "colour": "rust",
-   "label": "Superpuzzle 54 \u00b7 Early middle age"
   }
  ],
  "topten": [
