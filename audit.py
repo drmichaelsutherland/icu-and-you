@@ -548,6 +548,46 @@ def main():
         if "display:block" not in block.replace(" ", ""):
             problems.append(f"{f}: print block never shows .result, so nothing will print")
 
+    # ---- Bare Bones must stay bare --------------------------------------
+    # November 2026. The series promises five minutes and "nothing
+    # decorative", and it had drifted badly: the ten points ran to 200 words
+    # in No. 1, then 583, then 907, then 982. Each edition was built from the
+    # last, and each gained a sentence per point explaining why the point
+    # mattered — which is precisely the discussion the series exists without.
+    # Michael set the ceiling at 300 words across the ten points: a point
+    # states a thing, it does not argue for it.
+    #
+    # The three already over are grandfathered rather than cut on the spot,
+    # and are reported as notes so the debt stays visible rather than being
+    # silently forgiven. They are to be tightened when each topic comes round
+    # again, which is the standing second-review rule for the back catalogue.
+    BARE_BONES_MAX = 300
+    BARE_BONES_GRANDFATHERED = {
+        "bare-bones-02-adolescent.html",
+        "bare-bones-03-young-adult.html",
+        "bare-bones-04-early-middle-age.html",
+    }
+    for f in content:
+        if not f.startswith("bare-bones-"):
+            continue
+        s = (HERE / f).read_text(encoding="utf-8")
+        pts = re.findall(r'<span class="pt">(.*?)</span>', s, re.S)
+        if not pts:
+            problems.append(f"{f}: is a Bare Bones page but has no points in it")
+            continue
+        n = sum(len(unescape(re.sub(r"<[^>]+>", " ", p)).split()) for p in pts)
+        if n <= BARE_BONES_MAX:
+            continue
+        if f in BARE_BONES_GRANDFATHERED:
+            notes.append(f"{f}: {n} words across {len(pts)} points, over the "
+                         f"{BARE_BONES_MAX}-word Bare Bones ceiling — grandfathered, "
+                         f"to be tightened when this topic comes round again")
+        else:
+            problems.append(
+                f"{f}: {n} words across {len(pts)} points — the Bare Bones ceiling "
+                f"is {BARE_BONES_MAX}. Cut the sentence that explains why each point "
+                f"matters; going without it is the whole point of the series")
+
     # ---- a page's colour must be its series' colour ---------------------
     # October 2026. A series is identified on the landing page by its colour
     # and by whether the dot is solid or striped, so a page carrying another
