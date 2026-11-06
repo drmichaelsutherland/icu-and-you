@@ -1723,7 +1723,7 @@
    "title": "The reminiscence bump",
    "topic": "Early middle age",
    "slug": "early-middle-age",
-   "week": false,
+   "week": true,
    "pos": 12,
    "badge": "The Jukebox",
    "link_label": "Open",

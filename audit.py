@@ -229,6 +229,23 @@ def main():
         elif n > 1:
             problems.append(f"{f}: the credit line appears {n} times")
 
+    # ---- a page in the running block must be flagged for the week ---------
+    # November 2026: The Jukebox No. 2 was filed under Early middle age while
+    # that block was still running, but with "week": false, copied wholesale
+    # from the previous edition — which had been added after ITS fortnight
+    # closed, where false was right. Every structural check passed. The page
+    # simply never appeared in "This week", which is the one strip a reader
+    # looks at, and it took a human noticing it was missing.
+    wk_slug = m["this_week"]["slug"]
+    for pg in m["pages"]:
+        if pg.get("slug") != wk_slug or pg.get("standing"):
+            continue
+        if not pg.get("week"):
+            problems.append(
+                f"{pg['file']}: filed under {wk_slug!r}, the block currently "
+                f'running, but "week" is false — so it is missing from "This '
+                f'week" on the landing page. Every sibling in the group is true')
+
     # ---- scaffolding left in a finished page ------------------------------
     # The cheapest possible check, and worth having. Pages here get built in
     # stages — the prose first, the source line or a figure filled in once it
