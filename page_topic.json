@@ -1783,6 +1783,10 @@
     "emphasis": true
    },
    {
+    "date": "Tuesday 10th \u2013 Friday 13th November",
+    "what": "One-on-one chats (by appointment)"
+   },
+   {
     "date": "Tuesday 24th November",
     "what": "Late middle age, part two",
     "emphasis": true
@@ -1790,6 +1794,15 @@
    {
     "date": "Friday 27th November",
     "what": "Newsletter (subscribers only)"
+   },
+   {
+    "date": "Tuesday 8th December",
+    "what": "Christmas and ICU",
+    "emphasis": true
+   },
+   {
+    "date": "Tuesday 15th \u2013 Friday 18th December",
+    "what": "Site end-of-year feedback survey"
    }
   ],
   "note_lead": "Holiday pace from 6 November.",
