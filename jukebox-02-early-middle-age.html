@@ -1,0 +1,551 @@
+<!DOCTYPE html>
+<html lang="en-AU">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ICU AND YOU · The Jukebox No. 2 — The reminiscence bump</title>
+<meta name="description" content="The Jukebox No. 2: five songs for the people now between thirty and forty-five — Coldplay, Evermore, Lewis Capaldi, Macy Gray and Corinne Bailey Rae. Why the music you met at eighteen is the music that stayed, and why the songs that deflect the experience matter as much as the ones that reflect it.">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="alternate icon" href="/favicon.ico" sizes="any">
+<link rel="apple-touch-icon" href="/icon-180.png">
+<meta name="theme-color" content="#1B2A33">
+<meta property="og:site_name" content="ICU AND YOU">
+<meta property="og:type" content="website">
+<meta property="og:title" content="ICU AND YOU · The Jukebox No. 2 — The reminiscence bump">
+<meta property="og:description" content="The music you met at eighteen is the music that stayed. Five songs for the band now turning forty.">
+<meta property="og:image" content="https://icuandyou.com/share-card.png">
+<meta name="twitter:card" content="summary_large_image">
+<style>
+  :root{
+    --paper:#FCF8FB; --ink:#231A21; --muted:#6B5F68; --rule:#E4D5E0;
+    --neon:#9F3289; --neontint:#F7E8F4; --neonink:#6F1F5F;
+    --amber:#A8721E; --ambertint:#FAF0DE;
+    --sky:#2E6E8E; --skytint:#E7F1F6;
+  }
+  *{box-sizing:border-box}
+  body{margin:0;background:#EFE2EC;color:var(--ink);
+    font:400 17px/1.68 'Iowan Old Style','Palatino Linotype',Palatino,Georgia,serif;
+    -webkit-text-size-adjust:100%;}
+  .sheet{max-width:760px;margin:0 auto;background:var(--paper);
+    box-shadow:0 1px 40px rgba(35,26,33,.11);}
+
+  .strip{display:flex;height:6px}
+  .strip i{display:block;flex:1}
+  .strip i:nth-child(1){background:var(--neonink)}
+  .strip i:nth-child(2){background:var(--neon)}
+  .strip i:nth-child(3){background:var(--amber)}
+  .strip i:nth-child(4){background:var(--sky)}
+
+  header.top{padding:44px 42px 30px;border-bottom:3px double var(--rule)}
+  .tophome,.topseries,.toptopic{display:inline-block;margin:0 0 16px;padding:7px 16px;
+    border-radius:20px;border:1px solid currentColor;opacity:.62;text-decoration:none;
+    color:inherit;font:600 11.5px 'Helvetica Neue',Arial,sans-serif;letter-spacing:.09em;
+    text-transform:uppercase;transition:opacity .12s ease}
+  .topseries,.toptopic{margin-left:9px}
+  .tophome:hover,.topseries:hover,.toptopic:hover{opacity:1}
+  .eyebrow{font:500 11.5px/1 'Helvetica Neue',Arial,sans-serif;letter-spacing:.24em;
+    text-transform:uppercase;color:var(--muted);margin:0 0 14px}
+  .eyebrow a.serlink,.eyebrow a.mast{color:inherit;text-decoration:none;
+    border-bottom:1px solid transparent}
+  .eyebrow a.serlink:hover,.eyebrow a.mast:hover{border-bottom-color:currentColor}
+  h1{font-size:33px;line-height:1.2;margin:0 0 9px;font-weight:400;letter-spacing:-.014em;
+    font-style:italic}
+  .kicker{color:var(--muted);margin:0;font-size:16.5px}
+
+  .pad{padding:34px 42px}
+  p{margin:0 0 17px}
+  .lede{font-size:20px;line-height:1.5;margin:0 0 22px}
+
+  .welcome{margin:0 0 24px;padding:20px 24px;background:var(--neontint);
+    border-left:4px solid var(--neon);border-radius:0 8px 8px 0}
+  .welcome .lab{display:block;font:600 11px 'Helvetica Neue',Arial,sans-serif;
+    letter-spacing:.18em;text-transform:uppercase;color:var(--neonink);margin:0 0 9px}
+  .welcome p{margin:0 0 10px;font-size:16px}
+  .welcome p:last-child{margin:0}
+
+  h2.sub{font:600 12px 'Helvetica Neue',Arial,sans-serif;letter-spacing:.2em;
+    text-transform:uppercase;color:var(--muted);margin:38px 0 15px;
+    padding-bottom:8px;border-bottom:1px solid var(--rule)}
+
+  .track{margin:0 0 20px;padding:16px 22px;background:#F6EEF4;border-radius:9px;
+    border-left:4px solid var(--neon)}
+  .track .ttl{display:block;font:600 19px 'Iowan Old Style',Palatino,Georgia,serif;
+    color:var(--neonink);margin:0 0 5px}
+  .track .meta{margin:0;font:400 14.5px/1.6 'Helvetica Neue',Arial,sans-serif;color:#5B4E57}
+  .track .meta b{color:var(--neonink);font-weight:600}
+
+  .gloss{margin:0 0 18px;padding:20px 24px;background:var(--skytint);
+    border-left:4px solid var(--sky);border-radius:0 8px 8px 0;font-size:16px}
+  .gloss .lab{display:block;font:600 11px 'Helvetica Neue',Arial,sans-serif;
+    letter-spacing:.18em;text-transform:uppercase;color:var(--sky);margin:0 0 9px}
+  .gloss p:last-child{margin:0}
+
+  .aside{margin:0 0 18px;padding:20px 24px;background:var(--ambertint);
+    border-left:4px solid var(--amber);border-radius:0 8px 8px 0}
+  .aside .lab{display:block;font:600 11px 'Helvetica Neue',Arial,sans-serif;
+    letter-spacing:.18em;text-transform:uppercase;color:var(--amber);margin:0 0 9px}
+  .aside p:last-child{margin:0}
+
+  /* Standing furniture: one playlist per edition, linked once. Links rather
+     than embeds — an embed drags in third-party scripts and cookies, adds
+     weight, and eventually renders a dead grey box when a video is pulled or
+     region-locked. A text link degrades gracefully. */
+  .listen{margin:0 0 22px;padding:14px 20px;background:#F6EEF4;border:1px solid #E4D5E0;
+    border-radius:9px;font:400 15.5px/1.6 'Helvetica Neue',Arial,sans-serif;color:#5B4E57}
+  .listen b{color:var(--neonink);font-weight:600}
+  .listen a{color:var(--neon);font-weight:600}
+  .reg{color:var(--neon);font-weight:600;text-decoration:none;
+    border-bottom:1px solid currentColor}
+  .reg:hover{color:var(--neonink)}
+
+  .pull{margin:26px 0;padding:0 0 0 22px;border-left:3px solid var(--neon);
+    font-size:21px;line-height:1.45;font-style:italic;color:#3A2E37}
+
+  /* Reader poll. The song names are read out of the markup at run time rather
+     than held in a parallel array — a page built from this one can change the
+     eight songs without the script quietly emailing the old ones. */
+  .poll{margin:0 0 20px;padding:24px 28px;background:var(--neontint);
+    border:1px solid #E4D5E0;border-radius:12px}
+  .poll .lab{display:block;font:600 11px 'Helvetica Neue',Arial,sans-serif;
+    letter-spacing:.18em;text-transform:uppercase;color:var(--neonink);margin:0 0 10px}
+  .poll h3{margin:0 0 6px;font:400 21px 'Iowan Old Style',Palatino,Georgia,serif;color:var(--ink)}
+  .poll .sub2{margin:0 0 16px;font:400 15px/1.6 'Helvetica Neue',Arial,sans-serif;color:#5B4E57}
+  .opts{display:flex;flex-direction:column;gap:7px;margin:0 0 15px;padding:0;list-style:none}
+  .opt{display:flex;align-items:center;gap:12px;padding:11px 14px;border-radius:9px;
+    background:#FCF8FB;border:1px solid #E4D5E0;cursor:pointer;
+    font:400 16px 'Iowan Old Style',Palatino,Georgia,serif;transition:border-color .12s ease}
+  .opt:hover{border-color:var(--neon)}
+  .opt input{accent-color:var(--neon);width:17px;height:17px;flex:none;margin:0}
+  .opt.on{background:#F3E2EE;border-color:var(--neon)}
+  .opt.off{opacity:.42;cursor:default}
+  .song{font-weight:600;color:var(--neonink)}
+  .by{color:#6B5F68;font-size:.92em}
+  .count{display:block;margin:0 0 12px;font:500 13px 'Helvetica Neue',Arial,sans-serif;
+    color:var(--muted);letter-spacing:.04em}
+
+  .reply{margin:0;padding:28px 32px;background:#F3ECF1;border-left:5px solid var(--neonink)}
+  .reply h2{font:600 12px 'Helvetica Neue',Arial,sans-serif;letter-spacing:.2em;
+    text-transform:uppercase;color:var(--neonink);margin:0 0 13px}
+  .ask{font-size:19.5px;line-height:1.5;font-style:italic;margin:0 0 15px}
+  .btn{display:inline-block;margin:6px 0 12px;padding:15px 30px;background:var(--neon);
+    color:#FCF8FB;text-decoration:none;border-radius:30px;font-style:normal;
+    font:600 15px 'Helvetica Neue',Arial,sans-serif;letter-spacing:.03em}
+  .btn:hover{background:var(--neonink)}
+  .fallback{font:400 13.5px 'Helvetica Neue',Arial,sans-serif;color:var(--muted);margin:0}
+  .fallback a{color:var(--neonink)}
+  .subline{margin:0 0 14px;padding:0 0 13px;border-bottom:1px solid rgba(0,0,0,.09);
+    font:400 14.5px/1.55 'Iowan Old Style','Palatino Linotype',Palatino,Georgia,serif;
+    max-width:56ch;margin-left:auto;margin-right:auto}
+  .subline a{font-weight:500;border-bottom:1px solid currentColor;
+    text-decoration:none;color:inherit}
+  .firstpub{display:block;margin:0 0 10px;padding-bottom:9px;
+    border-bottom:1px solid rgba(0,0,0,.09);
+    font:400 12px 'Helvetica Neue',Arial,sans-serif;letter-spacing:.06em;opacity:.72}
+
+  footer{padding:24px 42px 42px;border-top:1px solid var(--rule);
+    font:400 13px 'Helvetica Neue',Arial,sans-serif;color:var(--muted);text-align:center;line-height:1.7}
+  .home{display:inline-block;margin:0 0 14px;padding:8px 18px;border-radius:20px;
+    border:1px solid var(--rule);background:#F4EDF2;color:var(--neonink);text-decoration:none;
+    font:600 12.5px 'Helvetica Neue',Arial,sans-serif;letter-spacing:.05em}
+  .home:hover{background:var(--neonink);border-color:var(--neonink);color:#FCF8FB}
+  .mine{display:inline-block;margin:9px 0 0;opacity:.78;font-size:.94em}
+  .srcs{font-size:12.5px;line-height:1.6}
+  .srcs a{color:inherit}
+
+  @media (max-width:620px){
+    header.top,.pad,footer{padding-left:20px;padding-right:20px}
+    .reply{padding:22px 20px}
+    h1{font-size:26px} body{font-size:16.5px} .lede{font-size:18px} .pull{font-size:18.5px}
+  }
+  @media print{ body{background:#fff} .sheet{box-shadow:none;max-width:none} }
+</style>
+</head>
+<body>
+<div class="sheet">
+
+  <div class="strip"><i></i><i></i><i></i><i></i></div>
+
+  <header class="top">
+    <a class="tophome" href="./">&larr;&nbsp; Home</a>
+    <a class="topseries" href="./?s=jukebox">More from The Jukebox</a>
+    <a class="toptopic" href="./?t=early-middle-age" title="Everything on Early middle age">All on this topic</a>
+    <p class="eyebrow"><a class="mast" href="./">ICU and You</a> &nbsp;&#183;&nbsp;
+      <a class="serlink" href="./?s=jukebox">The Jukebox</a> &nbsp;&#183;&nbsp; Number 2</p>
+    <h1>The reminiscence bump</h1>
+    <p class="kicker">Five songs for the people now between thirty and forty-five &mdash; and why the ones
+      that arrived at eighteen never left</p>
+  </header>
+
+  <div class="pad">
+    <p class="lede">I mentioned the Beatles in the unit the other day and got a polite blank. Not
+      disagreement. Not even curiosity. Just the particular silence of a room in which a reference has
+      failed to land.</p>
+
+    <p>I am old enough for that to be funny rather than wounding. But it did set me wondering why I still
+      have them and my registrars do not, and it turns out there is a name for it, and the name is a good
+      one.</p>
+
+    <p class="pull">The reminiscence bump.</p>
+
+    <p>The music you meet between about fourteen and twenty-four &mdash; peaking somewhere around eighteen
+      &mdash; is the music that stays. Not the best music. Not the music you would choose now, with the
+      benefit of taste. The music that happened to be playing while you were becoming whoever you turned
+      out to be. It fixes, and it does not come unfixed.</p>
+
+    <p>Which is why I can still find my way through a Beatles record I have not heard in a decade, and why
+      a thirty-eight-year-old registrar will do exactly the same thing with something I have never knowingly
+      heard in my life.</p>
+
+    <div class="welcome">
+      <span class="lab">About this column</span>
+      <p><strong>The Jukebox</strong> takes songs that wander into this territory &mdash; illness, a
+        hospital, a resuscitation, a transplant, a death, a recovery &mdash; and tells you what is actually
+        behind them. No lyrics are reproduced here. What gets reproduced is the story, and the story is
+        usually stranger than the song.</p>
+      <p>The first of these was for the young adult ward. This one belongs to the age band we have just
+        spent a fortnight on.</p>
+    </div>
+
+    <h2 class="sub">Whose songs these are</h2>
+
+    <p>Anybody who is thirty to forty-five in November 2026 was born between late 1981 and late 1996. That
+      is the <strong>Millennial</strong> band, almost to the month. Not Generation Z &mdash; Z is the one
+      underneath, eighteen to twenty-nine now, and their turn comes when the ladder swings back round to
+      the young adult. It will, and I will do the Z version then. That is one of the better things about a
+      site arranged this way. It goes around, and it comes around.</p>
+
+    <p>So for this group, eighteen falls somewhere between <strong>1999 and 2014</strong>. Three of the
+      five below sit inside that window, and the two that do not have earned their place another way.</p>
+
+    <h2 class="sub">Reflect, and deflect</h2>
+
+    <p>Two sorts of song end up mattering in a hospital, and we tend only to talk about one of them.</p>
+
+    <p>There are the songs that <strong>reflect</strong> the thing &mdash; that say back to you what is
+      happening, and let you hear it from somewhere outside your own head, which is the only place it is
+      bearable from. Those are the funeral songs, the ones on the ward playlist, the one somebody puts on
+      in the car on the way home.</p>
+
+    <p>And there are the songs that <strong>deflect</strong> it. No help at all with the facts. Entirely
+      the wrong mood. And exactly what is needed, because for three and a half minutes you are somewhere
+      else. That second kind is badly underrated by people who have never had to sit in a relatives' room.
+      There is one on this list on purpose, and it is last.</p>
+
+    <p class="listen"><b>Listen along.</b> All five, in order, plus the three that nearly made it, are on
+      <a href="https://www.youtube.com/playlist?list=PLBRMXrstql1c">one playlist</a>. About half an hour.</p>
+
+    <h2 class="sub">One &middot; What we do</h2>
+
+    <div class="track">
+      <span class="ttl">Fix You</span>
+      <p class="meta"><b>Coldplay</b> &middot; <em>X&amp;Y</em>, 6 June 2005; single 5 September 2005 &middot; Berryman, Buckland, Champion and Martin</p>
+    </div>
+
+    <p>Fix you is what we do. It is the verb written on the door, whether or not it is the verb we can
+      deliver on any given night.</p>
+
+    <p>Chris Martin wrote it for Gwyneth Paltrow after her father died; he had met her a few weeks after
+      the death. Here is the part I did not know. Bruce Paltrow had bought a large keyboard shortly before
+      he died and nobody had ever plugged it in. Martin did. The sound that opens the song &mdash; the one
+      everybody waits through the quiet for &mdash; came out of a dead man's instrument, the first time it
+      was ever switched on.</p>
+
+    <p>Martin has said it is the Coldplay song he is proudest of, and that it almost single-handedly got
+      the band through two very difficult years. It has since been sung at more funerals than almost
+      anything else written this century, which is an odd fate for a song whose title is a promise.</p>
+
+    <p>Lights will guide you home. We cannot promise that either. We say it anyway.</p>
+
+    <h2 class="sub">Two &middot; The light</h2>
+
+    <div class="track">
+      <span class="ttl">Light Surrounding You</span>
+      <p class="meta"><b>Evermore</b> &middot; single, 14 October 2006, from <em>Real Life</em> &middot; written by Dann Hume &middot; ARIA number 1, platinum</p>
+    </div>
+
+    <p>A patient of mine died in her early thirties. They played this at her funeral, and it seemed to say
+      what everyone in that room needed to hear.</p>
+
+    <p>Here is what I did not know until I went looking. Dann Hume, the band's drummer, wrote it at a
+      piano, and he has said it is about somebody with great potential who did not believe in themselves.
+      It is not about death. It is not about loss. It is a song about belief, written for the living, by a
+      young man in his twenties.</p>
+
+    <p>It became Australia's goodbye song more or less by accident. <em>Home and Away</em> used it to
+      farewell Sally Fletcher in the 2006 finale, the country reached for it, and has gone on reaching ever
+      since. Number one on the ARIA chart, platinum, and the first New Zealand act to top the Australian
+      chart in a decade.</p>
+
+    <p>So the people at that funeral heard something the writer never put in it. I do not think that is a
+      flaw in them, or in him. I think it is the whole mechanism. A song stops belonging to the person who
+      wrote it at about the second time somebody else needs it.</p>
+
+    <p>And I will say the unscientific part out loud, since this is my column. I do sometimes feel there
+      is a light surrounding us in that room. Because there needs to be.</p>
+
+    <h2 class="sub">Three &middot; The heart that kept going</h2>
+
+    <div class="track">
+      <span class="ttl">Someone You Loved</span>
+      <p class="meta"><b>Lewis Capaldi</b> &middot; single, 8 November 2018, from <em>Divinely Uninspired to a Hellish Extent</em> &middot; video released February 2019</p>
+    </div>
+
+    <p>We cannot ignore donation on a page about this age band, and we should not want to.</p>
+
+    <p>Lewis Capaldi wanted the video to say something about organ donation, and wondered aloud whether his
+      second cousin once removed might be in it. His manager sent an email. Peter Capaldi replied the next
+      day and said yes.</p>
+
+    <p>He plays a widower. His wife is dying, in flashback, and he is nursing her. At the end he visits the
+      family of the woman who received her heart, and he listens to it. The video was made with Live Life
+      Give Life and Save9Lives. A million views in two days, and roughly a hundred thousand a day after
+      that.</p>
+
+    <p>I have been in that conversation a great many times, from the other side of it. What the video gets
+      right &mdash; and almost nothing else about donation gets right &mdash; is that the two families are
+      strangers who share precisely one thing and nothing else at all, and that the meeting, in the rare
+      cases where it happens, is not a resolution. It is two people in a room, and a sound.</p>
+
+    <p>The power to make any of it possible sits almost entirely with people who will never set foot in an
+      intensive care unit. It takes a few minutes. It needs a Medicare card. It does not need you to be
+      healthy, or young, or certain. It happens at the <a class="reg"
+      href="https://www.donatelife.gov.au/register-donor-today">Australian Organ Donor Register</a>, and
+      anyone in Australia aged sixteen or over can do it.</p>
+
+    <h2 class="sub">Four &middot; The try</h2>
+
+    <div class="track">
+      <span class="ttl">I Try</span>
+      <p class="meta"><b>Macy Gray</b> &middot; 1999, from <em>On How Life Is</em> &middot; Gray, Ruzumna, Lim and Wilder &middot; ARIA number 1 &middot; Grammy, Best Female Pop Vocal, 2001</p>
+    </div>
+
+    <p>We came into this millennium on an upstroke. Hope, enthusiasm, a general sense that a good many
+      things were about to get better. Some of that stayed. A good deal of it did not.</p>
+
+    <p>But look at what was sitting on top of the Australian chart as the century turned. A song called
+      <em>I Try</em>.</p>
+
+    <p>The voice was the problem. Everybody told her so, at length, for years. It is the reason she nearly
+      stopped, and it is also the only reason anybody alive can identify the record inside half a bar. The
+      thing she was told to fix was the thing.</p>
+
+    <p>My late father's favourite saying to me, growing up, was that all doors are open to those who try. I
+      have never forgotten it. I have also never entirely proved it, and I suspect he knew that perfectly
+      well when he said it to me.</p>
+
+    <p>But it is what we are left holding. At the end of a long night, when the arithmetic has not worked
+      and the family is standing in the corridor, the only thing you can honestly put down on the other
+      side of the ledger is that you tried. Twenty-seven years ago Macy Gray opened all this with
+      the sound of a woman trying, in a voice the whole industry had told her to get rid of. We are all
+      still at it.</p>
+
+    <h2 class="sub">Five &middot; The best thing you can do</h2>
+
+    <div class="track">
+      <span class="ttl">Put Your Records On</span>
+      <p class="meta"><b>Corinne Bailey Rae</b> &middot; single, February 2006, from <em>Corinne Bailey Rae</em> &middot; Bailey Rae, Chrisette Michele and John Beck</p>
+    </div>
+
+    <p>I loved the tune and the beat for years before I knew the first thing about the rest of it. And I
+      have to correct something I believed until very recently, because the correction turns out to matter
+      more than the error did.</p>
+
+    <p class="pull">The song is not about an overdose.</p>
+
+    <p>Corinne Bailey Rae released it in February 2006, from her first album. It is an uncomplicated piece
+      of advice to a young woman: let your hair down, put on the music you love, you will be all right. She
+      has described it as coming out of feeling on the margins as a mixed-race child in Leeds, and out of
+      learning to accept her own voice &mdash; which, you will notice, is the second time that has come up
+      on this page.</p>
+
+    <p>Two years later, in March 2008, her husband Jason Rae was found dead in a flat in Leeds. He was
+      thirty-one. A saxophonist who had played with Amy Winehouse and Mark Ronson and toured with the
+      Haggis Horns. The coroner recorded death by misadventure: an accidental overdose of methadone and
+      alcohol.</p>
+
+    <p>The grief did not go into this song. It could not have. It went into the next record, <em>The
+      Sea</em>, which took her two years to make and sounds nothing like this one.</p>
+
+    <p>So the order runs the other way from the way I had it in my head, and the song is cleaner than I
+      thought it was. Which leaves the advice standing, unqualified, and I think it is good advice.</p>
+
+    <p>There are moments in this work where there is genuinely nothing useful left to do. Not for the
+      patient, not for the family, and not for you. The correct action at that point is to go home and put
+      your records on. Not to process it. Not to debrief it. To be somewhere else for forty minutes, with
+      something you love, in a room where nothing is beeping.</p>
+
+    <p>That is a deflecting song, and it is on this list on purpose.</p>
+
+    <div class="aside">
+      <span class="lab">And three that nearly made it</span>
+      <p><strong>Lose Yourself</strong> &mdash; Eminem, 2002. Written in snatches on the <em>8 Mile</em>
+        set between takes, and the first hip-hop record to win the Academy Award for Best Original Song,
+        which he did not attend. If you want the reminiscence bump for this band in its purest form, this
+        is it. One shot, one opportunity &mdash; which is a fair description of an arrest.</p>
+      <p><strong>Keep Breathing</strong> &mdash; Ingrid Michaelson, 2007. Two chords and one repeated line,
+        which is precisely the point. It is what you do when there is nothing else left to do.</p>
+      <p><strong>Unwell</strong> &mdash; Matchbox Twenty, 2003. Not being able to say out loud that you are
+        coming apart, while everybody around you appears to be fine. More the relatives' song than the
+        patient's, and none the worse for it.</p>
+    </div>
+
+    <div class="gloss">
+      <span class="lab">The list is not closed</span>
+      <p>This one stays open. Send me what belongs on it and I will add to it periodically &mdash; the page
+        and the playlist both. The column only works if other people fill it. It exists at all because a
+        reader wrote in to ask whether there was a song called <em>When ICU</em>.</p>
+    </div>
+
+    <p>My registrars do not know the Beatles, and I have stopped minding. They have their own bump, sitting
+      somewhere around 2007, and it is every bit as fixed as mine. In twenty years one of them will mention
+      Macy Gray to a resident and get the polite blank, and will finally understand what the expression on
+      my face was.</p>
+
+    <p>Which brings me to the thing I actually want from you.</p>
+
+    <div class="poll">
+      <span class="lab">The vote</span>
+      <h3>Give me your top three of the eight</h3>
+      <p class="sub2">No reasoning required, though I will take it if you have some. I will publish the
+        order in a later edition, and it will tell me what this column should be chasing.</p>
+      <ul class="opts">
+        <li><label class="opt" for="s0">
+          <input type="checkbox" id="s0" value="0">
+          <span class="song">Fix You</span> <span class="by">&mdash; Coldplay</span>
+        </label></li>
+        <li><label class="opt" for="s1">
+          <input type="checkbox" id="s1" value="1">
+          <span class="song">Light Surrounding You</span> <span class="by">&mdash; Evermore</span>
+        </label></li>
+        <li><label class="opt" for="s2">
+          <input type="checkbox" id="s2" value="2">
+          <span class="song">Someone You Loved</span> <span class="by">&mdash; Lewis Capaldi</span>
+        </label></li>
+        <li><label class="opt" for="s3">
+          <input type="checkbox" id="s3" value="3">
+          <span class="song">I Try</span> <span class="by">&mdash; Macy Gray</span>
+        </label></li>
+        <li><label class="opt" for="s4">
+          <input type="checkbox" id="s4" value="4">
+          <span class="song">Put Your Records On</span> <span class="by">&mdash; Corinne Bailey Rae</span>
+        </label></li>
+        <li><label class="opt" for="s5">
+          <input type="checkbox" id="s5" value="5">
+          <span class="song">Lose Yourself</span> <span class="by">&mdash; Eminem</span>
+        </label></li>
+        <li><label class="opt" for="s6">
+          <input type="checkbox" id="s6" value="6">
+          <span class="song">Keep Breathing</span> <span class="by">&mdash; Ingrid Michaelson</span>
+        </label></li>
+        <li><label class="opt" for="s7">
+          <input type="checkbox" id="s7" value="7">
+          <span class="song">Unwell</span> <span class="by">&mdash; Matchbox Twenty</span>
+        </label></li>
+      </ul>
+      <span class="count" id="count">none chosen yet &mdash; pick three</span>
+      <p><a class="btn" href="#" id="vote">Send my three</a></p>
+    </div>
+
+    <div class="reply">
+      <h2>Over to you</h2>
+      <p class="ask">If you are between thirty and forty-five &mdash; what still plays in your head?</p>
+      <p>Not your favourite song. Not the one you would defend in an argument. <strong>The one that arrives
+        whenever you think about being eighteen, nineteen, twenty-one.</strong> The one attached to a
+        bedroom, or a car, or a share house, or somebody you are no longer in touch with. Everybody has
+        one, and almost nobody chose it.</p>
+      <p>Tell me what it is. I am genuinely interested, and I will say why: if the reminiscence bump is
+        real, then the songs this age group names are the songs that will be in the room when they are the
+        patient, or the daughter, or the one making the decision. That is worth knowing.</p>
+      <p>And send me songs for the column generally &mdash; the story behind it if you know one, because the
+        story is the part I want. Anything touching illness, a hospital, a resuscitation, a transplant, a
+        death or a recovery, in any genre and any language. Particularly the ones where the received
+        explanation turns out to be wrong. I have just had to correct one of my own.</p>
+      <p><a class="btn" href="mailto:icuandyou@icloud.com?subject=The%20Jukebox%202%20-%20what%20still%20plays%20in%20my%20head&body=The%20song%20I%20think%20of%20when%20I%20think%20of%20being%2018%20to%2021%3A%0D%0A%0D%0A%0D%0AWhy%2C%20or%20what%20it%20is%20attached%20to%20%28optional%29%3A%0D%0A%0D%0A%0D%0AA%20song%20for%20the%20column%2C%20and%20its%20story%20if%20you%20know%20it%3A%0D%0A%0D%0A%0D%0A---%0D%0A%0D%0AName%3A%0D%0A%0D%0A---%0D%0A%0D%0AThinking%20about%20this%20ICU%20AND%20YOU%20post%20overall%20%E2%80%94%20was%20it%20useful%20to%20you%2C%20or%20would%20it%20be%20useful%20to%20others%3F%0D%0A">Send me your song</a></p>
+      <p class="fallback" style="margin-bottom:9px">How you are credited is entirely your call &mdash; by name, by initials, or not at all &mdash; whether you write the piece or I do, and whether I quote you or simply say who sent something in; nothing of yours goes up with your name on it unless you have said yes.</p>
+      <p class="fallback">The button opens a reply straight to me. If your device blocks it, write to
+        <a href="mailto:icuandyou@icloud.com">icuandyou@icloud.com</a> instead.</p>
+    </div>
+  </div>
+
+  <footer>
+    <span class="firstpub">First published November 2026</span>
+    <p class="subline">Two emails a week &mdash; the Friday newsletter for all subscribers, and, for clinical subscribers,
+      the mind map and puzzles the moment they go up on Tuesday. Occasional announcements of new
+      features as they arrive. What went up and why it mattered, the best of your replies, and
+      original feature stories, news and views. <a href="https://joinlist.com/f/5adad2d6">Come and join us</a>.</p>
+    <a class="home" href="./">&larr; &nbsp;All of ICU AND YOU</a><br>
+    ICU AND YOU &nbsp;&#183;&nbsp; The Jukebox No. 2 &nbsp;&#183;&nbsp; companion to Mind Map #37, Early middle age<br>
+    <span class="srcs">No lyrics are reproduced on this page. Release dates, credits, chart positions and
+    awards are from the published discographies and contemporary music press. The reminiscence bump is the
+    well-replicated finding that autobiographical memory, and musical memory in particular, is densest for
+    the years of adolescence and early adulthood; the generational dates are the conventional ones, with
+    the Millennial cohort taken as births from 1981 to 1996. The Bruce Paltrow keyboard is Chris Martin's
+    own account, given to <em>USA Today</em>; the Mojo remark about the song carrying the band through two
+    difficult years is his as well. Dann Hume's description of <em>Light Surrounding You</em> as being
+    about somebody with potential who did not believe in themselves is his, and the <em>Home and Away</em>
+    use is contemporary. The making of the <em>Someone You Loved</em> video, including the email to Peter
+    Capaldi and the involvement of Live Life Give Life and Save9Lives, is as reported in <em>The Big
+    Issue</em>. <em>I Try</em> was written by Macy Gray with Jeremy Ruzumna, Jinsoo Lim and David Wilder,
+    reached number one in Australia, and won Best Female Pop Vocal Performance at the 2001 Grammy Awards
+    with further nominations for Record and Song of the Year. <strong>The correction in the fifth entry is
+    a real one</strong>: <em>Put Your Records On</em> was released in February 2006 and is not about an
+    overdose; Jason Rae died in March 2008, aged thirty-one, and the coroner recorded misadventure
+    following an accidental overdose of methadone and alcohol. Everything the loss produced went onto
+    <em>The Sea</em> in 2010.</span><br>
+    Educational use within the ICU education programme. Songs are discussed and described, not reproduced.
+    Nothing here is clinical guidance.<br>
+    <span class="mine">Views my own, not those of NSW Health or any other organisation. No identifiable
+    patients &mdash; scenarios are constructed or combined for teaching. <a href="about.html">More</a>.</span>
+  </footer>
+
+</div>
+<script>
+(function(){
+  var MAX = 3;
+  var boxes = [].slice.call(document.querySelectorAll(".opt input"));
+  var count = document.getElementById("count");
+  if(!boxes.length || !count) return;
+
+  // Read the song straight off the element it belongs to. No second copy.
+  function nameOf(b){
+    var l = b.parentNode;
+    return l.querySelector(".song").textContent.trim() + " \u2014 " +
+           l.querySelector(".by").textContent.replace(/^[\s\u2014-]+/, "").trim();
+  }
+  function chosen(){ return boxes.filter(function(b){ return b.checked; }); }
+
+  function refresh(){
+    var n = chosen().length, full = n >= MAX;
+    boxes.forEach(function(b){
+      b.disabled = full && !b.checked;
+      b.parentNode.classList.toggle("on", b.checked);
+      b.parentNode.classList.toggle("off", b.disabled);
+    });
+    count.textContent = n === 0 ? "none chosen yet \u2014 pick three"
+                      : n + " of " + MAX + " chosen" + (full ? "" : " \u2014 keep going");
+    return n;
+  }
+  boxes.forEach(function(b){ b.addEventListener("change", refresh); });
+
+  document.getElementById("vote").addEventListener("click", function(e){
+    e.preventDefault();
+    var picks = chosen();
+    if(!picks.length){ count.textContent = "choose at least one first"; return; }
+    var body = "My top three from The Jukebox No. 2\n\n"
+      + picks.map(function(b,i){ return (i+1) + ". " + nameOf(b); }).join("\n")
+      + "\n\nWhy, if you feel like saying (optional):\n\n\n"
+      + "A song for the next edition:\n\n\n"
+      + "---\n\nName, and whether you would like it credited:\n"
+      + "\n---\n\nThinking about this ICU AND YOU post overall \u2014 was it useful to you, "
+      + "or would it be useful to others?\n";
+    window.location.href = "mailto:icuandyou@icloud.com?subject="
+      + encodeURIComponent("The Jukebox 2 - my top three")
+      + "&body=" + encodeURIComponent(body);
+  });
+  refresh();
+})();
+</script>
+<script data-goatcounter="https://icuandyou.goatcounter.com/count"
+        async src="//gc.zgo.at/count.js"></script>
+</body>
+</html>

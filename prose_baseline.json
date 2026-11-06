@@ -258,5 +258,15 @@
  "eff9bcf312613514": {
   "note": "For the general public — the lay footer disclaimer, which replaces the clinicians' one on this series. General information only, not medical advice, and where to ring now. Deliberately identical on every adult page in the series; No. 2 carries a variant naming a child, because it is addressed to parents",
   "opening": "General information only. This is not medical advice and…"
- }
+ },
+ "7e4ca17a87f9e75e": {
+  "note": "Your Presentations — the standing invitation that heads every page in the series. Deliberately identical: it is the offer being made to the next contributor, and rewording it from page to page would make it read as a different offer",
+  "opening": "Your Presentations publishes teaching that would otherwise be given…"
+ },
+ "1bb61dae89abb872": {
+  "note": "Your Presentations — the second half of the same standing invitation, saying who it is open to. Identical wherever it appears, for the same reason",
+  "opening": "It began with Coffs Harbour and it is not…"
+ },
+ "b070d446f148d6c6": {"note": "The Jukebox — the vote instructions, standing furniture on every edition", "opening": "No reasoning required, though I will take it if…"},
+ "17006413527435ae": {"note": "The Jukebox — the educational-use and no-lyrics footer, standing on every edition", "opening": "Educational use within the ICU education programme. Songs are…"}
 }

@@ -239,7 +239,8 @@ def main():
     # and real prose is not: the India Room page says its own name "is a
     # placeholder" and every quiz has an input with placeholder="Type your
     # name", and neither is a defect.
-    SHOUTED = ("PLACEHOLDER", "TODO", "TK TK", "FIXME", "XXXX", "TBC", "TBD")
+    SHOUTED = ("PLACEHOLDER", "TODO", "TK TK", "FIXME", "XXXX", "TBC", "TBD",
+               "REPLACE-WITH", "REPLACE WITH")
     QUIET = ("lorem ipsum", "[insert ", "[add ")
     for f in content:
         s = (HERE / f).read_text(encoding="utf-8")
@@ -252,6 +253,21 @@ def main():
             if tag in body.lower():
                 problems.append(f'{f}: still contains "{tag}" — scaffolding left '
                                 f"in a page that is otherwise finished")
+
+    # ---- a page's style tags must balance ---------------------------------
+    # November 2026: Your Presentations 3 went up with an orphan </style>
+    # immediately before </head>, inherited from the page it was built from.
+    # Browsers swallow it, every other check passed, and it survived two more
+    # pages built on the same stationery. A builder that swaps one <style>
+    # block for another is exactly the situation that produces this, so it is
+    # worth one line of arithmetic.
+    for f in content:
+        s = (HERE / f).read_text(encoding="utf-8")
+        o, c = s.count("<style>"), s.count("</style>")
+        if o != c:
+            problems.append(
+                f"{f}: {o} <style> against {c} </style> — a stray tag, almost "
+                f"certainly carried over from the page this was built from")
 
     # ---- a class used in the markup must be styled somewhere in the page --
     # Found October 2026: twelve pages — the whole Multimedia group — used

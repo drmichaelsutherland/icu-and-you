@@ -1686,33 +1686,75 @@
    "badge": "Salon",
    "link_label": "Take the floor",
    "blurb": "A new section, for the arguments we actually have. A registrar tells me that once you have given the lytic for a pulmonary embolism arrest you are committed to ninety minutes. He is quoting the guideline correctly \u2014 and ANZCOR, approved in July, still carries the figure without the qualifier the Europeans added. What the evidence underneath it is, why the famous hundred-minute case argues the opposite of what it is cited for, why a dilated right ventricle is not a diagnosis, and what anecdote is and is not good for. Thirty minutes and a judgement call, or the full ninety? The floor is open."
+  },
+  {
+   "file": "registrars-03-ventilators.html",
+   "series": "registrars",
+   "colour": "heather striped",
+   "number": "3",
+   "title": "Ventilators",
+   "topic": "Any time",
+   "slug": "standing",
+   "week": false,
+   "standing": true,
+   "badge": "Your Presentations",
+   "link_label": "Open",
+   "blurb": "Dr Tarun Mills Izard on mechanical ventilation \u2014 what is inside the machine, the four variables that define any breath on any ventilator, what each mode guarantees and what it gives up, reading the pressure waveform for resistance against compliance, and getting the patient off it. Twelve original figures, drawn from the physiology."
+  },
+  {
+   "file": "registrars-04-acute-stroke.html",
+   "series": "registrars",
+   "colour": "heather striped",
+   "number": "4",
+   "title": "Acute stroke management",
+   "topic": "Any time",
+   "slug": "standing",
+   "week": false,
+   "standing": true,
+   "badge": "Your Presentations",
+   "link_label": "Open",
+   "blurb": "Sarah Haydon on the first few hours of a stroke at a regional hospital — why the question is what time the patient was last normal rather than what the deficit is, how the Telestroke referral criteria actually branch, what a perfusion study is telling you and which of its four numbers decides, the two treatments and what each can reach, and what to do when it bleeds. Plus the thing most likely to catch someone out: the word stroke covers three situations with three different blood pressure targets, two of which point in opposite directions. Four original figures."
+  },
+  {
+   "file": "jukebox-02-early-middle-age.html",
+   "series": "jukebox",
+   "colour": "neon",
+   "number": "2",
+   "title": "The reminiscence bump",
+   "topic": "Early middle age",
+   "slug": "early-middle-age",
+   "week": false,
+   "pos": 12,
+   "badge": "The Jukebox",
+   "link_label": "Open",
+   "blurb": "Five songs for the people now between thirty and forty-five — who are Millennials, almost to the month, and not Generation Z. Why the music you met at eighteen is the music that stayed, why the songs that deflect the experience matter as much as the ones that reflect it, and five with their backstories checked: the keyboard a dead man never plugged in, the Australian goodbye song that was never about goodbye, the organ donation video a Doctor Who said yes to in a day, the voice an industry told her to get rid of, and one correction I had to make to something I believed until this week."
   }
  ],
  "latest": [
   {
+   "file": "jukebox-02-early-middle-age.html",
+   "colour": "neon",
+   "label": "The Jukebox 2 · The reminiscence bump"
+  },
+  {
+   "file": "registrars-04-acute-stroke.html",
+   "colour": "heather striped",
+   "label": "Your Presentations 4 · Acute stroke management"
+  },
+  {
+   "file": "registrars-03-ventilators.html",
+   "colour": "heather striped",
+   "label": "Your Presentations 3 · Ventilators"
+  },
+  {
    "file": "salon-01-ninety-minutes.html",
    "colour": "claret striped",
-   "label": "Senior Intensivists' Salon 1 \u00b7 Ninety minutes"
+   "label": "Senior Intensivists' Salon 1 · Ninety minutes"
   },
   {
    "file": "public-04-early-middle-age.html",
    "colour": "ocean",
-   "label": "For the general public 4 \u00b7 It was always going to be a Tuesday"
-  },
-  {
-   "file": "drugstore-04-pantoprazole.html",
-   "colour": "mulberry",
-   "label": "Drugstore 4 \u00b7 Pantoprazole"
-  },
-  {
-   "file": "med-students-07-early-middle-age.html",
-   "colour": "violet",
-   "label": "Medical Students 7 \u00b7 Early middle age"
-  },
-  {
-   "file": "bare-bones-04-early-middle-age.html",
-   "colour": "bone",
-   "label": "Bare Bones 4 \u00b7 Early middle age"
+   "label": "For the general public 4 · It was always going to be a Tuesday"
   }
  ],
  "topten": [
