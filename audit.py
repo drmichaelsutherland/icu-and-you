@@ -911,6 +911,24 @@ def main():
         for f in sorted(vdata.get("pages", {})):
             if f not in html_files:
                 problems.append(f"verification: {f} is listed as verified but is not on disk")
+        # A page carrying ticks but absent from the verified list. Michael's own
+        # rule is that a marker appears only once a page has been FULLY checked,
+        # so a ticked page that is not listed is either a completed pass whose
+        # bookkeeping was never done — in which case the reader loses the band
+        # and he loses the credit — or a deliberate partial, which a page should
+        # say in its own footer. Either way it is worth saying out loud each
+        # Friday rather than discovering it months later. A note, not a problem,
+        # because the deliberate case is legitimate.
+        ticked = {}
+        for cid, c in vclaims.items():
+            ticked[c["page"]] = ticked.get(c["page"], 0) + 1
+        unlisted = sorted((p, n) for p, n in ticked.items()
+                          if p not in vdata.get("pages", {}))
+        if unlisted:
+            notes.append(
+                "%d page(s) carry verification ticks but are not on the verified "
+                "list, so no band is shown: %s"
+                % (len(unlisted), ", ".join("%s (%d)" % (p, n) for p, n in unlisted)))
         today = datetime.date.today().strftime("%Y-%m")
         overdue = []
         for cid, c in vclaims.items():
