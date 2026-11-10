@@ -1,0 +1,989 @@
+<!DOCTYPE html>
+<html lang="en-AU">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ICU AND YOU &middot; Your Presentations 4 &mdash; Acute stroke management</title>
+<meta name="description" content="Your Presentations 4: Sarah Haydon on acute stroke at a regional hospital &mdash; the clock, the Telestroke referral criteria, core against penumbra, thrombolysis and clot retrieval and their windows, what to do when it bleeds, and the three different blood pressures the word stroke can mean.">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="alternate icon" href="/favicon.ico" sizes="any">
+<link rel="apple-touch-icon" href="/icon-180.png">
+<link rel="manifest" href="/site.webmanifest">
+<meta name="theme-color" content="#1B2A33">
+<meta property="og:site_name" content="ICU AND YOU">
+<meta property="og:type" content="website">
+<meta property="og:title" content="ICU AND YOU &middot; Your Presentations 4 &mdash; Acute stroke management">
+<meta property="og:description" content="Two things decide the treatment: what is on the scan, and what time it is. Everything after that is arrangement.">
+<meta property="og:image" content="https://icuandyou.com/share-card.png">
+<meta name="twitter:card" content="summary_large_image">
+<style>
+  :root{
+    --paper:#FDFBF7; --ink:#201B26; --muted:#6B6473; --rule:#E2DCE8;
+    --heather:#635574; --heathertint:#F1EEF6;
+    --deep:#473C56; --deeptint:#E9E5EF;
+    --alert:#A8442A; --alerttint:#F9EDE9;
+  }
+  *{box-sizing:border-box}
+  body{margin:0;background:#E8E4EE;color:var(--ink);
+    font:400 17px/1.66 'Iowan Old Style','Palatino Linotype',Palatino,Georgia,serif;
+    -webkit-text-size-adjust:100%;}
+  .sheet{max-width:760px;margin:0 auto;background:var(--paper);
+    box-shadow:0 1px 40px rgba(32,27,38,.10);}
+
+  .flag{display:flex;height:5px}
+  .flag i{display:block}
+  .flag i:nth-child(1){flex:2;background:var(--deep)}
+  .flag i:nth-child(2){flex:3;background:var(--heather)}
+  .flag i:nth-child(3){flex:2;background:var(--alert)}
+
+  header.top{padding:42px 42px 28px;border-bottom:1px solid var(--rule)}
+  .eyebrow a.serlink,.eyebrow a.mast{color:inherit;text-decoration:none;
+    border-bottom:1px solid transparent}
+  .eyebrow a.serlink:hover,.eyebrow a.mast:hover{border-bottom-color:currentColor}
+  .toptopic,.topseries{display:inline-block;margin:0 0 16px 9px;padding:7px 16px;border-radius:20px;
+    border:1px solid currentColor;opacity:.62;text-decoration:none;color:inherit;
+    font:600 11.5px 'Helvetica Neue',Arial,sans-serif;letter-spacing:.09em;
+    text-transform:uppercase;transition:opacity .12s ease}
+  .tophome{display:inline-block;margin:0 0 16px;padding:7px 16px;border-radius:20px;
+    border:1px solid currentColor;opacity:.62;text-decoration:none;color:inherit;
+    font:600 11.5px 'Helvetica Neue',Arial,sans-serif;letter-spacing:.09em;
+    text-transform:uppercase;transition:opacity .12s ease}
+  .toptopic:hover,.topseries:hover,.tophome:hover{opacity:1}
+  .eyebrow{font:500 11.5px/1 'Helvetica Neue',Arial,sans-serif;letter-spacing:.24em;
+    text-transform:uppercase;color:var(--muted);margin:0 0 14px}
+  h1{font-size:34px;line-height:1.16;margin:0 0 8px;font-weight:400;letter-spacing:-.012em;
+    font-style:italic}
+  .kicker{color:var(--muted);margin:0 0 16px;font-size:16.5px}
+  .byline{margin:0;padding:14px 0 0;border-top:1px solid var(--rule);
+    font:400 15px 'Helvetica Neue',Arial,sans-serif;color:var(--muted);line-height:1.6}
+  .byline b{color:var(--deep);font-weight:600}
+
+  .pad{padding:34px 42px}
+  p{margin:0 0 17px}
+  .lede{font-size:20px;line-height:1.5;margin:0 0 22px}
+
+  h2.sub{font:600 12px 'Helvetica Neue',Arial,sans-serif;letter-spacing:.2em;
+    text-transform:uppercase;color:var(--muted);margin:32px 0 14px;
+    padding-bottom:8px;border-bottom:1px solid var(--rule)}
+
+  .welcome{margin:0 0 24px;padding:20px 24px;background:var(--heathertint);
+    border-left:4px solid var(--heather);border-radius:0 8px 8px 0}
+  .welcome .lab{display:block;font:600 11px 'Helvetica Neue',Arial,sans-serif;
+    letter-spacing:.18em;text-transform:uppercase;color:var(--deep);margin:0 0 9px}
+  .welcome p{margin:0 0 10px;font-size:16px}
+  .welcome p:last-child{margin:0}
+
+  .figs{display:flex;gap:14px;flex-wrap:wrap;margin:0 0 22px}
+  .fig{flex:1 1 150px;background:var(--deeptint);border:1px solid #D7D0E0;
+    border-radius:9px;padding:16px 18px}
+  .fig .big{font-size:27px;line-height:1.1;color:var(--deep);margin:0 0 5px}
+  .fig .lab{font:400 13.5px 'Helvetica Neue',Arial,sans-serif;color:var(--muted);line-height:1.4}
+
+  .alert{margin:0 0 18px;padding:20px 24px;background:var(--alerttint);
+    border-left:4px solid var(--alert);border-radius:0 8px 8px 0}
+  .alert .lab{display:block;font:600 11px 'Helvetica Neue',Arial,sans-serif;
+    letter-spacing:.18em;text-transform:uppercase;color:var(--alert);margin:0 0 9px}
+  .alert p:last-child{margin:0}
+
+  .gloss{margin:0 0 18px;padding:20px 24px;background:var(--heathertint);
+    border-left:4px solid var(--heather);border-radius:0 8px 8px 0;font-size:16px}
+  .gloss .lab{display:block;font:600 11px 'Helvetica Neue',Arial,sans-serif;
+    letter-spacing:.18em;text-transform:uppercase;color:var(--deep);margin:0 0 9px}
+  .gloss p:last-child{margin:0}
+
+  ol.steps{margin:0 0 20px;padding:0 0 0 22px}
+  ol.steps li{margin:0 0 11px;padding-left:5px}
+  ul.plain{margin:0 0 18px;padding:0 0 0 22px}
+  ul.plain li{margin:0 0 9px;padding-left:4px}
+
+  .tscroll{overflow-x:auto;margin:0 0 22px;-webkit-overflow-scrolling:touch}
+  table{border-collapse:collapse;width:100%;min-width:520px;
+    font:400 15px/1.5 'Helvetica Neue',Arial,sans-serif}
+  caption{caption-side:top;text-align:left;font:600 11px 'Helvetica Neue',Arial,sans-serif;
+    letter-spacing:.16em;text-transform:uppercase;color:var(--muted);padding:0 0 9px}
+  th,td{border:1px solid var(--rule);padding:9px 12px;vertical-align:top;text-align:left}
+  thead th{background:var(--deeptint);color:var(--deep);font-weight:600}
+  tbody th{background:var(--heathertint);font-weight:600;white-space:nowrap}
+  td ul{margin:0;padding-left:17px}
+  td li{margin:0 0 3px}
+
+  .phone{display:block;margin:0 0 20px;padding:18px 24px;background:var(--deep);
+    color:#FDFBF7;border-radius:9px;text-align:center;text-decoration:none}
+  .phone .lab{display:block;font:600 11px 'Helvetica Neue',Arial,sans-serif;
+    letter-spacing:.18em;text-transform:uppercase;opacity:.75;margin:0 0 7px}
+  .phone .num{font:600 29px 'Helvetica Neue',Arial,sans-serif;letter-spacing:.04em}
+
+  .reply{margin:0;padding:28px 32px;background:var(--deeptint);border-left:5px solid var(--deep)}
+  .reply h2{font:600 12px 'Helvetica Neue',Arial,sans-serif;letter-spacing:.2em;
+    text-transform:uppercase;color:var(--deep);margin:0 0 13px}
+  .ask{font-size:19px;line-height:1.5;font-style:italic;margin:0 0 15px}
+  .btn{display:inline-block;margin:6px 0 12px;padding:15px 30px;background:var(--heather);
+    color:#FDFBF7;text-decoration:none;border-radius:30px;font-style:normal;
+    font:600 15px 'Helvetica Neue',Arial,sans-serif;letter-spacing:.03em}
+  .btn:hover{background:var(--deep)}
+  .btn:focus-visible{outline:3px solid var(--alert);outline-offset:3px}
+  .fallback{font:400 13.5px 'Helvetica Neue',Arial,sans-serif;color:var(--muted);margin:0}
+  .fallback a{color:var(--deep)}
+
+  .subline{margin:0 0 14px;padding:0 0 13px;border-bottom:1px solid rgba(0,0,0,.09);
+    font:400 14.5px/1.55 'Iowan Old Style','Palatino Linotype',Palatino,Georgia,serif;
+    max-width:56ch;margin-left:auto;margin-right:auto}
+  .subline a{font-weight:500;border-bottom:1px solid currentColor;
+    text-decoration:none;color:inherit}
+  .firstpub{display:block;margin:0 0 10px;padding-bottom:9px;
+    border-bottom:1px solid currentColor;border-color:rgba(0,0,0,.09);
+    font:400 12px 'Helvetica Neue',Arial,sans-serif;letter-spacing:.06em;opacity:.72}
+
+  footer{padding:24px 42px 42px;border-top:1px solid var(--rule);
+    font:400 13px 'Helvetica Neue',Arial,sans-serif;color:var(--muted);text-align:center;line-height:1.7}
+  .home{display:inline-block;margin:0 0 14px;padding:8px 18px;border-radius:20px;
+    border:1px solid var(--rule);background:#F2EFF6;color:var(--deep);text-decoration:none;
+    font:600 12.5px 'Helvetica Neue',Arial,sans-serif;letter-spacing:.05em}
+  .home:hover{background:var(--deep);border-color:var(--deep);color:#FDFBF7}
+  .mine{display:inline-block;margin:9px 0 0;opacity:.78;font-size:.94em}
+  .srcs{font-size:12.5px;line-height:1.6}
+  .srcs a{color:inherit}
+
+  @media (max-width:620px){
+    header.top,.pad,footer{padding-left:20px;padding-right:20px}
+    .reply{padding:22px 20px}
+    h1{font-size:26px} body{font-size:16.5px} .lede{font-size:18px} .ask{font-size:17.5px}
+    .phone .num{font-size:25px}
+  }
+  @media print{ body{background:#fff} .sheet{box-shadow:none;max-width:none} }
+
+  /* The contributor's note. Four fields, the same four every time, so the next
+     person sending in a presentation can see exactly what is being asked of
+     them and fill it in without a conversation. The photograph is optional;
+     without one the block simply closes up around the text. */
+  .bio{display:flex;gap:22px;align-items:flex-start;margin:0 0 28px;
+    padding:24px 26px;background:var(--heathertint);
+    border-left:4px solid var(--heather);border-radius:0 9px 9px 0}
+  .bio img{width:132px;height:132px;flex:0 0 132px;border-radius:9px;
+    object-fit:cover;display:block}
+  .bio .who{flex:1 1 260px;min-width:0}
+  .bio .nm{margin:0 0 14px;font:600 19px 'Iowan Old Style',Palatino,Georgia,serif;
+    color:var(--deep)}
+  .bio dl{margin:0;display:grid;grid-template-columns:auto 1fr;gap:8px 18px}
+  .bio dt{font:600 10.5px 'Helvetica Neue',Arial,sans-serif;letter-spacing:.14em;
+    text-transform:uppercase;color:var(--heather);padding-top:5px;white-space:nowrap}
+  .bio dd{margin:0;font-size:16px;line-height:1.5}
+  @media (max-width:620px){
+    .bio{flex-direction:column;padding:20px 20px;gap:18px}
+    .bio img{width:116px;height:116px;flex-basis:116px}
+    .bio dl{grid-template-columns:1fr;gap:1px 0}
+    .bio dt{padding-top:11px}
+  }
+</style>
+<style>
+  /* Carried over from the series stationery: the advantage/disadvantage shading
+     used by the comparison tables. */
+  table.cmp td.y{background:#F3F6F1}
+  table.cmp td.n{background:#FAF2EF}
+
+  /* Stroke page additions. Of the sixteen images in the source deck, two go in
+     as they are — the NSW Agency for Clinical Innovation's Telestroke
+     figures, whose own terms permit reproduction for study or training with an
+     acknowledgement and without alteration, so they are neither cropped nor
+     recoloured nor resampled. The four drawn figures are original SVG. */
+  figure.v{margin:0 0 22px;padding:18px 20px 14px;background:#fff;
+    border:1px solid var(--rule);border-radius:10px}
+  figure.v svg{display:block;width:100%;height:auto}
+  figure.v img{display:block;width:100%;height:auto;border-radius:3px}
+  figure.v img.native{max-width:486px;margin:0 auto}
+  figure.v figcaption{margin:12px 0 0;padding-top:11px;border-top:1px solid var(--rule);
+    font:400 14.5px/1.55 'Helvetica Neue',Arial,sans-serif;color:var(--muted)}
+  figure.v figcaption b{color:var(--deep);font-weight:600}
+  figure.v figcaption .credit{display:block;margin-top:8px;font-size:12.5px;
+    color:#8A8394}
+  .keys{display:grid;grid-template-columns:auto 1fr;gap:9px 16px;margin:0 0 20px}
+  .keys dt{font:600 10.5px 'Helvetica Neue',Arial,sans-serif;letter-spacing:.14em;
+    text-transform:uppercase;color:var(--heather);padding-top:5px;white-space:nowrap}
+  .keys dd{margin:0;font-size:16.5px;line-height:1.5}
+  /* The blood pressure section. Three situations, three numbers, and the one
+     place on the page where getting them the wrong way round does harm, so the
+     table is given its own shading rather than sharing the comparison one. */
+  table.bp td.up{background:#E9F1E5}
+  table.bp td.down{background:#FAEAE4}
+  .pending{margin:0 0 28px;padding:20px 24px;background:#F6F4F0;
+    border-left:4px dashed #B9B2A6;border-radius:0 9px 9px 0;
+    font:400 15px/1.6 'Helvetica Neue',Arial,sans-serif;color:var(--muted)}
+  .pending b{color:var(--deep)}
+  @media (max-width:620px){
+    .keys{grid-template-columns:1fr;gap:1px 0}
+    .keys dt{padding-top:11px}
+    figure.v{padding:14px 12px 12px}
+  }
+</style>
+</head>
+<body>
+<div class="sheet">
+  <div class="flag"><i></i><i></i><i></i></div>
+
+  <header class="top">
+    <a class="tophome" href="./">&larr;&nbsp; Home</a>
+    <a class="topseries" href="./?s=registrars">More from Your Presentations</a>
+    <a class="toptopic" href="./?t=standing" title="Everything in Any time">All on this topic</a>
+    <p class="eyebrow"><a class="mast" href="./">ICU and You</a> &nbsp;&middot;&nbsp;
+      <a class="serlink" href="./?s=registrars">Your Presentations</a> &nbsp;&middot;&nbsp; Number 4</p>
+    <h1>Acute stroke management</h1>
+    <p class="kicker">Two things decide the treatment: what is on the scan, and what time it is.
+      Everything after that is arrangement</p>
+    <p class="byline">A teaching presentation given at Coffs Harbour Health Campus by
+      <b>Sarah Haydon</b>. Set for the web by ICU AND YOU with her permission; the clinical
+      content, its selection and its order are hers. Some details have been fact-checked
+      and modified; those are marked where they appear.</p>
+  </header>
+
+  <div class="pad">
+    <div class="bio">
+      <div class="who">
+        <p class="nm">Dr Sarah Haydon</p>
+        <dl>
+          <dt>Origin</dt>
+          <dd>New Zealand. I grew up and completed medical school there, then worked for two years
+            across Auckland before making the move to Coffs Harbour.</dd>
+          <dt>Now</dt>
+          <dd>Emergency Medicine trainee at Coffs Harbour Health Campus, currently a PGY5 on an
+            Intensive Care placement.</dd>
+          <dt>Golden rule</dt>
+          <dd>Always treat others with kindness.</dd>
+          <dt>One lesson</dt>
+          <dd>Something I never expected was for a three-month locum contract in Coffs Harbour to
+            turn into a permanent position three years later &mdash; and counting!</dd>
+        </dl>
+      </div>
+    </div>
+
+    <div class="welcome">
+      <span class="lab">About this group</span>
+      <p><strong>Your Presentations</strong> publishes teaching that would otherwise be given once and filed.
+        If you have given a departmental talk and you are willing to have it read more widely, it can go up
+        here under your own name, properly credited, and you can put it on your CV as a publication rather
+        than as a line in a teaching log.</p>
+      <p>It began with Coffs Harbour and it is not limited to Coffs Harbour, or to registrars. Medical
+        students, nurses, doctors at any stage and any health professional at all &mdash; if you have made
+        something good, the invitation is open to you. The button at the foot of this page reaches me.</p>
+    </div>
+
+    <p class="lede">Most emergencies give you room to think. A stroke gives you a clock, a scan, and a
+      phone number, and the order in which you use them is most of the job.</p>
+
+    <p>What follows is a regional hospital&rsquo;s working account of the first few hours: how the
+      referral is decided, what the imaging is actually telling you, what each of the two treatments
+      can and cannot reach, what happens when it bleeds, and the part that catches people out &mdash;
+      that the word <em>stroke</em> covers four different blood pressure targets, two of which point in
+      opposite directions.</p>
+
+    <h2 class="sub">It begins with a time, not a symptom</h2>
+
+    <p>The first question is not what the deficit is. It is <strong>when the patient was last seen
+      normal</strong>, and it is worth being pedantic about the wording, because <em>last seen normal</em>
+      and <em>when the symptoms were noticed</em> are not the same instant and the difference between
+      them decides what you are allowed to give.</p>
+
+    <p>If nobody saw it start &mdash; the patient woke with it, or lives alone, or was found &mdash;
+      you are not stuck, but you are on a different road. The <strong>2026 AHA/ASA guideline</strong>
+      tells you to take the <strong>estimated midpoint of
+      sleep</strong><sup class="vf" data-v="str-wakeup"></sup> as the onset time. Someone who went to bed at eleven and woke at seven is
+      counted from three in the morning, which is four hours ago rather than eight.</p>
+
+    <p>Be careful what you do with that number. The midpoint belongs to the <em>imaging-selected</em>
+      route, not to the ordinary four-and-a-half-hour one: an unwitnessed onset is treated on what the
+      perfusion or diffusion study shows, out to nine hours from that midpoint. The arithmetic does not
+      convert an unknown onset into a known one. What it does is stop the clock being a reason not to
+      scan.</p>
+
+    <div class="gloss">
+      <span class="lab">Ask it as a time of day</span>
+      <p>&ldquo;When was he last his normal self?&rdquo; gets you a story. &ldquo;What time did you last
+        speak to him?&rdquo; gets you a number. Ask the second one, write down the hour and minute, and
+        write down who told you, because the neurologist on the phone will ask and the answer will not
+        improve with retelling.</p>
+    </div>
+
+    <h2 class="sub">What the deficit is, and what it is worth</h2>
+
+    <p>The NIHSS is eleven items, scored 0 to 42, and the reason it matters here is not that it measures
+      severity well &mdash; it is that the referral thresholds are written in its units.</p>
+
+    <div class="tscroll">
+      <table>
+        <caption>The eleven items</caption>
+        <thead><tr><th>Item</th><th>What is tested</th></tr></thead>
+        <tbody>
+          <tr><th>1</th><td>Level of consciousness, in three parts: responsiveness, two questions (the
+            month and the patient&rsquo;s age), and two commands</td></tr>
+          <tr><th>2</th><td>Best gaze &mdash; horizontal eye movements</td></tr>
+          <tr><th>3</th><td>Visual fields</td></tr>
+          <tr><th>4</th><td>Facial palsy</td></tr>
+          <tr><th>5</th><td>Motor arm, scored for each side</td></tr>
+          <tr><th>6</th><td>Motor leg, scored for each side</td></tr>
+          <tr><th>7</th><td>Limb ataxia</td></tr>
+          <tr><th>8</th><td>Sensation</td></tr>
+          <tr><th>9</th><td>Best language &mdash; aphasia</td></tr>
+          <tr><th>10</th><td>Dysarthria</td></tr>
+          <tr><th>11</th><td>Extinction and inattention</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <p>Read the list again and notice what is not on it. There is no item for vertigo, none for diplopia,
+      none for dysphagia, and none for truncal ataxia unless it is bad enough to show in a limb &mdash;
+      dysarthria is the one posterior symptom that does score. Those are
+      the symptoms of a posterior circulation stroke, which is somewhere between a fifth and a quarter of
+      all strokes, and the consequence is exactly what you would predict: <strong>the NIHSS underestimates
+      a posterior circulation stroke</strong>, and a patient whose brainstem is infarcting can score low
+      enough to be judged ineligible for a treatment that would have worked.</p>
+
+    <p>This is not a reason to distrust the score. It is a reason to say out loud, when you ring, that the
+      score is low <em>and</em> the picture is posterior. Dizziness, vertigo, double vision, slurred speech,
+      trouble swallowing, loss of balance &mdash; any of those, in the right time frame, is a conversation
+      worth having whatever the number says.</p>
+
+    <figure class="v">
+<svg viewBox="0 0 680 452" width="100%" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="The cerebral arterial circle, with the segments reachable by clot retrieval marked">
+<title>The cerebral arterial circle, with the segments reachable by clot retrieval marked</title>
+<g transform="translate(0,-44)">
+<path d="M236.0 280.0 Q218.0 322.0 209.0 343.0 L200.0 364.0" fill="none" stroke="#F3DFD8" stroke-width="15" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M236.0 280.0 Q190.0 266.0 173.0 264.0 L156.0 262.0" fill="none" stroke="#F3DFD8" stroke-width="15" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M424.0 280.0 Q442.0 322.0 451.0 343.0 L460.0 364.0" fill="none" stroke="#F3DFD8" stroke-width="15" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M424.0 280.0 Q470.0 266.0 487.0 264.0 L504.0 262.0" fill="none" stroke="#F3DFD8" stroke-width="15" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M330.0 430.0 L330.0 356.0" fill="none" stroke="#F3DFD8" stroke-width="15"/>
+<path d="M156.0 262.0 L132.1 227.0" fill="none" stroke="#F3DFD8" stroke-width="15" stroke-linecap="round"/>
+<path d="M156.0 262.0 L126.6 274.9" fill="none" stroke="#F3DFD8" stroke-width="15" stroke-linecap="round"/>
+<path d="M504.0 262.0 L527.9 227.0" fill="none" stroke="#F3DFD8" stroke-width="15" stroke-linecap="round"/>
+<path d="M504.0 262.0 L533.4 274.9" fill="none" stroke="#F3DFD8" stroke-width="15" stroke-linecap="round"/>
+<path d="M288 232 L372.0 232" fill="none" stroke="#4A3F5A" stroke-width="5" stroke-linecap="round"/>
+<path d="M236.0 280.0 Q218.0 322.0 209.0 343.0 L200.0 364.0" fill="none" stroke="#4A3F5A" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M424.0 280.0 Q442.0 322.0 451.0 343.0 L460.0 364.0" fill="none" stroke="#4A3F5A" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M236.0 280.0 Q190.0 266.0 173.0 264.0 L156.0 262.0" fill="none" stroke="#4A3F5A" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M424.0 280.0 Q470.0 266.0 487.0 264.0 L504.0 262.0" fill="none" stroke="#4A3F5A" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M156.0 262.0 Q130.0 224.0 125.0 208.0 L120.0 192.0" fill="none" stroke="#4A3F5A" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M504.0 262.0 Q530.0 224.0 535.0 208.0 L540.0 192.0" fill="none" stroke="#4A3F5A" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M156.0 262.0 Q124.0 276.0 113.0 285.0 L102.0 294.0" fill="none" stroke="#4A3F5A" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M504.0 262.0 Q536.0 276.0 547.0 285.0 L558.0 294.0" fill="none" stroke="#4A3F5A" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M236.0 280.0 Q268.0 250.0 278.0 241.0 L288.0 232.0" fill="none" stroke="#4A3F5A" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M424.0 280.0 Q392.0 250.0 382.0 241.0 L372.0 232.0" fill="none" stroke="#4A3F5A" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M288.0 232.0 Q292.0 196.0 296.0 181.0 L300.0 166.0" fill="none" stroke="#4A3F5A" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M372.0 232.0 Q368.0 196.0 364.0 181.0 L360.0 166.0" fill="none" stroke="#4A3F5A" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M236.0 280.0 Q268.0 314.0 280.0 331.0 L292.0 348.0" fill="none" stroke="#4A3F5A" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M424.0 280.0 Q392.0 314.0 380.0 331.0 L368.0 348.0" fill="none" stroke="#4A3F5A" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M330.0 352.0 L292.0 348.0" fill="none" stroke="#4A3F5A" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M330.0 352.0 L368.0 348.0" fill="none" stroke="#4A3F5A" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M292.0 348.0 Q262.0 374.0 250.0 383.0 L238.0 392.0" fill="none" stroke="#4A3F5A" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M368.0 348.0 Q398.0 374.0 410.0 383.0 L422.0 392.0" fill="none" stroke="#4A3F5A" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M292.0 470.0 Q310.0 452.0 320.0 441.0 L330.0 430.0" fill="none" stroke="#4A3F5A" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M368.0 470.0 Q350.0 452.0 340.0 441.0 L330.0 430.0" fill="none" stroke="#4A3F5A" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M330.0 430.0 L330.0 356.0" fill="none" stroke="#4A3F5A" stroke-width="6" stroke-linecap="round"/>
+<text x="190.0" y="334.0" font-family="'Helvetica Neue',Arial,sans-serif" font-size="12" font-weight="600" fill="#473C56" text-anchor="end">ICA</text>
+<text x="470.0" y="334.0" font-family="'Helvetica Neue',Arial,sans-serif" font-size="12" font-weight="600" fill="#473C56" text-anchor="start">ICA</text>
+<text x="196.0" y="246.0" font-family="'Helvetica Neue',Arial,sans-serif" font-size="12" font-weight="600" fill="#473C56" text-anchor="middle">M1</text>
+<text x="464.0" y="246.0" font-family="'Helvetica Neue',Arial,sans-serif" font-size="12" font-weight="600" fill="#473C56" text-anchor="middle">M1</text>
+<text x="112.0" y="184.0" font-family="'Helvetica Neue',Arial,sans-serif" font-size="12" font-weight="600" fill="#473C56" text-anchor="end">M2</text>
+<text x="548.0" y="184.0" font-family="'Helvetica Neue',Arial,sans-serif" font-size="12" font-weight="600" fill="#473C56" text-anchor="start">M2</text>
+<text x="92.0" y="304.0" font-family="'Helvetica Neue',Arial,sans-serif" font-size="12" font-weight="600" fill="#473C56" text-anchor="end">M2</text>
+<text x="568.0" y="304.0" font-family="'Helvetica Neue',Arial,sans-serif" font-size="12" font-weight="600" fill="#473C56" text-anchor="start">M2</text>
+<text x="262.0" y="244.0" font-family="'Helvetica Neue',Arial,sans-serif" font-size="12" font-weight="600" fill="#473C56" text-anchor="end">A1</text>
+<text x="398.0" y="244.0" font-family="'Helvetica Neue',Arial,sans-serif" font-size="12" font-weight="600" fill="#473C56" text-anchor="start">A1</text>
+<text x="286.0" y="176.0" font-family="'Helvetica Neue',Arial,sans-serif" font-size="12" font-weight="600" fill="#473C56" text-anchor="end">A2</text>
+<text x="374.0" y="176.0" font-family="'Helvetica Neue',Arial,sans-serif" font-size="12" font-weight="600" fill="#473C56" text-anchor="start">A2</text>
+<text x="252.0" y="328.0" font-family="'Helvetica Neue',Arial,sans-serif" font-size="12" font-weight="600" fill="#473C56" text-anchor="end">PCoA</text>
+<text x="408.0" y="328.0" font-family="'Helvetica Neue',Arial,sans-serif" font-size="12" font-weight="600" fill="#473C56" text-anchor="start">PCoA</text>
+<text x="310.0" y="368.0" font-family="'Helvetica Neue',Arial,sans-serif" font-size="12" font-weight="600" fill="#473C56" text-anchor="middle">P1</text>
+<text x="350.0" y="368.0" font-family="'Helvetica Neue',Arial,sans-serif" font-size="12" font-weight="600" fill="#473C56" text-anchor="middle">P1</text>
+<text x="234.0" y="408.0" font-family="'Helvetica Neue',Arial,sans-serif" font-size="12" font-weight="600" fill="#473C56" text-anchor="end">P2</text>
+<text x="426.0" y="408.0" font-family="'Helvetica Neue',Arial,sans-serif" font-size="12" font-weight="600" fill="#473C56" text-anchor="start">P2</text>
+<text x="286.0" y="476.0" font-family="'Helvetica Neue',Arial,sans-serif" font-size="12" font-weight="600" fill="#473C56" text-anchor="end">Vertebral</text>
+<text x="374.0" y="476.0" font-family="'Helvetica Neue',Arial,sans-serif" font-size="12" font-weight="600" fill="#473C56" text-anchor="start">Vertebral</text>
+<text x="330.0" y="223.0" font-family="'Helvetica Neue',Arial,sans-serif" font-size="12" font-weight="600" fill="#473C56" text-anchor="middle">ACoA</text>
+<text x="348.0" y="404.0" font-family="'Helvetica Neue',Arial,sans-serif" font-size="12" font-weight="600" fill="#473C56" text-anchor="start">Basilar</text>
+</g>
+<rect x="24" y="20" width="632" height="62" rx="9" fill="#F1EEF6"/>
+<rect x="42" y="39" width="26" height="12" rx="6" fill="#F3DFD8"/>
+<text x="80.0" y="49.0" font-family="'Helvetica Neue',Arial,sans-serif" font-size="13" font-weight="600" fill="#473C56" text-anchor="start">Reachable by clot retrieval</text>
+<text x="80.0" y="68.0" font-family="'Helvetica Neue',Arial,sans-serif" font-size="12.5" font-weight="400" fill="#6B6473" text-anchor="start">The internal carotid, M1 and the early M2, and the basilar. Distal branches are not</text>
+<text x="80.0" y="83.0" font-family="'Helvetica Neue',Arial,sans-serif" font-size="12.5" font-weight="400" fill="#6B6473" text-anchor="start">targets — which is why the angiogram decides, not the deficit.</text>
+</svg>
+      <figcaption><b>Where a catheter can go.</b> The internal carotid, M1 and the early M2, and the basilar are reachable; everything beyond them is not. The posterior circulation is the lower half of the drawing &mdash; vertebrals into the basilar, basilar into the posterior cerebrals &mdash; and it is the half the NIHSS reads poorly.</figcaption>
+    </figure>
+
+    <h2 class="sub">The call</h2>
+
+    <p>At Coffs the route is the NSW Telestroke service. The rapid assessment lives on the intranet under
+      the Clinical Resource Centre, as <em>Stroke rapid assessment</em>, and the tool walks you through the
+      same sequence every time: onset of symptoms, premorbid function, orientation, then visual, motor and
+      sensory assessment. It produces a recommendation at the end &mdash; acute stroke workup and a call to
+      the neurologist, or not acute and on to the local stroke protocol.</p>
+
+    <p>It will not let you finish without the one field people skip. If <em>last seen well</em> is blank the
+      report comes out marked incomplete, which is the tool doing its job.</p>
+
+    <a class="phone" href="tel:1300878887">
+      <span class="lab">NSW Telestroke</span>
+      <span class="num">1300 878 887</span>
+    </a>
+
+    <figure class="v">
+      <img src="telestroke-referral-criteria.png" alt="NSW Telestroke referral criteria: last seen normal, premorbid function and NIHSS score, branching to either activation of the Telestroke team or a routine emergency department workup">
+      <figcaption><b>Who gets referred.</b> Three questions in order, and each one can end the pathway. Note that the NIHSS threshold is not fixed: two, or a quadrantanopia, inside four and a half hours; four, or a hemianopia, in the wake-up and late group. Note also the box at the bottom &mdash; a severe deficit that has fully resolved by the time the patient reaches you is still a reason to refer.<span class="credit">NSW Agency for Clinical Innovation, NSW Telestroke Service. Reproduced unaltered for educational use with acknowledgement of the source, under the Agency&rsquo;s own terms.</span></figcaption>
+    </figure>
+
+    <h2 class="sub">The scan</h2>
+
+    <p>Non-contrast CT first, and then CT angiogram and CT perfusion. The non-contrast scan answers the
+      only question that cannot wait: is there blood. Roughly four strokes in five are ischaemic and the
+      rest are haemorrhagic, and from that fork the two pathways share almost nothing &mdash; ischaemic
+      goes to the neurologist and the Telestroke service, haemorrhagic goes to neurosurgery at John Hunter.</p>
+
+    <p>The angiogram tells you whether there is a clot you could reach. The perfusion study tells you
+      whether there is anything left worth reaching it for.</p>
+
+    <h2 class="sub">Core and penumbra</h2>
+
+    <p>Four numbers come off a perfusion study and it is worth being able to say what each one is before
+      you look at the colours.</p>
+
+    <dl class="keys">
+      <dt>CBF</dt>
+      <dd><strong>Cerebral blood flow.</strong> How much blood moves through a given volume of brain each
+        minute.</dd>
+      <dt>CBV</dt>
+      <dd><strong>Cerebral blood volume.</strong> How much blood is in that volume of brain at any instant.</dd>
+      <dt>MTT</dt>
+      <dd><strong>Mean transit time.</strong> How many seconds blood takes to get through the region.</dd>
+      <dt>T<sub>max</sub></dt>
+      <dd><strong>Time to maximum.</strong> How late the blood arrives, once the software has corrected
+        for the way the bolus was given. It is not simply time to peak, and the threshold everything is
+        built on is T<sub>max</sub> over six seconds.</dd>
+    </dl>
+
+    <p>The infarct core is tissue that is dead or will be, whatever anyone does. The ischaemic penumbra is
+      the rim around it: underperfused, still alive, and recoverable if flow comes back. Both show a
+      prolonged transit time, so timing alone does not separate them. What separates them is the volume.</p>
+
+    <figure class="v">
+<svg viewBox="0 0 680 474" width="100%" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Infarct core against ischaemic penumbra, with the perfusion signature of each">
+<title>Infarct core against ischaemic penumbra, with the perfusion signature of each</title>
+<ellipse cx="174.0" cy="220.0" rx="132.0" ry="116.0" fill="#E7E3EC" stroke="#BDB4C9" stroke-width="2"/>
+<line x1="174.0" y1="111.0" x2="174.0" y2="329.0" stroke="#BDB4C9" stroke-width="1.5" stroke-dasharray="5 5"/>
+<path d="M118 136 Q66 158 56 214 Q50 272 96 302 Q140 312 156 262 Q172 198 152 152 Q138 128 118 136 Z" fill="#FAEBD2" stroke="#C07A1E" stroke-width="2"/>
+<path d="M110 186 Q86 206 88 234 Q92 266 116 270 Q134 266 134 234 Q134 202 124 186 Q117 178 110 186 Z" fill="#A8442A" stroke="#8E3723" stroke-width="1.6"/>
+<path d="M214 322 Q190 306 174 278" fill="none" stroke="#4A3F5A" stroke-width="5" stroke-linecap="round"/>
+<g stroke="#A8442A" stroke-width="3.8" stroke-linecap="round"><line x1="170" y1="268" x2="184" y2="282"/><line x1="184" y1="268" x2="170" y2="282"/></g>
+<text x="222.0" y="318.0" font-family="'Helvetica Neue',Arial,sans-serif" font-size="11.5" font-weight="600" fill="#A8442A" text-anchor="start">occlusion</text>
+<text x="111.0" y="231.0" font-family="'Helvetica Neue',Arial,sans-serif" font-size="13" font-weight="700" fill="#FFF6F2" text-anchor="middle">core</text>
+<text x="78.0" y="330.0" font-family="'Helvetica Neue',Arial,sans-serif" font-size="13" font-weight="700" fill="#C07A1E" text-anchor="middle">penumbra</text>
+<text x="240.0" y="162.0" font-family="'Helvetica Neue',Arial,sans-serif" font-size="13" font-weight="600" fill="#6B6473" text-anchor="middle">normal</text>
+<text x="340.0" y="52.0" font-family="'Helvetica Neue',Arial,sans-serif" font-size="14" font-weight="700" fill="#473C56" text-anchor="start">Both zones are slow. Only one still has volume.</text>
+<text x="340.0" y="72.0" font-family="'Helvetica Neue',Arial,sans-serif" font-size="12.5" font-weight="400" fill="#6B6473" text-anchor="start">That is the whole of it. The timing maps find the</text>
+<text x="340.0" y="87.0" font-family="'Helvetica Neue',Arial,sans-serif" font-size="12.5" font-weight="400" fill="#6B6473" text-anchor="start">territory at risk; the volume map divides it into</text>
+<text x="340.0" y="102.0" font-family="'Helvetica Neue',Arial,sans-serif" font-size="12.5" font-weight="400" fill="#6B6473" text-anchor="start">what you can save and what you cannot.</text>
+<rect x="340.0" y="136.0" width="316.0" height="146.0" rx="9" fill="#FAEBD2" stroke="#C07A1E" stroke-width="1.5"/>
+<text x="357.0" y="162.0" font-family="'Helvetica Neue',Arial,sans-serif" font-size="14.5" font-weight="700" fill="#C07A1E" text-anchor="start">Penumbra</text>
+<text x="357.0" y="190.0" font-family="'Helvetica Neue',Arial,sans-serif" font-size="12.5" font-weight="600" fill="#473C56" text-anchor="start">MTT, Tmax</text>
+<text x="639.0" y="190.0" font-family="'Helvetica Neue',Arial,sans-serif" font-size="12.5" font-weight="700" fill="#C07A1E" text-anchor="end">prolonged</text>
+<text x="357.0" y="211.0" font-family="'Helvetica Neue',Arial,sans-serif" font-size="12.5" font-weight="600" fill="#473C56" text-anchor="start">CBF</text>
+<text x="639.0" y="211.0" font-family="'Helvetica Neue',Arial,sans-serif" font-size="12.5" font-weight="700" fill="#C07A1E" text-anchor="end">moderately reduced</text>
+<text x="357.0" y="232.0" font-family="'Helvetica Neue',Arial,sans-serif" font-size="12.5" font-weight="600" fill="#473C56" text-anchor="start">CBV</text>
+<text x="639.0" y="232.0" font-family="'Helvetica Neue',Arial,sans-serif" font-size="12.5" font-weight="700" fill="#3E7730" text-anchor="end">normal or raised</text>
+<line x1="357.0" y1="240.0" x2="639.0" y2="240.0" stroke="#C07A1E" stroke-width="1"/>
+<text x="357.0" y="256.0" font-family="'Helvetica Neue',Arial,sans-serif" font-size="11.5" font-weight="400" fill="#6B6473" text-anchor="start">Alive. Autoregulatory vasodilatation is holding</text>
+<text x="357.0" y="270.0" font-family="'Helvetica Neue',Arial,sans-serif" font-size="11.5" font-weight="400" fill="#6B6473" text-anchor="start">the volume up. This is what you are treating.</text>
+<rect x="340.0" y="304.0" width="316.0" height="146.0" rx="9" fill="#F3DFD8" stroke="#A8442A" stroke-width="1.5"/>
+<text x="357.0" y="330.0" font-family="'Helvetica Neue',Arial,sans-serif" font-size="14.5" font-weight="700" fill="#A8442A" text-anchor="start">Core</text>
+<text x="357.0" y="358.0" font-family="'Helvetica Neue',Arial,sans-serif" font-size="12.5" font-weight="600" fill="#473C56" text-anchor="start">MTT, Tmax</text>
+<text x="639.0" y="358.0" font-family="'Helvetica Neue',Arial,sans-serif" font-size="12.5" font-weight="700" fill="#A8442A" text-anchor="end">prolonged</text>
+<text x="357.0" y="379.0" font-family="'Helvetica Neue',Arial,sans-serif" font-size="12.5" font-weight="600" fill="#473C56" text-anchor="start">CBF</text>
+<text x="639.0" y="379.0" font-family="'Helvetica Neue',Arial,sans-serif" font-size="12.5" font-weight="700" fill="#A8442A" text-anchor="end">markedly reduced</text>
+<text x="357.0" y="400.0" font-family="'Helvetica Neue',Arial,sans-serif" font-size="12.5" font-weight="600" fill="#473C56" text-anchor="start">CBV</text>
+<text x="639.0" y="400.0" font-family="'Helvetica Neue',Arial,sans-serif" font-size="12.5" font-weight="700" fill="#A8442A" text-anchor="end">markedly reduced</text>
+<line x1="357.0" y1="408.0" x2="639.0" y2="408.0" stroke="#A8442A" stroke-width="1"/>
+<text x="357.0" y="424.0" font-family="'Helvetica Neue',Arial,sans-serif" font-size="11.5" font-weight="400" fill="#6B6473" text-anchor="start">Infarcted, or going to infarct whatever you do.</text>
+<text x="357.0" y="438.0" font-family="'Helvetica Neue',Arial,sans-serif" font-size="11.5" font-weight="400" fill="#6B6473" text-anchor="start">Reperfusing it buys nothing and may bleed.</text>
+</svg>
+      <figcaption><b>Why the volume map is the one that decides.</b> Both zones are slow, so the timing maps find the territory but cannot divide it. The penumbra holds its blood volume up by dilating everything downstream; the core has lost that and is gone. The gap between them is what a treatment can recover.</figcaption>
+    </figure>
+
+    <p>The penumbra holds its blood volume up &mdash; sometimes above normal &mdash; because the arterioles
+      downstream have dilated as far as they can to keep the flow going. When that fails, the volume
+      collapses, and the tissue joins the core. So the mismatch between the two is not just a radiological
+      curiosity. It is a measure of how much of this stroke has not happened yet.</p>
+
+    <p>One caveat, because the software has moved past the physiology. The volume difference is real and it
+      is why the penumbra is still alive &mdash; but the automated maps you will actually be handed do not
+      threshold on it. They call core a <strong>relative cerebral blood flow under thirty per cent</strong>
+      and tissue at risk <strong>T<sub>max</sub> over six seconds</strong>, which is what the trials used.
+      Know the physiology; read the numbers the report gives you.</p>
+
+    <h2 class="sub">Thrombolysis</h2>
+
+    <p>As early as possible. Standard window four and a half hours, and the 2026 guideline supports
+      extending that <strong>to nine hours in selected patients</strong><sup class="vf" data-v="str-9h"></sup>
+      &mdash; selected meaning that the perfusion study shows salvageable tissue, not that the clinician
+      feels optimistic.</p>
+
+    <p>Before the drug goes up:</p>
+
+    <ul class="plain">
+      <li>Blood pressure under <strong>185 systolic and 110 diastolic</strong>. This is a gate, not a goal.</li>
+      <li>An ECG, a weight, and <strong>a blood glucose</strong> &mdash; hypoglycaemia is both an
+        exclusion and the commonest thing that looks exactly like a stroke.</li>
+      <li>Consent, verbal or written, from the patient or the family &mdash; sought, not waited for. A
+        patient who cannot consent and has nobody contactable is still treated.</li>
+      <li>Bloods including coagulation studies &mdash; but <strong>do not wait for the coags</strong> unless
+        you have a clinical reason to suspect a coagulopathy. Waiting costs more than it buys.</li>
+    </ul>
+
+    <div class="tscroll">
+      <table class="cmp">
+        <caption>Who is in and who is out</caption>
+        <thead><tr><th>In</th><th>Out</th><th>Relative</th></tr></thead>
+        <tbody>
+          <tr>
+            <td class="y"><ul>
+              <li>Onset under 4.5 hours</li>
+              <li>A clinically significant deficit</li>
+              <li>CT excludes haemorrhage</li>
+              <li>Over 18</li>
+              <li>Consent, where it can be had</li>
+            </ul></td>
+            <td class="n"><ul>
+              <li>Anticoagulation or heparin in the past 24 hours</li>
+              <li>INR above 1.7</li>
+              <li>Platelets under 100 &times; 10<sup>9</sup>/L</li>
+              <li>Blood glucose under 2.8&nbsp;mmol/L</li>
+              <li>BP above 185 / 110</li>
+              <li>Haemorrhage on the scan</li>
+              <li>Active non-compressible bleeding</li>
+              <li>Infective endocarditis</li>
+              <li>Amyloid-related changes on imaging</li>
+            </ul></td>
+            <td><ul>
+              <li>A non-disabling minor stroke</li>
+              <li>Stroke or head trauma in the past 3 months</li>
+              <li>Spinal or intracranial surgery in the past 3 months</li>
+              <li>In the past 30 days: myocardial infarction, trauma, internal injury</li>
+              <li>Pregnancy or lactation</li>
+            </ul></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <p class="fallback" style="margin:-10px 0 20px">The three columns are as the presentation gave them.
+      Worth knowing that the third is not a settled category: recent stroke, recent head trauma and recent
+      intracranial or spinal surgery are absolute contraindications in the AHA/ASA criteria rather than
+      relative ones, and amyloid changes on imaging are usually a risk to weigh rather than an automatic
+      exclusion. Your own protocol is the one that governs.</p>
+
+    <div class="alert">
+      <span class="lab">The two doses</span>
+      <p><strong>Alteplase</strong> &mdash; 0.9&nbsp;mg/kg to a maximum of 90&nbsp;mg. Ten per cent as a
+        bolus, the rest over sixty minutes.</p>
+      <p><strong>Tenecteplase</strong> &mdash; 0.25&nbsp;mg/kg to a maximum of 25&nbsp;mg, as a single
+        intravenous dose.</p>
+      <p>The 2026 guideline endorses either inside four and a half hours and prefers
+        neither<sup class="vf" data-v="str-lytics"></sup> &mdash; where the previous one primarily endorsed
+        alteplase. The practical difference is in how they are given: tenecteplase is a push, and a push
+        does not need a pump, a line reserved for an hour, or a nurse watching an infusion through a
+        transfer.</p>
+    </div>
+
+    <p>Afterwards, for twenty-four hours: no anticoagulation, no antiplatelets, no further thrombolytic.
+      And no unnecessary procedures &mdash; no invasive lines, no nasogastric tube &mdash; because every
+      one of them is a hole in a patient whose clotting you have deliberately disabled.</p>
+
+    <figure class="v">
+<svg viewBox="0 0 680 344" width="100%" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="The thrombolysis and clot retrieval time windows on one axis">
+<title>The thrombolysis and clot retrieval time windows on one axis</title>
+<line x1="162.0" y1="96" x2="162.0" y2="286" stroke="#D9D2E2" stroke-width="1" stroke-dasharray="3 5"/>
+<text x="162.0" y="306.0" font-family="'Helvetica Neue',Arial,sans-serif" font-size="12" font-weight="400" fill="#6B6473" text-anchor="middle">0</text>
+<line x1="253.1" y1="96" x2="253.1" y2="286" stroke="#D9D2E2" stroke-width="1" stroke-dasharray="3 5"/>
+<text x="253.1" y="306.0" font-family="'Helvetica Neue',Arial,sans-serif" font-size="12" font-weight="600" fill="#6B6473" text-anchor="middle">4.5</text>
+<line x1="283.5" y1="96" x2="283.5" y2="286" stroke="#D9D2E2" stroke-width="1" stroke-dasharray="3 5"/>
+<text x="283.5" y="306.0" font-family="'Helvetica Neue',Arial,sans-serif" font-size="12" font-weight="600" fill="#6B6473" text-anchor="middle">6</text>
+<line x1="344.2" y1="96" x2="344.2" y2="286" stroke="#D9D2E2" stroke-width="1" stroke-dasharray="3 5"/>
+<text x="344.2" y="306.0" font-family="'Helvetica Neue',Arial,sans-serif" font-size="12" font-weight="600" fill="#6B6473" text-anchor="middle">9</text>
+<line x1="405.0" y1="96" x2="405.0" y2="286" stroke="#D9D2E2" stroke-width="1" stroke-dasharray="3 5"/>
+<text x="405.0" y="306.0" font-family="'Helvetica Neue',Arial,sans-serif" font-size="12" font-weight="400" fill="#6B6473" text-anchor="middle">12</text>
+<line x1="526.5" y1="96" x2="526.5" y2="286" stroke="#D9D2E2" stroke-width="1" stroke-dasharray="3 5"/>
+<text x="526.5" y="306.0" font-family="'Helvetica Neue',Arial,sans-serif" font-size="12" font-weight="400" fill="#6B6473" text-anchor="middle">18</text>
+<line x1="648.0" y1="96" x2="648.0" y2="286" stroke="#D9D2E2" stroke-width="1" stroke-dasharray="3 5"/>
+<text x="648.0" y="306.0" font-family="'Helvetica Neue',Arial,sans-serif" font-size="12" font-weight="600" fill="#6B6473" text-anchor="middle">24</text>
+<text x="405.0" y="328.0" font-family="'Helvetica Neue',Arial,sans-serif" font-size="12" font-weight="400" fill="#6B6473" text-anchor="middle" font-style="italic">hours from last seen well — and for a wake-up stroke, from the midpoint of sleep</text>
+<text x="144.0" y="123.0" font-family="'Helvetica Neue',Arial,sans-serif" font-size="13.5" font-weight="600" fill="#473C56" text-anchor="end">Thrombolysis</text>
+<text x="144.0" y="141.0" font-family="'Helvetica Neue',Arial,sans-serif" font-size="11" font-weight="400" fill="#6B6473" text-anchor="end">alteplase or tenecteplase</text>
+<rect x="162.0" y="108.0" width="91.1" height="30" rx="6" fill="#635574"/>
+<text x="207.6" y="128.0" font-family="'Helvetica Neue',Arial,sans-serif" font-size="12" font-weight="600" fill="#FDFBF7" text-anchor="middle">to 4.5 h</text>
+<rect x="255.6" y="108.0" width="88.6" height="30" rx="6" fill="#F1EEF6" stroke="#635574" stroke-width="1.5" stroke-dasharray="5 4"/>
+<text x="299.9" y="128.0" font-family="'Helvetica Neue',Arial,sans-serif" font-size="12" font-weight="600" fill="#635574" text-anchor="middle">4.5–9 h</text>
+<text x="144.0" y="191.0" font-family="'Helvetica Neue',Arial,sans-serif" font-size="13.5" font-weight="600" fill="#473C56" text-anchor="end">Clot retrieval</text>
+<text x="144.0" y="209.0" font-family="'Helvetica Neue',Arial,sans-serif" font-size="11" font-weight="400" fill="#6B6473" text-anchor="end">ICA, M1, early M2</text>
+<rect x="162.0" y="176.0" width="121.5" height="30" rx="6" fill="#635574"/>
+<text x="222.8" y="196.0" font-family="'Helvetica Neue',Arial,sans-serif" font-size="12" font-weight="600" fill="#FDFBF7" text-anchor="middle">to 6 h</text>
+<rect x="286.0" y="176.0" width="362.0" height="30" rx="6" fill="#F1EEF6" stroke="#635574" stroke-width="1.5" stroke-dasharray="5 4"/>
+<text x="467.0" y="196.0" font-family="'Helvetica Neue',Arial,sans-serif" font-size="12" font-weight="600" fill="#635574" text-anchor="middle">6–24 h</text>
+<text x="144.0" y="259.0" font-family="'Helvetica Neue',Arial,sans-serif" font-size="13.5" font-weight="600" fill="#473C56" text-anchor="end">Basilar occlusion</text>
+<text x="144.0" y="277.0" font-family="'Helvetica Neue',Arial,sans-serif" font-size="11" font-weight="400" fill="#6B6473" text-anchor="end">NIHSS 10 or more</text>
+<rect x="162.0" y="244.0" width="486.0" height="30" rx="6" fill="#F1EEF6" stroke="#635574" stroke-width="1.5" stroke-dasharray="5 4"/>
+<text x="405.0" y="264.0" font-family="'Helvetica Neue',Arial,sans-serif" font-size="12" font-weight="600" fill="#635574" text-anchor="middle">to 24 h</text>
+<rect x="24" y="16" width="632" height="70" rx="9" fill="#F1EEF6"/>
+<rect x="42" y="35" width="26" height="12" rx="6" fill="#F1EEF6" stroke="#635574" stroke-width="1.5" stroke-dasharray="4 3"/>
+<text x="78.0" y="45.0" font-family="'Helvetica Neue',Arial,sans-serif" font-size="13" font-weight="600" fill="#473C56" text-anchor="start">Past the solid windows, imaging decides — not the clock</text>
+<text x="78.0" y="62.0" font-family="'Helvetica Neue',Arial,sans-serif" font-size="12.5" font-weight="400" fill="#6B6473" text-anchor="start">Salvageable tissue on perfusion imaging in the anterior circulation; the NIHSS and the</text>
+<text x="78.0" y="77.0" font-family="'Helvetica Neue',Arial,sans-serif" font-size="12.5" font-weight="400" fill="#6B6473" text-anchor="start">posterior-circulation ASPECTS for the basilar. And a patient independent beforehand.</text>
+</svg>
+      <figcaption><b>Every window on the page, on one axis.</b> The solid bars are decided by the clock alone. Past them, imaging decides &mdash; and the clock still has to be started from the right moment, which for a wake-up stroke is the midpoint of sleep.</figcaption>
+    </figure>
+
+    <h2 class="sub">Clot retrieval</h2>
+
+    <p>Thrombolysis dissolves what it can reach chemically. Retrieval goes and gets it, and it is the better
+      treatment for a large vessel &mdash; but only for a large vessel. The accessible territory is the
+      internal carotid, the middle cerebral in its M1 and early M2 segments, and the basilar. Nothing distal
+      to that is a target, which is why the angiogram and not the deficit decides.</p>
+
+    <ul class="plain">
+      <li><strong>Under six hours</strong>, or <strong>six to twenty-four</strong> where the vessel is
+        blocked and there is a significant volume of salvageable tissue.</li>
+      <li><strong>NIHSS above five</strong>, and premorbid independence &mdash; a modified Rankin of 0 to 2.</li>
+      <li>Eligible patients get intravenous thrombolysis <em>while</em> retrieval is being arranged, not
+        instead of it and not after it.</li>
+      <li>The presentation gives up to seventy per cent of those treated inside the window as benefiting.
+        That is a high figure &mdash; the pooled trial data are usually quoted as an absolute gain of
+        around twenty percentage points in functional independence &mdash; so take it as the order of the
+        thing rather than the number.</li>
+    </ul>
+
+    <p>The 2026 guideline adds the posterior circulation explicitly: in <strong>basilar artery occlusion
+      presenting within twenty-four hours with an NIHSS of ten or
+      more</strong><sup class="vf" data-v="str-basilar"></sup>, retrieval improves functional
+      outcome. Given what the NIHSS does to
+      posterior strokes, that threshold of ten is a reminder that the patients who qualify are the sick
+      ones &mdash; and that a basilar occlusion scoring eight is a conversation, not a closed door.</p>
+
+    <p>From Coffs, the referral services are Prince of Wales, Liverpool, Royal Prince Alfred, John Hunter,
+      Royal North Shore and Westmead. The on-call neurologist recommends; you ring the retrieval service to
+      organise it.</p>
+
+    <h2 class="sub">When it bleeds</h2>
+
+    <p>Haemorrhagic transformation is the complication that makes everyone hesitate over the consent
+      conversation, so it is worth having the shape of it straight. Most of it is petechial and
+      inconsequential. A minority is a haematoma, and only the largest grade carries a clear excess of death
+      and dependency.</p>
+
+    <figure class="v">
+<svg viewBox="0 0 680 300" width="100%" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="The ECASS classification of haemorrhagic transformation, HI1 to PH2">
+<title>The ECASS classification of haemorrhagic transformation, HI1 to PH2</title>
+<rect x="24.0" y="60" width="148.0" height="136" rx="9" fill="#fff" stroke="#D9D2E2" stroke-width="1.2"/>
+<ellipse cx="98.0" cy="128.0" rx="58.0" ry="64.0" fill="#E7E3EC" stroke="#BDB4C9" stroke-width="1.6"/>
+<path d="M98.0 69.0 Q98.0 128.0 98.0 187.0" fill="none" stroke="#BDB4C9" stroke-width="1.4" stroke-dasharray="4 4"/>
+<path d="M47.0 115.0 Q42.0 128.0 48.0 142.0 Q54.0 156.0 63.0 162.0 Q72.0 168.0 81.0 157.0 Q90.0 146.0 89.0 127.0 Q88.0 108.0 70.0 105.0 Q52.0 102.0 47.0 115.0 Z" fill="#D3CEDC" stroke="#A89FB6" stroke-width="1.4"/>
+<circle cx="81.4" cy="139.4" r="2.1" fill="#A8442A"/>
+<circle cx="82.4" cy="124.5" r="1.6" fill="#A8442A"/>
+<circle cx="62.8" cy="146.4" r="2.4" fill="#A8442A"/>
+<circle cx="52.6" cy="120.0" r="1.8" fill="#A8442A"/>
+<circle cx="61.4" cy="111.5" r="2.4" fill="#A8442A"/>
+<circle cx="72.3" cy="151.5" r="2.0" fill="#A8442A"/>
+<circle cx="66.3" cy="112.2" r="1.6" fill="#A8442A"/>
+<circle cx="70.9" cy="115.6" r="1.7" fill="#A8442A"/>
+<circle cx="78.3" cy="132.0" r="2.3" fill="#A8442A"/>
+<circle cx="80.6" cy="141.4" r="1.8" fill="#A8442A"/>
+<circle cx="55.4" cy="134.2" r="2.1" fill="#A8442A"/>
+<text x="98.0" y="48.0" font-family="'Helvetica Neue',Arial,sans-serif" font-size="15" font-weight="700" fill="#473C56" text-anchor="middle">HI1</text>
+<text x="32.0" y="214.0" font-family="'Helvetica Neue',Arial,sans-serif" font-size="11.5" font-weight="400" fill="#6B6473" text-anchor="start">Small petechiae along</text>
+<text x="32.0" y="228.0" font-family="'Helvetica Neue',Arial,sans-serif" font-size="11.5" font-weight="400" fill="#6B6473" text-anchor="start">the margins of the</text>
+<text x="32.0" y="242.0" font-family="'Helvetica Neue',Arial,sans-serif" font-size="11.5" font-weight="400" fill="#6B6473" text-anchor="start">infarct.</text>
+<rect x="186.0" y="60" width="148.0" height="136" rx="9" fill="#fff" stroke="#D9D2E2" stroke-width="1.2"/>
+<ellipse cx="260.0" cy="128.0" rx="58.0" ry="64.0" fill="#E7E3EC" stroke="#BDB4C9" stroke-width="1.6"/>
+<path d="M260.0 69.0 Q260.0 128.0 260.0 187.0" fill="none" stroke="#BDB4C9" stroke-width="1.4" stroke-dasharray="4 4"/>
+<path d="M209.0 115.0 Q204.0 128.0 210.0 142.0 Q216.0 156.0 225.0 162.0 Q234.0 168.0 243.0 157.0 Q252.0 146.0 251.0 127.0 Q250.0 108.0 232.0 105.0 Q214.0 102.0 209.0 115.0 Z" fill="#D3CEDC" stroke="#A89FB6" stroke-width="1.4"/>
+<circle cx="227.1" cy="117.7" r="2.1" fill="#A8442A"/>
+<circle cx="229.5" cy="128.6" r="2.1" fill="#A8442A"/>
+<circle cx="236.4" cy="118.0" r="1.9" fill="#A8442A"/>
+<circle cx="212.1" cy="127.6" r="1.8" fill="#A8442A"/>
+<circle cx="227.7" cy="121.7" r="1.7" fill="#A8442A"/>
+<circle cx="225.5" cy="143.5" r="2.1" fill="#A8442A"/>
+<circle cx="233.5" cy="138.0" r="2.3" fill="#A8442A"/>
+<circle cx="225.9" cy="130.7" r="2.1" fill="#A8442A"/>
+<circle cx="239.5" cy="143.7" r="1.8" fill="#A8442A"/>
+<circle cx="234.6" cy="151.3" r="1.8" fill="#A8442A"/>
+<circle cx="212.7" cy="126.1" r="1.7" fill="#A8442A"/>
+<circle cx="226.8" cy="141.4" r="2.5" fill="#A8442A"/>
+<circle cx="213.5" cy="134.2" r="1.8" fill="#A8442A"/>
+<circle cx="224.1" cy="153.1" r="1.7" fill="#A8442A"/>
+<circle cx="228.2" cy="143.3" r="2.5" fill="#A8442A"/>
+<circle cx="222.9" cy="123.0" r="2.5" fill="#A8442A"/>
+<circle cx="241.6" cy="117.7" r="2.2" fill="#A8442A"/>
+<circle cx="232.2" cy="142.4" r="1.8" fill="#A8442A"/>
+<circle cx="221.6" cy="114.8" r="1.9" fill="#A8442A"/>
+<circle cx="226.8" cy="147.3" r="2.6" fill="#A8442A"/>
+<circle cx="221.9" cy="129.6" r="1.6" fill="#A8442A"/>
+<circle cx="223.0" cy="122.7" r="2.0" fill="#A8442A"/>
+<circle cx="218.7" cy="116.5" r="2.5" fill="#A8442A"/>
+<circle cx="232.5" cy="131.1" r="2.1" fill="#A8442A"/>
+<circle cx="222.4" cy="119.7" r="1.8" fill="#A8442A"/>
+<circle cx="232.2" cy="129.6" r="2.5" fill="#A8442A"/>
+<circle cx="222.4" cy="114.8" r="2.1" fill="#A8442A"/>
+<circle cx="242.3" cy="145.4" r="1.6" fill="#A8442A"/>
+<circle cx="223.0" cy="125.3" r="1.9" fill="#A8442A"/>
+<circle cx="237.9" cy="143.3" r="1.7" fill="#A8442A"/>
+<circle cx="237.3" cy="120.3" r="2.5" fill="#A8442A"/>
+<circle cx="225.6" cy="151.6" r="1.5" fill="#A8442A"/>
+<circle cx="226.3" cy="123.8" r="1.6" fill="#A8442A"/>
+<circle cx="234.1" cy="138.2" r="2.6" fill="#A8442A"/>
+<text x="260.0" y="48.0" font-family="'Helvetica Neue',Arial,sans-serif" font-size="15" font-weight="700" fill="#473C56" text-anchor="middle">HI2</text>
+<text x="194.0" y="214.0" font-family="'Helvetica Neue',Arial,sans-serif" font-size="11.5" font-weight="400" fill="#6B6473" text-anchor="start">Confluent petechiae</text>
+<text x="194.0" y="228.0" font-family="'Helvetica Neue',Arial,sans-serif" font-size="11.5" font-weight="400" fill="#6B6473" text-anchor="start">through the infarct,</text>
+<text x="194.0" y="242.0" font-family="'Helvetica Neue',Arial,sans-serif" font-size="11.5" font-weight="400" fill="#6B6473" text-anchor="start">no mass effect.</text>
+<rect x="348.0" y="60" width="148.0" height="136" rx="9" fill="#fff" stroke="#D9D2E2" stroke-width="1.2"/>
+<ellipse cx="422.0" cy="128.0" rx="58.0" ry="64.0" fill="#E7E3EC" stroke="#BDB4C9" stroke-width="1.6"/>
+<path d="M422.0 69.0 Q427.1 128.0 422.0 187.0" fill="none" stroke="#BDB4C9" stroke-width="1.4" stroke-dasharray="4 4"/>
+<path d="M371.0 115.0 Q366.0 128.0 372.0 142.0 Q378.0 156.0 387.0 162.0 Q396.0 168.0 405.0 157.0 Q414.0 146.0 413.0 127.0 Q412.0 108.0 394.0 105.0 Q376.0 102.0 371.0 115.0 Z" fill="#D3CEDC" stroke="#A89FB6" stroke-width="1.4"/>
+<ellipse cx="394.0" cy="138.0" rx="11" ry="14" fill="#A8442A"/>
+<text x="422.0" y="48.0" font-family="'Helvetica Neue',Arial,sans-serif" font-size="15" font-weight="700" fill="#473C56" text-anchor="middle">PH1</text>
+<text x="356.0" y="214.0" font-family="'Helvetica Neue',Arial,sans-serif" font-size="11.5" font-weight="400" fill="#6B6473" text-anchor="start">Clot in 30% or less of</text>
+<text x="356.0" y="228.0" font-family="'Helvetica Neue',Arial,sans-serif" font-size="11.5" font-weight="400" fill="#6B6473" text-anchor="start">the infarct, mild mass</text>
+<text x="356.0" y="242.0" font-family="'Helvetica Neue',Arial,sans-serif" font-size="11.5" font-weight="400" fill="#6B6473" text-anchor="start">effect.</text>
+<rect x="510.0" y="60" width="148.0" height="136" rx="9" fill="#fff" stroke="#D9D2E2" stroke-width="1.2"/>
+<ellipse cx="584.0" cy="128.0" rx="58.0" ry="64.0" fill="#E7E3EC" stroke="#BDB4C9" stroke-width="1.6"/>
+<path d="M584.0 69.0 Q599.3 128.0 584.0 187.0" fill="none" stroke="#BDB4C9" stroke-width="1.4" stroke-dasharray="4 4"/>
+<path d="M533.0 115.0 Q528.0 128.0 534.0 142.0 Q540.0 156.0 549.0 162.0 Q558.0 168.0 567.0 157.0 Q576.0 146.0 575.0 127.0 Q574.0 108.0 556.0 105.0 Q538.0 102.0 533.0 115.0 Z" fill="#D3CEDC" stroke="#A89FB6" stroke-width="1.4"/>
+<path d="M537.3 119.3 Q533.4 129.5 538.0 140.4 Q542.7 151.3 549.7 156.0 Q556.8 160.7 563.8 152.1 Q570.8 143.5 570.0 128.7 Q569.2 113.9 555.2 111.5 Q541.2 109.2 537.3 119.3 Z" fill="#A8442A"/>
+<text x="584.0" y="48.0" font-family="'Helvetica Neue',Arial,sans-serif" font-size="15" font-weight="700" fill="#473C56" text-anchor="middle">PH2</text>
+<text x="518.0" y="214.0" font-family="'Helvetica Neue',Arial,sans-serif" font-size="11.5" font-weight="400" fill="#6B6473" text-anchor="start">Clot in more than 30%,</text>
+<text x="518.0" y="228.0" font-family="'Helvetica Neue',Arial,sans-serif" font-size="11.5" font-weight="400" fill="#6B6473" text-anchor="start">with substantial mass</text>
+<text x="518.0" y="242.0" font-family="'Helvetica Neue',Arial,sans-serif" font-size="11.5" font-weight="400" fill="#6B6473" text-anchor="start">effect.</text>
+<line x1="24" y1="22" x2="656" y2="22" stroke="#D9D2E2" stroke-width="1"/>
+<text x="24.0" y="16.0" font-family="'Helvetica Neue',Arial,sans-serif" font-size="10.5" font-weight="600" fill="#635574" text-anchor="start" letter-spacing="1.3">HAEMORRHAGIC INFARCTION</text>
+<text x="656.0" y="16.0" font-family="'Helvetica Neue',Arial,sans-serif" font-size="10.5" font-weight="600" fill="#635574" text-anchor="end" letter-spacing="1.3">PARENCHYMAL HAEMATOMA</text>
+<text x="340.0" y="286.0" font-family="'Helvetica Neue',Arial,sans-serif" font-size="12.5" font-weight="600" fill="#473C56" text-anchor="middle">Only PH2 carries a clear excess of death and dependency.</text>
+</svg>
+      <figcaption><b>Not all blood after a stroke means the same thing.</b> The ECASS grades run from scattered petechiae at the margin to a haematoma filling most of the infarct and pushing the midline across. The first two are usually found rather than noticed; the last is the one that changes the outcome.</figcaption>
+    </figure>
+
+    <p>The number that carries the consent conversation is the symptomatic one: around <strong>six per
+      cent</strong> after intravenous thrombolysis<sup class="vf" data-v="str-sich"></sup>, against
+      <strong>0.6 to 3 per cent</strong> in patients who were not thrombolysed. The risk factors are the
+      ones you would guess: a severe stroke, a proximal middle cerebral occlusion, and treatment given
+      late.</p>
+
+    <div class="gloss">
+      <span class="lab">Two figures left off this page, and why</span>
+      <p>The presentation also gave about five per cent haemorrhagic transformation overall, with nine in
+        ten of those petechial. Those two cannot stand beside the six per cent above: five per cent in
+        total, ninety per cent of it petechial, would put the symptomatic rate near half a per cent. They
+        are measuring a different population from a source that has not been found, so they are described
+        here rather than stated. If the source turns up they go back on the page.</p>
+    </div>
+
+    <p>Haemorrhagic transformation presents as a patient going backwards. Worsening deficit, headache,
+      falling GCS, vomiting &mdash;
+      and, if the pressure inside the head is climbing, Cushing&rsquo;s triad of hypertension, bradycardia
+      and an irregular respiratory pattern. In a thrombolysed patient, any of these is a CT until proven
+      otherwise.</p>
+
+    <ol class="steps">
+      <li><strong>Stop the thrombolytic</strong> if it is still running &mdash; which it will not be if
+        you gave tenecteplase.</li>
+      <li><strong>Resuscitate.</strong> Airway, breathing, circulation; head up.</li>
+      <li><strong>Urgent CT head.</strong></li>
+      <li><strong>Bring the systolic under 140.</strong> Labetalol 10 to 40&nbsp;mg IV every five minutes,
+        hydralazine 10 to 20&nbsp;mg IV every twenty, clonidine 75 to 100&nbsp;micrograms every fifteen
+        &mdash; increments as the presentation gave them, and the cumulative maxima are in your own
+        protocol rather than here. With these three, the ceiling matters.</li>
+      <li><strong>Urgent bloods</strong> &mdash; full blood count, coagulation studies, a venous gas.</li>
+      <li><strong>Ring neurosurgery.</strong></li>
+      <li><strong>Consider reversal</strong> on their advice: tranexamic acid 1&nbsp;g over ten minutes then
+        1&nbsp;g over eight hours, or cryoprecipitate &mdash; ten units, aiming for a fibrinogen above
+        1.5&nbsp;g/L.</li>
+      <li><strong>Transfer</strong> to a neurosurgical centre.</li>
+      <li>And nothing antiplatelet or anticoagulant, at all.</li>
+    </ol>
+
+    <h2 class="sub">The other kind of stroke</h2>
+
+    <p>Primary intracerebral haemorrhage is hypertensive in about half, with cerebral amyloid angiopathy
+      behind much of the lobar bleeding in the elderly and the remainder spread across vascular
+      malformations, tumours, coagulopathy and causes never established. Neurology will often ask you to
+      call John Hunter neurosurgery directly.</p>
+
+    <ul class="plain">
+      <li><strong>Blood pressure</strong> &mdash; systolic under 140, with the same three drugs.</li>
+      <li><strong>Reverse the anticoagulation</strong> &mdash; and which drug they are on decides how. For
+        <em>warfarin</em>, prothrombin complex concentrate at 50&nbsp;units/kg capped at
+        5000&nbsp;units<sup class="vf" data-v="str-pcc"></sup>, with intravenous vitamin K. For a
+        <em>direct oral anticoagulant</em>, neither of those is the answer and vitamin K does nothing at
+        all; the reversal agent depends on which one, so get haematology on the phone early. That is not a
+        footnote &mdash; a direct oral anticoagulant is exactly what this page recommends for atrial
+        fibrillation two sections further down.</li>
+      <li><strong>Neuroprotection</strong>, which is a grand name for unglamorous things: head up,
+        normothermic, normoglycaemic.</li>
+      <li><strong>Intubate</strong> for airway protection if the GCS is falling.</li>
+      <li>Then the decision that is actually the hard one &mdash; aeromedical retrieval and transfer, or
+        conservative management locally.</li>
+    </ul>
+
+    <div class="gloss">
+      <span class="lab">Clevidipine, since it is in the deck</span>
+      <p>A short-acting dihydropyridine calcium channel antagonist, selective for arterioles. It comes neat
+        at 50&nbsp;mg in 100&nbsp;mL and starts at 1 to 2&nbsp;mg/h, doubling at about ninety-second
+        intervals while you are still a long way off and in smaller steps as you close on the target. Most
+        patients settle at 4 to 6&nbsp;mg/h. Pressure begins to fall within two to four minutes and
+        recovers within five to fifteen when you stop. It acts on arterial resistance and largely spares
+        the venous capacitance vessels, so preload is little affected.</p>
+      <p>The rate ceiling is quoted as 32&nbsp;mg/h, but that is the top of a thin evidence base &mdash;
+        most patients in the trials never went above 16. <strong>The real limit is the fat</strong>: no
+        more than 1000&nbsp;mL, an average of 21&nbsp;mg/h, in twenty-four hours. Which is also its
+        contraindication list, since it is a twenty per cent lipid emulsion in soybean oil and egg
+        phospholipid: disordered lipid metabolism, and allergy to soy or egg. Severe aortic stenosis is a
+        contraindication too, not merely a caution. And it is not stocked in every unit &mdash; check yours
+        before you plan around it.</p>
+    </div>
+
+    <h2 class="sub">One word, four blood pressures</h2>
+
+    <p>This is the part worth slowing down for, because the numbers on this page point in opposite
+      directions and the word <em>stroke</em> is doing all the work of hiding it.</p>
+
+    <div class="tscroll">
+      <table class="bp">
+        <caption>The same organ, four moments</caption>
+        <thead><tr><th>Situation</th><th>Target</th><th>Why</th></tr></thead>
+        <tbody>
+          <tr><th>Ischaemic, before thrombolysis</th>
+            <td class="down">Under 185 / 110</td>
+            <td>A gate to get through, not a target to chase. Above it, you cannot give the drug.</td></tr>
+          <tr><th>Ischaemic, first 24 hours after</th>
+            <td class="up">Under 180 / 105, and <strong>not</strong> below 140</td>
+            <td>The penumbra is being perfused through a narrowed or newly opened vessel, and its
+              autoregulation is gone. Driving the pressure down takes away the only thing keeping that
+              tissue alive.</td></tr>
+          <tr><th>Blood on the scan</th>
+            <td class="down">Systolic under 140</td>
+            <td>Primary haemorrhage, or haemorrhagic transformation. Now the pressure is driving the
+              bleeding rather than feeding the brain.</td></tr>
+          <tr><th>Afterwards, for prevention</th>
+            <td class="down">Systolic 120 to 130</td>
+            <td>A different question entirely, asked over months rather than hours.</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <p>The 2026 guideline is explicit about the second row, and it is the change most likely to catch
+      someone out: intensive lowering below 140 is <strong>not recommended even where reperfusion has been
+      complete</strong><sup class="vf" data-v="str-bp140"></sup>. The instinct after a successful retrieval
+      is to protect the newly opened vessel by bringing the pressure down. The evidence says that instinct
+      does not improve outcome after thrombolysis, and that after thrombectomy it may do harm.</p>
+
+    <div class="alert">
+      <span class="lab">The rule underneath the table</span>
+      <p>Once the drug is in or the clot is out: ask whether there is blood on the scan. If there is,
+        bring the pressure down. If there is not, the pressure is feeding tissue you are trying to save
+        &mdash; keep it under the ceiling and leave it alone.</p>
+      <p>Before the drug, the rule runs the other way, which is the trap. 185 over 110 is a gate you have
+        to get <em>under</em> before you can treat at all. And months later, when none of it is acute any
+        more, the target is lower than every number in the table.</p>
+    </div>
+
+    <h2 class="sub">Once the first few hours are over</h2>
+
+    <p>The rest of the admission is unglamorous and it is where most of the outcome is actually decided.</p>
+
+    <p><strong>Investigations</strong> &mdash; stroke bloods, meaning HbA1c, glucose, lipids, coagulation
+      studies and liver function. Telemetry or an ECG looking for atrial fibrillation. Carotid ultrasound.
+      A transthoracic echo with a bubble study if the patient is under 55, looking for a patent foramen
+      ovale. And a swallow assessment, before anything goes in by mouth.</p>
+
+    <p><strong>Admission</strong> to the stroke unit locally, with blood pressure, blood sugar and regular
+      neurological observations.</p>
+
+    <p><strong>Antiplatelets</strong>, which depend on what you did earlier:</p>
+
+    <ul class="plain">
+      <li><em>Thrombolysed</em> &mdash; exclude haemorrhage first, withhold for twenty-four hours, then dual
+        antiplatelet therapy for three weeks, then a single agent ongoing. Worth knowing that the
+        three-week evidence comes from <em>minor</em> stroke and high-risk TIA, which is not usually the
+        patient you have just thrombolysed, so this one is a conversation with the stroke team rather than
+        a reflex.</li>
+      <li><em>Not thrombolysed</em> &mdash; exclude haemorrhage, load with aspirin and clopidogrel if there
+        is no contraindication, dual therapy for three weeks, then single agent ongoing.</li>
+    </ul>
+
+    <p><strong>And the rest:</strong> a direct oral anticoagulant rather than an antiplatelet if there is
+      atrial fibrillation; a statin; blood pressure management aiming at a systolic of 120 to 130; carotid
+      endarterectomy where it is indicated; smoking cessation and diet.</p>
+
+    <p>Then the conversation nobody schedules and everybody has to have. <strong>No private driving for
+      four weeks</strong><sup class="vf" data-v="str-driving"></sup>, three months minimum for a commercial
+      licence, and in both cases medical clearance before the keys come back. For a TIA rather than a
+      stroke it is two weeks, and four for a commercial licence. Say it on the ward, say it to the family,
+      and write it down &mdash; because it is the instruction most likely to be heard as a suggestion.</p>
+
+    <figure class="v">
+      <img src="telestroke-pathway.png" alt="NSW Telestroke Service pathway and the five steps: patient presents, rapid assessment with the ASAP tool, call the service on 1300 878 887, activate the order set and send for priority imaging, then link with the Telestroke clinician in radiology" class="native">
+      <figcaption><b>The whole thing on one card.</b> Five steps, one phone number, and the only one that needs you to have thought ahead is the second.<span class="credit">NSW Agency for Clinical Innovation, NSW Telestroke Service. Reproduced unaltered for educational use with acknowledgement of the source, under the Agency&rsquo;s own terms.</span></figcaption>
+    </figure>
+
+    <div class="gloss">
+      <span class="lab">The thread running through all of it</span>
+      <p>Two questions carry this page. <em>Is there blood on the scan?</em> decides which pathway you are
+        on, which specialty you are ringing, and which way you move the blood pressure. <em>What time was
+        the patient last normal?</em> decides what is still available to you on that pathway. Everything
+        else &mdash; the scores, the drugs, the thresholds &mdash; is downstream of those two.</p>
+    </div>
+  </div>
+
+  <div class="reply">
+      <h2>This space is yours</h2>
+      <p class="ask">Have you given a talk that deserved a bigger room?</p>
+      <p><strong>If you work at Coffs Harbour</strong> &mdash; registrar, resident, student, nurse or
+        anything else &mdash; send it to me and I will set it for the web as this one has been set: your name
+        on it, your content, your structure. You keep the authorship entirely. It becomes something you can
+        point at rather than something in a folder.</p>
+      <p><strong>And if you are not at Coffs</strong>, the invitation still stands. Medical students, doctors
+        at any stage, nurses, paramedics, pharmacists, physiotherapists &mdash; any health professional at
+        all. Send me a message and your presentation and I will read it properly and come back to you. I
+        cannot promise everything will go up, but I can promise it will be looked at by someone who wants it
+        to work.</p>
+      <p>One practical thing worth knowing before you send: teaching slides are usually built from screenshots
+        of guidelines, textbooks and journals, which is fine in a tutorial room and not fine on a public
+        website. So the figures get rebuilt from the underlying facts rather than reproduced. That is part of
+        what I do with it, and it costs you nothing but a conversation.</p>
+      <p><a class="btn" href="mailto:icuandyou@icloud.com?subject=Your%20Presentations%20-%20I%20have%20a%20talk&body=The%20talk%3A%0D%0A%0D%0A%0D%0AWhen%20and%20where%20it%20was%20given%3A%0D%0A%0D%0A%0D%0AHow%20you%20would%20like%20to%20be%20credited%3A%0D%0A%0D%0A%0D%0A---%0D%0A%0D%0AName%3A%0D%0A%0D%0A---%0D%0A%0D%0AThinking%20about%20this%20ICU%20AND%20YOU%20post%20overall%20%E2%80%94%20was%20it%20useful%20to%20you%2C%20or%20would%20it%20be%20useful%20to%20others%3F%0D%0A">Send me your talk</a></p>
+      <p class="fallback" style="margin-bottom:9px">How you are credited is entirely your call &mdash; by name, by initials, or not at all &mdash; whether you write the piece or I do, and whether I quote you or simply say who sent something in; nothing of yours goes up with your name on it unless you have said yes.</p>
+      <p class="fallback">The button opens a reply straight to me. If your device blocks it, write to
+        <a href="mailto:icuandyou@icloud.com">icuandyou@icloud.com</a> instead.</p>
+    </div>
+
+  <footer>
+    <span class="firstpub">First published November 2026</span>
+    <p class="subline">Two emails a week &mdash; the Friday newsletter for all subscribers, and, for clinical subscribers,
+      the mind map and puzzles the moment they go up on Tuesday. Occasional announcements of new
+      features as they arrive. What went up and why it mattered, the best of your replies, and
+      original feature stories, news and views. <a href="https://joinlist.com/f/5adad2d6">Come and join us</a>.</p>
+    <a class="home" href="./">&larr; &nbsp;All of ICU AND YOU</a><br>
+    ICU AND YOU &nbsp;&middot;&nbsp; Your Presentations No. 4 &nbsp;&middot;&nbsp; Acute stroke management<br>
+    <span class="srcs">The four drawn figures are original. The two reproduced figures are the
+      NSW Agency for Clinical Innovation&rsquo;s Telestroke figures, used unaltered for educational use
+      with acknowledgement, which is what the Agency&rsquo;s own terms permit. The guideline referred to
+      throughout is Prabhakaran S et&nbsp;al, <em>2026 Guideline for the Early Management of Patients With
+      Acute Ischemic Stroke</em>, <em>Stroke</em>, 26 January 2026
+      (<a href="https://doi.org/10.1161/STR.0000000000000513">doi:10.1161/STR.0000000000000513</a>); where
+      it and Australian practice part company, the local standard is the Stroke Foundation&rsquo;s
+      <em>Living Clinical Guidelines for Stroke Management</em> with the NSW Telestroke pathway on top of
+      it. Claims carrying a tick have been checked, and the tick names its source.
+      Educational use only &mdash; not a prescribing guide. Local policy, your own unit&rsquo;s protocols
+      and current guidance always take precedence.</span>
+  <br>
+    <span class="mine">Views my own, not those of NSW Health or any other organisation. No identifiable patients &mdash; scenarios are constructed or combined for teaching. <a href="about.html">More</a>.</span>
+  </footer>
+
+</div>
+<script src="verification.js" defer></script>
+<script data-goatcounter="https://icuandyou.goatcounter.com/count"
+        async src="//gc.zgo.at/count.js"></script>
+</body>
+</html>
