@@ -1,8 +1,8 @@
 {
  "this_week": {
-  "topic": "Early middle age",
-  "slug": "early-middle-age",
-  "blurb": "Thirty to forty-five. The band where the two lines cross \u2014 still mostly something that happened, increasingly something that grew. Full physiological reserve sitting over a first chronic disease nobody has diagnosed, and a household of people depending on the answer. Suicide leads the causes of death here, and the drugs we now give have a critical illness of their own."
+  "topic": "Late middle age",
+  "slug": "late-middle-age",
+  "blurb": "Forty-five to sixty. The decade and a half in which the illness that will eventually kill them turns up and introduces itself \u2014 usually here, usually at night, and usually without ever having been named. Coronary heart disease and cancer lead the causes of death, the suicide rate in Australian men peaks in this band rather than in youth, and the patient still looks perfectly well. The history is the diagnostic test, and almost none of it has been written down."
  },
  "series": {
   "mind-map": [
@@ -1502,7 +1502,7 @@
    "title": "The opposite of hard arteries",
    "topic": "Early middle age",
    "slug": "early-middle-age",
-   "week": true,
+   "week": false,
    "pos": 7,
    "badge": "Podcast",
    "link_label": "Open",
@@ -1516,7 +1516,7 @@
    "title": "Thirty-two, in a coronary care unit",
    "topic": "Early middle age",
    "slug": "early-middle-age",
-   "week": true,
+   "week": false,
    "pos": 8,
    "badge": "Journal club",
    "link_label": "Open",
@@ -1530,7 +1530,7 @@
    "title": "Early middle age",
    "topic": "Early middle age",
    "slug": "early-middle-age",
-   "week": true,
+   "week": false,
    "pos": 2,
    "blurb": "Four stations: where the two lines cross, what actually brings them in, what grows and what we give them, and what outlasts the admission. Suicide leads the causes of death in this band, Aboriginal and Torres Strait Islander patients carry the burden of a much older patient, and the drugs we now give have a critical illness of their own."
   },
@@ -1542,7 +1542,7 @@
    "title": "When they're young, throw everything at them",
    "topic": "Early middle age",
    "slug": "early-middle-age",
-   "week": true,
+   "week": false,
    "pos": 4,
    "badge": "Aphorism",
    "link_label": "Open",
@@ -1556,7 +1556,7 @@
    "title": "Early middle age",
    "topic": "Early middle age",
    "slug": "early-middle-age",
-   "week": true,
+   "week": false,
    "pos": 3,
    "badge": "Superpuzzle",
    "link_label": "Open the puzzle",
@@ -1584,7 +1584,7 @@
    "title": "Cardiomyopathy at forty",
    "topic": "Early middle age",
    "slug": "early-middle-age",
-   "week": true,
+   "week": false,
    "pos": 5,
    "badge": "Mnemonic",
    "link_label": "Open",
@@ -1609,7 +1609,7 @@
    "title": "Early middle age",
    "topic": "Early middle age",
    "slug": "early-middle-age",
-   "week": true,
+   "week": false,
    "pos": 6,
    "badge": "Superquiz",
    "link_label": "Take the quiz",
@@ -1623,7 +1623,7 @@
    "title": "Early middle age",
    "topic": "Early middle age",
    "slug": "early-middle-age",
-   "week": true,
+   "week": false,
    "pos": 1,
    "badge": "Bare Bones",
    "link_label": "Open",
@@ -1637,7 +1637,7 @@
    "title": "Early middle age",
    "topic": "Early middle age",
    "slug": "early-middle-age",
-   "week": true,
+   "week": false,
    "pos": 9,
    "badge": "Medical Students",
    "link_label": "Open",
@@ -1651,7 +1651,7 @@
    "title": "Pantoprazole",
    "topic": "Early middle age",
    "slug": "early-middle-age",
-   "week": true,
+   "week": false,
    "pos": 10,
    "badge": "Drugstore",
    "link_label": "Open",
@@ -1667,7 +1667,7 @@
    "title": "It was always going to be a Tuesday",
    "topic": "Early middle age",
    "slug": "early-middle-age",
-   "week": true,
+   "week": false,
    "pos": 11,
    "badge": "For the general public",
    "link_label": "Open",
@@ -1723,14 +1723,31 @@
    "title": "The reminiscence bump",
    "topic": "Early middle age",
    "slug": "early-middle-age",
-   "week": true,
+   "week": false,
    "pos": 12,
    "badge": "The Jukebox",
    "link_label": "Open",
    "blurb": "Five songs for the people now between thirty and forty-five — who are Millennials, almost to the month, and not Generation Z. Why the music you met at eighteen is the music that stayed, why the songs that deflect the experience matter as much as the ones that reflect it, and five with their backstories checked: the keyboard a dead man never plugged in, the Australian goodbye song that was never about goodbye, the organ donation video a Doctor Who said yes to in a day, the voice an industry told her to get rid of, and one correction I had to make to something I believed until this week."
+  },
+  {
+   "file": "mind-map-38-late-middle-age.html",
+   "series": "mind-map",
+   "colour": "teal",
+   "number": "38",
+   "title": "Late middle age",
+   "topic": "Late middle age",
+   "slug": "late-middle-age",
+   "week": true,
+   "pos": 2,
+   "blurb": "Three stations instead of the usual four, and a new line across the top that is the whole map in one sentence. What the disease turns out to be once it finally declares itself; what nobody has written in the notes \u2014 the drinking, the snoring at night, the stonemason\u2019s decade, the tablet somebody stopped; and what happens next in a patient too young to have recorded a single decision about any of it."
   }
  ],
  "latest": [
+  {
+   "file": "mind-map-38-late-middle-age.html",
+   "colour": "teal",
+   "label": "Mind Map 38 · Late middle age"
+  },
   {
    "file": "jukebox-02-early-middle-age.html",
    "colour": "neon",
@@ -1750,11 +1767,6 @@
    "file": "salon-01-ninety-minutes.html",
    "colour": "claret striped",
    "label": "Senior Intensivists' Salon 1 · Ninety minutes"
-  },
-  {
-   "file": "public-04-early-middle-age.html",
-   "colour": "ocean",
-   "label": "For the general public 4 · It was always going to be a Tuesday"
   }
  ],
  "topten": [
@@ -1822,6 +1834,7 @@
   ]
  },
  "topic_order": [
+  "late-middle-age",
   "early-middle-age",
   "young-adult",
   "adolescent",
