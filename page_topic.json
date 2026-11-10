@@ -1740,9 +1740,26 @@
    "week": true,
    "pos": 2,
    "blurb": "Three stations instead of the usual four, and a new line across the top that is the whole map in one sentence. What the disease turns out to be once it finally declares itself; what nobody has written in the notes \u2014 the drinking, the snoring at night, the stonemason\u2019s decade, the tablet somebody stopped; and what happens next in a patient too young to have recorded a single decision about any of it."
+  },
+  {
+   "file": "aphorism-42-sixty-is-the-new-forty.html",
+   "series": "aphorism",
+   "colour": "plum",
+   "number": "42",
+   "title": "Sixty is the new forty",
+   "topic": "Late middle age",
+   "slug": "late-middle-age",
+   "week": true,
+   "pos": 4,
+   "blurb": "The cohort gains behind the saying are real and very large \u2014 an 82 per cent fall in cardiovascular deaths, daily smoking down from 24.3 to 8.3 per cent. They have also been decelerating for thirty years, fastest in exactly this age band; obesity, early-onset bowel cancer and alcohol have all moved the other way; and the gains were never handed out evenly. The case for, the case against, and the case that it is sound about a population and a guess about a patient."
   }
  ],
  "latest": [
+  {
+   "file": "aphorism-42-sixty-is-the-new-forty.html",
+   "colour": "plum",
+   "label": "Aphorism 42 · Sixty is the new forty"
+  },
   {
    "file": "mind-map-38-late-middle-age.html",
    "colour": "teal",
@@ -1762,11 +1779,6 @@
    "file": "registrars-03-ventilators.html",
    "colour": "heather striped",
    "label": "Your Presentations 3 · Ventilators"
-  },
-  {
-   "file": "salon-01-ninety-minutes.html",
-   "colour": "claret striped",
-   "label": "Senior Intensivists' Salon 1 · Ninety minutes"
   }
  ],
  "topten": [

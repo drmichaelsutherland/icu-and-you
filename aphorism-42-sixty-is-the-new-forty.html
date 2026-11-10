@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en-AU">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ICU AND YOU &#183; Aphorism 42 &mdash; Sixty is the new forty</title>
+<meta name="description" content="Aphorism 42: &quot;Sixty is the new forty.&quot; The cohort gains are real and large; they have also been slowing for thirty years, they were not handed out evenly, and intensive care only ever meets the people for whom they did not arrive. The case for, against, and in between.">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="alternate icon" href="/favicon.ico" sizes="any">
+<link rel="apple-touch-icon" href="/icon-180.png">
+<link rel="manifest" href="/site.webmanifest">
+<meta name="theme-color" content="#1B2A33">
+<meta property="og:site_name" content="ICU AND YOU">
+<meta property="og:type" content="website">
+<meta property="og:title" content="ICU AND YOU &#183; Aphorism 42 &mdash; Sixty is the new forty">
+<meta property="og:description" content="A true statement about a population, said about a patient.">
+<meta property="og:image" content="https://icuandyou.com/share-card.png">
+<meta name="twitter:card" content="summary_large_image">
+<style>
+  :root{
+    --paper:#FCFAF6; --ink:#26221B; --muted:#736C60; --rule:#E2DCCE;
+    --sky:#215058; --skytint:#FAF1DE;
+    --rust:#A8442A; --rustdk:#8A3620; --rusttint:#F9EDE7;
+    --plum:#6B4570; --plumtint:#F2ECF3;
+    --moss:#4C6B4A; --mosstint:#EAF1E9;
+    --gold:#2F6E7A; --goldtint:#E9F2F3;
+  }
+  *{box-sizing:border-box}
+  body{margin:0;background:#EFEAE0;color:var(--ink);
+    font:400 17px/1.62 'Iowan Old Style','Palatino Linotype',Palatino,Georgia,serif;
+    -webkit-text-size-adjust:100%;}
+  .sheet{max-width:820px;margin:0 auto;background:var(--paper);
+    box-shadow:0 1px 40px rgba(27,42,51,.10);}
+  header.top{padding:44px 40px 26px;border-bottom:1px solid var(--rule)}
+  .eyebrow a.serlink{color:inherit;text-decoration:none;border-bottom:1px solid transparent}
+  .eyebrow a.serlink:hover{border-bottom-color:currentColor}
+  .eyebrow a.mast{color:inherit;text-decoration:none;border-bottom:1px solid transparent}
+  .eyebrow a.mast:hover{border-bottom-color:currentColor}
+  .toptopic{display:inline-block;margin:0 0 16px 9px;padding:7px 16px;border-radius:20px;
+    border:1px solid currentColor;opacity:.62;text-decoration:none;color:inherit;
+    font:600 11.5px 'Helvetica Neue',Arial,sans-serif;letter-spacing:.09em;
+    text-transform:uppercase;transition:opacity .12s ease}
+  .toptopic:hover{opacity:1}
+  .topseries{display:inline-block;margin:0 0 16px 9px;padding:7px 16px;border-radius:20px;
+    border:1px solid currentColor;opacity:.62;text-decoration:none;color:inherit;
+    font:600 11.5px 'Helvetica Neue',Arial,sans-serif;letter-spacing:.09em;
+    text-transform:uppercase;transition:opacity .12s ease}
+  .topseries:hover{opacity:1}
+  .tophome{display:inline-block;margin:0 0 16px;padding:7px 16px;border-radius:20px;
+    border:1px solid currentColor;opacity:.62;text-decoration:none;color:inherit;
+    font:600 11.5px 'Helvetica Neue',Arial,sans-serif;letter-spacing:.09em;
+    text-transform:uppercase;transition:opacity .12s ease}
+  .tophome:hover{opacity:1}
+  .eyebrow{font:500 11.5px/1 'Helvetica Neue',Arial,sans-serif;letter-spacing:.24em;
+    text-transform:uppercase;color:var(--muted);margin:0}
+  .pad{padding:34px 40px}
+  p{margin:0 0 15px}
+
+  .quote{padding:46px 40px 44px;text-align:center;
+    border-top:2px solid var(--sky);border-bottom:2px solid var(--sky);
+    background:linear-gradient(180deg,#EFF6FA 0%, var(--paper) 100%)}
+  .quote blockquote{margin:0;font-size:31px;line-height:1.36;font-style:italic;
+    letter-spacing:-.005em;color:#16222A}
+  .quote .mark{display:block;font:500 11.5px 'Helvetica Neue',Arial,sans-serif;
+    letter-spacing:.24em;text-transform:uppercase;color:var(--sky);margin:0 0 20px}
+
+  h2.sec{font:600 12px 'Helvetica Neue',Arial,sans-serif;letter-spacing:.2em;
+    text-transform:uppercase;color:var(--muted);margin:0 0 16px;
+    padding-bottom:9px;border-bottom:1px solid var(--rule)}
+
+  .note{margin:0;padding:18px 22px;background:var(--goldtint);
+    border-left:4px solid var(--gold);border-radius:0 8px 8px 0;font-size:16px}
+
+  .verdicts{display:flex;gap:14px;flex-wrap:wrap;margin:0 0 6px}
+  .v{flex:1 1 220px;border-radius:10px;padding:20px 20px 18px;
+    font-size:15.5px;line-height:1.5}
+  .v h3{margin:0 0 9px;font:600 13px 'Helvetica Neue',Arial,sans-serif;
+    letter-spacing:.16em;text-transform:uppercase}
+  .yes{background:var(--skytint);border:1px solid var(--sky);border-top:4px solid var(--sky)}
+  .yes h3{color:var(--sky)}
+  .no{background:var(--plumtint);border:1px solid var(--plum);border-top:4px solid var(--plum)}
+  .no h3{color:var(--plum)}
+  .maybe{background:var(--mosstint);border:1px solid var(--moss);border-top:4px solid var(--moss)}
+  .maybe h3{color:var(--moss)}
+
+  .reflect{margin:0;padding:30px 34px;background:var(--rusttint);border-left:5px solid var(--rust)}
+  .reflect h2{font:600 12px 'Helvetica Neue',Arial,sans-serif;letter-spacing:.2em;
+    text-transform:uppercase;color:var(--rust);margin:0 0 14px}
+  .ask{font-size:20px;line-height:1.5;font-style:italic;margin:0 0 16px;color:#16222A}
+  .btn{display:inline-block;margin:6px 0 12px;padding:15px 30px;background:var(--rust);
+    color:#FDF8F5;text-decoration:none;border-radius:30px;
+    font:600 15px 'Helvetica Neue',Arial,sans-serif;letter-spacing:.03em;font-style:normal}
+  .btn:hover{background:var(--rustdk)}
+  .btn:focus-visible{outline:3px solid var(--sky);outline-offset:3px}
+  .fallback{font:400 13.5px 'Helvetica Neue',Arial,sans-serif;color:var(--muted);margin:0}
+  .fallback a{color:var(--rust)}
+  .subline{margin:0 0 14px;padding:0 0 13px;border-bottom:1px solid rgba(0,0,0,.09);
+    font:400 14.5px/1.55 'Iowan Old Style','Palatino Linotype',Palatino,Georgia,serif;
+    max-width:56ch;margin-left:auto;margin-right:auto}
+  .subline a{font-weight:500;border-bottom:1px solid currentColor;
+    text-decoration:none;color:inherit}
+  .firstpub{display:block;margin:0 0 10px;padding-bottom:9px;
+    border-bottom:1px solid currentColor;border-color:rgba(0,0,0,.09);
+    font:400 12px 'Helvetica Neue',Arial,sans-serif;letter-spacing:.06em;opacity:.72}
+
+  footer{padding:24px 40px 40px;border-top:1px solid var(--rule);
+    font:400 13px 'Helvetica Neue',Arial,sans-serif;color:var(--muted);text-align:center}
+  .home{display:inline-block;margin:0 0 14px;padding:8px 18px;border-radius:20px;
+    border:1px solid var(--rule);background:#F1F3F1;color:var(--sky);text-decoration:none;
+    font:600 12.5px 'Helvetica Neue',Arial,sans-serif;letter-spacing:.05em}
+  .home:hover{background:var(--sky);border-color:var(--sky);color:#F6FAFB}
+
+  @media (max-width:640px){
+    header.top,.pad,.quote,footer{padding-left:20px;padding-right:20px}
+    .reflect{padding:24px 20px}
+    .quote blockquote{font-size:24px}
+    body{font-size:16.5px} .ask{font-size:18px}
+  }
+  @media print{
+    body{background:#fff} .sheet{box-shadow:none;max-width:none}
+    .btn{border:1px solid var(--rust)} .quote{background:none}
+  }
+  .mine{display:inline-block;margin:9px 0 0;opacity:.78;font-size:.94em}
+  .howto{margin:0 0 4px;padding:22px 26px;background:#EAF2F3;border-left:4px solid #2F6E7A;
+    border-radius:0 8px 8px 0}
+  .howto .lab{display:block;font:600 11px 'Helvetica Neue',Arial,sans-serif;letter-spacing:.18em;
+    text-transform:uppercase;color:#215058;margin:0 0 10px}
+  .howto p{margin:0 0 10px;font-size:16px;line-height:1.6}
+  .howto p:last-child{margin:0}
+  b.term{font-weight:600;color:var(--sky)}
+</style>
+</head>
+<body>
+<div class="sheet">
+
+  <header class="top">
+    <a class="tophome" href="./">&larr;&nbsp; Home</a>
+    <a class="topseries" href="./?s=aphorism">All aphorisms</a>
+    <a class="toptopic" href="./?t=late-middle-age" title="Everything on Late middle age">All on this topic</a>
+    <p class="eyebrow"><a class="mast" href="./">ICU and You</a> &nbsp;&#183;&nbsp; <a class="serlink" href="./?s=aphorism">Aphorism Series</a> &nbsp;&#183;&nbsp; Number 42</p>
+  </header>
+
+  <div class="quote">
+    <span class="mark">The aphorism for this topic</span>
+    <blockquote>&ldquo;Sixty is the new forty.&rdquo;</blockquote>
+  </div>
+
+    <div class="howto">
+      <span class="lab">How to use an aphorism</span>
+      <p><strong>An aphorism is a compressed argument, not a rule.</strong> It earns its shape by leaving
+        things out, which is exactly what makes it memorable and what makes it arguable. Every one in this
+        series is contestable, and chosen because it is.</p>
+      <p>Each is a mantra, a paradigm, a truism or occasionally a plain myth &mdash; something repeated in our
+        units often enough that nobody examines it any more. The piece sets out the case for it, the case
+        against it, and the case for something in between, and then asks which you hold.</p>
+      <p>There is no right answer waiting at the bottom. The point is to find out what you actually believe
+        and why, because the beliefs that run your practice at three in the morning are mostly ones you have
+        never said out loud.</p>
+    </div>
+
+  <div class="pad">
+    <h2 class="sec">Preamble</h2>
+
+    <p>It is not a silly thing to say, and the people who say it are not wrong about the thing they
+      have noticed. A sixty-year-old arriving in our unit today arrived there by a different road
+      from the one a sixty-year-old travelled in 1975, and the road was measurably better.</p>
+
+    <p>Australia&rsquo;s cardiovascular death rate <strong>fell by 82 per cent between 1968 and
+      2015</strong>. Daily smoking among Australians aged fourteen and over went from
+      <strong>24.3 per cent in 1991 to 8.3 per cent in 2022&ndash;23</strong>. Those are not
+      marginal adjustments. They are the largest public health achievements of our working lives,
+      and the generation now turning sixty is the first to collect on them in full. Blood pressure
+      is treated, lipids are treated, the infarct that killed their father is survived.</p>
+
+    <p>So the sentence is a reasonable summary of a real thing. The difficulty is that it is a
+      statement about a population, and we do not admit populations.</p>
+
+    <h2 class="sec">The gains have been slowing down, and slowing fastest here</h2>
+
+    <p>The decline in coronary heart disease deaths did not continue at the rate that produced the
+      headline. In Australians aged <b class="term">35 to 54</b> &mdash; the band this sentence is
+      about &mdash; the annual fall ran at <strong>7.2 per cent a year between 1980 and 1993</strong>,
+      and then at <strong>3.1 per cent a year from 1993 to 2015</strong>. Less than half the pace.</p>
+
+    <p>That is worth sitting with. The improvement everybody is describing when they say sixty is
+      the new forty is largely an improvement that happened to people who are now eighty. The
+      cohort currently in middle age inherited a decelerating trend, not the one that generated
+      the slogan.</p>
+
+    <h2 class="sec">And several things moved the other way</h2>
+
+    <p>Obesity in Australian adults went from <strong>19 per cent in 1995 to 32 per cent in
+      2022</strong>; overweight or obesity from 56 to 66 per cent. Diabetes followed it. Fatty
+      liver disease followed diabetes. None of that was true of the cohort whose heart disease
+      figures produced the 82 per cent.</p>
+
+    <p>Bowel cancer in Australians under fifty rose from <strong>10.6 to an estimated 17.9 cases
+      per 100,000 between 2000 and 2025</strong>, and in the thirty-to-thirty-nine band it roughly
+      tripled, from 6.3 to 19. Australia now has among the highest rates of early-onset bowel
+      cancer in the world. The honest caveat belongs here and Cancer Australia makes it themselves:
+      these are small numbers, and about 88 per cent of cancers still occur in people aged fifty
+      and over. But the direction is not in doubt, and it is the wrong direction.</p>
+
+    <p>And the drinking. Australians aged 45 to 64 account for <strong>55 per cent of all
+      alcohol-caused deaths</strong> in this country. Whatever else sixty has become, it has not
+      become forty in the liver.</p>
+
+    <h2 class="sec">Who, exactly, got the forty</h2>
+
+    <p>This is where the sentence does its real damage, because the gains have not been handed out
+      evenly and the aphorism speaks as though they have.</p>
+
+    <p>Smoking is the clearest case. The national rate collapsed, which is the fact everybody
+      quotes. But of the Australians who still smoke, <strong>19.5 per cent are in their fifties,
+      up from 13.4 per cent in 2001</strong>. The habit did not disappear so much as concentrate.
+      It withdrew from the people who were always going to do well and stayed with the people who
+      were not, and a good share of them are in this age band.</p>
+
+    <p>The starker version is the one on this fortnight&rsquo;s
+      <a href="mind-map-38-late-middle-age.html">mind map</a>. In Aboriginal and Torres Strait
+      Islander Australians aged 45 to 54, deaths from diabetes have run at <strong>seventeen times
+      the non-Indigenous rate</strong>. Nobody standing in that unit says sixty is the new forty.
+      It is a sentence that requires a particular postcode to be sayable at all.</p>
+
+    <h2 class="sec">What the unit sees is not what the population looks like</h2>
+
+    <p>Here is the part that matters most at the bedside, and it has nothing to do with whether the
+      epidemiology is right.</p>
+
+    <p>Even if sixty really were the new forty for Australians in general, it would tell you almost
+      nothing about the sixty-year-old in front of you &mdash; because intensive care does not
+      admit the general population. It admits the residual. Every patient in this unit is, by
+      definition, drawn from the tail in which the sentence failed. The healthy sixty-year-olds
+      about whom the aphorism is true are, at this moment, not here. They are at work.</p>
+
+    <p>Which means the aphorism is at its least reliable in precisely the room where it gets said.
+      It is a summary of everyone we are not treating.</p>
+
+    <h2 class="sec">The scoring systems never believed it</h2>
+
+    <p>Worth noticing that nobody who builds prognostic tools has ever acted as though age were
+      decorative. <b class="term">APACHE II</b> awards up to six points for age alone, and
+      <b class="term">SAPS II</b> weights it heavily &mdash; in both cases <em>after</em> the acute
+      physiology and the chronic health burden have already been counted. The designers were not
+      ignorant of the fit sixty-year-old. They found that age carried information the other
+      variables were missing, and it still does.</p>
+
+    <p>Whatever the extra years have bought, they have not bought the capacity to absorb an insult.
+      That is the variable, and it is not the one on the birthday card.</p>
+
+    <div class="verdicts">
+      <div class="v yes">
+        <h3>Yes</h3>
+        The cohort effect is real and it is enormous. An 82 per cent fall in cardiovascular deaths
+        and a collapse in smoking from 24.3 to 8.3 per cent are not slogans, and the person turning
+        sixty now is their beneficiary. Treating a fit sixty-year-old as elderly is a failure of
+        observation, and it is the error that gets the operable patient declined, the dialysis
+        conversation foreclosed, and the admission argued about for an hour.
+      </div>
+      <div class="v no">
+        <h3>No</h3>
+        It describes a trend that has been decelerating for thirty years, in a cohort that has
+        simultaneously gained thirteen percentage points of obesity, a tripling of early-onset bowel
+        cancer in the band below it, and 55 per cent of the nation&rsquo;s alcohol-caused deaths. It
+        is true of a postcode rather than of an age. And it is at its least true of the only
+        sixty-year-olds we ever meet, who are in the unit precisely because it was not true of them.
+      </div>
+      <div class="v maybe">
+        <h3>Maybe</h3>
+        It is a sound statement about a population and a poor one about a patient, and the error is
+        in the grammar rather than the epidemiology. Said of Australians, it is defensible. Said of
+        the man in bed four, it is a guess dressed as a fact. Ask what the extra twenty years were
+        actually spent doing &mdash; and whether this particular person was ever in the group that
+        collected them.
+      </div>
+    </div>
+  </div>
+<div class="reflect">
+      <h2>Optional reflection</h2>
+      <p class="ask">Which sixty-year-old did it get wrong?</p>
+      <p>Both directions count, and the second is the harder one to admit. The patient somebody
+        wrote off at fifty-eight on the number alone, who walked out. And the one everybody treated
+        as a young man with a reversible problem, because he cycled to work and looked marvellous,
+        right up until the reserve that was supposed to be there was not.</p>
+      <p>I would particularly like to hear from anyone who thinks the objection here is overdone
+        &mdash; that the cohort gains are large enough to be worth acting on, and that the real
+        error in our units runs the other way, towards writing people off early. That case can be
+        made properly and I would rather print it than not.</p>
+      <p><a class="btn" href="mailto:icuandyou@icloud.com?subject=Aphorism%2042%20-%20sixty%20is%20the%20new%20forty&body=My%20verdict%20%28Yes%20%2F%20No%20%2F%20Maybe%29%3A%0D%0A%0D%0A%0D%0AThe%20sixty-year-old%20it%20got%20wrong%2C%20and%20which%20way%3A%0D%0A%0D%0A%0D%0AWhether%20age%20alone%20changes%20decisions%20in%20my%20unit%2C%20honestly%3A%0D%0A%0D%0A%0D%0AHospital%20type%20%28tertiary%20%2F%20regional%20%2F%20rural%29%3A%0D%0A%0D%0A---%0D%0A%0D%0AName%20%28optional%29%3A%0D%0A%0D%0A---%0D%0A%0D%0AThinking%20about%20this%20ICU%20AND%20YOU%20post%20overall%20%E2%80%94%20was%20it%20useful%20to%20you%2C%20or%20would%20it%20be%20useful%20to%20others%3F%0D%0A">Send your verdict</a></p>
+      <p class="fallback">How you are credited is entirely your call &mdash; by name, by initials, or not at all &mdash; whether you write the piece or I do, and whether I quote you or simply say who sent something in; nothing of yours goes up with your name on it unless you have said yes.</p>
+      <p class="fallback">The button opens a reply straight to me. If your device blocks it, write to
+        <a href="mailto:icuandyou@icloud.com">icuandyou@icloud.com</a> instead.</p>
+    </div>
+  </div>
+
+  <footer>
+    <span class="firstpub">First published November 2026</span>
+    <p class="subline">Two emails a week &mdash; the Friday newsletter for all subscribers, and, for clinical subscribers,
+      the mind map and puzzles the moment they go up on Tuesday. Occasional announcements of new
+      features as they arrive. What went up and why it mattered, the best of your replies, and
+      original feature stories, news and views. <a href="https://joinlist.com/f/5adad2d6">Come and join us</a>.</p>
+    <a class="home" href="./">&larr; &nbsp;All of ICU AND YOU</a><br>
+    ICU AND YOU &nbsp;&#183;&nbsp; Aphorism #42 &nbsp;&#183;&nbsp; companion to Mind Map #38, Late middle age<br>
+    Cardiovascular mortality decline and the coronary heart disease rates for ages 35&ndash;54 from
+    the Australian Institute of Health and Welfare, <em>Trends in cardiovascular deaths</em>. Daily smoking
+    prevalence and the age distribution of people who smoke from the AIHW reporting of the National Drug
+    Strategy Household Survey 2022&ndash;23. Overweight and obesity prevalence from AIHW
+    <em>Overweight and obesity</em>, drawing on the ABS National Health Survey. Early-onset bowel cancer
+    incidence from Cancer Australia, <em>Early-onset cancer statistics</em>. The share of alcohol-caused
+    deaths by age band from the National Alcohol and Drug Knowledgebase, drawing on ABS causes-of-death
+    data. Aboriginal and Torres Strait Islander cause-specific rate ratios from AIHW premature mortality
+    reporting, and quoted as the order of the disparity rather than as a current-year figure.
+    Educational use within the ICU education programme. Not a clinical protocol &mdash; local policy and
+    current guidance always take precedence.
+  <br>
+    <span class="mine">Views my own, not those of NSW Health or any other organisation. No identifiable patients &mdash; scenarios are constructed or combined for teaching. <a href="about.html">More</a>.</span>
+  </footer>
+
+</div>
+<script data-goatcounter="https://icuandyou.goatcounter.com/count"
+        async src="//gc.zgo.at/count.js"></script>
+</body>
+</html>

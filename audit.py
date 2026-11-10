@@ -18,6 +18,7 @@ import sys
 from collections import defaultdict
 from html import escape as html_escape, unescape
 from pathlib import Path
+from urllib.parse import unquote
 
 HERE = Path(__file__).resolve().parent
 
@@ -228,6 +229,42 @@ def main():
                             f"whether their name goes on it")
         elif n > 1:
             problems.append(f"{f}: the credit line appears {n} times")
+
+    # ---- a reply button must name its own page ----------------------------
+    # November 2026. Aphorism 41 was built from Aphorism 40 and its reply
+    # button still carried 40's fields, so anyone clicking it was asked how
+    # pregnancy status is confirmed in their hospital — on a page about
+    # treating the young. Looking for that generically turned out to be
+    # unreliable: reply fields are legitimately shared across a series, and
+    # every heuristic tried either missed the fault or flagged thirty
+    # innocent pages. What IS exact is the subject line, because it carries
+    # the page's own number. This check caught a second instance the moment
+    # it was written: Superpuzzle 54 inviting answers to Superpuzzle #53.
+    # It will not catch inherited body fields. Those stay a reading job.
+    for f in content:
+        # NB: not "m" — that name holds the manifest for the rest of this
+        # function, and shadowing it here broke every check below exactly once.
+        numbered = re.match(r"[a-z-]+?-(\d+)-", f)
+        if not numbered:
+            continue
+        own = numbered.group(1).lstrip("0") or "0"
+        s = (HERE / f).read_text(encoding="utf-8")
+        for mt in re.finditer(r'href="mailto:([^"]+)"', s):
+            link = unquote(mt.group(1))
+            if "subject=" not in link:
+                continue
+            subject = link.split("subject=", 1)[1].split("&")[0]
+            found = re.findall(r"\b(\d{1,3})\b", subject)
+            others = [n for n in found if n != own]
+            # A subject may legitimately contain other numbers — Journal Club
+            # 98 is "MAP above 65". What matters is whether the page's own
+            # number is there at all. If it is, the rest is prose.
+            if others and own not in found:
+                problems.append(
+                    f"{f}: the reply button's subject line says "
+                    f'"{subject.strip()}" — it names {", ".join(others)} on a '
+                    f"page numbered {own}, so replies will arrive filed "
+                    f"against the wrong piece")
 
     # ---- a page in the running block must be flagged for the week ---------
     # November 2026: The Jukebox No. 2 was filed under Early middle age while
