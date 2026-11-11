@@ -266,6 +266,26 @@ def main():
                     f"page numbered {own}, so replies will arrive filed "
                     f"against the wrong piece")
 
+    # ---- every local file a page asks for must actually be there ----------
+    # November 2026. Your Presentations 4 went up without its two Telestroke
+    # PNGs and showed two empty boxes. That was a packaging fault rather than
+    # a repository one — the files were here all along — so this check would
+    # not have caught it. It is here for the fault that looks identical from
+    # the reader's side: a filename that is mistyped, renamed or deleted.
+    # Skip anchors into other pages, tel: and the rest of the schemes.
+    for f in content:
+        s = (HERE / f).read_text(encoding="utf-8")
+        for ref in re.finditer(r'(?:src|href)="([^"]+)"', s):
+            u = ref.group(1)
+            if (u.startswith(("http", "//", "mailto:", "tel:", "data:",
+                              "#", "?", "./"))
+                    or ".html" in u):
+                continue
+            if not (HERE / u.lstrip("/")).exists():
+                problems.append(
+                    f"{f}: asks for {u!r}, which is not in the site folder — "
+                    f"the reader gets an empty box where that should be")
+
     # ---- a page in the running block must be flagged for the week ---------
     # November 2026: The Jukebox No. 2 was filed under Early middle age while
     # that block was still running, but with "week": false, copied wholesale
