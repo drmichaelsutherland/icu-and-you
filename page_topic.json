@@ -1752,9 +1752,28 @@
    "week": true,
    "pos": 4,
    "blurb": "The cohort gains behind the saying are real and very large \u2014 an 82 per cent fall in cardiovascular deaths, daily smoking down from 24.3 to 8.3 per cent. They have also been decelerating for thirty years, fastest in exactly this age band; obesity, early-onset bowel cancer and alcohol have all moved the other way; and the gains were never handed out evenly. The case for, the case against, and the case that it is sound about a population and a guess about a patient."
+  },
+  {
+   "file": "superpuzzle-55-late-middle-age-fillable.html",
+   "series": "superpuzzle",
+   "colour": "rust",
+   "number": "55",
+   "title": "Late middle age",
+   "topic": "Late middle age",
+   "slug": "late-middle-age",
+   "week": true,
+   "pos": 3,
+   "badge": "Superpuzzle",
+   "link_label": "Open the puzzle",
+   "blurb": "Twenty clues on late middle age \u2014 the commonest site of the hypertensive bleed, a worm that waits years for somebody to start steroids, a Dutch admiral who overate and then took an emetic, a fat boy in Dickens, and the stonemason\u2019s disease that came back. Fill it in on screen, or print it."
   }
  ],
  "latest": [
+  {
+   "file": "superpuzzle-55-late-middle-age-fillable.html",
+   "colour": "rust",
+   "label": "Superpuzzle 55 · Late middle age"
+  },
   {
    "file": "aphorism-42-sixty-is-the-new-forty.html",
    "colour": "plum",
@@ -1774,11 +1793,6 @@
    "file": "registrars-04-acute-stroke.html",
    "colour": "heather striped",
    "label": "Your Presentations 4 · Acute stroke management"
-  },
-  {
-   "file": "registrars-03-ventilators.html",
-   "colour": "heather striped",
-   "label": "Your Presentations 3 · Ventilators"
   }
  ],
  "topten": [
