@@ -16,6 +16,22 @@
   "salon-01-ninety-minutes.html": {
    "checked": "2026-11-03",
    "note": "Every number and every quotation checked against its source. The three guideline texts were read in the originals rather than taken from a summary, because the argument of the page is the difference between them word for word. One correction during checking: an earlier draft said four words had been added to the 2025 wording. It is seven. The builder now asserts that the 2025 sentence is the 2021 sentence with the qualifier in front, and counts the inserted words against what the page claims. Nothing on the page is flagged, but two entries carry limits worth reading: the right ventricle data are porcine, and the reading of the hundred-minute case is mine while the facts in it are the authors'."
+  },
+  "podcast-61-scad.html": {
+   "checked": "2026-11-04",
+   "note": "Eleven claims checked, every numeric claim on the page among them. Nothing on this page carries a number that is not ticked."
+  },
+  "mnemonic-59-cardio-stress.html": {
+   "checked": "2026-11-11",
+   "note": "Eighteen claims checked. Sixteen were done when the page was built; a sweep on 11 November found one dose still unticked — the methylprednisolone for checkpoint inhibitor myocarditis — which confirmed, and one assertion beside it that did not: 'up to half are steroid-refractory' had no support at all. There is no population estimate in the literature, and the single case series available reports two thirds of twenty-four patients. The sentence was reworded rather than left standing."
+  },
+  "mnemonic-60-extubation.html": {
+   "checked": "2026-11-11",
+   "note": "Seven claims, each checked against its source on the day the page was written. Two limits are stated on the page itself rather than hidden here: the reintubation mortality gap is an association and partly reflects severity, and the Esteban trial was read through a published summary because the original could not be reached."
+  },
+  "exam-cicm-first-03-the-mcq-paper.html": {
+   "checked": "2026-11-04",
+   "note": "Nine claims checked. The other numbers on this page are question stems and their worked answers rather than claims about the world; the arithmetic in each was recomputed, including the volume of distribution question, whose stated half-life of seven hours is correct."
   }
  },
  "claims": {
@@ -1271,6 +1287,24 @@
    "checked": "2026-11-11",
    "interval": "never",
    "verdict": "confirmed"
+  },
+  "cm-ici-steroid": {
+   "page": "mnemonic-59-cardio-stress.html",
+   "claim": "Immune checkpoint inhibitor myocarditis is treated with pulse methylprednisolone 500 to 1000 mg daily for three to five days",
+   "source": "ESC/EHA/ESTRO/IC-OS cardio-oncology guidance as summarised in Cardiovascular Diagnosis and Therapy, 'Therapeutic agents for steroid-refractory immune checkpoint inhibitor-related myocarditis'. ESMO gives three days; NCCN and SITC give 1 g for three to five",
+   "url": "https://cdt.amegroups.org/article/view/127481/html",
+   "checked": "2026-11-11",
+   "interval": "never",
+   "verdict": "confirmed"
+  },
+  "cm-ici-refractory": {
+   "page": "mnemonic-59-cardio-stress.html",
+   "claim": "What proportion of immune checkpoint inhibitor myocarditis is steroid-refractory",
+   "source": "No population-level estimate exists: the review states that no studies have estimated the incidence of steroid-refractory disease, and the only figure available is a single-centre series of 24 patients in which 16 (67 per cent) were corticosteroid-resistant. This page previously said 'up to half', which was not supported by anything, and has been reworded",
+   "url": "https://cdt.amegroups.org/article/view/127481/html",
+   "checked": "2026-11-11",
+   "interval": "never",
+   "verdict": "flagged"
   }
  }
 }
