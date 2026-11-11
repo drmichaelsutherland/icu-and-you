@@ -1766,9 +1766,26 @@
    "badge": "Superpuzzle",
    "link_label": "Open the puzzle",
    "blurb": "Twenty clues on late middle age \u2014 the commonest site of the hypertensive bleed, a worm that waits years for somebody to start steroids, a Dutch admiral who overate and then took an emetic, a fat boy in Dickens, and the stonemason\u2019s disease that came back. Fill it in on screen, or print it."
+  },
+  {
+   "file": "mnemonic-60-extubation.html",
+   "series": "mnemonic",
+   "colour": "olive",
+   "number": "60",
+   "title": "Extubation at fifty-five",
+   "topic": "Late middle age",
+   "slug": "late-middle-age",
+   "week": true,
+   "pos": 5,
+   "blurb": "A double acrostic. FAILED is why the tube came out too soon \u2014 the heart that only fails once the positive pressure comes off, which is nearly six in ten weaning failures; the diaphragm; the load; the phosphate. REPEAT is what has to happen before it comes out again. The same non-invasive ventilation cuts reintubation when it goes on before they fail, and raises mortality when it goes on after."
   }
  ],
  "latest": [
+  {
+   "file": "mnemonic-60-extubation.html",
+   "colour": "olive",
+   "label": "Mnemonic 60 · Extubation at fifty-five"
+  },
   {
    "file": "superpuzzle-55-late-middle-age-fillable.html",
    "colour": "rust",
@@ -1788,11 +1805,6 @@
    "file": "jukebox-02-early-middle-age.html",
    "colour": "neon",
    "label": "The Jukebox 2 · The reminiscence bump"
-  },
-  {
-   "file": "registrars-04-acute-stroke.html",
-   "colour": "heather striped",
-   "label": "Your Presentations 4 · Acute stroke management"
   }
  ],
  "topten": [

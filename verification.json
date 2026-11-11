@@ -1128,6 +1128,149 @@
    "checked": "2026-11-03",
    "interval": "12m",
    "verdict": "confirmed"
+  },
+  "str-wakeup": {
+   "page": "registrars-04-acute-stroke.html",
+   "claim": "For a wake-up stroke, onset is taken as the estimated midpoint of sleep",
+   "source": "the American Heart Association's own Top Things to Know summary of the 2026 AHA/ASA Guideline for the Early Management of Patients With Acute Ischemic Stroke (Stroke, published online 26 January 2026, doi:10.1161/STR.0000000000000513), which puts the extended window at up to 9 hours from the midpoint of sleep for stroke of unknown onset",
+   "url": "https://professional.heart.org/en/science-news/2026-guideline-for-the-early-management-of-patients-with-acute-ischemic-stroke/top-things-to-know",
+   "checked": "2026-11-06",
+   "interval": "12m",
+   "verdict": "flagged",
+   "note": "The guideline itself is behind ahajournals.org, which could not be fetched, so this is the AHA's own summary of its own document. Two further independent readings of the guideline agree with the wording. The presentation cited it as an August 2026 paper in a neurology journal; it is in Stroke, in January."
+  },
+  "str-9h": {
+   "page": "registrars-04-acute-stroke.html",
+   "claim": "Thrombolysis may be extended beyond 4.5 hours to 9 hours in selected patients",
+   "source": "the American Heart Association's own Top Things to Know summary of the 2026 AHA/ASA Guideline for the Early Management of Patients With Acute Ischemic Stroke (Stroke, published online 26 January 2026, doi:10.1161/STR.0000000000000513), which supports thrombolysis from 4.5 to 9 hours, and in stroke of unknown onset, where advanced imaging shows a perfusion or diffusion mismatch",
+   "url": "https://professional.heart.org/en/science-news/2026-guideline-for-the-early-management-of-patients-with-acute-ischemic-stroke/top-things-to-know",
+   "checked": "2026-11-06",
+   "interval": "12m",
+   "verdict": "flagged",
+   "note": "The guideline itself is behind ahajournals.org, which could not be fetched, so this is the AHA's own summary of its own document. Two further independent readings of the guideline agree with the wording. The presentation cited it as an August 2026 paper in a neurology journal; it is in Stroke, in January."
+  },
+  "str-bp140": {
+   "page": "registrars-04-acute-stroke.html",
+   "claim": "Lowering the systolic blood pressure below 140 mmHg is not recommended, even after complete reperfusion",
+   "source": "the American Heart Association's own Top Things to Know summary of the 2026 AHA/ASA Guideline for the Early Management of Patients With Acute Ischemic Stroke (Stroke, published online 26 January 2026, doi:10.1161/STR.0000000000000513), which states that intensive lowering below 140 mmHg does not improve functional outcome after intravenous thrombolysis and may cause harm after endovascular therapy, including after TICI 3 reperfusion",
+   "url": "https://professional.heart.org/en/science-news/2026-guideline-for-the-early-management-of-patients-with-acute-ischemic-stroke/top-things-to-know",
+   "checked": "2026-11-06",
+   "interval": "12m",
+   "verdict": "flagged",
+   "note": "The guideline itself is behind ahajournals.org, which could not be fetched, so this is the AHA's own summary of its own document. Two further independent readings of the guideline agree with the wording. The presentation cited it as an August 2026 paper in a neurology journal; it is in Stroke, in January."
+  },
+  "str-basilar": {
+   "page": "registrars-04-acute-stroke.html",
+   "claim": "Endovascular therapy improves functional outcome in basilar artery occlusion presenting within 24 hours with an NIHSS of 10 or more",
+   "source": "the American Heart Association's own Top Things to Know summary of the 2026 AHA/ASA Guideline for the Early Management of Patients With Acute Ischemic Stroke (Stroke, published online 26 January 2026, doi:10.1161/STR.0000000000000513), which gives a strong recommendation for endovascular therapy in basilar artery occlusion within 24 hours of onset with an NIHSS of 10 or above",
+   "url": "https://professional.heart.org/en/science-news/2026-guideline-for-the-early-management-of-patients-with-acute-ischemic-stroke/top-things-to-know",
+   "checked": "2026-11-06",
+   "interval": "12m",
+   "verdict": "flagged",
+   "note": "The guideline itself is behind ahajournals.org, which could not be fetched, so this is the AHA's own summary of its own document. The presentation cited it as an August 2026 paper in a neurology journal; it is in Stroke, in January."
+  },
+  "str-sich": {
+   "page": "registrars-04-acute-stroke.html",
+   "claim": "Symptomatic haemorrhagic transformation occurs in about 6% of patients given intravenous thrombolysis",
+   "source": "Hong, Kim and Kim, 'Hemorrhagic Transformation After Ischemic Stroke: Mechanisms and Management', Frontiers in Neurology 2021;12:703258, which states that large parenchymal haematoma and symptomatic intracerebral haemorrhage occur in up to 6% after intravenous thrombolysis",
+   "url": "https://www.frontiersin.org/journals/neurology/articles/10.3389/fneur.2021.703258/full",
+   "checked": "2026-11-06",
+   "interval": "24m",
+   "verdict": "confirmed",
+   "note": "This is the review the presentation itself cites. The companion figures on the page — about 5% overall, 89% of them petechial, and 0.6 to 3% without thrombolysis — are not in it and remain as given in the presentation."
+  },
+  "str-pcc": {
+   "page": "registrars-04-acute-stroke.html",
+   "claim": "Prothrombin complex concentrate for warfarin reversal in life-threatening bleeding: 50 units/kg, to a maximum of 5000 units",
+   "source": "Australian Red Cross Lifeblood, Warfarin reversal, which gives Beriplex P/N at 50 IU/kg for life-threatening or critical organ bleeding with the weight capped at 100 kg — a ceiling of 5000 IU — together with 5 to 10 mg of intravenous vitamin K",
+   "url": "https://www.lifeblood.com.au/health-professionals/clinical-practice/clinical-indications/warfarin-reversal",
+   "checked": "2026-11-06",
+   "interval": "12m",
+   "verdict": "confirmed",
+   "note": "The cap is expressed as a weight ceiling rather than a dose ceiling, which comes to the same 5000 units the presentation gives. Vitamin K is given with it and is easily forgotten."
+  },
+  "str-lytics": {
+   "page": "registrars-04-acute-stroke.html",
+   "claim": "Alteplase 0.9 mg/kg to a maximum of 90 mg, 10% as a bolus and the rest over 60 minutes; or tenecteplase 0.25 mg/kg to a maximum of 25 mg as a single dose, with the 2026 guideline endorsing either and preferring neither",
+   "source": "the University of Illinois at Chicago drug information group's review of the 2026 AHA/ASA guideline, which gives both doses in exactly these terms and states that for eligible adults presenting within 4.5 hours the guideline endorses either drug, where the previous guideline primarily endorsed alteplase",
+   "url": "https://dig.pharmacy.uic.edu/faqs/2026-2/april-2026-faqs/update-what-are-major-pharmacotherapy-updates-from-the-2026-aha-asa-stroke-guidelines/",
+   "checked": "2026-11-06",
+   "interval": "12m",
+   "verdict": "flagged",
+   "note": "The guideline itself is behind ahajournals.org, which could not be fetched. The doses are long-standing and match Australian practice; what is new is that neither agent is now preferred over the other."
+  },
+  "str-driving": {
+   "page": "registrars-04-acute-stroke.html",
+   "claim": "After a stroke: no private driving for four weeks, three months for a commercial licence, medical clearance before returning in either case",
+   "source": "Stroke Foundation (Australia), Driving after stroke, which gives at least four weeks for a private licence and three months for a commercial one, with medical clearance required before returning, and two weeks (four, commercial) after a transient ischaemic attack. The underlying standard is Austroads, Assessing Fitness to Drive",
+   "url": "https://strokefoundation.org.au/what-we-do/for-survivors-and-carers/after-stroke-factsheets/driving-fact-sheet",
+   "checked": "2026-11-06",
+   "interval": "12m",
+   "verdict": "corrected",
+   "note": "The presentation gave three weeks for a private licence. The Australian standard is four. This is the one number on the page that was changed rather than attributed, because a patient told three weeks would be driving unlicensed and uninsured in the fourth."
+  },
+  "ext-wipo-share": {
+   "page": "mnemonic-60-extubation.html",
+   "claim": "Weaning-induced pulmonary oedema accounted for 59 per cent of weaning failures (75 of 128 failed spontaneous breathing trials, across 283 trials in 81 patients)",
+   "source": "Liu J et al, Cardiac dysfunction induced by weaning from mechanical ventilation: incidence, risk factors and effects of fluid removal, Critical Care 2016;20:369. Single-centre observational study",
+   "url": "https://link.springer.com/content/pdf/10.1186/s13054-016-1533-9.pdf",
+   "checked": "2026-11-11",
+   "interval": "never",
+   "verdict": "confirmed"
+  },
+  "ext-wipo-risk": {
+   "page": "mnemonic-60-extubation.html",
+   "claim": "Independent risk factors for weaning-induced pulmonary oedema: COPD odds ratio 8.7 (95% CI 2.0-37.3), structural cardiopathy 4.5 (1.4-14.1), obesity 3.6 (1.2-12.6)",
+   "source": "Liu J et al, Critical Care 2016;20:369. The authors describe the obesity association as weaker than the other two and in need of confirmation",
+   "url": "https://link.springer.com/content/pdf/10.1186/s13054-016-1533-9.pdf",
+   "checked": "2026-11-11",
+   "interval": "never",
+   "verdict": "confirmed"
+  },
+  "ext-diaphragm": {
+   "page": "mnemonic-60-extubation.html",
+   "claim": "Diaphragm dysfunction at weaning: reported incidence 23 to 80 per cent depending on population and method; 29 per cent by ultrasound at first spontaneous breathing trial, 63 per cent by phrenic nerve stimulation in unselected patients",
+   "source": "Dres M and Demoule A, Diaphragm dysfunction during weaning from mechanical ventilation, Critical Care 2018;22:73, citing Kim et al and Dres et al",
+   "url": "https://link.springer.com/article/10.1186/s13054-018-1992-2",
+   "checked": "2026-11-11",
+   "interval": "never",
+   "verdict": "confirmed"
+  },
+  "ext-reintubation-mortality": {
+   "page": "mnemonic-60-extubation.html",
+   "claim": "Hospital mortality 18 per cent in reintubated patients against 3 per cent in those never reintubated; adjusted odds ratio 5.86 (95% CI 3.87-8.89). 19 per cent reintubated at some point, 11 per cent within 48 hours",
+   "source": "Cohort of 2,007 patients reported in Respiratory Care 2012;57:1555. The authors caution this is association, not proof of causation, and that reintubation partly marks greater severity",
+   "url": "https://rc.rcjournal.com/content/57/10/1555",
+   "checked": "2026-11-11",
+   "interval": "never",
+   "verdict": "confirmed"
+  },
+  "ext-niv-rescue": {
+   "page": "mnemonic-60-extubation.html",
+   "claim": "Non-invasive ventilation for established post-extubation respiratory failure: reintubation 48 per cent in both arms; median time from failure to intubation 2.5 hours with usual care against 12 hours with NIV; ICU mortality 14 against 25 per cent (RR 1.78, 95% CI 1.03-3.20, p=0.048). Trial stopped early",
+   "source": "Esteban A et al, Noninvasive positive-pressure ventilation for respiratory failure after extubation, NEJM 2004;350:2452. Read through a published summary of the trial; the original could not be reached from this environment",
+   "url": "https://www.clinician.com/articles/6105-should-nppv-be-used-in-extubation-failure",
+   "checked": "2026-11-11",
+   "interval": "never",
+   "verdict": "confirmed"
+  },
+  "ext-niv-prophylactic": {
+   "page": "mnemonic-60-extubation.html",
+   "claim": "Prophylactic non-invasive ventilation alternating with high-flow nasal oxygen in high-risk patients: reintubation at day 7 11.8 against 18.2 per cent with high-flow alone (difference -6.4 per cent, 95% CI -12.0 to -0.9, p=0.02). ICU mortality 6 against 9 per cent, not significant",
+   "source": "Thille AW et al, JAMA 2019;322:1465. High risk defined as ventilated over 24 hours, passed a spontaneous breathing trial, and over 65 or with underlying cardiac or respiratory disease including obesity hypoventilation",
+   "url": "https://www.clinician.com/articles/146420-preventing-post-extubation-respiratory-failure-can-we-decrease-risk-in-our-high-risk-populations",
+   "checked": "2026-11-11",
+   "interval": "never",
+   "verdict": "confirmed"
+  },
+  "ext-steroid-cuffleak": {
+   "page": "mnemonic-60-extubation.html",
+   "claim": "Corticosteroids before extubation in patients selected by a failed cuff leak test: reintubation RR 0.35 (95% CI 0.20-0.64), post-extubation respiratory failure RR 0.34 (0.24-0.48), NNT 5. In unselected patients neither reached significance. The cuff leak test has poor positive predictive value for stridor",
+   "source": "2017 meta-analysis of 11 randomised trials, 2,472 patients. Regimens included methylprednisolone 40 mg 6-hourly for four doses, or a single 40 mg dose 4 hours before extubation",
+   "url": "https://www.clinician.com/articles/140950-prophylactic-steroids-prevent-reintubation-in-patients-at-risk-for-post-extubation-stridor",
+   "checked": "2026-11-11",
+   "interval": "never",
+   "verdict": "confirmed"
   }
  }
 }
