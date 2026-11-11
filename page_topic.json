@@ -1778,9 +1778,28 @@
    "week": true,
    "pos": 5,
    "blurb": "A double acrostic. FAILED is why the tube came out too soon \u2014 the heart that only fails once the positive pressure comes off, which is nearly six in ten weaning failures; the diaphragm; the load; the phosphate. REPEAT is what has to happen before it comes out again. The same non-invasive ventilation cuts reintubation when it goes on before they fail, and raises mortality when it goes on after."
+  },
+  {
+   "file": "anecdote-city-02-the-brain-is-a-person-too.html",
+   "series": "anecdote",
+   "colour": "indigo striped",
+   "number": "2",
+   "title": "The Brain Is a Person Too",
+   "topic": "Any time",
+   "slug": "standing",
+   "week": false,
+   "standing": true,
+   "badge": "Anecdote City",
+   "link_label": "Open",
+   "blurb": "Osaka, after Berlin and Bangkok. Delegates gazing intently at the speaker and intensely at their own navels, a little bow that might mean g\u2019day, and a presentation style described as very Anglo \u2014 which is French for having none. And then the doppelg\u00e4nger of lifelong learning, which is lifelong loafing, and which has more evasive strategies than a cloaked Klingon battlecruiser."
   }
  ],
  "latest": [
+  {
+   "file": "anecdote-city-02-the-brain-is-a-person-too.html",
+   "colour": "indigo striped",
+   "label": "Anecdote City · The Brain Is a Person Too"
+  },
   {
    "file": "mnemonic-60-extubation.html",
    "colour": "olive",
@@ -1800,11 +1819,6 @@
    "file": "mind-map-38-late-middle-age.html",
    "colour": "teal",
    "label": "Mind Map 38 · Late middle age"
-  },
-  {
-   "file": "jukebox-02-early-middle-age.html",
-   "colour": "neon",
-   "label": "The Jukebox 2 · The reminiscence bump"
   }
  ],
  "topten": [

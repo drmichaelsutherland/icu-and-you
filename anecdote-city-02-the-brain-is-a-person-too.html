@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en-AU">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ICU AND YOU &#183; Anecdote City &mdash; The Brain Is a Person Too</title>
+<meta name="description" content="Anecdote City No. 2: a conference in Osaka, a little bow that might mean g&rsquo;day, a style described as very Anglo, and the doppelgänger of lifelong learning — which is lifelong loafing.">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="alternate icon" href="/favicon.ico" sizes="any">
+<link rel="apple-touch-icon" href="/icon-180.png">
+<meta name="theme-color" content="#1B3350">
+<meta property="og:site_name" content="ICU AND YOU">
+<meta property="og:type" content="website">
+<meta property="og:title" content="ICU AND YOU &#183; Anecdote City &mdash; The Brain Is a Person Too">
+<meta property="og:description" content="The evil twin of lifelong learning, and what it is skilled at avoiding.">
+<meta property="og:image" content="https://icuandyou.com/share-card.png">
+<meta name="twitter:card" content="summary_large_image">
+<style>
+  /* ANECDOTE CITY runs on its own stationery. Warm kraft rather than the
+     site's cool paper, a bookish Baskerville rather than Iowan Old Style,
+     and typewriter furniture — so that a story is visibly not a guideline
+     before a word of it has been read. */
+  :root{
+    --kraft:#DED3B8; --paper:#FBF6EA; --ink:#241E16; --muted:#6E6354; --rule:#E0D4BC;
+    --indigo:#1B3350; --indigotint:#EDEFF3; --deep:#0F1F33;
+    --lamp:#B0601E; --lamptint:#F8EFE3;
+    --book:'Hoefler Text',Baskerville,'Libre Baskerville',Constantia,'Times New Roman',Georgia,serif;
+    --type:'American Typewriter','Courier New',Courier,monospace;
+  }
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--kraft);color:var(--ink);
+    font:400 18px/1.7 var(--book);-webkit-text-size-adjust:100%;}
+  .sheet{max-width:720px;margin:0 auto;background:var(--paper);
+    box-shadow:0 1px 40px rgba(36,30,22,.16);}
+
+  .flag{display:flex;height:6px}
+  .flag i{display:block}
+  .flag i:nth-child(1){flex:3;background:var(--deep)}
+  .flag i:nth-child(2){flex:1;background:var(--lamp)}
+  .flag i:nth-child(3){flex:3;background:var(--indigo)}
+
+  header.top{padding:44px 44px 30px;border-bottom:2px solid var(--indigo)}
+  .eyebrow a.serlink,.eyebrow a.mast{color:inherit;text-decoration:none;
+    border-bottom:1px solid transparent}
+  .eyebrow a.serlink:hover,.eyebrow a.mast:hover{border-bottom-color:currentColor}
+  .toptopic,.topseries,.tophome{display:inline-block;margin:0 0 16px;padding:7px 15px;
+    border-radius:3px;border:1px solid currentColor;opacity:.58;text-decoration:none;color:inherit;
+    font:400 11px var(--type);letter-spacing:.11em;text-transform:uppercase;
+    transition:opacity .12s ease}
+  .topseries,.toptopic{margin-left:8px}
+  .toptopic:hover,.topseries:hover,.tophome:hover{opacity:1}
+  .eyebrow{font:400 11.5px/1 var(--type);letter-spacing:.2em;
+    text-transform:uppercase;color:var(--muted);margin:0 0 18px}
+
+  .addr{display:inline-block;margin:0 0 16px;padding:7px 14px;background:var(--indigo);
+    color:var(--paper);font:400 12px var(--type);letter-spacing:.17em;text-transform:uppercase}
+  h1{font:400 40px/1.1 var(--type);margin:0 0 14px;letter-spacing:-.018em}
+  .kicker{color:var(--muted);margin:0;font-size:17.5px;font-style:italic}
+
+  .pad{padding:38px 44px}
+  p{margin:0 0 19px}
+  .lede{font-size:21px;line-height:1.55;margin:0 0 24px}
+  .lede::first-letter{float:left;font:400 58px/0.82 var(--type);color:var(--indigo);
+    margin:5px 9px 0 0}
+
+  .beat{margin:30px 0;text-align:center;color:var(--indigo);font:400 22px/1 var(--type);
+    letter-spacing:.34em;opacity:.72}
+
+  /* the recurring footer box — what this place is, on every anecdote */
+  .cityline{margin:34px 0 0;padding:22px 26px;background:var(--indigotint);
+    border-top:2px solid var(--indigo)}
+  .cityline .lab{display:block;font:400 11px var(--type);letter-spacing:.17em;
+    text-transform:uppercase;color:var(--deep);margin:0 0 10px}
+  .cityline p{font-size:16px;margin:0 0 12px}
+  .cityline .acts{margin:0 0 11px}
+  .cityline .acts a{display:inline-block;margin:0 14px 0 0;padding:9px 17px;
+    background:var(--indigo);color:var(--paper);text-decoration:none;border-radius:3px;
+    font:400 12px var(--type);letter-spacing:.08em;text-transform:uppercase}
+  .cityline .acts a:hover{background:var(--lamp)}
+  .cityline .fine{font:400 12.5px/1.6 var(--book);font-style:italic;color:var(--muted);margin:0}
+
+  .subline{margin:0 0 14px;padding:0 0 13px;border-bottom:1px solid rgba(0,0,0,.09);
+    font:400 14.5px/1.55 var(--book);max-width:56ch;margin-left:auto;margin-right:auto}
+  .subline a{font-weight:500;border-bottom:1px solid currentColor;
+    text-decoration:none;color:inherit}
+  .firstpub{display:block;margin:0 0 10px;padding-bottom:9px;
+    border-bottom:1px solid rgba(0,0,0,.09);
+    font:400 11.5px var(--type);letter-spacing:.09em;opacity:.7}
+
+  footer{padding:26px 44px 44px;border-top:2px solid var(--indigo);
+    font:400 13px/1.7 var(--type);color:var(--muted);text-align:center}
+  .home{display:inline-block;margin:0 0 14px;padding:8px 18px;border-radius:3px;
+    border:1px solid var(--rule);background:#F3ECDC;color:var(--deep);text-decoration:none;
+    font:400 12px var(--type);letter-spacing:.08em;text-transform:uppercase}
+  .home:hover{background:var(--deep);border-color:var(--deep);color:#FBF6EA}
+  .mine{display:block;margin:12px 0 0;opacity:.78;font-size:.94em}
+  .rights{display:block;max-width:56ch;margin:14px auto 0;padding:12px 0 0;
+    border-top:1px solid rgba(0,0,0,.09);font:400 12.5px/1.6 var(--book);color:var(--muted)}
+  .srcs{display:block;max-width:56ch;margin:4px auto 0;font:400 13.5px/1.6 var(--book);
+    font-style:italic}
+  .srcs a{color:inherit}
+
+  @media (max-width:620px){
+    header.top,.pad,footer{padding-left:20px;padding-right:20px}
+    .cityline{padding:20px}
+    h1{font-size:29px} body{font-size:17px} .lede{font-size:19px}
+    .lede::first-letter{font-size:48px}
+    .cityline .acts a{display:block;margin:0 0 9px;text-align:center}
+  }
+  @media print{ body{background:#fff} .sheet{box-shadow:none;max-width:none} }
+</style>
+</head>
+<body>
+<div class="sheet">
+  <div class="flag"><i></i><i></i><i></i></div>
+
+  <header class="top">
+    <a class="tophome" href="./">&larr;&nbsp; Home</a>
+    <a class="topseries" href="./?s=anecdote">All of Anecdote City</a>
+    <a class="toptopic" href="./?t=standing" title="Everything in Any time">All on this topic</a>
+    <p class="eyebrow"><a class="mast" href="./">ICU and You</a> &nbsp;&#183;&nbsp; <a class="serlink" href="./?s=anecdote">Anecdote City</a></p>
+    <span class="addr">No. 2</span>
+    <h1>The Brain Is a Person Too</h1>
+    <p class="kicker">The doppelg&auml;nger of lifelong learning is lifelong loafing, and it has more evasive strategies than a cloaked Klingon battlecruiser</p>
+  </header>
+
+  <div class="pad">
+    <p class="lede">As I sit in the conference room, I look around at the delegates.</p>
+    <p>Some are gazing intently at the speaker, and others are gazing intensely at their own computers, tablets or phone screens, or their own navels. Some are checking emails, some are checking sports results, and some are just checking what time lunch starts.</p>
+    <p>Some of the speakers are dynamic, and that is just dynamite. Engagement is easy and contagious. Not many speakers are like that. Others read out what is on the slides, and some of them read it badly. There is a hearty round of applause at the end of each speech, especially the last one before lunch.</p>
+    <p>The Japanese do a lot of interesting things with seafood. I like that. There are a lot of waiters and waitresses to look after us. I really like the way that everything seems to involve a little bow, and I bow back whenever it seems appropriate. They seem to appreciate that. I wonder what the bow really means. G&rsquo;day? Have a good one?</p>
+    <p>I had rehearsed my presentation quite a bit the day before, so I was OK this time. A delegate comes up to me after the presentation and says he enjoyed my conversational style. I thank him. I hadn&rsquo;t exactly been aiming for conversational, but I thought it was nice to be described as having a &ldquo;style&rdquo;.</p>
+    <p>&ldquo;You definitely have your own style,&rdquo; says ma ch&eacute;rie, adding that it is &ldquo;very Anglo&rdquo;. I think that is French for &ldquo;you have no style&rdquo;.</p>
+    <div class="beat">&#42;&nbsp;&#42;&nbsp;&#42;</div>
+    <p>The Osaka conference, along with Berlin last month and Bangkok earlier in the year, is all part of my &ldquo;lifelong learning&rdquo; drive. I really like the idea of learning something new every day. When I am in form, this is a really thrilling type of activity. I learn, learn, learn, and I wake up every day thirsty for something new to learn. It feels like learning is a necessity, like breathing, eating, smiling and sleeping.</p>
+    <p>But I am not always in form. The evil twin, the doppelg&auml;nger of lifelong learning, is lifelong loafing, and that kicks in from time to time, too. Not that often with me, though. I start thinking about what loafing really entails, and then decide to look into it more closely. And now with AI, the possibilities for looking into something, everything, or nothing at all are endless, unbounded and infinite, everywhere, all at the same time.</p>
+    <p>All of the colleges and universities expound on policies of lifelong learning. I think it is paradoxical. If you are a lifelong learner, you don&rsquo;t need to be told. And if you are a lifelong loafer, you will be very skilled at avoiding any attempt to push you onto the lifelong-learner path. You will be unavailable, unable and uncontactable. You will be available only when not contactable, and contactable only when unavailable. You will have more evasive strategies than a cloaked Klingon battlecruiser. Any learning that happens will be via the rather unreliable method of osmosis.</p>
+    <div class="beat">&#42;&nbsp;&#42;&nbsp;&#42;</div>
+    <p>But don&rsquo;t be like that. The brain is a person too, and needs to eat and drink. And imagine and create, and question and speculate.</p>
+    <p>Children have that unquenchable curiosity, and whatever remains of the child in all of us has it too. If you can regularly unlock that lifelong-learner box inside you, the colour in your world suddenly returns. People notice. You notice.</p>
+    <p>Live long and prosper.</p>
+  </div>
+
+  <footer>
+    <div class="cityline">
+      <span class="lab">Anecdote City</span>
+      <p>Short pieces from a working life in intensive care &mdash; more than a hundred of them, going up
+        here a few at a time. They happened. Nobody in them is identifiable. And there is room for
+        yours, whatever you do and wherever you do it: the nurse, the wardsman and the daughter were all in
+        that room too, and all three saw a different thing.</p>
+      <p class="acts"><a href="anecdote-city-00-welcome.html">What this is</a><a href="mailto:icuandyou@icloud.com?subject=Anecdote%20City%20-%20one%20from%20me&body=The%20story%3A%0D%0A%0D%0A%0D%0A%0D%0AAnything%20that%20needs%20changing%20to%20keep%20people%20unidentifiable%3A%0D%0A%0D%0A%0D%0AHow%20you%20would%20like%20to%20be%20credited%3A%0D%0A%0D%0A%0D%0A---%0D%0A%0D%0AName%3A%0D%0A%0D%0A---%0D%0A%0D%0AThinking%20about%20this%20ICU%20AND%20YOU%20post%20overall%20%E2%80%94%20was%20it%20useful%20to%20you%2C%20or%20would%20it%20be%20useful%20to%20others%3F%0D%0A">Send me one of yours</a></p>
+      <p class="fine">How you are credited is entirely your call &mdash; by name, by initials, or not at all &mdash; whether you write the piece or I do, and whether I quote you or simply say who sent something in; nothing of yours goes up with your name on it unless you have said yes. And the story stays yours: sending it gives me permission to publish it here, with the credit you choose. If it were ever to appear anywhere else &mdash; a collection, or print &mdash; I would come back and ask you separately first.</p>
+    </div>
+  </div>
+
+  <footer>
+    <span class="firstpub">First published October 2026</span>
+    <p class="subline">Two emails a week &mdash; the Friday newsletter for all subscribers, and, for clinical subscribers,
+      the mind map and puzzles the moment they go up on Tuesday. Occasional announcements of new
+      features as they arrive. What went up and why it mattered, the best of your replies, and
+      original feature stories, news and views. <a href="https://joinlist.com/f/5adad2d6">Come and join us</a>.</p>
+    <a class="home" href="./">&larr; &nbsp;All of ICU AND YOU</a><br>
+    ICU AND YOU &nbsp;&#183;&nbsp; Anecdote City No. 2<br>
+    <span class="srcs">Set down from memory, and from a conference programme. Nobody in it is identifiable, and ma ch&eacute;rie has seen it.</span>
+
+    <span class="rights">&copy; Michael Sutherland. The stories in Anecdote City are original work and sit <em>outside</em> the site&rsquo;s Creative Commons licence, which covers everything else here. Republication is welcome with permission &mdash; write to me, and the answer is usually yes.</span>
+    <span class="mine">Michael Sutherland</span>
+  
+  </footer>
+
+</div>
+<script data-goatcounter="https://icuandyou.goatcounter.com/count"
+        async src="//gc.zgo.at/count.js"></script>
+</body>
+</html>
