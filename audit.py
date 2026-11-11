@@ -969,7 +969,13 @@ def main():
         used = {}
         for f in html_files:
             s = (HERE / f).read_text(encoding="utf-8")
-            for cid in re.findall(r'<sup class="vf" data-v="([^"]+)"', s):
+            # Three forms: <sup class="vf"> in prose, and inside an SVG
+            # either <text class="vf"> placed by hand or, preferably,
+            # <tspan class="vf"> which flows after the words it marks.
+            # Both must sit on one line — a tag wrapped across two is
+            # invisible to this, which is how str-basilar went missing.
+            for cid in re.findall(
+                    r'<(?:sup|text|tspan) class="vf(?: [a-z-]+)?" data-v="([^"]+)"', s):
                 used.setdefault(cid, []).append(f)
         for cid, files in sorted(used.items()):
             if cid not in vclaims:

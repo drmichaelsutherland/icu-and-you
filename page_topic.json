@@ -1842,11 +1842,6 @@
   "label": "Coming next",
   "lines": [
    {
-    "date": "Tuesday 10th November",
-    "what": "Late middle age, part one",
-    "emphasis": true
-   },
-   {
     "date": "Tuesday 10th \u2013 Friday 13th November",
     "what": "One-on-one chats (by appointment)"
    },
@@ -1867,6 +1862,11 @@
    {
     "date": "Tuesday 15th \u2013 Friday 18th December",
     "what": "Site end-of-year feedback survey"
+   },
+   {
+    "date": "Tuesday 22nd December",
+    "what": "The Year \u2014 intensive care in 2026",
+    "emphasis": true
    }
   ],
   "note_lead": "Holiday pace from 6 November.",

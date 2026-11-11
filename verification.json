@@ -378,9 +378,9 @@
   "nn-ett-depth": {
    "page": "mind-map-31-neonatal.html",
    "claim": "Depth at the lip in centimetres is approximately weight in kg plus 6, and overestimates under 1 kg",
-   "source": "ANZCOR Guideline 13.5 gives the formula \"weight in kg plus 6 cm\" but describes the result as approximate and states that its table is \"likely to result in greater precision\", recommending the table for extremely low birth weight and preterm infants. The table gives 5.5 cm at 0.5-0.6 kg, where the formula gives 6.5 cm",
+   "source": "MSD/Merck Manual Professional, Endotracheal intubation in neonates. Re-checked 11 November 2026 against the weight-banded depth table: the weight-plus-six rule runs about half a centimetre deep across the whole range, not only below 1 kg — 0.5 kg gives 5.5 cm against 6.5 by the rule, 1 kg gives 6.5 against 7, 3 kg gives 8.5 against 9. The caveat on the page is right in direction and too narrow in scope.",
    "url": "https://www.anzcor.org/home/neonatal-resuscitation/guideline-13-5-tracheal-intubation-and-ventilation-of-the-newborn",
-   "checked": "2026-10-26",
+   "checked": "2026-11-11",
    "interval": "12m",
    "verdict": "corrected",
    "note": "The formula is in the guideline, so the page was not wrong, but it was unsafe without the caveat: at 500 g the formula is a full centimetre too deep, which in a newborn with a short trachea is the right main bronchus. The page now carries the caution. The underlying guideline table should be the source of truth in the smallest infants."
@@ -1305,6 +1305,51 @@
    "checked": "2026-11-11",
    "interval": "never",
    "verdict": "flagged"
+  },
+  "nn-adrenaline": {
+   "page": "mind-map-31-neonatal.html",
+   "claim": "Adrenaline 10 to 30 micrograms/kg intravenously, which is 0.1 to 0.3 mL/kg of 1:10,000, repeated every 3 to 5 minutes while the heart rate stays below 60. The endotracheal dose is higher at 50 to 100 micrograms/kg, and the umbilical vein is the suggested route",
+   "source": "ANZCOR neonatal guidelines 13.1 to 13.8, collected edition",
+   "url": "https://www.resus.org.nz/assets/Uploads/Neonatal-Resuscitation-All-Guidelines.pdf",
+   "checked": "2026-11-11",
+   "interval": "never",
+   "verdict": "confirmed"
+  },
+  "nn-volume": {
+   "page": "mind-map-31-neonatal.html",
+   "claim": "Volume expansion 10 mL/kg of isotonic crystalloid, for suspected blood loss or shock that has not responded to other measures, given over several minutes and repeated after reassessment",
+   "source": "ANZCOR neonatal guidelines 13.1 to 13.8, collected edition",
+   "url": "https://www.resus.org.nz/assets/Uploads/Neonatal-Resuscitation-All-Guidelines.pdf",
+   "checked": "2026-11-11",
+   "interval": "never",
+   "verdict": "confirmed"
+  },
+  "nn-glucose": {
+   "page": "mind-map-31-neonatal.html",
+   "claim": "Target blood glucose at least 2.6 mmol/L, with an intravenous bolus of 2 mL/kg of 10 per cent dextrose. Note that a cooled baby is managed to a higher range, 3 to 7 mmol/L",
+   "source": "WA Child and Adolescent Health Service / NETS WA, Hypoglycaemia",
+   "url": "https://pch.health.wa.gov.au/~/media/HSPs/CAHS/Documents/Health-Professionals/NETS/Hypoglycaemia.pdf",
+   "checked": "2026-11-11",
+   "interval": "never",
+   "verdict": "confirmed"
+  },
+  "nn-cooling": {
+   "page": "mind-map-31-neonatal.html",
+   "claim": "Therapeutic hypothermia for moderate or severe hypoxic-ischaemic encephalopathy at 35 weeks or more and under 6 hours of age. The full NSW criteria add a weight of at least 1,800 g and evidence of perinatal depression — pH below 7.00, base excess -12 or worse, Apgar under 6 at 10 minutes, or resuscitation lasting 10 minutes or more",
+   "source": "NSW Agency for Clinical Innovation, Hypoxic ischaemic encephalopathy in newborns",
+   "url": "https://aci.health.nsw.gov.au/__data/assets/pdf_file/0008/885257/ACI-Hypoxic-ischaemic-encephalopathy-in-newborns.pdf",
+   "checked": "2026-11-11",
+   "interval": "never",
+   "verdict": "confirmed"
+  },
+  "nn-pge": {
+   "page": "mind-map-31-neonatal.html",
+   "claim": "Alprostadil from 10 nanograms/kg/min, range 5 to 50. Doses of 50 or more may be needed to resuscitate an infant with poor perfusion and oxygenation, or where the duct is constricting or already closed. Maintenance is then the lowest dose that holds it open, usually 3 to 20",
+   "source": "Royal Hospital for Women neonatal formulary, Alprostadil v3.0, September 2025",
+   "url": "https://www.seslhd.health.nsw.gov.au/sites/default/files/groups/Royal_Hospital_for_Women/Neonatal/Neomed/Alprostadil_ANMFv3.0_20250925.pdf",
+   "checked": "2026-11-11",
+   "interval": "never",
+   "verdict": "confirmed"
   }
  }
 }
