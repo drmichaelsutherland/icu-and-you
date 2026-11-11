@@ -343,6 +343,26 @@ def main():
                 f"{f}: {o} <style> against {c} </style> — a stray tag, almost "
                 f"certainly carried over from the page this was built from")
 
+    # ---- and so must the structural tags ----------------------------------
+    # November 2026, same lesson in a different tag. Anecdote City 2 was built
+    # by slicing a block out of the page before it; the slice carried one
+    # extra </div> and an opening <footer>, so the sheet closed early and
+    # anything added after the footer — in this case the monogram — rendered
+    # outside the paper, full width of the window. The browser repaired it
+    # silently and the page looked almost right. Arithmetic is cheaper than
+    # noticing.
+    for f in content:
+        s = (HERE / f).read_text(encoding="utf-8")
+        body = s[s.index("<body"):] if "<body" in s else s
+        for tag in ("div", "footer", "header", "section", "main"):
+            o = len(re.findall(r"<%s\b" % tag, body))
+            c = body.count("</%s>" % tag)
+            if o != c:
+                problems.append(
+                    f"{f}: {o} <{tag}> against {c} </{tag}> — the browser will "
+                    f"close it somewhere of its own choosing, and anything "
+                    f"after that point lands outside the element it belongs to")
+
     # ---- a class used in the markup must be styled somewhere in the page --
     # Found October 2026: twelve pages — the whole Multimedia group — used
     # class="btn" for the reply button and never defined .btn, so the button
