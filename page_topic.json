@@ -1806,9 +1806,28 @@
    "badge": "Superquiz",
    "link_label": "Take the quiz",
    "blurb": "Five open-book questions \u2014 the weaning trial that keeps failing and why a normal ejection fraction does not excuse it; reversing a factor Xa inhibitor when the hospital does not stock andexanet; a sodium that corrects itself faster than anyone prescribed; steroids given in an endemic area; and who, in law, speaks for a man who cannot speak for himself. Three or more earns a certificate."
+  },
+  {
+   "file": "anecdote-city-03-a-youth-policy.html",
+   "series": "anecdote",
+   "colour": "indigo striped",
+   "number": "3",
+   "title": "“A Youth Policy”",
+   "topic": "Any time",
+   "slug": "standing",
+   "week": false,
+   "standing": true,
+   "badge": "Anecdote City",
+   "link_label": "Open",
+   "blurb": "A friend in his sixties, decades of experience, plainly the best-qualified candidate, and no appointment. Two months of silence, then an administrator explaining with a smile and not a hint of embarrassment that they were having a youth policy. Discrimination doesn’t discriminate — and one day it may be you."
   }
  ],
  "latest": [
+  {
+   "file": "anecdote-city-03-a-youth-policy.html",
+   "colour": "indigo striped",
+   "label": "Anecdote City · “A Youth Policy”"
+  },
   {
    "file": "superquiz-67-late-middle-age.html",
    "colour": "wine",
@@ -1828,11 +1847,6 @@
    "file": "superpuzzle-55-late-middle-age-fillable.html",
    "colour": "rust",
    "label": "Superpuzzle 55 · Late middle age"
-  },
-  {
-   "file": "aphorism-42-sixty-is-the-new-forty.html",
-   "colour": "plum",
-   "label": "Aphorism 42 · Sixty is the new forty"
   }
  ],
  "topten": [
