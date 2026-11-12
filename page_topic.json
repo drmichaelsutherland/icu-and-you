@@ -1792,9 +1792,28 @@
    "badge": "Anecdote City",
    "link_label": "Open",
    "blurb": "Osaka, after Berlin and Bangkok. Delegates gazing intently at the speaker and intensely at their own navels, a little bow that might mean g\u2019day, and a presentation style described as very Anglo \u2014 which is French for having none. And then the doppelg\u00e4nger of lifelong learning, which is lifelong loafing, and which has more evasive strategies than a cloaked Klingon battlecruiser."
+  },
+  {
+   "file": "superquiz-67-late-middle-age.html",
+   "series": "superquiz",
+   "colour": "wine",
+   "number": "67",
+   "title": "Late middle age",
+   "topic": "Late middle age",
+   "slug": "late-middle-age",
+   "week": true,
+   "pos": 6,
+   "badge": "Superquiz",
+   "link_label": "Take the quiz",
+   "blurb": "Five open-book questions \u2014 the weaning trial that keeps failing and why a normal ejection fraction does not excuse it; reversing a factor Xa inhibitor when the hospital does not stock andexanet; a sodium that corrects itself faster than anyone prescribed; steroids given in an endemic area; and who, in law, speaks for a man who cannot speak for himself. Three or more earns a certificate."
   }
  ],
  "latest": [
+  {
+   "file": "superquiz-67-late-middle-age.html",
+   "colour": "wine",
+   "label": "Superquiz 67 · Late middle age"
+  },
   {
    "file": "anecdote-city-02-the-brain-is-a-person-too.html",
    "colour": "indigo striped",
@@ -1814,11 +1833,6 @@
    "file": "aphorism-42-sixty-is-the-new-forty.html",
    "colour": "plum",
    "label": "Aphorism 42 · Sixty is the new forty"
-  },
-  {
-   "file": "mind-map-38-late-middle-age.html",
-   "colour": "teal",
-   "label": "Mind Map 38 · Late middle age"
   }
  ],
  "topten": [

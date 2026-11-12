@@ -354,7 +354,11 @@ def main():
     for f in content:
         s = (HERE / f).read_text(encoding="utf-8")
         body = s[s.index("<body"):] if "<body" in s else s
-        for tag in ("div", "footer", "header", "section", "main"):
+        # Lists belong here too: Superquiz 66 shipped with a doubled </ol>,
+        # which the browser swallowed and which the next quiz built on that
+        # stationery would have inherited.
+        for tag in ("div", "footer", "header", "section", "main",
+                    "ol", "ul", "li", "table", "tbody", "tr"):
             o = len(re.findall(r"<%s\b" % tag, body))
             c = body.count("</%s>" % tag)
             if o != c:
