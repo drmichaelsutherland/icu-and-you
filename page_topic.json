@@ -1820,9 +1820,28 @@
    "badge": "Anecdote City",
    "link_label": "Open",
    "blurb": "A friend in his sixties, decades of experience, plainly the best-qualified candidate, and no appointment. Two months of silence, then an administrator explaining with a smile and not a hint of embarrassment that they were having a youth policy. Discrimination doesn’t discriminate — and one day it may be you."
+  },
+  {
+   "file": "anecdote-city-04-stuck-in-my-craw.html",
+   "series": "anecdote",
+   "colour": "indigo striped",
+   "number": "4",
+   "title": "Stuck in My Craw",
+   "topic": "Any time",
+   "slug": "standing",
+   "week": false,
+   "standing": true,
+   "badge": "Anecdote City",
+   "link_label": "Open",
+   "blurb": "Something was in there — a peanut, a fish bone, a feather, a cancer, a bit of cat fur. Three weeks of it, then X-rays, then two specialists with every probe and mirror in the building, and nothing. Then a plain-speaking maverick who used no instruments at all, and took five minutes."
   }
  ],
  "latest": [
+  {
+   "file": "anecdote-city-04-stuck-in-my-craw.html",
+   "colour": "indigo striped",
+   "label": "Anecdote City · Stuck in My Craw"
+  },
   {
    "file": "anecdote-city-03-a-youth-policy.html",
    "colour": "indigo striped",
@@ -1842,11 +1861,6 @@
    "file": "mnemonic-60-extubation.html",
    "colour": "olive",
    "label": "Mnemonic 60 · Extubation at fifty-five"
-  },
-  {
-   "file": "superpuzzle-55-late-middle-age-fillable.html",
-   "colour": "rust",
-   "label": "Superpuzzle 55 · Late middle age"
   }
  ],
  "topten": [
@@ -1869,10 +1883,6 @@
  "teaser": {
   "label": "Coming next",
   "lines": [
-   {
-    "date": "Tuesday 10th \u2013 Friday 13th November",
-    "what": "One-on-one chats (by appointment)"
-   },
    {
     "date": "Tuesday 24th November",
     "what": "Late middle age, part two",
