@@ -37,6 +37,26 @@ LINK_CSS = """
   @media print{ .printlink{display:none} }
 """
 
+# The header markup below carries .tophome, .topseries, .toptopic, .mast and
+# .serlink, but the stylesheet it borrows from superpuzzle 47 defines none of
+# them — 47 is itself a printable, so the gap propagated through every
+# generation. Left unstyled, all five header links render as the browser
+# default: blue, underlined, in the body serif, on a cream page. These rules
+# are the ones the rest of the site uses, so a printable now matches it.
+HEADER_CSS = """
+  .tophome,.topseries,.toptopic{display:inline-block;margin:0 16px 14px 0;
+    font:500 12.5px 'Helvetica Neue',Arial,sans-serif;letter-spacing:.02em;
+    color:var(--rust);text-decoration:none}
+  .tophome:hover,.topseries:hover,.toptopic:hover{text-decoration:underline}
+  .eyebrow a{color:inherit;text-decoration:none}
+  .mast{color:inherit;text-decoration:none;border-bottom:1px solid transparent}
+  .mast:hover{border-bottom-color:currentColor}
+  .serlink{color:inherit;text-decoration:none;border-bottom:1px solid transparent}
+  .serlink:hover{border-bottom-color:currentColor}
+  footer a{color:var(--rust)}
+  .pad a{color:var(--rust)}
+"""
+
 
 def read(p):
     return Path(p).read_text(encoding="utf-8")
@@ -243,6 +263,14 @@ def make_printable(fillable_path):
     # already designed for a static grid.
     style = grab(read(HERE / "superpuzzle-47-transplantation.html"),
                  r'<style>(.*?)</style>')
+    # 47 is itself a generated printable, so it already carries whatever was
+    # appended last time. Strip those blocks out before appending them once,
+    # or every regeneration stacks another copy — the live files had four.
+    style = re.sub(r"\n\s*\.printlink\{.*?@media print\{ \.printlink\{display:none\} \}\n",
+                   "\n", style, flags=re.S)
+    style = re.sub(r"\n\s*\.tophome,\.topseries,\.toptopic\{.*?"
+                   r"\.serlink:hover\{border-bottom-color:currentColor\}\n",
+                   "\n", style, flags=re.S)
 
     page = f"""<!DOCTYPE html>
 <html lang="en-AU">
@@ -261,7 +289,7 @@ def make_printable(fillable_path):
 <meta property="og:description" content="{desc}">
 <meta property="og:image" content="https://icuandyou.com/share-card.png">
 <meta name="twitter:card" content="summary_large_image">
-<style>{style}{LINK_CSS}</style>
+<style>{style}{LINK_CSS}{HEADER_CSS}</style>
 </head>
 <body>
 <div class="sheet">

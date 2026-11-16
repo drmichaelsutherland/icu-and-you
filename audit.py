@@ -266,6 +266,54 @@ def main():
                     f"page numbered {own}, so replies will arrive filed "
                     f"against the wrong piece")
 
+    # ---- a cross-reference by number must point into the same block -------
+    # November 2026. Superpuzzle 55 was built from Superpuzzle 54 and kept its
+    # kicker, so a late middle age puzzle told the reader it was the companion
+    # to Mind Map #37 and Aphorism #41 — both early middle age. The reply-
+    # button check above could not see it, because it only reads the mailto
+    # subject. This reads the prose.
+    #
+    # The rule is exact rather than heuristic: when a page names another
+    # SERIES and a NUMBER, look that page up in the manifest and compare the
+    # two topics. Same topic, fine. Different topic, the reference was
+    # inherited. Standing pieces have no topic and are skipped at both ends,
+    # and a number naming no real page is left alone — that is a different
+    # fault and a noisier check.
+    by_series_number = {}
+    topic_of = {}
+    for p in m["pages"]:
+        topic_of[p["file"]] = p.get("topic")
+        if p.get("number"):
+            by_series_number[(p["series"], str(p["number"]))] = p["file"]
+    label_to_key = {v[0].lower(): k for k, v in m["series"].items()}
+    for f in content:
+        here_topic = topic_of.get(f)
+        if here_topic is None and f.endswith(".html"):
+            # A printable companion is not in the manifest, so it has no topic
+            # of its own — take its fillable's. Without this the check reads
+            # the fillable and skips the printable sitting beside it, which is
+            # exactly how Superpuzzle 55's footer was half-caught.
+            here_topic = topic_of.get(f[:-5] + "-fillable.html")
+        if not here_topic or here_topic == "Any time":
+            continue
+        s = (HERE / f).read_text(encoding="utf-8")
+        for mt in re.finditer(r"([A-Z][A-Za-z' ]{2,22}?)\s*#(\d{1,3})\b", s):
+            key = label_to_key.get(mt.group(1).strip().lower())
+            if not key:
+                continue
+            cited = by_series_number.get((key, mt.group(2)))
+            if not cited or cited == f:
+                continue
+            there_topic = topic_of.get(cited)
+            if not there_topic or there_topic == "Any time":
+                continue
+            if there_topic != here_topic:
+                problems.append(
+                    f"{f}: cites {mt.group(1).strip()} #{mt.group(2)}, which is "
+                    f'"{there_topic}" — but this page is "{here_topic}". '
+                    f"Usually a kicker or footer carried over from the "
+                    f"previous piece in the series")
+
     # ---- every local file a page asks for must actually be there ----------
     # November 2026. Your Presentations 4 went up without its two Telestroke
     # PNGs and showed two empty boxes. That was a packaging fault rather than
