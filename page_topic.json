@@ -1848,9 +1848,28 @@
    "badge": "Anecdote City",
    "link_label": "Open",
    "blurb": "A reluctant museum visit, a Remington built not to click, and an audio reconstruction of a Chiefs of Staff meeting from July 1944 — in which the flying bombs were falling, Churchill wanted a hundred German towns named and destroyed in reprisal, and the people who lived in them did not come up once."
+  },
+  {
+   "file": "bare-bones-05-late-middle-age.html",
+   "series": "barebones",
+   "colour": "bone",
+   "number": "5",
+   "title": "Late middle age",
+   "topic": "Late middle age",
+   "slug": "late-middle-age",
+   "week": true,
+   "pos": 1,
+   "badge": "Bare Bones",
+   "link_label": "Open",
+   "blurb": "Ten points, five minutes, nothing decorative, and this one is back to the length the series started at. The illness that will kill them introducing itself; the clean past history that means nobody looked; the drinking, the breathing at night and the working years; suicide that is not behind them; and the ceiling of care nobody has written because fifty-five felt too early."
   }
  ],
  "latest": [
+  {
+   "file": "bare-bones-05-late-middle-age.html",
+   "colour": "bone",
+   "label": "Bare Bones 5 · Late middle age"
+  },
   {
    "file": "anecdote-city-05-silent-sounds.html",
    "colour": "indigo striped",
@@ -1870,11 +1889,6 @@
    "file": "superquiz-67-late-middle-age.html",
    "colour": "wine",
    "label": "Superquiz 67 · Late middle age"
-  },
-  {
-   "file": "anecdote-city-02-the-brain-is-a-person-too.html",
-   "colour": "indigo striped",
-   "label": "Anecdote City · The Brain Is a Person Too"
   }
  ],
  "topten": [
