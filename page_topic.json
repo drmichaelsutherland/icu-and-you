@@ -1834,9 +1834,28 @@
    "badge": "Anecdote City",
    "link_label": "Open",
    "blurb": "Something was in there — a peanut, a fish bone, a feather, a cancer, a bit of cat fur. Three weeks of it, then X-rays, then two specialists with every probe and mirror in the building, and nothing. Then a plain-speaking maverick who used no instruments at all, and took five minutes."
+  },
+  {
+   "file": "anecdote-city-05-silent-sounds.html",
+   "series": "anecdote",
+   "colour": "indigo striped",
+   "number": "5",
+   "title": "The Silent Sounds on the Typewriter",
+   "topic": "Any time",
+   "slug": "standing",
+   "week": false,
+   "standing": true,
+   "badge": "Anecdote City",
+   "link_label": "Open",
+   "blurb": "A reluctant museum visit, a Remington built not to click, and an audio reconstruction of a Chiefs of Staff meeting from July 1944 — in which the flying bombs were falling, Churchill wanted a hundred German towns named and destroyed in reprisal, and the people who lived in them did not come up once."
   }
  ],
  "latest": [
+  {
+   "file": "anecdote-city-05-silent-sounds.html",
+   "colour": "indigo striped",
+   "label": "Anecdote City · The Silent Sounds on the Typewriter"
+  },
   {
    "file": "anecdote-city-04-stuck-in-my-craw.html",
    "colour": "indigo striped",
@@ -1856,11 +1875,6 @@
    "file": "anecdote-city-02-the-brain-is-a-person-too.html",
    "colour": "indigo striped",
    "label": "Anecdote City · The Brain Is a Person Too"
-  },
-  {
-   "file": "mnemonic-60-extubation.html",
-   "colour": "olive",
-   "label": "Mnemonic 60 · Extubation at fifty-five"
   }
  ],
  "topten": [
