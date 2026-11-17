@@ -22,6 +22,7 @@ Usage:
 """
 
 import collections
+import datetime
 import json
 import re
 import sys
@@ -642,7 +643,21 @@ def main():
         if touched:
             print(f"{path.name} rebuilt — regions changed: {', '.join(touched)}")
 
+    # A build stamp, so two copies of index.html can be told apart at a
+    # glance. November 2026: a landing page went up that was missing a page
+    # built after it, because index.html had been delivered in two different
+    # archives and the older one was loaded last. Nothing in the file said
+    # which was which. This does, and audit.py reads it back.
+    stamp = "<!-- BUILD-STAMP %s | pages:%d -->" % (
+        datetime.datetime.now(datetime.timezone.utc).strftime("%Y-%m-%d %H:%M UTC"),
+        len(m["pages"]))
+    if re.search(r"<!-- BUILD-STAMP [^>]*-->", src):
+        src = re.sub(r"<!-- BUILD-STAMP [^>]*-->", stamp, src, count=1)
+    else:
+        src = src.replace("</head>", "%s\n</head>" % stamp, 1)
+
     INDEX.write_text(src, encoding="utf-8")
+    print("build stamp: %s" % stamp.strip("<!- >"))
     n_week = sum(1 for p in m["pages"] if p.get("week"))
     n_prev = sum(1 for p in m["pages"] if not p.get("week"))
     print(f"index.html rebuilt — this week: {n_week}, previous: {n_prev}, "

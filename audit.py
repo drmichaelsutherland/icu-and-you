@@ -751,6 +751,26 @@ def main():
                 f"is {BARE_BONES_MAX}. Cut the sentence that explains why each point "
                 f"matters; going without it is the whole point of the series")
 
+    # ---- index.html must be the one built from this manifest -------------
+    # November 2026. A landing page went live missing a page that had been
+    # built after it: index.html had been delivered in two different archives
+    # on the same day, and the older one was loaded last. The page itself was
+    # fine and reachable by its own address; it simply had no card. Nothing
+    # in the file said which copy was which, so build-index.py now writes a
+    # BUILD-STAMP carrying the time and the page count, and this reads it
+    # back. A stamp that disagrees with the manifest means the index in this
+    # working copy was built from a different one.
+    idx = (HERE / "index.html").read_text(encoding="utf-8")
+    stamp = re.search(r"<!-- BUILD-STAMP ([^|]+)\| pages:(\d+) -->", idx)
+    if not stamp:
+        notes.append("index.html carries no build stamp — run build-index.py "
+                     "once to add one, so two copies can be told apart")
+    elif int(stamp.group(2)) != len(m["pages"]):
+        problems.append(
+            f"index.html was built from a manifest of {stamp.group(2)} pages, but "
+            f"page_topic.json now has {len(m['pages'])}. Run build-index.py. "
+            f"(stamp: {stamp.group(1).strip()})")
+
     # ---- the disclaimer's "More" link, deferred rather than fixed --------
     # November 2026. The link at the end of the "Views my own … No identifiable
     # patients" line is left unstyled on most pages, so it renders as the
