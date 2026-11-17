@@ -1862,9 +1862,26 @@
    "badge": "Bare Bones",
    "link_label": "Open",
    "blurb": "Ten points, five minutes, nothing decorative, and this one is back to the length the series started at. The illness that will kill them introducing itself; the clean past history that means nobody looked; the drinking, the breathing at night and the working years; suicide that is not behind them; and the ceiling of care nobody has written because fifty-five felt too early."
+  },
+  {
+   "file": "book-club-04-sabr.html",
+   "series": "bookclub",
+   "colour": "terracotta",
+   "number": "4",
+   "title": "No tampering required",
+   "topic": "Any time",
+   "slug": "standing",
+   "week": false,
+   "standing": true,
+   "blurb": "Everybody went straight to chapter 17, and chapter 17 clarifies nothing. Chapter 6 is about a twenty-two-year-old with a swollen knee that four doctors in two countries could not explain, two inflammatory markers that refused to settle, and a drug that handed him his life back in a backyard in twenty-four hours. A window into how this disease hides, why the scans were no help, and what the modern treatment ladder can do."
   }
  ],
  "latest": [
+  {
+   "file": "book-club-04-sabr.html",
+   "colour": "terracotta",
+   "label": "ICU Book Club · No tampering required"
+  },
   {
    "file": "bare-bones-05-late-middle-age.html",
    "colour": "bone",
@@ -1884,11 +1901,6 @@
    "file": "anecdote-city-03-a-youth-policy.html",
    "colour": "indigo striped",
    "label": "Anecdote City · “A Youth Policy”"
-  },
-  {
-   "file": "superquiz-67-late-middle-age.html",
-   "colour": "wine",
-   "label": "Superquiz 67 · Late middle age"
   }
  ],
  "topten": [

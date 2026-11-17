@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="en-AU">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ICU AND YOU &#183; ICU Book Club &mdash; No tampering required</title>
+<meta name="description" content="ICU Book Club No. 4: Usman Khawaja&rsquo;s Sabr. Everyone read the sandpaper chapter. The one worth reading is about rheumatoid arthritis in a 22-year-old.">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="alternate icon" href="/favicon.ico" sizes="any">
+<link rel="apple-touch-icon" href="/icon-180.png">
+<meta name="theme-color" content="#1B2A33">
+<meta property="og:site_name" content="ICU AND YOU">
+<meta property="og:type" content="website">
+<meta property="og:title" content="ICU AND YOU &#183; ICU Book Club &mdash; No tampering required">
+<meta property="og:description" content="ICU Book Club No. 4: Usman Khawaja&rsquo;s Sabr. Everyone read the sandpaper chapter. The one worth reading is about rheumatoid arthritis in a 22-year-old.">
+<meta property="og:image" content="https://icuandyou.com/share-card.png">
+<meta name="twitter:card" content="summary_large_image">
+<style>
+  :root{
+    --paper:#FCF9F7; --ink:#241C19; --muted:#6E6058; --rule:#E3D6D0;
+    --sepia:#A65E4E; --sepiatint:#F7EDEA;
+    --rust:#A8442A; --rusttint:#F9EDE7;
+    --sky:#2E6E8E; --skytint:#E7F1F6;
+  }
+  *{box-sizing:border-box}
+  body{margin:0;background:#EDE4E0;color:var(--ink);
+    font:400 17px/1.65 'Iowan Old Style','Palatino Linotype',Palatino,Georgia,serif;
+    -webkit-text-size-adjust:100%;}
+  .sheet{max-width:780px;margin:0 auto;background:var(--paper);
+    box-shadow:0 1px 40px rgba(36,31,25,.10);}
+
+  header.top{padding:42px 40px 28px;border-bottom:1px solid var(--rule)}
+  .toptopic,.topseries{display:inline-block;margin:0 0 16px 9px;padding:7px 16px;border-radius:20px;
+    border:1px solid currentColor;opacity:.62;text-decoration:none;color:inherit;
+    font:600 11.5px 'Helvetica Neue',Arial,sans-serif;letter-spacing:.09em;
+    text-transform:uppercase;transition:opacity .12s ease}
+  .tophome{display:inline-block;margin:0 0 16px;padding:7px 16px;border-radius:20px;
+    border:1px solid currentColor;opacity:.62;text-decoration:none;color:inherit;
+    font:600 11.5px 'Helvetica Neue',Arial,sans-serif;letter-spacing:.09em;
+    text-transform:uppercase;transition:opacity .12s ease}
+  .toptopic:hover,.topseries:hover,.tophome:hover{opacity:1}
+  .eyebrow{font:500 11.5px/1 'Helvetica Neue',Arial,sans-serif;letter-spacing:.24em;
+    text-transform:uppercase;color:var(--sepia);margin:0 0 14px}
+  .eyebrow a.serlink,.eyebrow a.mast{color:inherit;text-decoration:none;
+    border-bottom:1px solid transparent}
+  .eyebrow a.serlink:hover,.eyebrow a.mast:hover{border-bottom-color:currentColor}
+  h1{font-size:31px;line-height:1.2;margin:0 0 10px;font-weight:400;letter-spacing:-.012em}
+  .kicker{color:var(--muted);margin:0;font-size:16.5px;font-style:italic}
+
+  .source{margin:0;padding:26px 40px;background:var(--sepiatint);border-bottom:1px solid var(--rule)}
+  .cite{margin:0 0 16px;font-size:16px;line-height:1.6}
+  .cite b{font-weight:600}
+  .meta{display:flex;flex-wrap:wrap;gap:5px 22px;margin:0 0 16px;
+    font:400 13.5px 'Helvetica Neue',Arial,sans-serif;color:var(--muted)}
+  .meta b{color:var(--ink);font-weight:600}
+  a.read{display:inline-block;padding:14px 28px;border-radius:30px;text-decoration:none;
+    background:var(--sepia);color:#FAF6F0;
+    font:600 15px 'Helvetica Neue',Arial,sans-serif;letter-spacing:.03em}
+  a.read:hover{background:#7E4234}
+  .srcnote{font:400 13.5px 'Helvetica Neue',Arial,sans-serif;color:var(--muted);margin:14px 0 0}
+
+  .pad{padding:32px 40px}
+  p{margin:0 0 17px}
+  h2.sub{font:600 12px 'Helvetica Neue',Arial,sans-serif;letter-spacing:.2em;
+    text-transform:uppercase;color:var(--muted);margin:30px 0 16px;
+    padding-bottom:8px;border-bottom:1px solid var(--rule)}
+  b.term{font-weight:600;color:var(--sepia)}
+
+  .agree{display:flex;gap:13px;flex-wrap:wrap;margin:0 0 22px}
+  .ag{flex:1 1 150px;background:#fff;border:1px solid var(--rule);border-radius:9px;
+    padding:16px 18px;text-align:center}
+  .ag .big{font-size:30px;line-height:1.1;color:var(--sepia);margin:0 0 4px}
+  .ag .lab2{font:400 13.5px 'Helvetica Neue',Arial,sans-serif;color:var(--muted);
+    line-height:1.45;margin:0}
+
+  /* the eighteen parts, as a shelf you can run your eye along */
+  .shelf{margin:0 0 22px;padding:20px 24px;background:#F6F2EC;border:1px solid var(--rule);
+    border-radius:9px;font:400 15px/1.75 'Helvetica Neue',Arial,sans-serif;color:#4A3A34}
+  .shelf .lab{display:block;font:600 11px 'Helvetica Neue',Arial,sans-serif;
+    letter-spacing:.18em;text-transform:uppercase;color:var(--sepia);margin:0 0 11px}
+  .shelf i{font-style:normal;color:var(--muted)}
+
+  .gap{margin:0 0 20px;padding:20px 24px;background:#F3EEE3;
+    border-left:4px solid var(--sepia);border-radius:0 8px 8px 0}
+  .gap .lab{display:block;font:600 11px 'Helvetica Neue',Arial,sans-serif;
+    letter-spacing:.18em;text-transform:uppercase;color:var(--sepia);margin:0 0 9px}
+  .gap p:last-child{margin:0}
+
+  .caution{margin:0 0 20px;padding:20px 24px;background:var(--rusttint);
+    border-left:4px solid var(--rust);border-radius:0 8px 8px 0}
+  .caution .lab{display:block;font:600 11px 'Helvetica Neue',Arial,sans-serif;
+    letter-spacing:.18em;text-transform:uppercase;color:var(--rust);margin:0 0 9px}
+  .caution p:last-child{margin:0}
+
+  .challenge{margin:0;padding:28px 32px;background:var(--rusttint);border-left:5px solid var(--rust)}
+  .challenge h2{font:600 12px 'Helvetica Neue',Arial,sans-serif;letter-spacing:.2em;
+    text-transform:uppercase;color:var(--rust);margin:0 0 13px}
+  .ask{font-size:19.5px;line-height:1.5;margin:0 0 8px}
+  .lead{font-size:15px;color:var(--muted);margin:0 0 17px;line-height:1.55}
+  .btn{display:inline-block;margin:6px 0 12px;padding:15px 30px;background:var(--rust);
+    color:#FDF8F5;text-decoration:none;border-radius:30px;
+    font:600 15px 'Helvetica Neue',Arial,sans-serif;letter-spacing:.03em}
+  .btn:hover{background:#8A3620}
+  .fallback{font:400 13.5px 'Helvetica Neue',Arial,sans-serif;color:var(--muted);margin:0}
+  .fallback a{color:var(--rust)}
+
+  .preamble{margin:0 0 26px;padding:22px 26px;background:#F4EFEA;
+    border-left:4px solid var(--sepia);border-radius:0 8px 8px 0}
+  .preamble .lab{display:block;font:600 11px 'Helvetica Neue',Arial,sans-serif;
+    letter-spacing:.18em;text-transform:uppercase;color:var(--sepia);margin:0 0 10px}
+  .preamble p:last-child{margin:0}
+  .pull{margin:26px 0;padding:0 0 0 22px;border-left:3px solid var(--sepia);
+    font-size:20px;line-height:1.45;font-style:italic;color:#4A3A34}
+
+  .subline{margin:0 0 14px;padding:0 0 13px;border-bottom:1px solid rgba(0,0,0,.09);
+    font:400 14.5px/1.55 'Iowan Old Style','Palatino Linotype',Palatino,Georgia,serif;
+    max-width:56ch;margin-left:auto;margin-right:auto}
+  .subline a{font-weight:500;border-bottom:1px solid currentColor;
+    text-decoration:none;color:inherit}
+  .firstpub{display:block;margin:0 0 10px;padding-bottom:9px;
+    border-bottom:1px solid currentColor;border-color:rgba(0,0,0,.09);
+    font:400 12px 'Helvetica Neue',Arial,sans-serif;letter-spacing:.06em;opacity:.72}
+
+  footer{padding:24px 40px 42px;border-top:1px solid var(--rule);
+    font:400 13px 'Helvetica Neue',Arial,sans-serif;color:var(--muted);text-align:center;line-height:1.7}
+  .home{display:inline-block;margin:0 0 14px;padding:8px 18px;border-radius:20px;
+    border:1px solid var(--rule);background:#F2EEE6;color:var(--sepia);text-decoration:none;
+    font:600 12.5px 'Helvetica Neue',Arial,sans-serif;letter-spacing:.05em}
+  .home:hover{background:var(--sepia);border-color:var(--sepia);color:#FAF6F0}
+  .mine{display:inline-block;margin:9px 0 0;opacity:.78;font-size:.94em}
+
+  @media (max-width:620px){
+    header.top,.source,.pad,footer{padding-left:20px;padding-right:20px}
+    .challenge{padding:22px 20px}
+    h1{font-size:25px} body{font-size:16.5px} .ask{font-size:18px}
+  }
+  @media print{ body{background:#fff} .sheet{box-shadow:none;max-width:none} }
+
+/* ---- the cover photograph and the sign-off, both new to this series ---- */
+  .fig{margin:26px 0 30px;text-align:center}
+  .fig img{max-width:300px;width:60%;height:auto;border-radius:3px;
+    box-shadow:0 2px 18px rgba(27,42,51,.22)}
+  .cap{margin:11px 0 0;font:italic 400 13.5px/1.55 'Helvetica Neue',Arial,sans-serif;
+    color:var(--muted)}
+  .monogram{margin:34px 0 4px;text-align:right;padding-right:2px;
+    font:italic 400 19px/1 Georgia,'Iowan Old Style',serif;letter-spacing:.14em;
+    color:var(--muted);opacity:.45}
+  @media (max-width:640px){ .fig img{max-width:220px;width:70%} }
+</style>
+</head>
+<body>
+<div class="sheet">
+
+  <header class="top">
+    <a class="tophome" href="./">&larr;&nbsp; Home</a>
+    <a class="topseries" href="./?s=bookclub">All book club</a>
+    <p class="eyebrow"><a class="mast" href="./">ICU and You</a> &nbsp;·&nbsp;
+      <a class="serlink" href="./?s=bookclub">ICU Book Club</a> &nbsp;·&nbsp; Number 4</p>
+    <h1>No tampering required</h1>
+    <p class="kicker">Usman Khawaja, 2026 &mdash; everybody went straight to chapter 17. The chapter that matters is number 6, and almost nobody has mentioned it</p>
+  </header>
+
+  <div class="source">
+    <p class="cite">Usman Khawaja. <b>Sabr: Finding my way in cricket and life.</b> Penguin,
+      10&nbsp;November 2026. 448 pages, hardback, and also an ebook and an audiobook read by the
+      author. The chapter this review is about is number 6, and it begins on page 45.</p>
+    <p class="meta"><span><b>Published</b> 10 Nov 2026</span><span><b>Pages</b> 448</span>
+      <span><b>Written by</b> the author, not a ghost</span><span><b>Chapter to read</b> 6</span></p>
+    <a class="read" href="https://www.penguin.com.au/books/sabr-9781761344268">At the publisher</a>
+    <p class="srcnote">Not an affiliate link, and nobody has asked me to write this.</p>
+  </div>
+
+  <div class="pad">
+    <div class="preamble">
+      <span class="lab">About this series</span>
+      <p>Books that have made a difference to how we teach, train or practise in intensive care. Not
+        all of them are medical books, and this one is not a medical book at all &mdash; it is a
+        cricketer&rsquo;s autobiography, and it contains one of the best accounts of a difficult
+        diagnosis I have read anywhere.</p>
+    </div>
+
+    <p class="lead">Everyone went straight to chapter 17. I did too.</p>
+
+    <p>Then I kept reading, and found the chapter nobody is talking about. It is chapter 6, it is
+      called &ldquo;Rheumatoid arthritis&rdquo;, and I think it is the most valuable thing in the book.</p>
+
+    <div class="fig">
+      <img src="sabr-cover.jpg" alt="The hardback cover of Sabr by Usman Khawaja, gold lettering on a dark ground." width="647" height="1000">
+      <p class="cap">My own copy, and my own photograph of it.</p>
+    </div>
+
+    <p><em>Sabr</em> is Usman Khawaja&rsquo;s autobiography, and he wrote it himself. No ghost. You
+      can tell, and that is, in some ways, a compliment. The sentences are his, the jokes are his,
+      and the occasional lurch is his too. A professional would have planed all three of them
+      smooth. I am glad nobody did.</p>
+
+    <p>For readers who do not follow the game: Khawaja is one of the finest batsmen Australia has
+      produced in the past twenty years. He retired from Test cricket in January, at the Sydney
+      Cricket Ground, which is the same ground where he made his debut fifteen years earlier. He was
+      born in Islamabad and came to New South Wales as a four-year-old, and when he walked out at
+      the SCG in 2011 he became the first Muslim, and the first Pakistan-born player, to play Test
+      cricket for Australia.</p>
+
+    <p>I love cricket. I have never been able to explain why to anyone who doesn&rsquo;t, and the
+      older I get the less I attempt it. The closest I can manage is that the game mirrors life more
+      faithfully than any other I know. It is long. It is mostly waiting. It offers a great many
+      ways to fail and only a few to succeed. You can do everything right and still receive a ball
+      that cannot be played. You can do everything wrong and survive the over. It rewards patience
+      and punishes the loss of it, and it is played by eleven people who are, when it finally
+      matters, entirely alone.</p>
+
+    <p><em>Sabr</em>, as it happens, is Arabic for patience. The enduring kind. The title is doing
+      more work than the cover lets on.</p>
+
+    <h2 class="sub">The chapter everyone read</h2>
+
+    <p>Chapter 17 is &ldquo;Sandpaper&rdquo;, and it is why the book has saturated every medium we have, exactly as the
+      events themselves did eight years ago. It is interesting. It is not, in any way I could find,
+      a clarifying document.</p>
+
+    <p>The author skates past <em>I knew, and did not say so until now</em> to <em>we all knew</em>,
+      and keeps going. Ambiguity rules. Hints and allegations abound, and most of them are hints.</p>
+
+    <p>Again for those who have never watched a session of it. In March 2018, in Cape Town, an
+      Australian player named Cameron Bancroft was filmed rubbing one side of the ball with a piece
+      of sandpaper he had carried onto the field in his pocket. Scuff one side of a cricket ball and
+      it moves differently through the air, which is worth a great deal to the bowlers. The captain
+      admitted he had known about the plan beforehand. Cricket Australia investigated and had its
+      sanctions ratified four days later: twelve months out of the game for the captain and the
+      vice-captain, nine for Bancroft.</p>
+
+    <p>Four days. For a piece of sandpaper. Even people with no sympathy at all for what was done
+      thought the punishment was out of proportion to it, and said so loudly &mdash; among them
+      several former captains and the players&rsquo; own association. The investigation was reopened
+      three years afterwards, and the question it never satisfactorily answered is the one still
+      being asked today: who else knew? That is the question this book has walked straight back
+      into, which is why it is in firestorm mode as I write.</p>
+
+    <p>So why can&rsquo;t we get enough of it? Because it is Shakespearian, and I mean that as a
+      description rather than as praise for the prose. Look at what is tangled together in
+      there.</p>
+
+    <p>Truth, half-truth, omission and lie, and their antecedents and their consequences. Crimes and
+      misdemeanours, and knowing which is which. Doing wrong, and getting caught doing wrong &mdash;
+      not the same offence, though we go on confusing them. Self-preservation against wider
+      solidarity. Jealousy and rivalry. Mateship and loyalty. Guilt and innocence and every shade in
+      between. Agreements and understandings, then secondary agreements and misunderstandings.
+      Cheating. Knowing. Memory and its frailties. Cultural perception and cultural misperception.
+      Decisions taken on emotion and defended with reason afterwards. Crisis management, and its
+      opposite. A slow train wreck running over years. Shutting down, and coming out.</p>
+
+    <div class="pull">Put that on a stage and you have five acts. Put it in Cape Town and you have
+      eight years of talkback.</div>
+
+    <p>This is the thing I keep coming back to about cricket: the game mirrors life, and that saga
+      mirrors it again and again, which is why nobody can leave it alone.</p>
+
+    <h2 class="sub">The chapter nobody read</h2>
+
+    <p>Now. Chapter 6.</p>
+
+    <p>He is twenty-two or so. This is the end of the 2000s, a year or two before any of us had
+      heard of him. He has just made his maiden first-class hundred, the season is over, and it is
+      raining. He loves running in the rain, so he puts his boots on and goes out for the biggest
+      run of his life, fifteen kilometres, and comes home feeling immortal. Two days later he flies
+      to America, sits for hours with his knee jammed up against the seat in front of him, and gets
+      off the plane with a knee like a small melon.</p>
+
+    <p>Then four doctors in two countries fail to work out what is wrong with him.</p>
+
+    <p>The first prescribes a muscle relaxant so strong he sleeps eighteen hours a day. A sports
+      clinic scans the knee, finds nothing, drains a startling volume of fluid, and sends him off
+      cured &mdash; until the following evening, when the fluid comes back out of nowhere. Home in
+      Sydney, the state physio has no idea. One of the country&rsquo;s leading sports doctors has no
+      idea. An orthopaedic surgeon looks at the scans, scans again, operates, looks inside with a
+      camera, and tells him afterwards that the knee is structurally perfect and entirely intact.</p>
+
+    <p>Which it was. That is the whole point, and it is why everybody missed what turned out to be
+      the definitive diagnosis: rheumatoid arthritis.</p>
+
+    <p><b>What the story shows us, first, is how convincingly this disease can arrive wearing
+      somebody else&rsquo;s clothes.</b> Every element of that history pointed at a mechanical
+      injury: a big run, a long flight, a swollen knee, a young athlete. Rheumatoid arthritis most
+      often begins between thirty-five and sixty-four, and it is about one and a half times more
+      common in women. He was twenty-two and male. The clinicians who reached for an injury were not
+      being stupid. They were playing the percentages, and the percentages were wrong.</p>
+
+    <p><b>Second, it shows us why the pictures were no help.</b> Early rheumatoid arthritis is a
+      disease of the synovium, the lining of the joint. It is inflammation, not architecture. A
+      structural scan asks a structural question and gets a reassuring structural answer, and
+      reassurance of that kind is the most expensive thing in medicine. Four people looked at the
+      building. Nobody was looking at the weather inside it.</p>
+
+    <p><b>Third &mdash; and this is the sentence I would frame &mdash;</b> the answer had been
+      sitting in his blood the whole time. Two weeks into a hospital admission nobody could explain,
+      it was the orthopaedic surgeon who said it: your CRP and ESR are off the charts consistently,
+      and they should have settled by now. Two inflammatory markers, refusing to behave. That
+      observation turns the entire chapter, and it gets about one line.</p>
+
+    <p>The rheumatologist, in Ryde, took roughly ninety seconds. Needle into the joint, discoloured
+      fluid filling one vial and then a second, cortisone in behind it, and a name for the enemy at
+      last. <em>You have rheumatoid arthritis.</em> He is twenty-two and he has just been told he has
+      what old people have. His father does not believe it either, and takes him for a second
+      opinion, which is a reasonable thing for a frightened parent to do and which confirms the
+      first.</p>
+
+    <p>Knowing your enemy is not the same as beating it. But it is the precondition.</p>
+
+    <h2 class="sub">The drugs, and what they can do</h2>
+
+    <p>What follows is the clearest account of the modern treatment ladder I have read in a book
+      written for the general public, and he climbs every rung of it.</p>
+
+    <p>Intra-articular cortisone first, which works, and buys time rather than remission. Then
+      prednisone daily. Then methotrexate, which his doctor introduces with the warning that it is
+      used mostly in chemotherapy &mdash; true of the drug, and worth saying plainly that the
+      rheumatology dose is a small fraction of the oncology one, taken once a week rather than
+      daily, with folic acid alongside it. The distinction matters enormously to patients, who hear
+      &ldquo;chemotherapy&rdquo; and stop listening.</p>
+
+    <p>And none of it was enough. His knees settled. His elbow &mdash; his throwing arm, his
+      dominant arm &mdash; still &ldquo;felt like daggers&rdquo; when he tried to straighten it.</p>
+
+    <p>Which brings him to the biologics, and to the part of this chapter that will interest anyone
+      who has ever argued with a formulary.</p>
+
+    <p>Etanercept and adalimumab both block tumour necrosis factor, a cytokine that sits near the
+      centre of the inflammatory cascade in this disease. He reports being told he could not have
+      one until he had taken the conventional drugs for longer, demonstrated in black and white that
+      they had failed, and been screened for hepatitis B &mdash; at which point the government might
+      subsidise it. Until then the price was four thousand dollars a box, a box a month, against a
+      playing contract of fifty thousand a year. The arithmetic is brutal and he does it out loud.</p>
+
+    <div class="caution">
+      <span class="lab">Two notes the book does not make</span>
+      <p>The screening before a TNF inhibitor is wider than hepatitis B. Tuberculosis above all,
+        with a chest X-ray and either a skin test or an interferon assay, because these drugs can
+        wake a latent infection up.</p>
+      <p>And the usual adult dose, fifty milligrams weekly under the skin, is expected to show
+        something within about four weeks, with a formal look at twelve.</p>
+    </div>
+
+    <p>Which makes what happened next remarkable. He injected on a Tuesday. The next morning the
+      pain was a tenth of what it had been for four months. Twenty-four hours after the injection he
+      was swinging a golf club in the backyard with no pain at all, and then trotting twenty metres
+      up the lawn to prove it to his father, who stood there and said <em>Alhamdulillah</em> with a
+      tear running down his cheek.</p>
+
+    <p>I want to be careful here, because I would rather be accurate than dramatic. A response inside
+      twenty-four hours is at the very fastest end of what these drugs do, he had other
+      anti-inflammatories already on board, and a single case can never separate the drug from
+      everything else that is happening in a body. But I do not think the timeline is the point of
+      that passage. The point is a young man in a backyard discovering that his life has been handed
+      back to him, and his father watching it happen.</p>
+
+    <p>He has taken it for fifteen years since, now spread to about one injection a fortnight
+      &mdash; a stretching of the interval that is a recognised thing to do in sustained remission,
+      and a thing to do with your rheumatologist rather than on your own initiative.</p>
+
+    <h2 class="sub">The part that is not about drugs at all</h2>
+
+    <p>Two things in this chapter stayed with me longer than the pharmacology.</p>
+
+    <p>The first is that David Gilbert (&ldquo;Lizard&rdquo;), the chief executive of Cricket NSW and a Test
+      bowler himself in his day, heard what was happening, walked up to him, and said:
+      <em>Don&rsquo;t worry, Uz. We&rsquo;ve got you. We&rsquo;ll pay for this drug.</em> No
+      timeline, no conditions. Khawaja writes that the gesture still lies deep in his heart, and
+      that when he finally told Gilbert what it had meant, Gilbert had no idea. That is worth
+      sitting with for a moment. The things that change people are almost never the things we think
+      we are doing.</p>
+
+    <p>The second is that he told nobody. Not his team-mates, not the press, not for the better part
+      of twenty years &mdash; and the reason is one that every reader of this site will recognise
+      from their own ward. He did not want people making excuses for him. And he did not want it
+      used against him if he got injured. He writes that as far as everyone was concerned he was
+      perfectly fine, and that with the drug he genuinely was, so that was that.</p>
+
+    <div class="pull">How many of the people you worked with this week are running the same
+      calculation?</div>
+
+    <h2 class="sub">And so</h2>
+
+    <p>Four months bedridden cost him every bit of muscle in his legs &mdash; he says he wishes he
+      had photographed them, because they were twigs &mdash; and bought him a long run of
+      soft-tissue injuries as the price of coming back. He writes that he thinks the whole episode
+      was his <em>sabr</em> training, arriving early, for what was coming later.</p>
+
+    <p>Which leaves the question this chapter actually poses, and it is a bigger one than cricket.</p>
+
+    <p>We are forever telling these stories as triumphs achieved <em>in spite of</em> the obstacle. I
+      am no longer sure that preposition is right. How often is the elite level in sport, or in
+      medicine, or in anything else, reached not in spite of the thing that went wrong but in some
+      real sense <em>because</em> of it? Because of what four months flat on your back teaches you
+      about patience that no coach ever could?</p>
+
+    <p>That is the story in this book. It has had almost none of the attention.</p>
+
+    <p>And here is the part I like best. No tampering is required. Nothing in chapter 6 needs
+      managing, or lawyering, or a careful re-reading to work out who knew what and when. It is a
+      young man, a disease that hid in plain sight, a doctor who read two numbers correctly, a drug
+      that worked, and a father in a backyard. It is a truth to be embraced and a story to be
+      celebrated, fulsomely.</p>
+
+    <p>Without ambiguity.</p>
+
+    <p class="monogram">mjs</p>
+
+    <div class="gap">
+      <span class="lab">Further reading</span>
+      <p>On the disease and its treatment, both written for patients rather than clinicians, and
+        both free: the Australian Institute of Health and Welfare&rsquo;s page on
+        <a href="https://www.aihw.gov.au/reports/chronic-musculoskeletal-conditions/musculoskeletal-conditions/contents/arthritis/rheumatoid-arthritis">rheumatoid
+        arthritis</a>, for how common it is and who it happens to; and
+        <a href="https://arthritisaustralia.com.au/managing-arthritis/medications/">Arthritis
+        Australia&rsquo;s medicine information sheets</a>, which cover methotrexate and etanercept
+        in plain language, including the screening required before a biologic is started.</p>
+    </div>
+
+    <div class="challenge">
+      <h2>Challenge for you</h2>
+      <p class="ask">Tell me about a diagnosis that hid in plain sight.</p>
+      <p class="lead">What turned this story was two numbers that refused to settle, and the person
+        who noticed was a surgeon rather than a physician. So: the one that took four opinions. The
+        one sitting in a result nobody went back and re-read. Yours, a patient&rsquo;s, or one you
+        made late &mdash; or one you made early, when everybody else had already moved on. What was
+        the thing that finally turned it?</p>
+      <p><a class="btn" href="mailto:icuandyou@icloud.com?subject=ICU%20Book%20Club%204%20-%20a%20diagnosis%20that%20hid%20in%20plain%20sight&body=The%20diagnosis%3A%0D%0A%0D%0A%0D%0AHow%20long%20it%20took%2C%20and%20how%20many%20opinions%3A%0D%0A%0D%0A%0D%0AWhat%20finally%20turned%20it%3A%0D%0A%0D%0A---%0D%0A%0D%0AName%20%28and%20how%20you%20would%20like%20to%20be%20credited%29%3A%0D%0A%0D%0A---%0D%0A%0D%0AThinking%20about%20this%20ICU%20AND%20YOU%20post%20overall%20%E2%80%94%20was%20it%20useful%20to%20you%2C%20or%20would%20it%20be%20useful%20to%20others%3F%0D%0A">Send me one</a></p>
+      <p class="fallback" style="margin-bottom:9px">How you are credited is entirely your call &mdash; by name, by initials, or not at all &mdash; whether you write the piece or I do, and whether I quote you or simply say who sent something in; nothing of yours goes up with your name on it unless you have said yes.</p>
+      <p class="fallback">The button opens a reply straight to me. If your device blocks it, write to
+        <a href="mailto:icuandyou@icloud.com">icuandyou@icloud.com</a> instead.</p>
+    </div>
+  </div>
+
+  <footer>
+    <span class="firstpub">First published November 2026</span>
+    <p class="subline">Two emails a week &mdash; the Friday newsletter for all subscribers, and, for clinical subscribers,
+      the mind map and puzzles the moment they go up on Tuesday. Occasional announcements of new
+      features as they arrive. What went up and why it mattered, the best of your replies, and
+      original feature stories, news and views. <a href="https://joinlist.com/f/5adad2d6">Come and join us</a>.</p>
+    <a class="home" href="./">&larr; &nbsp;All of ICU AND YOU</a><br>
+    ICU AND YOU &nbsp;&#183;&nbsp; ICU Book Club No. 4<br>
+    A personal review, written independently. Nothing of the book is reproduced here, and
+    the cover photograph is my own, of my own copy. Educational use only. Publication
+    details from the publisher&rsquo;s listing. The clinical statements were checked on
+    17 November 2026 against the Australian Institute of Health and Welfare and Arthritis
+    Australia, both linked above; the account of the 2018 events in Cape Town against the
+    contemporaneous record of the sanctions and the criticism of them.
+  <br>
+    <span class="mine">Views my own, not those of NSW Health or any other organisation. No identifiable patients — scenarios are constructed or combined for teaching. <a href="about.html">More</a>.</span>
+  </footer>
+
+</div>
+<script data-goatcounter="https://icuandyou.goatcounter.com/count"
+        async src="//gc.zgo.at/count.js"></script>
+</body>
+</html>
