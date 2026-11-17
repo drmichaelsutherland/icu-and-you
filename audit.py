@@ -751,6 +751,46 @@ def main():
                 f"is {BARE_BONES_MAX}. Cut the sentence that explains why each point "
                 f"matters; going without it is the whole point of the series")
 
+    # ---- the disclaimer's "More" link, deferred rather than fixed --------
+    # November 2026. The link at the end of the "Views my own … No identifiable
+    # patients" line is left unstyled on most pages, so it renders as the
+    # browser default: blue and underlined, in a footer that is otherwise grey
+    # small print. Michael chose NOT to fix this in one site-wide pass, on the
+    # grounds that the topic-recycling review next year reads each page
+    # properly anyway and is the better place for it. So this is a standing
+    # NOTE, not a problem — it keeps the job visible every Friday and lets it
+    # be ticked off block by block instead of being forgotten.
+    #
+    # The test is static but was validated against twelve rendered pages, and
+    # it agreed on all twelve. Two things matter: the .mine span must actually
+    # contain a link (Anecdote City's holds only the copyright line, so it has
+    # nothing to go blue), and no rule in the page's own stylesheet may reach
+    # an <a> inside the footer.
+    REACHES_FOOTER_LINK = {"a", "footer a", ".mine a", "footer .mine a",
+                           ".sheet a", "body a", "footer a:link", "a:link"}
+    unstyled = []
+    for f in content:
+        s = (HERE / f).read_text(encoding="utf-8")
+        mine = re.search(r'<span class="mine">(.*?)</span>', s, flags=re.S)
+        if not mine or "<a " not in mine.group(1):
+            continue
+        css = "".join(re.findall(r"<style>(.*?)</style>", s, flags=re.S))
+        styled = False
+        for sel, decl in re.findall(r"([^{}]+)\{([^}]*)\}", css):
+            if "color" not in decl:
+                continue
+            if any(x.strip().split(":")[0].strip() in REACHES_FOOTER_LINK
+                   for x in sel.split(",")):
+                styled = True
+                break
+        if not styled:
+            unstyled.append(f)
+    if unstyled:
+        notes.append(f'the disclaimer\'s "More" link renders as default browser '
+                     f"blue on {len(unstyled)} pages, because nothing in their "
+                     f"stylesheet colours a footer link — deferred by decision to "
+                     f"the topic-recycling review, one block at a time")
+
     # ---- a page's colour must be its series' colour ---------------------
     # October 2026. A series is identified on the landing page by its colour
     # and by whether the dot is solid or striped, so a page carrying another
