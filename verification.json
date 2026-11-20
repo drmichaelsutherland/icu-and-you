@@ -1426,11 +1426,61 @@
   "str-bp180": {
    "page": "registrars-04-acute-stroke.html",
    "claim": "In the 24 hours after thrombolysis, treat above 180 systolic or 105 diastolic",
-   "source": "South Eastern Sydney LHD procedure SESLHDPR/236, Alteplase in Adult Acute Ischaemic Stroke, section 6.8, section 6.8, whose treatment threshold during and after thrombolysis is a systolic above 180 or a diastolic above 105, with the same figures triggering urgent review in section 6.6",
-   "url": "https://www.seslhd.health.nsw.gov.au/sites/default/files/documents/SESLHDPR%20236%20Alteplase%20%28Recombinant%20Tissue%20Plasminogen%20Activator%29%20in%20Adult%20Acute%20Ischaemic%20Stroke%20%E2%80%93%20Management%20of.pdf",
+   "source": "NSW Agency for Clinical Innovation Stroke Network, Intravenous thrombolysis for adult patients with acute ischaemic stroke: clinical practice guide, February 2026 gives less than 185/110 mmHg before thrombolysis AND maintained for the first 24 hours afterwards (pages 6, 7 and 15); the South Eastern Sydney LHD alteplase procedure SESLHDPR/236 section 6.8 sets its treatment threshold at a systolic above 180 or a diastolic above 105",
+   "url": "https://aci.health.nsw.gov.au",
+   "checked": "2026-11-21",
+   "interval": "12m",
+   "verdict": "contested",
+   "note": "Checked first against the local health district procedure on 20 November and recorded as confirmed; the statewide guide, read the following day, gives a different figure. Both are current NSW documents and they do not agree, so this is contested rather than settled, and the page now says so. The practical gap is small and runs the safe way: treating at 180/105 means intervening slightly earlier than the statewide target requires. Of the two, the ACI guide is the one that covers this hospital."
+  },
+  "str-aci-table": {
+   "page": "registrars-04-acute-stroke.html",
+   "claim": "The eligibility table against the ACI criteria: BP 185/110 is relative, the anticoagulant rule is not a flat 24 hours, there is no glucose threshold, and the age criterion is 18 or over",
+   "source": "NSW Agency for Clinical Innovation Stroke Network, Intravenous thrombolysis for adult patients with acute ischaemic stroke: clinical practice guide, February 2026, Patient selection, pages 11 to 13, with the supporting statements on page 6",
+   "url": "https://aci.health.nsw.gov.au",
+   "checked": "2026-11-21",
+   "interval": "12m",
+   "verdict": "corrected",
+   "note": "Two of the table's entries are confirmed outright: an INR above 1.7 and platelets below 100 x 10^9/L are both absolute contraindications in exactly those terms. Four are not. Blood pressure above 185/110 is listed under relative contraindications, not absolute. The blanket 'anticoagulation or heparin in the past 24 hours' is wrong in both directions — a direct oral anticoagulant excludes within 48 hours, while prophylactic heparin with normal renal function is explicitly not a contraindication, so the page as written would have denied thrombolysis to patients who are eligible. No glucose threshold appears anywhere in the guide; hypoglycaemia and hyperglycaemia are mimics to exclude. And eligibility is 18 or over, so 'over 18' excludes an eligible 18-year-old. The table is the contributor's and has been left standing, with the differences set out beneath it, which is how this page already handles divergence."
+  },
+  "str-tnk-first": {
+   "page": "registrars-04-acute-stroke.html",
+   "claim": "Tenecteplase is the first-line thrombolytic in NSW, with alteplase reserved for when it is unavailable",
+   "source": "NSW Agency for Clinical Innovation Stroke Network, Intravenous thrombolysis for adult patients with acute ischaemic stroke: clinical practice guide, February 2026, Key principles and practice points page 6, Agents page 14, and Appendix 2 page 22: tenecteplase is the approved thrombolytic agent on the NSW Medicines Formulary",
+   "url": "https://aci.health.nsw.gov.au",
+   "checked": "2026-11-21",
+   "interval": "12m",
+   "verdict": "confirmed",
+   "note": "Added rather than corrected. The page's statement about the American guideline preferring neither agent is accurate about that guideline, but a reader in this state would have taken from it that the choice is open, and it is not."
+  },
+  "str-tnk-dose": {
+   "page": "registrars-04-acute-stroke.html",
+   "claim": "Tenecteplase 0.25 mg/kg to a maximum of 25 mg as a single intravenous bolus",
+   "source": "NSW Agency for Clinical Innovation Stroke Network, Intravenous thrombolysis for adult patients with acute ischaemic stroke: clinical practice guide, February 2026, flow chart page 7 and the dosage chart in Appendix 1, which reconstitutes the 25 mg vial with 5 mL to 5 mg/mL and gives a single bolus over 5 to 10 seconds",
+   "url": "https://aci.health.nsw.gov.au",
    "checked": "2026-11-21",
    "interval": "12m",
    "verdict": "confirmed"
+  },
+  "str-reversal": {
+   "page": "registrars-04-acute-stroke.html",
+   "claim": "Tranexamic acid 1 g over ten minutes then 1 g over eight hours, or cryoprecipitate ten units to a fibrinogen above 1.5 g/L",
+   "source": "NSW Agency for Clinical Innovation Stroke Network, Intravenous thrombolysis for adult patients with acute ischaemic stroke: clinical practice guide, February 2026, Complication management page 17, which for confirmed intracerebral haemorrhage asks for blood pressure lowering, referral to neurosurgery and discussion with a haematologist for possible cryoprecipitate or other blood product support, and names no tranexamic acid regimen, no cryoprecipitate dose and no fibrinogen target",
+   "url": "https://aci.health.nsw.gov.au",
+   "checked": "2026-11-21",
+   "interval": "12m",
+   "verdict": "flagged",
+   "note": "The regimen is American practice and was in the presentation as given. It is not contradicted by the NSW guide, which simply does not go to that level of detail and routes the decision through a haematologist instead. Left on the page, marked, and the text now says where it comes from."
+  },
+  "str-ich-bp": {
+   "page": "registrars-04-acute-stroke.html",
+   "claim": "In confirmed intracerebral haemorrhage after thrombolysis, lower the systolic to 130 to 140 mmHg",
+   "source": "NSW Agency for Clinical Innovation Stroke Network, Intravenous thrombolysis for adult patients with acute ischaemic stroke: clinical practice guide, February 2026, Complication management page 17: lower blood pressure to 130 to 140 mmHg systolic if the patient is hypertensive",
+   "url": "https://aci.health.nsw.gov.au",
+   "checked": "2026-11-21",
+   "interval": "12m",
+   "verdict": "corrected",
+   "note": "The page read 'bring the systolic under 140', which has no floor. The guide gives a range with one, and the floor is the point: the same page warns elsewhere that excessive lowering is harmful."
   }
  }
 }
