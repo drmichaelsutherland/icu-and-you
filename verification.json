@@ -1354,6 +1354,83 @@
    "checked": "2026-11-11",
    "interval": "never",
    "verdict": "confirmed"
+  },
+  "str-labetalol": {
+   "page": "registrars-04-acute-stroke.html",
+   "claim": "Labetalol for haemorrhagic transformation: 10 to 20 mg IV every five minutes",
+   "source": "South Eastern Sydney LHD procedure SESLHDPR/236, Alteplase in Adult Acute Ischaemic Stroke, section 6.8; and St George Hospital renal unit guideline, Management of Hypertensive Emergency v7, which gives the same figures independently. Both give 10 to 20 mg IV every 5 minutes, maximum 300 mg in 24 hours",
+   "url": "https://stgrenal.org.au/download/126/guidel-hypertension/2197/management-of-hypertensive-emergency-v7",
+   "checked": "2026-11-21",
+   "interval": "12m",
+   "verdict": "corrected",
+   "note": "The page read 10 to 40 mg. Two New South Wales protocols independently give an increment of 10 to 20 mg at five-minute intervals, so the upper bound was double the dose either of them sanctions. Corrected to 10 to 20 mg. The cumulative maximum, 300 mg in 24 hours, is deliberately left to local protocol on the page."
+  },
+  "str-hydralazine": {
+   "page": "registrars-04-acute-stroke.html",
+   "claim": "Hydralazine for haemorrhagic transformation: 5 mg IV every twenty minutes",
+   "source": "South Eastern Sydney LHD procedure SESLHDPR/236, Alteplase in Adult Acute Ischaemic Stroke, section 6.8 gives 5 mg IV over 1 to 2 minutes, repeated at 20-minute intervals, maximum 20 mg; St George Hospital renal unit guideline, Management of Hypertensive Emergency v7, which gives the same figures independently",
+   "url": "https://stgrenal.org.au/download/126/guidel-hypertension/2197/management-of-hypertensive-emergency-v7",
+   "checked": "2026-11-21",
+   "interval": "12m",
+   "verdict": "corrected",
+   "note": "The page read 10 to 20 mg every twenty minutes. Both sources give a 5 mg increment, and 20 mg is the cumulative maximum rather than a single dose, so the page had turned a ceiling into a bolus. Corrected to 5 mg."
+  },
+  "str-clonidine": {
+   "page": "registrars-04-acute-stroke.html",
+   "claim": "Clonidine 75 to 100 micrograms IV every fifteen minutes",
+   "source": "No guideline source found. South Eastern Sydney LHD procedure SESLHDPR/236, Alteplase in Adult Acute Ischaemic Stroke, section 6.8 does not name clonidine at all, and the St George hypertensive emergency guideline lists it but gives no dose, referring the reader to local intensive care protocols",
+   "url": "https://stgrenal.org.au/download/126/guidel-hypertension/2197/management-of-hypertensive-emergency-v7",
+   "checked": "2026-11-21",
+   "interval": "12m",
+   "verdict": "flagged",
+   "note": "Intravenous clonidine in this range is conventional Australian intensive care practice and was in the presentation as given, but neither protocol consulted states a dose, so it rests on local practice rather than on a published figure. Left on the page and marked, rather than removed."
+  },
+  "str-clev-vial": {
+   "page": "registrars-04-acute-stroke.html",
+   "claim": "Clevidipine comes as 25 mg in 50 mL, which is 0.5 mg/mL",
+   "source": "Therapeutic Goods Administration medicine shortage listing for CLEVIPREX, AUST R 203313, sponsored by Chiesi Australia, which records a single registered presentation: 25 mg in 50 mL injectable emulsion in single-use vials",
+   "url": "https://apps.tga.gov.au/Prod/msi/Search/Details/clevidipine",
+   "checked": "2026-11-21",
+   "interval": "12m",
+   "verdict": "corrected",
+   "note": "The page read 50 mg in 100 mL, which is the United States presentation. The concentration was right and the vial was not: the only presentation on the Australian Register of Therapeutic Goods is 25 mg in 50 mL. Corrected, and the concentration now stated outright so the number survives a change of vial."
+  },
+  "str-clev-rate": {
+   "page": "registrars-04-acute-stroke.html",
+   "claim": "Clevidipine starts at 1 to 2 mg/h, doubling about every 90 seconds, settling at 4 to 6 mg/h",
+   "source": "Cleviprex (clevidipine) Australian Product Information, section 4.2, via the Australian Commission on Safety and Quality in Health Care medicine finder, which gives 1 to 2 mg/h initially, doubling every 90 seconds early and in smaller steps every 5 to 10 minutes as the pressure approaches target, and 4 to 6 mg/h for most patients",
+   "url": "https://www.safetyandquality.gov.au/medicine-finder/cleviprex-emulsion-for-infusion",
+   "checked": "2026-11-21",
+   "interval": "12m",
+   "verdict": "confirmed"
+  },
+  "str-clev-fat": {
+   "page": "registrars-04-acute-stroke.html",
+   "claim": "Clevidipine: maximum 32 mg/h, and no more than 1000 mL or an average of 21 mg/h in 24 hours",
+   "source": "Cleviprex (clevidipine) Australian Product Information, section 4.2, via the Australian Commission on Safety and Quality in Health Care medicine finder, which gives a maximum of 32 mg/h with limited experience at that rate, and no more than 1000 mL per 24 hours or an average of 21 mg/h, the emulsion carrying about 0.2 g of lipid per mL",
+   "url": "https://www.safetyandquality.gov.au/medicine-finder/cleviprex-emulsion-for-infusion",
+   "checked": "2026-11-21",
+   "interval": "12m",
+   "verdict": "confirmed",
+   "note": "The fat limit is the real ceiling, as the page says. One figure was removed in the same pass: the page had said most patients in the trials never went above 16 mg/h, which no reachable source states. The product information makes the same point in its own words, so the page now uses those instead."
+  },
+  "str-bp185": {
+   "page": "registrars-04-acute-stroke.html",
+   "claim": "Before thrombolysis, blood pressure must be under 185 systolic and 110 diastolic",
+   "source": "South Eastern Sydney LHD procedure SESLHDPR/236, Alteplase in Adult Acute Ischaemic Stroke, section 6.8, section 6.2, which sets the target as systolic below 185 mmHg and diastolic below 110 mmHg, and section 6.8, which says not to give alteplase if that target is not achieved",
+   "url": "https://www.seslhd.health.nsw.gov.au/sites/default/files/documents/SESLHDPR%20236%20Alteplase%20%28Recombinant%20Tissue%20Plasminogen%20Activator%29%20in%20Adult%20Acute%20Ischaemic%20Stroke%20%E2%80%93%20Management%20of.pdf",
+   "checked": "2026-11-21",
+   "interval": "12m",
+   "verdict": "confirmed"
+  },
+  "str-bp180": {
+   "page": "registrars-04-acute-stroke.html",
+   "claim": "In the 24 hours after thrombolysis, treat above 180 systolic or 105 diastolic",
+   "source": "South Eastern Sydney LHD procedure SESLHDPR/236, Alteplase in Adult Acute Ischaemic Stroke, section 6.8, section 6.8, whose treatment threshold during and after thrombolysis is a systolic above 180 or a diastolic above 105, with the same figures triggering urgent review in section 6.6",
+   "url": "https://www.seslhd.health.nsw.gov.au/sites/default/files/documents/SESLHDPR%20236%20Alteplase%20%28Recombinant%20Tissue%20Plasminogen%20Activator%29%20in%20Adult%20Acute%20Ischaemic%20Stroke%20%E2%80%93%20Management%20of.pdf",
+   "checked": "2026-11-21",
+   "interval": "12m",
+   "verdict": "confirmed"
   }
  }
 }
