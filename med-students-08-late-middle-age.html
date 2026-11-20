@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="en-AU">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ICU AND YOU · Medical Students’ Place No. 8 — Late middle age</title>
+<meta name="description" content="Medical Students’ Place No. 8: late middle age in intensive care, in three tiers — the reserve that falls without moving a number on the chart, the history as the diagnostic test, and what you will be expected to do.">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="alternate icon" href="/favicon.ico" sizes="any">
+<link rel="apple-touch-icon" href="/icon-180.png">
+<link rel="manifest" href="/site.webmanifest">
+<meta name="theme-color" content="#1B2A33">
+<meta property="og:site_name" content="ICU AND YOU">
+<meta property="og:type" content="website">
+<meta property="og:title" content="ICU AND YOU · Medical Students’ Place No. 8 — Late middle age">
+<meta property="og:description" content="Forty-five to sixty — the band where the diagnosis is in what nobody wrote down. Three tiers, so you can read only the one you need.">
+<meta property="og:image" content="https://icuandyou.com/share-card.png">
+<meta name="twitter:card" content="summary_large_image">
+<style>
+  :root{
+    --paper:#FBFAF8; --ink:#1F2130; --muted:#6A6A78; --rule:#DEDCE4;
+    --violet:#4C4A8F; --violettint:#EDECF6;
+    --sky:#2E6E8E; --skytint:#E7F1F6;
+    --moss:#4C6B4A; --mosstint:#EAF1E9;
+    --rust:#A8442A; --rusttint:#F9EDE7;
+    --amber:#8A6A3B;
+  }
+  *{box-sizing:border-box}
+  body{margin:0;background:#EFEEF3;color:var(--ink);
+    font:400 17px/1.64 'Iowan Old Style','Palatino Linotype',Palatino,Georgia,serif;
+    -webkit-text-size-adjust:100%;}
+  .sheet{max-width:840px;margin:0 auto;background:var(--paper);
+    box-shadow:0 1px 40px rgba(31,33,48,.10);}
+
+  header.top{padding:44px 40px 28px;border-bottom:2px solid var(--violet)}
+  .eyebrow a.serlink{color:inherit;text-decoration:none;border-bottom:1px solid transparent}
+  .eyebrow a.serlink:hover{border-bottom-color:currentColor}
+  .eyebrow a.mast{color:inherit;text-decoration:none;border-bottom:1px solid transparent}
+  .eyebrow a.mast:hover{border-bottom-color:currentColor}
+  .toptopic{display:inline-block;margin:0 0 16px 9px;padding:7px 16px;border-radius:20px;
+    border:1px solid currentColor;opacity:.62;text-decoration:none;color:inherit;
+    font:600 11.5px 'Helvetica Neue',Arial,sans-serif;letter-spacing:.09em;
+    text-transform:uppercase;transition:opacity .12s ease}
+  .toptopic:hover{opacity:1}
+  .topseries{display:inline-block;margin:0 0 16px 9px;padding:7px 16px;border-radius:20px;
+    border:1px solid currentColor;opacity:.62;text-decoration:none;color:inherit;
+    font:600 11.5px 'Helvetica Neue',Arial,sans-serif;letter-spacing:.09em;
+    text-transform:uppercase;transition:opacity .12s ease}
+  .topseries:hover{opacity:1}
+  .tophome{display:inline-block;margin:0 0 16px;padding:7px 16px;border-radius:20px;
+    border:1px solid currentColor;opacity:.62;text-decoration:none;color:inherit;
+    font:600 11.5px 'Helvetica Neue',Arial,sans-serif;letter-spacing:.09em;
+    text-transform:uppercase;transition:opacity .12s ease}
+  .tophome:hover{opacity:1}
+  .eyebrow{font:500 11.5px/1 'Helvetica Neue',Arial,sans-serif;letter-spacing:.24em;
+    text-transform:uppercase;color:var(--muted);margin:0 0 14px}
+  h1{font-size:33px;line-height:1.18;margin:0 0 8px;font-weight:400;letter-spacing:-.012em}
+  .kicker{color:var(--muted);margin:0;font-size:16.5px;font-style:italic}
+
+  .pad{padding:32px 40px}
+  p{margin:0 0 16px}
+  .lede{font-size:19px;line-height:1.55;margin:0 0 20px}
+
+  /* tier navigation */
+  .jump{margin:0;padding:14px 40px;background:var(--violettint);
+    border-bottom:1px solid var(--rule);text-align:center;
+    font:400 15.5px 'Iowan Old Style',Palatino,Georgia,serif;color:var(--muted)}
+  .jump a{color:var(--violet);text-decoration:none;border-bottom:1px solid #BFBDDC;
+    padding-bottom:1px;font-weight:500}
+  .jump a:hover{color:var(--ink);border-bottom-color:var(--ink)}
+  html{scroll-behavior:smooth}
+  section[id]{scroll-margin-top:20px}
+
+  /* tiers */
+  section.tier{padding:32px 40px;border-top:1px solid var(--rule)}
+  .tier-k{font:600 11px 'Helvetica Neue',Arial,sans-serif;letter-spacing:.22em;
+    text-transform:uppercase;margin:0 0 8px}
+  .tier h2{font-size:26px;font-weight:400;margin:0 0 6px;line-height:1.24}
+  .tier .who{font-style:italic;color:var(--muted);margin:0 0 22px;font-size:16px}
+  .t1 .tier-k{color:var(--sky)} .t1{background:#FCFDFE}
+  .t2 .tier-k{color:var(--moss)} .t2{background:#FBFCFB}
+  .t3 .tier-k{color:var(--rust)} .t3{background:#FDFBFA}
+
+  ul.pts{list-style:none;margin:0 0 18px;padding:0}
+  ul.pts li{display:flex;gap:13px;padding:10px 0;border-bottom:1px solid #EDEBF2;
+    font-size:16.5px;line-height:1.5}
+  ul.pts li:last-child{border-bottom:0}
+  ul.pts b{flex:0 0 176px;font:600 14.5px 'Helvetica Neue',Arial,sans-serif;
+    line-height:1.4}
+  .t1 ul.pts b{color:var(--sky)} .t2 ul.pts b{color:var(--moss)} .t3 ul.pts b{color:var(--rust)}
+
+  .take{margin:0;padding:18px 22px;border-radius:0 8px 8px 0;font-size:16.5px}
+  .take b{font-weight:600}
+  .t1 .take{background:var(--skytint);border-left:4px solid var(--sky)}
+  .t2 .take{background:var(--mosstint);border-left:4px solid var(--moss)}
+  .t3 .take{background:var(--rusttint);border-left:4px solid var(--rust)}
+
+  .exam{margin:18px 0 0;font:400 14.5px 'Helvetica Neue',Arial,sans-serif;
+    color:var(--muted);line-height:1.6}
+  .exam b{color:var(--ink);font-weight:600}
+
+  /* the section that is not about patients */
+  section.mirror{padding:34px 40px;border-top:1px solid var(--rule);background:#FAF7F1}
+  .mirror .tier-k{color:var(--amber)}
+  .mirror h2{font-size:26px;font-weight:400;margin:0 0 6px;line-height:1.24}
+  .mirror .who{font-style:italic;color:var(--muted);margin:0 0 22px;font-size:16px}
+  .mirror .q{margin:0 0 14px;padding:0 0 0 18px;border-left:3px solid #DCCDB0;
+    font-style:italic;font-size:16.5px;line-height:1.55}
+  .mirror .help{margin:20px 0 0;padding:18px 22px;background:#fff;
+    border:1px solid var(--rule);border-radius:8px;
+    font:400 15px/1.65 'Helvetica Neue',Arial,sans-serif}
+  .mirror .help b{font-weight:600}
+  .mirror .help p{margin:0 0 11px}
+  .mirror .help p:last-child{margin:0}
+  .mirror .help a{color:var(--violet)}
+
+  .reply{margin:0;padding:30px 34px;background:var(--violettint);border-left:5px solid var(--violet)}
+  .reply h2{font:600 12px 'Helvetica Neue',Arial,sans-serif;letter-spacing:.2em;
+    text-transform:uppercase;color:var(--violet);margin:0 0 14px}
+  .ask{font-size:19.5px;line-height:1.5;font-style:italic;margin:0 0 15px}
+  .btn{display:inline-block;margin:6px 0 12px;padding:15px 30px;background:var(--violet);
+    color:#F8F8FC;text-decoration:none;border-radius:30px;font-style:normal;
+    font:600 15px 'Helvetica Neue',Arial,sans-serif;letter-spacing:.03em}
+  .btn:hover{background:#3A3873}
+  .fallback{font:400 13.5px 'Helvetica Neue',Arial,sans-serif;color:var(--muted);margin:0}
+  .fallback a{color:var(--violet)}
+  .subline{margin:0 0 14px;padding:0 0 13px;border-bottom:1px solid rgba(0,0,0,.09);
+    font:400 14.5px/1.55 'Iowan Old Style','Palatino Linotype',Palatino,Georgia,serif;
+    max-width:56ch;margin-left:auto;margin-right:auto}
+  .subline a{font-weight:500;border-bottom:1px solid currentColor;
+    text-decoration:none;color:inherit}
+  .firstpub{display:block;margin:0 0 10px;padding-bottom:9px;
+    border-bottom:1px solid currentColor;border-color:rgba(0,0,0,.09);
+    font:400 12px 'Helvetica Neue',Arial,sans-serif;letter-spacing:.06em;opacity:.72}
+
+  footer{padding:24px 40px 42px;border-top:1px solid var(--rule);
+    font:400 13px 'Helvetica Neue',Arial,sans-serif;color:var(--muted);text-align:center;line-height:1.7}
+  .home{display:inline-block;margin:0 0 14px;padding:8px 18px;border-radius:20px;
+    border:1px solid var(--rule);background:#F2F1F6;color:var(--violet);text-decoration:none;
+    font:600 12.5px 'Helvetica Neue',Arial,sans-serif;letter-spacing:.05em}
+  .home:hover{background:var(--violet);border-color:var(--violet);color:#F8F8FC}
+
+  @media (max-width:640px){
+    header.top,.pad,.jump,section.tier,section.mirror,footer{padding-left:20px;padding-right:20px}
+    .reply{padding:24px 20px}
+    h1{font-size:26px} .tier h2{font-size:22px} .mirror h2{font-size:22px} body{font-size:16.5px}
+    ul.pts li{flex-direction:column;gap:3px}
+    ul.pts b{flex:none}
+  }
+  @media print{ body{background:#fff} .sheet{box-shadow:none;max-width:none} }
+  .srcs{font-size:12.5px;line-height:1.6}
+  .mine{display:inline-block;margin:9px 0 0;opacity:.78;font-size:.94em}
+</style>
+</head>
+<body>
+<div class="sheet">
+
+  <header class="top">
+    <a class="tophome" href="./">&larr;&nbsp; Home</a>
+    <a class="topseries" href="./?s=students">More from Medical Students&#x27; Place</a>
+    <a class="topseries" href="you-asked.html">You asked</a>
+    <a class="toptopic" href="./?t=late-middle-age" title="Everything on Late middle age">All on this topic</a>
+    <p class="eyebrow"><a class="mast" href="./">ICU and You</a> &nbsp;·&nbsp; <a class="serlink" href="./?s=students">Medical Students&#x27; Place</a> &nbsp;·&nbsp; Number 8</p>
+    <h1>Late middle age</h1>
+    <p class="kicker">Forty-five to sixty &mdash; the band where the diagnosis is in what nobody wrote down</p>
+  </header>
+
+  <p class="jump">
+    Find your level: <a href="#early">Early years</a>
+    &nbsp;·&nbsp; <a href="#middle">Clinical years</a>
+    &nbsp;·&nbsp; <a href="#senior">Final years</a>
+  </p>
+
+  <div class="pad">
+    <p class="lede">The previous page in this series was about the first patients who arrive carrying a
+      history somebody else has already written. This band is the opposite problem. The history exists,
+      all of it, and almost none of it has been written down anywhere.</p>
+    <p>The tiers map roughly onto the three phases of a six-year medical programme &mdash; the science,
+      then the clinical reasoning, then what you will actually be expected to do with your own hands.
+      Read the one that fits, and glance at the one above it.</p>
+    <p>Forty-five to sixty is the decade and a half in which the illness that will eventually kill most
+      of these patients turns up and introduces itself, usually at night and usually without having been
+      named before. Coronary heart disease leads the causes of death in Australian men of this age and
+      lung cancer follows it; for women it is breast cancer and lung cancer. None of that is a surprise.
+      What surprises people is how often the admission is the first anyone has heard of it.</p>
+    <p>If this page has one argument, it is this: <strong>in this band the history is the diagnostic
+      test, and most of it has never been written down.</strong> The scan will be reported as normal,
+      the bloods will look unremarkable, and the thing that explains the admission will turn out to be a
+      job somebody held in 1998, a quantity of alcohol nobody has ever counted, or a symptom the patient
+      decided not to mention. Somebody has to go and get it, and on most wards the person with time to
+      do that is you.</p>
+  </div>
+
+  <section class="tier t1" id="early">
+    <p class="tier-k">Tier one</p>
+    <h2>Reserve that falls without moving a single number on the chart</h2>
+    <p class="who">Phase 1 &mdash; the foundational years, and anything on cardiovascular, respiratory and renal physiology or the biology of ageing</p>
+    <ul class="pts">
+      <li><b>A normal observation chart is a record of compensation</b><span>Observations are the
+        outputs of control systems, not measurements of reserve. A fifty-four-year-old holds a normal
+        rate, pressure and saturation by spending something to do it, and the chart records the result
+        rather than the cost. Everything this band actually loses &mdash; diastolic compliance, renal
+        reserve, muscle, chest wall compliance, maximal oxygen uptake &mdash; is invisible on the one
+        document the ward looks at most often.</span></li>
+
+      <li><b>Creatinine is a muscle measurement wearing a kidney&rsquo;s name</b><span>Creatinine is
+        produced by skeletal muscle at a rate set by how much muscle there is. From about the fifth
+        decade muscle mass falls, so production falls; if filtration falls at the same time, the
+        concentration can sit still and tell you nothing has happened. A creatinine of 80 in a lean
+        fifty-eight-year-old can represent a substantially lower glomerular filtration rate than the
+        same number in a twenty-five-year-old, and every dose calculated from it is then wrong in the
+        direction that accumulates.</span></li>
+
+      <li><b>Why a stiff ventricle floods on the second bag</b><span>Diastolic dysfunction moves the
+        ventricle onto the steep part of its pressure&ndash;volume relationship, where small changes in
+        volume produce large changes in filling pressure. That is the mechanism behind the patient who
+        looks fluid-responsive, receives a perfectly reasonable amount, and is in pulmonary oedema an
+        hour later with an unremarkable electrocardiogram and a troponin that explains nothing.</span></li>
+
+      <li><b>Varices do not leak, they rupture</b><span>Bleeding requires a hepatic venous pressure
+        gradient above about 12 mmHg, and below that threshold varices can be present and silent for
+        years. There is no warning haemorrhage, because the physics does not provide for one. It is the
+        cleanest example of the rule that governs this whole band: the first presentation is the worst
+        presentation, and that is a property of the disease rather than a failure of the
+        patient.</span></li>
+
+      <li><b>An aneurysm has no symptomatic phase to catch it in</b><span>Wall tension rises with
+        radius, so enlargement accelerates as the aneurysm enlarges, and the lesion is at its most
+        dangerous when it is least detectable by symptoms. Nothing hurts until the wall fails. Screening
+        programmes exist for this disease precisely because its natural history offers medicine no other
+        opening.</span></li>
+
+      <li><b>Alcohol withdrawal is a timetable, not a surprise</b><span>Chronic ethanol downregulates
+        inhibitory GABA-A signalling and upregulates excitatory NMDA signalling. Remove the ethanol and
+        the excitatory side is left unopposed, which takes time to declare itself: tremor and autonomic
+        signs within a day, seizures and delirium characteristically at forty-eight to seventy-two
+        hours. That is why the patient admitted on Monday with pneumonia becomes unmanageable on
+        Wednesday &mdash; and why the history that would have predicted it was available on
+        Monday.</span></li>
+
+      <li><b>Why sleep apnoea comes looking for you at extubation</b><span>The pharynx has no rigid
+        support. It is held open by dilator muscle tone, and that tone is reduced or abolished by
+        anaesthesia, sedation and opioids. Someone with untreated obstructive apnoea has been
+        compensating every night for years through arousals that you will never see in a sedated
+        patient. Obesity hypoventilation is a separate problem and the distinction is examinable: apnoea
+        is an overnight, event-based disorder, hypoventilation is carbon dioxide retention while
+        awake.</span></li>
+
+      <li><b>Muscle is an organ, and this is the band where it starts to go</b><span>Skeletal muscle
+        mass declines from roughly the fifth decade, and critical illness accelerates that loss
+        enormously. It matters mechanically rather than cosmetically, because the diaphragm is skeletal
+        muscle too: the patient who cannot be weaned is frequently not failing at the lung.
+        <em>Deconditioned</em> is a description of this process which is routinely offered as though it
+        were an explanation of it.</span></li>
+    </ul>
+    <p class="take"><b>If you take one thing:</b> everything this band has lost sits in a variable
+      nobody charts, and everything it has kept sits on the chart. Reading an observation chart as a
+      measure of reserve is the commonest error of judgement made about these patients, and it is made
+      by experienced people.</p>
+    <p class="exam"><b>Likely to be examined as:</b> a short answer on the determinants of serum
+      creatinine and why it is an imperfect marker of glomerular filtration, or on the physiology of
+      diastolic dysfunction and why it produces pulmonary oedema at modest filling volumes. A fair viva
+      opener is <em>why does a creatinine of 80 worry you more at fifty-eight than at
+      twenty-five?</em></p>
+  </section>
+
+  <section class="tier t2" id="middle">
+    <p class="tier-k">Tier two</p>
+    <h2>The notes are not the history, and here the gap between them is the diagnosis</h2>
+    <p class="who">Phase 2 &mdash; the clinical years, integrated clinical studies, and the ICE</p>
+    <ul class="pts">
+      <li><b>No past history is a finding about the health system</b><span>In every earlier band an
+        empty past history is usually true. In this one it is usually an absence of looking. A man of
+        fifty-four with nothing in the record has generally not been examined and found well; he has not
+        attended. Treat the first set of investigations as a baseline being established rather than a
+        result being compared, and write that down, so the next person does not read your normal as a
+        reassuring change from something.</span></li>
+
+      <li><b>The chronic lung disease label is unreliable in both directions</b><span>In the BOLD
+        Australia study, a population sample of more than three thousand adults aged forty and over,
+        roughly half the people who reported having chronic obstructive pulmonary disease had no airflow
+        obstruction on spirometry &mdash; and roughly half of those with spirometry-confirmed disease
+        had never been given the diagnosis. So the word in the notes tells you very little, and its
+        absence tells you less. The test is cheap, and almost nobody in this band has had it.</span></li>
+
+      <li><b>Three diseases that routinely arrive under another name</b><span>Heart failure presents as
+        a chest infection, because both produce breathlessness, crackles and an abnormal film, and the
+        antibiotics get started first. Cirrhosis presents as confusion, because encephalopathy arrives
+        before anybody notices the stigmata. Sepsis presents as alcohol withdrawal, which is the most
+        dangerous of the three, because the treatment for the wrong diagnosis is sedation. What breaks
+        the tie is almost never a single test. It is whether anybody has gone looking for the second
+        story.</span></li>
+
+      <li><b>The suicide rate in Australian men peaks inside this band</b><span>In 2023 the highest
+        age-specific male suicide rate was in the fifty-five to fifty-nines, at 30.9 per 100,000, well
+        above the overall male rate. It is not the band most people would guess. These deaths are more
+        often planned than impulsive and frequently follow no contact with mental health services at
+        all, which means the opportunity to ask is often a general hospital opportunity &mdash; and on a
+        ward round of six it is often the student&rsquo;s, because you are the one who sat
+        down.</span></li>
+
+      <li><b>The quantity of alcohol is a clinical number, not a social detail</b><span>Australians aged
+        forty-five to sixty-four account for about fifty-five per cent of the country&rsquo;s
+        alcohol-caused deaths. <em>Social drinker</em> is not a history. The course of the admission on
+        day three is predicted by a number, and if nobody writes the number down, nobody downstream can
+        reconstruct it from an adjective.</span></li>
+
+      <li><b>The occupational history is a diagnostic test with a long latency</b><span>Ask what they
+        did in their twenties and thirties, by job title and by decade, because the exposures that
+        matter were taken on then and are presenting now. Engineered stone, which can be more than
+        ninety per cent crystalline silica, was banned for processing in Australia from 1 July 2024 and
+        banned from import on 1 January 2025 &mdash; which means the exposure is now historical and the
+        disease is still arriving. A fifty-two-year-old benchtop fabricator with breathlessness is a
+        specific question, not a general one.</span></li>
+
+      <li><b>The cancer that gets diagnosed during this admission</b><span>A number of these patients
+        will have their malignancy found on a scan ordered for something else, and you may be in the
+        room when the report appears before anybody senior has read it. The reasoning task is not the
+        diagnosis. It is understanding that the sequence &mdash; who is told, by whom, with whom
+        present, and after what preparation &mdash; is itself clinical care, and that getting it wrong
+        is one of the few harms in medicine you cannot go back and undo.</span></li>
+
+      <li><b>Nobody has written a ceiling of care, and the silence is being read as a
+        decision</b><span>A fifty-five-year-old with advanced chronic disease usually has nothing
+        recorded: no ceiling, no substitute decision-maker, no conversation. The error is to treat that
+        silence as a considered judgement that everything is appropriate. It is not a judgement, it is a
+        gap, and in this band it is the expected finding, because fifty-five felt too early to everybody
+        who might otherwise have raised it.</span></li>
+    </ul>
+    <p class="take"><b>If you take one thing:</b> in this band the distance between what is written and
+      what is true is where the diagnosis lives. Closing that distance is a task somebody has to carry
+      out, not an insight somebody has to have.</p>
+    <p class="exam"><b>Likely to be examined as:</b> a long case where the marks sit in the history
+      rather than the examination, or a data interpretation with normal-looking renal function and an
+      abnormal patient. A fair viva opener is <em>what would you ask a fifty-four-year-old with no past
+      history, and why those questions?</em></p>
+  </section>
+
+  <section class="tier t3" id="senior">
+    <p class="tier-k">Tier three</p>
+    <h2>The jobs that are actually yours</h2>
+    <p class="who">Phase 3 &mdash; the final clinical years, the pre-internship term, and your first nights on call</p>
+    <ul class="pts">
+      <li><b>Ring the general practice, and ring before five o&rsquo;clock</b><span>This is the
+        highest-yield job on the page, and it falls to you because nobody more senior has the time. Ask
+        for the problem list, the current medications, the last set of bloods, and whether anybody has
+        ever had a conversation about where the illness is going. Record where each item came from.
+        After hours you still have My Health Record, the community pharmacy dispensing history and
+        whoever came in with the patient, and all three beat the ward list.</span></li>
+
+      <li><b>Take the occupational history by decade, and write the job titles down</b><span><em>Retired</em>
+        is not an occupation and <em>labourer</em> is not a job. Stonemason, boilermaker, shipwright,
+        farmer, miner, carpenter, hairdresser, spray painter. It takes thirty seconds and it is a
+        question nobody else on the round will have asked.</span></li>
+
+      <li><b>Ask the partner about the breathing at night</b><span>Patients cannot report their own
+        apnoea; it is unobservable from the inside. Somebody who sleeps in the same room can tell you
+        about snoring, witnessed pauses and daytime sleepiness in about a minute, and the answer changes
+        what you should expect at extubation and what you do about the overnight oxygen.</span></li>
+
+      <li><b>Alcohol in standard drinks, with a number, a date and a prediction</b><span>How many, how
+        often, and when the last one was. Then write in the notes what you expect to happen and when,
+        because the person who meets the consequence on Wednesday night will not be you and will have no
+        way of knowing that the clock started on Monday morning.</span></li>
+
+      <li><b>Ask about suicide, in plain words, and do not make it conditional</b><span>You will
+        occasionally be told it is not your place, or not what the patient was admitted for. It is a
+        direct question with no evidence of harm from the asking, in the band where the rate is highest,
+        and in many of these lives the contact with health services is this one.</span></li>
+
+      <li><b>Find out what they have already been told, not what they have decided</b><span><em>What
+        have the doctors told you about where this illness is going?</em> is a student&rsquo;s question
+        and a very good one. It is not asking anybody to make a decision, it needs no seniority, and the
+        answer tells the team whether the conversation it is about to have is the first one or the
+        fourth.</span></li>
+
+      <li><b>Find out who would speak for them, and who depends on them</b><span>Both directions. Who
+        the substitute decision-maker would be, and who is at home relying on this person &mdash;
+        children, a parent, a partner with an illness of their own. In this band the patient is
+        frequently the carer rather than the cared-for, and that single fact changes discharge planning,
+        consent, and the likelihood that they will take their own cannula out on day four.</span></li>
+
+      <li><b>Weigh them, and look at the muscle</b><span>A real weight, not an estimate, because half
+        the doses on the chart depend on it. And a look at the deltoids and the quadriceps, because it
+        tells you something about reserve that no blood test on the page will. Both are jobs a student
+        can do unaided, and both are routinely left undone.</span></li>
+
+      <li><b>Write down what you could not find out</b><span>The practice was closed, the partner flies
+        in tomorrow, the patient would not say. A recorded failed attempt is information: it stops the
+        next three people repeating your phone call, and it marks the gap clearly enough for somebody
+        with more authority to go and close it.</span></li>
+    </ul>
+    <p class="take"><b>If you take one thing:</b> the two jobs on this list with no glamour attached
+      whatever &mdash; the phone call to the general practice, and the collateral history from whoever
+      came in with them &mdash; are the two most likely to change the diagnosis.</p>
+    <p class="exam"><b>Likely to be examined as:</b> a history-taking or collateral-history station, or
+      a communication station in which the patient asks you a question you are not the right person to
+      answer. The marks there are for recognising that, saying so plainly without walking away, and
+      knowing who to go and get.</p>
+  </section>
+
+  <div class="pad" style="padding-top:24px">
+    <div class="reply">
+      <h2>Over to you</h2>
+      <p class="ask">Which tier did you read &mdash; and what did you end up having to find out for
+        yourself?</p>
+      <p>Tell me your year, which tier fitted, and what was missing, too basic or too advanced. That part
+        is the same every time, and it is how these get better.</p>
+      <p>This one has a second question. Tier three is a list of jobs that get handed to students
+        because they take time, and are then almost never taught, watched or marked. Getting past the
+        front desk of a general practice. Asking a stranger of fifty-four about suicide. Asking somebody
+        about their partner&rsquo;s breathing at night.
+        <strong>Which of those has anyone ever actually shown you how to do?</strong> I suspect that for
+        most people the honest answer is none of them, and if that is right it is worth saying out
+        loud.</p>
+      <p><a class="btn" href="mailto:icuandyou@icloud.com?subject=Medical%20Students%208%20-%20late%20middle%20age&body=My%20year%2C%20and%20which%20tier%20fitted%3A%0D%0A%0D%0A%0D%0AWhat%20was%20missing%2C%20too%20basic%20or%20too%20advanced%3A%0D%0A%0D%0A%0D%0AWhich%20of%20the%20tier%20three%20jobs%20anyone%20has%20shown%20me%20how%20to%20do%3A%0D%0A%0D%0A%0D%0AA%20topic%20I%20am%20struggling%20with%3A%0D%0A%0D%0A---%0D%0A%0D%0AName%3A%0D%0A%0D%0A---%0D%0A%0D%0AThinking%20about%20this%20ICU%20AND%20YOU%20post%20overall%20%E2%80%94%20was%20it%20useful%20to%20you%2C%20or%20would%20it%20be%20useful%20to%20others%3F%0D%0A">Send your feedback</a></p>
+      <p class="fallback" style="margin-bottom:9px">How you are credited is entirely your call &mdash; by name, by initials, or not at all &mdash; whether you write the piece or I do, and whether I quote you or simply say who sent something in; nothing of yours goes up with your name on it unless you have said yes.</p>
+      <p class="fallback">The button opens a reply straight to me. If your device blocks it, write to
+        <a href="mailto:icuandyou@icloud.com">icuandyou@icloud.com</a> instead.</p>
+    </div>
+  </div>
+
+  <footer>
+    <span class="firstpub">First published November 2026</span>
+    <p class="subline">Two emails a week &mdash; the Friday newsletter for all subscribers, and, for clinical subscribers,
+      the mind map and puzzles the moment they go up on Tuesday. Occasional announcements of new
+      features as they arrive. What went up and why it mattered, the best of your replies, and
+      original feature stories, news and views. <a href="https://joinlist.com/f/5adad2d6">Come and join us</a>.</p>
+    <a class="home" href="./">&larr; &nbsp;All of ICU AND YOU</a><br>
+    ICU AND YOU &nbsp;&#183;&nbsp; Medical Students&#x27; Place No. 8 &nbsp;&#183;&nbsp; companion to Mind Map #38, Late middle age<br>
+    Educational use within the ICU education programme. Not a clinical protocol &mdash; local policy, current
+    guidance and the retrieval service always take precedence. Verify every dose against your own
+    formulary before use.
+  <br>
+    <span class="srcs">Where this page contradicts something you were taught, here is what it rests on.
+    Leading causes of death by age band and sex are the Australian Institute of Health and Welfare&rsquo;s
+    <a href="https://www.aihw.gov.au/reports/life-expectancy-death/deaths-in-australia/contents/leading-causes-of-death">leading
+    causes of death</a> reporting, on 2023 data, and the Australian Bureau of Statistics causes-of-death
+    collection. The male suicide rates by age band, including the peak in the fifty-five to fifty-nines,
+    are the Institute&rsquo;s
+    <a href="https://www.aihw.gov.au/suicide-self-harm-monitoring/overview/suicide-deaths">National
+    Suicide and Self-harm Monitoring</a> reporting, also on 2023 data. The share of alcohol-caused
+    deaths falling in this band is the Bureau of Statistics causes-of-death collection as set out by the
+    National Alcohol and Drug Knowledgebase. The figures on diagnosed and undiagnosed chronic
+    obstructive pulmonary disease are the BOLD Australia study, published in the
+    <em>International Journal of Chronic Obstructive Pulmonary Disease</em> in 2021. The engineered
+    stone prohibition dates and the silica content are Safe Work Australia and the Asbestos and Silica
+    Safety and Eradication Agency. The variceal pressure threshold, the law of Laplace as it applies to
+    aneurysmal growth, and the GABA and NMDA adaptations underlying withdrawal are standard physiology
+    and are set out in any of the usual texts. The age at intensive care admission for Aboriginal and
+    Torres Strait Islander patients, which is roughly fifteen years younger at the same illness
+    severity, is Secombe and colleagues, a data-linkage study of 330,712 admissions in the
+    <em>Medical Journal of Australia</em> in 2022, and is set out with its figures on the previous page
+    in this series. The clinical material in this band is developed further in
+    <a href="mind-map-38-late-middle-age.html">Mind Map #38</a>,
+    <a href="bare-bones-05-late-middle-age.html">Bare Bones #5</a> and
+    <a href="superquiz-67-late-middle-age.html">Superquiz #67</a>. Capacity, consent and prescribing
+    protocols are jurisdictional &mdash; check your own.</span>
+  <br>
+    <span class="mine">Views my own, not those of NSW Health or any other organisation. No identifiable patients — scenarios are constructed or combined for teaching. <a href="about.html">More</a>.</span>
+  </footer>
+
+</div>
+<script src="glossary.js"></script>
+<script data-goatcounter="https://icuandyou.goatcounter.com/count"
+        async src="//gc.zgo.at/count.js"></script>
+</body>
+</html>

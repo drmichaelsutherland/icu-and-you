@@ -1874,9 +1874,28 @@
    "week": false,
    "standing": true,
    "blurb": "Everybody went straight to chapter 17, and chapter 17 clarifies nothing. Chapter 6 is about a twenty-two-year-old with a swollen knee that four doctors in two countries could not explain, two inflammatory markers that refused to settle, and a drug that handed him his life back in a backyard in twenty-four hours. A window into how this disease hides, why the scans were no help, and what the modern treatment ladder can do."
+  },
+  {
+   "file": "med-students-08-late-middle-age.html",
+   "series": "students",
+   "colour": "violet",
+   "number": "8",
+   "title": "Late middle age",
+   "topic": "Late middle age",
+   "slug": "late-middle-age",
+   "week": true,
+   "pos": 9,
+   "badge": "Medical Students",
+   "link_label": "Open",
+   "blurb": "Forty-five to sixty in three tiers — the reserve that falls without moving a number on the chart, the creatinine that is really a muscle measurement, and what you will be expected to do. The argument of the page is that here the history is the diagnostic test and almost none of it has ever been written down. Plus the list of jobs handed to students because they take time, and a question about which of them anybody has ever shown you how to do."
   }
  ],
  "latest": [
+  {
+   "file": "med-students-08-late-middle-age.html",
+   "colour": "violet",
+   "label": "Medical Students 8 · Late middle age"
+  },
   {
    "file": "book-club-04-sabr.html",
    "colour": "terracotta",
@@ -1896,11 +1915,6 @@
    "file": "anecdote-city-04-stuck-in-my-craw.html",
    "colour": "indigo striped",
    "label": "Anecdote City · Stuck in My Craw"
-  },
-  {
-   "file": "anecdote-city-03-a-youth-policy.html",
-   "colour": "indigo striped",
-   "label": "Anecdote City · “A Youth Policy”"
   }
  ],
  "topten": [
