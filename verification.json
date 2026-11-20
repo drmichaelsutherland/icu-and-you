@@ -1481,6 +1481,16 @@
    "interval": "12m",
    "verdict": "corrected",
    "note": "The page read 'bring the systolic under 140', which has no floor. The guide gives a range with one, and the floor is the point: the same page warns elsewhere that excessive lowering is harmful."
+  },
+  "str-secondary-bp": {
+   "page": "registrars-04-acute-stroke.html",
+   "claim": "Secondary prevention: a clinic systolic below 130 mmHg, except in severe bilateral carotid stenosis where the target is 140 to 150",
+   "source": "National Clinical Guideline for Stroke for the UK and Ireland, 2023, section 5.4 Blood pressure, recommendation A: treatment initiated or increased as tolerated to achieve a clinic systolic below 130 mmHg, equivalent to a home systolic below 125, with a target of 140 to 150 in severe bilateral carotid artery stenosis",
+   "url": "https://www.strokeguideline.org",
+   "checked": "2026-11-21",
+   "interval": "12m",
+   "verdict": "corrected",
+   "note": "The page read 'a systolic of 120 to 130'. The source gives no floor of 120, and it carries an exception the page did not: in severe bilateral carotid stenosis the target goes up, not down, which matters on a page that mentions carotid endarterectomy in the same sentence. A LIMIT ON THIS CHECK, recorded rather than hidden: the only guideline consulted is the one for the United Kingdom and Ireland. The Australian and New Zealand Living Clinical Guidelines have not been read for this figure, so an Australian reader should treat the number as consistent with good practice elsewhere rather than as the Australian recommendation. This claim should be rechecked against the ANZ guideline when it can be reached."
   }
  }
 }
