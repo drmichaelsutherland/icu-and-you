@@ -25,6 +25,10 @@
    "checked": "2026-11-11",
    "note": "Eighteen claims checked. Sixteen were done when the page was built; a sweep on 11 November found one dose still unticked — the methylprednisolone for checkpoint inhibitor myocarditis — which confirmed, and one assertion beside it that did not: 'up to half are steroid-refractory' had no support at all. There is no population estimate in the literature, and the single case series available reports two thirds of twenty-four patients. The sentence was reworded rather than left standing."
   },
+  "mind-map-31-neonatal.html": {
+   "checked": "2026-11-11",
+   "note": "Seventeen claims, twenty-nine tick marks, because twelve of them are marked twice — once in the prose and once on the map, where the reader meets the number. Checked 26 October to 11 November 2026 against ANZCOR Guidelines 13.1 to 13.8, the NSW Agency for Clinical Innovation, WA Child and Adolescent Health Service and NETS, the Royal Hospital for Women neonatal formulary and the MSD Manual. Thirteen confirmed, three corrected — the blended-oxygen gestation, the preterm room temperature and the tube depth formula, which was in the guideline but unsafe without its caveat — and one flagged: the umbilical venous catheter depth, which has no ANZCOR source at all and stands on the Royal Hospital for Women protocol, so the page now names the landmark it is measured from. Two of the three corrections are on the corrections page; the oxygen and room temperature errors were wrong when written."
+  },
   "mnemonic-60-extubation.html": {
    "checked": "2026-11-11",
    "note": "Seven claims, each checked against its source on the day the page was written. Two limits are stated on the page itself rather than hidden here: the reintubation mortality gap is an association and partly reflects severity, and the Esteban trial was read through a published summary because the original could not be reached."
