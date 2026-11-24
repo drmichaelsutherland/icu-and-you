@@ -13,6 +13,7 @@ than a memory test.
 
 import hashlib
 import json
+import html
 import re
 import sys
 from collections import defaultdict
@@ -910,8 +911,23 @@ def main():
         # 1. Every time a page names its own series and a number, it must be
         #    this page's number.
         if label and num:
-            pat = re.escape(label) + r"\s*(?:&nbsp;)?\s*(?:No\.|Number|#)\s*(\d+)"
-            wrong = {n for n in re.findall(pat, s, re.I) if n != str(num)}
+            # Two passes, because the label and the number are not always
+            # adjacent in the source. The masthead eyebrow on 144 pages reads
+            #   <a class="serlink" ...>ICU Book Club</a> &nbsp;&#183;&nbsp; Number 5
+            # and a pattern tight enough for the footer cannot cross a closing
+            # tag and a middot. Book Club 5 shipped with "Number 4" in exactly
+            # that position in November 2026 and this check said nothing: the
+            # raw pattern could not reach it, and the hand-written guard in the
+            # build script had only been told to look for "No. 4".
+            # So: the original pattern on the raw markup, plus the same pattern
+            # on the page with its tags stripped and its entities resolved, and
+            # the union of the two. Proved by reintroducing the fault.
+            flat = re.sub(r"\s+", " ",
+                          html.unescape(re.sub(r"<[^>]+>", " ", s)))
+            tight = re.escape(label) + r"\s*(?:&nbsp;)?\s*(?:No\.|Number|#)\s*(\d+)"
+            loose = re.escape(label) + r"[\s\u00b7.,\u2014:|-]{0,6}(?:No\.|Number|#)\s*(\d+)"
+            found = set(re.findall(tight, s, re.I)) | set(re.findall(loose, flat, re.I))
+            wrong = {n for n in found if n != str(num)}
             if wrong:
                 problems.append(
                     f"{f}: calls itself {label} #{', #'.join(sorted(wrong))} somewhere, "
