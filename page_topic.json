@@ -1902,9 +1902,28 @@
    "badge": "Anecdote City",
    "link_label": "Open",
    "blurb": "Eighteen years old, a new motorbike, and the Adelaide University spring. Walking to the bike across the footbridge over the Torrens one Saturday afternoon, and then nothing — the next thing was a hospital ward, half a dozen broken bones in the face, and an hour or two that have never come back. Fifty years of not talking about it, and what genetics turned out not to explain."
+  },
+  {
+   "file": "book-club-05-lucky-man.html",
+   "series": "bookclub",
+   "colour": "terracotta",
+   "number": "5",
+   "title": "Lucky Man — Pointing at the future",
+   "topic": "Any time",
+   "slug": "standing",
+   "week": false,
+   "standing": true,
+   "badge": "ICU Book Club",
+   "link_label": "Open",
+   "blurb": "Michael J. Fox was twenty-nine, on a film set, and about as famous as a young actor gets, when the little finger of his left hand began to twitch. A year to the diagnosis, seven years of hiding it, a sitcom filmed inside the window between levodopa doses, and a disease that came for the small muscles of facial expression in a man whose living was his face. Honest about the drinking and the marriage in a way most memoirs are not, and an argument for reading accounts written from inside a disease."
   }
  ],
  "latest": [
+  {
+   "file": "book-club-05-lucky-man.html",
+   "colour": "terracotta",
+   "label": "ICU Book Club · Lucky Man — Pointing at the future"
+  },
   {
    "file": "anecdote-city-06-sleepy-footbridge.html",
    "colour": "indigo striped",
@@ -1924,11 +1943,6 @@
    "file": "bare-bones-05-late-middle-age.html",
    "colour": "bone",
    "label": "Bare Bones 5 · Late middle age"
-  },
-  {
-   "file": "anecdote-city-05-silent-sounds.html",
-   "colour": "indigo striped",
-   "label": "Anecdote City · The Silent Sounds on the Typewriter"
   }
  ],
  "topten": [

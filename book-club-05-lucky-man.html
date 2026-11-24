@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="en-AU">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ICU AND YOU &#183; ICU Book Club No. 5 &mdash; Lucky Man</title>
+<meta name="description" content="ICU Book Club No. 5: Michael J. Fox&rsquo;s Lucky Man &mdash; a tremor in one finger at twenty-nine, seven years of hiding it, and what an actor does when the disease comes for the muscles he works with.">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="alternate icon" href="/favicon.ico" sizes="any">
+<link rel="apple-touch-icon" href="/icon-180.png">
+<meta name="theme-color" content="#1B2A33">
+<meta property="og:site_name" content="ICU AND YOU">
+<meta property="og:type" content="website">
+<meta property="og:title" content="ICU AND YOU &#183; ICU Book Club &mdash; Lucky Man">
+<meta property="og:description" content="His greatest work is no longer a time-travelling teenager. It is pointing at a future that other people will get to live in.">
+<meta property="og:image" content="https://icuandyou.com/share-card.png">
+<meta name="twitter:card" content="summary_large_image">
+<style>
+  :root{
+    --paper:#FCF9F7; --ink:#241C19; --muted:#6E6058; --rule:#E3D6D0;
+    --sepia:#A65E4E; --sepiatint:#F7EDEA;
+    --rust:#A8442A; --rusttint:#F9EDE7;
+    --sky:#2E6E8E; --skytint:#E7F1F6;
+  }
+  *{box-sizing:border-box}
+  body{margin:0;background:#EDE4E0;color:var(--ink);
+    font:400 17px/1.65 'Iowan Old Style','Palatino Linotype',Palatino,Georgia,serif;
+    -webkit-text-size-adjust:100%;}
+  .sheet{max-width:780px;margin:0 auto;background:var(--paper);
+    box-shadow:0 1px 40px rgba(36,31,25,.10);}
+
+  header.top{padding:42px 40px 28px;border-bottom:1px solid var(--rule)}
+  .toptopic,.topseries{display:inline-block;margin:0 0 16px 9px;padding:7px 16px;border-radius:20px;
+    border:1px solid currentColor;opacity:.62;text-decoration:none;color:inherit;
+    font:600 11.5px 'Helvetica Neue',Arial,sans-serif;letter-spacing:.09em;
+    text-transform:uppercase;transition:opacity .12s ease}
+  .tophome{display:inline-block;margin:0 0 16px;padding:7px 16px;border-radius:20px;
+    border:1px solid currentColor;opacity:.62;text-decoration:none;color:inherit;
+    font:600 11.5px 'Helvetica Neue',Arial,sans-serif;letter-spacing:.09em;
+    text-transform:uppercase;transition:opacity .12s ease}
+  .toptopic:hover,.topseries:hover,.tophome:hover{opacity:1}
+  .eyebrow{font:500 11.5px/1 'Helvetica Neue',Arial,sans-serif;letter-spacing:.24em;
+    text-transform:uppercase;color:var(--sepia);margin:0 0 14px}
+  .eyebrow a.serlink,.eyebrow a.mast{color:inherit;text-decoration:none;
+    border-bottom:1px solid transparent}
+  .eyebrow a.serlink:hover,.eyebrow a.mast:hover{border-bottom-color:currentColor}
+  h1{font-size:31px;line-height:1.2;margin:0 0 10px;font-weight:400;letter-spacing:-.012em}
+  .kicker{color:var(--muted);margin:0;font-size:16.5px;font-style:italic}
+
+  .source{margin:0;padding:26px 40px;background:var(--sepiatint);border-bottom:1px solid var(--rule)}
+  .cite{margin:0 0 16px;font-size:16px;line-height:1.6}
+  .cite b{font-weight:600}
+  .meta{display:flex;flex-wrap:wrap;gap:5px 22px;margin:0 0 16px;
+    font:400 13.5px 'Helvetica Neue',Arial,sans-serif;color:var(--muted)}
+  .meta b{color:var(--ink);font-weight:600}
+  a.read{display:inline-block;padding:14px 28px;border-radius:30px;text-decoration:none;
+    background:var(--sepia);color:#FAF6F0;
+    font:600 15px 'Helvetica Neue',Arial,sans-serif;letter-spacing:.03em}
+  a.read:hover{background:#7E4234}
+  .srcnote{font:400 13.5px 'Helvetica Neue',Arial,sans-serif;color:var(--muted);margin:14px 0 0}
+
+  .pad{padding:32px 40px}
+  p{margin:0 0 17px}
+  h2.sub{font:600 12px 'Helvetica Neue',Arial,sans-serif;letter-spacing:.2em;
+    text-transform:uppercase;color:var(--muted);margin:30px 0 16px;
+    padding-bottom:8px;border-bottom:1px solid var(--rule)}
+  b.term{font-weight:600;color:var(--sepia)}
+
+  .agree{display:flex;gap:13px;flex-wrap:wrap;margin:0 0 22px}
+  .ag{flex:1 1 150px;background:#fff;border:1px solid var(--rule);border-radius:9px;
+    padding:16px 18px;text-align:center}
+  .ag .big{font-size:30px;line-height:1.1;color:var(--sepia);margin:0 0 4px}
+  .ag .lab2{font:400 13.5px 'Helvetica Neue',Arial,sans-serif;color:var(--muted);
+    line-height:1.45;margin:0}
+
+  /* the eighteen parts, as a shelf you can run your eye along */
+  .shelf{margin:0 0 22px;padding:20px 24px;background:#F6F2EC;border:1px solid var(--rule);
+    border-radius:9px;font:400 15px/1.75 'Helvetica Neue',Arial,sans-serif;color:#4A3A34}
+  .shelf .lab{display:block;font:600 11px 'Helvetica Neue',Arial,sans-serif;
+    letter-spacing:.18em;text-transform:uppercase;color:var(--sepia);margin:0 0 11px}
+  .shelf i{font-style:normal;color:var(--muted)}
+
+  .gap{margin:0 0 20px;padding:20px 24px;background:#F3EEE3;
+    border-left:4px solid var(--sepia);border-radius:0 8px 8px 0}
+  .gap .lab{display:block;font:600 11px 'Helvetica Neue',Arial,sans-serif;
+    letter-spacing:.18em;text-transform:uppercase;color:var(--sepia);margin:0 0 9px}
+  .gap p:last-child{margin:0}
+
+  .caution{margin:0 0 20px;padding:20px 24px;background:var(--rusttint);
+    border-left:4px solid var(--rust);border-radius:0 8px 8px 0}
+  .caution .lab{display:block;font:600 11px 'Helvetica Neue',Arial,sans-serif;
+    letter-spacing:.18em;text-transform:uppercase;color:var(--rust);margin:0 0 9px}
+  .caution p:last-child{margin:0}
+
+  .challenge{margin:0;padding:28px 32px;background:var(--rusttint);border-left:5px solid var(--rust)}
+  .challenge h2{font:600 12px 'Helvetica Neue',Arial,sans-serif;letter-spacing:.2em;
+    text-transform:uppercase;color:var(--rust);margin:0 0 13px}
+  .ask{font-size:19.5px;line-height:1.5;margin:0 0 8px}
+  .lead{font-size:15px;color:var(--muted);margin:0 0 17px;line-height:1.55}
+  .btn{display:inline-block;margin:6px 0 12px;padding:15px 30px;background:var(--rust);
+    color:#FDF8F5;text-decoration:none;border-radius:30px;
+    font:600 15px 'Helvetica Neue',Arial,sans-serif;letter-spacing:.03em}
+  .btn:hover{background:#8A3620}
+  .fallback{font:400 13.5px 'Helvetica Neue',Arial,sans-serif;color:var(--muted);margin:0}
+  .fallback a{color:var(--rust)}
+
+  .preamble{margin:0 0 26px;padding:22px 26px;background:#F4EFEA;
+    border-left:4px solid var(--sepia);border-radius:0 8px 8px 0}
+  .preamble .lab{display:block;font:600 11px 'Helvetica Neue',Arial,sans-serif;
+    letter-spacing:.18em;text-transform:uppercase;color:var(--sepia);margin:0 0 10px}
+  .preamble p:last-child{margin:0}
+  .pull{margin:26px 0;padding:0 0 0 22px;border-left:3px solid var(--sepia);
+    font-size:20px;line-height:1.45;font-style:italic;color:#4A3A34}
+
+  .subline{margin:0 0 14px;padding:0 0 13px;border-bottom:1px solid rgba(0,0,0,.09);
+    font:400 14.5px/1.55 'Iowan Old Style','Palatino Linotype',Palatino,Georgia,serif;
+    max-width:56ch;margin-left:auto;margin-right:auto}
+  .subline a{font-weight:500;border-bottom:1px solid currentColor;
+    text-decoration:none;color:inherit}
+  .firstpub{display:block;margin:0 0 10px;padding-bottom:9px;
+    border-bottom:1px solid currentColor;border-color:rgba(0,0,0,.09);
+    font:400 12px 'Helvetica Neue',Arial,sans-serif;letter-spacing:.06em;opacity:.72}
+
+  footer{padding:24px 40px 42px;border-top:1px solid var(--rule);
+    font:400 13px 'Helvetica Neue',Arial,sans-serif;color:var(--muted);text-align:center;line-height:1.7}
+  .home{display:inline-block;margin:0 0 14px;padding:8px 18px;border-radius:20px;
+    border:1px solid var(--rule);background:#F2EEE6;color:var(--sepia);text-decoration:none;
+    font:600 12.5px 'Helvetica Neue',Arial,sans-serif;letter-spacing:.05em}
+  .home:hover{background:var(--sepia);border-color:var(--sepia);color:#FAF6F0}
+  .mine{display:inline-block;margin:9px 0 0;opacity:.78;font-size:.94em}
+
+  @media (max-width:620px){
+    header.top,.source,.pad,footer{padding-left:20px;padding-right:20px}
+    .challenge{padding:22px 20px}
+    h1{font-size:25px} body{font-size:16.5px} .ask{font-size:18px}
+  }
+  @media print{ body{background:#fff} .sheet{box-shadow:none;max-width:none} }
+
+/* ---- the cover photograph and the sign-off, both new to this series ---- */
+  .fig{margin:26px 0 30px;text-align:center}
+  .fig img{max-width:300px;width:60%;height:auto;border-radius:3px;
+    box-shadow:0 2px 18px rgba(27,42,51,.22)}
+  .cap{margin:11px 0 0;font:italic 400 13.5px/1.55 'Helvetica Neue',Arial,sans-serif;
+    color:var(--muted)}
+  .monogram{margin:34px 0 4px;text-align:right;padding-right:2px;
+    font:italic 400 19px/1 Georgia,'Iowan Old Style',serif;letter-spacing:.14em;
+    color:var(--muted);opacity:.45}
+  @media (max-width:640px){ .fig img{max-width:220px;width:70%} }
+</style>
+</head>
+<body>
+<div class="sheet">
+
+  <header class="top">
+    <a class="tophome" href="./">&larr;&nbsp; Home</a>
+    <a class="topseries" href="./?s=bookclub">All book club</a>
+    <p class="eyebrow"><a class="mast" href="./">ICU and You</a> &nbsp;·&nbsp;
+      <a class="serlink" href="./?s=bookclub">ICU Book Club</a> &nbsp;·&nbsp; Number 4</p>
+    <h1>Lucky Man &mdash; Pointing at the future</h1>
+    <p class="kicker">Michael J. Fox, 2002 &mdash; a twitch in one finger at twenty-nine, and the thirty years he made out of it</p>
+  </header>
+
+  <div class="source">
+    <p class="cite">Michael J. Fox. <b>Lucky Man: A Memoir.</b> Hyperion, 2002. 260 pages,
+      hardback, and also an audiobook read by the author. It is short, and it is the whole
+      story.</p>
+    <p class="meta"><span><b>Published</b> 2002</span><span><b>Pages</b> 260</span>
+      <span><b>Written by</b> the author</span><span><b>Diagnosed</b> 1991, aged 29</span></p>
+    <p class="srcnote">No affiliate link, and nobody has asked me to write this.</p>
+  </div>
+
+  <div class="pad">
+    <div class="preamble">
+      <span class="lab">About this series</span>
+      <p>Books that have made a difference to how we teach, train or practise in intensive care. Not
+        all of them are medical books. This one is an actor&rsquo;s memoir, and I think every doctor
+        should read one like it, because a first-hand account of a disease gives you something that
+        no clinician and no researcher can hand you.</p>
+    </div>
+
+    <p class="lead">It started in the little finger of his left hand.</p>
+
+    <p>He was twenty-nine years old. He was on location in Florida making <em>Doc Hollywood</em>, he
+      was hungover, and he was about as famous as a young actor gets. The finger twitched. He looked
+      at it, and he decided it was a trapped nerve, and he went to work.</p>
+
+    <div class="fig">
+      <img src="lucky-man-cover.jpg" alt="The hardback cover of Lucky Man by Michael J. Fox, the author resting his chin on his arm." width="700" height="1167">
+      <p class="cap">My own copy, and my own photograph of it.</p>
+    </div>
+
+    <p>It was not a trapped nerve. It took a year and several doctors, and then a neurologist told
+      him he had young-onset Parkinson&rsquo;s disease, and gave him ten more years of working life.
+      He went out to the car park and sat in the car.</p>
+
+    <h2 class="sub">The world at his feet</h2>
+
+    <p>You have to have the first half of the story to feel the second half of it.</p>
+
+    <p><em>Family Ties</em> made him a household name, and <em>Back to the Future</em> in 1985 put
+      him somewhere that only a handful of actors ever go. He was the biggest young star in the
+      world, and the world behaved accordingly. Cars arrived. Doors opened. Somebody else carried
+      everything.</p>
+
+    <p>Hold on to that last part. It comes back.</p>
+
+    <p>What he does with this section of the book is the first sign that it is going to be a better
+      book than it needed to be. He had every commercial reason to write the triumphant version. He
+      writes the other one, and he is merciless about himself in it &mdash; the vanity, the
+      entitlement, the drinking, the sheer quantity of it. He does not arrange his failings in a
+      flattering order. He just puts them down.</p>
+
+    <h2 class="sub">Impossible</h2>
+
+    <p>And here is the part every clinician will recognise, because we see it every week in people
+      with no fame at all.</p>
+
+    <p>He is twenty-nine. He is a film star. Parkinson&rsquo;s is what old men get, shuffling, in
+      cardigans, in nursing homes. So it cannot be Parkinson&rsquo;s, because he is not that, and
+      the diagnosis is therefore a mistake that somebody will shortly correct.</p>
+
+    <p>Impossible.</p>
+
+    <p>He was wrong, and he was also not being stupid. He was playing the percentages, and for once
+      the percentages were worth playing: most people with Parkinson&rsquo;s disease are diagnosed
+      somewhere around sixty-five. A twenty-nine-year-old is not the patient the disease usually
+      chooses. What he had was the one-in-ten version, the young-onset kind, where the diagnosis
+      arrives before fifty and sometimes a very long way before it.</p>
+
+    <p>Denial, when you read it from inside, turns out not to be stupidity. It is arithmetic done
+      with the wrong denominator.</p>
+
+    <h2 class="sub">The drinking, which is the honest part</h2>
+
+    <p>The disease did not arrive into an orderly life. It arrived into a life with a great deal of
+      alcohol in it, and the two of them got on extremely well.</p>
+
+    <p>He is unsparing here, and this is the chapter I would hand to a trainee. The drinking was
+      already a problem; the diagnosis gave it a justification, and a justified problem is a much
+      harder problem. He describes the specific mechanics of it &mdash; the way a reason to drink
+      becomes a reason not to examine why you are drinking &mdash; with no self-pity whatsoever.</p>
+
+    <div class="pull">He does not arrange his failings in a flattering order. He just puts them
+      down.</div>
+
+    <p>He stopped in 1992 and has not started again. The marriage went to the edge first. And then
+      the thing that saves the book from being a story about a man saving himself: it was Tracy
+      Pollan, his wife, who found the way through and showed it to him, in the middle of a disease
+      that was hers to live with too and that nobody was giving her any credit for.</p>
+
+    <p>We are not very good at this in hospitals. We take a history from the patient, we write down
+      the diagnosis, and the person sitting beside the bed &mdash; who will do the actual nursing,
+      for the next thirty years, unpaid and unmentioned &mdash; gets recorded as <em>next of
+      kin</em>.</p>
+
+    <h2 class="sub">The thing he had never learned</h2>
+
+    <p>Now the part I said to hold on to.</p>
+
+    <p>Somewhere in the long sober re-examination, he works out what the fame actually cost him. He
+      had been a working actor since he was a teenager, and in all that time other people had done
+      the ordinary things for him. Arrangements, logistics, difficulties, consequences. He had been
+      carried for fifteen years, and he had therefore never had to develop the one set of skills he
+      was now going to need more than any other.</p>
+
+    <p>He had to learn, at thirty, how to be an adult who deals with things. He had to learn it
+      while losing the use of his body.</p>
+
+    <p>That is an unusual kind of honesty. Most memoirs of illness are about what the illness took.
+      This one spends a long time on what the author had failed to acquire before the illness
+      arrived, which is a far less comfortable thing to write down.</p>
+
+    <h2 class="sub">Acting between doses</h2>
+
+    <p>Then he goes back to work, and the book becomes something that I have not seen anywhere else:
+      a professional account of doing highly skilled physical work on a drug with a window.</p>
+
+    <p><em>Spin City</em> started in 1996. By then he was taking levodopa, and levodopa in
+      established Parkinson&rsquo;s does not hold you steady all day. It comes up, it works, and it
+      goes off, and as the years pass the good window narrows and the edges of it get rougher. On,
+      and then off. Clinicians call it exactly that.</p>
+
+    <p>So he scheduled his life inside the window. He timed his doses to his scenes. He arranged,
+      where he could, to be on camera when he was on, and to be somewhere else when he was not. And
+      when the tremor came through anyway, he gave it somewhere to go &mdash; a prop picked up, a
+      hand pushed into a pocket, a piece of business invented on the spot so that an involuntary
+      movement became a voluntary one.</p>
+
+    <p>Go back and watch it. It is all there, in a hit sitcom, in front of an audience of millions,
+      and almost nobody saw it. He did that for three years before he told anyone, and he told them
+      in 1998, seven years after the diagnosis.</p>
+
+    <p>The same year he had surgery, and had a small part of his brain destroyed on purpose to quiet
+      the tremor down the left side of his body. That was a reasonable operation in 1998. It is
+      largely a historical one now, because within a few years deep brain stimulation offered the
+      same target without the lesion, and with the ability to turn it down again. Twenty-five years
+      is not very long in a life, and it is a very long time in neurosurgery.</p>
+
+    <h2 class="sub">The cruellest possible symptom</h2>
+
+    <p>And then there is the thing that makes this particular man and this particular disease an
+      almost unbearable pairing.</p>
+
+    <p>Parkinson&rsquo;s takes the face.</p>
+
+    <p>The slowing is not confined to the limbs. It reaches the small muscles of facial expression,
+      and the face becomes still, and the stillness reads to other people as absence &mdash; as flat
+      affect, as depression, as not caring. The voice goes quiet and loses its rise and fall at the
+      same time.</p>
+
+    <p>Which is to say that the disease came for the precise tissue that his entire livelihood, his
+      identity and his gift were built on. An actor works with the face. That is the instrument. A
+      surgeon with Parkinson&rsquo;s loses the hands; an actor loses the thing the audience actually
+      looks at.</p>
+
+    <p>He writes about this without once asking you to feel sorry for him, which is why it lands.</p>
+
+    <div class="caution">
+      <span class="lab">Three notes the book does not make</span>
+      <p><b>The tremor started on one side, and that matters.</b> Parkinson&rsquo;s begins
+        asymmetrically and stays that way for years. A rest tremor in one hand, in one finger, is a
+        far more useful sign than a symmetrical one, and the asymmetry is part of what separates it
+        from the common alternatives.</p>
+      <p><b>The diagnosis is clinical.</b> There was no test that would have settled it in 1991 and
+        there is no routine blood test that settles it now. Which is why a year went by, and why a
+        year still goes by for a lot of people: the thing that makes the diagnosis is somebody
+        taking the history and watching the patient walk.</p>
+      <p><b>The quiet face is the one we get wrong.</b> Reduced facial expression and a soft,
+        flattened voice are motor signs, not mood. They are routinely read as depression, as
+        disengagement, or as a patient who does not want to participate in their own care, and the
+        misreading is ours rather than theirs.</p>
+    </div>
+
+    <h2 class="sub">And so</h2>
+
+    <p>He left the show in 2000 and started the foundation in the autumn of the same year. It is now
+      the largest non-profit funder of Parkinson&rsquo;s research in the world, and it has raised
+      more than two and a half billion dollars.</p>
+
+    <p>Sit with that for a moment, because it is the whole argument of the book arriving in the form
+      of a number.</p>
+
+    <p>A man who was handed ten working years, and who spent the first seven of them hiding, has
+      spent the following twenty-five building the single largest engine of research into the thing
+      that was supposed to finish him. His greatest work is no longer a time-travelling teenager in
+      a modified car. It is pointing at a future, a real one, that other people are going to get to
+      live in.</p>
+
+    <p>Magnificent, Michael.</p>
+
+    <div class="pull">Denial, when you read it from inside, turns out not to be stupidity. It is
+      arithmetic done with the wrong denominator.</div>
+
+    <p>And the title, which I took at first for a brave face, is not a brave face. He is not saying
+      he is lucky to have Parkinson&rsquo;s. He is saying that the disease is the only thing that
+      ever made him stop, and look at the drinking, and look at the marriage, and look at the man
+      who had been carried everywhere since he was eighteen. He got a second life out of it. He
+      thinks that is luck. You can argue with him; he has thought about it harder than you have.</p>
+
+    <p>Which brings me to why this is in a book club for people who work in intensive care, where
+      nobody has Parkinson&rsquo;s disease as the admitting problem and nobody is a film star.</p>
+
+    <p>Read a few of these. Not the clinical reviews and not the systematic ones &mdash; those tell
+      you what the disease does to a population. Read the ones written from inside, by people
+      willing to be honest about themselves while they do it, and you get the other half: what it is
+      like to be the person the disease is happening to, which is the half we are forever guessing
+      at from the end of the bed.</p>
+
+    <p>Medicine is about stories.</p>
+
+    <p>Our stories.</p>
+
+    <p class="monogram">mjs</p>
+
+    <div class="gap">
+      <span class="lab">Where to go, and what to read next</span>
+      <p><b>If this is close to home.</b> <a href="https://parkinsons.org.au/">Parkinson&rsquo;s
+        Australia</a> runs a national infoline on <b>1800&nbsp;644&nbsp;189</b>, which will also put
+        you through to the organisation in your own state or territory. There are more than 150,000
+        Australians living with Parkinson&rsquo;s disease, and a good proportion of the practical
+        help &mdash; nurse specialists, allied health, carer support &mdash; is easier to reach
+        through them than through us.</p>
+      <p><b>The foundation.</b> <a href="https://www.michaeljfox.org/">The Michael J. Fox Foundation
+        for Parkinson&rsquo;s Research</a>, founded in the autumn of 2000 and now the largest
+        non-profit funder of Parkinson&rsquo;s research anywhere.</p>
+      <p><b>On the disease.</b> <a href="https://www.healthdirect.gov.au/parkinsons-disease-symptoms">Healthdirect</a>
+        on the symptoms, which is where the figures above come from: diagnosis usually around
+        sixty-five, one in ten diagnosed under forty-five, young onset defined as a diagnosis before
+        fifty, and a rest tremor that usually starts on one side.</p>
+      <p><b>The sequels, if you want them.</b> Fox has written three more &mdash;
+        <em>Always Looking Up</em>, <em>A Funny Thing Happened on the Way to the Future</em> and
+        <em>No Time Like the Future</em>. The last of them is the one written from inside a much
+        worse decade, and it is harder going than this one.</p>
+    </div>
+    <div class="challenge">
+      <h2>Challenge for you</h2>
+      <p class="ask">Which patient taught you the most about their disease?</p>
+      <p class="lead">Not a textbook, not a lecture, not a course. A person, who had the thing, and
+        who told you something about it that you had been getting wrong.</p>
+      <p>Everybody who has worked in this job for any length of time has at least one. Mine changed
+        how I explain a tracheostomy, and it took about ninety seconds of being told, politely, that
+        I had been describing it entirely from my own side of it.</p>
+      <p>Tell me yours, with nothing in it that would identify anybody. And if you have a book of
+        this kind that did the same job &mdash; an account from inside a disease that changed how
+        you practise &mdash; tell me that too, and I will read it.</p>
+      <p><a class="btn" href="mailto:icuandyou@icloud.com?subject=ICU%20Book%20Club%205%20-%20the%20patient%20who%20taught%20me&body=The%20patient%2C%20and%20what%20they%20had%3A%0D%0A%0D%0A%0D%0AWhat%20they%20told%20me%20that%20I%20had%20been%20getting%20wrong%3A%0D%0A%0D%0A%0D%0AA%20book%20written%20from%20inside%20a%20disease%20that%20changed%20how%20I%20practise%3A%0D%0A%0D%0A---%0D%0A%0D%0AName%20%28and%20how%20you%20would%20like%20to%20be%20credited%29%3A%0D%0A%0D%0A---%0D%0A%0D%0AThinking%20about%20this%20ICU%20AND%20YOU%20post%20overall%20%E2%80%94%20was%20it%20useful%20to%20you%2C%20or%20would%20it%20be%20useful%20to%20others%3F%0D%0A">Send me one</a></p>
+      <p class="fallback" style="margin-bottom:9px">How you are credited is entirely your call &mdash; by name, by initials, or not at all &mdash; whether you write the piece or I do, and whether I quote you or simply say who sent something in; nothing of yours goes up with your name on it unless you have said yes.</p>
+      <p class="fallback">The button opens a reply straight to me. If your device blocks it, write to
+        <a href="mailto:icuandyou@icloud.com">icuandyou@icloud.com</a> instead.</p>
+    </div>
+  </div>
+
+  <footer>
+    <span class="firstpub">First published November 2026</span>
+    <p class="subline">Two emails a week &mdash; the Friday newsletter for all subscribers, and, for clinical subscribers,
+      the mind map and puzzles the moment they go up on Tuesday. Occasional announcements of new
+      features as they arrive. What went up and why it mattered, the best of your replies, and
+      original feature stories, news and views. <a href="https://joinlist.com/f/5adad2d6">Come and join us</a>.</p>
+    <a class="home" href="./">&larr; &nbsp;All of ICU AND YOU</a><br>
+    ICU AND YOU &nbsp;&#183;&nbsp; ICU Book Club No. 5<br>
+    A personal review, written independently. Nothing of the book is reproduced here, and
+    the cover photograph is my own, of my own copy. Educational use only. Publication
+    details from Open Library. The clinical statements were checked on 24 November 2026 against
+    Healthdirect Australia for the symptoms and the age of onset, and Parkinson&rsquo;s Australia
+    for the national infoline and the number of Australians living with the disease, both linked
+    above; the diagnosis, the public disclosure in 1998, the surgery of the same year and the
+    founding of the foundation against the foundation&rsquo;s own account and contemporaneous
+    reporting in the Canadian Encyclopedia.
+  <br>
+    <span class="mine">Views my own, not those of NSW Health or any other organisation. No identifiable patients — scenarios are constructed or combined for teaching. <a href="about.html">More</a>.</span>
+  </footer>
+
+</div>
+<script data-goatcounter="https://icuandyou.goatcounter.com/count"
+        async src="//gc.zgo.at/count.js"></script>
+</body>
+</html>
