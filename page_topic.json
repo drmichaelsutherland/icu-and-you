@@ -1888,9 +1888,28 @@
    "badge": "Medical Students",
    "link_label": "Open",
    "blurb": "Forty-five to sixty in three tiers — the reserve that falls without moving a number on the chart, the creatinine that is really a muscle measurement, and what you will be expected to do. The argument of the page is that here the history is the diagnostic test and almost none of it has ever been written down. Plus the list of jobs handed to students because they take time, and a question about which of them anybody has ever shown you how to do."
+  },
+  {
+   "file": "anecdote-city-06-sleepy-footbridge.html",
+   "series": "anecdote",
+   "colour": "indigo striped",
+   "number": "6",
+   "title": "Across a Sleepy Footbridge",
+   "topic": "Any time",
+   "slug": "standing",
+   "week": false,
+   "standing": true,
+   "badge": "Anecdote City",
+   "link_label": "Open",
+   "blurb": "Eighteen years old, a new motorbike, and the Adelaide University spring. Walking to the bike across the footbridge over the Torrens one Saturday afternoon, and then nothing — the next thing was a hospital ward, half a dozen broken bones in the face, and an hour or two that have never come back. Fifty years of not talking about it, and what genetics turned out not to explain."
   }
  ],
  "latest": [
+  {
+   "file": "anecdote-city-06-sleepy-footbridge.html",
+   "colour": "indigo striped",
+   "label": "Anecdote City · Across a Sleepy Footbridge"
+  },
   {
    "file": "med-students-08-late-middle-age.html",
    "colour": "violet",
@@ -1910,11 +1929,6 @@
    "file": "anecdote-city-05-silent-sounds.html",
    "colour": "indigo striped",
    "label": "Anecdote City · The Silent Sounds on the Typewriter"
-  },
-  {
-   "file": "anecdote-city-04-stuck-in-my-craw.html",
-   "colour": "indigo striped",
-   "label": "Anecdote City · Stuck in My Craw"
   }
  ],
  "topten": [

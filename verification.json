@@ -29,6 +29,10 @@
    "checked": "2026-11-11",
    "note": "Seventeen claims, twenty-nine tick marks, because twelve of them are marked twice — once in the prose and once on the map, where the reader meets the number. Checked 26 October to 11 November 2026 against ANZCOR Guidelines 13.1 to 13.8, the NSW Agency for Clinical Innovation, WA Child and Adolescent Health Service and NETS, the Royal Hospital for Women neonatal formulary and the MSD Manual. Thirteen confirmed, three corrected — the blended-oxygen gestation, the preterm room temperature and the tube depth formula, which was in the guideline but unsafe without its caveat — and one flagged: the umbilical venous catheter depth, which has no ANZCOR source at all and stands on the Royal Hospital for Women protocol, so the page now names the landmark it is measured from. Two of the three corrections are on the corrections page; the oxygen and room temperature errors were wrong when written."
   },
+  "registrars-04-acute-stroke.html": {
+   "checked": "2026-11-21",
+   "note": "Twenty-three claims, closed out on 21 November 2026 against the documents this state actually works to: the ACI Stroke Network clinical practice guide of February 2026, the Australian and New Zealand Living Clinical Guidelines chapter 3 version 14.0 of September 2026, two NSW protocols for the antihypertensive doses, and the Australian product information for clevidipine. Seven confirmed, eight corrected, one contested and seven flagged. Two of the corrections were drug doses that were too high and two were eligibility rules that would have turned away patients who are eligible; those are on the corrections page. The flagged items are mostly figures taken from the 2026 American guideline, which could be read only through published summaries, and they are marked as such rather than removed. The contested item is the blood pressure ceiling in the first 24 hours, where the statewide guide and a local health district procedure give different numbers and the page now says so. The clinical content and its order remain the contributor's; where a source disagreed with the presentation, the page says both rather than overwriting her."
+  },
   "mnemonic-60-extubation.html": {
    "checked": "2026-11-11",
    "note": "Seven claims, each checked against its source on the day the page was written. Two limits are stated on the page itself rather than hidden here: the reintubation mortality gap is an association and partly reflects severity, and the Esteban trial was read through a published summary because the original could not be reached."
@@ -1491,6 +1495,16 @@
    "interval": "12m",
    "verdict": "corrected",
    "note": "The page read 'a systolic of 120 to 130'. The source gives no floor of 120, and it carries an exception the page did not: in severe bilateral carotid stenosis the target goes up, not down, which matters on a page that mentions carotid endarterectomy in the same sentence. A LIMIT ON THIS CHECK, recorded rather than hidden: the only guideline consulted is the one for the United Kingdom and Ireland. The Australian and New Zealand Living Clinical Guidelines have not been read for this figure, so an Australian reader should treat the number as consistent with good practice elsewhere rather than as the Australian recommendation. This claim should be rechecked against the ANZ guideline when it can be reached."
+  },
+  "str-evt": {
+   "page": "registrars-04-acute-stroke.html",
+   "claim": "Endovascular therapy within 24 hours of onset for occlusion of the internal carotid, M1, proximal or dominant M2, basilar, or tandem cervical and intracranial occlusion; beyond 24 hours it may be considered where imaging suggests salvageable tissue",
+   "source": "Australian and New Zealand Living Clinical Guidelines for Stroke Management, Chapter 3 of 8: Acute medical and surgical management, version 14.0, published 16 September 2026, Endovascular therapy, strong recommendation, with the consensus-based good practice statement for presentations beyond 24 hours",
+   "url": "https://app.magicapp.org",
+   "checked": "2026-11-21",
+   "interval": "12m",
+   "verdict": "corrected",
+   "note": "The page drew two tiers, a solid window to 6 hours and an imaging-selected 6 to 24. That boundary no longer exists in the Australian guideline: the remark against the recommendation says the 0 to 24 hour recommendations for the internal carotid, middle cerebral and basilar arteries were CONSOLIDATED INTO ONE, approved by the NHMRC in July 2023. Six hours survives only in the evidence narrative, where the certainty is highest. Two further changes. The vessel list is wider than the page had it: proximal or dominant M2 rather than early M2, and tandem occlusion of the cervical carotid with an intracranial artery, which the page did not mention at all. And basilar occlusion sits inside the same single recommendation with NO NIHSS THRESHOLD. The page gated it at 10 or more, which turns a stated residual uncertainty into a rule: the guideline says judgement is required below 10, expressly because the NIHSS does not capture disabling posterior circulation signs such as truncal ataxia and dysphagia. The threshold the page used is the AHA/ASA position, recorded separately on this page and flagged there."
   }
  }
 }
