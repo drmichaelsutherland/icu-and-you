@@ -1916,9 +1916,28 @@
    "badge": "ICU Book Club",
    "link_label": "Open",
    "blurb": "Michael J. Fox was twenty-nine, on a film set, and about as famous as a young actor gets, when the little finger of his left hand began to twitch. A year to the diagnosis, seven years of hiding it, a sitcom filmed inside the window between levodopa doses, and a disease that came for the small muscles of facial expression in a man whose living was his face. Honest about the drinking and the marriage in a way most memoirs are not, and an argument for reading accounts written from inside a disease."
+  },
+  {
+   "file": "myths-02-late-middle-age.html",
+   "series": "myths",
+   "colour": "bramble",
+   "number": "2",
+   "title": "Five things everybody knows",
+   "topic": "Late middle age",
+   "slug": "late-middle-age",
+   "week": true,
+   "pos": 10,
+   "badge": "Myths and Misconceptions",
+   "link_label": "Open",
+   "blurb": "Five things everybody knows, traced to where they started and graded one by one. The glass of red wine, which does not survive. Statin muscle pain, where a trial with four empty bottles in it found that any tablet at all doubled the symptoms. Hormone therapy and breast cancer, where a relative risk from a trial of sixty-three-year-olds left a generation of fifty-year-olds untreated. The normal stress test, where two thirds of the arteries that later closed had been under fifty per cent narrowed. And the PSA, where the Australian advice moved again this year."
   }
  ],
  "latest": [
+  {
+   "file": "myths-02-late-middle-age.html",
+   "colour": "bramble",
+   "label": "Myths 2 · Late middle age"
+  },
   {
    "file": "book-club-05-lucky-man.html",
    "colour": "terracotta",
@@ -1938,11 +1957,6 @@
    "file": "book-club-04-sabr.html",
    "colour": "terracotta",
    "label": "ICU Book Club · Sabr — No tampering required"
-  },
-  {
-   "file": "bare-bones-05-late-middle-age.html",
-   "colour": "bone",
-   "label": "Bare Bones 5 · Late middle age"
   }
  ],
  "topten": [
