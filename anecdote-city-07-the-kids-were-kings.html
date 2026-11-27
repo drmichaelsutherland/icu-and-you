@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en-AU">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ICU AND YOU &#183; Anecdote City &mdash; The Kids Were Kings</title>
+<meta name="description" content="Anecdote City No. 7: the works Christmas party at a Port Adelaide factory in the 1960s, and what medicine has done with the word downtime.">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="alternate icon" href="/favicon.ico" sizes="any">
+<link rel="apple-touch-icon" href="/icon-180.png">
+<meta name="theme-color" content="#1B3350">
+<meta property="og:site_name" content="ICU AND YOU">
+<meta property="og:type" content="website">
+<meta property="og:title" content="ICU AND YOU &#183; Anecdote City &mdash; The Kids Were Kings">
+<meta property="og:description" content="Of course, the recollections get freely modified over time. And they get sweeter with each revision.">
+<meta property="og:image" content="https://icuandyou.com/share-card.png">
+<meta name="twitter:card" content="summary_large_image">
+<style>
+  /* ANECDOTE CITY runs on its own stationery. Warm kraft rather than the
+     site's cool paper, a bookish Baskerville rather than Iowan Old Style,
+     and typewriter furniture — so that a story is visibly not a guideline
+     before a word of it has been read. */
+  :root{
+    --kraft:#DED3B8; --paper:#FBF6EA; --ink:#241E16; --muted:#6E6354; --rule:#E0D4BC;
+    --indigo:#1B3350; --indigotint:#EDEFF3; --deep:#0F1F33;
+    --lamp:#B0601E; --lamptint:#F8EFE3;
+    --book:'Hoefler Text',Baskerville,'Libre Baskerville',Constantia,'Times New Roman',Georgia,serif;
+    --type:'American Typewriter','Courier New',Courier,monospace;
+  }
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--kraft);color:var(--ink);
+    font:400 18px/1.7 var(--book);-webkit-text-size-adjust:100%;}
+  .sheet{max-width:720px;margin:0 auto;background:var(--paper);
+    box-shadow:0 1px 40px rgba(36,30,22,.16);}
+
+  .flag{display:flex;height:6px}
+  .flag i{display:block}
+  .flag i:nth-child(1){flex:3;background:var(--deep)}
+  .flag i:nth-child(2){flex:1;background:var(--lamp)}
+  .flag i:nth-child(3){flex:3;background:var(--indigo)}
+
+  header.top{padding:44px 44px 30px;border-bottom:2px solid var(--indigo)}
+  .eyebrow a.serlink,.eyebrow a.mast{color:inherit;text-decoration:none;
+    border-bottom:1px solid transparent}
+  .eyebrow a.serlink:hover,.eyebrow a.mast:hover{border-bottom-color:currentColor}
+  .toptopic,.topseries,.tophome{display:inline-block;margin:0 0 16px;padding:7px 15px;
+    border-radius:3px;border:1px solid currentColor;opacity:.58;text-decoration:none;color:inherit;
+    font:400 11px var(--type);letter-spacing:.11em;text-transform:uppercase;
+    transition:opacity .12s ease}
+  .topseries,.toptopic{margin-left:8px}
+  .toptopic:hover,.topseries:hover,.tophome:hover{opacity:1}
+  .eyebrow{font:400 11.5px/1 var(--type);letter-spacing:.2em;
+    text-transform:uppercase;color:var(--muted);margin:0 0 18px}
+
+  .addr{display:inline-block;margin:0 0 16px;padding:7px 14px;background:var(--indigo);
+    color:var(--paper);font:400 12px var(--type);letter-spacing:.17em;text-transform:uppercase}
+  h1{font:400 40px/1.1 var(--type);margin:0 0 14px;letter-spacing:-.018em}
+  .kicker{color:var(--muted);margin:0;font-size:17.5px;font-style:italic}
+
+  .pad{padding:38px 44px}
+  p{margin:0 0 19px}
+  .lede{font-size:21px;line-height:1.55;margin:0 0 24px}
+  .lede::first-letter{float:left;font:400 58px/0.82 var(--type);color:var(--indigo);
+    margin:5px 9px 0 0}
+
+  .beat{margin:30px 0;text-align:center;color:var(--indigo);font:400 22px/1 var(--type);
+    letter-spacing:.34em;opacity:.72}
+
+  /* the recurring footer box — what this place is, on every anecdote */
+  .cityline{margin:34px 0 0;padding:22px 26px;background:var(--indigotint);
+    border-top:2px solid var(--indigo)}
+  .cityline .lab{display:block;font:400 11px var(--type);letter-spacing:.17em;
+    text-transform:uppercase;color:var(--deep);margin:0 0 10px}
+  .cityline p{font-size:16px;margin:0 0 12px}
+  .cityline .acts{margin:0 0 11px}
+  .cityline .acts a{display:inline-block;margin:0 14px 0 0;padding:9px 17px;
+    background:var(--indigo);color:var(--paper);text-decoration:none;border-radius:3px;
+    font:400 12px var(--type);letter-spacing:.08em;text-transform:uppercase}
+  .cityline .acts a:hover{background:var(--lamp)}
+  .cityline .fine{font:400 12.5px/1.6 var(--book);font-style:italic;color:var(--muted);margin:0}
+
+  .subline{margin:0 0 14px;padding:0 0 13px;border-bottom:1px solid rgba(0,0,0,.09);
+    font:400 14.5px/1.55 var(--book);max-width:56ch;margin-left:auto;margin-right:auto}
+  .subline a{font-weight:500;border-bottom:1px solid currentColor;
+    text-decoration:none;color:inherit}
+  .firstpub{display:block;margin:0 0 10px;padding-bottom:9px;
+    border-bottom:1px solid rgba(0,0,0,.09);
+    font:400 11.5px var(--type);letter-spacing:.09em;opacity:.7}
+
+  footer{padding:26px 44px 44px;border-top:2px solid var(--indigo);
+    font:400 13px/1.7 var(--type);color:var(--muted);text-align:center}
+  .home{display:inline-block;margin:0 0 14px;padding:8px 18px;border-radius:3px;
+    border:1px solid var(--rule);background:#F3ECDC;color:var(--deep);text-decoration:none;
+    font:400 12px var(--type);letter-spacing:.08em;text-transform:uppercase}
+  .home:hover{background:var(--deep);border-color:var(--deep);color:#FBF6EA}
+  .mine{display:block;margin:12px 0 0;opacity:.78;font-size:.94em}
+  .rights{display:block;max-width:56ch;margin:14px auto 0;padding:12px 0 0;
+    border-top:1px solid rgba(0,0,0,.09);font:400 12.5px/1.6 var(--book);color:var(--muted)}
+  .srcs{display:block;max-width:56ch;margin:4px auto 0;font:400 13.5px/1.6 var(--book);
+    font-style:italic}
+  .srcs a{color:inherit}
+
+  @media (max-width:620px){
+    header.top,.pad,footer{padding-left:20px;padding-right:20px}
+    .cityline{padding:20px}
+    h1{font-size:29px} body{font-size:17px} .lede{font-size:19px}
+    .lede::first-letter{font-size:48px}
+    .cityline .acts a{display:block;margin:0 0 9px;text-align:center}
+  }
+  @media print{ body{background:#fff} .sheet{box-shadow:none;max-width:none} }
+
+/* ---- Anecdote City paper, added November 2026 ---- */
+  .sheet{position:relative;
+    box-shadow:0 2px 26px rgba(15,31,51,.22),0 18px 50px rgba(15,31,51,.10)}
+  /* grain stays in the margins and is gone before the measure, so no texture
+     ever sits under body text */
+  .sheet::before{content:"";position:absolute;inset:0;pointer-events:none;z-index:1;
+    background-image:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='160' height='160'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/><feColorMatrix type='saturate' values='0'/></filter><rect width='160' height='160' filter='url(%23n)' opacity='0.45'/></svg>");background-repeat:repeat;
+    opacity:.055;mix-blend-mode:multiply;
+    -webkit-mask-image:linear-gradient(to right,#000 0,rgba(0,0,0,.35) 42px,
+      transparent 96px,transparent calc(100% - 96px),
+      rgba(0,0,0,.35) calc(100% - 42px),#000 100%);
+            mask-image:linear-gradient(to right,#000 0,rgba(0,0,0,.35) 42px,
+      transparent 96px,transparent calc(100% - 96px),
+      rgba(0,0,0,.35) calc(100% - 42px),#000 100%)}
+  /* z-index 5 puts the tear above the flag, so the flag is torn off at both
+     ends rather than printed over the edge */
+  .edge{position:absolute;top:0;bottom:0;width:18px;pointer-events:none;z-index:5}
+  .edge.l{left:0;background:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='18' height='460' viewBox='0 0 18 460'><defs><linearGradient id='g' x1='0' x2='1'><stop offset='0' stop-color='rgba(36,30,22,0)'/><stop offset='1' stop-color='rgba(36,30,22,0.20)'/></linearGradient></defs><g transform='scale(-1,1) translate(-18,0)'><path d='M 18,0 L 8.0,0 Q 8.0,17.0 9.53,34.0 Q 9.53,37.5 2.07,41.0 Q 2.07,48.0 6.17,55.0 Q 6.17,59.5 5.69,64.0 Q 5.69,73.0 5.71,82.0 Q 5.71,85.5 7.79,89.0 Q 7.79,92.5 8.83,96.0 Q 8.83,101.5 6.5,107.0 Q 6.5,110.5 8.49,114.0 Q 8.49,123.0 8.73,132.0 Q 8.73,141.0 7.22,150.0 Q 7.22,159.0 7.7,168.0 Q 7.7,177.0 11.69,186.0 Q 11.69,199.0 9.08,212.0 Q 9.08,225.0 6.4,238.0 Q 6.4,242.5 8.56,247.0 Q 8.56,256.0 8.18,265.0 Q 8.18,268.5 8.1,272.0 Q 8.1,281.0 8.19,290.0 Q 8.19,293.5 6.87,297.0 Q 6.87,302.5 7.6,308.0 Q 7.6,312.5 7.21,317.0 Q 7.21,334.0 12.49,351.0 Q 12.49,358.0 12.53,365.0 Q 12.53,378.0 9.76,391.0 Q 9.76,395.5 5.75,400.0 Q 5.75,413.0 5.7,426.0 Q 5.7,439.0 5.22,452 Q 5.22,456.0 8.0,460.0 L 18,460 Z' fill='%23DED3B8'/><path d='M 18,0 L 8.0,0 Q 8.0,17.0 9.53,34.0 Q 9.53,37.5 2.07,41.0 Q 2.07,48.0 6.17,55.0 Q 6.17,59.5 5.69,64.0 Q 5.69,73.0 5.71,82.0 Q 5.71,85.5 7.79,89.0 Q 7.79,92.5 8.83,96.0 Q 8.83,101.5 6.5,107.0 Q 6.5,110.5 8.49,114.0 Q 8.49,123.0 8.73,132.0 Q 8.73,141.0 7.22,150.0 Q 7.22,159.0 7.7,168.0 Q 7.7,177.0 11.69,186.0 Q 11.69,199.0 9.08,212.0 Q 9.08,225.0 6.4,238.0 Q 6.4,242.5 8.56,247.0 Q 8.56,256.0 8.18,265.0 Q 8.18,268.5 8.1,272.0 Q 8.1,281.0 8.19,290.0 Q 8.19,293.5 6.87,297.0 Q 6.87,302.5 7.6,308.0 Q 7.6,312.5 7.21,317.0 Q 7.21,334.0 12.49,351.0 Q 12.49,358.0 12.53,365.0 Q 12.53,378.0 9.76,391.0 Q 9.76,395.5 5.75,400.0 Q 5.75,413.0 5.7,426.0 Q 5.7,439.0 5.22,452 Q 5.22,456.0 8.0,460.0 L 18,460 Z' fill='none' stroke='url(%23g)' stroke-width='2.4'/></g></svg>") repeat-y left top}
+  .edge.r{right:0;background:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='18' height='460' viewBox='0 0 18 460'><defs><linearGradient id='g' x1='0' x2='1'><stop offset='0' stop-color='rgba(36,30,22,0)'/><stop offset='1' stop-color='rgba(36,30,22,0.20)'/></linearGradient></defs><g><path d='M 18,0 L 8.0,0 Q 8.0,7.0 9.37,14.0 Q 9.37,31.0 7.83,48.0 Q 7.83,57.0 8.14,66.0 Q 8.14,73.0 9.09,80.0 Q 9.09,83.5 6.22,87.0 Q 6.22,96.0 8.65,105.0 Q 8.65,108.5 7.34,112.0 Q 7.34,119.0 8.31,126.0 Q 8.31,130.5 9.26,135.0 Q 9.26,138.5 1.67,142.0 Q 1.67,146.5 9.02,151.0 Q 9.02,156.5 9.31,162.0 Q 9.31,171.0 9.1,180.0 Q 9.1,183.5 7.61,187.0 Q 7.61,192.5 8.03,198.0 Q 8.03,215.0 11.13,232.0 Q 11.13,249.0 10.92,266.0 Q 10.92,269.5 6.07,273.0 Q 6.07,276.5 7.3,280.0 Q 7.3,283.5 5.6,287.0 Q 5.6,291.5 5.83,296.0 Q 5.83,303.0 7.35,310.0 Q 7.35,313.5 6.47,317.0 Q 6.47,330.0 6.06,343.0 Q 6.06,348.5 2.44,354.0 Q 2.44,357.5 12.27,361.0 Q 12.27,364.5 3.79,368.0 Q 3.79,372.5 6.43,377.0 Q 6.43,386.0 6.66,395.0 Q 6.66,399.5 7.29,404.0 Q 7.29,411.0 6.54,418.0 Q 6.54,423.5 9.89,429.0 Q 9.89,438.0 10.27,447.0 Q 10.27,453.5 8.0,460.0 L 18,460 Z' fill='%23DED3B8'/><path d='M 18,0 L 8.0,0 Q 8.0,7.0 9.37,14.0 Q 9.37,31.0 7.83,48.0 Q 7.83,57.0 8.14,66.0 Q 8.14,73.0 9.09,80.0 Q 9.09,83.5 6.22,87.0 Q 6.22,96.0 8.65,105.0 Q 8.65,108.5 7.34,112.0 Q 7.34,119.0 8.31,126.0 Q 8.31,130.5 9.26,135.0 Q 9.26,138.5 1.67,142.0 Q 1.67,146.5 9.02,151.0 Q 9.02,156.5 9.31,162.0 Q 9.31,171.0 9.1,180.0 Q 9.1,183.5 7.61,187.0 Q 7.61,192.5 8.03,198.0 Q 8.03,215.0 11.13,232.0 Q 11.13,249.0 10.92,266.0 Q 10.92,269.5 6.07,273.0 Q 6.07,276.5 7.3,280.0 Q 7.3,283.5 5.6,287.0 Q 5.6,291.5 5.83,296.0 Q 5.83,303.0 7.35,310.0 Q 7.35,313.5 6.47,317.0 Q 6.47,330.0 6.06,343.0 Q 6.06,348.5 2.44,354.0 Q 2.44,357.5 12.27,361.0 Q 12.27,364.5 3.79,368.0 Q 3.79,372.5 6.43,377.0 Q 6.43,386.0 6.66,395.0 Q 6.66,399.5 7.29,404.0 Q 7.29,411.0 6.54,418.0 Q 6.54,423.5 9.89,429.0 Q 9.89,438.0 10.27,447.0 Q 10.27,453.5 8.0,460.0 L 18,460 Z' fill='none' stroke='url(%23g)' stroke-width='2.4'/></g></svg>") repeat-y right top}
+  /* the signature sits inside .pad, which already supplies 44px of right
+     padding, so it needs only 2 to line up with the one at the foot of the
+     sheet, which is a direct child and carries its own 46 */
+  .monogram.sign{margin:2px 0 34px;padding:0 2px 0 0}
+  .monogram{margin:0;padding:0 46px 30px 0;text-align:right;
+    font:italic 400 19px/1 var(--book);letter-spacing:.14em;
+    color:var(--muted);opacity:.42}
+
+/* ---- the footnote, No. 3 onwards. It sits below the signature so that the
+   story ends where he signed it, and is set small, grey and left so it reads
+   as apparatus rather than as a last paragraph. ---- */
+  .coda{margin:4px 0 0;padding:19px 0 0;border-top:1px solid rgba(0,0,0,.13)}
+  .coda .lab{display:block;margin:0 0 10px;font:400 10.5px var(--type);
+    letter-spacing:.17em;text-transform:uppercase;color:var(--muted);opacity:.85}
+  .coda p{margin:0 0 10px;font:400 13.5px/1.68 var(--book);color:var(--muted)}
+  .coda p:last-child{margin:0}
+  .coda a{color:inherit;border-bottom:1px solid rgba(0,0,0,.22);text-decoration:none}
+  .coda a:hover{border-bottom-color:currentColor}
+  .coda .cite{font-size:12.5px;font-style:italic;opacity:.9}
+
+/* ---- the reader challenge, No. 5 onwards. It wears the warm accent so the
+   foot of the page steps apparatus (plain rule), question (lamp), then the
+   standing furniture (indigo). Everything here is this stationery's own;
+   nothing is borrowed from another series. ---- */
+  .support{margin:30px 0 0;padding:14px 0 0 17px;border-left:2px solid rgba(0,0,0,.16)}
+  .support .lab{display:block;margin:0 0 8px;font:400 10.5px var(--type);
+    letter-spacing:.17em;text-transform:uppercase;color:var(--muted);opacity:.85}
+  .support p{margin:0;font:400 13.5px/1.7 var(--book);color:var(--muted)}
+  .support b{font-weight:600;color:var(--ink)}
+  .askbox{margin:28px 0 0;padding:20px 24px;background:var(--lamptint);
+    border-left:3px solid var(--lamp)}
+  .askbox .lab{display:block;margin:0 0 10px;font:400 11px var(--type);
+    letter-spacing:.17em;text-transform:uppercase;color:var(--lamp)}
+  .askbox .q{margin:0 0 11px;font:400 19px/1.45 var(--book);color:var(--ink)}
+  .askbox p{margin:0 0 12px;font:400 15.5px/1.68 var(--book);color:var(--muted)}
+  .askbox .acts{margin:0 0 11px}
+  .askbox .acts a{display:inline-block;padding:9px 17px;background:var(--lamp);
+    color:var(--paper);text-decoration:none;border-radius:3px;
+    font:400 12px var(--type);letter-spacing:.08em;text-transform:uppercase}
+  .askbox .acts a:hover{background:var(--indigo)}
+  .askbox .fine{margin:0;font:400 12.5px/1.6 var(--book);font-style:italic}
+  .askbox .fine a{color:inherit}
+  @media (max-width:620px){
+    .edge{width:12px}
+    .monogram{padding-right:34px;font-size:17px}
+  }
+</style>
+</head>
+<body>
+<div class="sheet"><span class="edge l" aria-hidden="true"></span><span class="edge r" aria-hidden="true"></span>
+  <div class="flag"><i></i><i></i><i></i></div>
+
+  <header class="top">
+    <a class="tophome" href="./">&larr;&nbsp; Home</a>
+    <a class="topseries" href="./?s=anecdote">All of Anecdote City</a>
+    <a class="toptopic" href="./?t=standing" title="Everything in Any time">All on this topic</a>
+    <p class="eyebrow"><a class="mast" href="./">ICU and You</a> &nbsp;&#183;&nbsp; <a class="serlink" href="./?s=anecdote">Anecdote City</a></p>
+    <span class="addr">No. 7</span>
+    <h1>The Kids Were Kings</h1>
+    <p class="kicker">A factory Christmas party at Port Adelaide, and what medicine calls downtime</p>
+  </header>
+
+  <div class="pad">
+    <p class="lede">It is sweet to recall the epic echoes of youth, when a day could last forever, and forever seemed too far away to even think about. Summer days with no clear endpoint, and sunsets that lingered and lingered before suddenly sinking away like a stone in a billabong.</p>
+
+    <p>Of course, the recollections get freely modified over time. And they get sweeter with each revision.</p>
+
+    <p>My father worked in a factory down near the dockside at Port Adelaide. It wasn&rsquo;t an easy gig, and probably didn&rsquo;t even qualify to be called a &ldquo;gig&rdquo;.</p>
+
+    <p>It was wall-to-wall shift work, often night work, and not at all lucrative. Opportunities to be creative, or even to be an individual, were limited. In his own mind, though, he was wildly creative, and that was his saving grace.</p>
+
+    <p>His main ambition was to make things a little easier for his kids, and to make sure their opportunities were larger, brighter and grander. He succeeded. All doors are open to those who try, he used to tell me. I have not forgotten his words.</p>
+
+    <p>Each year, in the week before Christmas, his employer, a large multinational in an era before that word became commonplace, shut down for a day and put on a party.</p>
+
+    <p>The kids were kings. There were games and treats, fun and freebies. You got to meet wonderful celebrities, like Humphrey B Bear and Bobo the Clown. You got to sing and dance to the nth degree, and then a bit beyond. We were twisting with the Beatles, and shouting just for the joy of it. There were helpers everywhere, making sure it all ran smoothly. The ladies were in the ladies&rsquo; lounge, when such a thing still existed, and they liked that a lot. The men were in their designated area, drinking cold beer and talking sport, and that seemed to work as well. I didn&rsquo;t see aggression, aggravation, angst or acrimony. If there was any, it has since been revised out.</p>
+
+    <p>As evening approached, Santa arrived, and there was a gift for every child present. More than half a century later, I still have my Test Match Cricket game, made from plastic and cardboard.</p>
+
+    <p>The works Christmas parties signposted the years of my childhood. They were something you looked forward to, and something you remembered.</p>
+
+    <div class="beat">&#42;&nbsp;&#42;&nbsp;&#42;</div>
+
+    <p>I haven&rsquo;t seen that in my professional life.</p>
+
+    <p>The structure of medical life is different. If you are off duty, your colleagues are on, and vice versa. We are firmly entrenched in the concept of &ldquo;downtime&rdquo;, the word for the hours when you are not on clinical duties. And as you start to earn more, downtime morphs into being permanently away. The upshot is that too many of us don&rsquo;t really know our own colleagues, let alone their families or their daily lives.</p>
+
+    <p>But the downtime is in fact your lifetime. It is not a furlough after a tour of duty, or parole after a stretch inside. It is the real time, the main game, the time to show yourself and everyone else who you are, and what matters to you outside the medical bubble.</p>
+
+    <p>So if your unit has a Christmas get-together this year, go. Bring the kids. Learn the names of everyone else&rsquo;s. Make them kings for an afternoon.</p>
+
+    <p>Somewhere down the track, one of them will be remembering it. And revising it. And making it sweeter every time.</p>
+
+    <p class="monogram sign">mjs</p>
+
+    <div class="coda">
+      <span class="lab">A footnote&hellip;</span>
+      <p>Both celebrities were Adelaide&rsquo;s own, and both arrived in the same year. Humphrey B. Bear first went to air on NWS-9 on 24 May 1965, and stayed on Australian television until 2008, one of the longest-running children&rsquo;s programmes anywhere.</p>
+      <p>Bobo the Clown was Hal Turner, a vaudevillian since the age of six, who developed the character at NWS-9 before taking him to the new rival station: <em>The Bobo Show</em> was the first programme SAS-10 ever broadcast, on 26 July 1965. By the middle of the decade Turner was mobbed whenever he appeared in public as Bobo, and factory visits were part of the job &mdash; the National Film and Sound Archive holds footage of him touring the Heinz works in Adelaide, riding a forklift and handing out party bags to the children.</p>
+    </div>
+    <div class="askbox">
+      <span class="lab">Challenge for you</span>
+      <p class="q">How many of your colleagues&rsquo; children could you name?</p>
+      <p>Not the colleagues &mdash; you know them, after a fashion, from handovers and rosters. Their children. Their partners, if it comes to that.</p>
+      <p>And if your unit does something at Christmas that brings the families in, I would like to hear what it is, and whether it works. If it does nothing, I would like to hear that too.</p>
+      <p class="acts"><a href="mailto:icuandyou@icloud.com?subject=Anecdote%20City%207%20-%20the%20kids%20were%20kings&body=How%20many%20of%20your%20colleagues%27%20children%20could%20you%20name%3A%0D%0A%0D%0A%0D%0AWhat%20does%20your%20unit%20do%20at%20Christmas%2C%20if%20anything%3A%0D%0A%0D%0A%0D%0AName%20%28optional%29%3A%0D%0A%0D%0A---%0D%0A%0D%0AThinking%20about%20this%20ICU%20AND%20YOU%20post%20overall%20%E2%80%94%20was%20it%20useful%20to%20you%2C%20or%20would%20it%20be%20useful%20to%20others%3F%0D%0A">Tell me what you think</a></p>
+      <p class="fine">The button opens a reply straight to me. If your device blocks it, write to
+        <a href="mailto:icuandyou@icloud.com">icuandyou@icloud.com</a> instead.</p>
+    </div>
+    <div class="cityline">
+      <span class="lab">Anecdote City</span>
+      <p>Short pieces from a working life &mdash; more than a hundred of them, going up
+        here a few at a time. Most come out of intensive care; some have nothing to do with
+        medicine at all. They happened. Nobody in them is identifiable. And there is room for
+        yours, whatever you do and wherever you do it: the nurse, the wardsman and the daughter were all in
+        that room too, and all three saw a different thing.</p>
+      <p class="acts"><a href="anecdote-city-00-welcome.html">What this is</a><a href="mailto:icuandyou@icloud.com?subject=Anecdote%20City%20-%20one%20from%20me&body=The%20story%3A%0D%0A%0D%0A%0D%0A%0D%0AAnything%20that%20needs%20changing%20to%20keep%20people%20unidentifiable%3A%0D%0A%0D%0A%0D%0AHow%20you%20would%20like%20to%20be%20credited%3A%0D%0A%0D%0A%0D%0A---%0D%0A%0D%0AName%3A%0D%0A%0D%0A---%0D%0A%0D%0AThinking%20about%20this%20ICU%20AND%20YOU%20post%20overall%20%E2%80%94%20was%20it%20useful%20to%20you%2C%20or%20would%20it%20be%20useful%20to%20others%3F%0D%0A">Send me one of yours</a></p>
+      <p class="fine">How you are credited is entirely your call &mdash; by name, by initials, or not at all &mdash; whether you write the piece or I do, and whether I quote you or simply say who sent something in; nothing of yours goes up with your name on it unless you have said yes. And the story stays yours: sending it gives me permission to publish it here, with the credit you choose. If it were ever to appear anywhere else &mdash; a collection, or print &mdash; I would come back and ask you separately first.</p>
+    </div>
+  </div>
+
+  <footer>
+    <span class="firstpub">First published November 2026</span>
+    <p class="subline">Two emails a week &mdash; the Friday newsletter for all subscribers, and, for clinical subscribers,
+      the mind map and puzzles the moment they go up on Tuesday. Occasional announcements of new
+      features as they arrive. What went up and why it mattered, the best of your replies, and
+      original feature stories, news and views. <a href="https://joinlist.com/f/5adad2d6">Come and join us</a>.</p>
+    <a class="home" href="./">&larr; &nbsp;All of ICU AND YOU</a><br>
+    ICU AND YOU &nbsp;&#183;&nbsp; Anecdote City No. 7<br>
+    <span class="srcs">Set down from memory, more than half a century on. The footnote rests on the National Film and Sound Archive&rsquo;s Bobo the Clown collection and its Humphrey B. Bear holdings.</span>
+
+    <span class="rights">&copy; Michael Sutherland. The stories in Anecdote City are original work and sit <em>outside</em> the site&rsquo;s Creative Commons licence, which covers everything else here. Republication is welcome with permission &mdash; write to me, and the answer is usually yes.</span>
+    <span class="mine">Michael Sutherland</span>
+  
+  </footer>
+
+  <p class="monogram">mjs</p>
+
+
+</div>
+<script data-goatcounter="https://icuandyou.goatcounter.com/count"
+        async src="//gc.zgo.at/count.js"></script>
+</body>
+</html>

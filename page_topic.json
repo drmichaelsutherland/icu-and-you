@@ -1904,6 +1904,20 @@
    "blurb": "Eighteen years old, a new motorbike, and the Adelaide University spring. Walking to the bike across the footbridge over the Torrens one Saturday afternoon, and then nothing — the next thing was a hospital ward, half a dozen broken bones in the face, and an hour or two that have never come back. Fifty years of not talking about it, and what genetics turned out not to explain."
   },
   {
+   "file": "anecdote-city-07-the-kids-were-kings.html",
+   "series": "anecdote",
+   "colour": "indigo striped",
+   "number": "7",
+   "title": "The Kids Were Kings",
+   "topic": "Any time",
+   "slug": "standing",
+   "week": false,
+   "standing": true,
+   "badge": "Anecdote City",
+   "link_label": "Open",
+   "blurb": "The week before Christmas, a Port Adelaide factory shut down for a day and handed itself over to the workers’ children: Humphrey B Bear, Bobo the Clown, the Twist, and Santa at dusk with a gift for everyone. A memory sweetened by more than half a century of revision, and a question about what medicine has done with the word downtime."
+  },
+  {
    "file": "book-club-05-lucky-man.html",
    "series": "bookclub",
    "colour": "terracotta",
@@ -1934,6 +1948,11 @@
  ],
  "latest": [
   {
+   "file": "anecdote-city-07-the-kids-were-kings.html",
+   "colour": "indigo striped",
+   "label": "Anecdote City · The Kids Were Kings"
+  },
+  {
    "file": "myths-02-late-middle-age.html",
    "colour": "bramble",
    "label": "Myths 2 · Late middle age"
@@ -1952,11 +1971,6 @@
    "file": "med-students-08-late-middle-age.html",
    "colour": "violet",
    "label": "Medical Students 8 · Late middle age"
-  },
-  {
-   "file": "book-club-04-sabr.html",
-   "colour": "terracotta",
-   "label": "ICU Book Club · Sabr — No tampering required"
   }
  ],
  "topten": [
@@ -1979,11 +1993,6 @@
  "teaser": {
   "label": "Coming next",
   "lines": [
-   {
-    "date": "Tuesday 24th November",
-    "what": "Late middle age, part two",
-    "emphasis": true
-   },
    {
     "date": "Friday 27th November",
     "what": "Newsletter (subscribers only)"
