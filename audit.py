@@ -220,6 +220,21 @@ def main():
                         f"glossary: {gid} is headed {ht.group(1)!r} on the page "
                         f"but {jt.group(1)!r} in the card")
 
+            # The page states its own size in the footer. Michael spotted it
+            # reading "18 terms" over 38 entries, hours after the entries went
+            # in, because the generator only ever rewrote the entry region.
+            # This is the same fault as the hand-written figure under a mind map
+            # in November: a page that states a count by hand must be checked
+            # against the thing it is counting, or it quietly starts lying.
+            stated = re.search(r"Glossary\s*(?:&nbsp;)?\s*\u00b7\s*(?:&nbsp;)?\s*(\d+)\s+terms", page)
+            if not stated:
+                problems.append("glossary.html: the footer no longer states a term "
+                                "count, so nothing checks it any more")
+            elif int(stated.group(1)) != len(page_ids):
+                problems.append(
+                    f"glossary.html: the footer says {stated.group(1)} terms, "
+                    f"but the page carries {len(page_ids)}")
+
     # ---- ?s= and ?g= links must resolve to a filter on the landing page ----
     filters = set(re.findall(r'data-f="([^"]+)"', index))
     for f in html_files:
