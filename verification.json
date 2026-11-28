@@ -40,6 +40,10 @@
   "exam-cicm-first-03-the-mcq-paper.html": {
    "checked": "2026-11-04",
    "note": "Nine claims checked. The other numbers on this page are question stems and their worked answers rather than claims about the world; the arithmetic in each was recomputed, including the volume of distribution question, whose stated half-life of seven hours is correct."
+  },
+  "drugstore-05-heparin.html": {
+   "checked": "2026-11-28",
+   "note": "Every dose and threshold on the page checked against a current Australian source on 28 November 2026. Three numbers changed during checking. The renal rule for enoxaparin was written as 1 mg/kg once daily below a clearance of 30, which is the product information and the older protocols; the Queensland statewide guideline does not recommend enoxaparin there at all and directs unfractionated heparin instead, and the page now gives both and says they differ. Protamine was written as a flat 1 mg per 100 units, and is in fact graded by how long ago the heparin stopped, with no reversal recommended beyond two hours. The neuraxial restart interval was written as two hours and is four. Four entries are flagged rather than confirmed: the prophylactic enoxaparin dose, whose best Australian source is a protocol past its review date; the anti-Xa to anti-IIa ratios and the eighteen-saccharide bridging length, which are textbook pharmacology rather than figures read from a primary source; and the hyperkalaemia incidence, where only a secondary review of the primary papers was read."
   }
  },
  "claims": {
@@ -1505,6 +1509,258 @@
    "interval": "12m",
    "verdict": "corrected",
    "note": "The page drew two tiers, a solid window to 6 hours and an imaging-selected 6 to 24. That boundary no longer exists in the Australian guideline: the remark against the recommendation says the 0 to 24 hour recommendations for the internal carotid, middle cerebral and basilar arteries were CONSOLIDATED INTO ONE, approved by the NHMRC in July 2023. Six hours survives only in the evidence narrative, where the certainty is highest. Two further changes. The vessel list is wider than the page had it: proximal or dominant M2 rather than early M2, and tandem occlusion of the cervical carotid with an intracranial artery, which the page did not mention at all. And basilar occlusion sits inside the same single recommendation with NO NIHSS THRESHOLD. The page gated it at 10 or more, which turns a stated residual uncertainty into a rule: the guideline says judgement is required below 10, expressly because the NIHSS does not capture disabling posterior circulation signs such as truncal ataxia and dysphagia. The threshold the page used is the AHA/ASA position, recorded separately on this page and flagged there."
+  },
+  "hep-nsw-bolus": {
+   "page": "drugstore-05-heparin.html",
+   "claim": "NSW standard bleeding risk nomogram: bolus 80 units/kg if under 60 kg, flat 5,000 units at 60 kg or more; initial infusion 18 units/kg/h capped at 2,000 units/h. Actual measured body weight required; estimated weight only for exceptional cases such as the unconscious intubated patient, who must be weighed at the earliest opportunity",
+   "source": "NSW Health, Intravenous Unfractionated Heparin Infusion (Adults), GL2025_009",
+   "url": "https://www1.health.nsw.gov.au/pds/ActivePDSDocuments/GL2025_009.pdf",
+   "checked": "2026-11-28",
+   "interval": "12m",
+   "verdict": "confirmed"
+  },
+  "hep-nsw-higher-risk": {
+   "page": "drugstore-05-heparin.html",
+   "claim": "NSW higher bleeding risk nomogram (ACS including STEMI and NSTEACS): bolus 60 units/kg if under 60 kg, flat 4,000 units at 60 kg or more; initial infusion 12 units/kg/h capped at 1,000 units/h; bolus may be omitted in acute stroke, recent surgery or transition from another anticoagulant",
+   "source": "NSW Health, Intravenous Unfractionated Heparin Infusion (Adults), GL2025_009",
+   "url": "https://www1.health.nsw.gov.au/pds/ActivePDSDocuments/GL2025_009.pdf",
+   "checked": "2026-11-28",
+   "interval": "12m",
+   "verdict": "confirmed"
+  },
+  "hep-nsw-aptt": {
+   "page": "drugstore-05-heparin.html",
+   "claim": "NSW therapeutic range for IV unfractionated heparin: APTT 50-90 seconds, equivalent to anti-Xa 0.3-0.7 units/mL. APTT every 4-6 hours until two consecutive therapeutic results, then daily; back to 4-6 hourly after any rate change. Do not sample from the infusion limb. Above 120 seconds: stop, repeat at 2 hours, restart 300 units/h lower without re-bolus",
+   "source": "NSW Health, Intravenous Unfractionated Heparin Infusion (Adults), GL2025_009",
+   "url": "https://www1.health.nsw.gov.au/pds/ActivePDSDocuments/GL2025_009.pdf",
+   "checked": "2026-11-28",
+   "interval": "12m",
+   "verdict": "confirmed"
+  },
+  "hep-nsw-platelets": {
+   "page": "drugstore-05-heparin.html",
+   "claim": "NSW: platelet count at least every 2 days during infusion; seek haematology advice if the count falls 30-50% below baseline, which over roughly 5-10 days raises HIT. Heparin contraindicated with platelets below 50 x 10^9/L or HIT within the last 3 months",
+   "source": "NSW Health, Intravenous Unfractionated Heparin Infusion (Adults), GL2025_009",
+   "url": "https://www1.health.nsw.gov.au/pds/ActivePDSDocuments/GL2025_009.pdf",
+   "checked": "2026-11-28",
+   "interval": "12m",
+   "verdict": "confirmed"
+  },
+  "hep-nsw-baseline": {
+   "page": "drugstore-05-heparin.html",
+   "claim": "NSW baseline tests before an infusion: full blood count including platelets and haemoglobin, APTT (must be normal, 25-37 seconds, for APTT monitoring to be used), prothrombin time, INR where relevant, electrolytes, urea and creatinine, liver function tests. Heparin may start before results in time-critical cases such as STEMI",
+   "source": "NSW Health, Intravenous Unfractionated Heparin Infusion (Adults), GL2025_009",
+   "url": "https://www1.health.nsw.gov.au/pds/ActivePDSDocuments/GL2025_009.pdf",
+   "checked": "2026-11-28",
+   "interval": "12m",
+   "verdict": "confirmed"
+  },
+  "hep-resistance": {
+   "page": "drugstore-05-heparin.html",
+   "claim": "NSW: heparin resistance suspected when the therapeutic APTT is not reached within 24 hours, described as minimal APTT change despite large doses, for example 35,000 units or more per day; order anti-Xa and seek specialist advice rather than continuing to escalate",
+   "source": "NSW Health, Intravenous Unfractionated Heparin Infusion (Adults), GL2025_009",
+   "url": "https://www1.health.nsw.gov.au/pds/ActivePDSDocuments/GL2025_009.pdf",
+   "checked": "2026-11-28",
+   "interval": "12m",
+   "verdict": "confirmed"
+  },
+  "hep-anti-xa": {
+   "page": "drugstore-05-heparin.html",
+   "claim": "NSW: use anti-Xa rather than APTT in lupus anticoagulant positivity, antiphospholipid syndrome, inherited or acquired deficiency of factors VIII, IX, XI or XII, or failure to respond as expected; monitor one parameter only, as the two are not equivalent; specify unfractionated heparin on the request. Anti-Xa target 0.3-0.7 units/mL",
+   "source": "NSW Health, Intravenous Unfractionated Heparin Infusion (Adults), GL2025_009",
+   "url": "https://www1.health.nsw.gov.au/pds/ActivePDSDocuments/GL2025_009.pdf",
+   "checked": "2026-11-28",
+   "interval": "12m",
+   "verdict": "confirmed"
+  },
+  "hep-enox-proph": {
+   "page": "drugstore-05-heparin.html",
+   "claim": "Enoxaparin VTE prophylaxis 20-40 mg subcutaneously once daily depending on procedure and risk, reduced to 20 mg once daily where creatinine clearance is under 30 mL/min",
+   "source": "SA Health iccnet enoxaparin protocol; consistent with the Australian product information. Flagged rather than confirmed: the iccnet protocol is dated March 2014 with review due June 2015, and the Queensland statewide guideline refers prophylaxis dosing out to a separate VTE prevention guideline that has not been read",
+   "url": "https://www.iccnetsa.org.au/Data/Sites/1/iccnet/clinical/drugprotocols/enoxaparinclexaneprotocol2014.pdf",
+   "checked": "2026-11-28",
+   "interval": "6m",
+   "verdict": "flagged"
+  },
+  "hep-enox-treat": {
+   "page": "drugstore-05-heparin.html",
+   "claim": "Enoxaparin VTE treatment: 1 mg/kg twice daily above a creatinine clearance of 50; 1.5 mg/kg once daily exists but is not recommended for inpatients or high-risk patients; 1 mg/kg twice daily with caution at a clearance of 30-50; not recommended below 30, where unfractionated heparin is advised instead. Round doses to the nearest 10 mg",
+   "source": "Queensland Health, Anticoagulant Guideline for Hospitalised Adult Patients, February 2022",
+   "url": "https://www.health.qld.gov.au/__data/assets/pdf_file/0015/1152213/statewide-anticoagulant-guideline.pdf",
+   "checked": "2026-11-28",
+   "interval": "12m",
+   "verdict": "confirmed"
+  },
+  "hep-enox-renal": {
+   "page": "drugstore-05-heparin.html",
+   "claim": "Queensland statewide guideline does not recommend enoxaparin below a creatinine clearance of 30 mL/min and directs the use of unfractionated heparin; 30-50 mL/min is 1 mg/kg twice daily with caution and continued monitoring of kidney function. The older Australian guidance of 1 mg/kg once daily below 30 persists in the product information and in local protocols, so the two differ and the page says so",
+   "source": "Queensland Health, Anticoagulant Guideline for Hospitalised Adult Patients, February 2022; divergence noted against the SA iccnet protocol 2014 and the Australian product information",
+   "url": "https://www.health.qld.gov.au/__data/assets/pdf_file/0015/1152213/statewide-anticoagulant-guideline.pdf",
+   "checked": "2026-11-28",
+   "interval": "12m",
+   "verdict": "confirmed"
+  },
+  "hep-enox-obesity": {
+   "page": "drugstore-05-heparin.html",
+   "claim": "Enoxaparin in obesity: initial dose 1 mg/kg twice daily on actual body weight; once-daily dosing not recommended; dose reduction and/or anti-Xa monitoring may be required above a body mass index of 40 kg/m2 or a body weight over 120 kg, with the treating consultant involved",
+   "source": "Queensland Health, Anticoagulant Guideline for Hospitalised Adult Patients, February 2022",
+   "url": "https://www.health.qld.gov.au/__data/assets/pdf_file/0015/1152213/statewide-anticoagulant-guideline.pdf",
+   "checked": "2026-11-28",
+   "interval": "12m",
+   "verdict": "confirmed"
+  },
+  "hep-enox-stemi": {
+   "page": "drugstore-05-heparin.html",
+   "claim": "Enoxaparin with thrombolysis for STEMI: under 75 years, 30 mg IV bolus immediately before thrombolysis then 1 mg/kg subcutaneously twice daily, maximum 100 mg for each of the first two doses; 75 years and over, no bolus and 0.75 mg/kg twice daily, maximum 75 mg for each of the first two doses",
+   "source": "Queensland Health, Anticoagulant Guideline for Hospitalised Adult Patients, February 2022",
+   "url": "https://www.health.qld.gov.au/__data/assets/pdf_file/0015/1152213/statewide-anticoagulant-guideline.pdf",
+   "checked": "2026-11-28",
+   "interval": "12m",
+   "verdict": "confirmed"
+  },
+  "hep-crcl": {
+   "page": "drugstore-05-heparin.html",
+   "claim": "Renal dose thresholds for enoxaparin are derived using the Cockcroft-Gault equation; the MDRD eGFR reported alongside the laboratory creatinine is a different quantity and should not be substituted",
+   "source": "WA Health, Guidelines for the Western Australian Anticoagulation Medication Chart",
+   "url": "https://www.healthywa.wa.gov.au/~/media/Files/Corporate/general%20documents/Quality/PDF/WA-Anticoagulation-Chart-User-Guide-2014.pdf",
+   "checked": "2026-11-28",
+   "interval": "12m",
+   "verdict": "confirmed"
+  },
+  "hep-protamine-ufh": {
+   "page": "drugstore-05-heparin.html",
+   "claim": "Protamine for unfractionated heparin, against the units given in the hour before stopping, maximum 50 mg by slow IV injection over at least 10 minutes: within 30 minutes, 1-1.5 mg per 100 units; 30-60 minutes, 0.5-0.75 mg per 100 units; 60-120 minutes, 0.375-0.5 mg per 100 units; beyond 120 minutes reversal with protamine is generally not recommended",
+   "source": "Queensland Health, Anticoagulant Guideline for Hospitalised Adult Patients, February 2022 (Table 50)",
+   "url": "https://www.health.qld.gov.au/__data/assets/pdf_file/0015/1152213/statewide-anticoagulant-guideline.pdf",
+   "checked": "2026-11-28",
+   "interval": "12m",
+   "verdict": "confirmed"
+  },
+  "hep-protamine-lmwh": {
+   "page": "drugstore-05-heparin.html",
+   "claim": "Protamine for enoxaparin, maximum 50 mg: within 8 hours of the dose, 1 mg protamine per 1 mg enoxaparin; 8-12 hours, 0.5 mg per 1 mg; beyond 12 hours seek advice and consider an anti-Xa assay, as severe kidney impairment slows excretion. Reversal of anti-Xa activity is partial",
+   "source": "Queensland Health, Anticoagulant Guideline for Hospitalised Adult Patients, February 2022 (Table 51)",
+   "url": "https://www.health.qld.gov.au/__data/assets/pdf_file/0015/1152213/statewide-anticoagulant-guideline.pdf",
+   "checked": "2026-11-28",
+   "interval": "12m",
+   "verdict": "confirmed"
+  },
+  "hep-neuraxial": {
+   "page": "drugstore-05-heparin.html",
+   "claim": "Neuraxial intervals: prophylactic enoxaparin, 12 hours before block insertion or catheter removal, next dose no sooner than 4 hours after; treatment dose enoxaparin, 24 hours before, not recommended while a catheter is in situ, next dose 4 hours after; subcutaneous prophylactic unfractionated heparin, 4-6 hours before and 1 hour after; IV treatment unfractionated heparin, 4-6 hours or a normal APTT before, 1 hour after with no bolus. All assume normal kidney and liver function",
+   "source": "Queensland Health, Anticoagulant Guideline for Hospitalised Adult Patients, February 2022 (Table 45)",
+   "url": "https://www.health.qld.gov.au/__data/assets/pdf_file/0015/1152213/statewide-anticoagulant-guideline.pdf",
+   "checked": "2026-11-28",
+   "interval": "12m",
+   "verdict": "confirmed"
+  },
+  "hep-hit-4ts": {
+   "page": "drugstore-05-heparin.html",
+   "claim": "4Ts score: thrombocytopenia, timing, thrombosis and other causes, 2 points each to a maximum of 8. Bands: 0-3 low probability (under 1%), 4-5 intermediate (about 10%), 6-8 high (about 50%). Timing scores 2 for clear onset days 5-10, or within 1 day with heparin in the previous 30 days; 0 for a fall within 4 days without recent exposure",
+   "source": "Queensland Health, Guideline for the management of adult patients with Heparin-Induced Thrombocytopenia/Thrombosis; bands and percentages from the Queensland guideline, scoring identical in the THANZ consensus statement",
+   "url": "https://www.health.qld.gov.au/__data/assets/pdf_file/0035/1178486/hit-guideline.pdf",
+   "checked": "2026-11-28",
+   "interval": "12m",
+   "verdict": "confirmed"
+  },
+  "hep-hit-4hours": {
+   "page": "drugstore-05-heparin.html",
+   "claim": "Samples for HIT testing should be collected at least 4 hours after the last heparin dose",
+   "source": "Thrombosis and Haemostasis Society of Australia and New Zealand HIT Writing Group, Diagnosis and management of heparin-induced thrombocytopenia: a consensus statement, Medical Journal of Australia 2019;210(11):509-516",
+   "url": "https://www.mja.com.au/journal/2019/210/11/diagnosis-and-management-heparin-induced-thrombocytopenia-consensus-statement",
+   "checked": "2026-11-28",
+   "interval": "12m",
+   "verdict": "confirmed"
+  },
+  "hep-hit-testing": {
+   "page": "drugstore-05-heparin.html",
+   "claim": "THANZ: 4Ts first; low score needs no further testing where clinical data are reliable; intermediate or high score prompts an immunoassay, and a positive immunoassay should be confirmed with a functional assay, treating as HIT while awaiting it. Serotonin release assay is the reference standard, heparin-induced multiple electrode aggregometry a quicker alternative. Laboratories should report optical density and the cut-off rather than a binary result. Seroconversion can take 4-6 days, so retest if suspicion persists",
+   "source": "Thrombosis and Haemostasis Society of Australia and New Zealand HIT Writing Group, Diagnosis and management of heparin-induced thrombocytopenia: a consensus statement, Medical Journal of Australia 2019;210(11):509-516",
+   "url": "https://www.mja.com.au/journal/2019/210/11/diagnosis-and-management-heparin-induced-thrombocytopenia-consensus-statement",
+   "checked": "2026-11-28",
+   "interval": "12m",
+   "verdict": "confirmed"
+  },
+  "hep-hit-stop": {
+   "page": "drugstore-05-heparin.html",
+   "claim": "THANZ Grade 1B: heparin exposure must be ceased in patients with suspected or confirmed HIT, both unfractionated and low molecular weight, and a non-heparin anticoagulant started at therapeutic rather than prophylactic dose",
+   "source": "Thrombosis and Haemostasis Society of Australia and New Zealand HIT Writing Group, Diagnosis and management of heparin-induced thrombocytopenia: a consensus statement, Medical Journal of Australia 2019;210(11):509-516",
+   "url": "https://www.mja.com.au/journal/2019/210/11/diagnosis-and-management-heparin-induced-thrombocytopenia-consensus-statement",
+   "checked": "2026-11-28",
+   "interval": "12m",
+   "verdict": "confirmed"
+  },
+  "hep-hit-agents": {
+   "page": "drugstore-05-heparin.html",
+   "claim": "Non-heparin options in HIT are danaparoid, argatroban, fondaparinux and bivalirudin at therapeutic doses; argatroban is preferred below a creatinine clearance of 30 mL/min and danaparoid avoided there. No anticoagulant is registered in Australia for HIT and argatroban is available only through the TGA Special Access Scheme",
+   "source": "Thrombosis and Haemostasis Society of Australia and New Zealand HIT Writing Group, Diagnosis and management of heparin-induced thrombocytopenia: a consensus statement, Medical Journal of Australia 2019;210(11):509-516",
+   "url": "https://www.mja.com.au/journal/2019/210/11/diagnosis-and-management-heparin-induced-thrombocytopenia-consensus-statement",
+   "checked": "2026-11-28",
+   "interval": "12m",
+   "verdict": "confirmed"
+  },
+  "hep-hit-rivaroxaban": {
+   "page": "drugstore-05-heparin.html",
+   "claim": "Queensland Health names rivaroxaban as its preferred agent in HIT: 15 mg twice daily until platelets normalise then 20 mg daily to day 30 where there is no thrombosis; 15 mg twice daily to day 21 then 20 mg daily for 3-6 months where there is thrombosis",
+   "source": "Queensland Health, Guideline for the management of adult patients with Heparin-Induced Thrombocytopenia/Thrombosis",
+   "url": "https://www.health.qld.gov.au/__data/assets/pdf_file/0035/1178486/hit-guideline.pdf",
+   "checked": "2026-11-28",
+   "interval": "12m",
+   "verdict": "confirmed"
+  },
+  "hep-hit-noplatelets": {
+   "page": "drugstore-05-heparin.html",
+   "claim": "Platelet transfusions are not recommended to treat HIT-related thrombocytopenia in the absence of clinical bleeding",
+   "source": "Thrombosis and Haemostasis Society of Australia and New Zealand HIT Writing Group, Diagnosis and management of heparin-induced thrombocytopenia: a consensus statement, Medical Journal of Australia 2019;210(11):509-516",
+   "url": "https://www.mja.com.au/journal/2019/210/11/diagnosis-and-management-heparin-induced-thrombocytopenia-consensus-statement",
+   "checked": "2026-11-28",
+   "interval": "12m",
+   "verdict": "confirmed"
+  },
+  "hep-hit-warfarin": {
+   "page": "drugstore-05-heparin.html",
+   "claim": "Warfarin must not be started in HIT until the platelet count is above 150 x 10^9/L, because early warfarin causes venous limb gangrene and skin necrosis; if the patient was already taking warfarin it should be stopped and reversed with vitamin K",
+   "source": "Thrombosis and Haemostasis Society of Australia and New Zealand HIT Writing Group, Diagnosis and management of heparin-induced thrombocytopenia: a consensus statement, Medical Journal of Australia 2019;210(11):509-516; mechanism and gangrene warning also in Queensland Health, Guideline for the management of adult patients with Heparin-Induced Thrombocytopenia/Thrombosis",
+   "url": "https://www.mja.com.au/journal/2019/210/11/diagnosis-and-management-heparin-induced-thrombocytopenia-consensus-statement",
+   "checked": "2026-11-28",
+   "interval": "12m",
+   "verdict": "confirmed"
+  },
+  "hep-hit-incidence": {
+   "page": "drugstore-05-heparin.html",
+   "claim": "HIT is more common with unfractionated heparin than with low molecular weight heparin, and only a small minority of patients who form heparin-PF4 antibodies develop the disease (0.2-3% of antibody formers per the Queensland guideline)",
+   "source": "Queensland Health, Guideline for the management of adult patients with Heparin-Induced Thrombocytopenia/Thrombosis",
+   "url": "https://www.health.qld.gov.au/__data/assets/pdf_file/0035/1178486/hit-guideline.pdf",
+   "checked": "2026-11-28",
+   "interval": "12m",
+   "verdict": "confirmed"
+  },
+  "hep-ratio": {
+   "page": "drugstore-05-heparin.html",
+   "claim": "Unfractionated heparin inhibits thrombin and factor Xa in a ratio near 1:1; low molecular weight heparins are agent-specific with anti-Xa to anti-IIa ratios ranging from about 2:1 to 4:1. Thrombin inhibition requires the chain to bridge antithrombin and thrombin, factor Xa inhibition does not",
+   "source": "Hirsh J and colleagues, review of antithrombotic agents, Cleveland Clinic Journal of Medicine 2005;72(Suppl 1):S2. Flagged rather than confirmed: the review gives the LMWH range but not the enoxaparin-specific figure, and the eighteen-saccharide bridging length and thousandfold potentiation are standard pharmacology text rather than numbers read from a primary source for this page",
+   "url": "https://www.ccjm.org/content/72/4_suppl_1/S2.full.pdf",
+   "checked": "2026-11-28",
+   "interval": "12m",
+   "verdict": "flagged"
+  },
+  "hep-fonda": {
+   "page": "drugstore-05-heparin.html",
+   "claim": "Fondaparinux is a synthetic pentasaccharide acting through antithrombin and selective for factor Xa with no direct anti-IIa effect; half-life 17-21 hours; renally eliminated and contraindicated below a creatinine clearance of 30 mL/min",
+   "source": "Cleveland Clinic Journal of Medicine 2005;72(Suppl 1):S2; dose bands and the renal caution also in the THANZ consensus statement",
+   "url": "https://www.ccjm.org/content/72/4_suppl_1/S2.full.pdf",
+   "checked": "2026-11-28",
+   "interval": "12m",
+   "verdict": "confirmed"
+  },
+  "hep-potassium": {
+   "page": "drugstore-05-heparin.html",
+   "claim": "Heparin suppresses adrenal aldosterone synthesis and causes mild hyperkalaemia in about 7% of exposed patients; a small prospective study found about 9% with low molecular weight heparin. The effect is not confined to unfractionated heparin",
+   "source": "Curious Clinicians episode 59, reviewing Oster JR and colleagues, American Journal of Medicine 1995, and a 2011 prospective study in the Journal of Pharmacology and Pharmacotherapeutics. Flagged rather than confirmed: the primary papers have not been read directly, only a secondary review of them",
+   "url": "https://curiousclinicians.com/2022/10/13/episode-59-hyperkalemic-heparin/",
+   "checked": "2026-11-28",
+   "interval": "12m",
+   "verdict": "flagged"
   }
  }
 }

@@ -1977,9 +1977,38 @@
    "badge": "Anecdote City",
    "link_label": "Open",
    "blurb": "A randonnée in the Forêt Domaniale de la Vis, where the river spends fifteen kilometres underground and the village is called dry Vis because of it. In a clearing nobody was looking for, two medieval mills that took the river as it burst back out of the rock and turned it into flour. On serendipity, and on careers that wander."
+  },
+  {
+   "file": "drugstore-05-heparin.html",
+   "series": "drugstore",
+   "colour": "mulberry",
+   "number": "5",
+   "title": "Heparin",
+   "topic": "Late middle age",
+   "slug": "late-middle-age",
+   "week": true,
+   "pos": 12,
+   "badge": "Drugstore",
+   "link_label": "Open",
+   "drugs": [
+    "Heparin",
+    "Enoxaparin"
+   ],
+   "also": [
+    "Clexane",
+    "Low molecular weight heparin",
+    "Protamine",
+    "Heparin-induced thrombocytopenia"
+   ],
+   "blurb": "Two drugs with one name, and almost every heparin error starts by treating them as one. The NSW bolus that is capped at 5,000 units whatever the patient weighs, the APTT range written in seconds, the clearance of 30 below which Queensland will not use enoxaparin at all, the platelet count that stops being taken on day three, and the protamine dose that depends on what time it is. Every dose on the page checked, and three of them changed in the checking."
   }
  ],
  "latest": [
+  {
+   "file": "drugstore-05-heparin.html",
+   "colour": "mulberry",
+   "label": "Drugstore 5 · Heparin"
+  },
   {
    "file": "anecdote-city-08-wandering-river.html",
    "colour": "indigo striped",
@@ -1989,11 +2018,6 @@
    "file": "lebanon-01-the-woman-who-does-not-smoke.html",
    "colour": "cedar",
    "label": "Ahlan wa sahlan Lebanon · The woman who does not smoke"
-  },
-  {
-   "file": "anecdote-city-07-the-kids-were-kings.html",
-   "colour": "indigo striped",
-   "label": "Anecdote City · The Kids Were Kings"
   },
   {
    "file": "myths-02-late-middle-age.html",
