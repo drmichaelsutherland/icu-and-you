@@ -130,6 +130,11 @@
    "pine",
    "exam"
   ],
+  "acrrm-stamps": [
+   "ACRRM StAMPS",
+   "juniper",
+   "exam"
+  ],
   "screening": [
    "The Screening Room",
    "copper",
@@ -2015,9 +2020,28 @@
    "badge": "For the general public",
    "link_label": "Open",
    "blurb": "Somewhere in your fifties you start thinking about dying, and it is neither random nor a malfunction — death anxiety really does climb again around fifty. The surprise is what happens next: the very old are the least frightened people in the room, and their middle-aged children, who are more frightened, assume the opposite. What to do with the feeling besides lie awake, and the one conversation that takes a minute."
+  },
+  {
+   "file": "exam-acrrm-stamps-01-eight-scenarios-and-a-town.html",
+   "series": "acrrm-stamps",
+   "colour": "juniper",
+   "number": "1",
+   "title": "Eight scenarios and a town",
+   "topic": "Any time",
+   "slug": "standing",
+   "week": false,
+   "standing": true,
+   "badge": "ACRRM StAMPS",
+   "link_label": "Open",
+   "blurb": "A second examination joins Exam focus. The ACRRM Advanced Specialised Training StAMPS in Emergency Medicine: eight unfolding scenarios in three hours, online, set in a town the College gives you in advance. How the 280 marks are allocated and where the pass mark sat last time, why the stations people fail are the ones where the medicine is easy and the situation is not, and the 2027 dates — including a mock enrolment that closes in early December."
   }
  ],
  "latest": [
+  {
+   "file": "exam-acrrm-stamps-01-eight-scenarios-and-a-town.html",
+   "colour": "juniper",
+   "label": "ACRRM StAMPS · Eight scenarios and a town"
+  },
   {
    "file": "public-05-late-middle-age.html",
    "colour": "ocean",
@@ -2037,11 +2061,6 @@
    "file": "lebanon-01-the-woman-who-does-not-smoke.html",
    "colour": "cedar",
    "label": "Ahlan wa sahlan Lebanon · The woman who does not smoke"
-  },
-  {
-   "file": "myths-02-late-middle-age.html",
-   "colour": "bramble",
-   "label": "Myths 2 · Late middle age"
   }
  ],
  "topten": [
