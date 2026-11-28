@@ -176,6 +176,28 @@ def main():
                 f"{f}: grid declares {cols.group(1)}x{rows.group(1)} tracks but "
                 f"cells need {mx}x{my} \u2014 cells will stretch or phantom rows appear")
 
+    # ---- ul.pts items must be <b>label</b><span>body</span> ----------------
+    # ul.pts li is display:flex with a fixed-width <b>. The body has to be
+    # wrapped in a <span>, or the bare text node and every inline tag in it
+    # becomes its own flex item and the sentence is laid out in columns, cut
+    # in half. Pantoprazole shipped that way on 3 November with fourteen
+    # broken items and nobody saw it for three weeks, because the fault looks
+    # like an odd line break rather than like a bug.
+    PTS_LI = re.compile(r"<li>(.*?)</li>", re.S)
+    PTS_OK = re.compile(r"\s*<b>.*?</b>\s*<span>.*</span>\s*$", re.S)
+    for f in content:
+        src = (HERE / f).read_text(encoding="utf-8")
+        for blk in re.finditer(r'<ul class="pts"[^>]*>(.*?)</ul>', src, re.S):
+            for li in PTS_LI.findall(blk.group(1)):
+                if not li.strip():
+                    continue
+                if not PTS_OK.match(li):
+                    flat = re.sub(r"\s+", " ", re.sub(r"<[^>]+>", "", li)).strip()[:54]
+                    problems.append(
+                        f"{f}: a pts list item is not <b>label</b><span>body</span> "
+                        f"\u2014 it will render in columns: {flat!r}")
+                    break
+
     # ---- glossary links: must resolve, and the card script must be loaded ----
     gl_src = (HERE / "glossary.js")
     if gl_src.exists():
