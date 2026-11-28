@@ -1963,9 +1963,28 @@
    "badge": "Ahlan wa sahlan Lebanon",
    "link_label": "Open",
    "blurb": "A new column. She has never bought a packet of cigarettes in her life, and she has had an arghileh going three or four evenings a week since her twenties — so when you ask whether she smokes, she says no, and she is telling the truth. The generation that took up flavoured ma’assel in the 1990s is arriving in late middle age now, and on the Lebanese figures the person a yes-or-no box misses is most often a woman."
+  },
+  {
+   "file": "anecdote-city-08-wandering-river.html",
+   "series": "anecdote",
+   "colour": "indigo striped",
+   "number": "8",
+   "title": "Wandering River",
+   "topic": "Any time",
+   "slug": "standing",
+   "week": false,
+   "standing": true,
+   "badge": "Anecdote City",
+   "link_label": "Open",
+   "blurb": "A randonnée in the Forêt Domaniale de la Vis, where the river spends fifteen kilometres underground and the village is called dry Vis because of it. In a clearing nobody was looking for, two medieval mills that took the river as it burst back out of the rock and turned it into flour. On serendipity, and on careers that wander."
   }
  ],
  "latest": [
+  {
+   "file": "anecdote-city-08-wandering-river.html",
+   "colour": "indigo striped",
+   "label": "Anecdote City · Wandering River"
+  },
   {
    "file": "lebanon-01-the-woman-who-does-not-smoke.html",
    "colour": "cedar",
@@ -1985,11 +2004,6 @@
    "file": "book-club-05-lucky-man.html",
    "colour": "terracotta",
    "label": "ICU Book Club · Lucky Man — Pointing at the future"
-  },
-  {
-   "file": "anecdote-city-06-sleepy-footbridge.html",
-   "colour": "indigo striped",
-   "label": "Anecdote City · Across a Sleepy Footbridge"
   }
  ],
  "topten": [
