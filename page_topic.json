@@ -150,6 +150,11 @@
    "lotus",
    "cultural"
   ],
+  "lebanon": [
+   "Ahlan wa sahlan Lebanon",
+   "cedar",
+   "cultural"
+  ],
   "barebones": [
    "Bare Bones",
    "bone",
@@ -1944,9 +1949,28 @@
    "badge": "Myths and Misconceptions",
    "link_label": "Open",
    "blurb": "Five things everybody knows, traced to where they started and graded one by one. The glass of red wine, which does not survive. Statin muscle pain, where a trial with four empty bottles in it found that any tablet at all doubled the symptoms. Hormone therapy and breast cancer, where a relative risk from a trial of sixty-three-year-olds left a generation of fifty-year-olds untreated. The normal stress test, where two thirds of the arteries that later closed had been under fifty per cent narrowed. And the PSA, where the Australian advice moved again this year."
+  },
+  {
+   "file": "lebanon-01-the-woman-who-does-not-smoke.html",
+   "series": "lebanon",
+   "colour": "cedar",
+   "number": "1",
+   "title": "The woman who does not smoke",
+   "topic": "Late middle age",
+   "slug": "late-middle-age",
+   "week": true,
+   "pos": 11,
+   "badge": "Ahlan wa sahlan Lebanon",
+   "link_label": "Open",
+   "blurb": "A new column. She has never bought a packet of cigarettes in her life, and she has had an arghileh going three or four evenings a week since her twenties — so when you ask whether she smokes, she says no, and she is telling the truth. The generation that took up flavoured ma’assel in the 1990s is arriving in late middle age now, and on the Lebanese figures the person a yes-or-no box misses is most often a woman."
   }
  ],
  "latest": [
+  {
+   "file": "lebanon-01-the-woman-who-does-not-smoke.html",
+   "colour": "cedar",
+   "label": "Ahlan wa sahlan Lebanon · The woman who does not smoke"
+  },
   {
    "file": "anecdote-city-07-the-kids-were-kings.html",
    "colour": "indigo striped",
@@ -1966,11 +1990,6 @@
    "file": "anecdote-city-06-sleepy-footbridge.html",
    "colour": "indigo striped",
    "label": "Anecdote City · Across a Sleepy Footbridge"
-  },
-  {
-   "file": "med-students-08-late-middle-age.html",
-   "colour": "violet",
-   "label": "Medical Students 8 · Late middle age"
   }
  ],
  "topten": [
@@ -1993,10 +2012,6 @@
  "teaser": {
   "label": "Coming next",
   "lines": [
-   {
-    "date": "Friday 27th November",
-    "what": "Newsletter (subscribers only)"
-   },
    {
     "date": "Tuesday 8th December",
     "what": "Christmas and ICU",
