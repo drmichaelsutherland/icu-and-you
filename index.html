@@ -139,6 +139,9 @@
     font:600 12.5px 'Helvetica Neue',Arial,sans-serif;letter-spacing:.04em}
   .chip:hover{border-color:var(--ink)}
   .chip.on{background:var(--ink);border-color:var(--ink);color:#FBF9F5}
+  .chip.gloss{color:var(--brass);border-color:#E3D4B4;background:#FDFAF2;text-decoration:none}
+  .chip.gloss span{border-bottom:1px dotted currentColor;padding-bottom:1px}
+  .chip.gloss:hover{border-color:var(--brass);background:#F8F1E0}
   .chip.teal.on{background:var(--teal);border-color:var(--teal)}
   .chip.plum.on{background:var(--plum);border-color:var(--plum)}
   .chip.rust.on{background:var(--rust);border-color:var(--rust)}
@@ -458,7 +461,7 @@
   .arab{font-family:'SF Arabic','Geeza Pro','Noto Naskh Arabic','Traditional Arabic','Segoe UI',serif;
     font-size:1.08em;unicode-bidi:isolate;direction:rtl}
 </style>
-<!-- BUILD-STAMP 2026-11-28 01:39 UTC | pages:143 -->
+<!-- BUILD-STAMP 2026-11-28 02:11 UTC | pages:143 -->
 </head>
 <body>
 <div class="sheet" id="top">
@@ -503,6 +506,7 @@
   <div class="controls">
     <div class="crow">
       <input id="q" type="search" placeholder="Search topics and titles" aria-label="Search">
+      <a class="chip gloss" href="glossary.html" title="Plain-word definitions of the terms used across this site"><span>Glossary</span></a>
       <button class="chip on" data-f="all" type="button">Everything</button>
       <details class="drop topten" id="topten">
         <summary class="chip topbtn">The Top Ten</summary>
