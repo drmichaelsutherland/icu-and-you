@@ -2001,9 +2001,28 @@
     "Heparin-induced thrombocytopenia"
    ],
    "blurb": "Two drugs with one name, and almost every heparin error starts by treating them as one. The NSW bolus that is capped at 5,000 units whatever the patient weighs, the APTT range written in seconds, the clearance of 30 below which Queensland will not use enoxaparin at all, the platelet count that stops being taken on day three, and the protamine dose that depends on what time it is. Every dose on the page checked, and three of them changed in the checking."
+  },
+  {
+   "file": "public-05-late-middle-age.html",
+   "series": "public",
+   "colour": "ocean",
+   "number": "5",
+   "title": "The age it dawns on you",
+   "topic": "Late middle age",
+   "slug": "late-middle-age",
+   "week": true,
+   "pos": 13,
+   "badge": "For the general public",
+   "link_label": "Open",
+   "blurb": "Somewhere in your fifties you start thinking about dying, and it is neither random nor a malfunction — death anxiety really does climb again around fifty. The surprise is what happens next: the very old are the least frightened people in the room, and their middle-aged children, who are more frightened, assume the opposite. What to do with the feeling besides lie awake, and the one conversation that takes a minute."
   }
  ],
  "latest": [
+  {
+   "file": "public-05-late-middle-age.html",
+   "colour": "ocean",
+   "label": "For the general public · The age it dawns on you"
+  },
   {
    "file": "drugstore-05-heparin.html",
    "colour": "mulberry",
@@ -2023,11 +2042,6 @@
    "file": "myths-02-late-middle-age.html",
    "colour": "bramble",
    "label": "Myths 2 · Late middle age"
-  },
-  {
-   "file": "book-club-05-lucky-man.html",
-   "colour": "terracotta",
-   "label": "ICU Book Club · Lucky Man — Pointing at the future"
   }
  ],
  "topten": [
