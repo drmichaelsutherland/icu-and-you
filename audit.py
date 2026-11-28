@@ -189,6 +189,37 @@ def main():
             if 'class="gl"' in src and 'glossary.js' not in src:
                 problems.append(f"{f}: uses glossary links but does not load glossary.js")
 
+        # glossary.html and glossary.js are kept in step by hand -- there is no
+        # build step between them. November 2026: the glossary had drifted out of
+        # date for six topic blocks and nothing said so, because nothing compared
+        # the two files. The js object is the source the cards are served from;
+        # the html page is what a reader browsing the glossary sees. If a term is
+        # in one and not the other, somebody gets a definition the other half of
+        # the site has never heard of.
+        gl_page = HERE / "glossary.html"
+        if gl_page.exists():
+            page = gl_page.read_text(encoding="utf-8")
+            page_ids = set(re.findall(r'<div class="entry" id="([a-z0-9-]+)"', page))
+            only_js = ids - page_ids
+            only_html = page_ids - ids
+            if only_js:
+                problems.append(
+                    "glossary.html: missing entries that glossary.js defines: "
+                    + ", ".join(sorted(only_js)))
+            if only_html:
+                problems.append(
+                    "glossary.js: missing entries that glossary.html lists: "
+                    + ", ".join(sorted(only_html)))
+            src_js = gl_src.read_text(encoding="utf-8")
+            for gid in sorted(ids & page_ids):
+                jt = re.search(r'"%s": \{"t": "([^"]*)"' % re.escape(gid), src_js)
+                ht = re.search(r'<div class="entry" id="%s">\s*<h2>([^<]*)</h2>'
+                               % re.escape(gid), page)
+                if jt and ht and jt.group(1).strip() != ht.group(1).strip():
+                    problems.append(
+                        f"glossary: {gid} is headed {ht.group(1)!r} on the page "
+                        f"but {jt.group(1)!r} in the card")
+
     # ---- ?s= and ?g= links must resolve to a filter on the landing page ----
     filters = set(re.findall(r'data-f="([^"]+)"', index))
     for f in html_files:
